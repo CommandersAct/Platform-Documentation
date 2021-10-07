@@ -37,7 +37,7 @@
 * [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
 * [Customer analysis](use-cases/customer-analysis/README.md)
   * [Untitled](use-cases/customer-analysis/untitled.md)
-* [Campaigns analysis](use-cases/campaigns-analysis/README.md)
+* [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
   * [Untitled](use-cases/campaigns-analysis/untitled.md)
 
 ## Developers
