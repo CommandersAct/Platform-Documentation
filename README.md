@@ -9,7 +9,8 @@ Learn how to use the platform to collect, enrich, validate and integrate your cu
 \*\*\*\*[**Getting started with Commanders Act**  
 Learn about the platform, interfaces, ...](getting-started/....md)
 
-Discover our use cases
+[**Discover our use cases**  
+Extract values from your data](use-cases/email-campaigns/)
 
 
 
