@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Platform X](README.md)
+* [Platform X documentation](README.md)
 
 ## Platform updates
 

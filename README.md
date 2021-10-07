@@ -1,4 +1,4 @@
-# Platform X
+# Platform X documentation
 
 Documentation for Platform X
 
