@@ -13,7 +13,5 @@ description: >-
 
 ## Release 7.1.1 - 01/01/2021
 
-### Added
-
 * Introduced animals into the world, we believe they're going to be a neat addition.
 
