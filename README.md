@@ -12,7 +12,8 @@ Learn about the platform, interfaces, ...](getting-started/....md)
 [**Discover our use cases**  
 Extract values from your data](use-cases/email-campaigns/)
 
-
+[**Integrating your data**  
+How to setup your account](features/integrations/)
 
 
 

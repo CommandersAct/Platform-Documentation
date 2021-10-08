@@ -44,7 +44,7 @@
 ## Developers
 
 * [Tracking](developers/tracking/README.md)
-  * [Javascript sdk](developers/tracking/javascript-sdk.md)
+  * [Javascript SDK](developers/tracking/javascript-sdk.md)
   * [Event references](developers/tracking/....md)
   * [Data API](developers/tracking/data-api.md)
 * [Config API](https://api.commandersact.com)
