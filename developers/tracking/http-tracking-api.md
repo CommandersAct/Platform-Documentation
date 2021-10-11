@@ -40,4 +40,4 @@ POST https://collect.commander1.com/events?tc_s=
 }
 ```
 
-Find details on **best practices in event naming** as well as the **`track` method payload** in our [Spec](https://segment.com/docs/connections/spec/track/).
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](https://segment.com/docs/connections/spec/track/).
