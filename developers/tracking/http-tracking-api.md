@@ -11,7 +11,7 @@ You should keep track of activities that are indications of your app's performan
 Example `event` call:
 
 ```
-POST https://collect.commander1.com/events?tc_s=
+POST https://collect.commander1.com/events?tc_s={id_site}
 ```
 
 ```
