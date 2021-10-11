@@ -46,10 +46,10 @@
 * [Tracking](developers/tracking/README.md)
   * [Javascript SDK](developers/tracking/javascript-sdk.md)
   * [Event references](developers/tracking/....md)
+  * [HTTP tracking API](developers/tracking/http-tracking-api.md)
   * [Data API](developers/tracking/data-api.md)
 * [Config API](https://api.commandersact.com)
 
----
+***
 
 * [todo](todo.md)
-
