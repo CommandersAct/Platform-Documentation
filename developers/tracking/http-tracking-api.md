@@ -10,30 +10,30 @@ You should keep track of activities that are indications of your app's performan
 
 Example `event` call:
 
-```
+```c
 POST https://collect.commander1.com/events?tc_s={id_site}
 ```
 
-```
+```json
 {
   "event": "add_to_cart",
   "properties": {
-      value: 8.00,
-      currency: 'EUR',
-      items: [{
-        id: 'SKU_12345',
-        quantity: 1,
-        variant: 'red',
-        coupon: 'CHRISTMAS',
-        discount: 1.99,
-        product:{
-          id: '12345',
-          name: 'Trex tshirt',
-          category_1: 'clothes',
-          category_2: 't-shirts',
-          category_3: 'boy',
-          brand: 'Lacoste',
-          price: 9.99
+      "value": 8.00,
+      "currency": 'EUR',
+      "items": [{
+        "id": 'SKU_12345',
+        "quantity": 1,
+        "variant": 'red',
+        "coupon": 'CHRISTMAS',
+        "discount": 1.99,
+        "product":{
+          "id": '12345',
+          "name": 'Trex tshirt',
+          "category_1": 'clothes',
+          "category_2": 't-shirts',
+          "category_3": 'boy',
+          "brand": 'Lacoste',
+          "price": 9.99
         }
       }]
     }
