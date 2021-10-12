@@ -45,6 +45,9 @@
 
 * [Tracking](developers/tracking/README.md)
   * [Javascript SDK](developers/tracking/javascript-sdk.md)
+  * [About events](developers/tracking/about-events/README.md)
+    * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
+    * [Travel (Hotel/Air)](developers/tracking/about-events/travel-hotel-air.md)
   * [Event references](developers/tracking/event-references.md)
   * [HTTP tracking API](developers/tracking/http-tracking-api.md)
   * [Data API](developers/tracking/data-api.md)
