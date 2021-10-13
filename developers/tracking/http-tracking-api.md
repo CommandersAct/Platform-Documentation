@@ -1,6 +1,6 @@
 # HTTP tracking API
 
-The HTTP Tracking API lets you record analytics data from any website or application. The requests hit our servers, and we route your data to any destination you want.
+The HTTP Tracking API lets you record user data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
 
 ### Event API <a href="track" id="track"></a>
 
