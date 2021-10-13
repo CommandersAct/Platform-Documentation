@@ -23,7 +23,7 @@ POST https://collect.commander1.com/events?tc_s={id_site}
       "user": {
           "id": "12345",
           "email":"toto@domain.fr",
-          consent_categories: [1,3]
+          "consent_categories": [1,3]
       }
   },
   "source": {
