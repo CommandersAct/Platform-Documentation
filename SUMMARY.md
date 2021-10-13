@@ -15,8 +15,12 @@
 ## Features
 
 * [Integrations](features/integrations/README.md)
-  * [Facebook conversions API](features/integrations/facebook-conversions-api.md)
-  * [Google Analytics 4](features/integrations/google-analytics-4.md)
+  * [Sources](features/integrations/sources.md)
+  * [Destinations](features/integrations/destinations/README.md)
+    * [Add destination](features/integrations/destinations/add-destination.md)
+    * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
+      * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
+      * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
 * [Customers](features/customers.md)
@@ -49,7 +53,7 @@
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
     * [Travel (Hotel/Air)](developers/tracking/about-events/travel-hotel-air.md)
   * [Event references](developers/tracking/event-references.md)
-  * [HTTP tracking API](developers/tracking/http-tracking-api.md)
+  * [HTTP tracking API source](developers/tracking/http-tracking-api.md)
   * [Data API](developers/tracking/data-api.md)
 * [Config API](https://api.commandersact.com)
 

@@ -1,8 +1,8 @@
-# HTTP tracking API
+# HTTP tracking API source
 
-The HTTP Tracking API lets you record user data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
+The HTTP Tracking API lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
 
-### Event API <a href="track" id="track"></a>
+## Event API <a href="track" id="track"></a>
 
 You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties. 
 
@@ -16,28 +16,36 @@ POST https://collect.commander1.com/events?tc_s={id_site}
 
 ```json
 {
-  "event": "add_to_cart",
+  "event": "search",
+  "eventId": "202110130000000000"
   "properties": {
-      "value": 8.00,
-      "currency": 'EUR',
-      "items": [{
-        "id": 'SKU_12345',
-        "quantity": 1,
-        "variant": 'red',
-        "coupon": 'CHRISTMAS',
-        "discount": 1.99,
-        "product":{
-          "id": '12345',
-          "name": 'Trex tshirt',
-          "category_1": 'clothes',
-          "category_2": 't-shirts',
-          "category_3": 'boy',
-          "brand": 'Lacoste',
-          "price": 9.99
-        }
-      }]
-    }
+      "search_term": "t-shirts", 
+      "user": {
+          "id": "12345",
+          "email":"toto@domain.fr",
+          consent_categories: [1,3]
+      }
+  },
+  "source": {
+      "name": "api",
+      "version": "1.0"
+  }, 
+  "device": {
+   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "ip": "108.0.78.21", 
+    "cookies":"fbp=123; fbc=456; _ga=GA1.3.593276215.1565602323"
+ },
+ "eventTimestamp": "2015-12-12T19:11:01.249Z"
+
 }
 ```
 
 Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](about-events/).
+
+## User API
+
+User API let's you update/delete/create users in the database. Find details on [User API spec](https://community.commandersact.com/datacommander/api/users).
+
+## Product API
+
+Product API let's you import your product's catalog in the database. It is mostly used to enrich conversion events with product's properties. Find details in [Product API spec](https://community.commandersact.com/datacommander/api/conversions-and-product-catalog-v2.0#upsert-products).
