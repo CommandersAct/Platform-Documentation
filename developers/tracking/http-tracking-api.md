@@ -11,7 +11,7 @@ You should keep track of activities that are indications of your app's performan
 Example `event` call:
 
 ```c
-POST https://collect.commander1.com/events?tc_s={id_site}
+POST  https://api.commander1.com/v2/{siteId}/events
 ```
 
 ```json
@@ -26,10 +26,6 @@ POST https://collect.commander1.com/events?tc_s={id_site}
           "consent_categories": [1,3]
       }
   },
-  "source": {
-      "name": "api",
-      "version": "1.0"
-  }, 
   "device": {
    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
     "ip": "108.0.78.21", 
