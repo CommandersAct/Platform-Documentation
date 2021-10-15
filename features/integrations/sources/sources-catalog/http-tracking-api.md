@@ -2,11 +2,25 @@
 
 The HTTP Tracking API lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
 
-## Settings
+## Setup
 
-### `Autentication`
+### Headers
 
-###
+#### Authentication
+
+Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
+
+#### Content-Type <a href="content-type" id="content-type"></a>
+
+To send data to our HTTP API, a content-type header must be set to `'application/json'`.
+
+### Errors
+
+We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our config API. The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
+
+### Rate limit
+
+There is no real rate limit above which the system will discard your data. But if you need to import at a rate faster than **500 requests per second**, please [contact us](mailto:support@commandersact.com) beforehand.
 
 ## Event API <a href="track" id="track"></a>
 
