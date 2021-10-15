@@ -15,7 +15,10 @@
 ## Features
 
 * [Integrations](features/integrations/README.md)
-  * [Sources](features/integrations/sources.md)
+  * [Sources](features/integrations/sources/README.md)
+    * [Overview](features/integrations/sources/overview.md)
+    * [Sources catalog](features/integrations/sources/sources-catalog/README.md)
+      * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)
   * [Destinations](features/integrations/destinations/README.md)
     * [Add destination](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
@@ -53,7 +56,6 @@
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
     * [Travel (Hotel/Air)](developers/tracking/about-events/travel-hotel-air.md)
   * [Event references](developers/tracking/event-references.md)
-  * [HTTP tracking API source](developers/tracking/http-tracking-api.md)
   * [Data API](developers/tracking/data-api.md)
 * [Config API](https://api.commandersact.com)
 

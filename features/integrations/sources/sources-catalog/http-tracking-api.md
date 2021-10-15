@@ -36,7 +36,7 @@ POST  https://api.commander1.com/v2/{siteId}/events
 }
 ```
 
-Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](about-events/).
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../../developers/tracking/about-events/).
 
 ## User API
 
