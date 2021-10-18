@@ -4,5 +4,5 @@ Check out the [Destinations catalog](destinations-catalog/) if you merely want t
 
 ## Sources vs Destinations <a href="sources-vs-destinations" id="sources-vs-destinations"></a>
 
-The platform has [Sources](https://segment.com/docs/connections/sources/) and [Destinations](https://segment.com/docs/connections/destinations/). Sources send data _into_ the platform, while Destinations receive data _from_ the platform.
+The platform has [Sources](../sources/) and [Destinations](./). Sources send data _into_ the platform, while Destinations receive data _from_ the platform.
 
