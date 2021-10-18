@@ -1,4 +1,4 @@
-# Event references
+# Events reference
 
 ## add_payment_info <a href="add_payment_info" id="add_payment_info"></a>
 
@@ -12,7 +12,7 @@ This event signifies a user has submitted their payment information
 | `coupon`         | `string`                                  | No       | CHRISTMAS     | Coupon code used for a purchase.                                                                                                                                                                                                                                     |
 | `revenue`        | `number`                                  | No       | 16.00         | <p>Revenue (shipping price and taxes <strong>excluded</strong>) after discount.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                           |
 | `currency`       | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
-| `items`          | [`Array<Item>`](event-references.md#item) | No       |               | The items for the event.                                                                                                                                                                                                                                             |
+| `items`          | [`Array<Item>`](events-reference.md#item) | No       |               | The items for the event.                                                                                                                                                                                                                                             |
 
 **Example**
 
