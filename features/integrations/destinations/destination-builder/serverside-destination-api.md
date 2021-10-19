@@ -14,6 +14,18 @@ Returns a copy of the event data.
 getAllEventData();
 ```
 
+**Example**
+
+```javascript
+const getAllEventData= require('getAllEventData');
+const eventModel = getAllEventData();
+//build body request from event properties 
+const body = {
+    crm_id:eventModel.user.id,
+    currency:eventModel.currency
+};
+```
+
 ## `sendHttpGet` <a href="sendhttpget" id="sendhttpget"></a>
 
 Makes an HTTP GET request to the specified URL, and invokes a callback with the response once the request completes or times out.
@@ -29,9 +41,12 @@ sendHttpGet(url[, callback[, options]]);
 ```javascript
 const sendHttpGet = require('sendHttpGet');
 // Sends a GET request and nominates response// based on the response from the GET 
-request.sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {  
- if (statusCode != 200){ yourCallbackFunction(); }
-},{headers: {key: 'value'},timeout: 500});
+request.sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {
+    if (statusCode != 200) {yourCallbackFunction();}
+}, {
+    headers: {key: 'value'},
+    timeout: 500
+});
 ```
 
 **Parameters**
@@ -46,7 +61,7 @@ request.sendHttpGet('https://example.com/collect', function(statusCode, headers,
 
 * **headers**: Additional request headers represented as an object.
 * **timeout**: The timeout, in milliseconds, before the request is aborted.
-* **extraOptions**: Advanced options (ex: force SSL)
+* **extraOptions**: Advanced options (ex: {strictSSL:true})
 
 ## `sendHttpRequest` <a href="sendhttprequest" id="sendhttprequest"></a>
 
@@ -92,7 +107,7 @@ request.sendHttpRequest('https://example.com/collect', function(statusCode, head
 * **headers**: Additional request headers.
 * **method**: The request method, defaults to 'GET'.
 * **timeout**: The timeout, in milliseconds, before the request is aborted.
-* **extraOptions**: Advanced options (ex: force SSL)
+* **extraOptions**: Advanced options (ex: {strictSSL:true})
 
 ## `md5Sync`
 
