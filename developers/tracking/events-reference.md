@@ -47,8 +47,8 @@ This event signifies that an item was added to a cart for purchase.
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
-| `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
+| `value`    | `number`                                  | **Yes**\*       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                       |
+| `currency` | `string (ISO 4217)`                       | **Yes**\*       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
 **Example**
@@ -186,8 +186,8 @@ Log this event when a lead has been generated to understand the efficacy of your
 
 | Name       | Type                | Required  | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ------------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`            | **Yes**\* | 9.99          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
-| `currency` | `string (ISO 4217)` | **Yes\*** | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
+| `value`    | `number`            | **No**\* | 9.99          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
+| `currency` | `string (ISO 4217)` | **No\*** | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `id`       | `string`            | No        |               | Lead id                                                                                                                                                                                                                                                              |
 
 **Example**
@@ -195,7 +195,7 @@ Log this event when a lead has been generated to understand the efficacy of your
 ```javascript
 cact('trigger','generate_lead', {
   currency: 'EUR',
-  valuz: 9.99,
+  value: 9.99,
   id: 'L_12345'
 });
 ```
@@ -376,7 +376,7 @@ This event signifies that an item was added to a cart for purchase.
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
+| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                       |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
@@ -504,7 +504,7 @@ This event signifies that a user viewed their cart.
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                         |
+| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                         |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
