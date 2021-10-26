@@ -28,6 +28,7 @@
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
       * [Javascript destination builder](features/integrations/destinations/destination-builder/javascript-destination-builder/README.md)
         * [Serverside javascript helpers](features/integrations/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
+    * [Event delivery](features/integrations/destinations/event-delivery.md)
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
 * [Customers](features/customers.md)
