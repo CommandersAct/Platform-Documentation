@@ -4,4 +4,4 @@ If you want to send data to a destination that is not listed in our destination'
 
 * Webhook destination builder
 * FTP destination builder
-* [JavaScript destination builder](serverside-destination-api.md) (JS sandbox)
+* [JavaScript destination builder](serverside-js-helpers.md) (JS sandbox)

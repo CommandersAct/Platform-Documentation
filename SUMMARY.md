@@ -25,7 +25,7 @@
       * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
-      * [Serverside javascript helpers](features/integrations/destinations/destination-builder/serverside-destination-api.md)
+      * [Serverside javascript helpers](features/integrations/destinations/destination-builder/serverside-js-helpers.md)
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
 * [Customers](features/customers.md)
