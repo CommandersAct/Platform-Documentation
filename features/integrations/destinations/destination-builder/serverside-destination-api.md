@@ -2,7 +2,7 @@
 description: This article describes the server-side destination APIs.
 ---
 
-# Serverside destination API
+# Serverside javascript helpers
 
 ## `getAllEventData` <a href="getalleventdata" id="getalleventdata"></a>
 
@@ -41,7 +41,7 @@ sendHttpGet(url[, callback[, options]]);
 ```javascript
 const sendHttpGet = require('sendHttpGet');
 // Sends a GET request and nominates response// based on the response from the GET 
-request.sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {
+sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {
     if (statusCode != 200) {yourCallbackFunction();}
 }, {
     headers: {key: 'value'},
@@ -82,7 +82,7 @@ const body = {
     account:'123'
 };
 // Sends a POST request 
-request.sendHttpRequest('https://example.com/collect', function(statusCode, headers, body) {
+sendHttpRequest('https://example.com/collect', function(statusCode, headers, body) {
     //your callback code...
 }, {
     headers: {
