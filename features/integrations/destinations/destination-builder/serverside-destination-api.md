@@ -26,6 +26,100 @@ const body = {
 };
 ```
 
+## `getCookieValues` <a href="getcookievalues" id="getcookievalues"></a>
+
+Returns an array containing the values of all cookies with the given name.
+
+**Syntax**
+
+```
+getCookieValues(name[, noDecode]);
+```
+
+**Example**
+
+```javascript
+const getCookieValues = require('getCookieValues');
+const facebook_fbp = getCookieValues('fbp')[0];
+if (facebook_fbp ) {  // ...}
+```
+
+****
+
+**Parameters**
+
+| Parameter      | Type      | Description                                                                                  |
+| -------------- | --------- | -------------------------------------------------------------------------------------------- |
+| **`name`**     | _string_  | Name of the cookie.                                                                          |
+| **`noDecode`** | _boolean_ | If `true`, the cookie values will not be decoded before being returned. Defaults to `false`. |
+
+## `getRemoteAddress` <a href="getremoteaddress" id="getremoteaddress"></a>
+
+Returns a **string** representation of the IP address where the request originated, e.g. `62.123.65.780` for IPv4 or `2001:0db8:85a3:0:0:8a2e:0370:1234` for IPv6
+
+**Syntax**
+
+```
+getRemoteAddress();
+```
+
+## `JSON` <a href="json" id="json"></a>
+
+Returns an object that provides JSON functions.
+
+The `parse()` function parses a JSON string to construct the value or object described by the string. If the value cannot be parsed (malformed JSON), the function will return `undefined`. If the input value is not a string, the input will be coerced to a string.
+
+The `stringify()` function converts the input into a JSON string. If the value cannot be parsed (ex. the object has a cycle), the method will return `undefined`.
+
+**Syntax**
+
+```
+JSON.parse(yourString);
+JSON.stringify(yourObject);
+```
+
+**Example**
+
+```
+const JSON = require('JSON');
+// The JSON input string is converted to an object.
+const object = JSON.parse('{"foo":"bar"}');
+// The input object is converted to a JSON string.
+const str = JSON.stringify({foo: 'bar'});
+```
+
+****
+
+## `Math` <a href="math" id="math"></a>
+
+An object providing `Math` functions.
+
+**Syntax**
+
+```
+const Math = require('Math');
+// Retrieve the absolute value.
+const absolute = Math.abs(-5);
+// Round the input down to the nearest integer.
+const roundedDown = Math.floor(4.6);
+// Round the input up to the nearest integer.
+const roundedUp = Math.ceil(2.1);
+// Round the input to the nearest integer.
+const rounded = Math.round(4.2);
+// Return the largest argument.
+const biggest = Math.max(1, 4);
+// Return the smallest argument.
+const smallest = Math.min(4, 5);
+// Return the first argument raised to the power of the second argument.
+const powerful = Math.pow(4, 2);
+// Return the square root of the argument.
+const unsquared = Math.sqrt(81);
+```
+
+**Parameters**
+
+Math function parameters are converted to numbers.
+
 ## `sendHttpGet` <a href="sendhttpget" id="sendhttpget"></a>
 
 Makes an HTTP GET request to the specified URL, and invokes a callback with the response once the request completes or times out.
