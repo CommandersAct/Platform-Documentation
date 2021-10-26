@@ -6,7 +6,7 @@ The destination builder allows you to create your own custom destination, either
 
 * Webhook/API destination builder
 * FTP destination builder
-* [JavaScript destination builder](javascript-destination-builder/serverside-js-helpers.md) (JS sandbox)
+* [JavaScript destination builder](javascript-destination-builder/) (JS sandbox)
 
 ## Create and publish a destination
 
