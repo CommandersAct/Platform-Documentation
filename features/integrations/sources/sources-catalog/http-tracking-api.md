@@ -16,7 +16,7 @@ To send data to our HTTP API, a content-type header must be set to `'application
 
 ### Errors
 
-We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our config API. The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
+We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
 
 ### Rate limit
 
@@ -24,7 +24,7 @@ There is no real rate limit above which the system will discard your data. But i
 
 ## Event API <a href="track" id="track"></a>
 
-You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties. 
+You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties.&#x20;
 
 You should keep track of activities that are indications of your app's performance, such as Signed Up, Item Purchased, and Article Bookmarked. To begin, we recommend tracking only a few key events. More may easily be added later!
 

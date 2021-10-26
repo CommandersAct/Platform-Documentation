@@ -213,7 +213,7 @@ Send this event to signify that a user has logged in.
 **Example**
 
 ```javascript
-cact('trigger','login', {
+cact('login', {
   method: 'LinkedIn'
 });
 ```
