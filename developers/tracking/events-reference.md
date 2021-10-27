@@ -608,12 +608,13 @@ cact('trigger','view_item_list', {
 | Name            | Type                                                                           | Required | Example Value | Description                                                                                                                                            |
 | --------------- | ------------------------------------------------------------------------------ | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `id`            | `string`                                                                       | **Yes**  | SKU\_12345    | <p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p> |
-| `product`       | \<code>\</code>[`Object<Product>`](events-reference.md#product)\<code>\</code> | **Yes**  |               | The product details                                                                                                                                    |
+| `product`       | [`Object<Product>`](events-reference.md#product)                               | **Yes**  |               | The product details                                                                                                                                    |
 | `variant`       | `string`                                                                       | No       | red           | The variant of the item.                                                                                                                               |
 | `list_position` | `number`                                                                       | No       | 1             | The item's position in a list or collection.                                                                                                           |
 | `discount`      | `number`                                                                       | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
 | `quantity`      | `number`                                                                       | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
 | `coupon`        | `string`                                                                       | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
+
 ### Product
 
 **Parameters (required and recommended)**
