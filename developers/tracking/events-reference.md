@@ -614,8 +614,6 @@ cact('trigger','view_item_list', {
 | `discount`      | `number`                                                                       | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
 | `quantity`      | `number`                                                                       | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
 | `coupon`        | `string`                                                                       | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
-| `custom`        | `Object`                                                                       | No       |               | Object containing custom properties you want to send                                                                                                   |
-
 ### Product
 
 **Parameters (required and recommended)**
