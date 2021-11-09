@@ -1,16 +1,16 @@
 # Events reference
 
-## add_payment_info <a href="add_payment_info" id="add_payment_info"></a>
+## add\_payment\_info <a href="add_payment_info" id="add_payment_info"></a>
 
 This event signifies a user has submitted their payment information
 
 **Parameters (required and recommended)**
 
-| Name             | Type       | Required | Example Value | Description                                                                                                                                                                                                                                                          |
-| ---------------- | ---------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Name             | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
+| ---------------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `payment_method` | `string`                                  | **Yes**  | card          | The chosen method of payment (see list of possible values below)                                                                                                                                                                                                     |
 | `coupon`         | `string`                                  | No       | CHRISTMAS     | Coupon code used for a purchase.                                                                                                                                                                                                                                     |
-| `revenue`        | `number`                                  | No       | 16.00         | <p>Revenue (shipping price and taxes <strong>excluded</strong>) after discount.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                           |
+| `revenue`        | `number`                                  | No       | 16.00         | <p>Revenue (shipping price and taxes <strong>excluded</strong>) after discount.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p>           |
 | `currency`       | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`          | [`Array<Item>`](events-reference.md#item) | No       |               | The items for the event.                                                                                                                                                                                                                                             |
 
@@ -25,7 +25,7 @@ cact('trigger','add_payement_info', {
 });
 ```
 
-## add_shipping_info
+## add\_shipping\_info
 
 This event signifies a user has submitted their shipping information.
 
@@ -39,17 +39,17 @@ This event signifies a user has submitted their shipping information.
 | `shipping_tier` | `string`                                  | No       | Ground        | The shipping tier (e.g. `Air`, `Next-day`) selected for delivery of the purchased item.                                                                                                                                                                                                   |
 | `items`         | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                                                  |
 
-## add_to_cart
+## add\_to\_cart
 
 This event signifies that an item was added to a cart for purchase.
 
 **Parameters (required and recommended)**
 
-| Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
-| ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | **Yes**\*       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                       |
-| `currency` | `string (ISO 4217)`                       | **Yes**\*       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
-| `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
+| Name       | Type                                      | Required  | Example Value | Description                                                                                                                                                                                                                                                          |
+| ---------- | ----------------------------------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `value`    | `number`                                  | **Yes**\* | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p>                                                           |
+| `currency` | `string (ISO 4217)`                       | **Yes**\* | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
+| `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**   |               | The items for the event.                                                                                                                                                                                                                                             |
 
 **Example**
 
@@ -76,7 +76,7 @@ cact('trigger','add_to_cart', {
 });
 ```
 
-## add_to_wishlist
+## add\_to\_wishlist
 
 The event signifies that an item was added to a wishlist. Use this event to identify popular gift items in your app.
 
@@ -84,7 +84,7 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
+| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                       |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
@@ -113,7 +113,7 @@ cact('trigger','add_to_wishlist', {
 });
 ```
 
-## begin_checkout <a href="begin_checkout" id="begin_checkout"></a>
+## begin\_checkout <a href="begin_checkout" id="begin_checkout"></a>
 
 This event signifies that a user has begun a checkout.
 
@@ -178,17 +178,17 @@ cact('trigger','begin_checkout', {
 })
 ```
 
-## generate_lead <a href="generate_lead" id="generate_lead"></a>
+## generate\_lead <a href="generate_lead" id="generate_lead"></a>
 
 Log this event when a lead has been generated to understand the efficacy of your re-engagement campaigns.
 
 **Parameters (required and recommended)**
 
-| Name       | Type                | Required  | Example Value | Description                                                                                                                                                                                                                                                          |
-| ---------- | ------------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`            | **No**\* | 9.99          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                                       |
+| Name       | Type                | Required | Example Value | Description                                                                                                                                                                                                                                                          |
+| ---------- | ------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `value`    | `number`            | **No**\* | 9.99          | <p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p>                                                       |
 | `currency` | `string (ISO 4217)` | **No\*** | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
-| `id`       | `string`            | No        |               | Lead id                                                                                                                                                                                                                                                              |
+| `id`       | `string`            | No       |               | Lead id                                                                                                                                                                                                                                                              |
 
 **Example**
 
@@ -218,7 +218,7 @@ cact('login', {
 });
 ```
 
-## page_view <a href="page_view" id="page_view"></a>
+## page\_view <a href="page_view" id="page_view"></a>
 
 The `page_view` call lets you record whenever a user sees a page of your website, along with any optional properties about the page.
 
@@ -226,7 +226,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 | Name   | Type     | Required | Example Value               | Description                                                                                                                                                                                                                                                                                                                                                          |
 | ------ | -------- | -------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type` | `string` | **Yes**  | product_list                | <p>Page category. Recommanded predefined types:</p><ul><li>home</li><li>landing</li><li>product_list</li><li>product</li><li>content_list</li><li>content</li><li>search</li><li>funnel</li><li>success</li><li>funnel_confirmation</li><li>account</li><li>cart</li><li>legal (e.g. Privacy Policy)</li></ul><p>Equivalent to <code>tc_vars.env_template</code></p> |
+| `type` | `string` | **Yes**  | product\_list               | <p>Page category. Recommanded predefined types:</p><ul><li>home</li><li>landing</li><li>product_list</li><li>product</li><li>content_list</li><li>content</li><li>search</li><li>funnel</li><li>success</li><li>funnel_confirmation</li><li>account</li><li>cart</li><li>legal (e.g. Privacy Policy)</li></ul><p>Equivalent to <code>tc_vars.env_template</code></p> |
 | `name` | `string` | No       | Suggestion for Mother's Day | Name of the page.                                                                                                                                                                                                                                                                                                                                                    |
 
 **Automatically added parameters by cact API**
@@ -266,14 +266,14 @@ Fire this event when one or more items are purchased by a user.
 | `type`            | `string`                                   | Yes      | offline                                                                                                                                                       | Type of conversion (online, offline, call etc.)                                                                                                                                                                                                                 |
 | `items`           | [`Array<Item>`](events-reference.md#item)  | Yes      |                                                                                                                                                               | The items for the event.                                                                                                                                                                                                                                        |
 | `payment_method`  | `string`                                   | Yes      | card                                                                                                                                                          | Payment method type (see list of [possible values](events-reference.md#payment-methods) below)                                                                                                                                                                  |
-| `status`          | `string`                                   | Yes      | in_progress                                                                                                                                                   | <p>Status of the conversion (see list of <a href="events-reference.md#purchase-status">possible values</a> below).<br><em>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature</em></p> |
+| `status`          | `string`                                   | Yes      | in\_progress                                                                                                                                                  | <p>Status of the conversion (see list of <a href="events-reference.md#purchase-status">possible values</a> below).<br><em>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature</em></p> |
 
 **Automatically added by cact API**
 
 | Name                 | Type        | Required | Example  | Description                                                                                   |
 | -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | `url`                | string(url) | No       | none     | <p>URL to the website where you can buy the item</p><p>Equivalent to window.location.href</p> |
-| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added **only if **you use Commanders Act CMP (TrustCommander)                   |
+| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added \*\*only if \*\*you use Commanders Act CMP (TrustCommander)               |
 
 **Example**
 
@@ -330,7 +330,7 @@ cact('trigger','purchase', {
 
 ## refund
 
-Fire this event when one or more items are purchased by a user.
+Fire this event when a purchase was refund
 
 #### Parameters **(required and recommended)** <a href="parameters_17" id="parameters_17"></a>
 
@@ -352,7 +352,7 @@ Fire this event when one or more items are purchased by a user.
 | Name                 | Type        | Required | Example  | Description                                                                                   |
 | -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | `url`                | string(url) | No       | none     | <p>URL to the website where you can buy the item</p><p>Equivalent to window.location.href</p> |
-| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added **only if **you use Commanders Act CMP (TrustCommander)                   |
+| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added \*\*only if \*\*you use Commanders Act CMP (TrustCommander)               |
 
 **Example**
 
@@ -368,15 +368,15 @@ cact('trigger','refund', {
 })
 ```
 
-## remove_from_to_cart
+## remove\_from\_to\_cart
 
-This event signifies that an item was added to a cart for purchase.
+This event signifies that an item was removed from a cart.
 
 **Parameters (required and recommended)**
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                       |
+| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p>                                                           |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
@@ -423,7 +423,7 @@ cact('trigger','search', {
 });
 ```
 
-## select_content
+## select\_content
 
 This event signifies that a user has selected some content of a certain type. This event can help you identify popular content and categories of content in your app or click on internal promotion.
 
@@ -443,7 +443,7 @@ cact('trigger','select_content', {
 });
 ```
 
-## select_item
+## select\_item
 
 This event signifies an item was selected from a list.
 
@@ -478,7 +478,7 @@ cact('trigger','select_item', {
 });
 ```
 
-## sign_up <a href="sign_up" id="sign_up"></a>
+## sign\_up <a href="sign_up" id="sign_up"></a>
 
 This event indicates that a user has signed up for an account.
 
@@ -496,7 +496,7 @@ cact('trigger','sign_up', {
 });
 ```
 
-## view_cart
+## view\_cart
 
 This event signifies that a user viewed their cart.
 
@@ -504,7 +504,7 @@ This event signifies that a user viewed their cart.
 
 | Name       | Type                                      | Required | Example Value | Description                                                                                                                                                                                                                                                          |
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(*)<code>value</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>value</code>.</p>                                                                         |
+| `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p>                                                           |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
@@ -533,19 +533,19 @@ cact('trigger','view_cart', {
 });
 ```
 
-## view_item
+## view\_item
 
 This event signifies that some content was shown to the user. Use this event to manage the most popular items viewed.
 
 **Parameters (required and recommended)**
 
-| Name       | Type                                      | Required  | Example Value | Description                                                                                                                                                                                    |
-| ---------- | ----------------------------------------- | --------- | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `revenue`  | `number`                                  | **Yes**\* | 9.99          | <p>The monetary value of the event.<br>(*)<code>revenue</code> is typically required for meaningful reporting.</p><p>(*)<code>currency</code> is required if you set <code>revenue</code>.</p> |
-| `currency` | `string (ISO 4217)`                       | **Yes\*** | EUR           | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.                                                                                                      |
-| `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**   |               | The items for the event.                                                                                                                                                                       |
+| Name       | Type                                      | Required  | Example Value | Description                                                                                                                                                                                                    |
+| ---------- | ----------------------------------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `revenue`  | `number`                                  | **Yes**\* | 9.99          | <p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p> |
+| `currency` | `string (ISO 4217)`                       | **Yes\*** | EUR           | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.                                                                                                                      |
+| `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**   |               | The items for the event.                                                                                                                                                                                       |
 
-## view_item_list
+## view\_item\_list
 
 Log this event when the user has been presented with a list of items of a certain category.
 
@@ -605,15 +605,15 @@ cact('trigger','view_item_list', {
 
 #### Parameters **(required and recommended)** <a href="parameters_27" id="parameters_27"></a>
 
-| Name            | Type                                                                           | Required | Example Value | Description                                                                                                                                            |
-| --------------- | ------------------------------------------------------------------------------ | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `id`            | `string`                                                                       | **Yes**  | SKU\_12345    | <p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p> |
-| `product`       | [`Object<Product>`](events-reference.md#product)                               | **Yes**  |               | The product details                                                                                                                                    |
-| `variant`       | `string`                                                                       | No       | red           | The variant of the item.                                                                                                                               |
-| `list_position` | `number`                                                                       | No       | 1             | The item's position in a list or collection.                                                                                                           |
-| `discount`      | `number`                                                                       | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
-| `quantity`      | `number`                                                                       | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
-| `coupon`        | `string`                                                                       | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
+| Name            | Type                                             | Required | Example Value | Description                                                                                                                                            |
+| --------------- | ------------------------------------------------ | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `id`            | `string`                                         | **Yes**  | SKU\_12345    | <p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p> |
+| `product`       | [`Object<Product>`](events-reference.md#product) | **Yes**  |               | The product details                                                                                                                                    |
+| `variant`       | `string`                                         | No       | red           | The variant of the item.                                                                                                                               |
+| `list_position` | `number`                                         | No       | 1             | The item's position in a list or collection.                                                                                                           |
+| `discount`      | `number`                                         | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
+| `quantity`      | `number`                                         | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
+| `coupon`        | `string`                                         | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
 
 ### Product
 
@@ -646,31 +646,31 @@ cact('trigger','view_item_list', {
 
 Enumerated Values for payment methods :
 
-| Property       | Value                       |
-| -------------- | --------------------------- |
-| payment_method | by_invoice                  |
-| payment_method | by_bank_transfer_in_advance |
-| payment_method | card                        |
-| payment_method | check_in_advance            |
-| payment_method | cod                         |
-| payment_method | coupon                      |
-| payment_method | direct_debit                |
-| payment_method | online_payment_system       |
-| payment_method | other                       |
+| Property        | Value                           |
+| --------------- | ------------------------------- |
+| payment\_method | by\_invoice                     |
+| payment\_method | by\_bank\_transfer\_in\_advance |
+| payment\_method | card                            |
+| payment\_method | check\_in\_advance              |
+| payment\_method | cod                             |
+| payment\_method | coupon                          |
+| payment\_method | direct\_debit                   |
+| payment\_method | online\_payment\_system         |
+| payment\_method | other                           |
 
 ### Purchase status
 
 Enumerated Values for purchase status:
 
-| Property | Value               |
-| -------- | ------------------- |
-| status   | canceled            |
-| status   | delivered           |
-| status   | in_progress         |
-| status   | partially_delivered |
-| status   | partially_returned  |
-| status   | partially_shipped   |
-| status   | pending_shipment    |
-| status   | returned            |
-| status   | shipped             |
-| status   | pending             |
+| Property | Value                |
+| -------- | -------------------- |
+| status   | canceled             |
+| status   | delivered            |
+| status   | in\_progress         |
+| status   | partially\_delivered |
+| status   | partially\_returned  |
+| status   | partially\_shipped   |
+| status   | pending\_shipment    |
+| status   | returned             |
+| status   | shipped              |
+| status   | pending              |
