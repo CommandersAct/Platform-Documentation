@@ -4,6 +4,150 @@ description: This article describes the server-side destination APIs.
 
 # Serverside javascript helpers
 
+## `decodeURI` <a href="getalleventdata" id="getalleventdata"></a>
+
+Decodes any encoded characters in the provided URI. Returns a **string** that represents the decoded URI. Returns `undefined` when provided with invalid input.
+
+**Syntax**
+
+```javascript
+decodeUri(encoded_uri);
+```
+
+**Example**
+
+```javascript
+const decodeUri = require('decodeUri');
+
+const decodedUrl = decodeUri(data.encodedUrl);
+if (decodedUrl) {
+  // ...
+}
+```
+
+| Parameter         | Type     | Description                                                                                                                                         |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`encoded_uri`** | _string_ | A URI that has been encoded by [`encodeUri()`](https://developers.google.com/tag-platform/tag-manager/server-side/api#encodeuri) or by other means. |
+
+## `decodeUriComponent` <a href="decodeuricomponent" id="decodeuricomponent"></a>
+
+Decodes any encoded characters in the provided URI component. Returns a **string** that represents the decoded URI component. Returns `undefined` when given invalid input.
+
+**Syntax**
+
+```javascript
+decodeUriComponent(encoded_uri_component);
+```
+
+**Example**
+
+```javascript
+const decodeUriComponent = require('decodeUriComponent');
+
+const decodedQuery = decodeUriComponent(data.query);
+if (decodedQuery) {
+  // ...
+}
+```
+
+| Parameter                   | Type     | Description                                                                                                                                                                     |
+| --------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`encoded_uri_component`** | _string_ | A URI component that has been encoded by [`encodeUriComponent()`](https://developers.google.com/tag-platform/tag-manager/server-side/api#encodeuricomponent) or by other means. |
+
+## `encodeUri` <a href="getalleventdata" id="getalleventdata"></a>
+
+Returns an encoded Uniform Resource Identifier (URI) by escaping special characters. Returns a **string** that represents the provided string encoded as a URI.
+
+**Syntax**
+
+```javascript
+encodeUri(uri);
+```
+
+**Example**
+
+```javascript
+const encodeUri = require('encodeUri');
+const sendHttpGet = require('sendHttpGet');
+
+sendHttpGet('https://www.example.com/' + encodeUri(pathInput));
+```
+
+| Parameter | Type     | Description     |
+| --------- | -------- | --------------- |
+| `uri`     | _string_ | A complete URI. |
+
+## `encodeUriComponent` <a href="encodeuricomponent" id="encodeuricomponent"></a>
+
+Returns an encoded Uniform Resource Identifier (URI) by escaping special characters. Returns a **string** that represents the provided string encoded as a URI.
+
+**Syntax**
+
+```javascript
+encodeUriComponent(str);
+```
+
+**Example**
+
+```javascript
+const encodeUriComponent = require('encodeUriComponent');
+const sendHttpGet = require('sendHttpGet');
+
+sendHttpGet('https://www.example.com/?' + encodeUriComponent(queryInput));
+```
+
+| Parameter | Type     | Description           |
+| --------- | -------- | --------------------- |
+| **`str`** | _string_ | A component of a URI. |
+
+## `fromBase64` <a href="frombase64" id="frombase64"></a>
+
+Decodes a base64-encoded string. Returns `undefined` if the input is invalid.
+
+**Syntax**
+
+```javascript
+fromBase64(base64EncodedString);
+```
+
+**Example**
+
+```javascript
+const fromBase64 = require('fromBase64');
+
+const greeting = fromBase64('aGVsbG8=');
+if (greeting === 'hello') {
+  // ...
+}
+```
+
+| Parameter                 | Type     | Description            |
+| ------------------------- | -------- | ---------------------- |
+| **`base64EncodedString`** | _string_ | Base64 encoded string. |
+
+## `generateRandom` <a href="generaterandom" id="generaterandom"></a>
+
+Returns a random **number** (integer) within the given range.
+
+**Syntax**
+
+```javascript
+generateRandom(min, max);
+```
+
+**Example**
+
+```javascript
+const generateRandom = require('generateRandom');
+
+const randomValue = generateRandom(0, 10000000);
+```
+
+| Parameter | Type     | Description                                                  |
+| --------- | -------- | ------------------------------------------------------------ |
+| **`min`** | _number_ | Minimum potential value of the returned integer (inclusive). |
+| **`max`** | _number_ | Maximum potential value of the returned integer (inclusive). |
+
 ## `getAllEventData` <a href="getalleventdata" id="getalleventdata"></a>
 
 Returns a copy of the event data.
@@ -52,6 +196,32 @@ if (facebook_fbp ) {  // ...}
 | -------------- | --------- | -------------------------------------------------------------------------------------------- |
 | **`name`**     | _string_  | Name of the cookie.                                                                          |
 | **`noDecode`** | _boolean_ | If `true`, the cookie values will not be decoded before being returned. Defaults to `false`. |
+
+## `getEventData` <a href="geteventdata" id="geteventdata"></a>
+
+Returns a copy of the value at the given path in the event data. Returns `undefined` if there is no event data or if there is no value at the given path.
+
+**Syntax**
+
+```
+getEventData(keyPath);
+```
+
+**Example**
+
+```javascript
+const getEventData = require('getEventData');
+
+const campaignId = getEventData('campaign.id');
+const itemId = getEventData('items.0.id');
+const referrer = getEventData('page_referrer');
+```
+
+**Parameters**
+
+| Parameter     | Type  | Description                                                                                                                                                                                       |
+| ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`keyPath`** | _any_ | The path of the key, where path components are separated by dots. The path components can be keys in an object or indices in an array. If `keyPath` is not a string, it is coerced into a string. |
 
 ## `getRemoteAddress` <a href="getremoteaddress" id="getremoteaddress"></a>
 
