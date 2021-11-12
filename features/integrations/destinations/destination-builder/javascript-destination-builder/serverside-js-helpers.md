@@ -233,6 +233,233 @@ Returns a **string** representation of the IP address where the request originat
 getRemoteAddress();
 ```
 
+## `getTimestamp` <a href="gettimestamp" id="gettimestamp"></a>
+
+**Deprecated.** Prefer [getTimestampMillis](https://developers.google.com/tag-platform/tag-manager/server-side/api#gettimestampmillis).
+
+Returns a **number** that represents the current time in milliseconds since Unix epoch, as returned by `Date.now()`.
+
+**Syntax**
+
+```
+getTimestamp();
+```
+
+## `getTimestampMillis` <a href="gettimestampmillis" id="gettimestampmillis"></a>
+
+Returns a **number** that represents the current time in milliseconds since Unix epoch, as returned by `Date.now()`.
+
+**Syntax**
+
+```
+getTimestampMillis();
+```
+
+## `getType` <a href="gettype" id="gettype"></a>
+
+Returns a string describing the given value's type.
+
+| Input Type  | Returned Value |
+| ----------- | -------------- |
+| _string_    | 'string'       |
+| _number_    | 'number'       |
+| _boolean_   | 'boolean'      |
+| _null_      | 'null'         |
+| _undefined_ | 'undefined'    |
+| _Array_     | 'array'        |
+| _Object_    | 'object'       |
+| _Function_  | 'function'     |
+
+**Syntax**
+
+```
+getType(value);
+```
+
+**Example**
+
+```javascript
+const getType = require('getType');
+
+const type = getType(value);
+if (type === 'string') {
+  // Handle string input.
+} else if (type === 'number') {
+  // Handle numeric input.
+} else {
+  logToConsole('Unsupported input type: ', type);
+}
+
+```
+
+**Parameters**
+
+| Parameter   | Type  | Description  |
+| ----------- | ----- | ------------ |
+| **`value`** | _any_ | Input value. |
+
+## `makeInteger` <a href="makeinteger" id="makeinteger"></a>
+
+Converts the given value to a **number** (integer).
+
+**Syntax**
+
+```
+makeInteger(value);
+```
+
+**Parameters**
+
+| Parameter   | Type       | Description           |
+| ----------- | ---------- | --------------------- |
+| **`value`** | _any type_ | The value to convert. |
+
+## `makeNumber` <a href="makenumber" id="makenumber"></a>
+
+Converts the given value to a **number**.
+
+**Syntax**
+
+```
+makeNumber(value);
+```
+
+**Parameters**
+
+| Parameter   | Type       | Description           |
+| ----------- | ---------- | --------------------- |
+| **`value`** | _any type_ | The value to convert. |
+
+## `makeString` <a href="makestring" id="makestring"></a>
+
+Returns the given value as a **string**.
+
+**Syntax**
+
+```
+makeString(value);
+```
+
+**Parameters**
+
+| Parameter   | Type       | Description           |
+| ----------- | ---------- | --------------------- |
+| **`value`** | _any type_ | The value to convert. |
+
+## `parseUrl` <a href="parseurl" id="parseurl"></a>
+
+Returns an object that contains all of a given URL's component parts, similar to the `URL` object.
+
+This API will return `undefined` for any malformed URL. For properly formatted URLs, fields not present in the URL string will have a value of an empty string, or in the case of `searchParams`, an empty object.
+
+The returned object will have the following fields:
+
+```
+{  
+    href: string,  
+    origin: string, 
+    protocol: string,  
+    username: string,  
+    password: string,  
+    host: string,  
+    hostname: string,  
+    port: string,  
+    pathname: string,  
+    search: string,  
+    searchParams: Object<string, (string|Array)>,  
+    hash: string,
+}
+```
+
+**Syntax**
+
+```
+parseUrl(url);
+```
+
+**Example**
+
+```
+const parseUrl = require('parseUrl');const urlObject = parseUrl('https://abc:xyz@example.com:8080/foo?param=val%2Cue#bar');
+```
+
+**Parameters**
+
+| Parameter | Type     | Description                       |
+| --------- | -------- | --------------------------------- |
+| **`url`** | _string_ | The full url that will be parsed. |
+
+## `sha256` <a href="sha256" id="sha256"></a>
+
+Calculates the SHA-256 digest of the input and invokes a callback with the digest encoded in base64, unless the `options` object specifies a different output encoding.
+
+This API signature and behavior matches the [`sha256`](https://developers.google.com/tag-platform/tag-manager/templates/api#sha256) API for web containers; however, Custom Templates in server containers should use the [`sha256Sync`](https://developers.google.com/tag-platform/tag-manager/server-side/api#sha256sync) API for simpler code.
+
+**Syntax**
+
+```
+sha256(input, onSuccess, options = undefined);
+```
+
+**Example**
+
+```
+const encodeUriComponent = require('encodeUriComponent');const sendHttpGet = require('sendHttpGet');const sha256 = require('sha256');sha256('inputString', (digest) => {  sendHttpGet('https://example.com/collect?id=' + encodeUriComponent(digest));});sha256('inputString', (digest) => {  sendHttpGet('https://example.com/collect?id=' + encodeUriComponent(digest));}, {outputEncoding: 'hex'});
+```
+
+**Parameters**
+
+| Parameter       | Type       | Description                                                                                                                                                        |
+| --------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`input`**     | _string_   | The string to hash.                                                                                                                                                |
+| **`onSuccess`** | _function_ | Called with the resulting digest, encoded in base64, unless the `options` object specifies a different output encoding.                                            |
+| **`options`**   | _object_   | _Optional_ options object to specify the output encoding. If specified, the object should contain the key `outputEncoding` with value as one of `base64` or `hex`. |
+
+## `sha256Sync` <a href="sha256sync" id="sha256sync"></a>
+
+Calculates and returns the SHA-256 digest of the input, encoded in base64, unless the `options` object specifies a different output encoding.
+
+**Syntax**
+
+```
+sha256Sync(input, options = undefined);
+```
+
+**Example**
+
+```
+const encodeUriComponent = require('encodeUriComponent');const sendHttpGet = require('sendHttpGet');const sha256Sync = require('sha256Sync');const digestBase64 = sha256Sync('inputString');const digestHex = sha256Sync('inputString', {outputEncoding: 'hex'});sendHttpGet('https://example.com/collect?id=' + encodeUriComponent(digestBase64));sendHttpGet('https://example.com/collect?id=' + encodeUriComponent(digestHex));
+```
+
+**Parameters**
+
+| Parameter     | Type     | Description                                                                                                                                                        |
+| ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`input`**   | _string_ | The string to hash.                                                                                                                                                |
+| **`options`** | _object_ | _Optional_ options object to specify the output encoding. If specified, the object should contain the key `outputEncoding` with value as one of `base64` or `hex`. |
+
+## `toBase64` <a href="tobase64" id="tobase64"></a>
+
+Encodes a string as base64.
+
+**Syntax**
+
+```
+toBase64(input);
+```
+
+**Example**
+
+```
+const toBase64 = require('toBase64');const base64Hello = toBase64('hello');
+```
+
+**Parameters**
+
+| Parameter   | Type     | Description       |
+| ----------- | -------- | ----------------- |
+| **`input`** | _string_ | String to encode. |
+
 ## `JSON` <a href="json" id="json"></a>
 
 Returns an object that provides JSON functions.
