@@ -639,6 +639,7 @@ cact('trigger','view_item_list', {
 | `id`                 | `string` | **Yes**  | 845454         | User's id                                                                                                                                           |
 | `email`              | `string` | Yes\*    | toto.domain.fr | <p>User's email<br>(*)<code>email</code> or is required if <code>id</code> is not set</p>                                                           |
 | `consent_categories` | `Array`  | Yes\*    | \[1,3,4]       | <p>Consent categories of the user, to be allowed to share the event with partners.</p><p>(*) Automatically filled if you use Commanders Act CMP</p> |
+| `phone`              | `string (E164 standard)` | No\*    | +33662489652 | <p>User's phone number<br>(*)<code>phone</code> is required for some destinations. </p>      
 
 ## - ENUMERATED VALUE -
 
