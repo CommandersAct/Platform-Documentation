@@ -170,7 +170,7 @@ const body = {
 };
 ```
 
-## `getCookieValues` <a href="getcookievalues" id="getcookievalues"></a>
+## `getCookieValues` (WIP) <a href="getcookievalues" id="getcookievalues"></a>
 
 Returns an array containing the values of all cookies with the given name.
 
@@ -223,7 +223,7 @@ const referrer = getEventData('page_referrer');
 | ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`keyPath`** | _any_ | The path of the key, where path components are separated by dots. The path components can be keys in an object or indices in an array. If `keyPath` is not a string, it is coerced into a string. |
 
-## `getRemoteAddress` <a href="getremoteaddress" id="getremoteaddress"></a>
+## `getRemoteAddress` (WIP) <a href="getremoteaddress" id="getremoteaddress"></a>
 
 Returns a **string** representation of the IP address where the request originated, e.g. `62.123.65.780` for IPv4 or `2001:0db8:85a3:0:0:8a2e:0370:1234` for IPv6
 
