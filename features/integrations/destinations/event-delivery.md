@@ -29,7 +29,7 @@ You can debug immediately errors encountered thanks to the description of the er
 
 ## Alerting
 
-You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 60% of your events delivered, you can set an alert and be alerted).&#x20;
+You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 60% of your events delivered, you can set an alert and be alerted). You will be alerted as soon as the event occurs and you can define a reminder: every hour, every day, every week. Of course,
 
 You can receive an email alert and, later, we will add more channels like platform notification or webhook to configure your own alerts on your tools like Slack.
 
