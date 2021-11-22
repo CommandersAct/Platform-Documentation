@@ -56,6 +56,7 @@
   * [Welcome banner for new customers](use-cases/engage-new-customers/welcome-banner-for-new-customers.md)
   * [Real-time promotion for hesitant customers](use-cases/engage-new-customers/real-time-promotion-for-hesitant-customers.md)
   * [Discount banner for installing the application](use-cases/engage-new-customers/discount-banner-for-installing-the-application.md)
+  * [Personalized ads](use-cases/engage-new-customers/personalized-ads.md)
   * [Engage similar audience (lookalike)](use-cases/engage-new-customers/engage-similar-audience-lookalike.md)
 * [Increase loyalty](use-cases/increase-loyalty.md)
 * [Increase revenue](use-cases/increase-revenue.md)
