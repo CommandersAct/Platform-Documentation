@@ -52,6 +52,13 @@
   * [Untitled](use-cases/customer-analysis/untitled.md)
 * [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
   * [Untitled](use-cases/campaigns-analysis/untitled.md)
+* [Engage new customers](use-cases/engage-new-customers/README.md)
+  * [Banner for new customers](use-cases/engage-new-customers/banner-for-new-customers.md)
+  * [Engage hesitant customers](use-cases/engage-new-customers/engage-hesitant-customers.md)
+* [Increase loyalty](use-cases/increase-loyalty.md)
+* [Increase revenue](use-cases/increase-revenue.md)
+* [Retain customers](use-cases/retain-customers.md)
+* [Advocacy](use-cases/advocacy.md)
 
 ## Developers
 
