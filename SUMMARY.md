@@ -60,6 +60,7 @@
   * [Engage similar audience (lookalike)](use-cases/engage-new-customers/engage-similar-audience-lookalike.md)
 * [Increase loyalty](use-cases/increase-loyalty/README.md)
   * [Drive to favourite store](use-cases/increase-loyalty/drive-to-favourite-store.md)
+  * [Increase Customer Lifetime Value with a loyalty program](use-cases/increase-loyalty/increase-customer-lifetime-value-with-a-loyalty-program.md)
 * [Increase revenue](use-cases/increase-revenue.md)
 * [Retain customers](use-cases/retain-customers.md)
 * [Advocacy](use-cases/advocacy.md)
