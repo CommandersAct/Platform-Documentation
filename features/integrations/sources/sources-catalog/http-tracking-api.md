@@ -10,7 +10,7 @@ The HTTP Tracking API lets you record data from any website or application. Requ
 
 Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
 
-#### Content-Type <a href="content-type" id="content-type"></a>
+#### Content-Type <a href="#content-type" id="content-type"></a>
 
 To send data to our HTTP API, a content-type header must be set to `'application/json'`.
 
@@ -22,7 +22,7 @@ We presently return a 200 response for all API requests, thus debugging should b
 
 There is no real rate limit above which the system will discard your data. But if you need to import at a rate faster than **500 requests per second**, please [contact us](mailto:support@commandersact.com) beforehand.
 
-## Event API <a href="track" id="track"></a>
+## Event API <a href="#track" id="track"></a>
 
 You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties.&#x20;
 
@@ -51,7 +51,7 @@ POST  https://api.commander1.com/v2/{siteId}/events
     "ip": "108.0.78.21", 
     "cookies":"fbp=123; fbc=456; _ga=GA1.3.593276215.1565602323"
  },
- "eventTimestamp": "2015-12-12T19:11:01.249Z"
+ "eventTimestamp": "1639044446636"
 
 }
 ```
