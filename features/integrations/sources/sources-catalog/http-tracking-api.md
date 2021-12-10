@@ -31,7 +31,7 @@ You should keep track of activities that are indications of your app's performan
 Example `event` call:
 
 ```c
-POST  https://api.commander1.com/v2/{siteId}/events
+POST  https://collect.commander1.com/events?tc_s={siteId}
 ```
 
 ```json
