@@ -37,7 +37,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 ```json
 {
   "event": "search",
-  "event_Id": "202110130000000000"
+  "event_id": "202110130000000000"
   "properties": {
       "search_term": "t-shirts", 
       "user": {
