@@ -1,6 +1,6 @@
 # Events reference
 
-## add\_payment\_info <a href="add_payment_info" id="add_payment_info"></a>
+## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
 
 This event signifies a user has submitted their payment information
 
@@ -29,7 +29,7 @@ cact('trigger','add_payement_info', {
 
 This event signifies a user has submitted their shipping information.
 
-#### Parameters <a href="parameters_2" id="parameters_2"></a>
+#### Parameters <a href="#parameters_2" id="parameters_2"></a>
 
 | Name            | Type                                      | Required | Example value | Description                                                                                                                                                                                                                                                                               |
 | --------------- | ----------------------------------------- | -------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -113,7 +113,7 @@ cact('trigger','add_to_wishlist', {
 });
 ```
 
-## begin\_checkout <a href="begin_checkout" id="begin_checkout"></a>
+## begin\_checkout <a href="#begin_checkout" id="begin_checkout"></a>
 
 This event signifies that a user has begun a checkout.
 
@@ -178,7 +178,7 @@ cact('trigger','begin_checkout', {
 })
 ```
 
-## generate\_lead <a href="generate_lead" id="generate_lead"></a>
+## generate\_lead <a href="#generate_lead" id="generate_lead"></a>
 
 Log this event when a lead has been generated to understand the efficacy of your re-engagement campaigns.
 
@@ -200,11 +200,11 @@ cact('trigger','generate_lead', {
 });
 ```
 
-## login <a href="login" id="login"></a>
+## login <a href="#login" id="login"></a>
 
 Send this event to signify that a user has logged in.
 
-#### Parameters <a href="parameters_14" id="parameters_14"></a>
+#### Parameters <a href="#parameters_14" id="parameters_14"></a>
 
 | Name     | Type     | Required | Example  | Description               |
 | -------- | -------- | -------- | -------- | ------------------------- |
@@ -218,7 +218,7 @@ cact('login', {
 });
 ```
 
-## page\_view <a href="page_view" id="page_view"></a>
+## page\_view <a href="#page_view" id="page_view"></a>
 
 The `page_view` call lets you record whenever a user sees a page of your website, along with any optional properties about the page.
 
@@ -251,7 +251,7 @@ cact('trigger','page_view', {
 
 Fire this event when one or more items are purchased by a user.
 
-#### Parameters **(required and recommended)** <a href="parameters_17" id="parameters_17"></a>
+#### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
 | Name              | Type                                       | Required | Example                                                                                                                                                       | Description                                                                                                                                                                                                                                                     |
 | ----------------- | ------------------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -332,7 +332,7 @@ cact('trigger','purchase', {
 
 Fire this event when a purchase was refund
 
-#### Parameters **(required and recommended)** <a href="parameters_17" id="parameters_17"></a>
+#### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
 | Name              | Type                                       | Required | Example                                                                                                                                                       | Description                                                                                                                                                                                        |
 | ----------------- | ------------------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -368,7 +368,7 @@ cact('trigger','refund', {
 })
 ```
 
-## remove\_from\_to\_cart
+## remove\_from\_cart
 
 This event signifies that an item was removed from a cart.
 
@@ -409,13 +409,13 @@ cact('trigger','remove_from_cart', {
 
 Use this event to contextualize search operations. This event can help you identify the most popular content in your app.
 
-#### Parameters <a href="parameters_21" id="parameters_21"></a>
+#### Parameters <a href="#parameters_21" id="parameters_21"></a>
 
 | Name          | Type     | Required | Example value | Description                     |
 | ------------- | -------- | -------- | ------------- | ------------------------------- |
 | `search_term` | `string` | **Yes**  | t-shirts      | The term that was searched for. |
 
-#### Example <a href="example_30" id="example_30"></a>
+#### Example <a href="#example_30" id="example_30"></a>
 
 ```javascript
 cact('trigger','search', {
@@ -427,14 +427,14 @@ cact('trigger','search', {
 
 This event signifies that a user has selected some content of a certain type. This event can help you identify popular content and categories of content in your app or click on internal promotion.
 
-#### Parameters <a href="parameters_22" id="parameters_22"></a>
+#### Parameters <a href="#parameters_22" id="parameters_22"></a>
 
 | Name           | Type     | Required | Example value | Description                                   |
 | -------------- | -------- | -------- | ------------- | --------------------------------------------- |
 | `content_type` | `string` | No       | product       | The type of selected content.                 |
 | `item_id`      | `string` | No       | I\_12345      | An identifier for the item that was selected. |
 
-#### Example <a href="example_32" id="example_32"></a>
+#### Example <a href="#example_32" id="example_32"></a>
 
 ```javascript
 cact('trigger','select_content', {
@@ -447,7 +447,7 @@ cact('trigger','select_content', {
 
 This event signifies an item was selected from a list.
 
-#### Parameters <a href="parameters_23" id="parameters_23"></a>
+#### Parameters <a href="#parameters_23" id="parameters_23"></a>
 
 | Name             | Type                                      | Required | Example value    | Description                                                                                                      |
 | ---------------- | ----------------------------------------- | -------- | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -478,11 +478,11 @@ cact('trigger','select_item', {
 });
 ```
 
-## sign\_up <a href="sign_up" id="sign_up"></a>
+## sign\_up <a href="#sign_up" id="sign_up"></a>
 
 This event indicates that a user has signed up for an account.
 
-#### Parameters **(required and recommended)** <a href="parameters_27" id="parameters_27"></a>
+#### Parameters **(required and recommended)** <a href="#parameters_27" id="parameters_27"></a>
 
 | Name     | Type     | Required | Example  | Description                  |
 | -------- | -------- | -------- | -------- | ---------------------------- |
@@ -549,7 +549,7 @@ This event signifies that some content was shown to the user. Use this event to 
 
 Log this event when the user has been presented with a list of items of a certain category.
 
-#### Parameters <a href="parameters_35" id="parameters_35"></a>
+#### Parameters <a href="#parameters_35" id="parameters_35"></a>
 
 | Name             | Type                                      | Required | Example value    | Description                                                       |
 | ---------------- | ----------------------------------------- | -------- | ---------------- | ----------------------------------------------------------------- |
@@ -603,7 +603,7 @@ cact('trigger','view_item_list', {
 
 ### Item
 
-#### Parameters **(required and recommended)** <a href="parameters_27" id="parameters_27"></a>
+#### Parameters **(required and recommended)** <a href="#parameters_27" id="parameters_27"></a>
 
 | Name            | Type                                             | Required | Example Value | Description                                                                                                                                            |
 | --------------- | ------------------------------------------------ | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -632,14 +632,14 @@ cact('trigger','view_item_list', {
 
 ### User
 
-#### Parameters **(required and recommended)** <a href="parameters_17" id="parameters_17"></a>
+#### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
-| Name                 | Type     | Required | Example Value  | Description                                                                                                                                         |
-| -------------------- | -------- | -------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | `string` | **Yes**  | 845454         | User's id                                                                                                                                           |
-| `email`              | `string` | Yes\*    | toto.domain.fr | <p>User's email<br>(*)<code>email</code> or is required if <code>id</code> is not set</p>                                                           |
-| `consent_categories` | `Array`  | Yes\*    | \[1,3,4]       | <p>Consent categories of the user, to be allowed to share the event with partners.</p><p>(*) Automatically filled if you use Commanders Act CMP</p> |
-| `phone`              | `string (E164 standard)` | No\*    | +33662489652 | <p>User's phone number<br>(*)<code>phone</code> is required for some destinations. </p>      
+| Name                 | Type                     | Required | Example Value  | Description                                                                                                                                         |
+| -------------------- | ------------------------ | -------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`                 | `string`                 | **Yes**  | 845454         | User's id                                                                                                                                           |
+| `email`              | `string`                 | Yes\*    | toto.domain.fr | <p>User's email<br>(*)<code>email</code> or is required if <code>id</code> is not set</p>                                                           |
+| `consent_categories` | `Array`                  | Yes\*    | \[1,3,4]       | <p>Consent categories of the user, to be allowed to share the event with partners.</p><p>(*) Automatically filled if you use Commanders Act CMP</p> |
+| `phone`              | `string (E164 standard)` | No\*     | +33662489652   | <p>User's phone number<br>(*)<code>phone</code> is required for some destinations.</p>                                                              |
 
 ## - ENUMERATED VALUE -
 
