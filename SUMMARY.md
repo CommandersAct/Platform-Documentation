@@ -62,7 +62,10 @@
   * [Drive to favourite store](use-cases/increase-loyalty/drive-to-favourite-store.md)
   * [Increase Customer Lifetime Value with a loyalty program](use-cases/increase-loyalty/increase-customer-lifetime-value-with-a-loyalty-program.md)
   * [Notification about order delay](use-cases/increase-loyalty/notification-about-order-delay.md)
-* [Increase revenue](use-cases/increase-revenue.md)
+* [Increase revenue](use-cases/increase-revenue/README.md)
+  * [Abandoned cart](use-cases/increase-revenue/abandoned-cart.md)
+  * [Products recommendations](use-cases/increase-revenue/products-recommendations.md)
+  * [Complementary product offer](use-cases/increase-revenue/complementary-product-offer.md)
 * [Retain customers](use-cases/retain-customers.md)
 * [Advocacy](use-cases/advocacy.md)
 

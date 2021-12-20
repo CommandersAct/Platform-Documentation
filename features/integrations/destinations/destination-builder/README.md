@@ -2,7 +2,7 @@
 
 If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.&#x20;
 
-The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API) or with a _javascript sandbox _aproach :
+The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API) or with a _javascript sandbox_ aproach :
 
 * Webhook/API destination builder
 * FTP destination builder

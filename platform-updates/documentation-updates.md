@@ -11,6 +11,6 @@ description: The latest updates made to our documentation articles
 
 ## August updates
 
-* **MixCommander **: 
-  * Add _new customer _metric description in [metrics page](../features/data-quality.md)
+* **MixCommander** :&#x20;
+  * Add _new customer_ metric description in [metrics page](../features/data-quality.md)
 

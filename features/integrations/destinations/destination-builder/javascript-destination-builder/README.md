@@ -1,6 +1,6 @@
 # Javascript destination builder
 
-For more advanced users, we propose to create custom destinations using server-side **javascript **(aka Node.js), but with a simplified subset of Node.js : the _Sandboxed Javascript_.
+For more advanced users, we propose to create custom destinations using server-side **javascript** (aka Node.js), but with a simplified subset of Node.js : the _Sandboxed Javascript_.
 
 ## Sandboxed Javascript
 
