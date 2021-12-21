@@ -66,7 +66,10 @@
   * [Abandoned cart](use-cases/increase-revenue/abandoned-cart.md)
   * [Products recommendations](use-cases/increase-revenue/products-recommendations.md)
   * [Complementary product offer](use-cases/increase-revenue/complementary-product-offer.md)
-* [Retain customers](use-cases/retain-customers.md)
+* [Retain customers](use-cases/retain-customers/README.md)
+  * [Identify a churn risk with RFM segmentation](use-cases/retain-customers/identify-a-churn-risk-with-rfm-segmentation.md)
+  * [Identify customers’ preferred channel](use-cases/retain-customers/identify-customers-preferred-channel.md)
+  * [Contact with the customer support](use-cases/retain-customers/contact-with-the-customer-support.md)
 * [Advocacy](use-cases/advocacy.md)
 
 ## Developers
