@@ -70,7 +70,10 @@
   * [Identify a churn risk with RFM segmentation](use-cases/retain-customers/identify-a-churn-risk-with-rfm-segmentation.md)
   * [Identify customers’ preferred channel](use-cases/retain-customers/identify-customers-preferred-channel.md)
   * [Contact with the customer support](use-cases/retain-customers/contact-with-the-customer-support.md)
-* [Advocacy](use-cases/advocacy.md)
+* [Advocacy](use-cases/advocacy/README.md)
+  * [Incentive to share customers' experience and rating](use-cases/advocacy/incentive-to-share-customers-experience-and-rating.md)
+  * [Sponsorship Program](use-cases/advocacy/sponsorship-program.md)
+  * [Social Media Hashtag](use-cases/advocacy/social-media-hashtag.md)
 
 ## Developers
 
