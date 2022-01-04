@@ -6,7 +6,7 @@ Overview on the Commanders Act onsite API.
 
 The onsite API is used to interact with Commanders Act features with JavaScript.
 
-## How to use <a href="how-to-use" id="how-to-use"></a>
+## How to use <a href="#how-to-use" id="how-to-use"></a>
 
 The onsite API consists of a single function, `cact()`, with the following strict signature:
 
@@ -23,21 +23,21 @@ cact(command, [options,], [config,], [callback])
 
 Onsite API is included in each containers and privacy banners.
 
-## Send event <a href="send-event" id="send-event"></a>
+## Send event <a href="#send-event" id="send-event"></a>
 
 To send event data to the serverside Commanders Act platform, use this command:
 
 ```
-cact('<event_name>', {<event_params>});
+cact('trigger', '<event_name>', {<event_params>});
 ```
 
 Example : to send a purchase event :
 
 ```
-cact('purchase', {   id:'1234',  currency: 'EUR',  //...});
+cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...});
 ```
 
-## Get information <a href="get-information" id="get-information"></a>
+## Get information <a href="#get-information" id="get-information"></a>
 
 To get various values from Commanders Act, use this command:
 
@@ -53,7 +53,7 @@ cact('consent.get', function(result) {    if (result.consent.status === "all-on"
 
 The onsite API methods are called asynchronously. In case e.g. you need information synchronous in the `<head>` of the document it is recommended to cache and retrieve the result of the API in `localStorage`.
 
-## Error handling <a href="error-handling" id="error-handling"></a>
+## Error handling <a href="#error-handling" id="error-handling"></a>
 
 You can handle errors through error property in the callback object. Example:
 
@@ -61,7 +61,7 @@ You can handle errors through error property in the callback object. Example:
 cact('consent.get', function(result) {​    if (result.error) {            // Manage the error        }    else if (result.consent.status === "all-on") {                // Consent available for all categories.            }});
 ```
 
-## API Stub (optional) <a href="api-stub-optional" id="api-stub-optional"></a>
+## API Stub (optional) <a href="#api-stub-optional" id="api-stub-optional"></a>
 
 For advance usage, we provide also an API stub that can be added when you need to interact with the API before containers or banners have loaded. This stub is already included in containers and privacy banners, so you do not have to add in most use cases. The stub is used to buffer all methods in a JavaScript array until Commanders Act JavaScript is loaded and ready to process the methods. This allows for example to use the onsite API before TrustCommander JavaScript was loaded.
 
