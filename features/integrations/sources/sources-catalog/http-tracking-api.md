@@ -36,8 +36,9 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 
 ```json
 {
-  "event": "search",
-  "event_id": "202110130000000000"
+  "event_name": "search",
+  "event_id": "202110130000000000",
+  "event_timestamp": 1639044446636,
   "properties": {
       "search_term": "t-shirts", 
       "user": {
@@ -49,10 +50,8 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
   "device": {
    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
     "ip": "108.0.78.21", 
-    "cookies":"fbp=123; fbc=456; _ga=GA1.3.593276215.1565602323"
- },
- "event_timestamp": "1639044446636"
-
+    "cookie":"fbp=123; fbc=456; _ga=GA1.3.593276215.1565602323"
+ }
 }
 ```
 
