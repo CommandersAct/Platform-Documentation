@@ -51,7 +51,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
     "location": "https://shop.com/search?q=..."
   },
   "device": {
-   "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
     "ip": "102.3.4.56", 
     "cookie":"_fbp=123; _fbc=456; _ga=789"
  }
