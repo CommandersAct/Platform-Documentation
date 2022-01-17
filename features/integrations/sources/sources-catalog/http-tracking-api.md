@@ -47,10 +47,13 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
           "consent_categories": [1,3]
       }
   },
+  "page": {
+    "location": "https://shop.com/search?q=..."
+  },
   "device": {
    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
-    "ip": "108.0.78.21", 
-    "cookie":"fbp=123; fbc=456; _ga=GA1.3.593276215.1565602323"
+    "ip": "102.3.4.56", 
+    "cookie":"_fbp=123; _fbc=456; _ga=789"
  }
 }
 ```
