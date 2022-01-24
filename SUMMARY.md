@@ -87,7 +87,3 @@
   * [Data API](developers/tracking/data-api/README.md)
     * [Http tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
 * [Config API](developers/config-api.md)
-
-***
-
-* [todo](todo.md)
