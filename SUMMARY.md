@@ -9,6 +9,7 @@
 
 ## Getting started
 
+* [Lexical](getting-started/lexical.md)
 * [Platform interface](getting-started/....md)
 * [Integrating your data](getting-started/integrating-your-data.md)
 
