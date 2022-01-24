@@ -23,6 +23,7 @@
     * [Add destination](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
       * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
+      * [Google Enhanced Conversion](features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
       * [Awin](features/integrations/destinations/destinations-catalog/awin.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
