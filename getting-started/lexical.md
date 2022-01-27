@@ -1,6 +1,6 @@
 # Lexical
 
-Our market and solution use many technic concepts, but our goal is also to democratize and explicate these technologies to all.
+Our market and solution use many technical concepts, but our goal is also to democratize and explicate these notions to all.
 
 ### **Cookie first**
 
