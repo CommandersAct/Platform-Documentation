@@ -22,16 +22,22 @@ A server-side cookie (session) is a unique Session Identifier stored on the brow
 
 Intelligent Tracking Prevention is a feature on browser Safari (Apple) to restrict the use of cookies to track consumers.
 
-### Public cloud:
+### Public cloud
 
 With public cloud, companies don't have to purchase, manage and maintain heavy and expensive infrastructures. All of this is managed by third-party providers, and companies only pay for what they consume.&#x20;
 
-### ETL capabilities:
+### ETL capabilities
 
 An ETL (Extract - Transform - Load) is a system that can extract the data from a source, transform the data (normalization, cleaning...) and load, insert the data to a destination.
 
-* Normalized datalayer:
-* Augmented datalayer:
+### Normalized data layer
+
+A normalized data layer refers to ready-to-use data: after collection and normalization, the data quality is ensured, data is clean and ready to be sent to destinations.
+
+### Augmented data layer
+
+From collected data, it is possible to enrich the data layer with computed data: create new properties from existing properties to create a sum, count, average, ratio... This allows to create high value properties to send to destinations for a better segmentation or personalization.
+
 * Enrichment:
 * Identity resolution:
 
