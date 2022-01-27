@@ -22,8 +22,14 @@ A server-side cookie (session) is a unique Session Identifier stored on the brow
 
 Intelligent Tracking Prevention is a feature on browser Safari (Apple) to restrict the use of cookies to track consumers.
 
-* Public cloud:
-* ETL capabilities:
+### Public cloud:
+
+With public cloud, companies don't have to purchase, manage and maintain heavy and expensive infrastructures. All of this is managed by third-party providers, and companies only pay for what they consume.&#x20;
+
+### ETL capabilities:
+
+An ETL (Extract - Transform - Load) is a system that can extract the data from a source, transform the data (normalization, cleaning...) and load, insert the data to a destination.
+
 * Normalized datalayer:
 * Augmented datalayer:
 * Enrichment:
