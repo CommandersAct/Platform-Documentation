@@ -43,5 +43,7 @@ For example, it is possible to count the total value of purchases per user or th
 
 When an event is collected, it is possible to enrich it from stored data to add more information on the event before to send it to destinations. For example, a purchase event can be enriched with data coming from CRM, like hashed email address or any other relevant information. It can also be enriched with information coming from the product catalog, from the product ID we can add product details, color, weight, materials...
 
-* Identity resolution:
+### Identity resolution
+
+The goal of Identity resolution is to create a unified customer profile, whatever devices (desktop, mobile) or channels used (online and offline). To achieve this goal, we built a real-time proprietary reconciliation algorithm to create the complete view of customers.&#x20;
 
