@@ -216,6 +216,8 @@ Send this event to signify that a user has logged in.
 | Name     | Type     | Required | Example  | Description               |
 | -------- | -------- | -------- | -------- | ------------------------- |
 | `method` | `string` | No       | LinkedIn | The method used to login. |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
+
 
 **Example**
 
@@ -233,10 +235,12 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 | Name   | Type     | Required | Example Value               | Description                                                                                                                                                                                                                                                                                                                                                          |
 | ------ | -------- | -------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type` | `string` | **Yes**  | product\_list               | <p>Page category. Recommanded predefined types:</p><ul><li>home</li><li>landing</li><li>product_list</li><li>product</li><li>content_list</li><li>content</li><li>search</li><li>funnel</li><li>success</li><li>funnel_confirmation</li><li>account</li><li>cart</li><li>legal (e.g. Privacy Policy)</li></ul><p>Equivalent to <code>tc_vars.env_template</code></p> |
-| `name` | `string` | No       | Suggestion for Mother's Day | Name of the page.                                                                                                                                                                                                                                                                                                                                                    |
+| `page_type` | `string` | **Yes**  | product\_list               | <p>Page category. Recommanded predefined types:</p><ul><li>home</li><li>landing</li><li>product_list</li><li>product</li><li>content_list</li><li>content</li><li>search</li><li>funnel</li><li>success</li><li>funnel_confirmation</li><li>account</li><li>cart</li><li>legal (e.g. Privacy Policy)</li></ul><p>Equivalent to <code>tc_vars.env_template</code></p> |
+| `page_name` | `string` | No       | Suggestion for Mother's Day | Name of the page.                                                                                                                                                                                                                                                                                                                                                    |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
 
-**Automatically added parameters by cact API**
+
+**Automatically added parameters by cact API for web sources**
 
 | Name       | Type     | Required | Example Value                                    | Description                                                                                                                                 |
 | ---------- | -------- | -------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -385,6 +389,7 @@ This event signifies that an item was removed from a cart.
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p>                                                           |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
 **Example**
@@ -421,6 +426,8 @@ Use this event to contextualize search operations. This event can help you ident
 | Name          | Type     | Required | Example value | Description                     |
 | ------------- | -------- | -------- | ------------- | ------------------------------- |
 | `search_term` | `string` | **Yes**  | t-shirts      | The term that was searched for. |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
+
 
 #### Example <a href="#example_30" id="example_30"></a>
 
@@ -440,6 +447,8 @@ This event signifies that a user has selected some content of a certain type. Th
 | -------------- | -------- | -------- | ------------- | --------------------------------------------- |
 | `content_type` | `string` | No       | product       | The type of selected content.                 |
 | `item_id`      | `string` | No       | I\_12345      | An identifier for the item that was selected. |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
+
 
 #### Example <a href="#example_32" id="example_32"></a>
 
@@ -494,6 +503,8 @@ This event indicates that a user has signed up for an account.
 | Name     | Type     | Required | Example  | Description                  |
 | -------- | -------- | -------- | -------- | ---------------------------- |
 | `method` | `string` | No       | Facebook | The method used for sign up. |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
+
 
 **Example**
 
@@ -513,6 +524,7 @@ This event signifies that a user viewed their cart.
 | ---------- | ----------------------------------------- | -------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `value`    | `number`                                  | No       | 8.00          | <p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p>                                                           |
 | `currency` | `string (ISO 4217)`                       | No       | EUR           | <p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p> |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**  |               | The items for the event.                                                                                                                                                                                                                                             |
 
 **Example**
@@ -550,6 +562,7 @@ This event signifies that some content was shown to the user. Use this event to 
 | ---------- | ----------------------------------------- | --------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `revenue`  | `number`                                  | **Yes**\* | 9.99          | <p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p> |
 | `currency` | `string (ISO 4217)`                       | **Yes\*** | EUR           | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.                                                                                                                      |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
 | `items`    | [`Array<Item>`](events-reference.md#item) | **Yes**   |               | The items for the event.                                                                                                                                                                                       |
 
 ## view\_item\_list
@@ -561,6 +574,7 @@ Log this event when the user has been presented with a list of items of a certai
 | Name             | Type                                      | Required | Example value    | Description                                                       |
 | ---------------- | ----------------------------------------- | -------- | ---------------- | ----------------------------------------------------------------- |
 | `item_list_name` | `string`                                  | No       | Related products | The name of the list in which the item was presented to the user. |
+| `user`            | [`Object<User>`](events-reference.md#user) | Yes*  | <p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p> | <p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p>  <p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p>                               |
 | `items`          | [`Array<Item>`](events-reference.md#item) | **Yes**  |                  | The items for the event.                                          |
 
 **Example**
