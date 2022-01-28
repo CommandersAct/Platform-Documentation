@@ -38,6 +38,9 @@ A normalized data layer refers to ready-to-use data: after collection and normal
 
 From collected data, it is possible to enrich the data layer with computed data: create new properties from existing properties to create a sum, count, average, ratio... This allows to create high value properties to send to destinations for a better segmentation or personalization.
 
-* Enrichment:
+### Enrichment
+
+When an event is collected, it is possible to enrich it from stored data to add more information on the event before to send it to destinations. For example, a purchase event can be enriched with data coming from CRM, like hashed email address or any other relevant information. It can also be enriched with information coming from the product catalog, from the product ID we can add product details, color, weight, materials...
+
 * Identity resolution:
 
