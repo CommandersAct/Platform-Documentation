@@ -21,7 +21,7 @@
     * [Sources catalog](features/integrations/sources/sources-catalog/README.md)
       * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)
   * [Destinations](features/integrations/destinations/README.md)
-    * [Add destination](features/integrations/destinations/add-destination.md)
+    * [Destinations overview](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
       * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
       * [Google Enhanced Conversion](features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
