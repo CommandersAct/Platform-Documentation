@@ -36,7 +36,8 @@ A normalized data layer refers to ready-to-use data: after collection and normal
 
 ### Augmented data layer
 
-From collected data, it is possible to enrich the data layer with computed data: create new properties from existing properties to create a sum, count, average, ratio... This allows to create high value properties to send to destinations for a better segmentation or personalization.
+From collected data, it is possible to enrich the data layer with computed data: create new properties from existing properties to create a sum, count, average, ratio... This allows to create high value properties to send to destinations for a better segmentation or personalization.\
+For example, it is possible to count the total value of purchases per user or the average basket value per user.
 
 ### Enrichment
 
