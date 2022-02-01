@@ -141,7 +141,7 @@ cact('trigger','begin_checkout', {
   revenue: 16.00,
   value: 20.33,
   currency: 'EUR',
-  user: { 
+  user: {
     id: '12356',
     email:'toto@domain.fr'
   },
@@ -253,7 +253,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 ```javascript
 cact('trigger','page_view', {
-  type: 'product_list', 
+  type: 'product_list',
   name: 'Best sellers'
 });
 ```
@@ -284,7 +284,6 @@ Fire this event when one or more items are purchased by a user.
 | Name                 | Type        | Required | Example  | Description                                                                                   |
 | -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | `url`                | string(url) | No       | none     | <p>URL to the website where you can buy the item</p><p>Equivalent to window.location.href</p> |
-| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added \*\*only if \*\*you use Commanders Act CMP (TrustCommander)               |
 
 **Example**
 
@@ -297,7 +296,7 @@ cact('trigger','purchase', {
   shipping_amount: 3.33,
   tax_amount: 3.20,
   currency: 'EUR',
-  user: { 
+  user: {
     id: '12356',
     email:'toto@domain.fr'
   },
@@ -655,12 +654,45 @@ cact('trigger','view_item_list', {
 
 #### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
-| Name                 | Type                     | Required | Example Value  | Description                                                                                                                                         |
-| -------------------- | ------------------------ | -------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | `string`                 | **Yes**  | 845454         | User's id                                                                                                                                           |
-| `email`              | `string`                 | Yes\*    | toto.domain.fr | <p>User's email<br>(*)<code>email</code> or is required if <code>id</code> is not set</p>                                                           |
-| `consent_categories` | `Array`                  | Yes\*    | \[1,3,4]       | <p>Consent categories of the user, to be allowed to share the event with partners.</p><p>(*) Automatically filled if you use Commanders Act CMP</p> |
-| `phone`              | `string (E164 standard)` | No\*     | +33662489652   | <p>User's phone number<br>(*)<code>phone</code> is required for some destinations.</p>                                                              |
+| Name                 | Type                     | Required | Example Value  | Description |
+| -------------------- | ------------------------ | -------- | -------------- | ------------------------------- |
+| `id`                 | `string`                 | **Yes**  | 845454         | User's id |
+| `email`              | `string`                 | Yes\*    | john.doe@example.com | <p>User's email (plain value)</p> |
+| `email_md5`          | `string`                 | Yes\*    | 8eb1b522f60d11fa897de1dc6351b7e8 | <p>User's email, hashed using [MD5 algorithm](https://en.wikipedia.org/wiki/MD5)</p> |
+| `email_sha256`       | `string`                 | Yes\*    | 836f82db99121b3481011f16b49dfa5fbc714a0d1b1b9f784a1ebbbf5b39577f | <p>User's email, hashed using [SHA-256 algorithm](https://en.wikipedia.org/wiki/SHA-2)</p> |
+| `phone`              | `string (E164 standard)` | No\*     | +33612345678   | <p>Phone number<br>(*)<code>phone</code> is required for some destinations.</p> |
+| `firstname`          | `string`                 | No       | John           | <p>First name</p> |
+| `lastname`           | `string`                 | No       | Doe            | <p>Last name</p> |
+| `gender`             | `string`                 | No       | m              | <p>Gender</p><ul><li>`f` for female</li><li>`m` for female</li></ul> |
+| `birthdate`          | `string`                 | No       | 1970-01-01     | <p>Birth date, `YYYY-MM-DD` format</p> |
+| `city`               | `string`                 | No       | Boston         | <p>City</p> |
+| `state`              | `string`                 | No       | Massachusetts  | <p>State</p> |
+| `zipcode`            | `string`                 | No       | 02108          | <p>Zip code</p> |
+| `country`            | `string`                 | No       | USA            | <p>Country code ISO 3166-1, [2-letter](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) or [3-letter](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)</p> |
+
+> **About Hashing**<br>
+> Hash algorithms (md5, sha256) should be applied on lower case strings, without leading/trailing spaces<br>
+> Sample JS code :
+> ```
+> // DON'T
+> user.email_sha256 = sha256(email)
+>
+> // DO
+> user.email_sha256 = typeof email === 'string' && sha256(email.toLowerCase().trim())
+> ```
+>
+> No need to send **plain** and **hashed** values at the same time :
+> * if you send **plain** value, no need to send **hashed** values<br>
+> *We can generate **hashed** values on server side using **plain** value*
+> * if you don't send **plain** value, you should fill as much **hashed** values as you possible<br>
+> *Partners require different hash algorithms and without **plain** value, we need the exact **hash***
+
+
+**Automatically added by cact API**
+
+| Name                 | Type        | Required | Example  | Description                                                                                   |
+| -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
+| `consent_categories` | Array       | Yes      | \[1,2,3] | <p>User's consent categories. Necessary to grant data sharing with partners.</p> |
 
 ## - ENUMERATED VALUE -
 
