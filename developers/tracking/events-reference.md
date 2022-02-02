@@ -703,6 +703,10 @@ Example :
 }
 ```
 
+> :information_source: we only support hex (base16) encoding<br>
+> *(i.e.: **hashed** values are carried by strings with [0-9a-f] characters)*<br>
+> Other encodings are not supported yet
+
 No need to send both **plain** and **hashed** values :
 * if you send **plain** value, the **hashed** values aren't necessary<br>
 *We can generate **hashed** values on server side using **plain** value*
