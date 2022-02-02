@@ -141,7 +141,7 @@ cact('trigger','begin_checkout', {
   revenue: 16.00,
   value: 20.33,
   currency: 'EUR',
-  user: { 
+  user: {
     id: '12356',
     email:'toto@domain.fr'
   },
@@ -253,7 +253,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 ```javascript
 cact('trigger','page_view', {
-  type: 'product_list', 
+  type: 'product_list',
   name: 'Best sellers'
 });
 ```
@@ -284,7 +284,6 @@ Fire this event when one or more items are purchased by a user.
 | Name                 | Type        | Required | Example  | Description                                                                                   |
 | -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | `url`                | string(url) | No       | none     | <p>URL to the website where you can buy the item</p><p>Equivalent to window.location.href</p> |
-| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added \*\*only if \*\*you use Commanders Act CMP (TrustCommander)               |
 
 **Example**
 
@@ -297,7 +296,7 @@ cact('trigger','purchase', {
   shipping_amount: 3.33,
   tax_amount: 3.20,
   currency: 'EUR',
-  user: { 
+  user: {
     id: '12356',
     email:'toto@domain.fr'
   },
@@ -653,14 +652,70 @@ cact('trigger','view_item_list', {
 
 ### User
 
+When you send an event, it needs to carry enough information to identify which user made it. We can link events together using cookies. But destination partners require accurate identifiers to take actions.
+
+`id` and `email` are usually the most useful parameters. Though some destination partners also use `firstname`, `lastname`, `birthdate`, `city`, ...
+
+You won't always have all of those parameters. But it is recommended to send them as soon as you can during user's browsing.
+
 #### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
-| Name                 | Type                     | Required | Example Value  | Description                                                                                                                                         |
-| -------------------- | ------------------------ | -------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`                 | `string`                 | **Yes**  | 845454         | User's id                                                                                                                                           |
-| `email`              | `string`                 | Yes\*    | toto.domain.fr | <p>User's email<br>(*)<code>email</code> or is required if <code>id</code> is not set</p>                                                           |
-| `consent_categories` | `Array`                  | Yes\*    | \[1,3,4]       | <p>Consent categories of the user, to be allowed to share the event with partners.</p><p>(*) Automatically filled if you use Commanders Act CMP</p> |
-| `phone`              | `string (E164 standard)` | No\*     | +33662489652   | <p>User's phone number<br>(*)<code>phone</code> is required for some destinations.</p>                                                              |
+| Name                 | Type                     | Required | Example Value  | Description |
+| -------------------- | ------------------------ | -------- | -------------- | ------------------------------- |
+| `id`                 | `string`                 | No*      | 845454         | <p>User's main identifier (e.g. CRM id)</p><p>(*) required for many destinations and internal processing.</p> |
+| `email`              | `string`                 | No*      | john.doe@example.com  | <p>Email (plain value)</p><p>(*) required for many destinations and internal processing.</p> |
+| `email_md5`          | `string`                 | No       | 8eb1b52... (size 32) | <p>Email, hashed using [MD5 algorithm](https://en.wikipedia.org/wiki/MD5)</p> |
+| `email_sha256`       | `string`                 | No       | 836f82d... (size 64) | <p>Email, hashed using [SHA-256 algorithm](https://en.wikipedia.org/wiki/SHA-2)</p> |
+| `phone`              | `string`                 | No*      | +33612345678   | <p>Phone number, [E.164](https://en.wikipedia.org/wiki/E.164) format<br>(*) required for some destinations.</p> |
+| `firstname`          | `string`                 | No       | John           | <p>First name</p> |
+| `lastname`           | `string`                 | No       | Doe            | <p>Last name</p> |
+| `gender`             | `string`                 | No       | m              | <p>Gender</p><ul><li>`f` for Female</li><li>`m` for Male</li></ul> |
+| `birthdate`          | `string`                 | No       | 1970-01-01     | <p>Birth date, `YYYY-MM-DD` format</p> |
+| `city`               | `string`                 | No       | Boston         | <p>City</p> |
+| `state`              | `string`                 | No       | Massachusetts  | <p>State</p> |
+| `zipcode`            | `string`                 | No       | 02108          | <p>Zip code</p> |
+| `country`            | `string`                 | No       | USA            | <p>Country code, ISO 3166-1 [2-letter](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) or [3-letter](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) formats</p> |
+
+
+**Automatically added by cact API**
+
+| Name                 | Type        | Required | Example  | Description                                                                                   |
+| -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
+| `consent_categories` | Array       | Yes      | \[1,2,3] | <p>User's consent categories.<br>Necessary to grant data sharing with destination partners.</p> |
+
+**About Hashing**
+
+In some cases, you won't be able to send a parameter **plain** value. It is either unavailable or restricted.
+
+Thus it might be possible to send the **hashed** values. We currently accept 2 algorithm : [`md5`](https://en.wikipedia.org/wiki/MD5) and [`sha256`](https://en.wikipedia.org/wiki/SHA-2).
+
+If you want to send a hashed value, put this in the dedicated field `<parameter>_<algorithm>`.
+
+Example :
+```
+{
+  user: {
+    email_md5: '8eb1b522f60d11fa897de1dc6351b7e8',                                      // md5('john.doe@example.com')
+    email_sha256: '836f82db99121b3481011f16b49dfa5fbc714a0d1b1b9f784a1ebbbf5b39577f',   // sha256('john.doe@example.com')
+    phone_md5: '60dd761f55cb17f0532c9fb1679e8ddd',                                      // md5('+33612345678')
+    phone_sha256: '42d573cfc315801d4cd8eddd5416b416a0bf298b9b9e12d6b07442c91db42bd8',   // sha256('+33612345678')
+  }
+}
+```
+
+> :information_source: we only support hex (base16) encoding<br>
+> *(i.e.: **hashed** values are carried by strings with [0-9a-f] characters)*<br>
+> Other encodings are not supported yet
+
+No need to send both **plain** and **hashed** values :
+* if you send **plain** value, the **hashed** values aren't necessary<br>
+*We can generate **hashed** values on server side using **plain** value*
+* if you don't send **plain** value, then you should fill as much **hashed** values as possible<br>
+*Partners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value*
+
+> :information_source: Use our **CRM imports** *(not released yet)*<br>
+> Doing so will allow you to enrich many events with additional user information.<br>
+
 
 ## - ENUMERATED VALUE -
 
