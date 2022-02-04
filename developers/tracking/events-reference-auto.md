@@ -1,5 +1,4 @@
-# Events reference
-
+# Events Reference
 
 
 ## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
@@ -658,16 +657,16 @@ cact('trigger', 'view_item_list', {
 
 
 
-
 ## Custom Event <a href="#Custom Event" id="Custom Event"></a>
 
-Un event custom, généré à partir des autres règles déjà existantes. <br>Les cellules vides dans le tableau et les `<undefined>` dans l'exemple montrent des points restant à spécifier.<br><br>**Exemples :**
+Un event custom, généré à partir des autres règles déjà existantes.<br>Les cellules vides dans le tableau et les `<undefined>` dans l'exemple montrent des points restant à spécifier.
+
+**Exemples :**
 
 * Comment décrit-on `status` pour le cas général ?
 * `item_id` ne pourrait-il pas être migré vers items ?
 * Comment peut-on ajouter des champs *classiques* (pas besoin de les recommander pour les events, mais on sait que ça peut arriver)
 * Arrive-t-on bien à faire la distinction entre les différents champs (ex: `type`, `content_type`, `items`)
-
 
 
 **Parameters (required and recommended)**
@@ -719,8 +718,6 @@ cact('trigger', 'my_custom_event', {
   }
 })
 ```
-
-
 
 
 ## - COMMON SCHEMAS -
