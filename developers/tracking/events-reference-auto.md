@@ -1,3 +1,6 @@
+# Events reference
+
+
 
 ## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
 
@@ -290,8 +293,44 @@ cact('trigger', purchase, {
   "type": "offline",
   "items": [
     {
+      "id": "SKU_12345",
+      "quantity": 1,
+      "price": 9.99,
+      "variant": "red",
+      "coupon": "CHRISTMAS",
+      "discount": 1.99,
       "product": {
-        "id": 1234
+        "id": "12345",
+        "name": "Trex tshirt",
+        "category_1": "clothes",
+        "category_2": "t-shirts",
+        "category_3": "boy",
+        "brand": "Lacoste",
+        "colors": [
+          "red"
+        ],
+        "price": 9.99
+      }
+    },
+    {
+      "id": "SKU_12346",
+      "quantity": 1,
+      "price": 9.99,
+      "variant": "green",
+      "coupon": "CHRISTMAS",
+      "discount": 1.99,
+      "product": {
+        "id": "12346",
+        "name": "Heart tshirt",
+        "category_1": "clothes",
+        "category_2": "t-shirts",
+        "category_3": "girl",
+        "brand": "Jenyfion",
+        "colors": [
+          "blue",
+          "white"
+        ],
+        "price": 9.99
       }
     }
   ],
@@ -334,8 +373,44 @@ cact('trigger', refund, {
   "type": "offline",
   "items": [
     {
+      "id": "SKU_12345",
+      "quantity": 1,
+      "price": 9.99,
+      "variant": "red",
+      "coupon": "CHRISTMAS",
+      "discount": 1.99,
       "product": {
-        "id": 1234
+        "id": "12345",
+        "name": "Trex tshirt",
+        "category_1": "clothes",
+        "category_2": "t-shirts",
+        "category_3": "boy",
+        "brand": "Lacoste",
+        "colors": [
+          "red"
+        ],
+        "price": 9.99
+      }
+    },
+    {
+      "id": "SKU_12346",
+      "quantity": 1,
+      "price": 9.99,
+      "variant": "green",
+      "coupon": "CHRISTMAS",
+      "discount": 1.99,
+      "product": {
+        "id": "12346",
+        "name": "Heart tshirt",
+        "category_1": "clothes",
+        "category_2": "t-shirts",
+        "category_3": "girl",
+        "brand": "Jenyfion",
+        "colors": [
+          "blue",
+          "white"
+        ],
+        "price": 9.99
       }
     }
   ],
@@ -580,5 +655,25 @@ cact('trigger', view_item_list, {
   }
 })
 ```
+
+
+
+
+## - COMMON SCHEMAS -
+
+...todo user/item/product...
+
+## - ENUMERATED VALUE -
+
+...todo payment_method/purchase#status...
+
+## Pricing rules
+
+1. currency required when any pricing information specified
+2. calculation value = fn(revenue, ship, tax, discount)
+
+Examples:
+
+...
 
 
