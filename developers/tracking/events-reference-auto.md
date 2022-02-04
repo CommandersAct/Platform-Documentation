@@ -1,5 +1,19 @@
 # Events Reference
 
+This will be rephrased :
+
+* When an event occurs, `properties` object is a free data "space" were anyone can place any kind of information
+* When you want to set a property, here is how to think :
+  * first, anything is accepted
+  * but, to make things clean and easier to process, some properties are already specified (optional, but with specific type and purpose)
+  * then, for standard events, some of those properties become more specific
+    * expects something very accurate (e.g.: pricing with `value`, `revenue` should be numbers, and will be used for calculations and will be sent to many destinations under derived formats)
+    * parameters can become mandatory (and events will be rejected or will raise warnings)
+* Override content for specific destinations using `integrations`
+* Automatic data are set at the upper-level (not in `properties` but in `page` and `device`)
+  * e.g.: you don't have to put the page location (window.location), page language (document.lang) or the device language (nav.language) inside your properties because it already is sent automatically
+
+
 
 ## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
 
