@@ -67,6 +67,122 @@ cact('trigger', add_shipping_info, {
 
 
 
+## add\_to\_cart <a href="#add_to_cart" id="add_to_cart"></a>
+
+This event signifies that an item was added to a cart for purchase.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | Yes | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', add_to_cart, {
+  "value": 8,
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## add\_to\_wishlist <a href="#add_to_wishlist" id="add_to_wishlist"></a>
+
+The event signifies that an item was added to a wishlist. Use this event to identify popular gift items in your app.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', add_to_wishlist, {
+  "value": 8,
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## begin\_checkout <a href="#begin_checkout" id="begin_checkout"></a>
+
+This event signifies that a user has begun a checkout.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | Yes | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
+| revenue | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
+| coupon | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', begin_checkout, {
+  "value": 22.53,
+  "revenue": 16,
+  "coupon": "CHRISTMAS",
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## generate\_lead <a href="#generate_lead" id="generate_lead"></a>
+
+Log this event when a lead has been generated to understand the efficacy of your re-engagement campaigns.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', generate_lead, {
+  "value": 8,
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
 ## login <a href="#login" id="login"></a>
 
 Send this event to signify that a user has logged in.
@@ -118,7 +234,7 @@ Fire this event when one or more items are purchased by a user.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | payment_method | `string` | Yes | card | Payment method type (see list of possible values below) |
-| status | `string` | Yes | in_progress | Status of the conversion (see list of  below). Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature |
+| status | `string` | Yes | in_progress | Status of the conversion (see list of  below). <br>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature |
 | value | `string` | Yes | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
 | revenue | `string` | Yes | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
 | shipping_amount | `string` | No | 3.33 | Shipping cost associated with a transaction. |
@@ -140,6 +256,260 @@ cact('trigger', purchase, {
   "tax_amount": 3.33,
   "coupon": "CHRISTMAS",
   "type": "offline",
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## refund <a href="#refund" id="refund"></a>
+
+Fire this event when a purchase was refund.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | Yes | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
+| revenue | `string` | Yes | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
+| shipping_amount | `string` | No | 3.33 | Shipping cost associated with a transaction. |
+| tax_amount | `string` | No | 3.33 | Tax cost associated with a transaction. |
+| coupon | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
+| type | `string` | Yes | offline | Type of conversion (online, offline, call etc.) |
+| items | <a href="#item">`Array<Object<Item>>`</a> | No | [{"product":{"id":1234}}] | `items` is required for partial refunds, but it can be omitted for full refunds. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', refund, {
+  "value": 22.53,
+  "revenue": 16,
+  "shipping_amount": 3.33,
+  "tax_amount": 3.33,
+  "coupon": "CHRISTMAS",
+  "type": "offline",
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## remove\_from\_cart <a href="#remove_from_cart" id="remove_from_cart"></a>
+
+This event signifies that an item was removed from a cart.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', remove_from_cart, {
+  "value": 8,
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## search <a href="#search" id="search"></a>
+
+Use this event to contextualize search operations. This event can help you identify the most popular content in your app.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| search_term | `string` | Yes | t-shirt | The term that was searched for. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', search, {
+  "search_term": "t-shirt",
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## select\_content <a href="#select_content" id="select_content"></a>
+
+This event signifies that a user has selected some content of a certain type. This event can help you identify popular content and categories of content in your app or click on internal promotion.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| content_type | `string` | No | product | The type of selected content. |
+| item_id | `string` | No | I_12345 | An identifier for the item that was selected. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', select_content, {
+  "content_type": "product",
+  "item_id": "I_12345",
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## select\_item <a href="#select_item" id="select_item"></a>
+
+This event signifies an item was selected from a list.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', select_item, {
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## sign\_up <a href="#sign_up" id="sign_up"></a>
+
+This event indicates that a user has signed up for an account.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| method | `string` | No | email | The method used for sign up. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', sign_up, {
+  "user": {
+    "id": "84545"
+  },
+  "method": "email"
+})
+```
+
+
+
+## view\_cart <a href="#view_cart" id="view_cart"></a>
+
+This event signifies that a user viewed their cart.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| value | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', view_cart, {
+  "value": 8,
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## view\_item <a href="#view_item" id="view_item"></a>
+
+This event signifies that some content was shown to the user. Use this event to manage the most popular items viewed.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| revenue | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', view_item, {
+  "revenue": 16,
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+## view\_item\_list <a href="#view_item_list" id="view_item_list"></a>
+
+Log this event when the user has been presented with a list of items of a certain category.
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| items | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
+| user | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+
+**Parameters (required and recommended)**
+
+```javascript
+cact('trigger', view_item_list, {
   "items": [
     {
       "product": {
