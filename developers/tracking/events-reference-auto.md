@@ -12,8 +12,8 @@ This event signifies a user has submitted their payment information
 | ---- | ---- | -------- | ------- | ----------- |
 | `payment_method` | `string` | Yes | card | The chosen method of payment (see list of possible values below) |
 | `revenue` | `number` | No* | 16.00 | Revenue (shipping price and taxes **excluded**) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
-| `currency` | `string` (ISO 4217) | No* | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.<br>(*) If you supply a pricing parameter (e.g. `value`, `revenue`), the currency becomes mandatory. |
 | `value` | `number` | No* | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
+| `currency` | `string` (ISO 4217) | No* | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.<br>(*) If you supply a pricing parameter (e.g. `value`, `revenue`), the currency becomes mandatory. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `items` | <a href="#item">`Array<Object<Item>>`</a> | No |   | The items for the event. |
 | `user` | <a href="#user">`Object<User>`</a> | Yes |   | Object containing user identity (`id`, `email`, ...) and consents (`consent_categories`). |
@@ -24,8 +24,8 @@ This event signifies a user has submitted their payment information
 cact('trigger', add_payment_info, {
   "payment_method": "card",
   "revenue": 16,
-  "currency": "EUR",
   "value": 22.53,
+  "currency": "EUR",
   "coupon": "CHRISTMAS",
   "items": [
     {
@@ -155,8 +155,8 @@ This event signifies that a user has begun a checkout.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `revenue` | `number` | No* | 16.00 | Revenue (shipping price and taxes **excluded**) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
-| `currency` | `string` (ISO 4217) | No* | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.<br>(*) If you supply a pricing parameter (e.g. `value`, `revenue`), the currency becomes mandatory. |
 | `value` | `number` | Yes | 22.53 | The monetary value of the event (shipping price and taxes **included**) after discount |
+| `currency` | `string` (ISO 4217) | No* | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.<br>(*) If you supply a pricing parameter (e.g. `value`, `revenue`), the currency becomes mandatory. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes |   | The items for the event. |
 | `user` | <a href="#user">`Object<User>`</a> | Yes |   | Object containing user identity (`id`, `email`, ...) and consents (`consent_categories`). |
@@ -166,8 +166,8 @@ This event signifies that a user has begun a checkout.
 ```javascript
 cact('trigger', begin_checkout, {
   "revenue": 16,
-  "currency": "EUR",
   "value": 22.53,
+  "currency": "EUR",
   "coupon": "CHRISTMAS",
   "items": [
     {
@@ -269,10 +269,10 @@ Fire this event when one or more items are purchased by a user.
 | `payment_method` | `string` | Yes | card | Payment method type (see list of possible values below) |
 | `status` | `string` | Yes | in_progress | Status of the conversion (see list of  below). <br>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature |
 | `revenue` | `number` | Yes | 16.00 | Revenue (shipping price and taxes **excluded**) after discount. |
-| `currency` | `string` (ISO 4217) | Yes | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format. |
 | `shipping_amount` | `number` | No | 3.33 | Shipping cost associated with a transaction. |
 | `tax_amount` | `number` | No | 3.20 | Tax cost associated with a transaction. |
 | `value` | `number` | Yes | 22.53 | The monetary value of the event (shipping price and taxes **included**) after discount |
+| `currency` | `string` (ISO 4217) | Yes | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `type` | `string` | Yes | offline | Type of conversion (online, offline, call etc.) |
 | `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes |   | The items for the event. |
@@ -285,10 +285,10 @@ cact('trigger', purchase, {
   "payment_method": "card",
   "status": "in_progress",
   "revenue": 16,
-  "currency": "EUR",
   "shipping_amount": 3.33,
   "tax_amount": 3.2,
   "value": 22.53,
+  "currency": "EUR",
   "coupon": "CHRISTMAS",
   "type": "offline",
   "items": [
@@ -351,10 +351,10 @@ Fire this event when a purchase was refund.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `revenue` | `number` | Yes | 16.00 | Revenue (shipping price and taxes **excluded**) after discount. |
-| `currency` | `string` (ISO 4217) | Yes | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format. |
 | `shipping_amount` | `number` | No | 3.33 | Shipping cost associated with a transaction. |
 | `tax_amount` | `number` | No | 3.20 | Tax cost associated with a transaction. |
 | `value` | `number` | Yes | 22.53 | The monetary value of the event (shipping price and taxes **included**) after discount |
+| `currency` | `string` (ISO 4217) | Yes | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `type` | `string` | Yes | offline | Type of conversion (online, offline, call etc.) |
 | `items` | <a href="#item">`Array<Object<Item>>`</a> | No |   | `items` is required for partial refunds, but it can be omitted for full refunds. |
@@ -365,10 +365,10 @@ Fire this event when a purchase was refund.
 ```javascript
 cact('trigger', refund, {
   "revenue": 16,
-  "currency": "EUR",
   "shipping_amount": 3.33,
   "tax_amount": 3.2,
   "value": 22.53,
+  "currency": "EUR",
   "coupon": "CHRISTMAS",
   "type": "offline",
   "items": [
