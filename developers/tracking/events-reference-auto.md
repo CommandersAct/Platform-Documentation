@@ -21,7 +21,7 @@ This event signifies a user has submitted their payment information
 **Example**
 
 ```javascript
-cact('trigger', add_payment_info, {
+cact('trigger', 'add_payment_info', {
   "payment_method": "card",
   "revenue": 16,
   "value": 22.53,
@@ -59,7 +59,7 @@ This event signifies a user has submitted their shipping information.
 **Example**
 
 ```javascript
-cact('trigger', add_shipping_info, {
+cact('trigger', 'add_shipping_info', {
   "value": 22.53,
   "currency": "EUR",
   "coupon": "CHRISTMAS",
@@ -94,7 +94,7 @@ This event signifies that an item was added to a cart for purchase.
 **Example**
 
 ```javascript
-cact('trigger', add_to_cart, {
+cact('trigger', 'add_to_cart', {
   "value": 8,
   "currency": "EUR",
   "items": [
@@ -128,7 +128,7 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 **Example**
 
 ```javascript
-cact('trigger', add_to_wishlist, {
+cact('trigger', 'add_to_wishlist', {
   "value": 8,
   "currency": "EUR",
   "items": [
@@ -164,7 +164,7 @@ This event signifies that a user has begun a checkout.
 **Example**
 
 ```javascript
-cact('trigger', begin_checkout, {
+cact('trigger', 'begin_checkout', {
   "revenue": 16,
   "value": 22.53,
   "currency": "EUR",
@@ -199,7 +199,7 @@ Log this event when a lead has been generated to understand the efficacy of your
 **Example**
 
 ```javascript
-cact('trigger', generate_lead, {
+cact('trigger', 'generate_lead', {
   "value": 8,
   "currency": "EUR",
   "user": {
@@ -224,7 +224,7 @@ Send this event to signify that a user has logged in.
 **Example**
 
 ```javascript
-cact('trigger', login, {
+cact('trigger', 'login', {
   "method": "LinkedIn",
   "user": {
     "id": "84545"
@@ -248,7 +248,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 **Example**
 
 ```javascript
-cact('trigger', page_view, {
+cact('trigger', 'page_view', {
   "type": "product_list",
   "user": {
     "id": "84545"
@@ -281,7 +281,7 @@ Fire this event when one or more items are purchased by a user.
 **Example**
 
 ```javascript
-cact('trigger', purchase, {
+cact('trigger', 'purchase', {
   "payment_method": "card",
   "status": "in_progress",
   "revenue": 16,
@@ -363,7 +363,7 @@ Fire this event when a purchase was refund.
 **Example**
 
 ```javascript
-cact('trigger', refund, {
+cact('trigger', 'refund', {
   "revenue": 16,
   "shipping_amount": 3.33,
   "tax_amount": 3.2,
@@ -438,7 +438,7 @@ This event signifies that an item was removed from a cart.
 **Example**
 
 ```javascript
-cact('trigger', remove_from_cart, {
+cact('trigger', 'remove_from_cart', {
   "value": 8,
   "currency": "EUR",
   "items": [
@@ -470,7 +470,7 @@ Use this event to contextualize search operations. This event can help you ident
 **Example**
 
 ```javascript
-cact('trigger', search, {
+cact('trigger', 'search', {
   "search_term": "t-shirt",
   "user": {
     "id": "84545"
@@ -495,7 +495,7 @@ This event signifies that a user has selected some content of a certain type. Th
 **Example**
 
 ```javascript
-cact('trigger', select_content, {
+cact('trigger', 'select_content', {
   "content_type": "product",
   "item_id": "I_12345",
   "user": {
@@ -520,7 +520,7 @@ This event signifies an item was selected from a list.
 **Example**
 
 ```javascript
-cact('trigger', select_item, {
+cact('trigger', 'select_item', {
   "items": [
     {
       "product": {
@@ -550,7 +550,7 @@ This event indicates that a user has signed up for an account.
 **Example**
 
 ```javascript
-cact('trigger', sign_up, {
+cact('trigger', 'sign_up', {
   "method": "email",
   "user": {
     "id": "84545"
@@ -576,7 +576,7 @@ This event signifies that a user viewed their cart.
 **Example**
 
 ```javascript
-cact('trigger', view_cart, {
+cact('trigger', 'view_cart', {
   "value": 8,
   "currency": "EUR",
   "items": [
@@ -610,7 +610,7 @@ This event signifies that some content was shown to the user. Use this event to 
 **Example**
 
 ```javascript
-cact('trigger', view_item, {
+cact('trigger', 'view_item', {
   "revenue": 16,
   "currency": "EUR",
   "items": [
@@ -642,7 +642,71 @@ Log this event when the user has been presented with a list of items of a certai
 **Example**
 
 ```javascript
-cact('trigger', view_item_list, {
+cact('trigger', 'view_item_list', {
+  "items": [
+    {
+      "product": {
+        "id": 1234
+      }
+    }
+  ],
+  "user": {
+    "id": "84545"
+  }
+})
+```
+
+
+
+
+## Custom Event <a href="#Custom Event" id="Custom Event"></a>
+
+Un event custom, généré à partir des autres règles déjà existantes. <br>Les cellules vides dans le tableau et les `<undefined>` dans l'exemple montrent des points restant à spécifier.<br><br>**Exemples :**
+
+* Comment décrit-on `status` pour le cas général ?
+* `item_id` ne pourrait-il pas être migré vers items ?
+* Comment peut-on ajouter des champs *classiques* (pas besoin de les recommander pour les events, mais on sait que ça peut arriver)
+* Arrive-t-on bien à faire la distinction entre les différents champs (ex: `type`, `content_type`, `items`)
+
+
+
+**Parameters (required and recommended)**
+
+| Name | Type | Required | Example | Description |
+| ---- | ---- | -------- | ------- | ----------- |
+| `payment_method` | `string` | No | card | The chosen method of payment (see list of possible values below) |
+| `status` | `string` | No |  |  |
+| `revenue` | `number` | No | 16.00 | Revenue (shipping price and taxes **excluded**) after discount. |
+| `shipping_amount` | `number` | No | 3.33 | Shipping cost associated with a transaction. |
+| `tax_amount` | `number` | No | 3.20 | Tax cost associated with a transaction. |
+| `value` | `number` | No |  | The monetary value of the event |
+| `currency` | `string` (ISO 4217) | No | EUR | Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format. |
+| `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
+| `type` | `string` | No |  |  |
+| `content_type` | `string` | No |  |  |
+| `search_term` | `string` | No |  |  |
+| `item_id` | `string` | No |  |  |
+| `method` | `string` | No |  |  |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | No |   | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes |   | Object containing user identity (`id`, `email`, ...) and consents (`consent_categories`). |
+
+**Example**
+
+```javascript
+cact('trigger', 'my_custom_event', {
+  "payment_method": "card",
+  "status": "<undefined>",
+  "revenue": 16,
+  "shipping_amount": 3.33,
+  "tax_amount": 3.2,
+  "value": "<undefined>",
+  "currency": "EUR",
+  "coupon": "CHRISTMAS",
+  "type": "<undefined>",
+  "content_type": "<undefined>",
+  "search_term": "<undefined>",
+  "item_id": "<undefined>",
+  "method": "<undefined>",
   "items": [
     {
       "product": {
@@ -661,7 +725,12 @@ cact('trigger', view_item_list, {
 
 ## - COMMON SCHEMAS -
 
-...todo user/item/product...
+...todo user/item/product/integrations...
+
+
+## - AUTO FIELDS -
+
+...todo page/device...
 
 ## - ENUMERATED VALUE -
 
