@@ -9,8 +9,8 @@ This event signifies a user has submitted their payment information
 | `value` | `string` | No | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
 | `revenue` | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -43,8 +43,8 @@ This event signifies a user has submitted their shipping information.
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | No | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -74,8 +74,8 @@ This event signifies that an item was added to a cart for purchase.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | Yes | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -104,8 +104,8 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -136,8 +136,8 @@ This event signifies that a user has begun a checkout.
 | `value` | `string` | Yes | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
 | `revenue` | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -168,7 +168,7 @@ Log this event when a lead has been generated to understand the efficacy of your
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -189,7 +189,7 @@ Send this event to signify that a user has logged in.
 
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 | `method` | `string` | No | LinkedIn | The method used to login. |
 
 **Parameters (required and recommended)**
@@ -212,7 +212,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `type` | `string` | Yes | product_list | Page category. Equivalent to `tc_vars.env_template` |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -241,8 +241,8 @@ Fire this event when one or more items are purchased by a user.
 | `tax_amount` | `string` | No | 3.33 | Tax cost associated with a transaction. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `type` | `string` | Yes | offline | Type of conversion (online, offline, call etc.) |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -283,8 +283,8 @@ Fire this event when a purchase was refund.
 | `tax_amount` | `string` | No | 3.33 | Tax cost associated with a transaction. |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
 | `type` | `string` | Yes | offline | Type of conversion (online, offline, call etc.) |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | [{"product":{"id":1234}}] | `items` is required for partial refunds, but it can be omitted for full refunds. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | `[{"product":{"id":1234}}]` | `items` is required for partial refunds, but it can be omitted for full refunds. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -318,8 +318,8 @@ This event signifies that an item was removed from a cart.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -348,7 +348,7 @@ Use this event to contextualize search operations. This event can help you ident
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `search_term` | `string` | Yes | t-shirt | The term that was searched for. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -371,7 +371,7 @@ This event signifies that a user has selected some content of a certain type. Th
 | ---- | ---- | -------- | ------- | ----------- |
 | `content_type` | `string` | No | product | The type of selected content. |
 | `item_id` | `string` | No | I_12345 | An identifier for the item that was selected. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -393,8 +393,8 @@ This event signifies an item was selected from a list.
 
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -421,7 +421,7 @@ This event indicates that a user has signed up for an account.
 
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 | `method` | `string` | No | email | The method used for sign up. |
 
 **Parameters (required and recommended)**
@@ -444,8 +444,8 @@ This event signifies that a user viewed their cart.
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `value` | `string` | No | 8.00 | The monetary value of the event<br>(*) `value` is typically required for meaningful reporting |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -474,8 +474,8 @@ This event signifies that some content was shown to the user. Use this event to 
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
 | `revenue` | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -503,8 +503,8 @@ Log this event when the user has been presented with a list of items of a certai
 
 | Name | Type | Required | Example | Description |
 | ---- | ---- | -------- | ------- | ----------- |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | Yes | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
@@ -535,8 +535,8 @@ This event signifies a user has submitted their payment information
 | `value` | `string` | No | 22.53 | The monetary value of the event (shipping price and taxes included) after discount<br>(*) `value` is typically required for meaningful reporting |
 | `revenue` | `string` | No | 16.00 | Revenue (shipping price and taxes excluded) after discount.<br>(*) `revenue` is typically required for meaningful reporting |
 | `coupon` | `string` | No | CHRISTMAS | Coupon code used for a purchase. |
-| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | [{"product":{"id":1234}}] | The items for the event. |
-| `user` | <a href="#user">`Object<User>`</a> | Yes | {"id":"84545"} | The items for the event. |
+| `items` | <a href="#item">`Array<Object<Item>>`</a> | No | `[{"product":{"id":1234}}]` | The items for the event. |
+| `user` | <a href="#user">`Object<User>`</a> | Yes | `{"id":"84545"}` | The items for the event. |
 
 **Parameters (required and recommended)**
 
