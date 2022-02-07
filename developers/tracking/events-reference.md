@@ -18,7 +18,7 @@ This event signifies a user has submitted their payment information
 **Example**
 
 ```javascript
-cact('trigger','add_payement_info', {
+cact('trigger','add_payment_info', {
   payment_method: 'card',
   revenue: 16.00,
   value: 22.53,
@@ -362,7 +362,6 @@ Fire this event when a purchase was refund
 | Name                 | Type        | Required | Example  | Description                                                                                   |
 | -------------------- | ----------- | -------- | -------- | --------------------------------------------------------------------------------------------- |
 | `url`                | string(url) | No       | none     | <p>URL to the website where you can buy the item</p><p>Equivalent to window.location.href</p> |
-| `consent_categories` | Array       | No       | \[1,2,3] | Automatically added \*\*only if \*\*you use Commanders Act CMP (TrustCommander)               |
 
 **Example**
 
