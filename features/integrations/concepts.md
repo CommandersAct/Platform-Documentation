@@ -1,6 +1,6 @@
 # Concepts
 
-This page defines concepts used in the Commanders Act Platform.
+This page will help you grasp the core concepts used in the *Commanders Act* new platform.  
 
 ## Event
 An event represents an action made by a user on your website or application. 
