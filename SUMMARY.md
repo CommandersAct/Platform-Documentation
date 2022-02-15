@@ -16,6 +16,7 @@
 ## Features
 
 * [Integrations](features/integrations/README.md)
+  * [Concepts](features/integrations/concepts.md)
   * [Sources](features/integrations/sources/README.md)
     * [Overview](features/integrations/sources/overview.md)
     * [Sources catalog](features/integrations/sources/sources-catalog/README.md)
