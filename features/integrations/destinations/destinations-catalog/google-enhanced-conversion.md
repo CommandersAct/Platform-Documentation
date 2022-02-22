@@ -14,7 +14,17 @@ Select Google Enhanced Conversion
 
 You will need to fill this information:
 
-1. Conversion tracking ID
+1. Conversion ID (conversion tracking ID) and Conversion Label
+
+This value can be found on your Google Ads account, **Tools and Settings** menu, select **Measurement / Conversions**.
+
+{% hint style="info" %}
+If you don't find this menu, be sure [Expert Mode](https://support.google.com/google-ads/answer/9520605?hl=en) is enabled for your profile to have access to all options.
+{% endhint %}
+
+Select the conversion created (or create one) and copy and paste Conversion ID and Conversion Label.
+
+
 
 
 
