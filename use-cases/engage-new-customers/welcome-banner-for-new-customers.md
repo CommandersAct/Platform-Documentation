@@ -1,4 +1,4 @@
-# Banner for new customers
+# Welcome banner for new customers
 
 ## Use case description
 
@@ -12,7 +12,7 @@ Display a banner for new users only, and offer them an incentive: discount % if,
 
 💰  ROI: Medium
 
-![](../../.gitbook/assets/nl.png)
+![](<../../.gitbook/assets/nl (1).png>)
 
 ## Use case setup
 
