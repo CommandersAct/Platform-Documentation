@@ -16,8 +16,6 @@ You will need to fill this information:
 
 ### Conversion ID (conversion tracking ID) and Conversion Label
 
-
-
 These values can be found on your Google Ads account, **Tools and Settings** menu, select **Measurement / Conversions**.
 
 {% hint style="info" %}
@@ -35,9 +33,13 @@ Select **API** method for the set-up.
 
 ![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
 
-### Gclid and property ID
+### GCLID and property ID
 
-Retrieve gclid from: Retrieve gclid using all available cookies, a selected cookie, or via datalayer field/custom variable.
+Google Click ID (GCLID) is a parameter passed in the URL with ad clicks, to identify the campaign and other attributes of the click associated with the ad for ad tracking and campaign attribution. More details [here](https://support.google.com/google-ads/answer/9744275?hl=en#:\~:text=L'ID%20de%20clic%20Google,de%20l'attribution%20des%20campagnes.).
 
-Google Analytics Property ID: The GA Tracking ID is a string like "UA-XXXXXX-Y".
+**Retrieve GCLID from**: \
+Retrieve GCLID using all available cookies, a selected cookie, or via datalayer field/custom variable.
+
+**Google Analytics Property ID**: \
+The GA Tracking ID is a string like "UA-XXXXXX-Y".
 
