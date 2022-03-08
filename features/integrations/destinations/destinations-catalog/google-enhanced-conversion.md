@@ -14,7 +14,9 @@ Select Google Enhanced Conversion
 
 You will need to fill this information:
 
-1. Conversion ID (conversion tracking ID) and Conversion Label
+### Conversion ID (conversion tracking ID) and Conversion Label
+
+
 
 These values can be found on your Google Ads account, **Tools and Settings** menu, select **Measurement / Conversions**.
 
@@ -24,9 +26,18 @@ If you don't find this menu, be sure [Expert Mode](https://support.google.com/go
 
 Select the conversion created (or create one) and copy and paste Conversion ID and Conversion Label.
 
+{% hint style="warning" %}
+Enhanced Conversion could be only turned on for **website** conversion. \
+Select **API** method for the set-up.
+{% endhint %}
 
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
 
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
 
+### Gclid and property ID
 
+Retrieve gclid from: Retrieve gclid using all available cookies, a selected cookie, or via datalayer field/custom variable.
 
+Google Analytics Property ID: The GA Tracking ID is a string like "UA-XXXXXX-Y".
 
