@@ -31,6 +31,7 @@
       * [Google Enhanced Conversion](features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
       * [Awin](features/integrations/destinations/destinations-catalog/awin.md)
+      * [Snapchat Conversions API](features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
       * [Javascript destination builder](features/integrations/destinations/destination-builder/javascript-destination-builder/README.md)
         * [Serverside javascript helpers](features/integrations/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
