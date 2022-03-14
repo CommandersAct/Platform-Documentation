@@ -51,9 +51,6 @@
 
 ## Use cases
 
-* [Email campaigns](use-cases/email-campaigns/README.md)
-  * [Abandoned Cart Campaign](use-cases/email-campaigns/abandoned-cart-campaign.md)
-  * [First purchase anniversary](use-cases/email-campaigns/first-purchase-anniversary.md)
 * [Website performance](use-cases/website-performance.md)
 * [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
 * [Customer analysis](use-cases/customer-analysis/README.md)

@@ -1,2 +1,0 @@
-# First purchase anniversary
-
