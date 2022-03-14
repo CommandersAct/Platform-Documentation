@@ -6,4 +6,4 @@ description: >-
 
 # Releases notes
 
-Releases notes will start at the launch of the new platform.
+Release notes will start at the launch of the new platform.
