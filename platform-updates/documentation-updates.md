@@ -4,13 +4,4 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## September updates
-
-* Add global architecture
-* Update [TrustCommander dashboard ](../features/data-quality.md)explanation
-
-## August updates
-
-* **MixCommander** :&#x20;
-  * Add _new customer_ metric description in [metrics page](../features/data-quality.md)
-
+Documentation updates will start at the launch of the new platform.
