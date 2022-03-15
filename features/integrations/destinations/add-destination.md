@@ -1,20 +1,27 @@
 # Destinations overview
 
+## Destination list
+
 Find here the full list of destinations already configured.
 
 You can search a destination by name and filter on environment (production or staging), status (active or inactive) and per sources (mobile, web...).
 
 ![](<../../../.gitbook/assets/Destination overview.png>)
 
-3 tables are available: Cloud Mode, Audience and Raw Data.
+4 sections are available: Cloud mode, Device mode, Audience and Raw Data.
 
-### Cloud Mode
+### Cloud mode
 
-It refers to live destinations, through API, destinations that run in real-time. It pushes events (purchases, page views...).
+It refers to event based destinations that execute on the server (aka server-side tags): destinations that run in real-time and push your events (purchases, page views...).
+
+### Device mode (soon)
+
+It refers to destinations that needs to be executed in the browser (aka client-side tags). For example : survey tag, A/B testing, heatmapping tool, live chat, web notification, ...\
+Currently, client-side tags are manageable in the web containers section. They will move progressively on the device mode section.
 
 ### Audience
 
-It refers to live destinations (API) that push users through segments.&#x20;
+It refers to destinations that push user's segments, each time a user enter or leave a segment you created.
 
 ### Raw Data
 
