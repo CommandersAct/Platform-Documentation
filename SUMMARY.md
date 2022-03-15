@@ -18,7 +18,7 @@
 * [Integrations](features/integrations/README.md)
   * [Concepts](features/integrations/concepts.md)
   * [Sources](features/integrations/sources/README.md)
-    * [Overview](features/integrations/sources/overview.md)
+    * [Sources Overview](features/integrations/sources/overview.md)
     * [Sources catalog](features/integrations/sources/sources-catalog/README.md)
       * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)
       * [Javascript SDK](features/integrations/sources/sources-catalog/js-sdk.md)
