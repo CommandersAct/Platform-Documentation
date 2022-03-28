@@ -11,4 +11,10 @@ You didn't find the destination you were looking for? Do not hesitate to fill th
 
 All new destinations will be viewable on the 'New' tab on the left.
 
+**Flags meanings**:
+
+* "New": the destination was just released, this flag will stay during 2 months.
+* "Alpha": setup interface is ready (creation wizard), but the backend is still in QA on our side (Commanders Act test).
+* "Beta" : all is ready, but it has to be validated (or the validation is ongoing) with a first (beta) customer
+
 You need more information about a destination? Simply click on it, and you will have access to all details and requested settings for this destination.
