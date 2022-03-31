@@ -707,9 +707,6 @@ No need to send both **plain** and **hashed** values :
 * if you don't send **plain** value, then you should fill as much **hashed** values as possible\
   _Partners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value_
 
-> :information\_source: Use our **CRM imports** _(not released yet)_\
-> Doing so will allow you to enrich many events with additional user information.\
->
 
 ## - ENUMERATED VALUE -
 
