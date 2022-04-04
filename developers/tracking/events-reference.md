@@ -668,12 +668,7 @@ You won't always have all of those parameters. But it is recommended to send the
 | `state`        | `string` | No       | Massachusetts         | State                                                                                                                                                                |
 | `zipcode`      | `string` | No       | 02108                 | Zip code                                                                                                                                                              |
 | `country`      | `string` | No       | USA                   | Country code, ISO 3166-1 [2-letter](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2) or [3-letter](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-3) formats   |
-
-**Automatically added by cact API**
-
-| Name                 | Type  | Required | Example  | Description                                                                                     |
-| -------------------- | ----- | -------- | -------- | ----------------------------------------------------------------------------------------------- |
-| `consent_categories` | Array | Yes      | \[1,2,3] | <p>User's consent categories.<br>Necessary to grant data sharing with destination partners.</p> |
+| `consent_categories` | Array | Yes      | \[1,2,3] | <p>User's consent categories.<br>Necessary to grant data sharing with destination partners. It is automatically filled from web sources if you use Commanders Act CMP.</p> |
 
 **About Hashing**
 
