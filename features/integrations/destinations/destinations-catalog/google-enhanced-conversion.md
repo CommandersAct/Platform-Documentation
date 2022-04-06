@@ -8,6 +8,10 @@ More details here: [About enhanced conversions](https://support.google.com/googl
 
 ## How to configure Google Enhanced conversion?
 
+{% hint style="info" %}
+In order for the destination to work, your user account will need to be specifically added as an admin user of the Google Ads MCC account in which the conversion action is located.
+{% endhint %}
+
 On destination overview, click on Add Destination.
 
 Select Google Enhanced Conversion
@@ -29,9 +33,9 @@ Enhanced Conversion could be only turned on for **website** conversion. \
 Select **API** method for the set-up.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
 
 ### GCLID and property ID
 
