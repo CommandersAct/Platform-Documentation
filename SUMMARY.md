@@ -30,6 +30,7 @@
       * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
       * [Google Enhanced Conversion](features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
+      * [Google DV360 & Search Ads 360](features/integrations/destinations/destinations-catalog/google-dv360-and-search-ads-360.md)
       * [Awin](features/integrations/destinations/destinations-catalog/awin.md)
       * [Snapchat Conversions API](features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
