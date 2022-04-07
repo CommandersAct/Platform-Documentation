@@ -1,4 +1,4 @@
-# Google DV360 & Search Ads 360
+# Google Display & Video 360 & Search Ads 360
 
 Google Display & Video 360 and Google Search Ads 360 are paid products part of [Google Marketing Platform](https://marketingplatform.google.com/about/).
 
