@@ -29,6 +29,7 @@
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
       * [Facebook conversions API](features/integrations/destinations/destinations-catalog/facebook-conversions-api.md)
       * [Facebook Custom Audiences](features/integrations/destinations/destinations-catalog/facebook-custom-audiences.md)
+      * [Facebook Offline conversion](features/integrations/destinations/destinations-catalog/facebook-offline-conversion.md)
       * [Google Enhanced Conversion](features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
       * [Google Display & Video 360 & Search Ads 360](features/integrations/destinations/destinations-catalog/google-display-and-video-360-and-search-ads-360.md)

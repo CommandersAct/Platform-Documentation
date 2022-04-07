@@ -18,6 +18,6 @@ In the destination builder interface, you will be able to set:
 * Destination settings, i.e. questions that will be asked to the user that will add this destination (e.g. token, account id, options ...)
 * Connector technical options (url, method, etc.) or JavaScript code
 
-![](<../../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
 
 Your destination can also be hosted on Github and automatically imported to facilitate updates on your side.
