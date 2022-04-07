@@ -40,6 +40,7 @@
       * [Criteo (offline conversions)](features/integrations/destinations/destinations-catalog/criteo-offline-conversions.md)
       * [Snapchat Conversions API](features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
       * [Tableau Online](features/integrations/destinations/destinations-catalog/tableau-online.md)
+      * [The Trade Desk](features/integrations/destinations/destinations-catalog/the-trade-desk.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
       * [Javascript destination builder](features/integrations/destinations/destination-builder/javascript-destination-builder/README.md)
         * [Serverside javascript helpers](features/integrations/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
