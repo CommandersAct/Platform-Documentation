@@ -32,6 +32,7 @@
       * [Google Analytics 4](features/integrations/destinations/destinations-catalog/google-analytics-4.md)
       * [Google Display & Video 360 & Search Ads 360](features/integrations/destinations/destinations-catalog/google-display-and-video-360-and-search-ads-360.md)
       * [Google Store Sales Direct](features/integrations/destinations/destinations-catalog/google-store-sales-direct.md)
+      * [Google Customer Match](features/integrations/destinations/destinations-catalog/google-customer-match.md)
       * [Awin](features/integrations/destinations/destinations-catalog/awin.md)
       * [Snapchat Conversions API](features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
     * [Destination builder](features/integrations/destinations/destination-builder/README.md)
