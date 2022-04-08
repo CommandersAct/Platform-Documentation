@@ -48,6 +48,8 @@
     * [Event delivery](features/integrations/destinations/event-delivery.md)
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
+* [Enrichments](features/enrichments.md)
+* [Augmented User Attributes](features/augmented-user-attributes.md)
 * [Customers](features/customers.md)
   * [Segment](features/customers/segment/README.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)

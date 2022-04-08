@@ -10,7 +10,7 @@ In our case, we take into consideration only conversions for now (online and off
 
 A control group is setup on a stream (share menu). Check the box ‘Set control group’ to activate the possibility to configure a control group.
 
-![](<../../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6) (1).png>)
 
 Specify the % of users you want to set for your control group: these users will be not pushed on the stream (and so not exposed to the campaign).
 
@@ -36,7 +36,7 @@ First, select the period of analysis: you can choose for example to read the res
 
 All the figures will be related to this analysis period.
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 **Definition of each metrics:**
 
@@ -124,7 +124,7 @@ Formula:
 
 **Charts**
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (1).png>)
 
 ### Conversion rate evolution
 
@@ -138,7 +138,7 @@ You can visualize directly here the comparison between the two populations (audi
 
 ### **Table**
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7) (1).png>)
 
 You have here a summary of all metrics needed to compare the populations, such as the number of users and number of conversions (needed to calculate the conversion rate for example). The turnover is based on total\_final\_conversion\_amount, meaning it could evolve depending on products returns, for example.
 

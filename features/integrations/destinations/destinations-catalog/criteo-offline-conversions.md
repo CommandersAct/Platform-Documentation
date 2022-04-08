@@ -2,7 +2,7 @@
 
 Push your offline conversions, like purchases made in physical stores, directly to Criteo.
 
-![](<../../../../.gitbook/assets/image (9).png>)
+![](<../../../../.gitbook/assets/image (9) (1).png>)
 
 ### Store ID variable:&#x20;
 
@@ -16,4 +16,4 @@ By default, we apply a filter on conversion\_type = 'offline' to push only offli
 
 Enter your Criteo Account ID, you can find it directly on Criteo interface.
 
-![](<../../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../../.gitbook/assets/image (7) (1) (1).png>)
