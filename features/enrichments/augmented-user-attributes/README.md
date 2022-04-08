@@ -34,7 +34,7 @@ Because of this, **segments are dynamic**. Your users, according to their action
 
 You have to define which dimensions are key for your business and define a matrix that can help you to categorize your customers. For example, you want to flag your customers based on their order frequency and average order amount:
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10) (1).png>)
 
 However, you can go further with flags because you can integrate other dimensions such as period, online/offline purchase or whatever you need. This is allowed because there is no data retention for a flag, data is stored for a long time: the flag defined will not be removed on the user, except if you defined some exit conditions.
 
@@ -48,7 +48,7 @@ As best practices, you should define around 10 different flags in order to categ
 The new flag defined is **NOT** retroactive (yet):
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9) (1).png>)
 
 Your new flag will take into consideration all the future actions/events/hits from the date you have created it.
 
@@ -301,7 +301,7 @@ Ex: type ‘Lab’ and the platform will suggest you ‘Label’.
 
 This feature allows you to copy values stored at the event level (pages, views, clicks, conversions) and paste to the user level. You can aggregate data at the user level in order to consolidate all the data around one unique user.
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7) (1).png>)
 
 ![](<../../../.gitbook/assets/image (5).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
 

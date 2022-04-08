@@ -43,4 +43,4 @@ Then the button 'ADD CONDITION' will appear, and you can define more conditions,
 
 Then, you can easily segment on conversion items:
 
-![](<../../../.gitbook/assets/image (10) (1).png>)
+![](<../../../.gitbook/assets/image (10) (1) (1).png>)
