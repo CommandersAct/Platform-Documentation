@@ -18,7 +18,7 @@ Then select offline:
 
 Finish the data source configuration and retrieve the Event set ID:
 
-![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (5) (1).png>)
 
 ## How to generate the token?
 
