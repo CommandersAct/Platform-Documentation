@@ -115,5 +115,5 @@
     * [Http tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
     * [API users](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-crm-users/api-users)
     * [API Conversions and Product catalog](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
-    * [Copy of API Conversions and Product catalog](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
+    * [API Segments](https://community.commandersact.com/platform-x/features/customers/segment/api-segments)
 * [Config API](developers/config-api.md)
