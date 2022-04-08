@@ -54,6 +54,7 @@
 * [Analyses](features/analyses/README.md)
   * [Campaign analysis](features/analyses/campaign-analysis/README.md)
     * [Attribution](features/analyses/campaign-analysis/attribution.md)
+    * [Control Group (Beta - release soon)](features/analyses/campaign-analysis/control-group-beta-release-soon.md)
   * [User analysis](features/analyses/user-analysis/README.md)
     * [Dashboards](features/analyses/user-analysis/dashboards.md)
   * [Consent optimization](features/analyses/consent-optimization.md)

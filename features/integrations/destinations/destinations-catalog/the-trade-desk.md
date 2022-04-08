@@ -9,7 +9,7 @@ This connector uses the cookie-sync process to match users.
 
 It is quite simple, you just have to enter your The Trade Desk **Advertiser ID** and The Trade Desk **Secret Key**:
 
-![](<../../../../.gitbook/assets/image (4).png>)
+![](<../../../../.gitbook/assets/image (4) (1).png>)
 
 You can find this information directly on your The Trade Desk account, in _Preferences_ section.
 
