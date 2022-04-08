@@ -12,7 +12,7 @@ The UI is divided into three sections that provide information on the platform's
 
 ### 1. Key Metrics <a href="#2-key-metrics" id="2-key-metrics"></a>
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.59.png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.59.png>)
 
 *   **Delivered:** This displays the number of messages successfully delivered to a destination within the time period you choose.\
     The % of events delivered is represented by a weather icon:&#x20;
@@ -40,7 +40,7 @@ The small trend graph represents the global evolution of delivered and not deliv
 
 Visualize directly the evolution of delivered and not delivered events on a larger period. You can change the period you want to visualize: last hour, last day, last week or last month.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.17.19.png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.17.19.png>)
 
 ### 3. Error details <a href="#3-error-details" id="3-error-details"></a>
 
@@ -48,14 +48,14 @@ The table's objective is to offer you with an overview of the various errors we'
 
 You can debug immediately errors encountered thanks to the description of the error and the way to solve it.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.27.png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.27.png>)
 
 ## Alerting (coming soon)
 
 You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 90% of your events delivered, you can set an alert and be alerted). \
 You will be alerted as soon as the event occurs, and you can define a reminder, to be alerted as long as the problem remains : every hour, every day, every week.
 
-![](<../../../.gitbook/assets/image (3) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1).png>)
 
 Currently, two channels are available to receive alerts : email and platform notification. In a near future Slack, Microsoft Teams and a webhook will be also available.
 

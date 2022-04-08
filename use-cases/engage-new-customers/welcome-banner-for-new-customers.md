@@ -12,7 +12,7 @@ Display a banner for new users only, and offer them an incentive: discount % if,
 
 💰  ROI: Medium
 
-![](<../../.gitbook/assets/nl (1).png>)
+![](../../.gitbook/assets/nl.png)
 
 ## Use case setup
 

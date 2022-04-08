@@ -10,7 +10,7 @@ In _Sources / Overview_, you will find the full list of sources already configur
 
 You can search a souce by name and filter on environment (production, staging, ...), status (active or inactive) and per destination
 
-![](<../../../.gitbook/assets/image (1) (2).png>)
+![](<../../../.gitbook/assets/image (2) (2).png>)
 
 
 

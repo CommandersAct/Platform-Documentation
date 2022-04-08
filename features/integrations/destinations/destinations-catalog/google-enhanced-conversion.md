@@ -33,9 +33,9 @@ Enhanced Conversion could be only turned on for **website** conversion. \
 Select **API** method for the set-up.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
+![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
 
 ### GCLID and property ID
 
