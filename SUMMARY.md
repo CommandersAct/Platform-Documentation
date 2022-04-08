@@ -49,6 +49,7 @@
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
 * [Customers](features/customers.md)
+* [Segment](features/segment.md)
 * [Analyses](features/analyses/README.md)
   * [Campaign analysis](features/analyses/campaign-analysis/README.md)
     * [Attribution](features/analyses/campaign-analysis/attribution.md)

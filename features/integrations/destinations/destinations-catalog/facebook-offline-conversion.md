@@ -10,7 +10,7 @@ Create a new stream, select Facebook Offline conversion connector and enter the 
 
 On Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com) click on Events Manager and create a new data source:
 
-![](<../../../../.gitbook/assets/image (6).png>)
+![](<../../../../.gitbook/assets/image (6) (1).png>)
 
 Then select offline:
 
@@ -24,7 +24,7 @@ Finish the data source configuration and retrieve the Event set ID:
 
 Still on Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com) click on Business settings and select system user:
 
-![](<../../../../.gitbook/assets/image (2).png>)
+![](<../../../../.gitbook/assets/image (2) (1).png>)
 
 Create a system user (if you don't already have one) and generate a token:
 
