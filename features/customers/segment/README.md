@@ -11,7 +11,7 @@ This is where you create, edit and/or delete segments.
 5. The fifth column shows when was the last time a segment was modified.
 6. The sixth column is where you edit or delete a segment, by clicking the pencil or the trash can.
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-04-08 à 09.53.27.png>)
 
 ## How to add multiple values in a segment?
 
@@ -35,12 +35,12 @@ You can segment on conversion items, meaning products bought by users.&#x20;
 
 First, you have to select '`conversion`' universe and define a condition for conversions, like '`conversion ID exists`' = users have at least 1 conversion.&#x20;
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6).png>)
 
 Then the button 'ADD CONDITION' will appear, and you can define more conditions, including conditions for conversion items, select '**product**':
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 Then, you can easily segment on conversion items:
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10).png>)
