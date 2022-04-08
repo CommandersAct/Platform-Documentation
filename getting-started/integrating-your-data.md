@@ -18,4 +18,7 @@ There are several ways how to get your data into Commanders Act platform.
 ## Imports
 
 It is possible to import data to Commanders Act through regular automated csv imports.\
-Read more about imports [here](broken-reference).
+Read more about imports for:
+
+* [CRM users](../features/integrations/sources/sources-catalog/import-crm-users/users-file-importer.md)
+* [Conversions and product catalog](../features/integrations/sources/sources-catalog/import-conversions/conversions-files-importer.md)
