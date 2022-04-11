@@ -110,7 +110,6 @@
   * [Javascript SDK](developers/tracking/javascript-sdk.md)
   * [About events](developers/tracking/about-events/README.md)
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
-    * [Travel (Hotel/Air)](developers/tracking/about-events/travel-hotel-air.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
     * [Http tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
