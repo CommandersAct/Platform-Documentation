@@ -17,20 +17,20 @@ The UI is divided into three sections that provide information on the platform's
 *   **Delivered:** This displays the number of messages successfully delivered to a destination within the time period you choose.\
     The % of events delivered is represented by a weather icon:&#x20;
 
-    * sunny if the % is above 75% of events well delivered
-    * cloudy if the % is between 50 and 75% of events well delivered
-    * rainy if the % is between 25 and 50% of events well delivered
-    * stormy if the % is between 0 and 25% of events well delivered
+    * ![](<../../../.gitbook/assets/image (17).png>)sunny if the % of events successfully delivered is above 95%
+    * ![](<../../../.gitbook/assets/image (15).png>)cloudy between 90 and 95%&#x20;
+    * ![](<../../../.gitbook/assets/image (16).png>)rainy between 50 and 90%
+    * ![](<../../../.gitbook/assets/image (14).png>)stormy below 50%
 
 
 *   **Not Delivered:** This number represents the number of messages that the platform was unable to deliver. If this number is more than zero, the causes for this failure are listed in the errors' table below.
 
     The % of events not delivered is represented by a weather icon:&#x20;
 
-    * sunny if the % is between 0 and 25% of events not delivered
-    * cloudy if the % is between 25 and 50% of events not delivered
-    * rainy if the % is between 50 and 75% of events not delivered
-    * stormy if the % is above 75% of events not delivered
+    * ![](<../../../.gitbook/assets/image (17).png>)sunny if the % of failures is bellow 5%
+    * ![](<../../../.gitbook/assets/image (15).png>)cloudy if the % of failures is bellow 10%
+    * ![](<../../../.gitbook/assets/image (16).png>)rainy if the % of failures is between 10% and 50%
+    * ![](<../../../.gitbook/assets/image (14).png>)stormy if the % of failures is bellow 50%
 
 The % of difference display the comparison with the same previous period: ex if I select 2 days, it will display the difference with the previous 2 days, if I select 1 week it will display the difference with the previous week.
 

@@ -73,7 +73,7 @@ On Chrome / Android, we are able to create 1 user per device, with different pid
 
 As soon as we can identify 2 devices with the same user\_id (login for example), we can merge these 2 users with Fuse V2, to have 1 unique user for these 2 devices.
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 For Safari / iOS, it is different because we can't have different tcid. Due to cookie limitations on Safari, we use a fingerprint. Unfortunately, on a public hotspot, all devices have the same IP address and, as a result, the fingerprint is the same, meaning we have 1 unique user for all these devices.&#x20;
 
