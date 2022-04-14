@@ -16,7 +16,7 @@ To send data to our HTTP API, a content-type header must be set to `'application
 
 ### Errors
 
-We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../../developers/config-api/) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
+We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
 
 ### Rate limit
 

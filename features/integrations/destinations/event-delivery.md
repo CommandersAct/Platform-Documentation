@@ -61,4 +61,4 @@ Currently, two channels are available to receive alerts : email and platform not
 
 ## Delivery API
 
-All the data of this UI is available in real-time through delivery API, see our [Config API](../../../developers/config-api/) for the complete documentation.
+All the data of this UI is available in real-time through delivery API, see our [Config API](../../../developers/config-api.md) for the complete documentation.

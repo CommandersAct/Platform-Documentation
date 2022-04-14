@@ -116,5 +116,4 @@
     * [API users](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-crm-users/api-users)
     * [API Conversions and Product catalog](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
     * [API Segments](https://community.commandersact.com/platform-x/features/customers/segment/api-segments)
-* [Config API](developers/config-api/README.md)
-  * [API](developers/config-api/api.md)
+* [Config API](developers/config-api.md)
