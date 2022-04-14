@@ -117,4 +117,4 @@
     * [API Conversions and Product catalog](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
     * [API Segments](https://community.commandersact.com/platform-x/features/customers/segment/api-segments)
 * [Config API](developers/config-api/README.md)
-  * [Consent get statistic](developers/config-api/consent-get-statistic.md)
+  * [API](developers/config-api/api.md)
