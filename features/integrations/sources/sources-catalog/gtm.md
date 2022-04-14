@@ -8,12 +8,16 @@ Commanders Act provides a GTM template to connect your existing GTM implementati
 
 ## Setup
 
+
+
 Summarizing all recommended steps:
 
 1. Add our template
 2. Configure your tag
 
 ## Add our template
+
+
 
 First, access [GTM ](https://tagmanager.google.com)and then add our template "**Commanders Act | Serverside events bridge**" from the Google "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/Serverside-events-bridge)" in your workspace, then select `(1)` "**Tags**".
 
@@ -37,11 +41,15 @@ Search for `(5)` the "**Commanders Act | Serverside events bridge**" custom temp
 
 ## Configure your tag
 
+
+
 Start by filling `(6)` **a name for your tag** in the upper left corner.
 
 ![](../../../../.gitbook/assets/serverside\_events\_bridge6.png)
 
+{% hint style="success" %}
 **Hint**: you may want to name your tag adding the event name you're going to implement in the end. (E.g. "_Commanders Act |_ Serverside events bridge _- **Purchase**_")&#x20;
+{% endhint %}
 
 Input your `(7)` "**Commanders Act Site ID**" and select `(8)` the "**Commanders Act Event**" from the drop-down menu, which is the event you want to forward.
 
@@ -51,7 +59,7 @@ Depending on which event you select more (or less) fields will be presented. In 
 
 The "**Event Fields**" section contains fields that define the event itself and are mostly mandatory or highly recommended. &#x20;
 
-Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(9)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(10)` the "**Product Id**" by filling the property name.
+Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(9)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(10)` the "**Product Id**" by filling the property name.&#x20;
 
 ![](../../../../.gitbook/assets/serverside\_events\_bridge8.png)
 
@@ -75,4 +83,5 @@ Ensure your category relationships are shared with Commanders Act.
 Only with the agreed consent settings, we're allowed to bridge both the "Purchase" and "Refund" events to the "Facebook CAPI".
 {% endhint %}
 
-Complete your configuration by selecting the proper activation in the "Triggering" area / "Firing Triggers".\
+Complete your configuration by selecting the proper activation in the "Triggering" area / "Firing Triggers".
+
