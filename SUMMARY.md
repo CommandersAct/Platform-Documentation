@@ -32,6 +32,7 @@
       * [Import conversions](features/integrations/sources/sources-catalog/import-conversions/README.md)
         * [API Conversions and Product catalog](features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md)
         * [Conversions files importer](features/integrations/sources/sources-catalog/import-conversions/conversions-files-importer.md)
+      * [Product catalog](features/integrations/sources/sources-catalog/product-catalog.md)
   * [Destinations](features/integrations/destinations/README.md)
     * [Destinations overview](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
