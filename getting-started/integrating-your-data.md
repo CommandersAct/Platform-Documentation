@@ -25,8 +25,8 @@ It is possible to import data to Commanders Act through regular automated csv im
 Read more about imports for:
 
 * [CRM users](../features/integrations/sources/sources-catalog/import-crm-users/users-file-importer.md)
-* [Conversions and product catalog](../features/integrations/sources/sources-catalog/import-conversions/conversions-files-importer.md)
-* Custom universe
+* [Conversions](../features/integrations/sources/sources-catalog/import-conversions/conversions-files-importer.md) and [Product catalog](../features/integrations/sources/sources-catalog/product-catalog.md)
+* Custom storage universe
 
 ## Data API
 
