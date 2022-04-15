@@ -112,6 +112,7 @@
   * [Javascript SDK](developers/tracking/javascript-sdk.md)
   * [About events](developers/tracking/about-events/README.md)
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
+    * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
     * [Http tracking API](features/integrations/sources/sources-catalog/http-tracking-api.md)
