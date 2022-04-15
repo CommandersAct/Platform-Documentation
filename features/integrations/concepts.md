@@ -3,6 +3,8 @@
 Basically, the platform libraries/API ([Source](concepts.md#source)) collects user actions ([Event](concepts.md#event)) on your website/app/etc.\
 These events are sent to the platform servers and are then enriched, normalized and translated in each tool ([Destination](concepts.md#destinations)) format, so that they can be sent to your chosen destinations.
 
+Platform servers can also store events, users and custom data in the Commanders Act database ([Data store](concepts.md#data-store)) and send this data to your storage system (by FTP, email, ...), BI system, etc.
+
 ## Event
 
 An event represents an action made by a user on your website or application. To track that action, you send an event that contains the data and will get received by Commanders Act.
