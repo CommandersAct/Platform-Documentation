@@ -11,3 +11,5 @@ The Config API allows you to manage your Commanders Act account, sources, destin
 * etc.
 
 The Config API is a set of REST services under api.commander1.com, you can download the [openAPI specification](https://tagcommander.github.io/api\_doc/) or read the [API documentation here](https://tagcommander.github.io/api\_doc/).&#x20;
+
+{% embed url="https://tagcommander.github.io/api_doc" %}
