@@ -136,7 +136,7 @@ This chart is cumulative in order to reflect more the impact in terms of users, 
 
 You can visualize directly here the comparison between the two populations (audience activated and control group) for the following metrics: ARPU (Average Revenue Per User); Average Basket Amount; Conversion Rate. It allows you to analyze quickly which metrics are very impactful and relevant to compare the populations.
 
-### **Table**
+### **Metrics**
 
 ![](<../../../.gitbook/assets/image (7) (1) (1).png>)
 
