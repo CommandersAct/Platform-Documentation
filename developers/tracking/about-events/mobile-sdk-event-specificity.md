@@ -17,8 +17,6 @@ Here are an example of event playload :&#x20;
 	},
 	"device": {
 		"sdk_id": "C32272DB0-C21E-11E4-8DFC-AA07A5B093DB",
-		"advertising_id": "9B3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB",
-		"ad_tracking_enabled": true,
 		"manufacturer": "Apple",
 		"model": "iPhone7.3",
 		"name": "maguro",
@@ -82,8 +80,6 @@ Here are fields automatically added by sdk and js :
 | app.serverside\_version               |                            | √       | √           |
 | app.core\_version                     |                            | √       | √           |
 | device.type                           |                            |         | √           |
-| device.advertising\_id                |                            | √       | √           |
-| device.ad\_tracking\_enabled          |                            | √       | √           |
 | device.manufacturer                   |                            | √       | √           |
 | device.model                          |                            | √       | √           |
 | [device.name](http://device.name)     |                            |         | √           |
