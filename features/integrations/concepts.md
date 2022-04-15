@@ -17,5 +17,5 @@ Destinations are the partners where you eventually want the collected data to go
 
 ## Data store
 
-Data store is the name of Commanders Act BigData database. You can store here your events and your imported data (product catalog, etc.)\
-Storing data inside the Data store allows you then to enrich your events by retrieving additional data in any storage universe.
+Data store is the name of Commanders Act BigData database. You can store here your events and your [imported data](../../getting-started/integrating-your-data.md#imports) (product catalog, etc.)\
+Storing data inside the Data store allows you then to [enrich ](../enrichments/)your events by retrieving additional data in any storage universe. It also allows you to create user [segments](../customers/segment/).
