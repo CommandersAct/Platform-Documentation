@@ -14,3 +14,8 @@ A source is an emitter of events. It can represents your website, your mobile ap
 ## Destination
 
 Destinations are the partners where you eventually want the collected data to go. Commanders Act provide a librrary of many destinations ready to be used, like Facebook CAPI or Google enhance API.
+
+## Data store
+
+Data store is the name of Commanders Act BigData database. You can store here your events and your imported data (product catalog, etc.)\
+Storing data inside the Data store allows you then to enrich your events by retrieving additional data in any storage universe.
