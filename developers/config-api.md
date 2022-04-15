@@ -10,5 +10,7 @@ The Config API allows you to manage your Commanders Act account, sources, destin
 * Query Event Delivery metrics to build custom dashboards and alerts to monitor delivery of your events to destinations
 * etc.
 
-The Config API is a set of REST services under api.commander1.com, you can download the openAPI specification or read the documentation here.
+The Config API is a set of REST services under api.commander1.com, you can download the openAPI specification or read the documentation below :
+
+{% file src="../.gitbook/assets/redoc-config-api.html" %}
 
