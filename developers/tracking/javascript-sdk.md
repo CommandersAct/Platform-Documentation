@@ -6,6 +6,8 @@ Overview on the Commanders Act onsite API.
 
 The onsite API is used to interact with Commanders Act features with JavaScript.
 
+There are different commands available within `cact()`: `config` is used to set general properties,  `event` is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
+
 ## How to use <a href="#how-to-use" id="how-to-use"></a>
 
 The onsite API consists of a single function, `cact()`, with the following strict signature:
@@ -14,14 +16,28 @@ The onsite API consists of a single function, `cact()`, with the following stric
 cact(command, [options,], [config,], [callback])
 ```
 
-| Argument   | Descriptions                                                                                          | Required |
-| ---------- | ----------------------------------------------------------------------------------------------------- | -------- |
-| `command`  | A string identifier used to select the desired method.                                                | Required |
-| `options`  | A JavaScript object that includes data passed to the method.                                          | Optional |
-| `config`   | A javascript object that is used to override the default settings like `idSite` or `collectionDomain` | Optional |
-| `callback` | A JavaScript callback function that is used to receive information or events from the onsite API.     | Optional |
+| Argument   | Descriptions                                                                                                        | Required |
+| ---------- | ------------------------------------------------------------------------------------------------------------------- | -------- |
+| `command`  | A string identifier used to select the desired method.                                                              | Required |
+| `options`  | A JavaScript object that includes data passed to the method.                                                        | Optional |
+| `config`   | A javascript object that is used to override the default settings like `idSite` , `collectionDomain` or `sourceKey` | Optional |
+| `callback` | A JavaScript callback function that is used to receive information or events from the onsite API.                   | Optional |
 
 Onsite API is included in each containers and privacy banners.
+
+## Initialize global settings with config <a href="#send-event" id="send-event"></a>
+
+Use the `config` command to initialize and configure settings for a particular workspace. The config command takes the following format:
+
+```javascript
+cact('trigger', {<config_object>});
+```
+
+Example :
+
+```javascript
+cact('config', { siteId: 1234, sourceKey: 'abcd' });
+```
 
 ## Send event <a href="#send-event" id="send-event"></a>
 
@@ -37,12 +53,13 @@ Example : to send a purchase event :
 cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...});
 ```
 
-Example : to send a purchase event, overriding the default tracking domain / workspace :
+Example : to send a purchase event, overriding the default tracking domain / workspace / sourcekey :
 
 ```javascript
 cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
     collectionDomain: "my.firstdomain.com",
-    idSite: "1234"
+    idSite: "1234", 
+    sourceKey: "abcd"
 });
 ```
 
