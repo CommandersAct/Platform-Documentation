@@ -14,12 +14,12 @@ The onsite API consists of a single function, `cact()`, with the following stric
 cact(command, [options,], [config,], [callback])
 ```
 
-| Argument   | Descriptions                                                                                      | Required |
-| ---------- | ------------------------------------------------------------------------------------------------- | -------- |
-| `command`  | A string identifier used to select the desired method.                                            | Required |
-| `options`  | A JavaScript object that includes data passed to the method.                                      | Optional |
-| `config`   | A javascript object that is used to override the default settings like `idSite`                   | Optional |
-| `callback` | A JavaScript callback function that is used to receive information or events from the onsite API. | Optional |
+| Argument   | Descriptions                                                                                          | Required |
+| ---------- | ----------------------------------------------------------------------------------------------------- | -------- |
+| `command`  | A string identifier used to select the desired method.                                                | Required |
+| `options`  | A JavaScript object that includes data passed to the method.                                          | Optional |
+| `config`   | A javascript object that is used to override the default settings like `idSite` or `collectionDomain` | Optional |
+| `callback` | A JavaScript callback function that is used to receive information or events from the onsite API.     | Optional |
 
 Onsite API is included in each containers and privacy banners.
 
@@ -27,14 +27,23 @@ Onsite API is included in each containers and privacy banners.
 
 To send event data to the serverside Commanders Act platform, use this command:
 
-```
+```javascript
 cact('trigger', '<event_name>', {<event_params>});
 ```
 
 Example : to send a purchase event :
 
-```
+```javascript
 cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...});
+```
+
+Example : to send a purchase event, overriding the default tracking domain / workspace :
+
+```javascript
+cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
+    collectionDomain: "my.firstdomain.com",
+    idSite: "1234"
+});
 ```
 
 ## Get information <a href="#get-information" id="get-information"></a>
