@@ -27,10 +27,10 @@ The UI is divided into three sections that provide information on the platform's
 
     The % of events not delivered is represented by a weather icon:&#x20;
 
-    * <img src="../../../.gitbook/assets/image (17).png" alt="" data-size="line">sunny if the % of failures is bellow 5%
-    * <img src="../../../.gitbook/assets/image (15).png" alt="" data-size="line">cloudy if the % of failures is bellow 10%
+    * <img src="../../../.gitbook/assets/image (17).png" alt="" data-size="line">sunny if the % of failures is below 5%
+    * <img src="../../../.gitbook/assets/image (15).png" alt="" data-size="line">cloudy if the % of failures is below 10%
     * <img src="../../../.gitbook/assets/image (16).png" alt="" data-size="line">rainy if the % of failures is between 10% and 50%
-    * <img src="../../../.gitbook/assets/image (14).png" alt="" data-size="line">stormy if the % of failures is bellow 50%
+    * <img src="../../../.gitbook/assets/image (14).png" alt="" data-size="line">stormy if the % of failures is above 50%
 
 The % of difference display the comparison with the same previous period: ex if I select 2 days, it will display the difference with the previous 2 days, if I select 1 week it will display the difference with the previous week.
 
