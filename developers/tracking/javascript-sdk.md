@@ -6,7 +6,7 @@ Overview on the Commanders Act onsite API.
 
 The onsite API is used to interact with Commanders Act features with JavaScript.
 
-There are different commands available within `cact()`: `config` is used to set general properties,  `event` is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
+There are different commands available within `cact()`: `config` is used to set general properties,  `trigger` event is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
 
 ## How to use <a href="#how-to-use" id="how-to-use"></a>
 
@@ -30,7 +30,7 @@ Onsite API is included in each containers and privacy banners.
 Use the `config` command to initialize and configure settings for a particular workspace. The config command takes the following format:
 
 ```javascript
-cact('trigger', {<config_object>});
+cact('config', {<config_object>});
 ```
 
 Example :
