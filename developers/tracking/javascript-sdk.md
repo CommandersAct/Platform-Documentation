@@ -25,7 +25,7 @@ cact(command, [options,], [config,], [callback])
 
 Onsite API is included in each containers and privacy banners.
 
-## Initialize global settings with config <a href="#send-event" id="send-event"></a>
+## Initialize global settings with config <a href="#config" id="config"></a>
 
 Use the `config` command to initialize and configure settings for a particular workspace. The config command takes the following format:
 
