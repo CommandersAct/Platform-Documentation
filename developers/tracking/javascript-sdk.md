@@ -27,11 +27,24 @@ Onsite API is included in each containers and privacy banners.
 
 ## Initialize global settings with config <a href="#config" id="config"></a>
 
-Use the `config` command to initialize and configure settings for a particular workspace. The config command takes the following format:
+Use the `config` command to initialize and configure settings for a particular workspace.
+
+{% hint style="info" %}
+This command is optional, you can also set custom settings directly inside a[ `trigger` command](javascript-sdk.md#send-event), through the config object parameter.
+{% endhint %}
+
+The config command takes the following format:
 
 ```javascript
 cact('config', {<config_object>});
 ```
+
+Config object accept **3 parameters**, they are optional if you use a web container on your page :&#x20;
+
+* `siteId` : if not set, the default value is the site id of the last web container loaded (`tC.id_site`)
+* `sourceKey`: if not set, the default value is derivative from you web container id. If you don't have a web container, the sourceKey is mandatory and correspond to your JS SDK source.
+* `collectionDomain`: if not set, the default value is `collect.commander1.com`\
+  ``This parameter is used to set your first party domain
 
 Example :
 
