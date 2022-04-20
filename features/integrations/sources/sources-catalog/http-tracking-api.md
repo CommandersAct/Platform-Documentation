@@ -18,6 +18,10 @@ To send data to our HTTP API, a content-type header must be set to `'application
 
 We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
 
+### Max Request Size <a href="#max-request-size" id="max-request-size"></a>
+
+There is a maximum of `32KB` per API request.
+
 ### Rate limit
 
 There is no real rate limit above which the system will discard your data. But if you need to import at a rate faster than **500 requests per second**, please [contact us](mailto:support@commandersact.com) beforehand.
