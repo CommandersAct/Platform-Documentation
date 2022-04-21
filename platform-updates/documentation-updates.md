@@ -10,6 +10,10 @@ Events enrichment article:
 
 {% embed url="https://community.commandersact.com/platform-x/features/enrichments/events-enrichment" %}
 
+Product catalog files importer details:
+
+{% embed url="https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/product-catalog/product-catalog-files-importer-ftp" %}
+
 ## 19/04/2022
 
 Bulk articles update :&#x20;
