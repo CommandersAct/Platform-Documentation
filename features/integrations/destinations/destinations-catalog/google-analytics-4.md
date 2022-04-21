@@ -1,6 +1,7 @@
 # Google Analytics 4
 
-Send events to the latest version of Google Analytics.
+Send events to the latest version of Google Analytics.\
+Server-side data will be sent to [Google’s Measurement Protocol API](https://developers.google.com/analytics/devguides/collection/protocol/ga4).
 
 ## How to configure Google Analytics 4
 
