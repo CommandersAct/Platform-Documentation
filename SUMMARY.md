@@ -60,6 +60,7 @@
 * [Enrichments](features/enrichments/README.md)
   * [Augmented User Attributes](features/enrichments/augmented-user-attributes/README.md)
     * [Business case](features/enrichments/augmented-user-attributes/business-case.md)
+  * [Events enrichment](features/enrichments/events-enrichment.md)
 * [Customers](features/customers.md)
   * [Segment](features/customers/segment/README.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)
