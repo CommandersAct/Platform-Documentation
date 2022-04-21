@@ -72,36 +72,34 @@ Here are an example of event playload :&#x20;
 
 Here are fields automatically added by sdk and js :
 
-| Automatic FIELD                       | Web container JS or JS SDK | IOS SDK | ANDROID SDK |
-| ------------------------------------- | -------------------------- | ------- | ----------- |
-| [app.name](http://app.name)           |                            | √       | √           |
-| app.version                           |                            | √       | √           |
-| app.build                             |                            | √       | √           |
-| app.serverside\_version               |                            | √       | √           |
-| app.core\_version                     |                            | √       | √           |
-| device.type                           |                            |         | √           |
-| device.manufacturer                   |                            | √       | √           |
-| device.model                          |                            | √       | √           |
-| [device.name](http://device.name)     |                            |         | √           |
-| [library.name](http://library.name) ? | √                          | √       | √           |
-| library.version ?                     | √                          | √       | √           |
-| ip\*                                  | √                          | √       | √           |
-| locale                                | √                          | √       | √           |
-| network.bluetooth                     |                            |         | √           |
-| network.carrier                       |                            | √       | √           |
-| network.cellular                      |                            | √       | √           |
-| network.wifi                          |                            | √       | √           |
-| [os.name](http://os.name)             |                            | √       | √           |
-| os.version                            |                            | √       | √           |
-| properties.path                       | √                          |         |             |
-| properties.referrer                   | √                          |         |             |
-| properties.title                      | √                          |         |             |
-| properties.url                        | √                          |         |             |
-| screen.density                        |                            |         | √           |
-| screen.height                         |                            | √       | √           |
-| screen.width                          |                            | √       | √           |
-| userAgent                             | √                          |         | √           |
-| timezone                              |                            | √       | √           |
+| Automatic FIELD                   | Web container JS or JS SDK | IOS SDK | ANDROID SDK |
+| --------------------------------- | -------------------------- | ------- | ----------- |
+| [app.name](http://app.name)       |                            | √       | √           |
+| app.version                       |                            | √       | √           |
+| app.build                         |                            | √       | √           |
+| app.serverside\_version           |                            | √       | √           |
+| app.core\_version                 |                            | √       | √           |
+| device.type                       |                            |         | √           |
+| device.manufacturer               |                            | √       | √           |
+| device.model                      |                            | √       | √           |
+| [device.name](http://device.name) |                            |         | √           |
+| ip\*                              | √                          | √       | √           |
+| locale                            | √                          | √       | √           |
+| network.bluetooth                 |                            |         | √           |
+| network.carrier                   |                            | √       | √           |
+| network.cellular                  |                            | √       | √           |
+| network.wifi                      |                            | √       | √           |
+| [os.name](http://os.name)         |                            | √       | √           |
+| os.version                        |                            | √       | √           |
+| properties.path                   | √                          |         |             |
+| properties.referrer               | √                          |         |             |
+| properties.title                  | √                          |         |             |
+| properties.url                    | √                          |         |             |
+| screen.density                    |                            |         | √           |
+| screen.height                     |                            | √       | √           |
+| screen.width                      |                            | √       | √           |
+| userAgent                         | √                          |         | √           |
+| timezone                          |                            | √       | √           |
 
 (\*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
 
@@ -109,26 +107,23 @@ Here are fields automatically added by sdk and js :
 
 Lifecycle
 
-| Automatic FIELD | **Explanation** | Both platforms? |
-| --------------- | --------------- | --------------- |
-
-| Automatic FIELD                | **Explanation**                                                                                                  | Both platforms? |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------- | --------------- |
-| session\_id                    | An id specific to this session.                                                                                  | √               |
-| new\_session                   | True if this hit is the first of a new session.                                                                  | √               |
-| session\_duration              | The time spent during this session.                                                                              | √               |
-| current\_session               | Timestamp of the start of the current session.                                                                   | √               |
-| visit\_number                  | Number of times the application was launched                                                                     | √               |
-| current\_visit                 | Timestamp of the start of the current visit                                                                      | √               |
-| current\_version\_first\_visit | Timestamp of the first visit for this application version                                                        | √               |
-| session\_number                | The number of sessions                                                                                           | √               |
-| first\_visit                   | Timestamp of the first app visit                                                                                 | √               |
-| last\_visit                    | Timestamp of the last visit                                                                                      | √               |
-| last\_call                     | Timestamp of the previous call                                                                                   | √               |
-| last\_session\_start           | Timestamp of the start of the previous session                                                                   | √               |
-| last\_session\_last\_hit       | Timestamp of the last hit sent during the previous session                                                       | √               |
-| foreground\_transitions        | Number of times the app when from background to foreground                                                       | √               |
-| foreground\_time               | Time the application spent in foreground                                                                         | √               |
-| background\_time               | Time the application spent in background                                                                         | √               |
-| first\_execute                 | Is this the first hit of this launch                                                                             | √               |
-| is\_first\_visit               | Is this the first launch of this application. (together with first execute you can validate a new installations) | √               |
+| Automatic FIELD                | **Explanation**                                                                                                  | Both APP platforms? |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------- |
+| session\_id                    | An id specific to this session.                                                                                  | √                   |
+| new\_session                   | True if this hit is the first of a new session.                                                                  | √                   |
+| session\_duration              | The time spent during this session.                                                                              | √                   |
+| current\_session               | Timestamp of the start of the current session.                                                                   | √                   |
+| visit\_number                  | Number of times the application was launched                                                                     | √                   |
+| current\_visit                 | Timestamp of the start of the current visit                                                                      | √                   |
+| current\_version\_first\_visit | Timestamp of the first visit for this application version                                                        | √                   |
+| session\_number                | The number of sessions                                                                                           | √                   |
+| first\_visit                   | Timestamp of the first app visit                                                                                 | √                   |
+| last\_visit                    | Timestamp of the last visit                                                                                      | √                   |
+| last\_call                     | Timestamp of the previous call                                                                                   | √                   |
+| last\_session\_start           | Timestamp of the start of the previous session                                                                   | √                   |
+| last\_session\_last\_hit       | Timestamp of the last hit sent during the previous session                                                       | √                   |
+| foreground\_transitions        | Number of times the app when from background to foreground                                                       | √                   |
+| foreground\_time               | Time the application spent in foreground                                                                         | √                   |
+| background\_time               | Time the application spent in background                                                                         | √                   |
+| first\_execute                 | Is this the first hit of this launch                                                                             | √                   |
+| is\_first\_visit               | Is this the first launch of this application. (together with first execute you can validate a new installations) | √                   |
