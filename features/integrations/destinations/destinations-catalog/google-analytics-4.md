@@ -35,7 +35,6 @@ Cookie name holding the GA "Client ID" that uniquely identifies a user instance 
 | `add_to_wishlist`     | `add_to_wishlist`     |
 | `generate_lead`       | `generate_lead`       |
 | `refund`              | `refund`              |
-| `page_view`           | `page_view`           |
 
 ## Limitations
 
