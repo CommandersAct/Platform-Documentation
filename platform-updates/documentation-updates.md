@@ -8,9 +8,7 @@ description: The latest updates made to our documentation articles
 
 Events enrichment article:
 
-{% content-ref url="../features/enrichments/events-enrichment.md" %}
-[events-enrichment.md](../features/enrichments/events-enrichment.md)
-{% endcontent-ref %}
+{% embed url="https://community.commandersact.com/platform-x/features/enrichments/events-enrichment" %}
 
 ## 19/04/2022
 
