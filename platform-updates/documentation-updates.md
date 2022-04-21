@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 21/04/2022
+
+Events enrichment article:
+
+{% content-ref url="../features/enrichments/events-enrichment.md" %}
+[events-enrichment.md](../features/enrichments/events-enrichment.md)
+{% endcontent-ref %}
+
 ## 19/04/2022
 
 Bulk articles update :&#x20;
