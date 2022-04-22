@@ -120,5 +120,5 @@
     *
     *
     *
-    *
+    * [Http tracking API](features/integrations/sources/sources-catalog/http-tracking-api.md)
 * [Config API](developers/config-api.md)
