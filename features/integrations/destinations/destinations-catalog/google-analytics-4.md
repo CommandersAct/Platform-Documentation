@@ -31,6 +31,7 @@ Cookie name holding the GA "Client ID" that uniquely identifies a user instance 
 | `view_item`           | `view_item`           |
 | `view_item_list`      | `view_item_list`      |
 | `search`              | `search`              |
+| `page_view`           | `page_view`           |
 | `add_payment_info`    | `add_payment_info`    |
 | `add_to_wishlist`     | `add_to_wishlist`     |
 | `generate_lead`       | `generate_lead`       |
