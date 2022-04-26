@@ -52,6 +52,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
       }
   },
   "page": {
+    "title": "Search page"
     "location": "https://shop.com/search?q=..."
   },
   "device": {
