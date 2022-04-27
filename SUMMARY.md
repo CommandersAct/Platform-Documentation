@@ -23,6 +23,7 @@
       * [GTM](features/integrations/sources/sources-catalog/gtm.md)
       * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)
       * [Javascript SDK](developers/tracking/javascript-sdk.md)
+      * [Containers](features/integrations/sources/sources-catalog/containers.md)
       * [iOS](features/integrations/sources/sources-catalog/ios.md)
       * [Android](features/integrations/sources/sources-catalog/android.md)
       * [Realytics](features/integrations/sources/sources-catalog/realytics.md)
