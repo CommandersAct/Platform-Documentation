@@ -10,3 +10,7 @@ You will need the following elements to configure this destination:
 
 **Secured collection domain**: SSL Domain on which information is collected (E.g. "logs1412.xiti.com", without quotes). This can be found in "AT Internet" interface following \
 "`Data Collection Portal" ➜ "Tools" ➜ "Site Management`" and selecting your site.
+
+{% hint style="warning" %}
+Custom events should be added first to AT Internet Data Model, otherwise it won't be processed and excluded at the processing step.
+{% endhint %}
