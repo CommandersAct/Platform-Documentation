@@ -47,6 +47,7 @@
       * [Google Store Sales Direct](features/integrations/destinations/destinations-catalog/google-store-sales-direct.md)
       * [Google Customer Match](features/integrations/destinations/destinations-catalog/google-customer-match.md)
       * [Awin](features/integrations/destinations/destinations-catalog/awin.md)
+      * [Effinity](features/integrations/destinations/destinations-catalog/effinity.md)
       * [AT Internet](features/integrations/destinations/destinations-catalog/at-internet.md)
       * [Criteo (audiences)](features/integrations/destinations/destinations-catalog/criteo-audiences.md)
       * [Criteo (offline conversions)](features/integrations/destinations/destinations-catalog/criteo-offline-conversions.md)
