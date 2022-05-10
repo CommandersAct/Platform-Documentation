@@ -52,6 +52,7 @@
       * [AT Internet](features/integrations/destinations/destinations-catalog/at-internet.md)
       * [Criteo (audiences)](features/integrations/destinations/destinations-catalog/criteo-audiences.md)
       * [Criteo (offline conversions)](features/integrations/destinations/destinations-catalog/criteo-offline-conversions.md)
+      * [FTP](features/integrations/destinations/destinations-catalog/ftp.md)
       * [Snapchat Conversions API](features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
       * [Tableau Online](features/integrations/destinations/destinations-catalog/tableau-online.md)
       * [The Trade Desk](features/integrations/destinations/destinations-catalog/the-trade-desk.md)
