@@ -61,6 +61,7 @@
         * [Serverside javascript helpers](features/integrations/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
     * [Destination filters](features/integrations/destinations/destination-filters.md)
     * [Event delivery](features/integrations/destinations/event-delivery.md)
+    * [Live event inspector](features/integrations/destinations/live-event-inspector.md)
 * [Data quality](features/data-quality.md)
 * [Identity resolution](features/identity-resolution.md)
 * [Enrichments](features/enrichments/README.md)
