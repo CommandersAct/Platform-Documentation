@@ -128,3 +128,9 @@
     * [Conversions API](features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md)
     * [Product Catalog API](features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md)
 * [Config API](developers/config-api.md)
+
+## CONFIGURE
+
+* [Administration](configure/administration/README.md)
+  * [Domain Management](configure/administration/domain-management/README.md)
+    * [CNAME record](configure/administration/domain-management/cname-record.md)
