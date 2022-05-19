@@ -28,7 +28,7 @@ There is no real rate limit above which the system will discard your data. But i
 
 ## Event API <a href="#track" id="track"></a>
 
-You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties.&#x20;
+You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties.
 
 You should keep track of activities that are indications of your app's performance, such as Signed Up, Item Purchased, and Article Bookmarked. To begin, we recommend tracking only a few key events. More may easily be added later!
 
@@ -64,6 +64,10 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 ```
 
 Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../../developers/tracking/about-events/).
+
+{% hint style="info" %}
+If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
+{% endhint %}
 
 ## User API
 
