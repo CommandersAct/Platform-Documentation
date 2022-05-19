@@ -2,13 +2,11 @@
 description: Bridge your events in a seamless way.
 ---
 
-# GTM
+# Google Tag Manager (GTM)
 
 Commanders Act provides a GTM template to connect your existing GTM implementation to our serverside endpoint, in a secured environment.
 
 ## Setup
-
-
 
 Summarizing all recommended steps:
 
@@ -19,7 +17,7 @@ Summarizing all recommended steps:
 
 
 
-First, access [GTM ](https://tagmanager.google.com)and then add our template "**Commanders Act | Serverside events bridge**" from the Google "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/Serverside-events-bridge)" in your workspace, then select `(1)` "**Tags**".
+First, access [GTM ](https://tagmanager.google.com/)and then add our template "**Commanders Act | Serverside events bridge**" from the Google "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/Serverside-events-bridge)" in your workspace, then select `(1)` "**Tags**".
 
 ![](../../../../.gitbook/assets/serverside\_events\_bridge1.png)
 

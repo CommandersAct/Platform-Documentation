@@ -25,7 +25,7 @@ It offers only append or overwrite
 \
 **Url Server**\
 The URL for the Tableau server on which the data is published.\
-For Tableau Online, specify [https://online.tableau.com](https://online.tableau.com).\
+For Tableau Online, specify [https://online.tableau.com](https://online.tableau.com/).\
 \--\
 **Site name**\
 The site id is independent of the site name, and it is indicated in the URL when you view the site in a browser. For example, if the URL for the page you see after signing in to Tableau Online is\

@@ -4,7 +4,7 @@
 
 > Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
-It is highly recommended that you send multiple objects in one HTTP request. This API allows streaming using newline separated JSON format or ndjson ([http://ndjson.org/](http://ndjson.org))
+It is highly recommended that you send multiple objects in one HTTP request. This API allows streaming using newline separated JSON format or ndjson ([http://ndjson.org/](http://ndjson.org/))
 
 ### Rate-limits <a href="#rate-limits" id="rate-limits"></a>
 

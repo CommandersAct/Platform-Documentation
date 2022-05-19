@@ -8,7 +8,7 @@ Create a new stream, select Facebook Offline conversion connector and enter the 
 
 ## How to find the Offline Event Set Id?
 
-On Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com) click on Events Manager and create a new data source:
+On Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com/) click on Events Manager and create a new data source:
 
 ![](<../../../../.gitbook/assets/image (6) (1) (1) (1).png>)
 
@@ -22,7 +22,7 @@ Finish the data source configuration and retrieve the Event set ID:
 
 ## How to generate the token?
 
-Still on Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com) click on Business settings and select system user:
+Still on Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com/) click on Business settings and select system user:
 
 ![](<../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png>)
 

@@ -5,7 +5,7 @@ Using this source, you can add TV touch points to customer journeys being able t
 
 ## Setup
 
-1. Access your [Commanders Act account](https://platform.commandersact.com).
+1. Access your [Commanders Act account](https://platform.commandersact.com/).
 2. Add Realytics "Default tag".
 3. Configure your tag.
 4. Test and deploy your container.&#x20;

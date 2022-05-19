@@ -72,34 +72,34 @@ Here are an example of event playload :&#x20;
 
 Here are fields automatically added by sdk and js :
 
-| Automatic FIELD                   | Web container JS or JS SDK | IOS SDK | ANDROID SDK |
-| --------------------------------- | -------------------------- | ------- | ----------- |
-| [app.name](http://app.name)       |                            | √       | √           |
-| app.version                       |                            | √       | √           |
-| app.build                         |                            | √       | √           |
-| app.serverside\_version           |                            | √       | √           |
-| app.core\_version                 |                            | √       | √           |
-| device.type                       |                            |         | √           |
-| device.manufacturer               |                            | √       | √           |
-| device.model                      |                            | √       | √           |
-| [device.name](http://device.name) |                            |         | √           |
-| ip\*                              | √                          | √       | √           |
-| locale                            | √                          | √       | √           |
-| network.bluetooth                 |                            |         | √           |
-| network.carrier                   |                            | √       | √           |
-| network.cellular                  |                            | √       | √           |
-| network.wifi                      |                            | √       | √           |
-| [os.name](http://os.name)         |                            | √       | √           |
-| os.version                        |                            | √       | √           |
-| properties.path                   | √                          |         |             |
-| properties.referrer               | √                          |         |             |
-| properties.title                  | √                          |         |             |
-| properties.url                    | √                          |         |             |
-| screen.density                    |                            |         | √           |
-| screen.height                     |                            | √       | √           |
-| screen.width                      |                            | √       | √           |
-| userAgent                         | √                          |         | √           |
-| timezone                          |                            | √       | √           |
+| Automatic FIELD                    | Web container JS or JS SDK | IOS SDK | ANDROID SDK |
+| ---------------------------------- | -------------------------- | ------- | ----------- |
+| [app.name](http://app.name/)       |                            | √       | √           |
+| app.version                        |                            | √       | √           |
+| app.build                          |                            | √       | √           |
+| app.serverside\_version            |                            | √       | √           |
+| app.core\_version                  |                            | √       | √           |
+| device.type                        |                            |         | √           |
+| device.manufacturer                |                            | √       | √           |
+| device.model                       |                            | √       | √           |
+| [device.name](http://device.name/) |                            |         | √           |
+| ip\*                               | √                          | √       | √           |
+| locale                             | √                          | √       | √           |
+| network.bluetooth                  |                            |         | √           |
+| network.carrier                    |                            | √       | √           |
+| network.cellular                   |                            | √       | √           |
+| network.wifi                       |                            | √       | √           |
+| [os.name](http://os.name/)         |                            | √       | √           |
+| os.version                         |                            | √       | √           |
+| properties.path                    | √                          |         |             |
+| properties.referrer                | √                          |         |             |
+| properties.title                   | √                          |         |             |
+| properties.url                     | √                          |         |             |
+| screen.density                     |                            |         | √           |
+| screen.height                      |                            | √       | √           |
+| screen.width                       |                            | √       | √           |
+| userAgent                          | √                          |         | √           |
+| timezone                           |                            | √       | √           |
 
 (\*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
 

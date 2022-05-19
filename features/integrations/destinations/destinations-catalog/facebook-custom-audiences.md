@@ -23,7 +23,7 @@ You need 2 information for the Facebook connector:
 
 ### Where can I find the Ad Account ID? <a href="#where-can-i-find-the-ad-account-id" id="where-can-i-find-the-ad-account-id"></a>
 
-You have to go on Facebook Business [https://business.facebook.com/](https://business.facebook.com) and login to your account.
+You have to go on Facebook Business [https://business.facebook.com/](https://business.facebook.com/) and login to your account.
 
 Then you have to go to ‘Ad Account settings’:
 
@@ -37,7 +37,7 @@ Copy and paste it on our Facebook connector.
 
 ### Where can I find the Access Token? <a href="#where-can-i-find-the-access-token" id="where-can-i-find-the-access-token"></a>
 
-For this part, you have to go to Facebook Developers [https://developers.facebook.com/](https://developers.facebook.com) and create or login to your account (you need to have a dedicated account for Facebook Developer).&#x20;
+For this part, you have to go to Facebook Developers [https://developers.facebook.com/](https://developers.facebook.com/) and create or login to your account (you need to have a dedicated account for Facebook Developer).&#x20;
 
 Create a new app
 
@@ -58,7 +58,7 @@ Find the 'Ads Management Standard Access' component and, if you don't already ha
 
 Wait for the validation of your request.&#x20;
 
-Now you have an App linked to your Facebook Business Manager Account ([https://business.facebook.com/](https://business.facebook.com)). \
+Now you have an App linked to your Facebook Business Manager Account ([https://business.facebook.com/](https://business.facebook.com/)). \
 Please check this page to be sure that the App is well associated with the Business account:
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2qyxWuqeIvtNXLCIg%2F-Ma2rkqvFA5px8jSno8e%2FCapture%20d%E2%80%99e%CC%81cran%202021-05-19%20a%CC%80%2010.55.23.png?alt=media\&token=883787b9-6f0c-4449-8965-2f55826a47dd)
@@ -71,7 +71,7 @@ You can choose here to generate a token without any expiration date (1st method,
 
 #### 1st method: generate a token without any expiration date <a href="#1st-method-generate-a-token-without-any-expiration-date" id="1st-method-generate-a-token-without-any-expiration-date"></a>
 
-You have to create a system user on your Facebook Business Account ([https://business.facebook.com/](https://business.facebook.com)).
+You have to create a system user on your Facebook Business Account ([https://business.facebook.com/](https://business.facebook.com/)).
 
 {% hint style="warning" %}
 This system user should have **admin** rights for the ad account and for the app you created.

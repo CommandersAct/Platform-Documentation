@@ -12,7 +12,7 @@ You can, for example, not send campaigns related to a specific product to users 
 
 Facebook developed an API called 'Facebook Conversions API' [https://developers.facebook.com/docs/marketing-api/conversions-api](https://developers.facebook.com/docs/marketing-api/conversions-api)
 
-You need a Facebook Business Manager account [https://business.facebook.com/](https://business.facebook.com)
+You need a Facebook Business Manager account [https://business.facebook.com/](https://business.facebook.com/)
 
 Then on the menu, click on 'Events Manager':
 
