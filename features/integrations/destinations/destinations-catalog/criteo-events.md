@@ -6,6 +6,6 @@ Send events to Criteo
 
 You will need the following elements to configure this destination:
 
-**Partner ID**: must correspond to your customer ID
+**Account ID**: the retailer's Criteo account ID, can be found on Criteo interface (Management Center)
 
-**Caller ID**: specific ID for the API
+**Caller ID**: used for identifying the user, created and provided by Criteo upon request.
