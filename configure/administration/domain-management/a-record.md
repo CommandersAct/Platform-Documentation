@@ -14,6 +14,12 @@ Since there is a link between the domain and the IP address, we need to have con
 
 We therefore ask customers to delegate part of their DNS to us. This means that we will be able to configure the corresponding IP address for the delegated domain.
 
-The process is quite simple, on Administration / Domain Management interface
+The process is quite simple, on Administration / Domain Management interface, click on 'Add subdomain' to add a domain name that will be delegated. \
+Select A record and select the certificate:
+
+* Use Let's Encrypt certificate: follow the steps on the interface, and you have nothing else to do
+* Use your own certificate: you also have this possibility.
+
+Then test the configuration, and we take care of everything.
 
 ![](<../../../.gitbook/assets/Capture d’écran 2022-05-20 à 14.50.37.png>)
