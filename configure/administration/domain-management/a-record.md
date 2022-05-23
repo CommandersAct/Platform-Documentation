@@ -10,4 +10,10 @@ cs.example.com ⇒ IP Address : 36.283.49.384
 
 ## How the A record creation process works
 
+Since there is a link between the domain and the IP address, we need to have control over it. Otherwise, it would be very complicated for maintenance: we will have to ask customers to change their configuration each time we want to upgrade the platform.
+
+We therefore ask customers to delegate part of their DNS to us. This means that we will be able to configure the corresponding IP address for the delegated domain.
+
+The process is quite simple, on Administration / Domain Management interface
+
 ![](<../../../.gitbook/assets/Capture d’écran 2022-05-20 à 14.50.37.png>)
