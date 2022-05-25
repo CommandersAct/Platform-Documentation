@@ -20,7 +20,6 @@ As soon as you start the stream, the control group will be launched also, and re
 
 ### ****:warning: **Limitations**
 
-* you can have at most 3 streams with an active control group at the same time
 * be careful with the modification of streams with an active control group as it impacts the results on the campaign performance dashboard. Same with segments used in a stream with an active control group, if you modify a condition it impacts all the results.
 * When a stream is over you cannot relaunch it, you should duplicate it
 
