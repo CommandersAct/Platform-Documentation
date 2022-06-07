@@ -241,7 +241,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 | Name       | Type     | Required | Example Value                                    | Description                                                                                                                                 |
 | ---------- | -------- | -------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`    | `number` | No       | Products - MySite.com                            | Title of the page :[`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) from the DOM API                     |
+| `title`    | `string` | No       | Products - MySite.com                            | Title of the page :[`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) from the DOM API                     |
 | `url`      | `string` | No       | [http://www.mysite.com](http://www.mysite.com)   | Full URL of the page. Equivalent to[`location.href`](https://developer.mozilla.org/en-US/docs/Web/API/Location) from the DOM API.           |
 | `path`     | `string` | No       | /products/mothers                                | Path portion of the URL of the page : [`location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location) from the DOM API.    |
 | `referrer` | `string` | No       | [http://www.example.com](http://www.example.com) | Full URL of the previous page : [`document.referrer`](https://developer.mozilla.org/en-US/docs/Web/API/Document/referrer) from the DOM API. |
