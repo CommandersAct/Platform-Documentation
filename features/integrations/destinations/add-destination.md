@@ -1,14 +1,10 @@
 # Destinations overview
 
-## What is a destination ?
-
-
-
 ## Destination list
 
 Find here the full list of destinations already configured.
 
-You can search a destination by name and filter on environment (production or staging), status (active or inactive) or on specific source.
+You can search a destination by name and filter on environment (production or staging), status (active or inactive) and per sources (mobile, web...).
 
 ![](<../../../.gitbook/assets/Destination overview.png>)
 
