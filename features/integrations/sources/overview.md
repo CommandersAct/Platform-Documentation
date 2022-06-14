@@ -18,5 +18,7 @@ You can easily edit a source by clicking its name or the pencil icon.
 
 ![](<../../../.gitbook/assets/image (2) (2).png>)
 
+## Data quality
+
 
 
