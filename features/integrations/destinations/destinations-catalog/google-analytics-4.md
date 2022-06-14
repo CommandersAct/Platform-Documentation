@@ -39,9 +39,9 @@ Before you get started with this destination, ensure you have a GA4 property in 
 5. In **Data Source**, **** select your **Sources** and **Events** that will send data to GA4 and click **Next**.
 6. In **Settings**, input a **Destination name** and select an **Environment**.
 7. Input your **API Secret** and **Measurement ID**.
-8. (Optional) you can map your **Custom Event Properties** and **Custom User Properties** by clicking **Add row**.
-9. (Optional) In **Advanced**, you can set a **Client Id Cookie Name** and **Engagement Time in Milliseconds**.
-10. (Optional) in **Debug View**, you can flag **Enable debug mode**.
+8. You can map your **Custom Event Properties** and **Custom User Properties** by clicking **Add row**.
+9. In **Advanced**, you can set a **Client Id Cookie Name** and **Engagement Time in Milliseconds**.
+10. In **Debug View**, you can flag **Enable debug mode**.
 
 ### Configuration
 
