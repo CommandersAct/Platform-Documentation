@@ -47,8 +47,8 @@ Before you get started with this destination, ensure you have a GA4 property in 
 
 | Settings                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| API Secret                      | <p><em><code>Required</code></em></p><p>The <a href="https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_query_parameters"><strong>API Secret</strong></a> is generated through Google Analytics. To create this value, navigate in the Google Analytics interface following: <br>Admin > Data Streams > choose your stream > Measurement Protocol > Create.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Measurement Id                  | <p><em><code>Required</code></em></p><p>The <a href="https://support.google.com/analytics/answer/7372977"><strong>Measurement Id</strong></a> identifies a Data Stream. Found in the Google Analytics interface following: <br>Admin > Data Streams > choose your stream > Measurement Id. E.g. "G-XXXXXXXXXX".</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| API Secret                      | <p><em><strong><code>Required</code></strong></em></p><p>The <a href="https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_query_parameters"><strong>API Secret</strong></a> is generated through Google Analytics. To create this value, navigate in the Google Analytics interface following: <br>Admin > Data Streams > choose your stream > Measurement Protocol > Create.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Measurement Id                  | <p><em><strong><code>Required</code></strong></em></p><p>The <a href="https://support.google.com/analytics/answer/7372977"><strong>Measurement Id</strong></a> identifies a Data Stream. Found in the Google Analytics interface following: <br>Admin > Data Streams > choose your stream > Measurement Id. E.g. "G-XXXXXXXXXX".</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Custom Event Properties         | <p>Map your custom event properties by setting their field names in <strong>Event properties name</strong> and adding the field name holding the <strong>Value</strong> in the related field. E.g. if you input "<em>size</em>" in the <strong>Event properties name</strong> and "<em>properties.items.0.product.size</em>" in <strong>Value</strong>, you will have a custom event property in GA4 called "<em>size</em>" with a value based on the content of the field "<em>properties.items.0.product.size</em>" <strong>[1]</strong>. You also have the option to set a static string/numeric value in <strong>Value</strong>.<br><br>To ensure that custom event properties are picked up by GA4, you must create event-scoped dimensions. You can find more details by following this link: <a href="https://support.google.com/analytics/answer/10075209">[GA4] Custom dimensions and metrics</a>. </p>                                                                                                                                     |
 | Custom User Properties          | <p>Map your <a href="https://developers.google.com/analytics/devguides/collection/protocol/ga4/user-properties">custom user properties</a> by setting their field names in <strong>User properties name</strong> and adding the field name holding the <strong>Value</strong> in the related field.<br>E.g. if you input "<em>customer</em>_<em>zipcode" in</em> <strong>User properties name</strong> <em></em> and "properties.user.zipcode" <em></em> in <strong>Value</strong>, you will have a custom user property in GA4 called "<em>customer_zipcode</em>" with a value based on the content of the field "properties.user.zipcode" <em></em> <strong>[1]</strong>. You also have the option to set a static string/numeric value in <strong>Value</strong>.</p><p></p><p>To ensure that custom user properties are picked up by GA4, you must create user-scoped dimensions. You can find more details by following this link: <a href="https://support.google.com/analytics/answer/10075209">[GA4] Custom dimensions and metrics</a>. </p> |
 | Client Id Cookie Name           | <p>Cookie name holding the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_query_parameters">Client Id</a> that uniquely identifies a user instance of a web client. You can change its default value: "<em>_ga</em>".</p><p><br>The Client Id is the right most string in the cookie. E.g "GA1.1.<strong>XXXXXXXXXX.XXXXXXXXXX".</strong></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -71,21 +71,21 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### add\_payment\_info
 
-| Property       | Description                                                                                                           | Field           | Mapped with                  |
-| -------------- | --------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------- |
-| Currency       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_      | _properties.currency_        |
-| Value          | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_         | _properties.value_           |
-| Coupon         | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                     | _coupon_        | _properties.coupon_          |
-| Payment Method | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                      | _payment\_type_ | _properties.payment\_method_ |
-| Revenue        | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                | _revenue_       | _properties.revenue_         |
-| Items          | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_         | _properties.items_           |
+| Property       | Description                                                                                                                            | Field           | Mapped with                  |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------- |
+| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_      | _properties.currency_        |
+| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_         | _properties.value_           |
+| Coupon         | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_        | _properties.coupon_          |
+| Payment Method | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_ | _properties.payment\_method_ |
+| Revenue        | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_       | _properties.revenue_         |
+| Items          | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_         | _properties.items_           |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -106,20 +106,20 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### add\_shipping\_info
 
-| Property      | Description                                                                                                                    | Field            | Mapped with               |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------- | ------------------------- |
-| Currency      | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>          | _currency_       | _properties.currency_     |
-| Value         | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                         | _value_          | _properties.value_        |
-| Coupon        | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                              | _coupon_         | _properties.coupon_       |
-| Shipping Tier | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p> | _shipping\_tier_ | properties.shipping\_tier |
-| Items         | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>               | _items_          | _properties.items_        |
+| Property      | Description                                                                                                                            | Field            | Mapped with               |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------- |
+| Currency      | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_       | _properties.currency_     |
+| Value         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_          | _properties.value_        |
+| Coupon        | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_         | _properties.coupon_       |
+| Shipping Tier | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p>         | _shipping\_tier_ | properties.shipping\_tier |
+| Items         | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_          | _properties.items_        |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                                   | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em></p><p>Type: <em><code>String</code></em><br>The name of the item.</p>                                 | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The name of the item.</p>                | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -140,18 +140,18 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### add\_to\_cart
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -172,18 +172,18 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### add\_to\_wishlist
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -204,20 +204,20 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### begin\_checkout
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Coupon   | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                     | _coupon_   | _properties.coupon_   |
-| Revenue  | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                | _revenue_  | _properties.revenue_  |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Coupon   | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_   | _properties.coupon_   |
+| Revenue  | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_  | _properties.revenue_  |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -238,11 +238,11 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### generate\_lead
 
-| Currency       | Description                                                                                                           | Field      | Mapped with           |
-| -------------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value          | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Transaction Id | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                              | _id_       | _properties.id_       |
+| Currency       | Description                                                                                                                            | Field      | Mapped with           |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Transaction Id | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                               | _id_       | _properties.id_       |
 
 ### login
 
@@ -263,28 +263,28 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### purchase
 
-| Property          | Description                                                                                                           | Field                | Mapped with                  |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------- |
-| Currency          | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_           | _properties.currency_        |
-| Value             | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_              | _properties.value_           |
-| Transaction Id    | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>            | _id_                 | _properties.id_              |
-| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                 | affiliation          | _properties.affiliation_     |
-| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                     | _coupon_             | _properties.coupon_          |
-| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                           | _shipping_           | properties.shipping\_amount  |
-| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                              | _tax_                | properties.tax\_amount       |
-| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                | _revenue_            | _properties.revenue_         |
-| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                     | _conversion\_type_   | _properties.type_            |
-| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                   | _conversion\_status_ | _properties.status_          |
-| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                   | _conversion\_url_    | _properties.url_             |
-| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                      | _payment\_type_      | _properties.payment\_method_ |
-| Items             | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_              | _properties.items_           |
+| Property          | Description                                                                                                                            | Field                | Mapped with                  |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------- |
+| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_           | _properties.currency_        |
+| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_              | _properties.value_           |
+| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>            | _id_                 | _properties.id_              |
+| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                  | affiliation          | _properties.affiliation_     |
+| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_             | _properties.coupon_          |
+| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                            | _shipping_           | properties.shipping\_amount  |
+| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                               | _tax_                | properties.tax\_amount       |
+| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_            | _properties.revenue_         |
+| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                      | _conversion\_type_   | _properties.type_            |
+| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_status_ | _properties.status_          |
+| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_url_    | _properties.url_             |
+| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_      | _properties.payment\_method_ |
+| Items             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_              | _properties.items_           |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -305,28 +305,28 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### refund
 
-| Property          | Description                                                                                                                           | Field                | Mapped with                 |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------- |
-| Currency          | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                 | _currency_           | _properties.currency_       |
-| Value             | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                                | _value_              | _properties.value_          |
-| Transaction Id    | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>                            | _id_                 | _properties.id_             |
-| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                 | affiliation          | _properties.affiliation_    |
-| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                     | _coupon_             | _properties.coupon_         |
-| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                           | _shipping_           | properties.shipping\_amount |
-| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                              | _tax_                | properties.tax\_amount      |
-| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                | _revenue_            | _properties.revenue_        |
-| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                     | _conversion\_type_   | _properties.type_           |
-| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                   | _conversion\_status_ | _properties.status_         |
-| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                                      | _conversion\_url_    | _properties.url_            |
-| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                      | _payment\_type_      | properties.payment\_method  |
-| Items             | <p><em><code>Required</code>  for partial refunds</em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_              | _properties.items_          |
+| Property          | Description                                                                                                                                              | Field                | Mapped with                 |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------- |
+| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                   | _currency_           | _properties.currency_       |
+| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                                  | _value_              | _properties.value_          |
+| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>                              | _id_                 | _properties.id_             |
+| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                                    | affiliation          | _properties.affiliation_    |
+| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                                        | _coupon_             | _properties.coupon_         |
+| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                                              | _shipping_           | properties.shipping\_amount |
+| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                                                 | _tax_                | properties.tax\_amount      |
+| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                                   | _revenue_            | _properties.revenue_        |
+| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                                        | _conversion\_type_   | _properties.type_           |
+| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                                      | _conversion\_status_ | _properties.status_         |
+| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                                                         | _conversion\_url_    | _properties.url_            |
+| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                                         | _payment\_type_      | properties.payment\_method  |
+| Items             | <p><em><strong><code>Required</code>  </strong>  for partial refunds</em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_              | _properties.items_          |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -347,18 +347,18 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### remove\_from\_cart
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -379,9 +379,9 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### search
 
-| Property     | Description                                                                                                    | Field          | Mapped with               |
-| ------------ | -------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |
-| Search Term  | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The term that was searched for.</p> | _search\_term_ | _properties.search\_term_ |
+| Property     | Description                                                                                                                     | Field          | Mapped with               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |
+| Search Term  | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The term that was searched for.</p> | _search\_term_ | _properties.search\_term_ |
 
 ### select\_content
 
@@ -392,17 +392,17 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### select\_item
 
-| Property       | Description                                                                                                      | Field              | Mapped with                   |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>   | _item\_list\_name_ | _properties.item\_list\_name_ |
-| Items          | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
+| Property       | Description                                                                                                                       | Field              | Mapped with                   |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
+| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _properties.item\_list\_name_ |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -429,18 +429,18 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### view\_cart
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -461,18 +461,18 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### view\_item
 
-| Property | Description                                                                                                           | Field      | Mapped with           |
-| -------- | --------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><code>Required</code></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with           |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                                   | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
@@ -493,17 +493,17 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### view\_item\_list
 
-| Property       | Description                                                                                                      | Field              | Mapped with                   |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>   | _item\_list\_name_ | _properties.item\_list\_name_ |
-| Items          | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
+| Property       | Description                                                                                                                       | Field              | Mapped with                   |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
+| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _properties.item\_list\_name_ |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
 
 #### Items
 
 | Property        | Description                                                                                                                             | Field              | Mapped with                               |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                                      | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><code>Required</code></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                                    | _item\_name_       | _properties.items.X.product.name_         |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
 | Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
 | Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
 | Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
