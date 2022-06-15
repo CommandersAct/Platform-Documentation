@@ -125,10 +125,10 @@
     * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
-    *
-    *
-    *
-    *
+    * [Http tracking API](features/integrations/sources/sources-catalog/http-tracking-api.md)
+    * [User API](https://app.gitbook.com/s/-Mk6XpTQ2LaRLcr2tA-d/features/integrations/sources/sources-catalog/import-crm-users/api-users#user)
+    * [Conversions API](features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md)
+    * [Product Catalog API](features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md)
 * [Config API](developers/config-api.md)
 
 ## CONFIGURE
