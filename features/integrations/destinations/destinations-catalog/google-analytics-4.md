@@ -78,7 +78,7 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 | Coupon         | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_        | _properties.coupon_          |
 | Payment Method | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_ | _properties.payment\_method_ |
 | Revenue        | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_       | _properties.revenue_         |
-| Items          | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_         | _properties.items_           |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_         | _properties.items_           |
 
 #### Items
 
@@ -112,7 +112,7 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 | Value         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_          | _properties.value_        |
 | Coupon        | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_         | _properties.coupon_       |
 | Shipping Tier | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p>         | _shipping\_tier_ | properties.shipping\_tier |
-| Items         | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_          | _properties.items_        |
+| Items         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_          | _properties.items_        |
 
 #### Items
 
