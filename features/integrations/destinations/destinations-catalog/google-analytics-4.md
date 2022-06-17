@@ -30,19 +30,6 @@ Before you get started with this destination, ensure you have a GA4 property in 
 * [\[GA4\] Set up Analytics for a website and/or app](https://support.google.com/analytics/answer/9304153)
 * [Add a Google Analytics 4 property (to a site that already has Analytics)](https://support.google.com/analytics/answer/9744165?hl=en)
 
-### Getting started
-
-1. From your Commanders Act account, locate the section **INTEGRATIONS** (top-left), then click **Destinations** and **Overview**.
-2. Click the button **Add Destination**.
-3. Search for "**Google Analytics 4**" and click it.
-4. Click **Configure** (top-right).
-5. In **Data Source**, **** select your **Sources** and **Events** that will send data to GA4 and click **Next**.
-6. In **Settings**, input a **Destination name** and select an **Environment**.
-7. Input your **API Secret** and **Measurement ID**.
-8. You can map your **Custom Event Properties** and **Custom User Properties** by clicking **Add row**.
-9. In **Advanced**, you can set a **Client Id Cookie Name** and **Engagement Time in Milliseconds**.
-10. In **Debug View**, you can flag **Enable debug mode**.
-
 ### Configuration
 
 | Settings                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
