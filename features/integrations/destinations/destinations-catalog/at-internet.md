@@ -1,7 +1,7 @@
 # AT Internet
 
 [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/) is the successor of AT Internet Analytics Suite 2 (AS2).\
-It's a user-centric tool that synthesizes product & marketing analytics, while ensuring data quality.\
+It's a user-centric tool that synthesises product & marketing analytics, while ensuring data quality.\
 Your data will be sent server-side getting the most from AT Internet [Collection API](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/events-pattern-en/) and in form of [events](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/).
 
 {% hint style="info" %}
