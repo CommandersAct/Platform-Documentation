@@ -46,7 +46,7 @@ Before you get started with this destination, ensure you have a GA4 property in 
 **\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.&#x20;
 {% endhint %}
 
-## Mapping to GA4 events
+## Mappings for GA4 events
 
 This destination provides automatic mapping between our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model and GA4 events. In this section, you will learn what properties are set so you can expect to see those details in GA4 reporting.
 
