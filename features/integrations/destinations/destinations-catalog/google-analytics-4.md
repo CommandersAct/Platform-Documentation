@@ -528,7 +528,7 @@ You can send custom events to better fit your specific needs.
 
 {% hint style="info" %}
 More details on how you can create and manage custom events are available following this link: [\[GA4\] Modify and create events via the user interface](https://support.google.com/analytics/answer/10085872).\
-The following properties are automatically attached to the event.
+The following properties are automatically attached to the event when available.
 {% endhint %}
 
 | Property          | Description                                                                                                                                          | Field                | Mapped with                   |
