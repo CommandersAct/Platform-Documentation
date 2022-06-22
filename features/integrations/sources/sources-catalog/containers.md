@@ -6,7 +6,7 @@ description: The container associated with a Tag Manager account.
 
 A web container is the browser-side component of _Commanders Act_ Enterprise Tag Management system.\
 It is composed of a set of browser-side tags, rules, triggers and enriched web data layer. It is represented by a container javascript file that is put on each pages of your website.\
-For information about how users setup and maintain containers, see the [dedicated Web container guide](https://community.commandersact.com/tagcommander/user-manual/getting-started).
+For information about how users setup and maintain containers, see the [dedicated Web container guide](https://community.commandersact.com/web-container/).
 
 ## Connect serverside destinations to a web container
 
