@@ -31,23 +31,22 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ## Field mappings
 
-| Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                   |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                  |
-| `properties.id`                                           | `conversionAdjustments.X.orderId`                                                    |
-| `event_timestamp`                                         | `conversionAdjustments.X.gclidDateTimePair.conversionDateTime` **\[1]**              |
-| `event_timestamp`                                         | `conversionAdjustments.X.adjustmentDateTime` **\[1]**                                |
-| `properties.value`                                        | `conversionAdjustments.X.restatementValue.adjustedValue`                             |
-| `properties.currency`                                     | `conversionAdjustments.X.restatementValue.currencyCode`                              |
-| `properties.user.email` or `properties.user.email_sha256` | `conversionAdjustments.X.userIdentifiers.Y.hashedEmail` **\[2]**                     |
-| `properties.user.phone`                                   | `conversionAdjustments.X.userIdentifiers.Y.hashedPhoneNumber` **\[3]**               |
-| `properties.user.firstname`                               | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedFirstName` **\[3]**     |
-| `properties.user.lastname`                                | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedLastName` **\[3]**      |
-| `properties.user.streetAddress`                           | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedStreetAddress` **\[3]** |
-| `properties.user.city`                                    | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.city` ****                    |
-| `properties.user.state`                                   | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.state`                        |
-| `properties.user.country`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.countryCode`                  |
-| `properties.user.zipcode`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.postalCode`                   |
+| Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                                                                                                                                         |
+| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                                                                                                                                        |
+| `properties.id`                                           | `conversionAdjustments.X.orderId`                                                                                                                                                                          |
+| `event_timestamp`                                         | <p><code>conversionAdjustments.X.gclidDateTimePair.conversionDateTime</code> <strong>[1]</strong> and<br><strong></strong><code>conversionAdjustments.X.adjustmentDateTime</code> <strong>[1]</strong></p> |
+| `properties.value`                                        | `conversionAdjustments.X.restatementValue.adjustedValue`                                                                                                                                                   |
+| `properties.currency`                                     | `conversionAdjustments.X.restatementValue.currencyCode`                                                                                                                                                    |
+| `properties.user.email` or `properties.user.email_sha256` | `conversionAdjustments.X.userIdentifiers.Y.hashedEmail` **\[2]**                                                                                                                                           |
+| `properties.user.phone`                                   | `conversionAdjustments.X.userIdentifiers.Y.hashedPhoneNumber` **\[3]**                                                                                                                                     |
+| `properties.user.firstname`                               | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedFirstName` **\[3]**                                                                                                                           |
+| `properties.user.lastname`                                | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedLastName` **\[3]**                                                                                                                            |
+| `properties.user.streetAddress`                           | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedStreetAddress` **\[3]**                                                                                                                       |
+| `properties.user.city`                                    | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.city` ****                                                                                                                                          |
+| `properties.user.state`                                   | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.state`                                                                                                                                              |
+| `properties.user.country`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.countryCode`                                                                                                                                        |
+| `properties.user.zipcode`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.postalCode`                                                                                                                                         |
 
 {% hint style="info" %}
 **\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.
