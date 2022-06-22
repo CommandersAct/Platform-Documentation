@@ -70,9 +70,9 @@ The client-side unique visitor identifier is required for this destination to wo
 {% hint style="info" %}
 **\[\*]** Custom events must be added to the AT Internet **Data Model** first or they won't be processed. You can add new events by following ![](../../../../.gitbook/assets/1.png) ➜ `SETTINGS` ➜ `Data Management` ➜ `Data Model` ➜`Events` .
 
-**\[1]** If `properties.page_type` __ is equal to `product` _then_ `product.page_display` is sent, otherwise, `page.display`.
+**\[1]** If`properties.page_type`is equal to`product`then`product.page_display`is sent, otherwise,`page.display`.
 
-**\[2]** A`product.purchased` will be sent for each product being purchased.
+**\[2]** A`product.purchased`will be sent for each product being purchased.
 {% endhint %}
 
 ## Field Mappings
