@@ -12,7 +12,7 @@ Here are an example of event playload :&#x20;
 		"user": {
 			"id": "12345",
 			"email": "toto@domain.fr",
-			"consent_categories": [1, 3]
+			"consent_categories": ["1", "3"]
 		}
 	},
 	"device": {
@@ -70,60 +70,91 @@ Here are an example of event playload :&#x20;
 }
 ```
 
-Here are fields automatically added by sdk and js :
+# Fields
 
-| Automatic FIELD                    | Web container JS or JS SDK | IOS SDK | ANDROID SDK |
-| ---------------------------------- | -------------------------- | ------- | ----------- |
-| [app.name](http://app.name/)       |                            | √       | √           |
-| app.version                        |                            | √       | √           |
-| app.build                          |                            | √       | √           |
-| app.serverside\_version            |                            | √       | √           |
-| app.core\_version                  |                            | √       | √           |
-| device.type                        |                            |         | √           |
-| device.manufacturer                |                            | √       | √           |
-| device.model                       |                            | √       | √           |
-| [device.name](http://device.name/) |                            |         | √           |
-| ip\*                               | √                          | √       | √           |
-| locale                             | √                          | √       | √           |
-| network.bluetooth                  |                            |         | √           |
-| network.carrier                    |                            | √       | √           |
-| network.cellular                   |                            | √       | √           |
-| network.wifi                       |                            | √       | √           |
-| [os.name](http://os.name/)         |                            | √       | √           |
-| os.version                         |                            | √       | √           |
-| properties.path                    | √                          |         |             |
-| properties.referrer                | √                          |         |             |
-| properties.title                   | √                          |         |             |
-| properties.url                     | √                          |         |             |
-| screen.density                     |                            |         | √           |
-| screen.height                      |                            | √       | √           |
-| screen.width                       |                            | √       | √           |
-| userAgent                          | √                          |         | √           |
-| timezone                           |                            | √       | √           |
+Here are fields automatically added by sdk.
 
-(\*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
+(*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
 
 &#x20;
 
-Lifecycle
+## device
 
-| Automatic FIELD                | **Explanation**                                                                                                  | Both APP platforms? |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ------------------- |
-| session\_id                    | An id specific to this session.                                                                                  | √                   |
-| new\_session                   | True if this hit is the first of a new session.                                                                  | √                   |
-| session\_duration              | The time spent during this session.                                                                              | √                   |
-| current\_session               | Timestamp of the start of the current session.                                                                   | √                   |
-| visit\_number                  | Number of times the application was launched                                                                     | √                   |
-| current\_visit                 | Timestamp of the start of the current visit                                                                      | √                   |
-| current\_version\_first\_visit | Timestamp of the first visit for this application version                                                        | √                   |
-| session\_number                | The number of sessions                                                                                           | √                   |
-| first\_visit                   | Timestamp of the first app visit                                                                                 | √                   |
-| last\_visit                    | Timestamp of the last visit                                                                                      | √                   |
-| last\_call                     | Timestamp of the previous call                                                                                   | √                   |
-| last\_session\_start           | Timestamp of the start of the previous session                                                                   | √                   |
-| last\_session\_last\_hit       | Timestamp of the last hit sent during the previous session                                                       | √                   |
-| foreground\_transitions        | Number of times the app when from background to foreground                                                       | √                   |
-| foreground\_time               | Time the application spent in foreground                                                                         | √                   |
-| background\_time               | Time the application spent in background                                                                         | √                   |
-| first\_execute                 | Is this the first hit of this launch                                                                             | √                   |
-| is\_first\_visit               | Is this the first launch of this application. (together with first execute you can validate a new installations) | √                   |
+| Field name   | Example value                         | Description                                            | Platform  |
+|--------------|---------------------------------------|--------------------------------------------------------|-----------|
+| manufacturer | Apple                                 | The manufacturer of the hardware                       | Both      |
+| model        | iPhone7.3                             | The device model                                       | Both      |
+| name         | maguro                                | The device given name                                  | Both      |
+| sdk\_id      | C32272DB0-C21E-11E4-8DFC-AA07A5B093DB | A random UUID generated at the first launch of the SDK | Both      |
+| timezone     | Europe/Paris                          | The detailed timezone                                  | Both      |
+| type         | android                               | The os name                                            | Both      |
+
+
+
+The next fields require consent and are added when you call "addAdvertisingIDs" from the ServerSide class.
+
+| Field name            | Example value                        | Description                      | Platform |
+|-----------------------|--------------------------------------|----------------------------------|----------|
+| advertising\_id       | 705EB54D-9FC7-4730-BF1B-A5D0494E1D8C | Either IDFA or AAD               | Both     |
+| idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
+| ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
+
+
+## device -> os
+
+| Field name | Example value | Description               | Platform  |
+|------------|---------------|---------------------------|-----------|
+| name       | ios           | The operating system name | Both      |
+| version    | 15.5          | The OS version            | Both      |
+
+## device -> screen
+
+| Field name | Example value | Description                 | Platform |
+|------------|---------------|-----------------------------|----------|
+| width      | 390           | The device’s screen width   | Both     |
+| height     | 844           | The device’s screen height  | Both     |
+| density    | 2             | The device’s screen density | Android  |
+
+## device -> network
+
+| Field name | Example value | Description                                      | Platform |
+|------------|---------------|--------------------------------------------------|----------|
+| bluetooth  | false         | Is the bluetooth connected                       | Both     |
+| cellular   | true          | Is the cellular connected                        | Both     |
+| carrier    | T-Mobile US   | Carrier's name (only when cellular is connected) | Android  |
+| wifi       | false         | Is the wifi connected                            | Android  |
+
+## device -> Lifecycle
+
+| Field name                     | Example value                        | Description                                                                                                      | Platform |
+|--------------------------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------|----------|
+| session\_id                    | F318C0D1-1DDB-4B53-9326-F2078A97CD38 | An id specific to this session                                                                                   | Both     |
+| new\_session                   | false                                | True if this hit is the first of a new session                                                                   | Both     |
+| session\_duration              | 8291                                 | The time spent during this session                                                                               | Both     |
+| current\_session               | 1655824764174                        | Timestamp of the start of the current session                                                                    | Both     |
+| visit\_number                  | 1                                    | Number of times the application was launched                                                                     | Both     |
+| current\_visit                 | 1655824764174                        | Timestamp of the start of the current visit                                                                      | Both     |
+| current\_version\_first\_visit | 1655824764174                        | Timestamp of the first visit for this application version                                                        | Both     |
+| session\_number                | 1                                    | The number of sessions                                                                                           | Both     |
+| first\_visit                   | 1655824764174                        | Timestamp of the first app visit                                                                                 | Both     |
+| last\_visit                    | 1655824764174                        | Timestamp of the last visit                                                                                      | Both     |
+| last\_call                     | 1655824772416                        | Timestamp of the previous call                                                                                   | Both     |
+| last\_session\_start           | 0                                    | Timestamp of the start of the previous session                                                                   | Both     |
+| last\_session\_last\_hit       | 0                                    | Timestamp of the last hit sent during the previous session                                                       | Both     |
+| foreground\_transitions        | 2                                    | Number of times the app when from background to foreground                                                       | Both     |
+| foreground\_time               | 8278                                 | Time the application spent in foreground                                                                         | Both     |
+| background\_time               | 0                                    | Time the application spent in background                                                                         | Both     |
+| first\_execute                 | false                                | Is this the first hit of this cold launch                                                                        | Both     |
+| is\_first\_visit               | true                                 | Is this the first launch of this application. (together with first execute you can validate a new installations) | Both     |
+
+## app
+
+| Field name          | Example value           | Description                      | Platform |
+|---------------------|-------------------------|----------------------------------|----------|
+| namespace           | com.tagcommander.TCDemo | The app name-space               | Both     |
+| name                | TCDemo                  | The app name                     | Both     |
+| build               | 1                       | The application build ID         | Both     |
+| version             | 1.1                     | The app version                  | Both     |
+| serverside\_version | 5.1.0                   | The server-side module’s version | Both     |
+| core\_version       | 5.1.0                   | The core module’s version        | Both     |
+
