@@ -626,6 +626,7 @@ cact('trigger','view_item_list', {
 | `list_position` | `number`                                         | No       | 1             | The item's position in a list or collection.                                                                                                           |
 | `discount`      | `number`                                         | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
 | `quantity`      | `number`                                         | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
+| `affiliation`   | `string`                                         | **No***   | DOWNLOAD      | Required for most affiliation's destination.                                                                                                                              |
 | `coupon`        | `string`                                         | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
 
 ### Product
