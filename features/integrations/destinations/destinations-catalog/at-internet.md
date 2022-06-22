@@ -1,4 +1,4 @@
-# AT Internet
+# Piano Analytics
 
 [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/) is the successor of AT Internet Analytics Suite 2 (AS2).\
 It's a user-centric tool that synthesises product & marketing analytics, while ensuring data quality.\
@@ -75,7 +75,7 @@ The client-side unique visitor identifier is required for this destination to wo
 **\[2]** A`product.purchased` will be sent for each product being purchased.
 {% endhint %}
 
-## Mappings for AT Internet Parameters
+## Field Mappings
 
 | Commanders Act Properties                                                                                                                                             | AT Internet Parameters                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -113,7 +113,7 @@ The client-side unique visitor identifier is required for this destination to wo
 | `device.screen.width`                                                                                                                                                 | `device_screen_width`                                                                      |
 
 {% hint style="info" %}
-**\[1]** Boolean value:`true` or `false`.
+**\[1]** Boolean value:`true`or`false`.
 
 **\[2]** Sum all`properties.items.X.quantity`.
 
