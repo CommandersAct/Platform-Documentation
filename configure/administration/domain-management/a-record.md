@@ -22,4 +22,4 @@ Select A record and select the certificate:
 
 Then test the configuration, and we take care of everything.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-05-20 à 14.50.37 (1).png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-05-20 à 14.50.37.png>)
