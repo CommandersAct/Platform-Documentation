@@ -31,13 +31,6 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ## Field mappings
 
-{% hint style="info" %}
-The following mappings are fixed:
-
-\-[`partialFailure`](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#request-body)`= true`\
-\-[`conversionAdjustments.X.adjustmentType`](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#conversionadjustment) `= "ENHANCEMENT"`
-{% endhint %}
-
 | Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                   |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                  |
