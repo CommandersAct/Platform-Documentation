@@ -14,7 +14,7 @@ Then create relevant and personalized ads for these users coming from your segme
 
 💰  ROI: Medium
 
-![](<../../.gitbook/assets/persoads (1).png>)
+![](../../.gitbook/assets/persoads.png)
 
 ## Use case setup
 

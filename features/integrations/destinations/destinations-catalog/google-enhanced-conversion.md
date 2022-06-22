@@ -1,46 +1,65 @@
-# Google Enhanced Conversion
+# Google Enhanced Conversions
 
-Send your conversions to Google Ads in order to improve the accuracy of conversion measurement on your Google Ads account.
-
-By sending first party data from your website to Google, you can supplement your existing conversion tags by allowing to match these conversion data to attribute your campaign conversions to ad events, such as clicks or views.
-
-More details here: [About enhanced conversions](https://support.google.com/google-ads/answer/9888656)
-
-## How to configure Google Enhanced conversion?
+Taking advantage of the [Google Ads API](https://developers.google.com/google-ads/api/docs/start), you can use the [enhanced conversions](https://support.google.com/google-ads/answer/9888656) feature to send first-party customer data in the form of conversion adjustments. Google uses this additional data to improve the reporting of your online conversions driven by ad interactions.\
+The enhanced conversions supplements your existing conversion tags by sending hashed first party conversion data from your website to Google in a privacy safe way.
 
 {% hint style="info" %}
-In order for the destination to work, your user account will need to be specifically added as an admin user of the Google Ads MCC account in which the conversion action is located.
+You must complete the [setup and configuration steps](https://support.google.com/google-ads/answer/11062876) before you can bridge enhanced conversions via the Google Ads API.
 {% endhint %}
 
-On destination overview, click on Add Destination.
-
-Select Google Enhanced Conversion
-
-You will need to fill this information:
-
-### Conversion ID (conversion tracking ID) and Conversion Label
-
-These values can be found on your Google Ads account, **Tools and Settings** menu, select **Measurement / Conversions**.
+## Destination setup
 
 {% hint style="info" %}
-If you don't find this menu, be sure [Expert Mode](https://support.google.com/google-ads/answer/9520605?hl=en) is enabled for your profile to have access to all options.
+Your user account needs admin rights in the [Google Ads Manager Accounts](https://ads.google.com/intl/en/home/tools/manager-accounts/) where the conversion action is located - It's required for this destination to work.
 {% endhint %}
 
-Select the conversion created (or create one) and copy and paste Conversion ID and Conversion Label.
+### Configuration
 
-{% hint style="warning" %}
-Enhanced Conversion could be only turned on for **website** conversion. \
-Select **API** method for the set-up.
+| Settings                     | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Authentication               | <p><em><strong><code>Required</code></strong></em></p><p>Your credentials with Google Ads as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Google Ads</code></p>                                                                                                                              |
+| Conversion Action            | <p><em><strong><code>Required</code></strong></em></p><p>Your conversion action name where enhanced conversions are applied. This is found in the Google Ads interface following:</p><p><code>TOOLS &#x26; SETTINGS</code> ➜ <code>Measurement</code> ➜ <code>Conversions</code> ➜ <code>Conversion action</code> <strong>[1]</strong><br>If the conversion action is not found the event will be discarded.</p> |
+| Google Analytics Property Id | <p><em><strong><code>Required</code></strong></em><br><em><strong><code></code></strong></em>The GA Tracking ID is a string like "UA-XXXXXX-Y". It's used to retrieve your <a href="https://support.google.com/google-ads/answer/9744275?hl=en"><code>gclid</code></a> from cookie(s).</p>                                                                                                                       |
+
+{% hint style="info" %}
+**\[1]** Enhanced conversions must be enabled for your conversion action. This is done in the Google Ads interface following these steps: click on the conversion action  ➜ expand `Enhanced conversions`➜ flag `Turn on enhanced conversions`➜ select `API`. ``&#x20;
 {% endhint %}
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.36.45.png>)
+![Click on your "Conversion Action" (E.g. "Purchase")](<../../../../.gitbook/assets/1 (1).png>)
 
-![](<../../../../.gitbook/assets/Capture d’écran 2022-03-07 à 09.56.31 (1).png>)
+![Flag "Turn on enhanced conversion" and select "API".](../../../../.gitbook/assets/2.png)
 
-### GCLID and property ID
+## Field mappings
 
-Google Click ID (GCLID) is a parameter passed in the URL with ad clicks, to identify the campaign and other attributes of the click associated with the ad for ad tracking and campaign attribution. More details [here](https://support.google.com/google-ads/answer/9744275?hl=en#:\~:text=L'ID%20de%20clic%20Google,de%20l'attribution%20des%20campagnes.).
+{% hint style="info" %}
+The following mappings are fixed:
 
-**Google Analytics Property ID**: \
-The GA Tracking ID is a string like "UA-XXXXXX-Y".
+\-[`partialFailure`](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#request-body)`= true`\
+\-[`conversionAdjustments.X.adjustmentType`](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#conversionadjustment) `= "ENHANCEMENT"`
+{% endhint %}
 
+| Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                   |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                  |
+| `properties.id`                                           | `conversionAdjustments.X.orderId`                                                    |
+| `event_timestamp`                                         | `conversionAdjustments.X.gclidDateTimePair.conversionDateTime` **\[1]**              |
+| `event_timestamp`                                         | `conversionAdjustments.X.adjustmentDateTime` **\[1]**                                |
+| `properties.value`                                        | `conversionAdjustments.X.restatementValue.adjustedValue`                             |
+| `properties.currency`                                     | `conversionAdjustments.X.restatementValue.currencyCode`                              |
+| `properties.user.email` or `properties.user.email_sha256` | `conversionAdjustments.X.userIdentifiers.Y.hashedEmail` **\[2]**                     |
+| `properties.user.phone`                                   | `conversionAdjustments.X.userIdentifiers.Y.hashedPhoneNumber` **\[3]**               |
+| `properties.user.firstname`                               | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedFirstName` **\[3]**     |
+| `properties.user.lastname`                                | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedLastName` **\[3]**      |
+| `properties.user.streetAddress`                           | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.hashedStreetAddress` **\[3]** |
+| `properties.user.city`                                    | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.city` ****                    |
+| `properties.user.state`                                   | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.state`                        |
+| `properties.user.country`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.countryCode`                  |
+| `properties.user.zipcode`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.postalCode`                   |
+
+{% hint style="info" %}
+**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.
+
+**\[2]** If`properties.user.email` is provided, it's hashed using`SHA-256`, otherwise, `properties.user.email_sha256` is used.
+
+**\[3]** Normalized and hashed using `SHA-256`.
+{% endhint %}

@@ -37,7 +37,7 @@ The [**`awc` ** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Co
 | `generate_lead`       | `lead`        |
 | `purchase`            | `sale`        |
 
-## Mappings for Awin Parameters
+## Field Mappings
 
 {% hint style="info" %}
 If you select`sale` as conversion type, the following fields are mandatory to properly set commission groups: \
@@ -62,7 +62,7 @@ Accepted characters for the commission group codes are alphanumerics (letter in 
 {% hint style="info" %}
 **\[1]** When you select `lead` as conversion type, it's set with `1`.
 
-**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select `lead` as conversion type, it's set with `DEFAULT:1`.
+**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select`lead`as conversion type, it's set with `DEFAULT:1`.
 
-**\[3]** Only set when `sale` is set as conversion type. This structure is applied for each product.
+**\[3]** Only when`sale`is set as conversion type. This structure is applied for each product.
 {% endhint %}
