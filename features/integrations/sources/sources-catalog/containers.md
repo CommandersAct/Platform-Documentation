@@ -17,4 +17,4 @@ To start sending data, there is only one easy step to follow : adding the _Comma
 > The last tag that ~~you~~ will ever setup.
 
 The _One Tag_ allows you to send all your events to the Commanders Act platform in a normalized way, and once and for all, to benefit from all the serverside advantages that offer the platform.\
-And guess what, our CSM/support will set up it for you for free, just contact them and you will be ready to take advantage of the full power of the serverside features !
+And guess what, our CSM/support will set up it for you for free, just contact them and you will be ready to take advantage of the full power of the serverside features!
