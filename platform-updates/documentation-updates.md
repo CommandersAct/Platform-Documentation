@@ -6,10 +6,16 @@ description: The latest updates made to our documentation articles
 
 ## 23/06/2022
 
-Add a description of automatic added properties for Web events (JS SDK and Web container)
+Add a description of automatic added properties for Web events (JS SDK and Web container):
 
 {% content-ref url="../developers/tracking/about-events/js-sdk-event-specificity.md" %}
 [js-sdk-event-specificity.md](../developers/tracking/about-events/js-sdk-event-specificity.md)
+{% endcontent-ref %}
+
+Update automatic added properties for Mobile SDK:
+
+{% content-ref url="../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
+[mobile-sdk-event-specificity.md](../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endcontent-ref %}
 
 ## 21/04/2022
