@@ -72,7 +72,7 @@ Here are an example of event playload :&#x20;
 
 # Fields
 
-Here are fields automatically added by sdk.
+Here are fields automatically added by the sdk.
 
 (*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
 
