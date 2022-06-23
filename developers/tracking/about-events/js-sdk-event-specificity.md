@@ -1,4 +1,4 @@
-# JS SDK event specificity
+# JS SDK event specificity  
 
 The JS SDK send specific properties regarding the browser.
 
