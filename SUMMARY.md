@@ -74,6 +74,7 @@
 * [Customers](features/customers.md)
   * [Segment](features/customers/segment/README.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)
+    * [Segment stats](features/customers/segment/segment-stats.md)
 * [Analyses](features/analyses/README.md)
   * [Campaign analysis](features/analyses/campaign-analysis/README.md)
     * [Attribution](features/analyses/campaign-analysis/attribution.md)
