@@ -74,8 +74,8 @@ Before you get started with this destination, ensure you can access the [Snapcha
 | `properties.user.phone`                                   | `hashed_phone_number` **\[6]**   |
 
 {% hint style="info" %}
-**\[1] F**ield automatically generated when it's not set.\
-**\[2]** If`app.name`is defined then it's set with `MOBILE_APP`, otherwise,`WEB.`\
+**\[1]** Field automatically generated when it's not set.\
+**\[2]** If`app.name`is defined then this field is set with `MOBILE_APP`, otherwise,`WEB.`\
 ``**\[3]** Field automatically hashed.\
 **\[4]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same`client_dedup_id`across all of them. This will be used within a 48 hour scope of the first occurrence.\
 **\[5]** In case`properties.user.email_sha256`is not provided, `properties.user.email`is hashed and used in its place.\
