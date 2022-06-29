@@ -13,3 +13,9 @@ Below, you can analyze in detail each event and have more details about errors a
 **FIXED** means the property has been removed, but it is not blocking for the event, this one has been received without the concerned property. You should fix the property to receive it.
 
 **REJECTED** means one or many properties are missing or don't have good values. As a result, the full event was rejected, you should fix it to receive the event.
+
+
+
+You can also visualize the data quality for a specific source, when you click on a source, you have a dedicated tab '_Data Quality_' available with same info but filtered for the source you selected:
+
+![](<../.gitbook/assets/Capture d’écran 2022-06-29 à 11.39.38.png>)
