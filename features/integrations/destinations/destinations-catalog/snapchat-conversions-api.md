@@ -2,12 +2,6 @@
 
 The [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion.html#introduction) allows you to bridge web and app events to Snapchat via a server-side integration.
 
-{% hint style="info" %}
-<mark style="color:yellow;">Note that events can have a date (timestamp) of maximum 28 days back to be eligible to be reported via the Conversions API.</mark>
-{% endhint %}
-
-<mark style="color:yellow;">A</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">**pixel ID**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">is requested for this destination, please find</mark> [<mark style="color:yellow;">here</mark>](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en\_US) <mark style="color:yellow;">how to retrieve this value.</mark>
-
 ## Key features
 
 The Snapchat destination provides the following key features:

@@ -1,4 +1,4 @@
-# Piano Analytics (AT Internet)
+# Piano Analytics
 
 [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/) is the successor of AT Internet Analytics Suite 2 (AS2).\
 It's a user-centric tool that synthesises product & marketing analytics, while ensuring data quality.\
@@ -30,15 +30,17 @@ The client-side unique visitor identifier is required for this destination to wo
 
 ### Configuration
 
-| Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Side Id                   | <p><em><strong><code>Required</code></strong></em></p><p>The identifier of the site the data belongs to (E.g. <code>628087</code>). This can be found in the AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code> ➜ <code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p>           |
-| Secured Collection Domain | <p><em><strong><code>Required</code></strong></em></p><p>The SSL Domain on which information is collected (E.g. <code>logs1412.xiti.com</code>). This can be found in AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code><br><code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p> |
-| User Identifier           | You can bridge the user identifier for your logged users. More information are available following this [LINK](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#user\_1).                                                                                                                                                |
-| Custom Property           | When selecting "\[Custom Property]" as value for the above "User Identifier", this field will show up so you can specify a custom field holding the value for the user identifier **\[1]**.                                                                                                                                                                                                                |
+
+
+| Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Side Id                   | <p><em><strong><code>Required</code></strong></em></p><p>The identifier of the site the data belongs to (E.g. <code>628087</code>). This can be found in the AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code> ➜ <code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p>            |
+| Secured Collection Domain | <p><em><strong><code>Required</code></strong></em></p><p>The SSL Domain on which information is collected (E.g. <code>logs1412.xiti.com</code>). This can be found in AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code> <br><code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p> |
+| User Identifier           | You can bridge the user identifier for your logged users. More information are available following this [LINK](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#user\_1).                                                                                                                                                 |
+| Custom Property           | When selecting "\[Custom Property]" as value for the above "User Identifier", this field will show up so you can specify a custom field holding the value for the user identifier **\[1]**.                                                                                                                                                                                                                 |
 
 {% hint style="info" %}
-**\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
+**\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.&#x20;
 {% endhint %}
 
 ## Quick reference
@@ -75,7 +77,7 @@ The client-side unique visitor identifier is required for this destination to wo
 
 ## Field Mappings
 
-| Commanders Act Properties                                                                                                                                             | AT Internet Properties                                                                     |
+| Commanders Act Properties                                                                                                                                             | AT Internet Parameters                                                                     |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | `properties.page_name`                                                                                                                                                | `page`                                                                                     |
 | `properties.value`                                                                                                                                                    | <p><code>generate_lead_value</code></p><p><code>cart_turnovertaxincluded</code></p>        |
@@ -115,7 +117,7 @@ The client-side unique visitor identifier is required for this destination to wo
 
 **\[2]** Sum all`properties.items.X.quantity`.
 
-**\[3]** Depending on the user configuration.
+**\[3]** Depending on the user configuration.&#x20;
 {% endhint %}
 
 #### Headers parameters
