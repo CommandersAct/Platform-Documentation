@@ -55,7 +55,7 @@ Before you get started with this destination, ensure you can access the [Snapcha
 | Commanders Act Properties                                 | Snapchat Properties              |
 | --------------------------------------------------------- | -------------------------------- |
 | `event_timestamp`                                         | `timestamp` **\[1]**             |
-| `(app && app.name)`                                       | `event_conversion_type` **\[2]** |
+| `(app.name)`                                              | `event_conversion_type` **\[2]** |
 | `properties.items.X.id`                                   | `item_ids.X`                     |
 | `properties.items.length`                                 | `number_items`                   |
 | `properties.value`                                        | `price`                          |
