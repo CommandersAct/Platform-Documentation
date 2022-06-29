@@ -12,23 +12,23 @@ Awin no longer support the use of pixel only implementations due to various brow
 The Awin destination provides the following key features:
 
 * **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers [Awin lead and sale tracking](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29), meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Prebuilt mappings**: **** data mapping for events-based destinations happens automatically, which simplifies user inputs.
+* **Prebuilt mappings**: \*\*\*\* data mapping for events-based destinations happens automatically, which simplifies user inputs.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Awin.
 * **Commission group**: remunerate different products based on your [commission groups](https://wiki.awin.com/index.php/How\_to\_create\_a\_commission\_group).
 
 ## Destination setup
 
 {% hint style="info" %}
-The [**`awc` ** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)is appended to the landing page URL by Awin to identify the source of the click. This value is mandatory and is retrieved by getting the value of the [**awc** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)cookie.
+The [\*\*`awc` \*\* ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)is appended to the landing page URL by Awin to identify the source of the click. This value is mandatory and is retrieved by getting the value of the [**awc** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)cookie.
 {% endhint %}
 
 ### Configuration
 
 | Settings        | Description                                                                                                                                                                                                                                                                                                                                                                             |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Advertiser Id   | <p><em><strong><code>Required</code></strong></em></p><p>Your advertiser programme ID. Consult your Awin  account contact or assigned integrator for more information on this value.</p>                                                                                                                                                                                                |
+| Advertiser Id   | <p><em><strong><code>Required</code></strong></em></p><p>Your advertiser programme ID. Consult your Awin account contact or assigned integrator for more information on this value.</p>                                                                                                                                                                                                 |
 | Conversion Type | <p><em><strong><code>Required</code></strong></em></p><p>The conversion type that is bound with your activity. This can be either <code>sale</code> or <code>lead</code>. If conversion type is <code>lead</code>, only <code>generate_lead</code> events are forwarded to Awn. If conversion type is <code>sale</code>, only <code>purchase</code> events are sent to the partner.</p> |
-| Test Mode       | This is either `0` or `1` depending on whether the environment is the live production or test respectively. Default to `0`.                                                                                                                                                                                                                                                             |
+| Test Mode       | This is either `0` or `1` depending on whether the environment is the live production or test respectively. Default value is `0`.                                                                                                                                                                                                                                                       |
 
 ## Quick reference
 
@@ -40,15 +40,15 @@ The [**`awc` ** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Co
 ## Field Mappings
 
 {% hint style="info" %}
-If you select`sale` as conversion type, the following fields are mandatory to properly set commission groups: \
-\- `properties.items.X.affiliation`\
-``- `properties.items.X.product.price`\
-``- `properties.items.X.quantity`
+If you select`sale` as conversion type, the following fields are mandatory to properly set commission groups:\
+\-`properties.items.X.affiliation`\
+``-`properties.items.X.product.price`\
+``-`properties.items.X.quantity`
 
 Accepted characters for the commission group codes are alphanumerics (letter in upper case), underscore '\_' , point '.' and minus '-'`.`
 {% endhint %}
 
-| Commanders Act Properties                                                                                                                                                                                                                                                                                              | Awin Parameters   |
+| Commanders Act Properties                                                                                                                                                                                                                                                                                              | Awin Properties   |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | `Advertiser Id`                                                                                                                                                                                                                                                                                                        | `merchant`        |
 | `properties.revenue`                                                                                                                                                                                                                                                                                                   | `amount` **\[1]** |

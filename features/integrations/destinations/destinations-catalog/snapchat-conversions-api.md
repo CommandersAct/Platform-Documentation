@@ -1,37 +1,89 @@
 # Snapchat Conversions API
 
-The Snapchat Conversions API allows you to pass web, app, and offline events to Snap via a server-side integration.
+The [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion.html#introduction) allows you to bridge web and app events to Snapchat via a server-side integration.
 
-More details [here](https://marketingapi.snapchat.com/docs/conversion.html#introduction).
+{% hint style="info" %}
+<mark style="color:yellow;">Note that events can have a date (timestamp) of maximum 28 days back to be eligible to be reported via the Conversions API.</mark>
+{% endhint %}
 
-A **pixel ID** is requested for this destination, please find [here](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en\_US) how to retrieve this value.
+<mark style="color:yellow;">A</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">**pixel ID**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">is requested for this destination, please find</mark> [<mark style="color:yellow;">here</mark>](https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en\_US) <mark style="color:yellow;">how to retrieve this value.</mark>
 
-### Default Mappings to Snapchat Standard Events&#x20;
+## Key features
 
-| COMMANDERS ACT EVENTS | SNAPCHAT STANDARD EVENT |
-| --------------------- | ----------------------- |
-| `begin_checkout`      | `START_CHECKOUT`        |
-| `purchase`            | `PURCHASE`              |
-| `add_to_cart`         | `ADD_CART`              |
-| `view_item`           | `VIEW_CONTENT`          |
-| login                 | `LOGIN`                 |
-| `search`              | `SEARCH`                |
-| `add_to_wishlist`     | `ADD_TO_WISHLIST`       |
-| `page_view`           | `PAGE_VIEW`             |
+The Snapchat destination provides the following key features:
 
-### Default Mappings to Snapchat Custom Events&#x20;
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Snapchat's one](https://marketingapi.snapchat.com/docs/conversion.html#parameters-for-event-type-platform), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
+* **Custom events**: you can freely push custom events based on your specific needs.
+* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to AT Internet.
 
+## Destination setup
 
+Before you get started with this destination, ensure you can access the [Snapchat Ads Manager](https://ads.snapchat.com).
 
-| COMMANDERS ACT EVENTS | SNAPCHAT CUSTOM EVENT |
-| --------------------- | --------------------- |
-| `add_payment_info`    | `ADD_PAYMENT_INFO`    |
-| `add_shipping_info`   | `ADD_SHIPPING_INFO`   |
-| `generate_lead`       | `GENERATE_LEAD`       |
-| `refund`              | `REFUND`              |
-| `remove_from_cart`    | `REMOVE_FROM_CART`    |
-| `select_content`      | `SELECT_CONTENT`      |
-| `select_item`         | `SELECT_ITEM`         |
-| `sign_up`             | `SIGN_UP`             |
-| `view_cart`           | `VIEW_CART`           |
-| `view_item_list`      | `VIEW_ITEM_LIST`      |
+### Configuration
+
+| Settings          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pixel Id (WEB)    | <p><em><strong><code>Required</code> </strong></em> for <a href="https://marketingapi.snapchat.com/docs/conversion.html#web-parameters">WEB events</a>.</p><p>Your <a href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">Pixel Id</a> as provided by Snapchat for "Web" type events. For more details, you can check the following <a href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">LINK</a>.</p>    |
+| Snap App Id (APP) | <p><em><strong><code>Required</code></strong></em> for <a href="https://marketingapi.snapchat.com/docs/conversion.html#mobile_app-parameters">MOBILE_APP events</a>.</p><p>Your <a href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US">Snap App Id</a> as provided by Snapchat for "Mobile App" type events. For more details, you can check the following <a href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US">LINK</a>.</p> |
+
+## Quick reference
+
+| Commanders Act Events | Snapchat Events               |
+| --------------------- | ----------------------------- |
+| `add_payment_info`    | `ADD_PAYMENT_INFO` **\[\*]**  |
+| `add_shipping_info`   | `ADD_SHIPPING_INFO` **\[\*]** |
+| `add_to_cart`         | `ADD_CART`                    |
+| `add_to_wishlist`     | `ADD_TO_WISHLIST`             |
+| `begin_checkout`      | `START_CHECKOUT`              |
+| `generate_lead`       | `GENERATE_LEAD` **\[\*]**     |
+| `login`               | `LOGIN`                       |
+| `page_view`           | `PAGE_VIEW`                   |
+| `purchase`            | `PURCHASE`                    |
+| `refund`              | `REFUND` **\[\*]**            |
+| `remove_from_cart`    | `REMOVE_FROM_CART` **\[\*]**  |
+| `search`              | `SEARCH`                      |
+| `select_content`      | `SELECT_CONTENT` **\[\*]**    |
+| `select_item`         | `SELECT_ITEM` **\[\*]**       |
+| `sign_up`             | `SIGN_UP` **\[\*]**           |
+| `view_cart`           | `VIEW_CART`                   |
+| `view_item`           | `VIEW_CONTENT` **\[\*]**      |
+| `view_item_list`      | `VIEW_ITEM_LIST` **\[\*]**    |
+| `[Custom Event]`      | `[Custom Event]` **\[\*]**    |
+
+{% hint style="info" %}
+**\[\*]** Snapchat custom event.
+{% endhint %}
+
+## Field Mappings
+
+| Commanders Act Properties                                 | Snapchat Properties              |
+| --------------------------------------------------------- | -------------------------------- |
+| `event_timestamp`                                         | `timestamp` **\[1]**             |
+| `(app && app.name)`                                       | `event_conversion_type` **\[2]** |
+| `properties.items.X.id`                                   | `item_ids.X`                     |
+| `properties.items.length`                                 | `number_items`                   |
+| `properties.value`                                        | `price`                          |
+| `properties.currency`                                     | `currency`                       |
+| `properties.id`                                           | `transaction_id`                 |
+| `properties.search_term`                                  | `search_string`                  |
+| `device.user_agent`                                       | `user_agent`                     |
+| `device.ip`                                               | `hashed_ip_address` **\[3]**     |
+| `client_dedup_id`                                         | `client_dedup_id` **\[4]**       |
+| `app.namespace`                                           | `app_id`                         |
+| `Snap App Id (APP)`                                       | `snap_app_id`                    |
+| `device.maid`                                             | `hashed_mobile_ad_id`            |
+| `device.idfv`                                             | `hashed_idfv`                    |
+| `Pixel Id (WEB)`                                          | `pixel_id`                       |
+| `properties.user.email_sha256` or `properties.user.email` | `hashed_email` **\[5]**          |
+| `properties.user.phone`                                   | `hashed_phone_number` **\[6]**   |
+
+{% hint style="info" %}
+**\[1] F**ield automatically generated when it's not set.\
+**\[2]** If`app.name`is defined then it's set with `MOBILE_APP`, otherwise,`WEB.`\
+``**\[3]** Field automatically hashed.\
+**\[4]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same`client_dedup_id`across all of them. This will be used within a 48 hour scope of the first occurrence.\
+**\[5]** In case`properties.user.email_sha256`is not provided, `properties.user.email`is hashed and used in its place.\
+**\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).
+{% endhint %}
