@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 29/06/2022
+
+Segment stats article:
+
+{% content-ref url="../features/customers/segment/segment-stats.md" %}
+[segment-stats.md](../features/customers/segment/segment-stats.md)
+{% endcontent-ref %}
+
+Data quality feature:
+
+{% content-ref url="../features/data-quality.md" %}
+[data-quality.md](../features/data-quality.md)
+{% endcontent-ref %}
+
 ## 23/06/2022
 
 Add a description of automatic added properties for Web events (JS SDK and Web container):
