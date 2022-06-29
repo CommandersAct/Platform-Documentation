@@ -13,7 +13,7 @@ The Snapchat destination provides the following key features:
 
 ## Destination setup
 
-Before you get started with this destination, ensure you can access the [Snapchat Ads Manager](https://ads.snapchat.com).
+Before you get started with this destination, make sure you can access the [Snapchat Ads Manager](https://ads.snapchat.com).
 
 ### Configuration
 
