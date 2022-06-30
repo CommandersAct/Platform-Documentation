@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 30/06/2022
+
+Webhook documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/webhook.md" %}
+[webhook.md](../features/integrations/destinations/destinations-catalog/webhook.md)
+{% endcontent-ref %}
+
 ## 29/06/2022
 
 Segment stats article:
