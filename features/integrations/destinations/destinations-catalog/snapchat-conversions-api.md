@@ -9,7 +9,7 @@ The Snapchat destination provides the following key features:
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Snapchat's one](https://marketingapi.snapchat.com/docs/conversion.html#parameters-for-event-type-platform), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
 * **Custom events**: you can freely push custom events based on your specific needs.
-* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to AT Internet.
+* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Snapchat.
 
 ## Destination setup
 
