@@ -31,7 +31,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ## Field mappings
 
-| Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                                                                                                                        |
+| Commanders Act Properties                                 | Google Enhanced Conversions Properties                                                                                                                                                    |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                                                                                                                       |
 | `properties.id`                                           | `conversionAdjustments.X.orderId`                                                                                                                                                         |
