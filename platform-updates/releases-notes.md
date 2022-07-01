@@ -26,3 +26,16 @@ description: >-
   * Awin (more advanced affiliation property option)
 
 (\*) audience based destination
+
+## Release 10.0.0 - 21/01/2022
+
+* Serverside v2 interfaces - closed beta 1
+
+## Release 0.0.12 - 01/02/1970
+
+* Removed humans, they weren't doing fine with animals.
+* Animals are now super cute, all of them.
+
+## Release 0.0.1 - 01/01/1970
+
+* Introduced animals into the world, we believe they're going to be a neat addition.
