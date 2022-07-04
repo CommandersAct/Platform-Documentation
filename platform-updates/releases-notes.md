@@ -9,17 +9,19 @@ description: >-
 ## Release 10.0.1 - 24/06/22
 
 * Sources improvements: ​
-  * &#x20;Source data quality in health menu (global) and in a tab for each source​
+  * Source data quality in health menu (global) and in a tab for each source​
   * Adding new sources, currently in closed alpha (Shopify, pixel tracking, cost imports…)​
+  * Source event inspector : inspect each event individually (intelligent sampling)
+  * Adding new environment: ‘development’​
 * Destinations improvements: ​
-  * &#x20;Consent categories on destination’s filters​​
-  * &#x20;Destination description: what you will need & supported sources sections​
+  * Consent categories dropdown on destination’s filters​​
+  * Destination description: what you will need & supported sources sections​
   * Adding new environment: ‘development’​
 * Improvements on 2FA​
 * Integration of segment stats interface​
 * New connectors: Criteo Events, Tradedoubler, Xandr\*, Appnexus\*, Tableau\*​
 * Destination enhancements:​
-  * &#x20;Webhook v2 (more methods, and more formatting data possibilities)​
+  * Webhook v2 (more methods, and more formatting data possibilities)​
   * Google Enhanced Conversion v2 (new Google API)​
   * Google Analytics 4 (more options)​
   * AT Internet (cookie server)​
