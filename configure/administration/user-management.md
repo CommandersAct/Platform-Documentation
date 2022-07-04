@@ -16,7 +16,7 @@ Follow these steps to create a new user:
 
 2/ Click the “Add / edit user(s)” button.
 
-![](../../../.gitbook/assets/UM\_3\[1].png)
+![](../../.gitbook/assets/UM\_3\[1].png)
 
 3/ Fill in all required information about the new user:
 
