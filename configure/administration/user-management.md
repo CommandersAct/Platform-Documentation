@@ -4,7 +4,7 @@ The “User Management” interface is available to administrators only, from th
 
 Then click “User rights” > “User management”. This interface allows you to grant access or modify user access to the Commanders Act interface on your account(s).
 
-![](../../../../.gitbook/assets/UM\_2\[1].png)
+![](../../.gitbook/assets/UM\_2\[1].png)
 
 ## Creating a new user
 
