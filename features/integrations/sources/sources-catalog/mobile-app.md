@@ -24,7 +24,11 @@ The basic operational principle of TagCommander’s light SDK is:
 
 `${siteID}` and `${YOUR_SOURCE_KEY}` are to be provided to the SDK and will be replaced automatically.
 
-The rest of the parameters are send in the body in POST like presented here: [https://github.com/CommandersAct/Platform-Documentation/blob/master/developers/tracking/about-events/mobile-sdk-event-specificity.md](https://github.com/CommandersAct/Platform-Documentation/blob/master/developers/tracking/about-events/mobile-sdk-event-specificity.md)
+The rest of the parameters are send in the body in POST like presented here:&#x20;
+
+{% content-ref url="../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
+[mobile-sdk-event-specificity.md](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
+{% endcontent-ref %}
 
 – **Step 3**: CommandersAct’s servers send the received information to the different destinations. There are as many outgoing hits as there are partner solutions you wish to send information to.
 
