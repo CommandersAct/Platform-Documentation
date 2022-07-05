@@ -32,7 +32,7 @@ The rest of the parameters are send in the body in POST like presented here:&#x2
 
 – **Step 3**: CommandersAct’s servers send the received information to the different destinations. There are as many outgoing hits as there are partner solutions you wish to send information to.
 
-![](../../.gitbook/assets/schema\_EN\[1].png)
+![](../../../../.gitbook/assets/schema\_EN\[1].png)
 
 Ex: if you wish to issue a call to both Criteo and Google, a hit will be sent to either solution’s servers.
 
