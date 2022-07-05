@@ -1,4 +1,4 @@
-# Mobile APP
+# Mobile APP : how to
 
 {% content-ref url="ios.md" %}
 [ios.md](ios.md)
@@ -20,13 +20,11 @@ The basic operational principle of TagCommander’s light SDK is:
 
 – **Step 1**: the mobile data layer and CommandersAct’s SDK are called in the app’s source code every time the screen loads or that an element is clicked. (your IT staff should have implemented this at the start of the project).
 
-– **Step 2**: CommandersAct’s SDK issues calls to CommandersAct’s servers and automatically sends the mobile data layer’s contents. This is the server-side hits’ structure:
-https://collect.commander1.com/events?tc_s=${siteID}&token=${YOUR_SOURCE_KEY}:
+– **Step 2**: CommandersAct’s SDK issues calls to CommandersAct’s servers and automatically sends the mobile data layer’s contents. This is the server-side hits’ structure: `https://collect.commander1.com/events?tc_s=${siteID}&token=${YOUR_SOURCE_KEY}`
 
-${siteID} and ${YOUR_SOURCE_KEY} are to be provided to the SDK and will be replaced automatically.
+`${siteID}` and `${YOUR_SOURCE_KEY}` are to be provided to the SDK and will be replaced automatically.
 
-The rest of the parameters are send in the body in POST like presented here:
-https://github.com/CommandersAct/Platform-Documentation/blob/master/developers/tracking/about-events/mobile-sdk-event-specificity.md
+The rest of the parameters are send in the body in POST like presented here: [https://github.com/CommandersAct/Platform-Documentation/blob/master/developers/tracking/about-events/mobile-sdk-event-specificity.md](https://github.com/CommandersAct/Platform-Documentation/blob/master/developers/tracking/about-events/mobile-sdk-event-specificity.md)
 
 – **Step 3**: CommandersAct’s servers send the received information to the different destinations. There are as many outgoing hits as there are partner solutions you wish to send information to.
 
@@ -44,12 +42,11 @@ Implementing our SDKs on a mobile application is a project that consists of the 
 
 ## Step #1: defining the application's tagging plan
 
-The tagging plan corresponds to the list of events that will be sent. 
+The tagging plan corresponds to the list of events that will be sent.
 
 ## Step #2: creating a mobile source and configuring destinations in the CommandersAct interface
 
 * **Creating a source for iOS, Android or both.**
-
 * **Implement or select destinations.**
 
 Implementing mobile destination is the same as implementing cloud-base destinations
@@ -63,9 +60,7 @@ These elements must be provided:
 * The app’s CommandersAct tagging plan, which lets IT staff know which events to declare and on which screens or elements.
 * Technical documentation referring to each and every app. It must contain elements that are key to setting up the SDK and screenshots of setup examples.
 
-Click here to read the corresponding technical documentation.
-iOS: https://github.com/CommandersAct/iOSV5/
-android: https://github.com/CommandersAct/androidv5/
+Click here to read the corresponding technical documentation. iOS: https://github.com/CommandersAct/iOSV5/ android: https://github.com/CommandersAct/androidv5/
 
 The site’s ID (Commanders Act account number) and that of the source key are necessary to set-up the SDK. These two elements can be retrieved in the interface.
 
@@ -103,7 +98,7 @@ These elements will be displayed when you analyze mobile logs:
 
 ### **Running tests for Android or iOS with Charles Debugger**
 
-TagCommander’s SDK for both iOS and Android operating systems can be tested with the “Charles Debugger” proxy, downloadable for free here:  [https://www.charlesproxy.com/](https://www.charlesproxy.com)
+TagCommander’s SDK for both iOS and Android operating systems can be tested with the “Charles Debugger” proxy, downloadable for free here: [https://www.charlesproxy.com/](https://www.charlesproxy.com)
 
 The first thing to do is to configure your phone so it can communicate with Charles.
 
@@ -124,7 +119,7 @@ Go to the Charles app and authorize it to connect to the phone.
 
 ![](../../.gitbook/assets/charles\_2\[1].png)
 
-Browse the web with your phone and in Charles (on your computer) apply a “TagCommander” filter to see server-side hits displayed in the “Overview” section. They look like this:  [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)
+Browse the web with your phone and in Charles (on your computer) apply a “TagCommander” filter to see server-side hits displayed in the “Overview” section. They look like this: [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)
 
 When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the TagCommander SDK.
 
