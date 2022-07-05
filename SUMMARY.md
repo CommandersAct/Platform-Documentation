@@ -35,6 +35,7 @@
         * [Conversions files importer](features/integrations/sources/sources-catalog/import-conversions/conversions-files-importer.md)
       * [Product catalog](features/integrations/sources/sources-catalog/product-catalog/README.md)
         * [Product catalog files importer (FTP)](features/integrations/sources/sources-catalog/product-catalog/product-catalog-files-importer-ftp.md)
+      * [Mobile APP](features/integrations/sources/sources-catalog/mobile-app.md)
   * [Destinations](features/integrations/destinations/README.md)
     * [Destinations overview](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
