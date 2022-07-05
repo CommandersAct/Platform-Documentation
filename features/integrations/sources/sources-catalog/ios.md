@@ -1,3 +1,9 @@
-# iOS SDK
+# iOS
 
-Please refer to our [developper documentation](https://github.com/TagCommander/iOSV5) on github to use the iOS SDK.
+The iOS SDK allows you to send data to analytics or marketing tools without having to learn, test, or implement a new API with each update or addition.
+
+Please refer to our [developper documentation](https://github.com/TagCommander/iOSV5) on github to use the iOS SDK and to APP "how to" :&#x20;
+
+{% content-ref url="mobile-app.md" %}
+[mobile-app.md](mobile-app.md)
+{% endcontent-ref %}

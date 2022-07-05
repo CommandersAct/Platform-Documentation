@@ -27,7 +27,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ![Click on your "Conversion Action" (E.g. "Purchase")](<../../../../.gitbook/assets/1 (1).png>)
 
-![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/1 (2).png>)
+![Flag "Turn on enhanced conversion" and select "API".](../../../../.gitbook/assets/2.png)
 
 ## Field mappings
 

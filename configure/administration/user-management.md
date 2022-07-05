@@ -4,7 +4,7 @@ The “User Management” interface is available to administrators only, from th
 
 Then click “User rights” > “User management”. This interface allows you to grant access or modify user access to the Commanders Act interface on your account(s).
 
-![](../../.gitbook/assets/UM\_2\[1].png)
+![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (2).jpg>)
 
 ## Creating a new user
 
@@ -16,7 +16,7 @@ Follow these steps to create a new user:
 
 2/ Click the “Add / edit user(s)” button.
 
-![](../../.gitbook/assets/UM\_3\[1].png)
+![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (10).jpg>)
 
 3/ Fill in all required information about the new user:
 
@@ -124,7 +124,7 @@ Follow these steps to modify custom rights:
 
 1/ Click the pencil icon next to “Custom”:
 
-![](<../.gitbook/assets/UM\_6\[1] (1).png>)
+![](../.gitbook/assets/UM\_6\[1]%20\(1\).png)
 
 2/ Select the **Commanders Act** product you wish to revoke access to.
 
