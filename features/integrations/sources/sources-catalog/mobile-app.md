@@ -20,7 +20,7 @@ The basic operational principle of TagCommander’s light SDK is:
 
 – **Step 1**: the mobile data layer and CommandersAct’s SDK are called in the app’s source code every time the screen loads or that an element is clicked. (your IT staff should have implemented this at the start of the project).
 
-– **Step 2**: CommandersAct’s SDK issues calls to CommandersAct’s servers and automatically sends the mobile data layer’s contents. This is the server-side hits’ structure: `https://collect.commander1.com/events?tc_s=${siteID}&token=${YOUR_SOURCE_KEY}`
+– **Step 2**: CommandersAct’s SDK issues calls to CommandersAct’s servers and automatically sends the mobile data layer’s contents. This is the server-side hits’ structure: https://collect.commander1.com/events?tc\_s=`${siteID}`\&token=`${YOUR_SOURCE_KEY}`
 
 `${siteID}` and `${YOUR_SOURCE_KEY}` are to be provided to the SDK and will be replaced automatically.
 
