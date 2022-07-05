@@ -82,7 +82,7 @@ You will need to connect your iPhone to your Mac.
 
 Open XcOde, go to “Window” ), > “Devices” (2), then select ypur device in thecolumn to the left (3):
 
-![](../../.gitbook/assets/xcode\_1\[1].png)
+![](../../../../.gitbook/assets/xcode\_1\[1].png)
 
 These elements will be displayed when you analyze mobile logs:
 
@@ -96,7 +96,7 @@ These elements will be displayed when you analyze mobile logs:
   “sending: [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)\
   With **POST** data: VARIABLE=VALUE\&VARIABLE=VALUE…”
 
-![](../../.gitbook/assets/xcode\_2\[1].png)
+![](../../../../.gitbook/assets/xcode\_2\[1].png)
 
 \*\*\*
 
@@ -117,17 +117,17 @@ Add a proxy manually:
 
 Save.
 
-![](../../.gitbook/assets/charles\_1\[1].png)
+![](../../../../.gitbook/assets/charles\_1\[1].png)
 
 Go to the Charles app and authorize it to connect to the phone.
 
-![](../../.gitbook/assets/charles\_2\[1].png)
+![](../../../../.gitbook/assets/charles\_2\[1].png)
 
 Browse the web with your phone and in Charles (on your computer) apply a “TagCommander” filter to see server-side hits displayed in the “Overview” section. They look like this: [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)
 
 When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the TagCommander SDK.
 
-![](../../.gitbook/assets/charles\_3\[1].png)
+![](../../../../.gitbook/assets/charles\_3\[1].png)
 
 HTTPS Protocol:
 
