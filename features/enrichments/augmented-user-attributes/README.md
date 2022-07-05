@@ -4,13 +4,13 @@
 
 This feature allows you to create enriched properties on your user: flags, ratio, rolling count/average, conditional value, boolean...
 
-Enrich your data with your business rules in a user-friendly UI.&#x20;
+Enrich your data with your business rules in a user-friendly UI.
 
-An enrichment transforms a property from a static value to a dynamic/enriched one. &#x20;
+An enrichment transforms a property from a static value to a dynamic/enriched one.
 
 By introducing business rules to your attributes, you give them context and more meaning. These enriched attributes then become the building blocks for dynamic segmentation, analytics, or can be retrieve in the datalayer via TagCommander to enrich your tags.
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1).jpg>)
 
 ## Flag
 
@@ -23,8 +23,7 @@ What are the differences between segment and flag?
 {% endhint %}
 
 → **Segments** can help you to identify and activate your customers based on their live behaviour: page views, clicks, sign-up, orders…\
-Your customers are interacting with you, your websites, your applications, your customer service… you have to identify these live actions in order to prepare the next best action that will enhance your customer experience: for example onsite personalization after a click on a remarketing ad and a specific product view, personalized email after a contact with the customer service…\
-
+Your customers are interacting with you, your websites, your applications, your customer service… you have to identify these live actions in order to prepare the next best action that will enhance your customer experience: for example onsite personalization after a click on a remarketing ad and a specific product view, personalized email after a contact with the customer service…\\
 
 Segments are built for instant reaction :\
 customer actions 〉identification 〉marketing activation\
@@ -60,7 +59,7 @@ It will be possible soon to define retroactive flags. Stay connected!
 
 * Flag _VIP customers:_ flag all your best customers
 * Flag _window shoppers_: customers interested but not converted
-* Review our [Business case](broken-reference)
+* Review our [Business case](broken-reference/)
 
 ### Example
 
@@ -145,13 +144,13 @@ You can use these new indicators to create new segments or to flag your customer
 
 You would like to identify customers who have ordered more than 300€ in the product category ‘clothes’ over the last 2 months. You set up the new rolling sum attribute:
 
-|                                                                                                                                                                                   | **Customer A**                                                                  | **Customer B**                                                                 |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Order #1**                                                                                                                                                                      | <p>Product Category: Clothes</p><p>Price: 80€</p><p>Date: 3 months ago</p>      | <p>Product Category: Bag</p><p>Price: 80€</p><p>Date: 3 months ago</p>         |
-| **Order #2**                                                                                                                                                                      | <p>Product Category: Shoes</p><p>Price: 100€</p><p>Date: 2 months ago</p>       | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p>     |
-| **Order #3**                                                                                                                                                                      | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p>      | <p>Product Category: Clothes</p><p>Price: 200€</p><p>Date: 2 weeks ago</p>     |
-| <p><strong>Rolling SUM</strong><br><strong></strong>‘Total orders amount clothes &#x3C;2 months’</p><p>Filters:</p><p>Product category = Clothes</p><p>Period = last 2 months</p> | <p><strong>150 €</strong></p><p>(only the order #3 fill all the conditions)</p> | <p><strong>350 €</strong></p><p>(Orders #2 and #3 fill all the conditions)</p> |
-| <p><strong>Segment based on the new attribute</strong> <br><strong></strong>‘Users with a total orders amount clothes &#x3C;2 months’</p><p>Filters:</p><p>Total >300€</p>        | **❌ No entry**                                                                  | ****:white\_check\_mark: **Entry**                                             |
+|                                                                                                                                                                  | **Customer A**                                                                  | **Customer B**                                                                 |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Order #1**                                                                                                                                                     | <p>Product Category: Clothes</p><p>Price: 80€</p><p>Date: 3 months ago</p>      | <p>Product Category: Bag</p><p>Price: 80€</p><p>Date: 3 months ago</p>         |
+| **Order #2**                                                                                                                                                     | <p>Product Category: Shoes</p><p>Price: 100€</p><p>Date: 2 months ago</p>       | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p>     |
+| **Order #3**                                                                                                                                                     | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p>      | <p>Product Category: Clothes</p><p>Price: 200€</p><p>Date: 2 weeks ago</p>     |
+| <p><strong>Rolling SUM</strong><br>‘Total orders amount clothes &#x3C;2 months’</p><p>Filters:</p><p>Product category = Clothes</p><p>Period = last 2 months</p> | <p><strong>150 €</strong></p><p>(only the order #3 fill all the conditions)</p> | <p><strong>350 €</strong></p><p>(Orders #2 and #3 fill all the conditions)</p> |
+| <p><strong>Segment based on the new attribute</strong><br>‘Users with a total orders amount clothes &#x3C;2 months’</p><p>Filters:</p><p>Total >300€</p>         | **❌ No entry**                                                                  | \*\*\*\*:white\_check\_mark: **Entry**                                         |
 
 You can now create a new segment based on the new attribute ‘\[total orders amount clothes <2 months] >300€’ which concerns, on this example, only the customer B.
 
@@ -194,17 +193,17 @@ Create a countdown attribute for one variable, based on a specific date range. T
 
 ### Example
 
-You would like to segment users who have 2 or more conversions with a discount code. \
+You would like to segment users who have 2 or more conversions with a discount code.\
 You set up the new rolling count attribute:\
 Count \[Conversions] where \[Conversion discount code] = 'True'
 
-|                                                                                                                                                                            | **Customer A**                                                                                        | **Customer B**                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Order #1**                                                                                                                                                               | <p>Product Category: Clothes</p><p>Price: 80€</p><p>Date: 3 months ago</p><p>Discount code: False</p> | <p>Product Category: Bag</p><p>Price: 80€</p><p>Date: 3 months ago</p><p>Discount code: True</p>      |
-| **Order #2**                                                                                                                                                               | <p>Product Category: Shoes</p><p>Price: 100€</p><p>Date: 2 months ago</p><p>Discount code: False</p>  | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p><p>Discount code: False</p> |
-| **Order #3**                                                                                                                                                               | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p><p>Discount code: True</p>  | <p>Product Category: Clothes</p><p>Price: 200€</p><p>Date: 2 weeks ago</p><p>Discount code: True</p>  |
-| <p><strong>Rolling Count</strong><br><strong></strong>‘Total conversions with a discount code'</p><p>Filters:</p><p>Discount code = 'True'</p>                             | <p><strong>1</strong></p><p>(only the order #3 fill all the conditions)</p>                           | <p><strong>2</strong></p><p>(Orders #1 and #3 fill all the conditions)</p>                            |
-| <p><strong>Segment based on the new attribute</strong> <br><strong></strong>‘Users who have 2 or more conversions with a discount code'</p><p>Filters:</p><p>Total >=2</p> | **❌ No entry**                                                                                        | ****:white\_check\_mark: **Entry**                                                                    |
+|                                                                                                                                                          | **Customer A**                                                                                        | **Customer B**                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Order #1**                                                                                                                                             | <p>Product Category: Clothes</p><p>Price: 80€</p><p>Date: 3 months ago</p><p>Discount code: False</p> | <p>Product Category: Bag</p><p>Price: 80€</p><p>Date: 3 months ago</p><p>Discount code: True</p>      |
+| **Order #2**                                                                                                                                             | <p>Product Category: Shoes</p><p>Price: 100€</p><p>Date: 2 months ago</p><p>Discount code: False</p>  | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p><p>Discount code: False</p> |
+| **Order #3**                                                                                                                                             | <p>Product Category: Clothes</p><p>Price: 150€</p><p>Date: 1 month ago</p><p>Discount code: True</p>  | <p>Product Category: Clothes</p><p>Price: 200€</p><p>Date: 2 weeks ago</p><p>Discount code: True</p>  |
+| <p><strong>Rolling Count</strong><br>‘Total conversions with a discount code'</p><p>Filters:</p><p>Discount code = 'True'</p>                            | <p><strong>1</strong></p><p>(only the order #3 fill all the conditions)</p>                           | <p><strong>2</strong></p><p>(Orders #1 and #3 fill all the conditions)</p>                            |
+| <p><strong>Segment based on the new attribute</strong><br>‘Users who have 2 or more conversions with a discount code'</p><p>Filters:</p><p>Total >=2</p> | **❌ No entry**                                                                                        | \*\*\*\*:white\_check\_mark: **Entry**                                                                |
 
 Then you can create a segment with the rolling count attribute 'Users with total conversions with a discount code = 2 or more' which returns, on our example, only the customer B. However you can go further by adding a period or others conditions.
 
@@ -249,16 +248,14 @@ You would like to identify cross-channel customers meaning the partition of cust
 
 Higher is the rate, more the preferred channel is online and lower is the rate more the preferred channel is offline.
 
-
-
-Customer Lifetime Value (CLTV): \
+Customer Lifetime Value (CLTV):\
 This metric helps you to estimate the income per customer during his entire relationship with your company (present and future). It allows you to establish forecasts on profits based on future cash flows.
 
 > CLTV = Customer Value ✕ Customer Average Lifespan
 
 > Customer Value = Average purchase value ✕ Average purchase frequency (on 1 year)
 
-> Customer Average Lifespan depends on your business model (subscriptions service, freemium, retailer...). In general we consider the customer average lifespan is comprised between 1 and 3 years.&#x20;
+> Customer Average Lifespan depends on your business model (subscriptions service, freemium, retailer...). In general we consider the customer average lifespan is comprised between 1 and 3 years.
 
 To sum-up, in order to calculate the customer lifetime value with the augmented user attributes feature, you have to:
 
@@ -266,9 +263,9 @@ To sum-up, in order to calculate the customer lifetime value with the augmented 
 2. Use a Calculus attribute to define the Customer Value by multiplying the average purchase value and the average purchase frequency (determined previously on step 1)
 3. Ultimately, use again a Calculus attribute to estimate the Customer Lifetime Value by multiplying the Customer Value (as calculated on step 2) and the Customer Average Lifespan (determined by your business model).
 
-You can calculate the CLTV step by step or you can also create a formula that combines all the  dimensions.
+You can calculate the CLTV step by step or you can also create a formula that combines all the dimensions.
 
-Ex: \
+Ex:\
 Average purchase value (on 1 year) = 50€\
 Average purchase frequency (on 1 year) = 5 orders/year\
 Customer Value = 250€ (50x5)\
@@ -276,8 +273,6 @@ Customer Average Lifespan = 2 years\
 Customer Lifetime Value = 500€ (250x2)
 
 Or: CLTV = (50x5)x2 = 500€
-
-
 
 ### How it works
 

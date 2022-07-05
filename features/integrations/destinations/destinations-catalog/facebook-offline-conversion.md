@@ -1,10 +1,10 @@
 # Facebook Offline conversion
 
-Send your offline conversions (like purchases made in stores) directly to Facebook.&#x20;
+Send your offline conversions (like purchases made in stores) directly to Facebook.
 
 Create a new stream, select Facebook Offline conversion connector and enter the information needed:
 
-![](<../../../../.gitbook/assets/image (9) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (8) (1).png>)
 
 ## How to find the Offline Event Set Id?
 

@@ -2,7 +2,7 @@
 
 Google Display & Video 360 and Google Search Ads 360 are paid products part of [Google Marketing Platform](https://marketingplatform.google.com/about/).
 
-![](<../../../../.gitbook/assets/image (1) (2).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
 
 ## First step: <a href="#googleddpsetup-firststep" id="googleddpsetup-firststep"></a>
 
@@ -38,9 +38,9 @@ Wait for Google to whitelist our DMP.
 
 ## Step 3 - Select your connector <a href="#googleddpsetup-step3-pickyourconnector" id="googleddpsetup-step3-pickyourconnector"></a>
 
-* Display & Video 360 was previously DoubleClick Bid Manager.&#x20;
+* Display & Video 360 was previously DoubleClick Bid Manager.
   * If you had a DoubleClick Bid Manager account or if you have a Display & Video 360 account, please use our connector 'Google Display & Video 360 Bid Manager'
-* Search Ads 360 was previously DoubleClick Search.&#x20;
+* Search Ads 360 was previously DoubleClick Search.
   * If you had a DoubleClick Search account or if you have a Search Ads 360 account, please use our connector 'Google Search Ads 360'
 * Display & Video 360 can be also used with an Adexchange account
   * If you had an Adexchange account, please use our connector 'Google Display & Video 360 Adex'
@@ -49,11 +49,11 @@ Wait for Google to whitelist our DMP.
 
 * \[Google DDP API]\[2473] Could not fetch lists: \[AuthorizationError.**USER\_PERMISSION\_DENIED** @ clientCustomerId]
 
-&#x20;       → Trouble with the whitelisting: be sure you are using the right name (TagCommander) and the right ID (advertiser ID).
+→ Trouble with the whitelisting: be sure you are using the right name (TagCommander) and the right ID (advertiser ID).
 
-* \[Google DDP API]\[3206] Could not fetch lists: \[DmpUserListServiceError.**INVALID\_CLIENT\_CUSTOMER\_ID** @ clientCustomerId]&#x20;
+* \[Google DDP API]\[3206] Could not fetch lists: \[DmpUserListServiceError.**INVALID\_CLIENT\_CUSTOMER\_ID** @ clientCustomerId]
 
-&#x20;       → You don't have a Google DV360 account. Please use the Customer Match connector or RLSA (Remarketing Lists for Search Ads)
+→ You don't have a Google DV360 account. Please use the Customer Match connector or RLSA (Remarketing Lists for Search Ads)
 
 ## Step 4 - Create your stream <a href="#googleddpsetup-step4" id="googleddpsetup-step4"></a>
 

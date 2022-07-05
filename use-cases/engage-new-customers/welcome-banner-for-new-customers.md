@@ -2,17 +2,17 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 Collect **more personal Data** about new users (like an email address) for a **better engagement** with them.
 
 Display a banner for new users only, and offer them an incentive: discount % if, for example, they subscribe to the newsletter, install the app or create a new account.
 
-🔧  Complexity: 1/5
+🔧 Complexity: 1/5
 
-💰  ROI: Medium
+💰 ROI: Medium
 
-![](../../.gitbook/assets/nl.png)
+![](<../../.gitbook/assets/nl (1).png>)
 
 ## Use case setup
 

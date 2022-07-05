@@ -2,7 +2,7 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 Create custom audiences to send to Facebook, Google, Criteo…
 
@@ -10,11 +10,11 @@ Depending on their behaviour (product view, email opened, add to cart…), CRM i
 
 Then create relevant and personalized ads for these users coming from your segments.
 
-🔧  Complexity: 1/5
+🔧 Complexity: 1/5
 
-💰  ROI: Medium
+💰 ROI: Medium
 
-![](../../.gitbook/assets/persoads.png)
+![](<../../.gitbook/assets/persoads (1).png>)
 
 ## Use case setup
 
@@ -36,4 +36,4 @@ Use our **Control Group feature** to measure results with the comparison of conv
 
 Customers who just bought, lost customers… don’t expose them anymore and avoid spending too much money for customers who are not interested anymore. Moreover, manage the exposure capping.
 
-For example, you want to target customers who saw a specific product but didn't buy. But you don't want to target users who just bought this specific product offline, in your shops. Simply create 2 segments, push them to the partner and use one for targeting and one for exclusion.&#x20;
+For example, you want to target customers who saw a specific product but didn't buy. But you don't want to target users who just bought this specific product offline, in your shops. Simply create 2 segments, push them to the partner and use one for targeting and one for exclusion.

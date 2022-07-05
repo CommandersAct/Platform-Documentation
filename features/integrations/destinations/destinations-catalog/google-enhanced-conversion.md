@@ -27,11 +27,11 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ![Click on your "Conversion Action" (E.g. "Purchase")](<../../../../.gitbook/assets/1 (1).png>)
 
-![Flag "Turn on enhanced conversion" and select "API".](../../../../.gitbook/assets/2.png)
+![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/1 (2).png>)
 
 ## Field mappings
 
-| Commanders Act Properties                                 | Google Enhanced Conversions Fields                                                                                                                                                        |
+| Commanders Act Properties                                 | Google Enhanced Conversions Properties                                                                                                                                                    |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                                                                                                                       |
 | `properties.id`                                           | `conversionAdjustments.X.orderId`                                                                                                                                                         |
@@ -49,9 +49,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 | `properties.user.zipcode`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.postalCode`                                                                                                                        |
 
 {% hint style="info" %}
-**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.
-
-**\[2]** If`properties.user.email` is provided, it's hashed using`SHA-256`, otherwise, `properties.user.email_sha256` is used.
-
+**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
+**\[2]** If`properties.user.email` is provided, it's hashed using`SHA-256`, otherwise, `properties.user.email_sha256` is used.\
 **\[3]** Normalized and hashed using `SHA-256`.
 {% endhint %}

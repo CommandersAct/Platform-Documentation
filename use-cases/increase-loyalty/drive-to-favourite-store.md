@@ -2,7 +2,7 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 SMS with favourite store incentive for loyal customers.
 
@@ -10,11 +10,11 @@ Drive traffic to stores with customers with a **high propensity to buy.**
 
 Send a personalized SMS with a discount valid only in the customer’s favourite shop (regarding his past purchases).
 
-🔧  Complexity: 2/5
+🔧 Complexity: 2/5
 
-💰  ROI: High
+💰 ROI: High
 
-![](<../../.gitbook/assets/sms (1).png>)
+![](../../.gitbook/assets/sms.png)
 
 ## Use case setup
 
