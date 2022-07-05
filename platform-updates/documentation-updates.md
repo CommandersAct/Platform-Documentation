@@ -4,6 +4,24 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/07/2022
+
+Mobile sources updates:&#x20;
+
+{% content-ref url="../features/integrations/sources/sources-catalog/ios.md" %}
+[ios.md](../features/integrations/sources/sources-catalog/ios.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/sources/sources-catalog/android.md" %}
+[android.md](../features/integrations/sources/sources-catalog/android.md)
+{% endcontent-ref %}
+
+Mobile APP global setup guide:
+
+{% content-ref url="../features/integrations/sources/sources-catalog/mobile-app.md" %}
+[mobile-app.md](../features/integrations/sources/sources-catalog/mobile-app.md)
+{% endcontent-ref %}
+
 ## 30/06/2022
 
 Webhook documentation:

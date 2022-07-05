@@ -10,7 +10,7 @@ An enrichment transforms a property from a static value to a dynamic/enriched on
 
 By introducing business rules to your attributes, you give them context and more meaning. These enriched attributes then become the building blocks for dynamic segmentation, analytics, or can be retrieve in the datalayer via TagCommander to enrich your tags.
 
-![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (2).jpg>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1).jpg>)
 
 ## Flag
 
