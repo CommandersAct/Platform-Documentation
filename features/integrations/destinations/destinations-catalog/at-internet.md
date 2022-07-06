@@ -66,8 +66,8 @@ The client-side unique visitor identifier is required for this destination to wo
 
 {% hint style="info" %}
 **\[\*]** Custom events must be added to the AT Internet **Data Model** first or they won't be processed. You can add new events by following ![](../../../../.gitbook/assets/piano\_1.png) ➜ `SETTINGS` ➜ `Data Management` ➜ `Data Model` ➜`Events` .\
-**\[1]** If`properties.page_type`is equal to`product`then`product.page_display`is sent, otherwise,`page.display`.\
-**\[2]** A`product.purchased`will be sent for each product being purchased.
+**\[1]** If<mark style="color:blue;">`properties.page_type`</mark>is equal to<mark style="color:blue;">`product`</mark>then<mark style="color:blue;">`product.page_display`</mark>is sent, otherwise,<mark style="color:blue;">`page.display`</mark>.\
+**\[2]** A<mark style="color:blue;">`product.purchased`</mark>will be sent for each product being purchased.
 {% endhint %}
 
 ## Field Mappings
@@ -108,8 +108,8 @@ The client-side unique visitor identifier is required for this destination to wo
 | `device.screen.width`                                                                                                                                                 | `device_screen_width`                                                                      |
 
 {% hint style="info" %}
-**\[1]** Boolean value:`true`or`false`.\
-**\[2]** Sum all`properties.items.X.quantity`.\
+**\[1]** Boolean value:<mark style="color:blue;">`true`</mark>or<mark style="color:blue;">`false`</mark>.\
+**\[2]** Sum all<mark style="color:blue;">`properties.items.X.quantity`</mark>.\
 **\[3]** Depending on the user configuration.
 {% endhint %}
 
