@@ -27,7 +27,7 @@ As soon as you start the stream, the control group will be launched also, and re
 
 When a stream with a control group is activated, on the stream list page an icon will appear on the right of the stream’s name.
 
-![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (6).jpg>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1) (6).jpg>)
 
 Click on this icon to access to the analytics part.
 

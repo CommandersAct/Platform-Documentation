@@ -4,8 +4,6 @@ The “User Management” interface is available to administrators only, from th
 
 Then click “User rights” > “User management”. This interface allows you to grant access or modify user access to the Commanders Act interface on your account(s).
 
-![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (2) (1).jpg>)
-
 ## Creating a new user
 
 _Note: only an administrator can create a new user._
@@ -16,8 +14,6 @@ Follow these steps to create a new user:
 
 2/ Click the “Add / edit user(s)” button.
 
-![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1).jpg>)
-
 3/ Fill in all required information about the new user:
 
 (A) The account(s) you wish to grant access to
@@ -27,7 +23,6 @@ Follow these steps to create a new user:
 * **Read only**: Users can visualize all of the interface’s elements but do not have the possibility to perform any action.
 * **Marketing**: This role was conceived for users that do not wish to interact with the advanced technical elements of the interface. “Marketing” rights do not allow a user to create or edit containers, or to modify tags’ JavaScript code.
 * **Technical**: This role provides access to every feature within the interface, except for a few advanced options that are available to account administrators only (please refer to the “Administrator” role to know more).
-* **Custom**: “Custom” rights provide access to very specific parts of the interface, depending on your needs. For more information please refer to the “Modifying/customizing user rights” article.
 * **Administrator**: The Administrator has access to every feature in the user interface and can create new users as well. Advanced options are only made available for administrators: renaming containers, creating “commander1.com” subdomains, connector setup…
 * **Privacy manager**: The Administrator for the privacy module only.
 * **Privacy technical**: This role gives access to the privacy module's features except for the options section.
@@ -68,25 +63,7 @@ Follow these steps to modify user rights:
 
 ## Denying access to a specific container or tag
 
-To deny access to a specific container, go to the user management interface.
-
-The user’s role needs to be the “CUSTOM” type (please refer to the [“CREATING A NEW USER”](https://community.commandersact.com/en/creating-a-new-user-or-modifying-account-settings-for-existing-users/) article to learn how to give a custom-type role to new users; or to the [“MODIFYING USER RIGHTS”](https://community.commandersact.com/en/visualizing-modifying-user-rights-for-one-or-more-sites/) article to learn how to change a role type to custom).
-
-1\) Click the pencil icon next to the user’s name. The custom role com configuration popin appears.
-
-![](../../.gitbook/assets/UM\_6\[1].png)
-
-2\) Select the container you wish to deny access to.
-
-3\) Click “NO” in the upper, right-hand side of the screen to turn all buttons to “NO” and save; the selected user no longer has access to the current container’s settings.
-
-![](../../.gitbook/assets/UM\_7\[1].png)
-
-A similar operation is required to prevent a user from having access to a specific tag. In the custom role configuration popin, follow these steps :
-
-1\) Select the tag you wish to deny access to
-
-2\) Click “NO” in the upper, right-hand side of the screen to turn all buttons to “NO” and save; the selected user no longer has access to the current tag’s settings.
+To deny access to a specific container, go to the profile management interface and modify the profile like this:
 
 ![](../../.gitbook/assets/UM\_8\[1].png)
 
@@ -118,13 +95,13 @@ Follow these steps to reset a password:
 
 ![](../../.gitbook/assets/UM\_10\[1].png)
 
-## Modifying custom roles
+Modifying custom roles
 
 Follow these steps to modify custom rights:
 
 1/ Click the pencil icon next to “Custom”:
 
-![](../../.gitbook/assets/UM\_6\[1]%20\(1\).png)
+![](<../../.gitbook/assets/UM\_6\[1] (1).png>)
 
 2/ Select the **Commanders Act** product you wish to revoke access to.
 
@@ -135,8 +112,6 @@ Follow these steps to modify custom rights:
 5\) Finally, select the features you wish to customize rights for in the products’ feature list. Click “YES/NO”
 
 6\) Note: If you click Yes/No at the top of every column, the change will affect all features.
-
-![](../../.gitbook/assets/UM\_11\[1].png)
 
 ## Accessing users' information and seeing sites they have access to
 
