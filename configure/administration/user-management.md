@@ -50,7 +50,7 @@ Please note: If you select multiple sites (A), only user profiles shared by all 
 
 (G) You can also add/change account settings by clicking the “+” button.
 
-![](../.gitbook/assets/UM\_4\[1].png)
+![](../../.gitbook/assets/UM\_4\[1].png)
 
 ## Modifying user rights
 
@@ -64,7 +64,7 @@ Follow these steps to modify user rights:
 
 3/ Select “Change Role” from the drop down menu and click “Apply”.
 
-![](../.gitbook/assets/UM\_5\[1].png)
+![](../../.gitbook/assets/UM\_5\[1].png)
 
 ## Denying access to a specific container or tag
 
@@ -74,7 +74,7 @@ The user’s role needs to be the “CUSTOM” type (please refer to the [“CRE
 
 1\) Click the pencil icon next to the user’s name. The custom role com configuration popin appears.
 
-![](../.gitbook/assets/UM\_6\[1].png)
+![](../../.gitbook/assets/UM\_6\[1].png)
 
 2\) Select the container you wish to deny access to.
 
