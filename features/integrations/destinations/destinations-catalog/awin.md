@@ -12,7 +12,7 @@ Awin no longer support the use of pixel only implementations due to various brow
 The Awin destination provides the following key features:
 
 * **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers [Awin lead and sale tracking](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29), meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
+* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Awin.
 * **Commission group**: remunerate different products based on your [commission groups](https://wiki.awin.com/index.php/How\_to\_create\_a\_commission\_group).
 
@@ -40,10 +40,10 @@ The [\*\*`awc` \*\* ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guid
 ## Field Mappings
 
 {% hint style="info" %}
-If you select`sale` as conversion type, the following fields are mandatory to properly set commission groups:\
-\-`properties.items.X.affiliation`\
-``-`properties.items.X.product.price`\
-``-`properties.items.X.quantity`
+If you select`sale`as conversion type, the following fields are mandatory to properly set commission groups:\
+\-<mark style="color:blue;">`properties.items.X.affiliation`</mark>\
+``-<mark style="color:blue;">`properties.items.X.product.price`</mark>\
+``-<mark style="color:blue;">`properties.items.X.quantity`</mark>
 
 Accepted characters for the commission group codes are alphanumerics (letter in upper case), underscore '\_' , point '.' and minus '-'`.`
 {% endhint %}
@@ -60,7 +60,7 @@ Accepted characters for the commission group codes are alphanumerics (letter in 
 | AW:P\|`Advertiser Id`\|`properties.id`\|`properties.items.X.product.id`\|`properties.items.X.product.name`\|`properties.items.X.product.price`\|`properties.items.X.quantity`\|`properties.items.X.product.price`\|`properties.items.X.id`\|`properties.items.X.affiliation`\|`properties.items.X.product.category_1`. | `bd[X]` **\[3]**  |
 
 {% hint style="info" %}
-**\[1]** When you select`lead`as conversion type, it's set with `1`.\
-**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select`lead`as conversion type, it's set with `DEFAULT:1`.\
+**\[1]** When you select<mark style="color:blue;">`lead`</mark>as conversion type, it's set with <mark style="color:blue;">`1`</mark>.\
+**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select<mark style="color:blue;">`lead`</mark>as conversion type, it's set with <mark style="color:blue;">`DEFAULT:1`</mark>.\
 **\[3]** Only when`sale`is set as conversion type. This structure is applied for each product.
 {% endhint %}

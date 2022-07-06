@@ -1,5 +1,6 @@
 # Snapchat Conversions API
 
+Snapchat is a multimedia instant messaging app and service. \
 The [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion.html#introduction) allows you to bridge web and app events to Snapchat via a server-side integration.
 
 ## Key features
@@ -7,7 +8,7 @@ The [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion
 The Snapchat destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Snapchat's one](https://marketingapi.snapchat.com/docs/conversion.html#parameters-for-event-type-platform), meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
+* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Snapchat.
 
@@ -75,9 +76,9 @@ Before you get started with this destination, make sure you can access the [Snap
 
 {% hint style="info" %}
 **\[1]** Field automatically generated when it's not set.\
-**\[2]** If`app.name`is defined then this field is set with `MOBILE_APP`, otherwise,`WEB.`\
+**\[2]** If<mark style="color:blue;">`app.name`</mark>is defined then this field is set with <mark style="color:blue;">`MOBILE_APP`</mark>, otherwise,<mark style="color:blue;">`WEB`</mark>`.`\
 ``**\[3]** Field automatically hashed.\
 **\[4]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same`client_dedup_id`across all of them. This will be used within a 48 hour scope of the first occurrence.\
-**\[5]** In case`properties.user.email_sha256`is not provided, `properties.user.email`is hashed and used in its place.\
+**\[5]** In case<mark style="color:blue;">`properties.user.email_sha256`</mark>is not provided, <mark style="color:blue;">`properties.user.email`</mark>is hashed and used in its place.\
 **\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).
 {% endhint %}

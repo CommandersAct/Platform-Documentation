@@ -1,12 +1,11 @@
 # Piano Analytics (AT Internet)
 
 [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/) is the successor of AT Internet Analytics Suite 2 (AS2).\
-It's a user-centric tool that synthesises product & marketing analytics, while ensuring data quality.\
+It's a user-centric tool that simplifies product & marketing analytics, while ensuring data quality.\
 Your data will be sent server-side getting the most from AT Internet [Collection API](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/events-pattern-en/) and in form of [events](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/).
 
 {% hint style="info" %}
-The [Collection API](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/events-pattern-en/) is only available for [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/).
-
+The [Collection API](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/events-pattern-en/) is only available for [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/).\
 If your perimeters are certified (ACPM/Mediamétrie), you **can't use** Piano Analytics and this destination. You can check the following [compatibility table](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/why-should-we-use-the-piano-analytics-tagging/#compatibility-table\_5) to get more insights on supported features by product.
 {% endhint %}
 
@@ -15,7 +14,7 @@ If your perimeters are certified (ACPM/Mediamétrie), you **can't use** Piano An
 The AT Internet destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [AT Internet's one](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/), meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
+* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to AT Internet.
 * **User identifier**: you can openly select a user identifier field for logged users.
@@ -30,12 +29,12 @@ The client-side unique visitor identifier is required for this destination to wo
 
 ### Configuration
 
-| Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Side Id                   | <p><em><strong><code>Required</code></strong></em></p><p>The identifier of the site the data belongs to (E.g. <code>628087</code>). This can be found in the AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code> ➜ <code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p>           |
-| Secured Collection Domain | <p><em><strong><code>Required</code></strong></em></p><p>The SSL Domain on which information is collected (E.g. <code>logs1412.xiti.com</code>). This can be found in AT Internet interface following <img src="../../../../.gitbook/assets/1.png" alt=""> ➜ <code>SETTINGS</code><br><code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p> |
-| User Identifier           | You can bridge the user identifier for your logged users. More information are available following this [LINK](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#user\_1).                                                                                                                                                |
-| Custom Property           | When selecting "\[Custom Property]" as value for the above "User Identifier", this field will show up so you can specify a custom field holding the value for the user identifier **\[1]**.                                                                                                                                                                                                                |
+| Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Side Id                   | <p><em><strong><code>Required</code></strong></em></p><p>The identifier of the site the data belongs to (E.g. <code>628087</code>). This can be found in the AT Internet interface following <img src="../../../../.gitbook/assets/piano_1.png" alt=""> ➜ <code>SETTINGS</code> ➜ <code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p>           |
+| Secured Collection Domain | <p><em><strong><code>Required</code></strong></em></p><p>The SSL Domain on which information is collected (E.g. <code>logs1412.xiti.com</code>). This can be found in AT Internet interface following <img src="../../../../.gitbook/assets/piano_1.png" alt=""> ➜ <code>SETTINGS</code><br><code>Data Collection Portal</code> ➜ <code>Tools</code> ➜ <code>Site Management</code> and selecting your site.</p> |
+| User Identifier           | You can bridge the user identifier for your logged users. More information are available following this [LINK](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#user\_1).                                                                                                                                                      |
+| Custom Property           | When selecting "\[Custom Property]" as value for the above "User Identifier", this field will show up so you can specify a custom field holding the value for the user identifier **\[1]**.                                                                                                                                                                                                                      |
 
 {% hint style="info" %}
 **\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
@@ -66,10 +65,8 @@ The client-side unique visitor identifier is required for this destination to wo
 | `[Custom Event]`      | `[Custom Event]` **\[\*]**                                  |
 
 {% hint style="info" %}
-**\[\*]** Custom events must be added to the AT Internet **Data Model** first or they won't be processed. You can add new events by following ![](../../../../.gitbook/assets/1.png) ➜ `SETTINGS` ➜ `Data Management` ➜ `Data Model` ➜`Events` .
-
-**\[1]** If`properties.page_type`is equal to`product`then`product.page_display`is sent, otherwise,`page.display`.
-
+**\[\*]** Custom events must be added to the AT Internet **Data Model** first or they won't be processed. You can add new events by following ![](../../../../.gitbook/assets/piano\_1.png) ➜ `SETTINGS` ➜ `Data Management` ➜ `Data Model` ➜`Events` .\
+**\[1]** If`properties.page_type`is equal to`product`then`product.page_display`is sent, otherwise,`page.display`.\
 **\[2]** A`product.purchased`will be sent for each product being purchased.
 {% endhint %}
 
@@ -111,10 +108,8 @@ The client-side unique visitor identifier is required for this destination to wo
 | `device.screen.width`                                                                                                                                                 | `device_screen_width`                                                                      |
 
 {% hint style="info" %}
-**\[1]** Boolean value:`true`or`false`.
-
-**\[2]** Sum all`properties.items.X.quantity`.
-
+**\[1]** Boolean value:`true`or`false`.\
+**\[2]** Sum all`properties.items.X.quantity`.\
 **\[3]** Depending on the user configuration.
 {% endhint %}
 
