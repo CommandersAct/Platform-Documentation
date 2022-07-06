@@ -16,7 +16,7 @@ Follow these steps to create a new user:
 
 2/ Click the “Add / edit user(s)” button.
 
-![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (10).jpg>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (10).jpg>)
 
 3/ Fill in all required information about the new user:
 
