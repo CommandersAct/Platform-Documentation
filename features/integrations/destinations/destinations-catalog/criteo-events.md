@@ -61,6 +61,6 @@ This is retrieved by getting the value of the cookie <mark style="color:blue;">\
 | `properties.user.email_sha256` | `id.email.sha256`                                                                                |
 
 {% hint style="info" %}
-**\[1]** If`app.name`is defined then this field is set with `m`, otherwise,`d.`\
-``**\[2]**`id.email.sha256_md5`is automatically hashed.
+**\[1]** If<mark style="color:blue;">`app.name`</mark>is defined then this field is set with <mark style="color:blue;">`m`</mark>, otherwise,<mark style="color:blue;">`d`</mark>`.`\
+``**\[2]**<mark style="color:blue;">`id.email.sha256_md5`</mark>is automatically hashed.
 {% endhint %}

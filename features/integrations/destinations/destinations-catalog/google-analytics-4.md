@@ -19,7 +19,7 @@ Geographic information is only available via automatic collection from gtag, Goo
 The Google Analytics 4 destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Google's one](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events), meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Prebuilt mappings**: data mapping for events-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events, custom event and user properties).
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to GA4.
 

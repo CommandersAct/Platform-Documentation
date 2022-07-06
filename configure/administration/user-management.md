@@ -4,7 +4,7 @@ The “User Management” interface is available to administrators only, from th
 
 Then click “User rights” > “User management”. This interface allows you to grant access or modify user access to the Commanders Act interface on your account(s).
 
-![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (2) (1).jpg>)
+![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (2).jpg>)
 
 ## Creating a new user
 
@@ -16,7 +16,7 @@ Follow these steps to create a new user:
 
 2/ Click the “Add / edit user(s)” button.
 
-![](<../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1).jpg>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (10).jpg>)
 
 3/ Fill in all required information about the new user:
 
