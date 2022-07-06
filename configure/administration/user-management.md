@@ -80,7 +80,7 @@ The user’s role needs to be the “CUSTOM” type (please refer to the [“CRE
 
 3\) Click “NO” in the upper, right-hand side of the screen to turn all buttons to “NO” and save; the selected user no longer has access to the current container’s settings.
 
-![](../.gitbook/assets/UM\_7\[1].png)
+![](../../.gitbook/assets/UM\_7\[1].png)
 
 A similar operation is required to prevent a user from having access to a specific tag. In the custom role configuration popin, follow these steps :
 
@@ -88,7 +88,7 @@ A similar operation is required to prevent a user from having access to a specif
 
 2\) Click “NO” in the upper, right-hand side of the screen to turn all buttons to “NO” and save; the selected user no longer has access to the current tag’s settings.
 
-![](../.gitbook/assets/UM\_8\[1].png)
+![](../../.gitbook/assets/UM\_8\[1].png)
 
 ## Revoking access to the interface
 
@@ -102,7 +102,7 @@ Follow these steps to cut access to the interface:
 
 3/ Select “Revoke access” and click “Apply”.
 
-![](../.gitbook/assets/UM\_9\[1].png)
+![](../../.gitbook/assets/UM\_9\[1].png)
 
 ## Resetting user passwords
 
@@ -116,7 +116,7 @@ Follow these steps to reset a password:
 
 3/ Select “Reset Password” from the drop down menu and click “Apply”.
 
-![](../.gitbook/assets/UM\_10\[1].png)
+![](../../.gitbook/assets/UM\_10\[1].png)
 
 ## Modifying custom roles
 
@@ -124,7 +124,7 @@ Follow these steps to modify custom rights:
 
 1/ Click the pencil icon next to “Custom”:
 
-![](../.gitbook/assets/UM\_6\[1]%20\(1\).png)
+![](../../.gitbook/assets/UM\_6\[1]%20\(1\).png)
 
 2/ Select the **Commanders Act** product you wish to revoke access to.
 
@@ -136,7 +136,7 @@ Follow these steps to modify custom rights:
 
 6\) Note: If you click Yes/No at the top of every column, the change will affect all features.
 
-![](../.gitbook/assets/UM\_11\[1].png)
+![](../../.gitbook/assets/UM\_11\[1].png)
 
 ## Accessing users' information and seeing sites they have access to
 
@@ -148,17 +148,17 @@ Follow these steps to see users’ information and the list of sites they have a
 
 2 ) See the user’s information in the “User information” column on the right: the email address that is used to log in, the type of access, the company they work for, name/surname, position, mobile phone number, language, date and time of last connection.
 
-![](../.gitbook/assets/UM\_12\[1].png)
+![](../../.gitbook/assets/UM\_12\[1].png)
 
 3 ) To see what sites the user has access to, click the “Site(s) Access” button:
 
-![](../.gitbook/assets/UM\_13\[1].png)
+![](../../.gitbook/assets/UM\_13\[1].png)
 
 4 ) To manage the sites a given user has access to, choose the action to take and then click the “Apply” button.
 
 5 ) Click “See Roles Details” to see what every type of role grants access to.
 
-![](../.gitbook/assets/UM\_14\[1].png)
+![](../../.gitbook/assets/UM\_14\[1].png)
 
 ## Managing custom user profiles
 
@@ -170,7 +170,7 @@ The profile creation interface is accessible by Administrators only, from the �
 
 To create a new profile, go to the “User Rights” tab > “Profile management” section and click the “Add Profile” button (1):
 
-![](../.gitbook/assets/UP\_1\[1].png)
+![](../../.gitbook/assets/UP\_1\[1].png)
 
 1\) Enter the profile’s name.
 
@@ -188,7 +188,7 @@ To create a new profile, go to the “User Rights” tab > “Profile management
 
 When saving, the profile will be created on all selected sites.
 
-![](../.gitbook/assets/UP\_2\[1].png)
+![](../../.gitbook/assets/UP\_2\[1].png)
 
 When the profile is created, you will be able to link it to all desired users from the “User management” interface. To learn more, please refer to these articles: “[Creating a new user](https://community.commandersact.com/en/creating-a-new-user-or-modifying-account-settings-for-existing-users/)” or “[Modifying user rights](https://community.commandersact.com/en/visualizing-modifying-user-rights-for-one-or-more-sites/)”.
 
@@ -198,11 +198,11 @@ To modify a profile, click the “modify” icon from the “Actions” column (
 
 Please note: you cannot change default profiles (administrator, technical, marketing and read only), but you can see their settings.
 
-![](../.gitbook/assets/UP\_3\[1].png)
+![](../../.gitbook/assets/UP\_3\[1].png)
 
 You can make changes to all elements available when you created the profile, except the sites each profile is linked to (1). To copy a profile from one site to another, go to the “Copy Management” interface (please refer to the “[Copying custom user profiles](https://community.commandersact.com/en/copying-custom-user-profiles/)” article).
 
-![](../.gitbook/assets/UP\_4\[1].png)
+![](../../.gitbook/assets/UP\_4\[1].png)
 
 Please note: Changes made to a profile will affect all sites said profile was created for.
 
@@ -214,17 +214,17 @@ To delete a profile, click the trash bin icon from the “Actions” column (1).
 
 Please note: you cannot delete default profiles (administrator, technical, marketing and read only).
 
-![](../.gitbook/assets/UP\_5\[1].png)
+![](../../.gitbook/assets/UP\_5\[1].png)
 
 The profile will be deleted and place in the trash (2). Access of all users linked to this profile will automatically change into “Read only”.
 
-![](../.gitbook/assets/UP\_6\[1].png)
+![](../../.gitbook/assets/UP\_6\[1].png)
 
 You can restore profiles at anytime by clicking the two arrows from the trash bin (3).
 
 You can also delete the profile permanently by clicking the trash bin (4). Please note: this profile deletion will affect all sites said profile was created for. Access of all users linked to this profile will automatically change into “Read only”.
 
-![](../.gitbook/assets/UP\_7\[1].png)
+![](../../.gitbook/assets/UP\_7\[1].png)
 
 ## Copying custom user profiles
 
@@ -238,7 +238,7 @@ Follow these steps to copy a user profile:
 
 3\) – Select “User Profiles” from the drop down menu
 
-![](../.gitbook/assets/UP\_C\_1\[1].png)
+![](../../.gitbook/assets/UP\_C\_1\[1].png)
 
 4\) – Select the site containing the profiles you wish to copy
 
@@ -246,10 +246,10 @@ Follow these steps to copy a user profile:
 
 Please note: if you have created profiles with specific settings by container or tags, they will not appear in the list of available profiles to copy.
 
-![](../.gitbook/assets/UP\_C\_2\[1].png)
+![](../../.gitbook/assets/UP\_C\_2\[1].png)
 
 5\) – Select one or many target sites
 
 6\) – Click “Copy”
 
-![](../.gitbook/assets/UP\_C\_3\[1].png)
+![](../../.gitbook/assets/UP\_C\_3\[1].png)
