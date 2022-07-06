@@ -24,7 +24,7 @@ The AT Internet destination provides the following key features:
 Before you get started with this destination, ensure you have access to [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/).
 
 {% hint style="info" %}
-The client-side unique visitor identifier is required for this destination to work and is retrieved by getting the value of either the [`atuserid`](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#smarttag-js\_0) or [`xtidc`](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#xtcore-js\_1)cookie.
+The client-side unique visitor identifier is recommended and it's retrieved by getting the value of either the [`atuserid`](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#smarttag-js\_0) or [`xtidc`](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#xtcore-js\_1)cookie.
 {% endhint %}
 
 ### Configuration
