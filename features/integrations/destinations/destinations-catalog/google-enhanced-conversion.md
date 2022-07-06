@@ -50,6 +50,6 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 {% hint style="info" %}
 **\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
-**\[2]** If`properties.user.email` is provided, it's hashed using`SHA-256`, otherwise, `properties.user.email_sha256` is used.\
+**\[2]** If<mark style="color:blue;">`properties.user.email`</mark> is provided, it's hashed using`SHA-256`, otherwise, <mark style="color:blue;">`properties.user.email_sha256`</mark>is used.\
 **\[3]** Normalized and hashed using `SHA-256`.
 {% endhint %}
