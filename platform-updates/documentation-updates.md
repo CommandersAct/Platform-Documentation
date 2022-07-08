@@ -4,8 +4,6 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## 08/07/2022
-
 ## 05/07/2022
 
 Mobile sources updates:&#x20;
