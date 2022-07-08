@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 08/07/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/criteo-events.md" %}
+[criteo-events.md](../features/integrations/destinations/destinations-catalog/criteo-events.md)
+{% endcontent-ref %}
+
 ## 05/07/2022
 
 Mobile sources updates:&#x20;
