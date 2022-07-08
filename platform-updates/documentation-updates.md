@@ -6,10 +6,18 @@ description: The latest updates made to our documentation articles
 
 ## 08/07/2022
 
+Documentation updates for template [Commanders Act | OnSite CMP API](https://tagmanager.google.com/gallery/#/owners/CommandersAct/templates/GTM-OnSite-API):
+
+{% embed url="https://community.commandersact.com/trustcommander/setup-guides/tag-manager/consent-mode-in-gtm" %}
+
 Destination documentation:
 
 {% content-ref url="../features/integrations/destinations/destinations-catalog/criteo-events.md" %}
 [criteo-events.md](../features/integrations/destinations/destinations-catalog/criteo-events.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 05/07/2022
