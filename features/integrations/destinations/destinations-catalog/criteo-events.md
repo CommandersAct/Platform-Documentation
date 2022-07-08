@@ -16,7 +16,7 @@ The Criteo (events) destination provides the following key features:
 
 {% hint style="info" %}
 When available, the [Criteo salted user ID (GUM ID)](https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call) is required.\
-This is retrieved by getting the value of the cookie <mark style="color:blue;">\*\*</mark> <mark style="color:blue;"></mark><mark style="color:blue;">`crto_mapped_user_id`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">\*\*</mark>, which can be set using the <mark style="color:blue;">Criteo - User Identification</mark> client-side template and it's available in our library following these steps:`INTEGRATION` ➜ `Sources`➜ `Web Containers`.
+This is retrieved by getting the value of the cookie <mark style="color:blue;">\*\*</mark> <mark style="color:blue;"></mark><mark style="color:blue;">`crto_mapped_user_id`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">\*\*</mark> and can be set using the <mark style="color:blue;">Criteo - User Identification</mark> client-side template which is available in our library following these steps:`INTEGRATION` ➜ `Sources`➜ `Web Containers`.
 {% endhint %}
 
 ### Configuration
