@@ -10,6 +10,7 @@ You must complete the [setup and configuration steps](https://support.google.com
 ## Destination setup
 
 {% hint style="info" %}
+This destination works with [purchase](https://community.commandersact.com/platform-x/developers/tracking/events-reference#purchase) events only.\
 Your user account needs admin rights in the [Google Ads Manager Accounts](https://ads.google.com/intl/en/home/tools/manager-accounts/) where the conversion action is located - It's required for this destination to work.
 {% endhint %}
 
