@@ -1,0 +1,3 @@
+# Bing
+
+Documentation in progress

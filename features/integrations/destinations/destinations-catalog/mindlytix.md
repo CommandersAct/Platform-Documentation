@@ -1,0 +1,3 @@
+# Mindlytix
+
+Documentation in progress

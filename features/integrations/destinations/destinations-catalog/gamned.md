@@ -1,0 +1,3 @@
+# Gamned
+
+Documentation in progress
