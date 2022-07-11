@@ -56,6 +56,7 @@
       * [Adventori](features/integrations/destinations/destinations-catalog/adventori.md)
       * [Attraqt](features/integrations/destinations/destinations-catalog/attraqt.md)
       * [Amazon S3](features/integrations/destinations/destinations-catalog/amazon-s3.md)
+      * [Batch](features/integrations/destinations/destinations-catalog/batch.md)
       * [Bing](features/integrations/destinations/destinations-catalog/bing.md)
       * [Criteo (audiences)](features/integrations/destinations/destinations-catalog/criteo-audiences.md)
       * [Criteo (offline conversions)](features/integrations/destinations/destinations-catalog/criteo-offline-conversions.md)
