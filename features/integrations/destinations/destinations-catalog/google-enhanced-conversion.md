@@ -1,7 +1,7 @@
 # Google Enhanced Conversions
 
-Taking advantage of the [Google Ads API](https://developers.google.com/google-ads/api/docs/start), you can use the [enhanced conversions](https://support.google.com/google-ads/answer/9888656) feature to send first-party customer data in the form of conversion adjustments. Google uses this additional data to improve the reporting of your online conversions driven by ad interactions.\
-The enhanced conversions supplements your existing conversion tags by sending hashed first party conversion data from your website to Google in a privacy safe way.
+Taking advantage of the [Google Ads API](https://developers.google.com/google-ads/api/docs/start), you can leverage the [enhanced conversions](https://support.google.com/google-ads/answer/9888656) feature to send first-party customer data in the form of conversion adjustments. Google uses this additional data to improve the reporting of your online conversions driven by ad interactions.\
+The enhanced conversions supplement your existing conversion tags by sending hashed first-party conversion data from your website to Google in a privacy-safe way.
 
 {% hint style="info" %}
 You must complete the [setup and configuration steps](https://support.google.com/google-ads/answer/11062876) before you can bridge enhanced conversions via the Google Ads API.
