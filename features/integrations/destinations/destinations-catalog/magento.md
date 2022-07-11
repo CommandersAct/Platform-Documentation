@@ -1,0 +1,3 @@
+# Magento
+
+Documentation in progress

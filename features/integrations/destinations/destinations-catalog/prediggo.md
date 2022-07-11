@@ -1,0 +1,3 @@
+# Prediggo
+
+Documentation in progress

@@ -1,0 +1,3 @@
+# Inxmail
+
+Documentation in progress

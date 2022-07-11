@@ -1,0 +1,3 @@
+# SmartFocus
+
+Documentation in progress

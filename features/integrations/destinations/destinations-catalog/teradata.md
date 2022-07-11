@@ -1,0 +1,3 @@
+# Teradata
+
+Documentation in progress
