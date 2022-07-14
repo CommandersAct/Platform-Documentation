@@ -110,7 +110,7 @@ The client-side unique visitor identifier is recommended and it's retrieved by g
 {% hint style="info" %}
 **\[1]** Boolean value:<mark style="color:blue;">`true`</mark>or<mark style="color:blue;">`false`</mark>.\
 **\[2]** Sum all<mark style="color:blue;">`properties.items.X.quantity`</mark>.\
-**\[3]** Depending on the drop-down selection (See`User Identifier`in the`Configuration`section), a specific Commanders Act property is used.&#x20;
+**\[3]** Depending on the drop-down selection (See<mark style="color:blue;">`User Identifier`</mark>in the<mark style="color:blue;">`Configuration`</mark>section), a specific Commanders Act property is used.&#x20;
 {% endhint %}
 
 #### Headers parameters
