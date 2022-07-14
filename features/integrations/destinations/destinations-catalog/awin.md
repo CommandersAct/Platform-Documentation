@@ -63,5 +63,5 @@ Accepted characters for the commission group codes are alphanumerics (letter in 
 
 {% hint style="info" %}
 **\[1]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select<mark style="color:blue;">`lead`</mark>as conversion type, the price part is reported with no decimals.\
-**\[2]** Takes into account each product.
+**\[2]** It takes into account each product.
 {% endhint %}
