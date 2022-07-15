@@ -4,6 +4,22 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 15/07/2022
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/at-internet.md" %}
+[at-internet.md](../features/integrations/destinations/destinations-catalog/at-internet.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/integrations/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 ## 08/07/2022
 
 Documentation updates for template [Commanders Act | OnSite CMP API](https://tagmanager.google.com/gallery/#/owners/CommandersAct/templates/GTM-OnSite-API):
