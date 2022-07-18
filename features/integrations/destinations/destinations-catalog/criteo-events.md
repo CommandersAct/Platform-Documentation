@@ -48,19 +48,21 @@ This is retrieved by getting the value of the cookie <mark style="color:blue;">\
 
 | Commanders Act Properties      | Criteo Properties                                                                                |
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
+| `event_timestamp`              | `timestamp` **\[1]**                                                                             |
 | `Account Id`                   | `account`                                                                                        |
 | `device.ip`                    | `ip`                                                                                             |
 | `page.location.href`           | `full_url`                                                                                       |
 | `page.referrer`                | `previous_url`                                                                                   |
-| `(app.name)`                   | `site_type` **\[1]**                                                                             |
+| `(app.name)`                   | `site_type` **\[2]**                                                                             |
 | `device.user_agent`            | `useragent`                                                                                      |
 | `properties.user.id`           | `retailer_visitor_id`                                                                            |
 | `Caller Id`                    | `id.mapping_key`                                                                                 |
 | `properties.user.email`        | `id.email.raw`                                                                                   |
-| `properties.user.email_md5`    | <p><code>id.email.md5</code> and</p><p><code>id.email.sha256_md5</code> <strong>[2]</strong></p> |
+| `properties.user.email_md5`    | <p><code>id.email.md5</code> and</p><p><code>id.email.sha256_md5</code> <strong>[3]</strong></p> |
 | `properties.user.email_sha256` | `id.email.sha256`                                                                                |
 
 {% hint style="info" %}
-**\[1]** If<mark style="color:blue;">`app.name`</mark>is defined then this field is set with <mark style="color:blue;">`m`</mark>, otherwise,<mark style="color:blue;">`d`</mark>`.`\
-``**\[2]**<mark style="color:blue;">`id.email.sha256_md5`</mark>is automatically hashed.
+**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
+**\[2]** If<mark style="color:blue;">`app.name`</mark>is defined then this field is set with <mark style="color:blue;">`m`</mark>, otherwise,<mark style="color:blue;">`d`</mark>`.`\
+``**\[3]**<mark style="color:blue;">`id.email.sha256_md5`</mark>is automatically hashed.
 {% endhint %}
