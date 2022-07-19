@@ -202,5 +202,5 @@
 * [Administration](configure/administration/README.md)
   * [User management](configure/administration/user-management.md)
   * [Domain Management](configure/administration/domain-management/README.md)
-    * [CNAME record](configure/administration/domain-management/cname-record.md)
     * [A record](configure/administration/domain-management/a-record.md)
+    * [CNAME record](configure/administration/domain-management/cname-record.md)
