@@ -42,3 +42,11 @@ Customers' DNS should be configured with A record information (ask your IT depar
 Screenshot
 
 Click on "Validate configuration" and this will test the DNS configuration.
+
+## Activate the domain
+
+Click on "Containers Integration", this will allow the domain to be included in the container configuration.
+
+{% hint style="warning" %}
+Containers and privacy banners should be regenerated and deployed.
+{% endhint %}
