@@ -10,7 +10,7 @@ Create a new stream, select Facebook Offline conversion connector and enter the 
 
 On Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com/) click on Events Manager and create a new data source:
 
-![](<../../../../.gitbook/assets/image (6) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
 Then select offline:
 

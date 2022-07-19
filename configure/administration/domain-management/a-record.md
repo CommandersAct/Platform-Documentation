@@ -31,17 +31,35 @@ Select A record and select how to provide the certificate:
 
 Customers' DNS should be configured with A record information (ask your IT department).
 
-Screenshot
-
 Click on "Validate configuration" and this will test the DNS configuration.
+
+![](<../../../.gitbook/assets/image (1).png>)
+
+Click then on "Generate certificates"
+
+![](<../../../.gitbook/assets/image (3).png>)
+
+Click on "Test configuration" and the setup will be done.
+
+![](<../../../.gitbook/assets/image (4).png>)
 
 ## A record setup with your own certificate
 
 Customers' DNS should be configured with A record information (ask your IT department).
 
-Screenshot
+Provide the requested information:\
+\- The SSL certificate(s) linked to the subdomain(s) entered above\
+\- The key of the certificate\
+\- The chain of the certificate\
+If you need assistance, please contact the Commanders Act support team.
 
-Click on "Validate configuration" and this will test the DNS configuration.
+![](<../../../.gitbook/assets/image (5) (2).png>)
+
+Then click on "Validate configuration" and this will test the DNS configuration.
+
+![](<../../../.gitbook/assets/image (6).png>)
+
+Test the configuration and the setup will be done.
 
 ## Activate the domain
 
