@@ -19,10 +19,10 @@ There is a technical setup to do to initialize this 1st party tracking (on the d
 
 ## What setup has to be done?
 
-There are 2 approaches that could be chosen:
+2 methods are possible:
 
-* CNAME record
-* A record
+* [A record](a-record.md) (recommended)
+* [CNAME record](cname-record.md) (deprecated, not recommended anymore)
 
 {% hint style="info" %}
 Migration from 3rd party to 1st will be handled with Commanders Act consultants.
