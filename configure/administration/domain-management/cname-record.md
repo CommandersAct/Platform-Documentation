@@ -2,11 +2,6 @@
 
 In the customer's DNS, the use of a CNAME pointing to a Commanders Act server allows to set cookie as a first party.
 
-{% hint style="danger" %}
-Since Safari 14, this method is now deprecated and not recommended. \
-[A record](a-record.md) is the preferred solution for 1st party tracking.
-{% endhint %}
-
 ## What is a CNAME?
 
 A CNAME, or Canonical Name, is an entry within the Domain Name System (DNS) that specifies where someone can find your web pages. You'll use the CNAME to associate your custom domain with our products.

@@ -35,4 +35,10 @@ Screenshot
 
 Click on "Validate configuration" and this will test the DNS configuration.
 
-&#x20;v the configuration, and we take care of everything.
+## A record setup with your own certificate
+
+Customers' DNS should be configured with A record information (ask your IT department).
+
+Screenshot
+
+Click on "Validate configuration" and this will test the DNS configuration.
