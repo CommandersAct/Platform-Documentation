@@ -23,3 +23,7 @@ There are 2 approaches that could be chosen:
 
 * CNAME record
 * A record
+
+{% hint style="info" %}
+Migration from 3rd party to 1st will be handled with Commanders Act consultants.
+{% endhint %}
