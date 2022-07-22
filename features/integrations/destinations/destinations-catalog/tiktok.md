@@ -56,7 +56,7 @@ TikTok supported web events are detailed in this [LINK](https://ads.tiktok.com/m
 ## Field Mappings
 
 {% hint style="info" %}
-If you also use TikTok client-side pixel, this automatically saves a unique identifier in the [\_ttp ](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Context%20object%20parameters)cookie which is used to match website visitor events with TikTok ads. This destination sets the field<mark style="color:blue;">`context.user.ttp`</mark>using the value provided in the cookie. This is a recommended step.\
+TikTok client-side pixel saves a unique identifier in the [\_ttp ](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Context%20object%20parameters)cookie which is used to match website visitor events with TikTok ads. This destination sets the field<mark style="color:blue;">`context.user.ttp`</mark>using the value provided in the cookie as it's a recommended step.\
 [Tiktok Click ID](https://ads.tiktok.com/marketing\_api/docs?rid=4eezrhr6lg4\&id=1701890980108353) or [ttclid ](https://ads.tiktok.com/marketing\_api/docs?rid=4eezrhr6lg4\&id=1701890980108353)is a tracking parameters that is attached to your ad's landing page URLs. This destination retrieves the ttclid by looking for the <mark style="color:blue;">ttclid</mark> cookie and its value. If no cookie is found then it tries to get a value from the field<mark style="color:blue;">`page.location.href`</mark>which is then bridged to the field<mark style="color:blue;">`context.ad.callback`</mark>.
 {% endhint %}
 
