@@ -13,12 +13,12 @@ The TikTok destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [TikTok's one](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890977725441), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
-* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Snapchat.
+* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to TikTok.
 * **Support for test event code**: real-time validation in your test environments with field `test_event_code`.
 
 ## Destination setup
 
-Before you get started with this destination, make sure you can access the [TikTok Ads Manager](https://ads.tiktok.com).
+Before you get started with this destination, make sure you can access [TikTok Ads Manager](https://ads.tiktok.com).
 
 ### Configuration
 
