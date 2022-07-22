@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 22/07/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% endcontent-ref %}
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/at-internet.md" %}
+[at-internet.md](../features/integrations/destinations/destinations-catalog/at-internet.md)
+{% endcontent-ref %}
+
 ## 15/07/2022
 
 Destination documentation (updates):
