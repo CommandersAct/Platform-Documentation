@@ -31,11 +31,11 @@ You can paste-up to 1024 values in the segment
 
 ## How to segment on conversion items?
 
-You can segment on conversion items, meaning products bought by users.
+You can segment on conversion items, meaning products bought by users.&#x20;
 
-First, you have to select '`conversion`' universe and define a condition for conversions, like '`conversion ID exists`' = users have at least 1 conversion.
+First, you have to select '`conversion`' universe and define a condition for conversions, like '`conversion ID exists`' = users have at least 1 conversion.&#x20;
 
-![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 Then the button 'ADD CONDITION' will appear, and you can define more conditions, including conditions for conversion items, select '**product**':
 

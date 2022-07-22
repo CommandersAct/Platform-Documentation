@@ -315,7 +315,7 @@ As a travel agency, you have many visitors on your website who left many informa
 
 You can create a new attribute called 'Trip dates' and store the dates considered. You can do the same for 'destination' or whatever that could be useful for you. Then you can launch a dedicated campaign 3 months later with a segment based on this data (if there is no conversion for these customers).
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6).png>)
 
 ### How it works
 
