@@ -677,7 +677,7 @@ In some cases, you won't be able to send a parameter **plain** value. It is eith
 
 Thus it might be possible to send the **hashed** values. We currently accept 2 algorithm : [`md5`](https://en.wikipedia.org/wiki/MD5) and [`sha256`](https://en.wikipedia.org/wiki/SHA-2).
 
-If you want to send a hashed value, put this in the dedicated field `<parameter>_<algorithm>`.
+Every `user.<property>` can be sent under hashed format with algorithm suffix: `_md5` or `_sha256` *(underscore followed by lowercase algorithm name)*
 
 Example :
 
