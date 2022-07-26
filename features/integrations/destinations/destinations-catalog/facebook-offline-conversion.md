@@ -4,13 +4,13 @@ Send your offline conversions (like purchases made in stores) directly to Facebo
 
 Create a new stream, select Facebook Offline conversion connector and enter the information needed:
 
-![](<../../../../.gitbook/assets/image (9) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (8) (1).png>)
 
 ## How to find the Offline Event Set Id?
 
 On Facebook Business Manager, [https://business.facebook.com/](https://business.facebook.com/) click on Events Manager and create a new data source:
 
-![](<../../../../.gitbook/assets/image (6) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
 
 Then select offline:
 

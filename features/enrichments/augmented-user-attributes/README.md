@@ -10,7 +10,7 @@ An enrichment transforms a property from a static value to a dynamic/enriched on
 
 By introducing business rules to your attributes, you give them context and more meaning. These enriched attributes then become the building blocks for dynamic segmentation, analytics, or can be retrieve in the datalayer via TagCommander to enrich your tags.
 
-![](<../../../.gitbook/assets/Capture d’écran 2021-10-01 à 16.34.55.png>)
+![](../../../.gitbook/assets/capture-de-cran-2021-10-01-a-16.34.55.png)
 
 ## Flag
 
@@ -315,7 +315,7 @@ As a travel agency, you have many visitors on your website who left many informa
 
 You can create a new attribute called 'Trip dates' and store the dates considered. You can do the same for 'destination' or whatever that could be useful for you. Then you can launch a dedicated campaign 3 months later with a segment based on this data (if there is no conversion for these customers).
 
-![](<../../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6) (1).png>)
 
 ### How it works
 

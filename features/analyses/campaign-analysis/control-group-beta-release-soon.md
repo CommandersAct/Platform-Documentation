@@ -10,7 +10,7 @@ In our case, we take into consideration only conversions for now (online and off
 
 A control group is setup on a stream (share menu). Check the box ‘Set control group’ to activate the possibility to configure a control group.
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 Specify the % of users you want to set for your control group: these users will be not pushed on the stream (and so not exposed to the campaign).
 
@@ -27,7 +27,7 @@ As soon as you start the stream, the control group will be launched also, and re
 
 When a stream with a control group is activated, on the stream list page an icon will appear on the right of the stream’s name.
 
-![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1) (6).jpg>)
+![](<../../../.gitbook/assets/Capture d’écran 2021-03-05 à 15.42.43 (1) (1) (1) (1) (6).jpg>)
 
 Click on this icon to access to the analytics part.
 
