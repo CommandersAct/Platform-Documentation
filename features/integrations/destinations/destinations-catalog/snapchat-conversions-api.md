@@ -25,30 +25,33 @@ Before you get started with this destination, make sure you can access the [Snap
 
 ## Quick reference
 
-| Commanders Act Events | Snapchat Events               |
-| --------------------- | ----------------------------- |
-| `add_payment_info`    | `ADD_PAYMENT_INFO` **\[\*]**  |
-| `add_shipping_info`   | `ADD_SHIPPING_INFO` **\[\*]** |
-| `add_to_cart`         | `ADD_CART`                    |
-| `add_to_wishlist`     | `ADD_TO_WISHLIST`             |
-| `begin_checkout`      | `START_CHECKOUT`              |
-| `generate_lead`       | `GENERATE_LEAD` **\[\*]**     |
-| `login`               | `LOGIN`                       |
-| `page_view`           | `PAGE_VIEW`                   |
-| `purchase`            | `PURCHASE`                    |
-| `refund`              | `REFUND` **\[\*]**            |
-| `remove_from_cart`    | `REMOVE_FROM_CART` **\[\*]**  |
-| `search`              | `SEARCH`                      |
-| `select_content`      | `SELECT_CONTENT` **\[\*]**    |
-| `select_item`         | `SELECT_ITEM` **\[\*]**       |
-| `sign_up`             | `SIGN_UP` **\[\*]**           |
-| `view_cart`           | `VIEW_CART`                   |
-| `view_item`           | `VIEW_CONTENT` **\[\*]**      |
-| `view_item_list`      | `VIEW_ITEM_LIST` **\[\*]**    |
-| `[Custom Event]`      | `[Custom Event]` **\[\*]**    |
+| Commanders Act Events | Snapchat Events                 |
+| --------------------- | ------------------------------- |
+| `add_payment_info`    | `ADD_PAYMENT_INFO` **\[\*]**    |
+| `add_shipping_info`   | `ADD_SHIPPING_INFO` **\[\*]**   |
+| `add_to_cart`         | `ADD_CART`                      |
+| `add_to_wishlist`     | `ADD_TO_WISHLIST`               |
+| `begin_checkout`      | `START_CHECKOUT`                |
+| `generate_lead`       | `GENERATE_LEAD` **\[\*]**       |
+| `login`               | `LOGIN`                         |
+| `page_view`           | `PAGE_VIEW`                     |
+| `purchase`            | `PURCHASE`                      |
+| `refund`              | `REFUND` **\[\*]**              |
+| `remove_from_cart`    | `REMOVE_FROM_CART` **\[\*]**    |
+| `search`              | `SEARCH`                        |
+| `select_content`      | `SELECT_CONTENT` **\[\*]**      |
+| `select_item`         | `SELECT_ITEM` **\[\*]**         |
+| `sign_up`             | `SIGN_UP` **\[\*]**             |
+| `view_cart`           | `VIEW_CART`                     |
+| `view_item`           | `VIEW_CONTENT` **\[\*]**        |
+| `view_item_list`      | `VIEW_ITEM_LIST` **\[\*]**      |
+| `[Custom Event]`      | `[Custom Event]` **\[\*] \[1]** |
+
+
 
 {% hint style="info" %}
-**\[\*]** Snapchat custom event.
+**\[\*]** Snapchat custom event.\
+**\[1]** Commanders Act custom event names are converted to uppercase and sent to Snapchat.
 {% endhint %}
 
 ## Field Mappings
