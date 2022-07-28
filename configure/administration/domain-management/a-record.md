@@ -70,3 +70,7 @@ All Commanders Act tags will switch to first party collection.
 {% hint style="warning" %}
 Containers and privacy banners should be regenerated and deployed.
 {% endhint %}
+
+## What happens when I have 2 or more domains?
+
+It prioritizes the domain of the website where the container is loaded. If no domain matches the domain of the website, the 1st in the list is used.
