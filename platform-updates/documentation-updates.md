@@ -4,6 +4,24 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 29/07/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/tradedoubler.md" %}
+[tradedoubler.md](../features/integrations/destinations/destinations-catalog/tradedoubler.md)
+{% endcontent-ref %}
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/integrations/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 ## 22/07/2022
 
 Destination documentation:
