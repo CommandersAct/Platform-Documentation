@@ -65,6 +65,8 @@ Test the configuration and the setup will be done.
 
 Click on "Containers Integration", this will allow the domain to be included in the container configuration.
 
+All Commanders Act tags will switch to first party collection.
+
 {% hint style="warning" %}
 Containers and privacy banners should be regenerated and deployed.
 {% endhint %}
