@@ -10,6 +10,7 @@ The Tradedoubler destination provides the following key features:
 * **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model leverages [Tradedoubler lead and sale tracking](https://dev.tradedoubler.com/tracking/advertiser/#Pixel), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Tradedoubler.
+* **User identifier**: you can openly select a user identifier field for logged users.
 
 ## Destination setup
 
