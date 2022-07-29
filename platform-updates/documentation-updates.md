@@ -14,6 +14,10 @@ Destination documentation:
 
 Destination documentation (updates):
 
+{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
 [snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
