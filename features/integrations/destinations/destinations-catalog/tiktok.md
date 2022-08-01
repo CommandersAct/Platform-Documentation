@@ -77,6 +77,7 @@ TikTok client-side pixel saves a unique identifier in the [\_ttp ](https://ads.t
 | `properties.items.X.id`            | `properties.contents.X.content_id`            |
 | `properties.items.X.product.price` | `properties.contents.X.price`                 |
 | `properties.items.X.quantity`      | `properties.contents.X.quantity`              |
+| `properties.content_type`          | `properties.content_type` **\[4]**            |
 | `properties.currency`              | `properties.currency`                         |
 | `event_name`                       | `properties.description`                      |
 | `properties.search_term`           | `properties.query`                            |
@@ -86,5 +87,5 @@ TikTok client-side pixel saves a unique identifier in the [\_ttp ](https://ads.t
 **\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
 **\[2]** This is required if you are sending overlapping events from both TikTok client-side pixel and this destination. More details on the deduplication are available following this [LINK](https://ads.tiktok.com/marketing\_api/docs?rid=p41a33fdhon\&id=1723170195197953).\
 **\[3]** Field automatically hashed if set with sensitive clear data.\
-**\[4]** This is either[`product`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)or[`product_group`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)depending on how you have configured your data feed when you set up your product catalog.
+**\[4]** This is either[`product`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)or[`product_group`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)depending on how you have configured your data feed when you set up your product catalog. Default value:[`product`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters).
 {% endhint %}
