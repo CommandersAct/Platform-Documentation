@@ -30,7 +30,7 @@ For now only 1 key is managed, but later you will be able to define multiple key
 
 A merge between 2 users will happen if a match is detected because the reconciliation key is the same for the 2 users (email address, for example). The newest user is merged into the oldest one. The data collected for the newest user is stored on the oldest one, and the newest user is deleted.
 
-![](<../.gitbook/assets/image (7) (2).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 Every document on visitor B (conversions, page views, impressions, clicks, consents…) are moved to user A. There is no data deleted, only the user is deleted, and information are moved to the main user (A in our example).
 

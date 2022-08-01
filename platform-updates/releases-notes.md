@@ -9,7 +9,7 @@ description: >-
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (1).png>)\
+  ![](<../.gitbook/assets/image (19).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\
 
@@ -18,7 +18,7 @@ description: >-
     * &#x20;Duplicate a source (except web containers)​&#x20;
     * &#x20;Link/unlink destinations to a source (create and edit)​
 
-    ![](<../.gitbook/assets/image (7).png>)
+    ![](<../.gitbook/assets/image (2).png>)
 
 
 * Destinations improvements: ​
@@ -29,7 +29,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (2).png>)![](<../.gitbook/assets/image (4).png>)
+    ![](<../.gitbook/assets/image (3).png>)![](../.gitbook/assets/image.png)
 
 ## Release 10.0.1 - 24/06/22
 

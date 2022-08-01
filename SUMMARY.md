@@ -188,14 +188,16 @@
 ## Developers
 
 * [Tracking](developers/tracking/README.md)
-  * [Page 1](developers/tracking/page-1.md)
   * [About events](developers/tracking/about-events/README.md)
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
     * [Web event specificity](developers/tracking/about-events/js-sdk-event-specificity.md)
     * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
+    * [HTTP API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
     * [Segment API](developers/tracking/data-api/segment-api.md)
+    * [User API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-crm-users/api-users)
+    * [Product catalog and conversion API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
 * [Config API](developers/config-api.md)
 
 ## CONFIGURE

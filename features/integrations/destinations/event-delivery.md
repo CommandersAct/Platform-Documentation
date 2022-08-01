@@ -8,27 +8,24 @@ Delivery statistics are stored during 1 month (no statistics after 1 month).
 
 You can select on the calendar a shortcut period (last hour) or a specific period (from 12/11 to 15/11 for example).
 
-The UI is divided into three sections that provide information on the platform's capacity to provide your source data: Key Metrics, Delivery Trends and Error Details.&#x20;
+The UI is divided into three sections that provide information on the platform's capacity to provide your source data: Key Metrics, Delivery Trends and Error Details.
 
 ### 1. Key Metrics <a href="#2-key-metrics" id="2-key-metrics"></a>
 
 ![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.59.png>)
 
-*   **Delivered:** This displays the number of messages successfully delivered to a destination within the time period you choose.\
-    The % of events delivered is represented by a weather icon:&#x20;
-
-    * <img src="../../../.gitbook/assets/image (17).png" alt="" data-size="line">sunny if the % of events successfully delivered is above 95%
-    * <img src="../../../.gitbook/assets/image (15).png" alt="" data-size="line">cloudy between 90 and 95%&#x20;
-    * <img src="../../../.gitbook/assets/image (16).png" alt="" data-size="line">rainy between 50 and 90%
-    * <img src="../../../.gitbook/assets/image (14).png" alt="" data-size="line">stormy below 50%
-
-
+* **Delivered:** This displays the number of messages successfully delivered to a destination within the time period you choose.\
+  The % of events delivered is represented by a weather icon:
+  * <img src="../../../.gitbook/assets/image (17).png" alt="" data-size="line">sunny if the % of events successfully delivered is above 95%
+  * <img src="../../../.gitbook/assets/image (15) (1).png" alt="" data-size="line">cloudy between 90 and 95%
+  * <img src="../../../.gitbook/assets/image (16).png" alt="" data-size="line">rainy between 50 and 90%
+  * <img src="../../../.gitbook/assets/image (14).png" alt="" data-size="line">stormy below 50%
 *   **Not Delivered:** This number represents the number of messages that the platform was unable to deliver. If this number is more than zero, the causes for this failure are listed in the errors' table below.
 
-    The % of events not delivered is represented by a weather icon:&#x20;
+    The % of events not delivered is represented by a weather icon:
 
     * <img src="../../../.gitbook/assets/image (17).png" alt="" data-size="line">sunny if the % of failures is below 5%
-    * <img src="../../../.gitbook/assets/image (15).png" alt="" data-size="line">cloudy if the % of failures is below 10%
+    * <img src="../../../.gitbook/assets/image (15) (1).png" alt="" data-size="line">cloudy if the % of failures is below 10%
     * <img src="../../../.gitbook/assets/image (16).png" alt="" data-size="line">rainy if the % of failures is between 10% and 50%
     * <img src="../../../.gitbook/assets/image (14).png" alt="" data-size="line">stormy if the % of failures is above 50%
 
@@ -52,7 +49,7 @@ You can debug immediately errors encountered thanks to the description of the er
 
 ## Alerting (coming soon)
 
-You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 90% of your events delivered, you can set an alert and be alerted). \
+You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 90% of your events delivered, you can set an alert and be alerted).\
 You will be alerted as soon as the event occurs, and you can define a reminder, to be alerted as long as the problem remains : every hour, every day, every week.
 
 ![](<../../../.gitbook/assets/image (3) (1) (2).png>)
