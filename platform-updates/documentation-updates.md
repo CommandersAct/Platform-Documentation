@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 01/08/2022
+
+Events collection documentation:
+
+{% content-ref url="../configure/data-management/events-collection.md" %}
+[events-collection.md](../configure/data-management/events-collection.md)
+{% endcontent-ref %}
+
 ## 29/07/2022
 
 Destination documentation:
