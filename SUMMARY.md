@@ -202,6 +202,8 @@
 
 ## CONFIGURE
 
+* [Data Management](configure/data-management/README.md)
+  * [Events collection](configure/data-management/events-collection.md)
 * [Administration](configure/administration/README.md)
   * [User management](configure/administration/user-management.md)
   * [Domain Management](configure/administration/domain-management/README.md)
