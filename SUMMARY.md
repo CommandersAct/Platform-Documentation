@@ -5,7 +5,7 @@
 ## Platform updates
 
 * [Documentation updates](platform-updates/documentation-updates.md)
-* [Releases notes](platform-updates/releases-notes.md)
+* [Release notes](platform-updates/releases-notes.md)
 
 ## Getting started
 
@@ -194,7 +194,10 @@
     * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
+    * [HTTP API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
     * [Segment API](developers/tracking/data-api/segment-api.md)
+    * [User API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-crm-users/api-users)
+    * [Product catalog and conversion API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
 * [Config API](developers/config-api.md)
 
 ## CONFIGURE
