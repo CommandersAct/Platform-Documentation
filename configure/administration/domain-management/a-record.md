@@ -37,11 +37,11 @@ Click on "Validate configuration" and this will test the DNS configuration.
 
 Click then on "Generate certificates"
 
-![](<../../../.gitbook/assets/image (3) (3).png>)
+![](<../../../.gitbook/assets/image (3).png>)
 
 Click on "Test configuration" and the setup will be done.
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (2).png>)
 
 ## A record setup with your own certificate
 
