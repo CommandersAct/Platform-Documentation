@@ -45,6 +45,7 @@
       * [PHP](features/integrations/sources/sources-catalog/php.md)
       * [Python](features/integrations/sources/sources-catalog/python.md)
       * [Shopify](features/integrations/sources/sources-catalog/shopify.md)
+    * [Live Event Inspector](features/integrations/sources/live-event-inspector.md)
   * [Destinations](features/integrations/destinations/README.md)
     * [Destinations overview](features/integrations/destinations/add-destination.md)
     * [Destinations catalog](features/integrations/destinations/destinations-catalog/README.md)
