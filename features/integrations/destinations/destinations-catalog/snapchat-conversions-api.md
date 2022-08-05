@@ -1,6 +1,6 @@
 # Snapchat Conversions API
 
-[Snapchat ](https://www.snapchat.com/)is a multimedia instant messaging app and service. \
+Snapchat is a multimedia instant messaging app and service. \
 The [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion.html#introduction) allows you to bridge web and app events to Snapchat via a server-side integration.
 
 ## Key features
