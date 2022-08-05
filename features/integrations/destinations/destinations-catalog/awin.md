@@ -40,7 +40,7 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conver
 ## Field Mappings
 
 {% hint style="info" %}
-If you select`sale`as conversion type, the following fields are mandatory to properly set commission groups:\
+The following fields are mandatory to properly set commission groups:\
 \-<mark style="color:blue;">`properties.items.X.affiliation`</mark>\
 ``-<mark style="color:blue;">`properties.items.X.product.price`</mark>\
 ``-<mark style="color:blue;">`properties.items.X.quantity`</mark>
