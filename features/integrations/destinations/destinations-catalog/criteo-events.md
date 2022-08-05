@@ -21,10 +21,10 @@ This is retrieved by getting the value of the cookie<mark style="color:blue;">**
 
 ### Configuration
 
-| Settings   | Description                                                                                                                                                                                                                  |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Account Id | <p><em><strong><code>Required</code></strong></em></p><p>The retailer’s Criteo <a href="https://marketing.criteo.com/">Account Id</a> can be found in the <a href="https://marketing.criteo.com/">Management Center</a>.</p> |
-| Caller Id  | The Caller Id is used for identifying the user and it's provided by Criteo upon request.                                                                                                                                     |
+| Settings     | Description                                                                                                                                                                                                                  |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Account Id` | <p><em><strong><code>Required</code></strong></em></p><p>The retailer’s Criteo <a href="https://marketing.criteo.com/">Account Id</a> can be found in the <a href="https://marketing.criteo.com/">Management Center</a>.</p> |
+| `Caller Id`  | The Caller Id is used for identifying the user and it's provided by Criteo upon request.                                                                                                                                     |
 
 ## Quick reference
 
