@@ -29,7 +29,7 @@ With Effinity server-side tracking you can track lead and sale conversions.
 ## Field Mappings
 
 {% hint style="info" %}
-The Effinity property<mark style="color:blue;">`consent_performance`</mark>is always set to<mark style="color:blue;">`1`</mark>. Please manage your consent using the filter tab of this destination.
+The Effinity property<mark style="color:blue;">`consent_performance`</mark>is always set to<mark style="color:blue;">`1`</mark>. Manage your consent settings using the filter tab of this destination.
 {% endhint %}
 
 | Commanders Act Properties   | Effinity Properties                                                                                               |

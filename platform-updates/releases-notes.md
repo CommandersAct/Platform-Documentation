@@ -9,7 +9,7 @@ description: >-
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (15).png>)\
+  ![](<../.gitbook/assets/image (15) (1).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\
 
