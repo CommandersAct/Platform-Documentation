@@ -1,6 +1,6 @@
 # Awin
 
-Awin provides a global affiliation network connecting businesses with customers.\
+[Awin ](https://www.awin.com)provides a global affiliation network connecting businesses with customers.\
 Using this destination you can implement [server-side tracking](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29) using the same [client-side parameters](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guides#.5B.2B.5D\_Fall-back\_Conversion\_Pixel).
 
 {% hint style="info" %}
