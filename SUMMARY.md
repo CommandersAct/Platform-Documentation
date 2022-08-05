@@ -161,7 +161,7 @@
 * [Website performance](use-cases/website-performance.md)
 * [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
 * [Customer analysis](use-cases/customer-analysis/README.md)
-  * [Untitled](use-cases/customer-analysis/untitled.md)
+  * [Untitled](<use-cases/campaigns-analysis/untitled (1).md>)
 * [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
   * [Untitled](use-cases/campaigns-analysis/untitled.md)
 * [Engage new customers](use-cases/engage-new-customers/README.md)

@@ -26,7 +26,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 **\[1]** Enhanced conversions must be enabled for your conversion action. This is done in the Google Ads interface following these steps: click on the conversion action ➜ expand `Enhanced conversions`➜ flag `Turn on enhanced conversions`➜ select `API`.
 {% endhint %}
 
-![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/1 (2).png>)
+![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/1 (2) (1).png>)
 
 ## Field mappings
 
