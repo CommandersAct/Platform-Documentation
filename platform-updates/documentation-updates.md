@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/08/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/effinity.md" %}
+[effinity.md](../features/integrations/destinations/destinations-catalog/effinity.md)
+{% endcontent-ref %}
+
 ## 01/08/2022
 
 Events collection documentation:
