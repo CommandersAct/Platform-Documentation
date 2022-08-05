@@ -1,6 +1,6 @@
 # TikTok
 
-TikTok is a social platform short-form video hosting service.\
+[TikTok ](https://www.tiktok.com)is a social platform short-form video hosting service.\
 The TikTok Events API is a server-side integration that allows you to share website and app visitor events directly with TikTok using [Events API for Web](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890979375106) and [Events API for App](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890978528258).
 
 {% hint style="info" %}
