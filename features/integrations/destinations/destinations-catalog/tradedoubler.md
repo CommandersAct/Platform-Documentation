@@ -1,6 +1,6 @@
 # Tradedoubler
 
-Tradedoubler provides a global affiliation network connecting businesses with customers.\
+[Tradedoubler ](https://www.tradedoubler.com)provides a global affiliation network connecting businesses with customers.\
 Using this destination you can implement [server-side tracking](https://dev.tradedoubler.com/tracking/advertiser/) using the same [client-side parameters](https://dev.tradedoubler.com/tracking/advertiser/#Pixel).
 
 ## Key features
