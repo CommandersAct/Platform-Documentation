@@ -160,8 +160,8 @@
 
 * [Website performance](use-cases/website-performance.md)
 * [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
-* [Customer analysis](use-cases/customer-analysis.md)
-* [Campaigns performance analysis](use-cases/campaigns-analysis.md)
+* [Customer analysis](use-cases/customer-analysis/README.md)
+* [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
 * [Engage new customers](use-cases/engage-new-customers/README.md)
   * [Welcome banner for new customers](use-cases/engage-new-customers/welcome-banner-for-new-customers.md)
   * [Real-time promotion for hesitant customers](use-cases/engage-new-customers/real-time-promotion-for-hesitant-customers.md)
