@@ -7,7 +7,6 @@ With Effinity server-side tracking you can track lead and sale conversions.
 
 * **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model suits Effinity lead and sale tracking, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
-* **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Awin.
 
 ## Destination setup
 
