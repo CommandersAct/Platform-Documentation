@@ -199,6 +199,8 @@
     * [User API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-crm-users/api-users)
     * [Product catalog and conversion API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog)
 * [Config API](developers/config-api.md)
+* [Changelogs](developers/changelogs/README.md)
+  * [Measure.js changelog](developers/changelogs/measure.js-changelog.md)
 
 ## CONFIGURE
 
