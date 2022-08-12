@@ -21,22 +21,31 @@ Event example :
 			"consent_categories": ["1", "3"]
 		}
 	},
-        "locale": "fr",
-        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36",
+         "page": {
+	    "title": "Search page",
+	    "url": "https://shop.com/search?q=...", 
+	    "lang": "en",
+	    "location": "https://   shop.com/search?q=...",
+	  },
+	  "device": {
+	    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
+	    "ip": "102.3.4.56", 
+	    "cookie":"_fbp=123; _fbc=456; _ga=789"
+	 },
 	"event_timestamp": "1639044446636"
 }
 ```
 
-## Fields autmatically added
+## Fields automatically added
 
-| Field name          | Example value                                                                                                           | Description               |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| locale              | fr                                                                                                                      | Browser language          |
-| properties.path     | /path1/path2/                                                                                                           | Path of the current url   |
-| properties.referrer | [https:///www.google.fr](https://www.google.fr)                                                                         | Referer url               |
-| properties.title    | My page title                                                                                                           | Title of the current page |
-| properties.url      | [https:///www.mywebsite.fr](https://www.google.fr)                                                                      | Url of the current page   |
-| userAgent           | Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_15\_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 | The browser's user agent  |
+| Field name          | Example value                                                                                                           | Description                                    |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| device.lang         | fr                                                                                                                      | Browser language                               |
+| properties.path     | /path1/path2/                                                                                                           | Path of the current url (only on page\_view)   |
+| properties.referrer | [https:///www.google.fr](https://www.google.fr)                                                                         | Referer url (only on page\_view)               |
+| properties.title    | My page title                                                                                                           | Title of the current page (only on page\_view) |
+| properties.url      | [https:///www.mywebsite.fr](https://www.google.fr)                                                                      | Url of the current page                        |
+| userAgent           | Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_15\_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 | The browser's user agent                       |
 
 {% hint style="info" %}
 (\*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
