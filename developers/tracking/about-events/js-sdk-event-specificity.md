@@ -25,14 +25,22 @@ Event example :
 	    "title": "Search page",
 	    "url": "https://shop.com/search?q=...", 
 	    "lang": "en",
-	    "location": "https://   shop.com/search?q=...",
+	    "referrer": "https:///www.google.fr",
+            "viewport": {
+				"width": 320,
+				"height": 568
+	 		}
 	  },
 	  "device": {
 	    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
-	    "ip": "102.3.4.56", 
-	    "cookie":"_fbp=123; _fbc=456; _ga=789"
+	    "ip": "102.3.4.56",
+	    "lang": "fr",
+	    "cookie": "_fbp=123; _fbc=456; _ga=789", 
+	    "timezone": "Europe/Paris"
 	 },
-	"event_timestamp": "1639044446636"
+	"event_timestamp": "1639044446636", 
+	"generatorVersion": "10.0",
+	"containerVersion": "3.1"
 }
 ```
 
