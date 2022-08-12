@@ -33,10 +33,11 @@ Input is parsing using those operators and rules like : \
 {% endhint %}
 
 {% hint style="info" %}
-Event metadata can be access using the relevant prefix like _`page.*`_ , `device.*` , app.\* or `event_*`\
+Event **metadata** can be accessed using the relevant prefix like _`page.*`_ , `device.*` , app.\* or `event_*`\
 `Ex: page.title=search OR event_name=search OR app.name=MySearchApp`&#x20;
+{% endhint %}
 
-\
-For event properties you can either write `properites.myPropertyName` or just `myPropertyName`. Both are supported.\
+{% hint style="info" %}
+For **event properties** you can either write `properites.myPropertyName` or just `myPropertyName`. Both are supported.\
 Ex: `revenue=12 AND properties.currency=EUR`
 {% endhint %}
