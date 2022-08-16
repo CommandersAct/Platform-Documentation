@@ -1,6 +1,6 @@
 # TikTok
 
-TikTok is a social platform short-form video hosting service.\
+[TikTok ](https://www.tiktok.com)is a social platform short-form video hosting service.\
 The TikTok Events API is a server-side integration that allows you to share website and app visitor events directly with TikTok using [Events API for Web](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890979375106) and [Events API for App](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890978528258).
 
 {% hint style="info" %}
@@ -27,6 +27,10 @@ Before you get started with this destination, make sure you can access [TikTok A
 | `Access Token`    | <p><em><strong><code>Required</code> </strong></em> for <a href="https://ads.tiktok.com/marketing_api/docs?id=1727541103358977">WEB events</a>.</p><p>Your <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-How%20to%20generate%20an%20access%20token">API Access Token</a> as provided by TikTok. More details are available by following this <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-How%20to%20generate%20an%20access%20token">LINK</a>.</p>                      |
 | `TikTok Pixel ID` | <p><em><strong><code>Required</code></strong></em> for <a href="https://ads.tiktok.com/marketing_api/docs?id=1727541103358977">WEB events</a>.</p><p>Your <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-Where%20to%20Find%20pixel_code">Pixel ID</a> as provided by TikTok. You can only add a single pixel id per destination. More details are available by following this <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-Where%20to%20Find%20pixel_code">LINK</a>.</p> |
 | `Test Event Code` | <p>For <a href="https://ads.tiktok.com/marketing_api/docs?id=1727541103358977">Web events</a> only.</p><p>This is used to test event tracking before deploying in production. This code can be found in the <a href="https://ads.tiktok.com/">TikTok Ads Manager</a> following <code>Assets</code> ➜ <code>Events</code> ➜ <code>Manage (Web Events)</code> ➜ Select your pixel ➜ <code>Test Events (Tab)</code>.</p>                                                                                                                                                                                                                                                                                                                                                    |
+
+{% hint style="info" %}
+The<mark style="color:blue;">`Test Event Code`</mark>can only be set in test environments as TikTok won't save data coming from live events where this code is included. More details are available following this [LINK](https://ads.tiktok.com/marketing\_api/docs?id=1724255493685249).
+{% endhint %}
 
 ## Quick reference
 
