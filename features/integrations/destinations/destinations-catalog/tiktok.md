@@ -21,7 +21,7 @@ The TikTok destination provides the following key features:
 Before you get started with this destination, make sure you can access [TikTok Ads Manager](https://ads.tiktok.com).
 
 {% hint style="info" %}
-TikTok doesn't support custom event and/or additional property in the payload.\
+TikTok doesn't support any custom event and/or additional property in the payload.\
 In case these are still sent, TikTok will fully discard the associated event and its data.
 {% endhint %}
 
