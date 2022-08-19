@@ -8,7 +8,7 @@
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | EXTRACT(text, delimiter, position)       | Extracts from the given text the substring at the given position, after splitting by the given delimiter. (_Example_: EXTRACT('a\_b\_c', '\_', 1) returns 'b'.) |
 | SUBSTITUTE()                             | Substitutes newText for oldText in a text string. Use SUBSTITUTE when you want to replace specific text in a text string.                                       |
-| REPLACE(sourceStr, pattern, targetStr)   | Replaces every match of pattern (a regex expression) in sourceStr to targetStr. (_Example_: REPLACE('The-Clone-Wars', '-', ' ') would return 'The Clone Wars'.) |
+| REPLACE(sourceStr, pattern)              | Replaces every match of pattern (a regex expression) in sourceStr. (_Example_: REPLACE('The-Clone-Wars', '-') would return 'The Clone Wars'.)                   |
 | SHA256(stringToHash)                     | Returns an SHA256 hash of the given string                                                                                                                      |
 | MD5(stringToHash)                        | Returns an MD5 hash of the given string                                                                                                                         |
 | COALESCE(value1, value2, ...)            | Returns the first value from the list that isn’t empty                                                                                                          |
