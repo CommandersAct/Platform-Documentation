@@ -4,6 +4,26 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 22/08/2022
+
+Data quality documentation:
+
+{% content-ref url="../features/data-quality/" %}
+[data-quality](../features/data-quality/)
+{% endcontent-ref %}
+
+{% content-ref url="../features/data-quality/normalized-datalayer.md" %}
+[normalized-datalayer.md](../features/data-quality/normalized-datalayer.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/data-quality/data-quality.md" %}
+[data-quality.md](../features/data-quality/data-quality.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/data-quality/data-cleansing/" %}
+[data-cleansing](../features/data-quality/data-cleansing/)
+{% endcontent-ref %}
+
 ## 19/08/2022
 
 Destination documentation (updates):
