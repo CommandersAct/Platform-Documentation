@@ -148,8 +148,8 @@ Segment stats article:
 
 Data quality feature:
 
-{% content-ref url="../features/data-quality.md" %}
-[data-quality.md](../features/data-quality.md)
+{% content-ref url="../features/data-quality/data-quality.md" %}
+[data-quality.md](../features/data-quality/data-quality.md)
 {% endcontent-ref %}
 
 ## 23/06/2022
