@@ -10,7 +10,7 @@ In the [Normalized datalayer](normalized-datalayer.md) interface, you will be ab
 
 ### Automate the QA process
 
-Writing [event specification](normalized-datalayer.md) allows you to automate the QA process, to feed the in the [Source data quality](data-quality.md) dashboard, but also to define realtime alert to react quickly when errors occur on your data.
+Writing [event specification](normalized-datalayer.md) allows you to automate the QA process, to feed the in the [Source data quality](data-quality.md) dashboard, but also to define realtime alerts to react quickly when errors occur on your data.
 
 ### Fix your data in realtime
 
