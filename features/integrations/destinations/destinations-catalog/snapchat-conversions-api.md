@@ -77,7 +77,7 @@ The Snapchat property<mark style="color:blue;">`integration`</mark>is always set
 | `client_dedup_id`                                         | `client_dedup_id` **\[4]**       |
 | `app.namespace`                                           | `app_id`                         |
 | `Snap App Id (APP)`                                       | `snap_app_id`                    |
-| `device.maid`                                             | `hashed_mobile_ad_id`            |
+| `device.advertising_id`                                   | `hashed_mobile_ad_id`            |
 | `device.idfv`                                             | `hashed_idfv`                    |
 | `Pixel Id (WEB)`                                          | `pixel_id`                       |
 | `properties.user.email_sha256` or `properties.user.email` | `hashed_email` **\[5]**          |
