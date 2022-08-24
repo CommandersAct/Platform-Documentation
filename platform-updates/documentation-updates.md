@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 25/08/2022
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% endcontent-ref %}
+
 ## 22/08/2022
 
 Data quality documentation:
