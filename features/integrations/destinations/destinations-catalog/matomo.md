@@ -13,7 +13,7 @@ The Matomo destination provides the following key features:
 
 * **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Matomo's request structure](https://developer.matomo.org/api-reference/tracking-api), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
-* **Custom events and properties**: you can freely push custom events and/or properties based on your specific needs.
+* **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Matomo.
 
 ## Destination setup

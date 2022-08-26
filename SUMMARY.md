@@ -90,6 +90,7 @@
       * [Liveramp](features/integrations/destinations/destinations-catalog/liveramp.md)
       * [Magento](features/integrations/destinations/destinations-catalog/magento.md)
       * [Marin Software](features/integrations/destinations/destinations-catalog/marin-software.md)
+      * [Mapp](features/integrations/destinations/destinations-catalog/mapp.md)
       * [Matomo](features/integrations/destinations/destinations-catalog/matomo.md)
       * [MediaMath](features/integrations/destinations/destinations-catalog/mediamath.md)
       * [Mindlytix](features/integrations/destinations/destinations-catalog/mindlytix.md)
