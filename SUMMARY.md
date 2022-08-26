@@ -199,6 +199,7 @@
     * [Web event specificity](developers/tracking/about-events/js-sdk-event-specificity.md)
     * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
+  * [Properties reference](developers/tracking/properties-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
     * [HTTP API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
     * [Segment API](developers/tracking/data-api/segment-api.md)
