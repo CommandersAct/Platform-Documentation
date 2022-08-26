@@ -53,7 +53,7 @@ Before you get started with this destination, make sure you can access the [Snap
 
 {% hint style="info" %}
 **\[\*]** Snapchat custom event.\
-**\[1]** Commanders Act custom event names are converted to uppercase and sent to Snapchat.
+**\[1]** Commanders Act custom event names are turned to uppercase.
 {% endhint %}
 
 ## Field Mappings
