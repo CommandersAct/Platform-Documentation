@@ -4,7 +4,17 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## 25/08/2022
+## 26/08/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/matomo.md" %}
+[matomo.md](../features/integrations/destinations/destinations-catalog/matomo.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/mapp.md" %}
+[mapp.md](../features/integrations/destinations/destinations-catalog/mapp.md)
+{% endcontent-ref %}
 
 Destination documentation (updates):
 
