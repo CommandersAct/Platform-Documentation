@@ -1,11 +1,11 @@
 # Matomo
 
+{% hint style="info" %}
+This destination is currently under final testing and will soon be available.
+{% endhint %}
+
 [Matomo](https://matomo.org/), formerly Piwik, is an open source web analytics application to track online visits to one or more websites and display reports on these visits for analysis.\
 Using this destination you can implement server-side tracking using Matomo [Tracking HTTP API](https://developer.matomo.org/api-reference/tracking-api).
-
-{% hint style="info" %}
-**This destination is currently under final testing and will soon be available.**
-{% endhint %}
 
 ## Key features
 
