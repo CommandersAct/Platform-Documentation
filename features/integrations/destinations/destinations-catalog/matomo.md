@@ -4,7 +4,7 @@
 Using this destination you can implement server-side tracking using Matomo [Tracking HTTP API](https://developer.matomo.org/api-reference/tracking-api).
 
 {% hint style="info" %}
-This destination is currently under final testing and will soon be available.
+**This destination is currently under final testing and will soon be available.**
 {% endhint %}
 
 ## Key features
