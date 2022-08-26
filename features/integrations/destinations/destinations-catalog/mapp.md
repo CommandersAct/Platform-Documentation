@@ -71,9 +71,9 @@ Depending on Mapp request types you're sending, some properties may not be track
 **\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>\ <mark style="color:blue;">``</mark>**\[2]** When set,<mark style="color:blue;">`partners.mapp.ceid`</mark>comes first.\
 **\[3]** When set,<mark style="color:blue;">`partners.mapp.event_name`</mark>comes first.\
 **\[4]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
-•<mark style="color:blue;">**`add`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`add_to_cart`</mark>.\
-•<mark style="color:blue;">**`conf`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`purchase`</mark>.\
-•<mark style="color:blue;">**`view`**</mark>, as default value.\
+➨<mark style="color:blue;">**`add`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`add_to_cart`</mark>.\
+➨<mark style="color:blue;">**`conf`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`purchase`</mark>.\
+➨<mark style="color:blue;">**`view`**</mark>, as default value.\
 **\[5]** product information separated by semicolon and computed amounts are rounded with two decimals.\
 **\[6]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](mapp.md#configuration)for more details on how you can bridge custom properties to Mapp.
 {% endhint %}
