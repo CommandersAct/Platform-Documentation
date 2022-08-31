@@ -12,7 +12,6 @@
 | SHA256(stringToHash)                     | Returns an SHA256 hash of the given string                                                                                                                      |
 | MD5(stringToHash)                        | Returns an MD5 hash of the given string                                                                                                                         |
 | COALESCE(value1, value2, ...)            | Returns the first value from the list that isn’t empty                                                                                                          |
-| CALCULATE(formula)                       | <p>Calculate a mathematic formula.<br>(Example: CALCULATE(<code>{{revenue}}</code>*1.2))</p>                                                                    |
 | TRIM(text)                               | Removes all spaces from the text except for single spaces between words                                                                                         |
 | SELECT(sourceStr, pattern)               | Selects the first match of the pattern(a regex expression) in the sourceStr. (_Example_: SELECT('From A to Z alphabet', 'A(.\*?)Z') would return 'A to Z')      |
 | LOWER(text)                              | Converts all uppercase letters in a text string to lowercase                                                                                                    |
