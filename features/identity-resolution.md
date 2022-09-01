@@ -7,7 +7,7 @@ For example, a customer can visit your website during the day with his laptop, t
 On your side it is difficult to unify all these actions around one and unique user because it is stored in many systems: your CRM, your website, your ad agency, your customer service system…\
 This is why we launched Fuse, in order to help you to **create a complete view of your customers**. Our **real-time proprietary reconciliation algorithm**, Fuse, is the core of our CDP (Customer Data Platform) that can help you to define the most suitable audience segments and better activate them.
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (2).png>)
 
 ## What is Fuse V1, and what are the differences between V1 and V2?
 
