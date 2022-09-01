@@ -28,6 +28,9 @@ description: >-
     * Template importer (closed alpha) : import in the destination catalog your custom destination template build with the [sandbox JS ](../features/integrations/destinations/destination-builder/javascript-destination-builder/)\
       (Compatible with GTM templates)
 * Campaign analysis -> Live Report builder look and feel enhancements
+* Minor UI enhancements:
+  * tooltip on all destinations or sources logo in overview UI
+  * Increase clarity of labels on some UI
 
 ## Release 10.0.2 - 24/07/22
 
