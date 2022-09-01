@@ -13,13 +13,13 @@ description: >-
     * &#x20;_Advanced mapping_ feature evolves to Event _Properties transformation_ feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
-        ![](<../.gitbook/assets/image (1).png>)
+        ![](<../.gitbook/assets/image (2).png>)
 
 
 
-    * &#x20;[_Alerting_ ](../features/integrations/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody.\
+    * &#x20;[_Alerting_ ](../features/integrations/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
       Be alerted in real-time when one of your destination delivery drop below your threshold.\
-      ![](<../.gitbook/assets/image (4).png>)\
+      ![](<../.gitbook/assets/image (24).png>)\
 
     * Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
     * &#x20;New destinations :&#x20;
@@ -51,7 +51,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (11).png>)
+    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
 
 ## Release 10.0.1 - 24/06/22
 

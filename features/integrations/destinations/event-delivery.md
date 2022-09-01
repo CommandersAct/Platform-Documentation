@@ -47,14 +47,14 @@ You can debug immediately errors encountered thanks to the description of the er
 
 ![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.27.png>)
 
-## Alerting (coming soon)
+## Alerting
 
 You can subscribe to alerts, to receive notifications if the delivered ratio fall below the threshold you have chosen (e.g. if you have less than 90% of your events delivered, you can set an alert and be alerted).\
 You will be alerted as soon as the event occurs, and you can define a reminder, to be alerted as long as the problem remains : every hour, every day, every week.
 
 ![](<../../../.gitbook/assets/image (3) (1) (2).png>)
 
-Currently, two channels are available to receive alerts : email and platform notification. In a near future Slack, Microsoft Teams and a webhook will be also available.
+Currently, three channels are available to receive alerts : email, Slack and Microsoft Teams. In a near future platform notifications and a webhook will also be available.
 
 ## Delivery API
 

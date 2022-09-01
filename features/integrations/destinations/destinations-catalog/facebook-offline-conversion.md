@@ -32,6 +32,6 @@ Create a system user (if you don't already have one) and generate a token:
 
 Select ads\_management authorization:
 
-![](<../../../../.gitbook/assets/image (4) (1) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1).png>)
 
 Copy and paste the token on our connector configuration page.

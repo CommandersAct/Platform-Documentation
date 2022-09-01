@@ -134,7 +134,7 @@
       * [Javascript destination builder](features/integrations/destinations/destination-builder/javascript-destination-builder/README.md)
         * [Serverside javascript helpers](features/integrations/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
     * [Destination filters](features/integrations/destinations/destination-filters.md)
-    * [Advanced mapping](features/integrations/destinations/advanced-mapping.md)
+    * [Properties transformation](features/integrations/destinations/properties-transformation.md)
     * [Event delivery](features/integrations/destinations/event-delivery.md)
     * [Live event inspector](features/integrations/destinations/live-event-inspector.md)
 * [Data Quality](features/data-quality/README.md)
