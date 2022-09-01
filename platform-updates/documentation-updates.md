@@ -6,7 +6,7 @@ description: The latest updates made to our documentation articles
 
 ## 01/09/2022
 
-* Destination settings -> Advanced mapping updated to Properties transformation:
+* Destination settings -> _Advanced mapping_ updated to _Properties transformation_:
 
 {% content-ref url="../features/integrations/destinations/advanced-mapping.md" %}
 [advanced-mapping.md](../features/integrations/destinations/advanced-mapping.md)
