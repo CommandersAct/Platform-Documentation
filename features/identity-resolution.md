@@ -7,14 +7,14 @@ For example, a customer can visit your website during the day with his laptop, t
 On your side it is difficult to unify all these actions around one and unique user because it is stored in many systems: your CRM, your website, your ad agency, your customer service system…\
 This is why we launched Fuse, in order to help you to **create a complete view of your customers**. Our **real-time proprietary reconciliation algorithm**, Fuse, is the core of our CDP (Customer Data Platform) that can help you to define the most suitable audience segments and better activate them.
 
-![](<../.gitbook/assets/image (9) (2).png>)
+![](<../.gitbook/assets/image (9).png>)
 
 ## What is Fuse V1, and what are the differences between V1 and V2?
 
 On **Fuse V1,** our goal was to **identify** same users and **duplicate** for each visitor (cookie) all the data we collected.\
 For example, we collected data about a visitor A with a laptop and a visitor B with a mobile phone. If, with our algorithm, we noticed that visitor A = visitor B, we duplicate the information from visitor B to visitor A and vice-versa. So we can have an overview of visitors who shared the same information and are linked.
 
-![](<../.gitbook/assets/image (11).png>)
+![](<../.gitbook/assets/image (11) (2).png>)
 
 With **Fuse V2,** we decided to go further by **merging** these visitors in order to have a **unique user** with all the data collected. With Fuse V2, the goal is to detect with multiple reconciliation keys the same customer and unify all the data around 1 unique user in order to have a complete view of the customer across all devices and all channels.
 
