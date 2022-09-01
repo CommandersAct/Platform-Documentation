@@ -8,13 +8,18 @@ description: >-
 
 ## Release 10.0.3 - 24/08/22
 
-* Destinations improvements: ​
-  * &#x20;_Advanced mapping_ feature evolves to Event _Properties transformation_ feature. Transform event properties on each destination
-  * Ability to remove event properties for a specific destination\
-    ![](<../.gitbook/assets/image (18).png>)
-  * &#x20;TikTok connector (Web mode only, App mode in September)​
-  * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
-  * &#x20;Matomo Analytics in closed alpha test
+*   Destinations improvements: ​
+
+    * &#x20;_Advanced mapping_ feature evolves to Event _Properties transformation_ feature.
+    * Ability to remove event properties for a specific destination\
+      ![](<../.gitbook/assets/image (25).png>)
+
+
+
+    * &#x20;Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
+    * &#x20;New destinations :&#x20;
+      * Matomo
+      * Mapp
 
 ## Release 10.0.2 - 24/07/22
 
