@@ -10,7 +10,7 @@ description: >-
 
 *   Destinations improvements: ​
 
-    * &#x20;_Advanced mapping_ feature evolves to Event _Properties transformation_ feature.
+    * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/integrations/destinations/properties-transformation.md) feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
         ![](<../.gitbook/assets/image (2).png>)
@@ -19,7 +19,7 @@ description: >-
 
     * &#x20;[_Alerting_ ](../features/integrations/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
       Be alerted in real-time when one of your destination delivery drop below your threshold.\
-      ![](<../.gitbook/assets/image (24).png>)\
+      ![](<../.gitbook/assets/image (1).png>)\
 
     * Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
     * &#x20;New destinations :&#x20;
@@ -27,6 +27,7 @@ description: >-
       * [Mapp](../features/integrations/destinations/destinations-catalog/mapp.md)
     * Template importer (closed alpha) : import in the destination catalog your custom destination template build with the [sandbox JS ](../features/integrations/destinations/destination-builder/javascript-destination-builder/)\
       (Compatible with GTM templates)
+* Campaign analysis -> Live Report builder look and feel enhancements
 
 ## Release 10.0.2 - 24/07/22
 
@@ -51,7 +52,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
+    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (5).png>)
 
 ## Release 10.0.1 - 24/06/22
 

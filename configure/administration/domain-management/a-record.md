@@ -33,7 +33,7 @@ Customers' DNS should be configured with A record information (ask your IT depar
 
 Click on "Validate configuration" and this will test the DNS configuration.
 
-![](<../../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (4).png>)
 
 Click then on "Generate certificates"
 
@@ -41,7 +41,7 @@ Click then on "Generate certificates"
 
 Click on "Test configuration" and the setup will be done.
 
-![](<../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../.gitbook/assets/image (4).png>)
 
 ## A record setup with your own certificate
 
