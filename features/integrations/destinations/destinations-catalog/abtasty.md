@@ -23,7 +23,7 @@ Select the data range:
 * Pick up where last export left off: differential export, you can export only records which were not exported on the last export
 * Last... / Between...: select a precise period for the data range
 
-### 2- (S)FTP settings
+### 2- Settings
 
 Select the storage connector (a storage connector can be configured on Administration / Connector credentials).
 
