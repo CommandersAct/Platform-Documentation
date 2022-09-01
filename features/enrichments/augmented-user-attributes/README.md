@@ -298,7 +298,7 @@ This feature allows you to copy values stored at the event level (pages, views, 
 
 ![](<../../../.gitbook/assets/image (7) (1).png>)
 
-![](<../../../.gitbook/assets/image (5) (1).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
+![](<../../../.gitbook/assets/image (5).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
 
 It is useful to have a global view of dimensions such as product categories viewed or last order date.
 

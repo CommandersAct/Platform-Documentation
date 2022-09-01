@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 01/09/2022
+
+* Destination settings -> Advanced mapping updated to Properties transformation:
+
+{% content-ref url="../features/integrations/destinations/advanced-mapping.md" %}
+[advanced-mapping.md](../features/integrations/destinations/advanced-mapping.md)
+{% endcontent-ref %}
+
+* Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/abtasty.md" %}
+[abtasty.md](../features/integrations/destinations/destinations-catalog/abtasty.md)
+{% endcontent-ref %}
+
 ## 26/08/2022
 
 Destination documentation:
