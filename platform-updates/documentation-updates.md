@@ -18,6 +18,8 @@ description: The latest updates made to our documentation articles
 [abtasty.md](../features/integrations/destinations/destinations-catalog/abtasty.md)
 {% endcontent-ref %}
 
+\+ 10 others
+
 ## 26/08/2022
 
 Destination documentation:
