@@ -8,6 +8,8 @@ description: >-
 
 ## Release 10.0.3 - 24/08/22
 
+* Sources improvements:
+  * Live Events Inspector for sources, available both in Sources menu (for all sources) and on each source (tab Event Inspector). It allows to inspect/debug your incoming events​
 *   Destinations improvements: ​
 
     * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/integrations/destinations/advanced-mapping.md) feature.
