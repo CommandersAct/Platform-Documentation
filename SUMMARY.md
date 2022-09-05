@@ -197,7 +197,7 @@
   * [About events](developers/tracking/about-events/README.md)
     * [Ecommerce/retail events](developers/tracking/about-events/ecommerce-retail-events.md)
     * [Web event specificity](developers/tracking/about-events/js-sdk-event-specificity.md)
-    * [Mobile SDK event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
+    * [Mobile App event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference.md)
   * [Properties reference](developers/tracking/properties-reference.md)
   * [Data API](developers/tracking/data-api/README.md)

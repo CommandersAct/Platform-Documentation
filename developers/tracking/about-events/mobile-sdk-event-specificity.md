@@ -1,9 +1,13 @@
-# Mobile SDK event specificity
+# Mobile App event specificity
 
-## Mobile SDK event specificity
+## Event specificity for mobile app
 
-IOS and Android SDK add specific properties regarding the device and app.\
+IOS and Android SDK add specific properties regarding the device and app.&#x20;
+
+{% hint style="info" %}
+If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/integrations/sources/sources-catalog/http-tracking-api.md)), you should follow this specification to benefit from plug\&play on destinations\
 Here are an example of event playload :
+{% endhint %}
 
 ```json
 {
