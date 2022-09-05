@@ -24,6 +24,7 @@ description: >-
       ![](<../.gitbook/assets/image (25).png>)\
 
     * Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
+    * [Webhook ](../features/integrations/destinations/destinations-catalog/webhook.md)enhancement : ability to use properties, static values, or a melt of both, everywhere (url, body, headers)​
     * &#x20;New destinations :&#x20;
       * [Matomo](../features/integrations/destinations/destinations-catalog/matomo.md)
       * [Mapp](../features/integrations/destinations/destinations-catalog/mapp.md)
@@ -33,6 +34,7 @@ description: >-
 * Minor UI enhancements:
   * tooltip on all destinations or sources logo in overview UI
   * Increase clarity of labels on some UI
+  * Add technical base for future onboarding features
 
 ## Release 10.0.2 - 24/07/22
 
