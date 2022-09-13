@@ -103,7 +103,7 @@
       * [Rakuten](features/integrations/destinations/destinations-catalog/rakuten.md)
       * [Realytics](features/integrations/destinations/destinations-catalog/realytics.md)
       * [Responsys](features/integrations/destinations/destinations-catalog/responsys.md)
-      * [RythmOne](features/integrations/destinations/destinations-catalog/rythmone.md)
+      * [RhythmOne](features/integrations/destinations/destinations-catalog/rythmone.md)
       * [Rich Relevance](features/integrations/destinations/destinations-catalog/rich-relevance.md)
       * [Salesforce](features/integrations/destinations/destinations-catalog/salesforce.md)
       * [Salesforce Audience Studio](features/integrations/destinations/destinations-catalog/salesforce-audience-studio.md)
