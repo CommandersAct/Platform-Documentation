@@ -4,6 +4,16 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 13/09/2022
+
+* Destination documentation (updates)
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/xandr.md" %}
+[xandr.md](../features/integrations/destinations/destinations-catalog/xandr.md)
+{% endcontent-ref %}
+
+\+ 2 others
+
 ## 01/09/2022
 
 * Destination settings -> _Advanced mapping_ updated to _Properties transformation_:
