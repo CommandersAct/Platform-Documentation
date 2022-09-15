@@ -68,6 +68,7 @@
       * [Amazon S3](features/integrations/destinations/destinations-catalog/amazon-s3.md)
       * [Batch](features/integrations/destinations/destinations-catalog/batch.md)
       * [Bing](features/integrations/destinations/destinations-catalog/bing.md)
+      * [Commission Junction](features/integrations/destinations/destinations-catalog/commission-junction.md)
       * [Criteo (audiences)](features/integrations/destinations/destinations-catalog/criteo-audiences.md)
       * [Criteo (offline conversions)](features/integrations/destinations/destinations-catalog/criteo-offline-conversions.md)
       * [Criteo (events)](features/integrations/destinations/destinations-catalog/criteo-events.md)
