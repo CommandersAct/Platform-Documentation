@@ -4,6 +4,24 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 16/09/2022
+
+Destination documentation:
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/commission-junction.md" %}
+[commission-junction.md](../features/integrations/destinations/destinations-catalog/commission-junction.md)
+{% endcontent-ref %}
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% endcontent-ref %}
+
 ## 13/09/2022
 
 * Destination documentation (updates)
