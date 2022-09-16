@@ -49,10 +49,10 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 | `add_payment_info`    | `cart.payment`                                              |
 | `add_shipping_info`   | `cart.delivery`                                             |
 | `add_to_cart`         | `product.add_to_cart`                                       |
-| `add_to_wishlist`     | `add_to_wishlist` **\[\*]**                                 |
-| `begin_checkout`      | `begin_checkout` **\[\*]**                                  |
+| `add_to_wishlist`     | `product.add_to_wishlist` **\[\*]**                         |
+| `begin_checkout`      | `cart.begin_checkout` **\[\*]**                             |
 | `generate_lead`       | `generate_lead` **\[\*]**                                   |
-| `login`               | `login` **\[\*]**                                           |
+| `login`               | `user.login` **\[\*]**                                      |
 | `page_view`           | `page.display` or `product.page_display` **\[1]**           |
 | `purchase`            | `transaction.confirmation` and `product.purchased` **\[2]** |
 | `refund`              | `refund` **\[\*]**                                          |
@@ -60,10 +60,10 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 | `search`              | `internal_search_result.display`                            |
 | `select_content`      | `select_content` **\[\*]**                                  |
 | `select_item`         | `select_item` **\[\*]**                                     |
-| `sign_up`             | `sign_up` **\[\*]**                                         |
+| `sign_up`             | `user.sign_up` **\[\*]**                                    |
 | `view_cart`           | `cart.display`                                              |
 | `view_item`           | `product.display`                                           |
-| `view_item_list`      | `view_item_list` **\[\*]**                                  |
+| `view_item_list`      | `page.view_item_list` **\[\*]**                             |
 | `[Custom Event]`      | `[Custom Event]` **\[\*]**                                  |
 
 {% hint style="info" %}
