@@ -14,10 +14,6 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
-{% endcontent-ref %}
-
 {% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
 [tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
