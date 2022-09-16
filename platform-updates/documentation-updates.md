@@ -18,6 +18,10 @@ Destination documentation (updates):
 [tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/integrations/destinations/destinations-catalog/effinity.md" %}
+[effinity.md](../features/integrations/destinations/destinations-catalog/effinity.md)
+{% endcontent-ref %}
+
 ## 13/09/2022
 
 * Destination documentation (updates)
