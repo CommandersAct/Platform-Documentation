@@ -64,8 +64,8 @@ Depending on Mapp request types you're sending, some properties may not be track
 | `Custom Event Properties`                                                                                                                                                               | `[Custom Property Name]` **\[6]** |
 
 {% hint style="info" %}
-**\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>\ <mark style="color:blue;">``</mark>**\[2]** When set,<mark style="color:blue;">`partners.mapp.ceid`</mark>comes first.\
-**\[3]** When set,<mark style="color:blue;">`partners.mapp.event_name`</mark>comes first.\
+**\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>\ <mark style="color:blue;">``</mark>**\[2]**<mark style="color:blue;">`partners.mapp.ceid`</mark>has priority over<mark style="color:blue;">`device.advertising_id`</mark>.\
+**\[3]**<mark style="color:blue;">`partners.mapp.event_name`</mark>has priority over<mark style="color:blue;">`event_name`</mark>.\
 **\[4]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
 &#x20;     •<mark style="color:blue;">**`add`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`add_to_cart`</mark>.\
 &#x20;     •<mark style="color:blue;">**`conf`**</mark>, when<mark style="color:blue;">`event_name`</mark>is<mark style="color:blue;">`purchase`</mark>.\
