@@ -22,38 +22,29 @@ Before you get started with this destination, make sure you can access the [Snap
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Pixel Id (WEB)`          | <p><em><strong><code>Required</code> </strong></em> for <a href="https://marketingapi.snapchat.com/docs/conversion.html#web-parameters">WEB events</a>.</p><p>Your <a href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">Pixel Id</a> as provided by Snapchat for "Web" type events. For more details, you can check the following <a href="https://businesshelp.snapchat.com/s/article/pixel-website-install?language=en_US">LINK</a>.</p>                                                                                                                              |
 | `Snap App Id (APP)`       | <p><em><strong><code>Required</code></strong></em> for <a href="https://marketingapi.snapchat.com/docs/conversion.html#mobile_app-parameters">MOBILE_APP events</a>.</p><p>Your <a href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US">Snap App Id</a> as provided by Snapchat for "Mobile App" type events. For more details, you can check the following <a href="https://businesshelp.snapchat.com/s/article/snap-app-id?language=en_US">LINK</a>.</p>                                                                                                                           |
-| `Custom Event Mapping`    | Snapchat allows up to five (5) custom events to be tracked. In `Commanders Act Event Name` input an event name, while in `Snapchat Event Name` set a name as follows: `CUSTOM_EVENT_[NUMBER]`, where `[NUMBER]` is between 1 and 5, both included (E.g. `CUSTOM_EVENT_1`).                                                                                                                                                                                                                                                                                                                                    |
+| `Custom Event Mapping`    | Snapchat allows up to five (5) custom events to be tracked. In `Commanders Act Event Name` input an event name, while in `Snapchat Event Name` set a name as follows: `CUSTOM_EVENT_X`, where `X` is a number between`1`and`5`, both included (E.g. `CUSTOM_EVENT_1`).                                                                                                                                                                                                                                                                                                                                        |
 | `Custom Event Properties` | Map your custom event properties by setting their field names in `Event property name` and adding the field name holding the value in `Commanders Act event property or static value`. E.g. if you input`size`in the `Event property name` and`properties.items.0.product.size` **\[1]** in `Commanders Act event property or static value`, you will have a custom event property in Snapchat called`size`with a value based on the content of the field`properties.items.0.product.size`. You also have the option to set a static string/numeric value in `Commanders Act event property or static value`. |
 
 ## Quick reference
 
-| Commanders Act Events | Snapchat Events                 |
-| --------------------- | ------------------------------- |
-| `add_payment_info`    | `ADD_PAYMENT_INFO` **\[\*]**    |
-| `add_shipping_info`   | `ADD_SHIPPING_INFO` **\[\*]**   |
-| `add_to_cart`         | `ADD_CART`                      |
-| `add_to_wishlist`     | `ADD_TO_WISHLIST`               |
-| `begin_checkout`      | `START_CHECKOUT`                |
-| `generate_lead`       | `GENERATE_LEAD` **\[\*]**       |
-| `login`               | `LOGIN`                         |
-| `page_view`           | `PAGE_VIEW`                     |
-| `purchase`            | `PURCHASE`                      |
-| `refund`              | `REFUND` **\[\*]**              |
-| `remove_from_cart`    | `REMOVE_FROM_CART` **\[\*]**    |
-| `search`              | `SEARCH`                        |
-| `select_content`      | `SELECT_CONTENT` **\[\*]**      |
-| `select_item`         | `SELECT_ITEM` **\[\*]**         |
-| `sign_up`             | `SIGN_UP` **\[\*]**             |
-| `view_cart`           | `VIEW_CART`                     |
-| `view_item`           | `VIEW_CONTENT` **\[\*]**        |
-| `view_item_list`      | `VIEW_ITEM_LIST` **\[\*]**      |
-| `[Custom Event]`      | `[Custom Event]` **\[\*] \[1]** |
-
-
+| Commanders Act Events       | Snapchat Events           |
+| --------------------------- | ------------------------- |
+| `add_payment_info`          | `ADD_BILLING`             |
+| `add_to_cart`               | `ADD_CART`                |
+| `add_to_wishlist`           | `ADD_TO_WISHLIST`         |
+| `begin_checkout`            | `START_CHECKOUT`          |
+| `generate_lead`             | `SUBSCRIBE`               |
+| `login`                     | `LOGIN`                   |
+| `page_view`                 | `PAGE_VIEW`               |
+| `purchase`                  | `PURCHASE`                |
+| `search`                    | `SEARCH`                  |
+| `sign_up`                   | `SIGN_UP`                 |
+| `view_item`                 | `VIEW_CONTENT`            |
+| `view_item_list`            | `LIST_VIEW`               |
+| `Commanders Act Event Name` | `CUSTOM_EVENT_X` **\[1]** |
 
 {% hint style="info" %}
-**\[\*]** Snapchat custom event.\
-**\[1]** Commanders Act custom event names are turned to uppercase.
+**\[1]** Where<mark style="color:blue;">`X`</mark>is a number between`1`and`5`, both included. See <mark style="color:blue;">Custom Event Mapping</mark> in [Configuration](snapchat-conversions-api.md#configuration) for more details on how you can track custom events with Snapchat.
 {% endhint %}
 
 ## Field Mappings
