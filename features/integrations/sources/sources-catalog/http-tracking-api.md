@@ -73,6 +73,10 @@ Find details on **best practices in event naming** as well as the **`event` meth
 If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endhint %}
 
+{% hint style="info" %}
+Timestamps supported are in milliseconds (ms).
+{% endhint %}
+
 ## User API
 
 User API let's you update/delete/create users in the database. Find details on [User API spec](https://community.commandersact.com/datacommander/api/users).
