@@ -5,6 +5,28 @@ Please note that the interface of this feature is going to evolve to provide the
 {% endhint %}
 
 With filters, you have the possibility to define some conditions. As a result, some events will be sent and some don't, according to your conditions.
+In the drop down list you will find predefined filters and a custom filter.
+
+PREDFINED FILTERS
+
+Below is the list of the predefined filters and the CA event property it correspond to :
+* Currency --> currency
+* Event Type --> event_name (nb. event_name is the name of the event)
+* Country --> country
+* Coupon --> coupon
+* Method --> method (nb. "method" is a property usually valued with the method used to login) 
+* Name --> name (nb. "name" is a property usually refering to a product and valued with its name)
+* Path --> path (nb. "path" is the path of the url where the event is triggered)
+* Payment Method --> payment_method
+* Referrer --> referrer (nb. "referrer" is the referrer of the url where the event is triggered)
+* Title --> title (nb. "title" is the title of the url where the event is triggered)
+* Type --> type (nb. "type" is the type of conversion usually valued with "online", "offline", "call" and so on)
+* URL --> url (nb. "url" is the url of the page where the event is triggered)
+
+CUSTOM FILTER
+
+A "Custom" filter can be use when predifined ones are not sufficient.
+It can be either used to filter events based on a specific property or even to combine several properties.
 
 Example: you want to only send events with property 'country' is equal to France ('FR') AND property 'currency' is equal to Euro ('EUR').
 
