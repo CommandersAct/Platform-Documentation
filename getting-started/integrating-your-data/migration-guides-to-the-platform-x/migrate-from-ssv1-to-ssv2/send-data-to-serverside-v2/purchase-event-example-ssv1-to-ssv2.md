@@ -90,4 +90,3 @@ For example, if you use Facebook CAPI, you'll have to send _\_fbp and \_fbc_ coo
 RGPD: User **consents have to be sent in each events**, inside the `user.consent_categories` parameter
 {% endhint %}
 
-### Custom parameters :
