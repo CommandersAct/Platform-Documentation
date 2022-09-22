@@ -12,5 +12,5 @@ Learn about the platform, interfaces, ...
 [**Discover our use cases**](use-cases/engage-new-customers/)\
 Extract values from your data
 
-[**Integrating your data**](getting-started/integrating-your-data/)\
+[**Integrating your data**](getting-started/integrating-your-data.md)\
 How to setup your account
