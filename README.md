@@ -6,11 +6,11 @@ description: Discover capabilities of Commanders Act
 
 Learn how to use the platform to collect, enrich, validate and integrate your customer data with hundreeds of solutions.
 
-[**Getting started with Commanders Act**](getting-started/platform-interface.md) \
+[**Getting started with Commanders Act**](getting-started/platform-interface.md)\
 Learn about the platform, interfaces, ...
 
-[**Discover our use cases**](use-cases/engage-new-customers/) \
+[**Discover our use cases**](use-cases/engage-new-customers/)\
 Extract values from your data
 
-[**Integrating your data**](getting-started/integrating-your-data.md) \
+[**Integrating your data**](getting-started/integrating-your-data/)\
 How to setup your account

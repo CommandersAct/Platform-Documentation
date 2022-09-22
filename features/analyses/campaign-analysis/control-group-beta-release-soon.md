@@ -27,7 +27,7 @@ As soon as you start the stream, the control group will be launched also, and re
 
 When a stream with a control group is activated, on the stream list page an icon will appear on the right of the stream’s name.
 
-![](<../../../.gitbook/assets/image (4) (3).png>)
+![](<../../../.gitbook/assets/image (4).png>)
 
 Click on this icon to access to the analytics part.
 
@@ -35,7 +35,7 @@ First, select the period of analysis: you can choose for example to read the res
 
 All the figures will be related to this analysis period.
 
-![](<../../../.gitbook/assets/image (2) (1) (3).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 **Definition of each metrics:**
 

@@ -11,7 +11,10 @@
 
 * [Glossary](getting-started/lexical.md)
 * [Platform interface](getting-started/platform-interface.md)
-* [Integrating your data](getting-started/integrating-your-data.md)
+* [Integrating your data](getting-started/integrating-your-data/README.md)
+  * [Migrate from SSv1 to SSv2](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/README.md)
+    * [Send data to serverside v2](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/README.md)
+      * [Purchase event example (ssv1 to ssv2)](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/purchase-event-example-ssv1-to-ssv2.md)
 
 ## Features
 
