@@ -12,5 +12,5 @@ In this section, we'll see how to migrate from a SSv1 setup to the new platform 
 ## Tree steps to migrate
 
 1. [Send data to serverside v2](send-data-to-serverside-v2/) (aka Platform X)
-2. Check your data quality
-3. Add your first destination
+2. [Check your data quality](../../../../features/integrations/sources/source-data-quality.md)
+3. [Add your first destination](../../../../features/integrations/destinations/)
