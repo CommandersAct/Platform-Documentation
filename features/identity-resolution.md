@@ -7,18 +7,18 @@ For example, a customer can visit your website during the day with his laptop, t
 On your side it is difficult to unify all these actions around one and unique user because it is stored in many systems: your CRM, your website, your ad agency, your customer service system…\
 This is why we launched Fuse, in order to help you to **create a complete view of your customers**. Our **real-time proprietary reconciliation algorithm**, Fuse, is the core of our CDP (Customer Data Platform) that can help you to define the most suitable audience segments and better activate them.
 
-![](<../.gitbook/assets/image (23).png>)
+![](<../.gitbook/assets/image (9).png>)
 
 ## What is Fuse V1, and what are the differences between V1 and V2?
 
 On **Fuse V1,** our goal was to **identify** same users and **duplicate** for each visitor (cookie) all the data we collected.\
 For example, we collected data about a visitor A with a laptop and a visitor B with a mobile phone. If, with our algorithm, we noticed that visitor A = visitor B, we duplicate the information from visitor B to visitor A and vice-versa. So we can have an overview of visitors who shared the same information and are linked.
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (11).png>)
 
 With **Fuse V2,** we decided to go further by **merging** these visitors in order to have a **unique user** with all the data collected. With Fuse V2, the goal is to detect with multiple reconciliation keys the same customer and unify all the data around 1 unique user in order to have a complete view of the customer across all devices and all channels.
 
-![](<../.gitbook/assets/image (42).png>)
+![](<../.gitbook/assets/image (12).png>)
 
 With Fuse V2 our CDP become **user-centric** rather than cookie centric and that change the way you define your marketing campaigns: you don’t talk to devices anymore but to humans directly, to users.
 
@@ -30,7 +30,7 @@ For now only 1 key is managed, but later you will be able to define multiple key
 
 A merge between 2 users will happen if a match is detected because the reconciliation key is the same for the 2 users (email address, for example). The newest user is merged into the oldest one. The data collected for the newest user is stored on the oldest one, and the newest user is deleted.
 
-![](<../.gitbook/assets/image (38).png>)
+![](<../.gitbook/assets/image (7).png>)
 
 Every document on visitor B (conversions, page views, impressions, clicks, consents…) are moved to user A. There is no data deleted, only the user is deleted, and information are moved to the main user (A in our example).
 
@@ -56,7 +56,7 @@ Some devices are strictly personal, like mobile phones, but others could be shar
 
 As soon as we detect a new reconciliation key (login, email address, user\_id) different from the previous session on the device, we can distinguish different users and address the right user.
 
-![](<../.gitbook/assets/image (14).png>)
+![](<../.gitbook/assets/image (10).png>)
 
 On case 1 (left) we can't identify a new user because there are no reconciliation keys (no login, no email...). On contrary, on case 2 (right), there is a login, so we can create a new user or update an existing user. As a result, the tcid (cookie identifier) stays the same but the pid (personal identifier) is different as well as the user\_id.
 
@@ -70,10 +70,10 @@ On Chrome / Android, we are able to create 1 user per device, with different pid
 
 As soon as we can identify 2 devices with the same user\_id (login for example), we can merge these 2 users with Fuse V2, to have 1 unique user for these 2 devices.
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 For Safari / iOS, it is different because we can't have different tcid. Due to cookie limitations on Safari, we use a fingerprint. Unfortunately, on a public hotspot, all devices have the same IP address and, as a result, the fingerprint is the same, meaning we have 1 unique user for all these devices.
 
 However, as soon as we can detect that a user is unique (with a login for example), we can create a separate user.
 
-![](<../.gitbook/assets/image (2).png>)
+![](<../.gitbook/assets/image (13).png>)

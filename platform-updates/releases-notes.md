@@ -21,7 +21,7 @@ description: >-
 
     * &#x20;[_Alerting_ ](../features/integrations/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
       Be alerted in real-time when one of your destination delivery drop below your threshold.\
-      ![](<../.gitbook/assets/image (25) (1).png>)\
+      ![](<../.gitbook/assets/image (25).png>)\
 
     * Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
     * [Webhook ](../features/integrations/destinations/destinations-catalog/webhook.md)enhancement : ability to use properties, static values, or a melt of both, everywhere (url, body, headers)​
@@ -48,7 +48,7 @@ description: >-
     * &#x20;Duplicate a source (except web containers)​&#x20;
     * &#x20;Link/unlink destinations to a source (create and edit)​
 
-    ![](<../.gitbook/assets/image (20) (1).png>)
+    ![](<../.gitbook/assets/image (20).png>)
 
 
 * Destinations improvements: ​
@@ -59,7 +59,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23) (1).png>)![](<../.gitbook/assets/image (15).png>)
+    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
 
 ## Release 10.0.1 - 24/06/22
 
