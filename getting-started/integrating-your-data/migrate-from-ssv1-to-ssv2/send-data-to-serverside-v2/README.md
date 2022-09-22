@@ -10,4 +10,4 @@
 * As explain in the [event documentation](https://community.commandersact.com/platform-x/developers/tracking/about-events), common events have to be sent in the standard format (name and properties) to benefit from plug\&play features.\
   For specific events, custom events name is possible. Nevertheless, please use standard properties in custom events, as far as possible, to benefit from automatic mapping, automatic QA, and plug\&play features.
 * Standard event format can be found in our [event reference documentation](https://community.commandersact.com/platform-x/developers/tracking/events-reference)\
-  Here is an [example ](broken-reference)based the ssv1 format :  [purchase event example](broken-reference)
+  Here is an [example ](purchase-event-example-ssv1-to-ssv2.md)based the ssv1 format :  [purchase event example](purchase-event-example-ssv1-to-ssv2.md)
