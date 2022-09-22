@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 22/09/2022
+
+Documentation on how to migrate from serverside v1
+
+{% content-ref url="../getting-started/integrating-your-data/migration-guides-to-the-platform-x/" %}
+[migration-guides-to-the-platform-x](../getting-started/integrating-your-data/migration-guides-to-the-platform-x/)
+{% endcontent-ref %}
+
 ## 16/09/2022
 
 Destination documentation:
