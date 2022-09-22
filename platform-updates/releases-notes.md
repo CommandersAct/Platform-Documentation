@@ -15,7 +15,7 @@ description: >-
     * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/integrations/destinations/advanced-mapping.md) feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
-        ![](<../.gitbook/assets/image (2).png>)
+        ![](<../.gitbook/assets/image (2) (1).png>)
 
 
 
@@ -59,7 +59,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (5).png>)
+    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
 
 ## Release 10.0.1 - 24/06/22
 

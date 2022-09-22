@@ -12,10 +12,11 @@
 * [Glossary](getting-started/lexical.md)
 * [Platform interface](getting-started/platform-interface.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
-  * [Migration guides](getting-started/integrating-your-data/migration-guides.md)
-  * [Migrate from SSv1 to SSv2](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/README.md)
-    * [Send data to serverside v2](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/README.md)
-      * [Purchase event example (ssv1 to ssv2)](getting-started/integrating-your-data/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/purchase-event-example-ssv1-to-ssv2.md)
+  * [Migration guides to the Platform X](getting-started/integrating-your-data/migration-guides-to-the-platform-x/README.md)
+    * [Migrate from SSv1 to SSv2](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/README.md)
+      * [Send data to serverside v2](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/README.md)
+        * [Purchase event example (ssv1 to ssv2)](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/purchase-event-example-ssv1-to-ssv2.md)
+    * [Migrate from old mobile sdk](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-old-mobile-sdk.md)
 
 ## Features
 
