@@ -35,12 +35,12 @@ You can segment on conversion items, meaning products bought by users.
 
 First, you have to select '`conversion`' universe and define a condition for conversions, like '`conversion ID exists`' = users have at least 1 conversion.
 
-![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (30).png>)
 
 Then the button 'ADD CONDITION' will appear, and you can define more conditions, including conditions for conversion items, select '**product**':
 
-![](<../../../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (49).png>)
 
 Then, you can easily segment on conversion items:
 
-![](<../../../.gitbook/assets/image (10) (1) (1).png>)
+![](<../../../.gitbook/assets/image (4).png>)

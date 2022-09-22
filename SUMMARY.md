@@ -19,6 +19,7 @@
   * [Concepts](features/integrations/concepts.md)
   * [Sources](features/integrations/sources/README.md)
     * [Sources Overview](features/integrations/sources/overview.md)
+    * [Source quality](features/integrations/sources/source-quality.md)
     * [Sources Catalog](features/integrations/sources/sources-catalog/README.md)
       * [Google Tag Manager (GTM)](features/integrations/sources/sources-catalog/gtm.md)
       * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)

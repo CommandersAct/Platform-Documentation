@@ -1,6 +1,6 @@
 # Segment overlap
 
-The segment overlap feature allows you to compare your segments and visualize directly the audience shared between 2 segments.
+The segment overlap feature allows you to compare your segments and visualize directly the audience shared between 2 segments.
 
 This feature is very helpful in order to understand how your audience is divided and grouped in your segments.
 
@@ -10,7 +10,7 @@ It also allows you to refine your segments by divided a big segment into small p
 
 First step, select one of your segment and it will automatically calculate the overlap between the segment you choose and all your others segments.
 
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (43).png>)
 
 Then you can visualize and analyse the overlap with the number of users in both segments and the percentage.
 

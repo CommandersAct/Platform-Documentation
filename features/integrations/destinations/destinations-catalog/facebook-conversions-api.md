@@ -16,7 +16,7 @@ You need a Facebook Business Manager account [https://business.facebook.com/](ht
 
 Then on the menu, click on 'Events Manager':
 
-![Events Manager](<../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-10.30.43 (1).png>)
+![Events Manager](../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-10.30.43.png)
 
 Here you have to create a new Web Pixel:
 

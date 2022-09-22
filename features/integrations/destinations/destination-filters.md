@@ -10,7 +10,7 @@ Example: you want to only send events with property 'country' is equal to France
 
 On the destination configuration wizard, filter step, you can define your filter like that:
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-03-04 à 11.39.01.png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-03-04 à 11.39.01.png>)
 
 You can type directly the property's name and write the formula according to allowed characters:
 

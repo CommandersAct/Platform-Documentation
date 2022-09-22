@@ -1,6 +1,6 @@
 # Destination builder
 
-If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.&#x20;
+If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.
 
 The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API) or with a _javascript sandbox_ aproach :
 
@@ -18,6 +18,6 @@ In the destination builder interface, you will be able to set:
 * Destination settings, i.e. questions that will be asked to the user that will add this destination (e.g. token, account id, options ...)
 * Connector technical options (url, method, etc.) or JavaScript code
 
-![](<../../../../.gitbook/assets/image (3) (2).png>)
+![](<../../../../.gitbook/assets/image (20).png>)
 
 Your destination can also be hosted on Github and automatically imported to facilitate updates on your side.

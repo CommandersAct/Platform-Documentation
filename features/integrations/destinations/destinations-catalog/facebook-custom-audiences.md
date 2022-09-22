@@ -37,7 +37,7 @@ Copy and paste it on our Facebook connector.
 
 ### Where can I find the Access Token? <a href="#where-can-i-find-the-access-token" id="where-can-i-find-the-access-token"></a>
 
-For this part, you have to go to Facebook Developers [https://developers.facebook.com/](https://developers.facebook.com/) and create or login to your account (you need to have a dedicated account for Facebook Developer).&#x20;
+For this part, you have to go to Facebook Developers [https://developers.facebook.com/](https://developers.facebook.com/) and create or login to your account (you need to have a dedicated account for Facebook Developer).
 
 Create a new app
 
@@ -49,16 +49,16 @@ Link your app to your Business Manager account and add your Ad Account ID in the
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-M9XdQPuLipbdPkbWJl1%2F-M9XhMTu3uhk2ndkeJnU%2FCapture%20d%E2%80%99e%CC%81cran%202020-06-10%20a%CC%80%2011.01.44.png?alt=media\&token=7e344337-0c2d-4c9a-9c3e-d1b784dd06fd)
 
-Then click on 'App Review' and 'Permissions and features'. \
+Then click on 'App Review' and 'Permissions and features'.\
 Find the 'Ads Management Standard Access' component and, if you don't already have it, submit a request:
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-MK9F2M3b2lh7DHy53vX%2F-MK9FVSXBTOqmwHk1TKN%2FMarketing%20API%20Standard%20access%20request.png?alt=media\&token=37d9e495-2a94-4963-aa8d-fa82e8f86552)
 
-&#x20;[https://developers.facebook.com/docs/marketing-api/access#standard](https://developers.facebook.com/docs/marketing-api/access#standard)​
+[https://developers.facebook.com/docs/marketing-api/access#standard](https://developers.facebook.com/docs/marketing-api/access#standard)​
 
-Wait for the validation of your request.&#x20;
+Wait for the validation of your request.
 
-Now you have an App linked to your Facebook Business Manager Account ([https://business.facebook.com/](https://business.facebook.com/)). \
+Now you have an App linked to your Facebook Business Manager Account ([https://business.facebook.com/](https://business.facebook.com/)).\
 Please check this page to be sure that the App is well associated with the Business account:
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2qyxWuqeIvtNXLCIg%2F-Ma2rkqvFA5px8jSno8e%2FCapture%20d%E2%80%99e%CC%81cran%202021-05-19%20a%CC%80%2010.55.23.png?alt=media\&token=883787b9-6f0c-4449-8965-2f55826a47dd)
@@ -76,8 +76,6 @@ You have to create a system user on your Facebook Business Account ([https://bus
 {% hint style="warning" %}
 This system user should have **admin** rights for the ad account and for the app you created.
 {% endhint %}
-
-
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2tlwZHdZbXEDou9iQ%2F-Ma2v-Sz535B9cqmdcgk%2FCapture%20d%E2%80%99e%CC%81cran%202021-05-19%20a%CC%80%2010.55.58.png?alt=media\&token=b6135a3d-95ef-4000-93e4-c587d62b6570)
 
@@ -135,4 +133,4 @@ A new custom audience will be created.
 The name of the new audience will start with `CA_{name}`
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (4) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (32).png>)
