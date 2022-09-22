@@ -6,8 +6,8 @@ description: Migration from the serverside v1 feature (platform 7 to platform X)
 
 ## Serverside v1 to Serverside v2
 
-Severside v1 (aka SSv1) is the serverside tag management feature of the old platform (v7). It is not deprecated.\
-In this section we'll see how to migrate from a SSv1 setup to the new platform (aka SSv2)
+Severside v1 (aka SSv1) is the serverside tag management feature of the old platform (v7). It is now deprecated.\
+In this section, we'll see how to migrate from a SSv1 setup to the new platform (aka SSv2)
 
 ## Tree steps to migrate
 

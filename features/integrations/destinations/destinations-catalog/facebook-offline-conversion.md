@@ -28,10 +28,10 @@ Still on Facebook Business Manager, [https://business.facebook.com/](https://bus
 
 Create a system user (if you don't already have one) and generate a token:
 
-![](<../../../../.gitbook/assets/image (3) (1) (3).png>)
+![](<../../../../.gitbook/assets/image (3) (1).png>)
 
 Select ads\_management authorization:
 
-![](<../../../../.gitbook/assets/image (4) (1) (1) (2).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1).png>)
 
 Copy and paste the token on our connector configuration page.

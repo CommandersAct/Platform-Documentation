@@ -298,7 +298,7 @@ This feature allows you to copy values stored at the event level (pages, views, 
 
 ![](<../../../.gitbook/assets/image (7) (1).png>)
 
-![](<../../../.gitbook/assets/image (5) (3).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
+![](<../../../.gitbook/assets/image (5).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
 
 It is useful to have a global view of dimensions such as product categories viewed or last order date.
 
@@ -315,7 +315,7 @@ As a travel agency, you have many visitors on your website who left many informa
 
 You can create a new attribute called 'Trip dates' and store the dates considered. You can do the same for 'destination' or whatever that could be useful for you. Then you can launch a dedicated campaign 3 months later with a segment based on this data (if there is no conversion for these customers).
 
-![](<../../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6) (1).png>)
 
 ### How it works
 
