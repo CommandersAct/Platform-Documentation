@@ -7,15 +7,18 @@ Platform servers can also store events, users and custom data in the Commanders 
 
 ## Event
 
-An event represents an action made by a user on your website or application. To track that action, you send an event that contains the data and will get received by Commanders Act.
+An event represents an action made by a user on your website or application. To track that action, you send an event that contains the data and will be received by Commanders Act.\
+[More information here](../../developers/tracking/about-events/).
 
 ## Source
 
-A source is an emitter of events. It can represents your website, your mobile app, a point of sale (POS) etc. Defining your sources allow you to easily manage and monitor where your events are coming from.
+A source is an emitter of events. It can represents your website, your mobile app, a point of sale (POS) etc. Defining your sources allow you to easily manage and monitor where your events are coming from.\
+See our [source catalog here](sources/sources-catalog/).
 
 ## Destination
 
-Destinations are the partners where you eventually want the collected data to go. Commanders Act provide a librrary of many destinations ready to be used, like Facebook CAPI or Google enhance API.
+Destinations are the partners where you eventually want the collected data to go. Commanders Act provide a library of many destinations ready to be used, like Facebook CAPI or Google enhance Conversion.\
+See our [destination catalog here](destinations/destinations-catalog/).
 
 ## Data store
 

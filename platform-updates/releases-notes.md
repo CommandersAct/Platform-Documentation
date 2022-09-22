@@ -15,7 +15,7 @@ description: >-
     * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/integrations/destinations/advanced-mapping.md) feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
-        ![](<../.gitbook/assets/image (2) (1).png>)
+        ![](<../.gitbook/assets/image (2) (3).png>)
 
 
 
