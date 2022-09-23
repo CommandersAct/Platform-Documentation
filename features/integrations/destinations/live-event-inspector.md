@@ -14,3 +14,7 @@ When you'll start to send more real data with millions of events, you'll see onl
 
 * 6 requests per minute for each event type
 * a bonus of 30 requests per hour for each event type
+
+{% hint style="info" %}
+You can visualize data up to 7 days
+{% endhint %}
