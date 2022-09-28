@@ -6,6 +6,23 @@ description: >-
 
 # Release notes
 
+## Release 10.0.4 - 24/09/22
+
+_Work in progress_
+
+* **Global Platform enhancement**:
+  * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
+    ![](<../.gitbook/assets/image (7).png>)
+  * Onboarding tour: \
+    Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
+    <img src="../.gitbook/assets/image (2).png" alt="" data-size="original">
+* **Destinations improvements:**
+  * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
+    <img src="../.gitbook/assets/image (8).png" alt="" data-size="original">
+  * Enhancement on existing destinations : Piano Analytics
+
+
+
 ## Release 10.0.3 - 24/08/22
 
 * Sources improvements:
@@ -59,7 +76,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
+    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (3).png>)
 
 ## Release 10.0.1 - 24/06/22
 
