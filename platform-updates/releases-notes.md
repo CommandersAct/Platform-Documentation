@@ -8,18 +8,23 @@ description: >-
 
 ## Release 10.0.4 - 24/09/22
 
-_Work in progress_
-
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
     ![](<../.gitbook/assets/image (7).png>)
   * Onboarding tour: \
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (2).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="original">
+* **Source improvements:**
+  * Trend graph for HTTP Tracking API sources.\
+    ![](<../.gitbook/assets/image (2).png>)
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
     <img src="../.gitbook/assets/image (8).png" alt="" data-size="original">
+  * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
+* Explore improvements:
+  * Live report builder: you can now change in live the attribution model without having to edit the report\
+    ![](../.gitbook/assets/image.png)
 
 
 
