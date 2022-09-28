@@ -50,7 +50,7 @@
       * [PHP](features/integrations/sources/sources-catalog/php.md)
       * [Python](features/integrations/sources/sources-catalog/python.md)
       * [Shopify](features/integrations/sources/sources-catalog/shopify.md)
-    * [Source Live Event Inspector](features/integrations/sources/source-live-event-inspector.md)
+    * [Source Live Event Inspector](features/integrations/sources/live-event-inspector.md)
     * [Source data quality](features/integrations/sources/source-data-quality.md)
   * [Destinations](features/integrations/destinations/README.md)
     * [Destinations overview](features/integrations/destinations/add-destination.md)
