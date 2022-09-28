@@ -17,6 +17,9 @@ description: >-
 * **Source improvements:**
   * Trend graph for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (2).png>)
+  * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
+    * Supporting TVOS Consent 5.1.2&#x20;
+    * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
     <img src="../.gitbook/assets/image (8).png" alt="" data-size="original">
