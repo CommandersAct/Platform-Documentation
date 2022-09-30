@@ -7,7 +7,7 @@ Using the [Criteo Server-side API](https://guides.criteotilt.com/onetag/s2s/#sen
 
 The Criteo (events) destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) suits [Criteo's events](https://help.criteo.com/kb/guide/en/all-criteo-onetag-events-and-parameters-vZbzbEeY86/Steps/775825), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model suits [Criteo's events](https://help.criteo.com/kb/guide/en/all-criteo-onetag-events-and-parameters-vZbzbEeY86/Steps/775825), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events, custom event and user properties).
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is brought to Criteo.

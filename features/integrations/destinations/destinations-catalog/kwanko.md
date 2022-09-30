@@ -7,7 +7,7 @@ Using this destination you can implement server-side lead and sale tracking.
 
 The Awin destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Kwanko lead and sale tracking, meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers Kwanko lead and sale tracking, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 
 ## Destination setup

@@ -11,10 +11,10 @@ Event playload example :
 	"event_id": "202110130000000000", //Automatically added
 	"properties": { // event properties you set
 	    "search_term": "t-shirts",
-            "url": "https://www.mywebsite.com/path1/path2/",
-            "path": "/path1/path2/",
-            "referrer": "https:///www.google.fr",
-            "title": "My page title",
+            "url": "https://www.mywebsite.com/path1/path2/",//Automatically added if missing
+            "path": "/path1/path2/",//Automatically added
+            "referrer": "https:///www.google.fr",//Automatically added
+            "title": "My page title",//Automatically added if missing
 	    "user": {
 			"id": "12345",
 			"email": "toto@domain.fr",
