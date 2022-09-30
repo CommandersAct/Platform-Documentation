@@ -16,7 +16,7 @@ description: >-
     <img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](../.gitbook/assets/image.png)
+    ![](<../.gitbook/assets/image (1).png>)
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
     * Supporting TVOS Consent 5.1.2&#x20;
     * Disclosure for IAB's vendors
@@ -27,7 +27,7 @@ description: >-
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (6).png>)
+    ![](<../.gitbook/assets/image (5).png>)
 
 
 
