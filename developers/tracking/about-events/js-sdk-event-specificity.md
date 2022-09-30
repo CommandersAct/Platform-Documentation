@@ -8,20 +8,29 @@ Event example :
 ```json
 {
 	"event_name": "search",
+	
+	//event_id is automatically generated
 	"event_id": "202110130000000000",
 	"properties": {
+	    //Mapping required
 	    "search_term": "t-shirts",
+	    
+	    //Fields automatically added
             "url": "https://www.mywebsite.com/path1/path2/",
             "path": "/path1/path2/",
             "referrer": "https:///www.google.fr",
             "title": "My page title",
+	    
+	    //Mapping required
 	    "user": {
 			"id": "12345",
 			"email": "toto@domain.fr",
 			"consent_categories": ["1", "3"]
 		}
 	},
-         "page": {
+	
+        //Fields automatically added
+        "page": {
 	    "title": "Search page",
 	    "url": "https://shop.com/search?q=...", 
 	    "lang": "en",
@@ -31,6 +40,7 @@ Event example :
 				"height": 568
 	 		}
 	  },
+	  //Fields automatically added
 	  "device": {
 	    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
 	    "ip": "102.3.4.56",
@@ -38,6 +48,7 @@ Event example :
 	    "cookie": "_fbp=123; _fbc=456; _ga=789", 
 	    "timezone": "Europe/Paris"
 	 },
+        //Fields automatically added
 	"event_timestamp": "1639044446636", 
 	"generatorVersion": "10.0",
 	"containerVersion": "3.1"
