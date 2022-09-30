@@ -6,7 +6,7 @@ Kameleoon is an AI personalization and A/B testing SaaS platform for product man
 
 The Kameleoon (events) destination provides the following key features:
 
-* **Events structure**: our [Event reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Kameleoon's Goal ID configuration](https://help.kameleoon.com/manage-goals/), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) fits [Kameleoon's Goal ID configuration](https://help.kameleoon.com/manage-goals/), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 
 ## Destination setup
