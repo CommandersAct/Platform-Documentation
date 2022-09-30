@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 30/09/2022
+
+Added a data quality indicators description in Source Overview
+
+{% content-ref url="../features/integrations/sources/overview.md" %}
+[overview.md](../features/integrations/sources/overview.md)
+{% endcontent-ref %}
+
 ## 22/09/2022
 
 Documentation on how to migrate from serverside v1
