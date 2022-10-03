@@ -17,6 +17,8 @@ description: >-
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (5).png>)
+  * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
+    <img src="../.gitbook/assets/image.png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
     * Supporting TVOS Consent 5.1.2&#x20;
     * Disclosure for IAB's vendors
