@@ -11,17 +11,17 @@ In the drop down list you will find predefined filters and a custom filter.
 
 Below is the list of the predefined filters and the CA event property it correspond to :
 * Currency --> currency
-* Event Type --> event_name (root property of the event)
+* Event Type --> event_name *(root property of the event)*
 * Country --> country
 * Coupon --> coupon
-* Method --> method *(e.g.: method used to login) *
-* Name --> name (nb. "name" is a property usually refering to a product and valued with its name)
-* Path --> path (nb. "path" is the path of the url where the event is triggered)
+* Method --> method *(e.g.: method used to login)*
+* Name --> name *(name usually refers to a product and is valued with the product name)*
+* Path --> path *(path of the page url where the event occurs)*
 * Payment Method --> payment_method
-* Referrer --> referrer (nb. "referrer" is the referrer of the url where the event is triggered)
-* Title --> title (nb. "title" is the title of the url where the event is triggered)
-* Type --> type (nb. "type" is the type of conversion usually valued with "online", "offline", "call" and so on)
-* URL --> url (nb. "url" is the url of the page where the event is triggered)
+* Referrer --> referrer *(referrer of the page where the event occurs)*
+* Title --> title *(title of the page where the event occurs)*
+* Type --> type *(the type of conversion usually valued with "online", "offline", "call" and so on)*
+* URL --> url *(url of the page where the event occurs)*
 
 ### CUSTOM FILTER
 
