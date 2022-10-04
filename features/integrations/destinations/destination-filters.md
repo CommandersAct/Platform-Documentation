@@ -23,7 +23,7 @@ Below is the list of the predefined filters and the CA event property it corresp
 * Type --> type (nb. "type" is the type of conversion usually valued with "online", "offline", "call" and so on)
 * URL --> url (nb. "url" is the url of the page where the event is triggered)
 
-CUSTOM FILTER
+### CUSTOM FILTER
 
 A "Custom" filter can be use when predifined ones are not sufficient.
 It can be either used to filter events based on a specific property or even to combine several properties.
