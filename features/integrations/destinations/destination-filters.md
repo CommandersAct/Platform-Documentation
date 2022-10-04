@@ -7,7 +7,7 @@ Please note that the interface of this feature is going to evolve to provide the
 With filters, you have the possibility to define some conditions. As a result, some events will be sent and some don't, according to your conditions.
 In the drop down list you will find predefined filters and a custom filter.
 
-PREDFINED FILTERS
+### PREDEFINED FILTERS
 
 Below is the list of the predefined filters and the CA event property it correspond to :
 * Currency --> currency
