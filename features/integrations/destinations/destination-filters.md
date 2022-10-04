@@ -11,7 +11,7 @@ In the drop down list you will find predefined filters and a custom filter.
 
 Below is the list of the predefined filters and the CA event property it correspond to :
 * Currency --> currency
-* Event Type --> event_name (nb. event_name is the name of the event)
+* Event Type --> event_name (root property of the event)
 * Country --> country
 * Coupon --> coupon
 * Method --> method (nb. "method" is a property usually valued with the method used to login) 
