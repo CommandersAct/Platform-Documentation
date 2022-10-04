@@ -14,7 +14,7 @@ Below is the list of the predefined filters and the CA event property it corresp
 * Event Type --> event_name (root property of the event)
 * Country --> country
 * Coupon --> coupon
-* Method --> method (nb. "method" is a property usually valued with the method used to login) 
+* Method --> method *(e.g.: method used to login) *
 * Name --> name (nb. "name" is a property usually refering to a product and valued with its name)
 * Path --> path (nb. "path" is the path of the url where the event is triggered)
 * Payment Method --> payment_method
