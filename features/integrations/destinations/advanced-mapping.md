@@ -12,4 +12,4 @@ _Properties transformation_ support currently renaming or deleting properties.
 
 Enter on the left the property name you want to add or delete. Then enter on the right the property name to map (or leave empty to remove the property)
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>

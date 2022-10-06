@@ -296,7 +296,7 @@ Ex: type ‘Lab’ and the platform will suggest you ‘Label’.
 
 This feature allows you to copy values stored at the event level (pages, views, clicks, conversions) and paste to the user level. You can aggregate data at the user level in order to consolidate all the data around one unique user.
 
-![](<../../../.gitbook/assets/image (7) (1) (2).png>)
+![](<../../../.gitbook/assets/image (7) (1).png>)
 
 ![](<../../../.gitbook/assets/image (5) (3).png>)New functionality: copy the data you need stored on all universes (pages, views, clicks and conversion) to the user level. As a result, the data will be stored for life (in respect with GDPR) and not deleted after 30 days (usually 30 days but depends on your contract).
 
