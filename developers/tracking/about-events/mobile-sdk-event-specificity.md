@@ -1,6 +1,6 @@
 # Mobile App event specificity
 
-1. [Event SDK mapping](##Event SDK mapping)
+1. [Event SDK mapping](#event-sdk-mapping)
 2. [Event specificity for mobile app](##Event specificity for mobile app)
 3. [Fields details](##Fields details)
 4. [device](###device)
