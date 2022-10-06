@@ -49,10 +49,6 @@ Before you get started with this destination, make sure you can access the [Snap
 
 ## Field Mappings
 
-{% hint style="info" %}
-The Snapchat property<mark style="color:blue;">`integration`</mark>is always set as<mark style="color:blue;">`tag-commander`</mark>.
-{% endhint %}
-
 | Commanders Act Properties                                 | Snapchat Properties              |
 | --------------------------------------------------------- | -------------------------------- |
 | `event_timestamp`                                         | `timestamp` **\[1]**             |

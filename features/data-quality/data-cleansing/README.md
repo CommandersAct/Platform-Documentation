@@ -10,4 +10,4 @@ Transform/fix your events before to send them to destinations
 Documentation in progress
 {% endhint %}
 
-<img src="../../../.gitbook/assets/Live Normalization new transfo (1).png" alt="" data-size="original">![](<../../../.gitbook/assets/Live Normalization \[READY] (1).png>)
+<img src="../../../.gitbook/assets/Live Normalization new transfo (1).png" alt="" data-size="original">![](<../../../.gitbook/assets/Live Normalization \[READY] (1) (1).png>)
