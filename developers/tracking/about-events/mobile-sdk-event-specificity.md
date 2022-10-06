@@ -1,14 +1,14 @@
 # Mobile App event specificity
 
 1. [Event SDK mapping](#event-sdk-mapping)
-2. [Event specificity for mobile app](##Event specificity for mobile app)
-3. [Fields details](##Fields details)
-4. [device](###device)
-5. [device -> os](###device -> os)
-6. [device -> screen](###device -> screen)
-7. [device -> network](###device -> network)
-8. [device -> Lifecycle](###device -> Lifecycle)
-9. [app](###app)
+2. [Event specificity for mobile app](#event-specificity-for-mobile-app)
+3. [Fields details](#fields-details)
+4. [device](#device)
+5. [device -> os](#device---os)
+6. [device -> screen](#device---screen)
+7. [device -> network](#device---network)
+8. [device -> Lifecycle](#device---lifecycle)
+9. [app](#app)
 
 A full event is the addition of event specific information and data gathered by the SDK.
 For each event you'll find in the documentation "events reference" all the possible properties and the mandatory ones.
