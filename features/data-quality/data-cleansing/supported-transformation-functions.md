@@ -1,8 +1,14 @@
 # Supported transformation functions
 
+In the formula input, you can can write basic or complex expression to transform the data.\
+\
+Expressions are composed of either a value, a function, an operation, or another expression in parenthesis. See below for the description of each one of them.
 
+{% hint style="info" %}
+Functions can be nested, ex: `SHA256(LOWER(user.email))`
+{% endhint %}
 
-
+## Available functions
 
 | FUNCTION NAME                            | WHAT IT DOES                                                                                                                                                    |
 | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,6 +32,27 @@
 | CHAR()                                   | Returns the character specified by a number                                                                                                                     |
 | IF(condition,resultIfTrue,resultIfFalse) | Returns the second argument if the first argument is true, and third argument if otherwise                                                                      |
 | ISEMPTY(value)                           | Returns whether the value is empty or not                                                                                                                       |
-| AND(condition1, condition2)              | Logical AND, checks to see that both conditions are true                                                                                                        |
-| OR(condition1, condition2)               | Logical OR, Checks to see if either one of the conditions is true                                                                                               |
 | NOT(condition)                           | Logical NOT, reverses the logic of its argument, true becomes false and vice versa                                                                              |
+
+## Operators
+
+| **Operator**                            | **Description**                                                                                                                                                                                                     |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| AND or &&                               | Do a boolean AND between the two parts                                                                                                                                                                              |
+| OR or \|\|                              | Do a boolean OR between the two parts                                                                                                                                                                               |
+| NOT()                                   | Do a boolean NOT on the expression                                                                                                                                                                                  |
+| =, ==, or IN                            | <p>Return true if the left part is equal to the right part<br>If one of the part is an array, check if some values are in equal between the two parts</p>                                                           |
+| !=, <>, or !IN                          | Inverse of the above                                                                                                                                                                                                |
+| <, >, <=, or >=                         | <p>Compare two values<br>If one of the values is an array, check that at least one of the value match.</p>                                                                                                          |
+| BETWEEN()                               | Check if the left value is between the two values passed as arguments.If the left value is an array, check that at least one of the value match.                                                                    |
+| \~ or !\~                               | <p>Check if the left value match the regex in the right value (or doesn’t match if !~). The regex language is the javascript one.<br>If the left value is an array, check that at least one of the value match.</p> |
+| STARTSWITH(), ENDSWITH(), or CONTAINS() | <p>Check if the left value starts with, ends with, or contains the right value.<br>If the left value is an array, check that at least one of the value match.</p>                                                   |
+| \* or /                                 | Multiplication or division                                                                                                                                                                                          |
+| + or -                                  | Addition / concatenation or substraction                                                                                                                                                                            |
+
+## Examples
+
+Scenario 1: Create a Flag that shows if Consumers’ Primary Address is in California\
+`IF(EXTRACT(city_state, '-', 1) == " CA", "TRUE", "FALSE")`
+
+``
