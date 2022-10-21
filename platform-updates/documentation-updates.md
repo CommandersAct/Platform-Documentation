@@ -4,20 +4,6 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## 21/10/2022
-
-Revamp **Identity resolution** documentation
-
-{% content-ref url="../features/identity-resolution.md" %}
-[identity-resolution.md](../features/identity-resolution.md)
-{% endcontent-ref %}
-
-Enrich Data cleansing **transformation functions** documentation
-
-{% content-ref url="../features/data-quality/data-cleansing/supported-transformation-functions.md" %}
-[supported-transformation-functions.md](../features/data-quality/data-cleansing/supported-transformation-functions.md)
-{% endcontent-ref %}
-
 ## 30/09/2022
 
 Added a data quality indicators description in Source Overview
