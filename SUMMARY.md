@@ -149,7 +149,7 @@
   * [Sources data quality](features/data-quality/data-quality.md)
   * [Data cleansing](features/data-quality/data-cleansing/README.md)
     * [Supported transformation functions](features/data-quality/data-cleansing/supported-transformation-functions.md)
-* [Identity resolution](features/identity-resolution/README.md)
+* [Identity resolution](features/identity-resolution.md)
   * [Migrate from Fuse v1 to Fuse v2](features/identity-resolution/migrate-from-fuse-v1-to-fuse-v2.md)
 * [Enrichments](features/enrichments/README.md)
   * [Augmented User Attributes](features/enrichments/augmented-user-attributes/README.md)
