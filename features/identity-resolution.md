@@ -5,7 +5,7 @@ description: Identity graph
 # Identity resolution
 
 Identity resolution (aka Fuse v2) is our **live identity reconciliation feature**. \
-Your customers are using many devices, switching from one channel to another (web, mobile, shops, ads…) and would like a personalized experience across all these devices/channels, from the moment he has given his consent in your CMP.
+Your customers are using many devices, switching from one channel to another (web, mobile, shops, ads…) and would like a personalized experience across all these devices/channels, from the moment he has given his consent within the [CMP](consent-management/).
 
 For example, a customer can visit your website during the day with his laptop, then click on an ad and come back later to buy with his mobile phone and contact the customer service 2 days after.\
 Your goal is to unify all these actions around one and unique user, the challenge being often that this date is stored in many systems: your CRM, your website, your ad agency, your customer service system…\
