@@ -112,7 +112,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 {% hint style="info" %}
 **\[1]** Boolean value:<mark style="color:blue;">`true`</mark>or<mark style="color:blue;">`false`</mark>.\
 **\[2]** Sum all<mark style="color:blue;">`properties.items.X.quantity`</mark>.\
-**\[3]** Depending on the drop-down selection (See<mark style="color:blue;">`User Identifier`</mark>in the<mark style="color:blue;">`Configuration`</mark>section), a specific Commanders Act property is used.&#x20;
+**\[3]** Depending on the drop-down selection (See<mark style="color:blue;">`User Identifier`</mark>in the[<mark style="color:blue;">`Configuration`</mark>](at-internet.md#configuration)section), a specific Commanders Act property is used.&#x20;
 {% endhint %}
 
 #### Headers parameters
