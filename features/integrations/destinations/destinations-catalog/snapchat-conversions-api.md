@@ -50,32 +50,40 @@ Before you get started with this destination, make sure you can access the [Snap
 
 ## Field Mappings
 
+{% hint style="info" %}
+If you're also using Snapchat Pixel SDK, this destination will set the unique visitor identifier as value for the Snapchat<mark style="color:blue;">`uuid_c1`</mark>property by looking for the Commanders Act<mark style="color:blue;">`partners.snapchat.uuid_c1`</mark>property. If it's not present, the cookie <mark style="color:blue;">**\_scid**</mark> is used.
+{% endhint %}
+
 | Commanders Act Properties                                 | Snapchat Properties              |
 | --------------------------------------------------------- | -------------------------------- |
 | `event_timestamp`                                         | `timestamp` **\[1]**             |
+| `Pixel Id (WEB)`                                          | `pixel_id`                       |
+| `Snap App Id (APP)`                                       | `snap_app_id`                    |
 | `(app.name)`                                              | `event_conversion_type` **\[2]** |
+| `app.namespace`                                           | `app_id`                         |
+| `client_dedup_id`                                         | `client_dedup_id` **\[3]**       |
 | `properties.items.X.id`                                   | `item_ids.X`                     |
 | `properties.items.length`                                 | `number_items`                   |
 | `properties.value`                                        | `price`                          |
 | `properties.currency`                                     | `currency`                       |
 | `properties.id`                                           | `transaction_id`                 |
 | `properties.search_term`                                  | `search_string`                  |
+| `device.ip`                                               | `hashed_ip_address` **\[4]**     |
 | `device.user_agent`                                       | `user_agent`                     |
-| `device.ip`                                               | `hashed_ip_address` **\[3]**     |
-| `client_dedup_id`                                         | `client_dedup_id` **\[4]**       |
-| `app.namespace`                                           | `app_id`                         |
-| `Snap App Id (APP)`                                       | `snap_app_id`                    |
 | `device.advertising_id`                                   | `hashed_mobile_ad_id`            |
 | `device.idfv`                                             | `hashed_idfv`                    |
-| `Pixel Id (WEB)`                                          | `pixel_id`                       |
-| `properties.user.email_sha256` or `properties.user.email` | `hashed_email` **\[5]**          |
-| `properties.user.phone`                                   | `hashed_phone_number` **\[6]**   |
+| `partners.snapchat.uuid_c1`                               | `uuid_c1` **\[5]**               |
+| `device.model`                                            | `device_model`                   |
+| `device.os`                                               | `os_version`                     |
+| `properties.user.email_sha256` or `properties.user.email` | `hashed_email` **\[6]**          |
+| `properties.user.phone`                                   | `hashed_phone_number` **\[7]**   |
 
 {% hint style="info" %}
 **\[1]** Field automatically generated when it's not set.\
 **\[2]** If<mark style="color:blue;">`app.name`</mark>is defined then this field is set with <mark style="color:blue;">`MOBILE_APP`</mark>, otherwise,<mark style="color:blue;">`WEB`</mark>`.`\
-``**\[3]** Field automatically hashed.\
-**\[4]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same`client_dedup_id`across all of them. This will be used within a 48 hour scope of the first occurrence.\
-**\[5]** In case<mark style="color:blue;">`properties.user.email_sha256`</mark>is not provided, <mark style="color:blue;">`properties.user.email`</mark>is hashed and used in its place.\
-**\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).
+**\[3]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same`client_dedup_id`across all of them. This will be used within a 48 hour scope of the first occurrence.\
+``**\[4]** Field automatically hashed.\
+**\[5]**<mark style="color:blue;">`partners.snapchat.uuid_c1`</mark>has priority over cookie <mark style="color:blue;">**\_scid**</mark>.\
+**\[6]** In case<mark style="color:blue;">`properties.user.email_sha256`</mark>is not provided, <mark style="color:blue;">`properties.user.email`</mark>is hashed and used in its place.\
+**\[7]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).
 {% endhint %}
