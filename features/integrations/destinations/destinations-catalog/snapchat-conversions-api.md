@@ -72,9 +72,9 @@ If you're also using Snapchat Pixel SDK, this destination will set the unique vi
 | `device.user_agent`                                       | `user_agent`                     |
 | `device.advertising_id`                                   | `hashed_mobile_ad_id`            |
 | `device.idfv`                                             | `hashed_idfv`                    |
-| `partners.snapchat.uuid_c1`                               | `uuid_c1` **\[5]**               |
 | `device.model`                                            | `device_model`                   |
 | `device.os`                                               | `os_version`                     |
+| `partners.snapchat.uuid_c1`                               | `uuid_c1` **\[5]**               |
 | `properties.user.email_sha256` or `properties.user.email` | `hashed_email` **\[6]**          |
 | `properties.user.phone`                                   | `hashed_phone_number` **\[7]**   |
 
