@@ -13,13 +13,13 @@ It turns a legal page into a preference center that is way more valuable for a c
 
 
 
-Marketing Preferences Center is a realtime searchable nosql database. We provide also a dedicated API to read and/or write consents on this database&#x20;
+Marketing Preferences Center is a realtime searchable nosql database. We provide also a dedicated API to read and/or write preferences/consents on this database&#x20;
 
 {% embed url="https://community.commandersact.com/consent-management/api/get-consents" %}
 
 ·      Consents are collected through our CMP solution (native integration)
 
-·      Consents coming from a CRM database could be added with our FTP importer files or our API ([https://community.commandersact.com/trustcommander/api/get-consents](https://community.commandersact.com/trustcommander/api/get-consents))
+·      Preferences coming from a CRM database could be added with the [FTP importer files](../integrations/sources/sources-catalog/import-crm-users/users-file-importer.md) or [API](../integrations/sources/sources-catalog/import-crm-users/api-users.md#user)&#x20;
 
 ·      Our customers can personalize the look and feel of their marketing preferences center page, we don’t host the webpage.
 
