@@ -29,4 +29,4 @@ Marketing Preferences Center is a realtime searchable nosql database. We provide
 
 ### Limitations:
 
-* The API accepts a <mark style="color:orange;">**maximum of 20 preferences**</mark>
+* The API accepts a maximum of 20 preferences
