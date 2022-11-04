@@ -27,7 +27,7 @@
     * [Sources Catalog](features/integrations/sources/sources-catalog/README.md)
       * [Google Tag Manager (GTM)](features/integrations/sources/sources-catalog/gtm.md)
       * [HTTP tracking API source](features/integrations/sources/sources-catalog/http-tracking-api.md)
-      * [Javascript SDK](developers/tracking/javascript-sdk.md)
+      * [Javascript SDK](features/integrations/sources/sources-catalog/js-sdk.md)
       * [Web container](features/integrations/sources/sources-catalog/containers.md)
       * [iOS](features/integrations/sources/sources-catalog/ios.md)
       * [Android](features/integrations/sources/sources-catalog/android.md)
