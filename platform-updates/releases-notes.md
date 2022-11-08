@@ -6,19 +6,47 @@ description: >-
 
 # Release notes
 
+## Release 10.0.5 - 24/10/22
+
+* **Data management - new feature:**
+  * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 09/11._\
+    <img src="../.gitbook/assets/image (2).png" alt="" data-size="original">![](<../.gitbook/assets/image (1).png>)
+* **Enrichment - new feature:**
+  *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
+      Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
+      (closed beta) _Public opening on 14/11._\
+      ****
+
+      <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+*   **Destinations improvements:**
+
+    * New destinations: [Commission Junction](../features/integrations/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/integrations/destinations/destinations-catalog/google-customer-match.md) (closed beta)
+    * New feature : **smart mapping** (closed alpha) : visualize/edit the data mapping done automatically by the system between your event properties and the destination's API.\
+      _This feature will be progressively open on each destination during next months._\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+    * Enhancement on existing destinations: Tradedoubler, Criteo conversion, Snapchat, GEC, TikTok, Kwanko
+    * Event delivery: error's labels enhancement, easier to understand what is wrong
+* **Sources enhancements:**
+  * Web container : Add a summary/setup guide step.
+* **Campaign analytics - new feature:**
+  * New **whitelist** feature for landing page redirections (closed beta)
+
 ## Release 10.0.4 - 24/09/22
 
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
     ![](<../.gitbook/assets/image (7).png>)
-  * Onboarding tour: \
+  * **Onboarding tour:** \
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
     <img src="../.gitbook/assets/image (1) (1) (3).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (1).png>)
+    ![](<../.gitbook/assets/image (1) (2).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
-    <img src="../.gitbook/assets/image.png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (5).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
     * Supporting TVOS Consent 5.1.2&#x20;
     * Disclosure for IAB's vendors
@@ -29,7 +57,7 @@ description: >-
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (3).png>)
+    ![](<../.gitbook/assets/image (3) (1).png>)
 
 
 
