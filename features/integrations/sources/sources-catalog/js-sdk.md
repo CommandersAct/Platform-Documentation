@@ -58,6 +58,10 @@ cact('config', { siteId: 1234, sourceKey: 'abcd' });
 
 ## Send event <a href="#send-event" id="send-event"></a>
 
+{% hint style="info" %}
+To use the API, you must have either a web container on the page **or** the JS SDK library script : [https://cdn.tagcommander.com/events/sdk.js](https://cdn.tagcommander.com/events/sdk.js)
+{% endhint %}
+
 To send event data to the serverside Commanders Act platform, use this command:
 
 ```javascript
