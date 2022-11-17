@@ -14,13 +14,13 @@ description: >-
 * **Enrichment - new feature:**
   *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
-      (closed beta) _Public opening on 14/11._\
+      (closed beta) _Public opening on 18/11._\
       ****
 
       <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
-    * New destinations: [Commission Junction](../features/integrations/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/integrations/destinations/destinations-catalog/google-customer-match.md) (closed beta)
+    * New destinations: [Commission Junction](../features/integrations/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/integrations/destinations/destinations-catalog/google-customer-match.md) (public beta)
     * New feature : **smart mapping** (closed alpha) : visualize/edit the data mapping done automatically by the system between your event properties and the destination's API.\
       _This feature will be progressively open on each destination during next months._\
 
