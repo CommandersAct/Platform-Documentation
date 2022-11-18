@@ -1,6 +1,6 @@
 # Google Customer Match
 
-Google Customer Match allows you to push users to Google Ads. The matching key is email (SHA-256 or in clear only).
+Google Customer Match allows you to push users to Google Ads. Matching keys are email, phone or address (SHA-256 or in clear only).
 
 You can create an audience segment, push it to Google Ads and activate it. Users matched could be then activated on Google services (Search, Display network, Gmail, Youtube, Google Shopping...).
 
@@ -15,7 +15,50 @@ You can create an audience segment, push it to Google Ads and activate it. Users
 
 ​[https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer\_match\_considerations](https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer\_match\_considerations)​
 
-## How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
+## \[New version] How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
+
+On the new platform, select Google Customer Match on the destinations catalog.
+
+Select All users or one or many segments.
+
+### Authentication:
+
+Connect directly to your Google Ads account. Select your existing account if you have already configured it, or configure a new one.
+
+#### New configuration:&#x20;
+
+Click on the link and a new tab will be opened (Connector Credentials).
+
+{% hint style="info" %}
+Only admin users have access to the Connector Credentials menu (also available in the Administration menu)
+{% endhint %}
+
+On the Connector Credentials page, click on '**Add connector credentials**' and select Google Ads.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.44.38.png" alt=""><figcaption></figcaption></figure>
+
+Login to your Google Ads account and the authentication is done.&#x20;
+
+Then go back to the connector configuration page.
+
+### Destination configuration
+
+#### Segment mappings
+
+Segments selected will appear in the segment mappings section. You can map here selected segments to a customer list previously created in Google Ads interface (this is where the audience from segments will be sent).&#x20;
+
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.47.49.png" alt=""><figcaption></figcaption></figure>
+
+#### Mapping User Identifier
+
+\[in progress]
+
+## \[Old version - deprecated] How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
+
+{% hint style="info" %}
+Method available only on the old platform, if you haven't migrated yet. \
+Please note this version only support email (SHA-256 or plain) as matching key.
+{% endhint %}
 
 ### **Google Ads customer ID** <a href="#google-ads-customer-id" id="google-ads-customer-id"></a>
 
