@@ -6,7 +6,6 @@ You can create an audience segment, push it to Google Ads and activate it. Users
 
 ## **What are the requirement to sync with Google Ads?** <a href="#what-are-the-requirement-to-sync.-datacommanders-with-google-ads" id="what-are-the-requirement-to-sync.-datacommanders-with-google-ads"></a>
 
-* Sync. key can only be SHA256 email hash in Europe (phone number, mailing address and mobile device ID are for the US)
 * Audience size: minimum 1000 matched users (otherwise it will be rejected for privacy purpose)
 * Data collection: it is only allowed to import first party data (collected via your website/app/point of sale)
 * Available for accounts with good history of policy compliance, good payment history, at least 90 days history, more than USD 50,000 total lifetime spend ([https://support.google.com/google-ads/answer/6299717](https://support.google.com/google-ads/answer/6299717))
@@ -19,7 +18,11 @@ You can create an audience segment, push it to Google Ads and activate it. Users
 
 On the new platform, select Google Customer Match on the destinations catalog.
 
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-21 à 11.07.25.png" alt=""><figcaption></figcaption></figure>
+
 Select All users or one or many segments.
+
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-21 à 11.09.26.png" alt=""><figcaption></figcaption></figure>
 
 ### Authentication:
 
@@ -39,7 +42,7 @@ On the Connector Credentials page, click on '**Add connector credentials**' and 
 
 Login to your Google Ads account and the authentication is done.&#x20;
 
-Then go back to the connector configuration page.
+Then go back to the connector configuration page and select the account previously configured.
 
 ### Destination configuration
 
@@ -47,11 +50,30 @@ Then go back to the connector configuration page.
 
 Segments selected will appear in the segment mappings section. You can map here selected segments to a customer list previously created in Google Ads interface (this is where the audience from segments will be sent).&#x20;
 
-<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.47.49.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-21 à 11.11.59.png" alt=""><figcaption></figcaption></figure>
 
 #### Mapping User Identifier
 
-\[in progress]
+In this section, you can define matching keys:
+
+At least:
+
+* Email address: in SHA-256 or plain (we hash it in SHA-256 before to send it)
+* and/or Phone number: in SHA-256 or plain (we hash it in SHA-256 before to send it)
+
+Complementary information (optional):
+
+* First name: in SHA-256 or plain (we hash it in SHA-256 before to send it)&#x20;
+* Last name: in SHA-256 or plain (we hash it in SHA-256 before to send it)
+* Country code (2 letters): in SHA-256 or plain (we hash it in SHA-256 before to send it)
+* Postal code: in SHA-256 or plain (we hash it in SHA-256 before to send it)
+* Postal address: in SHA-256 or plain (we hash it in SHA-256 before to send it)
+
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.47.49.png" alt=""><figcaption></figcaption></figure>
+
+Last step, simply define a running period and click on Save. The destination will start to send users as soon as they enter in selected segments.
+
+\----------------------------------------------------------------------------------------------------
 
 ## \[Old version - deprecated] How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
 
