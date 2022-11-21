@@ -52,6 +52,11 @@ Segments selected will appear in the segment mappings section. You can map here 
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-21 à 11.11.59.png" alt=""><figcaption></figcaption></figure>
 
+If you haven't created a customer list yet, you can do it on Google Ads interface:
+
+* On your Google Ads account, click on ‘Tools and settings’ and ‘Audience manager’.
+* Then in ‘Audience lists’, click on the + and select ‘Customer list’ (or user list).
+
 #### Mapping User Identifier
 
 In this section, you can define matching keys:
