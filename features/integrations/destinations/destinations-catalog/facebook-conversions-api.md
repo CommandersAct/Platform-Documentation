@@ -217,3 +217,8 @@ cact('trigger', 'purchase', {
     }
 });
 ```
+
+## Check results on Facebook interface
+
+To view quality matching on Facebook interface, go here:\
+**Events manager** **>** **select the event > View Details > Event Matching > Rating Background**
