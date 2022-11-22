@@ -159,7 +159,7 @@
   * [Segment](features/customers/segment/README.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)
     * [Segment stats](features/customers/segment/segment-stats.md)
-* [Analyses](features/analyses/README.md)
+* [Analysis](features/analyses/README.md)
   * [Campaign analysis](features/analyses/campaign-analysis/README.md)
     * [Attribution](features/analyses/campaign-analysis/attribution.md)
     * [Control Group (Beta - release soon)](features/analyses/campaign-analysis/control-group-beta-release-soon.md)
