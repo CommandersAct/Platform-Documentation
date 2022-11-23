@@ -103,6 +103,7 @@
       * [Mindlytix](features/integrations/destinations/destinations-catalog/mindlytix.md)
       * [OXID](features/integrations/destinations/destinations-catalog/oxid.md)
       * [Optimizely](features/integrations/destinations/destinations-catalog/optimizely.md)
+      * [Partnerize](features/integrations/destinations/destinations-catalog/partnerize.md)
       * [Piano Analytics (AT Internet)](features/integrations/destinations/destinations-catalog/at-internet.md)
       * [Prediggo](features/integrations/destinations/destinations-catalog/prediggo.md)
       * [Quantcast](features/integrations/destinations/destinations-catalog/quantcast.md)
