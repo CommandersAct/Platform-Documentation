@@ -1,7 +1,5 @@
 # Destinations overview
 
-## What is a destination ?
-
 ## Destination list
 
 Find here the full list of destinations already configured.
