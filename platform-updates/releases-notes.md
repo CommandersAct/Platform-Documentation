@@ -9,12 +9,12 @@ description: >-
 ## Release 10.0.5 - 24/10/22
 
 * **Data management - new feature:**
-  * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 09/11._\
+  * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21/11._\
     <img src="../.gitbook/assets/image (2).png" alt="" data-size="original">![](<../.gitbook/assets/image (1).png>)
 * **Enrichment - new feature:**
   *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
-      (closed beta) _Public opening on 18/11._\
+      (closed beta) _Public opening on 28/11._\
       ****
 
       <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
