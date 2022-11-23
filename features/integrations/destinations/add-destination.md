@@ -2,7 +2,7 @@
 
 ## Destination list
 
-Find here the full list of destinations already configured.
+Find here the full list of [destinations](../concepts.md#destination) already configured.
 
 You can search a destination by name and filter on environment (production or staging), status (active or inactive) or on specific source.
 
