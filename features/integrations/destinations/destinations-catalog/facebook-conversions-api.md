@@ -124,28 +124,28 @@ integrations.facebook.event_id
 The following mappings are fully automated and do not require any additional configuration.\
 Any of the Commanders Act Standard Events in the table below will be sent as the corresponding Facebook Standard Event. The Facebook pixel [standard events documentation](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) has more information on these.
 
-| COMMANDERS ACT EVENTS   | FACEBOOK STANDARD EVENT |
-| ----------------------- | ----------------------- |
-| `begin_checkout`        | `InitiateCheckout`      |
-| `purchase`              | `Purchase`              |
-| `add_to_cart`           | `AddToCart`             |
-| `view_item`             | `ViewContent`           |
-| `view_item_list`        | `ViewContent`           |
-| `search`                | `Search`                |
-| `add_payment_info`      | `AddPaymentInfo`        |
-| `add_to_wishlist`       | `AddToWishlist`         |
-| `generate_lead`         | `Lead`                  |
-| `page_view`             | `PageView`              |
-| `complete_registration` | `CompleteRegistration`  |
-| `contact`               | `Contact`               |
-| `customize_product`     | `CustomizeProduct`      |
-| `donate`                | `Donate`                |
-| `find_location`         | `FindLocation`          |
-| `schedule`              | `Schedule`              |
-| `search`                | `Search`                |
-| `start_trial`           | `StartTrial`            |
-| `submit_application`    | `SubmitApplication`     |
-| `subscribe`             | `Subscribe`             |
+| COMMANDERS ACT EVENTS | FACEBOOK STANDARD EVENT |
+| --------------------- | ----------------------- |
+| `begin_checkout`      | `InitiateCheckout`      |
+| `purchase`            | `Purchase`              |
+| `add_to_cart`         | `AddToCart`             |
+| `view_item`           | `ViewContent`           |
+| `view_item_list`      | `ViewContent`           |
+| `search`              | `Search`                |
+| `add_payment_info`    | `AddPaymentInfo`        |
+| `add_to_wishlist`     | `AddToWishlist`         |
+| `generate_lead`       | `Lead`                  |
+| `page_view`           | `PageView`              |
+| `sign_up`             | `CompleteRegistration`  |
+| `contact`             | `Contact`               |
+| `customize_product`   | `CustomizeProduct`      |
+| `donate`              | `Donate`                |
+| `find_location`       | `FindLocation`          |
+| `schedule`            | `Schedule`              |
+| `search`              | `Search`                |
+| `start_trial`         | `StartTrial`            |
+| `submit_application`  | `SubmitApplication`     |
+| `subscribe`           | `Subscribe`             |
 
 ### Facebook Custom Events
 
