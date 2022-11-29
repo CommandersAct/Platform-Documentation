@@ -22,8 +22,8 @@ The Commission Junction destination provides the following key features:
 | Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `CJ Enterprise Id`        | <p><em><strong><code>Required</code></strong></em></p><p>Your "Enterprise ID" as provided by Commission Junction.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `CJ Event Cookie Name`    | <p><em><strong><code>Required</code></strong></em></p><p>Enter a cookie name holding CJ Event value. This value is passed by Commission Junction in landings (E.g. https://www.example.com/?cjevent=656e8fa049ec11ea8237023d0a240612).</p>                                                                                                                                                                                                                                                                                                                                                                   |
-| `Mapping`                 | <p><em><strong><code>Required</code></strong></em><br>Map your Commanders Act event(s) with CJ ActionId(s) by setting at least a  <code>Commanders Act Event Name</code> and a <code>CJ Action Id</code>.</p>                                                                                                                                                                                                                                                                                                                                                                                                |
+| `Mapping`                 | <p><em><strong><code>Required</code></strong></em><br>Map your Commanders Act event(s) with CJ ActionId(s) by setting at least a  <code>Commanders Act Event Name</code> and a <code>CJ Action Id</code>. At least one entry is required.</p>                                                                                                                                                                                                                                                                                                                                                                |
+| `CJ Event Cookie Name`    | Enter a cookie name holding CJ Event value. This value is passed by Commission Junction in landings (E.g. https://www.example.com/?cjevent=656e8fa049ec11ea8237023d0a240612). This is required if the "Smart Mapping" field `Click Id (cjevent)` is empty. The field `Click Id (cjevent)` has priority over this field.                                                                                                                                                                                                                                                                                      |
 | `Custom Event Properties` | Map your custom event properties by setting their field names in `Event property name` and adding the field name holding the value **** in `Commanders Act event property or static value`. E.g. if you input`size`in the `Event property name` and `properties.items.0.product.size` in `Commanders Act event property or static value`, you'll have a custom event property in CJ called`size`with a value based on the content of the field `properties.items.0.product.size` **\[1]**. You also have the option to set a static string/numeric value in `Commanders Act event property or static value`. |
 
 {% hint style="info" %}
@@ -32,26 +32,32 @@ The Commission Junction destination provides the following key features:
 
 ## Field Mappings
 
-| Commanders Act Properties                       | CJ Properties                  |
-| ----------------------------------------------- | ------------------------------ |
-| `CJ Enterprise Id`                              | `CID`                          |
-| `CJ Action Id`                                  | `TYPE`                         |
-| `CJ Event Cookie Name`                          | `CJEVENT`                      |
-| `event_timestamp`                               | `eventTime` **\[1]**           |
-| `properties.id`                                 | `OID`                          |
-| `properties.currency`                           | `currency`                     |
-| `properties.revenue`                            | `amount` **\[2]**              |
-| `properties.coupon`                             | `coupon`                       |
-| `properties.items.X.product.id`                 | `ITEMY` **\[3]**               |
-| `properties.items.X.product.price`              | `AMTY` **\[3]**                |
-| `properties.items.X.quantity`                   | `QTYY` **\[3]**                |
-| `properties.items.X.discount`                   | `DCNTY` **\[3]**               |
-| `Commanders Act event property or static value` | `Event property name` **\[4]** |
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.\
+Setting the [configuration](commission-junction.md#configuration) field <mark style="color:blue;">`CJ Event Cookie Name`</mark>is not mandatory if the "Smart Mapping" field<mark style="color:blue;">`Click Id (cjevent)`</mark>is set. The latter has precedence over the former.
+{% endhint %}
+
+| Commanders Act Properties                                                                           | CJ Properties                  |
+| --------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `CJ Enterprise Id`                                                                                  | `CID`                          |
+| `CJ Action Id`                                                                                      | `TYPE`                         |
+| <p><code>Click Id (cjevent)</code> <strong>[1]</strong></p><p><code>CJ Event Cookie Name</code></p> | `CJEVENT` **\[2]**             |
+| `event_timestamp`                                                                                   | `eventTime` **\[3]**           |
+| `properties.id`                                                                                     | `OID`                          |
+| `properties.currency`                                                                               | `currency`                     |
+| `properties.revenue`                                                                                | `amount` **\[4]**              |
+| `properties.coupon`                                                                                 | `coupon`                       |
+| `properties.items.X.product.id`                                                                     | `ITEMY` **\[5]**               |
+| `properties.items.X.product.price`                                                                  | `AMTY` **\[5]**                |
+| `properties.items.X.quantity`                                                                       | `QTYY` **\[5]**                |
+| `properties.items.X.discount`                                                                       | `DCNTY` **\[5]**               |
+| `Commanders Act event property or static value`                                                     | `Event property name` **\[6]** |
 
 {% hint style="info" %}
-**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
-**\[2]** If [items ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)are present, this property won't be included.\
-**\[3]** For each [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item):<mark style="color:blue;">`X`</mark>and<mark style="color:blue;">`Y`</mark>are incremental numbers, starting from<mark style="color:blue;">`0`</mark>and<mark style="color:blue;">`1`</mark>respectively.\
-**\[4]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration](commission-junction.md#configuration) for more details.\
-The<mark style="color:blue;">`signature`</mark>CJ optional property can be set using this feature.&#x20;
+**\[1]** "Smart Mapping" field.\
+**\[2]** <mark style="color:blue;">`Click Id (cjevent)`</mark> <mark style="color:blue;"></mark><mark style="color:blue;"></mark> has priority over <mark style="color:blue;">`CJ Event Cookie Name`</mark>.\
+**\[3]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
+**\[4]** If [items ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)are present, this property won't be included.\
+**\[5]** For each [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item):<mark style="color:blue;">`X`</mark>and<mark style="color:blue;">`Y`</mark>are incremental numbers, starting from<mark style="color:blue;">`0`</mark>and<mark style="color:blue;">`1`</mark>respectively.\
+**\[6]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration](commission-junction.md#configuration) for more details. The<mark style="color:blue;">`signature`</mark>CJ optional property can be set using this feature.&#x20;
 {% endhint %}
