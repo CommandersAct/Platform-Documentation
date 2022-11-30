@@ -2,9 +2,9 @@
 
 If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.
 
-The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API, GTM importer) or with a _javascript sandbox_ aproach :
+The destination builder allows you to create your own custom destination, either with a _**no**-code_ approach (Webhook, FTP, API, GTM importer) or with a _javascript sandbox_ aproach (_**low**-code_) :
 
-* Webhook/API/FTP destination builder
+* Webhook/API/FTP destination builder (no-code experience)
 * [JavaScript destination builder](javascript-destination-builder/) (JS sandbox)
 * GTM template importer (convert to JS sandbox template out of the box)
 

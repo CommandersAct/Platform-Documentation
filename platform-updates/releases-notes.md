@@ -10,7 +10,7 @@ description: >-
 
 * **Data management - new feature:**
   * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21/11._\
-    <img src="../.gitbook/assets/image (2) (5).png" alt="" data-size="original">![](<../.gitbook/assets/image (1) (6).png>)
+    <img src="../.gitbook/assets/image (2) (5).png" alt="" data-size="original">![](<../.gitbook/assets/image (1) (6) (1).png>)
 * **Enrichment - new feature:**
   *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
@@ -46,7 +46,7 @@ description: >-
   * Trend graph and quality indicator for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (1) (5).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
-    <img src="../.gitbook/assets/image (1) (4).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
     * Supporting TVOS Consent 5.1.2&#x20;
     * Disclosure for IAB's vendors
