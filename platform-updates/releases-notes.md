@@ -46,7 +46,7 @@ description: >-
   * Trend graph and quality indicator for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (1) (5).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
-    <img src="../.gitbook/assets/image (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
     * Supporting TVOS Consent 5.1.2&#x20;
     * Disclosure for IAB's vendors
@@ -114,7 +114,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](../.gitbook/assets/image.png)
+    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)
 
 ## Release 10.0.1 - 24/06/22
 

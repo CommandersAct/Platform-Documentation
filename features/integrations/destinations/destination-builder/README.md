@@ -2,11 +2,13 @@
 
 If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.
 
-The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API) or with a _javascript sandbox_ aproach :
+The destination builder allows you to create your own custom destination, either with a _no-code_ approach (Webhook, FTP, API, GTM importer) or with a _javascript sandbox_ aproach :
 
-* Webhook/API destination builder
-* FTP destination builder
+* Webhook/API/FTP destination builder
 * [JavaScript destination builder](javascript-destination-builder/) (JS sandbox)
+* GTM template importer (convert to JS sandbox template out of the box)
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
 
 ## Create and publish a destination
 
@@ -21,3 +23,12 @@ In the destination builder interface, you will be able to set:
 ![](<../../../../.gitbook/assets/image (3) (2).png>)
 
 Your destination can also be hosted on Github and automatically imported to facilitate updates on your side.
+
+{% hint style="info" %}
+The technology for destination's template javascript sandbox in the platform is, to a large extent, compatible with Google Tag manager templates. \
+In most cases, templates written for GTM run in Commanders'act with no (or few) changes
+{% endhint %}
+
+{% hint style="info" %}
+You can also import templates created on GTM inside your catalog in a few clics with a 100% no-code experience.
+{% endhint %}
