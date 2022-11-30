@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 30/11/2022
+
+Destination builder documentation update:
+
+{% content-ref url="../features/integrations/destinations/destination-builder/" %}
+[destination-builder](../features/integrations/destinations/destination-builder/)
+{% endcontent-ref %}
+
 ## 04/11/2022
 
 Destination documentation (updates):
