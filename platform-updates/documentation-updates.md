@@ -4,6 +4,18 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 02/12/2022
+
+Destination documentation (updates):
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/integrations/destinations/destinations-catalog/commission-junction.md" %}
+[commission-junction.md](../features/integrations/destinations/destinations-catalog/commission-junction.md)
+{% endcontent-ref %}
+
 ## 30/11/2022
 
 Destination builder documentation update:
