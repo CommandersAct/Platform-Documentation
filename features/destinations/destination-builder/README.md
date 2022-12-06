@@ -8,7 +8,7 @@ The destination builder allows you to create your own custom destination, either
 * [JavaScript destination builder](javascript-destination-builder/) (JS sandbox)
 * GTM template importer (convert to JS sandbox template out of the box)
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
 
 ## Create and publish a destination
 
@@ -20,7 +20,7 @@ In the destination builder interface, you will be able to set:
 * Destination settings, i.e. questions that will be asked to the user that will add this destination (e.g. token, account id, options ...)
 * Connector technical options (url, method, etc.) or JavaScript code
 
-![](<../../../../.gitbook/assets/image (3) (2).png>)
+![](<../../../.gitbook/assets/image (3) (2).png>)
 
 Your destination can also be hosted on Github and automatically imported to facilitate updates on your side.
 
