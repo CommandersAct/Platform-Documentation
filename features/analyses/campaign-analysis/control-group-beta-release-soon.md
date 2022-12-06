@@ -35,7 +35,7 @@ First, select the period of analysis: you can choose for example to read the res
 
 All the figures will be related to this analysis period.
 
-![](<../../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (3).png>)
 
 **Definition of each metrics:**
 
@@ -120,7 +120,7 @@ Formula:
 
 **Charts**
 
-![](<../../../.gitbook/assets/image (5) (1) (2).png>)
+![](<../../../.gitbook/assets/image (5) (1) (2) (1).png>)
 
 ### Conversion rate evolution
 

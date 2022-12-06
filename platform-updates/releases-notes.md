@@ -10,15 +10,15 @@ description: >-
 
 * Data Management – New feature:​
   * **Data Cleansing** no-code : **Rename event** public opening.\
-    ​![](<../.gitbook/assets/image (4).png>)
+    ​![](<../.gitbook/assets/image (1).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (14).png>)
+    ![](<../.gitbook/assets/image (5).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​\
-  ![](../.gitbook/assets/image.png)
+  ![](<../.gitbook/assets/image (3).png>)
 * Destinations:​
   * Destination builder **Sandbox JS**: Closed alpha\
-    ![](<../.gitbook/assets/image (15).png>)
+    ![](<../.gitbook/assets/image (6).png>)
   * **Google Enhanced Conversion** connector now supports more events​
   * **Commission Junction** : smart mapping adjustments and public opening​
   * **Google Univers Analytics**: closed beta
@@ -26,18 +26,18 @@ description: >-
   * **TikTok**: Add **Smart Mapping** : closed alpha
   * **Adobe Analytics** : closed alpha
 * Global Platform X:​
-  * **Even faster interfaces** on : CMP UI, client-side TMS UI, Administrations UI, Campaigns Analytics UI => closed alpha
+  * **Even faster interfaces** on : CMP UI, client-side TMS UI, Administrations UI, Campaigns Analytics UI => closed alpha. _Public opening on 13 Dec._
   * **Data Activation** features: public opening
 
 ## Release 10.0.5 - 24/10/22
 
 * **Data management - new feature:**
-  * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21/11._\
+  * ****[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21 Nov._\
     <img src="../.gitbook/assets/image (2) (5).png" alt="" data-size="original">![](<../.gitbook/assets/image (1) (6) (1).png>)
 * **Enrichment - new feature:**
   *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
-      (closed beta) _Public opening on 08/12._\
+      (closed beta) _Public opening on 08 Dec._\
       ****
 
       <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
@@ -67,7 +67,7 @@ description: >-
     <img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (1) (5).png>)
+    ![](<../.gitbook/assets/image (1) (5) (1).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
     <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
@@ -117,7 +117,7 @@ description: >-
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\
 
@@ -137,7 +137,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)
+    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (5).png>)
 
 ## Release 10.0.1 - 24/06/22
 
