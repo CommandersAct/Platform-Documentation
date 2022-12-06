@@ -20,7 +20,7 @@ description: >-
       <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
-    * New destinations: [Commission Junction](../features/integrations/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/integrations/destinations/destinations-catalog/google-customer-match.md) (public beta)
+    * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google-customer-match.md) (public beta)
     * New feature : **smart mapping** (closed alpha) : visualize/edit the data mapping done automatically by the system between your event properties and the destination's API.\
       _This feature will be progressively open on each destination during next months._\
 
@@ -67,23 +67,23 @@ description: >-
   * Live Events Inspector for sources, available both in Sources menu (for all sources) and on each source (tab Event Inspector). It allows to inspect/debug your incoming events​
 *   Destinations improvements: ​
 
-    * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/integrations/destinations/advanced-mapping.md) feature.
+    * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
         ![](<../.gitbook/assets/image (2) (3).png>)
 
 
 
-    * &#x20;[_Alerting_ ](../features/integrations/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
+    * &#x20;[_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
       Be alerted in real-time when one of your destination delivery drop below your threshold.\
       ![](<../.gitbook/assets/image (25).png>)\
 
     * Enhancement on existing destinations : Piano Analytics, Snapchat and Google Enhanced conversions
-    * [Webhook ](../features/integrations/destinations/destinations-catalog/webhook.md)enhancement : ability to use properties, static values, or a melt of both, everywhere (url, body, headers)​
+    * [Webhook ](../features/destinations/destinations-catalog/webhook.md)enhancement : ability to use properties, static values, or a melt of both, everywhere (url, body, headers)​
     * &#x20;New destinations :&#x20;
-      * [Matomo](../features/integrations/destinations/destinations-catalog/matomo.md)
-      * [Mapp](../features/integrations/destinations/destinations-catalog/mapp.md)
-    * Template importer (closed alpha) : import in the destination catalog your custom destination template build with the [sandbox JS ](../features/integrations/destinations/destination-builder/javascript-destination-builder/)\
+      * [Matomo](../features/destinations/destinations-catalog/matomo.md)
+      * [Mapp](../features/destinations/destinations-catalog/mapp.md)
+    * Template importer (closed alpha) : import in the destination catalog your custom destination template build with the [sandbox JS ](../features/destinations/destination-builder/javascript-destination-builder/)\
       (Compatible with GTM templates)
 * Campaign analysis -> Live Report builder look and feel enhancements
 * Minor UI enhancements:

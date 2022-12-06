@@ -2,7 +2,7 @@
 
 ## Fields automatically added to event&#x20;
 
-The [JS SDK](../../../features/integrations/sources/sources-catalog/js-sdk.md) and [Web container](../../../features/integrations/sources/sources-catalog/containers.md) add specific properties in the event regarding the browser.\
+The [JS SDK](../../../features/sources/sources-catalog/js-sdk.md) and [Web container](../../../features/sources/sources-catalog/containers.md) add specific properties in the event regarding the browser.\
 Event playload example :
 
 ```json

@@ -4,32 +4,41 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 06/12/2022
+
+* Re-arrangement of menus to find sources/destinations more easily
+* Event reference better arranged to simplify reading:
+
+{% content-ref url="../developers/tracking/events-reference.md" %}
+[events-reference.md](../developers/tracking/events-reference.md)
+{% endcontent-ref %}
+
 ## 02/12/2022
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/commission-junction.md" %}
-[commission-junction.md](../features/integrations/destinations/destinations-catalog/commission-junction.md)
+{% content-ref url="../features/destinations/destinations-catalog/commission-junction.md" %}
+[commission-junction.md](../features/destinations/destinations-catalog/commission-junction.md)
 {% endcontent-ref %}
 
 ## 30/11/2022
 
 Destination builder documentation update:
 
-{% content-ref url="../features/integrations/destinations/destination-builder/" %}
-[destination-builder](../features/integrations/destinations/destination-builder/)
+{% content-ref url="../features/destinations/destination-builder/" %}
+[destination-builder](../features/destinations/destination-builder/)
 {% endcontent-ref %}
 
 ## 04/11/2022
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
 ## 21/10/2022
@@ -48,16 +57,16 @@ Enrich Data cleansing **transformation functions** documentation
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 30/09/2022
 
 Added a data quality indicators description in Source Overview
 
-{% content-ref url="../features/integrations/sources/overview.md" %}
-[overview.md](../features/integrations/sources/overview.md)
+{% content-ref url="../features/sources/overview.md" %}
+[overview.md](../features/sources/overview.md)
 {% endcontent-ref %}
 
 ## 22/09/2022
@@ -72,30 +81,30 @@ Documentation on how to migrate from serverside v1
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/commission-junction.md" %}
-[commission-junction.md](../features/integrations/destinations/destinations-catalog/commission-junction.md)
+{% content-ref url="../features/destinations/destinations-catalog/commission-junction.md" %}
+[commission-junction.md](../features/destinations/destinations-catalog/commission-junction.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/integrations/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/effinity.md" %}
-[effinity.md](../features/integrations/destinations/destinations-catalog/effinity.md)
+{% content-ref url="../features/destinations/destinations-catalog/effinity.md" %}
+[effinity.md](../features/destinations/destinations-catalog/effinity.md)
 {% endcontent-ref %}
 
 ## 13/09/2022
 
 * Destination documentation (updates)
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/xandr.md" %}
-[xandr.md](../features/integrations/destinations/destinations-catalog/xandr.md)
+{% content-ref url="../features/destinations/destinations-catalog/xandr.md" %}
+[xandr.md](../features/destinations/destinations-catalog/xandr.md)
 {% endcontent-ref %}
 
 \+ 2 others
@@ -104,14 +113,14 @@ Destination documentation (updates):
 
 * Destination settings -> _Advanced mapping_ updated to _Properties transformation_:
 
-{% content-ref url="../features/integrations/destinations/advanced-mapping.md" %}
-[advanced-mapping.md](../features/integrations/destinations/advanced-mapping.md)
+{% content-ref url="../features/destinations/advanced-mapping.md" %}
+[advanced-mapping.md](../features/destinations/advanced-mapping.md)
 {% endcontent-ref %}
 
 * Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/abtasty.md" %}
-[abtasty.md](../features/integrations/destinations/destinations-catalog/abtasty.md)
+{% content-ref url="../features/destinations/destinations-catalog/abtasty.md" %}
+[abtasty.md](../features/destinations/destinations-catalog/abtasty.md)
 {% endcontent-ref %}
 
 \+ 10 others
@@ -120,18 +129,18 @@ Destination documentation (updates):
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/matomo.md" %}
-[matomo.md](../features/integrations/destinations/destinations-catalog/matomo.md)
+{% content-ref url="../features/destinations/destinations-catalog/matomo.md" %}
+[matomo.md](../features/destinations/destinations-catalog/matomo.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/mapp.md" %}
-[mapp.md](../features/integrations/destinations/destinations-catalog/mapp.md)
+{% content-ref url="../features/destinations/destinations-catalog/mapp.md" %}
+[mapp.md](../features/destinations/destinations-catalog/mapp.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 22/08/2022
@@ -158,28 +167,28 @@ Data quality documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
 ## 12/08/2022
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 05/08/2022
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/effinity.md" %}
-[effinity.md](../features/integrations/destinations/destinations-catalog/effinity.md)
+{% content-ref url="../features/destinations/destinations-catalog/effinity.md" %}
+[effinity.md](../features/destinations/destinations-catalog/effinity.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/kwanko.md" %}
-[kwanko.md](../features/integrations/destinations/destinations-catalog/kwanko.md)
+{% content-ref url="../features/destinations/destinations-catalog/kwanko.md" %}
+[kwanko.md](../features/destinations/destinations-catalog/kwanko.md)
 {% endcontent-ref %}
 
 ## 01/08/2022
@@ -194,52 +203,52 @@ Events collection documentation:
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/tradedoubler.md" %}
-[tradedoubler.md](../features/integrations/destinations/destinations-catalog/tradedoubler.md)
+{% content-ref url="../features/destinations/destinations-catalog/tradedoubler.md" %}
+[tradedoubler.md](../features/destinations/destinations-catalog/tradedoubler.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/awin.md" %}
-[awin.md](../features/integrations/destinations/destinations-catalog/awin.md)
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
 {% endcontent-ref %}
 
 ## 22/07/2022
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/integrations/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/integrations/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
 {% endcontent-ref %}
 
 ## 15/07/2022
 
 Destination documentation (updates):
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/integrations/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/integrations/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/awin.md" %}
-[awin.md](../features/integrations/destinations/destinations-catalog/awin.md)
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
 {% endcontent-ref %}
 
 ## 08/07/2022
@@ -250,42 +259,42 @@ Documentation updates for template [Commanders Act | OnSite CMP API](https://tag
 
 Destination documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/criteo-events.md" %}
-[criteo-events.md](../features/integrations/destinations/destinations-catalog/criteo-events.md)
+{% content-ref url="../features/destinations/destinations-catalog/criteo-events.md" %}
+[criteo-events.md](../features/destinations/destinations-catalog/criteo-events.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/integrations/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/kameleoon-events.md" %}
-[kameleoon-events.md](../features/integrations/destinations/destinations-catalog/kameleoon-events.md)
+{% content-ref url="../features/destinations/destinations-catalog/kameleoon-events.md" %}
+[kameleoon-events.md](../features/destinations/destinations-catalog/kameleoon-events.md)
 {% endcontent-ref %}
 
 ## 05/07/2022
 
 Mobile sources updates:&#x20;
 
-{% content-ref url="../features/integrations/sources/sources-catalog/ios.md" %}
-[ios.md](../features/integrations/sources/sources-catalog/ios.md)
+{% content-ref url="../features/sources/sources-catalog/ios.md" %}
+[ios.md](../features/sources/sources-catalog/ios.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/integrations/sources/sources-catalog/android.md" %}
-[android.md](../features/integrations/sources/sources-catalog/android.md)
+{% content-ref url="../features/sources/sources-catalog/android.md" %}
+[android.md](../features/sources/sources-catalog/android.md)
 {% endcontent-ref %}
 
 Mobile APP global setup guide:
 
-{% content-ref url="../features/integrations/sources/sources-catalog/mobile-app.md" %}
-[mobile-app.md](../features/integrations/sources/sources-catalog/mobile-app.md)
+{% content-ref url="../features/sources/sources-catalog/mobile-app.md" %}
+[mobile-app.md](../features/sources/sources-catalog/mobile-app.md)
 {% endcontent-ref %}
 
 ## 30/06/2022
 
 Webhook documentation:
 
-{% content-ref url="../features/integrations/destinations/destinations-catalog/webhook.md" %}
-[webhook.md](../features/integrations/destinations/destinations-catalog/webhook.md)
+{% content-ref url="../features/destinations/destinations-catalog/webhook.md" %}
+[webhook.md](../features/destinations/destinations-catalog/webhook.md)
 {% endcontent-ref %}
 
 ## 29/06/2022

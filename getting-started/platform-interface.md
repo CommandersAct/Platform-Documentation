@@ -1,5 +1,5 @@
 # Platform interface
 
-Discover the [synopsis concept behind the platform](../features/integrations/concepts.md) and explore our [features ](../features/integrations/)below.
+Discover the [synopsis concept behind the platform](concepts/) and explore our [features ](broken-reference)below.
 
 ![](<../.gitbook/assets/image (18) (1).png>)

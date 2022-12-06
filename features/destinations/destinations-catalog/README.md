@@ -1,6 +1,6 @@
 # Destinations catalog
 
-Find here the list of all [destinations](../../concepts.md#destination).
+Find here the list of all [destinations](../../../getting-started/concepts/#destination).
 
 Destinations are sorted per categories (Advertising, Emailing, Analytics, Push notifications...).
 

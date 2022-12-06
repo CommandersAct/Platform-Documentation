@@ -4,7 +4,7 @@ description: This article describes the server-side destination APIs.
 
 # Serverside javascript helpers
 
-## `decodeURI` <a href="getalleventdata" id="getalleventdata"></a>
+## `decodeURI` <a href="#getalleventdata" id="getalleventdata"></a>
 
 Decodes any encoded characters in the provided URI. Returns a **string** that represents the decoded URI. Returns `undefined` when provided with invalid input.
 
@@ -29,7 +29,7 @@ if (decodedUrl) {
 | ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`encoded_uri`** | _string_ | A URI that has been encoded by [`encodeUri()`](https://developers.google.com/tag-platform/tag-manager/server-side/api#encodeuri) or by other means. |
 
-## `decodeUriComponent` <a href="decodeuricomponent" id="decodeuricomponent"></a>
+## `decodeUriComponent` <a href="#decodeuricomponent" id="decodeuricomponent"></a>
 
 Decodes any encoded characters in the provided URI component. Returns a **string** that represents the decoded URI component. Returns `undefined` when given invalid input.
 
@@ -54,7 +54,7 @@ if (decodedQuery) {
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`encoded_uri_component`** | _string_ | A URI component that has been encoded by [`encodeUriComponent()`](https://developers.google.com/tag-platform/tag-manager/server-side/api#encodeuricomponent) or by other means. |
 
-## `encodeUri` <a href="getalleventdata" id="getalleventdata"></a>
+## `encodeUri` <a href="#getalleventdata" id="getalleventdata"></a>
 
 Returns an encoded Uniform Resource Identifier (URI) by escaping special characters. Returns a **string** that represents the provided string encoded as a URI.
 
@@ -77,7 +77,7 @@ sendHttpGet('https://www.example.com/' + encodeUri(pathInput));
 | --------- | -------- | --------------- |
 | `uri`     | _string_ | A complete URI. |
 
-## `encodeUriComponent` <a href="encodeuricomponent" id="encodeuricomponent"></a>
+## `encodeUriComponent` <a href="#encodeuricomponent" id="encodeuricomponent"></a>
 
 Returns an encoded Uniform Resource Identifier (URI) by escaping special characters. Returns a **string** that represents the provided string encoded as a URI.
 
@@ -100,7 +100,7 @@ sendHttpGet('https://www.example.com/?' + encodeUriComponent(queryInput));
 | --------- | -------- | --------------------- |
 | **`str`** | _string_ | A component of a URI. |
 
-## `fromBase64` <a href="frombase64" id="frombase64"></a>
+## `fromBase64` <a href="#frombase64" id="frombase64"></a>
 
 Decodes a base64-encoded string. Returns `undefined` if the input is invalid.
 
@@ -125,7 +125,7 @@ if (greeting === 'hello') {
 | ------------------------- | -------- | ---------------------- |
 | **`base64EncodedString`** | _string_ | Base64 encoded string. |
 
-## `generateRandom` <a href="generaterandom" id="generaterandom"></a>
+## `generateRandom` <a href="#generaterandom" id="generaterandom"></a>
 
 Returns a random **number** (integer) within the given range.
 
@@ -148,7 +148,7 @@ const randomValue = generateRandom(0, 10000000);
 | **`min`** | _number_ | Minimum potential value of the returned integer (inclusive). |
 | **`max`** | _number_ | Maximum potential value of the returned integer (inclusive). |
 
-## `getAllEventData` <a href="getalleventdata" id="getalleventdata"></a>
+## `getAllEventData` <a href="#getalleventdata" id="getalleventdata"></a>
 
 Returns a copy of the event data.
 
@@ -170,7 +170,7 @@ const body = {
 };
 ```
 
-## `getCookieValues` (WIP) <a href="getcookievalues" id="getcookievalues"></a>
+## `getCookieValues` (WIP) <a href="#getcookievalues" id="getcookievalues"></a>
 
 Returns an array containing the values of all cookies with the given name.
 
@@ -188,7 +188,7 @@ const facebook_fbp = getCookieValues('fbp')[0];
 if (facebook_fbp ) {  // ...}
 ```
 
-****
+***
 
 **Parameters**
 
@@ -197,7 +197,7 @@ if (facebook_fbp ) {  // ...}
 | **`name`**     | _string_  | Name of the cookie.                                                                          |
 | **`noDecode`** | _boolean_ | If `true`, the cookie values will not be decoded before being returned. Defaults to `false`. |
 
-## `getEventData` <a href="geteventdata" id="geteventdata"></a>
+## `getEventData` <a href="#geteventdata" id="geteventdata"></a>
 
 Returns a copy of the value at the given path in the event data. Returns `undefined` if there is no event data or if there is no value at the given path.
 
@@ -223,7 +223,7 @@ const referrer = getEventData('page_referrer');
 | ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`keyPath`** | _any_ | The path of the key, where path components are separated by dots. The path components can be keys in an object or indices in an array. If `keyPath` is not a string, it is coerced into a string. |
 
-## `getRemoteAddress` (WIP) <a href="getremoteaddress" id="getremoteaddress"></a>
+## `getRemoteAddress` (WIP) <a href="#getremoteaddress" id="getremoteaddress"></a>
 
 Returns a **string** representation of the IP address where the request originated, e.g. `62.123.65.780` for IPv4 or `2001:0db8:85a3:0:0:8a2e:0370:1234` for IPv6
 
@@ -233,7 +233,7 @@ Returns a **string** representation of the IP address where the request originat
 getRemoteAddress();
 ```
 
-## `getTimestamp` <a href="gettimestamp" id="gettimestamp"></a>
+## `getTimestamp` <a href="#gettimestamp" id="gettimestamp"></a>
 
 **Deprecated.** Prefer [getTimestampMillis](https://developers.google.com/tag-platform/tag-manager/server-side/api#gettimestampmillis).
 
@@ -245,7 +245,7 @@ Returns a **number** that represents the current time in milliseconds since Unix
 getTimestamp();
 ```
 
-## `getTimestampMillis` <a href="gettimestampmillis" id="gettimestampmillis"></a>
+## `getTimestampMillis` <a href="#gettimestampmillis" id="gettimestampmillis"></a>
 
 Returns a **number** that represents the current time in milliseconds since Unix epoch, as returned by `Date.now()`.
 
@@ -255,7 +255,7 @@ Returns a **number** that represents the current time in milliseconds since Unix
 getTimestampMillis();
 ```
 
-## `getType` <a href="gettype" id="gettype"></a>
+## `getType` <a href="#gettype" id="gettype"></a>
 
 Returns a string describing the given value's type.
 
@@ -289,7 +289,6 @@ if (type === 'string') {
 } else {
   logToConsole('Unsupported input type: ', type);
 }
-
 ```
 
 **Parameters**
@@ -298,7 +297,7 @@ if (type === 'string') {
 | ----------- | ----- | ------------ |
 | **`value`** | _any_ | Input value. |
 
-## `makeInteger` <a href="makeinteger" id="makeinteger"></a>
+## `makeInteger` <a href="#makeinteger" id="makeinteger"></a>
 
 Converts the given value to a **number** (integer).
 
@@ -314,7 +313,7 @@ makeInteger(value);
 | ----------- | ---------- | --------------------- |
 | **`value`** | _any type_ | The value to convert. |
 
-## `makeNumber` <a href="makenumber" id="makenumber"></a>
+## `makeNumber` <a href="#makenumber" id="makenumber"></a>
 
 Converts the given value to a **number**.
 
@@ -330,7 +329,7 @@ makeNumber(value);
 | ----------- | ---------- | --------------------- |
 | **`value`** | _any type_ | The value to convert. |
 
-## `makeString` <a href="makestring" id="makestring"></a>
+## `makeString` <a href="#makestring" id="makestring"></a>
 
 Returns the given value as a **string**.
 
@@ -346,7 +345,7 @@ makeString(value);
 | ----------- | ---------- | --------------------- |
 | **`value`** | _any type_ | The value to convert. |
 
-## `parseUrl` <a href="parseurl" id="parseurl"></a>
+## `parseUrl` <a href="#parseurl" id="parseurl"></a>
 
 Returns an object that contains all of a given URL's component parts, similar to the `URL` object.
 
@@ -389,7 +388,7 @@ const parseUrl = require('parseUrl');const urlObject = parseUrl('https://abc:xyz
 | --------- | -------- | --------------------------------- |
 | **`url`** | _string_ | The full url that will be parsed. |
 
-## `sha256` <a href="sha256" id="sha256"></a>
+## `sha256` <a href="#sha256" id="sha256"></a>
 
 Calculates the SHA-256 digest of the input and invokes a callback with the digest encoded in base64, unless the `options` object specifies a different output encoding.
 
@@ -415,7 +414,7 @@ const encodeUriComponent = require('encodeUriComponent');const sendHttpGet = req
 | **`onSuccess`** | _function_ | Called with the resulting digest, encoded in base64, unless the `options` object specifies a different output encoding.                                            |
 | **`options`**   | _object_   | _Optional_ options object to specify the output encoding. If specified, the object should contain the key `outputEncoding` with value as one of `base64` or `hex`. |
 
-## `sha256Sync` <a href="sha256sync" id="sha256sync"></a>
+## `sha256Sync` <a href="#sha256sync" id="sha256sync"></a>
 
 Calculates and returns the SHA-256 digest of the input, encoded in base64, unless the `options` object specifies a different output encoding.
 
@@ -438,7 +437,7 @@ const encodeUriComponent = require('encodeUriComponent');const sendHttpGet = req
 | **`input`**   | _string_ | The string to hash.                                                                                                                                                |
 | **`options`** | _object_ | _Optional_ options object to specify the output encoding. If specified, the object should contain the key `outputEncoding` with value as one of `base64` or `hex`. |
 
-## `toBase64` <a href="tobase64" id="tobase64"></a>
+## `toBase64` <a href="#tobase64" id="tobase64"></a>
 
 Encodes a string as base64.
 
@@ -460,7 +459,7 @@ const toBase64 = require('toBase64');const base64Hello = toBase64('hello');
 | ----------- | -------- | ----------------- |
 | **`input`** | _string_ | String to encode. |
 
-## `JSON` <a href="json" id="json"></a>
+## `JSON` <a href="#json" id="json"></a>
 
 Returns an object that provides JSON functions.
 
@@ -485,9 +484,9 @@ const object = JSON.parse('{"foo":"bar"}');
 const str = JSON.stringify({foo: 'bar'});
 ```
 
-****
+***
 
-## `Math` <a href="math" id="math"></a>
+## `Math` <a href="#math" id="math"></a>
 
 An object providing `Math` functions.
 
@@ -517,7 +516,7 @@ const unsquared = Math.sqrt(81);
 
 Math function parameters are converted to numbers.
 
-## `sendHttpGet` <a href="sendhttpget" id="sendhttpget"></a>
+## `sendHttpGet` <a href="#sendhttpget" id="sendhttpget"></a>
 
 Makes an HTTP GET request to the specified URL, and invokes a callback with the response once the request completes or times out.
 
@@ -546,7 +545,7 @@ sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {
 | -------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`url`**      | _string_   | The request URL.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **`callback`** | _function_ | <p>An optional callback to invoke upon request completion, error, or timeout.<br><br>It is invoked with the <strong>response status code</strong>, the <strong>response headers</strong>, and the <strong>response body</strong> (or undefined if there was no response body).<br>If the request failed (e.g. invalid URL, no route to host, SSL negotiation failure, etc.), the callback will be invoked with a <strong>response status code of zero</strong>, <strong>no headers</strong>, and an <strong>undefined body</strong>.<br>If the <code>'timeout'</code> option was set and the request timed out, the callback will be invoked with a <strong>response status code of -1</strong>, <strong>no headers</strong>, and an <strong>undefined body</strong>.</p> |
-| **`options`**  | _object_   | Optional request options. The supported options are **headers**, **timeout**.  Advanced options can be added in **extraOptions**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **`options`**  | _object_   | Optional request options. The supported options are **headers**, **timeout**. Advanced options can be added in **extraOptions**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 #### **Options**
 
@@ -554,7 +553,7 @@ sendHttpGet('https://example.com/collect', function(statusCode, headers, body) {
 * **timeout**: The timeout, in milliseconds, before the request is aborted.
 * **extraOptions**: Advanced options (ex: {strictSSL:true})
 
-## `sendHttpRequest` <a href="sendhttprequest" id="sendhttprequest"></a>
+## `sendHttpRequest` <a href="#sendhttprequest" id="sendhttprequest"></a>
 
 Makes an HTTP request to the specified URL, and invokes a callback with the response once the request completes or times out.
 
@@ -602,7 +601,7 @@ sendHttpRequest('https://example.com/collect', function(statusCode, headers, bod
 
 ## `md5Sync`
 
-Calculates and returns the `md5 `digest of the input.
+Calculates and returns the `md5` digest of the input.
 
 **Syntax**
 

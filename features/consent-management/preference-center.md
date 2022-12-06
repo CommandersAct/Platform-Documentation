@@ -19,7 +19,7 @@ Marketing Preferences Center is a realtime searchable nosql database. We provide
 
 ·      Consents are collected through our CMP solution (native integration)
 
-·      Preferences coming from a CRM database could be added with the [FTP importer files](../integrations/sources/sources-catalog/import-crm-users/users-file-importer.md) or [API](../integrations/sources/sources-catalog/import-crm-users/api-users.md#user)&#x20;
+·      Preferences coming from a CRM database could be added with the [FTP importer files](../sources/sources-catalog/import-crm-users/users-file-importer.md) or [API](../sources/sources-catalog/import-crm-users/api-users.md#user)&#x20;
 
 ·      Our customers can personalize the look and feel of their marketing preferences center page, we don’t host the webpage.
 

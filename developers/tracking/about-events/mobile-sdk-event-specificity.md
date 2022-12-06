@@ -1,65 +1,66 @@
 # Mobile App event specificity
 
-1. [Event SDK mapping](#event-sdk-mapping)
-2. [Event specificity for mobile app](#event-specificity-for-mobile-app)
-3. [Fields details](#fields-details)
-4. [device](#device)
-5. [device -> os](#device---os)
-6. [device -> screen](#device---screen)
-7. [device -> network](#device---network)
-8. [device -> Lifecycle](#device---lifecycle)
-9. [app](#app)
+1. [Event SDK mapping](mobile-sdk-event-specificity.md#event-sdk-mapping)
+2. [Event specificity for mobile app](mobile-sdk-event-specificity.md#event-specificity-for-mobile-app)
+3. [Fields details](mobile-sdk-event-specificity.md#fields-details)
+4. [device](mobile-sdk-event-specificity.md#device)
+5. [device -> os](mobile-sdk-event-specificity.md#device---os)
+6. [device -> screen](mobile-sdk-event-specificity.md#device---screen)
+7. [device -> network](mobile-sdk-event-specificity.md#device---network)
+8. [device -> Lifecycle](mobile-sdk-event-specificity.md#device---lifecycle)
+9. [app](mobile-sdk-event-specificity.md#app)
 
-A full event is the addition of event specific information and data gathered by the SDK.
-For each event you'll find in the documentation "events reference" all the possible properties and the mandatory ones.
+A full event is the addition of event specific information and data gathered by the SDK. For each event you'll find in the documentation "events reference" all the possible properties and the mandatory ones.
 
 ## Event SDK mapping
+
 To create event, you will need to use classes from the SDK which represents the events. As this might be confusing, you'll find here a list of class name and their event counterparts.
 
 All those class names are valid on both Android and iOS.
 
-| event name         | class name              | 
-|--------------------|-------------------------|
-| any custom event   | TCCustomEvent           |
-| add_payment_info   | TCAddPaymentInfoEvent   |
-| add_shipping_info  | TCAddShippingInfoEvent  |               
-| add_to_cart        | TCAddToCartEvent        |                     
-| add_to_wishlist    | TCAddToWishlistEvent    |                 
-| begin_checkout     | TCBeginCheckoutEvent    |                 
-| generate_lead      | TCGenerateLeadEvent     |                  
-| login              | TCLoginEvent            |                         
-| page_view          | TCPageViewEvent         |                      
-| purchase           | TCPurchaseEvent         |                      
-| refund             | TCRefundEvent           |                        
-| remove_from_cart   | TCRemoveFromCartEvent   |                
-| search             | TCSearchEvent           |                        
-| select_content     | TCSelectContentEvent    |                 
-| select_item        | TCSelectItemEvent       |                    
-| sign_up            | TCSignUpEvent           |                        
-| view_cart          | TCViewCartEvent         |                      
-| view_item          | TCViewItem              |                           
-| view_item_list     | TCViewItemListEvent     |                  
+| event name          | class name             |
+| ------------------- | ---------------------- |
+| any custom event    | TCCustomEvent          |
+| add\_payment\_info  | TCAddPaymentInfoEvent  |
+| add\_shipping\_info | TCAddShippingInfoEvent |
+| add\_to\_cart       | TCAddToCartEvent       |
+| add\_to\_wishlist   | TCAddToWishlistEvent   |
+| begin\_checkout     | TCBeginCheckoutEvent   |
+| generate\_lead      | TCGenerateLeadEvent    |
+| login               | TCLoginEvent           |
+| page\_view          | TCPageViewEvent        |
+| purchase            | TCPurchaseEvent        |
+| refund              | TCRefundEvent          |
+| remove\_from\_cart  | TCRemoveFromCartEvent  |
+| search              | TCSearchEvent          |
+| select\_content     | TCSelectContentEvent   |
+| select\_item        | TCSelectItemEvent      |
+| sign\_up            | TCSignUpEvent          |
+| view\_cart          | TCViewCartEvent        |
+| view\_item          | TCViewItem             |
+| view\_item\_list    | TCViewItemListEvent    |
 
 | COMMON SCHEMAS | class name |
-|----------------|------------|
+| -------------- | ---------- |
 | Item           | TCItem     |
 | Product        | TCProduct  |
 | User           | TCUser     |
 
 | ENUMERATED VALUE | Class name        |
-|------------------|-------------------|
+| ---------------- | ----------------- |
 | Payment methods  | ETCPaymentMethod  |
-| Purchase status  | ETCPurchaseStatus |   
+| Purchase status  | ETCPurchaseStatus |
 
 ## Event specificity for mobile app
 
-IOS and Android SDK add specific properties regarding the device and app.&#x20; Those are in addition to event managed properties.
+IOS and Android SDK add specific properties regarding the device and app. Those are in addition to event managed properties.
 
 {% hint style="info" %}
-If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/integrations/sources/sources-catalog/http-tracking-api.md)), you should follow this specification to benefit from plug\&play on destinations\
+If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/sources/sources-catalog/http-tracking-api.md)), you should follow this specification to benefit from plug\&play on destinations\\
 {% endhint %}
 
 Here are an example of event playload :
+
 ```json
 {
 	"event_name": "search",
@@ -151,7 +152,6 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | advertising\_id       | 705EB54D-9FC7-4730-BF1B-A5D0494E1D8C | Either IDFA or AAD               | Both     |
 | idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
 | ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
-
 
 ### device -> os
 
