@@ -11,10 +11,10 @@ You can learn more in the [Concepts ](../../../../concepts/)section.
 
 ## 2.How to send events (standard / custom)
 
-* From a **server**, use our [HTTP tracking API](../../../../../features/sources/sources-catalog/http-tracking-api/).
+* From a **server**, use our [HTTP tracking API](../../../../../features/sources/sources-catalog/http-tracking-api.md).
 
 {% hint style="info" %}
-Your data has to be sent to a [new url](../../../../../features/sources/sources-catalog/http-tracking-api/#track), following a [new format](./#3.-format-events).
+Your data has to be sent to a [new url](../../../../../features/sources/sources-catalog/http-tracking-api.md#track), following a [new format](./#3.-format-events).
 {% endhint %}
 
 * From a **mobile application**, you can either use one of our SDK ([Android](../../../../../features/sources/sources-catalog/android.md), [IOS](../../../../../features/sources/sources-catalog/ios.md), ...) or use our  [HTTP tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api) if you don't want to use a SDK.

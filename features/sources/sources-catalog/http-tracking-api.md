@@ -15,7 +15,7 @@ The HTTP Tracking API lets you record data from any website or application. Requ
 Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
 
 {% hint style="info" %}
-The source key is provided to you when you create a source in the [`source catalogue`](../)``
+The source key is provided to you when you create a source in the [`source catalogue`](./)``
 {% endhint %}
 
 #### Content-Type <a href="#content-type" id="content-type"></a>
@@ -24,7 +24,7 @@ To send data to our HTTP API, a content-type header must be set to `'application
 
 ### Errors
 
-We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
+We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
 
 ### Max Request Size <a href="#max-request-size" id="max-request-size"></a>
 
@@ -82,14 +82,14 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 }
 ```
 
-Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../../developers/tracking/about-events/).
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../developers/tracking/about-events/).
 
 {% hint style="warning" %}
 Warning, the format of the payload evolved on Nov. 2022. The old format will still be supported during one year.
 {% endhint %}
 
 {% hint style="info" %}
-If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
+If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endhint %}
 
 {% hint style="info" %}

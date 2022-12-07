@@ -25,7 +25,7 @@
   * [Sources Overview](features/sources/overview.md)
   * [Sources Catalog](features/sources/sources-catalog/README.md)
     * [Google Tag Manager (GTM)](features/sources/sources-catalog/gtm.md)
-    * [HTTP tracking API source](features/sources/sources-catalog/http-tracking-api/README.md)
+    * [HTTP tracking API source](features/sources/sources-catalog/http-tracking-api.md)
       * [(deprecated) HTTP tracking API source 1.0](features/sources/sources-catalog/http-tracking-api/http-tracking-api.md)
     * [Javascript SDK](features/sources/sources-catalog/js-sdk.md)
     * [Web container](features/sources/sources-catalog/containers.md)

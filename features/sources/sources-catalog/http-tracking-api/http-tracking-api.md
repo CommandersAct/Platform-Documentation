@@ -4,11 +4,18 @@ description: Deprecated
 
 # (deprecated) HTTP tracking API source 1.0
 
-{% hint style="warning" %}
-You are looking to the old version of the API.\
+{% hint style="danger" %}
+You are looking to the old version of the API (version 1.0)\
 This API will be deprecated on December 2023. After this date, the current format will no longer be supported and any requests using it may generates error.
 
-We encourage you to begin using the new payload format as soon as possible to ensure a smooth transition. The new format is described [here](./#track). Please refer to our documentation for more information on how to use the new format.
+We encourage you to begin using the new payload format as soon as possible to ensure a smooth transition. The new format is described [here](../http-tracking-api.md#track). Please refer to our documentation for more information on how to use the new format.
+{% endhint %}
+
+{% hint style="warning" %}
+What changed in the payload format from the 1.0 to the 2.0 version :&#x20;
+
+1. All event data were inside the **`properties`** object. They are now at the root.
+2. All contextual meta-data is now inside a new **`context` ** object. For example these meta-data obects `event_id`, `device`, `page`, `app`, `event_timestamp` are now in the `context` object.
 {% endhint %}
 
 The HTTP Tracking API 1.0 lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
