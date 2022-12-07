@@ -31,7 +31,7 @@ All personal data (email, first name, phone number...) are hashed in SHA-256.
 
 There are also 3 variables specific to that connector:
 
-![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-MSCL73NkWthMtspFqmO%2F-MSCREDvU2rLpCWkOryT%2FCapture%20d%E2%80%99e%CC%81cran%202021-01-29%20a%CC%80%2010.19.21.png?alt=media\&token=00d50ef9-f2cd-4569-b8f7-09be3b4adc0b)
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2021-01-29 à 10.19.21.png" alt=""><figcaption></figcaption></figure>
 
 Loyalty Rate:
 
@@ -65,4 +65,4 @@ Conversion name:
 > * SS\_customer\_signups
 > * SS\_customer\_purchases
 
-More [details](https://support.google.com/google-ads/answer/10018336?hl=en\&ref\_topic=9941533#)
+More [details](https://support.google.com/google-ads/answer/10018336?hl=en\&ref\_topic=9941533)
