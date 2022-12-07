@@ -6,7 +6,8 @@ description: Deprecated
 
 {% hint style="danger" %}
 You are looking to the old version of the API (version 1.0)\
-This API will be deprecated on December 2023. After this date, the current format will no longer be supported and any requests using it may generates error.
+Commanders Act will end support and maintenance for HTTP tracking API source 1.0 on August 31, 2023.\
+**This API will be fully deprecated on December 2023**. After this date, the current format will no longer be supported and any requests using it may generates error.
 
 We encourage you to begin using the new payload format as soon as possible to ensure a smooth transition. The new format is described [here](../http-tracking-api.md#track). Please refer to our documentation for more information on how to use the new format.
 {% endhint %}
