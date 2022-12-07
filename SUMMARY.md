@@ -56,7 +56,7 @@
   * [Destinations catalog](features/destinations/destinations-catalog/README.md)
     * [Facebook Conversions API](features/destinations/destinations-catalog/facebook-conversions-api.md)
     * [Facebook Custom Audiences](features/destinations/destinations-catalog/facebook-custom-audiences.md)
-    * [Facebook Offline conversion](features/destinations/destinations-catalog/facebook-offline-conversion.md)
+    * [Facebook Offline conversion \[Deprecated\]](features/destinations/destinations-catalog/facebook-offline-conversion.md)
     * [Google Enhanced Conversions](features/destinations/destinations-catalog/google-enhanced-conversion.md)
     * [Google Analytics 4](features/destinations/destinations-catalog/google-analytics-4/README.md)
       * [Google Analytics 4 - PROXY MODE](features/destinations/destinations-catalog/google-analytics-4/google-analytics-4-proxy-mode.md)
