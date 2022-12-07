@@ -1,6 +1,17 @@
-# HTTP tracking API source
+---
+description: Deprecated
+---
 
-The HTTP Tracking API lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
+# (deprecated) HTTP tracking API source 1.0
+
+{% hint style="warning" %}
+You are looking to the old version of the API.\
+This API will be deprecated on December 2023. After this date, the current format will no longer be supported and any requests using it may generates error.
+
+We encourage you to begin using the new payload format as soon as possible to ensure a smooth transition. The new format is described [here](./#track). Please refer to our documentation for more information on how to use the new format.
+{% endhint %}
+
+The HTTP Tracking API 1.0 lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
 
 ## Setup
 
@@ -11,7 +22,7 @@ The HTTP Tracking API lets you record data from any website or application. Requ
 Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
 
 {% hint style="info" %}
-The source key is provided to you when you create a source in the [`source catalogue`](./)``
+The source key is provided to you when you create a source in the [`source catalogue`](../)``
 {% endhint %}
 
 #### Content-Type <a href="#content-type" id="content-type"></a>
@@ -36,7 +47,7 @@ You may use the event API to capture the actions that your users perform. Every 
 
 You should keep track of activities that are indications of your app's performance, such as Signed Up, Item Purchased, and Article Bookmarked. To begin, we recommend tracking only a few key events. More may easily be added later!
 
-Example `event` call:
+Example `event` call: <mark style="color:red;">**(**</mark>[<mark style="color:red;">**deprecated**</mark>](#user-content-fn-1)[^1]<mark style="color:red;">**)**</mark>
 
 ```c
 POST  https://collect.commander1.com/events?tc_s={siteId}
@@ -84,3 +95,5 @@ User API let's you update/delete/create users in the database. Find details on [
 ## Product API
 
 Product API let's you import your product's catalog in the database. It is mostly used to enrich conversion events with product's properties. Find details in [Product API spec](https://community.commandersact.com/datacommander/api/conversions-and-product-catalog-v2.0#upsert-products).
+
+[^1]: See information at the top of the page
