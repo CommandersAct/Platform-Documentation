@@ -85,7 +85,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../developers/tracking/about-events/).
 
 {% hint style="warning" %}
-Warning, the format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api.md).
+Warning, the format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api1\_0.md).
 {% endhint %}
 
 {% hint style="info" %}
