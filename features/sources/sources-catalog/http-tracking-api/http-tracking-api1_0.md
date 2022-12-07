@@ -16,7 +16,7 @@ We encourage you to begin using the new payload format as soon as possible to en
 What changed in the payload format from the 1.0 to the 2.0 version :&#x20;
 
 1. All event data were inside the **`properties`** object. They are now at the root.
-2. All contextual meta-data is now inside a new **`context` ** object. For example these meta-data obects `event_id`, `device`, `page`, `app`, `event_timestamp` are now in the `context` object.
+2. All contextual meta-data were at the root, they are now inside a new **`context` ** object. For example these meta-data obects `event_id`, `device`, `page`, `app`, `event_timestamp` are now in the `context` object.
 {% endhint %}
 
 The HTTP Tracking API 1.0 lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
