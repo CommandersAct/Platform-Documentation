@@ -2,7 +2,7 @@
 
 For this connector, the concept is to send to Tableau each X minutes new events in **append** mode (ex : pageviews, clicks, impressions, ...)
 
-![](https://tagcommander.atlassian.net/wiki/download/attachments/993198085/image2019-7-2\_9-55-56.png?version=1\&modificationDate=1562054156962\&cacheVersion=1\&api=v2)
+<figure><img src="../../../.gitbook/assets/image2019-7-2_9-55-56.png" alt=""><figcaption></figcaption></figure>
 
 We are able to push Data to Tableau every 10 minutes (full export or delta).
 
@@ -20,7 +20,7 @@ It offers only append or overwrite
 
 ![](https://tagcommander.atlassian.net/wiki/download/attachments/993198085/image2019-7-2\_9-53-3.png?version=1\&modificationDate=1562053984899\&cacheVersion=1\&api=v2)
 
-### Help to fill the connectors input :  <a href="#howtoexportdatatotableauonline-helptofilltheconnectorsinput" id="howtoexportdatatotableauonline-helptofilltheconnectorsinput"></a>
+### Help to fill the connectors input : <a href="#howtoexportdatatotableauonline-helptofilltheconnectorsinput" id="howtoexportdatatotableauonline-helptofilltheconnectorsinput"></a>
 
 \
 **Url Server**\
