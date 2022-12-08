@@ -35,7 +35,16 @@ First, give a name to the transformation and add a description if needed.
 
 Select on which sources the transformation will be applied.
 
-\[in progress]
+Define conditions on events and/or properties, the transformation will be applied only regarding these conditions.
+
+Select properties to transform. You can:
+
+* rename the property ('rename to' option)
+  * Example: rename 'date\_of\_birth' to 'birthdate'
+* map/link to an existing property ('map to' option)
+  * Example: map property 'price' to 'revenue'
+* delete a property ('delete' option)
+* change the value ('set value to' option)
 
 
 
