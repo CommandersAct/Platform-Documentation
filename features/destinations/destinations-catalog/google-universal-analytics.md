@@ -45,7 +45,7 @@ See more details on UA "Hit Types" following this [LINK](https://developers.goog
 
 {% hint style="info" %}
 **\[1]** This is either<mark style="color:blue;">`pageview`</mark>or<mark style="color:blue;">`screenview`</mark>, depending if the "Smart Mapping" field <mark style="color:blue;">`App Name (an)`</mark>is set with an empty value or a proper value.\
-**\[2] Y**ou can specify a custom social event by setting the "Smart Mapping" field <mark style="color:blue;">`Social Event`</mark>.
+**\[2]** You can specify a custom social event by setting the "Smart Mapping" field <mark style="color:blue;">`Social Event`</mark>.
 {% endhint %}
 
 ## Field Mappings
