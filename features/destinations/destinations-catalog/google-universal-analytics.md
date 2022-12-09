@@ -1,5 +1,9 @@
 # Google Universal Analytics
 
+{% hint style="info" %}
+This destination is currently under final review and will be released soon.
+{% endhint %}
+
 Google Universal Analytics (UA) is a web analytics service that tracks and reports website traffic. Using this destination, you can take advantage of the [Measurement Protocol](https://developers.google.com/analytics/devguides/collection/protocol/v1) by sending data via server-side. This version is related to the previous generation of Google Analytics. \
 See [Google Analytics 4](google-analytics-4/) destination for the newest and recommended version.
 
