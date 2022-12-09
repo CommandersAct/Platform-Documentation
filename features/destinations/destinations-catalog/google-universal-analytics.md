@@ -48,7 +48,7 @@ As recommended by Google, [Enhanced Ecommerce](https://developers.google.com/ana
 | `[Custom Event]`                                                                                                                                                                                                                                                                                                                                                                                                                               | `social` **\[2]**                                                                                    |
 
 {% hint style="info" %}
-**\[1]** This is either<mark style="color:blue;">`pageview`</mark>or<mark style="color:blue;">`screenview`</mark>, depending if the "Smart Mapping" field <mark style="color:blue;">`App Name (an)`</mark>is set with an empty value or a proper value.\
+**\[1]** This is either<mark style="color:blue;">`pageview`</mark>or<mark style="color:blue;">`screenview`</mark>, depending if the "Smart Mapping" field <mark style="color:blue;">`App Name (an)`</mark>is set with an empty value or a non-empty one.\
 **\[2]** You can specify a custom social event by setting the "Smart Mapping" field <mark style="color:blue;">`Social Event`</mark>.
 {% endhint %}
 
