@@ -61,6 +61,7 @@
     * [Google Enhanced Conversions](features/destinations/destinations-catalog/google-enhanced-conversion.md)
     * [Google Analytics 4](features/destinations/destinations-catalog/google-analytics-4/README.md)
       * [Google Analytics 4 - PROXY MODE](features/destinations/destinations-catalog/google-analytics-4/google-analytics-4-proxy-mode.md)
+    * [Google Universal Analytics](features/destinations/destinations-catalog/google-universal-analytics.md)
     * [Google Display & Video 360 & Search Ads 360](features/destinations/destinations-catalog/google-display-and-video-360-and-search-ads-360.md)
     * [Google Store Sales Direct](features/destinations/destinations-catalog/google-store-sales-direct.md)
     * [Google Customer Match](features/destinations/destinations-catalog/google-customer-match.md)
