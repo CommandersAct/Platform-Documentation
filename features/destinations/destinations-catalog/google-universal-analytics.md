@@ -34,7 +34,7 @@ The Google Universal Analytics destination provides the following key features:
 ## Quick reference
 
 {% hint style="info" %}
-See more details on UA "Hit Types" following this [LINK](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#t).
+As recommended by Google, [Enhanced Ecommerce](https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#enhancedecom) hits are used in place of [Ecommerce ](https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide#ecom)hits. See more details on UA "Hit Types" following this [LINK](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#t).
 {% endhint %}
 
 | Commanders Act Events                                                                                                                                                                                                                                                                                                                                                                                                                          | UA Hit Types                                                                                         |
