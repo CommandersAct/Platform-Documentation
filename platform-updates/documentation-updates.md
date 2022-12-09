@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 09/12/2022
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google-universal-analytics.md" %}
+[google-universal-analytics.md](../features/destinations/destinations-catalog/google-universal-analytics.md)
+{% endcontent-ref %}
+
 ## 06/12/2022
 
 * Re-arrangement of menus to find sources/destinations more easily
