@@ -4,7 +4,7 @@ Google Universal Analytics (UA) is a web analytics service that tracks and repor
 See [Google Analytics 4](google-analytics-4/) destination for the newest and recommended version.
 
 {% hint style="warning" %}
-Google Universal Analytics will be deprecated on July 1, 2023, meaning it will stop processing data. Analytics 360 properties will stop working on October 1, 2023.
+Google Universal Analytics will be deprecated on **July 1, 2023**, meaning it will stop processing data. Analytics 360 properties will stop working on **October 1, 2023**.
 {% endhint %}
 
 ## Key features
