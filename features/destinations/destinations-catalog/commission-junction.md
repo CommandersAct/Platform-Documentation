@@ -1,9 +1,5 @@
 # Commission Junction
 
-{% hint style="info" %}
-This destination is currently under final review and will be released soon.
-{% endhint %}
-
 [Commission Junction](https://www.cj.com/)[ ](https://www.awin.com)(CJ) provides a global affiliation network connecting businesses with customers. Using this destination you can implement server-side tracking.
 
 ## Key features
@@ -12,6 +8,7 @@ The Commission Junction destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Commission Junction server-side tracking, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Refined data**: you can freely push additional information based on your specific needs.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Awin.
 
