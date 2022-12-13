@@ -74,7 +74,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 ## Field Mappings
 
-| Commanders Act Properties                                                                                                                                                                                         | AT Internet Properties                                                                     |
+| Commanders Act Properties                                                                                                                                                                                         | Piano Analytics Properties                                                                 |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | `properties.page_name`                                                                                                                                                                                            | `page`                                                                                     |
 | `properties.value`                                                                                                                                                                                                | <p><code>generate_lead_value</code></p><p><code>cart_turnovertaxincluded</code></p>        |
