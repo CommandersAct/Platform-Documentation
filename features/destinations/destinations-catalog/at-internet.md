@@ -13,7 +13,7 @@ You can check the following [compatibility table](https://developers.atinternet-
 
 The AT Internet destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [AT Internet's one](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [Piano Analytics' one](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to AT Internet.
