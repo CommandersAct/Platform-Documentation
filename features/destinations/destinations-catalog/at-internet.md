@@ -44,7 +44,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 ## Quick reference
 
-| Commanders Act Events | AT Internet Events                                          |
+| Commanders Act Events | Piano Analytics Events                                      |
 | --------------------- | ----------------------------------------------------------- |
 | `add_payment_info`    | `cart.payment`                                              |
 | `add_shipping_info`   | `cart.delivery`                                             |
