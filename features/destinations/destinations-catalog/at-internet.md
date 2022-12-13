@@ -117,8 +117,8 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 #### Headers parameters
 
-| Commanders Act Properties | AT Internet Fields |
-| ------------------------- | ------------------ |
-| `device.user_agent`       | `User-Agent`       |
-| `page.location`           | `Referer`          |
-| `device.ip`               | `X-Forwarded-For`  |
+| Commanders Act Properties | Piano Analytics Fields |
+| ------------------------- | ---------------------- |
+| `device.user_agent`       | `User-Agent`           |
+| `page.location`           | `Referer`              |
+| `device.ip`               | `X-Forwarded-For`      |
