@@ -1,11 +1,11 @@
 # Piano Analytics (AT Internet)
 
-[Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/) is the successor of AT Internet Analytics Suite 2 (AS2).\
+[Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics/#what-is-piano-analytics) is the successor of AT Internet Analytics Suite 2 (AS2).\
 It's a user-centric tool that simplifies product & marketing analytics, while ensuring data quality.\
 Your data will be sent server-side getting the most from AT Internet [Collection API](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/collection-api) and in form of [events](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events).
 
 {% hint style="info" %}
-The [Collection API](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/collection-api) is only available for [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/).\
+The [Collection API](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/collection-api) is only available for [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics/#what-is-piano-analytics).\
 You can check the following [compatibility table](https://developers.atinternet-solutions.com/piano-analytics/#before-i-start) to get more insights on supported features by product.
 {% endhint %}
 
@@ -13,7 +13,7 @@ You can check the following [compatibility table](https://developers.atinternet-
 
 The AT Internet destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [AT Internet's one](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [AT Internet's one](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to AT Internet.
@@ -21,10 +21,10 @@ The AT Internet destination provides the following key features:
 
 ## Destination setup
 
-Before you get started with this destination, ensure you have access to [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/getting-started-piano-analytics-en/what-is-piano-analytics-tagging-en/).
+Before you get started with this destination, ensure you have access to [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics/#what-is-piano-analytics).
 
 {% hint style="info" %}
-The client-side unique visitor identifier is recommended and is retrieved by getting the value of the[**`pa_vid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#client-side-cookies),[**`atuserid`**](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#smarttag-js\_0), or[**`xtidc`**](https://developers.atinternet-solutions.com/as2-tagging-en/javascript-en/getting-started-javascript-en/at-internet-cookies-javascript-en/#xtcore-js\_1)cookie in this priority order.
+The client-side unique visitor identifier is recommended and is retrieved by getting the value of the[**`pa_vid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#piano-analytics-mobile-sdks),[**`atuserid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#legacy-cookie-management), or<mark style="color:blue;">**`xtidc`**</mark>cookie in this priority order.
 {% endhint %}
 
 ### Configuration
