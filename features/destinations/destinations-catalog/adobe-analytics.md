@@ -26,3 +26,38 @@ Please fill Redirect URL with: \
 and Redirect URL Pattern with:\
 [https://api-internal\\.commandersact\\.com/v2/connectors/adobe/callback](https://api-internal/.commandersact/.com/v2/connectors/adobe/callback)
 {% endhint %}
+
+### Configuration
+
+Click on _Destinations_ / _Add destination_ and select **Adobe Analytics** on the catalog.
+
+Select sources, give a name to the destination and select the environment.
+
+Select the authentication you've just created previously.
+
+Fill the **Adobe Group ID** and **Customer ID Type** coming from your Adobe Analytics account.
+
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.44.51.png" alt=""><figcaption></figcaption></figure>
+
+#### **Mandatory parameters mapping**
+
+These parameters are mandatory:
+
+* reportSuiteID
+* timestamp
+* userAgent
+
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.12.png" alt=""><figcaption></figcaption></figure>
+
+You can map corresponding properties or directly enter values.
+
+#### **User id mapping**
+
+At least one of these fields should be filled to identify users.
+
+* visitorID
+* marketingCloudVisitorId
+* IP address
+* CustomerID (CustomerIDType)
+
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.42.png" alt=""><figcaption></figcaption></figure>
