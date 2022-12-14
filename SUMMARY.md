@@ -176,16 +176,15 @@
 
 ## Use cases
 
-* [Website performance](use-cases/website-performance.md)
-* [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
-* [Customer analysis](use-cases/customer-analysis/README.md)
-* [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
 * [Engage new customers](use-cases/engage-new-customers/README.md)
   * [Welcome banner for new customers](use-cases/engage-new-customers/welcome-banner-for-new-customers.md)
   * [Real-time promotion for hesitant customers](use-cases/engage-new-customers/real-time-promotion-for-hesitant-customers.md)
   * [Discount banner for installing the application](use-cases/engage-new-customers/discount-banner-for-installing-the-application.md)
   * [Personalized ads](use-cases/engage-new-customers/personalized-ads.md)
   * [Engage similar audience (lookalike)](use-cases/engage-new-customers/engage-similar-audience-lookalike.md)
+* [Consent banners A/B testing](use-cases/consent-banners-a-b-testing.md)
+* [Customer analysis](use-cases/customer-analysis/README.md)
+* [Campaigns performance analysis](use-cases/campaigns-analysis/README.md)
 * [Increase loyalty](use-cases/increase-loyalty/README.md)
   * [Drive to favourite store](use-cases/increase-loyalty/drive-to-favourite-store.md)
   * [Increase Customer Lifetime Value with a loyalty program](use-cases/increase-loyalty/increase-customer-lifetime-value-with-a-loyalty-program.md)
@@ -202,6 +201,7 @@
   * [Incentive to share customers' experience and rating](use-cases/advocacy/incentive-to-share-customers-experience-and-rating.md)
   * [Sponsorship Program](use-cases/advocacy/sponsorship-program.md)
   * [Social Media Hashtag](use-cases/advocacy/social-media-hashtag.md)
+* [Website performance](use-cases/website-performance.md)
 
 ## Developers
 
