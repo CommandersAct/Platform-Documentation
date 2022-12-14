@@ -61,3 +61,19 @@ At least one of these fields should be filled to identify users.
 * CustomerID (CustomerIDType)
 
 <figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.42.png" alt=""><figcaption></figcaption></figure>
+
+#### Page identifier mapping
+
+Adobe web page identifier. You can set several, but at least one is needed for the export. If you set either linkName, linkURL or linkType the other two must be set as well.
+
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.02.png" alt=""><figcaption></figcaption></figure>
+
+#### Mapping
+
+You can map here all your event properties to Adobe Analytics properties, especially eVars.
+
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.32.png" alt=""><figcaption></figcaption></figure>
+
+#### Properties transformation
+
+This step is optional, you can transform your properties before to send it.
