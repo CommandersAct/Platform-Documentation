@@ -1,9 +1,14 @@
 # Concepts
 
+Commanders Act is a cookieless platform that allows you to **collect, check, normalize, enrich and send** in real time your first-party customer data.
+
 Basically, the platform libraries/API ([Source](./#source)) collects user actions ([Event](./#event)) on your website/app/etc.\
 These events are sent to the platform servers and are then [checked](../../features/data-quality/), [enriched](../../features/enrichments/), [normalized ](../../features/data-quality/normalized-datalayer.md)and translated in each tool ([Destination](./#destinations)) format, so that they can be sent to your chosen destinations.
 
-Platform servers can also store events, users and custom data in the Commanders Act database ([Data store](./#data-store)) and send this data to your storage system (by FTP, email, ...), BI system, etc.
+Platform servers can also store events, users and custom data in the Commanders Act database ([Data store](./#data-store)) and send this data to your storage system (by FTP, email, ...), BI system, etc.\
+The user storage is based on a realtime identity resolution system that give you a cross-device single view of your users (profiles), allowing you to build segments and use audience-based destination.
+
+<figure><img src="../../.gitbook/assets/platform-schema-1.svg" alt=""><figcaption></figcaption></figure>
 
 ## Event
 
@@ -24,3 +29,7 @@ See our [destination catalog here](../../features/destinations/destinations-cata
 
 Data store is the name of Commanders Act BigData database. You can store here your events and your [imported data](../integrating-your-data.md#imports) (product catalog, etc.)\
 Storing data inside the Data store allows you then to [enrich ](../../features/enrichments/)your events by retrieving additional data in any storage universe. It also allows you to create user [segments](../../features/customers/segment/) and to benefins from analysis and insights.
+
+## Data layer
+
+A data layer is a specification of your data for tracking customer interactions. This can include data from websites, mobile apps, connected devices, and offline sources. The data layer enables your third-party vendor solutions and serves as the basis for your data-focused initiatives.
