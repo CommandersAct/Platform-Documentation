@@ -1,6 +1,6 @@
 # Destination builder
 
-If you want to send data to a destination that is not listed in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.
+If you want to send data to a destination that is not in our [destination's catalog](../destinations-catalog/), you can open a destination request, or you can write your own destination.
 
 The destination builder allows you to create your own custom destination, either with a _**no**-code_ approach (Webhook, FTP, API, GTM importer) or with a _javascript sandbox_ aproach (_**low**-code_) :
 
