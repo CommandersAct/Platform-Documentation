@@ -1,5 +1,9 @@
 # Partnerize
 
+{% hint style="info" %}
+This destination is currently under final review and it will be released soon.
+{% endhint %}
+
 [Partnerize](https://partnerize.com/)[ ](https://www.awin.com)provides a global affiliation network connecting businesses with customers.\
 Using this destination you can implement [server-side tracking](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration).
 
