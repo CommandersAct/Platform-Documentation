@@ -65,7 +65,7 @@ The two [Basket Data](https://help.phgsupport.com/hc/en-us/articles/360020395238
 | `Commanders Act event property or static value`                                                | `Event property name` **\[4]** |
 
 {% hint style="info" %}
-**\[\*]** Mandatory.\
+**\[\*]** Mandatory property.\
 **\[1]**<mark style="color:blue;">`partners.partnerize.clickref`</mark>has priority over<mark style="color:blue;">`Click Tracking Cookie Name`</mark>. If none of them are provided, the default cookie named [<mark style="color:blue;">**clickref**</mark>](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FADK3BAYNPZ8FC9YF08WVAWB) is used to retrieve the value.\
 **\[2]** See [valid values](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FANBMH24SWP0F1A9M1D0E14T).\
 **\[3]** Standard ISO 3166.\
