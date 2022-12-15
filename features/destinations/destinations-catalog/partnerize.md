@@ -43,6 +43,7 @@ The Partnerize destination provides the following key features:
 ## Field Mappings
 
 {% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.\
 Both parameters<mark style="color:blue;">`clickref`</mark>and<mark style="color:blue;">`conversionref`</mark>are mandatory.\
 The two [Basket Data](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FADKCBAZCZTRFZG43N1DP8TW) parameters<mark style="color:blue;">`category`</mark>and<mark style="color:blue;">`quantity`</mark>are required, while<mark style="color:blue;">`value`</mark>is needed if you intend to award commission based on percentage basis.&#x20;
 {% endhint %}
