@@ -59,7 +59,7 @@ The two [Basket Data](https://help.phgsupport.com/hc/en-us/articles/360020395238
 | `user.type`                                                                                    | `customertype`                 |
 | `coupon`                                                                                       | `voucher`                      |
 | `country`                                                                                      | `country` **\[3]**             |
-| `partners.partnerize.items.X.affiliation`                                                      | `category`                     |
+| `items.X.affiliation`                                                                          | `category`                     |
 | `items.X.id`                                                                                   | `sku`                          |
 | `items.X.product.price`                                                                        | `value`                        |
 | `items.X.quantity`                                                                             | `quantity`                     |
