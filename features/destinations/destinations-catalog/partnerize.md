@@ -52,22 +52,22 @@ The two [Basket Data](https://help.phgsupport.com/hc/en-us/articles/360020395238
 | ---------------------------------------------------------------------------------------------- | ------------------------------ |
 | `Campaign Id`                                                                                  | `campaign`                     |
 | <p><code>partners.partnerize.clickref</code></p><p><code>Click Tracking Cookie Name</code></p> | `clickref` **\[1]**            |
-| `properties.id`                                                                                | `conversionref`                |
-| `properties.country`                                                                           | `country` **\[2]**             |
-| `properties.currency`                                                                          | `currency`                     |
-| `partners.partnerize.device`                                                                   | `device` **\[3]**              |
-| `partners.partnerize.context`                                                                  | `context` **\[3]**             |
-| `properties.user.type`                                                                         | `customertype`                 |
-| `properties.coupon`                                                                            | `voucher`                      |
+| `partners.partnerize.device`                                                                   | `device` **\[2]**              |
+| `partners.partnerize.context`                                                                  | `context` **\[2]**             |
+| `id`                                                                                           | `conversionref`                |
+| `currency`                                                                                     | `currency`                     |
+| `user.type`                                                                                    | `customertype`                 |
+| `coupon`                                                                                       | `voucher`                      |
+| `country`                                                                                      | `country` **\[3]**             |
 | `partners.partnerize.items.X.affiliation`                                                      | `category`                     |
-| `properties.items.X.id`                                                                        | `sku`                          |
-| `properties.items.X.product.price`                                                             | `value`                        |
-| `properties.items.X.quantity`                                                                  | `quantity`                     |
+| `items.X.id`                                                                                   | `sku`                          |
+| `items.X.product.price`                                                                        | `value`                        |
+| `items.X.quantity`                                                                             | `quantity`                     |
 | `Commanders Act event property or static value`                                                | `Event property name` **\[4]** |
 
 {% hint style="info" %}
 **\[1]**<mark style="color:blue;">`partners.partnerize.clickref`</mark>has priority over<mark style="color:blue;">`Click Tracking Cookie Name`</mark>. If none of them are provided, the default cookie named [<mark style="color:blue;">**clickref**</mark>](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FADK3BAYNPZ8FC9YF08WVAWB) is used to retrieve the value.\
-**\[2]** ISO 3166 format.\
-**\[3]** See [valid values](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FANBMH24SWP0F1A9M1D0E14T).\
+**\[2]** See [valid values](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FANBMH24SWP0F1A9M1D0E14T).\
+**\[3]** Standard ISO 3166.\
 **\[4]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](partnerize.md#configuration)for more details on how you can bridge custom properties to Partnerize.
 {% endhint %}
