@@ -44,28 +44,28 @@ The Partnerize destination provides the following key features:
 
 {% hint style="info" %}
 Both parameters<mark style="color:blue;">`clickref`</mark>and<mark style="color:blue;">`conversionref`</mark>are mandatory.\
-When selecting<mark style="color:blue;">`Sale`</mark>as[<mark style="color:blue;">`Conversion Type`</mark>](partnerize.md#configuration), the parameter<mark style="color:blue;">`currency`</mark>is mandatory.\
 The two [Basket Data](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FADKCBAZCZTRFZG43N1DP8TW) parameters<mark style="color:blue;">`category`</mark>and<mark style="color:blue;">`quantity`</mark>are required, while<mark style="color:blue;">`value`</mark>is needed if you intend to award commission based on percentage basis.&#x20;
 {% endhint %}
 
 | Commanders Act Properties                                                                      | Partnerize Properties          |
 | ---------------------------------------------------------------------------------------------- | ------------------------------ |
-| `Campaign Id`                                                                                  | `campaign`                     |
-| <p><code>partners.partnerize.clickref</code></p><p><code>Click Tracking Cookie Name</code></p> | `clickref` **\[1]**            |
+| `Campaign Id`                                                                                  | `campaign` **\[\*]**           |
+| <p><code>partners.partnerize.clickref</code></p><p><code>Click Tracking Cookie Name</code></p> | `clickref` **\[\*]\[1]**       |
 | `partners.partnerize.device`                                                                   | `device` **\[2]**              |
 | `partners.partnerize.context`                                                                  | `context` **\[2]**             |
-| `id`                                                                                           | `conversionref`                |
-| `currency`                                                                                     | `currency`                     |
+| `id`                                                                                           | `conversionref` **\[\*]**      |
+| `currency`                                                                                     | `currency` **\[\*]**           |
 | `user.type`                                                                                    | `customertype`                 |
 | `coupon`                                                                                       | `voucher`                      |
 | `country`                                                                                      | `country` **\[3]**             |
-| `items.X.affiliation`                                                                          | `category`                     |
+| `items.X.affiliation`                                                                          | `category` **\[\*]**           |
+| `items.X.quantity`                                                                             | `quantity` **\[\*]**           |
 | `items.X.id`                                                                                   | `sku`                          |
 | `items.X.product.price`                                                                        | `value`                        |
-| `items.X.quantity`                                                                             | `quantity`                     |
 | `Commanders Act event property or static value`                                                | `Event property name` **\[4]** |
 
 {% hint style="info" %}
+**\[\*]** Mandatory.\
 **\[1]**<mark style="color:blue;">`partners.partnerize.clickref`</mark>has priority over<mark style="color:blue;">`Click Tracking Cookie Name`</mark>. If none of them are provided, the default cookie named [<mark style="color:blue;">**clickref**</mark>](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FADK3BAYNPZ8FC9YF08WVAWB) is used to retrieve the value.\
 **\[2]** See [valid values](https://help.phgsupport.com/hc/en-us/articles/360020395238-Tracking-Partnerize-Server-to-Server-S2S-Integration#h\_01FANBMH24SWP0F1A9M1D0E14T).\
 **\[3]** Standard ISO 3166.\
