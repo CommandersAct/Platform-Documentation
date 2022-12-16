@@ -13,7 +13,7 @@ description: >-
     ​![](<../.gitbook/assets/image (1).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (5).png>)
+    ![](<../.gitbook/assets/image (2).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​\
   ![](<../.gitbook/assets/image (3).png>)
 * Destinations:​
@@ -40,7 +40,7 @@ description: >-
       (closed beta) _Public opening on 08 Dec._\
       ****
 
-      <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google-customer-match.md) (public beta)
@@ -64,10 +64,10 @@ description: >-
     ![](<../.gitbook/assets/image (7).png>)
   * **Onboarding tour:** \
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (2) (4).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (1) (5) (1).png>)
+    ![](<../.gitbook/assets/image (5) (1).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
     <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2&#x20;
@@ -93,7 +93,7 @@ description: >-
     * &#x20;_Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
       * Ability to create new property and map them to existing one for a specific destination
       * Ability to remove event properties for a specific destination\
-        ![](<../.gitbook/assets/image (2) (3).png>)
+        ![](<../.gitbook/assets/image (24).png>)
 
 
 
@@ -137,7 +137,7 @@ description: >-
   * &#x20;TikTok connector (Web mode only, App mode in September)​
   * &#x20;Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * &#x20;Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (5).png>)
+    ![](<../.gitbook/assets/image (19).png>)![](<../.gitbook/assets/image (1) (5).png>)
 
 ## Release 10.0.1 - 24/06/22
 

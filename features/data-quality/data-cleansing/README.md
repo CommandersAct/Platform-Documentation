@@ -56,4 +56,4 @@ For example, to calculate the revenue with taxes, you can do: `revenue = value*1
 
 
 
-<figure><img src="../../../.gitbook/assets/Live Normalization [READY] (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Live Normalization [READY] (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -8,18 +8,15 @@ This documentation details the conventions and best practices for sending events
 
 Playback events are tied to the actual playback of video content and track information about the video player.
 
-For example, when a customer plays a video on an app, a Video Playback Started event is sent along with a unique session_id. All subsequent events generated from that session are tied to the same session_id.
+For example, when a customer plays a video on an app, a Video Playback Started event is sent along with a unique session\_id. All subsequent events generated from that session are tied to the same session\_id.
 
-If a web page has two video players, there will be two separate sessions and associated session_ids.
-However, if two separate videos are played on the same video player, they will still be considered a single session with two associated pieces of content.
+If a web page has two video players, there will be two separate sessions and associated session\_ids. However, if two separate videos are played on the same video player, they will still be considered a single session with two associated pieces of content.
 
 ### Playback Events
 
 This section details all the video playback events.
 
-<div class="infoBlock">
-For more information on each of the properties associated with these events, refer to the <strong>Playback Event Properties</strong> section.
-</div>
+For more information on each of the properties associated with these events, refer to the **Playback Event Properties** section.
 
 #### Video Playback Started
 
@@ -157,31 +154,28 @@ A sample event is as shown:
 
 #### Video Playback Seek Started
 
-This event is sent when a user manually seeks a certain position of the video content or an advertisement in the playback. The `position` property indicates where the user is seeking from \(time in seconds\) and the `seek_position` indicates the position in the playback where the user is seeking to.
+This event is sent when a user manually seeks a certain position of the video content or an advertisement in the playback. The `position` property indicates where the user is seeking from (time in seconds) and the `seek_position` indicates the position in the playback where the user is seeking to.
 
 A sample event is as shown:
 
 ```javascript
 {
-    "type": "track",
-    "event": "Video Playback Seek Started",
-    "userId": "user12345",
-    "properties": {
-      "session_id": "12345",
-      "content_asset_ids": ["0144370"],
-      "content_pod_ids": ["CAA", "CAB"],
-      "position": 47,
-      "seek_position": 120,
-      "total_length": 300,
-      "bitrate": 128,
-      "framerate": 30.00,
-      "video_player": "youtube",
-      "sound": 68,
-      "full_screen": true,
-      "ad_enabled": true,
-      "quality": "hd1080",
-      "livestream": false
-    }
+    "event_name": "video_seek_start",
+    "user": {},
+    "session_id": "abcdef",
+    "content_asset_ids": ["123456"],
+    "content_pod_ids": ["XYZ", "XYA"],
+    "position": 59,
+    "seek_position": 150,
+    "total_length": 360,
+    "bitrate": 256,
+    "framerate": 60.00,
+    "video_player": "vimeo",
+    "sound": 80,
+    "full_screen": false,
+    "ad_enabled": false,
+    "quality": "hd720",
+    "livestream": true
 }
 ```
 
@@ -193,7 +187,7 @@ A sample event is as shown:
 
 ```javascript
 {
-    "event_name": "video_seek_start",
+    "event_name": "video_seek_complete",
     "user": {},
     "session_id": "abcdef",
     "content_asset_ids": ["123456"],
@@ -272,329 +266,26 @@ All the playback events share the same properties that describe the current stat
 
 The following table lists all the properties of this playback event object in detail:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <b>Property</b>
-      </th>
-      <th style="text-align:left">
-        <b>Type</b>
-      </th>
-      <th style="text-align:left">
-        <b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">session_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        A unique ID that ties all the events
-        <br />
-        generated from a specific playback session.
-        <br />
-        <br />
-        These events include playback, content, and
-        <br />
-        ad events.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p>
-          <code class="inline-code">content_asset_id</code>
-        </p>
-        <p>
-          <code class="inline-code">content_asset_ids</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p>String</p>
-        <p>Array [String]</p>
-      </td>
-      <td style="text-align:left">
-        <p>Content asset ID/s of the video/s playing or</p>
-        <p>about to be played.</p>
-        <p></p>
-        <p>
-          For <code class="inline-code">Video Playback Started</code> events, an array
-        </p>
-        <p>of unique asset IDs should be sent. For other</p>
-        <p>
-          playback events, a singular content asset ID
-          <br />
-          at the time of the event should be sent.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <p>
-          <code class="inline-code">content_pod_id</code>
-        </p>
-        <p>
-          <code class="inline-code">content_pod_ids</code>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p>String</p>
-        <p>Array [String]</p>
-      </td>
-      <td style="text-align:left">
-        <p>Content pod ID/s of the video/s playing or</p>
-        <p>about to be played.</p>
-        <p></p>
-        <p>
-          For <code class="inline-code">Video Playback Started</code> events, an array
-        </p>
-        <p>of unique pod IDs should be sent. For other</p>
-        <p>
-          playback events, a singular content pod ID
-          <br />
-          associated with the current content pod at the
-          <br />
-          time of the event should be sent.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">ad_asset_id</code>
-      </td>
-      <td style="text-align:left">
-        <p>String</p>
-        <p>Array [String]</p>
-      </td>
-      <td style="text-align:left">
-        <p>Ad asset ID/s of the video/s playing or</p>
-        <p>about to be played.</p>
-        <p></p>
-        <p>
-          For <code class="inline-code">Video Playback Started</code> events, an array
-        </p>
-        <p>of unique ad asset IDs should be sent. For other</p>
-        <p>
-          playback events, a singular ad asset ID
-          <br />
-          at the time of the event should be sent.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">ad_pod_id</code>
-      </td>
-      <td style="text-align:left">
-        <p>String</p>
-        <p>Array [String]</p>
-      </td>
-      <td style="text-align:left">
-        <p>Ad pod ID/s of the video/s playing or</p>
-        <p>about to be played.</p>
-        <p></p>
-        <p>
-          For <code class="inline-code">Video Playback Started</code> events, an array
-        </p>
-        <p>of unique ad pod IDs should be sent. For other</p>
-        <p>
-          playback events, a singular content pod ID
-          <br />
-          associated with the current ad pod at the
-          <br />
-          time of the event should be sent.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">ad_type</code>
-      </td>
-      <td style="text-align:left">Enum</td>
-      <td style="text-align:left">
-        <p>Denotes the type of ad playing at the time of the</p>
-        <p>
-          event. The values can be &apos;<code class="inline-code">pre-roll</code>&apos;, &apos;
-          <code class="inline-code">mid-roll</code>&apos;, and
-        </p>
-        <p>
-          &apos;<code class="inline-code">post-roll</code>&apos;.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">position</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        Denotes the current index position of the playhead
-        <br />
-        in seconds. It includes the duration of any seen ads.
-        <br />
-        <br />
-        If the playback is a livestream, refer to the
-        <br />
-        documentation of the relevant destination for steps
-        <br />
-        on correctly passing the playhead position.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">seek_position</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the index position of the playhead where the</p>
-        <p>user is seeking to.</p>
-        <p></p>
-        <p>
-          Only applicable on the <code class="inline-code">Video Playback Seek Started</code>
-          <br />
-          events. On Video Playback Seek Completed events,
-        </p>
-        <p>
-          the <code class="inline-code">seek_position</code> should be equal to
-          <code class="inline-code">position</code>.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">total_length</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the total duration of the video playback</p>
-        <p>in seconds. Includes the whole duration of all</p>
-        <p>the content and ads included in the session.</p>
-        <p></p>
-        <p>
-          Set to <code class="inline-code">null</code> in case of a livestream playback.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">bitrate</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        Bit rate of the video playback, denoted in <code class="inline-code">kbps</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">framerate</code>
-      </td>
-      <td style="text-align:left">Float</td>
-      <td style="text-align:left">
-        Denotes the average frame rate of the video
-        <br />
-        playback in <code class="inline-code">fps</code>.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">video_player</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>Denotes the name of the video player used for</p>
-        <p>
-          playback. Example: <code class="inline-code">youtube</code>, <code class="inline-code">vimeo</code>, etc.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">sound</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the sound level of the video playback.</p>
-        <p></p>
-        <p>Range is from 0-100, where 0 represents mute</p>
-        <p>and 100 is full volume.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">full_screen</code>
-      </td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">
-        Set to <code class="inline-code">true</code> if the playback is in fullscreen
-        <br />
-        mode.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">ad_enabled</code>
-      </td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">
-        <p>
-          Set to <code class="inline-code">false</code> if the user has any ad blockers.
-        </p>
-        <p>
-          <br />
-          If the user can view your video ads, it is set to
-        </p>
-        <p>
-          <code class="inline-code">true</code>.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">quality</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Specifies the quality of the video.
-        <br />
-        <br />
-        Examples: &apos;hd1080&apos;, &apos;highres&apos;
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">method</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>
-          For the <code class="inline-code">Video Playback Interrupted</code> events,
-          <br />
-          you can send this property denoting how the
-        </p>
-        <p>playback was interrupted.</p>
-        <p></p>
-        <p>
-          Some examples include &apos;device lock&apos;, &apos;call&apos;, and
-        </p>
-        <p>&apos;browser redirect&apos;.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">livestream</code>
-      </td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">
-        Set to <code class="inline-code">true</code> in case the playback is a live stream,
-        <br />
-        else set to <code class="inline-code">false</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Property                                                                  | Type                               | Description                                                                                                                                                                                                                                                                                                                          |
+| ------------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `session_id`                                                              | String                             | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                                                                          |
+| <p><code>content_asset_id</code></p><p><code>content_asset_ids</code></p> | <p>String</p><p>Array [String]</p> | <p>Content asset ID/s of the video/s playing or</p><p>about to be played.</p><p>For <code>Video Playback Started</code> events, an array</p><p>of unique asset IDs should be sent. For other</p><p>playback events, a singular content asset ID<br>at the time of the event should be sent.</p>                                      |
+| <p><code>content_pod_id</code></p><p><code>content_pod_ids</code></p>     | <p>String</p><p>Array [String]</p> | <p>Content pod ID/s of the video/s playing or</p><p>about to be played.</p><p>For <code>Video Playback Started</code> events, an array</p><p>of unique pod IDs should be sent. For other</p><p>playback events, a singular content pod ID<br>associated with the current content pod at the<br>time of the event should be sent.</p> |
+| `ad_asset_id`                                                             | <p>String</p><p>Array [String]</p> | <p>Ad asset ID/s of the video/s playing or</p><p>about to be played.</p><p>For <code>Video Playback Started</code> events, an array</p><p>of unique ad asset IDs should be sent. For other</p><p>playback events, a singular ad asset ID<br>at the time of the event should be sent.</p>                                             |
+| `ad_pod_id`                                                               | <p>String</p><p>Array [String]</p> | <p>Ad pod ID/s of the video/s playing or</p><p>about to be played.</p><p>For <code>Video Playback Started</code> events, an array</p><p>of unique ad pod IDs should be sent. For other</p><p>playback events, a singular content pod ID<br>associated with the current ad pod at the<br>time of the event should be sent.</p>        |
+| `ad_type`                                                                 | Enum                               | <p>Denotes the type of ad playing at the time of the</p><p>event. The values can be '<code>pre-roll</code>', ' <code>mid-roll</code>', and</p><p>'<code>post-roll</code>'.</p>                                                                                                                                                       |
+| `position`                                                                | Integer                            | <p>Denotes the current index position of the playhead<br>in seconds. It includes the duration of any seen ads.<br><br>If the playback is a livestream, refer to the<br>documentation of the relevant destination for steps<br>on correctly passing the playhead position.</p>                                                        |
+| `seek_position`                                                           | Integer                            | <p>Denotes the index position of the playhead where the</p><p>user is seeking to.</p><p>Only applicable on the <code>Video Playback Seek Started</code><br>events. On Video Playback Seek Completed events,</p><p>the <code>seek_position</code> should be equal to <code>position</code>.</p>                                       |
+| `total_length`                                                            | Integer                            | <p>Denotes the total duration of the video playback</p><p>in seconds. Includes the whole duration of all</p><p>the content and ads included in the session.</p><p>Set to <code>null</code> in case of a livestream playback.</p>                                                                                                     |
+| `bitrate`                                                                 | Integer                            | Bit rate of the video playback, denoted in `kbps`                                                                                                                                                                                                                                                                                    |
+| `framerate`                                                               | Float                              | <p>Denotes the average frame rate of the video<br>playback in <code>fps</code>.</p>                                                                                                                                                                                                                                                  |
+| `video_player`                                                            | String                             | <p>Denotes the name of the video player used for</p><p>playback. Example: <code>youtube</code>, <code>vimeo</code>, etc.</p>                                                                                                                                                                                                         |
+| `sound`                                                                   | Integer                            | <p>Denotes the sound level of the video playback.</p><p>Range is from 0-100, where 0 represents mute</p><p>and 100 is full volume.</p>                                                                                                                                                                                               |
+| `full_screen`                                                             | Boolean                            | <p>Set to <code>true</code> if the playback is in fullscreen<br>mode.</p>                                                                                                                                                                                                                                                            |
+| `ad_enabled`                                                              | Boolean                            | <p>Set to <code>false</code> if the user has any ad blockers.</p><p><br>If the user can view your video ads, it is set to</p><p><code>true</code>.</p>                                                                                                                                                                               |
+| `quality`                                                                 | String                             | <p>Specifies the quality of the video.<br><br>Examples: 'hd1080', 'highres'</p>                                                                                                                                                                                                                                                      |
+| `method`                                                                  | String                             | <p>For the <code>Video Playback Interrupted</code> events,<br>you can send this property denoting how the</p><p>playback was interrupted.</p><p>Some examples include 'device lock', 'call', and</p><p>'browser redirect'.</p>                                                                                                       |
+| `livestream`                                                              | Boolean                            | <p>Set to <code>true</code> in case the playback is a live stream,<br>else set to <code>false</code>.</p>                                                                                                                                                                                                                            |
 
 ## Content
 
@@ -604,21 +295,17 @@ Suppose a video playback session has a video and one mid-roll advertisement. Thi
 
 The flow is as follows:
 
-- User starts and completes the first content pod
-- User starts and completes the ad
-- User starts and completes the second content pod
+* User starts and completes the first content pod
+* User starts and completes the ad
+* User starts and completes the second content pod
 
-<div class="infoBlock">
 All of these events within the flow happen within one video playback.
-</div>
 
 ### Content Events
 
 This section details all the video content events.
 
-<div class="infoBlock">
-For more information on each of the properties associated with these events, refer to the <strong>Content Event Properties</strong> section.
-</div>
+For more information on each of the properties associated with these events, refer to the **Content Event Properties** section.
 
 #### Video Content Started
 
@@ -704,224 +391,27 @@ All the content events share the same properties that describe the current state
 
 The following table lists all the properties of this playback event object in detail:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <b>Property</b>
-      </th>
-      <th style="text-align:left">
-        <b>Type</b>
-      </th>
-      <th style="text-align:left">
-        <b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">session_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        A unique ID that ties all the events
-        <br />
-        generated from a specific playback session.
-        <br />
-        <br />
-        These events include playback, content, and
-        <br />
-        ad events.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">asset_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Denotes the unique ID of the video content asset.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">pod_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Denotes the unique ID of the video content pod.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">title</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Denotes the title of the video content.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">description</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Describes the video content asset in short.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">keywords</code>
-      </td>
-      <td style="text-align:left">Array [String]</td>
-      <td style="text-align:left">
-        <p>Denotes the relevant keywords associated with the</p>
-        <p>categorizing the video content</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">season</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Denotes the season number, if applicable.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">episode</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Denotes the episode number, if applicable.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">genre</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Denotes the genre of the video content asset.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">program</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>Denotes the name of the program / show of which</p>
-        <p>the video content is a part.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">publisher</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>Denotes the publisher / creator / author of the</p>
-        <p>video content asset.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">channel</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        <p>Denotes the channel in which the video content</p>
-        <p>is playing.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">full_episode</code>
-      </td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">
-        Set to <code class="inline-code">true</code> the video content asset is a full episode.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">livestream</code>
-      </td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">
-        <p>If the video content is a live stream, this is set to</p>
-        <p>
-          <code class="inline-code">true</code>.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">airdate</code>
-      </td>
-      <td style="text-align:left">
-        <p>ISO 8601</p>
-        <p>Date String</p>
-      </td>
-      <td style="text-align:left">
-        <p>Denotes the original date of airing / publishing</p>
-        <p>the video content.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">position</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the current playhead position into the</p>
-        <p>video content in seconds. This does not include</p>
-        <p>any ads played in this duration.</p>
-        <p></p>
-        <p>
-          In case of live streams, refer to the relevant
-          <br />
-          destination&apos;s documentation for details on how to
-          <br />
-          pass this property.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">total_length</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>The total duration of the video content in</p>
-        <p>seconds. This does not include any ads included</p>
-        <p>in the playback of this content asset.</p>
-        <p></p>
-        <p>
-          For livestream playback, this should be set to <code class="inline-code">null</code>.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">bitrate</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        Denotes the current bit rate in <code class="inline-code">kbps</code>.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">framerate</code>
-      </td>
-      <td style="text-align:left">Float</td>
-      <td style="text-align:left">
-        Denotes the frame rate in <code class="inline-code">fps</code>.
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Property       | Type                              | Description                                                                                                                                                                                                                                                                         |
+| -------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `session_id`   | String                            | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                         |
+| `asset_id`     | String                            | Denotes the unique ID of the video content asset.                                                                                                                                                                                                                                   |
+| `pod_id`       | String                            | Denotes the unique ID of the video content pod.                                                                                                                                                                                                                                     |
+| `title`        | String                            | Denotes the title of the video content.                                                                                                                                                                                                                                             |
+| `description`  | String                            | Describes the video content asset in short.                                                                                                                                                                                                                                         |
+| `keywords`     | Array \[String]                   | <p>Denotes the relevant keywords associated with the</p><p>categorizing the video content</p>                                                                                                                                                                                       |
+| `season`       | String                            | Denotes the season number, if applicable.                                                                                                                                                                                                                                           |
+| `episode`      | String                            | Denotes the episode number, if applicable.                                                                                                                                                                                                                                          |
+| `genre`        | String                            | Denotes the genre of the video content asset.                                                                                                                                                                                                                                       |
+| `program`      | String                            | <p>Denotes the name of the program / show of which</p><p>the video content is a part.</p>                                                                                                                                                                                           |
+| `publisher`    | String                            | <p>Denotes the publisher / creator / author of the</p><p>video content asset.</p>                                                                                                                                                                                                   |
+| `channel`      | String                            | <p>Denotes the channel in which the video content</p><p>is playing.</p>                                                                                                                                                                                                             |
+| `full_episode` | Boolean                           | Set to `true` the video content asset is a full episode.                                                                                                                                                                                                                            |
+| `livestream`   | Boolean                           | <p>If the video content is a live stream, this is set to</p><p><code>true</code>.</p>                                                                                                                                                                                               |
+| `airdate`      | <p>ISO 8601</p><p>Date String</p> | <p>Denotes the original date of airing / publishing</p><p>the video content.</p>                                                                                                                                                                                                    |
+| `position`     | Integer                           | <p>Denotes the current playhead position into the</p><p>video content in seconds. This does not include</p><p>any ads played in this duration.</p><p>In case of live streams, refer to the relevant<br>destination's documentation for details on how to<br>pass this property.</p> |
+| `total_length` | Integer                           | <p>The total duration of the video content in</p><p>seconds. This does not include any ads included</p><p>in the playback of this content asset.</p><p>For livestream playback, this should be set to <code>null</code>.</p>                                                        |
+| `bitrate`      | Integer                           | Denotes the current bit rate in `kbps`.                                                                                                                                                                                                                                             |
+| `framerate`    | Float                             | Denotes the frame rate in `fps`.                                                                                                                                                                                                                                                    |
 
 ## Ads
 
@@ -929,9 +419,7 @@ The following table lists all the properties of this playback event object in de
 
 This section details all the ad events.
 
-<div class="infoBlock">
-For more information on each of the properties associated with these events, refer to the <strong>Ad Event Properties</strong> section.
-</div>
+For more information on each of the properties associated with these events, refer to the **Ad Event Properties** section.
 
 #### Video Ad Started
 
@@ -1003,165 +491,21 @@ All the ad events share the same properties that describe the current state of t
 
 The following table lists all the properties of this playback event object in detail:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Property</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">session_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        A unique ID that ties all the events
-        <br />
-        generated from a specific playback session.
-        <br />
-        <br />
-        These events include playback, content, and
-        <br />
-        ad events.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">asset_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Denotes the unique ID of the ad asset.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">pod_id</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Denotes the unique ID of the ad pod.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">pod_position</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the position of the ad asset relative</p>
-        <p>to other ads in the same pod.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">pod_length</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>Denotes the number of ad assets in the current</p>
-        <p>ad pod.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">type</code>
-      </td>
-      <td style="text-align:left">Enum</td>
-      <td style="text-align:left">
-        <p>Denotes the type of ad. Values can be either of</p>
-        <p>
-          &apos;<code class="inline-code">pre-roll</code>&apos;, &apos;<code class="inline-code">mid-roll</code>&apos;,
-          or &apos;<code class="inline-code">post-roll</code>&apos;.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">title</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">Denotes the title of the ad.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">publisher</code>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Denotes the author/ creator/ publisher of the ad.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">position</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>The current playhead position in relation to the</p>
-        <p>total length of the ad, in seconds.</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">total_length</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        Denotes the total length of the ad asset in seconds.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">load_type</code>
-      </td>
-      <td style="text-align:left">Enum</td>
-      <td style="text-align:left">
-        <p>Denotes if the ads are loaded dynamically or if</p>
-        <p>
-          they are the same for all the users.
-          <br />
-          <br />
-          Values can be either &apos;<code class="inline-code">dynamic</code>&apos; or &apos;<code class="inline-code">
-            linear
-          </code>&apos;.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">content</code>
-      </td>
-      <td style="text-align:left">Object</td>
-      <td style="text-align:left">
-        <p>Some destinations require the content metadata</p>
-        <p>to be sent with the ad events.</p>
-        <p></p>
-        <p>
-          You can send all the metadata as a Content Event
-          <br />
-          Object under this property.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <code class="inline-code">quartile</code>
-      </td>
-      <td style="text-align:left">Integer</td>
-      <td style="text-align:left">
-        <p>
-          For the <code class="inline-code">Video Ad Playing</code> event, this property
-        </p>
-        <p>can be used to indicate when a specific ad quartile</p>
-        <p>is reached.</p>
-        <p></p>
-        <p>If you are using a client-side library to track your</p>
-        <p>video events, this property is optional as Commanders Act</p>
-        <p>automatically tracks the ad quartiles.</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Property       | Type    | Description                                                                                                                                                                                                                                                                                                           |
+| -------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `session_id`   | String  | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                                                           |
+| `asset_id`     | String  | Denotes the unique ID of the ad asset.                                                                                                                                                                                                                                                                                |
+| `pod_id`       | String  | Denotes the unique ID of the ad pod.                                                                                                                                                                                                                                                                                  |
+| `pod_position` | Integer | <p>Denotes the position of the ad asset relative</p><p>to other ads in the same pod.</p>                                                                                                                                                                                                                              |
+| `pod_length`   | Integer | <p>Denotes the number of ad assets in the current</p><p>ad pod.</p>                                                                                                                                                                                                                                                   |
+| `type`         | Enum    | <p>Denotes the type of ad. Values can be either of</p><p>'<code>pre-roll</code>', '<code>mid-roll</code>', or '<code>post-roll</code>'.</p>                                                                                                                                                                           |
+| `title`        | String  | Denotes the title of the ad.                                                                                                                                                                                                                                                                                          |
+| `publisher`    | String  | Denotes the author/ creator/ publisher of the ad.                                                                                                                                                                                                                                                                     |
+| `position`     | Integer | <p>The current playhead position in relation to the</p><p>total length of the ad, in seconds.</p>                                                                                                                                                                                                                     |
+| `total_length` | Integer | Denotes the total length of the ad asset in seconds.                                                                                                                                                                                                                                                                  |
+| `load_type`    | Enum    | <p>Denotes if the ads are loaded dynamically or if</p><p>they are the same for all the users.<br><br>Values can be either '<code>dynamic</code>' or ' <code>linear</code> '.</p>                                                                                                                                      |
+| `content`      | Object  | <p>Some destinations require the content metadata</p><p>to be sent with the ad events.</p><p>You can send all the metadata as a Content Event<br>Object under this property.</p>                                                                                                                                      |
+| `quartile`     | Integer | <p>For the <code>Video Ad Playing</code> event, this property</p><p>can be used to indicate when a specific ad quartile</p><p>is reached.</p><p>If you are using a client-side library to track your</p><p>video events, this property is optional as Commanders Act</p><p>automatically tracks the ad quartiles.</p> |
 
 ## Resuming Playback
 
@@ -1173,10 +517,10 @@ Commanders Act also lets you track and analyze the performance and quality of yo
 
 Whenever a user changes the video quality during playback, you can track a Video Quality Updated event along with the following properties:
 
-- `bitrate`: Denotes the updated bit rate in `kbps`.
-- `framerate`: Denotes the updated frame rate in `fps`.
-- `startupTime`: Denotes the time when the video quality was changed by the user.
-- `droppedFrames`: Indicates if any frames were dropped during the video quality change.
+* `bitrate`: Denotes the updated bit rate in `kbps`.
+* `framerate`: Denotes the updated frame rate in `fps`.
+* `startupTime`: Denotes the time when the video quality was changed by the user.
+* `droppedFrames`: Indicates if any frames were dropped during the video quality change.
 
 ## Events Lifecycle
 
@@ -1293,7 +637,7 @@ cact("trigger","video_resume", {
 });
 ```
 
-#### 6. Ad \(mid-roll\) starts playing after user resumes playback
+#### 6. Ad (mid-roll) starts playing after user resumes playback
 
 ```javascript
 cact("trigger","video_ad_start", {
@@ -1414,8 +758,8 @@ cact("trigger","video_complete", {
 
 #### What are pre-roll, mid-roll, and post-roll ads?
 
-- Ads that appear before the start of the video playback are called pre-roll ads.
-- Ads that appear in the middle of the playback are mid-roll ads.
-- Ads that appear after the video playback are called post-roll ads.
+* Ads that appear before the start of the video playback are called pre-roll ads.
+* Ads that appear in the middle of the playback are mid-roll ads.
+* Ads that appear after the video playback are called post-roll ads.
 
 These ads can be a promotional video by the sponsors or a piece of content offered by the content provider.
