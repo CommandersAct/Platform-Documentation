@@ -2,17 +2,17 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 **Encourage** customers to download the app
 
 Applications are keys to engage new customers and retain them because it allows businesses to communicate directly with their customers using ads, promotions, and **notifications**. Push new customers to install the app with an incentive is important to keep them activated.
 
-🔧  Complexity: 2/5
+🔧 Complexity: 2/5
 
-💰  ROI: Medium
+💰 ROI: Medium
 
-![](../../.gitbook/assets/app.png)
+![](../../../.gitbook/assets/app.png)
 
 ## Use case setup
 

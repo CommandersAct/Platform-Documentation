@@ -1,19 +1,19 @@
-# Engage hesitant customers
+# Real-time promotion for hesitant customers
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 **Convert** hesitant customers
 
 Detect hesitant customers: they have viewed products from a certain category at least a few times but have not made a purchase.\
 We can push them a dedicated pop-in message with a % discount and/or free shipping.
 
-🔧  Complexity: 2/5
+🔧 Complexity: 2/5
 
-💰  ROI: High
+💰 ROI: High
 
-![](../../.gitbook/assets/stay.png)
+![](../../../.gitbook/assets/stay.png)
 
 ## Use case setup
 

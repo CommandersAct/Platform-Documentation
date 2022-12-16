@@ -2,18 +2,18 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 Create similar audience segments from your best customers.\
 **Send your best customers** to our partners (Facebook, Google, Criteo…) and let them **find similar profiles** on their database.
 
 Then create relevant and personalized ads to activate these similar users.
 
-🔧  Complexity: 1/5
+🔧 Complexity: 1/5
 
-💰  ROI: Medium
+💰 ROI: Medium
 
-![](../../.gitbook/assets/lookalike.png)
+![](../../../.gitbook/assets/lookalike.png)
 
 ## Use case setup
 

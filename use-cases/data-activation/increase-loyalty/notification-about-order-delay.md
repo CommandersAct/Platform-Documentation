@@ -2,17 +2,17 @@
 
 ## Use case description
 
-🎯  Goal:
+🎯 Goal:
 
 Answer to customers expectations, **reduce call center traffic** and increase loyalty.
 
 Notify your customers when an order is delayed, this will reduce the call center traffic and bring more interactions with customers by giving them more info. If needed, you can add also an incentive for next purchase as compensation.
 
-🔧  Complexity: 2/5
+🔧 Complexity: 2/5
 
-💰  ROI: Low
+💰 ROI: Low
 
-![](../../.gitbook/assets/delay.png)
+![](../../../.gitbook/assets/delay.png)
 
 ## Use case setup
 
