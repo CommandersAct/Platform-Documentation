@@ -4,10 +4,15 @@
 
 Dear Customer,
 
-We have created the new **Platform X** last May 2022 to bring you new great functionalities, a new higher-performance architecture but also modern, fast and userfriendly interfaces to facilitate your daily life.
+As you know, we have created the new **Platform X**, which was launched in May 2022 to provide you with a range of new and improved features, including a higher-performance architecture, modern, fast and user-friendly interfaces, and enhanced functionality to make your daily life easier.&#x20;
 
-Therefore, **the old platform (version 7) will be closed June 30th**.
+In light of this, **we will be closing the old platform (version 7) on June 30th**.
 
-Many of you have already switched to the platform X and are already benefiting from its many advantages. For those of you who have not yet taken the time to take the plunge, we invite you to come and discover our brand new platform, we would be happy to give you a presentation.\
+Many of you have already switched to the platform X and are already enjoying its benefits. If you have not yet had the chance to explore the new platform, we invite you to come and discover it for yourself. We would be happy to provide you with a presentation and show you all that it has to offer.\
 \
-We are very proud of this new platform and your first feedback makes us very happy and confirms us in our choice to provide you this new unified platform ready for the future !
+We are very proud of our new platform and are delighted with the positive feedback we have received so far. This reinforces our choice to provide you this new unified platform, ready for the future !
+
+Thank you for your continued support.
+
+Sincerely,\
+The Commanders Act Team
