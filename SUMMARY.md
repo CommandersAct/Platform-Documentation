@@ -1,11 +1,9 @@
 # Table of contents
 
 * [Welcome !](README.md)
-
-## Platform updates
-
-* [Documentation updates](platform-updates/documentation-updates.md)
-* [Release notes](platform-updates/releases-notes.md)
+* [Platform updates](platform-updates/README.md)
+  * [Documentation updates](platform-updates/documentation-updates.md)
+  * [Release notes](platform-updates/releases-notes.md)
 
 ## Getting started
 
