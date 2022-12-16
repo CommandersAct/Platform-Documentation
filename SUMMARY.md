@@ -2,6 +2,7 @@
 
 * [Welcome !](README.md)
 * [Platform updates](platform-updates/README.md)
+  * [Announcements](platform-updates/announcements.md)
   * [Documentation updates](platform-updates/documentation-updates.md)
   * [Release notes](platform-updates/releases-notes.md)
 
