@@ -17,8 +17,8 @@ Destination documentation:
 * Re-arrangement of menus to find sources/destinations more easily
 * Event reference better arranged to simplify reading:
 
-{% content-ref url="../developers/tracking/events-reference.md" %}
-[events-reference.md](../developers/tracking/events-reference.md)
+{% content-ref url="../developers/tracking/events-reference/" %}
+[events-reference](../developers/tracking/events-reference/)
 {% endcontent-ref %}
 
 ## 02/12/2022

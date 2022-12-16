@@ -16,6 +16,6 @@ Then, in the [Source data quality](data-quality.md) view, you are able to see th
 
 ![Write your event specifications](<../../.gitbook/assets/Normalized Datalayer \[IN PROGRESS] - Tab universes.png>)
 
-You can choose to add a [standard event](../../developers/tracking/events-reference.md) (from the event catalog) or a custom specification.
+You can choose to add a [standard event](../../developers/tracking/events-reference/) (from the event catalog) or a custom specification.
 
 The schema of standard events is already defined, but you can modify it by adding more properties (standard or custom properties).
