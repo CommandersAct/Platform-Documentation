@@ -1,8 +1,5 @@
 # Web container generator
 
-### Release x.x.x - xx/xx/2022
+### Release v78.0 - 13/12/2022
 
-```
-Lorem ipsum dolor sit amet.
-Consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-```
+* Update tC.setCookie to encode `!'()~` characters in the cookie value. This is a requirement for some WAF restrictions of TagCommander users.
