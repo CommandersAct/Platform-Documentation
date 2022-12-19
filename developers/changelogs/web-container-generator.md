@@ -4,7 +4,7 @@
 
 * Update `tC.setCookie` to encode `!'()~` characters in the cookie value. This is a requirement for WAF restrictions of some TagCommander users.
 
-### Release v77.0 - 01/23/2022
+### Release v77.0 - 01/12/2022
 
 * Update `tC.privacy.hit` to not send hits when analytics category was refused using consent JS OnSite API 
 
