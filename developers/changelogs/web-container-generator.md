@@ -2,11 +2,11 @@
 
 ### Release v78.0 - 13/12/2022
 
-* Update `tC.setCookie` to encode `!'()~` characters in the cookie value. This is a requirement for WAF restrictions of some TagCommander users.
+* Update `tC.setCookie` function to encode `!'()~` characters in the cookie value. This is a requirement for WAF restrictions of some TagCommander users.
 
 ### Release v77.0 - 01/12/2022
 
-* Update `tC.privacy.hit` to not send hits when analytics category was refused using consent JS OnSite API
+* Update `tC.privacy.hit` function to not send hits when analytics category was refused using consent JS OnSite API
 
 ### Release v76.1 - 30/11/2022
 
@@ -14,5 +14,5 @@
 
 ### Release v76.0 - 15/11/2022
 
-* Update `tC.setCookie` to use `encodeURIComponent` instead of `escape` \
-  `escape` function is deprecated, more information [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/escape).
+* Update `tC.setCookie` function to use `encodeURIComponent` on the content of the cookie, instead of `escape` .\
+  `escape` function is deprecated and can't be maintain anymore, more information [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/escape).
