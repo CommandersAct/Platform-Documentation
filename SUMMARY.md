@@ -221,6 +221,7 @@
 * [Config API](developers/config-api.md)
 * [Changelogs](developers/changelogs/README.md)
   * [Measure.js changelog](developers/changelogs/measure.js-changelog.md)
+  * [Web container generator](developers/changelogs/web-container-generator.md)
 
 ## CONFIGURE
 
