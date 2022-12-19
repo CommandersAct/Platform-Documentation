@@ -9,7 +9,7 @@ description: >-
 A Website’s performance is key to **SEO** and **user experience** and by extension to the **bounce rate** and **conversion rate.**\
 ****It has long been proven that the amount of client-side tags used on websites has an important impact on loading time and conversion rate.
 
-In this context, tags’ **performance** has become a **strategic** matter and Commanders Act provides two ways to work on this topic:
+In this context, tag's **performance** has become a **strategic** matter and Commanders Act provides two ways to work on this topic:
 
 1. **TagPerformance** feature, to analyse the impact of your tags
 2. **Server-side** feature, to take actions to minimize impact
