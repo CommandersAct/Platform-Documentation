@@ -15,4 +15,4 @@
 ### Release v76.0 - 15/11/2022
 
 * Update `tC.setCookie` function to use `encodeURIComponent` on the content of the cookie, instead of `escape` .\
-  `escape` function is deprecated and can't be maintain anymore, more information [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/escape).
+  `escape` function is deprecated and cannot be maintain anymore, more information [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/escape).
