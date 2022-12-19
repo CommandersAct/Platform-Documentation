@@ -4,6 +4,16 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 16/12/2022
+
+* Add an [_announcements_ ](announcements.md)section in Platform updates menu
+* Add [_web performance_](../use-cases/website-performance.md) in use cases section
+* Enhance the [_Concepts_ ](../getting-started/concepts/)section
+* Give more visibility to [_Sources_ ](../features/sources/)and [_Destinations_ ](../features/destinations/)menus, following your feedbacks
+* Enhance the [event reference](../developers/tracking/events-reference/) page to clarify and enlarge tables, following your feedbacks
+* Enhance the home page
+* Add [video events](../developers/tracking/events-reference/video-event-reference.md) spec
+
 ## 09/12/2022
 
 Destination documentation:
