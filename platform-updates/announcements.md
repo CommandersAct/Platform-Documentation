@@ -18,7 +18,7 @@ Here are the closing steps on the v7:
 
 Many of you have already switched to the platform X and are already enjoying its benefits. If you have not yet had the chance to explore the new platform, we invite you to come and discover it for yourself. We would be happy to provide you with a presentation and show you all that it has to offer.\
 \
-We are very proud of our new platform and are delighted with the positive feedback we have received so far. This reinforces our choice to provide you this new unified platform, ready for the future !
+We are very proud of our new platform and are delighted with the positive feedbacks we have received so far. This reinforces our choice to provide you this new unified platform, ready for the future !
 
 Thank you for your continued support.
 
