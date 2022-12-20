@@ -8,7 +8,7 @@ As you know, we have created the new **Platform X**, which was launched in May 2
 
 In light of this, **we will be closing the old platform (version 7) on June 30th 2023**.
 
-Here are the closing steps on the v7:
+Here are the closing steps on the v7 in 2023:
 
 * End date for adding new containers: April 30
 * Maintenance end date: June 30&#x20;
