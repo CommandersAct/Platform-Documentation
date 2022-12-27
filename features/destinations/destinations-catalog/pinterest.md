@@ -90,13 +90,13 @@ The property<mark style="color:blue;">`event_id`</mark>is required and used for 
 | `context.device.advertising_id`    | `user_data.hashed_maids` **\[4]**   |
 | `context.device.ip`                | `user_data.client_ip_address`       |
 | `context.device.user_agent`        | `user_data.client_user_agent`       |
+| `id`                               | `custom_data.order_id`              |
 | `currency`                         | `custom_data.currency`              |
 | `value`                            | `custom_data.value`                 |
 | `items.X.id`                       | `custom_data.content_ids` **\[5]**  |
 | `items.X.product.price`            | `custom_data.contents.X.item_price` |
 | `items.X.quantity`                 | `custom_data.contents.X.quantity`   |
 | `items.length`                     | `custom_data.num_items`             |
-| `id`                               | `custom_data.order_id`              |
 | `search_term`                      | `custom_data.search_string`         |
 | `partners.pinterest.opt_out_type`  | `custom_data.opt_out_type`          |
 
