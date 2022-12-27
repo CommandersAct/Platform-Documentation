@@ -11,7 +11,7 @@ Google Universal Analytics will be deprecated on **July 1, 2023**, meaning it wi
 
 The Google Universal Analytics destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model fits [Google's hit types](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#t), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers [Google's hit types](https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#t), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events and custom properties).

@@ -107,6 +107,7 @@
     * [Optimizely](features/destinations/destinations-catalog/optimizely.md)
     * [Partnerize](features/destinations/destinations-catalog/partnerize.md)
     * [Piano Analytics (AT Internet)](features/destinations/destinations-catalog/at-internet.md)
+    * [Pinterest](features/destinations/destinations-catalog/pinterest.md)
     * [Prediggo](features/destinations/destinations-catalog/prediggo.md)
     * [Quantcast](features/destinations/destinations-catalog/quantcast.md)
     * [Qlik](features/destinations/destinations-catalog/qlik.md)
