@@ -106,6 +106,5 @@ The property<mark style="color:blue;">`event_id`</mark>is required and used for 
 **\[2]** If this property is not provided, a proper<mark style="color:blue;">`event_source_url`</mark>is retrieved using available data.\
 **\[3]** Boolean or equivalent string value supported.\
 **\[4]** If it's passed in clear text, it's automatically hashed.\
-**\[5]** All item identifiers are taken into account.\
-
+**\[5]** All item identifiers are taken into account.
 {% endhint %}
