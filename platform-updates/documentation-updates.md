@@ -12,10 +12,6 @@ Destination documentation:
 [pinterest.md](../features/destinations/destinations-catalog/pinterest.md)
 {% endcontent-ref %}
 
-## 20/12/2022
-
-Add a [changelog](../developers/changelogs/web-container-generator.md) section on the web container generator
-
 ## 16/12/2022
 
 * Add an [_announcements_ ](announcements.md)section in Platform updates menu
