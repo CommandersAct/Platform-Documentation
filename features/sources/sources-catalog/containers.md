@@ -14,7 +14,7 @@ Sending data from your web container to serverside destinations offers a lot of 
 
 To start sending data, there is only one easy step to follow : adding the _Commanders Act_ **One Tag**.
 
-> The last tag that ~~you~~ will ever setup.
+> The last tag that you will ever setup.
 
 The _One Tag_ allows you to send all your events to the Commanders Act platform in a normalized way, and once and for all, to benefit from all the serverside advantages that offer the platform.
 
