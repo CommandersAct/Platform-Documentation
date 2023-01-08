@@ -1,5 +1,5 @@
 ---
-description: Discover capabilities of Commanders Act
+description: Discover capabilities of Commanders Act X
 ---
 
 # Welcome !
