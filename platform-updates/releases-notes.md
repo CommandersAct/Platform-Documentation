@@ -26,11 +26,6 @@ description: >-
 
     <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-
-
-&#x20;\
-&#x20; &#x20;
-
 ## Release 10.0.6 - 24/11/22
 
 * Data Management – New feature:​
