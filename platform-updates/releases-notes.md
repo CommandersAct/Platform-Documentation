@@ -8,22 +8,20 @@ description: >-
 
 ## Release 10.0.7 - 24/12/22
 
-
-
-* **Event enrichment** – **external API** Version 1.0 closed alpha : \
+* **Event enrichment** – **External API** Version 1.0 closed alpha : \
   Enrich your events with instantaneous data transmission from an external API - no data storage required\
   ![](<../.gitbook/assets/image (10).png>)
 * **Destinations:**&#x20;
-  *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code \
+  *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/)\
 
 
       <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-  * **Google Universal Analytics** (GA3): closed beta
+  * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed alpha&#x20;
-  * **DataCommander connectors:** 100% operational and usable from the destination catalog \
-    All these audience-based destinations benefit from the Event Delivery feature and Threshold Alerting feature \
+  * **Audience based destination :**  All "closed beta" or "closed alpha" destinations are now open to everybody.\
+    Also, all these audience-based destinations benefit from the [Event Delivery](../features/destinations/event-delivery.md) feature and Threshold [Alerting](../features/destinations/event-delivery.md#alerting) feature\
 
-*   **Explore:** Enhancement of LRB integrations in the new platform\
+*   **Explore:** Enhancement of LRB integrations in the platform\
 
 
     <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
@@ -53,7 +51,7 @@ description: >-
   * **TikTok**: Add **Smart Mapping** : closed alpha
   * **Adobe Analytics** : closed alpha
 * Global Platform X:​
-  * **Even faster interfaces** on : CMP UI, client-side TMS UI, Administrations UI, Campaigns Analytics UI => closed alpha. _Public opening on 13 Dec._
+  * **Even faster interfaces** on : CMP UI, client-side TMS UI, Administrations UI, Campaigns Analytics UI => closed alpha. _Public opening on 13 Jan._
   * **Data Activation** features: public opening
 
 ## Release 10.0.5 - 24/10/22
