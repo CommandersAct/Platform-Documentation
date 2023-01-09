@@ -17,8 +17,8 @@ description: >-
 
       <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
-  * **Adobe Analytics**: closed alpha&#x20;
-  * **Audience based destination :**  All "closed beta" or "closed alpha" destinations are now open to everybody.\
+  * **Adobe Analytics**: closed beta
+  * **Audience based destinations :**  All "closed beta" or "closed alpha" destinations are now open to everybody.\
     Also, all these audience-based destinations benefit from the [Event Delivery](../features/destinations/event-delivery.md) feature and Threshold [Alerting](../features/destinations/event-delivery.md#alerting) feature\
 
 *   **Explore:** Enhancement of LRB integrations in the platform\
