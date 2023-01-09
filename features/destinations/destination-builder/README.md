@@ -8,7 +8,7 @@ The destination builder allows you to create your own custom destination, either
 * [JavaScript destination builder](javascript-destination-builder/) (JS sandbox)
 * GTM template importer (convert to JS sandbox template out of the box)
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
 
 ## Create and publish a destination
 

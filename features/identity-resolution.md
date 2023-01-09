@@ -51,7 +51,7 @@ Some devices are strictly personal, like mobile phones, but others could be shar
 
 As soon as it detects a new reconciliation key (login, email address, user\_id) different from the previous session on the device, it can distinguish different users and address the right user.
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (2).png>)
 
 On case 1 (left) it can't identify a new user because there are no reconciliation keys (no login, no email...). On contrary, on case 2 (right), there is a login, so it can create a new user or update an existing user. As a result, the tcid (cookie identifier) stays the same but the pid (personal identifier) is different as well as the user\_id.
 

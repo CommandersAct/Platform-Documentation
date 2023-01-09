@@ -6,6 +6,33 @@ description: >-
 
 # Release notes
 
+## Release 10.0.7 - 24/12/22
+
+
+
+* **Event enrichment** – **external API** Version 1.0 closed alpha : \
+  Enrich your events with instantaneous data transmission from an external API - no data storage required\
+  ![](<../.gitbook/assets/image (10).png>)
+* **Destinations:**&#x20;
+  *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code \
+
+
+      <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+  * **Google Universal Analytics** (GA3): closed beta
+  * **Adobe Analytics**: closed alpha&#x20;
+  * **DataCommander connectors:** 100% operational and usable from the destination catalog \
+    All these audience-based destinations benefit from the Event Delivery feature and Threshold Alerting feature \
+
+*   **Explore:** Enhancement of LRB integrations in the new platform\
+
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+&#x20;\
+&#x20; &#x20;
+
 ## Release 10.0.6 - 24/11/22
 
 * Data Management – New feature:​
@@ -15,7 +42,7 @@ description: >-
   * **Event collection** UI : add a **global counter​**\
     ![](<../.gitbook/assets/image (5).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​\
-  ![](<../.gitbook/assets/image (3).png>)
+  ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
   * Destination builder **Sandbox JS**: Closed alpha\
     ![](<../.gitbook/assets/image (6).png>)
@@ -61,7 +88,7 @@ description: >-
 
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
-    ![](<../.gitbook/assets/image (7).png>)
+    ![](<../.gitbook/assets/image (7) (2).png>)
   * **Onboarding tour:** \
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
     <img src="../.gitbook/assets/image (1) (4) (2).png" alt="" data-size="original">
