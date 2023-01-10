@@ -28,20 +28,32 @@ Select properties you want to add in the incoming event from the product catalog
 
 You can define here where properties coming from the product catalog will be added in incoming events (in the payload). By default, it is at the same level as the matching key. It could also be at the root of the event or custom (enter the position).
 
+
+
 ### Enrichment from Custom external API
 
-{% hint style="success" %}
-Coming soon
-{% endhint %}
+Enrich events with data coming from any API.
+
+For example, enrich a purchase event by adding properties from an external database. Via API, send a request with the matching key (an ID for example) and the API returns the desired data which will be integrated then into the purchase event.
+
+#### Configuration
+
+Select to which sources and events the enrichment will be applied.
+
+Configure the API (Method, URL, Body, Header)
+
+Select which properties from the API do you want to integrate into selected events.
+
+
 
 ### Enrichment from Weather database
 
-{% hint style="success" %}
+{% hint style="info" %}
 Coming soon
 {% endhint %}
 
 ### Enrichment from Custom Data Store
 
-{% hint style="success" %}
+{% hint style="info" %}
 Coming soon
 {% endhint %}
