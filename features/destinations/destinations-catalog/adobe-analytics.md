@@ -41,13 +41,9 @@ Fill the **Adobe Group ID** and **Customer ID Type** coming from your Adobe Anal
 
 #### **Mandatory parameters mapping**
 
-These parameters are mandatory:
+This parameter is mandatory:
 
-* reportSuiteID
-* timestamp
 * userAgent
-
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.12.png" alt=""><figcaption></figcaption></figure>
 
 You can map corresponding properties or directly enter values.
 
