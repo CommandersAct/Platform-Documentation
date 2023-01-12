@@ -46,11 +46,13 @@ Select which properties from the API do you want to integrate into selected even
 
 
 
-### Enrichment from Weather database
+### Enrichment from Weather database API
 
 {% hint style="info" %}
 Coming soon
 {% endhint %}
+
+You can currently manage it manually via [Enrichment from external API](events-enrichment.md#enrichment-from-custom-external-api), but a plug\&play version is in progress.
 
 ### Enrichment from Custom Data Store
 
