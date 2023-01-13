@@ -8,7 +8,7 @@ description: >-
 
 ## Release 10.0.7 - 24/12/22
 
-* **Event enrichment** – **External API** Version 1.0 closed alpha : \
+* **Event enrichment** – **External API** Version 1.0 closed alpha. _Public opening on 12 Jan._\
   Enrich your events with instantaneous data transmission from an external API - no data storage required\
   ![](<../.gitbook/assets/image (10).png>)
 * **Destinations:**&#x20;
@@ -34,7 +34,7 @@ description: >-
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
     ![](<../.gitbook/assets/image (5).png>)
-* **Event enrichment** – **product catalog** enhancement (closed alpha)​\
+* **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
   * Destination builder **Sandbox JS**: Closed alpha\
