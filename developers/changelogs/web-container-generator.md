@@ -1,5 +1,9 @@
 # Web container generator
 
+### Release v79.1 - 16/01/2023
+
+* Refactoring on the Privacy Banners
+
 ### Release v79.0 - 12/01/2023
 
 * Refactoring on the tC object initialization
