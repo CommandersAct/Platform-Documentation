@@ -12,10 +12,10 @@ The no-code approach allows you to create transformations using simple formula b
 You can choose between different kind of transformations:
 
 * Rename event: simply change the name of an incoming event
-* Derive event: create a new event from an existing one <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;background-color:blue;"><mark style="color:blue;">oming soon)<mark style="color:blue;"></mark>
+* Derive event: create a new event from an existing one <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
 * Modify properties: apply transformations and functions on properties
-* Filter event: define rules to filter incoming events <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;background-color:blue;"><mark style="color:blue;">oming soon)<mark style="color:blue;"></mark>
-* Custom code: create your own transformations <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;background-color:blue;"><mark style="color:blue;">oming soon)<mark style="color:blue;"></mark>
+* Filter event: define rules to filter incoming events <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
+* Custom code: create your own transformations <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
 
 ## Rename event
 
@@ -48,12 +48,10 @@ Select properties to transform. You can:
 * change the value ('set value to' option)
 
 With the 'set value to' option, you can simply change the value (ex: 'currency' = EUR by default) but you also have access to formulas based on basic [functions](supported-transformation-functions.md) and operators.\
-For example, you can hash incoming data with `SHA-256` or `MD5` functions. You can also `REPLACE` or `SUBSTITUTE` a text to replace by another one, or `EXTRACT` a specific text in a chain.&#x20;
+For example, you can hash incoming data with `SHA-256` or `MD5` functions. You can also `REPLACE` or `SUBSTITUTE` a text to replace by another one, or `EXTRACT` a specific text in a chain.
 
-You can also use operators like `AND / OR / NOT`  and create operations with `* / +  -`, full list [here](https://community.commandersact.com/platform-x/features/data-quality/data-cleansing/supported-transformation-functions#operators).
+You can also use operators like `AND / OR / NOT` and create operations with `* / + -`, full list [here](https://community.commandersact.com/platform-x/features/data-quality/data-cleansing/supported-transformation-functions#operators).
 
 For example, to calculate the revenue with taxes, you can do: `revenue = value*1,2`.
-
-
 
 <figure><img src="../../../.gitbook/assets/Live Normalization [READY] (1) (1).png" alt=""><figcaption></figcaption></figure>

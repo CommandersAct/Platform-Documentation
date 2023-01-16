@@ -16,4 +16,6 @@ Writing [event specification](normalized-datalayer.md) allows you to automate th
 
 To react quickly to data errors, while your IT team corrects the problem at source, you can rely on the [live data transformation feature](data-cleansing/), aka [Data cleansing](data-cleansing/).
 
-###
+### Data delivery
+
+Having a good data quality on each source is essential, but being able to check also the [quality of the data transmission](../destinations/event-delivery.md) is at least as important. For each destination, you can view the [event delivery history](../destinations/event-delivery.md#3-error-details), quickly identify errors and define [realtime alerts](../destinations/event-delivery.md#alerting) with a personnalized thresold.
