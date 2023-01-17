@@ -1,5 +1,14 @@
 # Web container generator
 
+### Release v80.0 - 17/01/2023
+
+* Add new Consent OnSite API commands:
+  * `consent.onReady`
+  * `consentBanner.show`
+  * `consentBanner.hide`
+  * `consentCenter.show`
+  * `consentCenter.hide`
+
 ### Release v79.1 - 16/01/2023
 
 * Refactoring on the Privacy Banners
