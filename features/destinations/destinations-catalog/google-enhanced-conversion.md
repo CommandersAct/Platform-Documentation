@@ -31,8 +31,8 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 | Commanders Act Properties                                 | Google Enhanced Conversions Properties                                                                                                                                                    |
 | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `properties.id`                                           | `conversionAdjustments.X.orderId` **\[\*]**                                                                                                                                               |
 | `device.user_agent`                                       | `conversionAdjustments.X.userAgent`                                                                                                                                                       |
-| `properties.id`                                           | `conversionAdjustments.X.orderId`                                                                                                                                                         |
 | `event_timestamp`                                         | <p><code>conversionAdjustments.X.gclidDateTimePair.conversionDateTime</code> <strong>[1]</strong> and<br><code>conversionAdjustments.X.adjustmentDateTime</code> <strong>[1]</strong></p> |
 | `properties.value`                                        | `conversionAdjustments.X.restatementValue.adjustedValue`                                                                                                                                  |
 | `properties.currency`                                     | `conversionAdjustments.X.restatementValue.currencyCode`                                                                                                                                   |
@@ -47,7 +47,8 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 | `properties.user.zipcode`                                 | `conversionAdjustments.X.userIdentifiers.Y.addressInfo.postalCode`                                                                                                                        |
 
 {% hint style="info" %}
+**\[\*]** Mandatory property.\
 **\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
 **\[2]** If<mark style="color:blue;">`properties.user.email`</mark>is provided, it's hashed using`SHA-256`, otherwise, <mark style="color:blue;">`properties.user.email_sha256`</mark>is used.\
-**\[3]** Normalized and hashed using`SHA-256`.
+**\[3]** Normalized and hashed via SHA256.
 {% endhint %}
