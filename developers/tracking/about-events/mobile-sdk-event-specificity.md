@@ -63,68 +63,78 @@ Here are an example of event playload :
 
 ```json
 {
-	"event_name": "search",
-	"event_id": "202110130000000000",
-	"properties": {
-		"search_term": "t-shirts",
-		"user": {
-			"id": "12345",
-			"email": "toto@domain.fr",
-			"consent_categories": ["1", "3"]
-		}
-	},
-	"device": {
-		"sdk_id": "C32272DB0-C21E-11E4-8DFC-AA07A5B093DB",
-		"manufacturer": "Apple",
-		"model": "iPhone7.3",
-		"name": "maguro",
-		"type": "ios",
-		"network": {
-			"bluetooth": false,
-			"carrier": "T-Mobile US",
-			"cellular": true,
-			"wifi": false
-		},
-		"os": {
-			"name": "iPhone OS",
-			"version": "8.1.3"
-		},
-		"screen": {
-			"width": 320,
-			"height": 568,
-			"density": 2
-		},
-		"lifecycle": {
-			"session_id": "99b0289e-0934-403e-a27c-3585f7ee32f7",
-			"new_session": true,
-			"session_duration": 40613,
-			"current_session": 1427449428069,
-			"visit_number": "4",
-			"current_visit": 1427449428069,
-			"current_version_first_visit": 1427449000000,
-			"session_number": "1",
-			"first_visit": 1327449000000,
-			"last_visit": 1427449000000,
-			"last_call": 1427449429999,
-			"last_session_start": 1427449000000,
-			"last_session_last_hit": 1427449000999,
-			"foreground_transitions": 4,
-			"foreground_time": 4013,
-			"background_time": 121023,
-			"first_execute": false,
-			"is_first_visit": false
-		},
-		"timezone": "Europe/Amsterdam"
-	},
-	"app": {
-		"name": "MyApp",
-		"version": "58",
-		"build": "2.0.755",
-		"core_version": "5.0.2",
-		"serverside_version": "5.0.1",
-		"namespace": "com.production.commandersact"
-	},
-	"event_timestamp": "1639044446636"
+   "event_name":"add_to_cart",
+   "value":1,
+   "currency":"euro",
+   "context":{
+      "event_id":"8f6e05dd-6df0-476c-9c56-5d277fac7cea",
+      "device":{
+         "sdk_id":"a47f71c0-9561-4a26-96d6-0d8632095caa",
+         "user_agent":"Mozilla\/5.0 (Linux; Android 13; sdk_gphone64_arm64 Build\/TE1A.220922.012; wv) AppleWebKit\/537.36 (KHTML, like Gecko) Version\/4.0 Chrome\/103.0.5060.71 Mobile Safari\/537.36",
+         "manufacturer":"Google",
+         "model":"sdk_gphone64_arm64",
+         "name":"emu64a",
+         "type":"android",
+         "network":{
+            "bluetooth":false,
+            "cellular":false,
+            "wifi":true
+         },
+         "os":{
+            "name":"android",
+            "version":"13"
+         },
+         "screen":{
+            "width":1080,
+            "height":1857,
+            "density":2.625
+         },
+         "timezone":"Europe\/Paris",
+         "lifecycle":{
+            "session_id":"5ab5fd16-5ebd-42bb-8c9c-b12564370c83",
+            "new_session":false,
+            "first_execute":false,
+            "is_first_visit":true,
+            "session_duration":138200,
+            "current_session":1673571497826,
+            "current_visit":1673571497826,
+            "current_version_first_visit":1673571497826,
+            "first_visit":1673571497826,
+            "last_visit":1673571497826,
+            "last_call":1673571632270,
+            "last_session_start":0,
+            "last_session_last_hit":0,
+            "foreground_time":137652,
+            "background_time":548,
+            "foreground_transitions":2,
+            "session_number":1,
+            "visit_number":1
+         }
+      },
+      "app":{
+         "name":"TCDemo ServerSide And Consent",
+         "version":"1.0",
+         "build":"1",
+         "namespace":"com.tagcommander.tcdemo",
+         "core_version":"5.3.1",
+         "serverside_version":"5.3.1"
+      },
+      "event_timestamp":1673571636026
+   },
+   "items":[
+      {
+         "id":"2",
+         "quantity":1,
+         "product":{
+            "id":"2",
+            "name":"My product",
+            "price":69
+         }
+      }
+   ],
+   "user":{
+      "consent_categories":["1","2","3","4","10019","5","10018","13001"]
+   }
 }
 ```
 
@@ -134,7 +144,25 @@ Here are fields automatically added by the sdk.
 
 (\*) IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**.
 
-### device
+### context
+
+| Field name       | Example value                        | Description                                                        | Platform |
+| ---------------- | ------------------------------------ | ------------------------------------------------------------------ | -------- |
+| event\_id        | 8f6e05dd-6df0-476c-9c56-5d277fac7cea | A random UUID generated at the serialization of the event instance | Both     |
+| event\_timestamp | 1673571636026                        | Timestamp of the event sending time.                               | Both     |
+
+### context -> app&#x20;
+
+| Field name          | Example value           | Description                      | Platform |
+| ------------------- | ----------------------- | -------------------------------- | -------- |
+| namespace           | com.tagcommander.TCDemo | The app name-space               | Both     |
+| name                | TCDemo                  | The app name                     | Both     |
+| build               | 1                       | The application build ID         | Both     |
+| version             | 1.1                     | The app version                  | Both     |
+| serverside\_version | 5.1.0                   | The server-side module’s version | Both     |
+| core\_version       | 5.1.0                   | The core module’s version        | Both     |
+
+### context -> device
 
 | Field name   | Example value                         | Description                                            | Platform |
 | ------------ | ------------------------------------- | ------------------------------------------------------ | -------- |
@@ -153,14 +181,14 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
 | ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
 
-### device -> os
+### context -> device -> os
 
 | Field name | Example value | Description               | Platform |
 | ---------- | ------------- | ------------------------- | -------- |
 | name       | ios           | The operating system name | Both     |
 | version    | 15.5          | The OS version            | Both     |
 
-### device -> screen
+### context -> device -> screen
 
 | Field name | Example value | Description                 | Platform |
 | ---------- | ------------- | --------------------------- | -------- |
@@ -168,7 +196,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | height     | 844           | The device’s screen height  | Both     |
 | density    | 2             | The device’s screen density | Android  |
 
-### device -> network
+### context -> device -> network
 
 | Field name | Example value | Description                                      | Platform |
 | ---------- | ------------- | ------------------------------------------------ | -------- |
@@ -177,7 +205,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | carrier    | T-Mobile US   | Carrier's name (only when cellular is connected) | Android  |
 | wifi       | false         | Is the wifi connected                            | Android  |
 
-### device -> Lifecycle
+### context -> device -> Lifecycle
 
 | Field name                     | Example value                        | Description                                                                                                      | Platform |
 | ------------------------------ | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------- |
@@ -199,14 +227,3 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | background\_time               | 0                                    | Time the application spent in background                                                                         | Both     |
 | first\_execute                 | false                                | Is this the first hit of this cold launch                                                                        | Both     |
 | is\_first\_visit               | true                                 | Is this the first launch of this application. (together with first execute you can validate a new installations) | Both     |
-
-### app
-
-| Field name          | Example value           | Description                      | Platform |
-| ------------------- | ----------------------- | -------------------------------- | -------- |
-| namespace           | com.tagcommander.TCDemo | The app name-space               | Both     |
-| name                | TCDemo                  | The app name                     | Both     |
-| build               | 1                       | The application build ID         | Both     |
-| version             | 1.1                     | The app version                  | Both     |
-| serverside\_version | 5.1.0                   | The server-side module’s version | Both     |
-| core\_version       | 5.1.0                   | The core module’s version        | Both     |
