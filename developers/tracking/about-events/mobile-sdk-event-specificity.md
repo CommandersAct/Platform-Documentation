@@ -66,6 +66,22 @@ Here are an example of event playload :
    "event_name":"add_to_cart",
    "value":1,
    "currency":"euro",
+   "user": {
+	   "id": "12345",
+	   "email": "toto@domain.fr",
+	   "consent_categories": ["1", "3"]
+   },
+   "items":[
+      {
+         "id":"2",
+         "quantity":1,
+         "product":{
+            "id":"2",
+            "name":"My product",
+            "price":69
+         }
+      }
+   ],
    "context":{
       "event_id":"8f6e05dd-6df0-476c-9c56-5d277fac7cea",
       "device":{
@@ -120,20 +136,6 @@ Here are an example of event playload :
          "serverside_version":"5.3.1"
       },
       "event_timestamp":1673571636026
-   },
-   "items":[
-      {
-         "id":"2",
-         "quantity":1,
-         "product":{
-            "id":"2",
-            "name":"My product",
-            "price":69
-         }
-      }
-   ],
-   "user":{
-      "consent_categories":["1","2","3","4","10019","5","10018","13001"]
    }
 }
 ```
