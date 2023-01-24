@@ -6,6 +6,28 @@ description: >-
 
 # Release notes
 
+## Release 10.0.8 - 24/01/23
+
+* **Product enrichment** & **External API -** _Public opening_\
+  Enrich your events in real time with data transmission from your product catalog or from an external API. It does not requires any data storage \
+  ![](<../.gitbook/assets/image (3).png>)\
+
+*   **OnSite API:**
+
+    [5 new commands](https://community.commandersact.com/consent-management/onsite-api/consent.onready) are available, to help you on consent behaviour management:&#x20;
+
+    * cact('consent.onReady', (consent) => console.log(consent))
+    * cact('consentBanner.show')
+    * cact('consentBanner.hide')
+    * cact('consentCenter.show')
+    * cact('consentCenter.hide')
+
+
+* **Destinations:**
+  * **Adobe Analytics**: beta
+  * **Pinterest**: beta
+  * **Piano Analytics**: improvement you can now set the Piano Site Id parameter with a dynamic value
+
 ## Release 10.0.7 - 24/12/22
 
 * **Event enrichment** – **External API** Version 1.0 closed alpha. _Public opening on 12 Jan._\
@@ -21,7 +43,7 @@ description: >-
     Also, all these audience-based destinations benefit from the [Event Delivery](../features/destinations/event-delivery.md) feature and Threshold [Alerting](../features/destinations/event-delivery.md#alerting) feature\\
 *   **Explore:** Enhancement of LRB integrations in the platform\\
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.6 - 24/11/22
 
@@ -49,7 +71,7 @@ description: >-
 ## Release 10.0.5 - 24/10/22
 
 * **Data management - new feature:**
-  * \*\*\*\*[**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21 Nov._\
+  * [**Data Cleansing**](../features/data-quality/data-cleansing/) **no-code :** Clean, fix, refine your event data with a userfriendly interface (closed beta) _Public opening on 21 Nov._\
     <img src="../.gitbook/assets/image (2) (5).png" alt="" data-size="original">![](<../.gitbook/assets/image (1) (6) (1).png>)
 * **Enrichment - new feature:**
   *   **Event enrichment from your Product catalog:** Copy in realtime time any properties of your imported product catalog to your choosen event.\
@@ -81,7 +103,7 @@ description: >-
     ![](<../.gitbook/assets/image (7) (2).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (1) (4) (2) (1) (2).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (3).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (1) (5) (1).png>)
@@ -92,7 +114,7 @@ description: >-
     * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
-    <img src="../.gitbook/assets/image (8).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
   * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
