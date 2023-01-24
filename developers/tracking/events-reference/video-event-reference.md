@@ -471,7 +471,7 @@ This event is sent after the user has viewed the video ad completely. Note that 
 
 ```javascript
 {
-  "event_name": "video_ad_start",
+  "event_name": "video_ad_complete",
   "user": {},
   "session_id": "abcdef",
   "asset_id": "456",
