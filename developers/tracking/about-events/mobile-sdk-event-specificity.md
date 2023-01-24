@@ -64,8 +64,8 @@ Here are an example of event playload :
 ```json
 {
    "event_name":"add_to_cart",
-   "value":1,
-   "currency":"euro",
+   "value":22.53,
+   "currency":"EUR",
    "user": {
 	   "id": "12345",
 	   "email": "toto@domain.fr",
@@ -73,12 +73,12 @@ Here are an example of event playload :
    },
    "items":[
       {
-         "id":"2",
+         "id":"SKU_12345",
          "quantity":1,
          "product":{
-            "id":"2",
-            "name":"My product",
-            "price":69
+            "id":"12345",
+            "name":"Trex tshirt",
+            "price":9.99
          }
       }
    ],
