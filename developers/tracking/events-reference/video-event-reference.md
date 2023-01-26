@@ -367,7 +367,7 @@ A sample event is as shown:
 
 ```javascript
 {
-    "event_name": "movie_completed",
+    "event_name": "video_content_complete",
     "session_id": "01234",
     "asset_id": "111",
     "pod_id": "DEF",
