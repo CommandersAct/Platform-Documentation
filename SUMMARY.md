@@ -212,7 +212,7 @@
     * [Web event specificity](developers/tracking/about-events/js-sdk-event-specificity.md)
     * [Mobile App event specificity](developers/tracking/about-events/mobile-sdk-event-specificity.md)
   * [Events reference](developers/tracking/events-reference/README.md)
-    * [Video event reference](developers/tracking/events-reference/video-event-reference.md)
+    * [Video events reference](developers/tracking/events-reference/video-event-reference.md)
   * [Properties reference](developers/tracking/properties-reference.md)
   * [Data API](developers/tracking/data-api/README.md)
     * [HTTP API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
