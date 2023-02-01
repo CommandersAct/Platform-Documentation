@@ -41,9 +41,9 @@ See [Field Mappings](rakuten-events.md#field-mappings) for more details.\
 
 ## Quick reference
 
-| Commanders Act Events | Awin Tracking    |
-| --------------------- | ---------------- |
-| `[All events]`        | `Sale` or `Lead` |
+| Commanders Act Events | Rakuten Conversion Type |
+| --------------------- | ----------------------- |
+| `[All events]`        | `Sale` or `Lead`        |
 
 ## Field Mappings
 
