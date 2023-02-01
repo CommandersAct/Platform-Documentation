@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 03/02/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/rakuten/rakuten-events.md" %}
+[rakuten-events.md](../features/destinations/destinations-catalog/rakuten/rakuten-events.md)
+{% endcontent-ref %}
+
 ## 13/01/2023
 
 Destination documentation (updates):
