@@ -20,8 +20,7 @@ The Rakuten Advertising destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-Rakuten Advertising adds a URL parameter<mark style="color:blue;">`ranSiteID`</mark>to your landing page by default. This mandatory values is usually stored in a cookie called <mark style="color:blue;">**rmStore**</mark>, **** which needs to be included in your events. Alternatively, you have the option to send its values by providing it in the following field:<mark style="color:blue;">`Rakuten Affiliate Tracking Id (tr)`</mark>**\[1]**. The cookie <mark style="color:blue;">**rmStore**</mark>** ** is also used to retrieve the mandatory property<mark style="color:blue;">`land`</mark>, which can also be sent using the field<mark style="color:blue;">`Rakuten User Arrival (land)`</mark>**\[1]**. \
-See [Field Mappings](rakuten-events.md#field-mappings) for more details.\
+Rakuten Advertising adds a URL parameter<mark style="color:blue;">`ranSiteID`</mark>to your landing page by default. This mandatory values is usually stored in a cookie called <mark style="color:blue;">**rmStore**</mark>, **** which needs to be included in your events. Alternatively, you have the option to send its values by providing it in the following field:<mark style="color:blue;">`Rakuten Affiliate Tracking Id (tr)`</mark>**\[1]**. The cookie <mark style="color:blue;">**rmStore**</mark>** ** is also used to retrieve the mandatory property<mark style="color:blue;">`land`</mark>, which can also be sent using the field<mark style="color:blue;">`Rakuten User Arrival (land)`</mark>**\[1]**. See [Field Mappings](rakuten-events.md#field-mappings) for more details.\
 \
 **\[1]** "Smart Mapping" field.
 {% endhint %}
