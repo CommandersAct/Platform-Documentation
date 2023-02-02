@@ -61,7 +61,15 @@ Functions can be nested, ex: `SHA256(LOWER(user.email))`
 
 ## Examples
 
-Scenario: Create a Flag that shows if Consumers’ Primary Address is in California\
-`IF(EXTRACT(city_state, '-', 1) == " CA", "TRUE", "FALSE")`
+1. Scenario: Create a Flag that shows if Consumers’ Primary Address is in California\
+   `IF(EXTRACT(city_state, '-', 1) == " CA", "TRUE", "FALSE")`
+2.  Scenario: Set a value with multiple conditions. The value equals "12345" for country FR and environment prod, else equals 98888 for country DE and environment dev: \
+
+
+    {% code overflow="wrap" %}
+    ```xquery
+    IF(country = "FR" AND environment_work = "prod", "12345", IF(country = "DE" AND environment_work = "dev", "98888")
+    ```
+    {% endcode %}
 
 ``
