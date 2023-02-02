@@ -36,7 +36,7 @@ description: >-
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/)\\
 
-      <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -129,7 +129,7 @@ description: >-
   * _Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
     * Ability to create new property and map them to existing one for a specific destination
     * Ability to remove event properties for a specific destination\
-      ![](<../.gitbook/assets/image (2) (3).png>)
+      ![](<../.gitbook/assets/image (2) (3) (1).png>)
   * [_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
     Be alerted in real-time when one of your destination delivery drop below your threshold.\
     ![](<../.gitbook/assets/image (25).png>)\\
