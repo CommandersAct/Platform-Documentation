@@ -321,7 +321,7 @@ A sample event is as shown:
     "content_pod_id": "XYZ",
     "program": "The Lion King",
     "video_title": "Act 1",
-    "description": "Invented description",
+    "video_description": "Invented description",
     "season": "1",
     "episode":"14",
     "channel":"NBC",
@@ -351,7 +351,7 @@ A sample event is as shown:
     "content_pod_id": "ABC",
     "program": "The Jungle Book",
     "video_title": "Act 2",
-    "description": "Invented description",
+    "video_description": "Invented description",
     "season": "2",
     "cursor_position": 123,
     "total_length": 400,
@@ -379,7 +379,7 @@ A sample event is as shown:&#x20;
     "content_pod_id": "ABC",
     "program": "The Jungle Book",
     "video_title": "Act 2",
-    "description": "Invented description",
+    "video_description": "Invented description",
     "season": "2",
     "cursor_position": 123,
     "total_length": 400,
@@ -405,7 +405,7 @@ A sample event is as shown:
     "content_pod_id": "DEF",
     "program": "Tarzan",
     "video_title": "Finale",
-    "description": "Invented description",
+    "video_description": "Invented description",
     "season": "4",
     "cursor_position": 300,
     "total_length": 300,
@@ -423,27 +423,27 @@ All the content events share the same properties that describe the current state
 
 The following table lists all the properties of this playback event object in detail:
 
-| Property           | Type                                                        | Required | Description                                                                                                                                                                                                                                                                         |
-| ------------------ | ----------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `video_session_id` | `String`                                                    | **Yes**  | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                         |
-| `content_asset_id` | `String`                                                    | **Yes**  | Denotes the unique ID of the video content asset.                                                                                                                                                                                                                                   |
-| `content_pod_id`   | `String`                                                    | No       | Denotes the unique ID of the video content pod.                                                                                                                                                                                                                                     |
-| `video_title`      | `String`                                                    | No       | Denotes the title of the video content.                                                                                                                                                                                                                                             |
-| `description`      | `String`                                                    | No       | Describes the video content asset in short.                                                                                                                                                                                                                                         |
-| `keywords`         | `Array [String]`                                            | No       | <p>Denotes the relevant keywords associated with the</p><p>categorizing the video content</p>                                                                                                                                                                                       |
-| `season`           | `String`                                                    | No       | Denotes the season number, if applicable.                                                                                                                                                                                                                                           |
-| `episode`          | `String`                                                    | No       | Denotes the episode number, if applicable.                                                                                                                                                                                                                                          |
-| `video_category`   | `String`                                                    | No       | Denotes the genre of the video content asset.                                                                                                                                                                                                                                       |
-| `program`          | `String`                                                    | No       | <p>Denotes the name of the program / show of which</p><p>the video content is a part.</p>                                                                                                                                                                                           |
-| `publisher`        | `String`                                                    | No       | <p>Denotes the publisher / creator / author of the</p><p>video content asset.</p>                                                                                                                                                                                                   |
-| `channel`          | `String`                                                    | No       | <p>Denotes the channel in which the video content</p><p>is playing.</p>                                                                                                                                                                                                             |
-| `full_episode`     | `Boolean`                                                   | No       | Set to `true` the video content asset is a full episode.                                                                                                                                                                                                                            |
-| `livestream`       | Boolean                                                     | No       | <p>If the video content is a live stream, this is set to</p><p><code>true</code>.</p>                                                                                                                                                                                               |
-| `airdate`          | <p><code>ISO 8601</code></p><p><code>Date String</code></p> | No       | <p>Denotes the original date of airing / publishing</p><p>the video content.</p>                                                                                                                                                                                                    |
-| `cursor_position`  | `Integer`                                                   | **Yes**  | <p>Denotes the current playhead position into the</p><p>video content in seconds. This does not include</p><p>any ads played in this duration.</p><p>In case of live streams, refer to the relevant<br>destination's documentation for details on how to<br>pass this property.</p> |
-| `total_length`     | `Integer`                                                   | **Yes**  | <p>The total duration of the video content in</p><p>seconds. This does not include any ads included</p><p>in the playback of this content asset.</p><p>For livestream playback, this should be set to <code>null</code>.</p>                                                        |
-| `bitrate`          | `Integer`                                                   | No       | Denotes the current bit rate in `kbps`.                                                                                                                                                                                                                                             |
-| `framerate`        | `Float`                                                     | No       | Denotes the frame rate in `fps`.                                                                                                                                                                                                                                                    |
+| Property            | Type                                                        | Required | Description                                                                                                                                                                                                                                                                         |
+| ------------------- | ----------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `video_session_id`  | `String`                                                    | **Yes**  | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                         |
+| `content_asset_id`  | `String`                                                    | **Yes**  | Denotes the unique ID of the video content asset.                                                                                                                                                                                                                                   |
+| `content_pod_id`    | `String`                                                    | No       | Denotes the unique ID of the video content pod.                                                                                                                                                                                                                                     |
+| `video_title`       | `String`                                                    | No       | Denotes the title of the video content.                                                                                                                                                                                                                                             |
+| `video_description` | `String`                                                    | No       | Describes the video content asset in short.                                                                                                                                                                                                                                         |
+| `keywords`          | `Array [String]`                                            | No       | <p>Denotes the relevant keywords associated with the</p><p>categorizing the video content</p>                                                                                                                                                                                       |
+| `season`            | `String`                                                    | No       | Denotes the season number, if applicable.                                                                                                                                                                                                                                           |
+| `episode`           | `String`                                                    | No       | Denotes the episode number, if applicable.                                                                                                                                                                                                                                          |
+| `video_category`    | `String`                                                    | No       | Denotes the genre of the video content asset.                                                                                                                                                                                                                                       |
+| `program`           | `String`                                                    | No       | <p>Denotes the name of the program / show of which</p><p>the video content is a part.</p>                                                                                                                                                                                           |
+| `publisher`         | `String`                                                    | No       | <p>Denotes the publisher / creator / author of the</p><p>video content asset.</p>                                                                                                                                                                                                   |
+| `channel`           | `String`                                                    | No       | <p>Denotes the channel in which the video content</p><p>is playing.</p>                                                                                                                                                                                                             |
+| `full_episode`      | `Boolean`                                                   | No       | Set to `true` the video content asset is a full episode.                                                                                                                                                                                                                            |
+| `livestream`        | Boolean                                                     | No       | <p>If the video content is a live stream, this is set to</p><p><code>true</code>.</p>                                                                                                                                                                                               |
+| `airdate`           | <p><code>ISO 8601</code></p><p><code>Date String</code></p> | No       | <p>Denotes the original date of airing / publishing</p><p>the video content.</p>                                                                                                                                                                                                    |
+| `cursor_position`   | `Integer`                                                   | **Yes**  | <p>Denotes the current playhead position into the</p><p>video content in seconds. This does not include</p><p>any ads played in this duration.</p><p>In case of live streams, refer to the relevant<br>destination's documentation for details on how to<br>pass this property.</p> |
+| `total_length`      | `Integer`                                                   | **Yes**  | <p>The total duration of the video content in</p><p>seconds. This does not include any ads included</p><p>in the playback of this content asset.</p><p>For livestream playback, this should be set to <code>null</code>.</p>                                                        |
+| `bitrate`           | `Integer`                                                   | No       | Denotes the current bit rate in `kbps`.                                                                                                                                                                                                                                             |
+| `framerate`         | `Float`                                                     | No       | Denotes the frame rate in `fps`.                                                                                                                                                                                                                                                    |
 
 ## Ads
 
@@ -851,38 +851,66 @@ A sample event is as shown below:
 }
 ```
 
+
+
+#### Video Share
+
+This event is sent when the video is shared by the user.
+
+A sample event is as shown below:
+
+```javascript
+{
+    "event_name": "video_share",
+    "user": {},
+    "video_session_id": "98765",
+    "content_asset_id": ["0133370", "123456"],
+    "content_pod_id": ["CAA", "CAB", "CAD"],
+    "cursor_position": 420,
+    "total_length": 600,
+    "bitrate": 128,
+    "framerate": 60.00,
+    "video_player": "vimeo",
+    "sound": 120,
+    "full_screen": false,
+    "ad_enabled": false,
+    "image_quality": "hd720",
+    "livestream": true
+}
+```
+
 ### Setting Events Properties
 
 All the ad events share the same properties that describe the current state of the video ad content that a user is interacting with during the playback.
 
-| Property           | Type                                                        | Required | Description                                                                                                                                                                                                                                                                         |
-| ------------------ | ----------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `video_session_id` | `String`                                                    | **Yes**  | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                         |
-| `content_asset_id` | `String`                                                    | **Yes**  | Denotes the unique ID of the video content asset.                                                                                                                                                                                                                                   |
-| `content_pod_id`   | `String`                                                    | No       | Denotes the unique ID of the video content pod.                                                                                                                                                                                                                                     |
-| `ad_asset_id`      | `String`                                                    | No       | Denotes the unique ID of the ad asset.                                                                                                                                                                                                                                              |
-| `ad_pod_id`        | `String`                                                    | No       | Denotes the unique ID of the ad pod.                                                                                                                                                                                                                                                |
-| `ad_type`          | `String`                                                    | No       | <p>Denotes the type of ad playing at the time of the</p><p>event. The values can be '<code>pre-roll</code>', ' <code>mid-roll</code>', or</p><p>'<code>post-roll</code>'.</p>                                                                                                       |
-| `video_title`      | `String`                                                    | No       | Denotes the title of the video content.                                                                                                                                                                                                                                             |
-| `description`      | `String`                                                    | No       | Describes the video content asset in short.                                                                                                                                                                                                                                         |
-| `keywords`         | `Array [String]`                                            | No       | <p>Denotes the relevant keywords associated with the</p><p>categorizing the video content</p>                                                                                                                                                                                       |
-| `season`           | `String`                                                    | No       | Denotes the season number, if applicable.                                                                                                                                                                                                                                           |
-| `episode`          | `String`                                                    | No       | Denotes the episode number, if applicable.                                                                                                                                                                                                                                          |
-| `video_category`   | `String`                                                    | No       | Denotes the genre of the video content asset.                                                                                                                                                                                                                                       |
-| `program`          | `String`                                                    | No       | <p>Denotes the name of the program / show of which</p><p>the video content is a part.</p>                                                                                                                                                                                           |
-| `publisher`        | `String`                                                    | No       | <p>Denotes the publisher / creator / author of the</p><p>video content asset.</p>                                                                                                                                                                                                   |
-| `channel`          | `String`                                                    | No       | <p>Denotes the channel in which the video content</p><p>is playing.</p>                                                                                                                                                                                                             |
-| `full_episode`     | `Boolean`                                                   | No       | Set to `true` the video content asset is a full episode.                                                                                                                                                                                                                            |
-| `livestream`       | `Boolean`                                                   | No       | <p>If the video content is a live stream, this is set to</p><p><code>true</code>.</p>                                                                                                                                                                                               |
-| `airdate`          | <p><code>ISO 8601</code></p><p><code>Date String</code></p> | No       | <p>Denotes the original date of airing / publishing</p><p>the video content.</p>                                                                                                                                                                                                    |
-| `cursor_position`  | `Integer`                                                   | **Yes**  | <p>Denotes the current playhead position into the</p><p>video content in seconds. This does not include</p><p>any ads played in this duration.</p><p>In case of live streams, refer to the relevant<br>destination's documentation for details on how to<br>pass this property.</p> |
-| `total_length`     | `Integer`                                                   | **Yes**  | <p>The total duration of the video content in</p><p>seconds. This does not include any ads included</p><p>in the playback of this content asset.</p><p>For livestream playback, this should be set to <code>null</code>.</p>                                                        |
-| `bitrate`          | `Integer`                                                   | **Yes**  | Denotes the current bit rate in `kbps`.                                                                                                                                                                                                                                             |
-| `framerate`        | `Float`                                                     | No       | Denotes the frame rate in `fps`.                                                                                                                                                                                                                                                    |
-| `sound`            | `Integer`                                                   | **Yes**  | <p>Denotes the current video sound level</p><p>Required in <code>video_volume</code> event</p>                                                                                                                                                                                      |
-| `full_screen`      | `Boolean`                                                   | **Yes**  | <p>Denotes the current video screen mode.<br>Required in <code>video_fullscreen_on</code> and <code>video_full_screen_off</code> events</p>                                                                                                                                         |
-| `ad_enabled`       | `Boolean`                                                   | No       | Denotes if ad were enabled                                                                                                                                                                                                                                                          |
-| `image_quality`    | `String`                                                    | **Yes**  | <p>Denotes the current video queity resolution.<br>Required in <code>video_quality</code> event</p>                                                                                                                                                                                 |
+| Property            | Type                                                        | Required | Description                                                                                                                                                                                                                                                                         |
+| ------------------- | ----------------------------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `video_session_id`  | `String`                                                    | **Yes**  | <p>A unique ID that ties all the events<br>generated from a specific playback session.<br><br>These events include playback, content, and<br>ad events.</p>                                                                                                                         |
+| `content_asset_id`  | `String`                                                    | **Yes**  | Denotes the unique ID of the video content asset.                                                                                                                                                                                                                                   |
+| `content_pod_id`    | `String`                                                    | No       | Denotes the unique ID of the video content pod.                                                                                                                                                                                                                                     |
+| `ad_asset_id`       | `String`                                                    | No       | Denotes the unique ID of the ad asset.                                                                                                                                                                                                                                              |
+| `ad_pod_id`         | `String`                                                    | No       | Denotes the unique ID of the ad pod.                                                                                                                                                                                                                                                |
+| `ad_type`           | `String`                                                    | No       | <p>Denotes the type of ad playing at the time of the</p><p>event. The values can be '<code>pre-roll</code>', ' <code>mid-roll</code>', or</p><p>'<code>post-roll</code>'.</p>                                                                                                       |
+| `video_title`       | `String`                                                    | No       | Denotes the title of the video content.                                                                                                                                                                                                                                             |
+| `video_description` | `String`                                                    | No       | Describes the video content asset in short.                                                                                                                                                                                                                                         |
+| `keywords`          | `Array [String]`                                            | No       | <p>Denotes the relevant keywords associated with the</p><p>categorizing the video content</p>                                                                                                                                                                                       |
+| `season`            | `String`                                                    | No       | Denotes the season number, if applicable.                                                                                                                                                                                                                                           |
+| `episode`           | `String`                                                    | No       | Denotes the episode number, if applicable.                                                                                                                                                                                                                                          |
+| `video_category`    | `String`                                                    | No       | Denotes the genre of the video content asset.                                                                                                                                                                                                                                       |
+| `program`           | `String`                                                    | No       | <p>Denotes the name of the program / show of which</p><p>the video content is a part.</p>                                                                                                                                                                                           |
+| `publisher`         | `String`                                                    | No       | <p>Denotes the publisher / creator / author of the</p><p>video content asset.</p>                                                                                                                                                                                                   |
+| `channel`           | `String`                                                    | No       | <p>Denotes the channel in which the video content</p><p>is playing.</p>                                                                                                                                                                                                             |
+| `full_episode`      | `Boolean`                                                   | No       | Set to `true` the video content asset is a full episode.                                                                                                                                                                                                                            |
+| `livestream`        | `Boolean`                                                   | No       | <p>If the video content is a live stream, this is set to</p><p><code>true</code>.</p>                                                                                                                                                                                               |
+| `airdate`           | <p><code>ISO 8601</code></p><p><code>Date String</code></p> | No       | <p>Denotes the original date of airing / publishing</p><p>the video content.</p>                                                                                                                                                                                                    |
+| `cursor_position`   | `Integer`                                                   | **Yes**  | <p>Denotes the current playhead position into the</p><p>video content in seconds. This does not include</p><p>any ads played in this duration.</p><p>In case of live streams, refer to the relevant<br>destination's documentation for details on how to<br>pass this property.</p> |
+| `total_length`      | `Integer`                                                   | **Yes**  | <p>The total duration of the video content in</p><p>seconds. This does not include any ads included</p><p>in the playback of this content asset.</p><p>For livestream playback, this should be set to <code>null</code>.</p>                                                        |
+| `bitrate`           | `Integer`                                                   | **Yes**  | Denotes the current bit rate in `kbps`.                                                                                                                                                                                                                                             |
+| `framerate`         | `Float`                                                     | No       | Denotes the frame rate in `fps`.                                                                                                                                                                                                                                                    |
+| `sound`             | `Integer`                                                   | **Yes**  | <p>Denotes the current video sound level</p><p>Required in <code>video_volume</code> event</p>                                                                                                                                                                                      |
+| `full_screen`       | `Boolean`                                                   | **Yes**  | <p>Denotes the current video screen mode.<br>Required in <code>video_fullscreen_on</code> and <code>video_full_screen_off</code> events</p>                                                                                                                                         |
+| `ad_enabled`        | `Boolean`                                                   | No       | Denotes if ad were enabled                                                                                                                                                                                                                                                          |
+| `image_quality`     | `String`                                                    | **Yes**  | <p>Denotes the current video queity resolution.<br>Required in <code>video_quality</code> event</p>                                                                                                                                                                                 |
 
 
 
@@ -934,7 +962,7 @@ cact("trigger","video_content_start", {
   asset_id: "123",
   pod_id: "CAA",
   video_title: "Raw is War!!",
-  description: "Sample description",
+  video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
   season: "1",
   episode: "90",
@@ -958,7 +986,7 @@ cact("trigger","video_content_playing", {
   asset_id: "123",
   pod_id: "CAA",
   video_title: "Raw is War!!",
-  description: "Sample description",
+  video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
   season: "1",
   episode: "90",
@@ -1072,7 +1100,7 @@ cact("trigger","video_content_playing", {
   asset_id: "123",
   pod_id: "CAA",
   video_title: "Raw is War!!",
-  description: "Sample description",
+  video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
   season: "1",
   episode: "90",
@@ -1096,7 +1124,7 @@ cact("trigger","video_content_complete", {
   asset_id: "123",
   pod_id: "CAA",
   video_title: "Raw is War!!",
-  description: "Sample description",
+  video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
   season: "1",
   episode: "90",
