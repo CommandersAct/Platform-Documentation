@@ -12,13 +12,13 @@ For example, when a customer plays a video on an app, a Video Playback Started e
 
 If a web page has two video players, there will be two separate sessions and associated session\_ids. However, if two separate videos are played on the same video player, they will still be considered a single session with two associated pieces of content.
 
-### Playback Events
+## Playback Events
 
 This section details all the video playback events.
 
 For more information on each of the properties associated with these events, refer to the **Playback Event Properties** section.
 
-#### Video Playback Started
+### Video Playback Started
 
 This event is associated with the user action of pressing the play button on the video player to initiate the video playback.
 
@@ -47,7 +47,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video Playback Paused
+### Video Playback Paused
 
 This event corresponds to the user action of pausing the video playback.
 
@@ -73,7 +73,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Interrupted
+### Video Playback Interrupted
 
 This event is sent when the video playback stops unintentionally. Network loss, user closing the browser, redirect, etc. are some of the common reasons. You can pass the cause within the property `interruption_method`.
 
@@ -100,7 +100,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Buffer Started
+### Video Playback Buffer Started
 
 This corresponds to the event of buffering content or an advertisement.
 
@@ -126,7 +126,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Buffer Completed
+### Video Playback Buffer Completed
 
 This corresponds to the event when the playback finishes buffering the content or an advertisement.
 
@@ -152,7 +152,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Seek Started
+### Video Playback Seek Started
 
 This event is sent when a user manually seeks a certain cursor position of the video content or an advertisement in the playback. The `cursor_position` property indicates where the user is seeking from (time in seconds) and the `seek_position` indicates the cursor position in the playback where the user is seeking to.
 
@@ -179,7 +179,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Seek Completed
+### Video Playback Seek Completed
 
 This event is sent after a user manually seeks to a certain cursor position of the video or ad in the playback. The `cursor_position` property indicates where the user resumes the playback.
 
@@ -206,7 +206,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Playback Resumed
+### Video Playback Resumed
 
 This event is sent after the user resumes the video playback after it was paused.
 
@@ -234,7 +234,7 @@ A sample event is as shown:
 
 ```
 
-#### Video Playback Completed
+### Video Playback Completed
 
 This event is sent after the playback is complete and when the pod session is finished. Note that the `cursor_position` property has the same value as the `total_length` property.
 
@@ -260,7 +260,7 @@ A sample event is as shown:
 }
 ```
 
-### Playback Event Properties
+## Playback Event Properties
 
 All the playback events share the same properties that describe the current state of the video player.
 
@@ -301,13 +301,13 @@ The flow is as follows:
 
 All of these events within the flow happen within one video playback.
 
-### Content Events
+## Content Events
 
 This section details all the video content events.
 
 For more information on each of the properties associated with these events, refer to the **Content Event Properties** section.
 
-#### Video Content Started
+### Video Content Started
 
 This event is sent once the user starts playing video content segment within a playback.
 
@@ -337,7 +337,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Content Playing
+### Video Content Playing
 
 These events are sent as heartbeats every after a set interval to indicate the length of video viewed by the user, determined by the `cursor_position` property.
 
@@ -365,7 +365,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Content Quarter Reached
+### Video Content Quarter Reached
 
 These events are sent when a quarter of the video is reached, determined by the `cursor_position` property.
 
@@ -391,7 +391,7 @@ A sample event is as shown:&#x20;
 }
 ```
 
-#### Video Content Completed
+### Video Content Completed
 
 This event is sent once the video segment within the playback is completed. Note that the `cursor_position` property has the same value as the `total_length` property.
 
@@ -417,7 +417,7 @@ A sample event is as shown:
 }
 ```
 
-### Content Event Properties
+## Content Event Properties
 
 All the content events share the same properties that describe the current state of the video content that is viewed by the user during the playback.
 
@@ -447,13 +447,13 @@ The following table lists all the properties of this playback event object in de
 
 ## Ads
 
-### Ad Events
+## Ad Events
 
 This section details all the ad events.
 
 For more information on each of the properties associated with these events, refer to the **Ad Event Properties** section.
 
-#### Video Ad Started
+### Video Ad Started
 
 This event is sent when an advertisement roll starts playing within the video playback.
 
@@ -475,7 +475,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Ad Playing
+### Video Ad Playing
 
 This event is sent between set intervals when the video ad is playing and is determined by the `cursor_position` property.
 
@@ -497,7 +497,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Ad Stop
+### Video Ad Stop
 
 This event is sent after the user has viewed a video ad completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
@@ -517,7 +517,7 @@ This event is sent after the user has viewed a video ad completely. Note that th
 }
 ```
 
-#### Video Ad Completed
+### Video Ad Completed
 
 This event is sent after the user has viewed the video ad roll completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
@@ -537,7 +537,7 @@ This event is sent after the user has viewed the video ad roll completely. Note 
 }
 ```
 
-#### Video Ad Skip
+### Video Ad Skip
 
 This event is sent when the user click on the skip ad button.&#x20;
 
@@ -557,7 +557,7 @@ This event is sent when the user click on the skip ad button.&#x20;
 }
 ```
 
-#### Video Ad Break Started
+### Video Ad Break Started
 
 This event is sent when an advertisement break starts playing while the video playback.
 
@@ -579,7 +579,7 @@ A sample event is as shown:
 }
 ```
 
-#### Video Ad Break Completed
+### Video Ad Break Completed
 
 This event is sent after the user has viewed the video ad break pod completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
@@ -599,7 +599,7 @@ This event is sent after the user has viewed the video ad break pod completely. 
 }
 ```
 
-#### Video Ad Click
+### Video Ad Click
 
 This event is sent when the user click on the add.&#x20;
 
@@ -619,7 +619,7 @@ This event is sent when the user click on the add.&#x20;
 }
 ```
 
-### Ad Event Properties
+## Ad Event Properties
 
 All the ad events share the same properties that describe the current state of the video ad content that a user is interacting with during the playback.
 
@@ -642,13 +642,13 @@ The following table lists all the properties of this playback event object in de
 
 ## Settings
 
-### Setting Events
+## Setting Events
 
 This section details all the video settings events.
 
 For more information on each of the properties associated with these events, refer to the [**Settings Event Properties**](video-event-reference.md#video-settings-properties) section.
 
-#### Video Volume
+### Video Volume
 
 This event is sent when the user modify the audio volume of the video player.
 
@@ -677,7 +677,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video Speed
+### Video Speed
 
 This event is sent when the user modify the speed of the video player.
 
@@ -706,7 +706,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video Subtitle On
+### Video Subtitle On
 
 This event is sent when the user turns on the subtitles of the video player.
 
@@ -735,7 +735,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video Subtitle Off
+### Video Subtitle Off
 
 This event is sent when the user turns off the subtitles of the video player.
 
@@ -764,7 +764,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video FullScreen On
+### Video FullScreen On
 
 This event is sent when the user turns on the full screen view of the video player.
 
@@ -793,7 +793,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video FullScreen Off
+### Video FullScreen Off
 
 This event is sent when the user turns off the full screen view of the video player.
 
@@ -822,7 +822,7 @@ A sample event is as shown below:
 }
 ```
 
-#### Video Quality
+### Video Quality
 
 This event is sent when the video quality of the video player is modified.
 
@@ -853,7 +853,7 @@ A sample event is as shown below:
 
 
 
-#### Video Share
+### Video Share
 
 This event is sent when the video is shared by the user.
 
@@ -879,7 +879,7 @@ A sample event is as shown below:
 }
 ```
 
-### Setting Events Properties
+## Setting Events Properties
 
 All the ad events share the same properties that describe the current state of the video ad content that a user is interacting with during the playback.
 
