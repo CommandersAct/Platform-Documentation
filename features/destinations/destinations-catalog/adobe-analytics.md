@@ -8,6 +8,10 @@ Please note that we use the Adobe [Bulk Data Insertion API](https://developer.ad
 
 We use the Oauth2 authentication process.
 
+{% hint style="warning" %}
+Only the **web-app** oauth is supported
+{% endhint %}
+
 Go to _Administration_ / _Connector Credentials_ and click on **Add connector credentials**. \
 Select Adobe Analytics.
 
