@@ -1,11 +1,7 @@
 # Pinterest
 
 [Pinterest](https://www.pinterest.com) is an image sharing and social media service designed to enable saving and discovery of information on the internet using images, animated GIFs and videos, in the form of pinboards.\
-Using this destination, you can leverage [Pinterest API](https://developers.pinterest.com/docs/conversions/conversion-management/#Tracking%20conversions%20with%20the%20Pinterest%20API) to send events via server-side hits.
-
-{% hint style="info" %}
-The Pinterest API documentation is available following this [LINK](https://developers.pinterest.com/docs/api/v5/#tag/conversion\_events).
-{% endhint %}
+Using this destination, you can leverage [Pinterest API](https://developers.pinterest.com/docs/conversions/conversion-management/#Tracking%20conversions%20with%20the%20Pinterest%20API) to send events via server-side hits. More technical details are available following this [LINK](https://developers.pinterest.com/docs/api/v5/#tag/conversion\_events).
 
 ## Key features
 
