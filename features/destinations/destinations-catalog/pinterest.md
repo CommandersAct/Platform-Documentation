@@ -48,7 +48,7 @@ At least one of the following statement must be fulfilled:\
 • <mark style="color:blue;">`user_data.em`</mark>is set.\
 • <mark style="color:blue;">`user_data.hashed_maids`</mark>is set.\
 • <mark style="color:blue;">`user_data.client_ip_address`</mark>and<mark style="color:blue;">`user_data.client_user_agent`</mark>are set.\
-The property<mark style="color:blue;">`event_id`</mark>is required and used for deduplication. More information are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#How%20deduplication%20works#%0AHow%20deduplication%20works).&#x20;
+The property<mark style="color:blue;">`event_id`</mark>is required and used for deduplication. More information are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#How%20deduplication%20works#%0AHow%20deduplication%20works) (See section "How deduplication works").&#x20;
 {% endhint %}
 
 | Commanders Act Properties          | Pinterest Properties                |
