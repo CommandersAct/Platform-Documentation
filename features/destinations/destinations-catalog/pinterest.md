@@ -1,9 +1,5 @@
 # Pinterest
 
-{% hint style="info" %}
-This destination is currently under final review and will be released soon.
-{% endhint %}
-
 [Pinterest](https://www.pinterest.com) is an image sharing and social media service designed to enable saving and discovery of information on the internet using images, animated GIFs and videos, in the form of pinboards.\
 Using this destination, you can leverage [Pinterest API](https://developers.pinterest.com/docs/conversions/conversion-management/#Tracking%20conversions%20with%20the%20Pinterest%20API) to send events via server-side hits.
 
