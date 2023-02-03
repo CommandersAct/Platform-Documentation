@@ -12,6 +12,10 @@ By introducing business rules to your attributes, you give them context and more
 
 ![](<../../../.gitbook/assets/Capture d’écran 2021-10-01 à 16.34.55.png>)
 
+{% hint style="danger" %}
+All augmented user attributes are not retroactive: it starts to count data from the creation date of the attribute.
+{% endhint %}
+
 ## Flag
 
 ### Description
