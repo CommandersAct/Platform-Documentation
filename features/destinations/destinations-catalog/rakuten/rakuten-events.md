@@ -58,7 +58,6 @@ More details on Rakuten properties are available following this [LINK](https://r
 | <p><code>Rakuten Affiliate Merchant Id (mid)</code> <strong>[1]</strong> or</p><p><code>Affiliate Merchant Id</code> </p>                                | `mid` **\[\*]\[2]**            |
 | <p><code>partners.rakuten.land</code> or<br><code>Gateway Cookie Name</code></p>                                                                         | `land` **\[\*]\[3]**           |
 | <p><code>partners.rakuten.tr</code> or<br><code>Gateway Cookie Name</code></p>                                                                           | `tr` **\[\*]\[4]**             |
-| `id`                                                                                                                                                     | `ord`                          |
 | `currency`                                                                                                                                               | `cur` **\[\*]**                |
 | (`items.X.product.price` \* `items.X.quantity` \* 100) or (`revenue` \* 100)                                                                             | `amtlist` **\[\*]\[5]\[6]**    |
 | `items.X.id`                                                                                                                                             | `skulist` **\[\*]\[6]**        |
@@ -67,6 +66,7 @@ More details on Rakuten properties are available following this [LINK](https://r
 | `items.X.product.category_1` > `items.X.product.category_2` > `items.X.product.category_3` > `items.X.product.category_4` > `items.X.product.category_5` | `catlist` **\[6]**             |
 | `items.X.coupon`                                                                                                                                         | `couponlist` **\[6]**          |
 | `items.X.product.name`                                                                                                                                   | `namelist` **\[6]**            |
+| `id`                                                                                                                                                     | `ord`                          |
 | `id_variant`                                                                                                                                             | `altord`                       |
 | `context.device.advertising_id`                                                                                                                          | `did`                          |
 | `discount`                                                                                                                                               | `discount`                     |
