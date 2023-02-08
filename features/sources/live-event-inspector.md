@@ -19,7 +19,7 @@ When you'll start to send more real data with millions of events, you'll see onl
 You can visualize data up to 7 days
 {% endhint %}
 
-Discover also the Destination Live Event Inspector:&#x20;
+To go further, you can also inspect the data sent to each destination in real time, by going to the Event Inspector tab of your destinations:
 
 {% content-ref url="../destinations/live-event-inspector.md" %}
 [live-event-inspector.md](../destinations/live-event-inspector.md)
