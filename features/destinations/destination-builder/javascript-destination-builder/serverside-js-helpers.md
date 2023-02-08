@@ -297,6 +297,32 @@ if (type === 'string') {
 | ----------- | ----- | ------------ |
 | **`value`** | _any_ | Input value. |
 
+## `logToConsole` <a href="#logtoconsole" id="logtoconsole"></a>
+
+Logs its argument(s) to the console.
+
+These logs are visible within Destination Builder's console.
+
+**Example**
+
+```
+const logToConsole = require('logToConsole');
+
+const product_color= "red";
+const product_price= 10;
+logToConsole('color is: ', product_color, ' and price is: ', product_price);
+```
+
+**Syntax**
+
+```
+logToConsole(argument1[, argument2, ...]);
+```
+
+**Parameters**
+
+The function takes one or more arguments, each of which is converted to a string, if necessary, and logged to the console.
+
 ## `makeInteger` <a href="#makeinteger" id="makeinteger"></a>
 
 Converts the given value to a **number** (integer).
