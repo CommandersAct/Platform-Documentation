@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v80.3 - 08/02/2023
+
+* Refactoring on various TagCommander modules
+
 ### Release v80.2 - 08/02/2023
 
 * Add tc_privacy_do_not_track flag
