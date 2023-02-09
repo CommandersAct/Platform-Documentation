@@ -6,7 +6,7 @@ Enrichment could come from the Product catalog, a Custom external API, Weather d
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.21.55.png" alt=""><figcaption></figcaption></figure>
 
-### Enrichment from Product catalog
+## Enrichment from Product catalog
 
 You can import the full product catalog, as a result all details about products will be stored in our platform.
 
@@ -18,7 +18,7 @@ When you are collecting events with products properties, you can send only the `
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.22.55.png" alt=""><figcaption></figcaption></figure>
 
-#### Configuration
+### Configuration
 
 Select the event you want to enrich first.
 
@@ -26,13 +26,13 @@ Select the property that will be used as **matching key**, meaning how to do a l
 
 Select properties you want to add in the incoming event from the product catalog.
 
-#### Advanced section
+### Advanced section
 
 You can define here where properties coming from the product catalog will be added in incoming events (in the payload). By default, it is at the same level as the matching key. It could also be at the root of the event or custom (enter the position).
 
 
 
-### Enrichment from Custom external API
+## Enrichment from Custom external API
 
 Enrich events with data coming from any API.
 
@@ -40,7 +40,7 @@ For example, enrich a purchase event by adding properties from an external datab
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.23.34.png" alt=""><figcaption></figcaption></figure>
 
-#### Configuration
+### Configuration
 
 Select to which sources and events the enrichment will be applied.
 
@@ -50,7 +50,7 @@ Select which properties from the API do you want to integrate into selected even
 
 
 
-### Enrichment from Weather database API
+## Enrichment from Weather database API
 
 {% hint style="info" %}
 Coming soon
@@ -58,7 +58,7 @@ Coming soon
 
 You can currently manage it manually via [Enrichment from external API](events-enrichment.md#enrichment-from-custom-external-api), but a plug\&play version is in progress.
 
-### Enrichment from Custom Data Store
+## Enrichment from Custom Data Store
 
 {% hint style="info" %}
 Coming soon
