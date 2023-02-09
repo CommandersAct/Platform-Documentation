@@ -4,7 +4,7 @@ Enrich incoming events in real-time before to send it to destinations.
 
 Enrichment could come from the Product catalog, a Custom external API, Weather database (coming soon) or any Custom data store (coming soon).
 
-<figure><img src="../../.gitbook/assets/Event enrichments.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.21.55.png" alt=""><figcaption></figcaption></figure>
 
 ### Enrichment from Product catalog
 
@@ -15,6 +15,8 @@ Click [here](https://community.commandersact.com/platform-x/features/sources/sou
 {% endhint %}
 
 When you are collecting events with products properties, you can send only the `product_id`, and we will be able to enrich incoming events with more product properties coming from the stored product catalog (weight, materials, color...) and send it to the destination(s).
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.22.55.png" alt=""><figcaption></figcaption></figure>
 
 #### Configuration
 
@@ -35,6 +37,8 @@ You can define here where properties coming from the product catalog will be add
 Enrich events with data coming from any API.
 
 For example, enrich a purchase event by adding properties from an external database. Via API, send a request with the matching key (an ID for example) and the API returns the desired data which will be integrated then into the purchase event.
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.23.34.png" alt=""><figcaption></figcaption></figure>
 
 #### Configuration
 
