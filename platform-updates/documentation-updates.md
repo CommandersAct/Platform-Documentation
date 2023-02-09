@@ -4,6 +4,24 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 09/02/2023
+
+Event enrichment documentation (updates):
+
+{% content-ref url="../features/enrichments/events-enrichment.md" %}
+[events-enrichment.md](../features/enrichments/events-enrichment.md)
+{% endcontent-ref %}
+
+Destination and source live event inspector documentation (updates):
+
+{% content-ref url="../features/sources/live-event-inspector.md" %}
+[live-event-inspector.md](../features/sources/live-event-inspector.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/live-event-inspector.md" %}
+[live-event-inspector.md](../features/destinations/live-event-inspector.md)
+{% endcontent-ref %}
+
 ## 03/02/2023
 
 Destination documentation:
