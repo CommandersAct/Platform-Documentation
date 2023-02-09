@@ -4,7 +4,7 @@ Live event inspector is a great way to visualize in real-time all your outgoing 
 
 It is the easiest way to help you to debug what is sent to destinations, you can check all properties and filter on specific events or properties.
 
-![](<../../../.gitbook/assets/image (1) (2) (1).png>)
+![](<../../.gitbook/assets/image (1) (2) (1).png>)
 
 ### Intelligent sampling
 
@@ -17,4 +17,8 @@ When you'll start to send more real data with millions of events, you'll see onl
 
 {% hint style="info" %}
 You can visualize data up to 48 hours
+{% endhint %}
+
+{% hint style="info" %}
+IP addresses are automatically obfuscated (the last octet is replaced by 0)
 {% endhint %}
