@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v81.0 - 14/02/2023
+
+* Internal upgrade of the generator server. Greatly improves generator performance. This upgrade should not impact the generation result, though recommend that you test your first generated container before your next deployment.
+
 ### Release v80.3 - 08/02/2023
 
 * Refactoring on various TagCommander modules
