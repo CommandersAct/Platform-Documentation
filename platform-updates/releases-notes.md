@@ -6,6 +6,15 @@ description: >-
 
 # Release notes
 
+## Release 10.0.9 - 14/02/23
+
+* 27% increase in the speed of the interfaces listed below:
+  * Client-side TMS UIs
+  * Segments UIs
+  * Admin UIs
+  * Campaign options UIs
+  * Banner builder and consent Dashboard UIs
+
 ## Release 10.0.8 - 24/01/23
 
 * **Product enrichment** & **External API -** _Public opening_\
