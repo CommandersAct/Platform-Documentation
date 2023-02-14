@@ -680,10 +680,12 @@ You won't always have all of those parameters. But it is recommended to send the
 | `lastname`           | `string` | No       | Doe                  | Last name                                                                                                                                                                  |
 | `gender`             | `string` | No       | m                    | <p>Gender</p><ul><li><code>f</code> for Female</li><li><code>m</code> for Male</li></ul>                                                                                   |
 | `birthdate`          | `string` | No       | 1970-01-01           | Birth date, `YYYY-MM-DD` format                                                                                                                                            |
+| `street`             | `string` | No       | 303 Sumner St        | Street address                                                                                                                                                             |
 | `city`               | `string` | No       | Boston               | City                                                                                                                                                                       |
 | `state`              | `string` | No       | Massachusetts        | State                                                                                                                                                                      |
 | `zipcode`            | `string` | No       | 02108                | Zip code                                                                                                                                                                   |
 | `country`            | `string` | No       | USA                  | Country code, ISO 3166-1 [2-letter](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2) or [3-letter](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-3) formats          |
+| `status`             | `string` | No       | New                  | Status as reported in your CRM (E.g. "New", "Existing", "Premium")                                                                                                         |
 | `consent_categories` | `Array`  | **Yes**  | \[1,2,3]             | <p>User's consent categories.<br>Necessary to grant data sharing with destination partners. It is automatically filled from web sources if you use Commanders Act CMP.</p> |
 
 **About Hashing**
