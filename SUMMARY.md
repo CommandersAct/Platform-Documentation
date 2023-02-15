@@ -171,7 +171,7 @@
     * [Control Group (Closed Beta )](features/analyses/campaign-analysis/control-group-beta-release-soon.md)
   * [User analysis](features/analyses/user-analysis.md)
     * [Dashboards](features/analyses/user-analysis/dashboards.md)
-  * [Consent optimization](features/analyses/consent-optimization.md)
+  * [Consent Analysis](features/analyses/consent-optimization.md)
 * [Consent management](features/consent-management/README.md)
   * [Banner builder](features/consent-management/banner-builder.md)
   * [Preference center](features/consent-management/preference-center.md)
