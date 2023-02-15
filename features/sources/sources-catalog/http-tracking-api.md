@@ -64,7 +64,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
       "title": "Search page",
       "url": "https://shop.com/search?q=...",
       "lang": "en",
-      "referrer": "https:///www.google.fr",
+      "referrer": "https://www.google.fr",
       "viewport": {
         "width": 320,
         "height": 568
