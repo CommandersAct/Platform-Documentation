@@ -1,4 +1,6 @@
-# Salesforce Commerce Cloud
+# Kameleoon (audience)
+
+[Kameleoon ](https://www.kameleoon.com)is an AI personalization and A/B testing SaaS platform for product managers and marketing teams who want to personalize the customer journey to maximize engagement, conversion and online revenue.
 
 ### 1- Audience configuration
 
@@ -34,3 +36,7 @@ Precise if you want to compress the file (GZIP by default).
 Precise if you want to include headers at the top of the file.
 
 Precise the main separator and separator inside a variable (ex: value1,value2;value2a;value2b,value3)
+
+### 3- Activation
+
+Define the running frequency for the export (every 10 minutes, day, week...)

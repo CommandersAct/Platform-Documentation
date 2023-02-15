@@ -1,5 +1,6 @@
 # Facebook Custom Audiences
 
+[Facebook ](https://www.facebook.com/)is an online social media and social networking service owned by [Meta](https://www.meta.com).\
 ​An API based Facebook Connector can be set up with the following procedure. The connector will send users data of all the users belonging to a given segment. The audience sent can contain both FB subscribers and non subscribers.
 
 ## User variables mapping <a href="#user-variables-mapping" id="user-variables-mapping"></a>
@@ -10,7 +11,7 @@ If users don't have enough information, we will reject them (example: if a user 
 
 It takes up to 24 hours for Facebook to match users.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-07 à 11.38.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-07 à 11.38.21.png" alt=""><figcaption></figcaption></figure>
 
 ## Configuration <a href="#configuration" id="configuration"></a>
 
@@ -19,7 +20,7 @@ You need 2 information for the Facebook connector:
 * Ad Account ID
 * Access Token
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-07 à 11.38.52.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-07 à 11.38.52.png" alt=""><figcaption></figcaption></figure>
 
 ### Where can I find the Ad Account ID? <a href="#where-can-i-find-the-ad-account-id" id="where-can-i-find-the-ad-account-id"></a>
 
@@ -133,4 +134,4 @@ A new custom audience will be created.
 The name of the new audience will start with `CA_{name}`
 {% endhint %}
 
-![](<../../../.gitbook/assets/image (4) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1) (1).png>)

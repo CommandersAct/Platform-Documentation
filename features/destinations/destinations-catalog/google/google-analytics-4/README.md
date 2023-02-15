@@ -1,5 +1,6 @@
 # Google Analytics 4
 
+[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 Google Analytics 4 (GA4) is the latest iteration of Google's analytics tool that helps you measure the traffic and engagement across your websites and apps. Using this destination, you can enhance your existing tracking implementation to match your data collection needs with GA4.\
 Your data will be sent server-side taking advantage of the [Google Measurement Protocol API](https://developers.google.com/analytics/devguides/collection/protocol/ga4) and in form of [events](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).
 

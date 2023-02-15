@@ -1,5 +1,6 @@
 # Google Store Sales Direct
 
+[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 The connector Google Store Sales Direct allows you to send conversions to Google Ads.
 
 > Store sales measurement allows you to use your sales data in a privacy-safe way to understand how much value your ads are truly driving for in-store purchases. By uploading and matching transaction data from your business, you can see how your ads translate into offline purchases.
@@ -31,7 +32,7 @@ All personal data (email, first name, phone number...) are hashed in SHA-256.
 
 There are also 3 variables specific to that connector:
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2021-01-29 à 10.19.21.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2021-01-29 à 10.19.21.png" alt=""><figcaption></figcaption></figure>
 
 Loyalty Rate:
 

@@ -1,5 +1,6 @@
 # Google Enhanced Conversions
 
+[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 Taking advantage of the [Google Ads API](https://developers.google.com/google-ads/api/docs/start), you can leverage the [enhanced conversions](https://support.google.com/google-ads/answer/9888656) feature to send first-party customer data in the form of conversion adjustments. Google uses this additional data to improve the reporting of your online conversions driven by ad interactions.\
 The enhanced conversions supplement your existing conversion tags by sending hashed first-party conversion data from your website to Google in a privacy-safe way.
 
@@ -25,7 +26,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 **\[1]** Enhanced conversions must be enabled for your conversion action. This is done in the Google Ads interface following these steps: click on the conversion action ➜ expand `Enhanced conversions`➜ flag `Turn on enhanced conversions`➜ select `API`.
 {% endhint %}
 
-![Flag "Turn on enhanced conversion" and select "API".](<../../../.gitbook/assets/1 (2).png>)
+![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/1 (2).png>)
 
 ## Field mappings
 

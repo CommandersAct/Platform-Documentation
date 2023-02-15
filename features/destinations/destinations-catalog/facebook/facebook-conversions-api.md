@@ -4,6 +4,7 @@ description: Aka Facebook CAPI
 
 # Facebook Conversions API
 
+[Facebook ](https://www.facebook.com/)is an online social media and social networking service owned by [Meta](https://www.meta.com).\
 This connector allows you to push every kind of events directly to Facebook through API. Online conversions, offline conversions... send it to Facebook and it will help you to increase the reach and accuracy of your campaigns.
 
 You can, for example, not send campaigns related to a specific product to users who already bought it, or you can also send campaigns to users who bought a specific product in cross-sell logic.

@@ -34,8 +34,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/google-analytics-4/" %}
-[google-analytics-4](../features/destinations/destinations-catalog/google-analytics-4/)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
+[google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
 {% endcontent-ref %}
 
 ## 30/12/2022
@@ -64,8 +64,8 @@ Add a [changelog](../developers/changelogs/web-container-generator.md) section o
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/google-universal-analytics.md" %}
-[google-universal-analytics.md](../features/destinations/destinations-catalog/google-universal-analytics.md)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-universal-analytics.md" %}
+[google-universal-analytics.md](../features/destinations/destinations-catalog/google/google-universal-analytics.md)
 {% endcontent-ref %}
 
 ## 06/12/2022
@@ -81,8 +81,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/commission-junction.md" %}
@@ -273,8 +273,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
@@ -303,8 +303,8 @@ Destination documentation (updates):
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/google-enhanced-conversion.md" %}
-[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google-enhanced-conversion.md)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-enhanced-conversion.md" %}
+[google-enhanced-conversion.md](../features/destinations/destinations-catalog/google/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
@@ -323,16 +323,16 @@ Documentation updates for template [Commanders Act | OnSite CMP API](https://tag
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/criteo-events.md" %}
-[criteo-events.md](../features/destinations/destinations-catalog/criteo-events.md)
+{% content-ref url="../features/destinations/destinations-catalog/criteo/criteo-events.md" %}
+[criteo-events.md](../features/destinations/destinations-catalog/criteo/criteo-events.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
 [snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/destinations/destinations-catalog/kameleoon-events.md" %}
-[kameleoon-events.md](../features/destinations/destinations-catalog/kameleoon-events.md)
+{% content-ref url="../features/destinations/destinations-catalog/kameleoon/kameleoon-events.md" %}
+[kameleoon-events.md](../features/destinations/destinations-catalog/kameleoon/kameleoon-events.md)
 {% endcontent-ref %}
 
 ## 05/07/2022

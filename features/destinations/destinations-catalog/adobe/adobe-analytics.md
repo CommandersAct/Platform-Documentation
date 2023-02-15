@@ -1,6 +1,6 @@
 # Adobe Analytics
 
-Send events to Adobe Analytics.
+[Adobe ](https://www.adobe.com/)is an multinational computer software and web analytics company (See [Adobe Experience Cloud](https://business.adobe.com/)). Using this destination you can implement server-side tracking, by sending events to Adobe Analytics.
 
 Please note that we use the Adobe [Bulk Data Insertion API](https://developer.adobe.com/analytics-apis/docs/2.0/guides/endpoints/bulk-data-insertion/).
 
@@ -15,13 +15,13 @@ Only the **web-app** oauth is supported
 Go to _Administration_ / _Connector Credentials_ and click on **Add connector credentials**. \
 Select Adobe Analytics.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.33.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.33.png" alt=""><figcaption></figcaption></figure>
 
 Enter the Client ID and Client Secret that you can find on your **Adobe Developer Console**.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.55.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.55.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-14 à 10.48.17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-14 à 10.48.17.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Please fill Redirect URL with: \
@@ -33,7 +33,7 @@ and Redirect URL Pattern with:\
 
 In case you haven't selected the web-app oauth (if it is an old project, and you don't want to configure it again for example), it is possible to change the authentication, click on "Connect another credential" on Adobe Analytics interface.
 
-<figure><img src="../../../.gitbook/assets/Doc Adobe anonyme.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Doc Adobe anonyme.png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 
@@ -45,7 +45,7 @@ Select the authentication you've just created previously.
 
 Fill the **Adobe Group ID** and **Customer ID Type** coming from your Adobe Analytics account.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.44.51.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.44.51.png" alt=""><figcaption></figcaption></figure>
 
 #### **Mandatory parameters mapping**
 
@@ -64,19 +64,19 @@ At least one of these fields should be filled to identify users.
 * IP address
 * CustomerID (CustomerIDType)
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.45.42.png" alt=""><figcaption></figcaption></figure>
 
 #### Page identifier mapping
 
 Adobe web page identifier. You can set several, but at least one is needed for the export. If you set either linkName, linkURL or linkType the other two must be set as well.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.02.png" alt=""><figcaption></figcaption></figure>
 
 #### Mapping
 
 You can map here all your event properties to Adobe Analytics properties, especially eVars.
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.32.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 14.46.32.png" alt=""><figcaption></figcaption></figure>
 
 #### Properties transformation
 

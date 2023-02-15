@@ -1,5 +1,6 @@
 # Google Customer Match
 
+[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 Google Customer Match allows you to push users to Google Ads. Matching keys are email, phone or address (SHA-256 or in clear only).
 
 You can create an audience segment, push it to Google Ads and activate it. Users matched could be then activated on Google services (Search, Display network, Gmail, Youtube, Google Shopping...).

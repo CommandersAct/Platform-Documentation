@@ -1,4 +1,6 @@
-# Salesforce
+# Adobe Campaign
+
+[Adobe ](https://www.adobe.com/)is an multinational computer software and web analytics company (See [Adobe Experience Cloud](https://business.adobe.com/)).
 
 ### 1- Audience configuration
 

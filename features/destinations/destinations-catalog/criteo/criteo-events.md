@@ -1,6 +1,6 @@
 # Criteo (events)
 
-Criteo is an advertising company that provides online display advertisements.\
+[Criteo ](https://www.criteo.com/)is an advertising company that provides online display advertisements.\
 Using the [Criteo Server-side API](https://guides.criteotilt.com/onetag/s2s/#sending-events) you can track those web events you are used to report via [Criteo OneTag client-side JS (pixel)](https://help.criteo.com/kb/guide/en/all-criteo-onetag-events-and-parameters-vZbzbEeY86/Steps/775825) - This is normally required for technical and legal reasons.
 
 ## Key features

@@ -1,6 +1,6 @@
 # Kameleoon (events)
 
-Kameleoon is an AI personalization and A/B testing SaaS platform for product managers and marketing teams who want to personalize the customer journey to maximize engagement, conversion and online revenue. Using this destination you can implement Kameleoon [TrackConversion API](https://customers.kameleoon.com/apisdk/doc/#/TrackConversion/get\_apisdk\_trackConversion) which can be used, after triggering an experiment, to measure performance characteristics according to the goals that make sense for your business.
+[Kameleoon ](https://www.kameleoon.com)is an AI personalization and A/B testing SaaS platform for product managers and marketing teams who want to personalize the customer journey to maximize engagement, conversion and online revenue. Using this destination you can implement Kameleoon [TrackConversion API](https://customers.kameleoon.com/apisdk/doc/#/TrackConversion/get\_apisdk\_trackConversion) which can be used, after triggering an experiment, to measure performance characteristics according to the goals that make sense for your business.
 
 ## Key features
 
