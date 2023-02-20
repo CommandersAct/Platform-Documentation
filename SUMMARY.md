@@ -78,6 +78,7 @@
     * [Eloqua](features/destinations/destinations-catalog/eloqua.md)
     * [Emarsys](features/destinations/destinations-catalog/emarsys.md)
     * [Email export](features/destinations/destinations-catalog/email-export.md)
+    * [Equativ Audience](features/destinations/destinations-catalog/equativ-audience.md)
     * [Experian](features/destinations/destinations-catalog/experian.md)
     * [Facebook](features/destinations/destinations-catalog/facebook/README.md)
       * [Facebook Conversions API](features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
