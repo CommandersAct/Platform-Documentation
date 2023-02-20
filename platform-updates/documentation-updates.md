@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 24/02/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/equativ-audience.md" %}
+[equativ-audience.md](../features/destinations/destinations-catalog/equativ-audience.md)
+{% endcontent-ref %}
+
 ## 09/02/2023
 
 Event enrichment documentation (updates):
