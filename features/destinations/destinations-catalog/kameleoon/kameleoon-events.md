@@ -24,7 +24,7 @@ The Kameleoon (events) destination provides the following key features:
 **\[\*]** Only these events will be bridged to Kameleoon.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 | Commanders Act Properties | Kameleoon Properties |
 | ------------------------- | -------------------- |

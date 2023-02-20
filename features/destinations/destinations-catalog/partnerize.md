@@ -40,7 +40,7 @@ The Partnerize destination provides the following key features:
 | `generate_lead`       | `lead`              |
 | `purchase`            | `sale`              |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\

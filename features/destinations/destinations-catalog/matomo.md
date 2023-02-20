@@ -37,7 +37,7 @@ Matomo recommends using custom parameters instead of custom variables as the lat
 **\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Matomo property<mark style="color:blue;">`e_c`</mark>is statically set with<mark style="color:blue;">`ca_event`</mark>.\

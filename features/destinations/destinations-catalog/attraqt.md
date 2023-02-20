@@ -1,3 +1,5 @@
 # Attraqt
 
-Documentation in progress
+{% hint style="info" %}
+Documentation in progress.
+{% endhint %}

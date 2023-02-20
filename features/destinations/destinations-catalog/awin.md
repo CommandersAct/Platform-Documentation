@@ -37,7 +37,7 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conver
 | `generate_lead`       | `lead`        |
 | `purchase`            | `sale`        |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 The following fields are mandatory to properly set commission groups:\
@@ -58,8 +58,6 @@ Accepted characters for the commission group codes are alphanumerics (letter in 
 | `properties.id`                                                                                                                                                                                                                                                                                                        | `ref`            |
 | `Test Mode`                                                                                                                                                                                                                                                                                                            | `testmode`       |
 | AW:P\|`Advertiser Id`\|`properties.id`\|`properties.items.X.product.id`\|`properties.items.X.product.name`\|`properties.items.X.product.price`\|`properties.items.X.quantity`\|`properties.items.X.product.price`\|`properties.items.X.id`\|`properties.items.X.affiliation`\|`properties.items.X.product.category_1`. | `bd[X]` **\[2]** |
-
-
 
 {% hint style="info" %}
 **\[1]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select<mark style="color:blue;">`lead`</mark>as conversion type, the price part is set as integer if its decimal part is neutral (E.g. "5.00" will result in "5" being set).\

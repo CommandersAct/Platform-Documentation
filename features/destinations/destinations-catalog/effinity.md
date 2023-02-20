@@ -1,7 +1,7 @@
 # Effinity
 
 [Effinity](https://www.effinity.fr/) is a digital acquisition agency. \
-With Effinity server-side tracking you can track lead and sale conversions.
+Using Effinity server-side tracking you can track lead and sale conversions.
 
 ## Key features
 
@@ -29,7 +29,7 @@ With Effinity server-side tracking you can track lead and sale conversions.
 | `generate_lead`       | `lead`            |
 | `purchase`            | `sale`            |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 The Effinity property<mark style="color:blue;">`consent_performance`</mark>is always set to<mark style="color:blue;">`1`</mark>. Manage your consent settings using the filter tab of this destination.

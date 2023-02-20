@@ -72,7 +72,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 **\[2]** A<mark style="color:blue;">`product.purchased`</mark>will be sent for each product being purchased.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 | Commanders Act Properties                                                                                                                                                                                         | Piano Analytics Properties                                                                                      |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |

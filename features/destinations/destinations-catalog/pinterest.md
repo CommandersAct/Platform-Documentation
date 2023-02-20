@@ -40,7 +40,7 @@ Ensure you have access to a [Pinterest Ads account](https://ads.pinterest.com) b
 | <p><code>watch_video</code></p><p><code>watchvideo</code></p>                                                                                                                                                                                                                                                                                                                                                                          | `watch_video`    |
 | <p><code>add_payment_info</code></p><p><code>add_shipping_info</code></p><p><code>add_to_wishlist</code></p><p><code>begin_checkout</code></p><p><code>login</code></p><p><code>refund</code></p><p><code>remove_from_cart</code></p><p><code>select_content</code></p><p><code>select_item</code></p><p><code>view_cart</code></p><p><code>view_item</code></p><p><code>select_promotion</code></p><p><code>view_promotion</code></p> | `custom`         |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\

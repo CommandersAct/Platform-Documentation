@@ -36,7 +36,7 @@ The Mapp destination provides the following key features:
 **\[1]**<mark style="color:blue;">`partners.mapp.request_type`</mark>must be filled with: <mark style="color:blue;">`page`</mark>or<mark style="color:blue;">`event`</mark>or<mark style="color:blue;">`media`</mark>or<mark style="color:blue;">`form`</mark>depending on your specific mapping needs. Custom Commanders Act events are also supported. More details on Mapp request types are available following this [LINK](https://documentation.mapp.com/1.0/en/which-request-types-are-supported-by-mapp-intelligence-36143348.html).
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Mapp client-side pixel saves a unique identifier in the [**wt3\_eid**](https://documentation.mapp.com/1.0/en/session-and-visitor-handling-7240758.html)****[ **** ](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Context%20object%20parameters)cookie. This destination sets the field<mark style="color:blue;">`eid`</mark>using the value provided in the cookie.

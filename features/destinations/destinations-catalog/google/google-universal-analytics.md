@@ -49,7 +49,7 @@ As recommended by Google, [Enhanced Ecommerce](https://developers.google.com/ana
 **\[2]** You can specify a custom social event by setting the "Smart Mapping" field <mark style="color:blue;">`Social Event`</mark>.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.

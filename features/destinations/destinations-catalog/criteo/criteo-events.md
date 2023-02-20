@@ -44,7 +44,7 @@ This is retrieved by getting the value of the cookie<mark style="color:blue;">**
 **\[1]** If<mark style="color:blue;">`properties.page.type`</mark>is<mark style="color:blue;">`home`</mark>then<mark style="color:blue;">`viewHome`</mark>is also sent with<mark style="color:blue;">`viewPage`</mark>, otherwise, just<mark style="color:blue;">`viewPage`</mark>is forwarded. ``&#x20;
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 | Commanders Act Properties      | Criteo Properties                                                                                |
 | ------------------------------ | ------------------------------------------------------------------------------------------------ |
