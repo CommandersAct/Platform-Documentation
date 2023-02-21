@@ -25,7 +25,6 @@ For **Event** destination, please refer to our [event reference documentation](.
 
 Example of event:
 
-````
 ```json
 {
   "event_name": "search",
@@ -61,7 +60,6 @@ Example of event:
   }
 }
 ```
-````
 
 For **Audience** destination, only 2 dedicated events are managed:&#x20;
 
