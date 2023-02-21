@@ -101,13 +101,3 @@ Example of audience events:
   }
 }
 ```
-
-### Audience partner (facultative):
-
-Audience destinations can be based on personal data (email, phone...) or on an identifier from a partner (cookie-sync).
-
-{% hint style="warning" %}
-The cookie-sync setup should be done before the creation of the destination; please contact the support to add a partner to the cookie-sync table.
-{% endhint %}
-
-Once the partner is added to the cookie-sync partners list, you can select it on destination builder. Users will be sent with this partner identifier.

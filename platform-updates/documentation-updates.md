@@ -12,6 +12,14 @@ Destination documentation:
 [equativ-audience.md](../features/destinations/destinations-catalog/equativ-audience.md)
 {% endcontent-ref %}
 
+## 21/02/2023
+
+New feature documentation: Destination Builder
+
+{% content-ref url="../features/destinations/destination-builder/" %}
+[destination-builder](../features/destinations/destination-builder/)
+{% endcontent-ref %}
+
 ## 09/02/2023
 
 Event enrichment documentation (updates):
