@@ -12,7 +12,7 @@ The destination builder allows you to create your own custom destination, either
 
 ## Create and publish a destination
 
-When you publish your work in the destination builder, your destination wil be visible for your team in the destination catalog beside other destinations.
+When you publish your work in the destination builder, your destination will be visible for your team in the destination catalog beside other destinations.
 
 In the destination builder interface, you will be able to set:
 
@@ -20,7 +20,7 @@ In the destination builder interface, you will be able to set:
 * Destination settings, i.e. questions that will be asked to the user that will add this destination (e.g. token, account id, options ...)
 * Connector technical options (url, method, etc.) or JavaScript code
 
-![](<../../../.gitbook/assets/image (3) (2).png>)
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2023-02-21 à 15.03.31.png" alt=""><figcaption></figcaption></figure>
 
 Your destination can also be hosted on Github and automatically imported to facilitate updates on your side.
 
