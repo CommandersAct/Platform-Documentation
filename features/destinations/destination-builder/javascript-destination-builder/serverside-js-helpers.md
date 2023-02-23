@@ -606,7 +606,7 @@ sendHttpRequest('https://example.com/collect', function(statusCode, headers, bod
     },
     method: 'POST',
     timeout: 1000
-}, body);
+},  JSON.stringify(body));
 ```
 
 **Parameters**
