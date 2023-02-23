@@ -9,7 +9,7 @@ Sandboxed JavaScript is a simplified Javascript that allows you to execute arbit
 This simplified Javascript is based on [helpers](serverside-js-helpers.md), set of methods that allow you to easily and quickly process and send your data.
 
 {% hint style="info" %}
-The technology for destination's template javascript sandbox in the platform is, to a large extent, compatible with Google Tag manager templates. \
+The technology for destination's template javascript sandbox in the platform is, to a large extent, compatible with Google Tag manager templates.\
 In most cases, templates written for GTM run in Commanders'act with no (or few) changes
 {% endhint %}
 
@@ -19,56 +19,20 @@ You can also import templates created on GTM inside your catalog in a few clics 
 
 ## Event or Audience destination
 
-You can choose to create an **Event** destination (send events like purchase, page view...) or **Audience** destination (send users who entered or were removed from a specific segment).
+You can choose to create an **Event** destination (to forward events like purchase, page view...) or **Audience** destination (send users who entered or were removed from a specific segment).
 
-For **Event** destination, please refer to our [event reference documentation](../../../../developers/tracking/events-reference/).
+For **Event** destination, all [standard ](../../../../developers/tracking/events-reference/)and custom events can be used as input.
 
-Example of event:
-
-```json
-{
-  "event_name": "search",
-  "search_term": "blue t-shirt",
-  "user": {
-    "id": "12345",
-    "email": "anakin.skywalker@domain.com",
-    "consent_categories": [
-      "1",
-      "3"
-    ]
-  },
-  "context": {
-    "event_id": "202110130000000000",
-    "page": {
-      "title": "Search page",
-      "url": "https://shop.com/search?q=...",
-      "lang": "en",
-      "referrer": "https://www.google.fr",
-      "viewport": {
-        "width": 320,
-        "height": 568
-      }
-    },
-    "device": {
-      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",
-      "ip": "102.3.4.56",
-      "lang": "fr",
-      "cookie": "_fbp=123; _fbc=456; _ga=789",
-      "timezone": "Europe/Paris"
-    },
-    "event_timestamp": "1639044446636"
-  }
-}
-```
-
-For **Audience** destination, only 2 dedicated events are managed:&#x20;
+For **Audience** destination, only 2 system events are managed:
 
 * `user_enters_segment`
 * `user_leaves_segment`
 
-Example of audience events:
+These 2 events are automatically trigger by the system when a user enter or leave a segment.\
+\
+Format of audience events:
 
-```
+```json
 {
   "event_name": "user_enters_segment",
   "user": {
@@ -84,7 +48,7 @@ Example of audience events:
 }
 ```
 
-```
+```json
 {
   "event_name": "user_leaves_segment",
   "user": {
