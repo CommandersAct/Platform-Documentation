@@ -10,6 +10,10 @@ The destination builder allows you to create your own custom destination, either
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>3 ways to create a new destination</p></figcaption></figure>
 
+{% hint style="info" %}
+For now only Administrator and Technical roles can save and publish a destination
+{% endhint %}
+
 ## Create and publish a destination
 
 When you publish your work in the destination builder, your destination will be visible for your team in the destination catalog beside other destinations.
