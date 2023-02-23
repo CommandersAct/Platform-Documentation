@@ -63,3 +63,16 @@ Format of audience events:
   }
 }
 ```
+
+## The template editor
+
+The Template Editor enables you to create, preview, and test custom templates. It has four primary areas for input to help you define your destination template:
+
+* **Informations:** Define basic information of the template, such as the logo, category, name.
+* **Fields:** This is a visual drag\&drop editor to add input fields to your destination template.
+* **Code:** Enter sandboxed JavaScript to define how your destination will map/transform/send the data.
+* **Publish:** View/change on wich catalogs (workspaces) your destination is visible.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Drag and drop your fields</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Write your code and test it with an event</p></figcaption></figure>

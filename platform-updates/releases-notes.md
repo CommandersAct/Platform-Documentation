@@ -36,7 +36,7 @@ description: >-
 
 * **Product enrichment** & **External API -** _Public opening_\
   Enrich your events in real time with data transmission from your product catalog or from an external API. It does not requires any data storage \
-  ![](<../.gitbook/assets/image (3).png>)\
+  ![](<../.gitbook/assets/image (3) (2).png>)\
 
 *   **OnSite API:**
 
@@ -75,7 +75,7 @@ description: >-
 
 * Data Management – New feature:​
   * **Data Cleansing** no-code : **Rename event** public opening.\
-    ​![](<../.gitbook/assets/image (1).png>)
+    ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
     ![](<../.gitbook/assets/image (2).png>)
