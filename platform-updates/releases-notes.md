@@ -21,7 +21,8 @@ description: >-
   Data Cleansing and Event Enrichment features benefit for a even more userfriendly autocomplete property selector component. Find quicly your property or create a new one in a click.\
   ![](<../.gitbook/assets/image (18).png>)
 * **New destinations:**&#x20;
-  * [Pinterest ](../features/destinations/destinations-catalog/pinterest.md)and [more](../features/destinations/destinations-catalog/)
+  * [Pinterest](../features/destinations/destinations-catalog/pinterest.md)
+  * Updates: Matomo, Kwanko, Google Universal Analytics
 
 ## Release 10.0.9 - 14/02/23
 
