@@ -108,6 +108,7 @@
     * [Mapp](features/destinations/destinations-catalog/mapp.md)
     * [Matomo](features/destinations/destinations-catalog/matomo.md)
     * [MediaMath](features/destinations/destinations-catalog/mediamath.md)
+    * [Microsoft Universal Event Tracking](features/destinations/destinations-catalog/microsoft-universal-event-tracking.md)
     * [Mindlytix](features/destinations/destinations-catalog/mindlytix.md)
     * [OXID](features/destinations/destinations-catalog/oxid.md)
     * [Optimizely](features/destinations/destinations-catalog/optimizely.md)
