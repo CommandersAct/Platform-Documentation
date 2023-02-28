@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v81.1 - 28/02/2023
+
+* Trigger module update for Rakuten and Microsoft UET integration
+
 ### Release v81.0 - 14/02/2023
 
 * Internal upgrade of the generator server. Greatly improves generator performance. This upgrade should not impact the generation result, though we recommend that you test your first generated container before your next deployment.
