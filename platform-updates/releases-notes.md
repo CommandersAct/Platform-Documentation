@@ -59,7 +59,7 @@ description: >-
 
 * **Event enrichment** – **External API** Version 1.0 closed alpha. _Public opening on 12 Jan._\
   Enrich your events with instantaneous data transmission from an external API - no data storage required\
-  ![](<../.gitbook/assets/image (15).png>)
+  ![](<../.gitbook/assets/image (10).png>)
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
@@ -79,7 +79,7 @@ description: >-
     ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (2).png>)
+    ![](<../.gitbook/assets/image (5).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
@@ -107,7 +107,7 @@ description: >-
 
       ***
 
-      <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google/google-customer-match.md) (public beta)
@@ -130,10 +130,10 @@ description: >-
     ![](<../.gitbook/assets/image (7) (2).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (2) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (5) (1).png>)
+    ![](<../.gitbook/assets/image (1) (5) (1).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
     <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2
@@ -156,7 +156,7 @@ description: >-
   * _Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
     * Ability to create new property and map them to existing one for a specific destination
     * Ability to remove event properties for a specific destination\
-      ![](<../.gitbook/assets/image (24).png>)
+      ![](<../.gitbook/assets/image (2) (3).png>)
   * [_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
     Be alerted in real-time when one of your destination delivery drop below your threshold.\
     ![](<../.gitbook/assets/image (25).png>)\\
@@ -193,7 +193,7 @@ description: >-
   * TikTok connector (Web mode only, App mode in September)​
   * Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png>)![](<../.gitbook/assets/image (1) (5).png>)
+    ![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1).png>)![](<../.gitbook/assets/image (1) (5).png>)
 
 ## Release 10.0.1 - 24/06/22
 
