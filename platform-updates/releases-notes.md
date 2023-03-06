@@ -130,7 +130,7 @@ description: >-
     ![](<../.gitbook/assets/image (7) (2).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
     ![](<../.gitbook/assets/image (1) (5) (1).png>)
