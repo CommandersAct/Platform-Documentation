@@ -19,10 +19,24 @@ description: >-
 
 * **UI enhancement**\
   Data Cleansing and Event Enrichment features benefit for a even more userfriendly autocomplete property selector component. Find quicly your property or create a new one in a click.\
-  ![](<../.gitbook/assets/image (18).png>)
+  ![](<../.gitbook/assets/image (18) (3).png>)
+*   **Data Cleansing – new functions added​**
+
+    [JSON\_PARSE() and VALUE\_FROM\_JSON()​](../features/data-quality/data-cleansing/supported-transformation-functions.md#available-functions)
+*   **Events reference update**
+
+    [video events](../developers/tracking/events-reference/video-event-reference.md) has been added
 * **New destinations:**&#x20;
   * [Pinterest](../features/destinations/destinations-catalog/pinterest.md)
   * Updates: Matomo, Kwanko, Google Universal Analytics
+* **Consent management -  Exempted statistics** ​
+  * New tag in the library to facilitate the setup​
+* **Event Replay -  Closed alpha​**
+* **Mobile – Flutter source – Closed beta​**
+* **Campaign analysis ​**
+  * Campaign Overlap enhanced => possibility to go back up to 30 days​\
+    ![](<../.gitbook/assets/image (18).png>)
+  * Make it possible to send a timestamp with the incoming hit​ of your campaigns collection
 
 ## Release 10.0.9 - 14/02/23
 
