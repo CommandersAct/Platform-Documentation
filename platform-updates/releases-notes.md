@@ -10,8 +10,10 @@ description: >-
 
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
-  You can create event-based or audience-based destination.\
-  More information here:
+  You can create event-based or audience-based destination.![](../.gitbook/assets/image.png)![](<../.gitbook/assets/image (5).png>)![](<../.gitbook/assets/image (2).png>)![](<../.gitbook/assets/image (4).png>)
+
+\
+More information here:
 
 {% content-ref url="../features/destinations/destination-builder/" %}
 [destination-builder](../features/destinations/destination-builder/)
@@ -75,11 +77,11 @@ description: >-
 
 * **Event enrichment** – **External API** Version 1.0 closed alpha. _Public opening on 12 Jan._\
   Enrich your events with instantaneous data transmission from an external API - no data storage required\
-  ![](<../.gitbook/assets/image (10).png>)
+  ![](<../.gitbook/assets/image (10) (3).png>)
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -95,7 +97,7 @@ description: >-
     ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (5).png>)
+    ![](<../.gitbook/assets/image (5) (1).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
@@ -172,7 +174,7 @@ description: >-
   * _Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
     * Ability to create new property and map them to existing one for a specific destination
     * Ability to remove event properties for a specific destination\
-      ![](<../.gitbook/assets/image (2) (3).png>)
+      ![](<../.gitbook/assets/image (2) (3) (1).png>)
   * [_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
     Be alerted in real-time when one of your destination delivery drop below your threshold.\
     ![](<../.gitbook/assets/image (25).png>)\\
