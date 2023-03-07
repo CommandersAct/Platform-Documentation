@@ -28,6 +28,7 @@ description: >-
     [video events](../developers/tracking/events-reference/video-event-reference.md) has been added
 * **New destinations:**&#x20;
   * [Pinterest](../features/destinations/destinations-catalog/pinterest.md)
+  * [Equativ ](../features/destinations/destinations-catalog/equativ-audience.md)(audience)
   * Updates: Matomo, Kwanko, Google Universal Analytics
 * **Consent management -  Exempted statistics** ​
   * New tag in the library to facilitate the setup​
