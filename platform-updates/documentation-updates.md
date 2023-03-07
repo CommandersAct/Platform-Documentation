@@ -4,6 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 25/02/2023
+
+Add the [Facebook CAPI through GTM](../features/destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md) documentation
+
 ## 24/02/2023
 
 Destination documentation:
