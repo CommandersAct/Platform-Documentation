@@ -31,8 +31,9 @@ description: >-
   * Updates: Matomo, Kwanko, Google Universal Analytics
 * **Consent management -  Exempted statistics** ​
   * New tag in the library to facilitate the setup​
-* **Event Replay -  Closed alpha​**
-* **Mobile – Flutter source – Closed beta​**
+* **Event Replay -**  _Closed alpha​_
+* **New source:**&#x20;
+  * **Flutter - for mobile App** – _Closed beta_​
 * **Campaign analysis ​**
   * Campaign Overlap enhanced => possibility to go back up to 30 days​\
     ![](<../.gitbook/assets/image (18).png>)
