@@ -15,57 +15,53 @@ Summarizing all recommended steps:
 
 ## Add our template
 
-
-
 First, access [GTM ](https://tagmanager.google.com/)and then add our template "**Commanders Act | Serverside events bridge**" from the Google "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/Serverside-events-bridge)" in your workspace, then select `(1)` "**Tags**".
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge1.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge1.png)
 
 Click on `(2)` the "**New**" button.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge2.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge2.png)
 
 Click on `(3)` the "**Tag Configuration**" area.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge3.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge3.png)
 
 Click `(4)` the **magnifying glass** in the upper right corner.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge4.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge4.png)
 
 Search for `(5)` the "**Commanders Act | Serverside events bridge**" custom template and click on it to start the configuration.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge5.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge5.png)
 
 ## Configure your tag
 
-
-
 Start by filling `(6)` **a name for your tag** in the upper left corner.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge6.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge6.png)
 
 {% hint style="success" %}
-**Hint**: you may want to name your tag adding the event name you're going to implement in the end. (E.g. "_Commanders Act |_ Serverside events bridge _- **Purchase**_")&#x20;
+**Hint**: you may want to name your tag adding the event name you're going to implement in the end. (E.g. "_Commanders Act |_ Serverside events bridge _- **Purchase**_")
 {% endhint %}
 
 Input your `(7)` "**Commanders Act Site ID**" and select `(8)` the "**Commanders Act Event**" from the drop-down menu, which is the event you want to forward.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge7.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge7.png)
 
 Depending on which event you select more (or less) fields will be presented. In case you don't input a mandatory field the template will highlight the missing entry so you can provide a proper mapping.
 
-The "**Event Fields**" section contains fields that define the event itself and are mostly mandatory or highly recommended. &#x20;
+The "**Event Fields**" section contains fields that define the event itself and are mostly mandatory or highly recommended.
 
-Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(9)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(10)` the "**Product Id**" by filling the property name.&#x20;
+Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(9)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(10)` the "**Product Id**" by filling the property name.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge8.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge8.png)
 
 In the "**User Fields**" section you can set `(11)` the "**User Id**" and `(12)` "**User Email**" - Either one of them is required if you select the "Purchase" event. The `(13)` "**User Consent Categories**" is a mandatory field holding an array with the user's consent category identifiers.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge9.png)
+![](../../../.gitbook/assets/serverside\_events\_bridge9.png)
 
-It's important to define and map all category identifiers with their respective names. For example, you may have the following array: _\[1,2,4]_ and you defined the following relationship:&#x20;
+It's important to define and map all category identifiers with their respective names. For example, you may have the following array: _\[1,2,4]_ and you defined the following relationship:
 
 * 1 **➜** Advertising category
 * 2 **➜** Analytics category
@@ -83,3 +79,8 @@ Only with the agreed consent settings, we're allowed to bridge both the "Purchas
 
 Complete your configuration by selecting the proper activation in the "Triggering" area / "Firing Triggers".
 
+If you plan to setup [Facebook Conversion API](../../destinations/destinations-catalog/facebook/facebook-conversions-api.md) through your GTM source, follow this extra step to update your Facebook Pixel tag:
+
+{% content-ref url="../../destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md" %}
+[facebook-capi-through-gtm.md](../../destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md)
+{% endcontent-ref %}
