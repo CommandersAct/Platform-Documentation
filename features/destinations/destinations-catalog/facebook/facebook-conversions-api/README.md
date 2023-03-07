@@ -17,15 +17,15 @@ You need a Facebook Business Manager account [https://business.facebook.com/](ht
 
 Then on the menu, click on 'Events Manager':
 
-![Events Manager](../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-10.30.43.png)
+![Events Manager](../../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-10.30.43.png)
 
 Here you have to create a new Web Pixel:
 
-![New web Pixel](../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.01.41.png)
+![New web Pixel](../../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.01.41.png)
 
 Select Conversions API and give a name to your connection:
 
-![](../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.02.46.png)
+![](../../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.02.46.png)
 
 Now your pixel is created and you will have access to the IDs needed on our connector.
 
@@ -35,7 +35,7 @@ You need to fill the pixel ID on our connector, it is the ID of the pixel you ju
 
 You can find this ID when you click on the pixel's name and on the right of the graph activities. You can find it also on the settings tab.
 
-![Find the Pixel ID](../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.13.54.png)
+![Find the Pixel ID](../../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-12.13.54.png)
 
 You can now copy and paste this ID on our connector.
 
@@ -49,7 +49,7 @@ Scroll until the section 'Conversions API'
 
 Click on the button 'Create Access Token':
 
-![Create access token](<../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-14.20.51 (1).png>)
+![Create access token](<../../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-14.20.51 (1).png>)
 
 {% hint style="warning" %}
 If you are not able to click on the button 'Create access token', that mean you don't have enough rights to do it. You should be administrator on your Facebook Business account to create it.
