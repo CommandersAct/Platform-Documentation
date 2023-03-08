@@ -32,6 +32,7 @@ More information here:
 * **New destinations:**&#x20;
   * [Pinterest](../features/destinations/destinations-catalog/pinterest.md)
   * [Equativ ](../features/destinations/destinations-catalog/equativ-audience.md)(audience)
+  * [Partnerize](../features/destinations/destinations-catalog/partnerize.md)
   * Updates: Matomo, Kwanko, Google Universal Analytics
 * **Consent management -  Exempted statistics** ​
   * New tag in the library to facilitate the setup​
