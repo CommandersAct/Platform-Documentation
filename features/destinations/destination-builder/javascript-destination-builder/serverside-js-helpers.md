@@ -171,7 +171,7 @@ const body = {
 ```
 
 {% hint style="info" %}
-Notice that the event data may contains more properties that what you sent because of system properties added automatically on [web events](../../../../developers/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
+Notice that the event data may contains more properties that what you sent initially because of system properties that are added automatically on [web events](../../../../developers/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
 {% endhint %}
 
 **Data example:**
