@@ -170,7 +170,65 @@ const body = {
 };
 ```
 
+{% hint style="info" %}
 Notice that the event data may contains more properties that what you sent because of system properties added automatically on [web events](../../../../developers/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
+{% endhint %}
+
+**Data example:**
+
+If you send this web event:&#x20;
+
+```javascript
+cact('trigger', 'search', {
+  "search_term": "blue t-shirt",
+  "user": {
+    "id": "12345",
+    "email": "anakin.skywalker@domain.com",
+    "consent_categories": ["1","3"]
+  }
+);
+```
+
+Then the getAllEventData() function will return this object:
+
+```json
+{
+   "event_name": "search",
+   "search_term": "blue t-shirt",
+   "user": {
+      "id": "12345",
+      "email": "anakin.skywalker@domain.com",
+      "consent_categories": ["1","3"]
+   },
+   "url": "https://www.mywebsite.com/path1/path2/", //Automatically added if missing
+   "path": "/path1/path2/", //Automatically added
+   "referrer": "https:///www.google.fr", //Automatically added
+   "title": "My page title", //Automatically added if missing
+   "context": {
+      "event_id": "202110130000000000", //Automatically added
+      "generatorVersion": "10.0", //Automatically added
+      "containerVersion": "3.1", //Automatically added
+      "event_timestamp": "1639044446636", //Automatically added
+      "page": { //Automatically added
+         "title": "Search page", //Automatically added
+         "url": "https://shop.com/search?q=...", //Automatically added
+         "lang": "en", //Automatically added
+         "referrer": "https:///www.google.fr", //Automatically added
+         "viewport": { //Automatically added
+            "width": 320, //Automatically added
+            "height": 568 //Automatically added
+         }
+      },
+      "device": { //Automatically added
+         "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36",//Automatically added
+         "ip": "102.3.4.56",//Automatically copied from the request header
+         "lang": "fr",//Automatically added
+         "cookie": "_fbp=123; _fbc=456; _ga=789",//Automatically added
+         "timezone": "Europe/Paris"//Automatically added
+      }
+   }
+}
+```
 
 ## `getCookieValues` (WIP) <a href="#getcookievalues" id="getcookievalues"></a>
 
