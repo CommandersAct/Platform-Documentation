@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v82.0 - 08/03/2023
+
+* Trigger module update to add `tC.generateEventId()` and allow to pass a specific event id to the trigger API
+
 ### Release v81.1 - 28/02/2023
 
 * Trigger module update for Rakuten and Microsoft UET integration
