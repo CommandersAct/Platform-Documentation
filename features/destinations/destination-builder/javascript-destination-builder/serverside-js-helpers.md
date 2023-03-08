@@ -158,7 +158,7 @@ Returns a copy of the event data.
 getAllEventData();
 ```
 
-**Example**
+**Usage Example**
 
 ```javascript
 const getAllEventData= require('getAllEventData');
@@ -169,6 +169,8 @@ const body = {
     currency:eventModel.currency
 };
 ```
+
+Notice that the event data may contains more properties that what you sent because of system properties added automatically on [web events](../../../../developers/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
 
 ## `getCookieValues` (WIP) <a href="#getcookievalues" id="getcookievalues"></a>
 
