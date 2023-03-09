@@ -83,7 +83,7 @@ More information here:
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -99,7 +99,7 @@ More information here:
     ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (2).png>)
+    ![](<../.gitbook/assets/image (2) (2).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​

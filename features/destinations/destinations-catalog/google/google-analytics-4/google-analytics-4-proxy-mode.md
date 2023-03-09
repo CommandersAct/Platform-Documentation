@@ -26,3 +26,11 @@ You can find below the CNIL recommandation for each parameter:&#x20;
 * Retreatment of information that could contribute to generating a fingerprint, such as "user-agent", to remove the rarest configurations that could lead to reidentification.
 * The absence of any cross-site or deterministic (CRM, unique ID) identifier collection.
 * Removal of any other data that could lead to reidentification.
+
+The proxy mode give you a userfriendly way to manage each parameter anonymisation regarding these recommandations.
+
+In addition, you can also use on each destination, the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to transform/delete/hash any event property before to send it to the partner.
+
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
