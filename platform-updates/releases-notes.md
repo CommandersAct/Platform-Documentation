@@ -104,7 +104,7 @@ More information here:
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
   * Destination builder **Sandbox JS**: Closed alpha\
-    ![](<../.gitbook/assets/image (6).png>)
+    ![](<../.gitbook/assets/image (6) (3).png>)
   * **Google Enhanced Conversion** connector now supports more events​
   * **Commission Junction** : smart mapping adjustments and public opening​
   * **Google Univers Analytics**: closed beta

@@ -33,4 +33,4 @@ In addition, you can also use on each destination, the [Properties Transformatio
 
 <figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
