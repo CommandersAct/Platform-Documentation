@@ -110,7 +110,7 @@ fbq('track', 'AddToCart', {
 }, { eventID: tC.uniqueEventId });
 ```
 
-`eventID: tc.uniqueEventId` is automatically generated.
+`eventID: tC.uniqueEventId` is automatically generated.
 
 On server:
 
@@ -118,7 +118,7 @@ On server:
 integrations.facebook.event_id
 ```
 
-`integrations.facebook.event_id` automatically retrieves the eventID value coming from the pixel (`eventID: tc.uniqueEventId`) for standard events.
+`integrations.facebook.event_id` automatically retrieves the eventID value coming from the pixel (`eventID: tC.uniqueEventId`) for standard events.
 
 ## Default Mappings to Facebook Standard Events
 

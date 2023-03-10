@@ -165,7 +165,7 @@ When saving, the profile will be created on all selected sites.
 
 ![](../../.gitbook/assets/UP\_2\[1].png)
 
-When the profile is created, you will be able to link it to all desired users from the “User management” interface. To learn more, please refer to these articles: “[Creating a new user](https://community.commandersact.com/en/creating-a-new-user-or-modifying-account-settings-for-existing-users/)” or “[Modifying user rights](https://community.commandersact.com/en/visualizing-modifying-user-rights-for-one-or-more-sites/)”.
+When the profile is created, you will be able to link it to all desired users from the “User management” interface. To learn more, please refer to these articles: “[Creating a new user](user-management.md#creating-a-new-user)” or “[Modifying user rights](user-management.md#modifying-user-rights)”.
 
 ### Modifying a profile:
 
@@ -181,7 +181,7 @@ You can make changes to all elements available when you created the profile, exc
 
 Please note: Changes made to a profile will affect all sites said profile was created for.
 
-You can also activate the double factor authentication (2FA) on this section, please refer to [Double factor authentication (2FA)](two-factor-authentication-2fa.md)
+You can also activate the double factor authentication (2FA) on this section, please refer to[ Double factor authentication (2FA)](https://community.commandersact.com/platform/knowledge-base/two-factor-authentication-2fa)
 
 ### Deleting a profile:
 

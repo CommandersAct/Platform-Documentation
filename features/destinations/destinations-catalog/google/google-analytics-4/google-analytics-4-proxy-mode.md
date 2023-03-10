@@ -31,6 +31,6 @@ The proxy mode give you a userfriendly way to manage each parameter anonymisatio
 
 In addition, you can also use on each destination, the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to transform/delete/hash any event property before to send it to the partner.
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>

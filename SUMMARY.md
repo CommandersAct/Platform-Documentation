@@ -29,6 +29,7 @@
     * [Javascript SDK](features/sources/sources-catalog/js-sdk.md)
     * [Web container](features/sources/sources-catalog/containers.md)
     * [iOS](features/sources/sources-catalog/ios.md)
+    * [Flutter](features/sources/sources-catalog/ios-1.md)
     * [Android](features/sources/sources-catalog/android.md)
     * [React native](features/sources/sources-catalog/react-native.md)
     * [Realytics](features/sources/sources-catalog/realytics.md)

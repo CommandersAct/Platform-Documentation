@@ -104,7 +104,7 @@ More information here:
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
   * Destination builder **Sandbox JS**: Closed alpha\
-    ![](<../.gitbook/assets/image (6) (3).png>)
+    ![](<../.gitbook/assets/image (6).png>)
   * **Google Enhanced Conversion** connector now supports more events​
   * **Commission Junction** : smart mapping adjustments and public opening​
   * **Google Univers Analytics**: closed beta
@@ -161,7 +161,7 @@ More information here:
     * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
-    <img src="../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (8) (1) (3).png" alt="" data-size="original">
   * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
