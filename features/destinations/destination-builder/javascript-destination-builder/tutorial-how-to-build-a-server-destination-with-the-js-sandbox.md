@@ -65,3 +65,58 @@ You will want to get some properties of your events to send them to the partner 
 * [getAllEventData() ](serverside-js-helpers.md#getalleventdata-2)=> will return an object will all the event properties
 * [getEventData(myProperty)](serverside-js-helpers.md#geteventdata) =>will return the value of a specific property in your event
 
+### Destination implementation
+
+After setting up the destination configuration, you can proceed to implement its behavior in the JavaScript Sandbox.
+
+The Slack example requires the following four steps:
+
+1. Obtain the webhook URL from the destination's settings.
+2. Create the message that will be sent to the Slack API.
+3. Send a request to the Slack collection server to transmit the data.
+4. Test your code, to make sure that the destination will behave appropriately in production.
+
+It's important to note that the code should not perform certain actions, as they are the responsibility of the filter tab. Specifically, the code should not:
+
+* Manage the consent to determine wether the event should be send or not.\
+  It is the responsability of the consent category dropdown in the Filter tab. It is important not to override this feature, to not break the Data Governance reports
+* Analyze the event properties to determine whether it should be executed. \
+  Don't forget that the user will be able to choose in the _Filter tab_ wich event will be sent to the destination. You may want to restrict your code to some event's type, but you should not remove the user's ability to filter his events on certain properties (ex : the user may want to send only events with property "country" equals to "UK")
+* Return an global error (`data.onFailure()`) when some event's type does not fit the destination. Prefer to use silent error with `data.onFailure({ status: 'filtered'})`
+
+If you create a destination template that performs any of these actions, it can cause confusion for users of your destination. For instance, a destination that sends errors to Event Delivery whenever unsupported events are detected can lead to unnecessary warnings in Health reports. This would violate users' expectations regarding the expected behavior of the destination.
+
+With this in mind, here is an annotated example of the tag implementation in JavaScript sandbox:
+
+```javascript
+const sendHttpRequest = require('sendHttpRequest');
+const getAllEventData = require('getAllEventData');
+
+//We get the event data (all event's properties)
+const eventModel = getAllEventData();
+
+if (eventModel.event_name == 'sign_up') {
+    //get the url from what the user wrote in the webhook url field
+    //Settings data comes into the sandboxed code as a predefined 
+    //variable called 'data'.
+    const url = data.url; 
+    //Construct the body message, concatening the user name inside the sentence to send
+    const postBody = '{"text": "' + eventModel.user.firstname + ' ' + eventModel.user.lastname + 'just signed up!"}';
+
+    // Send the data to the Slack server
+    //The sendHttpRequest function takes a URL,a result callback, optionally a header, a method and a body.
+    sendHttpRequest(url, (statusCode, headers, body) => {
+        if (statusCode >= 200 && statusCode < 300) {
+            //send a success information to the Event Delivery report
+            data.onSuccess();
+        } else {
+           //send an error to the Event Delivery report
+            data.onFailure();
+        }
+    }, { headers: { 'Content-Type': 'application/json' }, method: 'POST', timeout: 1000 }, postBody);
+}
+else {
+    //silent failure that will not send an error in the Event Delivery report
+    data.onFailure({ status: 'filtered', detail: 'unsupported_event' });
+}
+```
