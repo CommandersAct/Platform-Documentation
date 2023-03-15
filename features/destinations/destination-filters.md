@@ -26,7 +26,7 @@ Available operators:
 
 ### ADVANCED FILTER
 
-An "Advanced" filter can be use when a simple one is not sufficient.
+An "Advanced" filter can be used when a simple one is not sufficient.
 
 The simple filter will be automatically transcribed into the advanced one, but the opposite is not possible, as advanced functions are not supported by the simple filter.
 
@@ -53,21 +53,6 @@ Supported functions:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Always use " " to enter a value
-{% endhint %}
-
-{% hint style="info" %}
-Input is parsing using those operators and rules like :\
-\- characters like `123` or `123.45` are cast to number\
-\- characters with simple or double quotes are cast to string
-{% endhint %}
-
-{% hint style="info" %}
-Event **metadata** can be accessed using the relevant prefix like _`page.*`_ , `device.*` , app.\* or `event_*`\
-`Ex: page.title=search OR event_name=search OR app.name=MySearchApp`
-{% endhint %}
-
-{% hint style="info" %}
-For **event properties** you can either write `properties.myPropertyName` or just `myPropertyName`. Both are supported.\
-Ex: `revenue=12 AND properties.currency=EUR`
+Always use " " to enter a value in advanced mode. \
+All values entered without " " will be treated as number.
 {% endhint %}
