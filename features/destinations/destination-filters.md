@@ -1,39 +1,38 @@
 # Destination filters
 
-{% hint style="info" %}
-Please note that the interface of this feature is going to evolve to provide the best filtering experience.
-{% endhint %}
+With filters, you have the possibility to define some conditions. As a result, some events will be sent and some don't, according to your conditions.
 
-With filters, you have the possibility to define some conditions. As a result, some events will be sent and some don't, according to your conditions. In the drop-down list, you will find predefined filters and a custom filter.
+### SIMPLE FILTER
 
-### PREDEFINED FILTERS
+Use the dropdown to select the property on which you want to filter, then select the operator and the value to filter on.
 
-Below is the list of the predefined filters and the CA event property it corresponds to :
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.48.32.png" alt=""><figcaption></figcaption></figure>
 
-* Currency --> currency
-* Event Type --> event\_name _(root property of the event)_
-* Country --> country
-* Coupon --> coupon
-* Method --> method _(e.g.: method used to login)_
-* Name --> name _(name usually refers to a product and is valued with the product name)_
-* Path --> path _(path of the page url where the event occurs)_
-* Payment Method --> payment\_method
-* Referrer --> referrer _(referrer of the page where the event occurs)_
-* Title --> title _(title of the page where the event occurs)_
-* Type --> type _(the type of conversion usually valued with "online", "offline", "call" and so on)_
-* URL --> url _(url of the page where the event occurs)_
+Available operators:
 
-### CUSTOM FILTER
+* is
+* isn't
+* match regex
+* doesn't match the regex
+* contains
+* doesn't contain
+* starts with
+* doesn't start with
+* ends with
+* doesn't end with
+* exists
+* doesn't exist
+* is empty
 
-A "Custom" filter can be use when predefined ones are not sufficient. It can be either used to filter events based on a specific property or even to combine several properties.
+### ADVANCED FILTER
 
-Example: you want to only send events with property 'country' is equal to France ('FR') AND property 'currency' is equal to Euro ('EUR').
+An "Advanced" filter can be use when a simple one is not sufficient.
 
-On the destination configuration wizard, filter step, you can define your filter like that:
+The simple filter will be automatically transcribed into the advanced one, but the opposite is not possible, as advanced functions are not supported by the simple filter.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-03-04 à 11.39.01.png>)
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.50.15.png" alt=""><figcaption><p>From simple filter...</p></figcaption></figure>
 
-You can type directly the property's name and write the formula according to allowed characters:
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.50.31.png" alt=""><figcaption><p>...to advanced filter</p></figcaption></figure>
 
 Supported operators:
 
@@ -46,6 +45,16 @@ Supported conditions:
 
 * `AND`
 * `OR`
+
+Supported functions:
+
+{% content-ref url="../data-quality/data-cleansing/supported-transformation-functions.md" %}
+[supported-transformation-functions.md](../data-quality/data-cleansing/supported-transformation-functions.md)
+{% endcontent-ref %}
+
+{% hint style="info" %}
+Always use " " to enter a value
+{% endhint %}
 
 {% hint style="info" %}
 Input is parsing using those operators and rules like :\
