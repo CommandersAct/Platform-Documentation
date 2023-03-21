@@ -4,10 +4,6 @@ description: Event specification
 
 # Normalized datalayer
 
-{% hint style="warning" %}
-Documentation in progress
-{% endhint %}
-
 In the _Normalized datalayer_ interface, you will be able to define the schema of your data.
 
 Adding **event specifications** allows you to define the payload and what is expected, so that you can see if the data is meeting those specifications, in case there are any errors.
@@ -41,7 +37,6 @@ You can create custom properties and add it to your event specification.
 
 You can define your property as 'Personal Identifiable Information (PII)', meaning this property contains personal information that could identify a user (email address, postal address, Customer ID...).
 
-If this option is set to true, the property will be considered as PII.&#x20;
+If this option is set to true, the property will be considered as PII.
 
 If this property is stored and set as PII, it will be automatically encrypted in AES-256 before being written to the database.
-
