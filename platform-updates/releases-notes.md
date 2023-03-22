@@ -166,7 +166,7 @@ More information here:
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9).png>)
+    ![](<../.gitbook/assets/image (9) (2).png>)
 
 ## Release 10.0.3 - 24/08/22
 
