@@ -1,7 +1,6 @@
 # Mapp
 
-[Mapp](https://mapp.com/), formerly Webtrekk, generates actionable insights for brands to engage with their customers and deliver cross-channel marketing campaigns.\
-Using this destination you can implement Mapp [server-side tracking](https://documentation.mapp.com/1.0/en/server-to-server-7240721.html).&#x20;
+[Mapp](https://mapp.com/), formerly Webtrekk, generates actionable insights for brands to engage with their customers and deliver cross-channel marketing campaigns. Using this destination you can implement Mapp [server-side tracking](https://documentation.mapp.com/1.0/en/server-to-server-7240721.html).&#x20;
 
 ## Key features
 
