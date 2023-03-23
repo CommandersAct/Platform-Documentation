@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 24/03/2023
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/mapp.md" %}
+[mapp.md](../features/destinations/destinations-catalog/mapp.md)
+{% endcontent-ref %}
+
 ## 25/02/2023
 
 Add the [Facebook CAPI through GTM](../features/destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md) documentation
