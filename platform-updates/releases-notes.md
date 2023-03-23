@@ -11,7 +11,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (8).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -166,7 +166,7 @@ More information here:
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9) (2).png>)
+    ![](<../.gitbook/assets/image (9).png>)
 
 ## Release 10.0.3 - 24/08/22
 

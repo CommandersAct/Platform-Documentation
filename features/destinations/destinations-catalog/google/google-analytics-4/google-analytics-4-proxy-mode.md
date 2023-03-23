@@ -17,13 +17,13 @@ The proxy mode option in the [GA4 destination](./) allows you to anonymize data 
 
 When enabled, the _proxy mode_ gives you access to a number of options that allow you to choose granularly how each parameter should be anonymized.
 
-<figure><img src="../../../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Some options of the proxy mode</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Some options of the proxy mode</p></figcaption></figure>
 
 You can find below the CNIL recommandation, and for each parameter the _proxy mode_ give you a userfriendly way to manage anonymisation:&#x20;
 
 1. _**the absence of transfer of the IP address to the servers of the analytics tool.** If a location is transmitted to the servers of the measurement tool, it must be carried out by the proxy server and the level of precision must ensure that this information does not allow the person to be re-identified (for example, by using a geographical mesh ensuring a minimum number of Internet users per cell);_\
    __\
-   __**Solution:** You can choose to obfusctate the IP (the last octet (the last portion) of the IP address is immediately discarded) or to delete it completly. Obfuscation is often preferred because it allows to remove the identifying character of the IP while keeping the geolocation features of the country\
+   __**Solution:** You can choose to obfusctate the IP (the last octet (the last portion) of the IP address is replaced by 0) or to delete it completly. Obfuscation is often preferred because it allows to remove the identifying character of the IP while keeping the geolocation features of the country\
 
 2. _**the replacement of the user identifier by the proxy server.** To ensure effective pseudonymisation, the algorithm performing the replacement should ensure a sufficient level of collision (i.e. a sufficient probability that two different identifiers will give an identical result after a hash) and include a time-varying component (adding a value to the hashed data that evolves over time so that the hash result is not always the same for the same identifier) ;_\
    __\
