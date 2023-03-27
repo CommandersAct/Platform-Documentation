@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 31/03/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/adform.md" %}
+[adform.md](../features/destinations/destinations-catalog/adform.md)
+{% endcontent-ref %}
+
 ## 24/03/2023
 
 Destination documentation (updates):
