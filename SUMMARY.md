@@ -57,6 +57,7 @@
   * [Destinations catalog](features/destinations/destinations-catalog/README.md)
     * [AbTasty](features/destinations/destinations-catalog/abtasty.md)
     * [Actito](features/destinations/destinations-catalog/actito.md)
+    * [Adform](features/destinations/destinations-catalog/adform.md)
     * [Adobe](features/destinations/destinations-catalog/adobe/README.md)
       * [Adobe Analytics](features/destinations/destinations-catalog/adobe/adobe-analytics.md)
       * [Adobe Campaign](features/destinations/destinations-catalog/adobe/adobe-campaign.md)

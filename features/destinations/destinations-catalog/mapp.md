@@ -13,6 +13,10 @@ The Mapp destination provides the following key features:
 
 ## Destination setup
 
+{% hint style="info" %}
+Ensure events are properly filtered, based on your expected configuration/needs, using&#x20;
+{% endhint %}
+
 ### Configuration
 
 | Settings                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |

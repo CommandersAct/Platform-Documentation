@@ -9,7 +9,7 @@ For example, you collected data about a visitor A with a laptop and a visitor B 
 
 With **Fuse V2,** it goes further by **merging** these visitors in order to have a **unique user** with all the data collected. With Fuse V2, the goal is to detect with multiple reconciliation keys the same customer and unify all the data around 1 unique user in order to have a complete view of the customer across all devices and all channels.
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../.gitbook/assets/image (12) (2).png>)
 
 With Fuse V2 your CDP become **user-centric** rather than cookie centric and that change the way you define your marketing campaigns: you don’t talk to devices anymore but to persons directly, to users.
 

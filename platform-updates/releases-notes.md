@@ -11,7 +11,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (1).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -83,7 +83,7 @@ More information here:
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -99,7 +99,7 @@ More information here:
     ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (2) (2) (1).png>)
+    ![](<../.gitbook/assets/image (2) (2).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
@@ -166,7 +166,7 @@ More information here:
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9).png>)
+    ![](<../.gitbook/assets/image (9) (2).png>)
 
 ## Release 10.0.3 - 24/08/22
 
