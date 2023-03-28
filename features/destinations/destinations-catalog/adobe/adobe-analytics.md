@@ -31,6 +31,10 @@ and Redirect URL Pattern with:\
 [https://api-internal\\.commandersact\\.com/v2/connectors/adobe/callback](https://api-internal/.commandersact/.com/v2/connectors/adobe/callback)
 {% endhint %}
 
+{% hint style="warning" %}
+After 14 days without any activity (no event sent), the token will expire, and you will have to do again the authentication.
+{% endhint %}
+
 In case you haven't selected the web-app oauth (if it is an old project, and you don't want to configure it again for example), it is possible to change the authentication, click on "Connect another credential" on Adobe Analytics interface.
 
 <figure><img src="../../../../.gitbook/assets/Doc Adobe anonyme.png" alt=""><figcaption></figcaption></figure>
