@@ -11,7 +11,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (1).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:

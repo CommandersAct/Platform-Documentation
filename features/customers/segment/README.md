@@ -44,3 +44,11 @@ Then the button 'ADD CONDITION' will appear, and you can define more conditions,
 Then, you can easily segment on conversion items:
 
 ![](<../../../.gitbook/assets/image (10) (1) (1).png>)
+
+## How to segment on calculated variables
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+On our storage model, the main universe is **users**, and, attached to this main universe, there are sub universes: **page views, views, clicks, conversions**...
+
+On the segmentation, you can find calculated variables like "count of page view" or "count of conversion", it represents the count of documents in the sub-universe for a specific user. As a result, you can create segments like "all users with count of page view > 10".
