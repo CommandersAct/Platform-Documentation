@@ -18,7 +18,7 @@ The Adform destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-Use **** [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events matching your specific needs.
+Use **** [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
 ### Configuration
