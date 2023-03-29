@@ -12,6 +12,12 @@ Destination documentation:
 [adform.md](../features/destinations/destinations-catalog/adform.md)
 {% endcontent-ref %}
 
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/rakuten/rakuten-events.md" %}
+[rakuten-events.md](../features/destinations/destinations-catalog/rakuten/rakuten-events.md)
+{% endcontent-ref %}
+
 ## 24/03/2023
 
 Destination documentation (updates):
