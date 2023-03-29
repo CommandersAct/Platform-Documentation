@@ -21,7 +21,6 @@ The Rakuten Advertising destination provides the following key features:
 
 {% hint style="info" %}
 Rakuten Advertising adds a URL parameter<mark style="color:blue;">`ranSiteID`</mark>to your landing page by default. This mandatory values is usually stored in a cookie called <mark style="color:blue;">**rmStore**</mark>, **** which needs to be included in your events. Alternatively, you have the option to send its values by providing it in the field<mark style="color:blue;">`Rakuten Affiliate Tracking Id (tr)`</mark>**\[1]**. The cookie <mark style="color:blue;">**rmStore**</mark>** ** is also used to retrieve the mandatory property<mark style="color:blue;">`land`</mark>, which can also be sent using the field<mark style="color:blue;">`Rakuten User Arrival (land)`</mark>**\[1]**. See [Field Mappings](rakuten-events.md#field-mappings) for more details.\
-\
 **\[1]** "Smart Mapping" field.
 {% endhint %}
 
@@ -53,39 +52,33 @@ For the<mark style="color:blue;">`Lead`</mark>conversion type, if you don't prov
 More details on Rakuten properties are available following this [LINK](https://rak.app.box.com/s/j3qtvbd300vqa1zyknxklx3itqyi0vlh).
 {% endhint %}
 
-| Commanders Act Properties                                                                                                                                | Rakuten Properties             |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| <p><code>Rakuten Affiliate Merchant Id (mid)</code> <strong>[1]</strong> or</p><p><code>Affiliate Merchant Id</code> </p>                                | `mid` **\[\*]\[2]**            |
-| <p><code>partners.rakuten.land</code> or<br><code>Gateway Cookie Name</code></p>                                                                         | `land` **\[\*]\[3]**           |
-| <p><code>partners.rakuten.tr</code> or<br><code>Gateway Cookie Name</code></p>                                                                           | `tr` **\[\*]\[4]**             |
-| `currency`                                                                                                                                               | `cur` **\[\*]**                |
-| (`items.X.product.price` \* `items.X.quantity` \* 100) or (`revenue` \* 100)                                                                             | `amtlist` **\[\*]\[5]\[6]**    |
-| `items.X.id`                                                                                                                                             | `skulist` **\[\*]\[6]**        |
-| `items.X.quantity`                                                                                                                                       | `qlist` **\[\*]\[6]**          |
-| `items.X.product.brand`                                                                                                                                  | `brandlist` **\[6]**           |
-| `items.X.product.category_1` > `items.X.product.category_2` > `items.X.product.category_3` > `items.X.product.category_4` > `items.X.product.category_5` | `catlist` **\[6]**             |
-| `items.X.coupon`                                                                                                                                         | `couponlist` **\[6]**          |
-| `items.X.product.name`                                                                                                                                   | `namelist` **\[6]**            |
-| `id`                                                                                                                                                     | `ord`                          |
-| `id_variant`                                                                                                                                             | `altord`                       |
-| `context.device.advertising_id`                                                                                                                          | `did`                          |
-| `discount`                                                                                                                                               | `discount`                     |
-| `discount`                                                                                                                                               | `disamt`                       |
-| `user.id`                                                                                                                                                | `custid`                       |
-| `user.status`                                                                                                                                            | `custstatus`                   |
-| `coupon`                                                                                                                                                 | `coupon`                       |
-| `status`                                                                                                                                                 | `ordstatus`                    |
-| `Commanders Act event property`                                                                                                                          | `Event property name` **\[7]** |
+| Commanders Act Properties                                                                                                                                   | Rakuten Properties          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| <p><code>Rakuten Affiliate Merchant Id (mid)</code></p><p><code>Affiliate Merchant Id</code> </p>                                                           | `mid` **\[\*]\[1]**         |
+| <p><code>partners.rakuten.land</code> <br><code>Gateway Cookie Name</code></p>                                                                              | `land` **\[\*]\[1]\[2]**    |
+| <p><code>partners.rakuten.tr</code><br><code>Gateway Cookie Name</code></p>                                                                                 | `tr` **\[\*]\[1]**          |
+| `currency`                                                                                                                                                  | `cur` **\[\*]**             |
+| ((`items.X.product.price` \* `items.X.quantity`) - (`[totalDiscount]` \* (`items.X.product.price` \* `items.X.quantity`)) / `[totalOrderFromItems]`) \* 100 | `amtlist` **\[\*]\[3]\[4]** |
+| `items.X.id`                                                                                                                                                | `skulist` **\[\*]\[4]**     |
+| `items.X.quantity`                                                                                                                                          | `qlist` **\[\*]\[4]**       |
+| `items.X.product.brand`                                                                                                                                     | `brandlist` **\[4]**        |
+| `items.X.product.category_1` > `items.X.product.category_2` > `items.X.product.category_3` > `items.X.product.category_4` > `items.X.product.category_5`    | `catlist` **\[4]**          |
+| `items.X.coupon`                                                                                                                                            | `couponlist` **\[4]**       |
+| `items.X.product.name`                                                                                                                                      | `namelist` **\[4]**         |
+| `id`                                                                                                                                                        | `ord`                       |
+| `id_variant`                                                                                                                                                | `altord`                    |
+| `context.device.advertising_id`                                                                                                                             | `did`                       |
+| `discount`                                                                                                                                                  | `discount`                  |
+| `discount`                                                                                                                                                  | `disamt`                    |
+| `user.id`                                                                                                                                                   | `custid`                    |
+| `user.status`                                                                                                                                               | `custstatus`                |
+| `coupon`                                                                                                                                                    | `coupon`                    |
+| `status`                                                                                                                                                    | `ordstatus`                 |
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** "Smart Mapping" field.\
-**\[2]**<mark style="color:blue;">`Rakuten Affiliate Merchant Id (mid)`</mark>has priority over<mark style="color:blue;">`Affiliate Merchant Id`</mark>.\
-**\[3]**<mark style="color:blue;">`partners.rakuten.land`</mark>has priority over<mark style="color:blue;">`Gateway Cookie Name`</mark>.\
-<mark style="color:blue;">`partners.rakuten.land`</mark>must be in the 24-hour format: <mark style="color:blue;">`yyyymmdd_hhmm`</mark>.\
-**\[4]**<mark style="color:blue;">`partners.rakuten.tr`</mark>has priority over<mark style="color:blue;">`Gateway Cookie Name`</mark>.\
-**\[5]** if items are reported in your item list, this is computed using the item price and item quantity, otherwise, the revenue is used. Multiplying by 100 is not applied when<mark style="color:blue;">`currency`</mark>is set with<mark style="color:blue;">`JPN`</mark>.\
-**\[6]** Distinct product information is separated with a pipe character ("|").\
-**\[7]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration](rakuten-events.md#configuration) for more details.\
-
+**\[1]** Priority order is listed in the left column.\
+**\[2]**<mark style="color:blue;">`partners.rakuten.land`</mark>must be in the 24-hour format: <mark style="color:blue;">`yyyymmdd_hhmm`</mark>.\
+**\[3]** if items information are reported in your item list, this is computed using the item price and item quantity, otherwise the<mark style="color:blue;">`revenue`</mark>is used. Multiplying by 100 is not applied when<mark style="color:blue;">`currency`</mark>is set with<mark style="color:blue;">`JPN`</mark>.`[totalDiscount]`is set with <mark style="color:blue;">`discount`</mark>, <mark style="color:blue;">`items.X.discount`</mark><mark style="color:blue;">(sum)</mark> or 0, in this presented priority order.\
+**\[4]** Distinct product information is separated with a pipe character ("|").
 {% endhint %}
