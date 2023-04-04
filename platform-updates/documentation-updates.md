@@ -6,13 +6,13 @@ description: The latest updates made to our documentation articles
 
 ## 31/03/2023
 
-Destination documentation:
+* Destination documentation:
 
 {% content-ref url="../features/destinations/destinations-catalog/adform.md" %}
 [adform.md](../features/destinations/destinations-catalog/adform.md)
 {% endcontent-ref %}
 
-Destination documentation (updates):
+* Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/rakuten/rakuten-events.md" %}
 [rakuten-events.md](../features/destinations/destinations-catalog/rakuten/rakuten-events.md)
@@ -21,6 +21,12 @@ Destination documentation (updates):
 {% content-ref url="../features/destinations/destinations-catalog/partnerize.md" %}
 [partnerize.md](../features/destinations/destinations-catalog/partnerize.md)
 {% endcontent-ref %}
+
+* **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
+  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)\
+
+* **GA4 proxy mode**\
+  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)
 
 ## 24/03/2023
 

@@ -3,7 +3,7 @@
 [Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 Google Display & Video 360 and Google Search Ads 360 are paid products part of [Google Marketing Platform](https://marketingplatform.google.com/about/).
 
-![](<../../../../.gitbook/assets/image (1) (2).png>)
+![](<../../../../.gitbook/assets/image (1) (2) (1).png>)
 
 ## First step: <a href="#googleddpsetup-firststep" id="googleddpsetup-firststep"></a>
 

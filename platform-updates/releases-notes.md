@@ -6,17 +6,17 @@ description: >-
 
 # Release notes
 
-## Release 10.0.9.2 - 24/03/23
+## Release 10.0.10 - 24/03/23
 
 * **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\
   ****The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 * **New User Rights**\
   ****3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 * **New SDKs** \
   ****\
@@ -32,15 +32,6 @@ description: >-
   [https://github.com/CommandersAct/ngx-tag-commander](https://github.com/CommandersAct/ngx-tag-commander)\
   [https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md](https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md)\
 
-* **New documentations**\
-  ****\
-  **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
-  _****_Has been added in our destinations documentation's:\
-  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)\
-  \
-  **Documentation on GA4 proxy mode**\
-  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)\
-
 *   **Filters upgraded on destinations**&#x20;
 
     * quick/easy filter with autocomplete
@@ -52,13 +43,13 @@ description: >-
 *   **Data Quality indicators and trend graph are now displayed on all sources**\
     ****
 
-    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 *   **Enhancement on LRB report** \
     you can now choose to do not display the "non attributed" line in a report
 
 
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 * **New destination**\
   **Partenerize** \
   ****Note : this destination allows a dynamic field\
@@ -71,7 +62,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (2).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -117,7 +108,7 @@ More information here:
 
 * **Product enrichment** & **External API -** _Public opening_\
   Enrich your events in real time with data transmission from your product catalog or from an external API. It does not requires any data storage \
-  ![](<../.gitbook/assets/image (3) (2) (1).png>)\
+  ![](<../.gitbook/assets/image (3) (2).png>)\
 
 *   **OnSite API:**
 
@@ -226,7 +217,7 @@ More information here:
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9) (2).png>)
+    ![](<../.gitbook/assets/image (9).png>)
 
 ## Release 10.0.3 - 24/08/22
 

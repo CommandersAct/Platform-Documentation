@@ -65,10 +65,10 @@ On Chrome / Android, it is able to create 1 user per device, with different pid 
 
 As soon as it can identify 2 devices with the same user\_id (login for example), it can merge these 2 users, to have 1 unique user for these 2 devices.
 
-![](<../.gitbook/assets/image (14) (1) (1).png>)
+![](<../.gitbook/assets/image (14) (1).png>)
 
 For Safari / iOS, it is different because it can't have different tcid. Due to cookie limitations on Safari, it uses a fingerprint. Unfortunately, on a public hotspot, all devices have the same IP address and, as a result, the fingerprint is the same, meaning we have 1 unique user for all these devices.
 
 However, as soon as it can detect that a user is unique (with a login for example), it can create a separate user.
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../.gitbook/assets/image (13) (2).png>)

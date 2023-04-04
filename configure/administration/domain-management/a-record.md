@@ -41,7 +41,7 @@ Click then on "Generate certificates"
 
 Click on "Test configuration" and the setup will be done.
 
-![](<../../../.gitbook/assets/image (4) (1) (3).png>)
+![](<../../../.gitbook/assets/image (4) (1).png>)
 
 ## A record setup with your own certificate
 

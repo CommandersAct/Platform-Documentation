@@ -39,7 +39,7 @@ In conclusion, some data should always be extracted from the event while other d
 
 In the case of our Slack destination, we will want to add one field so that the user can copy/paste its Slack's webhook url. We choose a text input like this:
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, we can go to the _Code_ tab, starting to write the code of our destination template.\
 
