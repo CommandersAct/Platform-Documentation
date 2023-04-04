@@ -2,6 +2,15 @@
 
 ## 2023
 
+### Release v83.0 - 04/04/2023
+* Fixes a generator bug introduced on the **30/03/2023** (side-effect from a server upgrade)
+    * The bug was causing an ordering issue where Tags could not be loaded in the same order as before
+    * **It is highly recommended you generate a new version for containers generated between the 30/03/2023 and the 04/04/2023 to prevent any unexpected behavior on your website**
+
+### Release v82.1 - 28/03/2023
+
+* Update IAB TCFv2 module to automatically add vendor number to banner text (new TCF requirement)
+
 ### Release v82.0 - 08/03/2023
 
 * Trigger module update to add `tC.generateEventId()` and allow to pass a specific event id to the trigger API
