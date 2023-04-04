@@ -6,6 +6,66 @@ description: >-
 
 # Release notes
 
+## Release 10.0.9.2 - 24/03/23
+
+* **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\
+  ****The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+* **New User Rights**\
+  ****3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+* **New SDKs** \
+  ****\
+  ****SDK for **Flutter** is lauched\
+  For further informations, please check our github\
+  [https://github.com/CommandersAct/tcserverside-plugin  \
+  https://github.com/CommandersAct/tc-consent-plugin  \
+  https://github.com/CommandersAct/TCMobileDemo-flutter](https://github.com/CommandersAct/tcserverside-pluginhttps://github.com/CommandersAct/tc-consent-pluginhttps://github.com/CommandersAct/TCMobileDemo-flutter)\
+  \
+  SDK **Angular 15** is available\
+  Note : it's also compatible with Angular 14.\
+  Check our GitHub for more informations :\
+  [https://github.com/CommandersAct/ngx-tag-commander](https://github.com/CommandersAct/ngx-tag-commander)\
+  [https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md](https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md)\
+
+* **New documentations**\
+  ****\
+  **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
+  _****_Has been added in our destinations documentation's:\
+  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)\
+  \
+  **Documentation on GA4 proxy mode**\
+  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)\
+
+*   **Filters upgraded on destinations**&#x20;
+
+    * quick/easy filter with autocomplete
+    * more operators (contains, match regex, etc.)
+    * advanced mode with formula (ability to create very complexe filter, applying our formula function to any condition)\
+
+
+    <figure><img src="../.gitbook/assets/filtersv2-demo.gif" alt=""><figcaption></figcaption></figure>
+*   **Data Quality indicators and trend graph are now displayed on all sources**\
+    ****
+
+    <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+*   **Enhancement on LRB report** \
+    you can now choose to do not display the "non attributed" line in a report
+
+
+
+    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+* **New destination**\
+  **Partenerize** \
+  ****Note : this destination allows a dynamic field\
+  <img src="../.gitbook/assets/image.png" alt="" data-size="original">
+
+****
+
 ## Release 10.0.9.1 - 22/02/23
 
 * **Destination builder - Javascript sandbox**\
@@ -57,7 +117,7 @@ More information here:
 
 * **Product enrichment** & **External API -** _Public opening_\
   Enrich your events in real time with data transmission from your product catalog or from an external API. It does not requires any data storage \
-  ![](<../.gitbook/assets/image (3) (2).png>)\
+  ![](<../.gitbook/assets/image (3) (2) (1).png>)\
 
 *   **OnSite API:**
 
@@ -166,7 +226,7 @@ More information here:
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9).png>)
+    ![](<../.gitbook/assets/image (9) (2).png>)
 
 ## Release 10.0.3 - 24/08/22
 
