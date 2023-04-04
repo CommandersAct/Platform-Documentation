@@ -2,7 +2,7 @@
 description: Example of destination created with the J0 sandbox in the Destination Builder
 ---
 
-# Tutorial -  How to build a server destination with the JS sandbox
+# Tutorial - How to build a server destination with the JS sandbox
 
 The Destination builder allows you to create custom server-side destinations using server-side **javascript** (aka Node.js), but with an **easy and simplified** subset of Node.js : the [_**Javascript Sandbox**_](./#javascript-sandbox).
 
@@ -20,7 +20,7 @@ In this tutorial, you will create a destination that sends event data to Slack u
 
 To begin, create the destination template by navigating to the **Destination** section in the menu and clicking **New** in the **Destination Builder** section. Then, give your destination a name, a logo, a category and a description.
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, go to the **Fields** section of the editor to add settings options for your destination. You have three options for building your destination:
 
@@ -39,12 +39,12 @@ In conclusion, some data should always be extracted from the event while other d
 
 In the case of our Slack destination, we will want to add one field so that the user can copy/paste its Slack's webhook url. We choose a text input like this:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 Now, we can go to the _Code_ tab, starting to write the code of our destination template.\
 
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How to get the data in your code ?
 

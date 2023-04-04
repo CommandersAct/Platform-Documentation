@@ -53,7 +53,7 @@ Provide the requested information:\
 \- The chain of the certificate\
 If you need assistance, please contact the Commanders Act support team.
 
-![](<../../../.gitbook/assets/image (5) (2).png>)
+![](<../../../.gitbook/assets/image (5) (2) (1).png>)
 
 Then click on "Validate configuration" and this will test the DNS configuration.
 

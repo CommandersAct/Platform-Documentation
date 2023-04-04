@@ -29,7 +29,7 @@ Still on Facebook Business Manager, [https://business.facebook.com/](https://bus
 
 Create a system user (if you don't already have one) and generate a token:
 
-![](<../../../../.gitbook/assets/image (3) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (3) (1) (1) (2).png>)
 
 Select ads\_management authorization:
 

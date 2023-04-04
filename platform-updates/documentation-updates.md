@@ -27,6 +27,10 @@ description: The latest updates made to our documentation articles
 
 * **GA4 proxy mode**\
   [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)
+* **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
+  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)****
+* **Documentation on GA4 proxy mode**\
+  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)
 
 ## 24/03/2023
 
