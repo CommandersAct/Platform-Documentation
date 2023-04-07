@@ -3,8 +3,8 @@
 ## 2023
 
 ### Release v83.0 - 04/04/2023
-* Fixes a generator bug introduced on the **30/03/2023** (side-effect from a server upgrade)
-    * The bug was causing an ordering issue where Tags could not be loaded in the same order as before
+* Fixes a generator bug introduced on the **30/03/2023** (side-effect from a generation engine upgrade)
+    * The bug was causing an ordering issue where Tags may be loaded in a different order from before
     * **It is highly recommended you generate a new version for containers generated between the 30/03/2023 and the 04/04/2023 to prevent any unexpected behavior on your website**
 
 ### Release v82.1 - 28/03/2023
@@ -21,7 +21,7 @@
 
 ### Release v81.0 - 14/02/2023
 
-* Internal upgrade of the generator server. Greatly improves generator performance. This upgrade should not impact the generation result, though we recommend that you test your first generated container before your next deployment.
+* Internal upgrade of the generator engine. Greatly improves generator performance. This upgrade should not impact the generation result, though we recommend that you test your first generated container before your next deployment.
 
 ### Release v80.3 - 08/02/2023
 
