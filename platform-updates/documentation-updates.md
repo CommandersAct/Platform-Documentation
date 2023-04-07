@@ -12,6 +12,10 @@ Destination documentation (updates):
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% endcontent-ref %}
+
 ## 31/03/2023
 
 Destination documentation:
