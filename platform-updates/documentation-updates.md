@@ -12,6 +12,8 @@ Destination documentation (updates):
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
 {% endcontent-ref %}
 
+Also added:[ analyses, suggestions and report's impact to our GA4 proxy](../features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md#3.-impact-analysis-and-open-suggestions) documentation
+
 {% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
 [tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
