@@ -58,16 +58,14 @@ App related fields are enabled by flagging<mark style="color:blue;">`Enable App 
 
 ### Session handling
 
-When providing a<mark style="color:blue;">`Measurement Id`</mark>, the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-").\
-If the cookie is not provided or with APP data streams, the default property `context.device.lifecycle.session_id` is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
+When providing a<mark style="color:blue;">`Measurement Id`</mark>, the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-"). If the cookie is not provided or with APP data streams, the default property `context.device.lifecycle.session_id` is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
 
 ## Mappings for GA4 events
 
 This destination provides automatic mapping between our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model and GA4 events. In this section, you will learn what properties are set so you can expect to see those details in GA4 reporting.
 
 {% hint style="info" %}
-More details on GA4 standard events are available following this [LINK](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).
-
+More details on GA4 standard events are available following this [LINK](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).\
 To ensure that custom event properties are picked up by GA4, you must create event-scoped dimensions. You can find more details by following this link: [\[GA4\] Custom dimensions and metrics](https://support.google.com/analytics/answer/10075209).
 {% endhint %}
 
