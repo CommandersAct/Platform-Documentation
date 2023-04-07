@@ -15,7 +15,7 @@ The HTTP Tracking API lets you record data from any website or application. Requ
 Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
 
 {% hint style="info" %}
-The source key is provided to you when you create a source in the [`source catalogue`](./)``
+The source key is provided to you when you create a source in the [`source catalogue`](./)
 {% endhint %}
 
 #### Content-Type <a href="#content-type" id="content-type"></a>

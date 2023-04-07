@@ -753,7 +753,7 @@ Enumerated Values for purchase status:
 | status   | shipped              |
 | status   | pending              |
 
-****
+
 
 ##
 

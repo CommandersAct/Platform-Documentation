@@ -22,33 +22,33 @@ When enabled, the _proxy mode_ gives you access to a number of options that allo
 You can find below the CNIL recommandation, and for each parameter the _proxy mode_ give you a userfriendly way to manage anonymisation:&#x20;
 
 1. _**the absence of transfer of the IP address to the servers of the analytics tool.** If a location is transmitted to the servers of the measurement tool, it must be carried out by the proxy server and the level of precision must ensure that this information does not allow the person to be re-identified (for example, by using a geographical mesh ensuring a minimum number of Internet users per cell);_\
-   __\
-   __**Solution:** You can choose to obfusctate the IP (the last octet (the last portion) of the IP address is replaced by 0) or to delete it completly. Obfuscation is often preferred because it allows to remove the identifying character of the IP while keeping the geolocation features of the country\
+   \
+   **Solution:** You can choose to obfusctate the IP (the last octet (the last portion) of the IP address is replaced by 0) or to delete it completly. Obfuscation is often preferred because it allows to remove the identifying character of the IP while keeping the geolocation features of the country\
 
 2. _**the replacement of the user identifier by the proxy server.** To ensure effective pseudonymisation, the algorithm performing the replacement should ensure a sufficient level of collision (i.e. a sufficient probability that two different identifiers will give an identical result after a hash) and include a time-varying component (adding a value to the hashed data that evolves over time so that the hash result is not always the same for the same identifier) ;_\
-   __\
-   __**Solution:** You can choose to pseudonymize the client id (cid) and user id (cid). This pseudonymization option consist to replace the id by a hash of id plus a salt.\
+   \
+   **Solution:** You can choose to pseudonymize the client id (cid) and user id (cid). This pseudonymization option consist to replace the id by a hash of id plus a salt.\
    The id will be first concatened with a salt that changes every 3h approximately and then be hased using SHA256. This allows to create anonymous ids that are identical within a session but different from session to session. This will prevent GA4 from tracking a user over time.\
 
 3. _**the removal of external referrer information from** the site;_\
-   __\
-   __**Solution:** You can choose to delete it or keep only internal domains.\
+   \
+   **Solution:** You can choose to delete it or keep only internal domains.\
    &#x20;
 4. _**the removal of any parameters contained in the collected URLs** (e.g. UTMs, but also URL parameters allowing internal routing of the site);_\
-   __\
-   __**Solution:** You can choose to delete all url parameters, keep only specific parameters and/or keep UTMs in some case\
+   \
+   **Solution:** You can choose to delete all url parameters, keep only specific parameters and/or keep UTMs in some case\
 
 5. _**reprocessing of information that can be used to generate a fingerprint**, such as user-agents, to remove the rarest configurations that can lead to re-identification;_\
-   __\
-   __**Solution:** Choosing to delete completly the user-agent seems to be the best option.\
+   \
+   **Solution:** Choosing to delete completly the user-agent seems to be the best option.\
 
 6. _**the absence of collection of cross-site or lasting identifiers** (CRM ID, unique ID);_\
-   __\
-   __**Solution:**  Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below)\
-   __
+   \
+   **Solution:**  Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below)\
+
 7. _**the deletion of any other data that could lead to re-identification**._\
-   __\
-   __**Solution:** Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below)
+   \
+   **Solution:** Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below)
 
 ## 2. Manage custom PII data
 

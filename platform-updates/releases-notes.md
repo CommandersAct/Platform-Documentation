@@ -9,18 +9,18 @@ description: >-
 ## Release 10.0.10 - 24/03/23
 
 * **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\
-  ****The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
+  The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 * **New User Rights**\
-  ****3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
+  3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 * **New SDKs** \
-  ****\
-  ****SDK for **Flutter** is lauched\
+  \
+  SDK for **Flutter** is lauched\
   For further informations, please check our github\
   [https://github.com/CommandersAct/tcserverside-plugin  \
   https://github.com/CommandersAct/tc-consent-plugin  \
@@ -41,7 +41,7 @@ description: >-
 
     <figure><img src="../.gitbook/assets/filtersv2-demo.gif" alt=""><figcaption></figcaption></figure>
 *   **Data Quality indicators and trend graph are now displayed on all sources**\
-    ****
+
 
     <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 *   **Enhancement on LRB report** \
@@ -51,21 +51,21 @@ description: >-
 
     <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 * **New destinations releases**\
-  ****\
-  ******Partenerize** \
-  ****Note : this destination allows a dynamic field\
+  \
+  **Partenerize** \
+  Note : this destination allows a dynamic field\
   <img src="../.gitbook/assets/image (7).png" alt="" data-size="original">\
   \
   **SmartAd Server**\
-  ****![](<../.gitbook/assets/image (12).png>)\
+  ![](<../.gitbook/assets/image (12).png>)\
   \
   **Rakuten Events**\
   ![](<../.gitbook/assets/image (15).png>)\
 
 * **Destinations updates**\
-  ****\
+  \
   **Mapp:** usability improvements\
-  ****![](<../.gitbook/assets/image (26).png>)\
+  ![](<../.gitbook/assets/image (26).png>)\
   \
   **Partnerize:** Advanced operations added\
   ![](<../.gitbook/assets/image (16).png>)\
@@ -73,9 +73,9 @@ description: >-
   **Snapchat:** SmartMapping support\
   ![](<../.gitbook/assets/image (24).png>)
 
-****
 
-****
+
+
 
 ## Release 10.0.9.1 - 22/02/23
 

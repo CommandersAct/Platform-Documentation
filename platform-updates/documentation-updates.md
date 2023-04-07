@@ -4,15 +4,23 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 07/04/2023
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
+[google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
+{% endcontent-ref %}
+
 ## 31/03/2023
 
-* Destination documentation:
+Destination documentation:
 
 {% content-ref url="../features/destinations/destinations-catalog/adform.md" %}
 [adform.md](../features/destinations/destinations-catalog/adform.md)
 {% endcontent-ref %}
 
-* Destination documentation (updates):
+Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/rakuten/rakuten-events.md" %}
 [rakuten-events.md](../features/destinations/destinations-catalog/rakuten/rakuten-events.md)
@@ -22,15 +30,13 @@ description: The latest updates made to our documentation articles
 [partnerize.md](../features/destinations/destinations-catalog/partnerize.md)
 {% endcontent-ref %}
 
-* **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
-  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)\
+{% content-ref url="../features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox.md" %}
+[tutorial-how-to-build-a-server-destination-with-the-js-sandbox.md](../features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox.md)
+{% endcontent-ref %}
 
-* **GA4 proxy mode**\
-  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)
-* **Tutorial "how to build a destination template via the **_**Destination Builder"**_\
-  __[https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox](https://doc.commandersact.com/features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox)****
-* **Documentation on GA4 proxy mode**\
-  [https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode)
+{% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md" %}
+[google-analytics-4-proxy-mode.md](../features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md)
+{% endcontent-ref %}
 
 ## 24/03/2023
 

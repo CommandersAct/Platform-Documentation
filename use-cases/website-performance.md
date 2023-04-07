@@ -7,7 +7,7 @@ description: >-
 # Website performance
 
 A Website’s performance is key to **SEO** and **user experience** and by extension to the **bounce rate** and **conversion rate.**\
-****It has long been proven that the amount of client-side tags used on websites has an important impact on loading time and conversion rate.
+It has long been proven that the amount of client-side tags used on websites has an important impact on loading time and conversion rate.
 
 In this context, tag's **performance** has become a **strategic** matter and Commanders Act provides two ways to work on this topic:
 
@@ -16,7 +16,7 @@ In this context, tag's **performance** has become a **strategic** matter and Com
 
 ## **TagPerformance**
 
-_**TagPerformance** _ module offers the possibility to measure your site’s performance based on the tags that are placed on it. It acts as a complementary tool to those used by IT departments to measure loading times of websites’ key elements (images, CSS …)
+_**TagPerformance**_ module offers the possibility to measure your site’s performance based on the tags that are placed on it. It acts as a complementary tool to those used by IT departments to measure loading times of websites’ key elements (images, CSS …)
 
 TagPerformance’s main features include:
 

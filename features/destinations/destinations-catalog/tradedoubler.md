@@ -15,7 +15,7 @@ The Tradedoubler destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-The [**tduid** ](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)parameter is appended to the landing page URL by Tradedoubler to identify the source of the click. This is retrieved by getting the value of the [**tduid**](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)****[ ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)cookie.
+The [**tduid** ](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)parameter is appended to the landing page URL by Tradedoubler to identify the source of the click. This is retrieved by getting the value of the [**tduid**](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)[ ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)cookie.
 {% endhint %}
 
 ### Configuration
@@ -51,6 +51,6 @@ The [**tduid** ](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)paramet
 
 {% hint style="info" %}
 **\[1]** Hashed using`SHA-256`and default value:<mark style="color:blue;">`properties.user.email`</mark>\
-``**\[2]** Either<mark style="color:blue;">`1`</mark>or<mark style="color:blue;">`0`</mark>, <mark style="color:blue;"></mark> depending if your selected<mark style="color:blue;">`User Id Type`</mark>is<mark style="color:blue;">`User Email`</mark>or<mark style="color:blue;">`User Id`</mark> respectively.\
+**\[2]** Either<mark style="color:blue;">`1`</mark>or<mark style="color:blue;">`0`</mark>, depending if your selected<mark style="color:blue;">`User Id Type`</mark>is<mark style="color:blue;">`User Email`</mark>or<mark style="color:blue;">`User Id`</mark> respectively.\
 **\[3]** It takes into account each product.
 {% endhint %}

@@ -42,8 +42,8 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conver
 {% hint style="info" %}
 The following fields are mandatory to properly set commission groups:\
 \-<mark style="color:blue;">`properties.items.X.affiliation`</mark>\
-``-<mark style="color:blue;">`properties.items.X.product.price`</mark>\
-``-<mark style="color:blue;">`properties.items.X.quantity`</mark>
+\-<mark style="color:blue;">`properties.items.X.product.price`</mark>\
+\-<mark style="color:blue;">`properties.items.X.quantity`</mark>
 
 Accepted characters for the commission group codes are alphanumerics (letter in upper case), underscore '\_' , point '.' and minus '-'`.`
 {% endhint %}
