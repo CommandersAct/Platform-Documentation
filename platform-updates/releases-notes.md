@@ -18,9 +18,9 @@ description: >-
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-* **New SDKs** \
+* **New SDKs:** \
   \
-  SDK for **Flutter** is lauched\
+  SDK for **Flutter** is launched\
   For further informations, please check our github\
   [https://github.com/CommandersAct/tcserverside-plugin  \
   https://github.com/CommandersAct/tc-consent-plugin  \
@@ -32,7 +32,7 @@ description: >-
   [https://github.com/CommandersAct/ngx-tag-commander](https://github.com/CommandersAct/ngx-tag-commander)\
   [https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md](https://github.com/CommandersAct/ngx-tag-commander/blob/master/README.md)\
 
-*   **Filters upgraded on destinations**&#x20;
+*   **Filters enhanced on destinations**&#x20;
 
     * quick/easy filter with autocomplete
     * more operators (contains, match regex, etc.)
@@ -44,7 +44,7 @@ description: >-
 
 
     <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-*   **Enhancement on LRB report** \
+*   **New option on LRB report** \
     you can now choose to do not display the "non attributed" line in a report
 
 
