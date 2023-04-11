@@ -158,7 +158,7 @@
       * [Tutorial - How to build a server destination with the JS sandbox](features/destinations/destination-builder/javascript-destination-builder/tutorial-how-to-build-a-server-destination-with-the-js-sandbox.md)
       * [Serverside javascript helpers](features/destinations/destination-builder/javascript-destination-builder/serverside-js-helpers.md)
   * [Destination filters](features/destinations/destination-filters.md)
-  * [Properties transformation](features/destinations/advanced-mapping.md)
+  * [Mapping and Properties transformation](features/destinations/advanced-mapping.md)
   * [Event delivery](features/destinations/event-delivery.md)
   * [Destination event inspector](features/destinations/live-event-inspector.md)
 * [Enrichments](features/enrichments/README.md)
