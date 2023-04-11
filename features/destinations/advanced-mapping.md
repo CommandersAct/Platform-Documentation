@@ -22,6 +22,11 @@ Ex: Standard property: value ⇒ Partner property: revenue
 
 If needed, you can modify this mapping, with custom properties for example.
 
-## Smart mapping and properties transformation
+## Formulas
 
-\[Coming soon]
+{% hint style="success" %}
+Coming soon
+{% endhint %}
+
+Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)) to transform properties.
+
