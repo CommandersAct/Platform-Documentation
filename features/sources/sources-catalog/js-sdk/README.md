@@ -34,7 +34,7 @@ Onsite API is included in each containers and privacy banners.
 Use the `config` command to initialize and configure settings for a particular workspace.
 
 {% hint style="info" %}
-This command is optional, you can also set custom settings directly inside a[ `trigger` command](js-sdk.md#send-event), through the config object parameter.
+This command is optional, you can also set custom settings directly inside a[ `trigger` command](./#send-event), through the config object parameter.
 {% endhint %}
 
 The config command takes the following format:
