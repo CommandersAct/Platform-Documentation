@@ -15,11 +15,13 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 
 “**If Variable is Not Equal**“: Tag activated if the variable differs from the specified value.
 
-“**OR Condition (One Variable)**“: Tag activated if the variable equals at least one of the specified values.
+“**OR Condition (One Variable)**“: Tag activated if the variable equals at least one of the specified values. \
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
-“N**AND Condition (One Variable)**“: Tag activated if the variable equals two or more specified values.
+“N**AND Condition (One Variable)**“: Tag activated if the variable equals two or more specified values.\
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
-“**OR Condition (Up To Six Possible Variables)**“: Tag activated if at least one of the variables equals the specified value. Enter all the values in the field separated by a comma ",". don't use space between.
+“**OR Condition (Up To Six Possible Variables)**“: Tag activated if at least one of the variables equals the specified value.&#x20;
 
 “**AND Condition (Up To Six Possible Variables)**“: Tag activated if all the variables equal all the specified values.
 
@@ -27,13 +29,17 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 
 “**Less than condition**“: Tag activated if the variable is less than the specified value.
 
-“**If Variable Contains**“: Tag activated if the variable contains the specified value.
+“**If Variable Contains**“: Tag activated if the variable contains the specified value.\
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
-“**If Variable Does Not Contain**“: Tag activated if the variable does not contain the specified value.
+“**If Variable Does Not Contain**“: Tag activated if the variable does not contain the specified value.\
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
-“**If Variable Matches**“: Tag activated if the variable matches the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).
+“**If Variable Matches**“: Tag activated if the variable matches the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).\
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
-“**If Variable Doesn’t Match**“: Tag activated if the variable does not match the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).
+“**If Variable Doesn’t Match**“: Tag activated if the variable does not match the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).\
+In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
 <figure><img src="../../../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
