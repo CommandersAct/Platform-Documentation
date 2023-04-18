@@ -18,7 +18,7 @@ Flag your customers based on their behaviour to switch from one status to anothe
 
 Step 1: create new Augmented User Attributes to FLAG your customers according to their status (define conditions to enter and exit flags). 1 flag per status
 
-![](<../../../.gitbook/assets/image (2) (1) (2) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (2).png>)
 
 Step 2: create segments based on flags previously created (=fidelity status) and more conditions if needed. 1 segment per status
 

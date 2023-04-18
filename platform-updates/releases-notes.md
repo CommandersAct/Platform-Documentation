@@ -11,12 +11,12 @@ description: >-
 * **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\
   The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
 * **New User Rights**\
   3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 * **New SDKs:** \
   \
@@ -43,35 +43,35 @@ description: >-
 *   **Data Quality indicators and trend graph are now displayed on all sources**\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 *   **New option on LRB report** \
     you can now choose to do not display the "non attributed" line in a report
 
 
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 * **New destinations releases**\
   \
   **Partenerize** \
   Note : this destination allows a dynamic field\
-  <img src="../.gitbook/assets/image (7).png" alt="" data-size="original">\
+  <img src="../.gitbook/assets/image (7) (3).png" alt="" data-size="original">\
   \
   **SmartAd Server**\
-  ![](<../.gitbook/assets/image (12).png>)\
+  ![](<../.gitbook/assets/image (12) (3).png>)\
   \
   **Rakuten Events**\
-  ![](<../.gitbook/assets/image (15).png>)\
+  ![](<../.gitbook/assets/image (15) (1).png>)\
 
 * **Destinations updates**\
   \
   **Mapp:** usability improvements\
-  ![](<../.gitbook/assets/image (26).png>)\
+  ![](<../.gitbook/assets/image (26) (1).png>)\
   \
   **Partnerize:** Advanced operations added\
   ![](<../.gitbook/assets/image (16).png>)\
   \
   **Snapchat:** SmartMapping support\
-  ![](<../.gitbook/assets/image (24).png>)
+  ![](<../.gitbook/assets/image (24) (1).png>)
 
 
 
@@ -82,7 +82,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (3).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -150,24 +150,24 @@ More information here:
 
 * **Event enrichment** – **External API** Version 1.0 closed alpha. _Public opening on 12 Jan._\
   Enrich your events with instantaneous data transmission from an external API - no data storage required\
-  ![](<../.gitbook/assets/image (10) (3) (1).png>)
+  ![](<../.gitbook/assets/image (10) (3).png>)
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
     Also, all these audience-based destinations benefit from the [Event Delivery](../features/destinations/event-delivery.md) feature and Threshold [Alerting](../features/destinations/event-delivery.md#alerting) feature\\
 *   **Explore:** Enhancement of LRB integrations in the platform\\
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.6 - 24/11/22
 
 * Data Management – New feature:​
   * **Data Cleansing** no-code : **Rename event** public opening.\
-    ​![](<../.gitbook/assets/image (1) (3) (2) (1).png>)
+    ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
     ![](<../.gitbook/assets/image (2) (2).png>)
@@ -198,7 +198,7 @@ More information here:
 
       ***
 
-      <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (4) (2) (2).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google/google-customer-match.md) (public beta)
@@ -218,7 +218,7 @@ More information here:
 
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
-    ![](<../.gitbook/assets/image (7) (2).png>)
+    ![](<../.gitbook/assets/image (7) (2) (3).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
     <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
@@ -232,12 +232,12 @@ More information here:
     * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
-    <img src="../.gitbook/assets/image (8) (1) (3).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (8) (1) (2).png" alt="" data-size="original">
   * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9) (1).png>)
+    ![](<../.gitbook/assets/image (9) (2).png>)
 
 ## Release 10.0.3 - 24/08/22
 
@@ -267,7 +267,7 @@ More information here:
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (15) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\\
 *   Sources improvements: ​
