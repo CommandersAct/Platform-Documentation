@@ -2,10 +2,6 @@
 
 [Adform](https://site.adform.com/) is a global digital media advertising technology company specializing in real-time programmatic marketing automation technologies. Using this destination you can implement [server-side tracking](https://www.adformhelp.com/hc/en-us/articles/9740579489041-Use-Server-Side-Tracking).
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 ## Key features
 
 The Adform destination provides the following key features:
