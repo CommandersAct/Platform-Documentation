@@ -30,3 +30,7 @@ Coming soon
 
 Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)) to transform properties.
 
+For example, if a destination requires MD5 email, you can select the email in clear and apply the MD5 formula to turn the clear email into a MD5 email, only for this destination (if it is for all destinations, please use our [Data Cleansing](../data-quality/data-cleansing/) feature).
+
+Other example, if a destination requires a price with "." (ex: 12.30), but in your database prices are stored with a "," (ex: 12,30), you can transform the data with a dedicated formula to turn the "," into a "."&#x20;
+
