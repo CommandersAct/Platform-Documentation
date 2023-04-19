@@ -47,4 +47,6 @@ if (tC && tC.event && typeof tC.event.add_to_basket === "function") {
 
 #### Via Quality Assurance Tag
 
-The Tag template _Commanders Act - Data Layer QA_ in the Commanders Act Tag library automatically outputs Data Layer information to the JavaScript console when executed. Assigning this Tag with the Trigger allows to log a snapshot of the Data Layer when the respective Trigger is executed.
+The Tag template _Commanders Act - Event QA_ in the Commanders Act Tag library automatically outputs event Data Layer information to the JavaScript console when executed. Assigning this Tag with the Trigger allows to log a snapshot of the Data Layer when the respective Trigger is executed.\
+\
+Another way, more technical: you can type in your console tc\_arrray\_events when the event is executed. The Data Layer of the event variables will be displayed.
