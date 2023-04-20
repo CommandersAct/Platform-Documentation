@@ -40,9 +40,11 @@ Only for page view event, map the env\_template variable corresponding to the pa
 
 <figure><img src="../../../.gitbook/assets/Capture d’écran 2023-04-20 à 11.31.43.png" alt=""><figcaption></figcaption></figure>
 
+### Purchase event to Data activation conversion universe
+
 If you check the box, purchase events will be stored on Data activation conversion storage.
 
-For items mapping, you can choose to not check the box, as a result items will be stored as sent on purchase events.
+### Items mapping
 
 If you check the box, you can define the mapping between product variables and items properties in event.
 

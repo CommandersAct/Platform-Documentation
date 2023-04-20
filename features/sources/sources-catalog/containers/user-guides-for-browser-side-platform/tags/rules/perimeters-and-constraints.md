@@ -40,7 +40,7 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 In case of multiple values: enter all the values in the field separated by a comma ",". Don't use space between.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 **In which case using “external variables” for the mapping?**
 
@@ -48,7 +48,7 @@ When you want to create a rule based on a tc\_vars from the data layer implement
 
 Example: your technical team has implemented an env\_country variable, and you want to create a rule based on it:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **In which case using “internal variables” for the mapping?**
 

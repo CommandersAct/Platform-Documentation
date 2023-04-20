@@ -101,7 +101,7 @@ Tags are corrected by using the “**Use Tag Cleaner**” feature:
 
 <figure><img src="../../../../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 Uncheck the “**Use Tag Cleaner**” box if you do not want your tag to be rewritten.
 
@@ -135,7 +135,7 @@ You have two options:
 
 * You can select a previously created perimeter or constraint by clicking the drop-down menu:\
   \
-  &#x20;   <img src="../../../../../../.gitbook/assets/image (94).png" alt="" data-size="original">
+  &#x20;   <img src="../../../../../../.gitbook/assets/image (48).png" alt="" data-size="original">
 * You can create a new perimeter or constraint by clicking “+” ![](<../../../../../../.gitbook/assets/image (13).png>)
 
 The rule creation window will appear so that you can create your rules in the same way as in the “**RULES**” step.
@@ -178,7 +178,7 @@ Note: Since a deactivated tag will be visible in the interface but not in the co
 To modify the order in which tags are executed in a container in the “**GENERATE**” step, just drag and drop each tag in the “**RANK**” column and place them in the order in which you want them to execute on your site’s pages, and then generate a new container version (blue button in the upper-right hand side of the screen):\
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 We recommend that you place the **most important tags** at the **top** of the container so that they have the best chance of executing if your visitors change pages quickly without waiting for them to fully load.
 
