@@ -178,6 +178,7 @@
     * [The Trade Desk](features/destinations/destinations-catalog/the-trade-desk.md)
     * [TikTok](features/destinations/destinations-catalog/tiktok.md)
     * [Tradedoubler](features/destinations/destinations-catalog/tradedoubler.md)
+    * [TradeTracker](features/destinations/destinations-catalog/tradetracker.md)
     * [Xandr](features/destinations/destinations-catalog/xandr.md)
     * [Webhook](features/destinations/destinations-catalog/webhook.md)
     * [Webtrends](features/destinations/destinations-catalog/webtrends.md)
