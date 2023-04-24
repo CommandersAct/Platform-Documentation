@@ -303,11 +303,11 @@ Fire this event when one or more items are purchased by a user.
 cact('trigger','purchase', {
   id: 'O_12345',
   coupon: 'CHRISTMAS',
-  revenue: 16.00,
-  value: 20.33,
+  revenue: 16.00,//quantity x sale price (8€ + 8€)
+  value: 22.53,// value = quantity x sale price + shipping_amount + tax_amount
   shipping_amount: 3.33,
   tax_amount: 3.20,
-  currency: 'EUR',
+  currency: 'EUR',// The currency of the value,revenue, discount, and price
   user: {
     id: '12356',
     email:'toto@domain.fr'
@@ -315,10 +315,9 @@ cact('trigger','purchase', {
   items: [{
     id: 'SKU_12345',
     quantity: 1,
-    price: 9.99,
     variant: 'red',
     coupon: 'CHRISTMAS',
-    discount: 1.99,
+    discount: 1.99,// The discount per item
     product:{
       id: '12345',
       name: 'Trex tshirt',
@@ -327,7 +326,7 @@ cact('trigger','purchase', {
       category_3: 'boy',
       brand: 'Lacoste',
       colors: ['red'],
-      price: 9.99
+      price: 9.99 // The price is the per item list normal price without discount
     }
   }, {
     id: 'SKU_12346',
@@ -335,7 +334,7 @@ cact('trigger','purchase', {
     price: 9.99,
     variant: 'green',
     coupon: 'CHRISTMAS',
-    discount: 1.99,
+    discount: 1.99,// The discount per item
     product:{
       id: '12346',
       name: 'Heart tshirt',
@@ -344,7 +343,7 @@ cact('trigger','purchase', {
       category_3: 'girl',
       brand: 'Jenyfion',
       colors: ['blue','white'],
-      price: 9.99
+      price: 9.99 // The price is the per item list normal price without discount
     }
   }]
 })
@@ -633,16 +632,16 @@ cact('trigger','view_item_list', {
 
 #### Parameters **(required and recommended)** <a href="#parameters_27" id="parameters_27"></a>
 
-| Name            | Type                            | Required | Example Value | Description                                                                                                                                            |
-| --------------- | ------------------------------- | -------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `id`            | `string`                        | **Yes**  | SKU\_12345    | <p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p> |
-| `product`       | [`Object<Product>`](./#product) | **Yes**  |               | The product details                                                                                                                                    |
-| `variant`       | `string`                        | No       | red           | The variant of the item.                                                                                                                               |
-| `list_position` | `number`                        | No       | 1             | The item's position in a list or collection.                                                                                                           |
-| `discount`      | `number`                        | No       | 2.00          | Monetary value of discount associated with a purchase                                                                                                  |
-| `quantity`      | `number`                        | **Yes**  | 2             | The quantity of the item.                                                                                                                              |
-| `affiliation`   | `string`                        | **No**\* | DOWNLOAD      | Required for most affiliation's destination.                                                                                                           |
-| `coupon`        | `string`                        | No       | CHRISTMAS     | The coupon code associated with an item.                                                                                                               |
+| Name            | Type                            | Required | Example    | Description                                                                                                                                            |
+| --------------- | ------------------------------- | -------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `id`            | `string`                        | **Yes**  | SKU\_12345 | <p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p> |
+| `product`       | [`Object<Product>`](./#product) | **Yes**  |            | The product details                                                                                                                                    |
+| `variant`       | `string`                        | No       | red        | The variant of the item.                                                                                                                               |
+| `list_position` | `number`                        | No       | 1          | The item's position in a list or collection.                                                                                                           |
+| `discount`      | `number`                        | No       | 2.00       | Monetary value of discount for one current item                                                                                                        |
+| `quantity`      | `number`                        | **Yes**  | 2          | The quantity of the item.                                                                                                                              |
+| `affiliation`   | `string`                        | **No**\* | DOWNLOAD   | Required for most affiliation's destination.                                                                                                           |
+| `coupon`        | `string`                        | No       | CHRISTMAS  | The coupon code associated with an item.                                                                                                               |
 
 ### Product
 

@@ -54,4 +54,4 @@ You can also use operators like `AND / OR / NOT` and create operations with `* /
 
 For example, to calculate the revenue with taxes, you can do: `revenue = value*1,2`.
 
-<figure><img src="../../../.gitbook/assets/Live Normalization [READY] (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Live Normalization [READY] (1) (1).png" alt=""><figcaption></figcaption></figure>

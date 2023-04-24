@@ -66,7 +66,7 @@ tC.event.add_to_cart(this, {"product_name":"iphone", "product_id":"1234"})
 
 To call a tag only if the product name is “iphone”, you have to select the event variable named “product\_name” and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Cookie
 
