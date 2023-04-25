@@ -37,6 +37,10 @@ Select on which sources the transformation will be applied.
 
 Define conditions on events and/or properties, the transformation will be applied only regarding these conditions.
 
+{% hint style="success" %}
+You can add multiple values (like event name is `purchase` ; `add to cart`). In that case, it is an OR condition (event name is `purchase` OR `add to cart`)
+{% endhint %}
+
 Select properties to transform. You can:
 
 * rename the property ('rename to' option)
