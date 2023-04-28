@@ -12,9 +12,9 @@ You must complete the [setup and configuration steps](https://support.google.com
 {% hint style="info" %}
 Your user account needs admin rights in the [Google Ads Manager Accounts](https://ads.google.com/intl/en/home/tools/manager-accounts/) where the conversion action is located. When available, this destination will also include the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)value by looking for the following cookies in this priority order:
 
-1. \_gcl\_aw
-2. \_gcl\_dc
-3. _\__gac\_\[GA\_PROPERTY\_ID]
+1. `_gcl_aw`
+2. `_gcl_dc`
+3. `_gac_[GA_PROPERTY_ID]`
 {% endhint %}
 
 ### Configuration
