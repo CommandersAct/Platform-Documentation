@@ -83,7 +83,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 | `items.X.product.category_1`                                                                                                    | `pr(X+1)ca`                        |
 | `items.X.product.brand`                                                                                                         | `pr(X+1)br`                        |
 | `items.X.variant`                                                                                                               | `pr(X+1)va`                        |
-| `items.X.variant`                                                                                                               | `pr(X+1)ps`                        |
+| `items.X.list_position`                                                                                                         | `pr(X+1)ps`                        |
 | `items.X.product.price`                                                                                                         | `pr(X+1)pr`                        |
 | `items.X.quantity`                                                                                                              | `pr(X+1)qt`                        |
 | `items.X.coupon`                                                                                                                | `pr(X+1)cc`                        |
