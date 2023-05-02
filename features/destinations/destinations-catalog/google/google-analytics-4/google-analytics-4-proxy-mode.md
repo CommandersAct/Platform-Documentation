@@ -17,7 +17,7 @@ The proxy mode option in the [GA4 destination](./) allows you to anonymize data 
 
 When enabled, the _proxy mode_ gives you access to a number of options that allow you to choose granularly how each parameter should be anonymized.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption><p>Some options of the proxy mode</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>Some options of the proxy mode</p></figcaption></figure>
 
 You can find below the CNIL recommandation, and for each parameter the _proxy mode_ give you a userfriendly way to manage anonymisation:&#x20;
 

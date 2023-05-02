@@ -104,7 +104,7 @@ description: >-
   ![](<../.gitbook/assets/image (12) (3).png>)\
   \
   **Rakuten Events**\
-  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1).png>)\
 
 * **Destinations updates**\
   \
@@ -126,7 +126,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (3).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -198,7 +198,7 @@ More information here:
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -211,10 +211,10 @@ More information here:
 
 * Data Management – New feature:​
   * **Data Cleansing** no-code : **Rename event** public opening.\
-    ​![](<../.gitbook/assets/image (1) (3) (2).png>)
+    ​![](<../.gitbook/assets/image (1) (3).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (2) (2).png>)
+    ![](<../.gitbook/assets/image (5) (3).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
@@ -242,7 +242,7 @@ More information here:
 
       ***
 
-      <figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google/google-customer-match.md) (public beta)
@@ -262,13 +262,13 @@ More information here:
 
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
-    ![](<../.gitbook/assets/image (7) (2).png>)
+    ![](<../.gitbook/assets/image (7) (2) (3).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
-    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (5) (1) (3).png>)
+    ![](<../.gitbook/assets/image (1) (5) (1).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
     <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2
@@ -276,7 +276,7 @@ More information here:
     * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
-    <img src="../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (8) (1) (2).png" alt="" data-size="original">
   * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
@@ -291,7 +291,7 @@ More information here:
   * _Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
     * Ability to create new property and map them to existing one for a specific destination
     * Ability to remove event properties for a specific destination\
-      ![](<../.gitbook/assets/image (2) (3) (1) (1).png>)
+      ![](<../.gitbook/assets/image (2) (3) (1).png>)
   * [_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
     Be alerted in real-time when one of your destination delivery drop below your threshold.\
     ![](<../.gitbook/assets/image (25).png>)\\
@@ -311,7 +311,7 @@ More information here:
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (15) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\\
 *   Sources improvements: ​
@@ -328,7 +328,7 @@ More information here:
   * TikTok connector (Web mode only, App mode in September)​
   * Piano Analytics, Snapchat, Criteo, GA4 enhancements/fix​
   * Matomo Analytics in closed alpha test\
-    ![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)![](<../.gitbook/assets/image (1) (5).png>)
+    ![](<../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1) (1).png>)![](<../.gitbook/assets/image (1) (5).png>)
 
 ## Release 10.0.1 - 24/06/22
 

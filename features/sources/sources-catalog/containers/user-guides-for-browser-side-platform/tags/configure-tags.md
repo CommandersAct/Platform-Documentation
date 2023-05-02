@@ -136,7 +136,7 @@ You have two options:
 * You can select a previously created perimeter or constraint by clicking the drop-down menu:\
   \
   &#x20;   <img src="../../../../../../.gitbook/assets/image (48).png" alt="" data-size="original">
-* You can create a new perimeter or constraint by clicking “+” ![](<../../../../../../.gitbook/assets/image (13) (1).png>)
+* You can create a new perimeter or constraint by clicking “+” ![](<../../../../../../.gitbook/assets/image (13).png>)
 
 The rule creation window will appear so that you can create your rules in the same way as in the “**RULES**” step.
 
