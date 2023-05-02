@@ -4,8 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[TradeTracker](https://tradetracker.com) is an affiliate marketing network and a team of result driven affiliate professionals, devoted to performance marketing and always looking to get best results.\
-Using this destination you can implement [server-side tracking](https://sc.tradetracker.net/implementation/overview?f\[id]=31).
+[TradeTracker](https://tradetracker.com) is an affiliate marketing network and a team of result driven affiliate professionals, devoted to performance marketing and always looking to get best results. Using this destination you can implement [server-side tracking](https://sc.tradetracker.net/implementation/overview?f\[id]=31).
 
 ## Key features
 
