@@ -46,7 +46,7 @@ Two programming modes are available: Simplified mode and expert mode:
 
 ### **Advanced**
 
-<figure><img src="../../../../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (106) (1).png" alt=""><figcaption></figcaption></figure>
 
 **NoScript support**: This option is used to create a noscript version of the container that allows both the container and its tags to execute for users without JavaScript activated on their browser.
 

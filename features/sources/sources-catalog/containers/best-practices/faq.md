@@ -8,7 +8,7 @@ description: Some answers from your questions
 
 When you write a `console.log` within a tag to check if a tag is correctly triggered of to check a value, for example like this :&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (107) (1).png" alt=""><figcaption></figcaption></figure>
 
 When a new container version is generated, it re-writes the `console.log` as `tC.log`
 

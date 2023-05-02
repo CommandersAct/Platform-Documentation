@@ -6,6 +6,48 @@ description: >-
 
 # Release notes
 
+## Release 10.0.11 - 24/04/23
+
+*   **A new item has been added to the navigation menu of our platform: 'Data Governance'**. \
+    For the moment, you will find the pages related to your privacy banners configuration's in the tab 'Consent Management'. \
+    More pages are coming soon!
+
+    <figure><img src="../.gitbook/assets/image (10).png" alt="" width="181"><figcaption></figcaption></figure>
+*   **Data Cleansing: 2 new function for your formulas:**\
+
+
+    <figure><img src="../.gitbook/assets/image (108).png" alt="" width="422"><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (93).png" alt="" width="419"><figcaption></figcaption></figure>
+*   **New destinations releases**\
+    \
+    Data Activation Legacy: Only for Data Activation customers. Gives you the possibility to map the format of the events to the format of the data activation (Data Commander variables). To go deeper, you can consult our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/data-activation-legacy) \
+
+
+    <figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+
+    GA4 Proxy Mode: The proxy mode option allows you to anonymize data before to send it to Google.\
+    \*We also added analyses, suggestions and report's impact in our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode#3.-impact-analysis-and-open-suggestions)\
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+*   **Destinations updates**\
+    \
+    GA4: Send all properties in one click to Google\
+
+
+    <figure><img src="../.gitbook/assets/image (106).png" alt="" width="308"><figcaption></figcaption></figure>
+
+    TikTok: Offers a smart mapping option
+
+<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+
+* **Bridge updates**\
+  \
+  GTM bridge: a Commanders Act source key is now required in the bridge configuration. As, in the future, events without a source key will be discarded, it is important that you apply the update.\
+  For further information, read the bridge’s [updated documentation](https://doc.commandersact.com/features/sources/sources-catalog/gtm).
+
 ## Release 10.0.10 - 24/03/23
 
 * **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\

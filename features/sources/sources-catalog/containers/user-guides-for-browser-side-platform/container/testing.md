@@ -24,7 +24,7 @@ Tests are performed on five levels:
 
 If no errors are detected, your version is “**DEPLOYABLE”**:
 
-<figure><img src="../../../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (108) (1).png" alt=""><figcaption></figcaption></figure>
 
 If an error is detected in your container, it will be indicated by a red “**X**” under the browser returning the error and on the line of the element  the error was found in (Data layer, Custom JS blocks, Tags, Events); it will also appear on the Container line .
 
