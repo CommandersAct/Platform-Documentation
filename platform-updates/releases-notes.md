@@ -21,12 +21,12 @@ description: >-
     <figure><img src="../.gitbook/assets/image (93).png" alt="" width="419"><figcaption></figcaption></figure>
 *   **New destinations releases**\
     \
-    Data Activation Legacy: Only for Data Activation customers. Gives you the possibility to map the format of the events to the format of the data activation (Data Commander variables). To go deeper, you can consult our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/data-activation-legacy) \
+    **Data Activation Legacy:** Only for Data Activation customers. Gives you the possibility to map the format of the events to the format of the data activation (Data Commander variables). To go deeper, you can consult our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/data-activation-legacy) \
 
 
     <figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
-    GA4 Proxy Mode: The proxy mode option allows you to anonymize data before to send it to Google.\
+    **GA4 Proxy Mode:** The proxy mode option allows you to anonymize data before to send it to Google.\
     \*We also added analyses, suggestions and report's impact in our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode#3.-impact-analysis-and-open-suggestions)\
     \
 
@@ -34,12 +34,14 @@ description: >-
     <figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations updates**\
     \
-    GA4: Send all properties in one click to Google\
+    **GA4:** Send all properties in one click to Google\
 
 
     <figure><img src="../.gitbook/assets/image (106).png" alt="" width="308"><figcaption></figcaption></figure>
 
-    TikTok: Offers a smart mapping option
+    \
+    \
+    **TikTok:** Offers a smart mapping option
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
