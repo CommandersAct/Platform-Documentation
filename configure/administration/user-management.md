@@ -101,7 +101,7 @@ Follow these steps to modify custom rights:
 
 1/ Click the pencil icon next to “Custom”:
 
-![](<../../.gitbook/assets/UM\_6\[1] (1).png>)
+![](../../.gitbook/assets/UM\_6\[1].png)
 
 2/ Select the **Commanders Act** product you wish to revoke access to.
 

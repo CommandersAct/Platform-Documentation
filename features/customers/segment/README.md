@@ -47,7 +47,7 @@ Then, you can easily segment on conversion items:
 
 ## How to segment on calculated variables
 
-<figure><img src="../../../.gitbook/assets/image (1) (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 On our storage model, the main universe is **users**, and, attached to this main universe, there are sub universes: **page views, views, clicks, conversions**...
 

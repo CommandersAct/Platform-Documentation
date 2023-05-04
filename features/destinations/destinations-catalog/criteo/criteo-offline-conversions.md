@@ -17,4 +17,4 @@ By default, we apply a filter on conversion\_type = 'offline' to push only offli
 
 Enter your Criteo Account ID, you can find it directly on Criteo interface.
 
-![](<../../../../.gitbook/assets/image (7) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
