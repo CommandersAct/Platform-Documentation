@@ -11,28 +11,27 @@ Commanders Act provides a GTM template to connect your existing GTM implementati
 Summarizing all recommended steps:
 
 1. Create a GTM source in Commanders Act
-1. Add our template to your GTM implementation
-2. Configure your tag
+2. Add our template to your GTM implementation
+3. Configure your tag
 
 ## Create a source in Commanders Act
 
 In your Commanders Act dashboard:
-- In the left pane menu, click on **Sources** > **Overview**.
-- Click on the **Add source** button.
-- In the catalog, search for the **Google Tag Manager** source and click on it.
-- Click on **Configure** and set its name, environment and bound destinations.
-- Once you're done, click on the **Create** button at the bottom.
-- The source key will then be displayed:
+
+* In the left pane menu, click on **Sources** > **Overview**.
+* Click on the **Add source** button.
+* In the catalog, search for the **Google Tag Manager** source and click on it.
+* Click on **Configure** and set its name, environment and bound destinations.
+* Once you're done, click on the **Create** button at the bottom.
+* The source key will then be displayed:
 
 ![](../../../.gitbook/assets/serverside\_events\_bridge-key.png)
 
-- Copy its value and keep it for later!
-
+* Copy its value and keep it for later!
 
 {% hint style="info" %}
 **Hint**: If you have already created a GTM source, you can retrieve its key by browsing to its **Settings** tab.
 {% endhint %}
-
 
 ## Add our template to GTM
 
@@ -70,7 +69,7 @@ Input your `(7)` "**Commanders Act Site ID**" and `(8)` "**Commanders Act Source
 
 Select `(9)` the "**Commanders Act Event**" from the drop-down menu, which is the event you want to forward.
 
-![](../../../.gitbook/assets/serverside\_events\_bridge7.png)
+<figure><img src="../../../.gitbook/assets/serverside_events_bridge7 (1).png" alt="" width="536"><figcaption></figcaption></figure>
 
 Depending on which event you select more (or less) fields will be presented. In case you don't input a mandatory field the template will highlight the missing entry so you can provide a proper mapping.
 
@@ -78,11 +77,11 @@ The "**Event Fields**" section contains fields that define the event itself and 
 
 Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(10)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(11)` the "**Product Id**" by filling the property name.
 
-![](../../../.gitbook/assets/serverside\_events\_bridge8.png)
+<figure><img src="../../../.gitbook/assets/serverside_events_bridge8 (1).png" alt=""><figcaption></figcaption></figure>
 
 In the "**User Fields**" section you can set `(12)` the "**User Id**" and `(13)` "**User Email**" - Either one of them is required if you select the "Purchase" event. The `(14)` "**User Consent Categories**" is a mandatory field holding an array with the user's consent category identifiers.
 
-![](../../../.gitbook/assets/serverside\_events\_bridge9.png)
+<figure><img src="../../../.gitbook/assets/serverside_events_bridge9 (1).png" alt=""><figcaption></figcaption></figure>
 
 It's important to define and map all category identifiers with their respective names. For example, you may have the following array: _\[1,2,4]_ and you defined the following relationship:
 
