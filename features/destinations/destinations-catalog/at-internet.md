@@ -18,6 +18,7 @@ The Piano Analytics destination provides the following key features:
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Piano Analytics.
 * **User identifier**: you can openly select a user identifier field for logged users.
+* **Send all properties**: send all your event properties to Piano Analytics with a single click.
 
 ## Destination setup
 

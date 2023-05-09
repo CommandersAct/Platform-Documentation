@@ -23,6 +23,7 @@ The Google Analytics 4 destination provides the following key features:
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events, custom event and user properties).
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to GA4.
+* **Send all properties**: send all your event properties to GA4 with a single click.
 
 ## Destination setup
 
