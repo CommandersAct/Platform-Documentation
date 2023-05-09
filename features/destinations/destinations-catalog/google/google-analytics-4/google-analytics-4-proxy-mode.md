@@ -27,7 +27,7 @@ You can find below the CNIL recommandation, and for each parameter the _proxy mo
 
 2. _**the replacement of the user identifier by the proxy server.** To ensure effective pseudonymisation, the algorithm performing the replacement should ensure a sufficient level of collision (i.e. a sufficient probability that two different identifiers will give an identical result after a hash) and include a time-varying component (adding a value to the hashed data that evolves over time so that the hash result is not always the same for the same identifier) ;_\
    \
-   **Solution:** You can choose to pseudonymize the client id (cid) and user id (cid). This pseudonymization option consist to replace the id by a hash of id plus a salt.\
+   **Solution:** You can choose to pseudonymize the client id (cid) and user id (uid). This pseudonymization option consist to replace the id by a hash of id plus a salt.\
    The id will be first concatened with a salt that changes every 3h approximately and then be hased using SHA256. This allows to create anonymous ids that are identical within a session but different from session to session. This will prevent GA4 from tracking a user over time.\
 
 3. _**the removal of external referrer information from** the site;_\
