@@ -1,4 +1,4 @@
-# Taboola
+# Taboola Audience
 
 ### 1- Audience configuration
 
