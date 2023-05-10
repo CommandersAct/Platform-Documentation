@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Taboola ](https://www.taboola.com)drives business results by reaching people at the right moment.\
+[Taboola ](https://www.taboola.com)is a public advertising company that provides advertisements such as "Around the Web" and "Recommended For You" boxes at the bottom of many online news articles.\
 This integration allows [server-side tracking](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-).
 
 ## Key features
@@ -18,8 +18,7 @@ The Taboola Events destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-First you need to enable server-side tracking in your Taboola campaigns by including the<mark style="color:blue;">`{click_id}`</mark>macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign"). \
-The macro value needs to be saved in a property (See<mark style="color:blue;">`Taboola Click Id Property`</mark> in [Configuration](taboola-events.md#configuration)). When creating a server-side conversion in Taboola (See [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) section "Create S2S Conversions"), take note of your "Event Name": this has to be set as<mark style="color:blue;">`Taboola Event Name`</mark>in [Configuration](taboola-events.md#configuration).\
+First you need to enable server-side tracking in your Taboola campaigns by including the<mark style="color:blue;">`{click_id}`</mark>macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign"). The macro value needs to be saved in a property (See<mark style="color:blue;">`Taboola Click Id Property`</mark>in [Configuration](taboola-events.md#configuration)). When creating a server-side conversion in Taboola (See [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) section "Create S2S Conversions"), take note of your "Event Name": this has to be set as<mark style="color:blue;">`Taboola Event Name`</mark>in [Configuration](taboola-events.md#configuration).\
 Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
