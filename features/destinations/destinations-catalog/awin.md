@@ -26,9 +26,13 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conver
 
 | Settings          | Description                                                                                                                                                                                                                                                                                                                                                                 |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Advertiser Id`   | <p><em><strong><code>Required</code></strong></em></p><p>Your advertiser programme ID. Consult your Awin account contact or assigned integrator for more information on this value.</p>                                                                                                                                                                                     |
+| `Advertiser Id`   | <p><em><strong><code>Required</code></strong></em></p><p>Your advertiser programme ID. Consult your Awin account contact or assigned integrator for more information on this value. This setting supports dynamic values <strong>[1].</strong></p>                                                                                                                          |
 | `Conversion Type` | <p><em><strong><code>Required</code></strong></em></p><p>The conversion type that is bound with your activity. This can be either <code>Sale</code> or <code>Lead</code>. If conversion type is <code>Sale</code>, only <code>purchase</code> events are sent to the partner, if it's <code>Lead</code>, only <code>generate_lead</code> events are forwarded to Awin. </p> |
 | `Test Mode`       | This is either `0` or `1` depending on whether the environment is the live production or test respectively. Default value is `0`.                                                                                                                                                                                                                                           |
+
+{% hint style="info" %}
+**\[1]** This feature allows you to set an event property holding a dynamic value by adding two open braces (`{{`) in front of your property name and two close braces (`}}`) at the end (E.g. `{{myEventPropertyPathAndName}}`).
+{% endhint %}
 
 ## Quick reference
 
