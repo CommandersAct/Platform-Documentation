@@ -20,11 +20,11 @@ Ensure you have access to a [Pinterest Ads account](https://ads.pinterest.com) b
 
 ### Configuration
 
-| Settings                 | Description                                                                                                                                                                                                                                                                                                                                                                               |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Advertiser ID`          | <p><em><strong><code>Required</code></strong></em></p><p>Pinterest Advertiser ID. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p>                                                                                                 |
-| `API Access Token`       | <p><em><strong><code>Required</code></strong></em><br><em><strong><code></code></strong></em>The Pinterest Conversions API needs an access token to authenticate your activities. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p> |
-| `Send as a test-request` | If checked, the event will not be recorded in Pinterest Ads, but the API will still return the same response messages. Use this mode to verify your requests and if your events are constructed correctly. More details are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#Testing%20your%20request).                           |
+| Settings                 | Description                                                                                                                                                                                                                                                                                                                                                     |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Advertiser ID`          | <p><em><strong><code>Required</code></strong></em></p><p>Pinterest Advertiser ID. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p>                                                                       |
+| `API Access Token`       | <p><em><strong><code>Required</code></strong></em><br>The Pinterest Conversions API needs an access token to authenticate your activities. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p>              |
+| `Send as a test-request` | If checked, the event will not be recorded in Pinterest Ads, but the API will still return the same response messages. Use this mode to verify your requests and if your events are constructed correctly. More details are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#Testing%20your%20request). |
 
 ## Quick reference
 
@@ -48,7 +48,7 @@ At least one of the following statement must be fulfilled:\
 • <mark style="color:blue;">`user_data.em`</mark>is set.\
 • <mark style="color:blue;">`user_data.hashed_maids`</mark>is set.\
 • <mark style="color:blue;">`user_data.client_ip_address`</mark>and<mark style="color:blue;">`user_data.client_user_agent`</mark>are set.\
-The property<mark style="color:blue;">`event_id`</mark>is required and used for deduplication. More information are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#How%20deduplication%20works#%0AHow%20deduplication%20works) (See section "How deduplication works").&#x20;
+The property<mark style="color:blue;">`event_id`</mark>is required and used for deduplication. More information are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversions/) (See section "How deduplication works").&#x20;
 {% endhint %}
 
 | Commanders Act Properties          | Pinterest Properties                |
