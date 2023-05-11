@@ -38,7 +38,7 @@ Only for page view event, map the env\_template variable corresponding to the pa
 
 ## Step 4: Advanced options
 
-<figure><img src="../../../.gitbook/assets/Capture d’écran 2023-04-20 à 11.31.43.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2023-05-11 à 15.23.17.png" alt=""><figcaption></figcaption></figure>
 
 ### Purchase event to Data activation conversion universe
 
