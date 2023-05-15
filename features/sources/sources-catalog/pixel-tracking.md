@@ -20,7 +20,7 @@ In the above example, replace `{siteId}` with the ID of your site (aka workspace
 
 ## Event Call with Objects and Arrays
 
-Pixel tracking allows for more complex data structures like objects and arrays. To include them in your event calls, you can nest parameters using the dot notation for objects and square brackets for arrays. The following example demonstrates an event call with objects and arrays:
+Pixel tracking allows for more complex data structures like objects and arrays. To include them in your event calls, you can nest parameters by indicating objects and their properties with square brackets for both objects and arrays. The property names are enclosed within the brackets and nested properties are further enclosed in their own set of brackets. The following example demonstrates an event call with objects and arrays:
 
 ```json
 {
