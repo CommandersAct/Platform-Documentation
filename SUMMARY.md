@@ -121,6 +121,7 @@
     * [FTP](features/destinations/destinations-catalog/ftp.md)
     * [Gamned](features/destinations/destinations-catalog/gamned.md)
     * [Google](features/destinations/destinations-catalog/google/README.md)
+      * [Google BigQuery](features/destinations/destinations-catalog/google/google-bigquery.md)
       * [Google Analytics 4](features/destinations/destinations-catalog/google/google-analytics-4/README.md)
         * [Google Analytics 4 - Proxy Mode](features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md)
       * [Google Customer Match](features/destinations/destinations-catalog/google/google-customer-match.md)
