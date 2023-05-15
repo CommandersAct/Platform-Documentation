@@ -16,7 +16,7 @@ GET  https://collect.commander1.com/events?tc_s={siteId}&token={yourSourceKey}&e
 ```
 {% endcode %}
 
-In the above example, replace `{siteId}` with the ID of your website or application, `{yourSourceKey}` with your specific source key, and `value1` with the desired value for `prop1`. Remember to URL encode the string values, especially if they contain special characters or spaces.
+In the above example, replace `{siteId}` with the ID of your site (aka workspace), `{yourSourceKey}` with your specific source key, and `value1` with the desired value for `prop1`. Remember to URL encode the string values, especially if they contain special characters or spaces.
 
 ## Event Call with Objects and Arrays
 
