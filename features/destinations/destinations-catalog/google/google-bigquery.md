@@ -26,7 +26,7 @@ First, you need to create a BigQuery table, with a specific schema, for storing 
 
 Access [BigQuery console](https://console.cloud.google.com/) to locate your `(1)` project identifier and click `(2)` the `three dots` on the right. Select `(3)` `Create dataset` from the menu or, alternatively, you can use an existing dataset and jump to the [next subsection](google-bigquery.md#table).
 
-<figure><img src="../../../../.gitbook/assets/bigquery_1.png" alt=""><figcaption><p>Dataset creation #1.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/bigquery_1 (2).png" alt=""><figcaption><p>Dataset creation #1.</p></figcaption></figure>
 
 Input a `(4)` dataset identifier (E.g. "myDatasetId"), select a `(5)` location type and click `(6)` `CREATE DATASET`.
 
@@ -43,7 +43,7 @@ Create a table with the following structure:
 
 The esiest way to create it is to click `(7)` the `plus` button:
 
-<figure><img src="../../../../.gitbook/assets/bigquery_3.png" alt=""><figcaption><p>Compose a new query.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/bigquery_3 (1).png" alt=""><figcaption><p>Compose a new query.</p></figcaption></figure>
 
 copy and paste the following query in `(8)` the input area:
 
