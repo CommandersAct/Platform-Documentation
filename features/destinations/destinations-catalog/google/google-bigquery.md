@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS [PROJECT_ID].[DATASET_ID].[TABLE_ID] (rawDataCa STRIN
 ```
 
 {% hint style="info" %}
-Replace`[PROJECT_ID]`,`[DATASET_ID]`and`[TABLE_ID]`with your project, dataset and table identifier respectively.
+Replace`[PROJECT_ID]`,`[DATASET_ID]`and`[TABLE_ID]`with your project, dataset and table identifier respectively. You set your table identifier at this step.
 {% endhint %}
 
 and then click the `(9)` `RUN` button.
