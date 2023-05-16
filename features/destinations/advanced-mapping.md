@@ -22,13 +22,21 @@ Ex: Standard property: value ⇒ Partner property: revenue
 
 If needed, you can modify this mapping, with custom properties for example.
 
+## Text input
+
+On settings configuration, you can simply enter values with the text input.
+
+Use brackets button \{{ \}} to enter a dynamic value, like a property name.
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.20.png" alt=""><figcaption></figcaption></figure>
+
+If you click on the _T_ icon, you can switch to formulas mode.
+
 ## Formulas
 
-{% hint style="success" %}
-Coming soon
-{% endhint %}
-
 Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)) to transform properties.
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.51.png" alt=""><figcaption></figcaption></figure>
 
 For example, if a destination requires MD5 email, you can select the email in clear and apply the MD5 formula to turn the clear email into a MD5 email, only for this destination (if it is for all destinations, please use our [Data Cleansing](../data-quality/data-cleansing/) feature).
 
