@@ -16,7 +16,8 @@ The Google BigQuery destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-Ensure [BigQuery API](https://console.cloud.google.com/apis/library/bigquery.googleapis.com?project=gtm-mw9cdnc-ntexy) is enabled. More details are available following this [LINK](https://cloud.google.com/bigquery/docs/enable-transfer-service?hl=en#enable-api).
+Ensure [BigQuery API](https://console.cloud.google.com/apis/library/bigquery.googleapis.com?project=gtm-mw9cdnc-ntexy) is enabled. More details are available following this [LINK](https://cloud.google.com/bigquery/docs/enable-transfer-service?hl=en#enable-api).\
+Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
 First, you need to create a BigQuery table, with a specific schema, for storing raw data into it. See the following two subsections for a complete walkthrough.
@@ -57,10 +58,6 @@ Replace`[PROJECT_ID]`,`[DATASET_ID]`and`[TABLE_ID]`with your project, dataset an
 and then click the `(9)` `RUN` button.
 
 <figure><img src="../../../../.gitbook/assets/bigquery_4.png" alt=""><figcaption><p>Run table creation query.</p></figcaption></figure>
-
-{% hint style="info" %}
-Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
-{% endhint %}
 
 ### Configuration
 
