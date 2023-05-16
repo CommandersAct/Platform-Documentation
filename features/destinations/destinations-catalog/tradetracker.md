@@ -43,7 +43,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 | `[Any events]` **\[1]** | `sale`                |
 
 {% hint style="info" %}
-**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify the matching event.
+**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
 ## Field Mappings
