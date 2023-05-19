@@ -4,6 +4,18 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 19/05/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-bigquery.md" %}
+[google-bigquery.md](../features/destinations/destinations-catalog/google/google-bigquery.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/destinations-catalog/taboola/taboola-events.md" %}
+[taboola-events.md](../features/destinations/destinations-catalog/taboola/taboola-events.md)
+{% endcontent-ref %}
+
 ## 12/05/2023
 
 Destination documentation:
