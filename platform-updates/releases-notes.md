@@ -6,13 +6,86 @@ description: >-
 
 # Release notes
 
+## Release 10.0.12 - 24/05/23
+
+*   **Event delivery improvement for Audience based destinations**\
+    Event Delivery errors messages for Audience connectors (API connectors such as Facebook Custom Audience, Google Customer Match...)  now provide more detailed information about errors encountered.
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+*   **Sources: update on GTM Bridge**\
+    A Commanders Act source key is now required in the bridge configuration. As, in the future, events without a source key will be discarded, it is important that you apply the update.\
+    If it is not already done, please update it as soon as you can, following the instructions available in our [documentation](https://doc.commandersact.com/features/sources/sources-catalog/gtm).\
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+
+*   **Destinations settings enhancement:**\
+    New dynamic text input component on settings fields (except Smart Mapping for the moment)\
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+* **Mobile:**&#x20;
+  * **Video Events are now natively supported**\
+    For more informations about video events, you can have a look to [our documentation](https://doc.commandersact.com/developers/tracking/about-events/mobile-sdk-event-specificity)
+  * **the property 'do not track' has been added**\
+    Required by CNIL for Consent Statistics exempted. For more information check [our documentation](https://community.commandersact.com/consent-management/knowledge-base/consent-cookies-exemption/implementation-guide-for-exempted-consent-statistics-fr-market)
+  * &#x20;**Flutter SDK minor updates**\
+
+*   **New destinations releases:**\
+    \
+    [**Adform**](../features/destinations/destinations-catalog/adform.md)**:**\
+
+
+    <figure><img src="../.gitbook/assets/image (4).png" alt="" width="226"><figcaption></figcaption></figure>
+*   **Destinations updates:**\
+    \
+    **Equativ:** improvements and user/cookie sync fix\
+
+
+    <figure><img src="../.gitbook/assets/image (14).png" alt="" width="230"><figcaption></figcaption></figure>
+
+    **GA4:** send all properties option, automatic session id. \
+    Proxy mode is open to more beta customers. Global opening on 25/05\
+
+
+    <figure><img src="../.gitbook/assets/image (18).png" alt="" width="227"><figcaption></figcaption></figure>
+
+    **Piano Analytics:** send all properties\
+
+
+    <figure><img src="../.gitbook/assets/image (8).png" alt="" width="241"><figcaption></figcaption></figure>
+
+    **TikTok:** “Smart Mapping” support\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt="" width="227"><figcaption></figcaption></figure>
+
+    **Partnerize:** field encoding fixes\
+
+
+    <figure><img src="../.gitbook/assets/image (11).png" alt="" width="229"><figcaption></figcaption></figure>
+
+    **Awin:** dynamic fields support
+
+    <figure><img src="../.gitbook/assets/image (12).png" alt="" width="230"><figcaption></figcaption></figure>
+
+    \
+    **Commission Junction:** dynamic fields support
+
+    <figure><img src="../.gitbook/assets/image (6).png" alt="" width="230"><figcaption></figcaption></figure>
+
+
+
 ## Release 10.0.11 - 24/04/23
 
 *   **A new item has been added to the navigation menu of our platform: 'Data Governance'**. \
     For the moment, you will find the pages related to your privacy banners configuration's in the tab 'Consent Management'. \
     More pages are coming soon!
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt="" width="181"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (1).png" alt="" width="181"><figcaption></figcaption></figure>
 *   **Data Cleansing: 2 new function for your formulas:**\
 
 
@@ -93,7 +166,7 @@ description: >-
 
 
 
-    <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 * **New destinations releases**\
   \
   **Partenerize** \
@@ -156,7 +229,7 @@ More information here:
   * **Flutter - for mobile App** – _Closed beta_​
 * **Campaign analysis ​**
   * Campaign Overlap enhanced => possibility to go back up to 30 days​\
-    ![](<../.gitbook/assets/image (18).png>)
+    ![](<../.gitbook/assets/image (18) (1).png>)
   * Make it possible to send a timestamp with the incoming hit​ of your campaigns collection
 
 ## Release 10.0.9 - 14/02/23
@@ -205,7 +278,7 @@ More information here:
     Also, all these audience-based destinations benefit from the [Event Delivery](../features/destinations/event-delivery.md) feature and Threshold [Alerting](../features/destinations/event-delivery.md#alerting) feature\\
 *   **Explore:** Enhancement of LRB integrations in the platform\\
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.6 - 24/11/22
 
@@ -262,7 +335,7 @@ More information here:
 
 * **Global Platform enhancement**:
   * Help icon: a new menu that allows you to quickly find helps or send feedbacks\
-    ![](<../.gitbook/assets/image (7) (2).png>)
+    ![](<../.gitbook/assets/image (7) (2) (2).png>)
   * **Onboarding tour:**\
     Interactive tutorials have been added to discover the platform features. You can access to it through the help icon at the top right\
     <img src="../.gitbook/assets/image (1) (4) (2) (1) (1) (1) (1) (1) (1) (2).png" alt="" data-size="original">
@@ -276,12 +349,12 @@ More information here:
     * Disclosure for IAB's vendors
 * **Destinations improvements:**
   * Event delivery detail popin now shows also the intial events beside the destination hit and response. It allows to easily understand if there is wrong or missing properties in the original event\
-    <img src="../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
+    <img src="../.gitbook/assets/image (8) (1) (1).png" alt="" data-size="original">
   * Event inspector now show initial event too in each log
   * Enhancement on existing destinations : Piano Analytics
 * Explore improvements:
   * Live report builder: you can now change in live the attribution model without having to edit the report\
-    ![](<../.gitbook/assets/image (9) (2).png>)
+    ![](<../.gitbook/assets/image (9) (2) (1).png>)
 
 ## Release 10.0.3 - 24/08/22
 

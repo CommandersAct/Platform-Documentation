@@ -7,7 +7,7 @@ A list of your tags is displayed in the left menu of the “**EDIT**” interfac
 Note: You can find a tag on the list by using the search box :[\
 ](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TAG\_CONFIG\_1.png)
 
-<figure><img src="../../../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 For each tag selected, a configuration window will appear in the center of the interface containing the following elements:
 
@@ -69,7 +69,7 @@ Example:
 
 If you wish to hard code the USER ID, just replace #user\_id# with the value of the ID:\
 \
-<img src="../../../../../../.gitbook/assets/image (28).png" alt="" data-size="original">          ![](<../../../../../../.gitbook/assets/image (8).png>)
+<img src="../../../../../../.gitbook/assets/image (28).png" alt="" data-size="original">          ![](<../../../../../../.gitbook/assets/image (8) (1).png>)
 
 
 
@@ -203,7 +203,7 @@ All tags will be selected by default.
 
 You can click the “Unselect all” option and then choose the tags you wish to make available in your library.
 
-<figure><img src="../../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 Select the site you wish to set up the tags white list for from the drop down menu.
 

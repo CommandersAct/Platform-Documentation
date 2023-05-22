@@ -34,7 +34,7 @@ We recommend that you correct the errors detected in the Data layer, Custom JS B
 
 To display and correct errors, click on a red “X”.
 
-<figure><img src="../../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 A window will appear displaying the test error details. Below is an example of a possible tag error:
 

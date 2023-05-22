@@ -26,7 +26,7 @@ The “Static JS codes” appear in two places in the left menu of the “EDIT�
 
 –  The second Static JS code is placed after the declaration of the internal variables (you can thus reuse previously declared internal variables in this position):
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 The same user interface is used for the Static JavaScript code regardless of whether it executes before or after the internal variables. Just enter the JavaScript code you desire and click “SAVE”.
 

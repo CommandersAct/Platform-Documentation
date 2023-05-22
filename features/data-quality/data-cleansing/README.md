@@ -7,7 +7,7 @@ description: Transform/fix your events before to send them to destinations
 Cleaning, fixing and preparing your data is crucial for success when using the Platform activation capabilities.\
 The no-code approach allows you to create transformations using simple formula based on basic [functions ](supported-transformation-functions.md)and operators.
 
-<figure><img src="../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can choose between different kind of transformations:
 

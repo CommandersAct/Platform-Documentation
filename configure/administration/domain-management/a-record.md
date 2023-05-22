@@ -41,7 +41,7 @@ Click then on "Generate certificates"
 
 Click on "Test configuration" and the setup will be done.
 
-![](<../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../.gitbook/assets/image (4) (1) (3).png>)
 
 ## A record setup with your own certificate
 
@@ -57,7 +57,7 @@ If you need assistance, please contact the Commanders Act support team.
 
 Then click on "Validate configuration" and this will test the DNS configuration.
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 Test the configuration and the setup will be done.
 
