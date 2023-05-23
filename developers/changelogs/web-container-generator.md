@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v83.1 - 23/05/2023
+* Update IAB TCFv2 module to protect from wrong vendor configuration in IAB TCFv2 official vendor list
+* Fix collision on TCSESSION 1st party cookie between TagDedup and Campaign tracking
+
 ### Release v83.0 - 04/04/2023
 * Fixes a generator bug introduced on the **30/03/2023** (side-effect from a generation engine upgrade)
     * The bug was causing an ordering issue where Tags may be loaded in a different order from before
