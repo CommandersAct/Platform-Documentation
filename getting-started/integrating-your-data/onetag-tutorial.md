@@ -61,11 +61,23 @@ cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
 });
 ```
 
-## 3. Confirmation that everything works&#x20;
+## 3. Check that everything is working
 
 After configuring your OneTag (at lease one event triggered) and deploying your web container, you can refer to the [Event Inspector](../../features/sources/live-event-inspector.md) tab for the Source to verify that it generates the expected event data.
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-![](<../../.gitbook/assets/image (119).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
+## 4. Setup your first destination
+
+Once you have verified the inflow of data from your fresh source, it's the perfect moment to create your first destination:
+
+* Navigate to your Commanders Act platform, click on Destinations-> Overview, and select 'Add Destination' to list all the available destinations in the catalog.
+* Look for the destination of your preference. For example Facebook Conversion API.
+* Click on the card representing the destination to obtain more information about it.
+* Initiate the configuration by clicking on 'Configure'
+* Choose the source that you had previously setup, or select all sources.
+* In the settings screen, name your destination, choose an environment and enter required information.
+* Then in the filter tab, manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI)
+* Save and go checking that everything is going well in the Event Delivery and/or Event Inspector tab, or directly in your tool.
