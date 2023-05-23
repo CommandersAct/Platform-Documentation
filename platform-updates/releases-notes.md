@@ -61,7 +61,7 @@ description: >-
     **TikTok:** “Smart Mapping” support\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="227"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1).png" alt="" width="227"><figcaption></figcaption></figure>
 
     **Partnerize:** field encoding fixes\
 

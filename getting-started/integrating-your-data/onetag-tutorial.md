@@ -32,7 +32,7 @@ cact('trigger', 'purchase', { id:'1234',  currency: 'EUR', ... });
 
 ### Consent management
 
-If you use Commanders Act CMP, the user consent is automatically retrieved and put inside all events.
+If you use Commanders Act CMP, the user consent is automatically retrieved and put inside all events in the `user` property.
 
 If you use another CMP, you will have to add manually a property `consent_categories` inside a `user` property, following this example :&#x20;
 
@@ -45,9 +45,9 @@ cact('trigger','sign_up', {
 });
 ```
 
-`consent_categories` is the user's consents list and is mandatory to manage consents. It is automatically filled from web sources .
+`consent_categories` is the user's consents list and is mandatory to manage consents in each destinations.
 
-### Overrinding default parameters
+### Advanced : Overrinding default parameters
 
 If you want to force a parameter (for example the collection domain), you have 2 ways to do it : \
 1\. First you can add it as a third parameter.\
@@ -67,7 +67,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (119).png>)
 
 ## 4. Setup your first destination
 
