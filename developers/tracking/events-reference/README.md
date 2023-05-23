@@ -6,13 +6,7 @@ description: >-
 
 # Events reference
 
-There is 3 tabs : \
-1 dedicated to all the [commons events](common-events.md)\
-1 dedicated to all the [e-commerce events](e-commerce-events.md)\
-1 dedicated to all the [video events](video-event-reference.md)\
-
-
-On the current page, you can see a list of mixed events references for common events and e-commerce events.
+Here are the most used events:
 
 ## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
 
