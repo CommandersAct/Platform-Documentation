@@ -9,7 +9,7 @@ From your web container, add a tag from the tag library, searching **Commanders 
 You will find 2 tags to choose from :&#x20;
 
 1. The _**OneTag - Builder**_: it will guide you without having to write code
-2. The _**OneTag - Custom**: for those who prefer to manually write it using in javascript_
+2. The _**OneTag - Custom**:_ for those who prefer to manually write complex event data using javascript
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -60,3 +60,12 @@ cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
     sourceKey: "abcd"
 });
 ```
+
+## 3. Confirmation that everything works&#x20;
+
+After configuring your OneTag (at lease one event triggered) and deploying your web container, you can refer to the [Event Inspector](../../features/sources/live-event-inspector.md) tab for the Source to verify that it generates the expected event data.
+
+The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
+
+![](<../../.gitbook/assets/image (119).png>)
+
