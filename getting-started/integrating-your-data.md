@@ -6,7 +6,7 @@ There are several ways how to get your data into Commanders Act platform.
 
 |                            |                                                                                                                                                        |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Web container (OneTag)** | You can use our event [OneTag](../features/sources/sources-catalog/web/containers/) via our tag manager system.                                        |
+| **Web container (OneTag)** | You can use our event [OneTag](integrating-your-data/onetag-tutorial.md) via our tag manager system.                                                   |
 | **Javascript SDK**         | You can use our [Javascript SDK](../features/sources/sources-catalog/web/js-sdk/) to track events real-time from your website.                         |
 | **Mobile SDKs**            | The [Mobile SDKs](../features/sources/sources-catalog/mobile-app.md) are the best way to simplify tracking in your iOS/Android apps.                   |
 | **Rest API**               | You can also build your custom solution connecting directly to our [http tracking API](../features/sources/sources-catalog/server/http-tracking-api/). |
@@ -25,4 +25,4 @@ It is possible to import data to Commanders Act through regular automated file i
 
 ## Data API
 
-You can send your specific data through our [Data JSON APIs](../developers/tracking/data-api/)
+You can send your specific data through our [Data JSON APIs](../developers/tracking/data-api/).

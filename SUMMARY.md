@@ -12,6 +12,7 @@
   * [Glossary](getting-started/concepts/lexical.md)
 * [Platform interface](getting-started/platform-interface.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
+  * [OneTag Tutorial](getting-started/integrating-your-data/onetag-tutorial.md)
   * [Migration guides to the Platform X](getting-started/integrating-your-data/migration-guides-to-the-platform-x/README.md)
     * [Migrate from SSv1 to SSv2](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/README.md)
       * [Send data to serverside v2](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/send-data-to-serverside-v2/README.md)
