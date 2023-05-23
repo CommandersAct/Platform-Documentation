@@ -15,7 +15,7 @@ You will find 2 tags to choose from :&#x20;
 1. The _**OneTag - Builder**_: it will guide you without having to write code
 2. The _**OneTag - Custom**:_ for those who prefer to manually write complex event data using javascript
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Setup the tag
 
@@ -54,9 +54,9 @@ Inside a standard events, you can add custom properties beside standard properti
 Inside custom events, it is recommanded to put standard properties. Of course, custom properties can also be added
 {% endhint %}
 
-### Consent management
+### User Consent in each events
 
-If you use Commanders Act CMP, the user consent is automatically retrieved and put inside all events in the `user` property.
+If you use Commanders Act CMP, the user consent is automatically retrieved and **put inside all events** in the `user` property.
 
 If you use another CMP, you will have to add manually a property `consent_categories` inside a `user` property, following this example :&#x20;
 
@@ -70,6 +70,13 @@ cact('trigger','sign_up', {
 ```
 
 `consent_categories` is the user's consents list and is mandatory to manage consents in each destinations (aka server-side consent)
+
+### How work server-side consent management
+
+When you add a destination (aka serverside tag), you manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI).&#x20;
+
+![](../../.gitbook/assets/image.png)\
+As a result, since each event entering the platform contains information about the user's consent at the time the event took place, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
 
 ### Advanced : Overrinding default parameters
 
@@ -91,7 +98,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 ## 4. Setup your first destination
 
