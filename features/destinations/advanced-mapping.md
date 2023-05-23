@@ -18,11 +18,13 @@ Deployment in progress for all destinations
 
 The smart mapping feature shows the mapping between standard events/properties and destination partner properties.
 
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 15.55.10.png" alt=""><figcaption></figcaption></figure>
+
 Ex: Standard property: value ⇒ Partner property: revenue
 
 If needed, you can modify this mapping, with custom properties for example.
 
-## Text input
+## Text input (settings)
 
 On settings configuration, you can simply enter values with the text input.
 
@@ -30,13 +32,23 @@ Use brackets button \{{ \}} to enter a dynamic value, like a property name.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.20.png" alt=""><figcaption></figcaption></figure>
 
-If you click on the _T_ icon, you can switch to formulas mode.
+If you click on the _T_ icon, you can switch to functions mode.
 
-## Formulas
+## Functions (settings)
 
-Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)) to transform properties.
+Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)).
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.51.png" alt=""><figcaption></figcaption></figure>
+
+In settings, functions could be useful to define a complex value, for example a concatenation of 2 properties to create a unique ID required by the destination.
+
+## Functions inside smart mapping
+
+{% hint style="info" %}
+Coming soon
+{% endhint %}
+
+These functions are also available in the [smart mapping feature](advanced-mapping.md#smart-mapping), to easily transform properties before to send to the destination.
 
 For example, if a destination requires MD5 email, you can select the email in clear and apply the MD5 formula to turn the clear email into a MD5 email, only for this destination (if it is for all destinations, please use our [Data Cleansing](../data-quality/data-cleansing/) feature).
 
