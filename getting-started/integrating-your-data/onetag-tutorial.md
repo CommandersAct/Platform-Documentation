@@ -2,7 +2,11 @@
 
 Sending an event from a [web container](../../features/sources/sources-catalog/web/containers/) is as easy as adding a tag : the OneTag.
 
-## 1.Add the OneTag from the tag library
+{% hint style="info" %}
+If you haven’t already, you should read the [platform explanations](../concepts/)!
+{% endhint %}
+
+## 1. Add the OneTag from the tag library
 
 From your web container, add a tag from the tag library, searching **Commanders Act OneTag**
 
@@ -15,20 +19,40 @@ You will find 2 tags to choose from :&#x20;
 
 ## 2. Setup the tag
 
-If you choose the _builder_ version of the tag, you can stop here, you just have to follow the instructions.\
-If you choose the _custom_ one, you will find below helpfull information:
+If you choose the _builder_ version of the tag, you can go to the next step, you just have to follow the instructions.\
+If you choose the _custom_ one, here is how it works:\
+\
+The `cact('trigger')` function is what allows you to record any actions your users perform, along with any properties that describe the action.\
+Each action is known as an [event](../concepts/#event).
 
-To send event data to the Commanders Act platform, you will use the `cact()` function following this format:
+<pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, );
+</strong></code></pre>
 
-```javascript
-cact('trigger', '<event_name>', {<event_data>}, );
-```
+Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.\
+\
+Here’s the payload of a typical `trigger` call with most common fields removed:\
+To send event data to the Commanders Act platform, you will use the `cact('trigger')` function following this format:
 
 Example : to send a purchase event :
 
 ```javascript
 cact('trigger', 'purchase', { id:'1234',  currency: 'EUR', ... });
 ```
+
+### Standard events and custom events
+
+You can implement two types of events:
+
+* **Recommended standard events** are events that you implement yourself, but that have Commanders Act-predefined names and parameters. **Recommended events unlock existing plug\&play features/automatic-mapping/automatic-QA-alerting capabilities, but also future features/reporting** Here are the [events recommended](../../developers/tracking/events-reference/) by industries.
+* **Custom events** are events that you name and implement yourself. Before implementing a custom event, check that there is not a recommended event that already provides what you need. With custom events, best practice is to use recommended properties that you can find in our [event references](../../developers/tracking/events-reference/) (ex: revenue, currency, ...) beside your custom properties.
+
+{% hint style="info" %}
+Inside a standard events, you can add custom properties beside standard properties
+{% endhint %}
+
+{% hint style="info" %}
+Inside custom events, it is recommanded to put standard properties. Of course, custom properties can also be added
+{% endhint %}
 
 ### Consent management
 
@@ -40,12 +64,12 @@ If you use another CMP, you will have to add manually a property `consent_catego
 cact('trigger','sign_up', {
   method: 'email', 
   user: {
-      consent_categories: [1,3]
+      consent_categories: [1,3,4,6]
   }
 });
 ```
 
-`consent_categories` is the user's consents list and is mandatory to manage consents in each destinations.
+`consent_categories` is the user's consents list and is mandatory to manage consents in each destinations (aka server-side consent)
 
 ### Advanced : Overrinding default parameters
 
@@ -67,7 +91,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-![](<../../.gitbook/assets/image (119).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 ## 4. Setup your first destination
 
