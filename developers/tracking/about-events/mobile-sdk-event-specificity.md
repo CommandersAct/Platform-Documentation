@@ -56,7 +56,7 @@ All those class names are valid on both Android and iOS.
 IOS and Android SDK add specific properties regarding the device and app. Those are in addition to event managed properties.
 
 {% hint style="info" %}
-If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/sources/sources-catalog/http-tracking-api.md)), you should follow this specification to benefit from plug\&play on destinations\\
+If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/sources/sources-catalog/server/http-tracking-api/)), you should follow this specification to benefit from plug\&play on destinations\\
 {% endhint %}
 
 Here are an example of event playload :

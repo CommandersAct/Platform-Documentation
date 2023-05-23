@@ -12,8 +12,8 @@ Commanders Act provides a GTM template to connect your existing GTM implementati
 First, access [GTM a](https://tagmanager.google.com/)nd then add our template "**Commanders Act | Serverside events bridge**"\
 You can follow our dedicated guide:
 
-{% content-ref url="../../../../sources/sources-catalog/gtm.md" %}
-[gtm.md](../../../../sources/sources-catalog/gtm.md)
+{% content-ref url="../../../../sources/sources-catalog/web/gtm.md" %}
+[gtm.md](../../../../sources/sources-catalog/web/gtm.md)
 {% endcontent-ref %}
 
 ### 2. Update your Facebook tags
