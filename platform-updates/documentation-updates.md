@@ -4,6 +4,13 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 23/05/2023
+
+* Revamping the [How works the platform](../getting-started/concepts/) page and [Integrating your data](../getting-started/integrating-your-data.md) page
+* Grouping by categories from now on in [source catalog](../features/sources/sources-catalog/)
+* Adding a dedicated [OneTag tutorial](../getting-started/integrating-your-data/onetag-tutorial.md) page
+* Reshaping [Mobile App](../features/sources/sources-catalog/mobile-app.md) page
+
 ## 19/05/2023
 
 Destination documentation:
