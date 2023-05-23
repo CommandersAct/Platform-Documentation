@@ -1,14 +1,14 @@
 # Destinations catalog
 
-Find here the list of all [destinations](../../../getting-started/concepts/#destination).
+Find here the list of all plug\&play [destinations](../../../getting-started/concepts/#destination).
 
 Destinations are sorted per categories (Advertising, Emailing, Analytics, Push notifications...).
 
 The destination's catalog homepage show an overview of 3 destinations per categories, click on the categories menu or on 'View all' to display the full destinations list.\
 \
-You didn't find the destination you were looking for? Do not hesitate to fill the request form to ask our team to add a new destination on the list.
+You didn't find the destination you were looking for? Do not hesitate to fill the **request form** to ask our team to add a new destination on the list, or use the [Destination Builder](../destination-builder/)
 
-Newly added destinations are summarized on the 'New' tab.
+Newly added destinations are summarized on the _**New**_ tab.
 
 **Flags meanings**:
 

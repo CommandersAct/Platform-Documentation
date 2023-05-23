@@ -8,7 +8,7 @@
 
 ## Getting started
 
-* [Concepts](getting-started/concepts/README.md)
+* [How works the platform](getting-started/concepts/README.md)
   * [Glossary](getting-started/concepts/lexical.md)
 * [Platform interface](getting-started/platform-interface.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
