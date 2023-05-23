@@ -6,4 +6,4 @@ description: >-
 
 # Migrate from old mobile sdk
 
-To track mobile app on the new platform, you can either install our new SDK ([Android](../../../features/sources/sources-catalog/android.md) and [iOS](../../../features/sources/sources-catalog/ios.md)) or use our [HTTP tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api).
+To track mobile app on the new platform, you can either install our new SDK ([Android](../../../features/sources/sources-catalog/mobile-app/android.md) and [iOS](../../../features/sources/sources-catalog/mobile-app/ios.md)) or use our [HTTP tracking API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api).

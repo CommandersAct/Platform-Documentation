@@ -1,12 +1,6 @@
-# Mobile APP : how to
+# Mobile APP
 
-{% content-ref url="ios.md" %}
-[ios.md](ios.md)
-{% endcontent-ref %}
-
-{% content-ref url="android.md" %}
-[android.md](android.md)
-{% endcontent-ref %}
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>ANDROID SDK</td><td></td><td><a href="../../../../.gitbook/assets/Android_symbol_green_RGB[1].png">Android_symbol_green_RGB[1].png</a></td><td><a href="android.md">android.md</a></td></tr><tr><td></td><td>IOS SDK</td><td></td><td><a href="../../../../.gitbook/assets/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png">apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png</a></td><td><a href="ios.md">ios.md</a></td></tr><tr><td></td><td>FLUTTER SDK</td><td></td><td><a href="../../../../.gitbook/assets/flutter5786[1].jpg">flutter5786[1].jpg</a></td><td><a href="flutter.md">flutter.md</a></td></tr><tr><td></td><td>REACT NATIVE SDK</td><td></td><td><a href="../../../../.gitbook/assets/2300px-React-icon.svg[1].png">2300px-React-icon.svg[1].png</a></td><td><a href="react-native.md">react-native.md</a></td></tr></tbody></table>
 
 ## Introduction to mobile app tagging
 
@@ -24,7 +18,7 @@ The basic operational principle of TagCommander’s light SDK is:
 
 `${siteID}` and `${YOUR_SOURCE_KEY}` are to be provided to the SDK and will be replaced automatically.
 
-The rest of the parameters are send in the body in POST like presented here:&#x20;
+The rest of the parameters are send in the body in POST like presented here:
 
 {% content-ref url="../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
 [mobile-sdk-event-specificity.md](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)

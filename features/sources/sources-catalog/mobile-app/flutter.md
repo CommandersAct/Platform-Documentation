@@ -4,6 +4,6 @@ The Flutter SDK allows you to send data to analytics or marketing tools without 
 
 Please refer to our [developper documentation](https://github.com/CommandersAct/tcserverside-flutter-plugin) on github to use the Flutter SDK and to APP "how to" :&#x20;
 
-{% content-ref url="mobile-app.md" %}
-[mobile-app.md](mobile-app.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}

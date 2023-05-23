@@ -4,6 +4,6 @@ The iOS SDK allows you to send data to analytics or marketing tools without havi
 
 Please refer to our [developper documentation](https://github.com/TagCommander/iOSV5) on github to use the iOS SDK and to APP "how to" :&#x20;
 
-{% content-ref url="mobile-app.md" %}
-[mobile-app.md](mobile-app.md)
+{% content-ref url="./" %}
+[.](./)
 {% endcontent-ref %}

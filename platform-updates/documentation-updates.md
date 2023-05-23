@@ -441,18 +441,18 @@ Destination documentation:
 
 Mobile sources updates:&#x20;
 
-{% content-ref url="../features/sources/sources-catalog/ios.md" %}
-[ios.md](../features/sources/sources-catalog/ios.md)
+{% content-ref url="../features/sources/sources-catalog/mobile-app/ios.md" %}
+[ios.md](../features/sources/sources-catalog/mobile-app/ios.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/sources/sources-catalog/android.md" %}
-[android.md](../features/sources/sources-catalog/android.md)
+{% content-ref url="../features/sources/sources-catalog/mobile-app/android.md" %}
+[android.md](../features/sources/sources-catalog/mobile-app/android.md)
 {% endcontent-ref %}
 
 Mobile APP global setup guide:
 
-{% content-ref url="../features/sources/sources-catalog/mobile-app.md" %}
-[mobile-app.md](../features/sources/sources-catalog/mobile-app.md)
+{% content-ref url="../features/sources/sources-catalog/mobile-app/" %}
+[mobile-app](../features/sources/sources-catalog/mobile-app/)
 {% endcontent-ref %}
 
 ## 30/06/2022
