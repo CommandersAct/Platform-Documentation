@@ -57,7 +57,7 @@
         * [Next.js serverside rendering](features/sources/sources-catalog/web/js-sdk/next.js-serverside-rendering.md)
       * [Pixel Tracking](features/sources/sources-catalog/web/pixel-tracking.md)
       * [Google Tag Manager (GTM)](features/sources/sources-catalog/web/gtm.md)
-      * [Shopify](features/sources/sources-catalog/web/shopify.md)
+      * [Shopify](features/sources/sources-catalog/shopify.md)
     * [Mobile APP](features/sources/sources-catalog/mobile-app.md)
       * [Android](features/sources/sources-catalog/android.md)
       * [iOS](features/sources/sources-catalog/ios.md)

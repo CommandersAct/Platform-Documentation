@@ -4,12 +4,12 @@ There are several ways how to get your data into Commanders Act platform.
 
 ## Real-time Commanders Act tracking
 
-|                    |                                                                                                                                                                                                                                                                                                              |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Web container**  | You can use our event OneTag via our tag manager system. Read more [here](../features/sources/sources-catalog/web/containers/).                                                                                                                                                                              |
-| **Javascript SDK** | You can use our Javascript SDK to track events real-time from your website. Read more [here](../features/sources/sources-catalog/web/js-sdk/#send-event).                                                                                                                                                    |
-| **Mobile SDKs**    | <p><a href="../features/sources/sources-catalog/android.md">Android</a> and <a href="../features/sources/sources-catalog/ios.md">iOS</a> devices are supported.<br>Also apps written it React Native are supported by <a href="https://github.com/TagCommander/react-tag-commander">React Native SDK</a></p> |
-| **Rest API**       | You can also build your custom solution connecting directly to our external API. Read more in [our API reference](../features/sources/sources-catalog/server/http-tracking-api/).                                                                                                                            |
+|                    |                                                                                                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Web container**  | You can use our event [OneTag](../features/sources/sources-catalog/web/containers/) via our tag manager system.                                        |
+| **Javascript SDK** | You can use our [Javascript SDK](../features/sources/sources-catalog/web/js-sdk/) to track events real-time from your website.                         |
+| **Mobile SDKs**    | The [Mobile SDKs](../features/sources/sources-catalog/mobile-app.md) are the best way to simplify tracking in your iOS/Android apps.                   |
+| **Rest API**       | You can also build your custom solution connecting directly to our [http tracking API](../features/sources/sources-catalog/server/http-tracking-api/). |
 
 ## Third party tools
 
