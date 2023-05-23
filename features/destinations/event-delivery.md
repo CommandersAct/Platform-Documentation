@@ -33,6 +33,13 @@ The % of difference display the comparison with the same previous period: ex if 
 
 The small trend graph represents the global evolution of delivered and not delivered events on the maximum delivery data retention period, which is 1 month.
 
+* **Filtered events**: it corresponds to events that are not sent, because of a filter.
+  * Filter related to consents: corresponds to the User Consent Category entered the filter section
+  * Filter related to conditions: corresponds to the filter defined in the filter section
+  * Reject by the code: corresponds to events that cannot be accepted by the destination because they lack elements required by the destination (no email address for example)
+
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 11.40.50.png" alt=""><figcaption></figcaption></figure>
+
 ### 2. Delivery trends <a href="#3-error-details" id="3-error-details"></a>
 
 Visualize directly the evolution of delivered and not delivered events on a larger period. You can change the period you want to visualize: last hour, last day, last week or last month.
