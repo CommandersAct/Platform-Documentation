@@ -38,7 +38,7 @@ The small trend graph represents the global evolution of delivered and not deliv
   * Filter related to conditions: corresponds to the filter defined in the filter section
   * Reject by the code: corresponds to events that cannot be accepted by the destination because they lack elements required by the destination (no email address for example)
 
-<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 11.40.50.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 11.40.50 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Delivery trends <a href="#3-error-details" id="3-error-details"></a>
 
