@@ -36,7 +36,6 @@ The small trend graph represents the global evolution of delivered and not deliv
 * **Filtered events**: it corresponds to events that are not sent, because of a filter.
   * Filter related to consents: corresponds to the User Consent Category entered the filter section
   * Filter related to conditions: corresponds to the filter defined in the filter section
-  * Reject by the code: corresponds to events that cannot be accepted by the destination because they lack elements required by the destination (no email address for example)
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 11.40.50 (1).png" alt=""><figcaption></figcaption></figure>
 
