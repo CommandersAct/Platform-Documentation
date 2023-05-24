@@ -79,7 +79,7 @@ cact('trigger','sign_up', {
 
 `consent_categories` is the user's consents list and is mandatory to manage consents in each destinations (aka server-side consent) See [how work server-side consent management](onetag-tutorial.md#how-work-server-side-consent-management).
 
-### Advanced options: Overrinding default parameters
+### Advanced options: Overriding default parameters
 
 There are 3 default parameters that you can override if needed:
 

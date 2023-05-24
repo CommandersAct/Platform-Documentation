@@ -2,11 +2,9 @@
 
 ## Getting Started
 
-Overview on the Commanders Act onsite API.
-
 The onsite API is used to interact with Commanders Act features with JavaScript.
 
-There are different commands available within `cact()`: `config` is used to set general properties, `trigger` event is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
+There are different commands available within `cact()`: `config` is used to set general options, `trigger` event is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
 
 {% hint style="info" %}
 To use the API, you must have either a web container on the page **or** the JS SDK library script : [https://cdn.tagcommander.com/events/sdk.js](https://cdn.tagcommander.com/events/sdk.js)
@@ -47,8 +45,7 @@ Config object accept **3 parameters**, they are optional if you use a web contai
 
 * `siteId` : if not set, the default value is the site id of the last web container loaded (`tC.id_site`)
 * `sourceKey`: if not set, the default value is derivative from you web container id. If you don't have a web container, the sourceKey is mandatory and correspond to your JS SDK source.
-* `collectionDomain`: if not set, the default value is `collect.commander1.com`\
-  \`\`This parameter is used to set your first party domain
+* `collectionDomain`: if not set, the default value correspond to your first party domain (if you setup one) or `collect.commander1.com`
 
 Example :
 

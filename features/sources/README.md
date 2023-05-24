@@ -9,3 +9,6 @@ The platform has [Sources](./) and [Destinations](../destinations/). Sources sen
 {% hint style="info" %}
 A source is an emitter of events, more information [here](../../getting-started/concepts/#source).
 {% endhint %}
+
+## Source key
+
