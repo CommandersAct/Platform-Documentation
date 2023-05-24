@@ -12,7 +12,7 @@ For information about how users setup and maintain containers, see the [dedicate
 
 Sending data from your web container to serverside destinations offers a lot of advantages (web performance, security, data accuracy/quality, etc.)
 
-To start sending data, there is only one easy step to follow : adding the _Commanders Act_ **One Tag**.
+To start sending data, there is only one easy step to follow : [adding the _Commanders Act_ **One Tag**](../../../../../getting-started/integrating-your-data/onetag-tutorial.md).
 
 > The last tag that you will ever setup.
 

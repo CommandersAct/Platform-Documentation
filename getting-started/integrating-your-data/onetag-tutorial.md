@@ -35,7 +35,11 @@ Each event has a name, like **page\_view**, and properties. For example, a **pag
 Example: to send a purchase event :
 
 ```javascript
-cact('trigger', 'purchase', { id:'1234',  currency: 'EUR', ... });
+cact('trigger','page_view', {
+  page_type: 'product_list',
+  page_name: 'Best sellers', 
+  //...
+});
 ```
 
 ### Standard events and custom events
@@ -74,13 +78,15 @@ cact('trigger','sign_up', {
 
 When you add a destination (aka serverside tag), you manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI).&#x20;
 
-![](../../.gitbook/assets/image.png)\
+\
 As a result, since each event entering the platform contains information about the user's consent at the time the event took place, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
 
-### Advanced : Overrinding default parameters
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-If you want to force a parameter (for example the collection domain), you have 2 ways to do it : \
-1\. First you can add it as a third parameter.\
+### Advanced options: Overrinding default parameters
+
+If you want to force a config parameter (for example the collection domain), you have 2 ways to do it, let's see the easiest one: \
+You can add it as a third parameter.\
 Example : to send a purchase event, overriding the default tracking domain / workspace / sourcekey :
 
 ```javascript
@@ -97,7 +103,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-![](<../../.gitbook/assets/image (1) (1).png>)
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 4. Setup your first destination
 
