@@ -27,7 +27,7 @@ Each action is known as an [event](../concepts/#event).
 
 Here’s the format of a typical `trigger` call:
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, );
+<pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, [config]);
 </strong></code></pre>
 
 Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.
@@ -81,17 +81,23 @@ cact('trigger','sign_up', {
 
 ### Advanced options: Overrinding default parameters
 
-If you want to force a config parameter (for example the collection domain), you have 2 ways to do it, let's see the easiest one: \
-You can add it as a third parameter.\
-Example : to send a purchase event, overriding the default tracking domain / workspace / sourcekey :
+There are 3 default parameters that you can override if needed:
+
+* `collectionDomain`: if not set, the default value correspond to your first party domain (if you setup one) or `collect.commander1.com`
+* `sourceKey`: if not set, the default value is the source key of the currently running web container.
+* `siteId` : if not set, the default value is the site id of the last web container loaded (`tC.id_site`)
+
+To override a parameter, you can add a config object to your cact('trigger') function (4th parameter) like this:
 
 ```javascript
 cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
     collectionDomain: "my.firstdomain.com",
-    siteId: "1234", 
+    siteId: "1234",
     sourceKey: "abcd"
 });
 ```
+
+You can also set globally these parameters for all triggered events with the `cact('config')` method. See the [Javascript API documentation](../../features/sources/sources-catalog/web/js-sdk/) for more information.
 
 ## 3. Check that everything is working
 
