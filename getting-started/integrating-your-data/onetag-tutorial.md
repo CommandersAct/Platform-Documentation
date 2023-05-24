@@ -32,7 +32,7 @@ Here’s the format of a typical `trigger` call:
 
 Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.
 
-Example: to send a purchase event :
+Here is an example:
 
 ```javascript
 cact('trigger','page_view', {
@@ -46,8 +46,10 @@ cact('trigger','page_view', {
 
 You can implement two types of events:
 
-* **Recommended standard events** are events that you implement yourself, but that have Commanders Act-predefined names and parameters. **Recommended events unlock existing plug\&play features/automatic-mapping/automatic-QA-alerting capabilities, but also future features/reporting** Here are the [events recommended](../../developers/tracking/events-reference/) by industries.
-* **Custom events** are events that you name and implement yourself. Before implementing a custom event, check that there is not a recommended event that already provides what you need. With custom events, best practice is to use recommended properties that you can find in our [event references](../../developers/tracking/events-reference/) (ex: revenue, currency, ...) beside your custom properties.
+* **Recommended **_**standard events**_ are events that you implement yourself, but that have Commanders Act-predefined names and parameters. \
+  **Recommended events unlock existing plug\&play features/automatic-mapping/automatic-QA-alerting capabilities, but also future features/reporting** \
+  Here are the [events recommended](../../developers/tracking/events-reference/) by industries.
+* _Custom events_ are events that you name and implement yourself. Before implementing a custom event, check that there is not a [recommended event](../../developers/tracking/events-reference/) that already provides what you need. With custom events, best practice is to use recommended properties that you can find in our [event references](../../developers/tracking/events-reference/) (ex: revenue, currency, ...) beside your custom properties.
 
 {% hint style="info" %}
 Inside a standard events, you can add custom properties beside standard properties
@@ -101,7 +103,7 @@ cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
 
 After configuring your OneTag (at lease one event triggered) and deploying your web container, you can refer to the [Event Inspector](../../features/sources/live-event-inspector.md) tab for the Source to verify that it generates the expected event data.
 
-The Source Event Inspector serves as a live tool that aids in validating the arrival of API requests originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
+The Source Event Inspector serves as a live tool that aids in validating the arrival of events originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
