@@ -74,16 +74,7 @@ cact('trigger','sign_up', {
 });
 ```
 
-`consent_categories` is the user's consents list and is mandatory to manage consents in each destinations (aka server-side consent)
-
-### How work server-side consent management
-
-When you add a destination (aka serverside tag), you manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI).&#x20;
-
-\
-As a result, since each event entering the platform contains information about the user's consent at the time the event took place, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
-
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+`consent_categories` is the user's consents list and is mandatory to manage consents in each destinations (aka server-side consent) See [how work server-side consent management](onetag-tutorial.md#how-work-server-side-consent-management).
 
 ### Advanced options: Overrinding default parameters
 
@@ -119,3 +110,14 @@ Once you have verified the inflow of data from your fresh source, it's the perfe
 * In the settings screen, name your destination, choose an environment and enter required information.
 * Then in the filter tab, manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI)
 * Save and go checking that everything is going well in the Event Delivery and/or Event Inspector tab, or directly in your tool.
+
+## FAQ
+
+### How work server-side consent management
+
+When you add a destination (aka serverside tag), you manage the user consent by selecting the appropriate consent categories for that destination (for example "Advertising" category for Facebook CAPI). \
+\
+As a result, since each event entering the platform contains information about the user's consent, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
