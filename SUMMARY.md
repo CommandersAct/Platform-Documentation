@@ -56,7 +56,7 @@
           * [tC.\* attributes and methods](features/sources/sources-catalog/web/containers/best-practices/tc.-attributes-and-methods.md)
       * [Javascript SDK](features/sources/sources-catalog/web/js-sdk/README.md)
         * [Next.js serverside rendering](features/sources/sources-catalog/web/js-sdk/next.js-serverside-rendering.md)
-      * [Pixel Tracking](features/sources/sources-catalog/web/pixel-tracking.md)
+      * [Pixel Tracking API](features/sources/sources-catalog/web/pixel-tracking.md)
       * [Google Tag Manager (GTM)](features/sources/sources-catalog/web/gtm.md)
       * [Shopify](features/sources/sources-catalog/shopify.md)
     * [Mobile APP](features/sources/sources-catalog/mobile-app.md)
