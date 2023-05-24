@@ -25,15 +25,14 @@ If you choose the _custom_ one, here is how it works:\
 The `cact('trigger')` function is what allows you to record any actions your users perform, along with any properties that describe the action.\
 Each action is known as an [event](../concepts/#event).
 
+Here’s the format of a typical `trigger` call:
+
 <pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, );
 </strong></code></pre>
 
-Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.\
-\
-Here’s the payload of a typical `trigger` call with most common fields removed:\
-To send event data to the Commanders Act platform, you will use the `cact('trigger')` function following this format:
+Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.
 
-Example : to send a purchase event :
+Example: to send a purchase event :
 
 ```javascript
 cact('trigger', 'purchase', { id:'1234',  currency: 'EUR', ... });
