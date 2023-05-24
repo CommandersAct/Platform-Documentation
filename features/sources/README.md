@@ -12,3 +12,8 @@ A source is an emitter of events, more information [here](../../getting-started/
 
 ## Source key
 
+The source key is a unique identifier for each Source. It allows Commanders Act to identify which Source is transmitting the data and which destinations should be the recipients of that data. It is also employed to deactivate a source when necessary.
+
+To locate a source key, you initially need to have or create a source like a website, server, or mobile source.
+
+Next, within the Source, navigate to “Settings", and then proceed to “source key".

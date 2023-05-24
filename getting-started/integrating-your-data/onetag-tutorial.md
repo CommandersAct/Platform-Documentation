@@ -84,7 +84,7 @@ cact('trigger','sign_up', {
 There are 3 default parameters that you can override if needed:
 
 * `collectionDomain`: if not set, the default value correspond to your first party domain (if you setup one) or `collect.commander1.com`
-* `sourceKey`: if not set, the default value is the source key of the currently running web container.
+* `sourceKey`: if not set, the default value is the [source key](../../features/sources/#source-key) of the currently running web container.
 * `siteId` : if not set, the default value is the site id of the last web container loaded (`tC.id_site`)
 
 To override a parameter, you can add a config object to your cact('trigger') function (4th parameter) like this:
