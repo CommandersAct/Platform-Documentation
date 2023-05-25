@@ -17,7 +17,7 @@ The UI is divided into three sections that provide information on the platform's
 * **Delivered:** This displays the number of messages successfully delivered to a destination within the time period you choose.\
   The % of events delivered is represented by a weather icon:
   * <img src="../../.gitbook/assets/image (17) (2).png" alt="" data-size="line">sunny if the % of events successfully delivered is above 95%
-  * <img src="../../.gitbook/assets/image (15) (2).png" alt="" data-size="line">cloudy between 90 and 95%
+  * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 90 and 95%
   * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 50 and 90%
   * <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy below 50%
 *   **Not Delivered:** This number represents the number of messages that the platform was unable to deliver. If this number is more than zero, the causes for this failure are listed in the errors' table below.
@@ -25,7 +25,7 @@ The UI is divided into three sections that provide information on the platform's
     The % of events not delivered is represented by a weather icon:
 
     * <img src="../../.gitbook/assets/image (17) (2).png" alt="" data-size="line">sunny if the % of failures is below 5%
-    * <img src="../../.gitbook/assets/image (15) (2).png" alt="" data-size="line">cloudy if the % of failures is below 10%
+    * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy if the % of failures is below 10%
     * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy if the % of failures is between 10% and 50%
     * <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy if the % of failures is above 50%
 

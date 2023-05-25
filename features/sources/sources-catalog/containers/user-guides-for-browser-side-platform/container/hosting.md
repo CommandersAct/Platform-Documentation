@@ -90,7 +90,7 @@ Simply follow the step by step guide provided by Bing:
 
 Simply follow the step by step guide provided by Facebook:
 
-<figure><img src="../../../../../../.gitbook/assets/image (15).png" alt="" width="392"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (15) (2).png" alt="" width="392"><figcaption></figcaption></figure>
 
 ### Criteo connector configuration
 
