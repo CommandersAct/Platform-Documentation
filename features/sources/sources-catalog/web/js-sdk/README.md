@@ -45,7 +45,7 @@ Config object accept **3 parameters**, they are optional if you use a web contai
 
 * `siteId` : if not set, the default value is the site id of the last web container loaded (`tC.id_site`)
 * `sourceKey`: if not set, the default value is derivative from you web container id. If you don't have a web container, the sourceKey is mandatory and correspond to your JS SDK source.
-* `collectionDomain`: if not set, the default value correspond to your first party domain (if you setup one) or `collect.commander1.com`
+* `collectionDomain`: if not set, the default value is `collect.commander1.com` (or your first party domain, if you setup one and use a [web container](../containers/))
 
 Example :
 
