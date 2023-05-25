@@ -10,7 +10,7 @@ Commanders Act offers a so-called “super light” SDK you can include in your 
 
 **Note**: Not all solutions are compatible with this method. Since the light SDK sends app information to partner solutions’ servers, they cannot “go back” to the app. Adserving solutions (those displaying ads) and push notification providers are thus not compatible with this method.
 
-The basic operational principle of TagCommander’s light SDK is:
+The basic operational principle of Commanders light SDK is:
 
 – **Step 1**: the mobile data layer and CommandersAct’s SDK are called in the app’s source code every time the screen loads or that an element is clicked. (your IT staff should have implemented this at the start of the project).
 
@@ -64,11 +64,11 @@ The site’s ID (Commanders Act account number) and that of the source key are n
 
 ## Step #4: Testing the setup in a test environment
 
-TagCommander’s SDK can be tested with many different tools:
+Commanders Act SDK can be tested with many different tools:
 
 ### **Tests for iOS with XCode**
 
-TagCommander’s SDK for iOS can be tested with Apple’s developing software “XCode”:
+Commanders Act SDK for iOS can be tested with Apple’s developing software “XCode”:
 
 [https://itunes.apple.com/fr/app/xcode/id497799835](https://itunes.apple.com/fr/app/xcode/id497799835)
 
@@ -91,7 +91,7 @@ These elements will be displayed when you analyze mobile logs:
 
 ### **Running tests for Android or iOS with Charles Debugger**
 
-TagCommander’s SDK for both iOS and Android operating systems can be tested with the “Charles Debugger” proxy, downloadable for free here: [https://www.charlesproxy.com/](https://www.charlesproxy.com)
+Commanders Act SDK for both iOS and Android operating systems can be tested with the “Charles Debugger” proxy, downloadable for free here: [https://www.charlesproxy.com/](https://www.charlesproxy.com)
 
 The first thing to do is to configure your phone so it can communicate with Charles.
 
