@@ -28,7 +28,13 @@ If needed, you can modify this mapping, with custom properties for example.
 
 On settings configuration, you can simply enter values with the text input.
 
-Use brackets button \{{ \}} to enter a dynamic value, like a property name.
+Use brackets button \{{ \}} to enter a dynamic value, like a property name. Without brackets, the value is considered as a string.
+
+Examples:
+
+* `{{price}}`corresponds to the property price, the output will be "12,30" for example.
+* `price` corresponds to a static value, the output will be "price".
+* `{{price}} excl.taxes` corresponds to the property price concatenated with the string 'excl.taxes', the output will be “12,30 excl.taxes” for example.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.20.png" alt=""><figcaption></figcaption></figure>
 
