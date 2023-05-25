@@ -80,14 +80,15 @@ Open XcOde, go to “Window” ), > “Devices” (2), then select ypur device i
 
 These elements will be displayed when you analyze mobile logs:
 
-* TagCommander SDK’s version number: “Commanders Act SDK init with version: VERSION\_NUMBER”
-* TagCommander’s site and container number: “SDK init with siteID SITE\_ID and CONTAINER\_ID”
+* Commanders Act SDK’s version number: “Commanders Act SDK init with version: VERSION\_NUMBER”
+* Commanders Act site and source key: “tc\_s” = Site ID & "token" = Source Key
 * A list of the external variables that were provided by technical staff and that are visible in XCode, thanks to this function “TCLogLevel\_Debug”:\
   “Tag Commander Executing with appVars :\
   AppVars :\
   {#VARIABLE#: VALUE}”
-* Server-side hit containing variables sent to TagCommander servers (POST method). You will see internal variables first, followed by external variables):\
-  “sending: [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)\
+* Server-side hit containing variables sent to Commanders Act servers (POST method). You will see internal variables first, followed by external variables):\
+  “sending: \
+  [https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZ](https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZ)\
   With **POST** data: VARIABLE=VALUE\&VARIABLE=VALUE…”
 
 ![](../../../.gitbook/assets/xcode\_2\[1].png)
