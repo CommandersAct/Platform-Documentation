@@ -58,7 +58,7 @@ These elements must be provided:
 * The app’s CommandersAct tagging plan, which lets IT staff know which events to declare and on which screens or elements.
 * Technical documentation referring to each and every app. It must contain elements that are key to setting up the SDK and screenshots of setup examples.
 
-Click here to read the corresponding technical documentation. iOS: https://github.com/CommandersAct/iOSV5/ android: https://github.com/CommandersAct/androidv5/
+Click here to read the corresponding technical documentation. iOS: [https://github.com/CommandersAct/iOSV5/](https://github.com/CommandersAct/iOSV5/) android: [https://github.com/CommandersAct/androidv5/](https://github.com/CommandersAct/androidv5/)
 
 The site’s ID (Commanders Act account number) and that of the source key are necessary to set-up the SDK. These two elements can be retrieved in the interface.
 
@@ -112,9 +112,10 @@ Go to the Charles app and authorize it to connect to the phone.
 
 ![](../../../.gitbook/assets/charles\_2\[1].png)
 
-Browse the web with your phone and in Charles (on your computer) apply a “TagCommander” filter to see server-side hits displayed in the “Overview” section. They look like this: [http://serversideSITE\_ID.tagcommander.com/CONTAINER\_ID/](http://serversidesite\_id.tagcommander.com/XXX/)
+Browse the web with your phone and in Charles (on your computer) apply a “Commander” filter to see server-side hits displayed in the “Overview” section. They look like this: \
+[https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ](https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ)
 
-When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the TagCommander SDK.
+When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the Commanders Act SDK.
 
 ![](../../../.gitbook/assets/charles\_3\[1].png)
 
@@ -130,6 +131,6 @@ Go back to Charles > “SSL proxy settings” > “SSL Proxying” > check “En
 
 Then proceed to running tests the same way you do for http hits.
 
-## Step #5: publishing and updating containers
+## Step #5: publishing
 
 When the implementation is ok on your testing environment, you need to submit your app to app stores (Apple Store or Android Market) and wait for them to approve changes and include the new version in their catalogues.
