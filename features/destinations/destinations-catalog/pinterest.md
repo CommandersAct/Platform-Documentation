@@ -20,11 +20,7 @@ Ensure you have access to a [Pinterest Ads account](https://ads.pinterest.com) b
 
 ### Configuration
 
-| Settings                 | Description                                                                                                                                                                                                                                                                                                                                                     |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Advertiser ID`          | <p><em><strong><code>Required</code></strong></em></p><p>Pinterest Advertiser ID. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p>                                                                       |
-| `API Access Token`       | <p><em><strong><code>Required</code></strong></em><br>The Pinterest Conversions API needs an access token to authenticate your activities. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p>              |
-| `Send as a test-request` | If checked, the event will not be recorded in Pinterest Ads, but the API will still return the same response messages. Use this mode to verify your requests and if your events are constructed correctly. More details are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversion-management/#Testing%20your%20request). |
+<table><thead><tr><th width="307">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Advertiser ID</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Pinterest Advertiser ID. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</p></td></tr><tr><td><code>API Access Token</code></td><td><em><strong><code>Required</code></strong></em><br>The Pinterest Conversions API needs an access token to authenticate your activities. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/3rd-party-api-integrations/#Getting%20your%20Access%20Token%20and%20Advertiser%20ID">LINK</a>.</td></tr><tr><td><code>Send as a test-request</code></td><td>If checked, the event will not be recorded in Pinterest Ads, but the API will still return the same response messages. Use this mode to verify your requests and if your events are constructed correctly. More details are available following this <a href="https://developers.pinterest.com/docs/conversions/conversion-management/#Testing%20your%20request">LINK</a>.</td></tr></tbody></table>
 
 ## Quick reference
 
@@ -51,46 +47,7 @@ At least one of the following statement must be fulfilled:\
 The property<mark style="color:blue;">`event_id`</mark>is required and used for deduplication. More information are available following this [LINK](https://developers.pinterest.com/docs/conversions/conversions/) (See section "How deduplication works").&#x20;
 {% endhint %}
 
-| Commanders Act Properties          | Pinterest Properties                |
-| ---------------------------------- | ----------------------------------- |
-| `partners.pinterest.event_id`      | `event_id` **\[\*]**                |
-| `partners.pinterest.action_source` | `action_source` **\[1]**            |
-| `context.event_timestamp`          | `event_time`                        |
-| `context.page.url`                 | `event_source_url` **\[2]**         |
-| `partners.pinterest.opt_out`       | `opt_out` **\[3]**                  |
-| `context.app.namespace`            | `app_id`                            |
-| `context.app.name`                 | `app_name`                          |
-| `context.app.version`              | `app_version`                       |
-| `context.device.manufacturer`      | `device_brand`                      |
-| `context.device.network.carrier`   | `device_carrier`                    |
-| `context.device.model`             | `device_model`                      |
-| `context.device.type`              | `device_type`                       |
-| `context.device.os.version`        | `os_version`                        |
-| `context.device.network.wifi`      | `wifi` **\[3]**                     |
-| `context.device.lang`              | `language`                          |
-| `user.email_sha256`                | `user_data.em` **\[4]**             |
-| `user.phone`                       | `user_data.ph` **\[4]**             |
-| `user.gender`                      | `user_data.ge` **\[4]**             |
-| `user.birthdate`                   | `user_data.db` **\[4]**             |
-| `user.lastname`                    | `user_data.ln` **\[4]**             |
-| `user.firstname`                   | `user_data.fn` **\[4]**             |
-| `user.city`                        | `user_data.ct` **\[4]**             |
-| `user.state_short`                 | `user_data.st` **\[4]**             |
-| `user.zipcode`                     | `user_data.zp` **\[4]**             |
-| `user.country`                     | `user_data.country` **\[4]**        |
-| `user.id`                          | `user_data.external_id` **\[4]**    |
-| `context.device.advertising_id`    | `user_data.hashed_maids` **\[4]**   |
-| `context.device.ip`                | `user_data.client_ip_address`       |
-| `context.device.user_agent`        | `user_data.client_user_agent`       |
-| `id`                               | `custom_data.order_id`              |
-| `currency`                         | `custom_data.currency`              |
-| `value`                            | `custom_data.value`                 |
-| `items.X.id`                       | `custom_data.content_ids` **\[5]**  |
-| `items.X.product.price`            | `custom_data.contents.X.item_price` |
-| `items.X.quantity`                 | `custom_data.contents.X.quantity`   |
-| `items.length`                     | `custom_data.num_items`             |
-| `search_term`                      | `custom_data.search_string`         |
-| `partners.pinterest.opt_out_type`  | `custom_data.opt_out_type`          |
+<table><thead><tr><th width="382.6685580062746">Commanders Act Properties</th><th>Pinterest Properties</th></tr></thead><tbody><tr><td><code>partners.pinterest.event_id</code></td><td><code>event_id</code> <strong>[*]</strong></td></tr><tr><td><code>partners.pinterest.action_source</code></td><td><code>action_source</code> <strong>[1]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>event_time</code></td></tr><tr><td><code>context.page.url</code></td><td><code>event_source_url</code> <strong>[2]</strong></td></tr><tr><td><code>partners.pinterest.opt_out</code></td><td><code>opt_out</code> <strong>[3]</strong></td></tr><tr><td><code>context.app.namespace</code></td><td><code>app_id</code></td></tr><tr><td><code>context.app.name</code></td><td><code>app_name</code></td></tr><tr><td><code>context.app.version</code></td><td><code>app_version</code></td></tr><tr><td><code>context.device.manufacturer</code></td><td><code>device_brand</code></td></tr><tr><td><code>context.device.network.carrier</code></td><td><code>device_carrier</code></td></tr><tr><td><code>context.device.model</code></td><td><code>device_model</code></td></tr><tr><td><code>context.device.type</code></td><td><code>device_type</code></td></tr><tr><td><code>context.device.os.version</code></td><td><code>os_version</code></td></tr><tr><td><code>context.device.network.wifi</code></td><td><code>wifi</code> <strong>[3]</strong></td></tr><tr><td><code>context.device.lang</code></td><td><code>language</code></td></tr><tr><td><code>user.email_sha256</code></td><td><code>user_data.em</code> <strong>[4]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>user_data.ph</code> <strong>[4]</strong></td></tr><tr><td><code>user.gender</code></td><td><code>user_data.ge</code> <strong>[4]</strong></td></tr><tr><td><code>user.birthdate</code></td><td><code>user_data.db</code> <strong>[4]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>user_data.ln</code> <strong>[4]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>user_data.fn</code> <strong>[4]</strong></td></tr><tr><td><code>user.city</code></td><td><code>user_data.ct</code> <strong>[4]</strong></td></tr><tr><td><code>user.state_short</code></td><td><code>user_data.st</code> <strong>[4]</strong></td></tr><tr><td><code>user.zipcode</code></td><td><code>user_data.zp</code> <strong>[4]</strong></td></tr><tr><td><code>user.country</code></td><td><code>user_data.country</code> <strong>[4]</strong></td></tr><tr><td><code>user.id</code></td><td><code>user_data.external_id</code> <strong>[4]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><code>user_data.hashed_maids</code> <strong>[4]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>user_data.client_ip_address</code></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>user_data.client_user_agent</code></td></tr><tr><td><code>id</code></td><td><code>custom_data.order_id</code></td></tr><tr><td><code>currency</code></td><td><code>custom_data.currency</code></td></tr><tr><td><code>value</code></td><td><code>custom_data.value</code></td></tr><tr><td><code>items.X.id</code></td><td><code>custom_data.content_ids</code> <strong>[5]</strong></td></tr><tr><td><code>items.X.product.price</code></td><td><code>custom_data.contents.X.item_price</code></td></tr><tr><td><code>items.X.quantity</code></td><td><code>custom_data.contents.X.quantity</code></td></tr><tr><td><code>items.length</code></td><td><code>custom_data.num_items</code></td></tr><tr><td><code>search_term</code></td><td><code>custom_data.search_string</code></td></tr><tr><td><code>partners.pinterest.opt_out_type</code></td><td><code>custom_data.opt_out_type</code></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\

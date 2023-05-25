@@ -56,7 +56,7 @@ All those class names are valid on both Android and iOS.
 IOS and Android SDK add specific properties regarding the device and app. Those are in addition to event managed properties.
 
 {% hint style="info" %}
-If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/sources/sources-catalog/server/http-tracking-api/)), you should follow this specification to benefit from plug\&play on destinations\\
+If you track your mobile applications without using the sdk (with the [http tracking api](../../../features/sources/sources-catalog/http-tracking-api.md)), you should follow this specification to benefit from plug\&play on destinations\\
 {% endhint %}
 
 Here are an example of event playload :
@@ -148,32 +148,15 @@ Here are fields automatically added by the sdk.
 
 ### context
 
-| Field name       | Example value                        | Description                                                        | Platform |
-| ---------------- | ------------------------------------ | ------------------------------------------------------------------ | -------- |
-| event\_id        | 8f6e05dd-6df0-476c-9c56-5d277fac7cea | A random UUID generated at the serialization of the event instance | Both     |
-| event\_timestamp | 1673571636026                        | Timestamp of the event sending time.                               | Both     |
+<table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>event_id</td><td>8f6e05dd-6df0-476c-9c56-5d277fac7cea</td><td>A random UUID generated at the serialization of the event instance</td><td>Both</td></tr><tr><td>event_timestamp</td><td>1673571636026</td><td>Timestamp of the event sending time.</td><td>Both</td></tr></tbody></table>
 
 ### context -> app&#x20;
 
-| Field name          | Example value           | Description                      | Platform |
-| ------------------- | ----------------------- | -------------------------------- | -------- |
-| namespace           | com.tagcommander.TCDemo | The app name-space               | Both     |
-| name                | TCDemo                  | The app name                     | Both     |
-| build               | 1                       | The application build ID         | Both     |
-| version             | 1.1                     | The app version                  | Both     |
-| serverside\_version | 5.1.0                   | The server-side module’s version | Both     |
-| core\_version       | 5.1.0                   | The core module’s version        | Both     |
+<table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr></tbody></table>
 
 ### context -> device
 
-| Field name   | Example value                         | Description                                            | Platform |
-| ------------ | ------------------------------------- | ------------------------------------------------------ | -------- |
-| manufacturer | Apple                                 | The manufacturer of the hardware                       | Both     |
-| model        | iPhone7.3                             | The device model                                       | Both     |
-| name         | maguro                                | The device given name                                  | Both     |
-| sdk\_id      | C32272DB0-C21E-11E4-8DFC-AA07A5B093DB | A random UUID generated at the first launch of the SDK | Both     |
-| timezone     | Europe/Paris                          | The detailed timezone                                  | Both     |
-| type         | android                               | The os name                                            | Both     |
+<table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>manufacturer</td><td>Apple</td><td>The manufacturer of the hardware</td><td>Both</td></tr><tr><td>model</td><td>iPhone7.3</td><td>The device model</td><td>Both</td></tr><tr><td>name</td><td>maguro</td><td>The device given name</td><td>Both</td></tr><tr><td>sdk_id</td><td>C32272DB0-C21E-11E4-8DFC-AA07A5B093DB</td><td>A random UUID generated at the first launch of the SDK</td><td>Both</td></tr><tr><td>timezone</td><td>Europe/Paris</td><td>The detailed timezone</td><td>Both</td></tr><tr><td>type</td><td>android</td><td>The os name</td><td>Both</td></tr></tbody></table>
 
 The next fields require consent and are added when you call "addAdvertisingIDs" from the ServerSide class.
 

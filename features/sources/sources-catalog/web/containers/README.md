@@ -20,9 +20,9 @@ The _One Tag_ allows you to send all your events to the Commanders Act platform 
 
 ## Recommandations for setup
 
-In order to take advantage of all the benefits offered by a Web container, it is essential to [implement a datalayer](setup-guides-for-developers/datalayer-setup.md) on every page of your website.
+In order to take advantage of all the benefits offered by a Web container, it is essential to [implement a datalayer](../../containers/setup-guides-for-developers/datalayer-setup.md) on every page of your website.
 
-Moreover, the [implementation of events](setup-guides-for-developers/browser-side-events-setup.md) on your site will allow you to obtain a more powerful and better quality tracking
+Moreover, the [implementation of events](../../containers/setup-guides-for-developers/browser-side-events-setup.md) on your site will allow you to obtain a more powerful and better quality tracking
 
 {% hint style="info" %}
 Please note : the following section concerns standard html implementation.\

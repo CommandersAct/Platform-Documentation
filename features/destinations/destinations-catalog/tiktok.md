@@ -77,33 +77,7 @@ The [Tiktok Click ID](https://ads.tiktok.com/marketing\_api/docs?rid=4eezrhr6lg4
 [Advanced matching](https://ads.tiktok.com/marketing\_api/docs?id=1701890972946433) parameters are highly recommended to improve attribution rates: ensure<mark style="color:blue;">`properties.user.email`</mark>and/or<mark style="color:blue;">`properties.user.phone`</mark>is set. More details on the phone number format rules are available following this [LINK](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Context%20object%20parameters).
 {% endhint %}
 
-| Commanders Act Properties    | TikTok Properties                             |
-| ---------------------------- | --------------------------------------------- |
-| `context.event_timestamp`    | `timestamp` **\[1]**                          |
-| `id`                         | `event_id` **\[2]**                           |
-| `TikTok Pixel ID`            | `pixel_code`                                  |
-| `Test Event Code`            | `test_event_code`                             |
-| `context.page.url`           | `context.page.url`                            |
-| `context.page.referrer`      | `context.page.referrer`                       |
-| `context.device.ip`          | `context.ip`                                  |
-| `context.device.user_agent`  | `context.user_agent`                          |
-| `user.id`                    | `context.user.external_id` **\[3]**           |
-| `user.email`                 | `context.user.email` **\[3]**                 |
-| `user.phone`                 | `context.user.phone_number` **\[3]**          |
-| `items.X.content_type`       | `properties.contents.X.content_type` **\[4]** |
-| `items.X.id`                 | `properties.contents.X.content_id`            |
-| `items.X.product.price`      | `properties.contents.X.price`                 |
-| `items.X.quantity`           | `properties.contents.X.quantity`              |
-| `items.X.product.category_1` | `properties.contents.X.content_category`      |
-| `items.X.product.name`       | `properties.contents.X.content_name`          |
-| `content_type`               | `properties.content_type` **\[4]**            |
-| `currency`                   | `properties.currency`                         |
-| `event_name`                 | `properties.description`                      |
-| `search_term`                | `properties.query`                            |
-| `value`                      | `properties.value`                            |
-| `status`                     | `properties.status`                           |
-| `partners.tiktok.ttp`        | `context.user.ttp` **\[5]**                   |
-| `partners.tiktok.ttclid`     | `context.ad.callback` **\[6]**                |
+<table><thead><tr><th width="330.6685580062746">Commanders Act Properties</th><th>TikTok Properties</th></tr></thead><tbody><tr><td><code>context.event_timestamp</code></td><td><code>timestamp</code> <strong>[1]</strong></td></tr><tr><td><code>id</code></td><td><code>event_id</code> <strong>[2]</strong></td></tr><tr><td><code>TikTok Pixel ID</code></td><td><code>pixel_code</code></td></tr><tr><td><code>Test Event Code</code></td><td><code>test_event_code</code></td></tr><tr><td><code>context.page.url</code></td><td><code>context.page.url</code></td></tr><tr><td><code>context.page.referrer</code></td><td><code>context.page.referrer</code></td></tr><tr><td><code>context.device.ip</code></td><td><code>context.ip</code></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>context.user_agent</code></td></tr><tr><td><code>user.id</code></td><td><code>context.user.external_id</code> <strong>[3]</strong></td></tr><tr><td><code>user.email</code></td><td><code>context.user.email</code> <strong>[3]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>context.user.phone_number</code> <strong>[3]</strong></td></tr><tr><td><code>items.X.content_type</code></td><td><code>properties.contents.X.content_type</code> <strong>[4]</strong></td></tr><tr><td><code>items.X.id</code></td><td><code>properties.contents.X.content_id</code></td></tr><tr><td><code>items.X.product.price</code></td><td><code>properties.contents.X.price</code></td></tr><tr><td><code>items.X.quantity</code></td><td><code>properties.contents.X.quantity</code></td></tr><tr><td><code>items.X.product.category_1</code></td><td><code>properties.contents.X.content_category</code></td></tr><tr><td><code>items.X.product.name</code></td><td><code>properties.contents.X.content_name</code></td></tr><tr><td><code>content_type</code></td><td><code>properties.content_type</code> <strong>[4]</strong></td></tr><tr><td><code>currency</code></td><td><code>properties.currency</code></td></tr><tr><td><code>event_name</code></td><td><code>properties.description</code></td></tr><tr><td><code>search_term</code></td><td><code>properties.query</code></td></tr><tr><td><code>value</code></td><td><code>properties.value</code></td></tr><tr><td><code>status</code></td><td><code>properties.status</code></td></tr><tr><td><code>partners.tiktok.ttp</code></td><td><code>context.user.ttp</code> <strong>[5]</strong></td></tr><tr><td><code>partners.tiktok.ttclid</code></td><td><code>context.ad.callback</code> <strong>[6]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\

@@ -23,13 +23,5 @@ Select your audiences/user segments to be shared and synchronized with Equativ.
 
 Created segments using [Equativ Segment API](https://datasync-eu.smartadserverapis.com/swagger/v2/index.html#/Segments/post\_segmentproviders\_\_segmentProviderId\_\_segments) holds the following properties:
 
-| Property Name | Property Value                              |
-| ------------- | ------------------------------------------- |
-| `active`      | true                                        |
-| `description` | `context.segment_name`                      |
-| `name`        | `context.segment_name`                      |
-| `price`       | 0                                           |
-| `segmentId`   | ca\_`context.site_id`\_`context.segment_id` |
-| `selectable`  | true                                        |
-| `ttl`         | 2147483646                                  |
+<table><thead><tr><th width="188">Property Name</th><th width="466">Property Value</th></tr></thead><tbody><tr><td><code>active</code></td><td>true</td></tr><tr><td><code>description</code></td><td><code>context.segment_name</code></td></tr><tr><td><code>name</code></td><td><code>context.segment_name</code></td></tr><tr><td><code>price</code></td><td>0</td></tr><tr><td><code>segmentId</code></td><td>ca_<code>context.site_id</code>_<code>context.segment_id</code></td></tr><tr><td><code>selectable</code></td><td>true</td></tr><tr><td><code>ttl</code></td><td>2147483646</td></tr></tbody></table>
 

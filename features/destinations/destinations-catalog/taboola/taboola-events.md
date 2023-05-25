@@ -24,10 +24,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 ### Configuration
 
-| Settings                    | Description                                                                                                                                                                                                                                                                                                                                                        |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Taboola Click Id Property` | <p><em><strong><code>Required</code></strong></em></p><p>Your property name holding Taboola click identifier (E.g. "click_id", without quotes). More details are available by following this <a href="https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-">LINK</a> <strong>[1]</strong>.</p> |
-| `Mapping`                   | <p><em><strong><code>Required</code></strong></em><br>Map Taboola Ads events with your Commanders Act events by setting at least a <code>Taboola Event Name</code> and a <code>Commanders Act Event Name</code>. One entry is required.</p>                                                                                                                        |
+<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Taboola Click Id Property</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Your property name holding Taboola click identifier (E.g. "click_id", without quotes). More details are available by following this <a href="https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-">LINK</a> <strong>[1]</strong>.</p></td></tr><tr><td><code>Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Map Taboola Ads events with your Commanders Act events by setting at least a <code>Taboola Event Name</code> and a <code>Commanders Act Event Name</code>. One entry is required.</td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
@@ -45,13 +42,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 Most properties can be remapped using our "Smart Mapping" feature.
 {% endhint %}
 
-| Commanders Act Properties     | Taboola Properties |
-| ----------------------------- | ------------------ |
-| `Taboola Event Name` **\[1]** | `name`             |
-| `Taboola Click Id Property`   | `click-id`         |
-| `revenue`                     | `revenue`          |
-| `currency`                    | `currency`         |
-| `id`                          | `orderid`          |
+<table><thead><tr><th width="456">Commanders Act Properties</th><th>Taboola Properties</th></tr></thead><tbody><tr><td><code>Taboola Event Name</code> <strong>[1]</strong></td><td><code>name</code></td></tr><tr><td><code>Taboola Click Id Property</code></td><td><code>click-id</code></td></tr><tr><td><code>revenue</code></td><td><code>revenue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>id</code></td><td><code>orderid</code></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** See<mark style="color:blue;">`Mapping`</mark>in [Configuration](taboola-events.md#configuration).

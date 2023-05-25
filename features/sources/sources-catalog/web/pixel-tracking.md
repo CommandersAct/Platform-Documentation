@@ -1,9 +1,9 @@
-# Pixel Tracking
+# Pixel Tracking API
 
 Pixel Tracking, also known as 1x1 gifs, or clear gifs, lets you record data from any website (or application) **where JavaScript or POST requests are not allowed**, but where you can insert an image (aka GET hit)
 
 {% hint style="info" %}
-When a POST request is possible, please prefer the [http tracking API](../server/http-tracking-api/), more convenient to use.
+When a POST request is possible, please prefer the [http tracking API](../http-tracking-api.md), more convenient to use.
 {% endhint %}
 
 ## Basic Event Call

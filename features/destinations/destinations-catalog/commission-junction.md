@@ -35,21 +35,7 @@ Most properties can be remapped using our "Smart Mapping" feature.\
 Setting the [configuration](commission-junction.md#configuration) field <mark style="color:blue;">`CJ Event Cookie Name`</mark>is not mandatory if the "Smart Mapping" field<mark style="color:blue;">`Click Id (cjevent)`</mark>is set. The latter has precedence over the former.
 {% endhint %}
 
-| Commanders Act Properties                                                                           | CJ Properties                  |
-| --------------------------------------------------------------------------------------------------- | ------------------------------ |
-| `CJ Enterprise Id`                                                                                  | `CID`                          |
-| `CJ Action Id`                                                                                      | `TYPE`                         |
-| <p><code>Click Id (cjevent)</code> <strong>[1]</strong></p><p><code>CJ Event Cookie Name</code></p> | `CJEVENT` **\[2]**             |
-| `event_timestamp`                                                                                   | `eventTime` **\[3]**           |
-| `properties.id`                                                                                     | `OID`                          |
-| `properties.currency`                                                                               | `currency`                     |
-| `properties.revenue`                                                                                | `amount` **\[4]**              |
-| `properties.coupon`                                                                                 | `coupon`                       |
-| `properties.items.X.product.id`                                                                     | `ITEMY` **\[5]**               |
-| `properties.items.X.product.price`                                                                  | `AMTY` **\[5]**                |
-| `properties.items.X.quantity`                                                                       | `QTYY` **\[5]**                |
-| `properties.items.X.discount`                                                                       | `DCNTY` **\[5]**               |
-| `Commanders Act event property or static value`                                                     | `Event property name` **\[6]** |
+<table><thead><tr><th width="444">Commanders Act Properties</th><th>CJ Properties</th></tr></thead><tbody><tr><td><code>CJ Enterprise Id</code></td><td><code>CID</code></td></tr><tr><td><code>CJ Action Id</code></td><td><code>TYPE</code></td></tr><tr><td><p><code>Click Id (cjevent)</code> <strong>[1]</strong></p><p><code>CJ Event Cookie Name</code></p></td><td><code>CJEVENT</code> <strong>[2]</strong></td></tr><tr><td><code>event_timestamp</code></td><td><code>eventTime</code> <strong>[3]</strong></td></tr><tr><td><code>properties.id</code></td><td><code>OID</code></td></tr><tr><td><code>properties.currency</code></td><td><code>currency</code></td></tr><tr><td><code>properties.revenue</code></td><td><code>amount</code> <strong>[4]</strong></td></tr><tr><td><code>properties.coupon</code></td><td><code>coupon</code></td></tr><tr><td><code>properties.items.X.product.id</code></td><td><code>ITEMY</code> <strong>[5]</strong></td></tr><tr><td><code>properties.items.X.product.price</code></td><td><code>AMTY</code> <strong>[5]</strong></td></tr><tr><td><code>properties.items.X.quantity</code></td><td><code>QTYY</code> <strong>[5]</strong></td></tr><tr><td><code>properties.items.X.discount</code></td><td><code>DCNTY</code> <strong>[5]</strong></td></tr><tr><td><code>Commanders Act event property or static value</code></td><td><code>Event property name</code> <strong>[6]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** "Smart Mapping" field.\

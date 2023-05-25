@@ -52,18 +52,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 Most properties can be remapped using our "Smart Mapping" feature.
 {% endhint %}
 
-| Commanders Act Properties | TradeTracker Properties   |
-| ------------------------- | ------------------------- |
-| `Campaign Id`             | `cid` **\[\*]**           |
-| `Product Id`              | `pid` **\[\*]**           |
-| `Click Id`                | `data` **\[\*]**          |
-| `id`                      | `tid` **\[\*]**           |
-| `value`                   | `tam` **\[1]**            |
-| `currency`                | `currency`                |
-| `items.length`            | `qty`                     |
-| `coupon`                  | `vc`                      |
-| `Merchant Description`    | `descrMerchant` **\[2]**  |
-| `Affiliate Description`   | `descrAffiliate` **\[3]** |
+<table><thead><tr><th width="330.6685580062746">Commanders Act Properties</th><th>TradeTracker Properties</th></tr></thead><tbody><tr><td><code>Campaign Id</code></td><td><code>cid</code> <strong>[*]</strong></td></tr><tr><td><code>Product Id</code></td><td><code>pid</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>data</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>tid</code> <strong>[*]</strong></td></tr><tr><td><code>value</code></td><td><code>tam</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>items.length</code></td><td><code>qty</code></td></tr><tr><td><code>coupon</code></td><td><code>vc</code></td></tr><tr><td><code>Merchant Description</code></td><td><code>descrMerchant</code> <strong>[2]</strong></td></tr><tr><td><code>Affiliate Description</code></td><td><code>descrAffiliate</code> <strong>[3]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
