@@ -74,22 +74,16 @@ TagCommander’s SDK for iOS can be tested with Apple’s developing software �
 
 You will need to connect your iPhone to your Mac.
 
-Open XcOde, go to “Window” ), > “Devices” (2), then select ypur device in thecolumn to the left (3):
+Open XCode, go to “Window” ), > “Devices” (2), then select your device in thecolumn to the left (3):
 
 ![](../../../.gitbook/assets/xcode\_1\[1].png)
 
 These elements will be displayed when you analyze mobile logs:
 
-* Commanders Act SDK’s version number: “Commanders Act SDK init with version: VERSION\_NUMBER”
-* Commanders Act site and source key: “tc\_s” = Site ID & "token" = Source Key
-* A list of the external variables that were provided by technical staff and that are visible in XCode, thanks to this function “TCLogLevel\_Debug”:\
-  “Tag Commander Executing with appVars :\
-  AppVars :\
-  {#VARIABLE#: VALUE}”
-* Server-side hit containing variables sent to Commanders Act servers (POST method). You will see internal variables first, followed by external variables):\
-  “sending: \
-  [https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZ](https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZ)\
-  With **POST** data: VARIABLE=VALUE\&VARIABLE=VALUE…”
+* Commanders Act SDK’s version number \
+  example for consent module: “Commanders Act Privacy module init with version: 5.2.0”
+* Commanders Act site ID&#x20;
+* Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking/events-reference/)
 
 ![](../../../.gitbook/assets/xcode\_2\[1].png)
 
