@@ -48,7 +48,7 @@ The esiest way to create it is to click `(7)` the `plus` button:
 copy and paste the following query in `(8)` the input area:
 
 ```powerquery
-CREATE TABLE IF NOT EXISTS [PROJECT_ID].[DATASET_ID].[TABLE_ID] (rawDataCa STRING NOT NULL, createdAt TIMESTAMP NOT NULL) OPTIONS(description="CA raw event data stored to Google BigQuery")
+CREATE TABLE IF NOT EXISTS [PROJECT_ID].[DATASET_ID].[TABLE_ID] (rawDataCa STRING NOT NULL, createdAt TIMESTAMP NOT NULL) OPTIONS(description="CA raw event data stored in Google BigQuery")
 ```
 
 {% hint style="info" %}
