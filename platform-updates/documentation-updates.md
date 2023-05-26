@@ -55,8 +55,8 @@ Destination documentation (updates):
 
 Also added:[ analyses, suggestions and report's impact to our GA4 proxy](../features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md#3.-impact-analysis-and-open-suggestions) documentation
 
-{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok/tiktok.md)
 {% endcontent-ref %}
 
 ## 31/03/2023
@@ -210,8 +210,8 @@ Destination builder documentation update:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok/tiktok.md)
 {% endcontent-ref %}
 
 ## 21/10/2022
@@ -264,8 +264,8 @@ Destination documentation (updates):
 [at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok/tiktok.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/effinity.md" %}
@@ -340,8 +340,8 @@ Data quality documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok/tiktok.md)
 {% endcontent-ref %}
 
 ## 12/08/2022
@@ -398,8 +398,8 @@ Destination documentation (updates):
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
-[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok/tiktok.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):

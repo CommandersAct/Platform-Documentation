@@ -1,4 +1,4 @@
-# TikTok
+# TikTok Events API
 
 [TikTok ](https://www.tiktok.com)is a social platform short-form video hosting service.\
 The TikTok Events API is a server-side integration that allows you to share website and app visitor events directly with TikTok using their [Events API for Web](https://ads.tiktok.com/marketing\_api/docs?id=1739584809311234) and [Events API for App](https://ads.tiktok.com/marketing\_api/docs?id=1739584805049345) version 1.3.
@@ -9,7 +9,7 @@ The [Events API for App](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5s
 
 ## Key features
 
-The TikTok destination provides the following key features:
+The TikTok Events API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [TikTok's one](https://ads.tiktok.com/marketing\_api/docs?rid=959icq5stjr\&id=1701890977725441), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
@@ -82,7 +82,7 @@ The [Tiktok Click ID](https://ads.tiktok.com/marketing\_api/docs?rid=4eezrhr6lg4
 {% hint style="info" %}
 **\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
 **\[2]** This is required if you are sending overlapping events from both TikTok client-side pixel and this destination. More details on the deduplication are available following this [LINK](https://ads.tiktok.com/marketing\_api/docs?rid=p41a33fdhon\&id=1723170195197953).\
-**\[3]** Field automatically hashed with SHA256 if not passed using this algorithm.\
+**\[3]** Field automatically hashed with SHA256 if not passed in clear.\
 **\[4]** This is either[`product`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)or[`product_group`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters)depending on how you have configured your data feed when you set up your product catalog. Default value:[`product`](https://ads.tiktok.com/gateway/docs/index?identify\_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48\&language=ENGLISH\&doc\_id=1727541103358977#item-link-Properties%20object%20parameters).\
 **\[5]**<mark style="color:blue;">`partners.tiktok.ttp`</mark>has priority over cookie <mark style="color:blue;">**\_ttp**</mark>.\
 **\[6]**<mark style="color:blue;">`partners.tiktok.ttclid`</mark>has priority over cookie <mark style="color:blue;">**ttclid**</mark>. and<mark style="color:blue;">`page.location.href`</mark>parsing.
