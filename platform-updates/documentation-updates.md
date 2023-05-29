@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 26/05/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok-offiline-events.md" %}
+[tiktok-offiline-events.md](../features/destinations/destinations-catalog/tiktok/tiktok-offiline-events.md)
+{% endcontent-ref %}
+
 ## 23/05/2023
 
 * Revamping the [How works the platform](../getting-started/concepts/) page and [Integrating your data](../getting-started/integrating-your-data.md) page
