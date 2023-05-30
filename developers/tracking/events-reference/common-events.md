@@ -29,7 +29,7 @@ cact('trigger','page_view', {
 ```
 {% endtab %}
 
-{% tab title="Android" %}
+{% tab title="Kotlin (Android)" %}
 ```kotlin
 val event = TCPageViewEvent("product_list")
 event.pageName = "Best sellers"
@@ -37,7 +37,13 @@ serverside.execute(event)
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Java  (Android)" %}
+```java
+// Some code
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
 ```objectivec
 TCPageViewEvent *event = [[TCPageViewEvent alloc] init];
 event.pageType = @"product_list";
@@ -49,7 +55,7 @@ TCPageViewEvent *event = [[TCPageViewEvent alloc] initWithType: @"type"];
 ```
 {% endtab %}
 
-{% tab title="Swift" %}
+{% tab title="Swift (iOS)" %}
 ```swift
 let event = TCPageViewEvent(type: "product list")
 	event?.pageName = "Best sellers"
@@ -57,7 +63,7 @@ let event = TCPageViewEvent(type: "product list")
 ```
 {% endtab %}
 
-{% tab title="Flutter" %}
+{% tab title="Dart (Flutter)" %}
 ```dart
 var event = TCPageViewEvent();
     event.pageName = "event_page_name";
@@ -139,7 +145,7 @@ cact('trigger', 'login', {
 ```
 {% endtab %}
 
-{% tab title="Android" %}
+{% tab title="Kotlin (Android)" %}
 ```kotlin
 val event = TCLoginEvent()
 event.method = "LinkedIn"
@@ -147,7 +153,13 @@ serverside.execute(event)
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Java  (Android)" %}
+```
+// Some code
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
 ```objectivec
 TCLoginEvent *event = [[TCLoginEvent alloc] init];
 event.method = @"LinkedIn";
@@ -155,7 +167,7 @@ event.method = @"LinkedIn";
 ```
 {% endtab %}
 
-{% tab title="Swift" %}
+{% tab title="Swift (iOS)" %}
 ```swift
 let event = TCLoginEvent()
 	event.method = "linkedin"
@@ -163,7 +175,7 @@ let event = TCLoginEvent()
 ```
 {% endtab %}
 
-{% tab title="Flutter" %}
+{% tab title="Dart (Flutter)" %}
 ```dart
 var event = TCLoginEvent();
     event.method = "LinkedIn";
@@ -244,14 +256,20 @@ cact('trigger','search', {
 ```
 {% endtab %}
 
-{% tab title="Android" %}
+{% tab title="Kotlin (Android)" %}
 ```kotlin
 val event = TCSearchEvent("t-shirts");
 serverside.execute(event)
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Java  (Android)" %}
+```
+// Some code
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
 ```objectivec
 TCSearchEvent *event = [[TCSearchEvent alloc] init];
 event.searchTerm = @"t-shirts";
@@ -259,13 +277,13 @@ event.searchTerm = @"t-shirts";
 ```
 {% endtab %}
 
-{% tab title="Swift" %}
+{% tab title="Swift (iOS)" %}
 <pre class="language-swift"><code class="lang-swift">let event = TCSearchEvent(searchTerm: "t-shirts")
 <strong>    serverside.execute(event)
 </strong></code></pre>
 {% endtab %}
 
-{% tab title="Flutter" %}
+{% tab title="Dart (Flutter)" %}
 ```dart
 var event = TCSearchEvent();
     event.searchTerm = "t-shirts";
@@ -347,7 +365,7 @@ cact('trigger','select_content', {
 ```
 {% endtab %}
 
-{% tab title="Android" %}
+{% tab title="Kotlin (Android)" %}
 ```kotlin
 val event = TCSelectContentEvent();
 event.contentType = "product"
@@ -355,7 +373,13 @@ serverside.execute(event)
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Java  (Android)" %}
+```
+// Some code
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
 ```objectivec
 TCSelectContentEvent *event = [[TCSelectContentEvent alloc] init];
 event.contentType = @"product";
@@ -364,7 +388,7 @@ event.itemID = @"I_12345";
 ```
 {% endtab %}
 
-{% tab title="Swift" %}
+{% tab title="Swift (iOS)" %}
 ```swift
 let event = TCSelectContentEvent()
 	event.contentType = "product"
@@ -373,7 +397,7 @@ let event = TCSelectContentEvent()
 ```
 {% endtab %}
 
-{% tab title="Flutter" %}
+{% tab title="Dart (Flutter)" %}
 ```dart
 var event = TCSelectContentEvent();
     event.contentType = "product";
@@ -455,11 +479,17 @@ cact('trigger','sign_up', {
 ```
 {% endtab %}
 
-{% tab title="Android" %}
+{% tab title="Kotlin (Android)" %}
 ```kotlin
 val event = TCSignUpEvent();
 event.method = "email"
 serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="Java  (Android)" %}
+```
+// Some code
 ```
 {% endtab %}
 
