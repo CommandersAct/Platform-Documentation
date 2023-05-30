@@ -11,7 +11,7 @@ description: >-
 *   **Event delivery improvement for Audience based destinations**\
     Event Delivery errors messages for Audience connectors (API connectors such as Facebook Custom Audience, Google Customer Match...)  now provide more detailed information about errors encountered.
 
-    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (2).png" alt=""><figcaption></figcaption></figure>
 *   **Sources: update on GTM Bridge**\
     A Commanders Act source key is now required in the bridge configuration. As, in the future, events without a source key will be discarded, it is important that you apply the update.\
     If it is not already done, please update it as soon as you can, following the instructions available in our [documentation](https://doc.commandersact.com/features/sources/sources-catalog/gtm).\
@@ -61,7 +61,7 @@ description: >-
     **TikTok:** “Smart Mapping” support\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (2).png" alt="" width="227"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (2) (1).png" alt="" width="227"><figcaption></figcaption></figure>
 
     **Partnerize:** field encoding fixes\
 
@@ -97,14 +97,14 @@ description: >-
     **Data Activation Legacy:** Only for Data Activation customers. Gives you the possibility to map the format of the events to the format of the data activation (Data Commander variables). To go deeper, you can consult our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/data-activation-legacy) \
 
 
-    <figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
 
     **GA4 Proxy Mode:** The proxy mode option allows you to anonymize data before to send it to Google.\
     \*We also added analyses, suggestions and report's impact in our [online documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode#3.-impact-analysis-and-open-suggestions)\
     \
 
 
-    <figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (107) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations updates**\
     \
     **GA4:** Send all properties in one click to Google\
@@ -128,7 +128,7 @@ description: >-
 * **Formula component enhancement (Data Cleansing, Event Enrichment, ...)**\
   The field now resizes automatically according to the size of the formula, to facilitate the reading and writing of complex formulas. Users can also resize the field themselves if needed
 
-<figure><img src="../.gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **New User Rights**\
   3 new user rights have been added in Rights management interface to manage the _Destination Builder_ feature
@@ -166,12 +166,12 @@ description: >-
 
 
 
-    <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1) (4).png" alt=""><figcaption></figcaption></figure>
 * **New destinations releases**\
   \
   **Partenerize** \
   Note : this destination allows a dynamic field\
-  <img src="../.gitbook/assets/image (7) (3).png" alt="" data-size="original">\
+  <img src="../.gitbook/assets/image (7) (3) (1).png" alt="" data-size="original">\
   \
   **SmartAd Server**\
   ![](<../.gitbook/assets/image (12) (3).png>)\
@@ -199,7 +199,7 @@ description: >-
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (8).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (3).png>)![](<../.gitbook/assets/image (21).png>)
 
 \
 More information here:
@@ -271,7 +271,7 @@ More information here:
 * **Destinations:**
   *   Easier debug in Event delivery and Event inspector, now both shows information when a javascript error raise in the destination code. Usefull when you build your own destination using the [Destination builder's Javascript Sandbox](../features/destinations/destination-builder/):
 
-      <figure><img src="../.gitbook/assets/image (105) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
   * **Google Universal Analytics** (GA3): beta
   * **Adobe Analytics**: closed beta
   * **Audience based destinations :** All "closed beta" or "closed alpha" destinations are now open to everybody.\
@@ -284,10 +284,10 @@ More information here:
 
 * Data Management – New feature:​
   * **Data Cleansing** no-code : **Rename event** public opening.\
-    ​![](<../.gitbook/assets/image (1) (3).png>)
+    ​![](<../.gitbook/assets/image (1) (3) (1).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (2) (2) (2).png>)
+    ![](<../.gitbook/assets/image (2) (2).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​

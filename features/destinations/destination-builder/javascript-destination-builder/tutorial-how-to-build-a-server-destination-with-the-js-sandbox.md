@@ -20,7 +20,7 @@ In this tutorial, you will create a destination that sends event data to Slack u
 
 To begin, create the destination template by navigating to the **Destination** section in the menu and clicking **New** in the **Destination Builder** section. Then, give your destination a name, a logo, a category and a description.
 
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, go to the **Fields** section of the editor to add settings options for your destination. You have three options for building your destination:
 

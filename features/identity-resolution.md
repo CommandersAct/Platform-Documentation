@@ -71,4 +71,4 @@ For Safari / iOS, it is different because it can't have different tcid. Due to c
 
 However, as soon as it can detect that a user is unique (with a login for example), it can create a separate user.
 
-![](<../.gitbook/assets/image (13) (2).png>)
+![](<../.gitbook/assets/image (13) (2) (1).png>)

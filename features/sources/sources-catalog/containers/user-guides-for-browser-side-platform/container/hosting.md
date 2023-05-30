@@ -23,7 +23,7 @@ Simply fill in all fields of the form:\
 **User:** Login to access of your FTP\
 **Password/Key:** if there's a password or a key associated to your FTP, enter this information here&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (4) (2).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### CDN connector configuration
 
@@ -31,13 +31,13 @@ It's almost identical to the FTP connector, there is only 2 more steps:\
 Select a CDN vendor (EdgeCast or Akamai) \
 Setup the "Purge" part (use the Account ID, Token and Purge URL provided by your CDN vendor)
 
-<figure><img src="../../../../../../.gitbook/assets/image (9) (5).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (9).png" alt="" width="509"><figcaption></figcaption></figure>
 
 ### URL connector configuration
 
 Just give an explicit name, enter the correct URL and select any client-side container(s) you want to associate with the connector
 
-<figure><img src="../../../../../../.gitbook/assets/image (14) (4).png" alt="" width="539"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (14).png" alt="" width="539"><figcaption></figcaption></figure>
 
 ### Amazon S3 connector configuration
 
@@ -59,7 +59,7 @@ fill in all fields of the form:\
 **Client X509 Cert URL:** Enter the client custom X509 URL for Google Cloud Services. Can be found in Google Cloud JSON Key file\
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The Private Key field must include the comments 'BEGIN PRIVATE KEY' and 'END PRIVATE KEY'\
@@ -90,13 +90,13 @@ Simply follow the step by step guide provided by Bing:
 
 Simply follow the step by step guide provided by Facebook:
 
-<figure><img src="../../../../../../.gitbook/assets/image (15) (2) (1).png" alt="" width="392"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (15) (2).png" alt="" width="392"><figcaption></figcaption></figure>
 
 ### Criteo connector configuration
 
 Simply follow the step by step guide provided by Criteo:
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (4).png" alt="" width="326"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5).png" alt="" width="326"><figcaption></figcaption></figure>
 
 ### Google Ads connector configuration
 
@@ -108,13 +108,13 @@ Simply follow the step by step guide provided by Google Ads:
 
 Simply follow the step by step guide provided by Snapchat:
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1).png" alt="" width="343"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6).png" alt="" width="343"><figcaption></figcaption></figure>
 
 ### Adobe Anaytics connector configuration
 
 Simply follow the step by step guide provided by Adobe:
 
-<figure><img src="../../../../../../.gitbook/assets/image (12) (6).png" alt="" width="415"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (12).png" alt="" width="415"><figcaption></figcaption></figure>
 
 ### Equativ connector configuration
 
@@ -127,7 +127,7 @@ Simply follow the step by step guide provided by Equativ:
 Once your connector configuration is done, you can click on the Test button to check that it's working properly. \
 If it is correct, then you will see the following message:
 
-<figure><img src="../../../../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 

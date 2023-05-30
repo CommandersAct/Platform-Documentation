@@ -10,7 +10,7 @@ The “Static JS codes” allow you to perform different types of actions, notab
 
 E.g. If your external variable “page\_name” contains values with special characters, you can delete or replace them in the Static JavaScript code (e.g. change “&” into “and” as follows:
 
-<figure><img src="../../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 Thus, you can continue to use your external variable “page\_name” in tags by removing its special characters via the Static JS code.
 
@@ -26,7 +26,7 @@ The “Static JS codes” appear in two places in the left menu of the “EDIT�
 
 –  The second Static JS code is placed after the declaration of the internal variables (you can thus reuse previously declared internal variables in this position):
 
-<figure><img src="../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 The same user interface is used for the Static JavaScript code regardless of whether it executes before or after the internal variables. Just enter the JavaScript code you desire and click “SAVE”.
 

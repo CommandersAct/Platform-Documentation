@@ -86,7 +86,7 @@ In case of multiple values : enter all the values in the field separated by a co
 
 Example with multiple values: In order to call a tag when your “consent\_status” cookie equals “exempt” or "optin", you must select the “If Cookie Equals” rule and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## URL
 

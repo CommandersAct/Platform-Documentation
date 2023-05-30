@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 30/05/2023
+
+* [Codes examples of events](https://doc.commandersact.com/developers/tracking/events-reference) has been improved, the following languages has been added:\
+  Swift, Objective-C, Kotlin, Dart (Flutter), json
+* Improvements for connectors documentation
+
+
+
 ## 26/05/2023
 
 Destination documentation:
