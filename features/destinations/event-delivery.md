@@ -37,7 +37,7 @@ The small trend graph represents the global evolution of delivered and not deliv
   * Filter related to consents: corresponds to the User Consent Category entered the filter section
   * Filter related to conditions: corresponds to the filter defined in the filter section
 
-<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-23 à 11.40.50 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-30 à 11.55.01.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Delivery trends <a href="#3-error-details" id="3-error-details"></a>
 
