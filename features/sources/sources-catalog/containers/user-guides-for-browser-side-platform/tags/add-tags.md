@@ -13,7 +13,7 @@ You can search for a previously added tag by solution name using the “All vend
 Click the blue “**ADD TAG(S)**” button to add a new tag to your tag list:[\
 ](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/ADD\_T\_BUTTON.png)
 
-<figure><img src="../../../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The Commanders Act tag library window will appear displaying the pre-configured tags in the interface. The tag library is composed of the following elements:[\
 ](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/LIBRARY.png)

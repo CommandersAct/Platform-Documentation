@@ -14,12 +14,106 @@ The `page_view` call lets you record whenever a user sees a page of your website
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','page_view', {
   page_type: 'product_list',
-  page_name: 'Best sellers'
+  page_name: 'Best sellers',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCPageViewEvent("product_list")
+event.pageName = "Best sellers"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCPageViewEvent *event = [[TCPageViewEvent alloc] init];
+event.pageType = @"product_list";
+event.pageName = @"Best sellers";
+[TCS execute: event];
+
+//or you could also use it in a constructor, as follow:
+TCPageViewEvent *event = [[TCPageViewEvent alloc] initWithType: @"type"];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCPageViewEvent(type: "product list")
+	event?.pageName = "Best sellers"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCPageViewEvent();
+    event.pageName = "event_page_name";
+    event.pageType = "event_page_type";
+    serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Page_view",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"page_view\",\r\n    \"properties\": {\r\n        \"page_type\": \"homepage\",\r\n        \"page_name\": \"welcome\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## login <a href="#login" id="login"></a>
 
@@ -31,13 +125,100 @@ Send this event to signify that a user has logged in.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger', 'login', {
-  method: 'LinkedIn'
+  method: 'LinkedIn',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
 
-## &#x20;<a href="#page_view" id="page_view"></a>
+{% tab title="Android" %}
+```kotlin
+val event = TCLoginEvent()
+event.method = "LinkedIn"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCLoginEvent *event = [[TCLoginEvent alloc] init];
+event.method = @"LinkedIn";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCLoginEvent()
+	event.method = "linkedin"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCLoginEvent();
+    event.method = "LinkedIn";
+    serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Login",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"login\",\r\n    \"properties\": {\r\n        \"method\": \"LinkedIn\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## search
 
@@ -47,13 +228,99 @@ Use this event to contextualize search operations. This event can help you ident
 
 <table><thead><tr><th width="169">Name</th><th width="102">Type</th><th width="82">Required</th><th width="148">Example value</th><th>Description</th></tr></thead><tbody><tr><td><code>search_term</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>t-shirts</td><td>The term that was searched for.</td></tr><tr><td><code>user</code></td><td><a href="common-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr></tbody></table>
 
-#### Example <a href="#example_30" id="example_30"></a>
+**Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','search', {
-  search_term: 't-shirts'
+  search_term: 't-shirts',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCSearchEvent("t-shirts");
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCSearchEvent *event = [[TCSearchEvent alloc] init];
+event.searchTerm = @"t-shirts";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+<pre class="language-swift"><code class="lang-swift">let event = TCSearchEvent(searchTerm: "t-shirts")
+<strong>    serverside.execute(event)
+</strong></code></pre>
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCSearchEvent();
+    event.searchTerm = "t-shirts";
+    serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Search",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"search\",\r\n    \"properties\": {\r\n        \"search_term\": \"t-shirts\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## select\_content
 
@@ -63,14 +330,106 @@ This event signifies that a user has selected some content of a certain type. Th
 
 <table><thead><tr><th width="175">Name</th><th width="100">Type</th><th width="76">Required</th><th width="159">Example value</th><th>Description</th></tr></thead><tbody><tr><td><code>content_type</code></td><td><code>string</code></td><td>No</td><td>product</td><td>The type of selected content.</td></tr><tr><td><code>item_id</code></td><td><code>string</code></td><td>No</td><td>I_12345</td><td>An identifier for the item that was selected.</td></tr><tr><td><code>user</code></td><td><a href="common-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr></tbody></table>
 
-#### Example <a href="#example_32" id="example_32"></a>
+**Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','select_content', {
   content_type: 'product',
-  item_id: 'I_12345'
+  item_id: 'I_12345',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCSelectContentEvent();
+event.contentType = "product"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCSelectContentEvent *event = [[TCSelectContentEvent alloc] init];
+event.contentType = @"product";
+event.itemID = @"I_12345";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCSelectContentEvent()
+	event.contentType = "product"
+	event.itemID = "I_12345"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCSelectContentEvent();
+    event.contentType = "product";
+    event.itemId = "I_12345";
+    serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Select_content",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"select_content\",\r\n    \"properties\": {\r\n        \"content_type\": \"product\",\r\n        \"item_id\": \"I_12345\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## sign\_up <a href="#sign_up" id="sign_up"></a>
 
@@ -82,11 +441,100 @@ This event indicates that a user has signed up for an account.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','sign_up', {
-  method: 'email'
+  method: 'email',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCSignUpEvent();
+event.method = "email"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCSignUpEvent *event = [[TCSignUpEvent alloc] init];
+event.method = @"email";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCSignUpEvent()
+	event.method = "email"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCSignUpEvent();
+    event.method = "email";
+    serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Sign_up",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"sign_up\",\r\n    \"properties\": {\r\n        \"method\": \"email\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## - COMMON SCHEMAS -
 

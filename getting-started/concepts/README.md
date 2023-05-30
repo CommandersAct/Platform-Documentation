@@ -2,7 +2,7 @@
 
 Commanders Act is a cookieless platform that allows you to **collect, check, normalize, enrich and send** in real time your first-party customer data.
 
-<figure><img src="../../.gitbook/assets/image (12) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
 Basically, the platform libraries/API ([Source](./#source)) collects user actions ([Event](./#event)) on your website/app/etc.\
 These events are sent to the platform servers and are then [checked](../../features/data-quality/), [fixed](../../features/data-quality/data-cleansing/), [normalized](../../features/data-quality/normalized-datalayer.md), [enriched](../../features/enrichments/), and translated in each tool ([Destination](./#destinations)) format, so that they can be sent to your chosen destinations.

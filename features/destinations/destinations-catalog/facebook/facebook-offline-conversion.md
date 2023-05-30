@@ -15,7 +15,7 @@ On Facebook Business Manager, [https://business.facebook.com/](https://business.
 
 Then select offline:
 
-![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (7) (1) (1) (1) (1).png>)
 
 Finish the data source configuration and retrieve the Event set ID:
 

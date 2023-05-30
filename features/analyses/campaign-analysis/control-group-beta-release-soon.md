@@ -27,7 +27,7 @@ As soon as you start the stream, the control group will be launched also, and re
 
 When a stream with a control group is activated, on the stream list page an icon will appear on the right of the stream’s name.
 
-![](<../../../.gitbook/assets/image (4) (2) (2).png>)
+![](<../../../.gitbook/assets/image (4) (2) (2) (1).png>)
 
 Click on this icon to access to the analytics part.
 
@@ -134,7 +134,7 @@ You can visualize directly here the comparison between the two populations (audi
 
 ### **Metrics**
 
-![](<../../../.gitbook/assets/image (7) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (7) (1) (1) (2).png>)
 
 You have here a summary of all metrics needed to compare the populations, such as the number of users and number of conversions (needed to calculate the conversion rate for example). The turnover is based on total\_final\_conversion\_amount, meaning it could evolve depending on products returns, for example.
 

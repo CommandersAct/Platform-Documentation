@@ -10,14 +10,111 @@ This event signifies a user has submitted their payment information
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','add_payment_info', {
   payment_method: 'card',
   revenue: 16.00,
-  value: 22.53,
-  currency: 'EUR'
+  currency: 'EUR',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCAddPaymentInfoEvent("card")
+event.revenue = 16.00f
+event.currency = "EUR"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCAddPaymentInfoEvent *event = [[TCAddPaymentInfoEvent alloc] initWithId: @"ID";
+event.revenue = [[NSDecimalNumber alloc] initWithFloat: 16.00f];
+event.currency = @"EUR";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCAddPaymentInfoEvent(payementMethod: "card")
+	event?.revenue = 16.00
+	event?.currency = "EUR"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCAddPaymentInfoEvent();
+    event.paymentMethod = "card";
+    event.revenue = 16.00;
+    event.currency = "EUR";
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item":[
+      {
+         "name":"Add_payment_info",
+         "request":{
+            "method":"POST",
+            "header":[
+               
+            ],
+            "body":{
+               "mode":"raw",
+               "raw":"{\r\n    \"event\": \"add_payment_info\",\r\n    \"properties\": {\r\n        \"payment_method\": \"card\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
+               "options":{
+                  "raw":{
+                     "language":"json"
+                  }
+               }
+            },
+            "url":{
+               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol":"https",
+               "host":[
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path":[
+                  "events"
+               ],
+               "query":[
+                  {
+                     "key":"tc_s",
+                     "value":"#your_site_id#"
+                  },
+                  {
+                     "key":"token",
+                     "value":"#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response":[
+            
+         ]
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## add\_shipping\_info
 
@@ -26,6 +123,175 @@ This event signifies a user has submitted their shipping information.
 #### Parameters <a href="#parameters_2" id="parameters_2"></a>
 
 <table><thead><tr><th width="138">Name</th><th width="99">Type</th><th width="74">Required</th><th width="159">Example value</th><th width="281">Description</th></tr></thead><tbody><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td>Yes</td><td>EUR</td><td><p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> or <code>value</code>parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p></td></tr><tr><td><code>value</code></td><td><code>number</code></td><td>Yes</td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>user</code></td><td><a href="e-commerce-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>shipping_tier</code></td><td><code>string</code></td><td>No</td><td>Ground</td><td>The shipping tier (e.g. <code>Next-day</code>, Air`) selected for delivery of the purchased item.</td></tr><tr><td><code>items</code></td><td><a href="e-commerce-events.md#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
+
+**Example**
+
+{% tabs %}
+{% tab title="Javascript" %}
+```javascript
+cact('trigger','add_shipping_info', {
+  value: 8.00,
+  currency: 'EUR',
+  coupon: 'promo',
+  shipping_tier: 'ups',
+  items: [{
+    id: 'SKU_12345',
+    quantity: 1,
+    variant: 'red',
+    coupon: 'CHRISTMAS',
+    discount: 1.99,
+    product:{
+      id: '12345',
+      name: 'Trex tshirt',
+      category_1: 'clothes',
+      category_2: 't-shirts',
+      category_3: 'boy',
+      brand: 'Lacoste',
+      price: 9.99
+    }
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
+});
+```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCAddShippingInfoEvent(items,  112.5f, "EUR")
+    event.coupon = "promo"
+    event.shippingTier = "ups"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1"
+                                  withPrice: [[NSDecimalNumber alloc] initWithString: @"1.5"]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2" 
+                                  withName: @"pName2" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCAddShippingInfoEvent *event = [[TCAddShippingInfoEvent alloc] initWithItems: items
+withValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"];
+
+event.coupon = @"promo";
+event.shippingTier = @"ups";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCAddShippingInfoEvent(items: [item_1, item_2], withValue: 1, withCurrency: "EUR")
+	event?.addAdditionalProperty("additionalKey", withBoolValue: true)
+	event?.coupon = "promo"
+	event?.shippingTier = "ups"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+<pre class="language-dart"><code class="lang-dart">TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 150;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+TCProduct tc_product_2 = TCProduct();
+		tc_product_2.ID = "product_2_ID";
+		tc_product_2.name = "product_2_name";
+		tc_product_2.price = 150;
+		tc_product_2.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_2 = TCItem();
+		tc_item_2.ID = "item_2_id";
+		tc_item_2.quantity = 2;
+		tc_item_2.product = tc_product;
+		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
+<strong>
+</strong><strong>var event = TCAddShippingInfoEvent();
+</strong>    event.coupon = "promo";
+    event.shippingTier = "ups";
+    event.currency = "EUR";
+    event.items = [tc_item_1, tc_item_2];
+serverside.execute(event);
+</code></pre>
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item":[
+      {
+         "name":"Add_shipping_info",
+         "request":{
+            "method":"POST",
+            "header":[
+               
+            ],
+            "body":{
+               "mode":"raw",
+               "raw":"{\r\n    \"event\": \"add_shipping_info\",\r\n    \"properties\": {\r\n        \"shipping_tier\": \"Ground\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
+               "options":{
+                  "raw":{
+                     "language":"json"
+                  }
+               }
+            },
+            "url":{
+               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol":"https",
+               "host":[
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path":[
+                  "events"
+               ],
+               "query":[
+                  {
+                     "key":"tc_s",
+                     "value":"#your_site_id#"
+                  },
+                  {
+                     "key":"token",
+                     "value":"#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response":[
+            
+         ]
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## add\_to\_cart
 
@@ -37,6 +303,8 @@ This event signifies that an item was added to a cart for purchase.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','add_to_cart', {
   value: 8.00,
@@ -56,9 +324,133 @@ cact('trigger','add_to_cart', {
       brand: 'Lacoste',
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCAddToCartEvent(22.53f,  "EUR", items)
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2"
+                                  withName: @"pName2"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCAddToCartEvent *event = [[TCAddToCartEvent alloc] initWithValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"
+withItems: items];
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCAddToCartEvent(value: 1, withCurrency: "EUR", withItems: [item_1, item_2])
+	event?.addAdditionalProperty("additionalKey", withBoolValue: true)
+	event?.currency = "EUR"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 12.5;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+
+var event = TCAddToCartEvent();
+    event.currency = "EUR";
+    event.items = [tc_item_1];
+    event.value = 12.5;
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item":[
+      {
+         "name":"Add_to_cart",
+         "request":{
+            "method":"POST",
+            "header":[
+               
+            ],
+            "body":{
+               "mode":"raw",
+               "raw":"{\r\n    \"event\": \"add_to_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options":{
+                  "raw":{
+                     "language":"json"
+                  }
+               }
+            },
+            "url":{
+               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol":"https",
+               "host":[
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path":[
+                  "events"
+               ],
+               "query":[
+                  {
+                     "key":"tc_s",
+                     "value":"#your_site_id#"
+                  },
+                  {
+                     "key":"token",
+                     "value":"#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response":[
+            
+         ]
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## add\_to\_wishlist
 
@@ -70,6 +462,8 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','add_to_wishlist', {
   value: 8.00,
@@ -89,9 +483,138 @@ cact('trigger','add_to_wishlist', {
       brand: 'Lacoste',
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCAddToWishlistEvent(items)
+    event.value = 20.00f
+    event.currency = "EUR"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+    withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+    withName: @"pName1"
+    withPrice: [[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+    withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+    withProduct: [[TCProduct alloc] initWithProductId: @"pID2"
+    withName: @"pName2"
+    withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+    withQuantity: 2]];
+
+TCAddToWishlistEvent *event = [[TCAddToWishlistEvent alloc] initWithValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"
+withItems: items];
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCAddToWishlistEvent(items: [item_1, item_2])
+	event?.currency = "EUR"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 150;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+
+var event = TCAddToWishlistEvent();
+    event.addAdditionalPropertyWithIntValue("key_additional_1", 12);
+    event.addAdditionalPropertyWithListValue("key_additional_2", [12,12,12]);
+    event.currency = "EUR";
+    event.items = [tc_item_1];
+    event.value = 12.5;
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item":[
+      {
+         "name":"Add_to_wishlist",
+         "request":{
+            "method":"POST",
+            "header":[
+               
+            ],
+            "body":{
+               "mode":"raw",
+               "raw":"{\r\n    \"event\": \"add_to_wishlist\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options":{
+                  "raw":{
+                     "language":"json"
+                  }
+               }
+            },
+            "url":{
+               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol":"https",
+               "host":[
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path":[
+                  "events"
+               ],
+               "query":[
+                  {
+                     "key":"tc_s",
+                     "value":"#your_site_id#"
+                  },
+                  {
+                     "key":"token",
+                     "value":"#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response":[
+            
+         ]
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 ## begin\_checkout <a href="#begin_checkout" id="begin_checkout"></a>
 
@@ -99,10 +622,12 @@ This event signifies that a user has begun a checkout.
 
 **Parameters (required and recommended)**
 
-<table><thead><tr><th width="138">Name</th><th width="98">Type</th><th width="78">Required</th><th width="157">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The monetary value of the event (shipping price and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td><p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p></td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>user</code></td><td><a href="e-commerce-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>items</code></td><td><a href="e-commerce-events.md#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
+<table><thead><tr><th width="138">Name</th><th width="101">Type</th><th width="78">Required</th><th width="157">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The monetary value of the event (shipping price and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td><p>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</p><p>(*) If you supply the <code>revenue</code> parameter, you must also supply the <code>currency</code> parameter so revenue metrics can be computed accurately.</p></td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>user</code></td><td><a href="e-commerce-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>items</code></td><td><a href="e-commerce-events.md#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','begin_checkout', {
   id: 'O_12345',
@@ -151,8 +676,131 @@ cact('trigger','begin_checkout', {
   }]
 })
 ```
+{% endtab %}
 
-## generate\_lead <a href="#generate_lead" id="generate_lead"></a>
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCBeginCheckoutEvent(1.0f,  2.0f, "EUR", items)
+    event.coupon = "CHRISTMAS"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2" 
+                                  withName: @"pName2" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCBeginCheckoutEvent *event = [[TCBeginCheckoutEvent alloc] initWithRevenue: [[NSDecimalNumber alloc] initWithString: @"1.1"]
+withValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"
+withItems: items];
+event.coupon = @"CHRISTMAS";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCBeginCheckoutEvent(revenue: 1, withValue: 3, withCurrency: "EUR", withItems: [item_1, item_2])
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 10;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+TCProduct tc_product_2 = TCProduct();
+		tc_product_2.ID = "product_2_ID";
+		tc_product_2.name = "product_2_name";
+		tc_product_2.price = 5.10;
+		tc_product_2.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_2 = TCItem();
+		tc_item_2.ID = "item_2_id";
+		tc_item_2.quantity = 2;
+		tc_item_2.product = tc_product;
+		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
+var event = TCBeginCheckoutEvent();
+    		event.coupon = "CHRISTMAS";
+		event.items = [tc_item_1, tc_item_2];
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+   "item": [
+      {
+         "name": "Begin_checkout",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"begin_checkout\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
+
+## generate\_lead
 
 Log this event when a lead has been generated to understand the efficacy of your re-engagement campaigns.
 
@@ -162,13 +810,105 @@ Log this event when a lead has been generated to understand the efficacy of your
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','generate_lead', {
   currency: 'EUR',
   value: 9.99,
-  id: 'L_12345'
+  id: 'L_12345',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCGenerateLeadEvent(9.99f, "EUR")
+event.ID = "L_12345"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+TCGenerateLeadEvent *event = [[TCGenerateLeadEvent alloc] initWithValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"];
+event.ID = @"2b758628-f81b-454f-8e3d-867e8bc98523";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let event = TCGenerateLeadEvent(value: 1, withCurrency: "EUR")
+    event?.ID = "2b758628-f81b-454f-8e3d-867e8bc98523";
+    serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCGenerateLeadEvent();
+    event.currency = "EUR";
+    event.value = 9.99;
+    event.ID = "2b758628-f81b-454f-8e3d-867e8bc98523";
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Generate_lead",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"generate_lead\",\r\n    \"properties\": {\r\n        \"method\": \"LinkedIn\"\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## purchase
 
@@ -186,6 +926,8 @@ Fire this event when one or more items are purchased by a user.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','purchase', {
   id: 'O_12345',
@@ -236,6 +978,142 @@ cact('trigger','purchase', {
   }]
 })
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCPurchaseEvent("O_12345", 16.0f,  22.53f, "EUR", "purchase", "CreditCard", "waiting", items)
+    event.shippingAmount = 3.33f
+    event.taxAmount = 3.20f
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1" 
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1"
+                                  withName: @"pName1"
+                                  withPrice: [[NSDecimalNumber alloc] initWithString: @"1.5"]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2"
+                                  withName: @"pName2"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCPurchaseEvent *event = [[TCPurchaseEvent alloc] initWithId: @"ID"
+withRevenue: [[NSDecimalNumber alloc] initWithString: @"1.1"]
+withValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
+withCurrency: @"EUR"
+withType: @"purchase"
+withPaymentMethod: @"CreditCard"
+withStatus: @"waiting"
+withItems: items];
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCPurchaseEvent(id: "purchaseID", withRevenue: 16.21, withValue: 23.10, withCurrency: "EUR", withType: "purchase", withPaymentMethod: "CreditCard", withStatus: "waiting", withItems: [item_1, item_2])
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 10;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+TCProduct tc_product_2 = TCProduct();
+		tc_product_2.ID = "product_2_ID";
+		tc_product_2.name = "product_2_name";
+		tc_product_2.price = 5.10;
+		tc_product_2.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_2 = TCItem();
+		tc_item_2.ID = "item_2_id";
+		tc_item_2.quantity = 2;
+		tc_item_2.product = tc_product;
+		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
+var event = TCPurchaseEvent();
+    		event.shippingAmount = 3.33;
+    		event.taxAmount = 3.20;
+    		event.revenue = 2.5;
+		event.value = 12.2;
+		event.currency = "EUR";
+		event.type = "purchase";
+		event.paymentMethod = "CreditCard";
+		event.status = "waiting";
+		event.items = [tc_item_1, tc_item_2];
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Purchase",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"purchase\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"shipping_amount\": 3.33,\r\n        \"tax_amount\": 3.20,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## refund
 
@@ -251,6 +1129,8 @@ Fire this event when a purchase was refund
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','refund', {
   id: 'O_12345',
@@ -259,9 +1139,124 @@ cact('trigger','refund', {
   value: 20.33,
   shipping_amount: 3.33,
   tax_amount: 3.20,
-  currency: 'EUR'
+  currency: 'EUR',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 })
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val event = TCRefundEvent("O_12345", 16.00f, 23.53f, "EUR", "offline")
+    event.coupon = "CHRISTMAS"
+    event.shippingAmount = 4.33f
+    event.taxAmount = 3.20f
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1"
+                                  withName: @"pName1"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2"
+                                  withName: @"pName2"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCRefundEvent *event = [[TCRefundEvent alloc] initWithID: @"2b758628-f81b-454f-8e3d-867e8bc98523"
+withRevenue: [[NSDecimalNumber alloc] initWithString: @"20.2"]
+withValue: [[NSDecimalNumber alloc] initWithString: @"26.2"]
+withCurrency: @"EUR"
+withType: @"offline"
+withItems: items];
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCRefundEvent(id: "purchaseID", withRevenue: 16.32, withValue: 23.1, withCurrency: "EUR", withType: "refund", withItems: [item_1, item_2])
+	event?.shippingAmount = 11
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+var event = TCRefundEvent();
+    event.currency = "EUR";
+    event.value = 26.20;
+    event.revenue = 20.20;
+    event.coupon = "CHRISTMAS";
+    event.shippingAmount = 4.33;
+    event.taxAmount = 3.20;
+    event.type = "offline";    
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Refund",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"refund\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"revenue\": 16.00,\r\n        \"shipping_amount\": 3.33,\r\n        \"tax_amount\": 3.20\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## remove\_from\_cart
 
@@ -273,6 +1268,8 @@ This event signifies that an item was removed from a cart.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','remove_from_cart', {
   value: 8.00,
@@ -292,9 +1289,126 @@ cact('trigger','remove_from_cart', {
       brand: 'Lacoste',
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+val event = TCRemoveFromCartEvent(items)
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2"
+                                  withName: @"pName2"
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCRemoveFromCartEvent *event = [[TCRemoveFromCartEvent alloc] initWithItems: items];
+event.value = [[NSDecimalNumber alloc] initWithString: @"12.2"];
+event.currency = @"EUR";
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCRemoveFromCartEvent(items: [item_1, item_2])
+	event?.value = 22.53
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 10;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+var event = TCRemoveFromCartEvent();
+		event.value = 15.1;
+		event.currency = "EUR";		
+		event.items = [tc_item_1];
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Remove_from_cart",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"remove_from_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## select\_item
 
@@ -306,6 +1420,8 @@ This event signifies an item was selected from a list.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','select_item', {
   item_list_name: 'Related products',
@@ -324,9 +1440,121 @@ cact('trigger','select_item', {
       brand: 'Lacoste',
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+<pre class="language-kotlin"><code class="lang-kotlin">val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf&#x3C;TCItem>(item1, item2)
+
+val event = TCSelectItemEvent(items);
+<strong>    event.itemListName = "Related products"
+</strong>serverside.execute(event);
+</code></pre>
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1" 
+                                  withPrice:[[NSDecimalNumber alloc] initWithFloat: 1.5f]]
+                                  withQuantity: 1]];
+
+TCSelectItemEvent *event = [[TCSelectItemEvent alloc] initWithItems: items];
+event.itemListName = @"Related products";
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCSelectItemEvent(items: [item_1, item_2])
+	event.itemListName = "Related products";
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 150;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+var event = TCSelectItemEvent();
+		event.itemListName = "Related products";
+		event.items = [tc_item_1];
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "Select_item",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"select_item\",\r\n    \"properties\": {\r\n        \"item_list_name\": \"Related products\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## view\_cart
 
@@ -338,6 +1566,8 @@ This event signifies that a user viewed their cart.
 
 **Example**
 
+{% tabs %}
+{% tab title="Javascript" %}
 ```javascript
 cact('trigger','view_cart', {
   value: 8.00,
@@ -357,9 +1587,136 @@ cact('trigger','view_cart', {
       brand: 'Lacoste',
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCViewCartEvent(items);
+    event.value = 15.1f
+    event.currency = "EUR"
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithString: @"1.5"]]
+                                  withQuantity: 1]];
+
+TCViewCartEvent *event = [[TCViewCartEvent alloc] initWithItems: items];
+event.value = [[NSDecimalNumber alloc] initWithString: @"12.2"];
+event.currency = @"EUR";
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCViewCartEvent(items: [item_1, item_2])
+	event?.value = 22.53
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 10;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+TCProduct tc_product_2 = TCProduct();
+		tc_product_2.ID = "product_2_ID";
+		tc_product_2.name = "product_2_name";
+		tc_product_2.price = 5.10;
+		tc_product_2.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_2 = TCItem();
+		tc_item_2.ID = "item_2_id";
+		tc_item_2.quantity = 2;
+		tc_item_2.product = tc_product;
+		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
+
+var event = TCViewCartEvent();
+	event.value = 15.1;
+	event.currency = "EUR";
+	event.items = [tc_item_1, tc_item_2	
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "View_cart",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"view_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## view\_item
 
@@ -368,6 +1725,155 @@ This event signifies that some content was shown to the user. Use this event to 
 **Parameters (required and recommended)**
 
 <table><thead><tr><th width="139">Name</th><th width="101">Type</th><th width="82">Required</th><th width="157">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong>*</td><td>9.99</td><td><p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p></td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes*</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>user</code></td><td><a href="e-commerce-events.md#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>items</code></td><td><a href="e-commerce-events.md#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
+
+**Example**
+
+{% tabs %}
+{% tab title="Javascript" %}
+```javascript
+cact('trigger','view_item', {
+  value: 8.00,
+  currency: 'EUR',
+  items: [{
+    id: 'SKU_12345',
+    quantity: 1,
+    variant: 'red',
+    coupon: 'CHRISTMAS',
+    discount: 1.99,
+    product:{
+      id: '12345',
+      name: 'Trex tshirt',
+      category_1: 'clothes',
+      category_2: 't-shirts',
+      category_3: 'boy',
+      brand: 'Lacoste',
+      price: 9.99
+    }
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
+});
+```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCViewItem(items);
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithString: @"1.5"]]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2" 
+                                  withName: @"pName2" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCViewItem *event = [[TCViewItem alloc] initWithItems: items];
+event.revenue = [[NSDecimalNumber alloc] initWithString: @"12.2"];
+event.currency = @"EUR";
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCViewItem(items: [item_1, item_2])
+	event?.revenue = 12.2
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 150;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+var event = TCViewItemEvent();
+	event.pageName = "event_page_name";
+	event.pageType = "event_page_type";
+	event.items = [tc_item_1];
+	event.addAdditionalPropertyWithIntValue("key_additional_1", 12);
+	event.addAdditionalPropertyWithListValue("key_additional_2", [12,12,12]);
+	event.addAdditionalPropertyWithMapValue("key_map", {'test': 12, "test2": "value"});
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "View_item",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"view_item\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## view\_item\_list
 
@@ -379,7 +1885,9 @@ Log this event when the user has been presented with a list of items of a certai
 
 **Example**
 
-```javascript
+{% tabs %}
+{% tab title="Javascript" %}
+```kotlin
 cact('trigger','view_item_list', {
   item_list_name: 'Related products',
    items: [{
@@ -412,13 +1920,147 @@ cact('trigger','view_item_list', {
       category_1: 'clothes',
       category_2: 't-shirts',
       category_3: 'girl',
-      brand: 'Jenyfion',
+      brand: 'Jenny',
       colors: ['blue','white'],
       price: 9.99
     }
-  }]
+  }],
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
 });
 ```
+{% endtab %}
+
+{% tab title="Android" %}
+```kotlin
+val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
+val item2 = TCItem("my_product1_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
+val items = listOf<TCItem>(item1, item2)
+
+val event = TCViewItemList(items)
+    event.itemListName = "your products"
+serverside.execute(event)
+```
+{% endtab %}
+
+{% tab title="iOS" %}
+```objectivec
+NSMutableArray *items = [[NSMutableArray alloc] init];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID1"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID1" 
+                                  withName: @"pName1" 
+                                  withPrice: @1.5f]
+                                  withQuantity: 1]];
+[items addObject: [[TCItem alloc] initWithItemId: @"iID2"
+                                  withProduct: [[TCProduct alloc] initWithProductId: @"pID2" 
+                                  withName: @"pName2" 
+                                  withPrice: [[NSDecimalNumber alloc] initWithFloat: 2.5f]]
+                                  withQuantity: 2]];
+
+TCViewItemListEvent *event = [[TCViewItemListEvent alloc] initWithItems: items];
+event.itemListName = @"summer_collection";
+
+[TCS execute: event];
+```
+{% endtab %}
+
+{% tab title="Swift" %}
+```swift
+let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
+let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
+
+let event = TCViewItemListEvent(items: [item_1, item_2])
+	event?.itemListName = "summer_collection"
+	serverside?.execute(event)
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+TCProduct tc_product = TCProduct();
+		tc_product.ID = "product_1_ID";
+		tc_product.name = "product_1_name";
+		tc_product.price = 150;
+		tc_product.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_1 = TCItem();
+		tc_item_1.ID = "item_1_id";
+		tc_item_1.product = tc_product;
+		tc_item_1.quantity = 1;
+		tc_item_1.addAdditionalProperty("key_additional_item", "val_additional_product");
+TCProduct tc_product_2 = TCProduct();
+		tc_product_2.ID = "product_2_ID";
+		tc_product_2.name = "product_2_name";
+		tc_product_2.price = 150;
+		tc_product_2.addAdditionalProperty("key_additional_product", "val_additional_product");
+TCItem tc_item_2 = TCItem();
+		tc_item_2.ID = "item_2_id";
+		tc_item_2.quantity = 2;
+		tc_item_2.product = tc_product;
+		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
+
+var event = TCViewItemListEvent();
+	event.pageName = "event_page_name";
+	event.pageType = "event_page_type";
+	event.items = [tc_item_1, tc_item_2];
+	event.addAdditionalPropertyWithIntValue("key_additional_1", 12);
+	event.addAdditionalPropertyWithListValue("key_additional_2", [12,12,12]);
+	event.addAdditionalPropertyWithMapValue("key_map", {'test': 12, "test2": "value"});
+	event.itemListName = "itemListName";	
+serverside.execute(event);
+```
+{% endtab %}
+
+{% tab title="json" %}
+```json
+{
+   "item": [
+      {
+         "name": "View_item_list",
+         "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+               "mode": "raw",
+               "raw": "{\r\n    \"event\": \"begin_checkout\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
+               "options": {
+                  "raw": {
+                     "language": "json"
+                  }
+               }
+            },
+            "url": {
+               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
+               "protocol": "https",
+               "host": [
+                  "collect",
+                  "commander1",
+                  "com"
+               ],
+               "path": [
+                  "events"
+               ],
+               "query": [
+                  {
+                     "key": "tc_s",
+                     "value": "#your_site_id#"
+                  },
+                  {
+                     "key": "token",
+                     "value": "#your_source_key#"
+                  }
+               ]
+            }
+         },
+         "response": []
+      }
+   ]
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## - COMMON SCHEMAS -
 

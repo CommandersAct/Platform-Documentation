@@ -22,11 +22,11 @@ You can easily edit a source by clicking its name or the pencil icon.
 
 The trend represents the evolution of number of events received on the last month.
 
-The data quality indicator allows to quickly visualize the status of the source, if data are of good quality (<img src="../../.gitbook/assets/image (17) (2).png" alt="" data-size="line">) or not (<img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">) on the last hour.
+The data quality indicator allows to quickly visualize the status of the source, if data are of good quality (<img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">) or not (<img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">) on the last hour.
 
 The quality score of events is represented by a weather icon:
 
-* <img src="../../.gitbook/assets/image (17) (2).png" alt="" data-size="line">sunny if the percent of correct events is equal to 100%
-* <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 95% and 99.99%
+* <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the percent of correct events is equal to 100%
+* <img src="../../.gitbook/assets/image (15) (2) (2).png" alt="" data-size="line">cloudy between 95% and 99.99%
 * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 90 and 95%
-* <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy below 90%
+* <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy below 90%

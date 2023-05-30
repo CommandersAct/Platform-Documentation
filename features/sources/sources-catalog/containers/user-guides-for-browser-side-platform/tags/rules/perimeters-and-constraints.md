@@ -40,7 +40,7 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 In case of multiple values: enter all the values in the field separated by a comma ",". Don't use space between.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 **In which case using “external variables” for the mapping?**
 
@@ -48,7 +48,7 @@ When you want to create a rule based on a tc\_vars from the data layer implement
 
 Example: your technical team has implemented an env\_country variable, and you want to create a rule based on it:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 **In which case using “internal variables” for the mapping?**
 
@@ -66,7 +66,7 @@ tC.event.add_to_cart(this, {"product_name":"iphone", "product_id":"1234"})
 
 To call a tag only if the product name is “iphone”, you have to select the event variable named “product\_name” and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ## Cookie
 
@@ -86,7 +86,7 @@ In case of multiple values : enter all the values in the field separated by a co
 
 Example with multiple values: In order to call a tag when your “consent\_status” cookie equals “exempt” or "optin", you must select the “If Cookie Equals” rule and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (12) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ## URL
 
