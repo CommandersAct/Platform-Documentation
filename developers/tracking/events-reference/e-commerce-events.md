@@ -37,7 +37,10 @@ serverside.execute(event)
 
 {% tab title="Java  (Android)" %}
 ```
-// Some code
+TCAddPaymentInfoEvent event = new TCAddPaymentInfoEvent("card");
+event.revenue = 16.6f;
+event.currency = "EUR";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -179,8 +182,15 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCAddShippingInfoEvent event = new TCAddShippingInfoEvent(items, 112.5f, "EUR");
+event.coupon = "promo";
+event.shippingTier = "ups";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -358,8 +368,13 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCAddToCartEvent event = new TCAddToCartEvent(22.53f,  "EUR", items);
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -525,8 +540,15 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCAddToWishlistEvent event = new TCAddToWishlistEvent(items);
+event.value = 20.00f;
+event.currency = "EUR";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -715,8 +737,14 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCBeginCheckoutEvent event = new TCBeginCheckoutEvent(1.0f,  2.0f, "EUR", items);
+event.coupon = "CHRISTMAS";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -865,8 +893,10 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCGenerateLeadEvent event = new TCGenerateLeadEvent(9.99f, "EUR");
+event.ID = "L_12345";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1030,8 +1060,15 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCPurchaseEvent event = new TCPurchaseEvent("O_12345", 16.0f,  22.53f, "EUR", "purchase", "CreditCard", "waiting", items);
+event.shippingAmount = 3.33f;
+event.taxAmount = 3.20f;
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1202,8 +1239,12 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCRefundEvent event = new TCRefundEvent("O_12345", 16.00f, 23.53f, "EUR", "offline");
+event.coupon = "CHRISTMAS";
+event.shippingAmount = 4.33f;
+event.taxAmount = 3.20f;
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1353,13 +1394,18 @@ val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
 val items = listOf<TCItem>(item1, item2)
 val event = TCRemoveFromCartEvent(items)
-serverside.execute(event);
+serverside.execute(event)
 ```
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCRemoveFromCartEvent event = new TCRemoveFromCartEvent(items);
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1509,15 +1555,17 @@ cact('trigger','select_item', {
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
 val items = listOf&#x3C;TCItem>(item1, item2)
 
-val event = TCSelectItemEvent(items);
+val event = TCSelectItemEvent(items)
 <strong>    event.itemListName = "Related products"
-</strong>serverside.execute(event);
+</strong>serverside.execute(event
 </code></pre>
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCSelectContentEvent event = new TCSelectContentEvent();
+event.contentType = "product";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1671,8 +1719,15 @@ serverside.execute(event);
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCViewCartEvent event = new TCViewCartEvent(items);
+event.value = 15.1f;
+event.currency = "EUR";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -1831,14 +1886,19 @@ val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
 val items = listOf<TCItem>(item1, item2)
 
-val event = TCViewItem(items);
-serverside.execute(event);
+val event = TCViewItem(items)
+serverside.execute(event)
 ```
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCViewItem event = new TCViewItem(items);
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -2020,7 +2080,13 @@ serverside.execute(event)
 
 {% tab title="Java  (Android)" %}
 ```
-// Some code
+TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
+TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
+ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
+
+TCViewItemListEvent event = new TCViewItemListEvent(items);
+event.itemListName = "your products";
+serverside.execute(event);
 ```
 {% endtab %}
 

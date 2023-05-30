@@ -39,7 +39,9 @@ serverside.execute(event)
 
 {% tab title="Java  (Android)" %}
 ```java
-// Some code
+TCPageViewEvent event = new TCPageViewEvent("product_list")
+event.pageName = "Best sellers";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -154,8 +156,10 @@ serverside.execute(event)
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCLoginEvent event = new TCLoginEvent();
+event.method = "LinkedIn";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -258,14 +262,15 @@ cact('trigger','search', {
 
 {% tab title="Kotlin (Android)" %}
 ```kotlin
-val event = TCSearchEvent("t-shirts");
+val event = TCSearchEvent("t-shirts")
 serverside.execute(event)
 ```
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCSearchEvent event = new TCSearchEvent("t-shirts");
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -367,7 +372,7 @@ cact('trigger','select_content', {
 
 {% tab title="Kotlin (Android)" %}
 ```kotlin
-val event = TCSelectContentEvent();
+val event = TCSelectContentEvent()
 event.contentType = "product"
 serverside.execute(event)
 ```
@@ -375,7 +380,9 @@ serverside.execute(event)
 
 {% tab title="Java  (Android)" %}
 ```
-// Some code
+TCSelectContentEvent event = new TCSelectContentEvent();
+event.contentType = "product";
+serverside.execute(event);
 ```
 {% endtab %}
 
@@ -481,15 +488,17 @@ cact('trigger','sign_up', {
 
 {% tab title="Kotlin (Android)" %}
 ```kotlin
-val event = TCSignUpEvent();
+val event = TCSignUpEvent()
 event.method = "email"
 serverside.execute(event)
 ```
 {% endtab %}
 
 {% tab title="Java  (Android)" %}
-```
-// Some code
+```java
+TCSignUpEvent event = new TCSignUpEvent();
+event.method = "email";
+serverside.execute(event);
 ```
 {% endtab %}
 
