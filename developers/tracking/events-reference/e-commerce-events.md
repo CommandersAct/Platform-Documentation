@@ -75,51 +75,19 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item":[
-      {
-         "name":"Add_payment_info",
-         "request":{
-            "method":"POST",
-            "header":[
-               
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\r\n    \"event\": \"add_payment_info\",\r\n    \"properties\": {\r\n        \"payment_method\": \"card\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
-               "options":{
-                  "raw":{
-                     "language":"json"
-                  }
-               }
-            },
-            "url":{
-               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol":"https",
-               "host":[
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path":[
-                  "events"
-               ],
-               "query":[
-                  {
-                     "key":"tc_s",
-                     "value":"#your_site_id#"
-                  },
-                  {
-                     "key":"token",
-                     "value":"#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response":[
-            
-         ]
-      }
-   ]
+    "event_name": "add_payment_info",
+        "payment_method": "card",
+        "revenue": 16.00,
+        "value": 22.53,
+        "currency": "EUR",
+        "user": {
+            "id": "12345",
+            "email": "toto@domain.fr",
+            "consent_categories": [
+                1,
+                3
+            ]
+        }
 }
 ```
 {% endtab %}
@@ -265,51 +233,62 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item":[
-      {
-         "name":"Add_shipping_info",
-         "request":{
-            "method":"POST",
-            "header":[
-               
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\r\n    \"event\": \"add_shipping_info\",\r\n    \"properties\": {\r\n        \"shipping_tier\": \"Ground\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
-               "options":{
-                  "raw":{
-                     "language":"json"
-                  }
-               }
+    "event_name": "add_shipping_info",
+        "shipping_tier": "Ground",
+        "revenue": 16.00,
+        "value": 22.53,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ],
+                    "price": 9.99
+                }
             },
-            "url":{
-               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol":"https",
-               "host":[
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path":[
-                  "events"
-               ],
-               "query":[
-                  {
-                     "key":"tc_s",
-                     "value":"#your_site_id#"
-                  },
-                  {
-                     "key":"token",
-                     "value":"#your_source_key#"
-                  }
-               ]
+            {
+                "id": "SKU_12346",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "green",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12346",
+                    "name": "Heart tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "girl",
+                    "brand": "Jenyfion",
+                    "colors": [
+                        "blue",
+                        "white"
+                    ],
+                    "price": 9.99
+                }
             }
-         },
-         "response":[
-            
-         ]
-      }
-   ]
+        ],
+        "user": {
+            "id": "12345",
+            "email": "toto@domain.fr",
+            "consent_categories": [
+                1,
+                3
+            ]
+        }
 }
 ```
 {% endtab %}
@@ -435,51 +414,30 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item":[
-      {
-         "name":"Add_to_cart",
-         "request":{
-            "method":"POST",
-            "header":[
-               
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\r\n    \"event\": \"add_to_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options":{
-                  "raw":{
-                     "language":"json"
-                  }
-               }
-            },
-            "url":{
-               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol":"https",
-               "host":[
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path":[
-                  "events"
-               ],
-               "query":[
-                  {
-                     "key":"tc_s",
-                     "value":"#your_site_id#"
-                  },
-                  {
-                     "key":"token",
-                     "value":"#your_source_key#"
-                  }
-               ]
+    "event_name": "add_to_cart",
+        "value": 8.00,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response":[
-            
-         ]
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -610,51 +568,30 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item":[
-      {
-         "name":"Add_to_wishlist",
-         "request":{
-            "method":"POST",
-            "header":[
-               
-            ],
-            "body":{
-               "mode":"raw",
-               "raw":"{\r\n    \"event\": \"add_to_wishlist\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options":{
-                  "raw":{
-                     "language":"json"
-                  }
-               }
-            },
-            "url":{
-               "raw":"https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol":"https",
-               "host":[
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path":[
-                  "events"
-               ],
-               "query":[
-                  {
-                     "key":"tc_s",
-                     "value":"#your_site_id#"
-                  },
-                  {
-                     "key":"token",
-                     "value":"#your_source_key#"
-                  }
-               ]
+    "event_name": "add_to_wishlist",
+        "value": 8.00,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response":[
-            
-         ]
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -812,47 +749,64 @@ serverside.execute(event);
 
 {% tab title="json" %}
 ```json
-   "item": [
-      {
-         "name": "Begin_checkout",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"begin_checkout\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
+{
+    "event_name": "begin_checkout",
+        "id": "O_12345",
+        "coupon": "CHRISTMAS",
+        "revenue": 16.00,
+        "value": 22.53,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ],
+                    "price": 9.99
+                }
             },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+            {
+                "id": "SKU_12346",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "green",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12346",
+                    "name": "Heart tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "girl",
+                    "brand": "Jenyfion",
+                    "colors": [
+                        "blue",
+                        "white"
+                    ],
+                    "price": 9.99
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ],
+        "user": {
+            "id": "12345",
+            "email": "toto@domain.fr",
+            "consent_categories": [
+                1,
+                3
+            ]
+        }
 }
 ```
 {% endtab %}
@@ -930,47 +884,8 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Generate_lead",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"generate_lead\",\r\n    \"properties\": {\r\n        \"method\": \"LinkedIn\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "generate_lead",
+        "method": "LinkedIn"
 }
 ```
 {% endtab %}
@@ -1148,47 +1063,65 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Purchase",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"purchase\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"shipping_amount\": 3.33,\r\n        \"tax_amount\": 3.20,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
+    "event_name": "purchase",
+        "id": "O_12345",
+        "coupon": "CHRISTMAS",
+        "revenue": 16.00,
+        "value": 22.53,
+        "shipping_amount": 3.33,
+        "tax_amount": 3.20,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ],
+                    "price": 9.99
+                }
             },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+            {
+                "id": "SKU_12346",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "green",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12346",
+                    "name": "Heart tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "girl",
+                    "brand": "Jenyfion",
+                    "colors": [
+                        "blue",
+                        "white"
+                    ],
+                    "price": 9.99
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ],
+        "user": {
+            "id": "12345",
+            "email": "toto@domain.fr",
+            "consent_categories": [
+                1,
+                3
+            ]
+        }
 }
 ```
 {% endtab %}
@@ -1301,47 +1234,12 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Refund",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"refund\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"revenue\": 16.00,\r\n        \"shipping_amount\": 3.33,\r\n        \"tax_amount\": 3.20\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "refund",
+        "value": 8.00,
+        "currency": "EUR",
+        "revenue": 16.00,
+        "shipping_amount": 3.33,
+        "tax_amount": 3.20
 }
 ```
 {% endtab %}
@@ -1464,47 +1362,30 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Remove_from_cart",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"remove_from_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+    "event_name": "remove_from_cart",
+        "value": 8.00,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -1618,47 +1499,29 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Select_item",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"select_item\",\r\n    \"properties\": {\r\n        \"item_list_name\": \"Related products\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+    "event_name": "select_item",
+        "item_list_name": "Related products",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -1793,47 +1656,30 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "View_cart",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"view_cart\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+    "event_name": "view_cart",
+        "value": 8.00,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -1961,47 +1807,30 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "View_item",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"view_item\",\r\n    \"properties\": {\r\n        \"value\": 8.00,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ]\r\n                }\r\n            }\r\n        ]\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+    "event_name": "view_item",
+        "value": 8.00,
+        "currency": "EUR",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ]
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ]
 }
 ```
 {% endtab %}
@@ -2160,47 +1989,59 @@ serverside.execute(event);
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "View_item_list",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"begin_checkout\",\r\n    \"properties\": {\r\n        \"id\": \"O_12345\",\r\n        \"coupon\": \"CHRISTMAS\",\r\n        \"revenue\": 16.00,\r\n        \"value\": 22.53,\r\n        \"currency\": \"EUR\",\r\n        \"items\": [\r\n            {\r\n                \"id\": \"SKU_12345\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"red\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12345\",\r\n                    \"name\": \"Trex tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"boy\",\r\n                    \"brand\": \"Lacoste\",\r\n                    \"colors\": [\r\n                        \"red\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            },\r\n            {\r\n                \"id\": \"SKU_12346\",\r\n                \"quantity\": 1,\r\n                \"price\": 9.99,\r\n                \"variant\": \"green\",\r\n                \"coupon\": \"CHRISTMAS\",\r\n                \"discount\": 1.99,\r\n                \"product\": {\r\n                    \"id\": \"12346\",\r\n                    \"name\": \"Heart tshirt\",\r\n                    \"category_1\": \"clothes\",\r\n                    \"category_2\": \"t-shirts\",\r\n                    \"category_3\": \"girl\",\r\n                    \"brand\": \"Jenyfion\",\r\n                    \"colors\": [\r\n                        \"blue\",\r\n                        \"white\"\r\n                    ],\r\n                    \"price\": 9.99\r\n                }\r\n            }\r\n        ],\r\n        \"user\": {\r\n            \"id\": \"12345\",\r\n            \"email\": \"toto@domain.fr\",\r\n            \"consent_categories\": [\r\n                1,\r\n                3\r\n            ]\r\n        }\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
+    "event_name": "view_item_list",
+        "item_list_name": "Related products",
+        "items": [
+            {
+                "id": "SKU_12345",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "red",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12345",
+                    "name": "Trex tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "boy",
+                    "brand": "Lacoste",
+                    "colors": [
+                        "red"
+                    ],
+                    "price": 9.99
+                }
             },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
+            {
+                "id": "SKU_12346",
+                "quantity": 1,
+                "price": 9.99,
+                "variant": "green",
+                "coupon": "CHRISTMAS",
+                "discount": 1.99,
+                "product": {
+                    "id": "12346",
+                    "name": "Heart tshirt",
+                    "category_1": "clothes",
+                    "category_2": "t-shirts",
+                    "category_3": "girl",
+                    "brand": "Jenyfion",
+                    "colors": [
+                        "blue",
+                        "white"
+                    ],
+                    "price": 9.99
+                }
             }
-         },
-         "response": []
-      }
-   ]
+        ],
+        "user": {
+            "id": "12345",
+            "email": "toto@domain.fr",
+            "consent_categories": [
+                1,
+                3
+            ]
+        }
 }
 ```
 {% endtab %}

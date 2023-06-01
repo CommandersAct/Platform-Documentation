@@ -77,47 +77,9 @@ var event = TCPageViewEvent();
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Page_view",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"page_view\",\r\n    \"properties\": {\r\n        \"page_type\": \"homepage\",\r\n        \"page_name\": \"welcome\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "page_view", 
+        "page_type": "product_list",
+        "page_name": "Best sellers"   
 }
 ```
 {% endtab %}
@@ -190,47 +152,8 @@ var event = TCLoginEvent();
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Login",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"login\",\r\n    \"properties\": {\r\n        \"method\": \"LinkedIn\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "login",
+        "method": "LinkedIn"
 }
 ```
 {% endtab %}
@@ -299,47 +222,8 @@ var event = TCSearchEvent();
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Search",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"search\",\r\n    \"properties\": {\r\n        \"search_term\": \"t-shirts\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "search",
+        "search_term": "t-shirts"
 }
 ```
 {% endtab %}
@@ -416,47 +300,9 @@ var event = TCSelectContentEvent();
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Select_content",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"select_content\",\r\n    \"properties\": {\r\n        \"content_type\": \"product\",\r\n        \"item_id\": \"I_12345\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "select_content",
+        "content_type": "product",
+        "item_id": "I_12345"
 }
 ```
 {% endtab %}
@@ -529,47 +375,8 @@ var event = TCSignUpEvent();
 {% tab title="json" %}
 ```json
 {
-   "item": [
-      {
-         "name": "Sign_up",
-         "request": {
-            "method": "POST",
-            "header": [],
-            "body": {
-               "mode": "raw",
-               "raw": "{\r\n    \"event\": \"sign_up\",\r\n    \"properties\": {\r\n        \"method\": \"email\"\r\n    }\r\n}",
-               "options": {
-                  "raw": {
-                     "language": "json"
-                  }
-               }
-            },
-            "url": {
-               "raw": "https://collect.commander1.com/events?tc_s=#your_site_id#&token=#your_source_key#",
-               "protocol": "https",
-               "host": [
-                  "collect",
-                  "commander1",
-                  "com"
-               ],
-               "path": [
-                  "events"
-               ],
-               "query": [
-                  {
-                     "key": "tc_s",
-                     "value": "#your_site_id#"
-                  },
-                  {
-                     "key": "token",
-                     "value": "#your_source_key#"
-                  }
-               ]
-            }
-         },
-         "response": []
-      }
-   ]
+    "event_name": "sign_up",
+        "method": "email"
 }
 ```
 {% endtab %}
