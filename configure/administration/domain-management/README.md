@@ -23,7 +23,7 @@ There is a technical setup to do to initialize this 1st party tracking (on the d
 
 * [A record](a-record.md) (recommended)
 * [CNAME record](cname-record.md) (deprecated, not recommended anymore)
-* [On-premise Proxy](https://hub.docker.com/r/commandersact/ca-trk-proxy) (more technical but prefered by some IT team)
+* [On-premise Proxy](on-premise-proxy.md) (more technical but prefered by some IT team)
 
 {% hint style="info" %}
 Migration from 3rd party to 1st will be handled with Commanders Act consultants.
