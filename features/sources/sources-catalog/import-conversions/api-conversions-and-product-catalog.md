@@ -98,7 +98,7 @@ Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==
 
 `POST /conversions/bulk`
 
-This endpoint creates and updates conversions. Your request will be processed asynchronously. It can take up to 24 hours until the request is processed and updates are made in the database.
+This endpoint creates and updates conversions. Your request will be processed asynchronously. It can take up to 1 hour until the request is processed and updates are made in the database.
 
 > Body parameter
 
