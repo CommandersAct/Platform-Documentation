@@ -75,22 +75,30 @@ In addition to the GA4 proxy mode, you can also use on each destination, the [Pr
 
 ## Quick setup
 
-1.  **Update your client-side gtag**\
-    As with classical GA4 server-side setups, you need to setup a single initial client-side Gtag tag which will only be triggered once per visit and will send an empty initialization event. \
-    This is necessary due to current [limitations of Google's protocol](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats\_to\_measurement\_protocol).\
+### **1. Update your client-side gtag**
+
+As with classical GA4 server-side setups, you need to setup a single initial client-side Gtag tag which will only be triggered once per visit and will send an empty initialization event. \
+This is necessary due to current [limitations of Google's protocol](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats\_to\_measurement\_protocol).\
 
 
-    Then the particularity with the _proxy mode_ is that you have to alter the GA4 hit URL, replacing _google-analytics.com_ with the Commanders Act server-side collection URL. This is done via the native GA parameter: `transport_url` (Example code provided below).\
-    ![](<../../../../../.gitbook/assets/MicrosoftTeams-image (2).png>)\
+Then the particularity with the _proxy mode_ is that you have to alter the GA4 hit URL, replacing _google-analytics.com_ with the Commanders Act server-side collection URL. This is done via the native GA parameter: `transport_url` (Example code provided below).\
+![](<../../../../../.gitbook/assets/MicrosoftTeams-image (2).png>)\
+\
+The `transport_url` has to be set to `https://YOURTRACKINGDOMAIN.com/events?tc_s=YOURSITEID&token=YOURSOURCEKEY&event_name=ga_session_start&ga_url_param=`\
+\
+Your tracking domain is either your first party subdomain set in [domain management](../../../../../configure/administration/domain-management/), or our third party  collection domain `collect.commander1.com`
+
+Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.\
 
 
-    Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.\
+Apart from this first client-side hit, all other events from the website should be sent from any source, for instance through our function cact('trigger', 'myEventName', ...). These events will also, of course, reach your GA4 destination where the data will be pseudonymized according to the settings of the destination.
 
+### **2. Setup your GA4 destination**
 
-    Apart from this first client-side hit, all other events from the website should be sent from any source, for instance through our function cact('trigger', 'myEventName', ...). These events will also, of course, reach your GA4 destination where the data will be pseudonymized according to the settings of the destination.
-2. **Setup your GA4 destination**\
-   \- In the settings tab, check the "Enable proxy mode" option and choose wich pseudonymisation/treatment you want to apply.\
-   \- If needed hash your custom PII data through the smart mapping, properties transformation or [Data Cleansing](../../../../data-quality/data-cleansing/)
-3. (**Optional) Check that all the sent PII data are properly pseudonymised**\
-   Go through [Event Inspector](../../../live-event-inspector.md) and inspect outgoing events.
+\- In the settings tab, check the "Enable proxy mode" option and choose wich pseudonymisation/treatment you want to apply.\
+\- If needed hash your custom PII data through the smart mapping, properties transformation or [Data Cleansing](../../../../data-quality/data-cleansing/)
+
+### 3. (**Optional) Check that all the sent PII data are properly pseudonymised**
+
+Go through [Event Inspector](../../../live-event-inspector.md) and inspect outgoing events.
 
