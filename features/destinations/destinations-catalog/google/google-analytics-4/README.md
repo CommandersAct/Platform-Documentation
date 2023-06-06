@@ -1,6 +1,5 @@
 # Google Analytics 4
 
-[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software.\
 Google Analytics 4 (GA4) is the latest iteration of Google's analytics tool that helps you measure the traffic and engagement across your websites and apps. Using this destination, you can enhance your existing tracking implementation to match your data collection needs with GA4.\
 Your data will be sent server-side taking advantage of the [Google Measurement Protocol API](https://developers.google.com/analytics/devguides/collection/protocol/ga4) and in form of [events](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).
 
@@ -33,7 +32,7 @@ The Google Analytics 4 destination provides the following key features:
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events, custom event and user properties).
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to GA4.
-* **Send all properties**: send all your event properties to GA4 with a single click.
+* **Send all properties option**: send all your event properties to GA4 with a single click.
 
 ## Destination setup
 
@@ -580,7 +579,7 @@ The following properties are automatically attached to the event.
 | Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
 | Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
 
-## Quick reference
+## Event mapping
 
 | Commanders Act Events | GA4 Events          |
 | --------------------- | ------------------- |
