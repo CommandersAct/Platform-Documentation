@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 06/06/2023
+
+New [functions](../features/data-quality/data-cleansing/supported-transformation-functions.md) supported (dates)
+
+## 01/06/2023
+
+Update Event Delivery documentation ([filtered events](https://doc.commandersact.com/features/destinations/event-delivery#2-key-metrics))
+
 ## 30/05/2023
 
 * [Codes examples of events](https://doc.commandersact.com/developers/tracking/events-reference) has been improved, the following languages has been added:\
