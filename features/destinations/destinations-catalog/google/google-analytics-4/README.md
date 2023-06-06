@@ -5,8 +5,8 @@ Your data will be sent server-side taking advantage of the [Google Measurement P
 
 {% hint style="info" %}
 Google designed the Measurement Protocol with some [limitations](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats\_to\_measurement\_protocol), especially it does not allow to manage session.\
-For [session handling](./#session-handling), you should setup one config gtag tag firing on the first page of the user's session.\
-For this purpose you can use our client-side tag template **"gtag - Config with options"** as it comes with the additional configuration option to send the Google reserved event<mark style="color:blue;">`session_start`</mark>while avoid firing the event<mark style="color:blue;">`page_view`</mark>:
+For [session handling](./#session-handling), you should currently setup a _**gtag**_** config tag** that will fire on the **first page** (only) of the user's session.\
+For this purpose you can use on your website the tag template **"gtag - Config with options"** as it comes with the additional configuration option to send the Google reserved event<mark style="color:blue;">`session_start`</mark>while avoid firing the event<mark style="color:blue;">`page_view`</mark>:
 
 ```javascript
 gtag('config', 'G-XXXXXXXXXX', {

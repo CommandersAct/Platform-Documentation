@@ -72,3 +72,25 @@ In addition to the GA4 proxy mode, you can also use on each destination, the [Pr
 | Removal of any parameters contained in collected URLs                             | It is legitimate to remove URL parameters containing personal information, but maybe not general information like utm\_campaigns.                          | Remove URL parameters on a case-by-case basis if they contain personally identifiable data. Utm\_campaigns can be kept if they are properly managed, but the question arises for advertising click IDs such as fbclid and gclid. If the CNIL recommendation is followed, the tool will become useless or almost useless, while if our recommendation is followed, there will be little impact. In case of gclid removal, utms will need to be used to tag Google Ads campaigns. |
 | Retreatment of information that could contribute to generating a fingerprint      | This request is legitimate and common and will be implemented in browsers in the future.                                                                   | <p>Remove unnecessary information from the user agent to minimize loss of granular information such as the phone model.<br>Choosing to delete completly the user-agent seems to be the easiest option.<br>Impact: very low</p>                                                                                                                                                                                                                                                  |
 | Absence of any cross-site or deterministic (CRM, unique ID) identifier collection | <p>This request is considered irrelevant as long as consent is obtained.<br>These IDs cannot be used by Google for other data cross-referencing.</p>       | <p>It is recommended to request consent for the use of these IDs and to treat them securely if consent is given.<br>But you may want to hash all this ids before to send it to Google (in that case you can use Properties transformation)</p>                                                                                                                                                                                                                                  |
+
+## Quick setup
+
+1.  **Update your client-side gtag**\
+    As with classical GA4 server-side setups, you need to setup a single initial client-side Gtag tag which will only be triggered once per visit and will send an empty initialization event. \
+    This is necessary due to current [limitations of Google's protocol](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats\_to\_measurement\_protocol).\
+
+
+    Then the particularity with the _proxy mode_ is that you have to alter the GA4 hit URL, replacing _google-analytics.com_ with the Commanders Act server-side collection URL. This is done via the native GA parameter: `transport_url` (Example code provided below).\
+    ![](<../../../../../.gitbook/assets/MicrosoftTeams-image (2).png>)\
+
+
+    Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.\
+
+
+    Apart from this first client-side hit, all other events from the website should be sent from any source, for instance through our function cact('trigger', 'myEventName', ...). These events will also, of course, reach your GA4 destination where the data will be pseudonymized according to the settings of the destination.
+2. **Setup your GA4 destination**\
+   \- In the settings tab, check the "Enable proxy mode" option and choose wich pseudonymisation/treatment you want to apply.\
+   \- If needed hash your custom PII data through the smart mapping, properties transformation or [Data Cleansing](../../../../data-quality/data-cleansing/)
+3. (**Optional) Check that all the sent PII data are properly pseudonymised**\
+   Go through [Event Inspector](../../../live-event-inspector.md) and inspect outgoing events.
+
