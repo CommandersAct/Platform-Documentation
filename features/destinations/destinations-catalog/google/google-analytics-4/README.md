@@ -5,7 +5,17 @@ Google Analytics 4 (GA4) is the latest iteration of Google's analytics tool that
 Your data will be sent server-side taking advantage of the [Google Measurement Protocol API](https://developers.google.com/analytics/devguides/collection/protocol/ga4) and in form of [events](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).
 
 {% hint style="info" %}
-The "Measurement Protocol" is designed to enrich existing events via client-side gtag or Firebase. Sending events to GA4 just by using the "Measurement Protocol" is viable, however, it comes with limitations on available reporting. Some event and parameter names are [reserved](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?#reserved\_names) for use via automatic collection and can't be pushed through the "Measurement Protocol".
+For [session handling](./#session-handling), it's recommended to deploy our client-side tag template "gtag - Config with options" as it comes with the additional configuration option to send the Google reserved event<mark style="color:blue;">`session_start`</mark>while avoid firing the event<mark style="color:blue;">`page_view`</mark>:
+
+```javascript
+gtag('config', 'G-XXXXXXXXXX', {
+    ...    
+    send_page_view: false
+    ...
+});
+```
+
+More details are available following [our dedicated section](./#session-handling).&#x20;
 
 The user identifier should be passed in both the client-side gtag and server-side.\
 For more information, you can follow these links: [\[GA4\] Measure activity across platforms with User-ID](https://support.google.com/analytics/answer/9213390) and [\[GA4\] Reporting: deduplicate user counts](https://support.google.com/analytics/answer/9355949).
@@ -46,7 +56,7 @@ App related fields are enabled by flagging<mark style="color:blue;">`Enable App 
 
 ### Session handling
 
-When providing a<mark style="color:blue;">`Measurement Id`</mark>, the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-"). If the cookie is not provided or with APP data streams, the default property `context.device.lifecycle.session_id` is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
+When providing a<mark style="color:blue;">`Measurement Id`</mark>, the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-"). If the cookie is not provided or with App "Data streams", the default property `context.device.lifecycle.session_id` is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
 
 ## Mappings for GA4 events
 
