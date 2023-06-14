@@ -14,7 +14,7 @@ After configuring the various container options, click “Add”
 
 ### **General**
 
-<figure><img src="../../../../../../.gitbook/assets/image (93) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
 Simply fill the “**Name**“ field with Container’s wanted name
 
@@ -22,7 +22,7 @@ Simply fill the “**Name**“ field with Container’s wanted name
 
 ### **Synchronization**
 
-<figure><img src="../../../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
 Mode: Synchronization modes for the container:
 
@@ -74,5 +74,5 @@ You can also define a JavaScript version and noscript version for each tag.
 Simply click the 'parameter' icon:\
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (112) (1).png" alt=""><figcaption></figcaption></figure>
 

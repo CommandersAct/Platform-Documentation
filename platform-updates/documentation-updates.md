@@ -4,9 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## 06/06/2023
+## 09/06/2023
 
-New [functions](../features/data-quality/data-cleansing/supported-transformation-functions.md) supported (dates)
+* [Google Analytics 4 documentation](../features/destinations/destinations-catalog/google/google-analytics-4/) enhanced
+* Proxy mode of GA4 enriched with a quick [setup guide](../features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md#quick-setup)
 
 ## 01/06/2023
 
