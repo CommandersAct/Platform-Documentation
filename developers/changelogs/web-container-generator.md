@@ -2,10 +2,13 @@
 
 ## 2023
 
+### Release v84.1 - 14/06/2023
+* Fix `tC.isCookieEnabled()` in iframe context
+
 ### Release v84.0 - 06/06/2023
 * Privacy - Add an option to handle Global Privacy Control
-* Privacy - TCFv2 - Add tC.privacy.getNbIabVendors()
-* Optimize OnSite consent API to make IAB TCFv2 consent available sooner 
+* Privacy - TCFv2 - Add `tC.privacy.getNbIabVendors()`
+* Optimize OnSite consent API to make IAB TCFv2 consent available sooner
 
 ### Release v83.1 - 23/05/2023
 * Update IAB TCFv2 module to protect from wrong vendor configuration in IAB TCFv2 official vendor list
