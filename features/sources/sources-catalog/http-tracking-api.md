@@ -52,6 +52,7 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
   "search_term": "t-shirts",
   "user": {
     "id": "12345",
+    "consistent_anonymous_id": "67892"
     "email": "toto@domain.fr",
     "consent_categories": [
       "1",
@@ -95,6 +96,8 @@ If you want to use Http tracking API from you mobile APP instead of SDK, look at
 {% hint style="info" %}
 Timestamps supported are in milliseconds (ms).
 {% endhint %}
+
+`consistent_anonymous_id` corresponds to a unique identifier for a user, used on the CAX platform to identify a user. It is the equivalent of CAID cookie on a Web source.
 
 ## User API
 
