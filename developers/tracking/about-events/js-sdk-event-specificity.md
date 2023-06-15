@@ -2,7 +2,7 @@
 
 ## Fields automatically added to event&#x20;
 
-The [JS SDK](../../../features/sources/sources-catalog/web/js-sdk/), [Web container](../../../features/sources/sources-catalog/web/containers/) and [GTM bridge](../../../features/sources/sources-catalog/web/gtm.md) add autmatically specific properties in the event regarding the browser.\
+The [JS SDK](../../../features/sources/sources-catalog/web/js-sdk/), [Web container](../../../features/sources/sources-catalog/web/containers/) and [GTM bridge](../../../features/sources/sources-catalog/web/gtm.md) add automatically specific properties in the event regarding the browser.\
 Here is a complete event payload example :
 
 ```json
@@ -15,6 +15,7 @@ Here is a complete event payload example :
    "title": "My page title", //Automatically added if missing
    "user": {
       "id": "12345",
+      "consistent_anonymous_id": "567892" //Automatically added
       "email": "toto@domain.fr",
       "consent_categories": ["1","3"] //Automatically added if you use Commanders Act CMP
    },
