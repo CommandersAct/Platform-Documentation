@@ -2,6 +2,9 @@
 
 ## 2023
 
+### Release v84.2 - 14/06/2023
+* Fix Privacy GPC handling when statistics are included in privacy scope
+
 ### Release v84.1 - 14/06/2023
 * Fix `tC.isCookieEnabled()` in iframe context
 
