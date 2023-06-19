@@ -101,7 +101,6 @@
     * [Amazon S3](features/destinations/destinations-catalog/amazon-s3.md)
     * [Awin](features/destinations/destinations-catalog/awin.md)
     * [Batch](features/destinations/destinations-catalog/batch.md)
-    * [Bing](features/destinations/destinations-catalog/bing.md)
     * [Commission Junction](features/destinations/destinations-catalog/commission-junction.md)
     * [Criteo](features/destinations/destinations-catalog/criteo/README.md)
       * [Criteo (events)](features/destinations/destinations-catalog/criteo/criteo-events.md)
