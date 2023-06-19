@@ -2,6 +2,9 @@
 
 ## 2023
 
+### Release v84.3 - 20/06/2023
+* Support localization of vendor policy URLs included in IAB GVLv3
+
 ### Release v84.2 - 14/06/2023
 * Fix Privacy GPC handling when statistics are included in privacy scope
 
