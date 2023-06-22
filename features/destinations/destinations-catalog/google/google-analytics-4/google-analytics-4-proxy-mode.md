@@ -88,9 +88,11 @@ The `transport_url` has to be set to your tracking url. \
 Your tracking domain is either:
 
 * &#x20;your first party subdomain set in [domain management](../../../../../configure/administration/domain-management/)\
-  In this case the `transpor_url` has to be set to `https://`<mark style="color:blue;">`YOUR_1ST_TRACKING_DOMAIN`</mark>`.com`**`/`**<mark style="color:orange;">**`cdp`**</mark>**`/`**`events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
+  In this case the `transpor_url` has to be set to: \
+  `https://`<mark style="color:blue;">`YOUR_1ST_TRACKING_DOMAIN`</mark>`.com`**`/`**<mark style="color:orange;">**`cdp`**</mark>**`/`**`events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
 * or our third party  collection domain `collect.commander1.com`\
-  In this case the `transpor_url` has to be set to `https://collect.commander1.com/events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
+  In this case the `transpor_url` has to be set to:\
+  `https://collect.commander1.com/events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
 
 Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.
 
