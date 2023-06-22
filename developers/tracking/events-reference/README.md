@@ -19,7 +19,7 @@ This event signifies a user has submitted their payment information
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_payment_info', {
   payment_method: 'card',
@@ -112,7 +112,7 @@ This event signifies a user has submitted their shipping information.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_shipping_info', {
   value: 8.00,
@@ -314,7 +314,7 @@ This event signifies that an item was added to a cart for purchase.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_to_cart', {
   value: 8.00,
@@ -463,7 +463,7 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_to_wishlist', {
   value: 8.00,
@@ -617,7 +617,7 @@ This event signifies that a user has begun a checkout.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','begin_checkout', {
   id: 'O_12345',
@@ -830,7 +830,7 @@ Log this event when a lead has been generated to understand the efficacy of your
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','generate_lead', {
   currency: 'EUR',
@@ -1311,7 +1311,7 @@ Fire this event when a purchase was refund
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','refund', {
   id: 'O_12345',
@@ -1425,7 +1425,7 @@ This event signifies that an item was removed from a cart.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','remove_from_cart', {
   value: 8.00,
@@ -1571,7 +1571,7 @@ Use this event to contextualize search operations. This event can help you ident
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','search', {
   search_term: 't-shirts',
@@ -1640,7 +1640,7 @@ This event signifies that a user has selected some content of a certain type. Th
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','select_content', {
   content_type: 'product',
@@ -1719,7 +1719,7 @@ This event signifies an item was selected from a list.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','select_item', {
   item_list_name: 'Related products',
@@ -1859,7 +1859,7 @@ This event indicates that a user has signed up for an account.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','sign_up', {
   method: 'email',
@@ -1934,7 +1934,7 @@ This event signifies that a user viewed their cart.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','view_cart', {
   value: 8.00,
@@ -2092,7 +2092,7 @@ This event signifies that some content was shown to the user. Use this event to 
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','view_item', {
   value: 8.00,

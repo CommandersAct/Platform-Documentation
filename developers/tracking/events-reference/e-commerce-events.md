@@ -11,7 +11,7 @@ This event signifies a user has submitted their payment information
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_payment_info', {
   payment_method: 'card',
@@ -104,7 +104,7 @@ This event signifies a user has submitted their shipping information.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_shipping_info', {
   value: 8.00,
@@ -305,7 +305,7 @@ This event signifies that an item was added to a cart for purchase.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_to_cart', {
   value: 8.00,
@@ -454,7 +454,7 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','add_to_wishlist', {
   value: 8.00,
@@ -610,7 +610,7 @@ This event signifies that a user has begun a checkout.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','begin_checkout', {
   id: 'O_12345',
@@ -1256,7 +1256,7 @@ This event signifies that an item was removed from a cart.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','remove_from_cart', {
   value: 8.00,
@@ -1402,7 +1402,7 @@ This event signifies an item was selected from a list.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','select_item', {
   item_list_name: 'Related products',
@@ -1538,7 +1538,7 @@ This event signifies that a user viewed their cart.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','view_cart', {
   value: 8.00,
@@ -1696,7 +1696,7 @@ This event signifies that some content was shown to the user. Use this event to 
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','view_item', {
   value: 8.00,

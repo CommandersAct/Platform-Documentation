@@ -15,7 +15,7 @@ The `page_view` call lets you record whenever a user sees a page of your website
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','page_view', {
   page_type: 'product_list',
@@ -96,7 +96,7 @@ Send this event to signify that a user has logged in.
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger', 'login', {
   method: 'LinkedIn',
@@ -170,7 +170,7 @@ Use this event to contextualize search operations. This event can help you ident
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','search', {
   search_term: 't-shirts',
@@ -240,7 +240,7 @@ This event signifies that a user has selected some content of a certain type. Th
 **Example**
 
 {% tabs %}
-{% tab title="Javascript" %}
+{% tab title="JavaScript" %}
 ```javascript
 cact('trigger','select_content', {
   content_type: 'product',

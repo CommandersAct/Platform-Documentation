@@ -32,6 +32,8 @@ This event is associated with the user action of pressing the play button on the
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_start",
@@ -54,6 +56,28 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_start, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Paused
 
@@ -61,6 +85,8 @@ This event corresponds to the user action of pausing the video playback.
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_pause",
@@ -80,6 +106,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_pause, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_pause, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Interrupted
 
@@ -87,6 +135,8 @@ This event is sent when the video playback stops unintentionally. Network loss, 
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_error",
@@ -107,6 +157,28 @@ A sample event is as shown:
     "interruption_method":"network_loss"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_error, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_error, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Buffer Started
 
@@ -114,6 +186,8 @@ This corresponds to the event of buffering content or an advertisement.
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_buffer_start",
@@ -133,6 +207,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_buffer_start, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_buffer_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Buffer Completed
 
@@ -140,6 +236,8 @@ This corresponds to the event when the playback finishes buffering the content o
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_buffer_complete",
@@ -159,6 +257,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_buffer_complete, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_buffer_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Seek Started
 
@@ -166,6 +286,8 @@ This event is sent when a user manually seeks a certain cursor position of the v
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_seek_start",
@@ -186,6 +308,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_seek_start, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_seek_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Seek Completed
 
@@ -193,6 +337,8 @@ This event is sent after a user manually seeks to a certain cursor position of t
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_seek_complete",
@@ -213,6 +359,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_seek_complete, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_seek_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Resumed
 
@@ -220,6 +388,8 @@ This event is sent after the user resumes the video playback after it was paused
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_resume",
@@ -238,9 +408,29 @@ A sample event is as shown:
     "image_quality": "hd720",
     "livestream": true
 }
-
-
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_resume, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_resume, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Playback Completed
 
@@ -248,6 +438,8 @@ This event is sent after the playback is complete and when the pod session is fi
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_complete",
@@ -267,6 +459,28 @@ A sample event is as shown:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val playbackVideoEvent = TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_complete, "YOUR_VIDEO_SESSION_ID")
+playbackVideoEvent.contentAssetID = listOf("456", "223")
+playbackVideoEvent.cursorPosition = 0
+playbackVideoEvent.totalLength = 500
+serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    playbackVideoEvent?.contentAssetID = ["456", "223"]
+    playbackVideoEvent?.cursorPosition = 0
+    playbackVideoEvent?.totalLength = 500
+    serverSide?.execute(playbackVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ## Content
 
@@ -302,6 +516,8 @@ This event is sent once the user starts playing video content segment within a p
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_content_start",
@@ -325,6 +541,28 @@ A sample event is as shown:
     "user": {}
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val contentVideoEvent = TCVideoContentEvent(ETCVideoContentMode.video_content_start, "YOUR_VIDEO_SESSION_ID")
+contentVideoEvent.contentAssetID = "456"
+contentVideoEvent.cursorPosition = 0
+contentVideoEvent.totalLength = 500
+serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let contentVideoEvent = TCVideoContentEvent(mode: video_content_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    contentVideoEvent?.contentAssetID = "456"
+    contentVideoEvent?.cursorPosition = 0
+    contentVideoEvent?.totalLength = 500
+    serverSide?.execute(contentVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Content Playing
 
@@ -332,6 +570,8 @@ These events are sent as heartbeats every after a set interval to indicate the l
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_content_playing",
@@ -353,6 +593,28 @@ A sample event is as shown:
     "user": {}
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val contentVideoEvent = TCVideoContentEvent(ETCVideoContentMode.video_content_playing, "YOUR_VIDEO_SESSION_ID")
+contentVideoEvent.contentAssetID = "456"
+contentVideoEvent.cursorPosition = 0
+contentVideoEvent.totalLength = 500
+serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let contentVideoEvent = TCVideoContentEvent(mode: video_content_playing, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    contentVideoEvent?.contentAssetID = "456"
+    contentVideoEvent?.cursorPosition = 0
+    contentVideoEvent?.totalLength = 500
+    serverSide?.execute(contentVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Content Quarter Reached
 
@@ -360,6 +622,8 @@ These events are sent when a quarter of the video is reached, determined by the 
 
 A sample event is as shown:&#x20;
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_content_quarter_reached",
@@ -379,6 +643,28 @@ A sample event is as shown:&#x20;
     "user": {}
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val contentVideoEvent = TCVideoContentEvent(ETCVideoContentMode.video_content_quarter_reached, "YOUR_VIDEO_SESSION_ID")
+contentVideoEvent.contentAssetID = "456"
+contentVideoEvent.cursorPosition = 0
+contentVideoEvent.totalLength = 500
+serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let contentVideoEvent = TCVideoContentEvent(mode: video_content_quarter_reached, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    contentVideoEvent?.contentAssetID = "456"
+    contentVideoEvent?.cursorPosition = 0
+    contentVideoEvent?.totalLength = 500
+    serverSide?.execute(contentVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Content Completed
 
@@ -386,6 +672,8 @@ This event is sent once the video segment within the playback is completed. Note
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_content_complete",
@@ -405,6 +693,28 @@ A sample event is as shown:
     "user": {}
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val contentVideoEvent = TCVideoContentEvent(ETCVideoContentMode.video_content_complete, "YOUR_VIDEO_SESSION_ID")
+contentVideoEvent.contentAssetID = "456"
+contentVideoEvent.cursorPosition = 0
+contentVideoEvent.totalLength = 500
+serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let contentVideoEvent = TCVideoContentEvent(mode: video_content_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    contentVideoEvent?.contentAssetID = "456"
+    contentVideoEvent?.cursorPosition = 0
+    contentVideoEvent?.totalLength = 500
+    serverSide?.execute(contentVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ## Ads
 
@@ -428,6 +738,8 @@ This event is sent when an advertisement roll starts playing within the video pl
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_start",
@@ -443,6 +755,30 @@ A sample event is as shown:
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_start, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Playing
 
@@ -450,6 +786,8 @@ This event is sent between set intervals when the video ad is playing and is det
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_playing",
@@ -465,11 +803,37 @@ A sample event is as shown:
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_playing, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_playing, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Stop
 
 This event is sent after the user has viewed a video ad completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_stop",
@@ -485,11 +849,37 @@ This event is sent after the user has viewed a video ad completely. Note that th
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_stop, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_playing, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Completed
 
 This event is sent after the user has viewed the video ad roll completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_complete",
@@ -505,11 +895,37 @@ This event is sent after the user has viewed the video ad roll completely. Note 
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_complete, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Skip
 
 This event is sent when the user click on the skip ad button.&#x20;
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_skip",
@@ -525,6 +941,30 @@ This event is sent when the user click on the skip ad button.&#x20;
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_skip, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_skip, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Break Started
 
@@ -532,6 +972,8 @@ This event is sent when an advertisement break starts playing while the video pl
 
 A sample event is as shown:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_break_start",
@@ -547,11 +989,37 @@ A sample event is as shown:
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_break_start, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_break_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Break Completed
 
 This event is sent after the user has viewed the video ad break pod completely. Note that the `cursor_position` property has the same value as the `total_length` property.
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_break_complete",
@@ -567,11 +1035,37 @@ This event is sent after the user has viewed the video ad break pod completely. 
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_break_complete, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_break_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Ad Click
 
 This event is sent when the user click on the add.&#x20;
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
   "event_name": "video_ad_click",
@@ -587,6 +1081,30 @@ This event is sent when the user click on the add.&#x20;
   "load_type": "linear"
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val addVideoEvent = TCVideoAdEvent(ETCVideoAdMode.video_ad_click, "YOUR_VIDEO_SESSION_ID")
+addVideoEvent.adAssetID = "456"
+addVideoEvent.adPodID = "839"
+addVideoEvent.cursorPosition = 12
+addVideoEvent.totalLength = 211
+serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let addVideoEvent = TCVideoAdEvent(mode: video_ad_click, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    addVideoEvent?.adAssetID = "456"
+    addVideoEvent?.adPodID = "839"
+    addVideoEvent?.cursorPosition = 12
+    addVideoEvent?.totalLength = 211
+    serverSide?.execute(addVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ## Settings
 
@@ -612,6 +1130,8 @@ This event is sent when the user modify the audio volume of the video player.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_volume",
@@ -634,6 +1154,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_volume, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_volume, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Speed
 
@@ -641,6 +1181,8 @@ This event is sent when the user modify the speed of the video player.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_speed",
@@ -663,6 +1205,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_speed, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_speed, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Subtitle On
 
@@ -670,6 +1232,8 @@ This event is sent when the user turns on the subtitles of the video player.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_subtitle_on",
@@ -692,6 +1256,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_subtitle_on, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_subtitle_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Subtitle Off
 
@@ -699,6 +1283,8 @@ This event is sent when the user turns off the subtitles of the video player.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_subtitle_off",
@@ -721,6 +1307,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_subtitle_off, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_subtitle_off, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video FullScreen On
 
@@ -728,6 +1334,8 @@ This event is sent when the user turns on the full screen view of the video play
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_fullscreen_on",
@@ -750,13 +1358,35 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
 
-### Video FullScreen Off
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_fullscreen_on, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
+
+### Video Full Screen Off
 
 This event is sent when the user turns off the full screen view of the video player.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_fullscreen_off",
@@ -779,6 +1409,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_fullscreen_off, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 ### Video Quality
 
@@ -786,6 +1436,8 @@ This event is sent when the video quality of the video player is modified.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_quality",
@@ -808,6 +1460,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_quality, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_quality, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 
 
@@ -817,6 +1489,8 @@ This event is sent when the video is shared by the user.
 
 A sample event is as shown below:
 
+{% tabs %}
+{% tab title="JavaScript" %}
 ```javascript
 {
     "event_name": "video_share",
@@ -836,6 +1510,26 @@ A sample event is as shown below:
     "livestream": true
 }
 ```
+{% endtab %}
+
+{% tab title="Kotlin (Android)" %}
+```kotlin
+val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_share, "YOUR_VIDEO_SESSION_ID")
+settingVideoEvent.contentAssetID = "456"
+settingVideoEvent.imageQuality = "720"
+serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_share, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+{% endtabs %}
 
 
 
