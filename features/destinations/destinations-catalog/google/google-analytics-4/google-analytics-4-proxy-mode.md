@@ -84,12 +84,15 @@ This is necessary due to current [limitations of Google's protocol](https://deve
 Then the particularity with the _proxy mode_ is that you have to alter the GA4 hit URL, replacing _google-analytics.com_ with the Commanders Act server-side collection URL. This is done via the native GA parameter: `transport_url` (Example code provided below).\
 ![](<../../../../../.gitbook/assets/MicrosoftTeams-image (2).png>)\
 \
-The `transport_url` has to be set to `https://YOURTRACKINGDOMAIN.com/events?tc_s=YOURSITEID&token=YOURSOURCEKEY&event_name=ga_session_start&ga_url_param=`\
-\
-Your tracking domain is either your first party subdomain set in [domain management](../../../../../configure/administration/domain-management/), or our third party  collection domain `collect.commander1.com`
+The `transport_url` has to be set to your tracking url. \
+Your tracking domain is either:
 
-Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.\
+* &#x20;your first party subdomain set in [domain management](../../../../../configure/administration/domain-management/)\
+  In this case the `transpor_url` has to be set to `https://`<mark style="color:blue;">`YOUR_1ST_TRACKING_DOMAIN`</mark>`.com`**`/`**<mark style="color:orange;">**`cdp`**</mark>**`/`**`events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
+* or our third party  collection domain `collect.commander1.com`\
+  In this case the `transpor_url` has to be set to `https://collect.commander1.com/events?tc_s=`<mark style="color:green;">`YOURSITEID`</mark>`&token=`<mark style="color:green;">`YOURSOURCEKEY`</mark>`&event_name=ga_session_start&ga_url_param=`
 
+Consequently, this first hit is no longer sent to Google, but to Commanders Act server, which transforms it into a CA event. This event will then be sent to your GA4 destination where it will be processed (pseudonymized, etc. depending on the chosen settings) before being sent back to Google.
 
 Apart from this first client-side hit, all other events from the website should be sent from any source, for instance through our function cact('trigger', 'myEventName', ...). These events will also, of course, reach your GA4 destination where the data will be pseudonymized according to the settings of the destination.
 
