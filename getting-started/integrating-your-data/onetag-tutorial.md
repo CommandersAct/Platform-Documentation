@@ -27,12 +27,12 @@ Each action is known as an [event](../concepts/#event).
 
 Here’s the format of a typical `trigger` call:
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, [config]);
+<pre class="language-javascript"><code class="lang-javascript"><strong>cact('trigger', '&#x3C;event_name>', {&#x3C;event_data>}, [config], [callback]);
 </strong></code></pre>
 
 Each event has a name, like **page\_view**, and properties. For example, a **page\_view** event might have properties like `page_name` or `page_type`.
 
-Here is an example:
+Here is an example&#x20;
 
 ```javascript
 cact('trigger','page_view', {
@@ -41,6 +41,10 @@ cact('trigger','page_view', {
   //...
 });
 ```
+
+{% hint style="info" %}
+`config` and `callback` parameters are optional
+{% endhint %}
 
 ### Standard events and custom events
 
