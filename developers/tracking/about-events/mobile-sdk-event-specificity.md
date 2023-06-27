@@ -67,7 +67,7 @@ Here are an example of event playload :
    "value":22.53,
    "currency":"EUR",
    "user": {
-	   "id": "12345",
+	   "consistent_anonymous_id": "b5c6aa4e-0532-40c0-bf6b-a77bff46d600",
 	   "email": "toto@domain.fr",
 	   "consent_categories": ["1", "3"]
    },
@@ -165,6 +165,15 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | advertising\_id       | 705EB54D-9FC7-4730-BF1B-A5D0494E1D8C | Either IDFA or AAD               | Both     |
 | idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
 | ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
+
+
+### context -> user
+
+| Field name               | Example value                        | Description                                                   | Platform |
+| ------------------------ | ------------------------------------ | ------------------------------------------------------------- | -------- |
+| consistent_anonymous_id  | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | Anonymous id generated for consent. Usualy the same as sdk_id | Both     |
+| consent_categories       | ["1","2","10019","10018","13001"]    | List of accepted categories                                   | Both     |
+
 
 ### context -> device -> os
 
