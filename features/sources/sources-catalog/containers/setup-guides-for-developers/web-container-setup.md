@@ -72,6 +72,12 @@ Please ensure that the `<head>` Container file is loaded synchronously to avoid 
 
 In contrast to the `<head>` Container it is possible to implement `<body>` Container asynchronously. For example it is possible to load them via JavaScript on the `onload` event of the page or it is possible to use the `async` attribute in the `<script>` element.
 
+{% hint style="info" %}
+#### Installation via JavaScript Loaders
+
+It is possible to implement JavaScript Container files with JavaScript loaders like RequireJS or HeadJS. On the opposite it is not possible to bundle the JavaScript Container files with bundlers like Webpack or ParcelJS to make sure that the Container files are dynamically loaded from the CDN or server on each page request. Otherwise users will not be able to manage Commanders Act Web Container on their own.
+{% endhint %}
+
 ### Testing
 
 #### Via Browser Console
