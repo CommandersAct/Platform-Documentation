@@ -296,6 +296,7 @@
 * [Administration](configure/administration/README.md)
   * [User management](configure/administration/user-management.md)
   * [Domain Management](configure/administration/domain-management/README.md)
+    * [WAF Proxy (Cloud Flare,...)](configure/administration/domain-management/waf-proxy-cloud-flare-....md)
     * [A record](configure/administration/domain-management/a-record.md)
     * [CNAME record](configure/administration/domain-management/cname-record.md)
     * [On-Premise Proxy](configure/administration/domain-management/on-premise-proxy.md)

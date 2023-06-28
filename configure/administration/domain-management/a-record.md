@@ -1,6 +1,6 @@
 # A record
 
-The A record is the recommended solution for tracking purposes using 1st party cookies.
+The A record is a solution for tracking purposes using 1st party cookies.
 
 ## What is a `A record?`
 
