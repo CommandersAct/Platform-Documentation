@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 30/06/2023
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
+[google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
+{% endcontent-ref %}
+
 ## 09/06/2023
 
 * [Google Analytics 4 documentation](../features/destinations/destinations-catalog/google/google-analytics-4/) enhanced
