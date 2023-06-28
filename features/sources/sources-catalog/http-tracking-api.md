@@ -2,48 +2,90 @@
 description: version 2.0
 ---
 
-# HTTP tracking API source
+# HTTP Tracking API source
 
-The HTTP Tracking API lets you record data from any website or application. Requests are routed to our servers, and your data is routed to any destination you desire.
+The HTTP Tracking API is used to track **events** from any website or application. The data is collected by our servers, and then processed and routed to any configured destination.
 
-## Setup
+To manage users, check instead the dedicated [User API](../../../features/sources/sources-catalog/import-crm-users.md), and for products, the [Product API](../../../features/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md).
 
-### Headers
+## Endpoint URL
 
-#### Authentication
+The API's collect endpoint is available at the following URL:
+```
+https://collect.commander1.com/events?tc_s={siteId}&token={sourceKey}
+```
 
-Authenticate to the Tracking API by sending your project’s **Source Key** along with a request in the headers like so: `Authorization: Bearer NJtcKaoCYu...mGZDxRgMBMUw==`
+HTTP method: `POST`
+
+## Parameters
+
+- `tc_s` (required): site id
+- `token` (required): source key
 
 {% hint style="info" %}
-The source key is provided to you when you create a source in the [`source catalogue`](./)
+The source key is displayed in the settings of any [source](../../../features/sources/overview.md).
 {% endhint %}
 
-#### Content-Type <a href="#content-type" id="content-type"></a>
+## Headers
 
-To send data to our HTTP API, a content-type header must be set to `'application/json'`.
+### Content type <a href="#content-type" id="content-type"></a>
 
-### Errors
+The endpoint requires a `Content-Type` header set to `application/json`:
 
-We presently return a 200 response for all API requests, thus debugging should be done using the platform interface or our [config API](../../../developers/config-api.md) (event inspector or event delivery API). The sole exception is that if the request is too large or the JSON is invalid, it will return a 400.
+```
+Content-Type: application/json
+```
 
-### Max Request Size <a href="#max-request-size" id="max-request-size"></a>
+### Source key
+
+An _alternative_ way to provide the required **source key** to each request is by using an `Authorization` header:
+
+```
+Authorization: Bearer 7183b9d4-1031-11ee-be56-0242ac120002
+```
+
+{% hint style="info" %}
+Instead of a header, the source key should usually be provided through the `token` [URL parameter](#parameters) of the endpoint.
+{% endhint %}
+
+## Payload
+
+The properties of the event must be provided in the request body in JSON format.
+
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [specifications](../../../developers/tracking/about-events/).
+
+{% hint style="warning" %}
+The format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api1\_0.md).
+{% endhint %}
+
+{% hint style="info" %}
+Timestamps must be in milliseconds (ms).
+{% endhint %}
+
+{% hint style="info" %}
+`consistent_anonymous_id` corresponds to a unique identifier for a user, used on the CAX platform to identify a user. It is the equivalent of CAID cookie on a Web source.
+{% endhint %}
+
+## Errors
+
+The endpoint returns a 200 HTTP response to all API requests. Thus, debugging should be done using the platform interface or our [config API](../../../developers/config-api.md) (event inspector or event delivery API).
+
+As an exception, a 400 HTTP code is returned in case the request is too large or the payload JSON is invalid.
+
+## Max Request Size <a href="#max-request-size" id="max-request-size"></a>
 
 There is a maximum of `32KB` per API request.
 
-### Rate limit
+## Rate limit
 
 There is no real rate limit above which the system will discard your data. But if you need to import at a rate faster than **500 requests per second**, please [contact us](mailto:support@commandersact.com) beforehand.
 
-## Event API <a href="#track" id="track"></a>
+## Example
 
-You may use the event API to capture the actions that your users perform. Every action results in what is known as an "event," which have associated properties.
+Example of an API request:
 
-You should keep track of activities that are indications of your app's performance, such as Signed Up, Item Purchased, and Article Bookmarked. To begin, we recommend tracking only a few key events. More may easily be added later!
-
-Example `event` call:
-
-```c
-POST  https://collect.commander1.com/events?tc_s={siteId}
+```
+POST https://collect.commander1.com/events?tc_s=29&token=7183b9d4-1031-11ee-be56-0242ac120002
 ```
 
 ```json
@@ -82,27 +124,3 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
   }
 }
 ```
-
-Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../developers/tracking/about-events/).
-
-{% hint style="warning" %}
-Warning, the format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api1\_0.md).
-{% endhint %}
-
-{% hint style="info" %}
-If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
-{% endhint %}
-
-{% hint style="info" %}
-Timestamps supported are in milliseconds (ms).
-{% endhint %}
-
-`consistent_anonymous_id` corresponds to a unique identifier for a user, used on the CAX platform to identify a user. It is the equivalent of CAID cookie on a Web source.
-
-## User API
-
-User API let's you update/delete/create users in the database. Find details on [User API spec](https://community.commandersact.com/datacommander/api/users).
-
-## Product API
-
-Product API let's you import your product's catalog in the database. It is mostly used to enrich conversion events with product's properties. Find details in [Product API spec](https://community.commandersact.com/datacommander/api/conversions-and-product-catalog-v2.0#upsert-products).
