@@ -605,13 +605,4 @@ The following properties are automatically attached to the event.
 
 ## Limitations
 
-Sending events to GA4 has the following limitations:
-
-* Events can have a maximum of 25 parameters.
-* Events can have a maximum of 25 user properties.
-* User property names must be 24 characters or fewer.
-* User property values must be 36 characters or fewer.
-* Event names must be 40 characters or fewer, may only contain alpha-numeric characters and underscores, and must start with an alphabetic character.
-* Parameter names (including item parameters) must be 40 characters or fewer, may only contain alpha-numeric characters and underscores, and must start with an alphabetic character.
-* Parameter values (including item parameter values) must be 100 character or fewer.
-* Item parameters can have a maximum of 10 custom parameters.
+Depending on your licence (standard or 360), sending events to GA4 has some different limitations: [https://support.google.com/analytics/answer/11202874?sjid=10370297212042052180-EU](https://support.google.com/analytics/answer/11202874?sjid=10370297212042052180-EU)
