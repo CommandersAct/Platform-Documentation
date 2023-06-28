@@ -21,8 +21,8 @@ There is a technical setup to do to initialize this 1st party tracking (on the d
 
 4 methods are possible:
 
-* [A record](a-record.md)
-* [CNAME record](cname-record.md) (deprecated, not recommended anymore)
+* [A record](a-record.md)  (not the best solution anymore, but still usefull for Adblockers)
+* [CNAME record](cname-record.md) (not the best solution anymore, but still usefull for Adblockers)
 * [WAF proxy](waf-proxy-cloudflare-....md) (easy to setup if you have a WAF like CloudFlare)
 * [On-premise Proxy](on-premise-proxy.md) (more technical but prefered by some IT team)
 
