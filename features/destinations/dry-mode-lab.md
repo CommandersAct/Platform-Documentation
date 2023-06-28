@@ -16,4 +16,4 @@ When available, a switch is displayed on the destination interface:
 
 <figure><img src="../../.gitbook/assets/destination_dry_mode_settings.png" alt=""><figcaption></figcaption></figure>
 
-'Use real authentication' option use authentication details provided on the settings tab (IDs, tokens...) to build the request.
+The 'Use real authentication' option allows you to test your credentials by not mocking potential authentication requests. It is only applicable to some destinations, such as Google Enhanced Conversions or Snapchat.
