@@ -44,7 +44,7 @@ You can find below the CNIL recommandation, and for each parameter the _proxy mo
 
 6. _**the absence of collection of cross-site or lasting identifiers** (CRM ID, unique ID);_\
    \
-   **Solution:**  Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below)\
+   **Solution:**  Use the [Properties Transformation](../../../advanced-mapping.md#transform-data-before-it-gets-to-the-destination.) feature or the [Data Cleansing](../../../../data-quality/data-cleansing/) feature to treat on a case by case basis by deleting/hashing/transforming your properties (see [Manage custom PII data](google-analytics-4-proxy-mode.md#2.-manage-custom-pii-data) below) It is often easier to completly delete the user id.\
 
 7. _**the deletion of any other data that could lead to re-identification**._\
    \
