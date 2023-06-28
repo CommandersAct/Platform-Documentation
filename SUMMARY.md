@@ -206,6 +206,7 @@
   * [Destination filters](features/destinations/destination-filters.md)
   * [Mapping and Properties transformation](features/destinations/advanced-mapping.md)
   * [Event delivery](features/destinations/event-delivery.md)
+  * [Dry mode (lab)](features/destinations/dry-mode-lab.md)
   * [Destination event inspector](features/destinations/live-event-inspector.md)
 * [Enrichments](features/enrichments/README.md)
   * [Augmented User Attributes](features/enrichments/augmented-user-attributes/README.md)
