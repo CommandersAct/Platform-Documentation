@@ -125,6 +125,7 @@
     * [Facebook](features/destinations/destinations-catalog/facebook/README.md)
       * [Facebook Conversions API](features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
         * [Facebook CAPI through GTM](features/destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md)
+        * [Performance tab (Event Match Quality)](features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality.md)
       * [Facebook Custom Audiences](features/destinations/destinations-catalog/facebook/facebook-custom-audiences.md)
       * [Facebook Offline conversion \[Deprecated\]](features/destinations/destinations-catalog/facebook/facebook-offline-conversion.md)
     * [FTP](features/destinations/destinations-catalog/ftp.md)
