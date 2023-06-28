@@ -1,7 +1,9 @@
 # Dry mode (lab)
 
 {% hint style="info" %}
-Lab feature, not available for all customers (private preview)
+This feature is flagged to "**LAB**" (aka Laboratory feature), it means that interfaces are not definitive and may evolve in the future.
+
+This feature is currently in private preview.
 {% endhint %}
 
 The Dry mode allows you to simulate sending events, **but events are not sent** to the destination.
