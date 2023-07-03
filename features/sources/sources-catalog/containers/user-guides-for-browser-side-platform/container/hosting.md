@@ -23,7 +23,7 @@ Simply fill in all fields of the form:\
 **User:** Login to access of your FTP\
 **Password/Key:** if there's a password or a key associated to your FTP, enter this information here&#x20;
 
-<figure><img src="../../../../../../.gitbook/assets/image (4).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (4) (4).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### CDN connector configuration
 

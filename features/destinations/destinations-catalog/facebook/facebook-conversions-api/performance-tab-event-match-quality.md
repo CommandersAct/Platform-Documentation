@@ -6,6 +6,10 @@ The Performance tab can now display Event Match Quality insights, coming from Fa
 
 First, select (or login) the Facebook account to which belongs the pixel defined in the Settings step.
 
+{% hint style="info" %}
+Facebook accounts can be managed on Administration / Connector credentials
+{% endhint %}
+
 You can click on a specific event to get more details about the score.
 
 <figure><img src="../../../../../.gitbook/assets/Capture d’écran 2023-06-26 à 16.35.02.png" alt=""><figcaption></figcaption></figure>
