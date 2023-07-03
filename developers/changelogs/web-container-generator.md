@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v84.5 - 29/06/2023
+* Support various URLs for IAB vendor list
+* Support new "illustrations" attribute for IAB TCF GVLv3 purposes, specialPurposes, features and specialFeatures
+
 ### Release v84.4 - 28/06/2023
 * Update handling of hidden subcategories
 * Support dataRetention & dataCategories attributes published in IAB TCF GVLv3
