@@ -6,6 +6,59 @@ description: >-
 
 # Release notes
 
+## Release 10.0.13 - 24/06/23
+
+* **New Source: Pixel Tracking API**\
+  Pixel Tracking API, also known as 1x1 gifs, or clear gifs, allows you to send data to Commanders Act with a HTTP GET request from your server, your local console or any development framework. \
+  You can have a look to [our dedicated documentation](https://doc.commandersact.com/features/sources/sources-catalog/web/pixel-tracking) page for more details.\
+  \
+  ![](<../.gitbook/assets/image (7).png>)\
+
+*   **Data Cleansing: New functions available**\
+    9 new functions related to dates: \
+    DATEPARSE ; DATEFORMAT ; DATEADD ; DATESUB ; DATEDIFF ; AGE ; \[YEAR, MONTH, DAY, HOUR, MINUTES, SECONDS] ; TIMEZONE ; TODAY\
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt="" width="563"><figcaption></figcaption></figure>
+*   **Consent: New setting "Global Privacy Control"**\
+    Setting to be configured at the banner level. Required for CCPA banners\
+    For further information, you can read [this page](https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control)\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt="" width="485"><figcaption></figcaption></figure>
+
+
+*   **Destinations: New section 'events filtered' on Event Delivery tab**\
+    For all destinations, on Event Delivery tab, there is a new section with number of filtered events (consents, conditions defined)\
+
+
+    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+*   **Destinations: Dry Mode (lab)**\
+    The Dry mode allows you to simulate sending events, **but events are not sent** to the destination.\
+
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+*   **Destinations: update on Facebook Conversion API**\
+    We released a Performance tab with Event Match Quality score\
+    The Performance tab can now display Event Match Quality insights, coming from Facebook. \
+    It represents the matching quality, referring to the quality of events sent (completeness of data, like events with email, phone, fbp, fbc...). More identifiers are present on events sent, better is the score.\
+    You can have a look to our [documentation ](https://doc.commandersact.com/features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality)\
+
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+*   **UI Improvements: Statistics on weather icons**\
+    On hover of weather icons, you can see the percentage of accepted/refused events\
+
+
+    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+
+
+
+
 ## Release 10.0.12 - 24/05/23
 
 *   **Event delivery improvement for Audience based destinations**\
@@ -287,7 +340,7 @@ More information here:
     ​![](<../.gitbook/assets/image (1) (3) (1).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (5) (3).png>)
+    ![](<../.gitbook/assets/image (5) (3) (1).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​

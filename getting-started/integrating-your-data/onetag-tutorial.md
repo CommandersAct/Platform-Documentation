@@ -15,7 +15,7 @@ You will find 2 tags to choose from :&#x20;
 1. The _**OneTag - Builder**_: it will guide you without having to write code
 2. The _**OneTag - Custom**:_ for those who prefer to manually write complex event data using javascript
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Setup the tag
 
@@ -109,7 +109,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of events originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 4. Setup your first destination
 
@@ -132,5 +132,5 @@ When you add a destination (aka serverside tag), you manage the user consent by 
 \
 As a result, since each event entering the platform contains information about the user's consent, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 

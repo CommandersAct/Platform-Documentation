@@ -75,4 +75,4 @@ The Template Editor enables you to create, preview, and test custom templates. I
 
 <figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>Drag and drop your fields</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Write your code and test it with an event</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption><p>Write your code and test it with an event</p></figcaption></figure>
