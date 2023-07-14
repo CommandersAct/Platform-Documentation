@@ -6,15 +6,21 @@ description: The latest updates made to our documentation articles
 
 ## 07/07/2023
 
-Destination documentation (updates):
+GA4 Destination documentation updates:
 
 {% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
 {% endcontent-ref %}
 
+First party tracking : CloudFlare tutorial updates:
+
+{% content-ref url="../configure/administration/domain-management/waf-proxy-cloudflare.md" %}
+[waf-proxy-cloudflare.md](../configure/administration/domain-management/waf-proxy-cloudflare.md)
+{% endcontent-ref %}
+
 ## 30/06/2023
 
-Destination documentation (updates):
+GA4 Destination documentation updates:
 
 {% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)

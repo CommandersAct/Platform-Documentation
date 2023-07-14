@@ -1578,8 +1578,8 @@ cact("trigger","video_start", {
 ```javascript
 cact("trigger","video_content_start", {
   video_session_id: "12345",
-  asset_id: "123",
-  pod_id: "CAA",
+  content_asset_id: "123",
+  content_pod_id: "CAA",
   video_title: "Raw is War!!",
   video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
@@ -1602,8 +1602,8 @@ cact("trigger","video_content_start", {
 ```javascript
 cact("trigger","video_content_playing", {
   video_session_id: "12345",
-  asset_id: "123",
-  pod_id: "CAA",
+  content_asset_id: "123",
+  content_pod_id: "CAA",
   video_title: "Raw is War!!",
   video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
@@ -1668,8 +1668,8 @@ cact("trigger","video_resume", {
 ```javascript
 cact("trigger","video_ad_start", {
   video_session_id: "12345",
-  asset_id: "ad1",
-  pod_id: "adCAA",
+  ad_asset_id: "ad1",
+  ad_pod_id: "adCAA",
   ad_type: "mid-roll",
   video_title: "Thums Up",
   publisher: "Coca Cola",
@@ -1684,8 +1684,8 @@ cact("trigger","video_ad_start", {
 ```javascript
 cact("trigger","video_ad_playing", {
   video_session_id: "12345",
-  asset_id: "ad1",
-  pod_id: "adCAA",
+  ad_asset_id: "ad1",
+  ad_pod_id: "adCAA",
   ad_type: "mid-roll",
   video_title: "Thums Up",
   publisher: "Coca Cola",
@@ -1700,8 +1700,8 @@ cact("trigger","video_ad_playing", {
 ```javascript
 cact("trigger","video_ad_complete", {
   video_session_id: "12345",
-  asset_id: "ad1",
-  pod_id: "adCAA",
+  ad_asset_id: "ad1",
+  ad_pod_id: "adCAA",
   ad_type: "mid-roll",
   video_title: "Thums Up",
   publisher: "Coca Cola",
@@ -1716,8 +1716,8 @@ cact("trigger","video_ad_complete", {
 ```javascript
 cact("trigger","video_content_playing", {
   video_session_id: "12345",
-  asset_id: "123",
-  pod_id: "CAA",
+  content_asset_id: "123",
+  content_pod_id: "CAA",
   video_title: "Raw is War!!",
   video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],
@@ -1740,8 +1740,8 @@ cact("trigger","video_content_playing", {
 ```javascript
 cact("trigger","video_content_complete", {
   video_session_id: "12345",
-  asset_id: "123",
-  pod_id: "CAA",
+  content_asset_id: "123",
+  content_pod_id: "CAA",
   video_title: "Raw is War!!",
   video_description: "Sample description",
   keywords: ["wrestling", "entertainment"],

@@ -12,7 +12,7 @@ description: >-
   Pixel Tracking API, also known as 1x1 gifs, or clear gifs, allows you to send data to Commanders Act with a HTTP GET request from your server, your local console or any development framework. \
   You can have a look to [our dedicated documentation](https://doc.commandersact.com/features/sources/sources-catalog/web/pixel-tracking) page for more details.\
   \
-  ![](<../.gitbook/assets/image (1).png>)\
+  ![](<../.gitbook/assets/image (1) (8).png>)\
 
 *   **Data Cleansing: New functions available**\
     9 new functions related to dates: \
@@ -20,25 +20,25 @@ description: >-
     \
 
 
-    <figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 *   **Consent: New setting "Global Privacy Control"**\
     Setting to be configured at the banner level. Required for CCPA banners\
     For further information, you can read [this page](https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control)\
 
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt="" width="485"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 
 *   **Destinations: New section 'events filtered' on Event Delivery tab**\
     For all destinations, on Event Delivery tab, there is a new section with number of filtered events (consents, conditions defined)\
 
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations: Dry Mode (lab) - Closed Beta**\
     The Dry mode allows you to simulate sending events, **but events are not sent** to the destination.\
 
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (6).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations: update on Facebook Conversion API**\
     We released a Performance tab with Event Match Quality score\
     The Performance tab can now display Event Match Quality insights, coming from Facebook. \
@@ -53,7 +53,7 @@ description: >-
     On hover of weather icons, you can see the percentage of accepted/refused events\
 
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -128,7 +128,7 @@ description: >-
     \
     **Commission Junction:** dynamic fields support
 
-    <figure><img src="../.gitbook/assets/image (6) (4).png" alt="" width="230"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (4) (1).png" alt="" width="230"><figcaption></figcaption></figure>
 
 
 
@@ -366,7 +366,7 @@ More information here:
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
       (closed beta) _Public opening on 08 Dec._\\
 
-      ***
+
 
       <figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**

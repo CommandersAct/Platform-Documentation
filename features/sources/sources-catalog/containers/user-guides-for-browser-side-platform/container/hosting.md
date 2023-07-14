@@ -120,7 +120,7 @@ Simply follow the step by step guide provided by Adobe:
 
 Simply follow the step by step guide provided by Equativ:
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1).png" alt="" width="340"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="340"><figcaption></figcaption></figure>
 
 ### Test & Debug
 

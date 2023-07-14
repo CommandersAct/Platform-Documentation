@@ -48,7 +48,7 @@ It is equals to `Associated segments – control group`.
 **Control Group**: number of users in the control group, it represents the % of users selected to be in the control group and not exposed to the campaign.\
 It is equals to `Associated segments – audience activated`.
 
-***
+
 
 **Cards**
 

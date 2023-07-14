@@ -248,7 +248,7 @@ const facebook_fbp = getCookieValues('fbp')[0];
 if (facebook_fbp ) {  // ...}
 ```
 
-***
+
 
 **Parameters**
 
@@ -570,7 +570,7 @@ const object = JSON.parse('{"foo":"bar"}');
 const str = JSON.stringify({foo: 'bar'});
 ```
 
-***
+
 
 ## `Math` <a href="#math" id="math"></a>
 
