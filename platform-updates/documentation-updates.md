@@ -88,8 +88,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
 {% endcontent-ref %}
 
 ## 07/04/2023
@@ -307,8 +307,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
@@ -451,8 +451,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
 {% endcontent-ref %}
 
 ## 15/07/2022
@@ -463,8 +463,8 @@ Destination documentation (updates):
 [google-enhanced-conversion.md](../features/destinations/destinations-catalog/google/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/destinations/destinations-catalog/at-internet.md" %}
-[at-internet.md](../features/destinations/destinations-catalog/at-internet.md)
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
