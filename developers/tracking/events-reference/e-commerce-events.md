@@ -44,7 +44,7 @@ serverside.execute(event);
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="Objective-C (iOS)" %}
 ```objectivec
 TCAddPaymentInfoEvent *event = [[TCAddPaymentInfoEvent alloc] initWithId: @"ID";
 event.revenue = [[NSDecimalNumber alloc] initWithFloat: 16.00f];

@@ -68,6 +68,26 @@ serverSide.execute(playbackVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_start, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -115,6 +135,26 @@ playbackVideoEvent.contentAssetID = listOf("456", "223")
 playbackVideoEvent.cursorPosition = 0
 playbackVideoEvent.totalLength = 500
 serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_pause, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_pause andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
 ```
 {% endtab %}
 
@@ -169,6 +209,26 @@ serverSide.execute(playbackVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_error, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_error andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_error, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -219,6 +279,26 @@ serverSide.execute(playbackVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_buffer_start, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_buffer_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_buffer_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -266,6 +346,26 @@ playbackVideoEvent.contentAssetID = listOf("456", "223")
 playbackVideoEvent.cursorPosition = 0
 playbackVideoEvent.totalLength = 500
 serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_buffer_complete, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_buffer_complete andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
 ```
 {% endtab %}
 
@@ -320,6 +420,26 @@ serverSide.execute(playbackVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_seek_start, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_seek_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_seek_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -368,6 +488,26 @@ playbackVideoEvent.contentAssetID = listOf("456", "223")
 playbackVideoEvent.cursorPosition = 0
 playbackVideoEvent.totalLength = 500
 serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_seek_complete, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_seek_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
 ```
 {% endtab %}
 
@@ -421,6 +561,26 @@ serverSide.execute(playbackVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_resume, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_resume andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let playbackVideoEvent = TCVideoPlaybackEvent(mode: video_resume, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -468,6 +628,26 @@ playbackVideoEvent.contentAssetID = listOf("456", "223")
 playbackVideoEvent.cursorPosition = 0
 playbackVideoEvent.totalLength = 500
 serverSide.execute(playbackVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoPlaybackEvent playbackVideoEvent = new TCVideoPlaybackEvent(ETCVideoPlaybackMode.video_complete, "YOUR_VIDEO_SESSION_ID");
+playbackVideoEvent.contentAssetID = Arrays.asList("456", "223");
+playbackVideoEvent.cursorPosition = 0;
+playbackVideoEvent.totalLength = 500;
+serverSide.execute(playbackVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoPlaybackEvent *playbackVideoEvent = [[TCVideoPlaybackEvent alloc] initWithMode: video_resume andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    playbackVideoEvent.contentAssetID =  [@[@"456", @"223"] mutableCopy];
+    playbackVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    playbackVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: playbackVideoEvent];
 ```
 {% endtab %}
 
@@ -553,6 +733,25 @@ serverSide.execute(contentVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoContentEvent contentVideoEvent = new TCVideoContentEvent(ETCVideoContentMode.video_content_start, "YOUR_VIDEO_SESSION_ID");
+contentVideoEvent.contentAssetID = "456";
+contentVideoEvent.cursorPosition = 0;
+contentVideoEvent.totalLength = 500;
+serverSide.execute(contentVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+<pre class="language-objectivec"><code class="lang-objectivec"><strong>    TCVideoContentEvent *addContentEvent = [[TCVideoContentEvent alloc] initWithMode: video_content_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+</strong>    addContentEvent.contentAssetID = @"456";
+    addContentEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    addContentEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: addContentEvent];
+</code></pre>
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let contentVideoEvent = TCVideoContentEvent(mode: video_content_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -602,6 +801,26 @@ contentVideoEvent.contentAssetID = "456"
 contentVideoEvent.cursorPosition = 0
 contentVideoEvent.totalLength = 500
 serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoContentEvent contentVideoEvent = new TCVideoContentEvent(ETCVideoContentMode.video_content_playing, "YOUR_VIDEO_SESSION_ID");
+contentVideoEvent.contentAssetID = "456";
+contentVideoEvent.cursorPosition = 0;
+contentVideoEvent.totalLength = 500;
+serverSide.execute(contentVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoContentEvent *addContentEvent = [[TCVideoContentEvent alloc] initWithMode: video_content_playing andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addContentEvent.contentAssetID = @"456";
+    addContentEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    addContentEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: addContentEvent];
 ```
 {% endtab %}
 
@@ -655,6 +874,26 @@ serverSide.execute(contentVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoContentEvent contentVideoEvent = new TCVideoContentEvent(ETCVideoContentMode.video_content_playing, "YOUR_VIDEO_SESSION_ID");
+contentVideoEvent.contentAssetID = "456";
+contentVideoEvent.cursorPosition = 0;
+contentVideoEvent.totalLength = 500;
+serverSide.execute(contentVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoContentEvent *addContentEvent = [[TCVideoContentEvent alloc] initWithMode: video_content_quarter_reached andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addContentEvent.contentAssetID = @"456";
+    addContentEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    addContentEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: addContentEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let contentVideoEvent = TCVideoContentEvent(mode: video_content_quarter_reached, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -702,6 +941,26 @@ contentVideoEvent.contentAssetID = "456"
 contentVideoEvent.cursorPosition = 0
 contentVideoEvent.totalLength = 500
 serverSide.execute(contentVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoContentEvent contentVideoEvent = new TCVideoContentEvent(ETCVideoContentMode.video_content_complete, "YOUR_VIDEO_SESSION_ID");
+contentVideoEvent.contentAssetID = "456";
+contentVideoEvent.cursorPosition = 0;
+contentVideoEvent.totalLength = 500;
+serverSide.execute(contentVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoContentEvent *addContentEvent = [[TCVideoContentEvent alloc] initWithMode: video_content_complete andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addContentEvent.contentAssetID = @"456";
+    addContentEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 0];
+    addContentEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 500];;
+    [serverside execute: addContentEvent];
 ```
 {% endtab %}
 
@@ -768,6 +1027,28 @@ serverSide.execute(addVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_start, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let addVideoEvent = TCVideoAdEvent(mode: video_ad_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -813,6 +1094,28 @@ addVideoEvent.adPodID = "839"
 addVideoEvent.cursorPosition = 12
 addVideoEvent.totalLength = 211
 serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_playing, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_playing andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
 ```
 {% endtab %}
 
@@ -862,6 +1165,28 @@ serverSide.execute(addVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_stop, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_stop andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let addVideoEvent = TCVideoAdEvent(mode: video_ad_playing, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -908,6 +1233,28 @@ serverSide.execute(addVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_complete, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_complete andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let addVideoEvent = TCVideoAdEvent(mode: video_ad_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -951,6 +1298,28 @@ addVideoEvent.adPodID = "839"
 addVideoEvent.cursorPosition = 12
 addVideoEvent.totalLength = 211
 serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_skip, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_skip andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
 ```
 {% endtab %}
 
@@ -1002,6 +1371,28 @@ serverSide.execute(addVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_break_start, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_break_start andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let addVideoEvent = TCVideoAdEvent(mode: video_ad_break_start, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -1048,6 +1439,28 @@ serverSide.execute(addVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_break_complete, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_break_complete andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let addVideoEvent = TCVideoAdEvent(mode: video_ad_break_complete, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -1091,6 +1504,28 @@ addVideoEvent.adPodID = "839"
 addVideoEvent.cursorPosition = 12
 addVideoEvent.totalLength = 211
 serverSide.execute(addVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoAdEvent addVideoEvent = new TCVideoAdEvent(ETCVideoAdMode.video_ad_click, "YOUR_VIDEO_SESSION_ID");
+addVideoEvent.adAssetID = "456";
+addVideoEvent.adPodID = "839";
+addVideoEvent.cursorPosition = 12;
+addVideoEvent.totalLength = 211;
+serverSide.execute(addVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoAdEvent *addVideoEvent = [[TCVideoAdEvent alloc] initWithMode: video_ad_click andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    addVideoEvent.adAssetID = @"456";
+    addVideoEvent.adPodID = @"839";
+    addVideoEvent.cursorPosition = [[NSDecimalNumber alloc] initWithInt: 12];
+    addVideoEvent.totalLength = [[NSDecimalNumber alloc] initWithInt: 211];
+    [serverside execute: addVideoEvent];
 ```
 {% endtab %}
 
@@ -1165,6 +1600,24 @@ serverSide.execute(settingVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_volume, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_volume andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let settingVideoEvent = TCVideoSettingEvent(mode: video_volume, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -1213,6 +1666,24 @@ val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_speed, "YO
 settingVideoEvent.contentAssetID = "456"
 settingVideoEvent.imageQuality = "720"
 serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_speed, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_speed andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
 ```
 {% endtab %}
 
@@ -1267,6 +1738,24 @@ serverSide.execute(settingVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_subtitle_on, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_subtitle_on andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let settingVideoEvent = TCVideoSettingEvent(mode: video_subtitle_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -1315,6 +1804,24 @@ val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_subtitle_o
 settingVideoEvent.contentAssetID = "456"
 settingVideoEvent.imageQuality = "720"
 serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_subtitle_off, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_subtitle_off andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
 ```
 {% endtab %}
 
@@ -1369,6 +1876,24 @@ serverSide.execute(settingVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_fullscreen_on, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_fullscreen_on andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
@@ -1420,12 +1945,30 @@ serverSide.execute(settingVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_fullscreen_off, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
     settingVideoEvent?.contentAssetID = "456"
     settingVideoEvent?.imageQuality = "720"
     serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_fullscreen_off andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
 ```
 {% endtab %}
 {% endtabs %}
@@ -1468,6 +2011,24 @@ val settingVideoEvent = TCVideoSettingEvent(ETCVideoSettingMode.video_quality, "
 settingVideoEvent.contentAssetID = "456"
 settingVideoEvent.imageQuality = "720"
 serverSide.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_quality, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_quality andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
 ```
 {% endtab %}
 
@@ -1521,12 +2082,30 @@ serverSide.execute(settingVideoEvent)
 ```
 {% endtab %}
 
+{% tab title="Java (Android)" %}
+```java
+TCVideoSettingEvent settingVideoEvent = new TCVideoSettingEvent(ETCVideoSettingMode.video_share, "YOUR_VIDEO_SESSION_ID");
+settingVideoEvent.contentAssetID = "456";
+settingVideoEvent.imageQuality = "720";
+serverSide.execute(settingVideoEvent);
+```
+{% endtab %}
+
 {% tab title="Swift (iOS)" %}
 ```swift
 let settingVideoEvent = TCVideoSettingEvent(mode: video_share, andSessionId: "YOUR_VIDEO_SESSION_ID")
     settingVideoEvent?.contentAssetID = "456"
     settingVideoEvent?.imageQuality = "720"
     serverSide?.execute(settingVideoEvent)
+```
+{% endtab %}
+
+{% tab title="Objective-C (iOS)" %}
+```objectivec
+    TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_share andSessionId: @"YOUR_VIDEO_SESSION_ID"];
+    settingVideoEvent.contentAssetID = @"456";
+    settingVideoEvent.imageQuality =  @"720";
+    [serverside execute: settingVideoEvent];
 ```
 {% endtab %}
 {% endtabs %}
