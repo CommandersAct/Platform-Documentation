@@ -23,7 +23,7 @@ At the last step of the Source setup, you will obtain a Source Key, required for
 
 ### Replace SDK Modules
 
-Our SDK files have changed. You must replace the old ones. Please upload our latest versions :
+Our SDK files have changed. You must replace the old ones. Get our latest versions :
 
 Android : [https://github.com/CommandersAct/AndroidV5#latest-available-versions](https://github.com/CommandersAct/AndroidV5#latest-available-versions)\
 iOS : [https://github.com/CommandersAct/iOSV5#latest-available-versions](https://github.com/CommandersAct/iosV5#latest-available-versions)
@@ -55,12 +55,12 @@ https://github.com/CommandersAct/iosV5/tree/master/TCServerSide#example](https:/
 If your mobile app use our SDK modules only for Privacy your migration is done at this point.
 
 \
-If you want to benefit of all the advantages of tracking with server-side destinations, or if you was using server-side v1 containers to send data to your partners, please follow the next steps!
+If you want to benefit of all the advantages of tracking with server-side destinations, or if you were using server-side v1 containers to send data to your partners, please follow the next steps!
 {% endhint %}
 
 ### Replace container calls by events
 
-With the old platform, you was used to send a container call, with all the variables. It's not compatible anymore.\
+With the old platform, you were used to send a container call, with all the variables. It's not compatible anymore.\
 Instead, you have to send events with properties.
 
 Here’s a code example of how to execute an event:
@@ -116,7 +116,7 @@ Maybe you have some specific needs ? Don’t forget to check the following FAQ
 
 ## FAQ
 
-### Is my data layer must be identical for my website & my app ?
+### Should my data layer be identical for my website & my app ?
 
 It’s a good practice !\
 We strongly recommend to have the same data layer for web & mobile application\
@@ -166,7 +166,7 @@ If you need to set a persistent variable, please refer to this doc:\
 [https://github.com/CommandersAct/AndroidV5/tree/master/TCServerSide#persisting-variables](https://github.com/CommandersAct/AndroidV5/tree/master/TCServerSide)[https://github.com/CommandersAct/iosV5/tree/master/TCServerSide#persisting-variables](https://github.com/CommandersAct/iosV5/tree/master/TCServerSide)
 
 {% hint style="info" %}
-Persisting variable’s definition: it’s a key/value which will remains the same forever\
+Persisting variable’s definition: it’s a key/value which will remains the same as long as the app is opened\
 (example : Google account ID)
 {% endhint %}
 
