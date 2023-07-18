@@ -1954,21 +1954,21 @@ serverSide.execute(settingVideoEvent);
 ```
 {% endtab %}
 
-{% tab title="Swift (iOS)" %}
-```swift
-let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
-    settingVideoEvent?.contentAssetID = "456"
-    settingVideoEvent?.imageQuality = "720"
-    serverSide?.execute(settingVideoEvent)
-```
-{% endtab %}
-
 {% tab title="Objective-C (iOS)" %}
 ```
     TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_fullscreen_off andSessionId: @"YOUR_VIDEO_SESSION_ID"];
     settingVideoEvent.contentAssetID = @"456";
     settingVideoEvent.imageQuality =  @"720";
     [serverside execute: settingVideoEvent];
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_fullscreen_on, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
 ```
 {% endtab %}
 {% endtabs %}
@@ -2091,21 +2091,21 @@ serverSide.execute(settingVideoEvent);
 ```
 {% endtab %}
 
-{% tab title="Swift (iOS)" %}
-```swift
-let settingVideoEvent = TCVideoSettingEvent(mode: video_share, andSessionId: "YOUR_VIDEO_SESSION_ID")
-    settingVideoEvent?.contentAssetID = "456"
-    settingVideoEvent?.imageQuality = "720"
-    serverSide?.execute(settingVideoEvent)
-```
-{% endtab %}
-
 {% tab title="Objective-C (iOS)" %}
 ```objectivec
     TCVideoSettingEvent *settingVideoEvent = [[TCVideoSettingEvent alloc] initWithMode: video_share andSessionId: @"YOUR_VIDEO_SESSION_ID"];
     settingVideoEvent.contentAssetID = @"456";
     settingVideoEvent.imageQuality =  @"720";
     [serverside execute: settingVideoEvent];
+```
+{% endtab %}
+
+{% tab title="Swift (iOS)" %}
+```swift
+let settingVideoEvent = TCVideoSettingEvent(mode: video_share, andSessionId: "YOUR_VIDEO_SESSION_ID")
+    settingVideoEvent?.contentAssetID = "456"
+    settingVideoEvent?.imageQuality = "720"
+    serverSide?.execute(settingVideoEvent)
 ```
 {% endtab %}
 {% endtabs %}
