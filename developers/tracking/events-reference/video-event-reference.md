@@ -2342,7 +2342,7 @@ cact("trigger","video_content_complete", {
 
 ```javascript
 cact("trigger","video_complete", {
-  session_id: "12345",
+  video_session_id: "12345",
   content_asset_id: null,
   content_pod_id: null,
   ad_asset_id: "ad1",
