@@ -304,3 +304,4 @@
     * [A record](configure/administration/domain-management/a-record.md)
     * [CNAME record](configure/administration/domain-management/cname-record.md)
     * [On-Premise Proxy](configure/administration/domain-management/on-premise-proxy.md)
+* [Cookies](configure/cookies.md)
