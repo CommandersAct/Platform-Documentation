@@ -228,7 +228,7 @@
   * [Segment](features/customers/segment/README.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)
     * [Segment stats](features/customers/segment/segment-stats.md)
-* [Explore data](features/analyses/README.md)
+* [Explore](features/analyses/README.md)
   * [Campaign analysis](features/analyses/campaign-analysis/README.md)
     * [Attribution](features/analyses/campaign-analysis/attribution.md)
     * [Control Group (Closed Beta )](features/analyses/campaign-analysis/control-group-beta-release-soon.md)
