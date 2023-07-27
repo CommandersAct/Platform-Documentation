@@ -21,7 +21,7 @@ To identify the conversion and when a transaction identifier is not provided, th
 2. `_gcl_dc`
 3. `_gac_[GA_PROPERTY_ID]`
 
-On the other hand, when a transaction identifier is present both the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)and<mark style="color:blue;">`conversionDateTime`</mark>are removed from the hit to prevent the "ConversionAdjustmentUploadError": [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid\_date\_time\_pair\_and\_order\_id\_both\_set). More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
+On the other hand, when a transaction identifier is present both the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)and<mark style="color:blue;">`conversionDateTime`</mark>are removed from the hit to prevent the [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid\_date\_time\_pair\_and\_order\_id\_both\_set)upload error. More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
 {% endhint %}
 
 {% hint style="warning" %}
