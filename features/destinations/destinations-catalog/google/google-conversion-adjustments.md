@@ -47,6 +47,6 @@ If<mark style="color:blue;">`Transaction Adjusted Timestamp (adjustmentDateTime)
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** This is required when specific conditions are verified. See [Field mappings](google-conversion-adjustments.md#field-mappings) info box more for details.\
+**\[1]** This is required when specific conditions are verified. See [Field mappings](google-conversion-adjustments.md#field-mappings) for details.\
 **\[2]** See [Destination setup](google-conversion-adjustments.md#destination-setup) for more details.
 {% endhint %}
