@@ -4,9 +4,17 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 28/07/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-conversion-adjustments.md" %}
+[google-conversion-adjustments.md](../features/destinations/destinations-catalog/google/google-conversion-adjustments.md)
+{% endcontent-ref %}
+
 ## 07/07/2023
 
-GA4 Destination documentation updates:
+Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
@@ -20,7 +28,7 @@ First party tracking : CloudFlare tutorial updates:
 
 ## 30/06/2023
 
-GA4 Destination documentation updates:
+Destination documentation (updates)
 
 {% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
 [google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
@@ -40,8 +48,6 @@ Update Event Delivery documentation ([filtered events](https://doc.commandersact
 * [Codes examples of events](https://doc.commandersact.com/developers/tracking/events-reference) has been improved, the following languages has been added:\
   Swift, Objective-C, Kotlin, Dart (Flutter), json
 * Improvements for connectors documentation
-
-
 
 ## 26/05/2023
 
