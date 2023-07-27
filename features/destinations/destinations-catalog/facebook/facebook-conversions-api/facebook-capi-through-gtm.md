@@ -9,7 +9,7 @@ Commanders Act provides a GTM template to connect your existing GTM implementati
 
 ### 1. Add our bridge tag
 
-First, access [GTM a](https://tagmanager.google.com/)nd then add our template "**Commanders Act | Serverside events bridge**"\
+First, access [GTM ](https://tagmanager.google.com/)and then add our template "**Commanders Act | Serverside events bridge**"\
 You can follow our dedicated guide:
 
 {% content-ref url="../../../../sources/sources-catalog/web/gtm.md" %}
