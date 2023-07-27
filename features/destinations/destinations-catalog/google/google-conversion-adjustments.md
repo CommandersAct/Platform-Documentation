@@ -15,13 +15,13 @@ Google recommends waiting 24 hours after a conversion is reported before sending
 {% endhint %}
 
 {% hint style="info" %}
-When available, this destination will also include the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)if its value is provided in the <mark style="color:blue;">`Google Click Id`</mark> field (See [Configuration](google-conversion-adjustments.md#configuration) for more details). If this is not set, the following cookies, in the presented priority order, are used to retrieve a value:
+To identify the conversion and when a transaction identifier is not provided, this destination will try to include the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)if its value is provided in the <mark style="color:blue;">`Google Click Id`</mark> field (See [Configuration](google-conversion-adjustments.md#configuration) for more details). If this is not set, the following cookies, in the presented priority order, are used to retrieve a proper value:
 
 1. `_gcl_aw`
 2. `_gcl_dc`
 3. `_gac_[GA_PROPERTY_ID]`
 
-When a transaction identifier is provided both the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)and<mark style="color:blue;">`conversionDateTime`</mark>are removed from the payload to prevent the "ConversionAdjustmentUploadError": [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid\_date\_time\_pair\_and\_order\_id\_both\_set). More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
+On the other hand, when a transaction identifier is present both the[`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en)and<mark style="color:blue;">`conversionDateTime`</mark>are removed from the hit to prevent the "ConversionAdjustmentUploadError": [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid\_date\_time\_pair\_and\_order\_id\_both\_set). More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
 {% endhint %}
 
 {% hint style="warning" %}
