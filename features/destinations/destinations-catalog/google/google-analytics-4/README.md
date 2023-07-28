@@ -68,456 +68,456 @@ To ensure that custom event properties are picked up by GA4, you must create eve
 
 ### add\_payment\_info
 
-| Property       | Description                                                                                                                            | Field           | Mapped with                  |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------- |
-| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_      | _properties.currency_        |
-| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_         | _properties.value_           |
-| Coupon         | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_        | _properties.coupon_          |
-| Payment Method | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_ | _properties.payment\_method_ |
-| Revenue        | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_       | _properties.revenue_         |
-| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_         | _properties.items_           |
+| Property       | Description                                                                                                                            | Field           | Mapped with       |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ----------------- |
+| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_      | _currency_        |
+| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_         | _value_           |
+| Coupon         | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_        | _coupon_          |
+| Payment Method | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_ | _payment\_method_ |
+| Revenue        | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_       | _revenue_         |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_         | _items_           |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### add\_shipping\_info
 
-| Property      | Description                                                                                                                            | Field            | Mapped with               |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ------------------------- |
-| Currency      | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_       | _properties.currency_     |
-| Value         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_          | _properties.value_        |
-| Coupon        | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_         | _properties.coupon_       |
-| Shipping Tier | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p>         | _shipping\_tier_ | properties.shipping\_tier |
-| Items         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_          | _properties.items_        |
+| Property      | Description                                                                                                                            | Field            | Mapped with    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------- |
+| Currency      | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_       | _currency_     |
+| Value         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_          | _value_        |
+| Coupon        | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_         | _coupon_       |
+| Shipping Tier | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p>         | _shipping\_tier_ | shipping\_tier |
+| Items         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_          | _items_        |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The name of the item.</p>                | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The name of the item.</p>                | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### add\_to\_cart
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### add\_to\_wishlist
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Items    | <p><em><code>Required</code></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                       | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### begin\_checkout
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Coupon   | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_   | _properties.coupon_   |
-| Revenue  | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_  | _properties.revenue_  |
-| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Coupon   | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_   | _coupon_    |
+| Revenue  | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_  | _revenue_   |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### generate\_lead
 
-| Currency       | Description                                                                                                                            | Field      | Mapped with           |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Transaction Id | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                               | _id_       | _properties.id_       |
+| Currency       | Description                                                                                                                            | Field      | Mapped with |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Transaction Id | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                               | _id_       | _id_        |
 
 ### login
 
-| Property | Description                                                    | Field    | Mapped with         |
-| -------- | -------------------------------------------------------------- | -------- | ------------------- |
-| Method   | <p>Type: <em><code>String</code></em><br>The login method.</p> | _method_ | _properties.method_ |
+| Property | Description                                                    | Field    | Mapped with |
+| -------- | -------------------------------------------------------------- | -------- | ----------- |
+| Method   | <p>Type: <em><code>String</code></em><br>The login method.</p> | _method_ | _method_    |
 
 ### page\_view
 
-| Property      | Description                                                           | GA4 field        | Mapped with             |
-| ------------- | --------------------------------------------------------------------- | ---------------- | ----------------------- |
-| Page Location | <p>Type: <em><code>String</code></em></p><p>The current page URL.</p> | _page\_location_ | _properties.url_        |
-| Page Referrer | <p>Type: <em><code>String</code></em><br>The previous page URL.</p>   | _page\_referrer_ | _properties.referrer_   |
-| Page Title    | <p>Type: <em><code>String</code></em><br>The current page title.</p>  | _page\_title_    | _properties.title_      |
-| Page Name     | <p>Type: <em><code>String</code></em><br>The current page name.</p>   | _page\_name_     | _properties.page\_name_ |
-| Page Type     | <p>Type: <em><code>String</code></em><br>The current page type.</p>   | _page\_type_     | _properties.page\_type_ |
-| Page Path     | <p>Type: <em><code>String</code></em><br>The current page path.</p>   | _page\_path_     | _properties.path_       |
+| Property      | Description                                                           | GA4 field        | Mapped with  |
+| ------------- | --------------------------------------------------------------------- | ---------------- | ------------ |
+| Page Location | <p>Type: <em><code>String</code></em></p><p>The current page URL.</p> | _page\_location_ | _url_        |
+| Page Referrer | <p>Type: <em><code>String</code></em><br>The previous page URL.</p>   | _page\_referrer_ | _referrer_   |
+| Page Title    | <p>Type: <em><code>String</code></em><br>The current page title.</p>  | _page\_title_    | _title_      |
+| Page Name     | <p>Type: <em><code>String</code></em><br>The current page name.</p>   | _page\_name_     | _page\_name_ |
+| Page Type     | <p>Type: <em><code>String</code></em><br>The current page type.</p>   | _page\_type_     | _page\_type_ |
+| Page Path     | <p>Type: <em><code>String</code></em><br>The current page path.</p>   | _page\_path_     | _path_       |
 
 ### purchase
 
-| Property          | Description                                                                                                                            | Field                | Mapped with                  |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ---------------------------- |
-| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_           | _properties.currency_        |
-| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_              | _properties.value_           |
-| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>            | _id_                 | _properties.id_              |
-| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                  | affiliation          | _properties.affiliation_     |
-| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_             | _properties.coupon_          |
-| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                            | _shipping_           | properties.shipping\_amount  |
-| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                               | _tax_                | properties.tax\_amount       |
-| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_            | _properties.revenue_         |
-| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                      | _conversion\_type_   | _properties.type_            |
-| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_status_ | _properties.status_          |
-| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_url_    | _properties.url_             |
-| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_      | _properties.payment\_method_ |
-| Items             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_              | _properties.items_           |
+| Property          | Description                                                                                                                            | Field                | Mapped with        |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------ |
+| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_           | _currency_         |
+| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_              | _value_            |
+| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>            | _id_                 | _id_               |
+| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                  | affiliation          | _affiliation_      |
+| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                      | _coupon_             | _coupon_           |
+| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                            | _shipping_           | _shipping\_amount_ |
+| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                               | _tax_                | _tax\_amount_      |
+| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                 | _revenue_            | _revenue_          |
+| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                      | _conversion\_type_   | _type_             |
+| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_status_ | _status_           |
+| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                    | _conversion\_url_    | _url_              |
+| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                       | _payment\_type_      | _payment\_method_  |
+| Items             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_              | _items_            |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### refund
 
-| Property          | Description                                                                                                                                                    | Field                | Mapped with                 |
-| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------- |
-| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                         | _currency_           | _properties.currency_       |
-| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                                        | _value_              | _properties.value_          |
-| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                    | _id_                 | _properties.id_             |
-| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                                          | affiliation          | _properties.affiliation_    |
-| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                                              | _coupon_             | _properties.coupon_         |
-| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                                                    | _shipping_           | properties.shipping\_amount |
-| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                                                       | _tax_                | properties.tax\_amount      |
-| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                                         | _revenue_            | _properties.revenue_        |
-| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                                              | _conversion\_type_   | _properties.type_           |
-| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                                            | _conversion\_status_ | _properties.status_         |
-| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                                                               | _conversion\_url_    | _properties.url_            |
-| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                                               | _payment\_type_      | properties.payment\_method  |
-| Items             | <p><em><strong><code>Required</code></strong></em> <em>for partial refunds</em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_              | _properties.items_          |
+| Property          | Description                                                                                                                                                    | Field                | Mapped with        |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------------ |
+| Currency          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                         | _currency_           | _currency_         |
+| Value             | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                                        | _value_              | _value_            |
+| Transaction Id    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                    | _id_                 | _id_               |
+| Affiliation       | <p>Type: <em><code>String</code></em><br>Affiliation information.</p>                                                                                          | affiliation          | _affiliation_      |
+| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                                                              | _coupon_             | _coupon_           |
+| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                                                    | _shipping_           | _shipping\_amount_ |
+| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                                                       | _tax_                | _tax\_amount_      |
+| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                                                         | _revenue_            | _revenue_          |
+| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                                                              | _conversion\_type_   | _type_             |
+| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                                                            | _conversion\_status_ | _status_           |
+| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                                                               | _conversion\_url_    | _url_              |
+| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                                                               | _payment\_type_      | _payment\_method_  |
+| Items             | <p><em><strong><code>Required</code></strong></em> <em>for partial refunds</em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_              | _items_            |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### remove\_from\_cart
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### search
 
-| Property    | Description                                                                                                                     | Field          | Mapped with               |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------- |
-| Search Term | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The term that was searched for.</p> | _search\_term_ | _properties.search\_term_ |
+| Property    | Description                                                                                                                     | Field          | Mapped with    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------- |
+| Search Term | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The term that was searched for.</p> | _search\_term_ | _search\_term_ |
 
 ### select\_content
 
-| Property     | Description                                                                                | Field           | Mapped with                |
-| ------------ | ------------------------------------------------------------------------------------------ | --------------- | -------------------------- |
-| Content Type | <p><br>Type: <em><code>String</code></em><br>The term that was searched for.</p>           | _content\_type_ | _properties.content\_type_ |
-| Item Id      | <p>Type: <em><code>String</code></em><br>An identifier for the item that was selected.</p> | _item\_id_      | properties.item\_id        |
+| Property     | Description                                                                                | Field           | Mapped with     |
+| ------------ | ------------------------------------------------------------------------------------------ | --------------- | --------------- |
+| Content Type | <p><br>Type: <em><code>String</code></em><br>The term that was searched for.</p>           | _content\_type_ | _content\_type_ |
+| Item Id      | <p>Type: <em><code>String</code></em><br>An identifier for the item that was selected.</p> | _item\_id_      | item\_id        |
 
 ### select\_item
 
-| Property       | Description                                                                                                                       | Field              | Mapped with                   |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _properties.item\_list\_name_ |
-| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
+| Property       | Description                                                                                                                       | Field              | Mapped with        |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------ |
+| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _item\_list\_name_ |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _items_            |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | items.X.list\_position         |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### sign\_up
 
-| Property | Description                                                               | Field    | Mapped with         |
-| -------- | ------------------------------------------------------------------------- | -------- | ------------------- |
-| Method   | <p>Type: <em><code>String</code></em><br>The method used for sign up.</p> | _method_ | _properties.method_ |
+| Property | Description                                                               | Field    | Mapped with |
+| -------- | ------------------------------------------------------------------------- | -------- | ----------- |
+| Method   | <p>Type: <em><code>String</code></em><br>The method used for sign up.</p> | _method_ | _method_    |
 
 ### view\_cart
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | _items.X.list\_position_       |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### view\_item
 
-| Property | Description                                                                                                                            | Field      | Mapped with           |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------- |
-| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _properties.currency_ |
-| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _properties.value_    |
-| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _properties.items_    |
+| Property | Description                                                                                                                            | Field      | Mapped with |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- |
+| Currency | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p> | _currency_ | _currency_  |
+| Value    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Number</code></em><br>The value of the event.</p>                | _value_    | _value_     |
+| Items    | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p>      | _items_    | _items_     |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em></p><p>Type: <em><code>String</code></em><br>The ID of the item.</p>                  | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | _items.X.list\_position_       |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### view\_item\_list
 
-| Property       | Description                                                                                                                       | Field              | Mapped with                   |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------- |
-| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _properties.item\_list\_name_ |
-| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _properties.items_            |
+| Property       | Description                                                                                                                       | Field              | Mapped with        |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------ |
+| Item List Name | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                    | _item\_list\_name_ | _item\_list\_name_ |
+| Items          | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>Array</code></em><br>The list of products of the event.</p> | _items_            | _items_            |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The ID of the item.</p>                     | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p><em><strong><code>Required</code></strong></em><br>Type: <em><code>String</code></em><br>The name of the item.</p>                   | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | _items.X.list\_position_       |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ### \[Custom Event]
 
@@ -528,56 +528,56 @@ More details on how you can create and manage custom events are available follow
 The following properties are automatically attached to the event.
 {% endhint %}
 
-| Property          | Description                                                                                                                    | Field                | Mapped with                   |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ----------------------------- |
-| Currency          | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                            | _currency_           | _properties.currency_         |
-| Value             | <p>Type: <em><code>Number</code></em><br>The value of the event.</p>                                                           | _value_              | _properties.value_            |
-| Transaction Id    | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                       | _id_                 | _properties.id_               |
-| Content Type      | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                       | _content\_type_      | _properties.content\_type_    |
-| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                              | _conversion\_type_   | _properties.type_             |
-| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                            | _conversion\_status_ | _properties.status_           |
-| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                               | _conversion\_url_    | _properties.url_              |
-| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                              | _coupon_             | _properties.coupon_           |
-| Item Id           | <p>Type: <em><code>String</code></em><br>An identifier for the item that was selected.</p>                                     | _item\_id_           | _properties.item\_id_         |
-| Item List Name    | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                 | _item\_list\_name_   | _properties.item\_list\_name_ |
-| Method            | <p>Type: <em><code>String</code></em><br>Method used.</p>                                                                      | _method_             | _properties.method_           |
-| Page Location     | <p>Type: <em><code>String</code></em><br>The current page URL.</p>                                                             | _page\_location_     | _properties.url_              |
-| Page Referrer     | <p>Type: <em><code>String</code></em><br>The previous page URL.</p>                                                            | _page\_referrer_     | _properties.referrer_         |
-| Page Title        | <p>Type: <em><code>String</code></em><br>The current page title.</p>                                                           | _page\_title_        | _properties.title_            |
-| Page Name         | <p>Type: <em><code>String</code></em><br>The current page name.</p>                                                            | _page\_name_         | _properties.page\_name_       |
-| Page Type         | <p>Type: <em><code>String</code></em><br>The current page type.</p>                                                            | _page\_type_         | _properties.page\_type_       |
-| Page Path         | <p>Type: <em><code>String</code></em><br>The current page type.</p>                                                            | _page\_path_         | _properties.path_             |
-| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                               | _payment\_type_      | _properties.payment\_method_  |
-| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                         | _revenue_            | _properties.revenue_          |
-| Search Term       | <p>Type: <em><code>String</code></em><br>The term that was searched for.</p>                                                   | _search\_term_       | _properties.search\_term_     |
-| Shipping Tier     | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p> | _shipping\_tier_     | _properties.shipping\_tier_   |
-| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                    | _shipping_           | properties.shipping\_amount   |
-| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                       | _tax_                | properties.tax\_amount        |
-| Items             | <p>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                                                 | _items_              | _properties.items_            |
+| Property          | Description                                                                                                                    | Field                | Mapped with        |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ------------------ |
+| Currency          | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                            | _currency_           | _currency_         |
+| Value             | <p>Type: <em><code>Number</code></em><br>The value of the event.</p>                                                           | _value_              | _value_            |
+| Transaction Id    | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                       | _id_                 | _id_               |
+| Content Type      | <p>Type: <em><code>String</code></em><br>The transaction identifier.</p>                                                       | _content\_type_      | _content\_type_    |
+| Conversion Type   | <p>Type: <em><code>String</code></em><br>The conversion type.</p>                                                              | _conversion\_type_   | _type_             |
+| Conversion Status | <p>Type: <em><code>String</code></em><br>The conversion status.</p>                                                            | _conversion\_status_ | _status_           |
+| Conversion Url    | <p>Type: <em><code>String</code></em><br>The conversion url.</p>                                                               | _conversion\_url_    | _url_              |
+| Coupon            | <p>Type: <em><code>String</code></em><br>Coupon code applied.</p>                                                              | _coupon_             | _coupon_           |
+| Item Id           | <p>Type: <em><code>String</code></em><br>An identifier for the item that was selected.</p>                                     | _item\_id_           | _item\_id_         |
+| Item List Name    | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                 | _item\_list\_name_   | _item\_list\_name_ |
+| Method            | <p>Type: <em><code>String</code></em><br>Method used.</p>                                                                      | _method_             | _method_           |
+| Page Location     | <p>Type: <em><code>String</code></em><br>The current page URL.</p>                                                             | _page\_location_     | _url_              |
+| Page Referrer     | <p>Type: <em><code>String</code></em><br>The previous page URL.</p>                                                            | _page\_referrer_     | _referrer_         |
+| Page Title        | <p>Type: <em><code>String</code></em><br>The current page title.</p>                                                           | _page\_title_        | _title_            |
+| Page Name         | <p>Type: <em><code>String</code></em><br>The current page name.</p>                                                            | _page\_name_         | _page\_name_       |
+| Page Type         | <p>Type: <em><code>String</code></em><br>The current page type.</p>                                                            | _page\_type_         | _page\_type_       |
+| Page Path         | <p>Type: <em><code>String</code></em><br>The current page type.</p>                                                            | _page\_path_         | _path_             |
+| Payment Method    | <p>Type: <em><code>String</code></em><br>The payment method.</p>                                                               | _payment\_type_      | _payment\_method_  |
+| Revenue           | <p>Type: <em><code>Number</code></em><br>The revenue of the event.</p>                                                         | _revenue_            | _revenue_          |
+| Search Term       | <p>Type: <em><code>String</code></em><br>The term that was searched for.</p>                                                   | _search\_term_       | _search\_term_     |
+| Shipping Tier     | <p>Type: <em><code>String</code></em><br>The shipping tier (E.g. <code>Next-day</code>) selected for delivery of the item.</p> | _shipping\_tier_     | _shipping\_tier_   |
+| Shipping          | <p>Type: <em><code>Number</code></em><br>Shipping cost.</p>                                                                    | _shipping_           | _shipping\_amount_ |
+| Tax               | <p>Type: <em><code>Number</code></em><br>Tax amount.</p>                                                                       | _tax_                | _tax\_amount_      |
+| Items             | <p>Type: <em><code>Array</code></em><br>The list of products of the event.</p>                                                 | _items_              | _items_            |
 
 #### Items
 
-| Property        | Description                                                                                                                             | Field              | Mapped with                               |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------- |
-| Item Id         | <p>Type: <em><code>String</code></em><br>The ID of the item.</p>                                                                        | _item\_id_         | _properties.items.X.id_                   |
-| Item Name       | <p>Type: <em><code>String</code></em><br>The name of the item.</p>                                                                      | _item\_name_       | _properties.items.X.product.name_         |
-| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _properties.items.X.product.affiliation_  |
-| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _properties.items.X.coupon_               |
-| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _properties.items.X.product.currency_     |
-| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _properties.items.X.discount_             |
-| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | properties.items.X.list\_position         |
-| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _properties.items.X.product.brand_        |
-| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _properties.items.X.product.category\_1_  |
-| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _properties.items.X.product.category\_2_  |
-| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _properties.items.X.product.category\_3_  |
-| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _properties.items.X.product.category\_4_  |
-| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _properties.items.X.product.category\_5_  |
-| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _properties.items.X.product.list\_id_     |
-| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _properties.items.X.product.list\_name_   |
-| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _properties.items.X.variant_              |
-| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _properties.items.X.product.location\_id_ |
-| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _properties.items.X.product.price_        |
-| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _properties.items.X.quantity_             |
+| Property        | Description                                                                                                                             | Field              | Mapped with                    |
+| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------ |
+| Item Id         | <p>Type: <em><code>String</code></em><br>The ID of the item.</p>                                                                        | _item\_id_         | _items.X.id_                   |
+| Item Name       | <p>Type: <em><code>String</code></em><br>The name of the item.</p>                                                                      | _item\_name_       | _items.X.product.name_         |
+| Affiliation     | <p>Type: <em><code>String</code></em><br>A product affiliation to designate a supplying company or brick and mortar store location.</p> | _affiliation_      | _items.X.product.affiliation_  |
+| Coupon          | <p>Type: <em><code>String</code></em><br>The coupon name/code associated with the item.</p>                                             | _coupon_           | _items.X.coupon_               |
+| Currency        | <p>Type: <em><code>String</code></em><br>Currency, in 3-letter ISO 4217 format.</p>                                                     | _currency_         | _items.X.product.currency_     |
+| Discount        | <p>Type: <em><code>Number</code></em><br>The monetary discount value associated with the item.</p>                                      | _discount_         | _items.X.discount_             |
+| Index           | <p>Type: <em><code>Number</code></em><br>The index/position of the item in a list.</p>                                                  | _index_            | _items.X.list\_position_       |
+| Item Brand      | <p>Type: <em><code>String</code></em><br>The brand of the item.</p>                                                                     | _item\_brand_      | _items.X.product.brand_        |
+| Item Category   | <p>Type: <em><code>String</code></em><br>The category of the item.</p>                                                                  | _item\_category_   | _items.X.product.category\_1_  |
+| Item Category 2 | <p>Type: <em><code>String</code></em><br>The second category hierarchy or additional taxonomy for the item.</p>                         | _item\_category2_  | _items.X.product.category\_2_  |
+| Item Category 3 | <p>Type: <em><code>String</code></em><br>The third category hierarchy or additional taxonomy for the item.</p>                          | _item\_category3_  | _items.X.product.category\_3_  |
+| Item Category 4 | <p>Type: <em><code>String</code></em><br>The fourth category hierarchy or additional taxonomy for the item.</p>                         | _item\_category4_  | _items.X.product.category\_4_  |
+| Item Category 5 | <p>Type: <em><code>String</code></em><br>The fifth category hierarchy or additional taxonomy for the item.</p>                          | _item\_category5_  | _items.X.product.category\_5_  |
+| Item List Id    | <p>Type: <em><code>String</code></em><br>The ID of the list in which the item was presented to the user.</p>                            | _item\_list\_id_   | _items.X.product.list\_id_     |
+| Item List Name  | <p>Type: <em><code>String</code></em><br>The name of the list in which the item was presented to the user.</p>                          | _item\_list\_name_ | _items.X.product.list\_name_   |
+| Item Variant    | <p>Type: <em><code>String</code></em><br>The item variant or unique code or description for additional item details/options.</p>        | _item\_variant_    | _items.X.variant_              |
+| Location Id     | <p>Type: <em><code>String</code></em><br>The location associated with the item.</p>                                                     | _location\_id_     | _items.X.product.location\_id_ |
+| Price           | <p>Type: <em><code>Number</code></em><br>The monetary price of the item, in units of the specified currency parameter.</p>              | _price_            | _items.X.product.price_        |
+| Quantity        | <p>Type: <em><code>Number</code></em><br>Item quantity.</p>                                                                             | _quantity_         | _items.X.quantity_             |
 
 ## Event mapping
 
