@@ -33,7 +33,8 @@ You'll most likely need one method to initialize the ServerSide class, several m
 !Creating a source
 
 To send and validate data to CommandersAct you need a SourceKey. To get it, you need to create a source inside our plateform.
-(!Sarah, add link to doc)
+
+Here's how to [create a source](https://doc.commandersact.com/features/sources/sources-catalog)
 
 The source type is actually only here to help you sort your sources.
 
