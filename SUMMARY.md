@@ -52,6 +52,7 @@
           * [Angular](features/sources/sources-catalog/web/containers/setup-guides-for-developers/angular.md)
           * [AngularJS](features/sources/sources-catalog/web/containers/setup-guides-for-developers/angularjs.md)
           * [React](features/sources/sources-catalog/web/containers/setup-guides-for-developers/react.md)
+          * [SPA implementation guide](features/sources/sources-catalog/web/containers/setup-guides-for-developers/spa-implementation-guide.md)
           * [VueJS](features/sources/sources-catalog/web/containers/setup-guides-for-developers/vuejs.md)
           * [IOT & TV Apps](features/sources/sources-catalog/web/containers/setup-guides-for-developers/iot-and-tv-apps.md)
         * [Best Practices](features/sources/sources-catalog/containers/best-practices/README.md)
