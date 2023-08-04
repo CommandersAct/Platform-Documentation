@@ -1,5 +1,5 @@
 # Batch
 
 {% hint style="info" %}
-Documentation in progress.
+This destination is currently under final review and will be available soon.
 {% endhint %}

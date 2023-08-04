@@ -45,14 +45,14 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conver
 
 {% hint style="info" %}
 The following fields are mandatory to properly set commission groups:\
-\-<mark style="color:blue;">`properties.items.X.affiliation`</mark>\
-\-<mark style="color:blue;">`properties.items.X.product.price`</mark>\
-\-<mark style="color:blue;">`properties.items.X.quantity`</mark>
+\-<mark style="color:blue;">`items.X.affiliation`</mark>\
+\-<mark style="color:blue;">`items.X.product.price`</mark>\
+\-<mark style="color:blue;">`items.X.quantity`</mark>
 
 Accepted characters for the commission group codes are alphanumerics (letter in upper case), underscore '\_' , point '.' and minus '-'`.`
 {% endhint %}
 
-<table><thead><tr><th width="369">Commanders Act Properties</th><th>Awin Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>merchant</code></td></tr><tr><td><code>properties.revenue</code></td><td><code>amount</code></td></tr><tr><td><code>properties.items.X.affiliation</code>:<code>properties.items.X.product.price</code>*<code>properties.items.X.quantity</code></td><td><code>parts</code> <strong>[1]</strong></td></tr><tr><td><code>properties.coupon</code></td><td><code>vc</code></td></tr><tr><td><code>properties.currency</code></td><td><code>cr</code></td></tr><tr><td><code>properties.id</code></td><td><code>ref</code></td></tr><tr><td><code>Test Mode</code></td><td><code>testmode</code></td></tr><tr><td>AW:P|<code>Advertiser Id</code>|<code>properties.id</code>|<code>properties.items.X.product.id</code>|<code>properties.items.X.product.name</code>|<code>properties.items.X.product.price</code>|<code>properties.items.X.quantity</code>|<code>properties.items.X.product.price</code>|<code>properties.items.X.id</code>|<code>properties.items.X.affiliation</code>|<code>properties.items.X.product.category_1</code>.</td><td><code>bd[X]</code> <strong>[2]</strong></td></tr></tbody></table>
+<table><thead><tr><th width="369">Commanders Act Properties</th><th>Awin Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>merchant</code></td></tr><tr><td><code>revenue</code></td><td><code>amount</code></td></tr><tr><td><code>items.X.affiliation</code>:<code>items.X.product.price</code>*<code>items.X.quantity</code></td><td><code>parts</code> <strong>[1]</strong></td></tr><tr><td><code>coupon</code></td><td><code>vc</code></td></tr><tr><td><code>currency</code></td><td><code>cr</code></td></tr><tr><td><code>id</code></td><td><code>ref</code></td></tr><tr><td><code>Test Mode</code></td><td><code>testmode</code></td></tr><tr><td>AW:P|<code>Advertiser Id</code>|<code>id</code>|<code>items.X.product.id</code>|<code>items.X.product.name</code>|<code>items.X.product.price</code>|<code>items.X.quantity</code>|<code>items.X.product.price</code>|<code>items.X.id</code>|<code>items.X.affiliation</code>|<code>items.X.product.category_1</code>.</td><td><code>bd[X]</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select<mark style="color:blue;">`lead`</mark>as conversion type, the price part is set as integer if its decimal part is neutral (E.g. "5.00" will result in "5" being set).\
