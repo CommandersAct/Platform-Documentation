@@ -6,6 +6,41 @@ description: >-
 
 # Release notes
 
+## Release 10.0.14 - 24/07/23
+
+
+
+*   **Performance tab of Facebook CAPI destinations**\
+    For more information, you can have look to our new documentation's [dedicated page](https://doc.commandersact.com/features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality)\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+*   **Live Report Builder: 2 new charts**\
+    We added two new type of charts in LRB : bar chart and pie chart. \
+    You can retrieve them in the edition part of a LRB report !\
+
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+
+
+*   **Live Report Builder: UX enhancement**\
+    The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
+
+
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* **Mobile: New SDK version released for IAB TCFv2.2**\
+  For more details, please read our [documentation page](https://community.commandersact.com/consent-management/knowledge-base/iab-tcf-v2.2-release-details/iab-tcf-v2.2-migration-guide-app)\
+  For technical instructions, you can refer to our Github : [Android](https://github.com/CommandersAct/AndroidV5/tree/master/TCIAB) &[ IOS](https://github.com/CommandersAct/iOSV5/tree/master/TCIAB)
+
 ## Release 10.0.13 - 24/06/23
 
 * **New Source: Pixel Tracking API**\
@@ -26,14 +61,14 @@ description: >-
     For further information, you can read [this page](https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control)\
 
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt="" width="485"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 
 *   **Destinations: New section 'events filtered' on Event Delivery tab**\
     For all destinations, on Event Delivery tab, there is a new section with number of filtered events (consents, conditions defined)\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations: Dry Mode (lab) - Closed Beta**\
     The Dry mode allows you to simulate sending events, **but events are not sent** to the destination.\
 
@@ -46,7 +81,7 @@ description: >-
     You can have a look to our [documentation ](https://doc.commandersact.com/features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality)\
 
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 *   **UI Improvements: Statistics on weather icons**\
@@ -340,7 +375,7 @@ More information here:
     ​![](<../.gitbook/assets/image (1) (3) (1).png>)
   * **Campaign analytics** interfaces: public opening
   * **Event collection** UI : add a **global counter​**\
-    ![](<../.gitbook/assets/image (5) (3) (1).png>)
+    ![](<../.gitbook/assets/image (5) (3) (1) (1).png>)
 * **Event enrichment** – **product catalog** enhancement (closed alpha)​ _Public opening on 12 Jan._\
   ![](<../.gitbook/assets/image (3) (5).png>)
 * Destinations:​
@@ -366,7 +401,7 @@ More information here:
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
       (closed beta) _Public opening on 08 Dec._\\
 
-
+      ***
 
       <figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**

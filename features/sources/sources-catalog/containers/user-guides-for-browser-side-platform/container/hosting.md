@@ -96,7 +96,7 @@ Simply follow the step by step guide provided by Facebook:
 
 Simply follow the step by step guide provided by Criteo:
 
-<figure><img src="../../../../../../.gitbook/assets/image (5) (3).png" alt="" width="326"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (5) (3) (1).png" alt="" width="326"><figcaption></figcaption></figure>
 
 ### Google Ads connector configuration
 
@@ -120,7 +120,7 @@ Simply follow the step by step guide provided by Adobe:
 
 Simply follow the step by step guide provided by Equativ:
 
-<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="340"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="340"><figcaption></figcaption></figure>
 
 ### Test & Debug
 
