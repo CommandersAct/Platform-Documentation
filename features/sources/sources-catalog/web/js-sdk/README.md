@@ -105,6 +105,10 @@ You can handle errors through error property in the callback object. Example:
 cact('consent.get', function(result) {​    if (result.error) {            // Manage the error        }    else if (result.consent.status === "all-on") {                // Consent available for all categories.            }});
 ```
 
+## Meta Properties
+
+The `meta` property includes metadata and context for the consent that was provided on a browser. You can see the list of Meta properties [here](../../../../consent-management/knowledge-base/consent-object.md#meta-properties)
+
 ## API Stub (optional) <a href="#api-stub-optional" id="api-stub-optional"></a>
 
 For advance usage, we provide also an API stub that can be added when you need to interact with the API before containers or banners have loaded. This stub is already included in containers and privacy banners, so you do not have to add in most use cases. The stub is used to buffer all methods in a JavaScript array until Commanders Act JavaScript is loaded and ready to process the methods. This allows for example to use the onsite API before TrustCommander JavaScript was loaded.
