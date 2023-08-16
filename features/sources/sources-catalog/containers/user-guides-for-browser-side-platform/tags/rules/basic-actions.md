@@ -74,4 +74,4 @@ To delete a rule, click the “**trash**” icon (garbage bin icon):
 Note: your rule will be saved in the trash, where you can recover or permanently delete it at any time:\
 
 
-<figure><img src="../../../../../../../.gitbook/assets/image (4) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>

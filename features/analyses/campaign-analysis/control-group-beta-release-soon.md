@@ -10,7 +10,7 @@ In our case, we take into consideration only conversions for now (online and off
 
 A control group is setup on a stream (share menu). Check the box ‘Set control group’ to activate the possibility to configure a control group.
 
-![](<../../../.gitbook/assets/image (6) (1) (2).png>)
+![](<../../../.gitbook/assets/image (6) (1) (2) (1).png>)
 
 Specify the % of users you want to set for your control group: these users will be not pushed on the stream (and so not exposed to the campaign).
 

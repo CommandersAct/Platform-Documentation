@@ -56,11 +56,11 @@ In addition to the GA4 proxy mode, you can also use on each destination, the [Pr
 
 ### 2.1. Properties transformation on a specific destination
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Properties transformation section on each destination settings step</p></figcaption></figure>
 
 ### 2.2. Data Cleansing for all destinations
 
-<figure><img src="../../../../../.gitbook/assets/image (6) (2) (2).png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption><p>Data Cleansing feature</p></figcaption></figure>
 
 ## 3. Impact analysis and open suggestions
 
