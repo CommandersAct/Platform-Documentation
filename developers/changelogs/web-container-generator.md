@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v85.0 - 16/08/2023
+* Internal update of `tC.trigger()` to update the event format
+* Support legitimate interest policy urls for IAB TCF GVLv3 vendors
+
 ### Release v84.6 - 04/07/2023
 * Support GPC activation by privacy banner
 
