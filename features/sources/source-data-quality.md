@@ -1,8 +1,8 @@
 # Source data quality
 
-{% hint style="info" %}
+For each source, you can visualize the data quality on a dedicated tab '_Data Quality_':
 
-{% endhint %}
+<figure><img src="../../.gitbook/assets/Capture d’écran 2023-08-17 à 11.34.03.png" alt=""><figcaption></figcaption></figure>
 
 The quality score of events is represented by a weather icon:&#x20;
 
