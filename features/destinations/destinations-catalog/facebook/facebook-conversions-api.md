@@ -171,7 +171,7 @@ If you want to change the name of the custom event that will receive Facebook, y
 | <p><code>browser.ip</code><br><em>Automatically set if generated from Commanders Act OneTag</em></p>                               | `user_data.client_ip_address`       |
 | <p><code>browser.user_agent</code><br><em>Automatically set if generated from Commanders Act OneTag</em></p>                       | `user_data.client_user_agent`       |
 | <p><code>The cookie "fbc"</code></p><p><em>Automatically created by the Facebook Pixel client-side tag.</em></p>                   | `user_data.fbc` (Click ID)          |
-| <p><code>The cookie "fbc"</code></p><p><em>Automatically created by the Facebook Pixel client-side tag.</em></p>                   | `user_data.fbp` (Browser ID)        |
+| <p><code>The cookie "fbp"</code></p><p><em>Automatically created by the Facebook Pixel client-side tag.</em></p>                   | `user_data.fbp` (Browser ID)        |
 | `value`                                                                                                                            | `custom_data.value`                 |
 | `currency`                                                                                                                         | `custom_data.currency`              |
 | `items`                                                                                                                            | `custom_data.contents`              |
