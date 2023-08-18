@@ -265,7 +265,7 @@
     * [Settings](features/consent-management/user-guides/settings.md)
   * [Extensions](features/consent-management/extensions/README.md)
     * [Cookie Scanner](features/consent-management/extensions/cookie-scanner.md)
-    * [Tag Hierarchy](features/consent-management/extensions/tag-hierarchy.md)
+    * [Piggybacking](features/consent-management/extensions/piggybacking.md)
     * [Tag Firewall](features/consent-management/extensions/tag-firewall.md)
   * [Marketing Preferences Center (additional module)](features/consent-management/preference-center.md)
   * [Knowledge Base](features/consent-management/knowledge-base/README.md)

@@ -33,7 +33,7 @@ It is possible to extend Commanders Act CMP with following modules:
 
 [TagFirewall](extensions/tag-firewall.md)
 
-[Tag Hierarchy](extensions/tag-hierarchy.md)
+[Tag Hierarchy](extensions/piggybacking.md)
 
 {% hint style="info" %}
 These modules are set up and configured by a Commanders Act consultant.
