@@ -2,6 +2,9 @@
 
 ## 2023
 
+### Release v85.1 - 21/08/2023
+* Use IAB TCF GVLv3 in Trust banner generation
+
 ### Release v85.0 - 16/08/2023
 * Internal update of `tC.trigger()` to update the event format
 * Support legitimate interest policy urls for IAB TCF GVLv3 vendors
