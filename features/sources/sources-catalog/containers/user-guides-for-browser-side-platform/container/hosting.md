@@ -108,7 +108,7 @@ Simply follow the step by step guide provided by Google Ads:
 
 Simply follow the step by step guide provided by Snapchat:
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1).png" alt="" width="343"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="343"><figcaption></figcaption></figure>
 
 ### Adobe Anaytics connector configuration
 

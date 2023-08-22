@@ -10,7 +10,7 @@ It also allows you to refine your segments by divided a big segment into small p
 
 First step, select one of your segment and it will automatically calculate the overlap between the segment you choose and all your others segments.
 
-![](<../../../.gitbook/assets/image (2) (1) (1) (2).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (2) (1).png>)
 
 Then you can visualize and analyse the overlap with the number of users in both segments and the percentage.
 

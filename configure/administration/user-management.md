@@ -160,7 +160,7 @@ You can make changes to all elements available when you created the profile, exc
 
 Please note: Changes made to a profile will affect all sites said profile was created for.
 
-You can also activate the double factor authentication (2FA) on this section, please refer to [<mark style="color:orange;">Double factor authentication (2FA)</mark>](broken-reference)
+You can also activate the double factor authentication (2FA) on this section, please refer to [Double factor authentication (2FA)](two-factor-authentication-2fa.md)
 
 ### Denying access to a specific container or tag
 

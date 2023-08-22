@@ -132,5 +132,5 @@ When you add a destination (aka serverside tag), you manage the user consent by 
 \
 As a result, since each event entering the platform contains information about the user's consent, **the event will only be sent to the destination if there is a match between the categories consented by the user and the consent's category associated to the destination.**
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 

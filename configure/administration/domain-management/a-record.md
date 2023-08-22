@@ -57,7 +57,7 @@ If you need assistance, please contact the Commanders Act support team.
 
 Then click on "Validate configuration" and this will test the DNS configuration.
 
-![](<../../../.gitbook/assets/image (6) (1) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1) (2).png>)
 
 Test the configuration and the setup will be done.
 
