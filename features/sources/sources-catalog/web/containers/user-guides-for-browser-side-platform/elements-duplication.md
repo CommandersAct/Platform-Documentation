@@ -34,7 +34,7 @@ Follow these steps to copy an existing site and its contents:
 
 The “Site Copy” feature duplicates the following elements and creates one or more new sites with the exact same settings as the source site:
 
-* **TagCommander** product:
+* **Commanders Act TMS**:
   * Containers
   * Tags
   * Events
@@ -43,7 +43,7 @@ The “Site Copy” feature duplicates the following elements and creates one or
   * Data layer (external, internal and event variables)
   * Deduplication settings
   * Privacy settings (if the module is activated)
-* **MixCommander** product:
+* **Commanders Act Campaign**:
   * Attribution models
   * Segments
   * Excluded IPs
@@ -51,19 +51,19 @@ The “Site Copy” feature duplicates the following elements and creates one or
   * Dimensions (conversion/traffic)
   * Currencies
   * Costs
-* **DataCommander** product:
+* **Commanders Act Segments**
   * Segments
   * Streams
 * Cross-product options: connectors
 
 The “**Site Copy**” feature does not duplicate these items:
 
-* **TagCommander** product:
+* **Commanders Act TMS**:
   * Generated container versions
-* **MixCommmander** product:
+* **Commanders Act Campaign**:
   * Custom reports
   * Raw data
-* **DataCommander** product:
+* **Commanders Act Segment**:
   * Raw data
 
 ## Copying a container
@@ -209,7 +209,7 @@ Follow these steps to copy rules from one container to another (or within the sa
 
 5\) Select the rules you wish to duplicate from the “perimeter” or “constraint” sections:
 
-6\) Select the target site and container from the dropdown menu:
+6\) Select the target site and container from the drop down menu:
 
 7\) Click copy\
 
