@@ -15,7 +15,7 @@ You will find 2 tags to choose from :&#x20;
 1. The _**OneTag - Builder**_: it will guide you without having to write code
 2. The _**OneTag - Custom**:_ for those who prefer to manually write complex event data using javascript
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 2. Setup the tag
 
@@ -109,7 +109,7 @@ After configuring your OneTag (at lease one event triggered) and deploying your 
 
 The Source Event Inspector serves as a live tool that aids in validating the arrival of events originating from your website, mobile application, or servers to your Commanders Act Source. This enables you to promptly examine the reception of calls by your source and troubleshoot without the need to await data processing.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## 4. Setup your first destination
 

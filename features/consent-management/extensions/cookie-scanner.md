@@ -12,6 +12,19 @@ description: >-
 
 Commanders Act offers a cookie scanner that continuously monitors websites for cookies in real time. The scanner has access to a database of common analytics and marketing cookies and can therefore provide ready to use descriptions and information. This cookie information can be used to install a dynamic cookie notice on the website that provides transparent information about the used cookies and their purpose to visitors.
 
+## Activation
+
+Simply follow these 3 steps to enjoy this feature on your account:
+
+1-Cookie Scanner is an optional module. Only a Commanders Act consultant (or support team) can activate it. So the first step will be to ask to our team to activate the feature on your Commanders Act site.&#x20;
+
+2-Declare the domains that you need to be scanned with the Cookie Scanner\
+`Data Governance > Consent Management > Settings > Cookie Scanner Domains`
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+3-Regenerate and Deploy your privacy banner(s)
+
 ## Scan Cookies
 
 ### Mechanisms
