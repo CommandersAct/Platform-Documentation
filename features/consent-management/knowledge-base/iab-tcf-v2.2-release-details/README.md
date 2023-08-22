@@ -13,7 +13,7 @@ For more details and pending additional information, read the official IAB [comm
 
 ## Context about the Belgian APD and the Transparency and Consent Framework
 
-More than a year ago, on February 2nd, 2022, the Belgian APD issued a decision against IAB Europe citing 4 issues with its Transparency and Consent Framework (what’s the TCF? Learn more here). According to the Belgian APD:
+More than a year ago, on February 2nd, 2022, the Belgian APD issued a decision against IAB Europe citing 4 issues with its Transparency and Consent Framework (what’s the TCF? Learn more [here](https://iabeurope.eu/transparency-consent-framework/)). According to the Belgian APD:
 
 The Transparency & Consent (TC) string, the consent signal stored by players in the advertising industry, is personal information. As such, participants should establish a legal basis.
 
