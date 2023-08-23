@@ -1,4 +1,4 @@
-# Elements duplication
+# Copy Management
 
 ## Introduction
 
@@ -8,7 +8,7 @@
 
 It allows **duplicating** sites, containers, variables, deduplication settings and tags.
 
-_Note: only the site copy feature is available at present; container, variables, deduplication settings and tag copy features are currently under development._
+
 
 ## _Copying a site_
 

@@ -57,7 +57,7 @@
             * [Setup guide](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/setup-guide.md)
             * [Report analysis](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/report-analysis.md)
             * [Troubleshooting](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/troubleshooting.md)
-          * [Elements duplication](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/elements-duplication.md)
+          * [Copy Management](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/copy-management.md)
         * [Setup guides for developers](features/sources/sources-catalog/containers/setup-guides-for-developers/README.md)
           * [Web container setup](features/sources/sources-catalog/containers/setup-guides-for-developers/web-container-setup.md)
           * [Datalayer setup](features/sources/sources-catalog/containers/setup-guides-for-developers/datalayer-setup.md)
