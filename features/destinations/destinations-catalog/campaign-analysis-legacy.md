@@ -9,9 +9,9 @@ description: Only for Campaign Analysis Module (ex Mix Commander) customers
 This destination allows you to collect events and map it for the module Campaign Analysis\
 It can also turns events from Normalized Datalayer into touchpoints for Campaign Analysis module.
 
-With this destination, you can use 5 standard events. We recommended to use them, but if needed, you can also use custom events.\
+With this destination, you can use 5 standard events. We recommended to use them, but if needed you can also use custom events.\
 \
-Here's the list of Campaign analytics touch points names vs Standard events names:
+Here's the list of Campaign Analytics touch points names vs Standard events names:
 
 | Campaign Analysis touch point | Standard event name |
 | ----------------------------- | ------------------- |
