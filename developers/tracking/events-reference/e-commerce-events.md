@@ -2091,7 +2091,7 @@ cact('trigger','ad_click', { /*or ad_view or website_landing*/
 
 ### page\_view and purchase
 
-To create touch point 'sites' and  'orders' you can use the following:
+To create touch points 'sites' and  'orders' you can use the following events:
 
 * 'page\_view' to create a touch point 'sites'
 * 'purchase' to create a touch point 'orders'
