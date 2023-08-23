@@ -2,7 +2,7 @@
 description: Only for Campaign Analysis Module (ex Mix Commander) customers
 ---
 
-# Campaign Analysis Legacy QA
+# Campaign Analysis Legacy
 
 ### Introduction
 
@@ -27,7 +27,7 @@ If you need more information about these events, check the section [Events refer
 
 1/Select Campaign Analysis Legacy in the destination catalog.
 
-![](<../../../.gitbook/assets/image (413).png>)
+<figure><img src="../../../.gitbook/assets/image (419).png" alt="" width="375"><figcaption></figcaption></figure>
 
 2/Choose your data source(s)
 

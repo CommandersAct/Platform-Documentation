@@ -126,7 +126,7 @@
     * [Attraqt](features/destinations/destinations-catalog/attraqt.md)
     * [Awin](features/destinations/destinations-catalog/awin.md)
     * [Batch](features/destinations/destinations-catalog/batch.md)
-    * [Campaign Analysis Legacy QA](features/destinations/destinations-catalog/campaign-analysis-legacy-qa.md)
+    * [Campaign Analysis Legacy](features/destinations/destinations-catalog/campaign-analysis-legacy.md)
     * [Commission Junction](features/destinations/destinations-catalog/commission-junction.md)
     * [Criteo](features/destinations/destinations-catalog/criteo/README.md)
       * [Criteo (events)](features/destinations/destinations-catalog/criteo/criteo-events.md)
