@@ -1,6 +1,6 @@
 # E-commerce events
 
-## t\_info <a href="#add_payment_info" id="add_payment_info"></a>
+## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>
 
 This event signifies a user has submitted their payment information
 
