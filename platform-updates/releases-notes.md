@@ -23,9 +23,9 @@ description: >-
     You can retrieve them in the edition part of a LRB report !\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -33,7 +33,7 @@ description: >-
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -61,14 +61,14 @@ description: >-
     For further information, you can read [this page](https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control)\
 
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (2).png" alt="" width="485"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (2) (1).png" alt="" width="485"><figcaption></figcaption></figure>
 
 
 *   **Destinations: New section 'events filtered' on Event Delivery tab**\
     For all destinations, on Event Delivery tab, there is a new section with number of filtered events (consents, conditions defined)\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations: Dry Mode (lab) - Closed Beta**\
     The Dry mode allows you to simulate sending events, **but events are not sent** to the destination.\
 

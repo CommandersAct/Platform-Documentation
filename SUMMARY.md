@@ -354,7 +354,7 @@
     * [Common events](developers/tracking/events-reference/common-events.md)
     * [E-commerce events](developers/tracking/events-reference/e-commerce-events.md)
     * [Video events reference](developers/tracking/events-reference/video-event-reference.md)
-    * [Campaign Analytics Module events](developers/tracking/events-reference/campaign-analytics-module-events.md)
+    * [Campaign Tracking events](developers/tracking/events-reference/campaign-tracking-events.md)
   * [Properties reference](developers/tracking/properties-reference.md)
     * [Global properties](developers/tracking/properties-reference/global-properties.md)
     * [Video properties](developers/tracking/properties-reference/video-properties.md)

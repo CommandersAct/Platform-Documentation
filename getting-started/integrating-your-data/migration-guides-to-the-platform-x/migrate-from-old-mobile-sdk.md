@@ -19,7 +19,7 @@ In the Sources Catalog, create your new Sources. \
 
 At the last step of the Source setup, you will obtain a Source Key, required for the initialization methods of our SDK
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Replace SDK Modules
 
