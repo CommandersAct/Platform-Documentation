@@ -61,7 +61,7 @@ As a Commanders Act customer, what do these changes in the TCF mean and what are
 
 Not a lot will be expected from Commanders Act customers. However, if you decide to continue using the Transparency and Consent Framework, you must know that consent notices/consent banners will be changing slightly (based on the changes listed in the previous section), and you should therefore be ready for it.
 
-The migration from the **TFC v2.2 will take place in September 30, 2023** serving as the hard deadline for the change. You will be must to **regenerate your consent banners TCF before this deadline.**
+The migration from the **TFC v2.2 will take place on November 20, 2023** serving as the hard deadline for the change. You will be must to **regenerate your consent banners TCF before this deadline.**
 
 Once the migration will be complete, **we will recommend that you recollect consent from your customers**, as previously collected consent was deemed invalid following the Belgian APD decision.  Additionally, you’ll most likely have to reduce your vendor list, and updating mobile SDK versions to get the new TCF various updates will be compulsory.
 
