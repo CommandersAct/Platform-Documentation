@@ -17,7 +17,6 @@ Here's the list of Campaign Analytics touch points names vs Standard events name
 | ----------------------------- | ------------------- |
 | impressions                   | ad\_view            |
 | clicks                        | ad\_click           |
-| click and site tracking       | website\_landing    |
 | sites                         | page\_view          |
 | orders                        | purchase            |
 
@@ -41,7 +40,7 @@ If you need more information about these events, check the section [Events refer
 
 Note: this destination can be used for multiple events, as mentioned above, but you will have to create 1 destination per type of touch point
 
-<figure><img src="../../../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
 
 #### 5/Setup your dimensions.
 

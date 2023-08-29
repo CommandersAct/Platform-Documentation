@@ -8,9 +8,7 @@ This event is associated with your ad being displayed, can be used to track the 
 
 This event is associated with someone clicking your ad, can be used to track the touch point "clicks" in Campaign Analytics module
 
-## website\_landing
 
-This event is associated with the user reaching your website through an ad, a referer or direct access can be used to track the touch point "click and site tracking" in Campaign Analytics module
 
 #### Parameters <a href="#parameters_35" id="parameters_35"></a>
 
