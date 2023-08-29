@@ -19,7 +19,7 @@ This event is associated with someone clicking your ad, can be used to track the
 {% tabs %}
 {% tab title="Javascript" %}
 ```javascript
-cact('trigger','ad_click', { /*or ad_view or website_landing*/
+cact('trigger','ad_click', { /*or ad_view*/
     "medium": "seo",
     "campaign": "my_campaign",
     "source": "my_source",
