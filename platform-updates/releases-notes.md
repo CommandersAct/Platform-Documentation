@@ -6,6 +6,56 @@ description: >-
 
 # Release notes
 
+## Release 10.0.15 - 24/08/23
+
+
+
+* **New API "Users Activities logs"**\
+  This new API allows administrators to get all users activities history (who has changed what, when, etc...). Read the technical [API documentation](https://commandersact.github.io/api\_doc/#tag/AdminActivityLogs) to start using it.\
+
+*   **Live Report Builder: enhancement on UI**\
+    The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"
+
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
+*   **Data Cleansing: new function  "GET(property\_name)"**\
+    Allows to work on a property name that contains special characters incompatible with formula. For example if your property name contains a `-` like `page-count` you will not be able to write this formula because it is interpreted as a minus sign :\
+
+
+    ```
+    page-count-5
+    ```
+
+    Now you can, just write :\
+
+
+    ```
+    GET("page-count")-5
+    ```
+
+    \
+    You can read our dedicated [documentation here](https://doc.commandersact.com/features/data-quality/data-cleansing/supported-transformation-functions)\
+
+*   **Consent dashboards: new metric for "Global Privacy Control"**\
+    This new metric will help you to identify the amount of "Optout All" registered through a GPC parameter turned ON\
+
+
+    <figure><img src="../.gitbook/assets/image (422).png" alt=""><figcaption></figcaption></figure>
+* **Consent banners: IAB TCF v2.2 compliance**\
+  Our customers can now be compliant with the latest framework of IAB TCF (v2.2)\
+  It is available for Web & Mobile apps !\
+  If you need more information about migration please check [this section of our documentation](https://doc.commandersact.com/features/consent-management/knowledge-base/iab-tcf-v2.2-release-details)\
+
+* New destination : [Google Ads Conversion Adjustment](../features/destinations/destinations-catalog/google/google-conversion-adjustments.md) (_closed beta_)\
+
+* Normalized Datalayer (closed beta)_:_ Add an option to not consider missing properties as an issue (not impacting quality score). Accept unspecified properties without warning\
+
+* UX enhancements and speed up of Destination's interfaces (destination list, etc.)
+
+
+
 ## Release 10.0.14 - 24/07/23
 
 
