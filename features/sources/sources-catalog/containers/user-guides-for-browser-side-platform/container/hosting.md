@@ -104,6 +104,16 @@ Simply follow the step by step guide provided by Google Ads:
 
 <figure><img src="../../../../../../.gitbook/assets/image (11).png" alt="" width="407"><figcaption></figcaption></figure>
 
+###
+
+{% hint style="info" %}
+Please note! Deletion of this connector credential is final. By removing access to a login, you will no longer be able to use it for this or any other site. This means you'll have to create a new one if you need it in the future.&#x20;
+
+If destinations from other sites use this identifier, they too will no longer work.
+
+In case this login is currently used by at least one destination, our interface will display a list of the concerned destination(s) (only for the current site, it may affect some destinations on other sites)&#x20;
+{% endhint %}
+
 ### Snapchat connector configuration
 
 Simply follow the step by step guide provided by Snapchat:
