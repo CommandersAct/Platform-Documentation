@@ -33,6 +33,22 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ## Field mappings
 
+{% hint style="info" %}
+**At least** one of the following user identifiers must be set:
+
+* <mark style="color:blue;">`user.email`</mark><mark style="color:blue;">or</mark><mark style="color:blue;">`user.email_sha256`</mark>
+* <mark style="color:blue;">`user.phone`</mark>
+* <mark style="color:blue;">`user.firstname`</mark>
+* <mark style="color:blue;">`user.lastname`</mark>
+* <mark style="color:blue;">`user.streetAddress`</mark>
+* <mark style="color:blue;">`user.city`</mark>
+* <mark style="color:blue;">`user.state`</mark>
+* <mark style="color:blue;">`user.country`</mark>
+* <mark style="color:blue;">`user.zipcode`</mark>
+
+This will prevent the error<mark style="color:blue;">`incomplete_any_user_identifier_is_required`</mark>to be raised.
+{% endhint %}
+
 | Commanders Act Properties                                                                                      | Google Enhanced Conversions Properties                                                                                                                                                    |
 | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `id`                                                                                                           | `conversionAdjustments.X.orderId` **\[\*]**                                                                                                                                               |
