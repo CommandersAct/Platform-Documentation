@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 01/09/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/alphalyr-marketing-studio.md" %}
+[alphalyr-marketing-studio.md](../features/destinations/destinations-catalog/alphalyr-marketing-studio.md)
+{% endcontent-ref %}
+
 ## 04/08/2023
 
 Destination documentation (updates):
