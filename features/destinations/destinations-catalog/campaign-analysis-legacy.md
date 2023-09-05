@@ -59,7 +59,12 @@ In all cases, a hand mapping is possible (between dimensions and properties). It
 If you add a new custom dimension in your Campaign Analytics, you must to declare it manually also in this table of the destination's settings
 {% endhint %}
 
-
+{% hint style="success" %}
+The `ts_override` property is auto mapped to this destination. It will allows you to force the timestamp of a hit. \
+If you wish to use it, simply declare it as a parameter in your event sent.\
+Example: \
+https://collect.commander1.com/events?tc\_s={site\_id}\&token={token}\&event\_name={event\_name}&**ts\_override**=1693412252
+{% endhint %}
 
 If you do not want to use automatic mapping of dimensions with event properties, you can check the option "disable automatic configuration"
 
