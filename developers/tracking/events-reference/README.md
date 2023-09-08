@@ -70,7 +70,7 @@ let event = TCAddPaymentInfoEvent(payementMethod: "card")
 ```
 {% endtab %}
 
-{% tab title="Flutter" %}
+{% tab title="Dart (Flutter)" %}
 ```dart
 var event = TCAddPaymentInfoEvent();
     event.paymentMethod = "card";
