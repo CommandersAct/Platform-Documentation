@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 08/09/2023
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/pinterest.md" %}
+[pinterest.md](../features/destinations/destinations-catalog/pinterest.md)
+{% endcontent-ref %}
+
 ## 01/09/2023
 
 Destination documentation:
