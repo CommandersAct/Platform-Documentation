@@ -9,7 +9,7 @@ Please note that we use the Adobe [Bulk Data Insertion API](https://developer.ad
 We use the Oauth2 authentication process.
 
 {% hint style="warning" %}
-Only the **web-app** oauth is supported
+Only the **server-to-server** oauth is supported
 {% endhint %}
 
 Go to _Administration_ / _Connector Credentials_ and click on **Add connector credentials**. \
@@ -19,25 +19,15 @@ Select Adobe Analytics.
 
 Enter the Client ID and Client Secret that you can find on your **Adobe Developer Console**.
 
-<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.55.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.55.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-14 à 10.48.17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="danger" %}
-Please fill Redirect URL with: \
-[https://api-internal.commander1.com/v2/connectors/adobe/callback](https://api-internal.commander1.com/v2/connectors/adobe/callback)
-
-and Redirect URL Pattern with:\
-[https://api-internal\\.commandersact\\.com/v2/connectors/adobe/callback](https://api-internal/.commandersact/.com/v2/connectors/adobe/callback)
-{% endhint %}
-
-{% hint style="warning" %}
-After 14 days without any activity (no event sent), the token will expire, and you will have to do again the authentication.
-{% endhint %}
-
-In case you haven't selected the web-app oauth (if it is an old project, and you don't want to configure it again for example), it is possible to change the authentication, click on "Connect another credential" on Adobe Analytics interface.
+In case you haven’t selected the server-to-server oauth (if it is an old project, and you don’t want to configure it again for example), it is possible to change the authentication, click on “Connect another credential” on Adobe Analytics interface.
 
 <figure><img src="../../../../.gitbook/assets/Doc Adobe anonyme.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Configuration
 

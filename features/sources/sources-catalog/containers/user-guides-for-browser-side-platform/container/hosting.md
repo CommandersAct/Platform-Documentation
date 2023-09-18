@@ -120,9 +120,10 @@ Simply follow the step by step guide provided by Snapchat:
 
 <figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="343"><figcaption></figcaption></figure>
 
-### Adobe Anaytics connector configuration
+### Adobe Analytics connector configuration
 
-Simply follow the step by step guide provided by Adobe:
+Simply follow the step by step guide provided by Adobe:\
+For more information, please refer to the [dedicated page](../../../../../destinations/destinations-catalog/adobe/adobe-analytics.md)
 
 <figure><img src="../../../../../../.gitbook/assets/image (12).png" alt="" width="415"><figcaption></figcaption></figure>
 
