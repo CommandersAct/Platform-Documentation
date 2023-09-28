@@ -81,3 +81,9 @@ It allows you to define who can modify or create elements on production, staging
 
 1. **Creating a Source or Destination**: You have the option to label it with an environment tag—either Production, Staging, or Development. This helps you categorize and manage how data flows and is processed within the system.
 2. **Data Cleansing Transformations**: While creating a transformation, you can choose to apply it to a specific environment, giving you more control over your data flow.
+
+
+
+{% hint style="info" %}
+**Create Your Own Environments**: In addition to the default Production, Staging, and Development environments, a **future** update will allow you to create your own custom environments. This will provide even more flexibility in managing data flows and transformations, allowing you to tailor the platform to your specific needs.
+{% endhint %}
