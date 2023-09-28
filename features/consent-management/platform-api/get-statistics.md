@@ -10,49 +10,21 @@ This endpoint allows you to get the data from the consent dashboard on a specifi
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="{siteId}" type="string" %}
-Account ID
-
-\
-
-
+Account ID\
 example: '12345'
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="filter[sup_filters][location][]" type="integer" %}
-Data inside and outside of the EU
-
-\
-
-
-0 : Out of EU
-
-\
-
-
+Data inside and outside of the EU\
+0 : Out of EU\
 1 : EU
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="filter[sup_filters][device][]" type="integer" %}
-Typical device types
-
-\
-
-
-0 : others
-
-\
-
-
-1 : mobile
-
-\
-
-
-2 : tablet
-
-\
-
-
+Typical device types\
+0 : others\
+1 : mobile\
+2 : tablet\
 3 : desktop
 {% endswagger-parameter %}
 

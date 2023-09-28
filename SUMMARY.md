@@ -10,7 +10,8 @@
 
 * [How works the platform](getting-started/concepts/README.md)
   * [Glossary](getting-started/concepts/lexical.md)
-* [Platform interface](getting-started/platform-interface.md)
+* [Platform interface](getting-started/platform-interface/README.md)
+  * [Prod and Testing environments](getting-started/platform-interface/prod-and-testing-environments.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
   * [OneTag Tutorial](getting-started/integrating-your-data/onetag-tutorial.md)
   * [Migration guides to the Platform X](getting-started/integrating-your-data/migration-guides-to-the-platform-x/README.md)
