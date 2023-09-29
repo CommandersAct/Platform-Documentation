@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 28/09/2023
+
+Explanation and workflow examples on Environments inside the platform
+
+{% content-ref url="../getting-started/platform-interface/prod-and-testing-environments.md" %}
+[prod-and-testing-environments.md](../getting-started/platform-interface/prod-and-testing-environments.md)
+{% endcontent-ref %}
+
 ## 08/09/2023
 
 Destination documentation (updates):
