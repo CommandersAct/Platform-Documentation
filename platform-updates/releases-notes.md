@@ -26,7 +26,7 @@ description: >-
 
 * **Files imports:** The fields mapping now support conditionnal value transformation with [Data cleansing formulas​](../features/data-quality/data-cleansing/supported-transformation-functions.md)\
 
-*   **Data Actionation Variables** UI can now be reached from Segment overview\
+*   **Data Activation: Variables** **UI** can now be reached from Segment overview\
 
 
     <figure><img src="../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
