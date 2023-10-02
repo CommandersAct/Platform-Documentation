@@ -12,6 +12,14 @@ Explanation and workflow examples on Environments inside the platform
 [prod-and-testing-environments.md](../getting-started/platform-interface/prod-and-testing-environments.md)
 {% endcontent-ref %}
 
+## 20/09/2023
+
+Update Adobe Analytics for authentication token
+
+{% content-ref url="../features/destinations/destinations-catalog/adobe/adobe-analytics.md" %}
+[adobe-analytics.md](../features/destinations/destinations-catalog/adobe/adobe-analytics.md)
+{% endcontent-ref %}
+
 ## 08/09/2023
 
 Destination documentation (updates):

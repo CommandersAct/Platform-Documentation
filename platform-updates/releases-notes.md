@@ -6,6 +6,40 @@ description: >-
 
 # Release notes
 
+## Release 10.0.16 - 24/09/23
+
+* **TMS/CMP ​interfaces:** Add a loading indicator to TMS/CMP interfaces\
+
+* **Copy Manager​**: When you duplicate a site (aka workspace), you can now copy Server Side configurations (PlatformX    activation, Sources, Destinations, Data Management, Enrichments, etc...)
+
+<figure><img src="../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
+
+*   **Interface speed improvements​** on the following pages:
+
+    * TMS: Container overview => +22%​
+    * TMS: External variable => +41%​
+    * Mix: Attribution option => + 46%​
+    * CMP: Privacy banners overview => +38%​
+    * Admin: Profile management => +21%
+    * Segment overview => +40%
+
+
+* **Files imports:** The fields mapping now support conditionnal value transformation with [Data cleansing formulas​](../features/data-quality/data-cleansing/supported-transformation-functions.md)\
+
+*   **Data Actionation Variables** UI can now be reached from Segment overview\
+
+
+    <figure><img src="../.gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
+* **Mobile​**\
+  Android & iOS: add language & region​\
+  Android & iOS: Firebase Destination (for Analytics)​\
+  IOS: Fix for non-IAB Privacy​\
+
+* **Destinations​ updates**
+  * Adobe Analytics​ authentication token. You can see our [updated documentation here](https://doc.commandersact.com/features/destinations/destinations-catalog/adobe/adobe-analytics)
+  * Pinterest: support for "click\_id“ and "view\_item" mapped to "page\_visit“.​
+  * Piano Analytics Collection API: removed useless “ref” parameter.​
+
 ## Release 10.0.15 - 24/08/23
 
 
