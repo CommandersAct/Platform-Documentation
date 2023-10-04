@@ -2,15 +2,16 @@
 description: version 2.0
 ---
 
-# HTTP Tracking API source
+# HTTP tracking API source
 
 The HTTP Tracking API is used to track **events** from any website or application. The data is collected by our servers, and then processed and routed to any configured destination.
 
-To manage users, check instead the dedicated [User API](../../../features/sources/sources-catalog/import-crm-users.md), and for products, the [Product API](../../../features/sources/sources-catalog/import-conversions/api-conversions-and-product-catalog.md).
+To manage users, check instead the dedicated [User API](import-crm-users.md), and for products, the [Product API](import-conversions/api-conversions-and-product-catalog.md).
 
 ## Endpoint URL
 
 The API's collect endpoint is available at the following URL:
+
 ```
 https://collect.commander1.com/events?tc_s={siteId}&token={sourceKey}
 ```
@@ -19,11 +20,11 @@ HTTP method: `POST`
 
 ## Parameters
 
-- `tc_s` (required): site id
-- `token` (required): source key
+* `tc_s` (required): site id
+* `token` (required): source key
 
 {% hint style="info" %}
-The source key is displayed in the settings of any [source](../../../features/sources/overview.md).
+The source key is displayed in the settings of any [source](../overview.md).
 {% endhint %}
 
 ## Headers
@@ -45,7 +46,7 @@ Authorization: Bearer 7183b9d4-1031-11ee-be56-0242ac120002
 ```
 
 {% hint style="info" %}
-Instead of a header, the source key should usually be provided through the `token` [URL parameter](#parameters) of the endpoint.
+Instead of a header, the source key should usually be provided through the `token` [URL parameter](http-tracking-api.md#parameters) of the endpoint.
 {% endhint %}
 
 ## Payload
@@ -124,3 +125,7 @@ POST https://collect.commander1.com/events?tc_s=29&token=7183b9d4-1031-11ee-be56
   }
 }
 ```
+
+Download OpenAPI specification:
+
+{% file src="../../../.gitbook/assets/http_tracking_api_spec.yaml" %}

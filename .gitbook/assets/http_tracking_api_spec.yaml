@@ -1,0 +1,151 @@
+openapi: 3.0.0
+info:
+  title: HTTP Tracking API
+  description: 'The HTTP Tracking API is used to track events from any website or application.'
+  version: '2.0'
+servers:
+  - url: 'https://collect.commander1.com/events'
+paths:
+  /:
+    post:
+      summary: Collect Events
+      description: 'Collects an event from a website or application.'
+      parameters:
+        - name: tc_s
+          in: query
+          required: true
+          schema:
+            type: string
+            example: '29'
+          description: Site id
+        - name: token
+          in: query
+          required: false
+          schema:
+            type: string
+            example: '7183b9d4-1031-11ee-be56-0242ac120002'
+          description: '(Optional) Source key. Use this only if Authorization header is not provided.'
+        - name: Content-Type
+          in: header
+          required: true
+          schema:
+            type: string
+            example: 'application/json'
+          description: Should be set to "application/json"
+        - name: Authorization
+          in: header
+          required: true
+          schema:
+            type: string
+            example: 'Bearer 7183b9d4-1031-11ee-be56-0242ac120002'
+          description: 'Bearer {sourceKey}. Use this only if the token query parameter is not provided.'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Event'
+      responses:
+        '200':
+          description: Event successfully collected.
+        '400':
+          description: Invalid request, payload JSON is invalid or request is too large.
+components:
+  schemas:
+    Event:
+      type: object
+      required:
+        - event_name
+        - user
+        - context
+      properties:
+        event_name:
+          type: string
+          example: 'search'
+        search_term:
+          type: string
+          example: 't-shirts'
+          description: 'This is only an example of event property'
+        my_event_property_2:
+          type: string
+          example: 'my value'
+          description: 'This is only an example of event property'
+        my_event_property_3:
+          type: string
+          example: 'my value'
+          description: 'This is only an example of event property'
+        user:
+          type: object
+          required:
+            - consistent_anonymous_id
+          properties:
+            id:
+              type: string
+              example: '12345'
+            consistent_anonymous_id:
+              type: string
+              example: '67892'
+            email:
+              type: string
+              example: 'toto@domain.fr'
+            consent_categories:
+              type: array
+              items:
+                type: string
+              example:
+                - '1'
+                - '3'
+        context:
+          type: object
+          required:
+            - event_id
+            - event_timestamp
+          properties:
+            event_id:
+              type: string
+              example: '202110130000000000'
+            page:
+              type: object
+              properties:
+                title:
+                  type: string
+                  example: 'Search page'
+                url:
+                  type: string
+                  example: 'https://shop.com/search?q=...'
+                lang:
+                  type: string
+                  example: 'en'
+                referrer:
+                  type: string
+                  example: 'https://www.google.fr'
+                viewport:
+                  type: object
+                  properties:
+                    width:
+                      type: integer
+                      example: 320
+                    height:
+                      type: integer
+                      example: 568
+            device:
+              type: object
+              properties:
+                user_agent:
+                  type: string
+                  example: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36'
+                ip:
+                  type: string
+                  example: '102.3.4.56'
+                lang:
+                  type: string
+                  example: 'fr'
+                cookie:
+                  type: string
+                  example: '_fbp=123; _fbc=456; _ga=789'
+                timezone:
+                  type: string
+                  example: 'Europe/Paris'
+            event_timestamp:
+              type: integer
+              example: 1639044446636
