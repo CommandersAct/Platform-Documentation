@@ -4,6 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 04/10/2023
+
+Add a openAPI spec file (aka swagger) at the bottom of the [http tracking API documentation](../features/sources/sources-catalog/http-tracking-api.md)
+
 ## 28/09/2023
 
 Explanation and workflow examples on Environments inside the platform
