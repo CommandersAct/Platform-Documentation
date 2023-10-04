@@ -2,6 +2,9 @@
 
 ## 2023
 
+### Release v86.1 - 04/10/2023
+* Privacy - Standalone: allow to force the value of the secure attribute of cookies via customJS
+
 ### Release v86.0 - 02/10/2023
 * Upgrade of the container and privacy banner generation engine.
   * Although this upgrade should be transparent for your containers and banners, please make sure to test your newly generated containers and banners before deploying them in production.
