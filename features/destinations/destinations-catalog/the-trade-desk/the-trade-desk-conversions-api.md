@@ -14,7 +14,7 @@ The Trade Desk destination provides the following key features:
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [The Trade Desk's events](https://api.thetradedesk.com/v3/portal/data/doc/DataConversionEventsApi#event-mapping), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
-* **Event mapping**: change standard mapping between your partner's event and yours or add new mappings.&#x20;
+* **Event mapping**: change standard mapping between your partners' events and yours or add new mappings.&#x20;
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to The Trade Desk.
 
 ## Destination setup
