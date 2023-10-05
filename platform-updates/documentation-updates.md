@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 06/10/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/the-trade-desk/the-trade-desk-conversions-api.md" %}
+[the-trade-desk-conversions-api.md](../features/destinations/destinations-catalog/the-trade-desk/the-trade-desk-conversions-api.md)
+{% endcontent-ref %}
+
 ## 04/10/2023
 
 Add a openAPI spec file (aka swagger) at the bottom of the [http tracking API documentation](../features/sources/sources-catalog/http-tracking-api.md)
