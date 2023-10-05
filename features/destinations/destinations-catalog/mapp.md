@@ -14,7 +14,7 @@ The Mapp destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-This destination supports Mapp [independent parameters](https://documentation.mapp.com/1.0/en/implementation-3-setup-options-for-the-tracking-of-elements-7209582.html#id-.Implementation3SetupOptionsfortheTrackingofElementsv1.0-12.2Independentparameters) by detecting them in<mark style="color:blue;">`Custom Event Properties`</mark>- See [Configuration](mapp.md#configuration) for more details. \
+This destination supports Mapp [independent parameters](https://documentation.mapp.com/1.0/en/implementation-3-setup-options-for-the-tracking-of-elements-7209582.html#id-.Implementation3SetupOptionsfortheTrackingofElementsv1.0-12.2Independentparameters) by detecting them in<mark style="color:blue;">`Custom Event Properties`</mark>. See [Configuration](mapp.md#configuration) for more details. \
 Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
