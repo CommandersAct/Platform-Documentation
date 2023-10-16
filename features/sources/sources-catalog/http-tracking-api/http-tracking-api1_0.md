@@ -96,12 +96,6 @@ If you want to use Http tracking API from you mobile APP instead of SDK, look at
 Timestamps supported are in milliseconds (ms).
 {% endhint %}
 
-## User API
 
-User API let's you update/delete/create users in the database. Find details on [User API spec](https://community.commandersact.com/datacommander/api/users).
-
-## Product API
-
-Product API let's you import your product's catalog in the database. It is mostly used to enrich conversion events with product's properties. Find details in [Product API spec](https://community.commandersact.com/datacommander/api/conversions-and-product-catalog-v2.0#upsert-products).
 
 [^1]: See information at the top of the page
