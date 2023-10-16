@@ -1,9 +1,5 @@
 # Alphalyr Marketing Studio
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Alphalyr](https://alphalyr.fr/) helps you boosting your omnichannel commerce with the data that matters.\
 Using this destination you can connect your activities and events with [Alphalyr Marketing Studio](https://alphalyr.fr/marketing-studio/).&#x20;
 
