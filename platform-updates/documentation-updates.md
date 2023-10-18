@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 20/10/2023
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 ## 06/10/2023
 
 Destination documentation:
