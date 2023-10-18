@@ -49,7 +49,8 @@ Your privacy json file updated needs to be uploaded on CDN Commanders Act, pleas
 2.  Add the new required fields\
     `texts -> generic -> "illustationsButton": "illustrations"` &#x20;
 
-    `texts -> generic -> "dataCategoriesDef" : "Data Categories"` &#x20;
+    `texts -> generic -> "dataCategoriesDef" : "Data Categories"`\
+    `texts -> vendors -> "legIntClaimTitle": "Legal policies"`&#x20;
 
 Full json example:&#x20;
 
@@ -126,6 +127,7 @@ Full json example:&#x20;
 			"title": "See the partners we work with below. Expend each one to see how they process your data.",
 			"content": "You can set consent preferences for individual third-party partners we work with below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policy links for more information and to object to such processing.",
 			"privacyPolicyText": "Privacy Policy",
+			"legIntClaimTitle": "Legal policies",
 			"deviceStorageTitle": "Storage Type:",
 			"deviceStorageCookieLifetime": "Cookie lifetime: ",
 			"deviceStorageOther": "Others",
@@ -184,6 +186,7 @@ Full json example:&#x20;
 			"content": "Nos partenaires V et nous déposons des cookies afin d'assurer la sécurité, améliorer votre expérience digitale et afficher des publicités et contenus personnalisés Vous pouvez accepter ou refuser ces différentes opérations.",
 			"privacyPolicyText": "Politique de confidentialité",
 			"deviceStorageTitle": "Type de stockage:",
+			"legIntClaimTitle": "Legal policies" 
 			"deviceStorageCookieLifetime": "Durée du cookie: ",
 			"deviceStorageOther": "Autres",
 			"deviceStorageCookies": "Cookies",
