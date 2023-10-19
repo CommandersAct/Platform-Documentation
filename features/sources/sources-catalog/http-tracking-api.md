@@ -27,6 +27,16 @@ HTTP method: `POST`
 The source key is displayed in the settings of any [source](../overview.md).
 {% endhint %}
 
+## Headers
+
+### Content type <a href="#content-type" id="content-type"></a>
+
+The endpoint requires a `Content-Type` header set to `application/json`:
+
+```
+Content-Type: application/json
+```
+
 ## Payload
 
 The properties of the event must be provided in the request body in JSON format.
