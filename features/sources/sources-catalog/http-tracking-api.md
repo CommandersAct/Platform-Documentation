@@ -27,28 +27,6 @@ HTTP method: `POST`
 The source key is displayed in the settings of any [source](../overview.md).
 {% endhint %}
 
-## Headers
-
-### Content type <a href="#content-type" id="content-type"></a>
-
-The endpoint requires a `Content-Type` header set to `application/json`:
-
-```
-Content-Type: application/json
-```
-
-### Source key
-
-An _alternative_ way to provide the required **source key** to each request is by using an `Authorization` header:
-
-```
-Authorization: Bearer 7183b9d4-1031-11ee-be56-0242ac120002
-```
-
-{% hint style="info" %}
-Instead of a header, the source key should usually be provided through the `token` [URL parameter](http-tracking-api.md#parameters) of the endpoint.
-{% endhint %}
-
 ## Payload
 
 The properties of the event must be provided in the request body in JSON format.
