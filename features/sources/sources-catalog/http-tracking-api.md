@@ -4,7 +4,7 @@ description: version 2.0
 
 # HTTP tracking API source
 
-The HTTP Tracking API is used to track **events** from any website or application. The data is collected by our servers, and then processed and routed to any configured destination.
+The HTTP Tracking API is used to track **events** from any website, application or server. The data is collected by our servers, and then processed and routed to any configured destination. It is often used for server-to-server use case.
 
 To manage users, check instead the dedicated [User API](import-crm-users.md), and for products, the [Product API](import-conversions/api-conversions-and-product-catalog.md).
 
