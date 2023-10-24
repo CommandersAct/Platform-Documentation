@@ -168,7 +168,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
 | ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
 
-### context -> user
+### &#x20;user
 
 | Field name                | Example value                        | Description                                                    | Platform |
 | ------------------------- | ------------------------------------ | -------------------------------------------------------------- | -------- |
