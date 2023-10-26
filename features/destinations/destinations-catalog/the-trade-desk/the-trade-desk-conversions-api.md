@@ -1,9 +1,5 @@
 # The Trade Desk Conversions API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [The Trade Desk](https://www.thetradedesk.com/us) is one of the largest independent demand-side platform (DSP) providing real-time ad pricing and placement for advertisers, ad agencies and brands.\
 Using this destination, you can leverage [The Trade Desk Real-Time Conversion Events API](https://api.thetradedesk.com/v3/portal/data/doc/DataConversionEventsApi) to send events via server-side hits.
 
