@@ -183,6 +183,7 @@
       * [Piano Analytics Collection API](features/destinations/destinations-catalog/piano-analytics/at-internet.md)
       * [Piano Analytics Enrichment API](features/destinations/destinations-catalog/piano-analytics/piano-analytics-enrichment-api.md)
     * [Pinterest](features/destinations/destinations-catalog/pinterest.md)
+    * [Piwik PRO](features/destinations/destinations-catalog/piwik-pro.md)
     * [Prediggo](features/destinations/destinations-catalog/prediggo.md)
     * [Quantcast](features/destinations/destinations-catalog/quantcast.md)
     * [Qlik](features/destinations/destinations-catalog/qlik.md)
