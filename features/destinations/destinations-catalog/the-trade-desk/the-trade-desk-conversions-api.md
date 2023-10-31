@@ -30,18 +30,18 @@ The Trade Desk destination provides the following key features:
 Using the [Event Mapping](the-trade-desk-conversions-api.md#configuration) you can change the [standard mapping](the-trade-desk-conversions-api.md#quick-reference) between The Trade Desk's events and yours or add new mappings.
 {% endhint %}
 
-| Commanders Act Events | The Trade Desk Events     |
-| --------------------- | ------------------------- |
-| `add_to_cart`         | `addtocart`               |
-| `add_to_wishlist`     | `wishlistitem`            |
-| `begin_checkout`      | `startcheckout`           |
-| `login`               | `login`                   |
-| `page_view`           | `sitevisit`               |
-| `purchase`            | `purchase`                |
-| `search`              | `searchitem`              |
-| `view_cart`           | `viewcart`                |
-| `view_item`           | `viewitem`                |
-| `[Custom Event]`      | `[Custom Event]` **\[1]** |
+| Commanders Act Events | The Trade Desk Events  |
+| --------------------- | ---------------------- |
+| `add_to_cart`         | `addtocart`            |
+| `add_to_wishlist`     | `wishlistitem`         |
+| `begin_checkout`      | `startcheckout`        |
+| `login`               | `login`                |
+| `page_view`           | `sitevisit`            |
+| `purchase`            | `purchase`             |
+| `search`              | `searchitem`           |
+| `view_cart`           | `viewcart`             |
+| `view_item`           | `viewitem`             |
+| `[Any Event]`         | `[Any Event]` **\[1]** |
 
 {% hint style="info" %}
 &#x20;**\[1]** See [Event Mapping](the-trade-desk-conversions-api.md#configuration) for more details.
