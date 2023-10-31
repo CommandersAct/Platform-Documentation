@@ -65,6 +65,8 @@ As an exception, a 400 HTTP code is returned in case the request is too large or
 
 There is a maximum of `32KB` per API request.
 
+The `batch` API endpoint accepts a maximum of `500KB` per request, with a limit of `32KB` per event in the batch.
+
 ## Rate limit
 
 There is no real rate limit above which the system will discard your data. But if you need to import at a rate faster than **500 requests per second**, please [contact us](mailto:support@commandersact.com) beforehand.
@@ -114,6 +116,55 @@ POST https://collect.commander1.com/events?tc_s=29&token=7183b9d4-1031-11ee-be56
 }
 ```
 
+
+
+## OpenAPI Specification
+
 Download OpenAPI specification:
 
 {% file src="../../../.gitbook/assets/http_tracking_api_spec.yaml" %}
+
+## Batch
+
+The `batch` method lets you send a series of `event` requests in a single batch, saving on outbound requests.
+
+There is a maximum of `500KB` per batch request and `32KB` per call.
+
+The BATCH API's collect endpoint is available at the following URL:
+
+<pre><code><strong>https://collect.commander1.com/events/batch?tc_s={siteId}&#x26;token={sourceKey}
+</strong></code></pre>
+
+### Batch Example
+
+Example of an API request:
+
+```
+POST https://collect.commander1.com/events/batch?tc_s=29&token=7183b9d4-1031-11ee-be56-0242ac120002
+```
+
+<pre class="language-json"><code class="lang-json"><strong>{
+</strong>  "batch": [
+      {
+        "event_name": "add_payment_info",
+            "payment_method": "card",
+            "revenue": 16.00,
+            "value": 22.53,
+            "currency": "EUR",
+            "user": {
+                "id": "12345",
+                "consistent_anonymous_id": "67892"
+                "consent_categories": [
+                    1,
+                    3
+                ]
+            }
+<strong>      },
+</strong>      {
+        "event_name": "generate_lead",
+            "method": "LinkedIn"
+      }
+  ]
+}
+</code></pre>
+
