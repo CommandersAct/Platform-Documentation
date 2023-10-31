@@ -124,7 +124,11 @@ Download OpenAPI specification:
 
 {% file src="../../../.gitbook/assets/http_tracking_api_spec.yaml" %}
 
-## Batch
+## Batch (closed beta)
+
+{% hint style="info" %}
+Currently the batch endpoint is not publicly open, please contact us if you want to be part of the closed beta.
+{% endhint %}
 
 The `batch` method lets you send a series of `event` requests in a single batch, saving on outbound requests.
 
@@ -147,22 +151,35 @@ POST https://collect.commander1.com/events/batch?tc_s=29&token=7183b9d4-1031-11e
 </strong>  "batch": [
       {
         "event_name": "add_payment_info",
-            "payment_method": "card",
-            "revenue": 16.00,
-            "value": 22.53,
-            "currency": "EUR",
-            "user": {
-                "id": "12345",
-                "consistent_anonymous_id": "67892"
-                "consent_categories": [
-                    1,
-                    3
-                ]
-            }
+        "payment_method": "card",
+        "revenue": 16.00,
+        "value": 22.53,
+        "currency": "EUR",
+        "user": {
+            "id": "12345",
+            "consistent_anonymous_id": "67892"
+            "consent_categories": [1,3]
+        },
+        "context": {
+          "event_id": "202210310000000000",
+          "page": {},
+          "device": {}
+        },
+        "event_timestamp": "1639044446636"
 <strong>      },
 </strong>      {
         "event_name": "generate_lead",
-            "method": "LinkedIn"
+        "method": "LinkedIn",
+        "user": {
+            "consistent_anonymous_id": "5689865"
+            "consent_categories": [1,2,3]
+        },
+        "context": {
+          "event_id": "202210180000000000",
+          "page": {},
+          "device": {}
+        },
+        "event_timestamp": "1639094446633"
       }
   ]
 }
