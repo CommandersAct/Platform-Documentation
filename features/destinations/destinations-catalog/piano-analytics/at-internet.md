@@ -1,6 +1,6 @@
 # Piano Analytics Collection API
 
-[Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics/#what-is-piano-analytics) is the successor of AT Internet Analytics Suite 2 (AS2).\
+[Piano Analytics](https://piano.io/) is the successor of AT Internet Analytics Suite 2 (AS2).\
 It's a user-centric tool that simplifies product & marketing analytics, while ensuring data quality.\
 Your data will be sent server-side getting the most from Piano Analytics' [Collection API](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/collection-api) and in form of [events](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events).
 
