@@ -11,7 +11,7 @@ You can check the following [compatibility table](https://developers.atinternet-
 
 ## Key features
 
-The Piano Analytics destination provides the following key features:
+The Piano Analytics Collection API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches [Piano Analytics' one](https://developers.atinternet-solutions.com/piano-analytics/data-collection/how-to-send-events/standard-events), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
