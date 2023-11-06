@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 10/11/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/piano-analytics-enrichment-api.md" %}
+[piano-analytics-enrichment-api.md](../features/destinations/destinations-catalog/piano-analytics/piano-analytics-enrichment-api.md)
+{% endcontent-ref %}
+
 ## 03/11/2023
 
 Destination documentation:
