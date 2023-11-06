@@ -1,9 +1,5 @@
 # Piwik PRO
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Piwik PRO](https://piwik.pro/) "Analytics Suite" is a privacy-focused platform for tracking and analyzing user behavior on websites and other digital products. Their product is an alternative to Google Analytics, geared towards compliance with strict security policies and privacy regulations.\
 Using this destination, you can leverage Piwik PRO [Tracking HTTP API](https://developers.piwik.pro/en/latest/data\_collection/api/http\_api.html) to send events. The data sent to this API will be processed and eventually appear in Analytics reports.
 
