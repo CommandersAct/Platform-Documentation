@@ -8,7 +8,7 @@
 
 ## Getting started
 
-* [How works the platform](getting-started/concepts/README.md)
+* [How the platform works](getting-started/concepts/README.md)
   * [Glossary](getting-started/concepts/lexical.md)
 * [Platform interface](getting-started/platform-interface.md)
   * [Prod and Testing environments](getting-started/platform-interface/prod-and-testing-environments.md)
