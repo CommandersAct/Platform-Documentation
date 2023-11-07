@@ -262,6 +262,7 @@
   * [Setup Guides](features/consent-management/setup-guides/README.md)
     * [Tag Manager](features/consent-management/setup-guides/tag-manager/README.md)
       * [Commanders Act TMS](features/consent-management/setup-guides/tag-manager/commanders-act-tms.md)
+      * [Google Tag Manager (GTM)](features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm.md)
       * [Google Tag Manager (GTM) - Consent Mode](features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm-consent-mode.md)
       * [Consent Mode in Commanders Act TMS](features/consent-management/setup-guides/tag-manager/consent-mode-in-commanders-act-tms.md)
       * [Adobe Launch](features/consent-management/setup-guides/tag-manager/adobe-launch.md)

@@ -1,0 +1,347 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2021-04-19 08:23:38",
+    "containerVersion": {
+        "path": "accounts/6003277909/containers/40857838/versions/0",
+        "accountId": "6003277909",
+        "containerId": "40857838",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6003277909/containers/40857838",
+            "accountId": "6003277909",
+            "containerId": "40857838",
+            "name": "example.com",
+            "publicId": "GTM-KJ8LRVL",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1614270077323",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6003277909/containers/40857838/workspaces?apiLink=container"
+        },
+        "tag": [
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "tagId": "10",
+                "name": "Consent Cact - Start",
+                "type": "html",
+                "priority": {
+                    "type": "INTEGER",
+                    "value": "1000"
+                },
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type=\"text/javascript\">\n    var tCPrivacyTagManager = \"gtm\";\n</script>\n<script type=\"text/javascript\" src=\"{{Consent banner - URL}}\"></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1614176419650",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "3",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "tagId": "43",
+                "name": "Google Analytics page view",
+                "type": "ua",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "overrideGaSettings",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackType",
+                        "value": "TRACK_PAGEVIEW"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "gaSettings",
+                        "value": "{{Google - UA}}"
+                    }
+                ],
+                "fingerprint": "1614275225762",
+                "firingTriggerId": [
+                    "22",
+                    "7"
+                ],
+                "parentFolderId": "63",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "triggerId": "7",
+                "name": "Cact consent given Statistical",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tcConsentChanged"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Cact allows Statistical}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "allowed"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1614276501389",
+                "parentFolderId": "3"
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "triggerId": "22",
+                "name": "Cact page view consent Statistical",
+                "type": "PAGEVIEW",
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Cact allows Statistical}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "allowed"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1614276509246",
+                "parentFolderId": "3"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "variableId": "4",
+                "name": "Cact - User consent",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  if (typeof tC.privacy == \"undefined\") {\n\n    var cookieName = \"TC_PRIVACY=\";\n    var cookieSeparator = \"@\"\n\n    var privacyCookie = \"\";\n    var cookieCategoryName = cookieName + \"_CENTER=\";\n    var cookieData = null;\n    var categories = null;\n    var decodedCookie = decodeURIComponent(document.cookie);\n    var ca = decodedCookie.split(';');\n\n    for (var i = 0; i < ca.length; i++) {\n      var c = ca[i];\n      while (c.charAt(0) == ' ') {\n        c = c.substring(1);\n      }\n      if (c.indexOf(cookieName) == 0) {\n        privacyCookie = c.substring(cookieName.length, c.length);\n      } else if (c.indexOf(cookieCategoryName) == 0) {\n        categories = c.substring(cookieCategoryName.length, c.length);\n      }\n    }\n\n    if (privacyCookie === \"\") {\n      return \"no_consent\";\n    } else if (privacyCookie) {\n      cookieData = privacyCookie.split(cookieSeparator);\n    } else {\n      cookieData = [];\n    }\n\n    var optType = parseInt(cookieData[0] || 0);\n\n    if (categories == \"ALL\") {\n      if (optType === 1) {\n        return \"optout\";\n      } else {\n        return \"all_consent\";\n      }\n    }\n\n    return optType === 0 && categories != -1 ? categories : \"optout\";\n  }\n\n  if (tC.getCookie(tC.privacy.getCN()) === \"\") {\n    return \"no_consent\";\n  } else if (tC.privacy.getOptinCategories().join(\",\") === \"\") {\n    return \"optout\";\n  } else {\n    return tC.privacy.getOptinCategories().join(\",\");\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1614176419650",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "variableId": "5",
+                "name": "Cact allows Statistical",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\n\n  // Fill in the category identifier\n\n  var categoryId = '4';\n\n\n\n  // Make sure you are referring to the correct variable\n\n  var userConsent = {{Cact - User consent}};\n\n\n\n  // Do not modify under this line\n\n  var pattern = new RegExp(\n    '^' + categoryId + '$|^' + categoryId + '\\,|\\,' + categoryId + '$|\\,' + categoryId + '\\,'\n  );\n\n  if (pattern.test(userConsent)) {\n    return 'allowed'\n  } else {\n    return 'refused'\n  }\n\n}\n"
+                    }
+                ],
+                "fingerprint": "1614770292013",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "variableId": "9",
+                "name": "Consent banner - URL",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Language}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "fr"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                         //enter here your privacy banner FR url
+                                        "value": "https://cdn.trustcommander.net/privacy/5423/privacy_v2_2.js"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "en"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        //enter here your privacy banner EN url
+                                        "value": "https://cdn.trustcommander.net/privacy/5423/privacy_v2_4.js"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1617115854195",
+                "parentFolderId": "3",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "variableId": "42",
+                "name": "Google - UA",
+                "type": "gas",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "cookieDomain",
+                        "value": "auto"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "doubleClick",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setTrackerName",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDebugVersion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useHashAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decorateFormsAutoLink",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableLinkId",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEcommerce",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "trackingId",
+                        "value": "UA-00000-0"
+                    }
+                ],
+                "fingerprint": "1614275213861",
+                "parentFolderId": "63"
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "variableId": "68",
+                "name": "Language",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\n  var defaultCountryCode = 'fr'\n    , availableTranslations = ['en', 'fr']\n    , navigatorCountryCode = navigator.language.substring(0, navigator.language.indexOf('-'))\n    , drupalSettingsLanguage = (function() {\n        var countryCode;\n        if (drupalSettings) {\n          if (drupalSettings.path) {\n            return drupalSettings.path.currentLanguage\n          }\n        }\n        return countryCode\n      }())\n    ;\n  if (availableTranslations.includes(drupalSettingsLanguage)) return drupalSettingsLanguage;\n  else if (availableTranslations.includes(navigatorCountryCode)) return navigatorCountryCode;\n  else return defaultCountryCode\n}\n"
+                    }
+                ],
+                "fingerprint": "1617116611006",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "folderId": "3",
+                "name": "Consent Management Platform",
+                "fingerprint": "1614176419568"
+            },
+            {
+                "accountId": "6003277909",
+                "containerId": "40857838",
+                "folderId": "63",
+                "name": "Google Analytics",
+                "fingerprint": "1614275206943"
+            }
+        ],
+        "fingerprint": "1618820618529",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6003277909/containers/40857838/versions/0?apiLink=version"
+    }
+}
