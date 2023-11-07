@@ -2,6 +2,14 @@
 
 ## 2023
 
+### Release v86.5 - 07/11/2023
+
+* Update sampling cookie settings
+
+### Release v86.4 - 12/10/2023
+
+* Update Privacy options in TagCommander
+
 ### Release v86.3 - 09/10/2023
 
 * Fix TagCommander retro-compatibility issue introduced in 86.1 where the TCPID might not be retrieved properly in some cases:
