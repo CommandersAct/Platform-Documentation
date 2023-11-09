@@ -1,0 +1,294 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-11-09 10:02:52",
+    "containerVersion": {
+        "path": "accounts/4448485731/containers/62410072/versions/0",
+        "accountId": "4448485731",
+        "containerId": "62410072",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/4448485731/containers/62410072",
+            "accountId": "4448485731",
+            "containerId": "62410072",
+            "name": "Faux conteneur 2",
+            "publicId": "GTM-MRR6TX3",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1672259755148",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4448485731/containers/62410072/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-MRR6TX3"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "tagId": "1916",
+                "name": "Google Analytics - page_view",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{GA4 - ID}}"
+                    }
+                ],
+                "fingerprint": "1699523761049",
+                "firingTriggerId": [
+                    "1915"
+                ],
+                "parentFolderId": "1909",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "tagId": "1919",
+                "name": "Consent Cact - Start",
+                "type": "html",
+                "priority": {
+                    "type": "INTEGER",
+                    "value": "1000"
+                },
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type=\"text/javascript\">\n    var tCPrivacyTagManager = \"gtm\";\n</script>\n<script type=\"text/javascript\" src=\"{{Consent banner - URL}}\"></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1699523214324",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "1911",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "triggerId": "1915",
+                "name": "Cact consent given Statistical",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tcConsentChanged"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Cact allows Statistical}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "allowed"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1699523214323",
+                "parentFolderId": "1911"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "variableId": "1910",
+                "name": "GA4 - ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-HJB510F8H0"
+                    }
+                ],
+                "fingerprint": "1699523294922",
+                "parentFolderId": "1909",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "variableId": "1912",
+                "name": "Cact - User consent",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n  if (typeof tC.privacy == \"undefined\") {\n\n    var cookieName = \"TC_PRIVACY=\";\n    var cookieSeparator = \"@\"\n\n    var privacyCookie = \"\";\n    var cookieCategoryName = cookieName + \"_CENTER=\";\n    var cookieData = null;\n    var categories = null;\n    var decodedCookie = decodeURIComponent(document.cookie);\n    var ca = decodedCookie.split(';');\n\n    for (var i = 0; i < ca.length; i++) {\n      var c = ca[i];\n      while (c.charAt(0) == ' ') {\n        c = c.substring(1);\n      }\n      if (c.indexOf(cookieName) == 0) {\n        privacyCookie = c.substring(cookieName.length, c.length);\n      } else if (c.indexOf(cookieCategoryName) == 0) {\n        categories = c.substring(cookieCategoryName.length, c.length);\n      }\n    }\n\n    if (privacyCookie === \"\") {\n      return \"no_consent\";\n    } else if (privacyCookie) {\n      cookieData = privacyCookie.split(cookieSeparator);\n    } else {\n      cookieData = [];\n    }\n\n    var optType = parseInt(cookieData[0] || 0);\n\n    if (categories == \"ALL\") {\n      if (optType === 1) {\n        return \"optout\";\n      } else {\n        return \"all_consent\";\n      }\n    }\n\n    return optType === 0 && categories != -1 ? categories : \"optout\";\n  }\n\n  if (tC.getCookie(tC.privacy.getCN()) === \"\") {\n    return \"no_consent\";\n  } else if (tC.privacy.getOptinCategories().join(\",\") === \"\") {\n    return \"optout\";\n  } else {\n    return tC.privacy.getOptinCategories().join(\",\");\n  }\n}"
+                    }
+                ],
+                "fingerprint": "1699523214322",
+                "parentFolderId": "1911",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "variableId": "1913",
+                "name": "Cact allows Statistical",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\n\n  // Fill in the category identifier\n\n  var categoryId = '4';\n\n\n\n  // Make sure you are referring to the correct variable\n\n  var userConsent = {{Cact - User consent}};\n\n\n\n  // Do not modify under this line\n\n  var pattern = new RegExp(\n    '^' + categoryId + '$|^' + categoryId + '\\,|\\,' + categoryId + '$|\\,' + categoryId + '\\,'\n  );\n\n  if (pattern.test(userConsent)) {\n    return 'allowed'\n  } else {\n    return 'refused'\n  }\n\n}\n"
+                    }
+                ],
+                "fingerprint": "1699523214322",
+                "parentFolderId": "1911",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "variableId": "1917",
+                "name": "Browser language",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\nreturn (navigator.language || navigator.userLanguage); \n}\n"
+                    }
+                ],
+                "fingerprint": "1699523515891",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "variableId": "1918",
+                "name": "Consent banner - URL",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Browser language}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "fr"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "https://cdn.trustcommander.net/privacy/7133/privacy_v2_1.js"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "en"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "https://cdn.trustcommander.net/privacy/7133/privacy_v2_3.js"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1699523214324",
+                "parentFolderId": "1911",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "folderId": "1909",
+                "name": "Google Analytics",
+                "fingerprint": "1699523214320"
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "62410072",
+                "folderId": "1911",
+                "name": "Consent Management Platform",
+                "fingerprint": "1699523214321"
+            }
+        ],
+        "fingerprint": "1699524172087",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4448485731/containers/62410072/versions/0?apiLink=version"
+    }
+}

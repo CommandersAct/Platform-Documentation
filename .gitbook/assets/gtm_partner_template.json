@@ -1,0 +1,298 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2023-11-09 10:02:34",
+    "containerVersion": {
+        "path": "accounts/4448485731/containers/10372495/versions/0",
+        "accountId": "4448485731",
+        "containerId": "10372495",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/4448485731/containers/10372495",
+            "accountId": "4448485731",
+            "containerId": "10372495",
+            "name": "Faux conteneur",
+            "publicId": "GTM-K7LPTBD",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1614197499097",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/4448485731/containers/10372495/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-K7LPTBD"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "tagId": "23608",
+                "name": "Consent Cact - Start",
+                "type": "html",
+                "priority": {
+                    "type": "INTEGER",
+                    "value": "1000"
+                },
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script type=\"text/javascript\">\n    var tCPrivacyTagManager = \"gtm\";\n</script>\n<script type=\"text/javascript\" src=\"{{Consent banner - URL}}\"></script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1699371854037",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "23601",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "tagId": "23609",
+                "name": "Google Analytics - page_view",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "{{GA4 - ID}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "configSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "send_page_view"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "true"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1699523698132",
+                "firingTriggerId": [
+                    "23607"
+                ],
+                "parentFolderId": "23599",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "triggerId": "23607",
+                "name": "Cact consent given Statistical",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "tcConsentChanged"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{Cact allows Partner}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "allowed"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1699371854036",
+                "parentFolderId": "23601"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "variableId": "23600",
+                "name": "GA4 - ID",
+                "type": "c",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "value",
+                        "value": "G-HJB510F8H0"
+                    }
+                ],
+                "fingerprint": "1699523142641",
+                "parentFolderId": "23599",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "variableId": "23610",
+                "name": "Consent banner - URL",
+                "type": "smm",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "input",
+                        "value": "{{Browser language}}"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "map",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "fr"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "https://cdn.trustcommander.net/privacy/7133/privacy_v2_1.js"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "key",
+                                        "value": "en"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "value",
+                                        "value": "https://cdn.trustcommander.net/privacy/7133/privacy_v2_3.js"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1699523587464",
+                "parentFolderId": "23601",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "variableId": "23611",
+                "name": "Cact allows Partner",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function() {\n\n\n  // Fill in the partner identifier\n\n  var partnerId = '2';\n\n\n  // Do not modify under this line\n  \n  var userConsent = tC.privacy.getOptinVendors();\n\n  if (userConsent.indexOf(partnerId) > -1) {\n    return 'allowed'\n  } else {\n    return 'refused'\n  }\n\n}\n"
+                    }
+                ],
+                "fingerprint": "1699524119249",
+                "parentFolderId": "23601",
+                "formatValue": {}
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "variableId": "23612",
+                "name": "Browser language",
+                "type": "jsm",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "javascript",
+                        "value": "function () {\nreturn (navigator.language || navigator.userLanguage); \n}\n"
+                    }
+                ],
+                "fingerprint": "1699523554886",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "folderId": "23599",
+                "name": "Google Analytics",
+                "fingerprint": "1699371854030"
+            },
+            {
+                "accountId": "4448485731",
+                "containerId": "10372495",
+                "folderId": "23601",
+                "name": "Consent Management Platform",
+                "fingerprint": "1699371854032"
+            }
+        ],
+        "fingerprint": "1699524154805",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/4448485731/containers/10372495/versions/0?apiLink=version"
+    }
+}
