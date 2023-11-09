@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 11/08/2023
+
+Implementation guide of Consent Banners in GTM
+
+{% content-ref url="../features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm.md" %}
+[google-tag-manager-gtm.md](../features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm.md)
+{% endcontent-ref %}
+
+## 11/09/2023
+
+Debug mode in Live Event Inspector
+
+
+
 ## 10/11/2023
 
 Destination documentation:

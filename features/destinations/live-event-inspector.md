@@ -22,3 +22,33 @@ You can visualize data up to 48 hours
 {% hint style="info" %}
 IP addresses are automatically obfuscated (the last octet is replaced by 0)
 {% endhint %}
+
+### **Debug Mode**
+
+A Debug Mode is available ! Simply add the property `test_code` with any value (string format) in your events.&#x20;
+
+This property will bypass the intelligent sampling mechanism. It's a simple way to be sure your test hits will be available in the Live Event Inspector.\
+You will be allowed to send 20 events/minute for each Source.
+
+Here's an example of an event with this property
+
+```
+cact('trigger','page_view', {
+  page_type: 'product_list',
+  page_name: 'Best sellers',
+  test_code: 'my_value',
+  user: {
+    id: '12356',
+    email:'toto@domain.fr',
+    consent_categories: [1,3]
+  }
+});
+```
+
+In case you cannot modify your events code's you can use our Data Cleansing option to add it in your events. Make sure your setup is based on a single key for reconciliation.&#x20;
+
+Here's an example of setup done with our Data Cleansing tool:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Note: this method works only for your Destination event inspector, not on the Sources Live event inspector as long as the Data Cleansing modifies the value after collection.
