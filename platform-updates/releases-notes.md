@@ -6,6 +6,84 @@ description: >-
 
 # Release notes
 
+## Release 10.0.17 - 24/10/23
+
+*   **TMS/CMP interfaces:**&#x20;
+
+    * Still doing perf increases on TMS pages​
+    * UI random errors fixed
+    * Passwords ith an higher security: now minimum of 12 characters is required​
+    * Proxy configuration (Cloud Flare, etc.) in domain management UI
+
+    <figure><img src="../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+
+
+*   **Server Side**
+
+    * **Event Inspector** UX improvement: searchable user properties
+
+
+
+    <figure><img src="../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
+
+    * **Event delivery** UX improvement:​ Longer duration for conservation of error details​
+
+    <figure><img src="../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
+
+    * **Properties Transformations** option UX improvement: allows the same transformations as the Data Cleansing component​
+
+    <figure><img src="../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+
+
+* **Live Event Inspector** \
+  **Debug Mode** for Live Event Inspector (Sources & Destinations)\
+  New option to helps you on debugs, will allows you to bypass the "Intelligent Sampling". To learn how to use it, read our dedicated documentation pages:\
+  [https://doc.commandersact.com/features/destinations/live-event-inspector#debug-mode  \
+  https://doc.commandersact.com/configure/data-management/data-retention-duration](https://doc.commandersact.com/features/destinations/live-event-inspector#debug-modehttps://doc.commandersact.com/configure/data-management/data-retention-duration)
+
+
+
+* **Mobile**
+  *   **Consent​**
+
+      Android & iOS: ​
+
+      * iAB new function to get the number of IAB vendors​
+        * iAB remove consentOutdated callback migrating to iabv2.2​
+
+      Android:  do\_not\_track parameter as a boolean inside the payload​
+
+      IOS: illustrations fix on privacy center​
+
+      ​
+  *   **Core​**
+
+      * Android & iOS: translations fix on migrating to iab v2.2​
+
+
+  *   **Server Side​**
+
+      * Android & iOS: ​
+        * language and country code from the device​
+        * 2 function to use legacy ID TC\_UNIQUEID​
+
+      ​
+*   **New destinations**
+
+    * The Trade Desk: CAPI
+    * Piwik PRO
+    * Alphalyr Marketing Studio
+    * TradeTracker
+
+
+* **Destinations​ updates**
+  * Awin: support for “Smart Mapping” and “Custom Event Properties”.​
+  * Mapp: support for "Independent parameters“.
+
+
+
+
+
 ## Release 10.0.16 - 24/09/23
 
 * **TMS/CMP ​interfaces:** Add a loading indicator to TMS/CMP interfaces\

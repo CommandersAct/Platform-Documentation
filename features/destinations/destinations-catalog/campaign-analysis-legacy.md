@@ -9,7 +9,8 @@ description: Only for Campaign Analysis Module (ex Mix Commander) customers
 This destination allows you to collect events and map it for the module Campaign Analysis\
 It can also turns events from Normalized Datalayer into touchpoints for Campaign Analysis module.
 
-With this destination, you can use 5 standard events. We recommended to use them, but if needed you can also use custom events.\
+With this destination, you can use 4 standard events. \
+To receive events in this destination, it requires as event name the 'Standard event name' described in the following array.\
 \
 Here's the list of Campaign Analytics touch points names vs Standard events names:
 
@@ -36,13 +37,7 @@ If you need more information about these events, check the section [Events refer
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 4/Select the type of touch point concerned by this destination.&#x20;
-
-Note: this destination can be used for multiple events, as mentioned above, but you will have to create 1 destination per type of touch point
-
-<figure><img src="../../../.gitbook/assets/image (420).png" alt=""><figcaption></figcaption></figure>
-
-#### 5/Setup your dimensions.
+#### 4/Setup your dimensions.
 
 This destination will do an automatic mapping between the Campaign dimensions and the Standard properties.\
 Here's the list of the automatic configuration done by this destination:
@@ -67,13 +62,13 @@ If you do not want to use automatic mapping of dimensions with event properties,
 This action will **block all** automatic mapping between Campaign dimensions and Standard properties
 {% endhint %}
 
-#### 6/Use the Properties Transformation menu (optional)
+#### 5/Use the Properties Transformation menu (optional)
 
 _Before to send your events to this destination you can, if needed, transform them to rename or remove some properties. Enter on the left the property name you want to add, delete or modify. Then enter on the right the property name where the value stands (or leave empty to remove the property)_
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-#### 7/Setup your filters - create your event(s) specification
+#### 6/Setup your filters - create your event(s) specification
 
 You have to specify which event is concerned by this destination. Here's an example for a purchase (orders)&#x20;
 
@@ -83,6 +78,6 @@ You have to specify which event is concerned by this destination. Here's an exam
 Don't forget to setup a consent filter to be RGPD compliant as well
 {% endhint %}
 
-#### 8/Your destination is ready to be activated!
+#### 7/Your destination is ready to be activated!
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
