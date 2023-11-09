@@ -4,6 +4,24 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 11/09/2023
+
+Data retention duration new page
+
+{% content-ref url="../configure/data-management/data-retention-duration.md" %}
+[data-retention-duration.md](../configure/data-management/data-retention-duration.md)
+{% endcontent-ref %}
+
+Update: add the section "**Debug mode**" in Live Event Inspector
+
+{% content-ref url="../features/sources/live-event-inspector.md" %}
+[live-event-inspector.md](../features/sources/live-event-inspector.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/live-event-inspector.md" %}
+[live-event-inspector.md](../features/destinations/live-event-inspector.md)
+{% endcontent-ref %}
+
 ## 11/08/2023
 
 Implementation guide of Consent Banners in GTM
@@ -11,12 +29,6 @@ Implementation guide of Consent Banners in GTM
 {% content-ref url="../features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm.md" %}
 [google-tag-manager-gtm.md](../features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm.md)
 {% endcontent-ref %}
-
-## 11/09/2023
-
-Debug mode in Live Event Inspector
-
-
 
 ## 10/11/2023
 
