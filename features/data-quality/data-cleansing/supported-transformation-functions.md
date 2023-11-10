@@ -1,5 +1,5 @@
 ---
-description: No-code Transformation formulas for Data cleansing
+description: No-code Transformation formulas for Data cleansing.
 ---
 
 # Supported transformation functions - Data cleansing
