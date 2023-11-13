@@ -8,40 +8,36 @@ description: >-
 
 ## Release 10.0.17 - 24/10/23
 
-*   **TMS/CMP interfaces:**&#x20;
+* **Platform**
+* Passwords ith an higher security: now minimum of 12 characters is required​
+* Proxy configuration (Cloud Flare, etc.) in domain management UI
 
-    * Still doing perf increases on TMS pages​
-    * UI random errors fixed
-    * Passwords ith an higher security: now minimum of 12 characters is required​
-    * Proxy configuration (Cloud Flare, etc.) in domain management UI
+<figure><img src="../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
-
+* **TMS/CMP interfaces:**&#x20;
+  * Slightly increase UI loading time on TMS pages​
+  * UI random errors fixed\
 
 *   **Server Side**
 
-    * **Event Inspector** UX improvement: searchable user properties
+    * **Event Inspector** UX improvement: user properties (standard and custom) are now searchable by default
 
 
 
     <figure><img src="../.gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
 
-    * **Event delivery** UX improvement:​ Longer duration for conservation of error details​
+    * **Destination Event delivery** UX improvement:​ Longer duration for conservation of error details​
 
     <figure><img src="../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
-    * **Properties Transformations** option UX improvement: allows the same transformations as the Data Cleansing component​
+    * **Destinnation Properties Transformations** option UX improvement: allows the same transformations as the Data Cleansing UI​
 
     <figure><img src="../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
 
 
-* **Live Event Inspector** \
-  **Debug Mode** for Live Event Inspector (Sources & Destinations)\
-  New option to helps you on debugs, will allows you to bypass the "Intelligent Sampling". To learn how to use it, read our dedicated documentation pages:\
-  [https://doc.commandersact.com/features/destinations/live-event-inspector#debug-mode  \
-  https://doc.commandersact.com/configure/data-management/data-retention-duration](https://doc.commandersact.com/features/destinations/live-event-inspector#debug-modehttps://doc.commandersact.com/configure/data-management/data-retention-duration)
-
-
+* **Debug Mode for Source/Destination Live Event Inspector** \
+  Adding a special parameter to you events allows you to have them visible in Event Inspector, even on production environment with billions of events. This debug parameter will allows you to bypass the "Intelligent Sampling". \
+  [https://doc.commandersact.com/features/sources/live-event-inspector#debug-mode](https://doc.commandersact.com/features/sources/live-event-inspector#debug-mode)\
 
 * **Mobile**
   *   **Consent​**
@@ -79,8 +75,6 @@ description: >-
 * **Destinations​ updates**
   * Awin: support for “Smart Mapping” and “Custom Event Properties”.​
   * Mapp: support for "Independent parameters“.
-
-
 
 
 
