@@ -9,8 +9,8 @@ description: >-
 ## Release 10.0.17 - 24/10/23
 
 * **Platform**
-* Passwords ith an higher security: now minimum of 12 characters is required​
-* Proxy configuration (Cloud Flare, etc.) in domain management UI
+  * Passwords ith an higher security: now minimum of 12 characters is required​
+  * Proxy configuration (Cloud Flare, etc.) in domain management UI
 
 <figure><img src="../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
 
