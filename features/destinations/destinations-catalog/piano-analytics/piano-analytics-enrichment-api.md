@@ -21,7 +21,7 @@ The Piano Analytics Enrichment API destination provides the following key featur
 Before you get started with this destination, ensure your user has administrator or data supervisor rights
 
 {% hint style="info" %}
-You can access enrichments by going to Piano Analytics interface following_<mark style="color:blue;">`Data Management`</mark>_ ➜ <mark style="color:blue;">`Enrichment`</mark>.
+You can access enrichments by going to Piano Analytics interface following<mark style="color:blue;">`Data Management`</mark> ➜ <mark style="color:blue;">`Enrichment`</mark>.
 {% endhint %}
 
 ### Configuration
