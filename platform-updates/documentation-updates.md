@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 17/11/2023
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/moebel.md" %}
+[moebel.md](../features/destinations/destinations-catalog/moebel.md)
+{% endcontent-ref %}
+
 ## 10/11/2023
 
 Data retention duration new page
