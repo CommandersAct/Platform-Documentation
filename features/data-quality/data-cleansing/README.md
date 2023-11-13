@@ -12,10 +12,10 @@ The no-code approach allows you to create transformations using simple formula b
 You can choose between different kind of transformations:
 
 * Rename event: simply change the name of an incoming event
-* Derive event: create a new event from an existing one <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
+* Derive event: create a new event from an existing one <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;">oming soon)</mark>
 * Modify properties: apply transformations and functions on properties
-* Filter event: define rules to filter incoming events <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
-* Custom code: create your own transformations <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;"><mark style="color:blue;background-color:blue;">oming soon)<mark style="color:blue;background-color:blue;"></mark>
+* Filter event: define rules to filter incoming events <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;">oming soon)</mark>
+* Custom code: create your own transformations <mark style="color:blue;background-color:blue;">(c</mark><mark style="color:blue;">oming soon)</mark>
 
 ## Rename event
 
@@ -45,7 +45,7 @@ Select properties to transform. You can:
 
 * rename the property ('rename to' option)
   * Example: rename 'date\_of\_birth' to 'birthdate'
-* map/link to an existing property ('map to' option)
+* map/link to an existing property ('copy value from' option)
   * Example: map property 'price' to 'revenue'
 * delete a property ('delete' option)
   * Example: always remove property 'tax\_amount' from event 'purchase'
