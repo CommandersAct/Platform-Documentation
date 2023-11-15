@@ -2,7 +2,17 @@
 
 ## 2023
 
-### Release v86.5 - 07/11/2023
+### Release v87.1 - 14/11/2023
+
+* Fix IAB TCFv2 text translation (bug introduced in v87.0)
+
+### Release v87.0 - 13/11/2023
+
+* Allow tracking domains to be defined as fourth level (and more) domains. As in the past, if multiple subdomains were setup, only the first one matching the visited url will be used.
+* Upgrade official IAB TCF SDK
+* Fix first layer text for IAB TCF 2.2 banners
+
+### Release v86.5 - 23/10/2023
 
 * Update sampling cookie settings
 
