@@ -37,6 +37,10 @@ The click identifier (`moeclid`) is required. You can set it using the field <ma
 
 ## Field Mappings
 
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
 <table><thead><tr><th width="352.6685580062746">Commanders Act Properties</th><th>Moebel Properties</th></tr></thead><tbody><tr><td><p><code>Click Identifier Cookie Name</code></p><p><code>Click Identifier (moeclid)</code></p></td><td><code>moeclid</code> <strong>[*][1]</strong></td></tr><tr><td><code>shipping_amount</code></td><td><code>shipping</code> <strong>[*][2]</strong></td></tr><tr><td>(<code>value</code> - <code>shipping_amount</code>)</td><td><code>value</code> <strong>[*]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>order_id</code></td></tr><tr><td><code>items.X.id</code></td><td><code>items.X.item_id</code> <strong>[*]</strong></td></tr><tr><td><code>items.X.quantity</code></td><td><code>items.X.quantity</code> <strong>[*]</strong></td></tr><tr><td><code>items.X.product.price</code></td><td><code>items.X.price</code> <strong>[*]</strong></td></tr><tr><td><code>items.X.product.category_1</code></td><td><code>items.X.item_category</code> <strong>[*]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
