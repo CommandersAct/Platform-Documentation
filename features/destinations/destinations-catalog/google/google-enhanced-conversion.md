@@ -31,6 +31,14 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ![Flag "Turn on enhanced conversion" and select "API".](<../../../../.gitbook/assets/2 (1).png>)
 
+## Quick reference
+
+<table><thead><tr><th width="327">Commanders Act Events</th><th>Google Tracking</th></tr></thead><tbody><tr><td><code>[Any Event]</code> <strong>[1]</strong></td><td><code>customers.uploadConversionAdjustments</code></td></tr></tbody></table>
+
+{% hint style="info" %}
+**\[1]** See [Mapping](google-enhanced-conversion.md#configuration) for more details. &#x20;
+{% endhint %}
+
 ## Field mappings
 
 {% hint style="info" %}
