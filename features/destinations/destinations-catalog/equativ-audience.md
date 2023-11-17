@@ -3,10 +3,6 @@
 [Equativ ](https://equativ.com/)is an advertising technology company.\
 Using this destination you can share audiences with Equativ using the [Audience data - API integration](https://help.smartadserver.com/s/article/Audience-data-API-integration-v2).
 
-{% hint style="info" %}
-This destination is currently under final review and it will be released soon.
-{% endhint %}
-
 ## Key features
 
 The Equativ Audience destination provides the following key features:

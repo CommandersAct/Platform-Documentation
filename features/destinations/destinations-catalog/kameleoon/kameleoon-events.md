@@ -31,7 +31,7 @@ The "Kameleoon Events" destination provides the following key features:
 | `Site Code`               | `siteCode`           |
 | `Visitor Cookie Name`     | `userID` **\[1]**    |
 | `Kameleoon GoalId`        | `goalID`             |
-| `properties.revenue`      | `revenue` **\[2]**   |
+| `revenue`                 | `revenue` **\[2]**   |
 
 {% hint style="info" %}
 **\[1]** The cookie content is set as value for the parameter`userID`.\
