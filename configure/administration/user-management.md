@@ -144,9 +144,23 @@ To create a new profile, go to the “**Administration**”  > “**Profile mana
 
 When saving, the profile will be created on all selected sites.
 
-<figure><img src="../../.gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/users.png" alt="" width="563"><figcaption></figcaption></figure>
 
 When the profile is created, you will be able to link it to all desired users from the “User management” interface. To learn more, please refer to these articles: “[Creating a new user](user-management.md#creating-a-new-user)” or “[Modifying user rights](user-management.md#modifying-user-rights)”.
+
+#### Setup example for access only to Destinations and Live event inspector
+
+To grant access only to Destinations and Live event inspector menu, simply turn all the options to NO, except in the "Data Activation" menu these 5 elements will be turned to YES:&#x20;
+
+* Read connector credentials
+* Access to DataCommander
+* Create audience destination
+* Update audience destination
+* Read audience destination
+
+<figure><img src="../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Modifying a profile:
 
