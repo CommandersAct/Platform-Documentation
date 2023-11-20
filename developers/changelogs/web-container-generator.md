@@ -2,10 +2,6 @@
 
 ## 2023
 
-### Release v87.2 - 20/11/2023
-
-* Fix IAB TCFv2 VendorList cache to better support TCF < 2.2
-
 ### Release v87.1 - 14/11/2023
 
 * Fix IAB TCFv2 text translation (bug introduced in v87.0)
