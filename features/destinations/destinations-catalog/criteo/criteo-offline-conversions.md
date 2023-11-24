@@ -1,6 +1,5 @@
 # Criteo (offline conversions)
 
-[Criteo ](https://www.criteo.com/)is an advertising company that provides online display advertisements.\
 Push your offline conversions, like purchases made in physical stores, directly to Criteo.
 
 ![](<../../../../.gitbook/assets/image (9) (1) (1).png>)
