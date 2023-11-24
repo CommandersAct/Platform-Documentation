@@ -76,11 +76,11 @@ The Slack example requires the following four steps:
 3. Send a request to the Slack collection server to transmit the data.
 4. Test your code, to make sure that the destination will behave appropriately in production.
 
-It's important to note that the code should not perform certain actions, as they are the responsibility of the filter tab. Specifically, the code should not:
+It's important to note that the code should not perform certain actions, as they are the responsibility of the filter tab. Specifically, the code should **not**:
 
-* Manage the consent to determine wether the event should be send or not.\
-  It is the responsability of the consent category dropdown in the Filter tab. It is important not to override this feature, to not break the Data Governance reports
-* Analyze the event properties to determine whether it should be executed. \
+* **Manage the consent** to determine wether the event should be send or not.\
+  It is the responsability of the consent category dropdown in the _Filter_ tab. It is important not to override this feature, to not break the Data Governance reports
+* Analyze the event properties to **determine whether it should be executed**. \
   Don't forget that the user will be able to choose in the _Filter tab_ wich event will be sent to the destination. You may want to restrict your code to some event's type, but you should not remove the user's ability to filter his events on certain properties (ex : the user may want to send only events with property "country" equals to "UK")
 * Return an global error (`data.onFailure()`) when some event's type does not fit the destination. Prefer to use silent error with `data.onFailure({ status: 'filtered'})`
 
@@ -120,3 +120,10 @@ else {
     data.onFailure({ status: 'filtered', detail: 'unsupported_event' });
 }
 ```
+
+
+
+{% hint style="success" %}
+Note that the `data.onSuccess()` is mandatory in your code.\
+The `data.onSuccess()`and `data.onFailure()` values tell the platform when the destination has completed or failed its task, and are then used as a signal for _Event Delivery_ dashboard and _Destination Live Invent Inspector_
+{% endhint %}
