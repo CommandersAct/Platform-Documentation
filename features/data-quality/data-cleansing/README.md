@@ -5,7 +5,7 @@ description: Transform/fix your events before to send them to destinations
 # Data cleansing
 
 Cleaning, fixing and preparing your data is crucial for success when using the Platform activation capabilities.\
-The no-code approach allows you to create transformations using simple formula based on basic [functions ](supported-transformation-functions.md)and operators.
+The no-code approach allows you to create transformations using simple formula based on basic [functions ](supported-transformation-functions/)and operators.
 
 <figure><img src="../../../.gitbook/assets/image (1) (7).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,7 +51,7 @@ Select properties to transform. You can:
   * Example: always remove property 'tax\_amount' from event 'purchase'
 * change the value ('set value to' option)
 
-With the 'set value to' option, you can simply change the value (ex: 'currency' = EUR by default) but you also have access to formulas based on basic [functions](supported-transformation-functions.md) and operators.\
+With the 'set value to' option, you can simply change the value (ex: 'currency' = EUR by default) but you also have access to formulas based on basic [functions](supported-transformation-functions/) and operators.\
 For example, you can hash incoming data with `SHA-256` or `MD5` functions. You can also `REPLACE` or `SUBSTITUTE` a text to replace by another one, or `EXTRACT` a specific text in a chain.
 
 You can also use operators like `AND / OR / NOT` and create operations with `* / + -`, full list [here](https://community.commandersact.com/platform-x/features/data-quality/data-cleansing/supported-transformation-functions#operators).

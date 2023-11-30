@@ -383,8 +383,8 @@ Revamp **Identity resolution** documentation
 
 Enrich Data cleansing **transformation functions** documentation
 
-{% content-ref url="../features/data-quality/data-cleansing/supported-transformation-functions.md" %}
-[supported-transformation-functions.md](../features/data-quality/data-cleansing/supported-transformation-functions.md)
+{% content-ref url="../features/data-quality/data-cleansing/supported-transformation-functions/" %}
+[supported-transformation-functions](../features/data-quality/data-cleansing/supported-transformation-functions/)
 {% endcontent-ref %}
 
 Destination documentation (updates):

@@ -96,7 +96,7 @@ description: >-
     * Segment overview => +40%
 
 
-* **Files imports:** The fields mapping now support conditionnal value transformation with [Data cleansing formulas​](../features/data-quality/data-cleansing/supported-transformation-functions.md)\
+* **Files imports:** The fields mapping now support conditionnal value transformation with [Data cleansing formulas​](../features/data-quality/data-cleansing/supported-transformation-functions/)\
 
 *   **Data Activation: Variables** **UI** can now be reached from Segment overview\
 
@@ -457,7 +457,7 @@ More information here:
   ![](<../.gitbook/assets/image (18) (3).png>)
 *   **Data Cleansing – new functions added​**
 
-    [JSON\_PARSE() and VALUE\_FROM\_JSON()​](../features/data-quality/data-cleansing/supported-transformation-functions.md#available-functions)
+    [JSON\_PARSE() and VALUE\_FROM\_JSON()​](../features/data-quality/data-cleansing/supported-transformation-functions/#available-functions)
 *   **Events reference update**
 
     [video events](../developers/tracking/events-reference/video-event-reference.md) has been added

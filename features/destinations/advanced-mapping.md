@@ -42,7 +42,7 @@ If you click on the _T_ icon, you can switch to functions mode.
 
 ## Functions (settings)
 
-Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions.md)).
+Use no-code formulas to transform properties. You can use more than 25 formulas (list [here](../data-quality/data-cleansing/supported-transformation-functions/)).
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-16 à 17.40.51.png" alt=""><figcaption></figcaption></figure>
 

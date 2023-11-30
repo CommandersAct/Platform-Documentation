@@ -34,7 +34,7 @@ The simple filter will be automatically transcribed into the advanced one, but t
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.50.31.png" alt=""><figcaption><p>...to advanced filter</p></figcaption></figure>
 
-With Advanced filter, you can use formula and advanced [functions](../data-quality/data-cleansing/supported-transformation-functions.md), simply click on the button on the right of the field to see all available functions.
+With Advanced filter, you can use formula and advanced [functions](../data-quality/data-cleansing/supported-transformation-functions/), simply click on the button on the right of the field to see all available functions.
 
 Supported operators:
 
@@ -50,8 +50,8 @@ Supported conditions:
 
 Supported functions:
 
-{% content-ref url="../data-quality/data-cleansing/supported-transformation-functions.md" %}
-[supported-transformation-functions.md](../data-quality/data-cleansing/supported-transformation-functions.md)
+{% content-ref url="../data-quality/data-cleansing/supported-transformation-functions/" %}
+[supported-transformation-functions](../data-quality/data-cleansing/supported-transformation-functions/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
