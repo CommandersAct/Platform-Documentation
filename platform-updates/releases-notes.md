@@ -30,7 +30,7 @@ description: >-
 
     <figure><img src="../.gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
-    * **Destinnation Properties Transformations** option UX improvement: allows the same transformations as the Data Cleansing UI​
+    * **Destination Properties Transformations** option UX improvement: allows the same transformations as the Data Cleansing UI​
 
     <figure><img src="../.gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
 
