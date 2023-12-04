@@ -32,9 +32,9 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 ## Quick reference
 
-| Commanders Act Events | Taboola Events     |
-| --------------------- | ------------------ |
-| `[All events]`        | `[Taboola events]` |
+| Commanders Act Events | Taboola Events    |
+| --------------------- | ----------------- |
+| `[Any Event]`         | `[Taboola Event]` |
 
 ## Field Mappings
 

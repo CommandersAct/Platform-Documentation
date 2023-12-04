@@ -34,7 +34,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 | `view_cart`           | `cart`              |
 | `view_item`           | `product`           |
 | `view_item_list`      | `category`          |
-| `[All other events]`  | `home`              |
+| `[Any Other Events]`  | `home`              |
 
 ## Field Mappings
 

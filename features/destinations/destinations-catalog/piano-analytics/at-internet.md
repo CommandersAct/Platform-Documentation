@@ -83,7 +83,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 | `view_cart`                                                                                                                                                               | `cart.display`                                              |
 | `view_item`                                                                                                                                                               | `product.display`                                           |
 | `view_item_list`                                                                                                                                                          | `page.view_item_list` **\[\*]**                             |
-| `[Custom Event]`                                                                                                                                                          | `[Custom Event]` **\[\*]**                                  |
+| `[Any Event]`                                                                                                                                                             | `[Custom Event]` **\[\*]**                                  |
 
 
 
