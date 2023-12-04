@@ -43,7 +43,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 | `search`                                                                                               | `keyword-search-v1`          |
 | `sign_up`                                                                                              | `signup-v1`                  |
 | <p><code>video_start</code></p><p><code>video_complete</code></p><p><code>video_ad_complete</code></p> | `video-watch-v1`             |
-| `[All other events]` **\[1]**                                                                          | `[Not set]` **\[2]**         |
+| `[Any Other Event]` **\[1]**                                                                           | `[Not Set]` **\[2]**         |
 
 {% hint style="info" %}
 **\[1]** Custom events are also supported.\

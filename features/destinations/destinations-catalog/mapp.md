@@ -30,9 +30,9 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 ## Quick reference
 
-| Commanders Act Events | Mapp Request Type                         |
-| --------------------- | ----------------------------------------- |
-| `[All events]`        | `page`or`event`or`media`or`form` **\[1]** |
+| Commanders Act Events | Mapp Request Type                               |
+| --------------------- | ----------------------------------------------- |
+| `[Any Event]`         | `page` or `event` or `media` or `form` **\[1]** |
 
 {% hint style="info" %}
 **\[1]** Custom events are also supported. More details on Mapp request types are available following this [LINK](https://documentation.mapp.com/1.0/en/which-request-types-are-supported-by-mapp-intelligence-36143348.html).

@@ -31,9 +31,9 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 ## Quick reference
 
-| Commanders Act Events   | Adform Tracking          |
-| ----------------------- | ------------------------ |
-| `[All events]` **\[1]** | `[Tracking Point Names]` |
+| Commanders Act Events  | Adform Tracking          |
+| ---------------------- | ------------------------ |
+| `[Any Event]` **\[1]** | `[Tracking Point Names]` |
 
 {% hint style="info" %}
 **\[1]** Ensure to apply [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) configuring your relevant events for this destination. Custom events are also supported.
