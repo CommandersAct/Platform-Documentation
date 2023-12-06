@@ -6,6 +6,37 @@ description: >-
 
 # Release notes
 
+## Release 10.0.18 - 24/11/23
+
+* **Ability to search by source-key** in the Source Overview & Destination Overview UIs:&#x20;
+
+<figure><img src="../.gitbook/assets/image (436).png" alt=""><figcaption></figcaption></figure>
+
+*   **New version of the Source Data Quality** UI: It's even easier to see the quality of your data at a glance ! \
+    "_What proportion of events have errors to need to be fixed?_" The new Overview chart give you the answer in realtime.\
+    You will also be able to filter by environment (by default Production environment is shown) and by source.\
+
+
+    <figure><img src="../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+* **Platform**
+  * User Management UI: speed increase x3 \
+
+*   **Destinations**
+
+    * GEC destination enhancement: Avoid random "failed\_get\_conversion\_id" errors in Event Delivery.&#x20;
+
+
+* **Mobile**
+  * **React-Native:**&#x20;
+    * add `useLegacyUniqueIDForConsentID` &  `useLegacyUniqueIDForAnonymousID` &#x20;
+    *   startScreen for privacy center choose your launch on the Vendors or Purposes UI
+
+        \
+
+* **Documentation**
+  * [Easy setup guide for Privacy in GTM](https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm)
+  * [Data retention duration](https://doc.commandersact.com/configure/data-management/data-retention-duration)
+
 ## Release 10.0.17 - 24/10/23
 
 * **Platform**
