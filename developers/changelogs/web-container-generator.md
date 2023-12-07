@@ -2,6 +2,10 @@
 
 ## 2023
 
+### Release v88.0 - 06/12/2023
+
+* Make generator version available on container / banner versions listing
+
 ### Release v87.2 - 20/11/2023
 
 * Fix IAB TCFv2 VendorList cache to better support TCF < 2.2
