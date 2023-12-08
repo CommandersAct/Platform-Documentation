@@ -65,7 +65,11 @@ Test the configuration and the setup will be done.
 
 Click on "Containers Integration", this will allow the domain to be included in the container configuration.
 
+<figure><img src="../../../.gitbook/assets/image (438).png" alt=""><figcaption></figcaption></figure>
+
 All Commanders Act tags will switch to first party collection.
+
+This action will affect Consent, Deduplication, Campaign, Segment, Server Side
 
 {% hint style="warning" %}
 Containers and privacy banners should be regenerated and deployed.
