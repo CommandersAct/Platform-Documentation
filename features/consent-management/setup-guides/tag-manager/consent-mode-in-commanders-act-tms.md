@@ -32,7 +32,7 @@ Search for the tag "**gtag - Google Consent Mode with TRUST (BETA)**" to add it 
 You can now configure your tag and check the `(5)` "**Tag Implementation guide**" for more details.\
 See `(6)` **each field** for detailed information on how you can map these fields with your data layer.
 
-<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Configure each field as needed.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/TMS_1.png" alt=""><figcaption><p>Configure each field as needed.</p></figcaption></figure>
 
 Under "**RULES**", select `(7)` "**Do Not Include In Privacy Scope**" as privacy category or select a category that is always ON.
 
