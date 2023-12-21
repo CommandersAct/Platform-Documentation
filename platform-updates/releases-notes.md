@@ -17,7 +17,7 @@ description: >-
     You will also be able to filter by environment (by default Production environment is shown) and by source.\
 
 
-    <figure><img src="../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (435) (1).png" alt=""><figcaption></figcaption></figure>
 * **Platform**
   * User Management UI: speed increase x3 \
 

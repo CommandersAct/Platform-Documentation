@@ -3,6 +3,8 @@
 For each source, you can visualize the data quality on a dedicated tab '_Data Quality_':\
 
 
+<figure><img src="../../.gitbook/assets/image (435).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../.gitbook/assets/image (437).png" alt=""><figcaption></figcaption></figure>
 
 The quality score of events is represented by a weather icon:&#x20;
