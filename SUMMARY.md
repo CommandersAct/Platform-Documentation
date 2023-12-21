@@ -131,7 +131,7 @@
     * [Campaign Analysis Legacy](features/destinations/destinations-catalog/campaign-analysis-legacy.md)
     * [Commission Junction](features/destinations/destinations-catalog/commission-junction.md)
     * [Criteo](features/destinations/destinations-catalog/criteo/README.md)
-      * [Criteo (events)](features/destinations/destinations-catalog/criteo/criteo-events.md)
+      * [Criteo - Events](features/destinations/destinations-catalog/criteo/criteo-events.md)
       * [Criteo (audiences)](features/destinations/destinations-catalog/criteo/criteo-audiences.md)
       * [Criteo (offline conversions)](features/destinations/destinations-catalog/criteo/criteo-offline-conversions.md)
     * [Data Activation Legacy](features/destinations/destinations-catalog/data-activation-legacy.md)

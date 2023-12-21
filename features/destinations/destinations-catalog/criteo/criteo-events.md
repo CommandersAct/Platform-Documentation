@@ -1,4 +1,4 @@
-# Criteo (events)
+# Criteo - Events
 
 Using the [Criteo Server-side API](https://guides.criteotilt.com/onetag/s2s/#sending-events) you can track web events you are used to report via [Criteo OneTag client-side JS (pixel)](https://help.criteo.com/kb/guide/en/all-criteo-onetag-events-and-parameters-vZbzbEeY86/Steps/775825). This is normally required for technical and legal reasons.
 
@@ -13,9 +13,8 @@ The Criteo (events) destination provides the following key features:
 
 ## Destination setup
 
-{% hint style="info" %}
-When available, the [Criteo salted user ID (GUM ID)](https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call) is required.\
-This is retrieved by getting the value of the cookie<mark style="color:blue;">**`crto_mapped_user_id`**</mark>and can be set using the <mark style="color:blue;">Criteo - User Identification</mark> client-side template which is available in our library following these steps:`INTEGRATION` ➜ `Sources`➜ `Web Containers`.
+{% hint style="warning" %}
+The [Criteo salted user ID (GUM ID)](https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call) is required: this value must be passed to this destination by including the cookie <mark style="color:blue;">**`crto_mapped_user_id`**</mark>. This cookie is set by the <mark style="color:blue;">Criteo - User Identification</mark> client-side template which is available in our library following these steps:`INTEGRATION` ➜ `Sources`➜ `Web Containers`.
 {% endhint %}
 
 ### Configuration
