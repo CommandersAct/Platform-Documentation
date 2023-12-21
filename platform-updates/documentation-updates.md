@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 21/12/2023
+
+Information page about Google new requirements
+
+{% content-ref url="../features/consent-management/knowledge-base/google-acm-requires-iab-tcf.md" %}
+[google-acm-requires-iab-tcf.md](../features/consent-management/knowledge-base/google-acm-requires-iab-tcf.md)
+{% endcontent-ref %}
+
 ## 17/11/2023
 
 Destination documentation:

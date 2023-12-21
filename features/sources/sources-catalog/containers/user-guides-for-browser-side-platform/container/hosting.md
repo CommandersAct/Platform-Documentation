@@ -31,7 +31,7 @@ It's almost identical to the FTP connector, there is only 2 more steps:\
 Select a CDN vendor (EdgeCast or Akamai) \
 Setup the "Purge" part (use the Account ID, Token and Purge URL provided by your CDN vendor)
 
-<figure><img src="../../../../../../.gitbook/assets/image (9).png" alt="" width="509"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (9) (5).png" alt="" width="509"><figcaption></figcaption></figure>
 
 ### URL connector configuration
 
@@ -43,7 +43,7 @@ Just give an explicit name, enter the correct URL and select any client-side con
 
 It's almost identical to the FTP connector. However, it requires a bucket as the host:
 
-<figure><img src="../../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (7) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Google Cloud Storage connector configuration
 
@@ -59,7 +59,7 @@ fill in all fields of the form:\
 **Client X509 Cert URL:** Enter the client custom X509 URL for Google Cloud Services. Can be found in Google Cloud JSON Key file\
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The Private Key field must include the comments 'BEGIN PRIVATE KEY' and 'END PRIVATE KEY'\
@@ -102,7 +102,7 @@ Simply follow the step by step guide provided by Criteo:
 
 Simply follow the step by step guide provided by Google Ads:
 
-<figure><img src="../../../../../../.gitbook/assets/image (11).png" alt="" width="407"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (11) (3).png" alt="" width="407"><figcaption></figcaption></figure>
 
 ###
 
@@ -118,14 +118,14 @@ In case this login is currently used by at least one destination, our interface 
 
 Simply follow the step by step guide provided by Snapchat:
 
-<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1).png" alt="" width="343"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (6) (1) (1) (2).png" alt="" width="343"><figcaption></figcaption></figure>
 
 ### Adobe Analytics connector configuration
 
 Simply follow the step by step guide provided by Adobe:\
 For more information, please refer to the [dedicated page](../../../../../destinations/destinations-catalog/adobe/adobe-analytics.md)
 
-<figure><img src="../../../../../../.gitbook/assets/image (12).png" alt="" width="415"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (12) (6).png" alt="" width="415"><figcaption></figcaption></figure>
 
 ### Equativ connector configuration
 

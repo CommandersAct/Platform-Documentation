@@ -37,7 +37,7 @@ Because of this, **segments are dynamic**. Your users, according to their action
 
 You have to define which dimensions are key for your business and define a matrix that can help you to categorize your customers. For example, you want to flag your customers based on their order frequency and average order amount:
 
-![](<../../../.gitbook/assets/image (10) (1) (2) (1).png>)
+![](<../../../.gitbook/assets/image (10) (1) (2) (1) (1).png>)
 
 However, you can go further with flags because you can integrate other dimensions such as period, online/offline purchase or whatever you need. This is allowed because there is no data retention for a flag, data is stored for a long time: the flag defined will not be removed on the user, except if you defined some exit conditions.
 

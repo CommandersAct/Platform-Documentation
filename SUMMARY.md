@@ -306,6 +306,7 @@
       * [IAB TCF v2.2 Migration guide App](features/consent-management/knowledge-base/iab-tcf-v2.2-release-details/iab-tcf-v2.2-migration-guide-app.md)
     * [IAB TCF V2.2 Consent](features/consent-management/knowledge-base/iab-tcf-v2.2-consent.md)
     * [IAB TCF V2.2 and Google FAQ](features/consent-management/knowledge-base/iab-tcf-v2.2-and-google-faq.md)
+    * [Google ACM requires IAB TCF](features/consent-management/knowledge-base/google-acm-requires-iab-tcf.md)
     * [CCPA & Global Privacy control](features/consent-management/knowledge-base/ccpa-and-global-privacy-control.md)
   * [Rest Data API](features/consent-management/rest-data-api/README.md)
     * [GET/PUT Consents / preferences](features/consent-management/rest-data-api/get-put-consents-preferences.md)

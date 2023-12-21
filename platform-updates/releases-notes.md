@@ -43,7 +43,7 @@ description: >-
   * Security enhancement : passwords now required a minimum of 12 characters
   * Proxy configuration (Cloud Flare, etc.) in domain management UI
 
-<figure><img src="../.gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (430) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **TMS/CMP interfaces:**&#x20;
   * Slightly increase UI loading time on TMS pages​
@@ -201,7 +201,7 @@ description: >-
     For more information, you can have look to our new documentation's [dedicated page](https://doc.commandersact.com/features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality)\
 
 
-    <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -212,7 +212,7 @@ description: >-
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -220,7 +220,7 @@ description: >-
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -242,7 +242,7 @@ description: >-
     \
 
 
-    <figure><img src="../.gitbook/assets/image (10) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (1) (2).png" alt="" width="563"><figcaption></figcaption></figure>
 *   **Consent: New setting "Global Privacy Control"**\
     Setting to be configured at the banner level. Required for CCPA banners\
     For further information, you can read [this page](https://community.commandersact.com/consent-management/knowledge-base/ccpa-and-global-privacy-control)\
@@ -360,7 +360,7 @@ description: >-
     For the moment, you will find the pages related to your privacy banners configuration's in the tab 'Consent Management'. \
     More pages are coming soon!
 
-    <figure><img src="../.gitbook/assets/image (10).png" alt="" width="181"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (10) (1).png" alt="" width="181"><figcaption></figcaption></figure>
 *   **Data Cleansing: 2 new function for your formulas:**\
 
 

@@ -21,7 +21,7 @@ Simply follow these 3 steps to enjoy this feature on your account:
 2-Declare the domains that you need to be scanned with the Cookie Scanner\
 `Data Governance > Consent Management > Settings > Cookie Scanner Domains`
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3-Regenerate and Deploy your privacy banner(s)
 
