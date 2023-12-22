@@ -17,7 +17,7 @@ The Moebel destination provides the following key features:
 
 ## Destination setup
 
-{% hint style="info" %}
+{% hint style="warning" %}
 The click identifier (`moeclid`) is required. You can set it using the field <mark style="color:blue;">`Click Identifier Cookie Name`</mark> or through the "Smart Mapping" section: see field <mark style="color:blue;">`Click Identifier (moeclid)`</mark>.
 {% endhint %}
 
