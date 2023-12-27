@@ -51,7 +51,7 @@ The property<mark style="color:blue;">`event_id`</mark>is required and used for 
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** If this property is not provided, a proper<mark style="color:blue;">`action_source`</mark>is retrieved using available data. Default value: <mark style="color:blue;">web</mark>.\
+**\[1]** If this property is not provided, an<mark style="color:blue;">`action_source`</mark>is retrieved using available data. Supported values: <mark style="color:blue;">`app_android`</mark>, <mark style="color:blue;">`app_ios`</mark>, <mark style="color:blue;">`offline`</mark> and <mark style="color:blue;">`web`</mark>. Default value: <mark style="color:blue;">`web`</mark>.\
 **\[2]** If this property is not provided, a proper<mark style="color:blue;">`event_source_url`</mark>is retrieved using available data.\
 **\[3]** Boolean or equivalent string value supported.\
 **\[4]** If it's passed in clear text, it's automatically hashed.\
