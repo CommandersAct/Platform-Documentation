@@ -221,7 +221,7 @@
       * [The Trade Desk Audience](features/destinations/destinations-catalog/the-trade-desk/the-trade-desk.md)
     * [TikTok](features/destinations/destinations-catalog/tiktok/README.md)
       * [TikTok Events API](features/destinations/destinations-catalog/tiktok.md)
-      * [TikTok Offiline Events](features/destinations/destinations-catalog/tiktok/tiktok-offiline-events.md)
+      * [TikTok Offline Events](features/destinations/destinations-catalog/tiktok/tiktok-offiline-events.md)
     * [TimeOne](features/destinations/destinations-catalog/timeone.md)
     * [Tradedoubler](features/destinations/destinations-catalog/tradedoubler.md)
     * [TradeTracker](features/destinations/destinations-catalog/tradetracker.md)
