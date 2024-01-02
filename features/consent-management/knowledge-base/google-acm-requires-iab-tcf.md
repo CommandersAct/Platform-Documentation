@@ -1,6 +1,6 @@
 # Google ACM requires IAB TCF
 
-### New requirement for publishers from 16 January 2024: IAB TCF mandatory
+### New requirement for publishers from February 1st 2024: IAB TCF mandatory
 
 Publishers using Google AdSense, Ad Manager, or AdMob must use a CMP certified by Google and must integrate the IAB’s TCF
 
