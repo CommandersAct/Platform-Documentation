@@ -50,8 +50,21 @@ To ensure that the consent is correctly managed by GTM with third-party vendor t
 
 <figure><img src="../../../../.gitbook/assets/image (217).png" alt=""><figcaption><p>Configure reactive events.</p></figcaption></figure>
 
+
+
+{% hint style="danger" %}
+**LEGAL REQUIREMENT**
+
+Add the following link to the Google Consent Mode Policy in your Privacy Center or in your Vendors menu&#x20;
+
+[https://policies.google.com/privacy](https://policies.google.com/privacy)
+
+Don't forget to generate & deploy your privacy banner once you've made this additional setting.
+{% endhint %}
+
 ## Configure your third-party vendor tags in GTM
 
+Follow this part only if you have some tags in GTM as well.\
 While Google native product tags, such as "Google Analytics" or "Google Ads" ones, work out of the box, third-party vendor tags, hosted in GTM, require additional settings to properly operate with the user consent. First, open your tag configuration and check under the `(8)` "**Advanced Settings**" → `(9)`"**Consent Settings**" if a consent type (E.g. "_ad\_storage_") is already preconfigured: if not, you need to add it by selecting the option `(10)` "**Require additional consent for tag to fire**" and `(11)` input the consent type(s) you want to include.
 
 <figure><img src="../../../../.gitbook/assets/image (165).png" alt=""><figcaption><p>Tag specific "Consent Settings" in GTM.</p></figcaption></figure>
