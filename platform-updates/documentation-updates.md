@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/01/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/linkedin.md" %}
+[linkedin.md](../features/destinations/destinations-catalog/linkedin.md)
+{% endcontent-ref %}
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/criteo/criteo-events.md" %}
+[criteo-events.md](../features/destinations/destinations-catalog/criteo/criteo-events.md)
+{% endcontent-ref %}
+
 ## 21/12/2023
 
 Information page about Google new requirements
