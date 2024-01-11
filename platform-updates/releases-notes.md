@@ -6,7 +6,50 @@ description: >-
 
 # Release notes
 
-## Release 10.0.18 - 24/11/23
+## Release 10.0.19 - December 2023
+
+*   🔧 **Advanced Flexibility in Destination’s Consent Filters:** Get more flexibility for complex privacy setups \
+    \
+    You managing consent through our CMP while also utilizing a competitor's solution for different websites on the same account?\
+    \
+    You can now employ native privacy filters from either our CMP or an external solution within the same account !\
+
+
+    <figure><img src="../.gitbook/assets/image (451).png" alt="" width="517"><figcaption></figcaption></figure>
+*   📊 **Enhanced Event Collection Charts: Now More Insightful.** It's such easier to see the type of events collected! \
+
+
+    <figure><img src="../.gitbook/assets/image (452).png" alt=""><figcaption><p><br></p></figcaption></figure>
+
+
+
+*   🔒 **Data Governance: Introducing 'Tag & Data Sharing' Page.** In a quick view, control the shared Datas through the Client-Side TMS tags.\
+    &#x20;_\*Please note: This is the preview v0 of this page. A nicer version is coming soon!_\
+
+
+    <figure><img src="../.gitbook/assets/image (453).png" alt=""><figcaption></figcaption></figure>
+
+
+
+*   🔑 **Streamlined Platform Administration Access**: Instant Workspace Access. No more need to log out and re login when you get access to a new site\
+    \
+    As an administrator, you granted access to a workspace to one of your colleague? He just need to refresh the page to see the site into the search bar's list. No need to log out and re-login anymore!\
+
+
+    <figure><img src="../.gitbook/assets/image (449).png" alt="" width="329"><figcaption></figcaption></figure>
+
+
+
+*   🌟 **Consistent and Upgraded Chart Styles Across the Platform** is now applied to all graphs!
+
+    All our customers can enjoy a better visualization with this enhancement of standardization on our platform.\
+
+
+
+
+    <figure><img src="../.gitbook/assets/image (450).png" alt="" width="188"><figcaption></figcaption></figure>
+
+## Release 10.0.18 - November 2023
 
 * **Ability to search by source-key** in the Source Overview & Destination Overview UIs:&#x20;
 
