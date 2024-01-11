@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 12/01/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md" %}
+[amazon-ads-conversions-api.md](../features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md)
+{% endcontent-ref %}
+
 ## 05/01/2024
 
 Destination documentation:
