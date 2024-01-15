@@ -1,9 +1,5 @@
 # Amazon Ads Conversions API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Amazon](https://www.aboutamazon.eu/who-we-are) is a multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.\
 Using this destination you can import conversion event data in [Amazon DSP](https://advertising.amazon.com/solutions/products/amazon-dsp).
 
