@@ -2,11 +2,11 @@
 
 ## Destination list
 
-Find here the full list of [destinations](../../getting-started/concepts/#destination) already configured.
+Find here the full list of [destinations](../../../getting-started/concepts/#destination) already configured.
 
 You can search a destination by name and filter on environment (production or staging), status (active or inactive) or on specific source.
 
-![](<../../.gitbook/assets/Destination overview.png>)
+![](<../../../.gitbook/assets/Destination overview.png>)
 
 4 sections are available: Cloud mode, Device mode, Audience and Raw Data.
 
@@ -32,6 +32,6 @@ It refers to scheduled destinations, through file exchange like FTP, S3 or Cloud
 The trend represents the evolution of number of events pushed to the destination on the last month (maximum data retention period).
 
 Health allow to quickly visualize the status of the destination, if everything is well sent (sunny) or not (stormy) on the last hour.\
-Click on it to access to Event Delivery interface and have more details (see also [Event Delivery documentation](event-delivery.md)).
+Click on it to access to Event Delivery interface and have more details (see also [Event Delivery documentation](../event-delivery.md)).
 
-![](<../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.13.05.png>)
+![](<../../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.13.05.png>)
