@@ -49,7 +49,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 
 ## Quick reference
 
-| Commanders Act Events  | Google Tracking           |
+| Commanders Act Events  | Google Tracking API       |
 | ---------------------- | ------------------------- |
 | `[Any Event]` **\[1]** | `conversions.batchupdate` |
 
