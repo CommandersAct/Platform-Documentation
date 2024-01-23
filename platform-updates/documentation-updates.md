@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 26/01/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-search-ads-360-enhanced-conversions.md" %}
+[google-search-ads-360-enhanced-conversions.md](../features/destinations/destinations-catalog/google/google-search-ads-360-enhanced-conversions.md)
+{% endcontent-ref %}
+
 ## 12/01/2024
 
 Destination documentation:
