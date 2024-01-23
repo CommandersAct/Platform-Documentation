@@ -11,7 +11,7 @@ The "Enhanced Conversions" (EC) in Campaign Manager 360 (CM360) API is a hybrid 
 {% endhint %}
 
 {% hint style="warning" %}
-Google recommends triggering [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate) **between 90 minutes and 24 hours**, with the latter being the upper time limit, after the client-side Floodlight tag is fired to maximize EC matching. After **30 minutes** has passed since the client-side Floodlight is fired, you can already trigger [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), but it's suggested to follow Google reccomandation as reported above. More details are available following this [LINK](https://developers.google.com/doubleclick-advertisers/guides/conversions\_ec#recommended\_setup).
+Google recommends triggering [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate) **between 90 minutes and 24 hours**, with the latter being the upper time limit, after the client-side Floodlight tag is fired to maximize EC matching. After **30 minutes** has passed since the client-side Floodlight is fired, you can already trigger [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), but it's suggested to follow Google recommendation as reported above. More details are available following this [LINK](https://developers.google.com/doubleclick-advertisers/guides/conversions\_ec#recommended\_setup).
 {% endhint %}
 
 ## Destination setup
