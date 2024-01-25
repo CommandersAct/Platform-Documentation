@@ -20,7 +20,7 @@ In our previous system, for real-time audience-based destinations, only users wh
   * **Immediate Activation**: If the destination is activated immediately, an operation is launched to send all users from the segment to the destination without delay.
   * **Scheduled Activation**: For destinations set to activate later, an operation is scheduled to send all users in the segment to the destination at the specified start time.
 * **When Updating a Destination**:
-  * **Reactivation/Modification**: Any update to the destination (such as changing start times or timezones) automatically initiates an operation to send all segment users to the updated destination.
+  * **Reactivation/Modification**: Some updates to the destination (changing start times or timezones) automatically initiates an operation to send all segment users to the updated destination.
   * **Adding New Segments**: Incorporating new segments into the destination triggers an operation to send only the users from these new segments.
 
 #### Supported Destinations
