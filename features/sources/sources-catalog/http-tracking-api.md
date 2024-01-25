@@ -85,7 +85,7 @@ POST https://collect.commander1.com/events?tc_s=29&token=7183b9d4-1031-11ee-be56
   "search_term": "t-shirts",
   "user": {
     "id": "12345",
-    "consistent_anonymous_id": "67892"
+    "consistent_anonymous_id": "67892",
     "email": "toto@domain.fr",
     "consent_categories": [
       "1",
@@ -157,7 +157,7 @@ POST https://collect.commander1.com/events/batch?tc_s=29&token=7183b9d4-1031-11e
         "currency": "EUR",
         "user": {
             "id": "12345",
-            "consistent_anonymous_id": "67892"
+            "consistent_anonymous_id": "67892",
             "consent_categories": [1,3]
         },
         "context": {
