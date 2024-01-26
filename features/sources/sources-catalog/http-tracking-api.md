@@ -128,7 +128,7 @@ Download OpenAPI specification:
 
 Our API operates over HTTPS, a standard for secure communication on the internet. This protocol ensures that data is encrypted and transmitted securely.
 
-In conjunction with HTTPS, we employ a customized token-based authentication system. Each created source is assigned a unique token that remains consistent across all API requests for this specific source. This design offers both security and convenience, allowing clients to manage multiple sources each with their own dedicated token. The ability for clients to create, manage, and deactivate sources at will via our interface adds an additional layer of control, ensuring that tokens can be invalidated as necessary for security or operational reasons.
+In conjunction with HTTPS, we employ an API token-based authentication system. Each created source is assigned a unique token that remains consistent across all API requests for this specific source. This design offers both security and convenience, allowing clients to manage multiple sources each with their own dedicated token. The ability for clients to create, manage, and deactivate sources at will via our interface adds an additional layer of control, ensuring that tokens can be invalidated as necessary for security or operational reasons.
 Our security approach is tailored to the diverse needs of our clients. We focus on providing a secure, efficient, and user-friendly experience. Our choice of HTTPS and token-based authentication aligns with our commitment to delivering robust security while ensuring ease of integration and operational flexibility for our clients. This approach is chosen over more complex systems like Mutual TLS (mTLS), OpenID Connect (OIDC), or IP filtering.
 
 ## Batch (closed beta)
