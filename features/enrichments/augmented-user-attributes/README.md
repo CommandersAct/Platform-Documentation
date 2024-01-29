@@ -2,7 +2,7 @@
 
 ## **What is an augmented user attribute?**
 
-This feature allows you to create enriched properties on your user: flags, ratio, rolling count/average, conditional value, boolean...
+This feature allows you to create enriched properties on your user: flags, scores, ratio, rolling count/average, conditional value, boolean...
 
 Enrich your data with your business rules in a user-friendly UI.
 
@@ -236,14 +236,24 @@ Filter on a specific page, product, ad…
 
 ### Description
 
-Create a new calculated attribute. You can add, subtract, divide or multiply 2 or more variables. These new calculated attributes can be part of a segmentation. This feature allows you to define new KPIs based on mathematical formulas.
+You can add, subtract, divide or multiply 2 or more variables, or create dynamic scores or incorporate conditional logic and complex formulas. These new calculated attributes can be part of a segmentation. This feature allows you to define new KPIs based on mathematical formulas.
+
 
 ### Popular use cases
 
+* Dynamic Scoring: Assign scores to users based on specific conditions to enable targeted marketing strategies.
 * Ratio: repartition online/offline conversions
 * CLV: Customer Lifetime Value
 
 ### Example
+
+Simple Engagement Score:\
+Assign an engagement score to users based on recent activities, without overcomplicating the conditions. For instance:
+
+> IF recent activity is 'purchase', add 3 to engagement score.\
+> IF recent activity is 'add_to_cart', add 2 to engagement score.\
+> IF recent activity is 'visited_site', add 1 to engagement score.
+
 
 Ratio:\
 You would like to identify cross-channel customers meaning the partition of customers who are buying both online and offline. You need a ratio between online and offline conversions:
