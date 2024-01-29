@@ -1,5 +1,16 @@
 # Web container generator
 
+## 2024
+
+### 89.0
+
+Release date:  **29/01/2024**
+
+* Make source key available for each container
+* Initialize container config earlier
+* Support Google Consent Mode (closed beta)
+* Security update for `tc_privacy_wait_body` function
+
 ## 2023
 
 ### 88.0
