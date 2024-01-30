@@ -1,4 +1,4 @@
-# Consent Mode in Commanders Act TMS
+# Consent Mode in Commanders Act CMP
 
 ## Introduction
 
@@ -10,7 +10,7 @@ Just use our new native feature for a super smooth implementation!\
 \
 Please read the following documentation to learn more about this new feature, and how to use it.\
 \
-If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](consent-mode-in-commanders-act-tms.md#setup)\
+If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](consent-mode-in-commanders-act-tms.md#migration-guide)\
 
 
 ## How to use the Google Consent Mode feature ?
