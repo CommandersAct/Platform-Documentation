@@ -232,7 +232,7 @@ Maximum period: No limit
 
 Filter on a specific page, product, ad…
 
-## Calculus
+## Calculus / Score
 
 ### Description
 
@@ -245,7 +245,7 @@ You can add, subtract, divide or multiply 2 or more variables, or create dynamic
 * Ratio: repartition online/offline conversions
 * CLV: Customer Lifetime Value
 
-### Example
+### Examples
 
 Simple Engagement Score:\
 Assign an engagement score to users based on recent activities, without overcomplicating the conditions. For instance:
