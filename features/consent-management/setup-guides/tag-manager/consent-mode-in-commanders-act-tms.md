@@ -19,7 +19,7 @@ Just follow these 6 steps:
 
 ### 1- Activate the feature on your workspace
 
-\
+Login on[ your workspace ](https://app.commandersact.com/)\
 Go on page `Data Governance > Consent Management > Settings`\
 Turn **On** the option Google Consent Mode. The sub-menu "Google Consent Mode settings" will appears
 
@@ -119,7 +119,9 @@ For a single container setup, generate your container with privacy banner(s) inc
 
 For a multiple container setup, generate all your containers. The privacy banner(s) should be linked to the first loaded container to ensure that the Consent Mode signal is always sent correctly.
 
-_\*If you was using the Consent Mode v1 tag, don't forget to delete or deactivate it! It's useless now._
+{% hint style="warning" %}
+_If you was using the Consent Mode v1 tag, don't forget to delete or deactivate it! It's useless now._
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (477).png" alt=""><figcaption></figcaption></figure>
 
@@ -163,7 +165,7 @@ The status "**On-page Default**" should be the same then the ones you setup at t
 
 {% tab title="Test with the browser's console" %}
 Feel as a developer? You can also look into the console to verify the Google arguments pushed in dataLayer Google.\
-Type `dataLayer` + `Enter`
+Type `dataLayer` then press `Enter`
 
 
 
@@ -204,7 +206,7 @@ However, if you really want to keep your actual setup and simply update your tag
 
 Summarizing all recommended steps:
 
-1. Access your [Commanders Act account](https://platform.commandersact.com/).
+1. Access your [Commanders Act account](https://app.commandersact.com/).
 2. Update your tag template.
 3. Test and deploy your container(s).
 
@@ -319,7 +321,12 @@ cact('consent.onUpdate', function (result) {
 
 You can **do your mapping** on the new fields & **Save** again your tag
 
+Set the by default status of the \*new categories (denied or granted)
+
 <figure><img src="../../../../.gitbook/assets/image (459).png" alt=""><figcaption></figcaption></figure>
+
+Enter the ID of your privacy categories to link them with the Google's \*new categories\
+If needed, you can find your privacy ID on the page `Data Governance > Consent Management > Categories`
 
 <figure><img src="../../../../.gitbook/assets/image (460).png" alt=""><figcaption></figcaption></figure>
 
