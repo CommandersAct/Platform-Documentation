@@ -152,11 +152,11 @@ Here are fields automatically added by the sdk.
 
 <table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>event_id</td><td>8f6e05dd-6df0-476c-9c56-5d277fac7cea</td><td>A random UUID generated at the serialization of the event instance</td><td>Both</td></tr><tr><td>event_timestamp</td><td>1673571636026</td><td>Timestamp of the event sending time.</td><td>Both</td></tr></tbody></table>
 
-### context -> app
+### context.app
 
 <table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr></tbody></table>
 
-### context -> device
+### context.device
 
 <table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>manufacturer</td><td>Apple</td><td>The manufacturer of the hardware</td><td>Both</td></tr><tr><td>model</td><td>iPhone7.3</td><td>The device model</td><td>Both</td></tr><tr><td>name</td><td>maguro</td><td>The device given name</td><td>Both</td></tr><tr><td>sdk_id</td><td>C32272DB0-C21E-11E4-8DFC-AA07A5B093DB</td><td>A random UUID generated at the first launch of the SDK</td><td>Both</td></tr><tr><td>timezone</td><td>Europe/Paris</td><td>The detailed timezone</td><td>Both</td></tr><tr><td>type</td><td>android</td><td>The os name</td><td>Both</td></tr><tr><td>language</td><td>en</td><td>The device default language</td><td>Both</td></tr><tr><td>region</td><td>US</td><td>The device default region</td><td>Both</td></tr></tbody></table>
 
@@ -170,19 +170,23 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 
 ### &#x20;user
 
-| Field name                | Example value                        | Description                                                    | Platform |
-| ------------------------- | ------------------------------------ | -------------------------------------------------------------- | -------- |
-| consistent\_anonymous\_id | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | Anonymous id generated for consent. Usualy the same as sdk\_id | Both     |
-| consent\_categories       | \["1","2","10019","10018","13001"]   | List of accepted categories                                    | Both     |
+User contains all fields declared inside [https://doc.commandersact.com/developers/tracking/events-reference/common-events#user](https://doc.commandersact.com/developers/tracking/events-reference/common-events#user)
 
-### context -> device -> os
+| Field name                | Example value                        | Description                                                               | Platform |
+| ------------------------- | ------------------------------------ | ------------------------------------------------------------------------- | -------- |
+| consistent\_anonymous\_id | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | Anonymous id generated for consent. Usualy the same as sdk\_id            | Both     |
+| consent\_categories       | \["1","2","10019","10018","13001"]   | List of accepted categories                                               | Both     |
+| ID                        | "anything"                           | No default value but can be used by client if they need a specific ID     | Both     |
+| consentID                 | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | ID used to send consent information. Default to consistent\_anonymous\_id | Both     |
+
+### context.device.os
 
 | Field name | Example value | Description               | Platform |
 | ---------- | ------------- | ------------------------- | -------- |
 | name       | ios           | The operating system name | Both     |
 | version    | 15.5          | The OS version            | Both     |
 
-### context -> device -> screen
+### context.device.screen
 
 | Field name | Example value | Description                 | Platform |
 | ---------- | ------------- | --------------------------- | -------- |
@@ -190,7 +194,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | height     | 844           | The device’s screen height  | Both     |
 | density    | 2             | The device’s screen density | Android  |
 
-### context -> device -> network
+### context.device.network
 
 | Field name | Example value | Description                                      | Platform |
 | ---------- | ------------- | ------------------------------------------------ | -------- |
@@ -199,7 +203,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | carrier    | T-Mobile US   | Carrier's name (only when cellular is connected) | Android  |
 | wifi       | false         | Is the wifi connected                            | Android  |
 
-### context -> device -> Lifecycle
+### context.device.lifecycle
 
 | Field name                     | Example value                        | Description                                                                                                      | Platform |
 | ------------------------------ | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------- |
