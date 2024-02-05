@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 89.1
+
+Release date:  **01/02/2024**
+
+* Update `tC.onDomReady` method
+
 ### 89.0
 
 Release date:  **29/01/2024**
