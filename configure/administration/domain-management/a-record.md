@@ -1,6 +1,7 @@
 # A record
 
-The A record is a solution for tracking purposes using 1st party cookies.
+The A record is a solution for tracking purposes using 1st party cookies.\
+You need to combine A record with the [CAID on-premise cookie](cookie-caid.md) to get the most out of it.
 
 ## What is a `A record?`
 
@@ -72,9 +73,9 @@ All Commanders Act tags will switch to first party collection.
 This action will affect Consent, Deduplication, Campaign, Segment, Server Side
 
 {% hint style="warning" %}
-Containers and privacy banners should be regenerated and deployed.
+At this point, **WebContainers and Privacy banners** should be **regenerated and deployed.**
 {% endhint %}
 
-## What happens when I have 2 or more domains?
+### What happens when I have 2 or more domains?
 
 It prioritizes the domain of the website where the container is loaded. If no domain matches the domain of the website, the 1st in the list is used.

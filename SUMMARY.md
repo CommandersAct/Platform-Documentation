@@ -394,6 +394,7 @@
     * [A record](configure/administration/domain-management/a-record.md)
     * [CNAME record](configure/administration/domain-management/cname-record.md)
     * [On-Premise Proxy](configure/administration/domain-management/on-premise-proxy.md)
+    * [Cookie CAID](configure/administration/domain-management/cookie-caid.md)
   * [Single Sign-On](configure/administration/single-sign-on.md)
   * [Two-factor authentication (2FA)](configure/administration/two-factor-authentication-2fa.md)
   * [Copy Management](configure/administration/copy-management.md)
