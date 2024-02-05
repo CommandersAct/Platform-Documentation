@@ -1,9 +1,5 @@
 # Piano Analytics Enrichment API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 Piano Analytics is the successor of AT Internet Analytics Suite 2 (AS2).\
 It's a user-centric tool that simplifies product & marketing analytics, while ensuring data quality.\
 Using this destination you can update and/or enrich your data using [Piano Analytics Enrichment API](https://support.piano.io/hc/en-us/articles/4465975814290-Enrichments).
