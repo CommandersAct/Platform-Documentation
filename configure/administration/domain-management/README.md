@@ -21,11 +21,11 @@ As a result, the workaround to continue to track and push data from websites to 
 
 5 methods are possible:
 
-* [WAF proxy](waf-proxy-cloudflare.md): easy to setup if you have a WAF like CloudFlare. The recommanded methods
+* [WAF proxy](waf-proxy-cloudflare.md): easy to setup if you have a WAF like CloudFlare. The recommended method
 * [CNAME record](cname-record.md) combined with [cookie CAID](cookie-caid.md):  still useful for Adblockers
 * [A record](a-record.md)  combined with [cookie CAID](cookie-caid.md): not the best solution anymore, but still useful for Adblockers
 * [On-premise Proxy](on-premise-proxy.md): more technical but preferred by some IT team. As efficient as WAF proxy.
-* [CNAME record](cname-record.md) or [A record](a-record.md) without setting [cookie CAID](cookie-caid.md):  not recommanded but still useful for Adblockers.
+* [CNAME record](cname-record.md) or [A record](a-record.md) without setting [cookie CAID](cookie-caid.md):  not recommended but still useful for Adblockers.
 
 {% hint style="info" %}
 Migration from 3rd party to 1st can be handled with Commanders Act consultants.

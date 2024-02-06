@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/02/2024
+
+Update section Domain Management&#x20;
+
+{% content-ref url="../configure/administration/domain-management/" %}
+[domain-management](../configure/administration/domain-management/)
+{% endcontent-ref %}
+
 ## 26/01/2024
 
 Destination documentation:
