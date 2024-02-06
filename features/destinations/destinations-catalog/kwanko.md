@@ -36,18 +36,16 @@ Most properties can be remapped using our "Smart Mapping" feature.\
 The Kwanko property<mark style="color:blue;">`gdpr_kwk`</mark>is always set to<mark style="color:blue;">`1`</mark>. Manage your consent settings using the filter tab of this destination.
 {% endhint %}
 
-| Commanders Act Properties | Kwanko Properties                                                                          |
-| ------------------------- | ------------------------------------------------------------------------------------------ |
-| `Tracking Id`             | `mclic` **\[1]**                                                                           |
-| `revenue`                 | `argmon`                                                                                   |
-| `id`                      | `argann`                                                                                   |
-| `coupon`                  | `argmodp`                                                                                  |
-| `currency`                | `nacur`                                                                                    |
-| `Cookie Click Id`         | <p><code>cible</code> <strong>[2]</strong><br><code>target</code> <strong>[3]</strong></p> |
-| `coupon`                  | `argbr`                                                                                    |
+| Commanders Act Properties | Kwanko Properties |
+| ------------------------- | ----------------- |
+| `Tracking Id`             | `mclic` **\[1]**  |
+| `revenue`                 | `argmon`          |
+| `id`                      | `argann`          |
+| `coupon`                  | `argmodp`         |
+| `currency`                | `nacur`           |
+| `Cookie Click Id`         | `cible`           |
+| `coupon`                  | `argbr`           |
 
 {% hint style="info" %}
-**\[1]** If<mark style="color:blue;">`Collection Server Base Url`</mark>is not the default value, the<mark style="color:blue;">`Tracking Id`</mark>is appended as part of base URL and the<mark style="color:blue;">`mclic`</mark>is not set.\
-**\[2]** Set if <mark style="color:blue;">`Collection Server Base Url`</mark>is the default value.\
-**\[3]** Set if <mark style="color:blue;">`Collection Server Base Url`</mark>is not the default value.
+**\[1]** If<mark style="color:blue;">`Collection Server Base Url`</mark>is not the default value, the<mark style="color:blue;">`Tracking Id`</mark>is appended as part of base URL and the<mark style="color:blue;">`mclic`</mark>is not set.
 {% endhint %}
