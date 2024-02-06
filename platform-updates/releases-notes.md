@@ -6,6 +6,99 @@ description: >-
 
 # Release notes
 
+## Release 10.0.20 - January 2024
+
+🌟 **Vue.js Wrapper Version Update** (TMS)🌟\
+🔗 [Explore the Latest Release](https://github.com/CommandersAct/vue-tag-commander)
+
+* **Compatibility Enhanced**: Now fully compatible with Vue3, ensuring a smoother integration for your web applications.
+* **Why This Matters**: Seamless updates mean less downtime and more productivity for developers leveraging Vue.js in their projects.
+
+***
+
+🔍 **Live Event Inspector Enhancements** 🔍
+
+* **Test Code Events Bypass**: Events tagged with `test_code` now bypass the standard sampling limit, guaranteeing visibility in high-traffic scenarios.
+* **Increased Sampling Rate**: Enjoy a generous allowance of 100 events per minute for detailed, real-time analysis.
+* **Filterable Test Codes**: Quickly isolate and analyze test events, simplifying the QA process.
+* **Targeted Benefit**: Ideal for server-side feature users needing comprehensive event tracking, like mobile app production tests.
+
+***
+
+📦 **Amazon CAPI Destination Beta** 📦\
+🔗 [Closed Beta Access](https://doc.commandersact.com/features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api)
+
+* **Exclusive Early Access**: Initially available to some customers, with potential openings for eager customers.
+* **Why Join the Beta**: Influence the development of our Amazon CAPI destination and get a head start on leveraging this powerful integration.
+
+***
+
+🔧 **Smart Mapping for Google Enhanced Conversions** 🔧
+
+* **Intuitive Automation**: Automatic mapping with the option for manual adjustments enhances data accuracy and utility.
+* **Why It's Great**: Spend less time on setup and more on Data Governance with this smart, flexible feature.
+
+<figure><img src="../.gitbook/assets/image (501).png" alt="" width="375"><figcaption></figcaption></figure>
+
+***
+
+🛠 **UX Enhancements Across Destinations** 🛠
+
+* **Error Prevention**: Fields now have helpful prompts in red for incorrect inputs, reducing errors and improving data quality.
+* **Why It Matters**: A more user-friendly interface leads to fewer mistakes and a smoother operation for our clients.
+
+<figure><img src="../.gitbook/assets/image (500).png" alt="" width="274"><figcaption></figcaption></figure>
+
+***
+
+📈 **Significant User Enrichment Feature Upgrade** 📈
+
+* **Advanced Data Enrichment**: Create complex formulas for dynamic [**user scoring**](../features/enrichments/augmented-user-attributes/) and attributes, all with a no-code approach.
+* **Business Impact**: Drive targeted marketing actions and advanced customer segmentation, leading to improved ROI and analytics capabilities.
+
+<figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (499).png" alt="" width="375"><figcaption></figcaption></figure>
+
+***
+
+📣 **CMP Feature Release: Google Consent Mode V2** 📣
+
+* **Effortless Implementation**: Activate Google Consent Mode v2 easily, enhancing data collection quality while ensuring compliance.
+* **Who Benefits**: Any client using Commanders Act Consent banners with Google tags, aiming for hassle-free RGPD compliance.
+
+***
+
+🌱 **Server-Side Architecture Eco-Efficiency** 🌱
+
+* **Increased Efficiency**: We've optimized our architecture to process events more efficiently, significantly improving performance while minimizing our environmental footprint.
+
+***
+
+🔧 **Segmentation Engine v1 Update** 🔧
+
+* **Refined Performance**: We've made incremental but meaningful updates to the Segmentation Engine v1, improving the efficiency of segment calculation times. This enhancement ensures smoother site personalization experiences.
+* **Site Personalization Impact**: These improvements will subtly enhance the speed for websites to customize pages for each visitor, ensuring a more seamless user experience.
+* **Looking Ahead**: Our development focus is on the Segmentation Engine v2 (currently in QA phase), which is set to bring groundbreaking performance and modernization that will take segmentation to the next level.
+
+***
+
+📲 **Facebook CAPI Now Supports Offline Conversions** 📲
+
+* Send your offline conversion through your purchase event (type: offline)
+
+***
+
+📱 **Google Consent Mode Update for Android & iOS** 📱
+
+* **Firebase Users**: Ensure seamless integration with the latest versions tailored for Android and iOS platforms.
+
+***
+
+🎹 **Piano Analytics Enrichment API Destination Released** 🎹
+
+* **Data Enrichment Made Easy**: Seamlessly update transaction statuses or values, enriching your data landscape.
+
 ## Release 10.0.19 - December 2023
 
 *   🔧 **Advanced Flexibility in Destination’s Consent Filters:** Get more flexibility for complex privacy setups \
