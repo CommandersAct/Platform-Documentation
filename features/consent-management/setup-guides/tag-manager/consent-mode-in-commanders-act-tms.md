@@ -57,7 +57,7 @@ Example below for "security\_storage" with no privacy category assigned:
 #### Additional Settings
 
 *   **enable\_tcf\_support**\
-    Enable the feature [tcf\_support](https://developers.google.com/tag-platform/security/guides/implement-TCF-strings?hl=en#implementation) to let your IAB TCF privacy banner manage the advertising cateories.\
+    Enable the feature [tcf\_support](https://developers.google.com/tag-platform/security/guides/implement-TCF-strings?hl=en#implementation) to let your IAB TCF privacy banner manage the advertising categories.\
 
 
     <figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
