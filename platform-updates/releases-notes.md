@@ -18,7 +18,7 @@ description: >-
 
 🔍 **Live Event Inspector Enhancements** 🔍
 
-* **Test Code Events Bypass**: Events tagged with `test_code` now bypass the standard sampling limit, guaranteeing visibility in high-traffic scenarios.
+* **Test Code Events Bypass**: Events with the `test_code` property can now bypass the standard sampling limit (2 millions stored logs max), guaranteeing visibility in high-traffic scenarios.
 * **Increased Visibility for Test Code Events**: For events marked with `test_code`, there is now a generous sampling allowance of 100 events per minute per event type. This guarantees the visibility of these events for testing and validation purposes.
 * **Filterable Test Codes**: The `test_code` property has been made searchable and filterable, simplifying the QA process.
 * **Targeted Benefit**: Ideal for server-side feature users needing comprehensive event tracking, like mobile app production tests.
