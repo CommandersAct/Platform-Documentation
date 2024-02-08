@@ -10,8 +10,16 @@ Just use our new native feature for a super smooth implementation!\
 \
 Please read the following documentation to learn more about this new feature, and how to use it.\
 \
-If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](consent-mode-in-commanders-act-tms.md#migration-guide)\
+If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](consent-mode-in-commanders-act-tms.md#migration-guide)
 
+## Difference between Basic & Advanced mode
+
+Google Consent Mode provides 2 approaches: Basic & Advanced\
+In both cases, you will have to activate the feature Google Consent Mode on your account.\
+The only difference will be the following:\
+\
+**Basic Mode:** Google tags aren't triggered before consent & remains submitted to Commanders Act Consent Rules, there will be no tags firing in case of Optout\
+**Advanced Mode:** Google tags are triggered before consent & the collected data will depend on the Consent Mode Signal. Tags remains fired even when user has Optout.
 
 ## How to use the Google Consent Mode feature ?
 
@@ -102,14 +110,19 @@ The activation of this option will automatically add an Google Policy URL, it's 
 
 <figure><img src="../../../../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
 
-### 4-Remove your privacy constraints from Google tags
+### 4- Advanced Mode: Remove your privacy constraints from Google tags
 
-Remove Commanders Act Privacy rules from all the Google tags, now it's managed by Google Consent Mode\
+To setup the version "Advanced" of the Consent Mode, remove Commanders Act Privacy rules from all the Google tags, now it's managed by Google Consent Mode\
 `Data Governance > Consent Management > Categories` see tab `assign tags`\
 \- **Remove the privacy constraints from Google tags**\
 **- Save**
 
 <figure><img src="../../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+For Basic Consent Mode, skip the step 4! \
+Keep your Privacy rules applied on your tags
+{% endhint %}
 
 ### 5-Generate your container(s)
 

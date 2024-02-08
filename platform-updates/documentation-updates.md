@@ -12,6 +12,14 @@ Update section Domain Management&#x20;
 [domain-management](../configure/administration/domain-management/)
 {% endcontent-ref %}
 
+## 30/01/202
+
+Update for new native feature Google Consent Mode
+
+{% content-ref url="../features/consent-management/setup-guides/tag-manager/consent-mode-in-commanders-act-tms.md" %}
+[consent-mode-in-commanders-act-tms.md](../features/consent-management/setup-guides/tag-manager/consent-mode-in-commanders-act-tms.md)
+{% endcontent-ref %}
+
 ## 26/01/2024
 
 Destination documentation:

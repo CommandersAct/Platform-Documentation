@@ -28,7 +28,11 @@ IP addresses are automatically obfuscated (the last octet is replaced by 0)
 A Debug Mode is available ! Simply add the property `test_code` with any value (string format) in your events.&#x20;
 
 This property will bypass the intelligent sampling mechanism. It's a simple way to be sure your test hits will be available in the Live Event Inspector.\
-You will be allowed to send 20 events/minute for each Source.
+You will be allowed to send 100 events/minute for each workspace.
+
+{% hint style="warning" %}
+On Sources > Live Event Inspector, the **data retention duration** of events with the property "`test_code`" is **1 day**
+{% endhint %}
 
 Here's an example of an event with this property
 
