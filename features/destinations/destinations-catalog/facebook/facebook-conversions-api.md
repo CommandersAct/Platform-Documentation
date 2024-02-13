@@ -122,6 +122,99 @@ integrations.facebook.event_id
 
 ## Default Mappings to Facebook Standard Events
 
+The idea is to turn the *Commanders Act* event
+
+```json
+{
+  "event_name": "purchase",
+  "id": "purchase_id_1234",
+  "type": "offline",
+  "context": {
+    "event_id": "1a01c3e940f150eb9b8c542587f1abfd8f0e1cc1f",
+    "page": {
+      "location": {
+        "href": "https://site.com/path?s=2",
+        "hostname": "site.com",
+        "pathname": "/path",
+        "search": "?s=2"
+      },
+      "url": "https://site.com/path?s=2"
+    },
+    "event_timestamp": 1707830130234,
+    "device": {
+      "ip": "123.123.123.123",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+    },
+    "headers": {},
+    "cookie": "_fbp=fb.1.1653472342558.832801021; some_other=cookie;"
+  },
+  "integrations": {
+    "facebook": {
+      "custom_data": {
+        "category": "category1"
+      },
+      "user_data": {
+        "fbp": "fb.1.1558571054389.1098115397"
+      }
+    }
+  },
+  "value": 246.9,
+  "currency": "EUR",
+  "items": [
+    {
+      "product": {
+        "id": "product123"
+      },
+      "price": "123.45",
+      "id": "ET",
+      "item_category": "Car",
+      "item_quantity": 2
+    }
+  ],
+  "user": {
+    "email": "user@example.com",
+    "email_sha256": "b4c9a289323b21a01c3e940f150eb9b8c542587f1abfd8f0e1cc1ffc5e475514",
+    "id": "user_example_id"
+  },
+  "cookies": {}
+}
+```
+
+into a *Facebook CAPI* event
+
+```json
+{
+  "event_name": "Purchase",
+  "event_time": 1707830130,
+  "user_data": {
+    "em": [
+      "b4c9a289323b21a01c3e940f150eb9b8c542587f1abfd8f0e1cc1ffc5e475514"
+    ],
+    "external_ids": [
+      "user_example_id"
+    ],
+    "client_ip_address": "123.123.123.123",
+    "client_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "fbc": "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890",
+    "fbp": "fb.1.1558571054389.1098115397"
+  },
+  "custom_data": {
+    "id": "purchase_id_1234",
+    "currency": "EUR",
+    "value": 246.9,
+    "contents": [
+      {
+        "id": "product123",
+        "quantity": 2,
+        "item_price": 123.45
+      }
+    ]
+  },
+  "event_source_url": "http://jaspers-market.com/product/123",
+  "action_source": "website"
+}
+```
+
 The following mappings are fully automated and do not require any additional configuration.\
 Any of the Commanders Act Standard Events in the table below will be sent as the corresponding Facebook Standard Event. The Facebook pixel [standard events documentation](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) has more information on these.
 
@@ -198,6 +291,18 @@ Here are our conditions to send the events :
 ## Additional custom Facebook parameters
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data" %}
+
+Here
+
+### Default behavior
+
+
+
+### Using `integrations.facebook.custom\_data.` (DEPRECATED) 
+
+{% hint style="warning" %}
+`integrations.facebook.custom\_data.` is deprecated. Values are still mapped, but it will
+{% endhint %}
 
 Custom Facebook parameters could be added.
 
