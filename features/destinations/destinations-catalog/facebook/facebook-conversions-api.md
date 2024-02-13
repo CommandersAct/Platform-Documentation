@@ -281,7 +281,7 @@ Example :
 {
   "event_name": "Purchase",
   "action_source": "physical_store"
-  "custom_date": { /* */ }
+  "custom_data": { /* */ }
   // ...
 }
 ```
