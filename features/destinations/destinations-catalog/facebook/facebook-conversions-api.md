@@ -132,9 +132,9 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
   "user": {
     "email": "user@example.com",
     "id": "user_example_id",
-    "consent_categories": [ "1", "2", "3", "4" ],
     "tcId": "202205231352367212315156",
-    "consistent_anonymous_id": "202205231352367212315156"
+    "consistent_anonymous_id": "202205231352367212315156",
+    "consent_categories": [ "1", "2", "3", "4" ]
   }
   "value": 246.9,
   "currency": "EUR",
@@ -151,6 +151,7 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
   ],
   "context": {
     "event_id": "1a01c3e940f150eb9b8c542587f1abfd8f0e1cc1f",
+    "event_timestamp": 1707830130234,
     "page": {
       "location": {
         "href": "https://site.com/path?s=2",
@@ -160,12 +161,10 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
       },
       "url": "https://site.com/path?s=2"
     },
-    "event_timestamp": 1707830130234,
     "device": {
       "ip": "123.123.123.123",
       "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
     },
-    "headers": {},
     "cookie": "_fbp=fb.1.1653472342558.832801021; some_other=cookie;"
   },
   "integrations": {
@@ -187,6 +186,8 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
 {
   "event_name": "Purchase",
   "event_time": 1707830130,
+  "event_source_url": "https://site.com/path?s=2",
+  "action_source": "website",
   "user_data": {
     "em": [
       "b4c9a289323b21a01c3e940f150eb9b8c542587f1abfd8f0e1cc1ffc5e475514"
@@ -210,9 +211,7 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
         "item_price": 123.45
       }
     ]
-  },
-  "event_source_url": "https://site.com/path?s=2",
-  "action_source": "website"
+  }
 }
 ```
 
@@ -222,7 +221,7 @@ The following mappings are fully automated and do not require any additional con
 
 Facebook Pixel specifies [*Standard Events*](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) whose semantics correspond to events in the [*Commanders Act Standard*](https://community.commandersact.com/platform-x/developers/tracking/events-reference)
 
-If the destination receives a *Commanders Act Event* with `event_name` matching on the list, it will automatically be sent under the associated *Facebook Standard Event*. Otherwise, it will be sent without any transformation
+If the destination receives a *Commanders Act Event* with `event_name` matching the list, it will automatically be sent under the associated *Facebook Standard Event* name. Otherwise, it will be sent without any transformation
 
 | COMMANDERS ACT EVENTS | FACEBOOK STANDARD EVENT |
 | --------------------- | ----------------------- |
@@ -260,13 +259,13 @@ Examples :
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event" %}
 
-By default, `action_source` will be set to `'Website'` (we mostly manage online activity)
+By default, `action_source` will be set to `'website'` (most events relate to online activity)
 
 Thus, we added a rule to support *Facebook Offline Conversions*
 
 * `IF` the *CommandersAct Event* has `type='offline'` property
 * `THEN` the *Facebook Event* will have `action_source='physical_store'`
-* `OTHERWISE` the *Facebook Event* will have `action_source='website'`
+* `ELSE` the *Facebook Event* will have `action_source='website'`
 
 Example : 
 
@@ -289,7 +288,7 @@ Example :
 
 More customization options will come soon. 
 
-If you need to overwrite this value right now, you can use *Properties Transformation* to set the `integrations.facebook.action_source` (deprecated, but still works)
+If you need to overwrite this value, you currently can use *Properties Transformation* to set the `integrations.facebook.action_source`.
 
 ### Mapping: `user_data`
 
@@ -348,7 +347,7 @@ Here are our conditions to send the events :
 | `status`                                                                                                                           | `custom_data.status`                |
 
 
-### Default behavior
+#### Default behavior
 
 Facebook specifies rules for [standard properties](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data). The rest is completely free. 
 
@@ -358,11 +357,11 @@ By default, we fill `custom_data` as follows :
 2. Then we map the standard properties according to the table above (can overwrite 1. values)
 3. Finally, we overwrite with `integrations.facebook.custom_data.<property>` if exists
 
-### Overwrite `custom_data`
+#### Overwrite `custom_data`
 
-Best choice would be to use *Properties Transformation* to modify your event which properties will be copied to `custom_data`.
+Best choice would be to use *Properties Transformation* to modify your event properties which will be copied into `custom_data`.
 
-But you can be overridde the final value using `integrations.facebook.custom_data.<property>`.
+But you can override the final value using `integrations.facebook.custom_data.<property>`.
 
 Example :
 
@@ -373,7 +372,7 @@ cact('trigger', 'purchase', {
     "integrations": {
         "facebook": {
             "custom_data": {
-                "content_name": "booking",
+                "content_name": "some_custom_name",
                 "your_field": "your_value"
             }
         }
@@ -384,7 +383,7 @@ cact('trigger', 'purchase', {
 ### `integrations.facebook.*` deprecation 
 
 {% hint style="warning" %}
-`integrations.facebook.` usage will be deprecated. Values are still mapped, but it will be deprecated once the destination settings will implement Smart Mapping.
+`integrations.facebook.*` usage will be deprecated. Values are still mapped, but it will be deprecated once the destination settings will grant ability to customize every property.
 {% endhint %}
 
 ## Check results on Facebook interface
