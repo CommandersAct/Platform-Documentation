@@ -209,7 +209,17 @@ The string starts with `11`, uses `1` to separate the different consent signals,
 {% endtab %}
 {% endtabs %}
 
+### FAQ
 
+#### Modification/Update Configuration
+
+In case of setup modification, such as activation/deactivation of a parameter, mapping changes on categories, etc.... Web Containers & Privacy banners must be regenerated & deployed.
+
+#### Parameter "Region"
+
+Google Consent Mode allows the consent management only for the declared Region(s)\
+Our native feature does not include this parameter, for web performance reasons.\
+If you need to use this parameter, we recommend using our TMS Tag template. Please refer to the next section of documentation for configuration details.
 
 ## Migration guide
 
