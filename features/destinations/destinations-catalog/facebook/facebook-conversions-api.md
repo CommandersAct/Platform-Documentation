@@ -383,7 +383,8 @@ cact('trigger', 'purchase', {
 ### `integrations.facebook.*` deprecation 
 
 {% hint style="warning" %}
-`integrations.facebook.*` usage will be deprecated. Values are still mapped, but it will be deprecated once the destination settings will grant ability to customize every property.
+`integrations.facebook.*` usage will be deprecated.\
+The feature is still working, but it is recommended to use the destination settings instead for maintenance and reliability purpose.
 {% endhint %}
 
 ## Check results on Facebook interface
