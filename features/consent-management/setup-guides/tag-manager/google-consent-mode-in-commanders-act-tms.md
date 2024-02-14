@@ -1,4 +1,4 @@
-# Consent Mode in Commanders Act CMP
+# Google Consent Mode in Commanders Act CMP
 
 ## Introduction
 
@@ -10,7 +10,7 @@ Just use our new native feature for a super smooth implementation!\
 \
 Please read the following documentation to learn more about this new feature, and how to use it.\
 \
-If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](consent-mode-in-commanders-act-tms.md#migration-guide)
+If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](google-consent-mode-in-commanders-act-tms.md#migration-guide)
 
 ## Difference between Basic & Advanced mode
 
@@ -167,7 +167,7 @@ There's 3 different ways to verify your Consent Mode setup:
 The easiest way to verify your setup is using the [Tag Assistant](https://tagassistant.google.com/) plugin provided by Google.\
 \
 **The "Consent" event should always be sent before any hits from the tags**\
-The status "**On-page Default**" should be the same then the ones you setup at the [step 2](consent-mode-in-commanders-act-tms.md#categories)
+The status "**On-page Default**" should be the same then the ones you setup at the [step 2](google-consent-mode-in-commanders-act-tms.md#categories)
 
 <figure><img src="../../../../.gitbook/assets/image (479).png" alt=""><figcaption></figcaption></figure>
 
@@ -388,4 +388,4 @@ You can now Generate & Deploy your privacy banner(s)
 <figure><img src="../../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
 **You are up to date**, you can test your settings on your website. \
-Don't hesitate to refer at the [test step above](consent-mode-in-commanders-act-tms.md#id-6-tests-and-deployment) to get tips & tricks.
+Don't hesitate to refer at the [test step above](google-consent-mode-in-commanders-act-tms.md#id-6-tests-and-deployment) to get tips & tricks.
