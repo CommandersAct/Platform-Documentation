@@ -130,7 +130,7 @@ Go on `Sources > WebContainers > generation step`\
 \
 For a single container setup, generate your container with privacy banner(s) included
 
-For a multiple container setup, generate all your containers. The privacy banner(s) should be linked to the first loaded container to ensure that the Consent Mode signal is always sent correctly.
+**For a multiple container setup, generate all your containers. The privacy banner(s) must be linked to the first loaded container** to ensure that the Consent Mode signal is always sent correctly.
 
 {% hint style="warning" %}
 _If you was using the Consent Mode v1 tag, don't forget to delete or deactivate it! It's useless now._
