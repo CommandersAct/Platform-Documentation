@@ -29,3 +29,10 @@ You can analyze in detail each event and have more details about errors, and a s
 You can also visualize the data quality for a specific source, when you click on a source, you have a dedicated tab '_Data Quality_'tap  available with same info but filtered for the source you selected:
 
 <figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
+
+The quality score of events is represented by a weather icon:&#x20;
+
+* <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the percent of correct events is equal to 100%
+* <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 95% and 99.99%
+* <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 90 and 95%
+* <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy below 90%
