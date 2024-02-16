@@ -1,12 +1,16 @@
 # Sources data quality
 
-On the _Health_ menu, you will find _Sources data quality_. It shows all events received per sources.
+On the _Health_ menu, you will find _Sources data quality_.
+
+You can visualize the evolution of your event data quality over time, filter by sources or environment (default to Production)
 
 <figure><img src="../../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
 
-You can visualize the evolution of number of events received (purchase, add to cart...) in the last 24 hours.
+You can setup an alert to know in realtime if some of your event violate your [validation rules](normalized-datalayer.md).
 
-Below, you can analyze in detail each event and have more details about errors and rejection:
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+You can analyze in detail each event and have more details about errors, and a shortcut to [fix the error in the Data Cleansing feature](data-cleansing/).
 
 <figure><img src="../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
@@ -22,6 +26,6 @@ Below, you can analyze in detail each event and have more details about errors a
 
 
 
-You can also visualize the data quality for a specific source, when you click on a source, you have a dedicated tab '_Data Quality_' available with same info but filtered for the source you selected:
+You can also visualize the data quality for a specific source, when you click on a source, you have a dedicated tab '_Data Quality_'tap  available with same info but filtered for the source you selected:
 
 <figure><img src="../../.gitbook/assets/image (442).png" alt=""><figcaption></figcaption></figure>
