@@ -9,7 +9,8 @@
 ## Getting started
 
 * [How the platform works](getting-started/concepts/README.md)
-  * [Glossary](getting-started/concepts/lexical.md)
+  * [Glossary](getting-started/concepts/lexical/README.md)
+    * [Condensed platform concepts](getting-started/concepts/lexical/condensed-platform-concepts.md)
 * [Platform interface](getting-started/platform-interface.md)
   * [Prod and Testing environments](getting-started/platform-interface/prod-and-testing-environments.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
