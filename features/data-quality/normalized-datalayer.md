@@ -10,11 +10,13 @@ Adding **event specifications** allows you to define the payload and what is exp
 
 Then, in the [Source data quality](data-quality.md) view, you are able to see the summary of all specification violations, so that you fix it at your source or with the live [Data Cleansing](data-cleansing/) feature
 
-![Write your event specifications](<../../.gitbook/assets/Normalized Datalayer \[IN PROGRESS] - Tab universes.png>)
+<figure><img src="../../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
 
 You can choose to add a [standard event](../../developers/tracking/events-reference/) (from the event catalog) or a custom specification.
 
 The schema of standard events is already defined, but you can modify it by adding more properties (standard or custom properties).
+
+<figure><img src="../../.gitbook/assets/image (502).png" alt=""><figcaption></figcaption></figure>
 
 ### Create custom property
 

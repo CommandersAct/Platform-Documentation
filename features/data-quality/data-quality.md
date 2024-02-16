@@ -2,13 +2,13 @@
 
 On the _Health_ menu, you will find _Sources data quality_. It shows all events received per sources.
 
-<figure><img src="../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
 
 You can visualize the evolution of number of events received (purchase, add to cart...) in the last 24 hours.
 
 Below, you can analyze in detail each event and have more details about errors and rejection:
 
-<figure><img src="../../.gitbook/assets/image (441).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (507).png" alt=""><figcaption></figcaption></figure>
 
 **FAILED** the event is in error status, can be caused by an error 404, a timeout, etc...
 

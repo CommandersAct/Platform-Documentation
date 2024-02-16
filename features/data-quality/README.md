@@ -4,6 +4,8 @@
 
 Most companies detect issues after their team has used bad data to make decisions or trigger campaigns. Quickly take action on every invalid event with in-app reporting and daily email digests.
 
+<figure><img src="../../.gitbook/assets/image (508).png" alt="" width="375"><figcaption></figcaption></figure>
+
 ### Align all the teams in your company around a single data dictionary
 
 In the [Normalized datalayer](normalized-datalayer.md) interface, you will be able to define the schema of your data and define the validation rules that will feed your data quality workflow.
