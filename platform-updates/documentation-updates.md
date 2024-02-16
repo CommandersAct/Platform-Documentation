@@ -4,6 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 16/02/2024
+
+Update documentation and screenshot on Data Quality
+
 ## 05/02/2024
 
 Update section Domain Management&#x20;
