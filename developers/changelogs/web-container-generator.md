@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 89.2
+
+Release date:  **21/02/2024**
+
+* Add default signal on GCM banners load
+
 ### 89.1
 
 Release date:  **01/02/2024**
