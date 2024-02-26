@@ -44,11 +44,11 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="warning" %}
 At least one of the following statement must be fulfilled:\
-• The "Smart Mapping" field<mark style="color:blue;">`User Email SHA256`</mark>is set with a proper value.\
-• The "Smart Mapping" field<mark style="color:blue;">`Linkedin UUID`</mark>is set with a proper value or the cookie <mark style="color:blue;">`li_fat_id`</mark>is available and properly set.\
-• The "Smart Mapping" field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set with a proper value.\
-• The "Smart Mapping" field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set with a proper value.\
-• Both "Smart Mapping" fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set with  proper values.\
+• The "Smart Mapping" field<mark style="color:blue;">`User Email SHA256`</mark>is set with value.\
+• The "Smart Mapping" field<mark style="color:blue;">`Linkedin UUID`</mark>is set with a value or the cookie <mark style="color:blue;">`li_fat_id`</mark>is available and set.\
+• The "Smart Mapping" field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set with a value.\
+• The "Smart Mapping" field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set with a value.\
+• Both "Smart Mapping" fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set with  values.\
 More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).
 {% endhint %}
 
