@@ -4,6 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 26/02/2024
+
+New documentation homepage with especially a link to Adloop documentation
+
 ## 16/02/2024
 
 Update documentation and screenshot on Data Quality
