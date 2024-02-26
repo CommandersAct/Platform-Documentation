@@ -33,7 +33,7 @@ In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Lin
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2] See**<mark style="color:blue;">`Conversion Rule Id`</mark>in [Configuration](linkedin.md#configuration) for more details.
+**\[2]** See<mark style="color:blue;">`Conversion Rule Id`</mark>in [Configuration](linkedin.md#configuration) for more details.
 {% endhint %}
 
 ## Field Mappings
