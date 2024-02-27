@@ -4,6 +4,10 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 27/02/2024
+
+[Facebook CAPI offline conversion : add a "How to" section](../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md#how-to-send-offline-conversion)
+
 ## 26/02/2024
 
 New documentation homepage with especially a link to Adloop documentation
