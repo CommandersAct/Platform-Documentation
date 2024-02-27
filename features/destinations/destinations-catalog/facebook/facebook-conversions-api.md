@@ -122,7 +122,7 @@ integrations.facebook.event_id
 
 ## Mappings to Facebook Standard Events
 
-The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
+The _Facebook CAPI Destination_ will turn the _Commanders Act_ event like...
 
 ```json
 {
@@ -180,7 +180,7 @@ The *Facebook CAPI Destination* will turn the *Commanders Act* event like...
 }
 ```
 
-...into *Facebook CAPI* events like : 
+...into _Facebook CAPI_ events like :
 
 ```json
 {
@@ -219,9 +219,9 @@ The following mappings are fully automated and do not require any additional con
 
 ### Mapping: `event_name`
 
-Facebook Pixel specifies [*Standard Events*](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) whose semantics correspond to events in the [*Commanders Act Standard*](https://community.commandersact.com/platform-x/developers/tracking/events-reference)
+Facebook Pixel specifies [_Standard Events_](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) whose semantics correspond to events in the [_Commanders Act Standard_](https://community.commandersact.com/platform-x/developers/tracking/events-reference)
 
-If the destination receives a *Commanders Act Event* with `event_name` matching the list, it will automatically be sent under the associated *Facebook Standard Event* name. Otherwise, it will be sent without any transformation
+If the destination receives a _Commanders Act Event_ with `event_name` matching the list, it will automatically be sent under the associated _Facebook Standard Event_ name. Otherwise, it will be sent without any transformation
 
 | COMMANDERS ACT EVENTS | FACEBOOK STANDARD EVENT |
 | --------------------- | ----------------------- |
@@ -246,13 +246,13 @@ If the destination receives a *Commanders Act Event* with `event_name` matching 
 | `submit_application`  | `SubmitApplication`     |
 | `subscribe`           | `Subscribe`             |
 
-Examples : 
+Examples :
 
-* If the destinations sees a `add_to_cart` event *(IN the list)*, it will send an `AddToCart` to Facebook CAPI
-* If the destinations sees a `custom_name` event *(NOT IN the list)*, it will send an `custom_name` to Facebook CAPI *(no transformation)*
+* If the destinations sees a `add_to_cart` event _(IN the list)_, it will send an `AddToCart` to Facebook CAPI
+* If the destinations sees a `custom_name` event _(NOT IN the list)_, it will send an `custom_name` to Facebook CAPI _(no transformation)_
 
 {% hint style="info" %}
-**Remark:** You can customise the event_name using *Properties Transformations* in Destination settings.
+**Remark:** You can customise the event\_name using _Properties Transformations_ in Destination settings.
 {% endhint %}
 
 ### Mapping: `action_source`
@@ -261,13 +261,13 @@ Examples :
 
 By default, `action_source` will be set to `'website'` (most events relate to online activity)
 
-Thus, we added a rule to support *Facebook Offline Conversions*
+#### Offline conversions specificity:
 
-* `IF` the *CommandersAct Event* has `type='offline'` property
-* `THEN` the *Facebook Event* will have `action_source='physical_store'`
-* `ELSE` the *Facebook Event* will have `action_source='website'`
+* `IF` your event has the property `type='offline'`&#x20;
+* `THEN` the _Facebook Event_ will have `action_source='physical_store'`
+* `ELSE` the _Facebook Event_ will have `action_source='website'`
 
-Example : 
+Example :
 
 ```json
 // CommandersAct
@@ -277,7 +277,7 @@ Example :
   // ...
 }
 
-// Facebook
+// Event sent to Facebook API:
 {
   "event_name": "Purchase",
   "action_source": "physical_store"
@@ -286,9 +286,7 @@ Example :
 }
 ```
 
-More customization options will come soon. 
-
-If you need to overwrite this value, you currently can use *Properties Transformation* to set the `integrations.facebook.action_source`.
+If you need to overwrite this value, you currently can use _Properties Transformation_ to set the `integrations.facebook.action_source`.
 
 ### Mapping: `user_data`
 
@@ -336,30 +334,29 @@ Here are our conditions to send the events :
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data" %}
 
-| COMMANDERS ACT STANDARD PROPERTIES                                                                                                 | FACEBOOK STANDARD PARAMETERS        |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| `value`                                                                                                                            | `custom_data.value`                 |
-| `currency`                                                                                                                         | `custom_data.currency`              |
-| `items`                                                                                                                            | `custom_data.contents`              |
-| <p><code>name</code><br><strong>OR</strong> first <code>items[i].product.name</code> found</p>                                     | `custom_data.content_name`          |
-| <p><code>category</code><br><strong>OR</strong> first <code>items[i].product.category_N</code> found (<code>N</code> ∈ [1, 5])</p> | `custom_data.content_category`      |
-| default value : '`product`'                                                                                                        | `custom_data.content_type`          |
-| `status`                                                                                                                           | `custom_data.status`                |
-
+| COMMANDERS ACT STANDARD PROPERTIES                                                                                                 | FACEBOOK STANDARD PARAMETERS   |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `value`                                                                                                                            | `custom_data.value`            |
+| `currency`                                                                                                                         | `custom_data.currency`         |
+| `items`                                                                                                                            | `custom_data.contents`         |
+| <p><code>name</code><br><strong>OR</strong> first <code>items[i].product.name</code> found</p>                                     | `custom_data.content_name`     |
+| <p><code>category</code><br><strong>OR</strong> first <code>items[i].product.category_N</code> found (<code>N</code> ∈ [1, 5])</p> | `custom_data.content_category` |
+| default value : '`product`'                                                                                                        | `custom_data.content_type`     |
+| `status`                                                                                                                           | `custom_data.status`           |
 
 #### Default behavior
 
-Facebook specifies rules for [standard properties](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data). The rest is completely free. 
+Facebook specifies rules for [standard properties](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data). The rest is completely free.
 
 By default, we fill `custom_data` as follows :
 
-1. We copy all *CommandersAct Event* properties into `custom_data` (except some context fields like `source_key`)
+1. We copy all _CommandersAct Event_ properties into `custom_data` (except some context fields like `source_key`)
 2. Then we map the standard properties according to the table above (can overwrite 1. values)
 3. Finally, we overwrite with `integrations.facebook.custom_data.<property>` if exists
 
 #### Overwrite `custom_data`
 
-Best choice would be to use *Properties Transformation* to modify your event properties which will be copied into `custom_data`.
+Best choice would be to use _Properties Transformation_ to modify your event properties which will be copied into `custom_data`.
 
 But you can override the final value using `integrations.facebook.custom_data.<property>`.
 
@@ -380,7 +377,7 @@ cact('trigger', 'purchase', {
 });
 ```
 
-### `integrations.facebook.*` deprecation 
+### `integrations.facebook.*` deprecation
 
 {% hint style="warning" %}
 `integrations.facebook.*` usage will be deprecated.\
@@ -391,3 +388,9 @@ The feature is still working, but it is recommended to use the destination setti
 
 To view quality matching on Facebook interface, go here:\
 **Events manager** **>** **select the event > View Details > Event Matching > Rating Background**
+
+## How to send offline conversion
+
+The recommanded way is to use the [Http Tracking API](../../../sources/sources-catalog/http-tracking-api.md) source to send your offline events from your servers (or any other emmiter).\
+You just need to send a [purchase event](../../../../developers/tracking/events-reference/#purchase) with the `type` property equals to `offline`\
+More detail on the automatic mapping here : [Mapping action\_source ](facebook-conversions-api.md#offline-conversions-specificity)
