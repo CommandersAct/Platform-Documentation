@@ -393,4 +393,4 @@ To view quality matching on Facebook interface, go here:\
 
 The recommanded way is to use the [HTTP Tracking API](../../../sources/sources-catalog/http-tracking-api.md) source to send your offline events from your servers (or any other emmiter).\
 You just need to send a [purchase event](../../../../developers/tracking/events-reference/#purchase) with the `type` property equals to `offline`\
-More detail on the automatic mapping here : [Mapping action\_source ](facebook-conversions-api.md#offline-conversions-specificity)
+More details on the automatic mapping here: [Mapping action\_source ](facebook-conversions-api.md#offline-conversions-specificity)
