@@ -5,7 +5,7 @@ description: Aka Facebook CAPI
 # Facebook Conversions API
 
 [Facebook ](https://www.facebook.com/)is an online social media and social networking service owned by [Meta](https://www.meta.com).\
-This connector allows you to push every kind of events directly to Facebook through API. Online conversions, offline conversions... send it to Facebook and it will help you to increase the reach and accuracy of your campaigns.
+This destination allows you to push every kind of event directly to Facebook through API: by sending online and offline conversions to you can increase the reach and accuracy of your campaigns.
 
 You can, for example, not send campaigns related to a specific product to users who already bought it, or you can also send campaigns to users who bought a specific product in cross-sell logic.
 
@@ -389,8 +389,8 @@ The feature is still working, but it is recommended to use the destination setti
 To view quality matching on Facebook interface, go here:\
 **Events manager** **>** **select the event > View Details > Event Matching > Rating Background**
 
-## How to send offline conversion
+## How to send offline conversions
 
-The recommanded way is to use the [Http Tracking API](../../../sources/sources-catalog/http-tracking-api.md) source to send your offline events from your servers (or any other emmiter).\
+The recommanded way is to use the [HTTP Tracking API](../../../sources/sources-catalog/http-tracking-api.md) source to send your offline events from your servers (or any other emmiter).\
 You just need to send a [purchase event](../../../../developers/tracking/events-reference/#purchase) with the `type` property equals to `offline`\
 More detail on the automatic mapping here : [Mapping action\_source ](facebook-conversions-api.md#offline-conversions-specificity)
