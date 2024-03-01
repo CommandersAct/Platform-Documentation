@@ -6,6 +6,58 @@ description: >-
 
 # Release notes
 
+## Release 10.0.21 - February 2024
+
+🔧 **GA4 Source Update (Adloop)** 🔧&#x20;
+
+* All GA4 conversion events now selectable as main conversions in Adloop&#x20;
+* Events conditionable by custom variables (customEvent, customUser)
+
+💡 **Benefits**:
+
+* Comprehensive GA4 data-source connector
+* Clients easily locate diverse GA4 conversions & events in Adloop
+* Precise attribution calculation for better performance insights
+
+***
+
+🚀 **Source Data Quality Boost** 🚀 \
+🔍 Here's what's new:
+
+🛠️ Faster interface loading for seamless user experience \
+🛠️ Simplified menu for quicker access \
+🛠️ Sneak peek into the Alerting system (closed beta) \
+🛠️ Shortcut buttons for validation rules & Data Cleansing
+
+✅ **Why it rocks**:
+
+* Increased productivity with lightning-fast loading
+* Simplified workflows for easier navigation
+* Immediate issue detection for data quality perfection
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🛡️ **New Privacy Template "popin accessibility"** 🛡️ \
+🔒 New offerings for enhanced privacy & UX:
+
+🔹 Ready-to-use privacy template for WCAG compliance \
+🔹 Streamlined UX with improved information display
+
+💡 **Why it's great**:
+
+* WCAG compliance made simple
+* Enhanced opt-in rates with new popin template
+* Improved clarity for better user engagement
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🚀 **Customer Spotlight: Amazon CAPI Integration** 🚀 \
+🌟 Big shoutout to the team for wowing  users with our CAPI integration! 🌟
+
 ## Release 10.0.20 - January 2024
 
 🌟 **Vue.js Wrapper Version Update** (TMS)🌟\

@@ -53,6 +53,6 @@ In case you cannot modify your events code's you can use our Data Cleansing opti
 
 Here's an example of setup done with our Data Cleansing tool:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 Note: this method works only for your Destination event inspector, not on the Sources Live event inspector as long as the Data Cleansing modifies the value after collection.
