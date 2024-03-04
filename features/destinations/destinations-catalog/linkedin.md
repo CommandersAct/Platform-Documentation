@@ -25,7 +25,7 @@ You can also create a new conversion rule by clicking "Create conversion" `(3)`â
 
 ![](../../../.gitbook/assets/linkedin\_2.png)
 
-Lastly, you need to associate your conversion rule with one or more campaigns. From the "Conversion tracking" section, click your conversion rule and reach step 3 where you can:
+Lastly, you need to associate your conversion rule with one or more campaigns. From the "Conversion tracking" section, click your conversion rule and reach step 3 where you can select the campaigns you want to track with the conversion:
 
 ![](../../../.gitbook/assets/linkedin\_3.png)
 {% endhint %}
