@@ -18,12 +18,25 @@ The LinkedIn destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
+Before using this destination, ensure at least one conversion rule is defined in LinkedIn by accessing your [Campaign Manager](https://www.linkedin.com/campaignmanager/) account and select "Analyze" `(1)` → "Conversion tracking" `(2)` from the left menu:
+
+![](<../../../.gitbook/assets/linkedin\_1 (1).png>)\
+You can also create a new conversion rule by clicking "Create conversion" `(3)`→ "Conversions API or CSV conversion" `(4)`:
+
+![](../../../.gitbook/assets/linkedin\_2.png)
+
+Lastly, you need to associate your conversion rule with one or more campaigns. From the "Conversion tracking" section, click your conversion rule and reach step 3 where you can:
+
+![](../../../.gitbook/assets/linkedin\_3.png)
+{% endhint %}
+
+{% hint style="info" %}
 In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Linkedin UUID`</mark>or the related cookie <mark style="color:blue;">`li_fat_id`</mark>, advertisers need to enable enhanced conversion tracking from [Campaign Manager](https://www.linkedin.com/help/lms/answer/a423304/enable-first-party-cookies-on-a-linkedin-insight-tag). This activates first party cookies that append a click identifier parameter ("li\_fat\_id") to the click URLs. Refer [Enabling Click Ids](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/enabling-first-party-cookies?view=li-lms-2023-11) for implementation details.&#x20;
 {% endhint %}
 
 ### Configuration
 
-<table><thead><tr><th width="307">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Conversion Rule Id</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>The conversion rule identifier is generated after creating a <a href="https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-07&#x26;tabs=curl#create-a-conversion-rule">conversion rule</a>. You can retrieve the identifier by following this instruction <a href="https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-07&#x26;tabs=curl#find-conversion-rules-by-ad-account">LINK</a> (See field "id"). Its value is set in the following string, by replacing the bold part: "urn:lla:llaPartnerConversion:<strong>ID</strong>".</p></td></tr></tbody></table>
+<table><thead><tr><th width="349">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Authentication</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Your credentials with LinkedIn Campaign Manager as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>LinkedinAds</code></p></td></tr><tr><td><code>Conversion Rule Name</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Select your conversion rule name from the drop-down menu. You can create/edit a conversion rule by accessing your <a href="https://www.linkedin.com/campaignmanager/">Campaign Manager</a> account and select "Analyze" → "Conversion tracking" from the left menu.</p></td></tr></tbody></table>
 
 ## Quick reference
 
@@ -33,7 +46,7 @@ In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Lin
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2]** See<mark style="color:blue;">`Conversion Rule Id`</mark>in [Configuration](linkedin.md#configuration) for more details.
+**\[2]** See<mark style="color:blue;">`Conversion Rule Name`</mark>in [Configuration](linkedin.md#configuration) for more details.
 {% endhint %}
 
 ## Field Mappings
@@ -43,12 +56,12 @@ Most properties can be remapped using our "Smart Mapping" feature.
 {% endhint %}
 
 {% hint style="warning" %}
-At least one of the following statement must be fulfilled:\
-• The "Smart Mapping" field<mark style="color:blue;">`User Email SHA256`</mark>is set with value.\
-• The "Smart Mapping" field<mark style="color:blue;">`Linkedin UUID`</mark>is set with a value or the cookie <mark style="color:blue;">`li_fat_id`</mark>is available and set.\
-• The "Smart Mapping" field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set with a value.\
-• The "Smart Mapping" field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set with a value.\
-• Both "Smart Mapping" fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set with  values.\
+At least one of the following statements, related to "Smart Mapping" fields, must be fulfilled:\
+• The field<mark style="color:blue;">`User Email SHA256`</mark>is set.\
+• The field<mark style="color:blue;">`Linkedin UUID`</mark>is set or the cookie<mark style="color:blue;">`li_fat_id`</mark>is set.\
+• The field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set.\
+• The field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set.\
+• Both fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set.\
 More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).
 {% endhint %}
 
