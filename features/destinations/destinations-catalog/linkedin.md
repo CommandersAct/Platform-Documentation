@@ -17,15 +17,17 @@ The LinkedIn destination provides the following key features:
 
 ## Destination setup
 
+Before using this destination, you need to review your conversion rules and campaigns in LinkedIn:
+
 {% hint style="info" %}
-Before using this destination, ensure at least one conversion rule is defined in LinkedIn by accessing your [Campaign Manager](https://www.linkedin.com/campaignmanager/) account and select "Analyze" `(1)` → "Conversion tracking" `(2)` from the left menu:
+First, ensure at least one conversion rule is defined in LinkedIn by accessing your [Campaign Manager](https://www.linkedin.com/campaignmanager/) account and select <mark style="color:blue;">`Analyze`</mark>`(1)` → <mark style="color:blue;">`Conversion tracking`</mark>`(2)`from the left menu:
 
 ![](<../../../.gitbook/assets/linkedin\_1 (1).png>)\
-You can also create a new conversion rule by clicking "Create conversion" `(3)`→ "Conversions API or CSV conversion" `(4)`:
+You can also create a new conversion rule by clicking <mark style="color:blue;">`Create conversion`</mark>`(3)`→ <mark style="color:blue;">`Conversions API or CSV conversion`</mark>`(4)`:
 
 ![](../../../.gitbook/assets/linkedin\_2.png)
 
-Lastly, you need to associate your conversion rule with one or more campaigns. From the "Conversion tracking" section, click your conversion rule and reach step 3 where you can select the campaigns you want to track with the conversion:
+Lastly, you need to associate your conversion rule with one or more campaigns. From the <mark style="color:blue;">`Conversion tracking`</mark> section, click your conversion rule and reach step 3 where you can select the campaigns you want to track with the conversion:
 
 ![](../../../.gitbook/assets/linkedin\_3.png)
 {% endhint %}
