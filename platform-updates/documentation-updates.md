@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 08/03/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/linkedin.md" %}
+[linkedin.md](../features/destinations/destinations-catalog/linkedin.md)
+{% endcontent-ref %}
+
 ## 27/02/2024
 
 [Facebook CAPI offline conversion : add a "How to" section](../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md#how-to-send-offline-conversion)
