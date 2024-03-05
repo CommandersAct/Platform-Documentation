@@ -21,6 +21,12 @@ description: >-
 
 ***
 
+🔍 **Dry mode enhancement** 🔍\
+We had a smart credential cache management on our (closed beta) [dry mode](https://doc.commandersact.com/features/destinations/dry-mode-lab) feature on destinations.\
+💡Benefits: Allow to not have Event Delivery polluted by false errors when you switch to OFF the dry mode
+
+***
+
 🚀 **Source Data Quality Boost** 🚀 \
 🔍 Here's what's new:
 
