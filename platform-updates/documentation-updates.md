@@ -8,8 +8,8 @@ description: The latest updates made to our documentation articles
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/linkedin.md" %}
-[linkedin.md](../features/destinations/destinations-catalog/linkedin.md)
+{% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
+[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin\_capi.md)
 {% endcontent-ref %}
 
 ## 27/02/2024
@@ -60,8 +60,8 @@ Destination documentation:
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/linkedin.md" %}
-[linkedin.md](../features/destinations/destinations-catalog/linkedin.md)
+{% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
+[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin\_capi.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):

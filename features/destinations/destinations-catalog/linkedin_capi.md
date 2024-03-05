@@ -1,8 +1,8 @@
-# LinkedIn
+---
+description: Linkedin CAPI
+---
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
+# LinkedIn Conversion API
 
 [LinkedIn](https://www.linkedin.com/) is a business and employment-focused social media platform.\
 Using this destination you can stream conversion events to LinkedIn through their [Conversions API](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#streaming-conversion-events).
@@ -48,7 +48,7 @@ In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Lin
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2]** See<mark style="color:blue;">`Conversion Rule Name`</mark>in [Configuration](linkedin.md#configuration) for more details.
+**\[2]** See<mark style="color:blue;">`Conversion Rule Name`</mark>in [Configuration](linkedin\_capi.md#configuration) for more details.
 {% endhint %}
 
 ## Field Mappings

@@ -172,7 +172,7 @@
     * [Kameleoon](features/destinations/destinations-catalog/kameleoon/README.md)
       * [Kameleoon Audience](features/destinations/destinations-catalog/kameleoon/kameleoon-audience.md)
       * [Kameleoon Events](features/destinations/destinations-catalog/kameleoon/kameleoon-events.md)
-    * [LinkedIn](features/destinations/destinations-catalog/linkedin.md)
+    * [LinkedIn Conversion API](features/destinations/destinations-catalog/linkedin\_capi.md)
     * [Liveramp](features/destinations/destinations-catalog/liveramp.md)
     * [Magento](features/destinations/destinations-catalog/magento.md)
     * [Marin Software](features/destinations/destinations-catalog/marin-software.md)
