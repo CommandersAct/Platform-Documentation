@@ -60,7 +60,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 {% hint style="warning" %}
 At least one of the following statements, related to "Smart Mapping" fields, must be fulfilled:\
 • The field<mark style="color:blue;">`User Email SHA256`</mark>is set.\
-• The field<mark style="color:blue;">`Linkedin UUID`</mark>is set or the cookie<mark style="color:blue;">`li_fat_id`</mark>is set.\
+• The field<mark style="color:blue;">`Linkedin UUID`</mark>or the cookie<mark style="color:blue;">`li_fat_id`</mark>is set.\
 • The field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set.\
 • The field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set.\
 • Both fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set.\
