@@ -2,7 +2,7 @@
 description: Linkedin CAPI
 ---
 
-# LinkedIn Conversion API
+# LinkedIn Conversions API
 
 [LinkedIn](https://www.linkedin.com/) is a business and employment-focused social media platform.\
 Using this destination you can stream conversion events to LinkedIn through their [Conversions API](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#streaming-conversion-events).
@@ -36,6 +36,11 @@ Lastly, you need to associate your conversion rule with one or more campaigns. F
 In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Linkedin UUID`</mark>or the related cookie <mark style="color:blue;">`li_fat_id`</mark>, advertisers need to enable enhanced conversion tracking from [Campaign Manager](https://www.linkedin.com/help/lms/answer/a423304/enable-first-party-cookies-on-a-linkedin-insight-tag). This activates first party cookies that append a click identifier parameter ("li\_fat\_id") to the click URLs. Refer [Enabling Click Ids](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/enabling-first-party-cookies?view=li-lms-2023-11) for implementation details.&#x20;
 {% endhint %}
 
+{% hint style="info" %}
+LinkedIn CAPI supports deduplication with your client-side [Insight Tag](https://business.linkedin.com/marketing-solutions/insight-tag).\
+Check the "Smart Mapping" field<mark style="color:blue;">`Event Id`</mark>, [Field Mappings](linkedin\_capi.md#field-mappings) (See field<mark style="color:blue;">`eventId`</mark>) or this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/deduplication?view=li-lms-2023-11) for more details.&#x20;
+{% endhint %}
+
 ### Configuration
 
 <table><thead><tr><th width="349">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Authentication</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Your credentials with LinkedIn Campaign Manager as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>LinkedinAds</code></p></td></tr><tr><td><code>Conversion Rule Name</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Select your conversion rule name from the drop-down menu. You can create/edit a conversion rule by accessing your <a href="https://www.linkedin.com/campaignmanager/">Campaign Manager</a> account and select "Analyze" → "Conversion tracking" from the left menu.</p></td></tr></tbody></table>
@@ -64,8 +69,7 @@ At least one of the following statements, related to "Smart Mapping" fields, mus
 • The field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set.\
 • The field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set.\
 • Both fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set.\
-Moreover, If you send any user information via "Smart Mapping" fields (E.g.<mark style="color:blue;">`User Company Name`</mark>, <mark style="color:blue;">`User Job Title`</mark>, or<mark style="color:blue;">`User Country`</mark>), you must set the<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>fields, regardless if you provide other identity values listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).\
-
+Moreover, If you send any user information via "Smart Mapping" fields (E.g.<mark style="color:blue;">`User Company Name`</mark>, <mark style="color:blue;">`User Job Title`</mark>, or<mark style="color:blue;">`User Country`</mark>), you must set the<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>fields, regardless if you provide other identity values listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).
 {% endhint %}
 
 <table><thead><tr><th width="341.6685580062746">Commanders Act Properties</th><th>LinkedIn Properties</th></tr></thead><tbody><tr><td>"urn:lla:llaPartnerConversion:" + <code>Conversion Rule Id</code></td><td><code>conversion</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>conversionHappenedAt</code> <strong>[*]</strong></td></tr><tr><td><code>value</code></td><td><code>conversionValue.amount</code></td></tr><tr><td><code>currency</code></td><td><code>conversionValue.currencyCode</code></td></tr><tr><td><code>context.event_id</code></td><td><code>eventId</code> <strong>[1]</strong></td></tr><tr><td><p><code>user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id</code></p></td><td><code>user.userIds.X.idValue</code> <strong>[2]</strong></td></tr><tr><td><p><code>(user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id)</code></p></td><td><code>user.userIds.X.idType</code> <strong>[3]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>user.userInfo.firstName</code></td></tr><tr><td><code>user.lastname</code></td><td><code>user.userInfo.lastName</code></td></tr><tr><td><code>user.country</code></td><td><code>user.userInfo.countryCode</code></td></tr><tr><td><code>user.title</code></td><td><code>user.userInfo.title</code></td></tr><tr><td><code>user.company_name</code></td><td><code>user.userInfo.companyName</code></td></tr></tbody></table>
