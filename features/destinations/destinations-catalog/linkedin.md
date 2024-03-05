@@ -64,7 +64,7 @@ At least one of the following statements, related to "Smart Mapping" fields, mus
 • The field<mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>is set.\
 • The field<mark style="color:blue;">`Oracle MOAT Id`</mark>is set.\
 • Both fields<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>are set.\
-Moreover, If you send any user information via "Smart Mapping" fields (E.g.<mark style="color:blue;">`User Company Name`</mark>, <mark style="color:blue;">`User Job Title`</mark>, or<mark style="color:blue;">`User Country`</mark>), you must set the<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>fields, regardless if you provide other identity parameters listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).\
+Moreover, If you send any user information via "Smart Mapping" fields (E.g.<mark style="color:blue;">`User Company Name`</mark>, <mark style="color:blue;">`User Job Title`</mark>, or<mark style="color:blue;">`User Country`</mark>), you must set the<mark style="color:blue;">`User First Name`</mark>and<mark style="color:blue;">`User Last Name`</mark>fields, regardless if you provide other identity values listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).\
 
 {% endhint %}
 
