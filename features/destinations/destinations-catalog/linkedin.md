@@ -17,7 +17,7 @@ The LinkedIn destination provides the following key features:
 
 ## Destination setup
 
-Before using this destination, you need to review your conversion rules and campaigns in LinkedIn:
+Before using this destination, review your conversion rules and campaigns in LinkedIn:
 
 {% hint style="info" %}
 First, ensure at least one conversion rule is defined in LinkedIn by accessing your [Campaign Manager](https://www.linkedin.com/campaignmanager/) account and select <mark style="color:blue;">`Analyze`</mark>`(1)` → <mark style="color:blue;">`Conversion tracking`</mark>`(2)`from the left menu:
