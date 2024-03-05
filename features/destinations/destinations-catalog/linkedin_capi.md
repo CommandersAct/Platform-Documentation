@@ -5,7 +5,7 @@ description: Linkedin CAPI
 # LinkedIn Conversions API
 
 [LinkedIn](https://www.linkedin.com/) is a business and employment-focused social media platform.\
-Using this destination you can stream conversion events to LinkedIn through their [Conversions API](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#streaming-conversion-events).
+Using this destination you can stream conversion events to LinkedIn through their [Conversions API](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#streaming-conversion-events). This allows to measure the performance of your LinkedIn marketing campaigns no matter where the conversion happens and use this data to power campaign optimization. This destination can help strengthen performance and decrease cost per action with more complete attribution, improved data reliability, and better optimized delivery.
 
 ## Key features
 
