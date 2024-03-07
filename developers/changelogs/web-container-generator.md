@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 90.0
+
+Release date:  **07/03/2024**
+
+* Closed-Beta: New generation method for CAID (Platform X events only)
+
 ### 89.2
 
 Release date:  **21/02/2024**
