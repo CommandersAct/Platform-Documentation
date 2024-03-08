@@ -1,5 +1,5 @@
 ---
-description: Linkedin CAPI
+description: LinkedIn CAPI
 ---
 
 # LinkedIn Conversions API
@@ -38,7 +38,7 @@ In order to set the optional "Smart Mapping" field<mark style="color:blue;">`Lin
 
 {% hint style="info" %}
 LinkedIn CAPI supports deduplication with your client-side [Insight Tag](https://business.linkedin.com/marketing-solutions/insight-tag).\
-Check the "Smart Mapping" field<mark style="color:blue;">`Event Id`</mark>, [Field Mappings](linkedin\_capi.md#field-mappings) (See field<mark style="color:blue;">`eventId`</mark>) or this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/deduplication?view=li-lms-2023-11) for more details.&#x20;
+Check the "Smart Mapping" field<mark style="color:blue;">`Event Id`</mark>, [Field Mappings](linkedin\_capi.md#field-mappings) (See property<mark style="color:blue;">`eventId`</mark>) or this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/deduplication?view=li-lms-2023-11) for more details.&#x20;
 {% endhint %}
 
 ### Configuration
