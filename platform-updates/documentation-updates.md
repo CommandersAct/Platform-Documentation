@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 08/03/2024
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/x-twitter-conversion-api.md" %}
+[x-twitter-conversion-api.md](../features/destinations/destinations-catalog/x-twitter-conversion-api.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
