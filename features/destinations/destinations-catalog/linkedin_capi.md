@@ -11,7 +11,7 @@ Using this destination you can stream conversion events to LinkedIn through thei
 
 The LinkedIn destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [Linkedin's conversion rules](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-07\&tabs=curl#create-a-conversion-rule), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [LinkedIn's conversion rules](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-07\&tabs=curl#create-a-conversion-rule), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
 
