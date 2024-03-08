@@ -5,7 +5,7 @@ description: X CAPI, Twitter CAPI
 # X (Twitter) Conversion API
 
 {% hint style="info" %}
-This destination is currently under final review and will be available soon and is subject to changes.
+This destination is currently under final review and will be available soon. It's also subject to changes.
 {% endhint %}
 
 [X](https://twitter.com), also referred to by its former name [Twitter](https://twitter.com), is a social media website.\
