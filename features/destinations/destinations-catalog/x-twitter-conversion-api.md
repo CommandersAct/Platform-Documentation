@@ -41,7 +41,7 @@ If you want to use an existing event that you're already using with the Twitter 
 
 {% hint style="info" %}
 X Conversion API supports deduplication with your client-side [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html).\
-Check the "Smart Mapping" field<mark style="color:blue;">`Transaction Id`</mark>, [Field Mappings](x-twitter-conversion-api.md#field-mappings) (See property<mark style="color:blue;">`conversion_id`</mark>) or this [LINK ](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api)for more details (See section "Duplication between Pixel and Conversion API".&#x20;
+Check the "Smart Mapping" field<mark style="color:blue;">`Transaction Id`</mark>, [Field Mappings](x-twitter-conversion-api.md#field-mappings) (See property<mark style="color:blue;">`conversion_id`</mark>) or this [LINK ](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api)for more details (See section "Duplication between Pixel and Conversion API").&#x20;
 {% endhint %}
 
 ### Configuration
