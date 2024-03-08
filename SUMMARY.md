@@ -228,6 +228,7 @@
     * [TimeOne](features/destinations/destinations-catalog/timeone.md)
     * [Tradedoubler](features/destinations/destinations-catalog/tradedoubler.md)
     * [TradeTracker](features/destinations/destinations-catalog/tradetracker.md)
+    * [X (Twitter) Conversion API](features/destinations/destinations-catalog/x-twitter-conversion-api.md)
     * [Xandr](features/destinations/destinations-catalog/xandr.md)
     * [Webhook](features/destinations/destinations-catalog/webhook.md)
     * [Webtrends](features/destinations/destinations-catalog/webtrends.md)
