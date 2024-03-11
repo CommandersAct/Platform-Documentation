@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 90.1
+
+Release date:  **13/03/2024**
+
+* Optimization of the generation engine
+
 ### 90.0
 
 Release date:  **07/03/2024**
