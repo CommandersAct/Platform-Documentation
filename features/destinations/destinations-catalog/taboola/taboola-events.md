@@ -45,7 +45,7 @@ First, you need to enable server-side tracking in your Taboola campaigns by incl
 Most properties can be remapped using our "Smart Mapping" feature.
 {% endhint %}
 
-<table><thead><tr><th width="456">Commanders Act Properties</th><th>Taboola Properties</th></tr></thead><tbody><tr><td><code>Taboola Event Name</code> <strong>[1]</strong></td><td><code>name</code> <strong>[*]</strong></td></tr><tr><td><code>Taboola Click Id</code></td><td><code>click-id</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>revenue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>id</code></td><td><code>orderid</code></td></tr></tbody></table>
+<table><thead><tr><th width="456">Commanders Act Properties</th><th>Taboola Properties</th></tr></thead><tbody><tr><td><code>Taboola Click Id</code></td><td><code>click-id</code> <strong>[*]</strong></td></tr><tr><td><code>Taboola Event Name</code> <strong>[1]</strong></td><td><code>name</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>revenue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>id</code></td><td><code>orderid</code></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
