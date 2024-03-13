@@ -18,16 +18,13 @@ The Taboola Events destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-First, you need to enable server-side tracking in your Taboola campaigns by including the<mark style="color:blue;">`{click_id}`</mark>macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign"). The macro value needs to be saved in a property (See<mark style="color:blue;">`Taboola Click Id Property`</mark>in [Configuration](taboola-events.md#configuration)). When creating a server-side conversion in Taboola (See [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) section "Create S2S Conversions"), take note of your "Event Name": this has to be set as<mark style="color:blue;">`Taboola Event Name`</mark>in [Configuration](taboola-events.md#configuration).
+First, you need to enable server-side tracking in your Taboola campaigns by including the<mark style="color:blue;">`{click_id}`</mark>macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign"). \
+Lastly, if you're not already sending events to Taboola Ads, you need to create a server-side conversion (See [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) and section "Create S2S Conversions") and take note of your "Event Name": this has to be set as<mark style="color:blue;">`Taboola Event Name`</mark>in [Configuration](taboola-events.md#configuration).
 {% endhint %}
 
 ### Configuration
 
 <table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Taboola Click Id</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Taboola click identifier. Learn how to add the click identifier in your campaign target landings by following this <a href="https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-">LINK</a> (See section "Add S2S Tracking to your Taboola Campaign").</p></td></tr><tr><td><code>Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Map Taboola Ads events with your events by setting at least a <code>Taboola Event Name</code> and a <code>Your event</code>. One entry is required. See <a href="taboola-events.md#destination-setup">Destination setup</a> for more details.</td></tr></tbody></table>
-
-{% hint style="info" %}
-**\[1]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
-{% endhint %}
 
 ## Quick reference
 
