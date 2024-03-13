@@ -209,7 +209,7 @@
     * [Skai](features/destinations/destinations-catalog/skai.md)
     * [Smart Adserver](features/destinations/destinations-catalog/smartadserver.md)
     * [SmartFocus](features/destinations/destinations-catalog/smartfocus.md)
-    * [Snapchat](features/destinations/destinations-catalog/snapchat-conversions-api.md)
+    * [Snapchat Conversions API](features/destinations/destinations-catalog/snapchat-conversions-api.md)
     * [Splio](features/destinations/destinations-catalog/splio.md)
     * [Syte](features/destinations/destinations-catalog/syte.md)
     * [Tableau Online](features/destinations/destinations-catalog/tableau-online.md)
