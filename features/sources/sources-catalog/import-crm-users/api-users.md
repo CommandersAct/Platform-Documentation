@@ -2,31 +2,30 @@
 
 {% swagger baseUrl="https://api.commander1.com/v1.0" path="/engage/visitors/" method="get" summary="Visitor" %}
 {% swagger-description %}
-This endpoint allows you to 
+This endpoint allows you to
 
 **get properties for one specific visitor**
 
 . When you create the token, you can define which properties to return.
 
-\
-
+\\
 
 This API is more designed to be called from a tag in each user's browser.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="callback" type="string" %}
+{% swagger-parameter in="query" name="callback" type="string" required="false" %}
 (optional) Callback for jsonp request
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="token" type="string" %}
+{% swagger-parameter in="query" name="token" type="string" required="false" %}
 Security token
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="site" type="integer" %}
+{% swagger-parameter in="query" name="site" type="integer" required="false" %}
 ID of the site
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="tcid" type="string" %}
+{% swagger-parameter in="query" name="tcid" type="string" required="false" %}
 Cookie id. If empty (recommanded) it will read the tcid in the user's cookie.
 {% endswagger-parameter %}
 
@@ -46,26 +45,26 @@ Cookie id. If empty (recommanded) it will read the tcid in the user's cookie.
 
 {% swagger baseUrl="https://api.commander1.com" path="/engage/user/" method="get" summary="User" %}
 {% swagger-description %}
-This endpoint allows you to 
+This endpoint allows you to
 
 **get properties for one specific user**
 
- based on a 
+based on a
 
 `user_id`
 
 . When you create the token, you can define which properties to return.
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="token" type="string" %}
+{% swagger-parameter in="query" name="token" type="string" required="false" %}
 Security token
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="user_id" type="string" %}
+{% swagger-parameter in="query" name="user_id" type="string" required="false" %}
 ID of the user
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="site" type="integer" %}
+{% swagger-parameter in="query" name="site" type="integer" required="false" %}
 ID of the site
 {% endswagger-parameter %}
 
@@ -98,19 +97,15 @@ ID of the site
 Insert or update a user
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="site" type="string" %}
+{% swagger-parameter in="query" name="site" type="string" required="false" %}
 Id of the site (account)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="user_id" type="string" %}
-Id of the user. Required if tc_id parameter is not set
+{% swagger-parameter in="query" name="user_id" type="string" required="false" %}
+Id of the user. Required if tc\_id parameter is not set
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="tc_id" type="string" %}
-Optional. Cookie id of the user
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="token" type="string" %}
+{% swagger-parameter in="query" name="token" type="string" required="false" %}
 Security token
 {% endswagger-parameter %}
 
@@ -125,7 +120,7 @@ Security token
 
 `PUT`
 
-https://api.commander1.com/engage/user/?site=1234\&user\_id=1234\&tc\_id=1234\&token=WvNIX8955cnZ7WF0f632s0Wb99Ql3rtA
+https://api.commander1.com/engage/user/?site=1234\&user\_id=1234\&token=WvNIX8955cnZ7WF0f632s0Wb99Ql3rtA
 
 ```
 {
@@ -151,12 +146,12 @@ https://api.commander1.com/engage/user/
 
 #### Parameters
 
-| NAME              | REQUIREMENT    | EXAMPLE VALUES                    | DESCRIPTION       |
-| ----------------- | -------------- | --------------------------------- | ----------------- |
-| site              | d+             |  1234                             | Id of the site    |
-| user\_id          | d+             |  1234                             | Id of the user    |
-| tc\_id (optional) | d+             |  1234                             | Id of the visitor |
-| token             | \[a-zA-Z0-9]\* |  WvNIX8955cnZ7WF0f632s0Wb99Ql3rtA | Security token    |
+| NAME              | REQUIREMENT    | EXAMPLE VALUES                   | DESCRIPTION       |
+| ----------------- | -------------- | -------------------------------- | ----------------- |
+| site              | d+             | 1234                             | Id of the site    |
+| user\_id          | d+             | 1234                             | Id of the user    |
+| tc\_id (optional) | d+             | 1234                             | Id of the visitor |
+| token             | \[a-zA-Z0-9]\* | WvNIX8955cnZ7WF0f632s0Wb99Ql3rtA | Security token    |
 
 #### Example Request <a href="#example-request" id="example-request"></a>
 
