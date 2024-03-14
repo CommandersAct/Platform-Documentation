@@ -7,7 +7,7 @@ Commanders Act is a cookieless platform that allows you to **collect, normalize/
 Basically, the platform libraries/API ([Source](./#source)) collects user actions ([Event](./#event)) on your website/app/etc.\
 These events are sent to the platform servers and are then (in this order) [fixed](../../features/data-quality/data-cleansing/), [normalized](../../features/data-quality/normalized-datalayer.md), [enriched](../../features/enrichments/), [checked](../../features/data-quality/), filtered and translated in each tool ([Destination](./#destinations)) format, so that they can be sent to your chosen destinations.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Platform servers can also store events, users and custom data in the Commanders Act database ([Data store](./#data-store)) and send this data to your storage system (by FTP, email, S3, ...), BI system, etc.\
 The user storage is based on a realtime [identity resolution system](../../features/identity-resolution.md) that give you a cross-device single view of your users (profiles), allowing you to build segments and use audience-based destination.

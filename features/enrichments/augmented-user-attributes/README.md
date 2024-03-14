@@ -238,7 +238,6 @@ Filter on a specific page, product, ad…
 
 You can add, subtract, divide or multiply 2 or more variables, or create dynamic scores or incorporate conditional logic and complex formulas. These new calculated attributes can be part of a segmentation. This feature allows you to define new KPIs based on mathematical formulas.
 
-
 ### Popular use cases
 
 * Dynamic Scoring: Assign scores to users based on specific conditions to enable targeted marketing strategies.
@@ -247,15 +246,26 @@ You can add, subtract, divide or multiply 2 or more variables, or create dynamic
 
 ### Examples
 
-Simple Engagement Score:\
+#### Simple Engagement Score:
+
 Assign an engagement score to users based on recent activities, without overcomplicating the conditions. For instance:
 
-> IF recent activity is 'purchase', add 3 to engagement score.\
-> IF recent activity is 'add_to_cart', add 2 to engagement score.\
-> IF recent activity is 'visited_site', add 1 to engagement score.
+> IF recent activity is 'purchase', set engagement score to 3.\
+> IF recent activity is 'add\_to\_cart', set engagement score to 2.\
+> IF recent activity is 'visited\_site', set engagement score to 1.
+>
+> Else, set engagement score to 0.
 
+It will look like this in the interface:&#x20;
 
-Ratio:\
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+**Warning**: Circular dependencies in formulas are not permitted. The system detects circular references and prevents the formula from being saved. For example, a formula where an attribute is defined to increment itself (e.g., you create a score with a name`attrs.toto and you create a formula like "attrs.toto + 1"`) Same for complex circular dependencies where attribute A depends on B, B depends on C, and C depends on A will be blocked.
+{% endhint %}
+
+#### Ratio:
+
 You would like to identify cross-channel customers meaning the partition of customers who are buying both online and offline. You need a ratio between online and offline conversions:
 
 > Channel ratio: number of online conversions / number of offline conversions
