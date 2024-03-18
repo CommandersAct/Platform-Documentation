@@ -44,7 +44,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 {% hint style="info" %}
 **At least** one of the following user identifiers must be set:
 
-* <mark style="color:blue;">`user.email`</mark><mark style="color:blue;">or</mark><mark style="color:blue;">`user.email_sha256`</mark>
+* <mark style="color:blue;">`user.email`</mark>or<mark style="color:blue;">`user.email_sha256`</mark>
 * <mark style="color:blue;">`user.phone`</mark>
 * <mark style="color:blue;">`user.firstname`</mark>
 * <mark style="color:blue;">`user.lastname`</mark>
