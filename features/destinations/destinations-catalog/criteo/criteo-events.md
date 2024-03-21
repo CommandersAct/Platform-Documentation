@@ -40,7 +40,7 @@ The easiest way to manage this cookie is to **use this client-side tags in our t
 | `view_item`           | `viewItem`                                                                        |
 
 {% hint style="info" %}
-**\[1]** If<mark style="color:blue;">`page.type`</mark>is<mark style="color:blue;">`home`</mark>then<mark style="color:blue;">`viewHome`</mark>is also sent with<mark style="color:blue;">`viewPage`</mark>, otherwise, just<mark style="color:blue;">`viewPage`</mark>is forwarded.&#x20;
+**\[1]** If <mark style="color:blue;">`page.type`</mark> is <mark style="color:blue;">`home`</mark> then <mark style="color:blue;">`viewHome`</mark> is also sent with <mark style="color:blue;">`viewPage`</mark>, otherwise, just <mark style="color:blue;">`viewPage`</mark> is forwarded.
 {% endhint %}
 
 ## Field mappings
