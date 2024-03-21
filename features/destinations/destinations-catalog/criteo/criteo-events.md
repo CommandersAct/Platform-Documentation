@@ -62,6 +62,5 @@ The easiest way to manage this cookie is to **use this client-side tags in our t
 
 {% hint style="info" %}
 **\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
-**\[2]** if <mark style="color:blue;">`app.name`</mark> is defined then this field is set with <mark style="color:blue;">`m`</mark>, otherwise\
-**\[3]**<mark style="color:blue;">`id.email.sha256_md5`</mark>is automatically hashed.
+**\[2]** This is either<mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark>, depending if <mark style="color:blue;">`app.name`</mark>is defined or not.&#x20;
 {% endhint %}
