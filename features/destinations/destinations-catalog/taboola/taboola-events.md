@@ -1,6 +1,6 @@
 # Taboola Events
 
-[Taboola ](https://www.taboola.com)is a public advertising company that provides advertisements such as "Around the Web" and "Recommended For You" boxes at the bottom of many online news articles.\
+[Taboola ](https://www.taboola.com)is an advertising company that provides highlights such as "Around the Web" and "Recommended For You" boxes at the bottom of many online news articles.\
 This destination allows [server-side tracking](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-).
 
 ## Key features
