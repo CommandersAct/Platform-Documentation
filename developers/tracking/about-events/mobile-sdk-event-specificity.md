@@ -135,6 +135,7 @@ Here are an example of event playload :
          "build":"1",
          "namespace":"com.tagcommander.tcdemo",
          "core_version":"5.3.1",
+	 "consent_version":"5.4.2",
          "serverside_version":"5.3.1"
       },
       "event_timestamp":1673571636026
@@ -154,7 +155,9 @@ Here are fields automatically added by the sdk.
 
 ### context.app
 
-<table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr></tbody></table>
+<table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr>
+<tr><td>consent_version</td><td>5.3.3</td><td>The consent module’s version</td><td>Both</td></tr>
+</tbody></table>
 
 ### context.device
 
