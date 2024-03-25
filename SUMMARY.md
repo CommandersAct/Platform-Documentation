@@ -184,6 +184,7 @@
     * [Moebel](features/destinations/destinations-catalog/moebel.md)
     * [OXID](features/destinations/destinations-catalog/oxid.md)
     * [Optimizely](features/destinations/destinations-catalog/optimizely.md)
+    * [Outbrain](features/destinations/destinations-catalog/outbrain.md)
     * [Partnerize](features/destinations/destinations-catalog/partnerize.md)
     * [Piano Analytics](features/destinations/destinations-catalog/piano-analytics/README.md)
       * [Piano Analytics Collection API](features/destinations/destinations-catalog/piano-analytics/at-internet.md)
