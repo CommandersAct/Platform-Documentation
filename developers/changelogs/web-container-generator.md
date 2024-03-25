@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 90.3
+
+Release date:  **25/03/2024**
+
+* Closed-Beta: Follow up of the feature introduced in 90.0, now for privacy events
+
 ### 90.2
 
 Release date:  **13/03/2024**
