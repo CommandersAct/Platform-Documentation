@@ -27,17 +27,17 @@ The easiest way to manage this cookie is to **use this client-side tags in our t
 
 ## Quick reference
 
-| Commanders Act Events | Criteo Events                                                                     |
-| --------------------- | --------------------------------------------------------------------------------- |
-| `add_payment_info`    | `addPaymentInfo`                                                                  |
-| `add_to_cart`         | `addToCart`                                                                       |
-| `begin_checkout`      | `beginCheckout`                                                                   |
-| `login`               | `login`                                                                           |
-| `page_view`           | <p><code>viewHome</code> and/or<br><code>viewPage</code> <strong>[1]</strong></p> |
-| `purchase`            | `trackTransaction`                                                                |
-| `search`              | `viewList`                                                                        |
-| `view_cart`           | `viewBasket`                                                                      |
-| `view_item`           | `viewItem`                                                                        |
+| Commanders Act Events                                      | Criteo Events                                                                     |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `add_payment_info`                                         | `addPaymentInfo`                                                                  |
+| `add_to_cart`                                              | `addToCart`                                                                       |
+| `begin_checkout`                                           | `beginCheckout`                                                                   |
+| `login`                                                    | `login`                                                                           |
+| `page_view`                                                | <p><code>viewHome</code> and/or<br><code>viewPage</code> <strong>[1]</strong></p> |
+| `purchase`                                                 | `trackTransaction`                                                                |
+| <p><code>search</code> <br><code>view_item_list</code></p> | `viewList`                                                                        |
+| `view_cart`                                                | `viewBasket`                                                                      |
+| `view_item`                                                | `viewItem`                                                                        |
 
 {% hint style="info" %}
 **\[1]** If <mark style="color:blue;">`page.type`</mark> is <mark style="color:blue;">`home`</mark> then <mark style="color:blue;">`viewHome`</mark> is also sent with <mark style="color:blue;">`viewPage`</mark>, otherwise, just <mark style="color:blue;">`viewPage`</mark> is forwarded.
