@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS [PROJECT_ID].[DATASET_ID].[TABLE_ID] (rawDataCa STRIN
 ```
 
 {% hint style="info" %}
-Replace`[PROJECT_ID]`,`[DATASET_ID]`and`[TABLE_ID]`with your project, dataset and table identifier respectively. You set your table identifier at this step.
+Replace `[PROJECT_ID]` , `[DATASET_ID]` and `[TABLE_ID]` with your project, dataset and table identifier respectively. You set your table identifier at this step.
 {% endhint %}
 
 and then click the `(9)` `RUN` button.
@@ -63,9 +63,9 @@ and then click the `(9)` `RUN` button.
 
 | Settings     | Description                                                                                                                                                                                                                                                                                              |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Project Id` | <p><em><strong><code>Required</code></strong></em></p><p>Your project identifier as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p> |
-| `Dataset Id` | <p><em><strong><code>Required</code></strong></em><br>Your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>  |
-| `Table Id`   | <p><em><strong><code>Required</code></strong></em><br>Your table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>      |
+| `Project Id` | <p><em><strong><code>Required</code></strong></em> <br>Your project identifier as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>   |
+| `Dataset Id` | <p><em><strong><code>Required</code></strong></em> <br>Your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p> |
+| `Table Id`   | <p><em><strong><code>Required</code></strong></em> <br>Your table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>     |
 
 {% hint style="info" %}
 **\[1]** This feature allows you to set an event property holding a dynamic value by adding two open braces (`{{`) in front of your property name and two close braces (`}}`) at the end (E.g. `{{myEventPropertyPathAndName}}`).
@@ -79,6 +79,6 @@ and then click the `(9)` `RUN` button.
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2]** Two columns:<mark style="color:blue;">`rawDataCa`</mark>contains all your event properties, while<mark style="color:blue;">`createdAt`</mark>is the creation timestamp.
+**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains all your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
 {% endhint %}
 
