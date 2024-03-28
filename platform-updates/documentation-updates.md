@@ -12,6 +12,10 @@ Destination documentation (updates):
 [at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/criteo/criteo-events.md" %}
+[criteo-events.md](../features/destinations/destinations-catalog/criteo/criteo-events.md)
+{% endcontent-ref %}
+
 ## 08/03/2024
 
 Destination documentation:
