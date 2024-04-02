@@ -20,10 +20,7 @@ The TikTok Offline Events destination provides the following key features:
 
 ### Configuration
 
-| Settings        | Description                                                                                                                                                                                                                                                                        |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Event Set Id`  | <p><em><strong><code>Required</code></strong></em> <br>Your event set identifier value. More details are available following this <a href="https://ads.tiktok.com/marketing_api/docs?id=1758428013689857">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p> |
-| `Mapping`       | <p><em><strong><code>Required</code></strong></em><br>Map "TikTok Event Types" with your "Commanders Act events" by setting at least a <code>TikTok Event Type</code>  and a  <code>Commanders Act Event Name</code> . One entry is required.</p>                                  |
+<table><thead><tr><th width="256">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Event Set Id</code> </td><td><em><strong><code>Required</code></strong></em> <br>Your event set identifier value. More details are available following this <a href="https://ads.tiktok.com/marketing_api/docs?id=1758428013689857">LINK</a>. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Map "TikTok Event Types" with your "Commanders Act events" by setting at least a <code>TikTok Event Type</code>  and a  <code>Commanders Act Event Name</code> . One entry is required.</td></tr></tbody></table>
 
 
 
