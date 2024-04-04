@@ -6,6 +6,105 @@ description: >-
 
 # Release notes
 
+## Release 10.0.22 - March 2024
+
+**Mobile SDK Consent 5.2.1**\
+🔧 Resolved a potential crash with Vendors details drop-down.\
+➕ Added the Privacy Manifest file for enhanced security.\
+🔨 Fixed Layout Constraints warnings on the purposes screen.\
+🖼️ Ensured the Illustrations button always displays correctly.
+
+_Benefits:_
+
+* Smoother navigation without crashes.
+* Enhanced privacy with manifest file integration.
+* Improved layout stability for a seamless user experience.
+
+***
+
+**Mobile SDK Core 5.3.4, ServerSide 5.4.3, IAB 5.0.2**\
+➕ All modules now feature the Privacy Manifest file.
+
+_Benefits:_
+
+* Heightened privacy measures across all platforms.
+
+***
+
+**New Destination: LinkedIn Conversions API**:link:\
+🎉 Introducing the [LinkedIn CAPI](../features/destinations/destinations-catalog/linkedin\_capi.md) for direct marketing data connection.\
+_Benefits:_
+
+* Track campaign performance anywhere for optimized results.
+* Better attribution and cost efficiency with complete data sets.
+
+***
+
+**New Destination: Firebase Analytics for Mobile Applications** :bulb:\
+📱 Introducing a new informative configuration page for Firebase Analytics integration.\
+_Benefits:_
+
+* Seamless bridge between CMP & Firebase Analytics.
+* Easy implementation of Google Consent Mode with Firebase Analytics (GA4).
+
+<figure><img src="../.gitbook/assets/image (509).png" alt="" width="563"><figcaption></figcaption></figure>
+
+***
+
+**Security Enhancement!** :shield:\
+🔒 Native platform login has been exclusively streamlined with SSO.
+
+_Benefits:_
+
+* Enhanced security with SSO-only access.
+* Improved user experience without confusion.
+
+***
+
+**Speed Boost!** :fast\_forward:\
+🚀 TMS client-side now limits displayed container versions at the generation step for efficiency.
+
+_Benefits:_
+
+* Eliminates timeouts and crashes during version generation.
+* Clients can still access the latest 100 versions effortlessly.
+
+***
+
+**Real-time Destination's settings updates** :rocket:\
+🚀 Modifications now propagate instantly across all servers for faster updates (settings, filters, activation, dry mode, etc.).
+
+_Benefits:_
+
+* No more waiting times, changes take effect instantly.
+* Easy testing iterations for seamless destination adjustments.
+
+***
+
+**Introducing new "Reset Password" Page!** :key:\
+🔑 Enjoy a user-friendly password reset experience.
+
+_Benefits:_
+
+* Simplicity: Visual widget for accurate input and ability to use passphrase
+* Smartness: Progress bar for security evaluation.
+* Solidity: Compliance with new standards for passphrase usage.
+
+<figure><img src="../.gitbook/assets/image (510).png" alt="" width="375"><figcaption></figcaption></figure>
+
+***
+
+**New Destination: Taboola Events**\
+🎉 New destination now available for server-side event tracking with [Taboola](../features/destinations/destinations-catalog/taboola/).
+
+_Benefits:_
+
+* Track conversions without client-side pixel installation.
+
+***
+
+Your feedback matters! Let us know how these updates enhance your Commanders Act experience. :smiley: [https://www.commandersact.com/en/contact/](https://www.commandersact.com/en/contact/)
+
 ## Release 10.0.21 - February 2024
 
 🔧 **GA4 Source Update (Adloop)** 🔧&#x20;
