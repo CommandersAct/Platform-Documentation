@@ -13,6 +13,8 @@ The Outbrain destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Outbrain unique events](https://www.outbrain.com/help/advertisers/server2server-integrations/), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
+* **Custom events**: you can freely push custom events based on your specific needs.
 
 ## Destination setup
 
