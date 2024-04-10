@@ -17,7 +17,7 @@ The Outbrain destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-Ensure you have added the "Click Parameter" to your Outbrain campaign's tracking code. See the following [LINK](https://www.outbrain.com/help/advertisers/server2server-integrations/) for more details (See "Add a Click Parameter to Your Campaign’s Tracking Code" section). Moreover, create at least one Outbrain event by following this LINK (See "Create a Unique Event Name" section): you need to set the Outbrain event name in the related field in <mark style="color:blue;">`Mapping`</mark> : see [Configuration](outbrain.md#configuration) for more details.
+Ensure you have added the "Click Parameter" to your Outbrain campaign's tracking code: see the following [LINK](https://www.outbrain.com/help/advertisers/server2server-integrations/) for more details (See "Add a Click Parameter to Your Campaign’s Tracking Code" section). Moreover, create at least one Outbrain event by following this [LINK](https://www.outbrain.com/help/advertisers/server2server-integrations/) (See "Create a Unique Event Name" section): you need to set the Outbrain event name in the related field in <mark style="color:blue;">`Mapping`</mark> : see [Configuration](outbrain.md#configuration) for more details.
 {% endhint %}
 
 ### Configuration
