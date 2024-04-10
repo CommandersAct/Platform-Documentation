@@ -2,6 +2,13 @@
 
 ## 2024
 
+### 90.4
+
+Release date:  **10/04/2024**
+
+* Handle TCF purposes within Google Consent Mode. This upgrade requires regenerating the containers and the privacy banners.
+* Include vendors in signal to other TMS
+
 ### 90.3
 
 Release date:  **25/03/2024**
