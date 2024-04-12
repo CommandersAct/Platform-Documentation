@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 12/04/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/outbrain.md" %}
+[outbrain.md](../features/destinations/destinations-catalog/outbrain.md)
+{% endcontent-ref %}
+
 ## 29/03/2024
 
 Destination documentation (updates):
