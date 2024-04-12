@@ -54,6 +54,7 @@ Accepted characters for the commission group codes are alphanumerics and letter 
 
 {% hint style="info" %}
 **\[1]** Default value "aw".\
-**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When you select <mark style="color:blue;">`lead`</mark> as conversion type, the price part is set as integer if its decimal part is neutral (E.g. "5.00" will result in "5" being set).\
+**\[2]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). For <mark style="color:blue;">`sale`</mark> conversion type, when the "Smart Mapping" field <mark style="color:blue;">`Item Affiliation`</mark> is not filled with a proper value, the Awin "Commission Group" is set with the value <mark style="color:blue;">`DEFAULT`</mark> .\
+When you select <mark style="color:blue;">`lead`</mark> as conversion type, it's set with the static string <mark style="color:blue;">`LEAD:1`</mark> .\
 **\[3]** It takes into account each product.
 {% endhint %}
