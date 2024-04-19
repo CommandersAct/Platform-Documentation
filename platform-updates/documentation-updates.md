@@ -4,6 +4,18 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 19/04/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/destinations-catalog/dynamic-yield.md" %}
+[dynamic-yield.md](../features/destinations/destinations-catalog/dynamic-yield.md)
+{% endcontent-ref %}
+
 ## 12/04/2024
 
 Destination documentation:
