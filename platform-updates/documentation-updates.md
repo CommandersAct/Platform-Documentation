@@ -16,6 +16,10 @@ Destination documentation (updates):
 [dynamic-yield.md](../features/destinations/destinations-catalog/dynamic-yield.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 ## 12/04/2024
 
 Destination documentation:
