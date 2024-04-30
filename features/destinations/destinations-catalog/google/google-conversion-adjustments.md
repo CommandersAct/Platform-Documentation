@@ -35,15 +35,16 @@ Conversion adjustments don't work with [conversion actions](https://support.goog
 ## Field mappings
 
 {% hint style="info" %}
-The transaction identifier (id) is required in any of the following conditions:
+The transaction identifier (`id`) is required in any of the following conditions:
 
 1. The type of the [conversion action](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) is equal to <mark style="color:blue;">`Website`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">/</mark> [`WEBPAGE`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionActionTypeEnum.ConversionActionType#webpage) .
 2. The original conversion you are adjusting was assigned a transaction identifier.
 
-If <mark style="color:blue;">`Transaction Adjusted Timestamp (adjustmentDateTime)`</mark> "Smart Mapping" field is not set, this destination will use the current timestamp to set the Google property <mark style="color:blue;">`conversionAdjustments.0.adjustmentDateTime`</mark> .
+If <mark style="color:blue;">`Transaction Adjusted Timestamp (adjustmentDateTime)`</mark> "Smart Mapping" field is not set, this destination will use the current timestamp to set the Google property <mark style="color:blue;">`conversionAdjustments.0.adjustmentDateTime`</mark> .\
+Google properties are set starting from the path <mark style="color:blue;">`conversionAdjustments.0`</mark> <mark style="color:blue;"></mark><mark style="color:blue;">.</mark>
 {% endhint %}
 
-<table><thead><tr><th width="326">Commanders Act Properties</th><th>Google Conversion Adjustments Properties</th></tr></thead><tbody><tr><td><code>value</code></td><td><code>conversionAdjustments.0.restatementValue.adjustedValue</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>conversionAdjustments.0.orderId</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>conversionAdjustments.0.restatementValue.currencyCode</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>conversionAdjustments.0.gclidDateTimePair.conversionDateTime</code></td></tr><tr><td><p><code>Google Click Id</code></p><p><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></p></td><td><code>conversionAdjustments.0.gclidDateTimePair.gclid</code> <strong>[2]</strong></td></tr></tbody></table>
+<table><thead><tr><th width="345">Commanders Act Properties</th><th>Google Conversion Adjustments Properties</th></tr></thead><tbody><tr><td><code>value</code></td><td><code>restatementValue.adjustedValue</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>orderId</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code></td></tr><tr><td><p><code>Google Click Id</code></p><p><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></p></td><td><code>gclidDateTimePair.gclid</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
