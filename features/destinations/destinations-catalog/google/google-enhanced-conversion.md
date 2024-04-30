@@ -56,6 +56,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 {% endhint %}
 
 {% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.\
 Google properties are set starting from the path <mark style="color:blue;">`conversionAdjustments.0`</mark>  or  <mark style="color:blue;">`conversionAdjustments.0.userIdentifiers.X`</mark>  with the latter for user properties.
 {% endhint %}
 
