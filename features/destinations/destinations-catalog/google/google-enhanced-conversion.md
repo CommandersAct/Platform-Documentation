@@ -41,7 +41,7 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 
 ## Field mappings
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **At least** one of the following user identifiers must be set to prevent the error <mark style="color:blue;">`incomplete_any_user_identifier_is_required`</mark>:
 
 * <mark style="color:blue;">`user.email`</mark> or <mark style="color:blue;">`user.email_sha256`</mark>
@@ -53,7 +53,9 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 * <mark style="color:blue;">`user.state`</mark>
 * <mark style="color:blue;">`user.country`</mark>
 * <mark style="color:blue;">`user.zipcode`</mark>
+{% endhint %}
 
+{% hint style="info" %}
 Google properties are set starting from the path <mark style="color:blue;">`conversionAdjustments.0`</mark>  or  <mark style="color:blue;">`conversionAdjustments.0.userIdentifiers.X`</mark>  with the latter for user properties.
 {% endhint %}
 
