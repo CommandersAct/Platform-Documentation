@@ -151,6 +151,7 @@
         * [Facebook CAPI through GTM](features/destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md)
         * [Performance tab (Event Match Quality)](features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality.md)
       * [Facebook Custom Audiences](features/destinations/destinations-catalog/facebook/facebook-custom-audiences.md)
+      * [Facebook Lead Ads](features/destinations/destinations-catalog/facebook/facebook-lead-ads.md)
     * [FTP](features/destinations/destinations-catalog/ftp.md)
     * [Gamned](features/destinations/destinations-catalog/gamned.md)
     * [Google](features/destinations/destinations-catalog/google/README.md)
