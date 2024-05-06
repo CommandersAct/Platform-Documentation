@@ -1,7 +1,6 @@
 # Criteo (audiences)
 
-[Criteo](https://www.criteo.com/) is an advertising company that provides online display advertisements, especially for retargeting campaigns.
-
+[Criteo ](https://www.criteo.com/)is an advertising company that provides online display advertisements.\
 Create a segment on DataCommander to build your audience. Then, you can push this audience to Criteo through our connector Criteo (audiences).
 
 You need first to accept a consent link send by our consultants. This link is needed to authorize our DataCommander Criteo App to have access to your Criteo account to push audiences.
