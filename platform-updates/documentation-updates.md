@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 10/05/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/facebook/facebook-lead-ads.md" %}
+[facebook-lead-ads.md](../features/destinations/destinations-catalog/facebook/facebook-lead-ads.md)
+{% endcontent-ref %}
+
 ## 03/05/2024
 
 Destination documentation (updates):
