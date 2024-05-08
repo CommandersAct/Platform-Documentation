@@ -90,7 +90,7 @@ Update section Domain Management&#x20;
 [domain-management](../configure/administration/domain-management/)
 {% endcontent-ref %}
 
-## 30/01/202
+## 30/01/2023
 
 Update for new native feature Google Consent Mode
 
