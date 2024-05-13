@@ -230,7 +230,7 @@ Then the getAllEventData() function will return this object:
 }
 ```
 
-## `getCookieValues` (WIP) <a href="#getcookievalues" id="getcookievalues"></a>
+## `getCookieValues` <a href="#getcookievalues" id="getcookievalues"></a>
 
 Returns an array containing the values of all cookies with the given name.
 
