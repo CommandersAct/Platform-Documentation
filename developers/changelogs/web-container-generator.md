@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 90.5
+
+Release date:  **13/05/2024**
+
+* Infer value of page_type from env_template in page_view events
+
 ### 90.4
 
 Release date:  **10/04/2024**
