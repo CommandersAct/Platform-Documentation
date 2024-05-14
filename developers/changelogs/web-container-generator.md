@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 91.0
+
+Release date:  **14/05/2024**
+
+* Closed-Beta: implement CDN 1st party in Tag containers
+
 ### 90.5
 
 Release date:  **13/05/2024**
