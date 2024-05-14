@@ -220,7 +220,7 @@ User contains all fields declared inside [https://doc.commandersact.com/develope
 | session\_number                | 1                                    | The number of sessions                                                                                           | Both     |
 | first\_visit                   | 1655824764174                        | Timestamp of the first app visit                                                                                 | Both     |
 | last\_visit                    | 1655824764174                        | Timestamp of the last visit                                                                                      | Both     |
-| last\_call                     | 1655824772416                        | Timestamp of the previous call                                                                                   | Both     |
+| last\_call                     | 1655824772416                        | Timestamp of the previous hit                                                                                   | Both     |
 | last\_session\_start           | 0                                    | Timestamp of the start of the previous session                                                                   | Both     |
 | last\_session\_last\_hit       | 0                                    | Timestamp of the last hit sent during the previous session                                                       | Both     |
 | foreground\_transitions        | 2                                    | Number of times the app when from background to foreground                                                       | Both     |
