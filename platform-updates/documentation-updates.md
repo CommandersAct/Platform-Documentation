@@ -38,10 +38,12 @@ Destination documentation (updates):
 
 ## 12/04/2024
 
-Destination documentation:
+## 14/04/2024
 
-{% content-ref url="../features/destinations/destinations-catalog/outbrain.md" %}
-[outbrain.md](../features/destinations/destinations-catalog/outbrain.md)
+Cookies page updated
+
+{% content-ref url="../configure/cookies/" %}
+[cookies](../configure/cookies/)
 {% endcontent-ref %}
 
 ## 29/03/2024
