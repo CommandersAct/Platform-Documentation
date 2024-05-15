@@ -520,7 +520,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 </details>
 
-### First Party tracking cookies (Phoenix)
+### First Party tracking cookies
 
 <details>
 
@@ -558,11 +558,13 @@ FDLBFIRSTEVENTS\
 
 </details>
 
+### Phoenix
+
 <details>
 
 <summary>tc_caids</summary>
 
-**Product(s) related:** First domain tracking (Phoenix)
+**Product(s) related:** Phoenix
 
 **Type:** Cookie
 
@@ -582,7 +584,7 @@ FDLBFIRSTEVENTS\
 
 <summary>tc_cj_ss</summary>
 
-**Product(s) related:** First domain tracking (Phoenix)
+**Product(s) related:** Phoenix
 
 **Type:** Cookie
 
@@ -602,7 +604,7 @@ FDLBFIRSTEVENTS\
 
 <summary>tc_ss*</summary>
 
-**Product(s) related:** First domain tracking (Phoenix)
+**Product(s) related:** Phoenix
 
 **Type:** Cookie
 
