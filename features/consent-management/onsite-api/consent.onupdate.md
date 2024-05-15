@@ -37,8 +37,8 @@ In this example the Analytics category was configured with the consent category 
 ```javascript
 cact('consent.onUpdate', function (result) { 
     
-    const ANALYTICS_ID = 2;
-    const analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
+    var ANALYTICS_ID = 2;
+    var analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
      
     if (analyticsCategory.status === 'on') {
     
@@ -60,8 +60,8 @@ In this example the Analytics category was configured with the consent category 
 ```javascript
 cact('consent.onUpdate', function (result) { 
 
-    const ANALYTICS_ID = 2;
-    const analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
+    var ANALYTICS_ID = 2;
+    var analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
 
     if (result.updateEvent === "changed" && analyticsCategory.status === 'on') {
     

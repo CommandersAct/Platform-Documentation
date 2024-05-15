@@ -25,8 +25,8 @@ In this example, the code is waiting for the user's interaction with the consent
 ```javascript
 cact('consent.onReady', function (result) { 
     
-    const ANALYTICS_ID = 2;
-    const analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
+    var ANALYTICS_ID = 2;
+    var analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
      
     if (analyticsCategory.status === 'on') {
     

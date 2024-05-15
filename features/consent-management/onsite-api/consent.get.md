@@ -27,8 +27,8 @@ In this example the Analytics category was configured with the consent category 
 ```
 cact('consent.get', function (result) {
 
-   const ANALYTICS_ID = 2;
-   const analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
+   var ANALYTICS_ID = 2;
+   var analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
    
    if (analyticsCategory.status === 'on') {
          
@@ -50,11 +50,11 @@ In this example the Analytics category was configured with the consent category 
 ```
 cact('consent.get', function (result) {
    
-   const ANALYTICS_ID = 2;
-   const analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
+   var ANALYTICS_ID = 2;
+   var analyticsCategory = result.consent.categories[ANALYTICS_ID] || {};
 
-   const GOOGLE_ID = 5;
-   const googleVendor = result.consent.vendors[GOOGLE_ID] || {};
+   var GOOGLE_ID = 5;
+   var googleVendor = result.consent.vendors[GOOGLE_ID] || {};
    
    if (analyticsCategory.status === 'on' && googleVendor.status === 'on') {
          
@@ -92,7 +92,7 @@ cact('consent.get', function (result) {
 ```
 cact('consent.get', function (result) {
 
-    const dateExpires = result.meta.dateExpires;
+    var dateExpires = result.meta.dateExpires;
                 
 });
 ```
