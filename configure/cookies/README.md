@@ -572,11 +572,11 @@ FDLBFIRSTEVENTS\
 
 **Lifetime:** 396 days
 
-**Value:** Technical cookies for load balancing purposes
+**Value:** Technical cookie for backup Commanders Act cookies
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for internal infrastructure dispatch.
+**Storage purpose(s):** Used for restore deleted cookies by ITP
 
 </details>
 
@@ -592,11 +592,11 @@ FDLBFIRSTEVENTS\
 
 **Lifetime:** 396 days
 
-**Value:** Technical cookies for load balancing purposes
+**Value:** Technical cookie for backup Commanders Act cookie tc\_cj\_v2
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for internal infrastructure dispatch.
+**Storage purpose(s):** Used for restore deleted cookies by ITP
 
 </details>
 
@@ -612,11 +612,11 @@ FDLBFIRSTEVENTS\
 
 **Lifetime:** 396 days
 
-**Value:** Technical cookies for load balancing purposes
+**Value:** Technical cookie for backup custom cookies
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for internal infrastructure dispatch.
+**Storage purpose(s):** Used for restore deleted cookies by ITP
 
 In case your cookie "tc\_ss" contains more than 2048 characters, cookies will be created with incremented names (ex. tc\_ss1, tc\_ss2, ...)
 
