@@ -611,7 +611,7 @@ The following properties are automatically attached to the event.
 When enabling this feature, you can send user-related data together with the user identifier. This can be used to improve behavior and conversion measurement. More details are available following this [LINK](https://developers.google.com/analytics/devguides/collection/ga4/uid-data?hl=en).
 
 {% hint style="warning" %}
-When [Proxy Mode](https://community.commandersact.com/platform-x/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode) is enabled, ensure the <mark style="color:blue;">`User Id`</mark> field is set to <mark style="color:blue;">`None`</mark> as it's values must be present.
+When [Proxy Mode](https://community.commandersact.com/platform-x/features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode) is enabled, ensure the <mark style="color:blue;">`User Id`</mark> field is set to <mark style="color:blue;">`None`</mark> as its value must be present.
 {% endhint %}
 
 {% hint style="info" %}
