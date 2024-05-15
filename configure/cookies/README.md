@@ -520,7 +520,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 </details>
 
-### First Party tracking cookies
+### First Party tracking cookies (Phoenix)
 
 <details>
 
@@ -528,16 +528,17 @@ Following cookies are used automatically in depending on the installed Commander
 
 All possibles names:
 
-\-FDLBCTLYOXA \
-\-FDLBPHOENIXAPI \
-\-FDLBPHOENIXDATA \
-\-FDLBPHOENIXCAMPAIGN \
-\-FDLBPHOENIXCAMPAIGNEF \
-\-FDLBCAMPAIGNCDOM \
-\-FDLBPHOENIXTMS \
-\-FDLBPHOENIXCMP \
-\-FDLBPHOENIX \
-\-FDLBCTLY\
+DLBCTLYOXA \
+FDLBFIRSTAPI \
+FDLBFIRSTDATA \
+FDLBFIRSTCAMPAIGN \
+FDLBFIRSTCAMPAIGNEF \
+FDLBCAMPAIGNCDOM \
+FDLBFIRSTTMS \
+FDLBFIRSTCMP \
+FDLBFIRST \
+FDLBCTLY \
+FDLBFIRSTEVENTS\
 \
 **Product(s) related:** First domain tracking
 
@@ -556,8 +557,6 @@ All possibles names:
 
 
 </details>
-
-### Phoenix
 
 <details>
 

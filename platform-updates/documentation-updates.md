@@ -4,6 +4,20 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 15/05/2024
+
+Cookies page updated
+
+{% content-ref url="../configure/cookies/" %}
+[cookies](../configure/cookies/)
+{% endcontent-ref %}
+
+Tracking First&#x20;
+
+{% content-ref url="../configure/cookies/phoenix.md" %}
+[phoenix.md](../configure/cookies/phoenix.md)
+{% endcontent-ref %}
+
 ## 10/05/2024
 
 Destination documentation:
