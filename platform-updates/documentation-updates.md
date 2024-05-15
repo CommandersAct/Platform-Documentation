@@ -14,8 +14,8 @@ Cookies page updated
 
 Tracking First&#x20;
 
-{% content-ref url="../configure/cookies/phoenix.md" %}
-[phoenix.md](../configure/cookies/phoenix.md)
+{% content-ref url="../configure/cookies/first-domain-tracking-phoenix.md" %}
+[first-domain-tracking-phoenix.md](../configure/cookies/first-domain-tracking-phoenix.md)
 {% endcontent-ref %}
 
 ## 10/05/2024

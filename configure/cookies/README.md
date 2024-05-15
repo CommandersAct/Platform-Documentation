@@ -540,7 +540,7 @@ FDLBFIRST \
 FDLBCTLY \
 FDLBFIRSTEVENTS\
 \
-**Product(s) related:** First domain tracking
+**Product(s) related:** First domain tracking (Phoenix)
 
 **Type:** Cookie
 
@@ -562,7 +562,7 @@ FDLBFIRSTEVENTS\
 
 <summary>tc_caids</summary>
 
-**Product(s) related:** Phoenix
+**Product(s) related:** First domain tracking (Phoenix)
 
 **Type:** Cookie
 
@@ -582,7 +582,7 @@ FDLBFIRSTEVENTS\
 
 <summary>tc_cj_ss</summary>
 
-**Product(s) related:** Phoenix
+**Product(s) related:** First domain tracking (Phoenix)
 
 **Type:** Cookie
 
@@ -602,7 +602,7 @@ FDLBFIRSTEVENTS\
 
 <summary>tc_ss*</summary>
 
-**Product(s) related:** Phoenix
+**Product(s) related:** First domain tracking (Phoenix)
 
 **Type:** Cookie
 
