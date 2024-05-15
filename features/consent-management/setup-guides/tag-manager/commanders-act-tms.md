@@ -59,3 +59,31 @@ You have to first deploy a banner to the Commanders Act CDN or on premise locati
 All web containers of your website should be re-generated and deployed when installing a new privacy banner.
 {% endhint %}
 
+## Go further with OnSite API
+
+The OnSite API allows you to reload your container(s) on consent, manage behaviour or create custom variables/rules!&#x20;
+
+You can find the full list of commands in the [dedicated section](../../../sources/sources-catalog/web/containers/best-practices/apis/onsite-api.md).&#x20;
+
+To reload your web container(s) on user consent, here's a sample code that you can use in the custom js block of your privacy banner, or directly in your web containers
+
+```javascript
+/* Reload web containers on user interaction */
+
+cact('consent.onUpdate', function (result) {      
+        tC.script.add("https://cdn.tagcommander.com/xxxx/my_container_name.js");
+});
+```
+
+```javascript
+/* Different approach for container reoad - based on work environment variable */
+
+cact('consent.onUpdate', function (result) {      
+    if (tc_vars.env_work === 'prod') {    
+        tC.script.add("https://cdn.tagcommander.com/xxxx/my_container_name.js");
+    } else {          
+        tC.script.add("https://cdn.tagcommander.com/xxxx/uat/my_container_name.js"); 
+    } 
+});
+```
+

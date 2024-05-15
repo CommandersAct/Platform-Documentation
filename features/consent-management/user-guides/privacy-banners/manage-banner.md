@@ -145,7 +145,7 @@ Advanced customisation options. Please contact your Commanders Act consultant or
 
 Changes have to be saved with the `SAVE` button.
 
-### Advanced Options for IAB TCF Banner <a href="#advanced-options-for-iab-tcf-banner" id="advanced-options-for-iab-tcf-banner"></a>
+### IAB TCF banners advanced options  <a href="#advanced-options-for-iab-tcf-banner" id="advanced-options-for-iab-tcf-banner"></a>
 
 #### Customise Publisher Country Code Field <a href="#customise-publisher-country-code-field" id="customise-publisher-country-code-field"></a>
 

@@ -65,3 +65,11 @@ In case both TMS and Consent Commanders Act are used to manage tags it is import
 | Tag is assigned to a category or vendor in the used banner (`Data Governance > Consent Management > Categories (Tab ASSIGN TAGS)`) | Yes                    | No                | No             |
 | Banner text or style change                                                                                                        | No                     | No                | Yes            |
 | Banner button actions change                                                                                                       | No                     | No                | Yes            |
+
+
+
+{% hint style="info" %}
+On your website, don't forget to integrate a button or a link to allow your users to modify their consent choices
+
+Use our Onsite API, command [consentCenter.show](../../onsite-api/consentcenter.show.md)
+{% endhint %}
