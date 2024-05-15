@@ -14,8 +14,10 @@ Phoenix enables you to persist 1st party cookies for longer durations to reduce 
 
 To understand how Phoenix works it is important to understand following cookie concepts.
 
-1st party vs. 3rd party cookiesSecure Http cookies
 
+
+{% tabs %}
+{% tab title="1st party vs. 3rd party cookies" %}
 A cookie belongs to a domain (e.g. `site.com`). A cookies set on `site-a.com` belongs to `site-a.com`, a cookie set on `site-b.com` belongs to `site-b.com`.
 
 A cookie is a 1st party cookie or a 3rd party cookie depending on the relation of the website domain and the cookie domain.
@@ -24,13 +26,36 @@ In case a visitor goes to `site-a.com` the browser loads all cookies set on `sit
 
 You can inspect the domain of a cookie in the Developer Tools of most browsers. In Chrome browser you can open the Developer Tools by navigation to `View > Developer > Developer Tools`. You will find a list of all cookies in the Developer Tool under `Application > Cookies > Your Domain`.
 
-![](https://community.commandersact.com/\~gitbook/image?url=https%3A%2F%2F2813015996-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fassets%252F-LdtBYhZj-wxWhoZaUXI%252F-M6ZOPE1Qlc3RbEzC8Sk%252F-M6ZPo1DityO6Ay8ofYT%252Fcookie-domain-in-developer-tools.png%3Falt%3Dmedia%26token%3D36e15aa6-31dc-40d4-b12c-c9c33697459e\&width=768\&dpr=4\&quality=100\&sign=e3bfc2b696251fe01ab421b386d4c3a4e69427a372611757c1070ccf5be8b2cb)Example of a 1st party cookie. The visitor is on www.commandersact.com which matches the cookie domain of .commandersact.com.
+<figure><img src="../../.gitbook/assets/image (512).png" alt=""><figcaption><p>Example of a 1st party cookie. The visitor is on www.commandersact.com which matches the cookie domain of .commandersact.com.</p></figcaption></figure>
 
 A cookie is a 1st party cookie in case the field "Domain" matches the domain of the current website (e.g. a cookie with a domain `.site.com` is a 1st party cookie on a website with the domain `www.site.com`).
 
 3rd party cookies are blocked by many browsers (e.g. Safari and Firefox) and will most likely be blocked by all major browsers in 2022. Phoenix works with 1st party cookies.
 
-Phoenix allows to persist 1st party cookies without a Secure and HttpOnly flag.
+
+{% endtab %}
+
+{% tab title="Secure Http cookies" %}
+Most 1st party cookies can be managed in two ways:
+
+* Client-side with JavaScript
+* Server-side with HTTP header
+
+By assigning a Secure flag it is possible to restrict a cookie to HTTPS content. This allows developers to make cookies more secure and to protect them from certain malicious attacks.
+
+You can investigate the Secure flag of a cookie in most browser Developer Tools. In Chrome browser you can open the Developer Tools by navigating to `View > Developer > Developer Tools`. You will find all cookies in the Developer Tool under `Application > Cookies > Your Domain`.
+
+<figure><img src="../../.gitbook/assets/image (513).png" alt=""><figcaption><p>Example of a cookie without a HttpOnly and Secure flag. The duration of this cookie would be shortened by Safari's ITP.</p></figcaption></figure>
+
+A cookie is a Secure cookie in case it has a checkmark in the Secure column.
+
+The duration of Http cookies with a Secure flag are not impacted by ITP. Phoenix can persist 1st party cookies as Secure Http cookies
+{% endtab %}
+{% endtabs %}
+
+{% hint style="info" %}
+&#x20;Phoenix allows to persist 1st party cookies without a Secure and HttpOnly flag.
+{% endhint %}
 
 #### How does Phoenix persist cookies? <a href="#how-does-phoenix-persist-cookies" id="how-does-phoenix-persist-cookies"></a>
 
@@ -42,9 +67,9 @@ Phoenix will check if a 1st party cookie was deleted and recreate it from its ba
 
 Phoenix setup consists of following steps. A Commanders Act consultant will support you during setup.
 
-<figure><img src="../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (511).png" alt=""><figcaption><p>Example configuration of a Phoenix subdomain and cookie size limit.</p></figcaption></figure>
 
-Example configuration of a Phoenix subdomain and cookie size limit.
+
 
 #### Configure Phoenix Subdomain <a href="#configure-phoenix-subdomain" id="configure-phoenix-subdomain"></a>
 
@@ -60,7 +85,9 @@ Browsers, like Safari, can usually store a **maximum of 8 kB** of cookie data pe
 
 Your administrator can configure how much cookie space he wants to make available for Phoenix in your Commanders Act interface under `Admin > Domain Management`. **It is recommended to not exceed 2 kB, and we suggest a limit below 0.5 kB during initial setup**.
 
+{% hint style="danger" %}
 Exceeding cookie storage limit can make your website inaccessible. Please consult with your technical teams during setup to define an optimal storage quota for Phoenix.
+{% endhint %}
 
 #### Setup CNAME Domain Record <a href="#setup-cname-domain-record" id="setup-cname-domain-record"></a>
 
@@ -68,7 +95,9 @@ You will then need to connect your Phoenix subdomains with the Phoenix service. 
 
 Your administrator can find the Phoenix service domain in your Commanders Act interface under `Admin > Domain Management`.
 
+{% hint style="info" %}
 You have to re-generate your web containers (Commanders Act TMS) after enabling Phoenix.
+{% endhint %}
 
 ### Managing Cookies with Phoenix <a href="#managing-cookies-with-phoenix" id="managing-cookies-with-phoenix"></a>
 
@@ -76,14 +105,16 @@ Commanders Act cookies are automatically managed by Phoenix. Cookies of other ve
 
 #### Commanders Act TMS <a href="#tagcommander" id="tagcommander"></a>
 
-In TMS Commanders Act cookies are usually set by your vendor tags. You can enable Phoenix for selected tags in the "Deployment" step of your Commanders Act TMS container by enabling the `ITP BYPASS` option. This will automatically persist all cookies of this tag with Phoenix. A progress bar will show the remaining cookie space made available by your administrator.
+In TMS Commanders Act, cookies are usually set by your vendor tags. You can enable Phoenix for selected tags in the "Deployment" step of your Commanders Act TMS container by enabling the `ITP BYPASS` option. This will automatically persist all cookies of this tag with Phoenix. A progress bar will show the remaining cookie space made available by your administrator.
 
-Example how cookies a of Tag are persisted with Phoenix
+<figure><img src="../../.gitbook/assets/demo_cookies_phoenix (1).gif" alt=""><figcaption><p>Example how cookies a of Tag are persisted with Phoenix</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/demo_cookies_phoenix (1).gif" alt=""><figcaption></figcaption></figure>
-
+{% hint style="info" %}
 Please contact the Commanders Act support or your Commanders Act consultant in case the ITP BYPASS option is not available for a tag or cookie you would like to persist.
+{% endhint %}
 
 #### Other Systems <a href="#other-systems" id="other-systems"></a>
 
+{% hint style="info" %}
 Please contact your Commanders Act consultant in case you would like to persist cookies outside of Commanders Act TMS or in case you would like to install Phoenix without Commanders Act TMS.
+{% endhint %}
