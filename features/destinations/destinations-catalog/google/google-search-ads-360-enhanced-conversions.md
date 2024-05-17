@@ -19,8 +19,6 @@ Google recommends triggering [conversion batch updates](https://developers.googl
 Before configuring this destination, you need to fullfil the following requirements:&#x20;
 
 {% hint style="info" %}
-### Accept ToS
-
 Log in to the CM360 account and choose the advertiser you want to implement EC with. On the left, open the menu <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Configuration`</mark>, and flag the checkbox under the <mark style="color:blue;">`Enhanced conversions`</mark> section:\
 \
 ![](../../../../.gitbook/assets/sa360ec\_1.png)\
