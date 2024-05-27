@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 92.0
+
+Release date:  **27/05/2024**
+
+* New generation method for CAID (Platform X events only). Previously introduced as beta for version 90.0
+
 ### 91.0
 
 Release date:  **14/05/2024**
