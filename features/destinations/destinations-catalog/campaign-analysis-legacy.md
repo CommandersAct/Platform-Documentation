@@ -81,3 +81,11 @@ Don't forget to setup a consent filter to be RGPD compliant as well
 #### 7/Your destination is ready to be activated!
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+#### 8/Go Further: modify timestamp
+
+**ts\_override** property can be used to change the timestamp of an event
+
+Example:
+
+https://collect.commander1.com/events?tc\_s={site\_id\}}\&token={token}\&medium=seo\&source=google&<mark style="color:red;">**ts\_override=1716888588**</mark>\&event\_name=ad\_click\&campaign=sales\_2024\
