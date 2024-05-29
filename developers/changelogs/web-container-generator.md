@@ -2,6 +2,13 @@
 
 ## 2024
 
+### 92.1
+
+Release date:  **29/05/2024**
+
+* Fix bug where TCF would conflict with GCM initialization
+* Support new hashes to check container integrity
+
 ### 92.0
 
 Release date:  **27/05/2024**
