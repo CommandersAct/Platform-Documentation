@@ -1,9 +1,5 @@
 # Outbrain
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.&#x20;
-{% endhint %}
-
 [Outbrain](https://www.outbrain.com/) is a web recommendation platform.\
 Using this destination you can implement [server-side tracking](https://www.outbrain.com/help/advertisers/server2server-integrations/).
 
