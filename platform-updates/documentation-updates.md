@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 31/05/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/dynamic-yield.md" %}
+[dynamic-yield.md](../features/destinations/destinations-catalog/dynamic-yield.md)
+{% endcontent-ref %}
+
 ## 17/05/2024
 
 Destination documentation (updates):
