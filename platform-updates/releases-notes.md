@@ -6,6 +6,130 @@ description: >-
 
 # Release notes
 
+## Release 10.0.23 - May 2024
+
+#### May Release Notes 🌟
+
+#### 📱 New Mobile Release
+
+**Android**
+
+* **Consent 5.3.2:** Automatic JSON update when receiving a new one from the CDN.\
+  _Benefit: Ensures continuous compliance and accuracy._
+
+**iOS**
+
+* **Consent 5.3.0 / Core 5.4.0 / IAB 5.1.0:**
+  * **Unified TCConsent Module:** Now there's only one module instead of separate ones for IAB and non-IAB.\
+    _Benefit: Simplifies consent management._
+  * **Remove Refused Vendors from TCUser:** When no consent is available.\
+    _Benefit: Cleaner consent handling._
+
+***
+
+#### 💳 Credit Usage UI Improvements
+
+**What's New:**
+
+* **Time Split:** View by day for periods < 30 days, by week for periods < 90 days.\
+  _Benefit: More precise credit usage tracking._
+* **New Metric Names:** Closer to those on customer invoices.\
+  _Benefit: Better data understanding._
+* **UI Enhancements:** Improved sorting order, labels, and colors.\
+  _Benefit: More intuitive and navigable interface._
+
+**👥 Target Audience:** Sales team & customers with "account administrator" rights.
+
+<figure><img src="../.gitbook/assets/image (515).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 🧼 Data Cleansing UX Improvement
+
+* **Show More Than 10 Cleansings on a Single Page.**\
+  _Benefit: Improved organization and management of cleansings._
+
+<figure><img src="../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 🍪 Technical Session Cookies Update
+
+* **Renaming Cookies for 1st Party Tracking:** Previously named "phoenix".\
+  _Benefit: More accurate and understandable nomenclature._
+
+[More information here](https://doc.commandersact.com/configure/cookies).
+
+***
+
+#### 🔧 Cookie Scanner Fix
+
+* Better detection of first-party session cookies
+
+***
+
+#### 🔍 Anti-Adblocking Enhancement
+
+**Key Changes:**
+
+* **Adblocker Detection:** Now included in web containers.\
+  _Benefit: More comprehensive data collection despite adblockers._
+
+**👥 Target Audience:** Customers using oneTag. \
+You need to generate/redeploy all containers containing a oneTag tag.
+
+***
+
+#### 📈 Google Analytics 4 Enhanced Conversions
+
+* **New Feature:** Send user-provided data along with the user identifier to improve behavior and conversion measurement.
+
+***
+
+#### 🛠 Amazon Ads CAPI Update
+
+**Key Changes:**
+
+* No longer in closed beta, open to all customers.
+* More user-friendly setup: Add a new conversion definition directly within the destination settings.
+
+**✨ Benefits:**
+
+* Officially the easiest and most user-friendly Amazon CAPI setup
+
+***
+
+#### 📊 Facebook - Conversion API Advanced (closed beta)
+
+**Key Changes:**
+
+* **Dynamic Fields:** Allows dynamic values for Pixel ID and token.
+* **Smart Mapping:**&#x20;
+  * Easier to review/master all data shared with Facebook
+  * Option to send all properties as custom data or define them manually.
+  * Option to send **App events** and review/edit app specific properties sent to Facebook
+* **Advanced Settings:** Options for content type, custom data, test code and additional PageView events.\
+  \
+  _Benefit: Greater control over data shared with Facebook, more options, and flexibility._
+
+**🎯 Why These Changes:**
+
+* Integration of requested features and customer feedback
+
+***
+
+#### 🚀 New Destination: Outbrain
+
+* **Server-Side Event Tracking:** Enabled for more accurate performance measurement.\
+  _Benefit: Enhanced tracking capabilities._
+
+***
+
+Thank you for your attention and continuous engagement! \
+We look forward to your feedback on these improvements.
+
+***
+
 ## Release 10.0.22 - March 2024
 
 **Mobile SDK Consent 5.2.1**\
