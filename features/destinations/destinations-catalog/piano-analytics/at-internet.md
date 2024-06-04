@@ -202,7 +202,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 ## Autopromo events
 
-When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page\_view) and _click.action_ events, you can add autopromo events, by setting the array field `autopromos` . See the following example:
+When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page\_view) and _click.action_ events, you can add autopromotions, by setting the array field `autopromos` . See the following example:
 
 ```json
 ...
