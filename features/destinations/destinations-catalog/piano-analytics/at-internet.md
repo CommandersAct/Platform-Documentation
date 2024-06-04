@@ -18,7 +18,7 @@ The Piano Analytics Collection API destination provides the following key featur
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Piano Analytics.
 * **User identifier**: you can openly select a user identifier field for logged users.
-* **Support Autopromo events**: include pre-prepared autopromo events in your requests. See [Autopromo events](at-internet.md#autopromo-events) for more details.&#x20;
+* **Support autopromo events**: include pre-prepared autopromo events in your requests. See [Autopromo events](at-internet.md#autopromo-events) for more details.&#x20;
 * **Send all properties**: send all your event properties to Piano Analytics with a single click.
 
 ## Destination setup
@@ -202,7 +202,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 ## Autopromo events
 
-When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page\_view) and _click.action_ events, you can add autopromo events, by setting the array field `autopromos`. See the following example:
+When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page\_view) and _click.action_ events, you can add autopromo events, by setting the array field `autopromos` . See the following example:
 
 ```json
 ...
