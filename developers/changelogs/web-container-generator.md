@@ -2,6 +2,14 @@
 
 ## 2024
 
+### 93.0
+
+Release date:  **04/06/2024**
+
+* Better handling of privacy events (consent.onReady, consent.onUpdate)
+* Add `addEventListener`, `once`, `removeEventListener`, `dispatchEvent` methods to `cact` API
+* Integrate `trigger` api with Web Container Triggers
+
 ### 92.1
 
 Release date:  **29/05/2024**
