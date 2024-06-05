@@ -4,6 +4,18 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 07/06/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
+[at-internet.md](../features/destinations/destinations-catalog/piano-analytics/at-internet.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/destinations-catalog/dynamic-yield.md" %}
+[dynamic-yield.md](../features/destinations/destinations-catalog/dynamic-yield.md)
+{% endcontent-ref %}
+
 ## 31/05/2024
 
 Destination documentation (updates):
