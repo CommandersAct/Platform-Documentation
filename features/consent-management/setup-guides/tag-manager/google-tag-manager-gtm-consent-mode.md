@@ -29,9 +29,10 @@ First, you need to input your consent category identifiers for the following **7
 
 <figure><img src="../../../../.gitbook/assets/onsite_api2.png" alt=""><figcaption><p>Define/find your category identifiers.</p></figcaption></figure>
 
-Your identifiers are shown between round parentheses (see highlighted in green below):
+Your identifiers are shown between round parentheses (see highlighted in green below):\
 
-<figure><img src="../../../../.gitbook/assets/onsite_api3.png" alt=""><figcaption><p>Follow the path: "Data Governance" → "Consent Management" → "Categories".</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="518"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you have sub-categories with the same scope of the five defined by Google, you need to use their ids instead of the main category ones. You can also rename your categories or change their ids by checking the subsection "[**Managing categories**](https://community.commandersact.com/trustcommander/user-guides/categories-and-tags/manage-categories#managing-categories)".
