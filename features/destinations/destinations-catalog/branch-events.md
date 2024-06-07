@@ -10,12 +10,12 @@ This destination is currently under final review and will be available soon.
 
 The Branch Events destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) matches Branch [standard](https://help.branch.io/developers-hub/reference/logstandardevents) and [custom events](https://help.branch.io/developers-hub/reference/logcustomevents), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches Branch [standard](https://help.branch.io/developers-hub/reference/logstandardevents) and [custom events](https://help.branch.io/developers-hub/reference/logcustomevents), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events and custom event properties).
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Event mapping**: change standard mapping between your partners' events and yours or add new mappings.&#x20;
-* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Branch.
+* **Support for multi-item data**: information included in the [item](https://doc.commandersact.com/developers/tracking/events-reference#item) array is dispatched to Branch.
 * **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 
 ## Destination setup
@@ -68,7 +68,7 @@ Before configuring this destination, you need to create a [Branch Dashboard](htt
 At least one of the following must be included:\
 • <mark style="color:blue;">`developer_identity`</mark>\
 • <mark style="color:blue;">`browser_fingerprint_id`</mark>\
-• <mark style="color:blue;">`idfa`</mark> OR <mark style="color:blue;">`idfv`</mark> (IF <mark style="color:blue;">`os`</mark>= <mark style="color:blue;">`iOS`</mark>)\
+• <mark style="color:blue;">`idfa`</mark> OR <mark style="color:blue;">`idfv`</mark> (IF <mark style="color:blue;">`os`</mark>= <mark style="color:blue;">`iOS`</mark>) \
 • <mark style="color:blue;">`aaid`</mark> OR <mark style="color:blue;">`android_id`</mark> (IF <mark style="color:blue;">`os`</mark>= <mark style="color:blue;">`Android`</mark>)
 {% endhint %}
 
