@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-Branch (formerly known as Branch Metrics) is a mobile software company focused on mobile deep linking and attribution. This integration allows [server-side event tracking](https://help.branch.io/developers-hub/reference/events-api).
+[Branch](https://www.branch.io/) (formerly known as Branch Metrics) is a mobile software company focused on mobile deep linking and attribution. This integration allows [server-side event tracking](https://help.branch.io/developers-hub/reference/events-api).
 
 ## Key features
 
