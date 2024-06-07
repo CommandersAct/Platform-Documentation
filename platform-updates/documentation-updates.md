@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 07/06/2024
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/branch-events.md" %}
+[branch-events.md](../features/destinations/destinations-catalog/branch-events.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/piano-analytics/at-internet.md" %}
