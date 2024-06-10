@@ -2,7 +2,7 @@
 
 Enrich incoming events in real-time before to send it to destinations.
 
-Enrichment could come from the Product catalog, a Custom external API, Weather database (coming soon) or any Custom data store (coming soon).
+Enrichment could come from the Product catalog, a Custom external API, Weather database (coming soon) or any Custom data store.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-02-09 à 17.21.55.png" alt=""><figcaption></figcaption></figure>
 
@@ -58,8 +58,76 @@ Coming soon
 
 You can currently manage it manually via [Enrichment from external API](events-enrichment.md#enrichment-from-custom-external-api), but a plug\&play version is in progress.
 
+
+
 ## Enrichment from Custom Data Store
 
-{% hint style="info" %}
-Coming soon
-{% endhint %}
+Enrich events from previously stored events. \
+It allows you to store selected event and properties and use them later to enrich events, providing a more complete set of data for your marketing and analysis needs.
+
+### Key Features
+
+#### Storage of Event
+
+* **Selective Storage**: Choose specific properties of an event to store after the event is cleaned. This ensures only relevant and clean data is stored.
+* **Storage Duration**: By default, properties are stored for 1 day.&#x20;
+
+#### Event Matching
+
+* **Matching Key**: Define a **unique key** to match events over time. This key helps link related events, allowing the properties of past events to be used in future ones.
+
+#### Event Enrichment
+
+* **Property Injection**: Automatically inject properties from past stored events into more recent events. This creates a comprehensive dataset for each significant event in the customer journey.
+
+### Use Case Example
+
+Imagine that a customer adds a product to their cart, generating an `add_to_cart` event. A few hours later, the same customer completes the purchase, generating a `purchase` event. With the _Event Enrichment_ feature, you can enrich the `purchase` event in realtime with properties from the earlier `add_to_cart` event, before the event is sent to your destinations.
+
+### How to Use the Enrichment Event Feature
+
+#### Step 1: Create Enrichment Storage Settings
+
+1. **Access Settings**: Go to the Data Governance -> Storage settings.
+2.  **Manage Storage Settings**: Click on "New Storage" to create a new Data store.\
+
+
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+3.  **Define Properties to be stored**:
+
+    * **Select Consent Category**: Ensure compliance with data privacy regulations.
+    * **Choose Sources and Environment**
+    * **Select Event and Properties**: Choose which events you want to store and which properties. If no properties are specified, the entire event will be stored.
+    * **Set Matching Key**: This unique key have to be present both on the event to be enriched and the event to store.
+    * **Retention Period**: The period until when the store events are deleted (currently blocked to 1 day).\
+
+
+    <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+#### Step 2: Enrich Events
+
+1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\
+
+
+    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+2. **Define Enrichment**:
+   * **Name**: Name your enrichment rule.
+   * **Select Sources and Environment**
+   * **Select the Storage** you want to use for this enrichment
+   *   **Choose Event**: Select the event you want to enrich.\
+
+
+       <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+   * **Select Properties**: Define which properties from the stored event should be injected into the new event.
+   * **Review Settings**: Ensure all settings are correctly configured.
+   *   **Save**: Save the new enrichment settings.\
+
+
+       <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+* **Administrators Only**: This feature is accessible only to users with Administrator privileges. Custom profiles can be created to grant specific access to other users.
+
+### Benefits
+
+* **Complete Data Sets**: Enriching events ensures that all relevant data is available for analysis and marketing actions.
+* **Enhanced Customer Insights**: Gain a more detailed understanding of customer behavior by linking related events over time.

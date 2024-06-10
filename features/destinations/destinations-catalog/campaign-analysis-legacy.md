@@ -31,11 +31,11 @@ If you need more information about these events, check the section [Events refer
 
 #### 2/Choose your data source(s) 
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3/Name your destination and select an environment
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 4/Setup your dimensions.
 
@@ -72,7 +72,7 @@ _Before to send your events to this destination you can, if needed, transform th
 
 You have to specify which event is concerned by this destination. Here's an example for a purchase (orders)&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Don't forget to setup a consent filter to be RGPD compliant as well
@@ -80,7 +80,7 @@ Don't forget to setup a consent filter to be RGPD compliant as well
 
 #### 7/Your destination is ready to be activated!
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 8/Go Further: modify timestamp
 
