@@ -68,8 +68,8 @@ Before configuring this destination, you need to create a [Branch Dashboard](htt
 At least one of the following must be included:\
 • <mark style="color:blue;">`developer_identity`</mark>\
 • <mark style="color:blue;">`browser_fingerprint_id`</mark>\
-• <mark style="color:blue;">`idfa`</mark> OR <mark style="color:blue;">`idfv`</mark> (IF <mark style="color:blue;">`os`</mark>= <mark style="color:blue;">`iOS`</mark>) \
-• <mark style="color:blue;">`aaid`</mark> OR <mark style="color:blue;">`android_id`</mark> (IF <mark style="color:blue;">`os`</mark>= <mark style="color:blue;">`Android`</mark>)
+• <mark style="color:blue;">`idfa`</mark> OR <mark style="color:blue;">`idfv`</mark> (IF <mark style="color:blue;">`os`</mark> = <mark style="color:blue;">`iOS`</mark> ) \
+• <mark style="color:blue;">`aaid`</mark> OR <mark style="color:blue;">`android_id`</mark> (IF <mark style="color:blue;">`os`</mark> = <mark style="color:blue;">`Android`</mark> )
 {% endhint %}
 
 {% hint style="info" %}
