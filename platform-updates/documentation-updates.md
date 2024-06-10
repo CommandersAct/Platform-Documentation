@@ -88,8 +88,6 @@ Destination documentation (updates):
 [awin.md](../features/destinations/destinations-catalog/awin.md)
 {% endcontent-ref %}
 
-## 12/04/2024
-
 ## 14/04/2024
 
 Cookies page updated
