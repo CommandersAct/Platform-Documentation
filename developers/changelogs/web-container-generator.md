@@ -2,12 +2,18 @@
 
 ## 2024
 
+### 93.2
+
+Release date:  **19/06/2024**
+
+* Beta: New improvement for CAID sync
+
 ### 93.1
 
 Release date:  **18/06/2024**
 
 * Privacy: set developer id on the page
-* Improve CAID sync for Mix tracking
+* Beta: Improve CAID sync for Mix tracking
 
 ### 93.0
 
