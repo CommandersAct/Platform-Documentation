@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 93.3
+
+Release date:  **20/06/2024**
+
+* Add `setProperty` API to allow to set global event properties
+
 ### 93.2
 
 Release date:  **19/06/2024**
