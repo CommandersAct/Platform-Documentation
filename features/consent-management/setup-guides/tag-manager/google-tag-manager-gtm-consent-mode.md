@@ -65,9 +65,9 @@ As the last step, you need to select the "Consent Initialization - All Pages" tr
 
 <figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Select "Consent Initialization - All Pages" as trigger.</p></figcaption></figure>
 
-### Modify Permissions
+#### Modify Permissions
 
-If your banner is hosted on your servers (on premise) or if you use our CDN 1st feature, then you need to update the Permissions of our template.
+If your banner is hosted on your servers (on premise) or if you use our [CDN 1st party feature](../../../../configure/administration/domain-management/), then you need to update the Permissions of the template.
 
 Simply add your host URL in the tab "Injects scripts" (see block "allowed patterns").
 
