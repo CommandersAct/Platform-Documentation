@@ -65,6 +65,14 @@ As the last step, you need to select the "Consent Initialization - All Pages" tr
 
 <figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption><p>Select "Consent Initialization - All Pages" as trigger.</p></figcaption></figure>
 
+### Modify Permissions
+
+If your banner is hosted on your servers (on premise) or if you use our CDN 1st feature, then you need to update the Permissions of our template.
+
+Simply add your host URL in the tab "Injects scripts" (see block "allowed patterns").
+
+<figure><img src="../../../../.gitbook/assets/image (518).png" alt=""><figcaption></figcaption></figure>
+
 ## Configure your third-party vendor tags
 
 While Google native product tags, such as "Google Analytics" or "Google Ads" ones, work out of the box, third-party vendor tags require additional settings to properly operate with the user consent. First, open your tag configuration and check under the `(12)` "**Advanced Settings**" and `(13)`"**Consent Settings**" if a consent type (E.g. "_ad\_storage_") is already preconfigured, if not you need to add it by selecting the option `(14)` "**Require additional consent for tag to fire**" and `(15)` input the consent type(s) you want to include.
