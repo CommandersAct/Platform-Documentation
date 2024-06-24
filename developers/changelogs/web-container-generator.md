@@ -2,6 +2,13 @@
 
 ## 2024
 
+### 94.0
+
+Release date:  **24/06/2024**
+
+* Add context variables to tags
+* Beta: New improvement for CAID sync
+
 ### 93.3
 
 Release date:  **20/06/2024**
