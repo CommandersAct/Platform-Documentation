@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Quora](https://www.quora.com/about) is a social Q\&A website. Using this destination you can leverage [Quora Ads Conversion API](https://www.quora.com/ads/conversion\_api\_doc) to send events to Quora Ads Manager to improve conversion match, which increases return on ad spend (ROAS) and lowers cost per action (CPA). This helps advertisers optimize targeting, decrease cost per result, and improve measurement reliability.
+[Quora](https://www.quora.com/about) is a social Q\&A website. Using this destination you can leverage [Quora Ads Conversion API](https://quoraadsupport.zendesk.com/hc/en-us/articles/23065751885069-Conversion-API-Overview) to send events to Quora Ads Manager to improve conversion match, which increases return on ad spend (ROAS) and lowers cost per action (CPA). This helps advertisers optimize targeting, decrease cost per result, and improve measurement reliability.
 
 ## Key features
 
@@ -49,6 +49,11 @@ Before configuring this destination, you need access to [Quora Ads Manager](http
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
+{% hint style="warning" %}
+Quora strongly recommends using both the Quora client-side pixel and Conversion API. These are located in two different tabs of your [Quora Ads Manager](https://www.quora.com/ads/account). \
+To deduplicate conversions between this destination and Quora pixel tag you need to set the same value for the mandatory field <mark style="color:blue;">`event_id`</mark>. More details are available by following this [LINK](https://quoraadsupport.zendesk.com/hc/en-us/articles/23065751885069-Conversion-API-Overview).
 {% endhint %}
 
 <table><thead><tr><th width="404.6685580062746">Commanders Act Properties</th><th>Quora Properties</th></tr></thead><tbody><tr><td><code>Account Id</code></td><td><code>account_id</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>conversion.click_id</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_id</code></td><td><code>conversion.event_id</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>conversion.timestamp</code> <strong>[1]</strong></td></tr><tr><td><code>value</code></td><td><code>conversion.value</code></td></tr><tr><td><code>(event_name)</code></td><td><code>conversion.event_name</code> <strong>[2]</strong></td></tr><tr><td><code>user.email</code></td><td><code>user.email</code></td></tr><tr><td><code>user.firstname</code><br><code>user.lastname</code></td><td><code>user.name</code></td></tr><tr><td><code>context.device.ip</code></td><td><code>user.ip</code></td></tr><tr><td><code>user.country</code></td><td><code>user.country</code></td></tr><tr><td><code>user.state</code></td><td><code>user.region</code></td></tr><tr><td><code>user.city</code></td><td><code>user.city</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>user.postal_code</code></td></tr><tr><td><code>context.device.advertising_id</code></td><td><code>device.mobile_device_id</code></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>device.user_agent</code></td></tr><tr><td><code>context.device.language</code></td><td><code>device.language</code></td></tr></tbody></table>
