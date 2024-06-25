@@ -15,7 +15,7 @@ Using this destination you can share conversion data with X to enable the measur
 
 The X Conversion API destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [X conversion event](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [X conversion events](https://developer.x.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 
@@ -28,7 +28,8 @@ To create a conversion event, access [Ads Manager](https://ads.twitter.com) and 
 
 ![](../../../.gitbook/assets/twitter\_1.png)
 
-&#x20;If you do not have a Twitter Pixel event source, create it by selecting <mark style="color:blue;">`Add event source`</mark> `(3)` :\
+&#x20;If you do not have a Twitter Pixel event source, create it by selecting <mark style="color:blue;">`Add event source`</mark> `(3)` :
+
 ![](../../../.gitbook/assets/twitter\_2.png)\
 The resulting identifier is your <mark style="color:blue;">`Pixel Id`</mark> : See [Configuration](x-twitter-conversion-api.md#configuration) for more details.\
 Now you can create an event by clicking <mark style="color:blue;">`Add events`</mark> `(4)` :
