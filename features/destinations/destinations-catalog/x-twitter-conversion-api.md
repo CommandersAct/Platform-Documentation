@@ -29,8 +29,7 @@ To create a conversion event, access [Ads Manager](https://ads.twitter.com) and 
 ![](../../../.gitbook/assets/twitter\_1.png)
 
 &#x20;If you do not have a Twitter Pixel event source, create it by selecting <mark style="color:blue;">`Add event source`</mark> `(3)` :\
-![](../../../.gitbook/assets/twitter\_2.png)
-
+![](../../../.gitbook/assets/twitter\_2.png)\
 The resulting identifier is your <mark style="color:blue;">`Pixel Id`</mark> : See [Configuration](x-twitter-conversion-api.md#configuration) for more details.\
 Now you can create an event by clicking <mark style="color:blue;">`Add events`</mark> `(4)` :
 
