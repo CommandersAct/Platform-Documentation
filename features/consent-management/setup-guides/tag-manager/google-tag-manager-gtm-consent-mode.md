@@ -91,4 +91,4 @@ The latter has to be configured as a `(18)`"**Custom Event**" with the same `(19
 
 <figure><img src="../../../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
-This completes your configuration. You can now start the testing phase, leading to the final deployment in production. Learn more on how you can configure and run tests with your tags in GTM by checking the section "[**Consent configuration**](https://support.google.com/tagmanager/answer/10718549/?hl=en-GB)" in the "[**Help Center**](https://support.google.com/tagmanager/)".
+This completes your configuration. You can now start the testing phase, leading to the final deployment in production. Learn more on how you can configure and run tests with your tags in GTM by checking the section "[**Consent configuration**](https://support.google.com/tagmanager/answer/10718549/?hl=en-GB)" in the "[**Help Center**](https://support.google.com/tagmanager/)". You can also read the page [Consent Mode setup](https://developers.google.com/tag-platform/security/guides/consent) provided by Google for Developers

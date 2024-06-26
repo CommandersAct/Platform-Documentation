@@ -378,6 +378,7 @@
   * [Properties reference](developers/tracking/properties-reference.md)
     * [Global properties](developers/tracking/properties-reference/global-properties.md)
     * [Video properties](developers/tracking/properties-reference/video-properties.md)
+    * [Permanent properties](developers/tracking/properties-reference/permanent-properties.md)
   * [Data API](developers/tracking/data-api/README.md)
     * [HTTP API](https://community.commandersact.com/platform-x/features/integrations/sources/sources-catalog/http-tracking-api)
     * [Segment API](developers/tracking/data-api/segment-api.md)
