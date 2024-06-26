@@ -7,14 +7,14 @@
 Release date:  **26/06/2024**
 
 * Add default event to tag triggers
-* Add events for standard tag triggers (tag_trigger_dom_ready, tag_trigger_clicks, tag_trigger_form_submission, tag_trigger_scroll)
+* Add events for standard tag triggers (`tag_trigger_dom_ready`, `tag_trigger_clicks`, `tag_trigger_form_submission`, `tag_trigger_scroll`)
 
 ### 94.0
 
 Release date:  **24/06/2024**
 
 * Add context variables to tags
-* Beta: New improvement for CAID sync
+* Enable CAID sync for Mix
 
 ### 93.3
 
