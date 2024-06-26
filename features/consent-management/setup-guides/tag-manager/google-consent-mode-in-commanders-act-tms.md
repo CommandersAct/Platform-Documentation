@@ -66,7 +66,8 @@ Example below for "security\_storage" with no privacy category assigned:
 
 *   **enable\_tcf\_support**\
     Enable the feature [tcf\_support](https://developers.google.com/tag-platform/security/guides/implement-TCF-strings?hl=en#implementation) to let your IAB TCF privacy banner manage the advertising categories.\
-
+    \*Google recommends to activate this feature if your website use an IAB TCF banner template\
+    Don't forget to add your Google associated Vendors (see [dedicated documentation](../../knowledge-base/iab-tcf-v2.2-and-google-faq.md) for more details)
 
     <figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 *   **wait\_for\_update**\

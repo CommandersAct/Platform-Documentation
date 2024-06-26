@@ -2,6 +2,13 @@
 
 ### Introduction
 
+{% hint style="info" %}
+Google recommends that GTM customers use our ["Commanders Act CMP"](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/GTM-OnSite-API)\
+This template includes the Google Consent Mode feature.&#x20;
+
+For further information, please read the documentation [Google Tag Manager (GTM) - Consent Mode](google-tag-manager-gtm-consent-mode.md)
+{% endhint %}
+
 In this section, you will find a complete guide to integrate Commanders Act Consent banners in your Google Tag Manager
 
 Enclosed you'll find two sample configuration files, a very simple setup that you'll need to reproduce you'll need to reproduce on your site. The first and most common configuration is the gtm\_category\_template.json, a category-based configuration (example with only 1 category). The other possibility is a vendor-based configuration, with only the Cact allows Statistical variable changing in gtm\_partner\_template..json.
