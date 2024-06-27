@@ -143,7 +143,7 @@ Inside of Commanders Act Platform it is then possible to catch clicks on these e
         eventData.event_value = $(this).attr("data-tracking-value");
 
       	if (tC.event && typeof tC.event[triggerName] === "function"){
-      		// old method
+            // old method
             // tC.event["my_click_trigger"](event, eventData);
 
             eventData.from = event; // necessary to use event attributes inside the tag
