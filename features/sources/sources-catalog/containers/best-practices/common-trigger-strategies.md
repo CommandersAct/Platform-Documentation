@@ -120,7 +120,7 @@ Inside of Commanders Act Platform it is then possible to catch clicks on these e
     var eventLabelAttribute = 'data-tracking-label';
     var eventValueAttribute = 'data-tracking-value';
 
-    var eventHandler = function() {
+    var eventHandler = function(event) {
 
         var eventData = {};
         eventData.event_action = "click";
@@ -129,7 +129,7 @@ Inside of Commanders Act Platform it is then possible to catch clicks on these e
 
       	if (tC.event && typeof tC.event[triggerName] === "function"){
 
-      		tC.event["my_click_trigger"](this, eventData);
+      		tC.event["my_click_trigger"](event, eventData);
 
       	}
 
