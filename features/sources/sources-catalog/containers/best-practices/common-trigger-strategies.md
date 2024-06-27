@@ -40,7 +40,22 @@ tC.container.reload();
 After these steps it is then necessary to signal a custom Trigger to execute the related Tags.
 
 ```javascript
-tC.event.pageview(this, {});
+cact('emit', 'page_view', {});
+```
+To use event attributes, you can specify the event or the element as first argument.
+```html
+<a href="/home" onclick="cact('emit', 'pageview', { from: this, some_data: 'some_value' })">Home</a>
+```
+
+***Old Method***
+```javascript
+tC.event.pageview({}, {});
+```
+
+To use event attributes, you need to specify the event or the element as argument.
+`event` is a special variable that is always available inside of `onclick` and `on*` attributes.
+```html
+<a href="/home" onclick="tC.event.pageview(event, {}))">Home</a>
 ```
 
 {% hint style="info" %}
@@ -128,9 +143,11 @@ Inside of Commanders Act Platform it is then possible to catch clicks on these e
         eventData.event_value = $(this).attr("data-tracking-value");
 
       	if (tC.event && typeof tC.event[triggerName] === "function"){
+      		// old method
+            // tC.event["my_click_trigger"](event, eventData);
 
-      		tC.event["my_click_trigger"](event, eventData);
-
+            eventData.from = event; // necessary to use event attributes inside the tag
+            cact('emit', 'my_click_trigger', eventData);
       	}
 
     }
