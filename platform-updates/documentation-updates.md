@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 27/06/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/x-twitter-conversion-api.md" %}
+[x-twitter-conversion-api.md](../features/destinations/destinations-catalog/x-twitter-conversion-api.md)
+{% endcontent-ref %}
+
 ## 21/06/2024
 
 Destination documentation:
