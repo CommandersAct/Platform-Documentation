@@ -1,6 +1,6 @@
 # TikTok Events API
 
-[TikTok ](https://www.tiktok.com)is a social platform short-form video hosting service.\
+[TikTok for Business](https://www.tiktok.com/business/en) is a global platform designed to give brands and marketers the solutions to be creative storytellers and meaningfully engage with the TikTok community.\
 The TikTok Events API is a server-side integration that allows you to share website and app visitor events directly with TikTok using their [Events API for Web](https://ads.tiktok.com/marketing\_api/docs?id=1739584809311234) and [Events API for App](https://ads.tiktok.com/marketing\_api/docs?id=1739584805049345) version 1.3.
 
 {% hint style="info" %}
