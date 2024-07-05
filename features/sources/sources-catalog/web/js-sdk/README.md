@@ -7,7 +7,7 @@ The onsite API is used to interact with Commanders Act features with JavaScript.
 There are different commands available within `cact()`: `config` is used to set general options, `trigger` event is used to send data, and other specific `get/update/revoke` commands are used to interract with platform features (ex : get user consent)
 
 {% hint style="info" %}
-To use the API, you must have either a web container on the page **or** the JS SDK library script : [https://cdn.tagcommander.com/events/sdk.js](https://cdn.tagcommander.com/events/sdk.js)
+To use the API, you must have either a web container on the page **or** the JS SDK library script: [https://cdn.tagcommander.com/events/sdk.js](https://cdn.tagcommander.com/events/sdk.js)
 {% endhint %}
 
 ## How to use <a href="#how-to-use" id="how-to-use"></a>

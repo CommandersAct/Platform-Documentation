@@ -12,6 +12,9 @@ New commands available to use our Javascript SDK API with our TMS
 [js-sdk](../features/sources/sources-catalog/web/js-sdk/)
 {% endcontent-ref %}
 
+_\*see specific section_\
+[_https://doc.commandersact.com/features/sources/sources-catalog/web/js-sdk#use-javascript-sdk-in-tms_](https://doc.commandersact.com/features/sources/sources-catalog/web/js-sdk#use-javascript-sdk-in-tms)
+
 ## 28/06/2024
 
 Destination documentation (updates):
