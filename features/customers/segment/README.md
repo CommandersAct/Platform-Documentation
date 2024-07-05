@@ -39,7 +39,7 @@ First, you have to select '`conversion`' universe and define a condition for con
 
 Then the button 'ADD CONDITION' will appear, and you can define more conditions, including conditions for conversion items, select '**product**':
 
-![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 Then, you can easily segment on conversion items:
 

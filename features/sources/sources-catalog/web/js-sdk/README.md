@@ -121,3 +121,244 @@ window.caReady = window.caReady || []; window.cact = function() { window.caReady
 `window.caReady` is a JavaScript array that buffers the interactions with the API. `window.cact` is a JavaScript function used to interact with the onsite API.
 
 In case you work in a big team and are unsure the stub was already installed it is ok to install the JavaScript stub multiple times.
+
+## Use Javascript SDK in TMS
+
+***
+
+Our system now includes several new and improved features to help you efficiently manage and implement tags on your website. This guide provides comprehensive information on using our TMS webcontainers and JavaScript SDK, including browser-side events, command references, and tag context variables.
+
+***
+
+### Browser-Side Events
+
+**Introduction**
+
+Our new `cact('emit')` API is a new approach of `tC.event.XXX` functions, ensuring safer and more reliable event handling.&#x20;
+
+Here’s how you can use these events:
+
+```html
+<!-- Old method (may cause issues if event does not exist) -->
+<a href="mysite.com" onclick="tC.event.my_custom_event(this, { my_event_variable: 'some_value' });">
+
+<!-- New method (safe) -->
+<a href="mysite.com" onclick="cact('emit', 'my_custom_event', { from: this, my_event_variable: 'some_value' });">
+```
+
+{% hint style="info" %}
+Note that hyphens (`-`) in event names will be converted to underscores (`_`). For example, `cact('emit', 'my-custom-event')` will actually call `tC.event.my_custom_event`.
+{% endhint %}
+
+### **Available Events**
+
+* **container\_ready**: Fires for every loaded container.
+* **container\_**`<siteId>_<containerId>`**\_ready:** Fires a specific  event for each container`container_ready` event (ex: `container_1234_1_ready`)
+* **consent-ready**: Fires when the consent cookie is set or the banner is accepted/refused.
+* **consent-updated**: Fires when consent is updated.
+* **consent-revoke**: Fires when consent is revoked.
+* **consent-signal-ready**: Used for Google Consent Mode setups.
+* **banner-show**: Fires when the privacy banner is shown.
+* **banner-hide**: Fires when the privacy banner is hidden.
+* **privacy-center-show**: Fires when the privacy center is shown.
+* **privacy-center-hide**: Fires when the privacy center is closed.
+* **tag\_trigger\_form\_submission**: Standard form trigger.
+* **tag\_trigger\_clicks**: Standard clicks trigger.
+* **tag\_trigger\_scroll**: Standard scroll trigger.
+* **track\_all\_events**: Server-side event sent with `cact('trigger')` API.
+* **track\_\*:** Similar to `track_all_events` but with specific event names (e.g., `track_page_view`, `track_add_to_cart`).
+* **privacy-module-loaded**: Internal event fired when `tC.privacy` is initialized.
+* **Custom events**: Sent using `cact('emit')`.
+
+#### Trigger example to fire a tag on `consent-update` event
+
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### **Listening to all Events**
+
+You can listen to all events using the `cact('on', '*')` API.
+
+```javascript
+function listen_all_events(event) {
+  console.log(event.type); // '*'
+  console.log(event.originalEvent.type); // 'page_view'
+}
+
+cact('on', '*', listen_all_events);
+cact('emit', 'page_view');
+```
+
+### **Custom Tag Triggers**
+
+To fire a custom trigger, use the `cact('emit', 'my_custom_event')` command. Note that hyphens will be converted to underscores when launching the trigger.
+
+```javascript
+cact('emit', 'my_custom_event');
+```
+
+You will be able to use this event as a TMS custom trigger:
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### Commands Reference
+
+The container provides a set of commands, some of which trigger browser-side events. To see all commands, type `tC.cact` in your console.
+
+**`config`**
+
+Set various website configurations.
+
+```javascript
+cact('config', { siteId: 4242, collectionDomain: 'example.com', sourceKey: 'ABCD-1234-EFGH' });
+```
+
+**`setProperty`**
+
+Set properties to be merged with server-side events sent via the trigger API.
+
+```javascript
+cact('setProperty', 'page_type', 'homepage');
+cact('setProperty', 'user.email', 'user@example.com');
+```
+
+**`emit` (Alias: `dispatchEvent`)**
+
+Dispatch a browser-side event for use as a custom tag trigger.
+
+```javascript
+cact('emit', 'page_view', { page_type: 'homepage' });
+```
+
+**`on` (Alias: `addEventListener`)**
+
+Subscribe to a browser-side event.
+
+```javascript
+cact('on', 'page_view', function(event) {
+  console.log('event received of type', event.type); // 'page_view'
+  console.log('event data is:', event.eventData); // { page_type: 'homepage' }
+});
+
+cact('emit', 'page_view', { page_type: 'homepage' });
+```
+
+**`once`**
+
+Similar to `on`, but the callback fires only once.
+
+```javascript
+cact('once', 'page_view', listener_callback);
+```
+
+**`off` (Alias: `removeEventListener`)**
+
+Remove an event listener.
+
+```javascript
+cact('off', 'page_view', listener_callback);
+```
+
+**`trigger`**
+
+Send a server-side event. Any call to `cact('trigger', ...)` will also dispatch a generic `track_all_events` event.
+
+```javascript
+cact('trigger', 'add_to_cart', { value: 42, currency: 'EUR' });
+```
+
+
+
+***
+
+### Tag Context Variables
+
+The Tag Context provides variables used within a tag. If you need a Tag Context similar to "Container Loaded," consider using the `container_ready` custom trigger.
+
+**`cact_container`**
+
+Contains information about the container.
+
+```javascript
+{
+  id_container: <containerId>,
+  id_site: <siteId>,
+  sourceKey: <sourceKey>
+}
+```
+
+**`cact_event`**
+
+The event that triggered the tag, with a property `cact_event.type`.
+
+```javascript
+cact('emit', 'page_view', {});
+// cact_event.type will be 'page_view'
+```
+
+**`cact_event_vars`**
+
+Contains all event variables from the trigger.
+
+```javascript
+cact('emit', 'page_view', { hello: 'world' });
+// cact_event_vars will be { hello: 'world' }
+```
+
+**`cact_event_attrs`**
+
+Contains event attributes, set using the `from` property in `emit` or `trigger` API.
+
+```html
+<a href="/home" onclick="cact('emit', 'page_view', { from: this, hello: 'world' })">Home</a>
+```
+
+For more examples and a live demo, refer to the documentation links provided.
+
+***
+
+### Best Practices and Tips
+
+**Resolving Site-ID/Source-Key Conflicts**
+
+In multi-container websites, events were sometimes sent with incorrect site-id or source-key. This issue is fixed for tags using triggers other than native "Container Loaded." Use the new `container_ready` custom trigger for accurate site-id/source-key resolution.
+
+**Privacy-Related Events**
+
+You can use various privacy-related events as custom triggers:
+
+* `consent_ready`
+* `consent_updated`
+* `consent_revoke`
+* `banner_show`
+* `banner_hide`
+* `privacy_center_show`
+* `privacy_center_hide`
+
+**Server-Side Tracking as Custom Triggers**
+
+Need to track an event sent in Server Side ?&#x20;
+
+Our `cact('trigger', ...)` will dispatch a corresponding `track_*` event, that you can use as a custom trigger.
+
+```javascript
+cact('trigger', 'page_view', { value: 42, currency: 'EUR' });
+```
+
+To use this feature as a TMS custom tag trigger, you'll need to prefix the event name with "track\_\*"\
+Example:\
+
+
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+**Using `cact('on')` for Event Subscription**
+
+You can subscribe to any event sent using `cact('emit')`.
+
+```javascript
+cact('on', 'my_custom_event', function(event) {
+  console.log('received an event', event.type); // "my_custom_event"
+  console.log('event data:', event.eventData); // { var: "value" }
+});
+```

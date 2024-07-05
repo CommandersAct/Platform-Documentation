@@ -56,7 +56,9 @@ This trigger allows calling tags when a user scrolls the page vertically or hori
 
 ## Custom
 
-This trigger allows calling tags whenever a Commanders Act event function (tC.event.xxx) is identified on the page. If you wish to execute a tag on a custom eventm, please indicate your trigger’s name (ex: “add to cart click”), select the desired tag(s) and enter the implemented event function’s name (ex : “tC.event.add\_to\_cart”).\
+This trigger allows calling tags whenever a Commanders Act event function (tC.event.xxx) is identified on the page. If you wish to execute a tag on a custom eventm, please indicate your trigger’s name (ex: “add to cart click”), select the desired tag(s) and enter the implemented event function’s name (ex : “tC.event.add\_to\_cart”).
+
+You can also use the [Javascript SDK](../../../../web/js-sdk/#use-javascript-sdk-in-tms) to track events & create custom triggers\
 
 
 <figure><img src="../../../../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>

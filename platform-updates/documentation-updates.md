@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/07/2024
+
+New commands available to use our Javascript SDK API with our TMS
+
+{% content-ref url="../features/sources/sources-catalog/web/js-sdk/" %}
+[js-sdk](../features/sources/sources-catalog/web/js-sdk/)
+{% endcontent-ref %}
+
 ## 28/06/2024
 
 Destination documentation (updates):

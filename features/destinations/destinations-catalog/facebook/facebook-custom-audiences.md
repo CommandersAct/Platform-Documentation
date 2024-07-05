@@ -70,7 +70,7 @@ You should see in your Facebook Business account the new App you created.
 
 You can choose here to generate a token without any expiration date (1st method, recommended) or with an expiration date (60 days - 2nd method, not recommended).
 
-#### 1st method: generate a token without any expiration date <a href="#1st-method-generate-a-token-without-any-expiration-date" id="1st-method-generate-a-token-without-any-expiration-date"></a>
+#### 1st method: generate a token without any expiration date <a href="#id-1st-method-generate-a-token-without-any-expiration-date" id="id-1st-method-generate-a-token-without-any-expiration-date"></a>
 
 You have to create a system user on your Facebook Business Account ([https://business.facebook.com/](https://business.facebook.com/)).
 
@@ -92,7 +92,7 @@ Then copy and paste the generated token on our connector:
 
 ![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2tlwZHdZbXEDou9iQ%2F-Ma2vkpUr\_fPie9UzRtg%2Fimage.png?alt=media\&token=4f7b11b3-4983-4d73-b600-a5247596e34e)
 
-#### 2nd method: generate an access token with an expiration date (60 days) <a href="#2nd-method-generate-an-access-token-with-an-expiration-date-60-days" id="2nd-method-generate-an-access-token-with-an-expiration-date-60-days"></a>
+#### 2nd method: generate an access token with an expiration date (60 days) <a href="#id-2nd-method-generate-an-access-token-with-an-expiration-date-60-days" id="id-2nd-method-generate-an-access-token-with-an-expiration-date-60-days"></a>
 
 On the Facebook developers, on your App you created, click on ‘Marketing API’ and ‘Tools’.
 
@@ -134,4 +134,4 @@ A new custom audience will be created.
 The name of the new audience will start with `CA_{name}`
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png>)
