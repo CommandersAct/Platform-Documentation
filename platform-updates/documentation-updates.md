@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 12/07/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/matomo.md" %}
+[matomo.md](../features/destinations/destinations-catalog/matomo.md)
+{% endcontent-ref %}
+
 ## 05/07/2024
 
 New commands available to use our Javascript SDK API with our TMS
