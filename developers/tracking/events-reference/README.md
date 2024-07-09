@@ -1,11 +1,35 @@
 ---
 description: >-
   In this section, you will find all the events references supported by
-  Commanders Act
+  Commanders Act.
 ---
 
 # Events reference
 
+## Introduction
+
+For each event, there is some properties required. \
+In any cases, the property `event_name` is required. \
+In this section you can find the list of all our standard events, with the list of standard properties required or not.
+
+{% content-ref url="common-events.md" %}
+[common-events.md](common-events.md)
+{% endcontent-ref %}
+
+{% content-ref url="e-commerce-events.md" %}
+[e-commerce-events.md](e-commerce-events.md)
+{% endcontent-ref %}
+
+{% content-ref url="video-event-reference.md" %}
+[video-event-reference.md](video-event-reference.md)
+{% endcontent-ref %}
+
+{% content-ref url="campaign-analytics-module-events.md" %}
+[campaign-analytics-module-events.md](campaign-analytics-module-events.md)
+{% endcontent-ref %}
+
+If the event type or the properties you're looking for aren't mentioned in this section, you still can send custom events and custom properties. But the property `event_name` remains required.\
+\
 Here are the most used events:
 
 ## add\_payment\_info <a href="#add_payment_info" id="add_payment_info"></a>

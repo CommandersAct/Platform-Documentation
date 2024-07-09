@@ -10,7 +10,7 @@
 8. [device -> Lifecycle](mobile-sdk-event-specificity.md#device---lifecycle)
 9. [app](mobile-sdk-event-specificity.md#app)
 
-A full event is the addition of event specific information and data gathered by the SDK. For each event you'll find in the documentation "events reference" all the possible properties and the mandatory ones.
+A full event is the addition of event specific information and data gathered by the SDK. For each event you'll find in the documentation "[events reference](../events-reference/)" all the possible properties and the mandatory ones.
 
 ## Event SDK mapping
 
@@ -155,9 +155,7 @@ Here are fields automatically added by the sdk.
 
 ### context.app
 
-<table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr>
-<tr><td>consent_version</td><td>5.3.3</td><td>The consent module’s version</td><td>Both</td></tr>
-</tbody></table>
+<table><thead><tr><th>Field name</th><th width="252">Example value</th><th width="178">Description</th><th>Platform</th></tr></thead><tbody><tr><td>namespace</td><td>com.tagcommander.TCDemo</td><td>The app name-space</td><td>Both</td></tr><tr><td>name</td><td>TCDemo</td><td>The app name</td><td>Both</td></tr><tr><td>build</td><td>1</td><td>The application build ID</td><td>Both</td></tr><tr><td>version</td><td>1.1</td><td>The app version</td><td>Both</td></tr><tr><td>serverside_version</td><td>5.1.0</td><td>The server-side module’s version</td><td>Both</td></tr><tr><td>core_version</td><td>5.1.0</td><td>The core module’s version</td><td>Both</td></tr><tr><td>consent_version</td><td>5.3.3</td><td>The consent module’s version</td><td>Both</td></tr></tbody></table>
 
 ### context.device
 
@@ -171,7 +169,7 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 | idfv                  | 5E35A9BA-C945-4A79-80B6-D89139471308 | IDFV                             | iOS      |
 | ad\_tracking\_enabled | true                                 | Has the user enabled ad tracking | Both     |
 
-### &#x20;user
+### user
 
 User contains all fields declared inside [https://doc.commandersact.com/developers/tracking/events-reference/common-events#user](https://doc.commandersact.com/developers/tracking/events-reference/common-events#user)
 
@@ -220,7 +218,7 @@ User contains all fields declared inside [https://doc.commandersact.com/develope
 | session\_number                | 1                                    | The number of sessions                                                                                           | Both     |
 | first\_visit                   | 1655824764174                        | Timestamp of the first app visit                                                                                 | Both     |
 | last\_visit                    | 1655824764174                        | Timestamp of the last visit                                                                                      | Both     |
-| last\_call                     | 1655824772416                        | Timestamp of the previous hit                                                                                   | Both     |
+| last\_call                     | 1655824772416                        | Timestamp of the previous hit                                                                                    | Both     |
 | last\_session\_start           | 0                                    | Timestamp of the start of the previous session                                                                   | Both     |
 | last\_session\_last\_hit       | 0                                    | Timestamp of the last hit sent during the previous session                                                       | Both     |
 | foreground\_transitions        | 2                                    | Number of times the app when from background to foreground                                                       | Both     |
