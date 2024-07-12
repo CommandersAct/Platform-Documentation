@@ -5,7 +5,7 @@ This destination is currently under final review and will be available soon.
 {% endhint %}
 
 [Nextdoor](https://nextdoor.com) operates a hyperlocal social networking service for neighborhoods.\
-Using this destination you can send marketing data in form of events or conversions to Nextdoor to get a more complete picture of their advertising outcomes on Nextdoor. This is based on [Nextdoor Conversion API](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/About-the-Nextdoor-Conversion-API?language=en\_US).
+Using this destination you can send marketing data in the form of events or conversions to Nextdoor and get a more complete picture of their advertising outcomes on Nextdoor. This is based on [Nextdoor Conversion API](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/About-the-Nextdoor-Conversion-API?language=en\_US).
 
 ## Key features
 
