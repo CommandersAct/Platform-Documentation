@@ -13,7 +13,7 @@ The Quora Ads Conversion API destination provides the following key features:
 * **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Quora events](https://www.quora.com/ads/conversion\_api\_doc#/paths/\~1conversion/post), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
-* **Event mapping**: change standard mapping between your partners' events and yours or add new mappings.&#x20;
+* **Event mapping**: change standard mapping between Quora events and yours or add new mappings.&#x20;
 
 ## Destination setup
 
