@@ -66,5 +66,5 @@ Most properties can be remapped using our "Smart Mapping" feature.
 **\[14]** This is the same as <mark style="color:blue;">`ndclid`</mark>  parameter attached to clickthrough URL.\
 **\[15]** Set in <mark style="color:blue;">`custom`</mark> .\
 **\[16]** Set in <mark style="color:blue;">`custom.product_context.X`</mark> .\
-**\[16]** Set in <mark style="color:blue;">`app`</mark> .
+**\[17]** Set in <mark style="color:blue;">`app`</mark> .
 {% endhint %}
