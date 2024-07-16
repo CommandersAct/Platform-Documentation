@@ -4,10 +4,6 @@ description: X CAPI, Twitter CAPI
 
 # X (Twitter) Conversion API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [X](https://twitter.com), also referred to by its former name [Twitter](https://twitter.com), is a social media website.\
 Using this destination you can share conversion data with X to enable the measurement of campaigns through [Conversion API](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api).
 
