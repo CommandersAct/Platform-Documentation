@@ -118,7 +118,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 
 
        <figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-   * **Select Properties**: Define which properties from the stored event should be injected into the new event.
+   * **Select Properties**: Define which properties from the stored event should be injected into the new event. The storage do not replace or override the value of an existing property. The storage will create new properties.&#x20;
    * **Review Settings**: Ensure all settings are correctly configured.
    *   **Save**: Save the new enrichment settings.\
 

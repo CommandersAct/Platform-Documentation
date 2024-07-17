@@ -12,6 +12,12 @@ Please read the following documentation to learn more about this new feature, an
 \
 If you have already implemented Consent Mode v1 using our tag template and would like to keep it, you can update it on v2. Please see the following section for instructions: [Migration Guide Consent Mode v1 tag template to v2](google-consent-mode-in-commanders-act-tms.md#migration-guide)
 
+{% hint style="info" %}
+Please note: Google only requires a validated consent signal only for EEA countries and UK.
+
+Implementing Google Consent Mode in regions beyond may negatively impact campaign performance and is not recommended.
+{% endhint %}
+
 ## Difference between Basic & Advanced mode
 
 Google Consent Mode provides 2 approaches: Basic & Advanced\

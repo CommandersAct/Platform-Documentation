@@ -7,6 +7,12 @@ description: Steps to implement Commanders Act Consent Module with Google Tag Ma
 Commanders Act provides a tag template to manage the "[Consent Mode](https://developers.google.com/tag-platform/devguides/consent)" in Google Tag Manager.\
 This seamless integration takes advantage of our Commanders Act OnSite API.&#x20;
 
+{% hint style="info" %}
+Please note: Google only requires a validated consent signal only for EEA countries and UK.
+
+Implementing Google Consent Mode in regions beyond may negatively impact campaign performance and is not recommended.
+{% endhint %}
+
 ## Setup
 
 Summarizing all recommended steps:
