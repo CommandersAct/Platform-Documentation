@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 19/07/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/kelkoo.md" %}
+[kelkoo.md](../features/destinations/destinations-catalog/kelkoo.md)
+{% endcontent-ref %}
+
 ## 12/07/2024
 
 Destination documentation:
