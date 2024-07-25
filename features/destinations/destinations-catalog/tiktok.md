@@ -21,9 +21,8 @@ The TikTok Events API destination provides the following key features:
 
 Before you get started with this destination, make sure you can access [TikTok Ads Manager](https://ads.tiktok.com).
 
-{% hint style="info" %}
-TikTok doesn't support custom event and/or additional property in the payload.\
-In case these are still sent, TikTok will fully discard the associated event and its data.
+{% hint style="warning" %}
+TikTok custom events are available for reporting and audience creation purposes. Optimization is currently NOT supported.
 {% endhint %}
 
 ### Configuration
@@ -33,6 +32,7 @@ In case these are still sent, TikTok will fully discard the associated event and
 | `Access Token`    | <p><em><strong><code>Required</code></strong></em> for <a href="https://ads.tiktok.com/marketing_api/docs?id=1727541103358977">WEB events</a>. <br>Your <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-How%20to%20generate%20an%20access%20token">API Access Token</a> as provided by TikTok. More details are available by following this <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-How%20to%20generate%20an%20access%20token">LINK</a>.</p>                       |
 | `TikTok Pixel ID` | <p><em><strong><code>Required</code></strong></em> for <a href="https://ads.tiktok.com/marketing_api/docs?id=1727541103358977">WEB events</a>. <br>Your <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-Where%20to%20Find%20pixel_code">Pixel ID</a> as provided by TikTok. You can only add a single pixel id per destination. More details are available by following this <a href="https://ads.tiktok.com/gateway/docs/index?identify_key=2b9b4278e47b275f36e7c39a4af4ba067d088e031d5f5fe45d381559ac89ba48&#x26;language=ENGLISH&#x26;doc_id=1727537566862337#item-link-Where%20to%20Find%20pixel_code">LINK</a>.</p> |
 | `Test Event Code` | For [Web events](https://ads.tiktok.com/marketing\_api/docs?id=1727541103358977) only. This is used to test event tracking before deploying in production. This code can be found in the [TikTok Ads Manager](https://ads.tiktok.com/) following `Assets` ➜ `Events` ➜ `Manage (Web Events)` ➜ Select your pixel ➜ `Test Events (Tab)` **\[1]**                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `Event Mapping`   | Change the standard mapping between TikTok's events and yours or add new mappings: custom TikTok web events are also supported. More details on how you can set up custom TikTok web events are available following this [LINK](https://business-api.tiktok.com/portal/docs?id=1740858531237890).                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 
