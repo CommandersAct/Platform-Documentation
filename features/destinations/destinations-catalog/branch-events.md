@@ -16,7 +16,6 @@ The Branch Events destination provides the following key features:
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Event mapping**: change standard mapping between your partners' events and yours or add new mappings.&#x20;
 * **Support for multi-item data**: information included in the [item](https://doc.commandersact.com/developers/tracking/events-reference#item) array is dispatched to Branch.
-* **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 
 ## Destination setup
 
