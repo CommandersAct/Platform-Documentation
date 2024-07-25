@@ -19,7 +19,7 @@ The Google Floodlight Mobile App Conversion destination provides the following k
 ## Destination setup
 
 {% hint style="warning" %}
-Before configuring this destination, some setup is required on the Floodlight side. See more details by following this [LINK ](https://support.google.com/sa360/answer/14442341?hl=en)(See section <mark style="color:blue;">`Set up Floodlight in apps`</mark>  → <mark style="color:blue;">`Ensure ad tags pass proper values from publishers`</mark>).
+Some setup is required on the Floodlight side before configuring this destination. See more details by following this [LINK ](https://support.google.com/sa360/answer/14442341?hl=en)(See section <mark style="color:blue;">`Set up Floodlight in apps`</mark>  → <mark style="color:blue;">`Ensure ad tags pass proper values from publishers`</mark>).
 {% endhint %}
 
 ### Configuration
