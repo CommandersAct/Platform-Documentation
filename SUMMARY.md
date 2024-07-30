@@ -123,6 +123,7 @@
     * [AdRoll](features/destinations/destinations-catalog/adroll.md)
     * [Adition](features/destinations/destinations-catalog/adition.md)
     * [Adventori](features/destinations/destinations-catalog/adventori.md)
+    * [Affilae](features/destinations/destinations-catalog/affilae.md)
     * [Alphalyr Marketing Studio](features/destinations/destinations-catalog/alphalyr-marketing-studio.md)
     * [Amazon](features/destinations/destinations-catalog/amazon/README.md)
       * [Amazon Ads Conversions API](features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md)
