@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 02/08/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/affilae.md" %}
+[affilae.md](../features/destinations/destinations-catalog/affilae.md)
+{% endcontent-ref %}
+
 ## 26/07/2024
 
 Destination documentation (updates):
