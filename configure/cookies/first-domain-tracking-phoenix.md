@@ -1,4 +1,4 @@
-# Phoenix
+# First domain tracking (Phoenix)
 
 Phoenix reduce the impact of Safari ITP on your cookies.
 
@@ -89,9 +89,11 @@ Your administrator can configure how much cookie space he wants to make availabl
 Exceeding cookie storage limit can make your website inaccessible. Please consult with your technical teams during setup to define an optimal storage quota for Phoenix.
 {% endhint %}
 
-#### Setup CNAME Domain Record <a href="#setup-cname-domain-record" id="setup-cname-domain-record"></a>
+#### Setup WAF Proxy Domain <a href="#setup-cname-domain-record" id="setup-cname-domain-record"></a>
 
-You will then need to connect your Phoenix subdomains with the Phoenix service. Your domain administrator needs to therefore configure CNAME entries that point your Phoenix subdomains (e.g. `phoenix.mydomain.com`) to the Phoenix service domain (e.g. `sitexxx.commander5.com`).
+You will then need to connect your Phoenix subdomains with the Phoenix service. Your domain administrator needs to therefore declare the tracking domain in Cloudflare, or your WAF, that point your Phoenix subdomains  (e.g. `phoenix.mydomain.com`) to the Phoenix service domain (e.g. `sitexxx.commander5.com`).\
+\
+If you have any questions about how to configure your reverse proxy, check this [dedicated documentation](https://doc.commandersact.com/configure/administration/domain-management/waf-proxy-cloudflare)
 
 Your administrator can find the Phoenix service domain in your Commanders Act interface under `Admin > Domain Management`.
 

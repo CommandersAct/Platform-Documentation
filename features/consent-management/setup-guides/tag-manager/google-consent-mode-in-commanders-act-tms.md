@@ -70,12 +70,16 @@ Example below for "security\_storage" with no privacy category assigned:
 
 #### Additional Settings
 
-*   **enable\_tcf\_support**\
-    Enable the feature [tcf\_support](https://developers.google.com/tag-platform/security/guides/implement-TCF-strings?hl=en#implementation) to let your IAB TCF privacy banner manage the advertising categories.\
-    \*Google recommends to activate this feature if your website use an IAB TCF banner template\
-    Don't forget to add your Google associated Vendors (see [dedicated documentation](../../knowledge-base/iab-tcf-v2.2-and-google-faq.md) for more details)
+* **enable\_tcf\_support**\
+  If you use TCF 2.2 CMP template: TCData update (`TCData.enableAdvertiserConsentMode`) allows Google to infer ad\_storage, ad\_personalization, and ad\_user\_data settings from the TC string. This will incorporate consent mode v2 updates directly into the TC string.\
+  \
+  Enable the feature [tcf\_support](https://support.google.com/admanager/answer/9681920?hl=en) to let your IAB TCF privacy banner manage the advertising categories.\
+  \
+  \*Google recommends to activate this feature if your website use an IAB TCF banner template\
+  Don't forget to add your Google associated Vendors (see [dedicated documentation](../../knowledge-base/iab-tcf-v2.2-and-google-faq.md) for more details)
 
-    <figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
+
 *   **wait\_for\_update**\
     Enabling this optional feature will send a signal to Google's tags to [wait for an update](https://developers.google.com/tag-platform/security/guides/consent?hl=en#tracking\_consent\_state). \
     Enter a value in milliseconds to control the waiting time before the data is sent.\
@@ -227,6 +231,15 @@ In case of setup modification, such as activation/deactivation of a parameter, m
 Google Consent Mode allows the consent management only for the declared Region(s)\
 Our native feature does not include this parameter, for web performance reasons.\
 If you need to use this parameter, we recommend using our TMS Tag template. Please refer to the next section of documentation for configuration details.
+
+**Support & assistance**
+
+Still facing trouble shooting on your implementation, and looking for help ?\
+Contact our technical support team ! They will ever gave you a personalized reply to your questions within 24 hours of receipt (business days).
+
+Simply click **"Please help me!"** link to contact our amazing tech support team
+
+<figure><img src="../../../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
 
 ## Migration guide
 
