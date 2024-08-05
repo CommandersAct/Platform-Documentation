@@ -7,7 +7,7 @@ Using this destination, you can leverage Piwik PRO [Tracking HTTP API](https://d
 
 The Piwik PRO destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [Piwik PRO's event types](https://developers.piwik.pro/en/latest/data\_collection/api/http\_api.html#/paths/\~1ppms.php/get) (See query parameter `e_t`), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [Piwik PRO's event types](https://developers.piwik.pro/en/latest/data\_collection/api/http\_api.html#/paths/\~1ppms.php/get) (See query parameter `e_t` ), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
 * **Event mapping**: change standard mapping between your partners' events and yours or add new mappings.&#x20;
