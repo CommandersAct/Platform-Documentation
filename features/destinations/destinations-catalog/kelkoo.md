@@ -1,9 +1,5 @@
 # Kelkoo
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Kelkoo](https://www.kelkoo.com) is a price comparison service. Using this destination you can activate server-side tracking as a fallback method to increase coverage.
 
 ## Key features
