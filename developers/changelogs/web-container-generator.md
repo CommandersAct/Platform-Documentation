@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 94.2
+
+Release date:  **08/08/2024**
+
+* New method for Google Consent Mode sequencing validation
+
 ### 94.1
 
 Release date:  **26/06/2024**
