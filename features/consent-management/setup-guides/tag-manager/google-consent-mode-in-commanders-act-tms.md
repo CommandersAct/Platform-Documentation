@@ -220,6 +220,24 @@ The string starts with `11`, uses `1` to separate the different consent signals,
 {% endtab %}
 {% endtabs %}
 
+#### Verify the Consent Mode sequencing with our tC. method
+
+To help you ensure that the consent signal is sent before your Google tags, we offer a method to get logs in the browser console
+
+`tC.privacy.explainGCMSequencingValidation()`\
+\
+If the Consent is set before any Google tags triggered, you will obtain the log \
+`'valid sequencing'`\
+\
+If Google tags are triggered before the Consent is set, then your implementation is incorrect. The log will returns the value\
+`'Consent is set too late, Google tags are triggered before consent set. Please verify your Consent Mode sequencing'`
+
+Need a boolean value for specific use cases ?\
+Use `tC.privacy.validateGCMSequencing()`\
+Will simply return `true` if your sequencing is correct, otherwise the result will be `false`
+
+
+
 ### FAQ
 
 #### Modification/Update Configuration
@@ -232,14 +250,11 @@ Google Consent Mode allows the consent management only for the declared Region(s
 Our native feature does not include this parameter, for web performance reasons.\
 If you need to use this parameter, we recommend using our TMS Tag template. Please refer to the next section of documentation for configuration details.
 
-**Support & assistance**
+#### **Support & assistance**
 
 Still facing trouble shooting on your implementation, and looking for help ?\
-Contact our technical support team ! They will ever gave you a personalized reply to your questions within 24 hours of receipt (business days).
-
-Simply click **"Please help me!"** link to contact our amazing tech support team
-
-<figure><img src="../../../../.gitbook/assets/image (519).png" alt=""><figcaption></figcaption></figure>
+Contact our technical support team ! Since we certified as Google CMP Partner, we provide a dedicated email support : cact\_support\_cmp\_google@commandersact.com\
+They will ever gave you a personalized reply to your questions within 24 hours of receipt (business days).
 
 ## Migration guide
 

@@ -99,7 +99,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
     * **Choose Sources and Environment**
     * **Select Event and Properties**: Choose which events you want to store and which properties. If no properties are specified, the entire event will be stored.
     * **Set Matching Key**: This unique key have to be present both on the event to be enriched and the event to store.
-    * **Retention Period**: The period until when the store events are deleted (currently blocked to 1 day).\
+    * **Retention Period**: The period until when the store events are deleted (maximum 30 days allowed).\
 
 
     <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
