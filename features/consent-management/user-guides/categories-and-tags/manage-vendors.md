@@ -14,6 +14,11 @@ In this section you can manage your Commanders Act Consent vendors. These vendor
 To enable native vendors go to `Data Governance > Consent Management >  Settings` and activate the custom vendors option.
 {% endhint %}
 
+{% hint style="warning" %}
+For customers still using the v1.0 privacy center template (deprecated as of 2019) \
+Vendor activation will automatically upgrade your privacy center to version 2.0.
+{% endhint %}
+
 Click `ADD VENDOR` to add vendors to your Commanders Act Consent installation. You can select vendors available on Commanders Act TMS (`Predefined Vendors`) or add custom vendors (`Custom Vendor`) by selecting the respective tab. A _Commanders Act_ vendor is available by default.
 
 Each vendor can be mapped to Consent categories with the respective dropdown. This allows users to provide consent to all vendors of a category at once in the privacy center. A `PEN` icon allows to edit information of the vendor that is displayed in the privacy center. Following fields are available per vendor. A `TRASH` icon allows to remove the vendor.
