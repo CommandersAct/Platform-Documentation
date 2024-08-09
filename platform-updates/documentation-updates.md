@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 09/08/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/microsoft-uet.md" %}
+[microsoft-uet.md](../features/destinations/destinations-catalog/microsoft-uet.md)
+{% endcontent-ref %}
+
 ## 02/08/2024
 
 Destination documentation:
