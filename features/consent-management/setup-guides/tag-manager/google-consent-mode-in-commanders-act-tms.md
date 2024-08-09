@@ -236,7 +236,10 @@ Need a boolean value for specific use cases ?\
 Use `tC.privacy.validateGCMSequencing()`\
 Will simply return `true` if your sequencing is correct, otherwise the result will be `false`
 
-
+{% hint style="info" %}
+If Google tags haven't been fired yet, the result will always be "false". \
+To get a "valid sequencing" result, Google tags must have been fired at least once.
+{% endhint %}
 
 ### FAQ
 
