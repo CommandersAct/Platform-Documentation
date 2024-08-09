@@ -18,5 +18,5 @@ Reach out to our team for a complete integration guide.
 {% endhint %}
 
 {% hint style="warning" %}
-Microsoft UET framework requires a client-side tag to operate (See tag <mark style="color:blue;">`Bing - Client-side id-sync and data capture`</mark>  in our template library).
+Microsoft UET framework requires a client-side tag to operate: see tag <mark style="color:blue;">`Bing - Client-side id-sync and data capture`</mark>  in our template library.
 {% endhint %}
