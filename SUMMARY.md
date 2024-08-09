@@ -185,7 +185,7 @@
     * [Mapp](features/destinations/destinations-catalog/mapp.md)
     * [Matomo](features/destinations/destinations-catalog/matomo.md)
     * [MediaMath](features/destinations/destinations-catalog/mediamath.md)
-    * [Microsoft Universal Event Tracking](features/destinations/destinations-catalog/microsoft-uet.md)
+    * [Microsoft Advertising Universal Event Tracking](features/destinations/destinations-catalog/microsoft-uet.md)
     * [Mindlytix](features/destinations/destinations-catalog/mindlytix.md)
     * [Moebel](features/destinations/destinations-catalog/moebel.md)
     * [Nextdoor Conversion API](features/destinations/destinations-catalog/nextdoor-conversion-api.md)
