@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 94.3
+
+Release date:  **19/08/2024**
+
+* Support multiple containers for a data storage
+
 ### 94.2
 
 Release date:  **08/08/2024**
