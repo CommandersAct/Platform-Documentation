@@ -11,7 +11,7 @@ Commanders Act Events Triggers are onsite events that are used by Commanders Act
 
 ### Installation
 
-Commanders Act allows to set up common Trigger automatically without the involvement of technical team (e.g. _Container loaded_, _DOM ready_ or _Vertical Scroll 25%_). In cases where the default Triggers are not sufficient it is possible for technical personnel to implement custom Triggers. The necessary Trigger are defined during the Commanders Act setup process, but you can find a list of native Trigger [here](broken-reference).
+Commanders Act allows to set up common Trigger automatically without the involvement of technical team (e.g. _Container loaded_, _DOM ready_ or _Vertical Scroll 25%_). In cases where the default Triggers are not sufficient it is possible for technical personnel to implement custom Triggers. The necessary Trigger are defined during the Commanders Act setup process, but you can find a list of native Trigger on [this page](../user-guides-for-browser-side-platform/tags/rules/triggers.md).
 
 To install a custom Trigger on the website it is necessary to call a JavaScript function with the following pattern:
 
