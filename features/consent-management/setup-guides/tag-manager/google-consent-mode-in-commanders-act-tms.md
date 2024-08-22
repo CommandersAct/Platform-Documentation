@@ -257,7 +257,7 @@ If you need to use this parameter, we recommend using our TMS Tag template. Plea
 
 Still facing trouble shooting on your implementation, and looking for help ?\
 Contact our technical support team ! Since we certified as Google CMP Partner, we provide a dedicated email support : cact\_support\_cmp\_google@commandersact.com\
-They will ever gave you a personalized reply to your questions within 24 hours of receipt (business days).
+They will ever gave you a personalized reply to your questions!
 
 ## Migration guide
 
