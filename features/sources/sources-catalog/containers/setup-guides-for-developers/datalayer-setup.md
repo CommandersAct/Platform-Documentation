@@ -4,7 +4,7 @@ A Commanders Act Data Layer is a JavaScript object that holds metadata of a webs
 
 ### Installation
 
-To install a Commanders Act Data Layer it is necessary to implement a global JavaScript object `tc_vars` that holds the meta data of the page as direct properties. The required Data Layer properties are defined during the Commanders Act setup process, but you can find a list of common properties [here](broken-reference).
+To install a Commanders Act Data Layer it is necessary to implement a global JavaScript object `tc_vars` that holds the meta data of the page as direct properties. The required Data Layer properties are defined during the Commanders Act setup process, but you can find a list of common properties on [this page](../../web/containers/user-guides-for-browser-side-platform/data-layer-and-data-types/external-variables.md).
 
 {% hint style="info" %}
 #### Re-using an Existing Data Layer
