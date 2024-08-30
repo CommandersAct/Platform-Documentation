@@ -23,7 +23,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 14 days
+**Data retention:** 30 days
 
 **Collection frequency:** 6 requests per minute for each event type\
 \*a bonus of 30 request per hour for each event type
@@ -43,7 +43,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 14 days
+**Data retention:** 7 days
 
 **Collection frequency:** 6 requests per minute for each event type\
 \*a bonus of 30 request per hour for each event type
@@ -62,7 +62,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 14 days
+**Data retention:** 30 days
 
 **Collection frequency:** 6 requests per minute for each event type\
 \*a bonus of 30 request per hour for each event type
