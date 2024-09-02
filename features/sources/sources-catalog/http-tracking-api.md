@@ -6,7 +6,7 @@ description: version 2.0
 
 The HTTP Tracking API is used to track **events** from any website, application or server. The data is collected by our servers, and then processed and routed to any configured destination. It is often used for server-to-server use case.
 
-To manage users, check instead the dedicated [User API](import-crm-users.md), and for products, the [Product API](import-conversions/api-conversions-and-product-catalog.md).
+To manage users, check instead the dedicated [User API](https://doc.commandersact.com/features/sources/sources-catalog/import-crm-users/api-users), and for products, the [Product API](import-conversions/api-conversions-and-product-catalog.md).
 
 ## Endpoint URL
 
@@ -116,8 +116,6 @@ POST https://collect.commander1.com/events?tc_s=29&token=7183b9d4-1031-11ee-be56
 }
 ```
 
-
-
 ## OpenAPI Specification
 
 Download OpenAPI specification:
@@ -128,8 +126,7 @@ Download OpenAPI specification:
 
 Our API operates over HTTPS, a standard for secure communication on the internet. This protocol ensures that data is encrypted and transmitted securely.
 
-In conjunction with HTTPS, we employ an API token-based authentication system. Each created source is assigned a unique token that remains consistent across all API requests for this specific source. This design offers both security and convenience, allowing clients to manage multiple sources each with their own dedicated token. The ability for clients to create, manage, and deactivate sources at will via our interface adds an additional layer of control, ensuring that tokens can be invalidated as necessary for security or operational reasons.
-Our security approach is tailored to the diverse needs of our clients. We focus on providing a secure, efficient, and user-friendly experience. Our choice of HTTPS and token-based authentication aligns with our commitment to delivering robust security while ensuring ease of integration and operational flexibility for our clients. This approach is chosen over more complex systems like Mutual TLS (mTLS), OpenID Connect (OIDC), or IP filtering.
+In conjunction with HTTPS, we employ an API token-based authentication system. Each created source is assigned a unique token that remains consistent across all API requests for this specific source. This design offers both security and convenience, allowing clients to manage multiple sources each with their own dedicated token. The ability for clients to create, manage, and deactivate sources at will via our interface adds an additional layer of control, ensuring that tokens can be invalidated as necessary for security or operational reasons. Our security approach is tailored to the diverse needs of our clients. We focus on providing a secure, efficient, and user-friendly experience. Our choice of HTTPS and token-based authentication aligns with our commitment to delivering robust security while ensuring ease of integration and operational flexibility for our clients. This approach is chosen over more complex systems like Mutual TLS (mTLS), OpenID Connect (OIDC), or IP filtering.
 
 ## Batch (closed beta)
 
@@ -191,4 +188,3 @@ POST https://collect.commander1.com/events/batch?tc_s=29&token=7183b9d4-1031-11e
   ]
 }
 </code></pre>
-
