@@ -6,6 +6,120 @@ description: >-
 
 # Release notes
 
+## Release 10.0.24 - September 2024
+
+#### 🎯 _**Facebook CAPI Advanced**_** Destination**
+
+**Key Updates:**
+
+* **Smart mapping:** Visualise all the data sent to Meta with default mapping you can customize
+* **Enable App Tracking**: A new option to manage automatically to send all mobile data needed by Meta with dedicated app properties smart mapping.
+* **More advanced options**: send automatically search event with page\_view if needed, and test mode\
+  **Benefit**: You get the most configurable and user-friendly Facebook CAPI solution available on the market, tailored to fit advanced needs.
+
+***
+
+&#x20;**New Destinations and Integrations**
+
+* **Facebook Lead Ads**: Unlock lead optimization by [sharing CRM data back to Meta](https://doc.commandersact.com/features/destinations/destinations-catalog/facebook/facebook-lead-ads).
+* **X (Twitter) Conversion API** Global opening : [Track conversions](https://doc.commandersact.com/features/destinations/destinations-catalog/x-twitter-conversion-api) without the website code.
+* **Microsoft Advertising UET**: Available for all clients, offering features like [conversion tracking and auto-bidding](https://doc.commandersact.com/features/destinations/destinations-catalog/microsoft-uet).
+
+***
+
+🔧 **Javascript SDK new setProperty command**\
+Now, you can set permanent property values, just like in our mobile SDK.\
+**Why it’s useful:** This update allows you to save values more efficiently, simplifying processes for all customers.\
+👉 For more details, check out our documentation [here](https://doc.commandersact.com/developers/tracking/properties-reference/permanent-properties).
+
+***
+
+🌟 **Enhanced cact API**\
+A new cact('emit') API has been introduced to send browser-side events, replacing the older `tC.event.XXX` functions.\
+**Why it’s better:** This new method ensures smoother integration with our tools and reduces errors when sending custom events. For more details, read [our documentation](https://doc.commandersact.com/features/sources/sources-catalog/web/js-sdk#browser-side-events)
+
+***
+
+#### 🔧 **Privacy-Related Custom Triggers**
+
+We’ve added a set of [privacy-related events](https://doc.commandersact.com/features/consent-management/onsite-api) you can use to trigger custom actions in your tags.\
+New triggers include:
+
+* `consent_ready`
+* `consent_updated`
+* `consent_revoke`
+* `banner_show/hide`
+* `privacy_center_show/hide`
+
+**Benefit**: Greater control over privacy actions within your tagging structure.
+
+***
+
+📦 **Server-Side Tracking as a Custom Trigger**\
+The `cact('trigger', 'page_view')` method now launches [custom event tracking](https://doc.commandersact.com/features/sources/sources-catalog/web/js-sdk#custom-tag-triggers), streamlining your server-side and client-side event handling.\
+**Benefit:** Enhance your event tracking setups with more precision and flexibility, especially useful for consultants handling complex multi-site environments.
+
+***
+
+🔧 **Tag Context Variables**\
+We’ve introduced [Context variables](https://doc.commandersact.com/features/sources/sources-catalog/web/js-sdk#tag-context-variables) like `cact_container.id_site` and `cact_event.type` that can be used directly in your tags.\
+**Why it’s helpful:** These additions make it easier to manage and track events across different sites and containers.
+
+***
+
+💾 Event enrichment from **Custom Data Store (Beta)**\
+For our Beta customers, Storage Settings for [Custom Data Store](https://doc.commandersact.com/features/enrichments/events-enrichment#enrichment-from-custom-data-store) now allows a longer duration (30 days), improving data retention capabilities.\
+Global opening : end of september
+
+<figure><img src="../.gitbook/assets/image (520).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 🖇️ **TMS UX Enhancements (Closed Beta)**
+
+Our TMS interface has been modernized to provide a smoother, more intuitive user experience. Now available for beta testing with some customers!
+
+**New Features Include**:
+
+* **Breadcrumb Navigation**: Stay on top of your position within the TMS with easy access to your containers (and soon your branches)
+* **Contextual Side Navigation:** shortcuts to reach all webcontainer's related page's in a single click
+* **Expanded Editing Space**: More room to modify tags, with a clearer "Tags Overview" UI for faster workflows.
+*   **A new interface and 3 revamped ones:**&#x20;
+
+    * Tags Overview,&#x20;
+    * Tag Catalog,&#x20;
+    * WebContainers Overview,&#x20;
+    * Container Settings\
+
+
+    \
+
+
+    <figure><img src="../.gitbook/assets/image (524).png" alt=""><figcaption><p>Web containers UI</p></figcaption></figure>
+
+    <figure><img src="../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (528).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 🛡️ **Google CMP Partnership: Gold Tier**
+
+We are officially certified as a **Gold Tier** partner for Google’s CMP partner Program. This recognition underscores our commitment to the highest Google's standards in consent management.
+
+***
+
+Thank you for your attention and continuous engagement! \
+We look forward to your feedback on these improvements.
+
+***
+
 ## Release 10.0.23 - May 2024
 
 #### May Release Notes 🌟
