@@ -36,9 +36,9 @@ https://\*.[commander1.com/dc3/](https://commander1.com/) , returns a pixel
 
 ### Serverside Tracking v2
 
-[https://collect.commander1.com/events](https://collect.commander1.com/events) , returns a pixel\
-\
-Serverside Datasave
+[https://collect.commander1.com/events](https://collect.commander1.com/events) , returns a pixel
+
+### Serverside DataSave
 
 [https://manager.tagcommander.com/datasave/](https://manager.tagcommander.com/datasave/) , returns a pixel
 
@@ -123,25 +123,21 @@ https://\*[.commander1.com/o3](https://commander1.com/)[ ](https://commander1.co
 {% hint style="info" %}
 Examples
 
+\
 **Tracking type:** First
 
-\
-**Format URL:** `https://<customer_domain>/mix/cs3/?<parameters>`
+**Format URL:** https://\<customer\_domain>/mix/cs3/?
 
-\
-**Full example:** `https://clientdomain.com/mix/cs3/?tcs=1234&rand=0.21688868283799656&chn=SEO&src=google&site=AlvieroMartini&cty=it&dev=d&ref=https://www.google.com/`\
-
+**Full example:** https://clientdomain.com/mix/cs3/?tcs=1234\&rand=0.21688868283799656\&chn=SEO\&src=google\&site=AlvieroMartini\&cty=it\&dev=d\&ref=https://www.google.com/
 
 ***
 
 \
 **Tracking type:** Third
 
-\
-**Format URL:** `https://<customer_domain>/cs3/?<parameters>`
+**Format URL:** https://\<customer\_domain>/cs3/?
 
-\
-**Full example:** `https://customer.commander1.com/cs3/?tcs=1234&chn=SEO&src=google&cty=it&dev=d`\
+**Full example:** https://customer.commander1.com/cs3/?tcs=1234\&chn=SEO\&src=google\&cty=it\&dev=d\
 
 
 _Note : the difference is the_ `/mix/` _in the URL for the first party tracking._
