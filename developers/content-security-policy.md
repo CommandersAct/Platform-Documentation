@@ -125,7 +125,8 @@ Examples
 
 **Tracking type:** First\
 **Format URL:** `https://<customer_domain>/mix/cs3/?<parameters>`\
-**Full example:** `https://clientdomain.com/mix/cs3/?tcs=1234&rand=0.21688868283799656&chn=SEO&src=google&site=AlvieroMartini&cty=it&dev=d&ref=https://www.google.com/`
+**Full example:** `https://clientdomain.com/mix/cs3/?tcs=1234&rand=0.21688868283799656&chn=SEO&src=google&site=AlvieroMartini&cty=it&dev=d&ref=https://www.google.com/`\
+
 
 ***
 
