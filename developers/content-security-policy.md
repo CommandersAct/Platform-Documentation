@@ -30,9 +30,9 @@ This includes containers, Privacy, Cookies sync, MIX and DATA Javascripts
 
 ### Deduplication customer journey set and get
 
-[https://\*.commander1.com/dg3/](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns Javascript
+https://\*.[commander1.com/dg3/](https://www.commander1.com) , returns Javascript
 
-[https://\*.commander1.com/dc3/](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns a pixel
+https://\*.[commander1.com/dc3/](https://www.commander1.com) , returns a pixel
 
 ### Serverside Tracking v2
 
@@ -50,7 +50,7 @@ Serverside Datasave
 
 CDN javascript hosting
 
-https://sync.commander1.com , returns a pixel
+[https://sync.commander1.com](https://www.commander1.com) , returns a pixel
 
 ### TagPerformance data collection
 
@@ -72,8 +72,8 @@ Notice : in debug mode (tc\_debug=1) returns some plain text ... not sure it's n
 
 * **img-src** on domains \*.[tagcommander.com](http://tagcommander.com/) and \*.[commander1.com](http://commander1.com/) and [\*.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
 * **script-src** on domains cdn.[tagcommander.com](http://tagcommander.com/) and [cdn.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
-* **frame-src** on [cdn.tagcommander.com](http://cdn.tagcommander.com/) and [c](http://cdn.truscommander.net/)dn.trustcommander.net
-* **connect-src** on domain \*.commander1.com and [\*.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
+* **frame-src** on [cdn.tagcommander.com](http://cdn.tagcommander.com/) and [cdn.trustcommander.net](https://cdn.trustcommander.net)
+* **connect-src** on domain \*[.commander1.com](https://www.commander1.com) and [\*.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
 
 ### Cookie scanner
 
@@ -102,7 +102,7 @@ CDN javascript hosting
 
 ### Offsite data collection
 
-[https://\*.commander1.com/v3](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns a pixel
+https://\*.[commander1.com](https://commander1.com)/v3 , returns a pixel
 
 https://\*.[commander1.com/](http://commander1.com/v3)c3 , returns a pixel
 
@@ -112,27 +112,35 @@ https://\*.[commander1.com/](http://commander1.com/v3)w3 , returns a pixel
 
 CDN javascript hosting
 
-[https://\*.commander1.com/s3](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns a pixel
+https://\*[.commander1.com/s3](https://www.commander1.com) , returns a pixel
 
-[https://\*.commander1.com/cs3](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns a pixel
+https://\*[.commander1.com/cs3](https://www.commander1.com) , returns a pixel
 
-[https://\*.commander1.com/o3](https://tagcommander.atlassian.net/wiki/spaces/PS/pages/508002341/PLATFORM+-+CSP+Content+Security+Policy) , returns a pixel
+https://\*[.commander1.com/o3](https://www.commander1.com) , returns a pixel
 
 
 
 {% hint style="info" %}
 Examples
 
-**Tracking type:** First\
-**Format URL:** `https://<customer_domain>/mix/cs3/?<parameters>`\
+**Tracking type:** First
+
+\
+**Format URL:** `https://<customer_domain>/mix/cs3/?<parameters>`
+
+\
 **Full example:** `https://clientdomain.com/mix/cs3/?tcs=1234&rand=0.21688868283799656&chn=SEO&src=google&site=AlvieroMartini&cty=it&dev=d&ref=https://www.google.com/`\
 
 
 ***
 
 \
-**Tracking type:** Third\
-**Format URL:** `https://<customer_domain>/cs3/?<parameters>`\
+**Tracking type:** Third
+
+\
+**Format URL:** `https://<customer_domain>/cs3/?<parameters>`
+
+\
 **Full example:** `https://customer.commander1.com/cs3/?tcs=1234&chn=SEO&src=google&cty=it&dev=d`\
 
 
@@ -144,7 +152,7 @@ _Note : the difference is the_ `/mix/` _in the URL for the first party tracking.
 ### CSPs&#x20;
 
 * **img-src** on domains \*.[commander1.com](http://tagcommander.com/)
-* **script-src** on domains \*.tagcommander[.com](http://tagcommander.com/)
+* **script-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
 * **connect-src** on domain \*.[commander1.com](http://commander1.com/)
 
 Onsite data collection
