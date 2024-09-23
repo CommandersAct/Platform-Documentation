@@ -118,30 +118,29 @@ https://\*[.commander1.com/cs3](https://commander1.com/) , returns a pixel
 
 https://\*[.commander1.com/o3](https://commander1.com/)[ ](https://commander1.com/), returns a pixel
 
+Examples:
 
+<details>
 
-{% hint style="info" %}
-Examples
+<summary>Tracking type: First</summary>
 
-\
-**Tracking type:** First
+Format URL: `https://<customer_domain>/mix/cs3/?`
 
-**Format URL:** https://\<customer\_domain>/mix/cs3/?
+Full example: `https://clientdomain.com/mix/cs3/?tcs=1234&rand=0.21688868283799656&chn=SEO&src=google&site=AlvieroMartini&cty=it&dev=d&ref=https://www.google.com/`
 
-**Full example:** https://clientdomain.com/mix/cs3/?tcs=1234\&rand=0.21688868283799656\&chn=SEO\&src=google\&site=AlvieroMartini\&cty=it\&dev=d\&ref=https://www.google.com/
+</details>
 
-***
+<details>
 
-\
-**Tracking type:** Third
+<summary>Tracking type: Third</summary>
 
-**Format URL:** https://\<customer\_domain>/cs3/?
+Format URL: `https://<customer_domain>/cs3/?`
 
-**Full example:** https://customer.commander1.com/cs3/?tcs=1234\&chn=SEO\&src=google\&cty=it\&dev=d\
+Full example: `https://customer.commander1.com/cs3/?tcs=1234&chn=SEO&src=google&cty=it&dev=d`
 
+</details>
 
 _Note : the difference is the_ `/mix/` _in the URL for the first party tracking._
-{% endhint %}
 
 ## Enrichment & Segmentation <a href="#data" id="data"></a>
 
