@@ -9,8 +9,8 @@ For further details about CSP, visit this site:\
 
 ### CSPs&#x20;
 
-* **img-src** on domains \*.tagcommander.com and \*.commander1.com
-* **script-src** on domains \*.tagcommander.com and \*.commander1.com
+* **img-src** on domains \*[.tagcommander.com](https://tagcommander.com) and \*[.commander1.com](https://commander1.com/)
+* **script-src** on domains \*[.tagcommander.com](https://tagcommander.com) and \*[.commander1.com](https://commander1.com)
 * **connect-src** on domain \*.[commander1.com](http://commander1.com/)
 * **frame-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
 
@@ -30,9 +30,9 @@ This includes containers, Privacy, Cookies sync, MIX and DATA Javascripts
 
 ### Deduplication customer journey set and get
 
-https://\*.[commander1.com/dg3/](https://www.commander1.com) , returns Javascript
+https://\*[.commander1.com/dg3/ ](https://commander1.com/), returns Javascript
 
-https://\*.[commander1.com/dc3/](https://www.commander1.com) , returns a pixel
+https://\*.[commander1.com/dc3/](https://commander1.com/) , returns a pixel
 
 ### Serverside Tracking v2
 
@@ -50,7 +50,7 @@ Serverside Datasave
 
 CDN javascript hosting
 
-[https://sync.commander1.com](https://www.commander1.com) , returns a pixel
+[https://sync.commander1.com ](https://sync.commander1.com/), returns a pixel
 
 ### TagPerformance data collection
 
@@ -70,10 +70,10 @@ Notice : in debug mode (tc\_debug=1) returns some plain text ... not sure it's n
 
 ### CSPs
 
-* **img-src** on domains \*.[tagcommander.com](http://tagcommander.com/) and \*.[commander1.com](http://commander1.com/) and [\*.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
-* **script-src** on domains cdn.[tagcommander.com](http://tagcommander.com/) and [cdn.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
-* **frame-src** on [cdn.tagcommander.com](http://cdn.tagcommander.com/) and [cdn.trustcommander.net](https://cdn.trustcommander.net)
-* **connect-src** on domain \*[.commander1.com](https://www.commander1.com) and [\*.trustcommander.net](https://tagcommander.atlassian.net/wiki/pages/createpage.action?spaceKey=PS\&title=privacy.trustcommander.net\&linkCreation=true\&fromPageId=508002341)
+* **img-src** on domains \*.[tagcommander.com](http://tagcommander.com/) and \*.[commander1.com](http://commander1.com/) and \*[.trustcommander.net](https://www.trustcommander.net/)
+* **script-src** on domains cdn.[tagcommander.com](http://tagcommander.com/) and [cdn.trustcommander.net](https://cdn.trustcommander.net/)
+* **frame-src** on [cdn.tagcommander.com](http://cdn.tagcommander.com/) and [cdn.trustcommander.net](https://cdn.trustcommander.net/)
+* **connect-src** on domain \*[.commander1.com](https://commander1.com/) and \*[.trustcommander.net](https://www.trustcommander.net/)
 
 ### Cookie scanner
 
@@ -97,8 +97,8 @@ CDN javascript hosting
 
 ### CSPs&#x20;
 
-* **img-src** on domains \*.[commander1.com](http://tagcommander.com/)
-* **script-src** on domains \*.tagcommander[.com](http://tagcommander.com/)
+* **img-src** on domains \*.[commander1.com](https://commander1.com/)
+* **script-src** on domains \*[.tagcommander.com](http://tagcommander.com/)
 
 ### Offsite data collection
 
@@ -112,11 +112,11 @@ https://\*.[commander1.com/](http://commander1.com/v3)w3 , returns a pixel
 
 CDN javascript hosting
 
-https://\*[.commander1.com/s3](https://www.commander1.com) , returns a pixel
+https://\*[.commander1.com/s3](https://commander1.com/) , returns a pixel
 
-https://\*[.commander1.com/cs3](https://www.commander1.com) , returns a pixel
+https://\*[.commander1.com/cs3](https://commander1.com/) , returns a pixel
 
-https://\*[.commander1.com/o3](https://www.commander1.com) , returns a pixel
+https://\*[.commander1.com/o3](https://commander1.com/)[ ](https://commander1.com/), returns a pixel
 
 
 
@@ -151,7 +151,7 @@ _Note : the difference is the_ `/mix/` _in the URL for the first party tracking.
 
 ### CSPs&#x20;
 
-* **img-src** on domains \*.[commander1.com](http://tagcommander.com/)
+* **img-src** on domains \*[.commander1.com](https://commander1.com/)
 * **script-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
 * **connect-src** on domain \*.[commander1.com](http://commander1.com/)
 
