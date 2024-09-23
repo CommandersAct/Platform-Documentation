@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 23/09/2024
+
+New page Content Security Policy, in order to allows our customers a whitelisting of our domains
+
+{% content-ref url="../developers/content-security-policy.md" %}
+[content-security-policy.md](../developers/content-security-policy.md)
+{% endcontent-ref %}
+
 ## 09/08/2024
 
 Destination documentation (updates):

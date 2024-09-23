@@ -392,6 +392,7 @@
 * [Changelogs](developers/changelogs/README.md)
   * [Measure.js changelog](developers/changelogs/measure.js-changelog.md)
   * [Web container generator](developers/changelogs/web-container-generator.md)
+* [Content Security Policy](developers/content-security-policy.md)
 
 ## CONFIGURE
 
