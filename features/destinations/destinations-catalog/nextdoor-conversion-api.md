@@ -13,10 +13,10 @@ The Nextdoor Conversion API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Nextdoor events](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/Conversion-API-request-parameters?language=en\_US), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Event mapping**: change standard mapping between Nextdoor events and yours or add new mappings.&#x20;
 * **Support for multi-item data**: information included in the [item](https://doc.commandersact.com/developers/tracking/events-reference#item) array is dispatched to Nextdoor.
-* **Automatic hashing**: information is automatically hashed matching Nextdoor specifications.
 
 ## Destination setup
 

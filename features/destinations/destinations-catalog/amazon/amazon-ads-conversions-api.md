@@ -9,6 +9,7 @@ The Amazon Ads Conversions API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [Amazon's conversion definitions/types](https://advertising.amazon.com/API/docs/en-us/dsp-conversion-builder#tag/Amazon-Conversion-Definitions/operation/dspAmazonCreateConversionDefinitions), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
 
 ## Destination setup

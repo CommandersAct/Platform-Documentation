@@ -7,6 +7,15 @@ The enhanced conversions supplement your existing conversion tags by sending has
 You must complete the [setup and configuration steps](https://support.google.com/google-ads/answer/11062876) before you can bridge enhanced conversions via the Google Ads API.
 {% endhint %}
 
+## Key features
+
+The Google Enhanced Conversions destination provides the following key features:
+
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Google method [uploadConversionAdjustments](https://developers.google.com/google-ads/api/rest/reference/rest/v16/customers/uploadConversionAdjustments), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
+
 ## Destination setup
 
 {% hint style="info" %}

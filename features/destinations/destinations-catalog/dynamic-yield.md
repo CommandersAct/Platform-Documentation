@@ -13,6 +13,7 @@ The Dynamic Yield destination provides the following key features:
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Dynamic Yield events](https://support.dynamicyield.com/hc/en-us/articles/4414379007633-Reporting-Events#types-of-events-0-1), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events and custom event properties).
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Send all properties**: send all your event properties to Dynamic Yield with a single click.
 

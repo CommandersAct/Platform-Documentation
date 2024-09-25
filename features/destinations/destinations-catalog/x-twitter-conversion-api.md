@@ -13,6 +13,7 @@ The X Conversion API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model matches [X conversion events](https://developer.x.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 
 ## Destination setup

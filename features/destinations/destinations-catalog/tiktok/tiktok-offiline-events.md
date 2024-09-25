@@ -13,6 +13,7 @@ The TikTok Offline Events destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [TikTok offline events](https://ads.tiktok.com/marketing\_api/docs?id=1758428013689857), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to TikTok.
 

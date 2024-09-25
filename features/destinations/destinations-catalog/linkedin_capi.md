@@ -13,6 +13,7 @@ The LinkedIn destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) model matches [LinkedIn's conversion rules](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-07\&tabs=curl#create-a-conversion-rule), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
 
 ## Destination setup

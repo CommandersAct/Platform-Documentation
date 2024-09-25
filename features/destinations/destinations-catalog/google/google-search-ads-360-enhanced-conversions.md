@@ -14,6 +14,15 @@ The "Enhanced Conversions" (EC) in Campaign Manager 360 (CM360) API is a hybrid 
 Google recommends triggering [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate) **between 90 minutes and 24 hours**, with the latter being the upper time limit, after the client-side Floodlight tag is fired to maximize EC matching. After **30 minutes** has passed since the client-side Floodlight is fired, you can already trigger [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), but it's suggested to follow Google recommendation as reported above. More details are available following this [LINK](https://developers.google.com/doubleclick-advertisers/guides/conversions\_ec#recommended\_setup).
 {% endhint %}
 
+## Key features
+
+The Google Search Ads 360 Enhanced Conversions destination provides the following key features:
+
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Google method [batchupdate](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
+
 ## Destination setup
 
 Before configuring this destination, you need to fullfil the following requirements:&#x20;

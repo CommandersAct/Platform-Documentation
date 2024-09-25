@@ -9,6 +9,7 @@ The Snapchat destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) fits [Snapchat event types](https://marketingapi.snapchat.com/docs/conversion.html#conversion-parameters), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
+* **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Custom events**: you can freely push custom events based on your specific needs.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to Snapchat.
@@ -61,7 +62,7 @@ This destination will set the unique visitor identifier, which you can provide i
 **\[1]** Field automatically generated when it's not set.\
 **\[2]** Priority order is listed in the left column. If <mark style="color:blue;">`context.app.name`</mark> is defined then this field is set with <mark style="color:blue;">`MOBILE_APP`</mark> , otherwise, <mark style="color:blue;">`WEB`</mark> .\
 **\[3]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same <mark style="color:blue;">`client_dedup_id`</mark> across all of them. This will be used within a 48 hour scope of the first occurrence.\
-**\[4]** Each item information is pushed in the related array.\
+**\[4]** Each item information is pushed in the related array. \
 **\[5]** Field automatically hashed if provided in clear text.\
 **\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).\
 **\[7]** <mark style="color:blue;">`partners.snapchat.uuid_c1`</mark> has priority over cookie <mark style="color:blue;">**\_scid**</mark>.
