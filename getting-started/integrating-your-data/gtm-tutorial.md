@@ -71,3 +71,18 @@ Using a custom domain not only improves tracking precision but also helps ensure
 ### Step 4: Event Forwarding to Multiple Destinations
 
 Once GA4 events are sent to Commanders Act, they can be forwarded to various destinations, such as: Facebook CAPI, Google Enhanced Conversion, Bing Ads, TikTok, Awin, ... And many more through the Commanders Act plug\&play destinations catalog.
+
+## Going Further: Bypassing Ad-Blockers with GTM Script Proxification
+
+For users looking to optimize server-side tracking, Commanders Act provides also an option to **proxify the GTM JavaScript file** to bypass ad-blockers. This solution ensures that consented data can still flow to your analytics tools or partners without being unfairly blocked by ad-blockers that might indiscriminately block GTM scripts, even when used responsibly.
+
+#### How It Works:
+
+* Instead of using the default GTM URL (e.g., `https://www.googletagmanager.com/gtm.js?id=XXX`), the script is served from your own domain (e.g., `https://track.yourdomain.com/custompath.js`) with a unique path modifier to avoid detection by ad-blockers.
+* This process helps ensure that **only user-consented data** is collected and forwarded, in strict compliance with privacy regulations such as GDPR.
+
+#### A Privacy-Respectful Approach:
+
+Our server-side infrastructure is designed with **privacy, consent, and user control** at its core. By proxifying the GTM script, you're simply ensuring that **consented data** can be processed and sent to trusted tools and partners, in line with the user’s preferences. This aligns with best practices in privacy and GDPR compliance, ensuring that ad-blockers do not unfairly interrupt responsible data flows.
+
+If you're interested in setting this up, please **contact your account manager** for more information.
