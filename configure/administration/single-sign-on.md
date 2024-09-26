@@ -10,7 +10,7 @@ description: >-
 
 Commanders Act supports SAML 2.0 based Single Sign-On authentication and authorization.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Swimlane diagram of the Single Sign-On functionality.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fc15c751-6b66-4ade-9fd9-a631ff90edc7.png" alt=""><figcaption><p>Swimlane diagram of the Single Sign-On functionality.</p></figcaption></figure>
 
 ## Setup
 
