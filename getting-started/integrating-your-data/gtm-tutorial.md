@@ -21,8 +21,11 @@ For more details, check the [Commanders Act GTM template documentation](https://
 ## Step 1: Create a GTM Source in Commanders Act
 
 1. Log in to **Commanders Act**.
-2. Go to the **Sources** section and create a new **Google Tag Manager** source.
+2. Go to the **Sources** section and create a new **Google Tag Manager** source.\
+   ![](<../../.gitbook/assets/image (1).png>)
 3. **Copy the Source Token** displayed.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Update GA4 in Google Tag Manager
 
@@ -34,7 +37,7 @@ For more details, check the [Commanders Act GTM template documentation](https://
     *   Value:
 
         ```bash
-        https://collect.commander1.com/events?tc_s={siteId}&token={sourceKey}&ga4_param=
+        https://collect.commander1.com/events?tc_s={siteId}&token={sourceKey}&&ga_url_param=
         ```
 
     Replace:
@@ -56,7 +59,7 @@ For enhanced data accuracy and first-party tracking, we recommend setting up a c
 2.  In GTM, update `server_container_url`with your subdomain url such as:&#x20;
 
     ```bash
-    https://collect.yourdomain.com/events?tc_s={siteId}&token={sourceKey}&ga4_param=
+    https://collect.yourdomain.com/events?tc_s={siteId}&token={sourceKey}&&ga_url_param=
     ```
 
     Replace `collect.yourdomain.com` with your own subdomain.
