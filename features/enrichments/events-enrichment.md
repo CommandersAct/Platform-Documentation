@@ -109,7 +109,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Define Enrichment**:
    * **Name**: Name your enrichment rule.
    * **Select Sources and Environment**

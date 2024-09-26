@@ -6,6 +6,10 @@ description: Bridge your events in a seamless way.
 
 Commanders Act provides a GTM template to connect your existing GTM implementation to our serverside endpoint, in a secured environment.
 
+{% hint style="info" %}
+If you use GA4, you may be interested by the [GTM ultra quick setup](../../../../getting-started/integrating-your-data/gtm-tutorial.md) allowing to forward events from GA4. It offers less flexibility but can be installed in 2 minutes.
+{% endhint %}
+
 ## Setup
 
 Summarizing all recommended steps:
