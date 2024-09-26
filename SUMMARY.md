@@ -14,6 +14,7 @@
 * [Platform interface](getting-started/platform-interface.md)
   * [Prod and Testing environments](getting-started/platform-interface/prod-and-testing-environments.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
+  * [GTM Tutorial](getting-started/integrating-your-data/gtm-tutorial.md)
   * [OneTag Tutorial](getting-started/integrating-your-data/onetag-tutorial.md)
   * [Migration guides to the Platform X](getting-started/integrating-your-data/migration-guides-to-the-platform-x/README.md)
     * [Migrate from SSv1 to SSv2](getting-started/integrating-your-data/migration-guides-to-the-platform-x/migrate-from-ssv1-to-ssv2/README.md)
