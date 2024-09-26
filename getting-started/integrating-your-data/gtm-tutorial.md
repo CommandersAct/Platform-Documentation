@@ -4,15 +4,27 @@ description: 'Quick Setup: From GTM Client-Side to Commanders Act Server-Side'
 
 # GTM Tutorial
 
-This guide shows you how to quickly set up server-side event forwarding for GA4 in Google Tag Manager (GTM) using Commanders Act. With this setup, your GA4 data can be routed to multiple destinations like Facebook CAPI, Google Enhanced Conversions, and others. For optimal performance, it is strongly recommended to implement **first-party domain delegation**.
+This guide shows you how to quickly set up server-side event forwarding for GA4 in Google Tag Manager (GTM) using Commanders Act. With this setup, your GA4 events can be routed to multiple destinations like Facebook CAPI, Google Enhanced Conversions, and others.
 
-### Step 1: Create a GTM Source in Commanders Act
+1. **Create a GTM Source** in Commanders Act.
+2. **Update the GA4 URL** in GTM.
+3. **Set Up Domain Delegation** for first-party data collection (strongly recommended).
+
+{% hint style="info" %}
+#### Alternative Approach for Event Tracking
+
+Instead of using GA4 to transfer events, you can add **Commanders Act tags** directly in GTM for each event you want to track. While this method takes more time to set up, it gives you full control over which events are sent, independent of GA4, and works even if GA4 is not used.
+
+For more details, check the [Commanders Act GTM template documentation](https://doc.commandersact.com/features/sources/sources-catalog/web/gtm).
+{% endhint %}
+
+## Step 1: Create a GTM Source in Commanders Act
 
 1. Log in to **Commanders Act**.
 2. Go to the **Sources** section and create a new **Google Tag Manager** source.
 3. **Copy the Source Token** displayed.
 
-### Step 2: Update GA4 in Google Tag Manager
+## Step 2: Update GA4 in Google Tag Manager
 
 1. Open your **GTM** workspace.
 2. Find your **GA4 Configuration Tag**.
@@ -34,20 +46,20 @@ This guide shows you how to quickly set up server-side event forwarding for GA4 
 
 4. **Save** and **Publish** your changes in GTM.
 
-### Step 3: Set Up Domain Delegation for First-Party Data Collection
+## Step 3: Set Up Domain Delegation for First-Party Data Collection
 
 For enhanced data accuracy and first-party tracking, we recommend setting up a custom domain through **domain delegation**. This ensures the data is collected and processed as first-party, improving tracking reliability and compliance with privacy regulations.
 
 #### How to Set Up Domain Delegation:
 
-1. Go to the **Domain Management** section of Commanders Act (find detailed instructions [here](../../configure/cookies/first-domain-tracking-phoenix.md)).
-2.  Follow the steps to configure a custom subdomain such as:
+1. Go to the **Domain Management** section of Commanders Act (find detailed instructions [here](../../configure/administration/domain-management/)) and follow the steps to configure a custom subdomain such as https://collect.yourdomain.com
+2.  In GTM, update `server_container_url`with your subdomain url such as:&#x20;
 
-    ```arduino
-    https://track.yourdomain.com/events?tc_s={siteId}&token={sourceKey}&ga4_param=
+    ```bash
+    https://collect.yourdomain.com/events?tc_s={siteId}&token={sourceKey}&ga4_param=
     ```
 
-    Replace `yourdomain.com` with your own domain.
+    Replace `collect.yourdomain.com` with your own subdomain.
 
 Using a custom domain not only improves tracking precision but also helps ensure better compliance with browser and privacy policies.
 
