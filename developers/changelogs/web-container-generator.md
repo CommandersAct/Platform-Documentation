@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 95.0
+
+Release date:  **30/09/2024**
+
+* Closed-Beta: implement CDN 1st party in Trust files
+
 ### 94.3
 
 Release date:  **03/09/2024**
