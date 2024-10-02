@@ -1,7 +1,7 @@
 # Facebook Lead Ads
 
 [Facebook ](https://www.facebook.com/)is an online social media and social networking service owned by [Meta](https://www.meta.com/).\
-Using [Conversions API](https://developers.facebook.com/docs/marketing-api/guides/lead-ads/v2.3/#conversions-api-integration), this destination allows you to get improved performance in your [lead ads](https://developers.facebook.com/docs/marketing-api/guides/lead-ads/v2.3/) by sharing your CRM data about your leads back to Meta to unlock quality lead optimization.
+This destination leverages [Conversions API](https://developers.facebook.com/docs/marketing-api/guides/lead-ads/v2.3/#conversions-api-integration) to help you get improved performance in [lead ads](https://developers.facebook.com/docs/marketing-api/guides/lead-ads/v2.3/) by sharing your CRM data about your leads back to Meta to unlock quality lead optimization.
 
 ## Key features
 
