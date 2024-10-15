@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 18/10/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-enhanced-conversions-for-leads.md" %}
+[google-enhanced-conversions-for-leads.md](../features/destinations/destinations-catalog/google/google-enhanced-conversions-for-leads.md)
+{% endcontent-ref %}
+
 ## 23/09/2024
 
 New page Content Security Policy, in order to allows our customers a whitelisting of our domains
