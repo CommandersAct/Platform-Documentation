@@ -1,9 +1,5 @@
 # Google Enhanced Conversions for Leads
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. This destination let you improve the accuracy of your offline conversion measurement by uploading click conversions that contain hashed user identifiers and some optional additional details that help Google Ads match the conversion to the ad that initiated the lead.
 
 ## Key features
