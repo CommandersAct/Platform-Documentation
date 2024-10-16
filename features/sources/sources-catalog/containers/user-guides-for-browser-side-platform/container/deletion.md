@@ -6,7 +6,7 @@ To delete a container, click “More”, next to the blue Edit button while on t
 
 In the new window, you will see the containers’ list, the container you selected will be highlighted. To delete it click the red “Delete” button to the right.
 
-<figure><img src="../../../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
 A confirmation message will appear&#x20;
 

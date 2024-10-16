@@ -10,7 +10,7 @@ You can select on the calendar a shortcut period (last hour) or a specific perio
 
 The UI is divided into three sections that provide information on the platform's capacity to provide your source data: Key Metrics, Delivery Trends and Error Details.
 
-### 1. Key Metrics <a href="#2-key-metrics" id="2-key-metrics"></a>
+### 1. Key Metrics <a href="#id-2-key-metrics" id="id-2-key-metrics"></a>
 
 ![](<../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.16.59.png>)
 
@@ -19,7 +19,7 @@ The UI is divided into three sections that provide information on the platform's
   * <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the % of events successfully delivered is above 95%
   * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 90 and 95%
   * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 50 and 90%
-  * <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy below 50%
+  * <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy below 50%
 *   **Not Delivered:** This number represents the number of messages that the platform was unable to deliver. If this number is more than zero, the causes for this failure are listed in the errors' table below.
 
     The % of events not delivered is represented by a weather icon:
@@ -27,7 +27,7 @@ The UI is divided into three sections that provide information on the platform's
     * <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the % of failures is below 5%
     * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy if the % of failures is below 10%
     * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy if the % of failures is between 10% and 50%
-    * <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy if the % of failures is above 50%
+    * <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy if the % of failures is above 50%
 
 The % of difference display the comparison with the same previous period: ex if I select 2 days, it will display the difference with the previous 2 days, if I select 1 week it will display the difference with the previous week.
 
@@ -39,13 +39,13 @@ The small trend graph represents the global evolution of delivered and not deliv
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-05-30 à 11.55.01.png" alt=""><figcaption></figcaption></figure>
 
-### 2. Delivery trends <a href="#3-error-details" id="3-error-details"></a>
+### 2. Delivery trends <a href="#id-3-error-details" id="id-3-error-details"></a>
 
 Visualize directly the evolution of delivered and not delivered events on a larger period. You can change the period you want to visualize: last hour, last day, last week or last month.
 
 ![](<../../.gitbook/assets/Capture d’écran 2022-03-01 à 15.17.19.png>)
 
-### 3. Error details <a href="#3-error-details" id="3-error-details"></a>
+### 3. Error details <a href="#id-3-error-details" id="id-3-error-details"></a>
 
 The table's objective is to offer you with an overview of the various errors we've observed in a particular time period, as well as the most significant information about them. The table's rows are all clickable and expand to provide more information.
 

@@ -258,7 +258,7 @@ Assign an engagement score to users based on recent activities, without overcomp
 
 It will look like this in the interface:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 **Warning**: Circular dependencies in formulas are not permitted. The system detects circular references and prevents the formula from being saved. For example, a formula where an attribute is defined to increment itself (e.g., you create a score with a name`attrs.toto and you create a formula like "attrs.toto + 1"`) Same for complex circular dependencies where attribute A depends on B, B depends on C, and C depends on A will be blocked.

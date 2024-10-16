@@ -66,7 +66,7 @@ tC.event.add_to_cart(this, {"product_name":"iphone", "product_id":"1234"})
 
 To call a tag only if the product name is “iphone”, you have to select the event variable named “product\_name” and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (17) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Cookie
 
@@ -107,7 +107,7 @@ In case of multiple values : enter all the values in the field separated by a co
 
 Example: to call a tag when your URL indicates that the user is on the product page (providing your product page URLs are all structured the same: https://www.site.com/$category$/$subcategory$/product\_$product\_ID$), you have to select the “If URL Matches” rule and configure it in the following manner:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (24) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## **Browser**
 

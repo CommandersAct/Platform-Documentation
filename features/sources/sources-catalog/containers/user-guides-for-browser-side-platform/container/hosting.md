@@ -37,7 +37,7 @@ Setup the "Purge" part (use the Account ID, Token and Purge URL provided by your
 
 Just give an explicit name, enter the correct URL and select any client-side container(s) you want to associate with the connector
 
-<figure><img src="../../../../../../.gitbook/assets/image (14).png" alt="" width="539"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (14) (2).png" alt="" width="539"><figcaption></figcaption></figure>
 
 ### Amazon S3 connector configuration
 
@@ -84,7 +84,7 @@ aaaaaaaaaaaaaaaaaaaaaaa=
 
 Simply follow the step by step guide provided by Bing:
 
-<figure><img src="../../../../../../.gitbook/assets/image (13).png" alt="" width="311"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (13) (1).png" alt="" width="311"><figcaption></figcaption></figure>
 
 ### Facebook Ads connector configuration
 

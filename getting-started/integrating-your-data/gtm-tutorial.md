@@ -22,10 +22,10 @@ For more details, check the [Commanders Act GTM template documentation](https://
 
 1. Log in to **Commanders Act**.
 2. Go to the **Sources** section and create a new **Google Tag Manager** source.\
-   ![](<../../.gitbook/assets/image (2).png>)
+   ![](<../../.gitbook/assets/image (2) (1).png>)
 3. **Copy the Source Token** displayed.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Update GA4 in Google Tag Manager
 
@@ -47,7 +47,7 @@ For more details, check the [Commanders Act GTM template documentation](https://
 
 **Note:** This URL uses Commanders Act’s default domain (`commander1.com`) to get you up and running quickly. For better data quality, it’s strongly recommended to use your own custom domain (see Step 3).
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 4. **Save** and **Publish** your changes in GTM.
 

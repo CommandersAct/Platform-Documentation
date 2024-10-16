@@ -142,7 +142,7 @@ You have here a summary of all metrics needed to compare the populations, such a
 
 Yes, you can select an export (email, S3 or FTP for example), and select the universe 'campaign':
 
-![](<../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../.gitbook/assets/image (13) (1) (2).png>)
 
 You can select 1 segment or choose 'all users' and you can export the following variables:
 

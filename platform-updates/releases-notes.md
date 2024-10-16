@@ -378,7 +378,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Simplified workflows for easier navigation
 * Immediate issue detection for data quality perfection
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -394,7 +394,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -453,7 +453,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 <figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -741,9 +741,9 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     You can retrieve them in the edition part of a LRB report !\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -751,7 +751,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -983,7 +983,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
   ![](<../.gitbook/assets/image (12) (3).png>)\
   \
   **Rakuten Events**\
-  ![](<../.gitbook/assets/image (15) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
 
 * **Destinations updates**\
   \
@@ -991,7 +991,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
   ![](<../.gitbook/assets/image (26) (1).png>)\
   \
   **Partnerize:** Advanced operations added\
-  ![](<../.gitbook/assets/image (16).png>)\
+  ![](<../.gitbook/assets/image (16) (2).png>)\
   \
   **Snapchat:** SmartMapping support\
   ![](<../.gitbook/assets/image (24) (1).png>)
@@ -1005,7 +1005,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * **Destination builder - Javascript sandbox**\
   Create your own custom destination using basic javascript code !\
   You can create event-based or audience-based destination.\
-  ![](<../.gitbook/assets/image (20).png>)![](<../.gitbook/assets/image (23).png>)![](<../.gitbook/assets/image (1) (3) (3).png>)![](<../.gitbook/assets/image (21).png>)
+  ![](<../.gitbook/assets/image (20) (2).png>)![](<../.gitbook/assets/image (23) (1).png>)![](<../.gitbook/assets/image (1) (3) (3).png>)![](<../.gitbook/assets/image (21) (1).png>)
 
 \
 More information here:
@@ -1035,7 +1035,7 @@ More information here:
   * **Flutter - for mobile App** – _Closed beta_​
 * **Campaign analysis ​**
   * Campaign Overlap enhanced => possibility to go back up to 30 days​\
-    ![](<../.gitbook/assets/image (18).png>)
+    ![](<../.gitbook/assets/image (18) (2).png>)
   * Make it possible to send a timestamp with the incoming hit​ of your campaigns collection
 
 ## Release 10.0.9 - 14/02/23
@@ -1128,7 +1128,7 @@ More information here:
     * New feature : **smart mapping** (closed alpha) : visualize/edit the data mapping done automatically by the system between your event properties and the destination's API.\
       _This feature will be progressively open on each destination during next months._\\
 
-    <figure><img src="../.gitbook/assets/image (18) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (18) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     * Enhancement on existing destinations: Tradedoubler, Criteo conversion, Snapchat, GEC, TikTok, Kwanko
     * Event delivery: error's labels enhancement, easier to understand what is wrong
@@ -1190,7 +1190,7 @@ More information here:
 ## Release 10.0.2 - 24/07/22
 
 * Event collection​\
-  ![](<../.gitbook/assets/image (15) (1) (1).png>)\
+  ![](<../.gitbook/assets/image (15) (1) (1) (1).png>)\
   Follow your events arriving at the platform in near-realtime, understand which source send it and which destinations are using it.​\
   Analyze past event count, up to one year ago, to master your event collection and associated cost\\
 *   Sources improvements: ​

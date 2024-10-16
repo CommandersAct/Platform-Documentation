@@ -11,7 +11,7 @@ You can visualize the evolution of your event data quality over time
 
 You can setup an alert to know in realtime if some of your event violate your [validation rules](../data-quality/normalized-datalayer.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can analyze in detail each event and have more details about errors, and a shortcut to [fix the error in the Data Cleansing feature](../data-quality/data-cleansing/).
 
@@ -36,11 +36,11 @@ The quality score of events is represented by a weather icon:&#x20;
 * <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the percent of correct events is equal to 100%
 * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 95% and 99.99%
 * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 90 and 95%
-* <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy below 90%
+* <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy below 90%
 
 The quality score of events is represented by a weather icon:&#x20;
 
 * <img src="../../.gitbook/assets/image (17) (1) (1).png" alt="" data-size="line">sunny if the percent of correct events is equal to 100%
 * <img src="../../.gitbook/assets/image (15) (2) (1).png" alt="" data-size="line">cloudy between 95% and 99.99%
 * <img src="../../.gitbook/assets/image (16) (1).png" alt="" data-size="line">rainy between 90 and 95%
-* <img src="../../.gitbook/assets/image (14) (2).png" alt="" data-size="line">stormy below 90%
+* <img src="../../.gitbook/assets/image (14) (2) (1).png" alt="" data-size="line">stormy below 90%

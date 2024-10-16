@@ -28,7 +28,7 @@ Go on page: `“Data Governance > Consent Management > Settings”`
 * Situation #2: Activate the Google ACM option
 * Situation #3: Activate the IAB TCF Compliancy & the Google ACM options
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt="" width="455"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (5).png" alt="" width="455"><figcaption></figcaption></figure>
 
 #### Step 2
 
@@ -38,11 +38,11 @@ Go on page: `“Data Governance > Consent Management > Vendors”`
 
 <div align="center">
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt="" width="358"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (4).png" alt="" width="358"><figcaption></figcaption></figure>
 
 </div>
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -54,9 +54,9 @@ Go on page: `“Data Governance > Consent Management > Settings”`
   **with “Google Advertising Products Vendors”**
 * Situation #3: Activate the IAB TCF Compliancy & the Google ACM options
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt="" width="392"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (6).png" alt="" width="392"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt="" width="541"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (4).png" alt="" width="541"><figcaption></figcaption></figure>
 
 #### Final Step
 
@@ -67,4 +67,4 @@ Go on page: `“Sources > Privacy Banners”`
   • Generate your new version of the privacy banner\
   It’s ready to be deployed in production!
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (7).png" alt=""><figcaption></figcaption></figure>

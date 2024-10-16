@@ -134,4 +134,4 @@ A new custom audience will be created.
 The name of the new audience will start with `CA_{name}`
 {% endhint %}
 
-![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png>)
+![](<../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png>)
