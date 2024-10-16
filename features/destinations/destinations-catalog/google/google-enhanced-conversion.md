@@ -51,8 +51,8 @@ At least one of the following identifiers must be provided:
 
 * User email
 * User phone
-* User firstname
-* User lastname
+* User first name
+* User last name
 * User street address
 * User city
 * User state
