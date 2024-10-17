@@ -1,9 +1,5 @@
 # Dynamic Yield
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Dynamic Yield](https://www.dynamicyield.com) helps businesses deliver digital customer experiences that are personalized, optimized, and synchronized. This integration allows [server-side tracking](https://support.dynamicyield.com/hc/en-us/articles/4414379007633-Reporting-Events#reporting-events-via-server-side-api-0-0).
 
 ## Key features
