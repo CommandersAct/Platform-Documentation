@@ -2,6 +2,18 @@
 
 ## 2024
 
+### 95.2
+
+Release date:  **14/10/2024**
+
+* Closed-Beta: include CDN 1st party loaded from another site in file generators
+
+### 95.1
+
+Release date:  **07/10/2024**
+
+* Closed-Beta: implement CDN 1st party loaded from another site
+
 ### 95.0
 
 Release date:  **30/09/2024**
