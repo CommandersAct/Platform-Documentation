@@ -1,12 +1,12 @@
 # Dynamic Yield
 
-[Dynamic Yield](https://www.dynamicyield.com) helps businesses deliver digital customer experiences that are personalized, optimized, and synchronized. This integration allows [server-side tracking](https://support.dynamicyield.com/hc/en-us/articles/4414379007633-Reporting-Events#reporting-events-via-server-side-api-0-0).
+[Dynamic Yield](https://www.dynamicyield.com) helps businesses deliver digital customer experiences that are personalized, optimized, and synchronized. This destination leverages the [Experience API](https://support.dynamicyield.com/hc/en-us/articles/360010686157-Experience-APIs-Overview) to track [meaningful events](https://dy.dev/reference/track-events), so you can use the information for behavioral targeting, reporting, setting optimization goals, recommendations, and audience building.
 
 ## Key features
 
 The Dynamic Yield destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Dynamic Yield events](https://support.dynamicyield.com/hc/en-us/articles/4414379007633-Reporting-Events#types-of-events-0-1), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Dynamic Yield events](https://dy.dev/reference/track-events), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Refined data**: you can freely push additional information based on your specific needs (E.g. adding custom events and custom event properties).
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
