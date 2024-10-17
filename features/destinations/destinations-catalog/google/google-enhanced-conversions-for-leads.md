@@ -36,7 +36,7 @@ Login into [Google Ads ](https://ads.google.com/home/)and:
 
 ### 2. Turn on enhanced conversions for leads
 
-Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the enhanced conversions for leads drop down to check the same box.\
+Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the **enhanced conversions for leads** drop down to check the same box.\
 
 
 ### 3. Accept the customer data terms
