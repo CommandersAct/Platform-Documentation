@@ -84,6 +84,6 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 **\[9]** Resource name of the custom variable in the following format:\
 <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionCustomVariables/[VARIABLE_ID]`</mark>   \
 **\[10]** Your value for the custom variable. See [Mapping Custom Variables](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
-**\[11]** Set in the base path.
+**\[11]** Set in the base path. See [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.
 {% endhint %}
 
