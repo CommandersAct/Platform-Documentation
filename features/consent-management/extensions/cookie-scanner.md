@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cookiescanner.jpg" alt=""><figcaption></figcaption></figure>
 
 Commanders Act offers a cookie scanner that continuously monitors websites for cookies in real time. The scanner has access to a database of common analytics and marketing cookies and can therefore provide ready to use descriptions and information. This cookie information can be used to install a dynamic cookie notice on the website that provides transparent information about the used cookies and their purpose to visitors.
 
@@ -72,14 +72,14 @@ Cookie scanner can scan following types of cookies:
 
 Cookie Scanner scans following fields per cookie:
 
-| Field                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Scanned with                                                                       |
+| **Name**             | <p>Name of cookie e.g. _ga<br>*In case of multiple (more than 3) cookies with common pattern, they re grouped by patterns</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
-| **Name**             | Name of cookie e.g. \_ga                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
 | **Vendor**           | Name of the vendor that uses the cookie e.g. Google                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | <ul><li>Cookie Database</li></ul>                                                  |
 | **Category**         | Category of the cookie that give a high level information on the purpose of the cookie e.g. Technical Cookie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | <p></p><ul><li>Cookie Database</li></ul>                                           |
 | **Storage Location** | <p>Storage location of the cookie (combination of cookie type and storage domain). It has one of the following values:</p><p></p><ul><li>1st Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>3rd Party Cookie (www.example.de)</li><li>HttpOnly 1st Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>HttpOnly 3rd Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>localStorage (<a href="http://www.example.de/">www.example.de</a>)</li><li>sessionStorage (<a href="http://www.example.de/">www.example.de</a>)</li></ul><p>The domain in brackets is the domain where the cookie is stored. For 1st party cookies it is the domain or subdomain of the website. For 3rd party cookies it is a 3rd party domain or subdomain that is different from the website.</p> | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
 | **Storage Duration** | <p>Storage duration of the cookie. An algorithm is used to smoothen technical inaccuracies and to optimise readability for users:</p><p></p><ul><li>For Session Cookies it displays "Session"</li><li>Under 1 month it displays in days, e.g. "7 days"</li><li>Above 1 month it displays in month, e.g. "13 months"</li><li>Above 36 month it displays  in years, e.g. "5 years".</li><li>Above 100 years it displays “Unlimited”</li></ul><p>Local storage always has duration "Unlimited" and session storage always has duration "Session".</p>                                                                                                                                                                                                                                                                                                     | <ul><li>Tag client-side</li><li>Chrome Extension</li><li>Cookie Database</li></ul> |
 | **Description**      | Description for what the cookie is used, e.g. “Base64 UUID used to identify users on this website to optimise usage across sessions. Used on all pages.”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <ul><li>Cookie Database</li></ul>                                                  |
+| **Website**          | <p>Domain(s) of the website(s) the cookie is scanned.<br>For 1st party cookies, the full URL of the latest scan is also displayed</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | <p></p><ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                  |
 
 {% hint style="info" %}
 Cookie scanner doesn't store cookie's values
@@ -163,6 +163,12 @@ The cookie list displays optional labels for each cookie in the cookie list to i
 | **Custom**             | The cookie was manually created.                                                                                            |
 | **Set before consent** | The cookie is set before a customer provides consent via Commanders Act CMP. This can be intentional for essential cookies. |
 
+### Occurrence frequency
+
+For all types of cookies & storage you can visualize the percentage of detection frequency
+
+<figure><img src="../../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
+
 ## Manage Cookie Notice
 
 `Health > Website Monitoring > Cookie Scanner > DEPLOY (Tab)`
@@ -235,7 +241,28 @@ The `DEPLOY` button to the right of each cookie notice version can be used to de
 
 Cookie Scanners allows to add custom fields to provide additional details per cookie. These fields can be added inside of the feature settings accessible via the `Gear` icon. It is possible to re-arrange the fields by changing their order via drag and drop.
 
-### User Rights
+<figure><img src="../../../.gitbook/assets/image (530).png" alt="" width="563"><figcaption></figcaption></figure>
+
+### Filters
+
+You can filter your cookie's list by host (website), language and storage type (1st party, 3rd party, local storage, session storage)
+
+<figure><img src="../../../.gitbook/assets/image (531).png" alt=""><figcaption></figcaption></figure>
+
+If you select 3rd party type, you will obtain an additional filter to view cookies from a specific domain:
+
+<figure><img src="../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
+
+### Rare cookies filter
+
+By default, the rare cookies (scanned on less than 5% of pages) are now excluded from your list. \
+Use the cursor to manage the scanner's tolerance. \
+If it is positioned on 10%, the list will displays only the cookies scanned more often than 9.9%. \
+You can modify this value, it's up to you!
+
+<figure><img src="../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
+
+## User Rights
 
 {% hint style="warning" %}
 User Rights for Cookie Scanner are not yet available.
@@ -250,11 +277,3 @@ Cookie Scanner offers following user rights:
 | Generate Cookie Notice         | User can view the Deploy Step and generate a cookie notice version. |
 | Deploy Cookie Notice           | User can deploy cookie notice versions.                             |
 | Manage Cookie Scanner Settings | User can adjust cookie scanner settings (e.g. custom fields).       |
-
-
-
-## Filters
-
-You can filter your cookie's list by host (website) and language
-
-<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>

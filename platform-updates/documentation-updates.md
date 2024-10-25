@@ -4,6 +4,22 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 24/10/2024
+
+Updated documentation for new features of cookie scanner&#x20;
+
+{% content-ref url="../features/consent-management/extensions/cookie-scanner.md" %}
+[cookie-scanner.md](../features/consent-management/extensions/cookie-scanner.md)
+{% endcontent-ref %}
+
+## 21/10/2024
+
+CDN 1st new documentation
+
+{% content-ref url="../configure/administration/domain-management/cdn-1st.md" %}
+[cdn-1st.md](../configure/administration/domain-management/cdn-1st.md)
+{% endcontent-ref %}
+
 ## 18/10/2024
 
 Destination documentation:
