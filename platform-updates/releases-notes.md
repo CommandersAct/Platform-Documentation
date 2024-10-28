@@ -21,6 +21,16 @@ Our Cookie Scanner now delivers an unmatched user experience, combining the most
 * **Improved Cookie Descriptions**: Enhanced descriptions clarify cookie types, offering clients a better understanding of cookie purposes.
 * **Updated Documentation**: Detailed guidance on using these new features is available in our [documentation](https://doc.commandersact.com/features/consent-management/extensions/cookie-scanner) for a seamless user experience.
 
+🔍📊 **Introducing the Destination Logs Exporter: Full Transparency for Outgoing Requests**
+
+Our new **Destination Logs Exporter** feature, now in closed beta, complements our Live Event Inspector by providing a more comprehensive monitoring solution. While the Event Inspector samples data during high-traffic periods, the Destination Logs Exporter allows users to export _all_ outgoing requests from selected destinations. Each log includes detailed information, including the originating events, status, errors, etc. setting a new standard in data transparency and control.
+
+* **Full Log Export to SFTP**: This feature captures every outgoing request, exporting raw logs to an SFTP server for secure access and long-term storage.
+* **Detailed Event Tracing**: Logs provide comprehensive insights into outgoing requests, including the originating events, enabling precise data flow tracking and easier troubleshooting.
+* **Seamless Integration**: Configurable directly within the destination catalog, ensuring quick setup and intuitive management.
+
+Explore the full feature details in our [documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/destination-logs-exporter) as we refine this tool during the closed beta phase.
+
 ## Release 10.0.24 - September 2024
 
 #### 🎯 _**Facebook CAPI Advanced**_** Destination**
