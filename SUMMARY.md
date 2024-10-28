@@ -141,6 +141,7 @@
       * [Criteo (offline conversions)](features/destinations/destinations-catalog/criteo/criteo-offline-conversions.md)
     * [Data Activation Legacy](features/destinations/destinations-catalog/data-activation-legacy.md)
     * [Dataventure](features/destinations/destinations-catalog/dataventure.md)
+    * [Destination Logs Exporter](features/destinations/destinations-catalog/destination-logs-exporter.md)
     * [Dialog-Mail](features/destinations/destinations-catalog/dialog-mail.md)
     * [Dynamic Yield](features/destinations/destinations-catalog/dynamic-yield.md)
     * [Easyence](features/destinations/destinations-catalog/easyence.md)

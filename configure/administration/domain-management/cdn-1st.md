@@ -26,7 +26,7 @@ Click on "Add Subdomain"
 
 Enter your subdomain name
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="460"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt="" width="460"><figcaption></figcaption></figure>
 
 Once saved, the new subdomain will be displayed in your list
 
