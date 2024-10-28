@@ -6,6 +6,21 @@ description: >-
 
 # Release notes
 
+## Release 10.0.25 - October 2024
+
+🍪🔍**Enhanced Cookie Scanner: Automatic Filtering & Unmatched Usability**
+
+Our Cookie Scanner now delivers an unmatched user experience, combining the most exhaustive cookie capture on the market with powerful enhancements for usability and insight. Already leveraging data from tens of thousands of real users to capture a truly comprehensive view of cookies—something no virtual crawler can match—this update automatically filters out rare and irrelevant cookies, while adding advanced investigation and filtering capabilities for a more streamlined analysis.
+
+* **Smart Filtering**: By default, cookies detected in fewer than 5% of sessions are now filtered out, allowing clients to focus on frequently relevant cookies while eliminating noise.
+* **Flexible “Rare Cookies” Toggle**: A new toggle enables users to view all cookies, including rare ones, by adjusting an interactive frequency setting for tailored insights.
+* **Automatic Pattern-Based Grouping**: Cookies with similar names are grouped when three or more share a pattern (e.g., `cookie_name...`), simplifying cookie lists and making analysis easier.
+* **Enhanced Filters by Type and Domain**: New filters for cookie storage type and 3rd-party domain allow for more precise targeting in analyses.
+* **Frequency Display for Insight**: Each cookie now includes an occurence frequency percentage, giving immediate insight into detection rates and relevance.
+* **Detailed Tracking for 1st Party Cookies**: Full URLs of recent detections are displayed for first-party cookies, helping identify exact points of origin.
+* **Improved Cookie Descriptions**: Enhanced descriptions clarify cookie types, offering clients a better understanding of cookie purposes.
+* **Updated Documentation**: Detailed guidance on using these new features is available in our [documentation](https://doc.commandersact.com/features/consent-management/extensions/cookie-scanner) for a seamless user experience.
+
 ## Release 10.0.24 - September 2024
 
 #### 🎯 _**Facebook CAPI Advanced**_** Destination**
