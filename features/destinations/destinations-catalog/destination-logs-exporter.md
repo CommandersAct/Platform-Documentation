@@ -1,6 +1,7 @@
 # Destination Logs Exporter
 
-You can easily export your raw logs using the **Destination Logs Exporter**. Follow the steps below to get started!
+You can easily export your destination's raw logs using the **Destination Logs Exporter**. \
+This destination will allow you to export to an SFTP all outgoing requests issued by the destinations you choose, and to analyze in these logs all the details, including the originating events that led to the outgoing requests.
 
 ### Configuration
 
