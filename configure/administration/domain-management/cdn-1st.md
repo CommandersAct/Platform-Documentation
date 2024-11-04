@@ -1,8 +1,8 @@
-# CDN 1st
+# 1st party hosting
 
-Our CDN 1st feature helps ensure that ad blockers do not unfairly interrupt responsible data tracking. This is in line with privacy best practice and GDPR compliance. \
+Our 1st party hosting feature helps ensure that ad blockers do not unfairly interrupt responsible data tracking. This is in line with privacy best practice and GDPR compliance. \
 \
-By configuring your CDN 1st, you'll be able to change the host of your Web Container(s) & Privacy banner(s). \
+By configuring your CDN 1st party hosting, you'll be able to change the host of your Web Container(s) & Privacy banner(s). \
 \
 Are you looking for an additional approach to avoid the effects of ad blockers and keep tracking? You've come to the right place!
 
@@ -18,7 +18,7 @@ More info [here](cname-record.md#how-the-cname-creation-process-works)
 
 Go on Administration > Domain Management
 
-Look to the menu Domain Management for CDN 1st
+Look to the menu Domain Management for CDN 1st party
 
 Click on "Add Subdomain"
 
@@ -49,7 +49,7 @@ Once activated, all your Web Container(s) & Privacy banner(s) will be hosted on 
 ### Multiple Domains Management
 
 Your configuration is using multiple work spaces?\
-CDN 1st allows you to share a subdomain between different sites IDs, as long as they belong to the same "invoicing account".
+1st party hosting allows you to share a subdomain between different sites IDs, as long as they belong to the same "invoicing account".
 
 {% hint style="info" %}
 **Pre requisite:** must have **validated and activated** subdomains on other work spaces
