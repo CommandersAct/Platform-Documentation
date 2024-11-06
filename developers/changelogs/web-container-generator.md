@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 95.3
+
+Release date:  **06/11/2024**
+
+* Update on specific rul on CAID cookie, added parameters `expiration` on `13 months` (396 days) and `SameSite` when necessary (`Lax` value)
+
 ### 95.2
 
 Release date:  **14/10/2024**
