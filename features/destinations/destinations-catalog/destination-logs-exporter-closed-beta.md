@@ -1,4 +1,4 @@
-# Destination Logs Exporter
+# Destination Logs Exporter (closed beta)
 
 You can easily export your destination's raw logs using the **Destination Logs Exporter**. \
 This destination will allow you to export to an SFTP all outgoing requests issued by the destinations you choose, and to analyze in these logs all the details, including the originating events that led to the outgoing requests.
@@ -9,7 +9,7 @@ This destination will allow you to export to an SFTP all outgoing requests issue
 
 Select one or more destinations from which you'd like to export your data.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -43,4 +43,4 @@ Select one or more destinations from which you'd like to export your data.
 * **Modify the timezone** if necessary.
 * Adjust the **export frequency and time window** to suit your needs.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (7).png" alt=""><figcaption></figcaption></figure>

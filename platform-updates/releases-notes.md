@@ -21,6 +21,8 @@ Our Cookie Scanner now delivers an unmatched user experience, combining the most
 * **Improved Cookie Descriptions**: Enhanced descriptions clarify cookie types, offering clients a better understanding of cookie purposes.
 * **Updated Documentation**: Detailed guidance on using these new features is available in our [documentation](https://doc.commandersact.com/features/consent-management/extensions/cookie-scanner) for a seamless user experience.
 
+***
+
 🔍📊 **Introducing the Destination Logs Exporter: Full Transparency for Outgoing Requests**
 
 Our new **Destination Logs Exporter** feature, now in closed beta, complements our Live Event Inspector by providing a more comprehensive monitoring solution. While the Event Inspector samples data during high-traffic periods, the Destination Logs Exporter allows users to export _all_ outgoing requests from selected destinations. Each log includes detailed information, including the originating events, status, errors, etc. setting a new standard in data transparency and control.
@@ -30,6 +32,50 @@ Our new **Destination Logs Exporter** feature, now in closed beta, complements o
 * **Seamless Integration**: Configurable directly within the destination catalog, ensuring quick setup and intuitive management.
 
 Explore the full feature details in our [documentation](https://doc.commandersact.com/features/destinations/destinations-catalog/destination-logs-exporter) as we refine this tool during the closed beta phase.
+
+***
+
+👁️ **Enhanced Login Accessibility**
+
+*   You can now view your password while logging in! This small addition aims to enhance accessibility for all users.\
+
+
+    <figure><img src="../.gitbook/assets/image.png" alt="" width="283"><figcaption></figcaption></figure>
+
+***
+
+🔗 **Improved Navigation for Sources**
+
+*   The navigation menu now includes a shortcut to our Sources Catalog, saving you a click and making it even easier to locate the resources you need.\
+
+
+    <figure><img src="../.gitbook/assets/image (1).png" alt="" width="185"><figcaption></figcaption></figure>
+
+***
+
+🔄 **General UX Enhancements**
+
+* **Loader Spinner:** Added to additional TMS client-side interfaces for smoother interactions.
+* **Destination Overview:** Destinations in “dry mode” now display a clear label, reducing uncertainty about destination status.
+* **Event Delivery:** Similar “dry mode” labels are added here too, so you’ll always know if a destination is live.
+* **Augmented User Attribute:** Removed redundant “visitor” tags in sub-universes for clarity.
+* **Source Data Quality:** Action buttons are now available to help quickly address errors in data sources.
+
+***
+
+&#x20;:medal: **1st party hosting**
+
+* **What’s New:** WebContainers and Privacy Banners can now use your customer domain to host files via CNAME, keeping data on our servers without external hosting. This will help bypass ad blockers and increase data collection while staying RGPD-compliant. The feature can be opened on customers account, on request.\
+  Explore the full feature details in [our documentation](../configure/administration/domain-management/cdn-1st.md)
+
+***
+
+🔐 **New User Access Rights**
+
+*   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\
+
+
+    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
