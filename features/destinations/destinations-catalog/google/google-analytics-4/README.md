@@ -38,7 +38,7 @@ Before you get started with this destination, make sure you have a GA4 property 
 
 {% hint style="warning" %}
 App related fields are enabled by flagging <mark style="color:blue;">`Enable App Tracking`</mark> .\
-The property <mark style="color:blue;">`context.app.name`</mark>  is required for app tracking.
+The properties <mark style="color:blue;">`context.app.name`</mark>  and <mark style="color:blue;">`context.device.type`</mark>  are required for app tracking. More details on these fields are available following this [LINK](https://doc.commandersact.com/developers/tracking/about-events/mobile-sdk-event-specificity#context.app).
 {% endhint %}
 
 {% hint style="info" %}
