@@ -4,9 +4,17 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 22/11/2024
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/the-trade-desk/the-trade-desk-conversions-api.md" %}
+[the-trade-desk-conversions-api.md](../features/destinations/destinations-catalog/the-trade-desk/the-trade-desk-conversions-api.md)
+{% endcontent-ref %}
+
 ## 27/10/2024
 
-New destination Logs exporter
+New destination Logs exporter:
 
 {% content-ref url="../features/destinations/destinations-catalog/destination-logs-exporter-closed-beta.md" %}
 [destination-logs-exporter-closed-beta.md](../features/destinations/destinations-catalog/destination-logs-exporter-closed-beta.md)
@@ -14,7 +22,7 @@ New destination Logs exporter
 
 ## 24/10/2024
 
-Updated documentation for new features of cookie scanner&#x20;
+Updated documentation for new features of cookie scanner:&#x20;
 
 {% content-ref url="../features/consent-management/extensions/cookie-scanner.md" %}
 [cookie-scanner.md](../features/consent-management/extensions/cookie-scanner.md)
@@ -22,7 +30,7 @@ Updated documentation for new features of cookie scanner&#x20;
 
 ## 21/10/2024
 
-CDN 1st new documentation
+CDN 1st new documentation:
 
 {% content-ref url="../configure/administration/domain-management/cdn-1st.md" %}
 [cdn-1st.md](../configure/administration/domain-management/cdn-1st.md)
@@ -35,8 +43,6 @@ Destination documentation:
 {% content-ref url="../features/destinations/destinations-catalog/google/google-enhanced-conversions-for-leads.md" %}
 [google-enhanced-conversions-for-leads.md](../features/destinations/destinations-catalog/google/google-enhanced-conversions-for-leads.md)
 {% endcontent-ref %}
-
-## 23/09/2024
 
 ## 09/08/2024
 
@@ -226,7 +232,7 @@ Destination documentation:
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
-[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin\_capi.md)
+[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
 {% endcontent-ref %}
 
 ## 27/02/2024
@@ -278,7 +284,7 @@ Destination documentation:
 Destination documentation:
 
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
-[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin\_capi.md)
+[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
 {% endcontent-ref %}
 
 Destination documentation (updates):
