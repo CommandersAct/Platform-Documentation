@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 22/11/2024
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/batch.md" %}
+[batch.md](../features/destinations/destinations-catalog/batch.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/the-trade-desk/the-trade-desk-conversions-api.md" %}
