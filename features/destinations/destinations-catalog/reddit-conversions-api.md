@@ -59,9 +59,9 @@ At least one of the following Reddit properties is required:\
 • <mark style="color:blue;">`uuid`</mark> \*\
 • <mark style="color:blue;">`email`</mark> \*\
 • <mark style="color:blue;">`ip_address`</mark> + <mark style="color:blue;">`user_agent`</mark> + <mark style="color:blue;">`width`</mark> + <mark style="color:blue;">`height`</mark> \*\
-• <mark style="color:blue;">`idfa`</mark> or <mark style="color:blue;">`aaid`</mark>\
+• <mark style="color:blue;">`idfa`</mark> or <mark style="color:blue;">`aaid`</mark> \
 • <mark style="color:blue;">`external_id`</mark>\
-\
+Sending more properties will improve attribution accuracy and performance.\
 \* Recommended properties.
 {% endhint %}
 
