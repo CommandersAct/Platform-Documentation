@@ -2,7 +2,7 @@
 
 Feature currently available only for Beta-Test program
 
-## Introducing the new "Branches" feature: **get ready to empower your team like never before!**
+## Introducing the new "Branches" feature
 
 Are you ready to take your TMS experience to the next level? We are thrilled to introduce our latest feature: **Branches**. This powerful tool is designed to elevate your team’s efficiency, allowing multiple users to work simultaneously on the same project without stepping on each other's toes. Imagine a workspace where you can confidently make changes, test them in isolation, and merge them seamlessly—all while keeping your Main project intact. Let’s dive into what makes this feature a game-changer.
 
