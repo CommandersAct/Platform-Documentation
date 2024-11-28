@@ -5,13 +5,13 @@ This destination is currently under final review and will be available soon.
 {% endhint %}
 
 [Nextdoor](https://nextdoor.com) operates a hyperlocal social networking service for neighborhoods.\
-Using this destination you can send marketing data in the form of events or conversions to Nextdoor and get a more complete picture of their advertising outcomes on Nextdoor. This is based on [Nextdoor Conversion API](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/About-the-Nextdoor-Conversion-API?language=en\_US).
+Using this destination you can send marketing data in the form of events or conversions to Nextdoor and get a more complete picture of their advertising outcomes on Nextdoor. This is based on [Nextdoor Conversion API](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/About-the-Nextdoor-Conversion-API?language=en_US).
 
 ## Key features
 
 The Nextdoor Conversion API destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Nextdoor events](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/Conversion-API-request-parameters?language=en\_US), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Nextdoor events](https://adsmanager.help.nextdoor.com/namhelpcenter/s/article/Conversion-API-request-parameters?language=en_US), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
@@ -51,20 +51,20 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](nextdoor-conversion-api.md#configuration) for more details.\
-**\[2]** Automatically converted in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
-**\[3]** When Smart Mapping  <mark style="color:blue;">Action Source</mark> is not set, this value is automatically set by using the following information in the presented priority order: 1. Smart Mapping field <mark style="color:blue;">`Experience Type`</mark>  2. property <mark style="color:blue;">`context.app`</mark>  3. Smart Mapping field <mark style="color:blue;">`Conversion Type`</mark> .\
-**\[4]** Set in <mark style="color:blue;">`customer`</mark>  object.\
-**\[5]** Pre-hashed format in lower case.\
-**\[6]** Automatically hashed via SHA256 when provided in clear text.\
-**\[7]** Pre-hashed format should consist of exactly ten digits, devoid of any special characters or international country codes.\
-**\[8]** Pre-hashed format <mark style="color:blue;">`YYYYMMDD`</mark> .\
-**\[9]** Pre-hashed format in lower case, no special characters.\
-**\[10]** Pre-hashed format in lowercase and as [two letter ANSI abbreviation code](https://en.wikipedia.org/wiki/Federal\_Information\_Processing\_Standard\_state\_code).\
-**\[11]** Pre-hashed format with five digits for US.\
-**\[12]** Pre-hashed format as [two-character ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO\_3166-1\_alpha-2).\
-**\[13]** Allows Nextdoor to deduplicate events for an advertiser that sends events via both the CAPI and the pixel making it soft required for multiple pixel implementation.\
-**\[14]** This is the same as <mark style="color:blue;">`ndclid`</mark>  parameter attached to clickthrough URL.\
-**\[15]** Set in <mark style="color:blue;">`custom`</mark> .\
-**\[16]** Set in <mark style="color:blue;">`custom.product_context.X`</mark> .\
-**\[17]** Set in <mark style="color:blue;">`app`</mark> .
+&#xNAN;**\[2]** Automatically converted in [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).\
+&#xNAN;**\[3]** When Smart Mapping  <mark style="color:blue;">Action Source</mark> is not set, this value is automatically set by using the following information in the presented priority order: 1. Smart Mapping field <mark style="color:blue;">`Experience Type`</mark>  2. property <mark style="color:blue;">`context.app`</mark>  3. Smart Mapping field <mark style="color:blue;">`Conversion Type`</mark> .\
+&#xNAN;**\[4]** Set in <mark style="color:blue;">`customer`</mark>  object.\
+&#xNAN;**\[5]** Pre-hashed format in lower case.\
+&#xNAN;**\[6]** Automatically hashed via SHA256 when provided in clear text.\
+&#xNAN;**\[7]** Pre-hashed format should consist of exactly ten digits, devoid of any special characters or international country codes.\
+&#xNAN;**\[8]** Pre-hashed format <mark style="color:blue;">`YYYYMMDD`</mark> .\
+&#xNAN;**\[9]** Pre-hashed format in lower case, no special characters.\
+&#xNAN;**\[10]** Pre-hashed format in lowercase and as [two letter ANSI abbreviation code](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code).\
+&#xNAN;**\[11]** Pre-hashed format with five digits for US.\
+&#xNAN;**\[12]** Pre-hashed format as [two-character ISO 3166-1 alpha-2 code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).\
+&#xNAN;**\[13]** Allows Nextdoor to deduplicate events for an advertiser that sends events via both the CAPI and the pixel making it soft required for multiple pixel implementation.\
+&#xNAN;**\[14]** This is the same as <mark style="color:blue;">`ndclid`</mark>  parameter attached to clickthrough URL.\
+&#xNAN;**\[15]** Set in <mark style="color:blue;">`custom`</mark> .\
+&#xNAN;**\[16]** Set in <mark style="color:blue;">`custom.product_context.X`</mark> .\
+&#xNAN;**\[17]** Set in <mark style="color:blue;">`app`</mark> .
 {% endhint %}

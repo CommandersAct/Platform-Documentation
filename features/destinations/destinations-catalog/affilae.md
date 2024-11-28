@@ -37,7 +37,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** Supported values: <mark style="color:blue;">`by_bank_transfer_in_advance`</mark>  and  <mark style="color:blue;">`online_payment_system`</mark> .\
-**\[2]** Supported values: <mark style="color:blue;">`online`</mark> , <mark style="color:blue;">`offline`</mark> and <mark style="color:blue;">`call`</mark> .\
-**\[3]** product identifiers are separated by semicolons (;).
+&#xNAN;**\[1]** Supported values: <mark style="color:blue;">`by_bank_transfer_in_advance`</mark>  and  <mark style="color:blue;">`online_payment_system`</mark> .\
+&#xNAN;**\[2]** Supported values: <mark style="color:blue;">`online`</mark> , <mark style="color:blue;">`offline`</mark> and <mark style="color:blue;">`call`</mark> .\
+&#xNAN;**\[3]** product identifiers are separated by semicolons (;).
 {% endhint %}

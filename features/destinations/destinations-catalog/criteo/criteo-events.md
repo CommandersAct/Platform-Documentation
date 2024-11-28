@@ -16,7 +16,7 @@ The Criteo (events) destination provides the following key features:
 
 {% hint style="danger" %}
 **The** [**Criteo salted user ID (GUM ID)**](https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call) **is required**: this value must be passed to this destination by including the cookie <mark style="color:blue;">**`crto_mapped_user_id`**</mark>. \
-The easiest way to manage this cookie is to **use this client-side tags in our tag library : **<mark style="color:blue;">**Criteo - User Identification**</mark> in your web container.
+The easiest way to manage this cookie is to **use this client-side tags in our tag library :&#x20;**<mark style="color:blue;">**Criteo - User Identification**</mark> in your web container.
 {% endhint %}
 
 ### Configuration
@@ -62,7 +62,7 @@ The easiest way to manage this cookie is to **use this client-side tags in our t
 | `user.email_sha256`       | `id.email.sha256`                                                                                |
 
 {% hint style="info" %}
-**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
-**\[2]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark>, depending if <mark style="color:blue;">`app.name`</mark> is defined or not.\
-**\[3]** <mark style="color:blue;">`id.email.sha256_md5`</mark> is automatically hashed.
+**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).\
+&#xNAN;**\[2]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark>, depending if <mark style="color:blue;">`app.name`</mark> is defined or not.\
+&#xNAN;**\[3]** <mark style="color:blue;">`id.email.sha256_md5`</mark> is automatically hashed.
 {% endhint %}

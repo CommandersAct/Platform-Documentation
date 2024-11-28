@@ -76,7 +76,7 @@ The trigger should therefore refer to the variable for its category and trigger 
 
 1. **"Cact - User consent"**: will return different values, depending of user consent choice (no\_consent, optout, all\_consent or the list of consent categories IDs accepted by the user)
 2. **"Cact allows Statistical"**:  return "allowed" or "refused", depending of the choice of the user\
-   _\*Don't forget to personalize the ID with the value of your own setup on the Commanders Act Platform_
+   &#xNAN;_\*Don't forget to personalize the ID with the value of your own setup on the Commanders Act Platform_
 
 <figure><img src="../../../../.gitbook/assets/gtm16.png" alt=""><figcaption></figcaption></figure>
 

@@ -49,13 +49,13 @@ Depending on Mapp request types you're sending, some properties may not be track
 
 {% hint style="info" %}
 **\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>.\
-**\[2]** Priority order is listed in the left column.\
-**\[3]** Encoded property.\
-**\[4]** Property excluded with [**page\_view**](https://doc.commandersact.com/developers/tracking/events-reference#page\_view) event. \
-**\[5]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
-&#x20;     •<mark style="color:blue;">**`add`**</mark>, for [**add\_to\_cart**](https://doc.commandersact.com/developers/tracking/events-reference#add\_to\_cart) event.\
+&#xNAN;**\[2]** Priority order is listed in the left column.\
+&#xNAN;**\[3]** Encoded property.\
+&#xNAN;**\[4]** Property excluded with [**page\_view**](https://doc.commandersact.com/developers/tracking/events-reference#page_view) event. \
+&#xNAN;**\[5]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
+&#x20;     •<mark style="color:blue;">**`add`**</mark>, for [**add\_to\_cart**](https://doc.commandersact.com/developers/tracking/events-reference#add_to_cart) event.\
 &#x20;     •<mark style="color:blue;">**`conf`**</mark>, for [**purchase**](https://doc.commandersact.com/developers/tracking/events-reference#purchase) event.\
 &#x20;     •<mark style="color:blue;">**`view`**</mark>, as default value.\
-**\[6]** Product information separated by semicolon and computed amounts are rounded with two decimals.\
-**\[7]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](mapp.md#configuration)for more details on how you can bridge custom properties to Mapp.
+&#xNAN;**\[6]** Product information separated by semicolon and computed amounts are rounded with two decimals.\
+&#xNAN;**\[7]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](mapp.md#configuration)for more details on how you can bridge custom properties to Mapp.
 {% endhint %}

@@ -63,7 +63,7 @@ There are **two types** of internal variables: **predefined** and **custom**.
 * You can also configure your own internal variables, using pre-existing variables (e.g. external variables) or retrieving elements available on your sites’ pages (e.g. cookies).
 
 To declare a predefined internal variable, click "**Data Management**” > "**Web Datalayer**" > “**Internal Variables**” > “**ADD PREDEFINED VARIABLE**”:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/ADD\_PREDEFINED\_INT\_VAR.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/ADD_PREDEFINED_INT_VAR.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
@@ -98,7 +98,7 @@ The “**add variable**” window contains various fields:
 You will find below a list of the variables available in the “**Common variables**” category and their description
 
 **Page title:** it stores the title of the page (from the \<title> html tag).[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PAGE\_TITLE\_INTERNAL\_VAR.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PAGE_TITLE_INTERNAL_VAR.png)
 
 _Example:_
 
@@ -107,7 +107,7 @@ _The value of this variable (on the http://www.tagcommander.com/fr/) page will b
 \*\*\*
 
 **Page URL:** it stores the URL of the current page.[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PAGE\_URL\_INTERNAL\_VAR.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PAGE_URL_INTERNAL_VAR.png)
 
 _Example:_
 
@@ -127,7 +127,7 @@ _If the visitor arrives at the Commanders Act site via the Google search engine,
 
 _Example:_
 
-_If the visitor is on the page “https://www.google.fr/webhp**?**tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “https://www.google.fr/webhp”_
+_If the visitor is on the page “https://www.google.fr/webh&#x70;**?**&#x74;ab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “https://www.google.fr/webhp”_
 
 \*\*\*
 
@@ -135,7 +135,7 @@ _If the visitor is on the page “https://www.google.fr/webhp**?**tab=ww\&ei=-AT
 
 _Example:_
 
-_If the visitor is on the page “https://www.google.fr/webhp**?**tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10”_
+_If the visitor is on the page “https://www.google.fr/webh&#x70;**?**&#x74;ab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10”_
 
 \*\*\*
 
@@ -183,7 +183,7 @@ _With each pageview/loading of this variable, the variable will return a random 
 
 _Example:_
 
-_If the visitor is on the page “https://www.google.fr**/webhp**?tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “/webhp”_
+_If the visitor is on the page “https://www.google.f&#x72;**/webhp**?tab=ww\&ei=-ATjVPTyFaWqywOpqoHYDw\&ved=0CAcQ1S4#q=inurl\&start=10″, the value of this variable will be “/webhp”_
 
 \*\*\*
 
@@ -247,12 +247,12 @@ You can create your own internal variable in **two** ways:
 * Via the “**Custom**” tab: “**Custom**” is a completely customized mode used to write your own JavaScript code. This method requires technical knowledge and expertise (but your **Commanders Act consultant** or **support** team can create custom variables for you if necessary).
 
 To create your own internal variable, click "**Data Management**” > "**Web Datalayer**" > “**Internal Variables**” > “**ADD VARIABLE**”:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/ADD\_CUSTOM\_INT\_VAR.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/ADD_CUSTOM_INT_VAR.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 
 The “**add variable**” window contains various fields:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CUSTOM\_INTERNAL\_VINT\_CONFIG.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CUSTOM_INTERNAL_VINT_CONFIG.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
@@ -313,7 +313,7 @@ _This operation allows you to automatically send the correct account ID to your 
 ### Full custom mode
 
 The “**Custom**” mode allows you to write your **own JavaScript** code to create the internal variable of your choice:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CUSTOM\_VAR.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CUSTOM_VAR.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
@@ -341,7 +341,7 @@ You can change separating commas into periods (e.g. “12,50” becomes “12.50
 You can replace special characters with “\_” (e.g. “the company\&its values” changes to “the company\_its values”) or truncate a character string (e.g. limiting the variable’s value to 10 characters)
 
 After assigning a variable type, you can modify its value on the fly, tag by tag, in the “EDIT” interface. Variables with a type added will have a blue symbol in front of their name:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/INT\_VAR\_LINK.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/INT_VAR_LINK.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
@@ -350,7 +350,7 @@ Once you have mapped your variable, click the link symbol:
 <figure><img src="../../../../../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
 A window will appear with a list of different operations corresponding to the type chosen. Check the operation you want (for example, encode an email in sha256) and click “**SAVE**”)[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/INT\_PROSS\_FUNC.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/INT_PROSS_FUNC.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
 
@@ -363,7 +363,7 @@ Since you can create a variable using other variables, it is important for you t
 Therefore, you must declare an internal variable A, on which an internal variable B is based, before variable B. Variable B needs variable A declared first in order to be executed without creating errors.
 
 The variables’ order can be modified using the double-arrow icon:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VINT\_CATEGO.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VINT_CATEGO.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 

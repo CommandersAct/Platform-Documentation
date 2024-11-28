@@ -33,7 +33,7 @@ The “**add**” window consists of the following fields:
 <figure><img src="../../../../../../../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
 **Name**: Name of the Data Storage\
-**Container(s) to link:**A menu that unfolds and shows all available containers\
+**Container(s) to link:**&#x41; menu that unfolds and shows all available containers\
 **Lifetime:** A menu to select the cookie’s lifetime\
 **Type:** the type of cookie/what it is used for\
 **Value:** the values the cookie will take (a and b for ab testing, many more for n testing …)
@@ -57,7 +57,7 @@ _Example: you have set the data storage lifetime to 30 days and checked this opt
 Saves the value of a URL parameter.
 
 _Example: if you want to save the value of the “utm\_source” parameter, i.e. “google” in the URL https://www.site.com/landing?utm\_source=google\&utm\_medium=cpc, you must enter the name of the parameter to save, which in this case would be “utm\_source”_ [\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS\_URL\_PAR\_SAV.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS_URL_PAR_SAV.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
@@ -66,7 +66,7 @@ _Example: if you want to save the value of the “utm\_source” parameter, i.e.
 Assigns a score based on the number of page views.
 
 _Example: if you want to assign the score of “A” to visitors visiting 1 to 3 pages, a “B” to visitors visiting 4 to 7 pages and a “C” to visitors visiting 8 to 11 pages, you must enter the different ranges of page views and indicate each range’s score. The data storage value will be the score (A, B or C)._[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS\_SCORING\_PV.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS_SCORING_PV.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
@@ -75,7 +75,7 @@ _Example: if you want to assign the score of “A” to visitors visiting 1 to 3
 Saves the number of page views for a  given visitor.
 
 _Example: you can use this data storage type if you want to save and send the user’s number of page views to one of your solutions or define a tag’s activation on the number of page views. Just select the “page views counter” data storage type, and the cookie’s value will increase automatically with each page view (1 page view: cookie value = “1”, 2 page views: cookie value = “2”, etc.)_[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS\_PV\_COUNTER.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DS_PV_COUNTER.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 

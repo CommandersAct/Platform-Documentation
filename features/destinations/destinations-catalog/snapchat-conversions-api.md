@@ -60,10 +60,10 @@ This destination will set the unique visitor identifier, which you can provide i
 
 {% hint style="info" %}
 **\[1]** Field automatically generated when it's not set.\
-**\[2]** Priority order is listed in the left column. If <mark style="color:blue;">`context.app.name`</mark> is defined then this field is set with <mark style="color:blue;">`MOBILE_APP`</mark> , otherwise, <mark style="color:blue;">`WEB`</mark> .\
-**\[3]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same <mark style="color:blue;">`client_dedup_id`</mark> across all of them. This will be used within a 48 hour scope of the first occurrence.\
-**\[4]** Each item information is pushed in the related array. \
-**\[5]** Field automatically hashed if provided in clear text.\
-**\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).\
-**\[7]** <mark style="color:blue;">`partners.snapchat.uuid_c1`</mark> has priority over cookie <mark style="color:blue;">**\_scid**</mark>.
+&#xNAN;**\[2]** Priority order is listed in the left column. If <mark style="color:blue;">`context.app.name`</mark> is defined then this field is set with <mark style="color:blue;">`MOBILE_APP`</mark> , otherwise, <mark style="color:blue;">`WEB`</mark> .\
+&#xNAN;**\[3]** If you are reporting events using multiple methods (E.g. Snap Pixel and Conversions API) you should use the same <mark style="color:blue;">`client_dedup_id`</mark> across all of them. This will be used within a 48 hour scope of the first occurrence.\
+&#xNAN;**\[4]** Each item information is pushed in the related array. \
+&#xNAN;**\[5]** Field automatically hashed if provided in clear text.\
+&#xNAN;**\[6]** Field automatically hashed and [normalized](https://marketingapi.snapchat.com/docs/conversion.html#data-hygiene).\
+&#xNAN;**\[7]** <mark style="color:blue;">`partners.snapchat.uuid_c1`</mark> has priority over cookie <mark style="color:blue;">**\_scid**</mark>.
 {% endhint %}

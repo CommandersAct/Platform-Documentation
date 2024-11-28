@@ -45,6 +45,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** See [Destination setup](moebel.md#destination-setup) for more details.\
-**\[2]** Default value: <mark style="color:blue;">`0`</mark>.
+&#xNAN;**\[1]** See [Destination setup](moebel.md#destination-setup) for more details.\
+&#xNAN;**\[2]** Default value: <mark style="color:blue;">`0`</mark>.
 {% endhint %}

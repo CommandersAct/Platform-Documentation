@@ -1,7 +1,7 @@
 # Pinterest
 
 [Pinterest](https://www.pinterest.com) is an image sharing and social media service designed to enable saving and discovery of information on the internet using images, animated GIFs and videos, in the form of pinboards.\
-Using this destination, you can leverage [Pinterest API](https://developers.pinterest.com/docs/conversions/conversion-management/#Tracking%20conversions%20with%20the%20Pinterest%20API) to send events via server-side hits. More technical details are available following this [LINK](https://developers.pinterest.com/docs/api/v5/#tag/conversion\_events).
+Using this destination, you can leverage [Pinterest API](https://developers.pinterest.com/docs/conversions/conversion-management/#Tracking%20conversions%20with%20the%20Pinterest%20API) to send events via server-side hits. More technical details are available following this [LINK](https://developers.pinterest.com/docs/api/v5/#tag/conversion_events).
 
 ## Key features
 
@@ -52,10 +52,10 @@ The property <mark style="color:blue;">`event_id`</mark> is required and used fo
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** If this property is not provided, an <mark style="color:blue;">`action_source`</mark> is retrieved using available data. Supported values: <mark style="color:blue;">`app_android`</mark> , <mark style="color:blue;">`app_ios`</mark> , <mark style="color:blue;">`offline`</mark>  and <mark style="color:blue;">`web`</mark> . Default value: <mark style="color:blue;">`web`</mark> .\
-**\[2]** If this property is not provided, a proper<mark style="color:blue;">`event_source_url`</mark>is retrieved using available data.\
-**\[3]** Boolean or equivalent string value supported.\
-**\[4]** If it's passed in clear text, it's automatically hashed.\
-**\[5]** Priority on the left column. If the value can't be retrieved from the URL, the <mark style="color:blue;">`Click Id Cookie Name`</mark> or the default cookie name`_epik`is used.\
-**\[6]** All item identifiers are taken into account.
+&#xNAN;**\[1]** If this property is not provided, an <mark style="color:blue;">`action_source`</mark> is retrieved using available data. Supported values: <mark style="color:blue;">`app_android`</mark> , <mark style="color:blue;">`app_ios`</mark> , <mark style="color:blue;">`offline`</mark>  and <mark style="color:blue;">`web`</mark> . Default value: <mark style="color:blue;">`web`</mark> .\
+&#xNAN;**\[2]** If this property is not provided, a proper<mark style="color:blue;">`event_source_url`</mark>is retrieved using available data.\
+&#xNAN;**\[3]** Boolean or equivalent string value supported.\
+&#xNAN;**\[4]** If it's passed in clear text, it's automatically hashed.\
+&#xNAN;**\[5]** Priority on the left column. If the value can't be retrieved from the URL, the <mark style="color:blue;">`Click Id Cookie Name`</mark> or the default cookie name`_epik`is used.\
+&#xNAN;**\[6]** All item identifiers are taken into account.
 {% endhint %}

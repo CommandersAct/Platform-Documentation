@@ -34,9 +34,9 @@ Setting the [configuration](commission-junction.md#configuration) field <mark st
 
 {% hint style="info" %}
 **\[1]** "Smart Mapping" field.\
-**\[2]** <mark style="color:blue;">`Click Id (cjevent)`</mark> has priority over <mark style="color:blue;">`CJ Event Cookie Name`</mark> .\
-**\[3]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO\_8601).\
-**\[4]** If [items ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)are present, this property won't be included.\
-**\[5]** For each [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item): <mark style="color:blue;">`X`</mark> and <mark style="color:blue;">`Y`</mark> are incremental numbers, starting from<mark style="color:blue;">`0`</mark>and<mark style="color:blue;">`1`</mark>respectively.\
-**\[6]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration](commission-junction.md#configuration) for more details. The <mark style="color:blue;">`signature`</mark> CJ optional property can be set using this feature.&#x20;
+&#xNAN;**\[2]** <mark style="color:blue;">`Click Id (cjevent)`</mark> has priority over <mark style="color:blue;">`CJ Event Cookie Name`</mark> .\
+**\[3]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).\
+&#xNAN;**\[4]** If [items ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)are present, this property won't be included.\
+&#xNAN;**\[5]** For each [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item): <mark style="color:blue;">`X`</mark> and <mark style="color:blue;">`Y`</mark> are incremental numbers, starting from<mark style="color:blue;">`0`</mark>and<mark style="color:blue;">`1`</mark>respectively.\
+&#xNAN;**\[6]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration](commission-junction.md#configuration) for more details. The <mark style="color:blue;">`signature`</mark> CJ optional property can be set using this feature.&#x20;
 {% endhint %}

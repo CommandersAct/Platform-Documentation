@@ -1,13 +1,13 @@
 # Google Search Ads 360 Enhanced Conversions
 
-[Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Taking advantage of the [Campaign Manager 360 offline conversion API](https://developers.google.com/doubleclick-advertisers/guides/conversions\_ec), you can leverage the "Enhanced Conversions" feature to send first-party data, while also giving the option to modify quantity and value, in the form of [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate).
+[Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Taking advantage of the [Campaign Manager 360 offline conversion API](https://developers.google.com/doubleclick-advertisers/guides/conversions_ec), you can leverage the "Enhanced Conversions" feature to send first-party data, while also giving the option to modify quantity and value, in the form of [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate).
 
 {% hint style="warning" %}
 The "Enhanced Conversions" (EC) in Campaign Manager 360 (CM360) API is a hybrid solution with API, which is covered by this destination, and client-side tag: See our template tag <mark style="color:blue;">gtag - Google SA360 - Floodlight for server-side Enhanced Conversions</mark> for more details. Google still requires Floodlight tags to get conversion info from advertisers' websites.&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-Google recommends triggering [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate) **between 90 minutes and 24 hours**, with the latter being the upper time limit, after the client-side Floodlight tag is fired to maximize EC matching. After **30 minutes** has passed since the client-side Floodlight is fired, you can already trigger [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), but it's suggested to follow Google recommendation as reported above. More details are available following this [LINK](https://developers.google.com/doubleclick-advertisers/guides/conversions\_ec#recommended\_setup).
+Google recommends triggering [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate) **between 90 minutes and 24 hours**, with the latter being the upper time limit, after the client-side Floodlight tag is fired to maximize EC matching. After **30 minutes** has passed since the client-side Floodlight is fired, you can already trigger [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate), but it's suggested to follow Google recommendation as reported above. More details are available following this [LINK](https://developers.google.com/doubleclick-advertisers/guides/conversions_ec#recommended_setup).
 {% endhint %}
 
 ## Key features
@@ -28,11 +28,11 @@ Before configuring this destination, you need to fullfil the following requireme
 
 Log in to the CM360 account and choose the advertiser you want to implement EC with. On the left, open the menu <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Configuration`</mark>, and flag the checkbox under the <mark style="color:blue;">`Enhanced conversions`</mark> section:\
 \
-![](../../../../.gitbook/assets/sa360ec\_1.png)\
+![](../../../../.gitbook/assets/sa360ec_1.png)\
 \
 CM360 users of agency admin and DC account manager roles should be able to accept the ToS. Note that accepting the ToS can also be done in the previous version of Search Ads 360 (SA360), but only if the CM360 advertiser controlling the floodlight configuration is linked to a SA360 advertiser. In that case, the ToS can be accepted in the linked advertiser under <mark style="color:blue;">`Advertiser Settings`</mark> ➜ <mark style="color:blue;">`Advertiser Details`</mark> ➜ <mark style="color:blue;">`Enhanced conversions`</mark>:\
 \
-![](../../../../.gitbook/assets/sa360ec\_2.png)\
+![](../../../../.gitbook/assets/sa360ec_2.png)\
 
 
 ### Enrich you Floodlight client-side tag
@@ -49,7 +49,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 **\[1]** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> :\
 
 
-![](<../../../../.gitbook/assets/sa360ec\_3 (1).png>)
+![](<../../../../.gitbook/assets/sa360ec_3 (1).png>)
 {% endhint %}
 
 ## Quick reference
@@ -74,7 +74,7 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
 **\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
-**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
-**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
-**\[4]** Automatically normalized and hashed if passed in clear.
+&#xNAN;**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
+&#xNAN;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
+&#xNAN;**\[4]** Automatically normalized and hashed if passed in clear.
 {% endhint %}

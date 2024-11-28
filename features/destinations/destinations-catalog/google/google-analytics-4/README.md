@@ -4,8 +4,8 @@ Google Analytics 4 (GA4) is the latest iteration of Google's analytics tool that
 Your data will be sent server-side taking advantage of the [Google Measurement Protocol API](https://developers.google.com/analytics/devguides/collection/protocol/ga4) and in form of [events](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference/events).
 
 {% hint style="info" %}
-Google designed the Measurement Protocol with some [limitations](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats\_to\_measurement\_protocol), especially it does not allow to manage session.\
-For [session handling](./#session-handling), you should currently setup a _**gtag**_** config tag** that will fire on the **first page** (only) of the user's session.\
+Google designed the Measurement Protocol with some [limitations](https://developers.google.com/analytics/devguides/collection/protocol/ga4#caveats_to_measurement_protocol), especially it does not allow to manage session.\
+For [session handling](./#session-handling), you should currently setup a _**gtag**_**&#x20;config tag** that will fire on the **first page** (only) of the user's session.\
 For this purpose you can use on your website the tag template **"gtag - Config with options"** as it comes with the additional configuration option to send the Google reserved event <mark style="color:blue;">`session_start`</mark> while avoid firing the event <mark style="color:blue;">`page_view`</mark> :
 
 ```javascript
@@ -623,8 +623,8 @@ Google properties are set starting from the path <mark style="color:blue;">`user
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
 **\[1]** Automatically normalized and hashed, if provided in clear text.\
-**\[2]** Property set starting from the path <mark style="color:blue;">`user_data.address`</mark> .\
-**\[3]** Automatically normalized.
+&#xNAN;**\[2]** Property set starting from the path <mark style="color:blue;">`user_data.address`</mark> .\
+&#xNAN;**\[3]** Automatically normalized.
 {% endhint %}
 
 ## Limitations

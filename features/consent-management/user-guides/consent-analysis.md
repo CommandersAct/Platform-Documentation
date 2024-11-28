@@ -60,7 +60,7 @@ To understand dashboard metrics it is important to understand how Commanders Act
 {% tab title="Optin actions" %}
 An optin action occurs when a visitor...
 
-* clicks the accept button of the privacy banner**.**
+* clicks the accept button of the privacy banne&#x72;**.**
 * saves the privacy center with at least one category set to "on".
 * navigates to a second page (only in case implicit "on navigation" consent was installed).
 * scrolls on the landing page (only in case implicit "on scroll" consent was installed).

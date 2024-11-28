@@ -41,7 +41,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 ## Quick reference
 
 {% hint style="info" %}
-[Piano Analytics video/audio](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#audio-video\_31) events are supported by [our event model](https://doc.commandersact.com/developers/tracking/events-reference/video-event-reference).
+[Piano Analytics video/audio](https://developers.atinternet-solutions.com/piano-analytics-tagging-en/event-tagging-piano-analytics-en/standard-event-tagging-en/#audio-video_31) events are supported by [our event model](https://doc.commandersact.com/developers/tracking/events-reference/video-event-reference).
 {% endhint %}
 
 | Commanders Act Events                                                                                                                                                     | Piano Analytics Events                                                                                                |
@@ -90,9 +90,9 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 {% hint style="info" %}
 **\[\*]** Custom events must be added to the Piano Analytics' data model first or they won't be processed. You can add new events by following ![](<../../../../.gitbook/assets/1 (3).png>) ➜ `SETTINGS` ➜ `Data Management` ➜ `Data Model` ➜`Events`.\
-**\[1]** If <mark style="color:blue;">`page_type`</mark> is equal to <mark style="color:blue;">`product`</mark> then <mark style="color:blue;">`product.page_display`</mark> is sent, otherwise, <mark style="color:blue;">`page.display`</mark> .\
-**\[2]** A <mark style="color:blue;">`product.purchased`</mark> will be sent for each product being purchased.\
-**\[3]** Flagging <mark style="color:blue;">`Custom Event Mapping: "view_item" matched with Piano "product.page_display"`</mark> (See [Destination setup](at-internet.md#destination-setup)) maps your <mark style="color:blue;">`view_item`</mark> with Piano  <mark style="color:blue;">`product.page_display`</mark> , otherwise your event will be matched with Piano  <mark style="color:blue;">`product.display`</mark> .
+&#xNAN;**\[1]** If <mark style="color:blue;">`page_type`</mark> is equal to <mark style="color:blue;">`product`</mark> then <mark style="color:blue;">`product.page_display`</mark> is sent, otherwise, <mark style="color:blue;">`page.display`</mark> .\
+&#xNAN;**\[2]** A <mark style="color:blue;">`product.purchased`</mark> will be sent for each product being purchased.\
+&#xNAN;**\[3]** Flagging <mark style="color:blue;">`Custom Event Mapping: "view_item" matched with Piano "product.page_display"`</mark> (See [Destination setup](at-internet.md#destination-setup)) maps your <mark style="color:blue;">`view_item`</mark> with Piano  <mark style="color:blue;">`product.page_display`</mark> , otherwise your event will be matched with Piano  <mark style="color:blue;">`product.display`</mark> .
 {% endhint %}
 
 ## Field mappings
@@ -181,15 +181,15 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 {% hint style="info" %}
 **\[1]** In seconds.\
 **\[2]** Field included for the following events: <mark style="color:blue;">`add_to_cart`</mark> , <mark style="color:blue;">`page_view (product.page_display)`</mark> , <mark style="color:blue;">`view_item`</mark> , <mark style="color:blue;">`purchase (product.purchased)`</mark> ,  <mark style="color:blue;">`remove_from_cart`</mark> , <mark style="color:blue;">`add_to_wishlist`</mark> , and <mark style="color:blue;">`select_item`</mark> .\
-**\[3]** Boolean value: <mark style="color:blue;">`true`</mark> or <mark style="color:blue;">`false`</mark> .\
-**\[4]** Sum all <mark style="color:blue;">`items.X.quantity`</mark> .\
-**\[5]** Depending on the drop-down selection (See <mark style="color:blue;">`User Identifier`</mark> in the[<mark style="color:blue;">`Configuration`</mark>](at-internet.md#configuration)section), a specific Commanders Act property is used.\
-**\[6]** Field converted to string.\
-**\[7]** Parsed from the <mark style="color:blue;">`utm_medium`</mark> parameter in the provided url.\
-**\[8]** Parsed from the <mark style="color:blue;">`utm_campaign`</mark> parameter in the provided url.\
-**\[9]** Parsed from the <mark style="color:blue;">`utm_content`</mark> parameter in the provided url.\
-**\[10]** Parsed from the <mark style="color:blue;">`utm_creative_format`</mark> parameter in the provided url.\
-**\[11]** This is either "Live" or "Recorded Broadcast".
+&#xNAN;**\[3]** Boolean value: <mark style="color:blue;">`true`</mark> or <mark style="color:blue;">`false`</mark> .\
+&#xNAN;**\[4]** Sum all <mark style="color:blue;">`items.X.quantity`</mark> .\
+&#xNAN;**\[5]** Depending on the drop-down selection (See <mark style="color:blue;">`User Identifier`</mark> in the[<mark style="color:blue;">`Configuration`</mark>](at-internet.md#configuration)section), a specific Commanders Act property is used.\
+&#xNAN;**\[6]** Field converted to string.\
+&#xNAN;**\[7]** Parsed from the <mark style="color:blue;">`utm_medium`</mark> parameter in the provided url.\
+&#xNAN;**\[8]** Parsed from the <mark style="color:blue;">`utm_campaign`</mark> parameter in the provided url.\
+&#xNAN;**\[9]** Parsed from the <mark style="color:blue;">`utm_content`</mark> parameter in the provided url.\
+&#xNAN;**\[10]** Parsed from the <mark style="color:blue;">`utm_creative_format`</mark> parameter in the provided url.\
+&#xNAN;**\[11]** This is either "Live" or "Recorded Broadcast".
 {% endhint %}
 
 #### Headers parameters
@@ -202,7 +202,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 ## Autopromo events
 
-When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page\_view) and _click.action_ events, you can add autopromotions, by setting the array field `autopromos` . See the following example:
+When sending [_page\_view_](https://doc.commandersact.com/developers/tracking/events-reference/common-events#page_view) and _click.action_ events, you can add autopromotions, by setting the array field `autopromos` . See the following example:
 
 ```json
 ...

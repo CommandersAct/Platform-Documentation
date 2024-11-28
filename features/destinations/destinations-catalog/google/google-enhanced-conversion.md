@@ -70,7 +70,7 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
 **\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
-**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.\
-**\[3]** Normalized and hashed via SHA256.\
-**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
+&#xNAN;**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.\
+&#xNAN;**\[3]** Normalized and hashed via SHA256.\
+&#xNAN;**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
 {% endhint %}

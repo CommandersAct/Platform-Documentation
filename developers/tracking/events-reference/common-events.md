@@ -418,12 +418,12 @@ Example :
 ```
 
 > :information\_source: we only support hex (base16) encoding\
-> _(i.e.: **hashed** values are carried by strings with \[0-9a-f] characters)_\
+> &#xNAN;_(i.e.: **hashed** values are carried by strings with \[0-9a-f] characters)_\
 > Other encodings are not supported yet
 
 No need to send both **plain** and **hashed** values :
 
 * if you send **plain** value, the **hashed** values aren't necessary\
-  _We can generate **hashed** values on server side using **plain** value_
+  &#xNAN;_&#x57;e can generate **hashed** values on server side using **plain** value_
 * if you don't send **plain** value, then you should fill as much **hashed** values as possible\
-  _Partners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value_
+  &#xNAN;_&#x50;artners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value_

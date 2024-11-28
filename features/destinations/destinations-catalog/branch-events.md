@@ -75,10 +75,10 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** in <mark style="color:blue;">`user_data`</mark> .\
-**\[2]** in <mark style="color:blue;">`event_data`</mark> .\
-**\[3]** in <mark style="color:blue;">`content_items.X`</mark> .\
-**\[4]** in <mark style="color:blue;">`items.X`</mark> .\
+&#xNAN;**\[2]** in <mark style="color:blue;">`event_data`</mark> .\
+&#xNAN;**\[3]** in <mark style="color:blue;">`content_items.X`</mark> .\
+&#xNAN;**\[4]** in <mark style="color:blue;">`items.X`</mark> .\
 **\[5]** property set when <mark style="color:blue;">`context.device.os.name`</mark> is <mark style="color:blue;">`iOS`</mark> (case insensitive).\
-**\[6]** property set when <mark style="color:blue;">`context.device.os.name`</mark> is <mark style="color:blue;">`Android`</mark> (case insensitive).\
-**\[7]** boolean opposite of <mark style="color:blue;">`context.device.ad_tracking_enabled`</mark> .
+&#xNAN;**\[6]** property set when <mark style="color:blue;">`context.device.os.name`</mark> is <mark style="color:blue;">`Android`</mark> (case insensitive).\
+&#xNAN;**\[7]** boolean opposite of <mark style="color:blue;">`context.device.ad_tracking_enabled`</mark> .
 {% endhint %}

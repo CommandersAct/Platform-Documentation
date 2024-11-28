@@ -47,15 +47,15 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** See [Quick reference](alphalyr-marketing-studio.md#quick-reference) for more details.\
-**\[2]** Field automatically hashed with SHA256 if passed in clear. Priority order is provided on the left column.\
-**\[3]** Field anonymized.\
-**\[4]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark> depending if <mark style="color:blue;">`eventModel.app.name`</mark> is set or not.\
-**\[5]** The <mark style="color:blue;">`pathname`</mark> part of <mark style="color:blue;">`context.page.url`</mark> is set: additional parameter are added to the request based on <mark style="color:blue;">`searchParams`</mark> (See [URL object](https://developer.mozilla.org/en-US/docs/Web/API/URL) for more details).\
-**\[6]** For Alphalyr <mark style="color:blue;">`product`</mark> page type only.\
-**\[7]** For Alphalyr <mark style="color:blue;">`category`</mark> page type only.\
-**\[8]** All items are taken into account.\
-**\[9]** For Alphalyr <mark style="color:blue;">`purchase`</mark> and <mark style="color:blue;">`cart`</mark> page type only.\
-**\[10]** Depending if Alphalyr page type is <mark style="color:blue;">`purchase`</mark> or <mark style="color:blue;">`cart`</mark> then <mark style="color:blue;">`revenue`</mark> or <mark style="color:blue;">`value`</mark> is used respectively.\
-**\[11]** For Alphalyr <mark style="color:blue;">`purchase`</mark> page type only.\
-**\[12]** When <mark style="color:blue;">`Is SPA`</mark> is flagged only.
+&#xNAN;**\[2]** Field automatically hashed with SHA256 if passed in clear. Priority order is provided on the left column.\
+&#xNAN;**\[3]** Field anonymized.\
+&#xNAN;**\[4]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark> depending if <mark style="color:blue;">`eventModel.app.name`</mark> is set or not.\
+&#xNAN;**\[5]** The <mark style="color:blue;">`pathname`</mark> part of <mark style="color:blue;">`context.page.url`</mark> is set: additional parameter are added to the request based on <mark style="color:blue;">`searchParams`</mark> (See [URL object](https://developer.mozilla.org/en-US/docs/Web/API/URL) for more details).\
+&#xNAN;**\[6]** For Alphalyr <mark style="color:blue;">`product`</mark> page type only.\
+&#xNAN;**\[7]** For Alphalyr <mark style="color:blue;">`category`</mark> page type only.\
+&#xNAN;**\[8]** All items are taken into account.\
+&#xNAN;**\[9]** For Alphalyr <mark style="color:blue;">`purchase`</mark> and <mark style="color:blue;">`cart`</mark> page type only.\
+&#xNAN;**\[10]** Depending if Alphalyr page type is <mark style="color:blue;">`purchase`</mark> or <mark style="color:blue;">`cart`</mark> then <mark style="color:blue;">`revenue`</mark> or <mark style="color:blue;">`value`</mark> is used respectively.\
+&#xNAN;**\[11]** For Alphalyr <mark style="color:blue;">`purchase`</mark> page type only.\
+&#xNAN;**\[12]** When <mark style="color:blue;">`Is SPA`</mark> is flagged only.
 {% endhint %}

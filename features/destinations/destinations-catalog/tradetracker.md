@@ -52,7 +52,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** Mandatory for "Sale" conversion type.\
-**\[2]** Merchant description data used for statistical purpose. Visible for merchant only.\
-**\[3]** Affiliate description data used by affiliates for campaign optimisation. Visible for affiliates only.
+&#xNAN;**\[1]** Mandatory for "Sale" conversion type.\
+&#xNAN;**\[2]** Merchant description data used for statistical purpose. Visible for merchant only.\
+&#xNAN;**\[3]** Affiliate description data used by affiliates for campaign optimisation. Visible for affiliates only.
 {% endhint %}

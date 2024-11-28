@@ -40,6 +40,7 @@
             * [Statistics](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/container/statistics.md)
             * [Modification history](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/container/modification-history.md)
             * [Javascript block](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/container/javascript-block.md)
+            * [Branches](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/branches.md)
           * [Tags](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/tags/README.md)
             * [Add tags](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/tags/add-tags.md)
             * [Configure tags](features/sources/sources-catalog/containers/user-guides-for-browser-side-platform/tags/configure-tags.md)

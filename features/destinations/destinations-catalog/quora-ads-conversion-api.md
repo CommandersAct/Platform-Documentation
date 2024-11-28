@@ -10,7 +10,7 @@ This destination is currently under final review and will be available soon.
 
 The Quora Ads Conversion API destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Quora events](https://www.quora.com/ads/conversion\_api\_doc#/paths/\~1conversion/post), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) matches [Quora events](https://www.quora.com/ads/conversion_api_doc#/paths/~1conversion/post), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Event mapping**: change standard mapping between Quora events and yours or add new mappings.&#x20;
@@ -60,6 +60,6 @@ To deduplicate conversions between this destination and Quora pixel tag you need
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** Automatically converted in microseconds.\
+&#xNAN;**\[1]** Automatically converted in microseconds.\
 **\[2]** See [Quick reference](quora-ads-conversion-api.md#quick-reference) for more details.
 {% endhint %}

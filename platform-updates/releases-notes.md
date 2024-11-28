@@ -79,7 +79,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 ## Release 10.0.24 - September 2024
 
-#### 🎯 _**Facebook CAPI Advanced**_** Destination**
+#### 🎯 _**Facebook CAPI Advanced**_**&#x20;Destination**
 
 **Key Updates:**
 
@@ -200,15 +200,15 @@ We look forward to your feedback on these improvements.
 **Android**
 
 * **Consent 5.3.2:** Automatic JSON update when receiving a new one from the CDN.\
-  _Benefit: Ensures continuous compliance and accuracy._
+  &#xNAN;_&#x42;enefit: Ensures continuous compliance and accuracy._
 
 **iOS**
 
 * **Consent 5.3.0 / Core 5.4.0 / IAB 5.1.0:**
   * **Unified TCConsent Module:** Now there's only one module instead of separate ones for IAB and non-IAB.\
-    _Benefit: Simplifies consent management._
+    &#xNAN;_&#x42;enefit: Simplifies consent management._
   * **Remove Refused Vendors from TCUser:** When no consent is available.\
-    _Benefit: Cleaner consent handling._
+    &#xNAN;_&#x42;enefit: Cleaner consent handling._
 
 ***
 
@@ -217,11 +217,11 @@ We look forward to your feedback on these improvements.
 **What's New:**
 
 * **Time Split:** View by day for periods < 30 days, by week for periods < 90 days.\
-  _Benefit: More precise credit usage tracking._
+  &#xNAN;_&#x42;enefit: More precise credit usage tracking._
 * **New Metric Names:** Closer to those on customer invoices.\
-  _Benefit: Better data understanding._
+  &#xNAN;_&#x42;enefit: Better data understanding._
 * **UI Enhancements:** Improved sorting order, labels, and colors.\
-  _Benefit: More intuitive and navigable interface._
+  &#xNAN;_&#x42;enefit: More intuitive and navigable interface._
 
 **👥 Target Audience:** Sales team & customers with "account administrator" rights.
 
@@ -232,7 +232,7 @@ We look forward to your feedback on these improvements.
 #### 🧼 Data Cleansing UX Improvement
 
 * **Show More Than 10 Cleansings on a Single Page.**\
-  _Benefit: Improved organization and management of cleansings._
+  &#xNAN;_&#x42;enefit: Improved organization and management of cleansings._
 
 <figure><img src="../.gitbook/assets/image (517).png" alt=""><figcaption></figcaption></figure>
 
@@ -241,7 +241,7 @@ We look forward to your feedback on these improvements.
 #### 🍪 Technical Session Cookies Update
 
 * **Renaming Cookies for 1st Party Tracking:** Previously named "phoenix".\
-  _Benefit: More accurate and understandable nomenclature._
+  &#xNAN;_&#x42;enefit: More accurate and understandable nomenclature._
 
 [More information here](https://doc.commandersact.com/configure/cookies).
 
@@ -258,7 +258,7 @@ We look forward to your feedback on these improvements.
 **Key Changes:**
 
 * **Adblocker Detection:** Now included in web containers.\
-  _Benefit: More comprehensive data collection despite adblockers._
+  &#xNAN;_&#x42;enefit: More comprehensive data collection despite adblockers._
 
 **👥 Target Audience:** Customers using oneTag. \
 You need to generate/redeploy all containers containing a oneTag tag.
@@ -295,7 +295,7 @@ You need to generate/redeploy all containers containing a oneTag tag.
   * Option to send **App events** and review/edit app specific properties sent to Facebook
 * **Advanced Settings:** Options for content type, custom data, test code and additional PageView events.\
   \
-  _Benefit: Greater control over data shared with Facebook, more options, and flexibility._
+  &#xNAN;_&#x42;enefit: Greater control over data shared with Facebook, more options, and flexibility._
 
 **🎯 Why These Changes:**
 
@@ -306,7 +306,7 @@ You need to generate/redeploy all containers containing a oneTag tag.
 #### 🚀 New Destination: Outbrain
 
 * **Server-Side Event Tracking:** Enabled for more accurate performance measurement.\
-  _Benefit: Enhanced tracking capabilities._
+  &#xNAN;_&#x42;enefit: Enhanced tracking capabilities._
 
 ***
 
@@ -341,8 +341,8 @@ _Benefits:_
 ***
 
 **New Destination: LinkedIn Conversions API**:link:\
-🎉 Introducing the [LinkedIn CAPI](../features/destinations/destinations-catalog/linkedin\_capi.md) for direct marketing data connection.\
-_Benefits:_
+🎉 Introducing the [LinkedIn CAPI](../features/destinations/destinations-catalog/linkedin_capi.md) for direct marketing data connection.\
+&#xNAN;_&#x42;enefits:_
 
 * Track campaign performance anywhere for optimized results.
 * Better attribution and cost efficiency with complete data sets.
@@ -351,7 +351,7 @@ _Benefits:_
 
 **New Destination: Firebase Analytics for Mobile Applications** :bulb:\
 📱 Introducing a new informative configuration page for Firebase Analytics integration.\
-_Benefits:_
+&#xNAN;_&#x42;enefits:_
 
 * Seamless bridge between CMP & Firebase Analytics.
 * Easy implementation of Google Consent Mode with Firebase Analytics (GA4).
@@ -750,7 +750,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 
 * **New API "Users Activities logs"**\
-  This new API allows administrators to get all users activities history (who has changed what, when, etc...). Read the technical [API documentation](https://commandersact.github.io/api\_doc/#tag/AdminActivityLogs) to start using it.\
+  This new API allows administrators to get all users activities history (who has changed what, when, etc...). Read the technical [API documentation](https://commandersact.github.io/api_doc/#tag/AdminActivityLogs) to start using it.\
 
 *   **Live Report Builder: enhancement on UI**\
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"
@@ -1103,7 +1103,7 @@ More information here:
   * New tag in the library to facilitate the setup​
 * **Event Replay -**  _Closed alpha​_
 * **New source:**&#x20;
-  * **Flutter - for mobile App** – _Closed beta_​
+  * **Flutter - for mobile App** – _Closed bet&#x61;_&#x200B;
 * **Campaign analysis ​**
   * Campaign Overlap enhanced => possibility to go back up to 30 days​\
     ![](<../.gitbook/assets/image (18) (2).png>)
@@ -1197,7 +1197,7 @@ More information here:
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google/google-customer-match.md) (public beta)
     * New feature : **smart mapping** (closed alpha) : visualize/edit the data mapping done automatically by the system between your event properties and the destination's API.\
-      _This feature will be progressively open on each destination during next months._\\
+      &#xNAN;_&#x54;his feature will be progressively open on each destination during next months._\\
 
     <figure><img src="../.gitbook/assets/image (18) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

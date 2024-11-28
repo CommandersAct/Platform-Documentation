@@ -1,7 +1,7 @@
 # Awin
 
 [Awin ](https://www.awin.com)provides a global affiliation network connecting businesses with customers.\
-Using this destination you can implement [server-side tracking](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29) using the same [client-side parameters](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guides#.5B.2B.5D\_Fall-back\_Conversion\_Pixel).
+Using this destination you can implement [server-side tracking](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversion_Pixel_Only_Tracking#Server_To_Server_.28S2S.29) using the same [client-side parameters](https://wiki.awin.com/index.php/Advertiser_Tracking_Guides#.5B.2B.5D_Fall-back_Conversion_Pixel).
 
 {% hint style="info" %}
 Awin no longer support the use of pixel only implementations due to various browser constraints and limitations.
@@ -11,16 +11,16 @@ Awin no longer support the use of pixel only implementations due to various brow
 
 The Awin destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Awin lead and sale tracking](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers [Awin lead and sale tracking](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversion_Pixel_Only_Tracking#Server_To_Server_.28S2S.29), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Awin.
-* **Commission group**: remunerate different products based on your [commission groups](https://wiki.awin.com/index.php/How\_to\_create\_a\_commission\_group).
+* **Commission group**: remunerate different products based on your [commission groups](https://wiki.awin.com/index.php/How_to_create_a_commission_group).
 
 ## Destination setup
 
 {% hint style="warning" %}
-The [**awc**](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29) parameter is appended to the landing page URL by Awin to identify the source of the click. This value is mandatory and is retrieved by getting the value of either the <mark style="color:blue;">`Click Id`</mark> (See [Configuration](awin.md#configuration)) or the [**awc** ](https://wiki.awin.com/index.php/Advertiser\_Tracking\_Guide/Conversion\_Pixel\_Only\_Tracking#Server\_To\_Server\_.28S2S.29)cookie, in this priority order.
+The [**awc**](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversion_Pixel_Only_Tracking#Server_To_Server_.28S2S.29) parameter is appended to the landing page URL by Awin to identify the source of the click. This value is mandatory and is retrieved by getting the value of either the <mark style="color:blue;">`Click Id`</mark> (See [Configuration](awin.md#configuration)) or the [**awc** ](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversion_Pixel_Only_Tracking#Server_To_Server_.28S2S.29)cookie, in this priority order.
 {% endhint %}
 
 ### Configuration
@@ -54,9 +54,9 @@ Accepted characters for the commission group codes are alphanumerics and letter 
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** See [Destination setup](awin.md#destination-setup) for more details.\
+&#xNAN;**\[1]** See [Destination setup](awin.md#destination-setup) for more details.\
 **\[2]** Default value "aw".\
 **\[3]** Computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). For <mark style="color:blue;">`sale`</mark> conversion type, when the "Smart Mapping" field <mark style="color:blue;">`Item Affiliation`</mark> is not filled with a proper value, the Awin "Commission Group" is set with the value <mark style="color:blue;">`DEFAULT`</mark> .\
 When you select <mark style="color:blue;">`lead`</mark> as conversion type, it's set with the static string <mark style="color:blue;">`LEAD:1`</mark> .\
-**\[4]** It takes into account each product.
+&#xNAN;**\[4]** It takes into account each product.
 {% endhint %}

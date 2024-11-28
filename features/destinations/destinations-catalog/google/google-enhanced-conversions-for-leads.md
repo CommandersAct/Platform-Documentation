@@ -74,16 +74,16 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 
 {% hint style="info" %}
 **\[1]** See [Google Analytics Measurement Id](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
-**\[2]** Google click identifier for clicks associated with app conversions and originating from iOS devices starting with iOS14.\
-**\[3]** Google click identifier for clicks associated with web conversions and originating from iOS devices starting with iOS14.\
-**\[4]** Set in the <mark style="color:blue;">`userIdentifiers.X`</mark> . Accepted values: <mark style="color:blue;">`FIRST_PARTY`</mark> , <mark style="color:blue;">`THIRD_PARTY`</mark>  or <mark style="color:blue;">`UNSPECIFIED`</mark> . Default value: <mark style="color:blue;">`FIRST_PARTY`</mark> .\
-**\[5]** Automatically hashed if provided in clear text.\
-**\[6]** Accepted values: <mark style="color:blue;">`true`</mark> , <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`granted`</mark> when user granted the consent or <mark style="color:blue;">`false`</mark> , <mark style="color:blue;">`0`</mark>  or <mark style="color:blue;">`denied`</mark> otherwise. If consent is not specified use <mark style="color:blue;">`unspecified`</mark> . All string values are case insensitive. Default value <mark style="color:blue;">`granted`</mark> .\
-**\[7]** Conversion resource name in the following format: <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionActions/[CONVESION_ACTION_ID]`</mark>   \
-**\[8]** Set in the path <mark style="color:blue;">`customVariables.X`</mark> .\
-**\[9]** Resource name of the custom variable in the following format:\
+&#xNAN;**\[2]** Google click identifier for clicks associated with app conversions and originating from iOS devices starting with iOS14.\
+&#xNAN;**\[3]** Google click identifier for clicks associated with web conversions and originating from iOS devices starting with iOS14.\
+&#xNAN;**\[4]** Set in the <mark style="color:blue;">`userIdentifiers.X`</mark> . Accepted values: <mark style="color:blue;">`FIRST_PARTY`</mark> , <mark style="color:blue;">`THIRD_PARTY`</mark>  or <mark style="color:blue;">`UNSPECIFIED`</mark> . Default value: <mark style="color:blue;">`FIRST_PARTY`</mark> .\
+&#xNAN;**\[5]** Automatically hashed if provided in clear text.\
+&#xNAN;**\[6]** Accepted values: <mark style="color:blue;">`true`</mark> , <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`granted`</mark> when user granted the consent or <mark style="color:blue;">`false`</mark> , <mark style="color:blue;">`0`</mark>  or <mark style="color:blue;">`denied`</mark> otherwise. If consent is not specified use <mark style="color:blue;">`unspecified`</mark> . All string values are case insensitive. Default value <mark style="color:blue;">`granted`</mark> .\
+&#xNAN;**\[7]** Conversion resource name in the following format: <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionActions/[CONVESION_ACTION_ID]`</mark>   \
+&#xNAN;**\[8]** Set in the path <mark style="color:blue;">`customVariables.X`</mark> .\
+&#xNAN;**\[9]** Resource name of the custom variable in the following format:\
 <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionCustomVariables/[VARIABLE_ID]`</mark>   \
-**\[10]** Your value for the custom variable. See [Mapping Custom Variables](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
-**\[11]** Set in the base path. See [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.
+&#xNAN;**\[10]** Your value for the custom variable. See [Mapping Custom Variables](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
+&#xNAN;**\[11]** Set in the base path. See [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.
 {% endhint %}
 

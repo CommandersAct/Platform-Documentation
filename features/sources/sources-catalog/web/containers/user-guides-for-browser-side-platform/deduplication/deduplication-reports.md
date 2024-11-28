@@ -28,11 +28,11 @@ The calendar allows you to select a period of time to display deduplicated tag c
 
 This table displays the number of tag calls for every conversion:
 
-* **“Conversion ID”**column: displays your conversions’ IDs.
-* **“Date”**column: displays a conversions’ time and date.
+* **“Conversion ID”**&#x63;olumn: displays your conversions’ IDs.
+* **“Date”**&#x63;olumn: displays a conversions’ time and date.
 * **“Revenue**”column: displays the conversions’ amounts (including or excluding taxes, depending on the amount you chose to collect with the “Commanders Act – Reporting Deduplication v1.2” tag).
 * **“Tags”** column: lists all tags that were called per conversion. Rules affecting tags are all considered, especially deduplication rules.
-* **“Detail”**column: it displays a popin with the detailed customer journey per conversion. The popin is made of four columns.
+* **“Detail”**&#x63;olumn: it displays a popin with the detailed customer journey per conversion. The popin is made of four columns.
 
 1. Position: displays, in descending order, the position of every touch point within the customer journey associated to the conversion.
 2. Type: displays the touchpoint’s type (click or impression).

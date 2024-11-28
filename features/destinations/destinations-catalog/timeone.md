@@ -43,6 +43,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for  more details.\
+&#xNAN;**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for  more details.\
 **\[2]** All items are taken into account, separeted by a pipe character ("|") and encoded.
 {% endhint %}

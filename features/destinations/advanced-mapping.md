@@ -4,7 +4,7 @@
 
 In some case, you would need, for a specific destination, to transform your event before it is sent to the destination.\
 \
-_Properties transformation_ support currently renaming or deleting properties.
+&#xNAN;_&#x50;roperties transformation_ support currently renaming or deleting properties.
 
 Enter on the left the property name you want to add or delete. Then enter on the right the property name to map (or leave empty to remove the property)
 

@@ -81,18 +81,14 @@ Example below for "security\_storage" with no privacy category assigned:
 <figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 
 *   **wait\_for\_update**\
-    Enabling this optional feature will send a signal to Google's tags to [wait for an update](https://developers.google.com/tag-platform/security/guides/consent?hl=en#tracking\_consent\_state). \
+    Enabling this optional feature will send a signal to Google's tags to [wait for an update](https://developers.google.com/tag-platform/security/guides/consent?hl=en#tracking_consent_state). \
     Enter a value in milliseconds to control the waiting time before the data is sent.\
     This can be useful if you are experiencing timing issues. Otherwise, you can leave it blank!\
 
 
-    <div align="center">
-
-    <figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure>
-
-    </div>
+    <div align="center"><figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure></div>
 *   **ads\_data\_redaction**\
-    set [ads\_data\_redaction](https://developers.google.com/tag-platform/security/guides/consent?hl=en#redact\_ads\_data) to ON to further redact your advertising data when "ad\_storage" is "denied"
+    set [ads\_data\_redaction](https://developers.google.com/tag-platform/security/guides/consent?hl=en#redact_ads_data) to ON to further redact your advertising data when "ad\_storage" is "denied"
 
     <figure><img src="../../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
 *   **url\_passthrough**\
@@ -111,7 +107,7 @@ Go at the edition step of your privacy banner, open the settings menu to turn ON
 <figure><img src="../../../../.gitbook/assets/image (489).png" alt=""><figcaption></figcaption></figure>
 
 The privacy setup is done! You can now Generate and Deploy your Privacy Banner.\
-_\*At this point, Consent Mode will not affect the behaviour of your tags. Please follow the next steps!_
+&#xNAN;_\*At this point, Consent Mode will not affect the behaviour of your tags. Please follow the next steps!_
 
 <figure><img src="../../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 

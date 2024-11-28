@@ -79,6 +79,6 @@ and then click the `(9)` `RUN` button.
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains all your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
+&#xNAN;**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains all your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
 {% endhint %}
 

@@ -42,7 +42,7 @@ Some setup is required on the Floodlight side before configuring this destinatio
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** Sum of each product quantity.\
-**\[2]** If no property is provided, a random generated number is used.\
-**\[3]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration ](google-floodlight-mobile-app-conversion.md#configuration)for more details on how you can add custom properties.
+&#xNAN;**\[1]** Sum of each product quantity.\
+&#xNAN;**\[2]** If no property is provided, a random generated number is used.\
+&#xNAN;**\[3]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration ](google-floodlight-mobile-app-conversion.md#configuration)for more details on how you can add custom properties.
 {% endhint %}

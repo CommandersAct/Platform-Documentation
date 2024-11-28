@@ -11,7 +11,7 @@ This destination is currently under final review and will be available soon.
 To adjust a conversion, you must first have a conversion action [set up](https://support.google.com/google-ads/answer/1722054), and conversions must have been reported in Google Ads interface.
 
 {% hint style="info" %}
-Google recommends waiting 24 hours after a conversion is reported before sending adjustments. This will avoid[`CONVERSION_NOT_FOUND`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#conversion\_not\_found)or[`TOO_RECENT_CONVERSION`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#too\_recent\_conversion) upload errors. Also, wait 4-6 hours after creating a [conversion action](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) before adjusting its conversions to avoid a [`TOO_RECENT_CONVERSION_ACTION`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#too\_recent\_conversion\_action) upload error.
+Google recommends waiting 24 hours after a conversion is reported before sending adjustments. This will avoid[`CONVERSION_NOT_FOUND`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#conversion_not_found)or[`TOO_RECENT_CONVERSION`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#too_recent_conversion) upload errors. Also, wait 4-6 hours after creating a [conversion action](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) before adjusting its conversions to avoid a [`TOO_RECENT_CONVERSION_ACTION`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#too_recent_conversion_action) upload error.
 {% endhint %}
 
 {% hint style="info" %}
@@ -21,11 +21,11 @@ To identify the conversion and when a transaction identifier is not provided, th
 2. `_gcl_dc`
 3. `_gac_[GA_PROPERTY_ID]`
 
-On the other hand, when a transaction identifier is present both the [`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en) and <mark style="color:blue;">`conversionDateTime`</mark> are removed from the hit to prevent the [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid\_date\_time\_pair\_and\_order\_id\_both\_set) upload error. More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
+On the other hand, when a transaction identifier is present both the [`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en) and <mark style="color:blue;">`conversionDateTime`</mark> are removed from the hit to prevent the [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid_date_time_pair_and_order_id_both_set) upload error. More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
 {% endhint %}
 
 {% hint style="warning" %}
-Conversion adjustments don't work with [conversion actions](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) whose type is [`UNKNOWN`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionActionTypeEnum.ConversionActionType#unknown) . In addition, adjustments for a conversion whose click has a <mark style="color:blue;">`gbraid`</mark> or <mark style="color:blue;">`wbraid`</mark> instead of a [`gclid`](https://support.google.com/google-ads/answer/1033981) will fail with a [`CONVERSION_NOT_FOUND`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#conversion\_not\_found) upload error.
+Conversion adjustments don't work with [conversion actions](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) whose type is [`UNKNOWN`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionActionTypeEnum.ConversionActionType#unknown) . In addition, adjustments for a conversion whose click has a <mark style="color:blue;">`gbraid`</mark> or <mark style="color:blue;">`wbraid`</mark> instead of a [`gclid`](https://support.google.com/google-ads/answer/1033981) will fail with a [`CONVERSION_NOT_FOUND`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#conversion_not_found) upload error.
 {% endhint %}
 
 ### Configuration
@@ -49,5 +49,5 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
 **\[1]** This is required when specific conditions are verified. See [Field mappings](google-conversion-adjustments.md#field-mappings) for details.\
-**\[2]** See [Destination setup](google-conversion-adjustments.md#destination-setup) for more details.
+&#xNAN;**\[2]** See [Destination setup](google-conversion-adjustments.md#destination-setup) for more details.
 {% endhint %}

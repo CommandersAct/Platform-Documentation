@@ -45,5 +45,5 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.\
-**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
+&#xNAN;**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
 {% endhint %}

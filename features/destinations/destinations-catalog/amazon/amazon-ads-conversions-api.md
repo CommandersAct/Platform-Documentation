@@ -24,7 +24,7 @@ The Amazon Ads Conversions API destination provides the following key features:
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**\[2] See** <mark style="color:blue;">`Conversion Definition Id`</mark> in [Configuration](amazon-ads-conversions-api.md#configuration) for more details.
+&#xNAN;**\[2] See** <mark style="color:blue;">`Conversion Definition Id`</mark> in [Configuration](amazon-ads-conversions-api.md#configuration) for more details.
 {% endhint %}
 
 ## Field Mappings
@@ -42,8 +42,8 @@ At least one identifier must be provided in <mark style="color:blue;">`matchKeys
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** At least one identifier must be provided.\
-**\[2]** Depending on the value provided in <mark style="color:blue;">`matchKeys.X.values[0]`</mark> , this is one of the following values: <mark style="color:blue;">`EMAIL`</mark>, <mark style="color:blue;">`PHONE`</mark>, <mark style="color:blue;">`FIRST_NAME`</mark>, <mark style="color:blue;">`LAST_NAME`</mark>, <mark style="color:blue;">`ADDRESS`</mark>, <mark style="color:blue;">`CITY`</mark>, <mark style="color:blue;">`STATE`</mark>, <mark style="color:blue;">`POSTAL`</mark> or <mark style="color:blue;">`MAID`</mark>.\
-**\[3]** The client specified id for the conversion event. For events with the same <mark style="color:blue;">`clientDedupeId`</mark> only the latest event will be kept.\
-**\[4]** This is set with with <mark style="color:blue;">`LIMITED_DATA_USE`</mark> when <mark style="color:blue;">`partners.amazon.data_processing`</mark> is a non-empty string, non-false (boolean), non-zero (number) value.
+&#xNAN;**\[1]** At least one identifier must be provided.\
+&#xNAN;**\[2]** Depending on the value provided in <mark style="color:blue;">`matchKeys.X.values[0]`</mark> , this is one of the following values: <mark style="color:blue;">`EMAIL`</mark>, <mark style="color:blue;">`PHONE`</mark>, <mark style="color:blue;">`FIRST_NAME`</mark>, <mark style="color:blue;">`LAST_NAME`</mark>, <mark style="color:blue;">`ADDRESS`</mark>, <mark style="color:blue;">`CITY`</mark>, <mark style="color:blue;">`STATE`</mark>, <mark style="color:blue;">`POSTAL`</mark> or <mark style="color:blue;">`MAID`</mark>.\
+&#xNAN;**\[3]** The client specified id for the conversion event. For events with the same <mark style="color:blue;">`clientDedupeId`</mark> only the latest event will be kept.\
+&#xNAN;**\[4]** This is set with with <mark style="color:blue;">`LIMITED_DATA_USE`</mark> when <mark style="color:blue;">`partners.amazon.data_processing`</mark> is a non-empty string, non-false (boolean), non-zero (number) value.
 {% endhint %}

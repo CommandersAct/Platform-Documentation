@@ -26,7 +26,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 {% hint style="info" %}
 **\[1]** This feature allows you to set an event property holding a dynamic value by adding two open braces (`{{`) in front of your property name and two close braces (`}}`) at the end (E.g. `{{myEventPropertyPathAndName}}`).\
-**\[2]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
+&#xNAN;**\[2]** Using "dots" (".") you can navigate deeper to the specific field you want to get the value of. See [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) for more details on the standard field names by event. You can also freely set custom fields: there are no boundaries.
 {% endhint %}
 
 ## Quick reference
@@ -53,6 +53,6 @@ Adform Cookieless Insights reporting is enabled by passing values in both <mark 
 
 {% hint style="info" %}
 **\[1]** Cookie name or property is used based on your [Configuration](adform.md#configuration).\
-**\[2]** Priority order is listed in the left column.\
-**\[3]** IAB TCF consent string.
+&#xNAN;**\[2]** Priority order is listed in the left column.\
+&#xNAN;**\[3]** IAB TCF consent string.
 {% endhint %}

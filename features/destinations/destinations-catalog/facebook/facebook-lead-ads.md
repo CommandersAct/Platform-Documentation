@@ -43,6 +43,6 @@ Facebook properties are set starting from the path <mark style="color:blue;">`da
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** See [Mapping](facebook-lead-ads.md#configuration) for more details.\
+&#xNAN;**\[1]** See [Mapping](facebook-lead-ads.md#configuration) for more details.\
 **\[2] I**f this field is not provided, the current timestamp is used.
 {% endhint %}

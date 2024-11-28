@@ -19,7 +19,7 @@ Here's the 5 steps to follow to remains compliant with the TCF on your website&#
     \
     `Sources > Privacy Banners > Edit (select your banner) > Privacy Center tab > Buttons`\
     \
-    _\*don't forget to save your changes !_\
+    &#xNAN;_\*don't forget to save your changes !_\
     \
 
 
@@ -30,7 +30,7 @@ Here's the 5 steps to follow to remains compliant with the TCF on your website&#
     \
     `Sources > Privacy Banners > Edit (select your banner) > Generate`\
     \
-    _\*We recommend to check the option 'reactivate the privacy', so all you users will have the new consent string format, including the new purpose and the updated vendors_\
+    &#xNAN;_\*We recommend to check the option 'reactivate the privacy', so all you users will have the new consent string format, including the new purpose and the updated vendors_\
 
 
 
