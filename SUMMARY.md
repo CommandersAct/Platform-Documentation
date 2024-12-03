@@ -214,6 +214,7 @@
     * [Responsys](features/destinations/destinations-catalog/responsys.md)
     * [RhythmOne](features/destinations/destinations-catalog/rythmone.md)
     * [Rich Relevance](features/destinations/destinations-catalog/rich-relevance.md)
+    * [RTB House Audience](features/destinations/destinations-catalog/rtb-house-audience.md)
     * [Salesforce](features/destinations/destinations-catalog/salesforce/README.md)
       * [Salesforce Audience Studio](features/destinations/destinations-catalog/salesforce/salesforce-audience-studio.md)
       * [Salesforce Marketing Cloud](features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud.md)
