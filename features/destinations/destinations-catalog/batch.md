@@ -20,6 +20,6 @@ The Batch Audience destination provides the following key features:
 
 ## Field mappings
 
-Created segments using hold the following properties:
+Created segments include the following properties:
 
 <table><thead><tr><th width="193">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>name</code></td><td><code>context.segment_name</code></td></tr><tr><td><code>description</code></td><td><code>context.site_id</code>_<code>context.segment_id</code>_<code>context.segment_name</code></td></tr><tr><td><code>type</code></td><td>custom_ids</td></tr><tr><td><code>nb_ids</code></td><td>(Number of identifiers in segment)</td></tr><tr><td><code>indexing_state</code></td><td>APPLIED</td></tr><tr><td><code>created</code></td><td>(Creation time in the format YYYY-MM-DDTHH:MM:SS)</td></tr><tr><td><code>updated</code></td><td>(Update time in the format YYYY-MM-DDTHH:MM:SS)</td></tr></tbody></table>
