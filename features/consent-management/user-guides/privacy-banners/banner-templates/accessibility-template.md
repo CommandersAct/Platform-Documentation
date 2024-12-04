@@ -6,7 +6,7 @@
 
 Among the available templates, one is dedicated to accessibility. It ensures compatibility with RGAA and WCAG 2.0 level AA standards.
 
-<figure><img src="../../../../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Web Content Accessibility Guidelines (WCAG) is developed through the [W3C process](https://www.w3.org/WAI/standards-guidelines/w3c-process/) in cooperation with individuals and organizations around the world, with a goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.
 

@@ -4,43 +4,30 @@ description: Get data from the consent dashboard (aggregated data)
 
 # Get statistics
 
-{% swagger baseUrl="https://api-internal.commander1.com" path="/v2/{siteId}/privacy/statistics" method="get" summary="Get Statistics" %}
-{% swagger-description %}
+## Get Statistics
+
+<mark style="color:blue;">`GET`</mark> `https://api-internal.commander1.com/v2/{siteId}/privacy/statistics`
+
 This endpoint allows you to get the data from the consent dashboard on a specific date range
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="{siteId}" type="string" %}
-Account ID\
-example: '12345'
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="query" name="filter[sup_filters][location][]" type="integer" %}
-Data inside and outside of the EU\
-0 : Out of EU\
-1 : EU
-{% endswagger-parameter %}
+| Name                           | Type   | Description                           |
+| ------------------------------ | ------ | ------------------------------------- |
+| <p>{siteId}<br>(*required)</p> | string | <p>Account ID<br>example: '12345'</p> |
 
-{% swagger-parameter in="query" name="filter[sup_filters][device][]" type="integer" %}
-Typical device types\
-0 : others\
-1 : mobile\
-2 : tablet\
-3 : desktop
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="token" type="string" %}
-Authentication token. Optional if the header "Authorization' parameter is used instead.
-{% endswagger-parameter %}
+| Name                                   | Type    | Description                                                                             |
+| -------------------------------------- | ------- | --------------------------------------------------------------------------------------- |
+| filter\[sup\_filters]\[location]\[]    | integer | <p>Data inside and outside of the EU<br>0 : Out of EU<br>1 : EU</p>                     |
+| filter\[sup\_filters]\[device]\[]      | integer | <p>Typical device types<br>0 : others<br>1 : mobile<br>2 : tablet<br>3 : desktop</p>    |
+| <p>token<br>(*required)</p>            | string  | Authentication token. Optional if the header "Authorization' parameter is used instead. |
+| filter\[begin\_date] (\*required)      | string  | example: '2021-04-30'                                                                   |
+| <p>filter[end_date]<br>(*required)</p> | string  | example: '2021-04-31'                                                                   |
 
-{% swagger-parameter in="query" name="filter[begin_date]" type="string" %}
-example: '2021-04-30'
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="filter[end_date]" type="string" %}
-example: '2021-04-31'
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Data successfully retrieved." %}
+{% tabs %}
+{% tab title="200 Data successfully retrieved." %}
 ```
 {
     "data": [
@@ -106,9 +93,9 @@ example: '2021-04-31'
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401" description="Invalid token" %}
+{% tab title="401 Invalid token" %}
 ```
 {
     "errors": [
@@ -121,8 +108,8 @@ example: '2021-04-31'
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 {% tabs %}
 {% tab title="Example Request" %}

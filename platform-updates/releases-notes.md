@@ -40,7 +40,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   You can now view your password while logging in! This small addition aims to enhance accessibility for all users.\
 
 
-    <figure><img src="../.gitbook/assets/image.png" alt="" width="283"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1).png" alt="" width="283"><figcaption></figcaption></figure>
 
 ***
 
@@ -49,7 +49,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   The navigation menu now includes a shortcut to our Sources Catalog, saving you a click and making it even easier to locate the resources you need.\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt="" width="185"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
 
 ***
 
@@ -182,7 +182,7 @@ Our TMS interface has been modernized to provide a smoother, more intuitive user
 
 #### 🛡️ **Google CMP Partnership: Gold Tier**
 
-We are officially certified as a **Gold Tier** partner for Google’s CMP partner Program. This recognition underscores our commitment to the highest Google's standards in consent management.
+We are officially a **Gold Tier** partner for Google’s CMP partner Program. This recognition underscores our commitment to the highest Google's standards in consent management.
 
 ***
 

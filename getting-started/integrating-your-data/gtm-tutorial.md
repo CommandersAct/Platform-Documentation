@@ -25,7 +25,7 @@ For more details, check the [Commanders Act GTM template documentation](https://
    ![](<../../.gitbook/assets/image (2) (1).png>)
 3. **Copy the Source Token** displayed.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Update GA4 in Google Tag Manager
 
