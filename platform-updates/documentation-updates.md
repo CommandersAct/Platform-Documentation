@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 06/12/2024
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/rtb-house-audience.md" %}
+[rtb-house-audience.md](../features/destinations/destinations-catalog/rtb-house-audience.md)
+{% endcontent-ref %}
+
 ## 29/11/2024
 
 Destination documentation:
