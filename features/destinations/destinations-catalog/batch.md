@@ -6,6 +6,10 @@ This destination is currently under final review and will be available soon.
 
 Batch lets CRM Teams design, test and automate their customer engagement strategies to keep users engaged and grow revenue. Using this destination you can share audiences with Batch by leveraging the [Custom Audience API 1.1](https://doc.batch.com/api/custom-audience/1.1/create/).
 
+{% hint style="warning" %}
+Audiences are synchronized using their names as identifier. Avoid renaming to maintain consistency.
+{% endhint %}
+
 ## Key features
 
 The Batch Audience destination provides the following key features:
