@@ -2,11 +2,17 @@
 
 ## 2024
 
+### 95.4
+
+Release date:  **10/12/2024**
+
+* Enhance container generation performances
+
 ### 95.3
 
 Release date:  **06/11/2024**
 
-* Update on specific rul on CAID cookie, added parameters `expiration` on `13 months` (396 days) and `SameSite` when necessary (`Lax` value)
+* Update on specific rule on CAID cookie, added parameters `expiration` on `13 months` (396 days) and `SameSite` when necessary (`Lax` value)
 
 ### 95.2
 
