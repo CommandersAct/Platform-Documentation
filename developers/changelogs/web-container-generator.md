@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 95.5
+
+Release date:  **11/12/2024**
+
+* The creation of the CAID cookie in the web container has been adjusted, its expiration (13 months) is now managed outside the container, backend-side
+
 ### 95.4
 
 Release date:  **10/12/2024**
