@@ -217,36 +217,56 @@ The _Facebook CAPI Destination_ will turn the _Commanders Act_ event like...
 
 The following mappings are fully automated and do not require any additional configuration by default. You can still customize each as follows.
 
+### Mapping: (root)
+
+{% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event" %}
+
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
+<table><thead><tr><th width="381">Commanders Act Properties</th><th>Facebook Properties</th></tr></thead><tbody><tr><td><code>event_id</code> <strong>[2][3]</strong></td><td><code>event_id</code> <strong>[1]</strong></td></tr><tr><td><code>event_name</code></td><td><code>event_name</code> <strong>[4]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>event_time</code> <strong>[5]</strong></td></tr><tr><td><code>context.page.url</code></td><td><code>event_source_url</code></td></tr><tr><td><code>context.page.referrer</code></td><td><code>referrer_url</code></td></tr><tr><td><p><code>Enable App tracking</code></p><p><code>type</code></p></td><td><code>action_source</code> <strong>[6]</strong></td></tr><tr><td><code>opt_out</code> <strong>[3]</strong></td><td><code>opt_out</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options</code> <strong>[3]</strong></td><td><code>data_processing_options</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options_country</code> <strong>[3]</strong></td><td><code>data_processing_options_country</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options_state</code> <strong>[3]</strong></td><td><code>data_processing_options_state</code> <strong>[7]</strong></td></tr></tbody></table>
+
+{% hint style="info" %}
+**\[1]** Set based on available properties, in the reported order on the left. Default to a random generated value based on the timestamp.\
+&#xNAN;**\[2]** In the base path/root of your event.\
+&#xNAN;**\[3]** In `integrations.facebook`  of your event. \
+&#xNAN;**\[4]** See [Mapping: event\_name](facebook-conversions-api.md#mapping-event_name) for more details.\
+&#xNAN;**\[5]** If no value is provided the current timestamp is used.\
+&#xNAN;**\[6]** See [Mapping: action\_source](facebook-conversions-api.md#mapping-action_source) for more details.\
+&#xNAN;**\[7]** See more details following this [LINK](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event).
+{% endhint %}
+
 ### Mapping: `event_name`
 
 Facebook Pixel specifies [_Standard Events_](https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events) whose semantics correspond to events in the [_Commanders Act Standard_](https://community.commandersact.com/platform-x/developers/tracking/events-reference)
 
 If the destination receives a _Commanders Act Event_ with `event_name` matching the list, it will automatically be sent under the associated _Facebook Standard Event_ name. Otherwise, it will be sent without any transformation
 
-| COMMANDERS ACT EVENTS | FACEBOOK STANDARD EVENT |
-| --------------------- | ----------------------- |
-| `begin_checkout`      | `InitiateCheckout`      |
-| `purchase`            | `Purchase`              |
-| `add_to_cart`         | `AddToCart`             |
-| `view_item`           | `ViewContent`           |
-| `view_item_list`      | `ViewContent`           |
-| `search`              | `Search`                |
-| `add_payment_info`    | `AddPaymentInfo`        |
-| `add_to_wishlist`     | `AddToWishlist`         |
-| `generate_lead`       | `Lead`                  |
-| `page_view`           | `PageView`              |
-| `sign_up`             | `CompleteRegistration`  |
-| `contact`             | `Contact`               |
-| `customize_product`   | `CustomizeProduct`      |
-| `donate`              | `Donate`                |
-| `find_location`       | `FindLocation`          |
-| `schedule`            | `Schedule`              |
-| `search`              | `Search`                |
-| `start_trial`         | `StartTrial`            |
-| `submit_application`  | `SubmitApplication`     |
-| `subscribe`           | `Subscribe`             |
+| Commanders Act Events | Facebook Events        |
+| --------------------- | ---------------------- |
+| `begin_checkout`      | `InitiateCheckout`     |
+| `purchase`            | `Purchase`             |
+| `add_to_cart`         | `AddToCart`            |
+| `view_item`           | `ViewContent`          |
+| `view_item_list`      | `ViewContent`          |
+| `search`              | `Search`               |
+| `add_payment_info`    | `AddPaymentInfo`       |
+| `add_to_wishlist`     | `AddToWishlist`        |
+| `generate_lead`       | `Lead`                 |
+| `page_view`           | `PageView`             |
+| `sign_up`             | `CompleteRegistration` |
+| `contact`             | `Contact`              |
+| `customize_product`   | `CustomizeProduct`     |
+| `donate`              | `Donate`               |
+| `find_location`       | `FindLocation`         |
+| `schedule`            | `Schedule`             |
+| `search`              | `Search`               |
+| `start_trial`         | `StartTrial`           |
+| `submit_application`  | `SubmitApplication`    |
+| `subscribe`           | `Subscribe`            |
 
-Examples :
+Examples:
 
 * If the destinations sees a `add_to_cart` event _(IN the list)_, it will send an `AddToCart` to Facebook CAPI
 * If the destinations sees a `custom_name` event _(NOT IN the list)_, it will send an `custom_name` to Facebook CAPI _(no transformation)_
@@ -259,7 +279,8 @@ Examples :
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event" %}
 
-By default, `action_source` will be set to `'website'` (most events relate to online activity)
+By default, `action_source` will be set to `'website'` (most events relate to online activity).\
+`IF` `Enable App tracking`  is checked THEN `action_source='app'`
 
 #### Offline conversions specificity:
 
@@ -292,30 +313,38 @@ If you need to overwrite this value, you currently can use _Properties Transform
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/customer-information-parameters" %}
 
-| COMMANDERS ACT STANDARD PROPERTIES                                                                                                 | FACEBOOK STANDARD PARAMETERS        |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| `user.id` (hashed)                                                                                                                 | `user_data.external_id`             |
-| `user.email`                                                                                                                       | `user_data.em` (email, hashed)      |
-| `user.phone`                                                                                                                       | `user_data.ph` (phone, hashed)      |
-| `user.gender`                                                                                                                      | `user_data.ge` (gender, hashed)     |
-| `user.birthdate`                                                                                                                   | `user_data.db` (birthdate, hashed)  |
-| `user.lastname`                                                                                                                    | `user_data.ln` (last name, hashed)  |
-| `user.firstname`                                                                                                                   | `user_data.fn` (first name, hashed) |
-| `user.city`                                                                                                                        | `user_data.ct` (city, hashed)       |
-| `user.state`                                                                                                                       | `user_data.st` (state, hashed)      |
-| `user.zipcode`                                                                                                                     | `user_data.zp` (zip code, hashed)   |
-| `user.country`                                                                                                                     | `user_data.country` (hashed)        |
-| <p><code>context.device.ip</code><br><em>Automatically set if generated from Commanders Act OneTag</em></p>                        | `user_data.client_ip_address`       |
-| <p><code>context.device.user_agent</code><br><em>Automatically set if generated from Commanders Act OneTag</em></p>                | `user_data.client_user_agent`       |
-| <p><code>The cookie "fbc"</code></p><p><em>Automatically created by the Facebook Pixel client-side tag.</em></p>                   | `user_data.fbc` (Click ID)          |
-| <p><code>The cookie "fbp"</code></p><p><em>Automatically created by the Facebook Pixel client-side tag.</em></p>                   | `user_data.fbp` (Browser ID)        |
-| `value`                                                                                                                            | `custom_data.value`                 |
-| `currency`                                                                                                                         | `custom_data.currency`              |
-| `items`                                                                                                                            | `custom_data.contents`              |
-| <p><code>name</code><br><strong>OR</strong> first <code>items[i].product.name</code> found</p>                                     | `custom_data.content_name`          |
-| <p><code>category</code><br><strong>OR</strong> first <code>items[i].product.category_N</code> found (<code>N</code> ∈ [1, 5])</p> | `custom_data.content_category`      |
-| default value : '`product`'                                                                                                        | `custom_data.content_type`          |
-| `status`                                                                                                                           | `custom_data.status`                |
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
+| Commanders Act Properties                                                                           | Facebook Properties                                                                                             |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `user.id` (hashed)                                                                                  | `user_data.external_id`                                                                                         |
+| `user.email`                                                                                        | `user_data.em` (email, hashed)                                                                                  |
+| `user.phone`                                                                                        | `user_data.ph` (phone, hashed)                                                                                  |
+| `user.gender`                                                                                       | `user_data.ge` (gender, hashed)                                                                                 |
+| `user.birthdate`                                                                                    | `user_data.db` (birthdate, hashed)                                                                              |
+| `user.lastname`                                                                                     | `user_data.ln` (last name, hashed)                                                                              |
+| `user.firstname`                                                                                    | `user_data.fn` (first name, hashed)                                                                             |
+| `user.city`                                                                                         | `user_data.ct` (city, hashed)                                                                                   |
+| `user.state`                                                                                        | `user_data.st` (state, hashed)                                                                                  |
+| `user.zipcode`                                                                                      | `user_data.zp` (zip code, hashed)                                                                               |
+| `user.country`                                                                                      | `user_data.country` (hashed)                                                                                    |
+| `ip` **\[2]\[3]**                                                                                   | `user_data.client_ip_address`                                                                                   |
+| `user_agent` **\[2]\[3]**                                                                           | `user_data.client_user_agent`                                                                                   |
+| <p><code>fbc</code> <strong>[1]</strong><br><code>The cookie "_fbc"</code> <strong>[4]</strong></p> | `user_data.fbc` (Click ID)                                                                                      |
+| <p><code>fbp</code> <strong>[1]</strong><br><code>The cookie "_fbp"</code> <strong>[4]</strong></p> | `user_data.fbp` (Browser ID)                                                                                    |
+| `advertising_id` **\[2]**                                                                           | <p><code>user_data.anon_id</code> <strong>[5]</strong><br><code>user_data.madid</code> <strong>[5]</strong></p> |
+| `user_data[Property Name]` **\[6]**                                                                 | `user_data[Property Name]`                                                                                      |
+
+{% hint style="info" %}
+**\[1]** In <mark style="color:blue;">`integrations.facebook`</mark>  or in the root of your events with the first having priority.\
+&#xNAN;**\[2]** In <mark style="color:blue;">`context.device`</mark>  of your event. \
+**\[3]** Automatically set if generated by Commanders Act OneTag.\
+&#xNAN;**\[4]** Automatically created by the Facebook Pixel client-side tag.\
+&#xNAN;**\[5]** Only for app events.\
+&#xNAN;**\[6]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.
+{% endhint %}
 
 Every property can be overridden using `integrations.facebook.user_data.<property>`
 
@@ -334,15 +363,32 @@ Here are our conditions to send the events :
 
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data" %}
 
-| COMMANDERS ACT STANDARD PROPERTIES                                                                                                 | FACEBOOK STANDARD PARAMETERS   |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| `value`                                                                                                                            | `custom_data.value`            |
-| `currency`                                                                                                                         | `custom_data.currency`         |
-| `items`                                                                                                                            | `custom_data.contents`         |
-| <p><code>name</code><br><strong>OR</strong> first <code>items[i].product.name</code> found</p>                                     | `custom_data.content_name`     |
-| <p><code>category</code><br><strong>OR</strong> first <code>items[i].product.category_N</code> found (<code>N</code> ∈ [1, 5])</p> | `custom_data.content_category` |
-| default value : '`product`'                                                                                                        | `custom_data.content_type`     |
-| `status`                                                                                                                           | `custom_data.status`           |
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
+| Commanders Act Properties                                        | Facebook Properties                   |
+| ---------------------------------------------------------------- | ------------------------------------- |
+| `value`                                                          | `custom_data.value`                   |
+| <p><code>currency</code></p><p><code>items.0.currency</code></p> | `custom_data.currency`                |
+| `id`                                                             | `custom_data.order_id`                |
+| `search_term`                                                    | `custom_data.search_string`           |
+| `items.X.id`                                                     | `custom_data.contents.X.id`           |
+| `items.X.quantity`                                               | `custom_data.contents.X.quantity`     |
+| `items.X.product.price`                                          | `custom_data.contents.X.item_price`   |
+| `items.0.product.name`                                           | `custom_data.content_name`            |
+| `items.0.product.category_1`                                     | `custom_data.content_category`        |
+| `Content type value`                                             | `custom_data.content_type` **\[1]**   |
+| `status`                                                         | `custom_data.status`                  |
+| `items.length`                                                   | `custom_data.num_items`               |
+| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[2]** |
+| `custom_data[Propery Name]` **\[3]**                             | `custom_data[Property Name]`          |
+
+{% hint style="info" %}
+**\[1]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. \
+&#xNAN;**\[2]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark>  is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark>  with the same property name.\
+&#xNAN;**\[3]** In <mark style="color:blue;">`integrations.facebook`</mark>  in your event.
+{% endhint %}
 
 #### Default behavior
 
@@ -376,6 +422,50 @@ cact('trigger', 'purchase', {
     }
 });
 ```
+
+### Mapping: `app_data`
+
+{% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/app-data" %}
+
+{% hint style="info" %}
+Most properties can be remapped using our "Smart Mapping" feature.
+{% endhint %}
+
+| Commanders Act Properties               | Facebook Properties            |
+| --------------------------------------- | ------------------------------ |
+| `ad_tracking_enabled` **\[1]**          | `advertiser_tracking_enabled`  |
+| `application_tracking_enabled` **\[1]** | `application_tracking_enabled` |
+| `context.campaign.name`                 | `campaign_ids`                 |
+| `install_referrer` **\[2]**             | `install_referrer`             |
+| `installer_package` **\[2]**            | `installer_package`            |
+| `url_schemes` **\[2]**                  | `url_schemes`                  |
+| `windows_attribution_id` **\[2]**       | `windows_attribution_id`       |
+| `type` **\[1]**                         | `extinfo[0]` **\[3]**          |
+| `app.namespace` **\[1]**                | `extinfo[1]`                   |
+| `app.build` **\[1]**                    | `extinfo[2]`                   |
+| `app.version` **\[1]**                  | `extinfo[3]`                   |
+| `os.version` **\[1]**                   | `extinfo[4]`                   |
+| `model` **\[1]**                        | `extinfo[5]`                   |
+| `language` **\[1]**                     | `extinfo[6]`                   |
+| `[No default field]` **\[4]**           | `extinfo[7]`                   |
+| `network.carrier` **\[1]**              | `extinfo[8]`                   |
+| `screen.width` **\[1]**                 | `extinfo[9]`                   |
+| `screen.height` **\[1]**                | `extinfo[10]`                  |
+| `screen.density` **\[1]**               | `extinfo[11]`                  |
+| `[No default field]` **\[5]**           | `extinfo[12]`                  |
+| `[No default field]` **\[6]**           | `extinfo[13]`                  |
+| `[No default field]` **\[7]**           | `extinfo[14]`                  |
+| `timezone` **\[1]**                     | `extinfo[15]`                  |
+
+{% hint style="info" %}
+**\[1]** In <mark style="color:blue;">`context.device`</mark>  of your event. \
+&#xNAN;**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark>  or in the root of your events with the first having priority.\
+&#xNAN;**\[3]** When <mark style="color:blue;">`context.device.type`</mark>  is set with <mark style="color:blue;">`Android`</mark>  or <mark style="color:blue;">`iOS`</mark>  (case insensitive), this is set with <mark style="color:blue;">`a2`</mark>  or <mark style="color:blue;">`i`</mark>`2`  respectively.\
+&#xNAN;**\[4]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark>  → <mark style="color:blue;">`App Data`</mark>  → <mark style="color:blue;">`Device Abbreviated Timezone`</mark> . \
+&#xNAN;**\[5]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark>  → <mark style="color:blue;">`App Data`</mark>  → <mark style="color:blue;">`CPU Cores`</mark> . \
+&#xNAN;**\[6]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark>  → <mark style="color:blue;">`App Data`</mark>  → <mark style="color:blue;">`External Storage Size`</mark> . \
+&#xNAN;**\[7]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark>  → <mark style="color:blue;">`App Data`</mark>  → <mark style="color:blue;">`Available Storage Size`</mark> .
+{% endhint %}
 
 ### `integrations.facebook.*` deprecation
 
