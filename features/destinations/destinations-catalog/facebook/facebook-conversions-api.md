@@ -230,7 +230,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 {% hint style="info" %}
 **\[1]** Set based on available properties, in the reported order on the left. Default to a random generated value based on the timestamp.\
 &#xNAN;**\[2]** In the base path/root of your event.\
-&#xNAN;**\[3]** In `integrations.facebook`  of your event. \
+&#xNAN;**\[3]** In <mark style="color:blue;">`integrations.facebook`</mark>  of your event. \
 &#xNAN;**\[4]** See [Mapping: event\_name](facebook-conversions-api.md#mapping-event_name) for more details.\
 &#xNAN;**\[5]** If no value is provided the current timestamp is used.\
 &#xNAN;**\[6]** See [Mapping: action\_source](facebook-conversions-api.md#mapping-action_source) for more details.\
