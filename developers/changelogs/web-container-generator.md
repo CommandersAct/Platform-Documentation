@@ -2,6 +2,12 @@
 
 ## 2024
 
+### 95.6
+
+Release date:  **12/12/2024**
+
+* Update the safari browser detection
+
 ### 95.5
 
 Release date:  **11/12/2024**
