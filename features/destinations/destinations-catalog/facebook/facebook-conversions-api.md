@@ -317,33 +317,16 @@ If you need to overwrite this value, you currently can use _Properties Transform
 Most properties can be remapped using our "Smart Mapping" feature.
 {% endhint %}
 
-| Commanders Act Properties                                                                           | Facebook Properties                                                                                             |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `user.id` (hashed)                                                                                  | `user_data.external_id`                                                                                         |
-| `user.email`                                                                                        | `user_data.em` (email, hashed)                                                                                  |
-| `user.phone`                                                                                        | `user_data.ph` (phone, hashed)                                                                                  |
-| `user.gender`                                                                                       | `user_data.ge` (gender, hashed)                                                                                 |
-| `user.birthdate`                                                                                    | `user_data.db` (birthdate, hashed)                                                                              |
-| `user.lastname`                                                                                     | `user_data.ln` (last name, hashed)                                                                              |
-| `user.firstname`                                                                                    | `user_data.fn` (first name, hashed)                                                                             |
-| `user.city`                                                                                         | `user_data.ct` (city, hashed)                                                                                   |
-| `user.state`                                                                                        | `user_data.st` (state, hashed)                                                                                  |
-| `user.zipcode`                                                                                      | `user_data.zp` (zip code, hashed)                                                                               |
-| `user.country`                                                                                      | `user_data.country` (hashed)                                                                                    |
-| `ip` **\[2]\[3]**                                                                                   | `user_data.client_ip_address`                                                                                   |
-| `user_agent` **\[2]\[3]**                                                                           | `user_data.client_user_agent`                                                                                   |
-| <p><code>fbc</code> <strong>[1]</strong><br><code>The cookie "_fbc"</code> <strong>[4]</strong></p> | `user_data.fbc` (Click ID)                                                                                      |
-| <p><code>fbp</code> <strong>[1]</strong><br><code>The cookie "_fbp"</code> <strong>[4]</strong></p> | `user_data.fbp` (Browser ID)                                                                                    |
-| `advertising_id` **\[2]**                                                                           | <p><code>user_data.anon_id</code> <strong>[5]</strong><br><code>user_data.madid</code> <strong>[5]</strong></p> |
-| `user_data[Property Name]` **\[6]**                                                                 | `user_data[Property Name]`                                                                                      |
+<table><thead><tr><th width="405">Commanders Act Properties</th><th>Facebook Properties</th></tr></thead><tbody><tr><td><code>user.id</code> (hashed)<br><code>context.device.sdk_id</code><br><code>user.tcId</code> , <code>user.tcid</code>  or <code>user.tc_id</code></td><td><code>user_data.external_id</code> <strong>[1]</strong></td></tr><tr><td><code>user.email</code></td><td><code>user_data.em</code> (email, hashed)</td></tr><tr><td><code>user.phone</code></td><td><code>user_data.ph</code> (phone, hashed)</td></tr><tr><td><code>user.gender</code></td><td><code>user_data.ge</code> (gender, hashed)</td></tr><tr><td><code>user.birthdate</code></td><td><code>user_data.db</code> (birthdate, hashed)</td></tr><tr><td><code>user.lastname</code></td><td><code>user_data.ln</code> (last name, hashed)</td></tr><tr><td><code>user.firstname</code></td><td><code>user_data.fn</code> (first name, hashed)</td></tr><tr><td><code>user.city</code></td><td><code>user_data.ct</code> (city, hashed)</td></tr><tr><td><code>user.state</code></td><td><code>user_data.st</code> (state, hashed)</td></tr><tr><td><code>user.zipcode</code></td><td><code>user_data.zp</code> (zip code, hashed)</td></tr><tr><td><code>user.country</code></td><td><code>user_data.country</code> (hashed)</td></tr><tr><td><code>ip</code> <strong>[3][4]</strong></td><td><code>user_data.client_ip_address</code></td></tr><tr><td><code>user_agent</code> <strong>[3][4]</strong></td><td><code>user_data.client_user_agent</code></td></tr><tr><td><code>fbc</code> <strong>[2]</strong><br><code>The cookie "_fbc"</code> <strong>[5]</strong></td><td><code>user_data.fbc</code> (Click ID)</td></tr><tr><td><code>fbp</code> <strong>[2]</strong><br><code>The cookie "_fbp"</code> <strong>[5]</strong></td><td><code>user_data.fbp</code> (Browser ID)</td></tr><tr><td><code>advertising_id</code> <strong>[3]</strong></td><td><code>user_data.anon_id</code> <strong>[6]</strong><br><code>user_data.madid</code> <strong>[6]</strong></td></tr><tr><td><code>user_data[Property Name]</code> <strong>[7]</strong></td><td><code>user_data[Property Name]</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** In <mark style="color:blue;">`integrations.facebook`</mark>  or in the root of your events with the first having priority.\
-&#xNAN;**\[2]** In <mark style="color:blue;">`context.device`</mark>  of your event. \
-**\[3]** Automatically set if generated by Commanders Act OneTag.\
-&#xNAN;**\[4]** Automatically created by the Facebook Pixel client-side tag.\
-&#xNAN;**\[5]** Only for app events.\
-&#xNAN;**\[6]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.
+**\[1]** Comma-separated string: values in the order provided on the left. \
+**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark>  or in the root of your events with the first having priority.\
+&#xNAN;**\[3]** In <mark style="color:blue;">`context.device`</mark>  of your event. \
+**\[4]** Automatically set if generated by Commanders Act OneTag.\
+&#xNAN;**\[5]** Automatically created by the Facebook Pixel client-side tag.\
+&#xNAN;**\[6]** Only for app events.\
+&#xNAN;**\[7]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.
 {% endhint %}
 
 Every property can be overridden using `integrations.facebook.user_data.<property>`
