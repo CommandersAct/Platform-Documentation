@@ -378,16 +378,18 @@ Most properties can be remapped using our "Smart Mapping" feature.
 | `items.X.product.price`                                          | `custom_data.contents.X.item_price`   |
 | `items.0.product.name`                                           | `custom_data.content_name`            |
 | `items.0.product.category_1`                                     | `custom_data.content_category`        |
-| `Content type value`                                             | `custom_data.content_type` **\[1]**   |
+| `items.X.id`                                                     | `custom_data.content_ids` **\[1]**    |
+| `Content type value`                                             | `custom_data.content_type` **\[2]**   |
 | `status`                                                         | `custom_data.status`                  |
 | `items.length`                                                   | `custom_data.num_items`               |
-| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[2]** |
-| `custom_data[Propery Name]` **\[3]**                             | `custom_data[Property Name]`          |
+| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[3]** |
+| `custom_data[Propery Name]` **\[4]**                             | `custom_data[Property Name]`          |
 
 {% hint style="info" %}
-**\[1]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. \
-&#xNAN;**\[2]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark>  is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark>  with the same property name.\
-&#xNAN;**\[3]** In <mark style="color:blue;">`integrations.facebook`</mark>  in your event.
+**\[1]** Array containing all product identifiers.\
+**\[2]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. \
+&#xNAN;**\[3]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark>  is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark>  with the same property name.\
+&#xNAN;**\[4]** In <mark style="color:blue;">`integrations.facebook`</mark>  in your event.
 {% endhint %}
 
 #### Default behavior
