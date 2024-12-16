@@ -6,6 +6,28 @@ description: >-
 
 # Release notes
 
+## Release 10.0.26 - December 16 - 2024
+
+Modernization of TMS interfaces!
+
+-Simplified Navigation, with contextual side nav\
+-Improved TMS steps
+
+Pages Revamped:\
+-Containers Overview\
+-Tags Overview\
+-Tags Library\
+-Container settings\
+
+
+<figure><img src="../.gitbook/assets/image (562).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Capture d&#x27;écran 2024-12-16 095347.jpg" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
+
 ## Release 10.0.25 - October 2024
 
 🍪🔍**Enhanced Cookie Scanner: Automatic Filtering & Unmatched Usability**
