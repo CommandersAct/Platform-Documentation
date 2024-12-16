@@ -8,7 +8,7 @@ description: >-
 
 ## Release 10.0.26 - December 16 - 2024
 
-Modernization of TMS interfaces!
+Modernization of TMS client-side interfaces!
 
 -Simplified Navigation, with contextual side nav\
 -Improved TMS steps
