@@ -118,7 +118,7 @@ This endpoint creates and updates conversions. Your request will be processed as
 
 ### Overwrite Parameter Behavior  
 
-The `overwrite` parameter determines how conversions are processed when an existing `id` is found:
+The `overwrite` url parameter determines how conversions are processed when an existing `id` is found:
 
 - **`false`** *(default)*:  
    - Only the specified fields will be updated.  
