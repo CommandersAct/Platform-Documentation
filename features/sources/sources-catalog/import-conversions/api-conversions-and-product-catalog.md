@@ -126,7 +126,6 @@ The `overwrite` url parameter determines how conversions are processed when an e
 
 - **`true`**:  
    - The existing conversion will be **fully replaced** with the new data provided.  
-   - Unspecified fields will be reset to their default or empty values.  
 
 If you need to replace a conversion entirely, set `overwrite=true`.
 
