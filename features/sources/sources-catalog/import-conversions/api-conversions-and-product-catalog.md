@@ -110,10 +110,26 @@ This endpoint creates and updates conversions. Your request will be processed as
 
 #### Parameters <a href="#upsert-conversions-parameters" id="upsert-conversions-parameters"></a>
 
-| Name          | In     | Type                                                                  | Required | Description                                   |
-| ------------- | ------ | --------------------------------------------------------------------- | -------- | --------------------------------------------- |
-| Authorization | header | string                                                                | true     | Authorization token                           |
-| body          | body   | [Conversion](api-conversions-and-product-catalog.md#tocs\_conversion) | true     | Conversions as newline delimited JSON strings |
+| Name          | In     | Type    | Required | Description                                                                 |
+| ------------- | ------ | ------- | -------- | --------------------------------------------------------------------------- |
+| Authorization | header | string  | true     | Authorization token                                                        |
+| overwrite     | query  | boolean | false    | Determines if conversions should be fully replaced (`true`) or partially updated (`false` - default). |
+| body          | body   | [Conversion](api-conversions-and-product-catalog.md#tocs\_conversion) | true     | Conversions as newline delimited JSON strings                              |
+
+### Overwrite Parameter Behavior  
+
+The `overwrite` parameter determines how conversions are processed when an existing `id` is found:
+
+- **`false`** *(default)*:  
+   - Only the specified fields will be updated.  
+   - Unspecified fields will retain their existing values.
+
+- **`true`**:  
+   - The existing conversion will be **fully replaced** with the new data provided.  
+   - Unspecified fields will be reset to their default or empty values.  
+
+If you need to replace a conversion entirely, set `overwrite=true`.
+
 
 > Example responses
 
