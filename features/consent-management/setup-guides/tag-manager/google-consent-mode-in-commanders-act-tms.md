@@ -410,7 +410,7 @@ Go on page `Source > Privacy Banners > edition step`
 
 Add the following link to the Google Consent Mode Policy in your Privacy Center or in your Vendors menu&#x20;
 
-[https://policies.google.com/privacy](https://policies.google.com/privacy)
+[https://business.safety.google/privacy/](https://business.safety.google/privacy/)
 
 Don't forget to generate & deploy your privacy banner(s) once you've made this additional setting.
 {% endhint %}
