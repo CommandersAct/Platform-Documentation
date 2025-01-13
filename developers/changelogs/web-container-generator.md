@@ -4,15 +4,16 @@
 
 ### 95.6
 
-Release date:  **12/12/2024**
+Release date:  **13/01/2025**
 
-* Update the safari browser detection
+* Fully support sampling rules for privacy rules
 
 ### 95.5
 
 Release date:  **11/12/2024**
 
 * The creation of the CAID cookie in the web container has been adjusted, its expiration (13 months) is now managed outside the container, backend-side
+* Update the safari browser detection
 
 ### 95.4
 
