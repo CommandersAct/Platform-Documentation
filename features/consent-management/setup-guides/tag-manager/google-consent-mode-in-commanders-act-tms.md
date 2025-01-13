@@ -1,6 +1,6 @@
 # Google Consent Mode in Commanders Act CMP
 
-## Introduction
+Introduction
 
 Google Consent Mode will evolve in March 2024!&#x20;
 
@@ -115,7 +115,7 @@ The privacy setup is done! You can now Generate and Deploy your Privacy Banner.\
 The activation of this option will automatically add an Google Policy URL, it's a legal requirement for using Google Consent Mode on your website. Feel free to adapt your introduction text if needed
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (473).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 4- Advanced Mode: Remove your privacy constraints from Google tags
 
@@ -415,7 +415,7 @@ Add the following link to the Google Consent Mode Policy in your Privacy Center 
 Don't forget to generate & deploy your privacy banner(s) once you've made this additional setting.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (463).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
 You can now Generate & Deploy your privacy banner(s)
 

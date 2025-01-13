@@ -20,7 +20,7 @@ Select one or more destinations from which you'd like to export your data.
     Only FTP, Amazon S3 & Google Cloud Storage are currently supported\
 
 
-    <figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (4) (7).png" alt="" width="375"><figcaption></figcaption></figure>
 3.  **Specify the file name and extension** (default is CSV).\
     \
 

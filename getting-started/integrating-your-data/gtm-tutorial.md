@@ -22,7 +22,7 @@ For more details, check the [Commanders Act GTM template documentation](https://
 
 1. Log in to **Commanders Act**.
 2. Go to the **Sources** section and create a new **Google Tag Manager** source.\
-   ![](<../../.gitbook/assets/image (2) (1).png>)
+   ![](<../../.gitbook/assets/image (2) (1) (4).png>)
 3. **Copy the Source Token** displayed.
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>

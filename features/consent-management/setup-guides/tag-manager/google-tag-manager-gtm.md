@@ -36,7 +36,7 @@ Enclosed you'll find two sample configuration files, a very simple setup that yo
 
 ### Added elements
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Understand and personalize the json
 
@@ -68,7 +68,7 @@ It is dedicated to a specific category, you will need to create "Cact on page vi
 
 #### Configuration example
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The trigger should therefore refer to the variable for its category and trigger the associated tag if it returns "allowed"
 
