@@ -1115,7 +1115,7 @@ More information here:
     [JSON\_PARSE() and VALUE\_FROM\_JSON()​](../features/data-quality/data-cleansing/supported-transformation-functions/#available-functions)
 *   **Events reference update**
 
-    [video events](../developers/tracking/events-reference/video-event-reference.md) has been added
+    [video events](../developers/tracking-and-integrations/tracking/events-reference/video-event-reference.md) has been added
 * **New destinations:**&#x20;
   * [Pinterest](../features/destinations/destinations-catalog/pinterest.md)
   * [Equativ ](../features/destinations/destinations-catalog/equativ-audience.md)(audience)

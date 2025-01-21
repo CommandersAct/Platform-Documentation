@@ -41,10 +41,10 @@ Content-Type: application/json
 
 The properties of the event must be provided in the request body in JSON format.
 
-Find details on **best practices in event naming** as well as the **`event` method payload** in our [specifications](../../../developers/tracking/about-events/).
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [specifications](../../../developers/tracking-and-integrations/tracking/about-events/).
 
 {% hint style="warning" %}
-The format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api1\_0.md).
+The format of the payload evolved on Nov. 2022. The old format will still be supported during one year. [More information here](http-tracking-api/http-tracking-api1_0.md).
 {% endhint %}
 
 {% hint style="info" %}

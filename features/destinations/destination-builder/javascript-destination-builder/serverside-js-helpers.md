@@ -171,12 +171,12 @@ const body = {
 ```
 
 {% hint style="info" %}
-Notice that the event data may contains more properties that what you sent initially because of system properties that are added automatically on [web events](../../../../developers/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
+Notice that the event data may contains more properties that what you sent initially because of system properties that are added automatically on [web events](../../../../developers/tracking-and-integrations/tracking/about-events/js-sdk-event-specificity.md) and [app sdk events](../../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md#event-specificity-for-mobile-app).
 {% endhint %}
 
 **Data example:**
 
-If you send this web event:&#x20;
+If you send this web event:
 
 ```javascript
 cact('trigger', 'search', {
@@ -704,10 +704,9 @@ email.md5 = md5Sync(user.user_email);
 sendHttpGet('https://example.com/collect?e5=' + email.md5);
 ```
 
-## `templateDataStorage` <a href="#templateDataStorage" id="templateDataStorage"></a>
+## `templateDataStorage` <a href="#templatedatastorage" id="templatedatastorage"></a>
 
-The `templateDataStorage` helper allows temporary storage and retrieval of data, such as API tokens, during script execution. It is particularly useful for caching reusable data to reduce redundant API calls. Data stored in `templateDataStorage` persists on the server running the template. 
-Since templates execute on multiple servers, and each server may have multiple instances, stored data is not guaranteed to be accessible for all subsequent template execution.
+The `templateDataStorage` helper allows temporary storage and retrieval of data, such as API tokens, during script execution. It is particularly useful for caching reusable data to reduce redundant API calls. Data stored in `templateDataStorage` persists on the server running the template. Since templates execute on multiple servers, and each server may have multiple instances, stored data is not guaranteed to be accessible for all subsequent template execution.
 
 **Syntax**
 
@@ -756,14 +755,13 @@ function sendEvent(eventData) {
 sendEvent({ eventName: 'purchase', value: 100 });
 ```
 
-| Method                          | Description                                                                                                                                         |
-| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`setItemCopy(key, value)`**   | Stores a value under the specified key. Overwrites the value if the key already exists.                                                             |
-| **`getItemCopy(key)`**          | Retrieves the value associated with the specified key. Returns `undefined` if the key does not exist.                                               |
-| **`removeItemCopy(key)`**       | Deletes the value associated with the specified key.                                                                                               |
+| Method                        | Description                                                                                           |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **`setItemCopy(key, value)`** | Stores a value under the specified key. Overwrites the value if the key already exists.               |
+| **`getItemCopy(key)`**        | Retrieves the value associated with the specified key. Returns `undefined` if the key does not exist. |
+| **`removeItemCopy(key)`**     | Deletes the value associated with the specified key.                                                  |
 
-| Parameter      | Type     | Description                                             |
-| -------------- | -------- | ------------------------------------------------------- |
-| **`key`**      | _string_ | The unique identifier for the data to be stored/retrieved. |
-| **`value`**    | _any_    | The data to be stored (for `setItemCopy`).               |
-
+| Parameter   | Type     | Description                                                |
+| ----------- | -------- | ---------------------------------------------------------- |
+| **`key`**   | _string_ | The unique identifier for the data to be stored/retrieved. |
+| **`value`** | _any_    | The data to be stored (for `setItemCopy`).                 |

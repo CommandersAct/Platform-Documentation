@@ -20,8 +20,8 @@ The basic operational principle of Commanders light SDK is:
 
 The rest of the parameters are send in the body in POST like presented here:
 
-{% content-ref url="../../../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
-[mobile-sdk-event-specificity.md](../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
+{% content-ref url="../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md" %}
+[mobile-sdk-event-specificity.md](../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endcontent-ref %}
 
 – **Step 3**: CommandersAct’s servers send the received information to the different destinations. There are as many outgoing hits as there are partner solutions you wish to send information to.
@@ -76,16 +76,16 @@ You will need to connect your iPhone to your Mac.
 
 Open XCode, go to “Window” ), > “Devices” (2), then select your device in thecolumn to the left (3):
 
-![](../../../.gitbook/assets/xcode\_1\[1].png)
+![](../../../.gitbook/assets/xcode_1\[1].png)
 
 These elements will be displayed when you analyze mobile logs:
 
 * Commanders Act SDK’s version number \
   example for consent module: “Commanders Act Privacy module init with version: 5.2.0”
 * Commanders Act site ID&#x20;
-* Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking/events-reference/)
+* Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking-and-integrations/tracking/events-reference/)
 
-![](../../../.gitbook/assets/xcode\_2\[1].png)
+![](../../../.gitbook/assets/xcode_2\[1].png)
 
 \*\*\*
 
@@ -106,18 +106,18 @@ Add a proxy manually:
 
 Save.
 
-![](../../../.gitbook/assets/charles\_1\[1].png)
+![](../../../.gitbook/assets/charles_1\[1].png)
 
 Go to the Charles app and authorize it to connect to the phone.
 
-![](../../../.gitbook/assets/charles\_2\[1].png)
+![](../../../.gitbook/assets/charles_2\[1].png)
 
 Browse the web with your phone and in Charles (on your computer) apply a “Commander” filter to see server-side hits displayed in the “Overview” section. They look like this: \
-[https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ](https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ)
+[https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ](https://collect.commander1.com/events?tc_s=XXXX\&token=XYZZ)
 
 When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the Commanders Act SDK.
 
-![](../../../.gitbook/assets/charles\_3\[1].png)
+![](../../../.gitbook/assets/charles_3\[1].png)
 
 HTTPS Protocol:
 

@@ -26,4 +26,4 @@ It is possible to import data to Commanders Act through regular automated file i
 
 ## Data API
 
-You can send your specific data through our [Data JSON APIs](../developers/tracking/data-api/).
+You can send your specific data through our [Data JSON APIs](../developers/tracking-and-integrations/tracking/data-api/).

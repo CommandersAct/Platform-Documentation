@@ -21,7 +21,7 @@ You can also import templates created on GTM inside your catalog in a few clics 
 
 You can choose to create an **Event** destination (to forward events like purchase, page view...) or **Audience** destination (send users who entered or were removed from a specific segment).
 
-For **Event** destination, all [standard ](../../../../developers/tracking/events-reference/)and custom events can be used as input.
+For **Event** destination, all [standard ](../../../../developers/tracking-and-integrations/tracking/events-reference/)and custom events can be used as input.
 
 For **Audience** destination, only 2 system events are managed:
 
