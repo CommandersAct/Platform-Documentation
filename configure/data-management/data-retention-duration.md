@@ -21,7 +21,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 **Personal data:**  Any data necessary for the client's project\
 \*IP addresses are automatically obfuscated (the last octet is replaced by 0)
 
-**Consent required:** Yes
+**Consent required:** No
 
 **Data retention:** 30 days
 
@@ -41,7 +41,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 **Personal data:**  Any data necessary for the client's project\
 \*IP addresses are automatically obfuscated (the last octet is replaced by 0)
 
-**Consent required:** Yes
+**Consent required:** No
 
 **Data retention:** 7 days
 
@@ -60,7 +60,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Personal data:** Yes, depending of customers settings
 
-**Consent required:** Yes
+**Consent required:** No
 
 **Data retention:** 30 days
 
