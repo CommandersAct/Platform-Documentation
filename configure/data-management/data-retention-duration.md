@@ -113,28 +113,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Personal data:** No
 
-**Consent required:** Yes
-
-**Data retention:** 30 days
-
-</details>
-
-<details>
-
-<summary>One Tag </summary>
-
-**Type:** Data Collection
-
-**Purpose:** Collecting of online events with possible storage, in order to transfer data to partners or generate user segmentation and exports
-
-**Personal data:**&#x20;
-
-* ID Unique CA (TC\_ID)&#x20;
-* IP&#x20;
-* User Agent&#x20;
-* User ID Any other data necessary for the client's project
-
-**Consent required:** Yes
+**Consent required:** No (Anonymous data)
 
 **Data retention:** 30 days
 
@@ -168,7 +147,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Personal data:** No
 
-**Consent required:** Yes
+**Consent required:** No (anonymous data)
 
 **Data retention:** 30 days
 
@@ -192,7 +171,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 90 days
+**Data retention:** 90 days by default
 
 </details>
 
@@ -235,68 +214,6 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 </details>
 
-<details>
-
-<summary>Exports</summary>
-
-**Type:** Raw or aggregated data exports
-
-**Purpose:** Export of collected or aggregated data
-
-**Personal data:**&#x20;
-
-* Commanders Act uniq ID (TC\_ID)&#x20;
-* IP&#x20;
-* User Agent
-
-**Consent required:** Yes
-
-**Data retention:**&#x20;
-
-* 90 days for raw data
-* Contract duration for aggregated data.&#x20;
-
-</details>
-
-<details>
-
-<summary>Imports</summary>
-
-**Type:** Data Processing
-
-**Purpose:** Importation of campaign or conversion data
-
-**Personal data:**&#x20;
-
-* Commanders Act uniq ID (TC\_ID)&#x20;
-* IP&#x20;
-* User Agent
-* Conversion data
-
-**Consent required:** Yes
-
-**Data retention:** 2 years
-
-**Additional information:** This long retention allows our customers to compare conversion data to previous year.
-
-</details>
-
-<details>
-
-<summary>Criteo Graph</summary>
-
-**Type:** Data Processing
-
-**Purpose:** Identification enhancement using Criteo Ids
-
-**Personal data:** No
-
-**Consent required:** Yes
-
-**Data retention:** 1 year
-
-</details>
-
 ### Data Activation
 
 <details>
@@ -322,7 +239,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 <details>
 
-<summary>Users Segmentation</summary>
+<summary>Users</summary>
 
 **Type:** Data Processing
 
@@ -333,45 +250,6 @@ Commanders Act do not transfer any of the information collected outside of the E
 **Consent required:** Yes
 
 **Data retention:** 2 years
-
-**Additional information:** We consider a user to be inactive after 2 years. This period is set to match the need of some of our customers having long sales cycles
-
-</details>
-
-<details>
-
-<summary>Users Attributes</summary>
-
-**Type:** Data Processing
-
-**Purpose:** Algorithms for attributes calculations based on existing data
-
-**Personal data:** No
-
-**Consent required:** Yes
-
-**Data retention:** 2 years
-
-**Additional information:** We consider a user to be inactive after 2 years. This period is set to match the need of some of our customers having long sales cycles
-
-</details>
-
-<details>
-
-<summary>Data Exports</summary>
-
-**Type:** Data Exports
-
-**Purpose:** Export of data to any destination requested by the customer
-
-**Personal data:** All collected data is exportable
-
-**Consent required:** Yes
-
-**Data retention:**&#x20;
-
-* 2 years for users data&#x20;
-* 30 days for raw events
 
 **Additional information:** We consider a user to be inactive after 2 years. This period is set to match the need of some of our customers having long sales cycles
 
@@ -392,7 +270,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 365 days
+**Data retention:** 90 days
 
 **Additional information:** We consider a user to be inactive after 2 years. This period is set to match the need of some of our customers having long sales cycles
 
@@ -400,23 +278,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 <details>
 
-<summary>Imports CRM</summary>
-
-**Type:** Data Import
-
-**Purpose:** CRM data import and reconciliation with collected data
-
-**Personal data:** Any data necessary for the client's project
-
-**Consent required:** Yes
-
-**Data retention:** 3 years
-
-</details>
-
-<details>
-
-<summary>Imports Conversions</summary>
+<summary>Conversions</summary>
 
 **Type:** Data Import
 
@@ -431,30 +293,7 @@ Commanders Act do not transfer any of the information collected outside of the E
 
 **Consent required:** Yes
 
-**Data retention:** 3 months
-
-</details>
-
-### Identity Resolution
-
-<details>
-
-<summary>User Identification</summary>
-
-**Type:** Data Processing
-
-**Purpose:** Reconciliation algorithm for multi-device Internet users
-
-**Personal data:**&#x20;
-
-* ID Unique CA (TC\_ID)&#x20;
-* IP&#x20;
-* User Agent&#x20;
-* User ID
-
-**Consent required:** Yes
-
-**Data retention:** defined by contract
+**Data retention:** 12 months by default
 
 </details>
 
