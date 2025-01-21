@@ -21,7 +21,7 @@ Your data has to be sent to a [new url](../../../../../features/sources/sources-
 
 ## 3. Format events
 
-* Events are the new format of your data. As explain in the [event documentation](../../../../../developers/tracking-and-integrations/tracking/about-events/), common events have to be sent in the **standard format** (name and properties) to benefit from plug\&play features.
+* Events are the new format of your data. As explain in the [event documentation](../../../../../developers/tracking/about-events/), common events have to be sent in the **standard format** (name and properties) to benefit from plug\&play features.
 
 {% hint style="info" %}
 For specific events, **custom events** name is possible. Nevertheless, please use **standard properties** in custom events, as far as possible, to benefit from automatic mapping, automatic QA, and plug\&play features.

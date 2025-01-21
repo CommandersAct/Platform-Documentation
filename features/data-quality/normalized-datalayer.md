@@ -12,7 +12,7 @@ Then, in the [Source data quality](data-quality.md) view, you are able to define
 
 <figure><img src="../../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
 
-You can choose to add a [standard event](../../developers/tracking-and-integrations/tracking/events-reference/) (from the event catalog) or a custom specification.
+You can choose to add a [standard event](../../developers/tracking/events-reference/) (from the event catalog) or a custom specification.
 
 The schema of standard events is already defined, but you can modify it by adding more properties (standard or custom properties).
 

@@ -4,6 +4,12 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 21/01/2025
+
+{% content-ref url="../developers/tracking-and-integrations/server-ip-whitelisting.md" %}
+[server-ip-whitelisting.md](../developers/tracking-and-integrations/server-ip-whitelisting.md)
+{% endcontent-ref %}
+
 ## 13/12/2024
 
 Destination documentation (updates):
@@ -651,9 +657,9 @@ Add a [changelog](../developers/changelogs/web-container-generator.md) section o
 * Add [_web performance_](../use-cases/website-performance.md) in use cases section
 * Enhance the [_Concepts_ ](../getting-started/concepts/)section
 * Give more visibility to [_Sources_ ](../features/sources/)and [_Destinations_ ](../features/destinations/)menus, following your feedback
-* Enhance the [event reference](../developers/tracking-and-integrations/tracking/events-reference/) page to clarify and enlarge tables, following your feedback
+* Enhance the [event reference](../developers/tracking/events-reference/) page to clarify and enlarge tables, following your feedback
 * Enhance the home page
-* Add [video events](../developers/tracking-and-integrations/tracking/events-reference/video-event-reference.md) spec
+* Add [video events](../developers/tracking/events-reference/video-event-reference.md) spec
 
 ## 09/12/2022
 
@@ -668,8 +674,8 @@ Destination documentation:
 * Re-arrangement of menus to find sources/destinations more easily
 * Event reference better arranged to simplify reading:
 
-{% content-ref url="../developers/tracking-and-integrations/tracking/events-reference/" %}
-[events-reference](../developers/tracking-and-integrations/tracking/events-reference/)
+{% content-ref url="../developers/tracking/events-reference/" %}
+[events-reference](../developers/tracking/events-reference/)
 {% endcontent-ref %}
 
 ## 02/12/2022
@@ -974,14 +980,14 @@ Data quality feature:
 
 Add a description of automatic added properties for Web events (JS SDK and Web container):
 
-{% content-ref url="../developers/tracking-and-integrations/tracking/about-events/js-sdk-event-specificity.md" %}
-[js-sdk-event-specificity.md](../developers/tracking-and-integrations/tracking/about-events/js-sdk-event-specificity.md)
+{% content-ref url="../developers/tracking/about-events/js-sdk-event-specificity.md" %}
+[js-sdk-event-specificity.md](../developers/tracking/about-events/js-sdk-event-specificity.md)
 {% endcontent-ref %}
 
 Update automatic added properties for Mobile SDK:
 
-{% content-ref url="../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md" %}
-[mobile-sdk-event-specificity.md](../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md)
+{% content-ref url="../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
+[mobile-sdk-event-specificity.md](../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endcontent-ref %}
 
 ## 21/04/2022

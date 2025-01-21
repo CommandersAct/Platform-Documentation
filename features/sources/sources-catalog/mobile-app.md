@@ -20,8 +20,8 @@ The basic operational principle of Commanders light SDK is:
 
 The rest of the parameters are send in the body in POST like presented here:
 
-{% content-ref url="../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md" %}
-[mobile-sdk-event-specificity.md](../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md)
+{% content-ref url="../../../developers/tracking/about-events/mobile-sdk-event-specificity.md" %}
+[mobile-sdk-event-specificity.md](../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endcontent-ref %}
 
 – **Step 3**: CommandersAct’s servers send the received information to the different destinations. There are as many outgoing hits as there are partner solutions you wish to send information to.
@@ -83,7 +83,7 @@ These elements will be displayed when you analyze mobile logs:
 * Commanders Act SDK’s version number \
   example for consent module: “Commanders Act Privacy module init with version: 5.2.0”
 * Commanders Act site ID&#x20;
-* Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking-and-integrations/tracking/events-reference/)
+* Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking/events-reference/)
 
 ![](../../../.gitbook/assets/xcode_2\[1].png)
 

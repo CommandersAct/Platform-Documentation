@@ -21,7 +21,7 @@ Here's the list of Campaign Analytics touch points names vs Standard events name
 | sites                         | page\_view          |
 | orders                        | purchase            |
 
-If you need more information about these events, check the section [Events reference ](../../../developers/tracking-and-integrations/tracking/events-reference/)
+If you need more information about these events, check the section [Events reference ](../../../developers/tracking/events-reference/)
 
 ### How to implement
 

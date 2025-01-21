@@ -86,10 +86,10 @@ POST  https://collect.commander1.com/events?tc_s={siteId}
 }
 ```
 
-Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../../developers/tracking-and-integrations/tracking/about-events/).
+Find details on **best practices in event naming** as well as the **`event` method payload** in our [Spec](../../../../developers/tracking/about-events/).
 
 {% hint style="info" %}
-If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../../developers/tracking-and-integrations/tracking/about-events/mobile-sdk-event-specificity.md)
+If you want to use Http tracking API from you mobile APP instead of SDK, look at the [Mobile event specificity](../../../../developers/tracking/about-events/mobile-sdk-event-specificity.md)
 {% endhint %}
 
 {% hint style="info" %}

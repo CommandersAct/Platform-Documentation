@@ -1,4 +1,4 @@
-# Video events reference
+# Video events
 
 Commanders Act's video specification lets you define how a customer engages with your videos and the related ad content.
 

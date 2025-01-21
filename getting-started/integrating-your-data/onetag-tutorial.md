@@ -50,13 +50,13 @@ cact('trigger','page_view', {
 
 You can implement two types of events:
 
-* **Recommended** [_**standard events**_](../../developers/tracking-and-integrations/tracking/events-reference/) are events that you implement yourself, but that have Commanders Act-predefined names and parameters.
+* **Recommended** [_**standard events**_](../../developers/tracking/events-reference/) are events that you implement yourself, but that have Commanders Act-predefined names and parameters.
 
 {% hint style="warning" %}
 **We strongly recommend the use of standard events**, as it allows you to benefit from plug\&play features, automatic-mapping, automatic-QA-alerting, etc. but also future features/reporting.
 {% endhint %}
 
-* _**Custom events**_ are events that you name and implement yourself. Before implementing a custom event, check that there is not a [recommended event](../../developers/tracking-and-integrations/tracking/events-reference/) that already provides what you need. With custom events, best practice is to use recommended properties that you can find in our [event references](../../developers/tracking-and-integrations/tracking/events-reference/) (ex: revenue, currency, ...) beside your custom properties.
+* _**Custom events**_ are events that you name and implement yourself. Before implementing a custom event, check that there is not a [recommended event](../../developers/tracking/events-reference/) that already provides what you need. With custom events, best practice is to use recommended properties that you can find in our [event references](../../developers/tracking/events-reference/) (ex: revenue, currency, ...) beside your custom properties.
 
 {% hint style="info" %}
 Inside a standard events, you can add custom properties beside standard properties

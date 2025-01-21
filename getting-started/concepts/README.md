@@ -14,7 +14,7 @@ The user storage is based on a realtime [identity resolution system](../../featu
 
 ## Event
 
-An [event ](../../developers/tracking-and-integrations/tracking/about-events/)represents an action made by a user on your website or application. To track that action, you send an event that contains the data and will be received by Commanders Act.
+An [event ](../../developers/tracking/about-events/)represents an action made by a user on your website or application. To track that action, you send an event that contains the data and will be received by Commanders Act.
 
 ## Source
 
