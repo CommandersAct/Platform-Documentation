@@ -703,3 +703,67 @@ const email = {};
 email.md5 = md5Sync(user.user_email);
 sendHttpGet('https://example.com/collect?e5=' + email.md5);
 ```
+
+## `templateDataStorage` <a href="#templateDataStorage" id="templateDataStorage"></a>
+
+The `templateDataStorage` helper allows temporary storage and retrieval of data, such as API tokens, during script execution. It is particularly useful for caching reusable data to reduce redundant API calls. Data stored in `templateDataStorage` persists on the server running the template. 
+Since templates execute on multiple servers, and each server may have multiple instances, stored data is not guaranteed to be accessible for all subsequent template execution.
+
+**Syntax**
+
+```javascript
+templateDataStorage.setItemCopy(key, value);
+templateDataStorage.getItemCopy(key);
+templateDataStorage.removeItemCopy(key);
+```
+
+### **Example: Managing API Tokens**
+
+```javascript
+const sendHttpRequest = require('sendHttpRequest');
+const templateDataStorage = require('templateDataStorage');
+
+const tokenKey = 'apiToken';
+
+function fetchNewToken(callback) {
+  sendHttpRequest('https://example.com/api/token', function (status, _, body) {
+    if (status === 200) {
+      const { accessToken, expiresIn } = JSON.parse(body);
+      const tokenData = { token: accessToken, expiry: Date.now() + expiresIn * 1000 };
+      templateDataStorage.setItemCopy(tokenKey, tokenData);
+      callback(accessToken);
+    } else {
+      callback(null);
+    }
+  }, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ clientId: 'id', clientSecret: 'secret' }) });
+}
+
+function sendEvent(eventData) {
+  const cachedToken = templateDataStorage.getItemCopy(tokenKey);
+  const token = cachedToken && cachedToken.expiry > Date.now() ? cachedToken.token : null;
+
+  sendHttpRequest('https://example.com/api/events', function (status) {
+    if (status === 401) {
+      fetchNewToken(function (newToken) {
+        if (newToken) {
+          sendHttpRequest('https://example.com/api/events', () => {}, { method: 'POST', headers: { Authorization: `Bearer ${newToken}` }, body: JSON.stringify(eventData) });
+        }
+      });
+    }
+  }, { method: 'POST', headers: { Authorization: `Bearer ${token}` }, body: JSON.stringify(eventData) });
+}
+
+sendEvent({ eventName: 'purchase', value: 100 });
+```
+
+| Method                          | Description                                                                                                                                         |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`setItemCopy(key, value)`**   | Stores a value under the specified key. Overwrites the value if the key already exists.                                                             |
+| **`getItemCopy(key)`**          | Retrieves the value associated with the specified key. Returns `undefined` if the key does not exist.                                               |
+| **`removeItemCopy(key)`**       | Deletes the value associated with the specified key.                                                                                               |
+
+| Parameter      | Type     | Description                                             |
+| -------------- | -------- | ------------------------------------------------------- |
+| **`key`**      | _string_ | The unique identifier for the data to be stored/retrieved. |
+| **`value`**    | _any_    | The data to be stored (for `setItemCopy`).               |
+
