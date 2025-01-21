@@ -717,7 +717,7 @@ templateDataStorage.getItemCopy(key);
 templateDataStorage.removeItemCopy(key);
 ```
 
-### **Example: Managing API Tokens**
+**Example: Managing API Tokens**
 
 ```javascript
 const sendHttpRequest = require('sendHttpRequest');
