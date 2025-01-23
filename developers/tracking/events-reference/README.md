@@ -2111,7 +2111,7 @@ This event signifies that some content was shown to the user. Use this event to 
 
 **Parameters (required and recommended)**
 
-<table><thead><tr><th width="139">Name</th><th width="101">Type</th><th width="82">Required</th><th width="157">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong>*</td><td>9.99</td><td><p>The monetary value of the event.<br>(<em>)<code>revenue</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>revenue</code>.</p></td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes*</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
+<table><thead><tr><th width="139">Name</th><th width="101">Type</th><th width="82">Required</th><th width="157">Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong>*</td><td>9.99</td><td><p>The monetary value of the event.<br>(<em>)<code>value</code> is typically required for meaningful reporting.</em></p><p><em>(</em>)<code>currency</code> is required if you set <code>value</code>.</p></td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes*</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p><code>consent_categories</code> is the user's consents list. It is automatically filled from web sources if you use Commanders Act CMP.</p><p>You should also add all user's properties in this user object, especially reconciliation key (id, email).</p></td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr></tbody></table>
 
 **Example**
 
@@ -2119,7 +2119,7 @@ This event signifies that some content was shown to the user. Use this event to 
 {% tab title="JavaScript" %}
 ```javascript
 cact('trigger','view_item', {
-  revenue: 8.00,
+  value: 9.99,
   currency: 'EUR',
   items: [{
     id: 'SKU_12345',
