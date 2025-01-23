@@ -16,7 +16,7 @@ The Trade Desk destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-On user identifiers, you should pass either `User/Device ID Type` **AND** `User/Device Identifier` **OR** "Smart Mapping" fields like `Device Mobile Identifier` , `The Trade Desk GUID` , `Encrypted UID2 token` , `Encrypted EUID token` , `RampID` .
+On user identifiers, you should pass either `User/Device ID Type` **AND** `User/Device Identifier` **OR** "Smart Mapping" fields like `Device Mobile Identifier` , `The Trade Desk GUID` , `Encrypted UID2 token` , `Encrypted EUID token` , `RampID` but not both.
 {% endhint %}
 
 ### Configuration
