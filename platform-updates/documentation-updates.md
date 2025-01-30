@@ -8,6 +8,10 @@ description: The latest updates made to our documentation articles
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/rtb-house-audience.md" %}
+[rtb-house-audience.md](../features/destinations/destinations-catalog/rtb-house-audience.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
 [linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
 {% endcontent-ref %}
