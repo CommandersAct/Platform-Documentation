@@ -18,6 +18,14 @@ The RTB House Audience destination provides the following key features:
 
 ## Destination setup
 
+{% hint style="warning" %}
+One of the following properties is required:
+
+* `user.email`
+* `user.email_sha256`
+* `user.email_md5`
+{% endhint %}
+
 ### Configuration
 
 <table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Account Id</code></td><td><em><strong><code>Required</code></strong></em> <br>Your account identifier as provided by RTB House.</td></tr><tr><td><code>API Key</code></td><td><em><strong><code>Required</code></strong></em> <br>Your API key as provided by RTB House.</td></tr></tbody></table>
