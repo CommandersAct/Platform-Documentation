@@ -1,5 +1,22 @@
 # Web container generator
 
+## 2025
+
+### 95.8
+
+Release date:  **17/02/2025**
+
+* Added an option to customize the CAID creation process
+  * This new option allows to configure custom CAID cookie expiration. This option is only relevant for clients with specific technical constraints
+  * This option is inactive by default, ensuring that the web container's behavior remains unchanged unless our support team has contacted you about this topic
+  * By defaultCAID expiration remains at 12 months, still handled on the server side
+
+### 95.7
+
+Release date:  **06/01/2025**
+
+* Update Billing hit First Party
+
 ## 2024
 
 ### 95.6
