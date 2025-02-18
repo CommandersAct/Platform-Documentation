@@ -6,7 +6,7 @@ You can visualize the evolution of your event data quality over time, filter by 
 
 <figure><img src="../../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
 
-You can setup an alert to know in realtime if some of your event violate your [validation rules](normalized-datalayer.md).
+You can setup an alert to know in realtime if some of your event violate your [validation rules](event-specification.md).
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

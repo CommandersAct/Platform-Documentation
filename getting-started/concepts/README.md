@@ -5,7 +5,7 @@ Commanders Act is a cookieless platform that allows you to **collect, normalize/
 <figure><img src="../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
 Basically, the platform libraries/API ([Source](./#source)) collects user actions ([Event](./#event)) on your website/app/etc.\
-These events are sent to the platform servers and are then (in this order) [fixed](../../features/data-quality/data-cleansing/), [normalized](../../features/data-quality/normalized-datalayer.md), [enriched](../../features/enrichments/), [checked](../../features/data-quality/), filtered and translated in each tool ([Destination](./#destinations)) format, so that they can be sent to your chosen destinations.
+These events are sent to the platform servers and are then (in this order) [fixed](../../features/data-quality/data-cleansing/), [normalized](../../features/data-quality/event-specification.md), [enriched](../../features/enrichments/), [checked](../../features/data-quality/), filtered and translated in each tool ([Destination](./#destinations)) format, so that they can be sent to your chosen destinations.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -43,6 +43,6 @@ Storing data inside the Data store allows you then to [enrich ](../../features/e
 
 A data layer is a specification of your data for tracking customer interactions. This can include data from websites, mobile apps, connected devices, and offline sources. The data layer enables your third-party vendor solutions and serves as the basis for your data-focused initiatives.
 
-{% content-ref url="../../features/data-quality/normalized-datalayer.md" %}
-[normalized-datalayer.md](../../features/data-quality/normalized-datalayer.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}

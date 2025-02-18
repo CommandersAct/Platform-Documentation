@@ -828,8 +828,8 @@ Data quality documentation:
 [data-quality](../features/data-quality/)
 {% endcontent-ref %}
 
-{% content-ref url="../features/data-quality/normalized-datalayer.md" %}
-[normalized-datalayer.md](../features/data-quality/normalized-datalayer.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="../features/data-quality/data-quality.md" %}

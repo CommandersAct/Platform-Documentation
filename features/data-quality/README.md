@@ -8,11 +8,11 @@ Most companies detect issues after their team has used bad data to make decision
 
 ### Align all the teams in your company around a single data dictionary
 
-In the [Normalized datalayer](normalized-datalayer.md) interface, you will be able to define the schema of your data and define the validation rules that will feed your data quality workflow.
+In the [Event Specification](event-specification.md) interface, you will be able to define the schema of your data and define the validation rules that will feed your data quality workflow.
 
 ### Automate the QA process
 
-Writing [event specification](normalized-datalayer.md) allows you to automate the QA process, to feed the in the [Source data quality](data-quality.md) dashboard, but also to define realtime alerts to react quickly when errors occur on your data.
+Writing [event specification](broken-reference) allows you to automate the QA process, to feed the in the [Source data quality](data-quality.md) dashboard, but also to define realtime alerts to react quickly when errors occur on your data.
 
 ### Fix your data in realtime
 

@@ -263,7 +263,7 @@
     * [Business case](features/enrichments/augmented-user-attributes/business-case.md)
   * [Events enrichment](features/enrichments/events-enrichment.md)
 * [Data Quality](features/data-quality/README.md)
-  * [Normalized datalayer](features/data-quality/normalized-datalayer.md)
+  * [Event Specification](features/data-quality/event-specification.md)
   * [Sources data quality](features/data-quality/data-quality.md)
   * [Data cleansing](features/data-quality/data-cleansing/README.md)
     * [Supported transformation functions - Data cleansing](features/data-quality/data-cleansing/supported-transformation-functions/README.md)
