@@ -291,6 +291,7 @@
       * [Google Consent Mode in Commanders Act CMP](features/consent-management/setup-guides/tag-manager/google-consent-mode-in-commanders-act-tms.md)
       * [Adobe Launch](features/consent-management/setup-guides/tag-manager/adobe-launch.md)
     * [Websites (Hardcoded)](features/consent-management/setup-guides/websites-hardcoded.md)
+    * [Suppression des cookies lors du retrait du consentement](features/consent-management/setup-guides/suppression-des-cookies-lors-du-retrait-du-consentement.md)
     * [Mobile apps](features/consent-management/setup-guides/mobile-apps/README.md)
       * [iOS](features/consent-management/setup-guides/mobile-apps/ios/README.md)
         * [ATT - App Tracking Transparency (iOS 14.5+)](features/consent-management/setup-guides/mobile-apps/ios/att-app-tracking-transparency-ios-14.5+.md)
