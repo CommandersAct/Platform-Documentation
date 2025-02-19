@@ -16,7 +16,7 @@ Exemples de cookies techniques ou liés à la gestion du consentement à conserv
 * **TC\_PRIVACY\_CENTER**
 
 👉 **Comment identifier ces cookies essentiels ?**\
-Nous mettons à votre disposition la fonctionnalité [**Cookie Scanner**](../extensions/cookie-scanner.md), qui vous permet d’analyser les cookies utilisés sur votre site et pour vous aider à identifier ceux qui doivent être conservés. Cela évite d’en oublier et assure un bon fonctionnement après la suppression des cookies non essentiels.\
+Nous mettons à votre disposition la fonctionnalité [**Cookie Scanner**](../extensions/cookie-scanner.md), qui vous permet de lister les cookies présents sur votre site, pour vous aider à identifier ceux qui doivent être conservés. Cela évite d’en oublier et assure un bon fonctionnement après la suppression des cookies non essentiels.\
 Il est conseillé de vérifier avec vos équipes techniques ou votre prestataire les cookies techniques qui ne doivent pas être supprimés.
 
 > 💡 **Action :** Utilisez **Cookie Scanner** pour obtenir une liste complète des cookies présents sur votre site
@@ -46,9 +46,66 @@ Vous pouvez insérer ce code JavaScript :\
 
 **Télécharger le script JavaScript :**
 
+<details>
 
+<summary>Code JavaScript - suppression de cookies</summary>
 
-{% embed url="https://gist.github.com/arnaudhimself/9e8f6d0ae598432ae49821d5358ff773" %}
+```javascript
+/**
+ * This script listens for consent updates via the Commanders Act OnSite API.
+ * When a user revokes consent (opt-out), it removes all 1st party cookies
+ * except for those explicitly allowed. It also calls configured URLs to delete cookies
+ * on the server side (e.g., httpOnly or third-party cookies).
+ */
+(function () {
+  // List of cookies to retain (system cookies, technical storage items)
+  var allowedCookies = ["TCPID", "TC_PRIVACY", "TC_PRIVACY_CENTER"];
+  // Optional: Regex to match additional cookies or storage keys to retain
+  var allowedCookiesPattern = /your_regex_[a-z0-9]*/; // Adjust this pattern if necessary
+
+  // Array of server URLs to call for server-side deletion of cookies (httpOnly/partner cookies). Leave empty if you don't have such urls/api
+  var serverDeletionUrls = [
+    "https://server1.example.com/delete-cookies",
+    "https://server2.example2.com/delete-cookies"
+  ];
+
+  // Subscribe to consent updates using the Commanders Act OnSite API
+  cact("consent.onUpdate", function (consentData) {
+    if (consentData.updateEvent === "revoked") {
+      // Retrieve all cookies
+      var allCookies = document.cookie.split(";").map(function (item) {
+        return item.split("=")[0].trim();
+      });
+      // Determine which cookies need to be removed (i.e. not allowed)
+      var cookiesForRemoval = allCookies.filter(function (cookieName) {
+        return allowedCookies.indexOf(cookieName) === -1 && !allowedCookiesPattern.test(cookieName);
+      });
+
+      // Remove each cookie from all possible domain variants
+      cookiesForRemoval.forEach(function (cookieName) {
+        var hostParts = window.location.hostname.split(".");
+        while (hostParts.length > 0) {
+          var domainCandidate = "." + hostParts.join(".");
+          tC.removeCookie(cookieName, domainCandidate);
+          hostParts.shift();
+        }
+        // Also try removing the cookie without a domain specification
+        tC.removeCookie(cookieName, "");
+      });
+
+      // Call server-side endpoints to delete httpOnly and partner cookies
+      serverDeletionUrls.forEach(function (url) {
+        // Use fetch with no-cors mode to trigger the deletion endpoints
+        fetch(url, { mode: "no-cors" }).catch(function (error) {
+          console.error("Error calling server deletion URL:", url, error);
+        });
+      });
+    }
+  });
+})();
+```
+
+</details>
 
 ***
 
