@@ -80,9 +80,7 @@ Ces cookies sont déposés par des services externes (publicité, analyses, widg
 
 ### **4. Ce que fait (et ne fait pas) notre script**
 
-* ✅ **Ce que le script fait :**
-  * Supprime automatiquement les cookies déposés par votre domaine (**first-party**), en conservant ceux que vous avez explicitement listés.
-  * Peut appeler des **URL de suppression** pour les cookies HTTP-only et ceux déposés par des partenaires externes.
-* ❌ **Ce que le script ne fait pas :**
-  * Il **ne peut pas supprimer directement les cookies tiers**, sauf si ces derniers proposent une API dédiée.
-  * Il **ne peut pas supprimer les cookies HTTP-only**, qui nécessitent une intervention côté serveur.
+✅ **Il supprime automatiquement les cookies déposés sur votre domaine** (**first-party**), en conservant ceux que vous avez explicitement listés.\
+✅ **Il permet d’appeler des URL de suppression** pour les **cookies HTTP-only** **et tiers** (optionnel).\
+❌ **Il ne peut pas supprimer directement les cookies tiers**, sauf si ces derniers proposent une url ou API dédiée.\
+❌ **Il ne peut pas supprimer les cookies HTTP-only**, sauf si ces derniers proposent une url ou API dédiée.
