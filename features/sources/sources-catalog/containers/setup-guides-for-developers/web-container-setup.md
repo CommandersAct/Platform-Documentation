@@ -88,7 +88,7 @@ Following you will find an example object including its most relevant informatio
 
 ```javascript
 {
-    1234: { // TagCommander Account ID
+    1234: { // Commanders Act Account ID
         1: { // ID of the 1st loaded Container
             g: 15,
             v: "5.15" // Version of the 1st loaded Container
@@ -102,10 +102,10 @@ Following you will find an example object including its most relevant informatio
 
 ### Definitions&#x20;
 
-| Metric                 | Description                                                                                                                                    |
+| **Account ID**         | Unique ID of your workspace on our platform. Also called "SiteID". e.g. "1234"                                                                 |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Container ID**       | Unique ID of the Container within your account. e.g. 21                                                                                        |
-| **Container Name**     | Label for the Container. Can be configured in the Options of TagCommander. e.g. "Header Container"                                             |
-| **Container Filename** | Name of the Container JavaScript file, can be configured in the Options of the TagCommander interface. e.g. "tc\_header\_21.js"                |
+| **Container ID**       | Unique ID of the Container within your account. e.g. "15"                                                                                      |
+| **Container Name**     | Label of the Container. Can be configured in the "container settings" of TMS. e.g. "Header Container"                                          |
+| **Container Filename** | Name of the Container JavaScript file, can be configured in the "container settings" of TMS. e.g. "tc\_header\_21.js"                          |
 | **Container URL**      | Complete URL of the Container used for installation. Depends on the hosting method. e.g. "//cdn.tagcommander.com/1234/tc\_footer\_main\_20.js" |
-| **Container Version**  | Snapshot of a Container JavaScript file.                                                                                                       |
+| **Container Version**  | <p>Snapshot of a Container JavaScript file.<br>e.g. "55.16"</p>                                                                                |
