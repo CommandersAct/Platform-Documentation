@@ -102,10 +102,10 @@ Following you will find an example object including its most relevant informatio
 
 ### Definitions&#x20;
 
-| **Account ID**         | Unique ID of your workspace on our platform. Also called "SiteID". e.g. "1234"                                                                 |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Container ID**       | Unique ID of the Container within your account. e.g. "15"                                                                                      |
-| **Container Name**     | Label of the Container. Can be configured in the "container settings" of TMS. e.g. "Header Container"                                          |
-| **Container Filename** | Name of the Container JavaScript file, can be configured in the "container settings" of TMS. e.g. "tc\_header\_21.js"                          |
-| **Container URL**      | Complete URL of the Container used for installation. Depends on the hosting method. e.g. "//cdn.tagcommander.com/1234/tc\_footer\_main\_20.js" |
-| **Container Version**  | <p>Snapshot of a Container JavaScript file.<br>e.g. "55.16"</p>                                                                                |
+| **Account ID**         | Unique account ID of your workspace on our platform. Also called "Site ID". Log in into your Commanders Act account and look for the first numeric value in your address bar. e.g. with "https://app.commandersact.com/en/1234/", your account identifier is "1234". |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Container ID**       | Unique ID of the Container within your account. e.g. "15".                                                                                                                                                                                                           |
+| **Container Name**     | Label of the Container. Can be configured in the "container settings" of TMS. e.g. "Header Container".                                                                                                                                                               |
+| **Container Filename** | Name of the Container JavaScript file, can be configured in the "container settings" of TMS. e.g. "tc\_header\_21.js".                                                                                                                                               |
+| **Container URL**      | Complete URL of the Container used for installation. Depends on the hosting method. e.g. "//cdn.tagcommander.com/1234/tc\_footer\_main\_20.js".                                                                                                                      |
+| **Container Version**  | <p>Snapshot of a Container JavaScript file.<br>e.g. "55.16".</p>                                                                                                                                                                                                     |
