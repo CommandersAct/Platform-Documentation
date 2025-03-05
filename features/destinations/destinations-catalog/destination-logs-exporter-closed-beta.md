@@ -9,7 +9,7 @@ This destination will allow you to export to an SFTP all outgoing requests issue
 
 Select one or more destinations from which you'd like to export your data.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 
 

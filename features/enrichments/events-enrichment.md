@@ -92,7 +92,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 2.  **Manage Storage Settings**: Click on "New Storage" to create a new Data store.\
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  **Define Properties to be stored**:
 
     * **Select Consent Category**: Ensure compliance with data privacy regulations.
@@ -102,7 +102,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
     * **Retention Period**: The period until when the store events are deleted (maximum 30 days allowed).\
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Enrich Events
 

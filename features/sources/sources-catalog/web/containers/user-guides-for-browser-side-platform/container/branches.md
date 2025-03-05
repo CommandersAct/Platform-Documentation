@@ -1,7 +1,5 @@
 # Branches
 
-Feature currently available only for Beta-Test program
-
 ## Introducing the new "Branches" feature
 
 Are you ready to take your TMS experience to the next level? We are thrilled to introduce our latest feature: **Branches**. This powerful tool is designed to elevate your team’s efficiency, allowing multiple users to work simultaneously on the same project without stepping on each other's toes. Imagine a workspace where you can confidently make changes, test them in isolation, and merge them seamlessly—all while keeping your Main project intact. Let’s dive into what makes this feature a game-changer.
@@ -54,9 +52,9 @@ On save, you will redirected in your new Branch environment
 
 Once your Branch is created, all changes you make are isolated to this environment. The blue color of the navigation elements shows you are in a Branch.&#x20;
 
-<figure><img src="../../../../../../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-You can edit/modify any elements as if you where in a regular container.
+You can edit or modify any of the elements as if you were in a normal container.
 
 {% hint style="warning" %}
 **Limitations**
@@ -65,6 +63,8 @@ You can edit/modify any elements as if you where in a regular container.
 -Old events formats (deprecated tc\_events) cannot be deleted in a Branch
 
 Be careful on your WebDatalayer modification(s), it may impact all your site
+
+If you create an internalvar in your Branch, you must link it with the Main as well, because internalvars aren't merged
 {% endhint %}
 
 ### **Branch Comparison with the Main**&#x20;
@@ -121,6 +121,10 @@ We recommend to bring all the changes from the Main into your Branch. If you ref
 
 You can generate your Branch as a regular container.
 
+Once your Branch has been merged, you can do your Quality Assurance by 2 different ways: Deploy your Branch in your UAT environment, or use our Chrome Plugin "Commanders Act Tag Assistant"
+
+#### Test on your UAT environment
+
 When you’re ready, deploy your changes in your UAT environment, ensuring everything works flawlessly before merging.
 
 There's a main difference for Branches containers at the deloy step: deployment on Production environment isn't allowed.\
@@ -130,18 +134,23 @@ The UAT deployment option will push your Branch version on the UAT URL of the Ma
 
 It means that you can test your Branch directly on your UAT site without IT intervention.
 
-You can also download your Branch version and use override to test it
+<figure><img src="../../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
+#### Test with our plugin
 
-{% hint style="info" %}
-Branch testing compatibility with our plugin is under development.\
-It's coming soon!
-{% endhint %}
+Our Commanders Act Assistant is compatible with Branches!
+
+Download it from Chrome Extension Store, once it is installed on your browser, you can use the button "preview" to test your Branch on your website.
+
+<figure><img src="../../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../../../.gitbook/assets/image (3).png" alt="" width="488"><figcaption></figcaption></figure>
+
+For a detailed documentation about our plugin, pease read the following page
 
 ### Merge Branch
 
-Ready to bring your changes into the main Branch? Use our “Merge” feature, where you can review the differences, see a detailed comparison, and complete the merge effortlessly.
+Ready to bring your changes from Branch into the Main? Use our “Merge” feature, where you can review the differences, see a detailed comparison, and complete the merge effortlessly.
 
 <figure><img src="../../../../../../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
 
@@ -172,6 +181,14 @@ At any time after merge, you can view all modifications logs from the merged Bra
 {% hint style="success" %}
 Don't forget to re-generate your Main container to bring your changes in Production!
 {% endhint %}
+
+## Custom User Rights
+
+The native roles 'Administrator', 'Technical' and 'Marketing' are allowed to create, edit and merge branches.&#x20;
+
+If you want to manage these access rights more closely, you can use the dedicated rights in Profile Management, Custom Profile.
+
+<figure><img src="../../../../../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
 
 ## Looking ahead
 

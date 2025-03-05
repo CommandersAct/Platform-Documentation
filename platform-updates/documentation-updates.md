@@ -4,6 +4,16 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 05/03/2025
+
+New documentation for the latest version of our Chrome Extension
+
+{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md" %}
+[plugin-commanders-act-assistant.md](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md)
+{% endcontent-ref %}
+
+
+
 ## 31/01/2025
 
 Destination documentation (updates):

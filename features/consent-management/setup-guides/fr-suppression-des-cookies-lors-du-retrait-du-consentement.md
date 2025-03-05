@@ -71,7 +71,7 @@ Vous pouvez insérer ce code JavaScript :\
 
   // Subscribe to consent updates using the Commanders Act OnSite API
   cact("consent.onUpdate", function (consentData) {
-    if (consentData.updateEvent === "revoked") {
+    if (consentData.updateEvent === "revoked" || consentData.consent.status === 'all-off') {
       // Retrieve all cookies
       var allCookies = document.cookie.split(";").map(function (item) {
         return item.split("=")[0].trim();
@@ -90,7 +90,7 @@ Vous pouvez insérer ce code JavaScript :\
           hostParts.shift();
         }
         // Also try removing the cookie without a domain specification
-        tC.removeCookie(cookieName, "");
+         document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/`;
       });
 
       // Call server-side endpoints to delete httpOnly and partner cookies
@@ -131,7 +131,7 @@ Ces cookies sont déposés par des services externes (publicité, analyses, widg
 * **Limitation :** Le script JavaScript ne peut pas supprimer directement ces cookies, sauf si ces fournisseurs offrent une API ou une URL dédiée permettant leur suppression.
 * **Que faire ?**\
   👉 **Demandez à vos partenaires** s’ils proposent un mécanisme de suppression (API ou URL dédiée).\
-  Si c’est le cas, ajoutez ces URL dans le script pour automatiser leur appel lors du retrait du consentement. Sinon, envisagez de ne plus charger ces services après un refus de consentement via votre Tag Management System.
+  Si c’est le cas, ajoutez ces URL dans le script pour automatiser leur appel lors du retrait du consentement. Sinon, utilisez le mécanisme proposé par le partenaire.
 
 ***
 
