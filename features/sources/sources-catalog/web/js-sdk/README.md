@@ -172,7 +172,7 @@ Note that hyphens (`-`) in event names will be converted to underscores (`_`). F
 
 #### Trigger example to fire a tag on `consent-update` event
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Listening to all Events**
 
@@ -198,7 +198,7 @@ cact('emit', 'my_custom_event');
 
 You will be able to use this event as a TMS custom trigger:
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -350,7 +350,7 @@ To use this feature as a TMS custom tag trigger, you'll need to prefix the event
 Example:\
 
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Using `cact('on')` for Event Subscription**
 

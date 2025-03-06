@@ -6,6 +6,138 @@ description: >-
 
 # Release notes
 
+## Release 10.0.27 - February - 2024
+
+🍾 1st Party Hosting Now Available for All Customers!
+
+What is it? Customers can now use their own URL (via CNAME) to host privacy files & web containers.
+
+Why is it important? Ensures better data control while maintaining compliance.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🚨 TMS Modernization & Performance Boost
+
+Web container generation is now faster and supports larger containers (though smaller is still best practice!).
+
+New TMS UI with contextual side nav
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🔒 Cookie Scanner Update: Teaser Alert Module Added
+
+Prepares for future alerting features – get notified immediately when new cookies are found.
+
+Competitive Advantage – Unlike competitors, our scanner provides real-time alerts (no waiting 24h for a crawler!).
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🛠️ UX Enhancement: Filter Categories for Sources & Destinations
+
+Find specific sources/destinations faster.
+
+Easier workspace overview – Quick visibility on available integrations.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🌟 IAB Banners: Total Vendors Now Displayed
+
+Market alignment with Google CMP Partner requirements.
+
+Easier vendor visibility – Just regenerate & deploy the banner to update.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+TMS API Update:
+
+Added mapping variables for tags in API calls&#x20;
+
+[https://commandersact.github.io/api\_doc/#tag/Web-Containers](https://commandersact.github.io/api_doc/#tag/Web-Containers)
+
+***
+
+🎉 CMP Template Update in GTM
+
+Use IAB TCF consent to manage part of the Google Consent Mode signal.
+
+For customers using our CMP in GTM – Just enable it in Advanced Features.
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🌟 TMS API Update – Retrieve Destination Mappings
+
+New API capability – Customers can now retrieve destination mapping properties for data governance audits.
+
+Technical Documentation:[ Commanders Act API Docs](https://commandersact.github.io/api_doc/#tag/Web-Containers)
+
+***
+
+🤖 AI-Based Commenting on Container Generation (Beta)
+
+Faster comment generation (still optimizing for larger changesets).
+
+Smarter summaries – Improved clarity.
+
+Now translated UI – Not just in English anymore!
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🔥 Event Specification (aka Normalized Datalayer) is Live for All Customers!
+
+New Feature Name – Renamed based on Sales & Consulting feedback.
+
+Customers can now set up their own validation rules.
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🌟 Source Data Quality Enhancements
+
+New Features:
+
+Pagination added for event lists.
+
+Event details now open in a side panel.
+
+Search bar for easier filtering.
+
+Benefits:
+
+No more freezing or bugs with large event lists.
+
+Faster page load times (side panel optimizations coming soon).
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+🎉 New Destination: RTB House Audience
+
+Leverage RTB House Audience API to share audiences efficiently.
+
+[Full integration guide available](../features/destinations/destinations-catalog/rtb-house-audience.md).
+
+***
+
+That’s all for this update! Stay tuned for more improvements, and as always, let us know your feedback! 🚀🌟
+
+***
+
 ## Release 10.0.26 - December 16 - 2024
 
 Modernization of TMS client-side interfaces!
@@ -62,7 +194,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   You can now view your password while logging in! This small addition aims to enhance accessibility for all users.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
 
 ***
 
@@ -71,7 +203,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   The navigation menu now includes a shortcut to our Sources Catalog, saving you a click and making it even easier to locate the resources you need.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
 
 ***
 
@@ -97,7 +229,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\
 
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
@@ -471,7 +603,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Simplified workflows for easier navigation
 * Immediate issue detection for data quality perfection
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -487,7 +619,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -546,7 +678,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 <figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -834,9 +966,9 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     You can retrieve them in the edition part of a LRB report !\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -844,7 +976,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -25,17 +25,17 @@ Select one or more destinations from which you'd like to export your data.
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (6).png" alt=""><figcaption></figcaption></figure>
 4.  By default, your export file will not be compressed. If needed, **you can compress your file to GZIP format**.\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (7) (6).png" alt=""><figcaption></figcaption></figure>
 5.  **Set the data separator**, like commas for CSV files (e.g., value1,value2).\
     \
 
 
-    <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (8) (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Activation
 

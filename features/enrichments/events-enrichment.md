@@ -92,7 +92,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 2.  **Manage Storage Settings**: Click on "New Storage" to create a new Data store.\
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  **Define Properties to be stored**:
 
     * **Select Consent Category**: Ensure compliance with data privacy regulations.
@@ -102,14 +102,14 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
     * **Retention Period**: The period until when the store events are deleted (maximum 30 days allowed).\
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Enrich Events
 
 1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2. **Define Enrichment**:
    * **Name**: Name your enrichment rule.
    * **Select Sources and Environment**
@@ -117,7 +117,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
    *   **Choose Event**: Select the event you want to enrich.\
 
 
-       <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
    * **Select Properties**: Define which properties from the stored event should be injected into the new event. The storage do not replace or override the value of an existing property. The storage will create new properties.&#x20;
    * **Review Settings**: Ensure all settings are correctly configured.
    *   **Save**: Save the new enrichment settings.\

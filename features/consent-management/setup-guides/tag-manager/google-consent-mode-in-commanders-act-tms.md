@@ -115,7 +115,7 @@ The privacy setup is done! You can now Generate and Deploy your Privacy Banner.\
 The activation of this option will automatically add an Google Policy URL, it's a legal requirement for using Google Consent Mode on your website. Feel free to adapt your introduction text if needed
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4- Advanced Mode: Remove your privacy constraints from Google tags
 

@@ -52,7 +52,7 @@ On save, you will redirected in your new Branch environment
 
 Once your Branch is created, all changes you make are isolated to this environment. The blue color of the navigation elements shows you are in a Branch.&#x20;
 
-<figure><img src="../../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 You can edit or modify any of the elements as if you were in a normal container.
 
@@ -134,7 +134,7 @@ The UAT deployment option will push your Branch version on the UAT URL of the Ma
 
 It means that you can test your Branch directly on your UAT site without IT intervention.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Test with our plugin
 
@@ -142,9 +142,9 @@ Our Commanders Act Assistant is compatible with Branches!
 
 Download it from Chrome Extension Store, once it is installed on your browser, you can use the button "preview" to test your Branch on your website.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (3).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (3) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 
 For a detailed documentation about our plugin, pease read the following page
 

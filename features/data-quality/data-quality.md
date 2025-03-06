@@ -8,7 +8,7 @@ You can visualize the evolution of your event data quality over time, filter by 
 
 You can setup an alert to know in realtime if some of your event violate your [validation rules](event-specification.md).
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can analyze in detail each event and have more details about errors, and a shortcut to [fix the error in the Data Cleansing feature](data-cleansing/).
 

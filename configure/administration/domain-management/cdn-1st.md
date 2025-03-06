@@ -1,4 +1,4 @@
-# 1st party hosting
+# First party hosting
 
 Our 1st party hosting feature helps ensure that ad blockers do not unfairly interrupt responsible data tracking. This is in line with privacy best practice and GDPR compliance. \
 \
@@ -26,7 +26,7 @@ Click on "Add Subdomain"
 
 Enter your subdomain name
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt="" width="460"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (7).png" alt="" width="460"><figcaption></figcaption></figure>
 
 Once saved, the new subdomain will be displayed in your list
 
