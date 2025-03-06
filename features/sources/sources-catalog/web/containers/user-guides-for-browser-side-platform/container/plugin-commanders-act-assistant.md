@@ -6,6 +6,8 @@ We are excited to introduce the latest version of our browser plugin, **Commande
 
 [Download it now in the Chrome Store](https://chromewebstore.google.com/detail/commanders-act-assistant/lfaifjhjdolnpnlgeohohaalbeidhlpj)
 
+\*Availability in the Microsoft Edge Store is coming soon!
+
 ## Key Features &#x20;
 
 ### Replace Web Containers easily
