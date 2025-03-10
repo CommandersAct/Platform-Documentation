@@ -2,6 +2,13 @@
 
 ## 2025
 
+### 95.9
+
+Release date:  **10/03/2025**
+
+* [public release] Update Billing hit First Party
+* [beta] Support js function for TCPID behaviour customization
+
 ### 95.8
 
 Release date:  **17/02/2025**
@@ -15,7 +22,7 @@ Release date:  **17/02/2025**
 
 Release date:  **06/01/2025**
 
-* Update Billing hit First Party
+* [beta] Update Billing hit First Party
 
 ## 2024
 
