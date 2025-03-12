@@ -1,3 +1,0 @@
-# Shopify
-
-Documentation in progress
