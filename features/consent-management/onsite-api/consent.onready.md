@@ -39,4 +39,11 @@ cact('consent.onReady', function (result) {
     }
     
 });
+
 ```
+
+
+
+{% hint style="warning" %}
+At the container level, consent.onReady cannot work with a blocked on category. The blocked on categories are defined in the banner. For this specific usage, we recommend to use the consent.get method
+{% endhint %}
