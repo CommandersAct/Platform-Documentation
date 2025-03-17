@@ -37,9 +37,11 @@ Before you get started with this destination, make sure you can access the [Snap
 | `add_to_wishlist`           | `ADD_TO_WISHLIST`         |
 | `begin_checkout`            | `START_CHECKOUT`          |
 | `generate_lead`             | `SUBSCRIBE`               |
+| `invite`                    | `INVITE`                  |
 | `login`                     | `LOGIN`                   |
 | `page_view`                 | `PAGE_VIEW`               |
 | `purchase`                  | `PURCHASE`                |
+| `reserve`                   | `RESERVE`                 |
 | `search`                    | `SEARCH`                  |
 | `sign_up`                   | `SIGN_UP`                 |
 | `view_item`                 | `VIEW_CONTENT`            |
