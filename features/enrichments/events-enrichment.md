@@ -86,23 +86,16 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 
 ### How to Use the Enrichment Event Feature
 
-#### Step 1: Create Enrichment Storage Settings
+#### Step 1: Create your Storage Settings
 
-1. **Access Settings**: Go to the Data Governance -> Storage settings.
-2.  **Manage Storage Settings**: Click on "New Storage" to create a new Data store.\
+1. **Access Storage Settings**: Go to the Data Governance -> Storage settings.
+2.  **Manage Storage Settings**: Click on "New Storage" to create a new Storage.\
 
 
     <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-3.  **Define Properties to be stored**:
 
-    * **Select Consent Category**: Ensure compliance with data privacy regulations.
-    * **Choose Sources and Environment**
-    * **Select Event and Properties**: Choose which events you want to store and which properties. If no properties are specified, the entire event will be stored.
-    * **Set Matching Key**: This unique key have to be present both on the event to be enriched and the event to store.
-    * **Retention Period**: The period until when the store events are deleted (maximum 30 days allowed).\
+To learn more about how to use this feature, and get tips about Storage Settings creation, please [read the dedicated page](storage-settings.md)\
 
-
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 2: Enrich Events
 
@@ -110,20 +103,23 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-2. **Define Enrichment**:
-   * **Name**: Name your enrichment rule.
-   * **Select Sources and Environment**
-   * **Select the Storage** you want to use for this enrichment
-   *   **Choose Event**: Select the event you want to enrich.\
+2.  **Define Enrichment**:
+
+    * **Name**: Name your enrichment rule.
+    * **Select Sources and Environment**
+    * **Select the Storage Settings** you want to use for this enrichment
+    *   **Choose Event**: Select the event you want to enrich.\
 
 
-       <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-   * **Select Properties**: Define which properties from the stored event should be injected into the new event. The storage do not replace or override the value of an existing property. The storage will create new properties.&#x20;
-   * **Review Settings**: Ensure all settings are correctly configured.
-   *   **Save**: Save the new enrichment settings.\
+        <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    * **Select Properties**: Define which properties from the stored event should be injected into the new event. Select in "Storage Settings" column the properties, as it is in your Storage. Select the property you want to enrich in the "Event Property"\
+      The storage do not replace or override the value of an existing property. The storage will create new properties. \
+      If you want to override an existing value, click the option "override"
+    * **Review Settings**: Ensure all settings are correctly configured.
+    * **Save**: Save the new enrichment settings.\
 
 
-       <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
 * **Administrators Only**: This feature is accessible only to users with Administrator privileges. Custom profiles can be created to grant specific access to other users.
 

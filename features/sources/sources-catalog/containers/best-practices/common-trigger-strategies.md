@@ -42,18 +42,21 @@ After these steps it is then necessary to signal a custom Trigger to execute the
 ```javascript
 cact('emit', 'page_view', {});
 ```
+
 To use event attributes, you can specify the event or the element as first argument.
+
 ```html
 <a href="/home" onclick="cact('emit', 'pageview', { from: this, some_data: 'some_value' })">Home</a>
 ```
 
-***Old Method***
+_**Old Method**_
+
 ```javascript
 tC.event.pageview({}, {});
 ```
 
-To use event attributes, you need to specify the event or the element as argument.
-`event` is a special variable that is always available inside of `onclick` and `on*` attributes.
+To use event attributes, you need to specify the event or the element as argument. `event` is a special variable that is always available inside of `onclick` and `on*` attributes.
+
 ```html
 <a href="/home" onclick="tC.event.pageview(event, {}))">Home</a>
 ```
@@ -64,7 +67,7 @@ Steps 2. and 3. are often used in conjunction therefore it is possible to combin
 
 ## Click Trigger
 
-Click Trigger implementation depends on the scenario. e.g. _Is the user navigated to another site when he clicks an element?_ and _Does the following page open in a new tab?_.&#x20;
+Click Trigger implementation depends on the scenario. e.g. _Is the user navigated to another site when he clicks an element?_ and _Does the following page open in a new tab?_.
 
 Following you will find a list of common scenarios for click Trigger.
 

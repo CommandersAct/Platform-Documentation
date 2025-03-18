@@ -263,6 +263,7 @@
   * [Augmented User Attributes](features/enrichments/augmented-user-attributes/README.md)
     * [Business case](features/enrichments/augmented-user-attributes/business-case.md)
   * [Events enrichment](features/enrichments/events-enrichment.md)
+  * [Storage Settings](features/enrichments/storage-settings.md)
 * [Data Quality](features/data-quality/README.md)
   * [Event Specification](features/data-quality/event-specification.md)
   * [Sources data quality](features/data-quality/data-quality.md)
