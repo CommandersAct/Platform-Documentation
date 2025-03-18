@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 96.0
+
+Release date:  **18/03/2025**
+
+* Move `tC.privacy.includedVendorIds` initialization
+
 ### 95.9
 
 Release date:  **10/03/2025**
