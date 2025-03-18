@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 18/03/2025
+
+New documentation for Storage Settings UI
+
+{% content-ref url="../features/enrichments/storage-settings.md" %}
+[storage-settings.md](../features/enrichments/storage-settings.md)
+{% endcontent-ref %}
+
 ## 05/03/2025
 
 New documentation for the latest version of our Chrome Extension
