@@ -25,7 +25,7 @@ From now on, our tags will now call [XYZ.client.com](http://pheonix.client1.com/
 
 Then please indicate the subdomain on our platform: `Administration > Domain Management.`
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The customer must decide if the SSL encryption on the new subdomain they created is done with ‘Let’s Encrypt’ or with their own certificate. In the former case, nothing to do; in the latter case follow the instruction on the domain management page.
 

@@ -13,6 +13,8 @@
     * [Condensed platform concepts](getting-started/concepts/lexical/condensed-platform-concepts.md)
 * [Platform interface](getting-started/platform-interface.md)
   * [Prod and Testing environments](getting-started/platform-interface/prod-and-testing-environments.md)
+  * [Productivity tools](getting-started/platform-interface/productivity-tools/README.md)
+    * [Commander's AI](getting-started/platform-interface/productivity-tools/commanders-ai.md)
 * [Integrating your data](getting-started/integrating-your-data.md)
   * [GTM Tutorial](getting-started/integrating-your-data/gtm-tutorial.md)
   * [OneTag Tutorial](getting-started/integrating-your-data/onetag-tutorial.md)

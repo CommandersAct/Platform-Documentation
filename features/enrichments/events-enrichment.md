@@ -92,7 +92,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 2.  **Manage Storage Settings**: Click on "New Storage" to create a new Storage.\
 
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To learn more about how to use this feature, and get tips about Storage Settings creation, please [read the dedicated page](storage-settings.md)\
 
@@ -102,7 +102,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
 1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\
 
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Define Enrichment**:
 
     * **Name**: Name your enrichment rule.
