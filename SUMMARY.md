@@ -135,6 +135,7 @@
     * [Awin](features/destinations/destinations-catalog/awin.md)
     * [Batch Audience](features/destinations/destinations-catalog/batch.md)
     * [Branch Events](features/destinations/destinations-catalog/branch-events.md)
+    * [Button](features/destinations/destinations-catalog/button.md)
     * [Campaign Analysis Legacy](features/destinations/destinations-catalog/campaign-analysis-legacy.md)
     * [Commission Junction](features/destinations/destinations-catalog/commission-junction.md)
     * [Criteo](features/destinations/destinations-catalog/criteo/README.md)
