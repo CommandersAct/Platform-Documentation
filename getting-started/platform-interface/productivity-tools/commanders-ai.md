@@ -8,18 +8,22 @@ description: Commander's AI - Technical Documentation
 
 #### 1.1 Overview of Commander's AI
 
-**Commander's AI** is a set of artificial intelligence features integrated into the **Commanders Act** platform. Its goal is to simplify and optimize tag management, data handling, and destination configurations through natural language processing models.
+**Commander's AI** is a set of artificial intelligence features integrated into the **Commanders Act** platform.\
+These features leverage advanced language models (**LLM**) to optimize and automate various tasks.\
+Its goal is to simplify and optimize tag management, data handling, insights and destination configurations through natural language processing models.
 
-The functionalities of Commanders AI are designed to:
+The functionalities of Commander's AI are designed to:
 
+* Improve user efficiency by automating repetitive tasks.
+* Simplify data management and transformation.
+* Ensure tag and destination compliance with privacy regulations.
+* Assist users in optimizing configurations through intelligent suggestions.
 * Accelerate and simplify complex tasks for users.
-* Improve the quality and standardization of configurations.
-* Ensure better consistency and reliability of processed data.
-* Assist users in implementing best practices.
+* Improve the quality and standardization of configurations/data.
 
-#### 1.2 Key Features
+#### 1.2 Key AI Features
 
-Commanders AI includes several advanced functionalities:
+Commanders AI includes several advanced functionalities (some are limited to beta testers) :
 
 1. **Automatic Change Summary**: Generates a summary of modifications when generating a web container in the Tag Management System.
 2. **AI Copilot for Data Cleansing**: Conversational assistant to generate data transformation formulas.
@@ -28,7 +32,7 @@ Commanders AI includes several advanced functionalities:
 
 ***
 
-### 2. Automatic Change Summary in Web containers
+## 2. Automatic Change Summary in Web containers
 
 #### 2.1 Feature Overview
 
@@ -57,7 +61,7 @@ Users have access to additional customization options via the gear icon ⚙️:
 
 ***
 
-### 3. AI Copilot for Data Cleansing (closed beta)
+## 3. AI Copilot for Data Cleansing (closed beta)
 
 #### 3.1 Feature Overview
 
@@ -81,7 +85,7 @@ Users can edit and test the generated formulas to ensure they meet their require
 
 ***
 
-### 4. Smart Suggestions for Names and Descriptions  (closed alpha)
+## 4. Smart Suggestions for Names and Descriptions  (closed alpha)
 
 #### 4.1 Feature Overview
 
@@ -100,7 +104,7 @@ When configuring destinations, segments in Commanders Act, Commanders AI suggest
 
 ***
 
-### 5. Automated Privacy Category Classification  (closed alpha)
+## 5. Automatic Privacy Category Selection (closed alpha)
 
 #### 5.1 Feature Overview
 
@@ -118,11 +122,33 @@ Users retain full control over the classification and can adjust the suggestion 
 
 ***
 
-### 6. AI Model Governance and Updates
+## **3. Transparency and Accountability**
+
+#### **3.1 Clear Identification of AI-Generated Content**
+
+All **Commanders AI** features include explicit labels indicating AI usage:
+
+* **Visible UI labels/icon** such as "AI-Generated", "AI Suggestion" or ✨icon
+* **User Control**: Users can modify/verify AI-generated content to prevent unwanted automation.
+
+#### **3.2 Human Oversight**
+
+Users **always retain final control** over actions suggested or performed by **Commander's AI**. The AI does **not make irreversible autonomous decisions**.
+
+#### **3.3 Data Privacy and Security**
+
+Commanders AI complies with **GDPR** and the **AI Act**:
+
+✔ **Transparency**: Explicit labeling of AI-powered functionalities.\
+✔ **Human Oversight**: No AI action is irreversible.\
+✔ **Data Privacy**: Generated suggestions and content are not stored/used for training purposes. User data remains within the scope of its intended use and is not shared externally.\
+✔ **Technical Documentation**: Full traceability and governance of AI models are maintained.
+
+## 6. AI Model Governance and Updates
 
 #### 6.1 Models Used
 
-Commanders AI is based on a combination of **advanced language models (LLMs)** and specialized algorithms for classification and metadata analysis.
+Commanders AI is based on a combination of **advanced language models (LLMs)** carefully selected for their efficiency in **data management and tag management tasks**.
 
 #### 6.2 Updates and Monitoring
 
@@ -136,6 +162,6 @@ Commanders AI is based on a combination of **advanced language models (LLMs)** a
 
 ***
 
-### 7. Support and Assistance
+## 7. Support and Assistance
 
 For any technical questions or issues related to **Commanders AI**, contact our support team at support@commandersact.com&#x20;
