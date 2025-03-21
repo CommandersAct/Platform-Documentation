@@ -1,5 +1,5 @@
 ---
-description: Commander's AI - Technical Documentation
+description: Technical documentation on the use of artificial intelligence in the platform
 ---
 
 # Commander's AI
@@ -36,7 +36,7 @@ Commanders AI includes several advanced functionalities (some are limited to bet
 
 #### 2.1 Feature Overview
 
-When a user generates a web container in the **Tag Management System (TMS)**, Commander's AI analyzes the modifications and provides an automatic summary of the changes made.
+When a user generates a web container in the **Tag Management System (TMS)**, Commander's AI analyzes the modifications and provides an automatic summary of the changes made since the last container generation.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt="" width="305"><figcaption></figcaption></figure>
 
@@ -122,20 +122,20 @@ Users retain full control over the classification and can adjust the suggestion 
 
 ***
 
-## **3. Transparency and Accountability**
+## **6. Transparency and Accountability**
 
-#### **3.1 Clear Identification of AI-Generated Content**
+#### **6.1 Clear Identification of AI-Generated Content**
 
 All **Commanders AI** features include explicit labels indicating AI usage:
 
 * **Visible UI labels/icon** such as "AI-Generated", "AI Suggestion" or ✨icon
 * **User Control**: Users can modify/verify AI-generated content to prevent unwanted automation.
 
-#### **3.2 Human Oversight**
+#### **6.2 Human Oversight**
 
 Users **always retain final control** over actions suggested or performed by **Commander's AI**. The AI does **not make irreversible autonomous decisions**.
 
-#### **3.3 Data Privacy and Security**
+#### **6.3 Data Privacy and Security**
 
 Commanders AI complies with **GDPR** and the **AI Act**:
 
@@ -144,24 +144,24 @@ Commanders AI complies with **GDPR** and the **AI Act**:
 ✔ **Data Privacy**: Generated suggestions and content are not stored/used for training purposes. User data remains within the scope of its intended use and is not shared externally.\
 ✔ **Technical Documentation**: Full traceability and governance of AI models are maintained.
 
-## 6. AI Model Governance and Updates
+## 7. AI Model Governance and Updates
 
-#### 6.1 Models Used
+#### 7.1 Models Used
 
 Commanders AI is based on a combination of **advanced language models (LLMs)** carefully selected for their efficiency in **data management and tag management tasks**.
 
-#### 6.2 Updates and Monitoring
+#### 7.2 Updates and Monitoring
 
 * Models are regularly updated to ensure **accuracy and relevance**.
 * Validation tests are performed before each deployment to reduce biases and improve reliability.
 
-#### 6.3 Security and Privacy
+#### 7.3 Security and Privacy
 
 * AI-generated content is not stored for reuse or retraining.
 * Suggestions are based solely on technical and contextual criteria without exploiting personal data.
 
 ***
 
-## 7. Support and Assistance
+## 8. Support and Assistance
 
 For any technical questions or issues related to **Commanders AI**, contact our support team at support@commandersact.com&#x20;
