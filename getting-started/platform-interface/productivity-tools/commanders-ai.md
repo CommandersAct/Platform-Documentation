@@ -21,6 +21,10 @@ The functionalities of Commander's AI are designed to:
 * Accelerate and simplify complex tasks for users.
 * Improve the quality and standardization of configurations/data.
 
+{% hint style="info" %}
+All Commanders AI suggestions are non-binding and subject to human validation. Users remain responsible for verifying any AI-generated content before applying it in production.
+{% endhint %}
+
 ### 1.2. Key AI Features
 
 Commanders AI includes several advanced functionalities (some are limited to beta testers) :
