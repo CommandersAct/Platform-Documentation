@@ -130,18 +130,18 @@ Users retain full control over the classification and can adjust the suggestion 
 
 ## **3. Transparency and Accountability**
 
-### **3.1. Clear Identification of AI-Generated Content**
+#### **3.1. Clear Identification of AI-Generated Content**
 
 All **Commanders AI** features include explicit labels indicating AI usage:
 
 * **Visible UI labels/icon** such as "AI-Generated", "AI Suggestion", "AI Copilot" or ✨icon
 * **User Control**: Users can modify/verify AI-generated content to prevent unwanted automation.
 
-### **3.2. Human Oversight**
+#### **3.2. Human Oversight**
 
 Users **always retain final control** over actions suggested or performed by **Commander's AI**. The AI does **not make irreversible autonomous decisions**.
 
-### **3.3. Data Privacy and Security**
+#### **3.3. Data Privacy and Security**
 
 Commanders AI complies with **GDPR** and the **AI Act**:
 
@@ -149,6 +149,19 @@ Commanders AI complies with **GDPR** and the **AI Act**:
 ✔ **Human Oversight**: No AI action is irreversible.\
 ✔ **Data Privacy**: Generated suggestions and content are not stored/used for training purposes. User data remains within the scope of its intended use and is not shared externally.\
 ✔ **Technical Documentation**: Full traceability and governance of AI models are maintained.
+
+#### 3.4. Scope of AI Usage and Data Boundaries
+
+As of today, Commander's AI does **not process or analyze any personal data or event payloads** collected via the Tag Management System (TMS) or the Customer Data Platform (CDP).
+
+Its usage is strictly limited to **configuration assistance and user interface enhancements**, such as:
+
+* Generating summaries of tag management changes.
+* Assisting in writing regex, expressions, or formulas based on metadata or structural fields.
+* Suggesting field names or descriptions based on metadata (not user-level data).
+* Classifying tags or destinations based on structural criteria.
+
+No user event data or identifiers are currently exposed to AI models.
 
 ## 4. AI Model Governance and Updates
 
