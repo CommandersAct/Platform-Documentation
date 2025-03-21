@@ -128,7 +128,7 @@ Users retain full control over the classification and can adjust the suggestion 
 
 All **Commanders AI** features include explicit labels indicating AI usage:
 
-* **Visible UI labels/icon** such as "AI-Generated", "AI Suggestion" or ✨icon
+* **Visible UI labels/icon** such as "AI-Generated", "AI Suggestion", "AI Copilot" or ✨icon
 * **User Control**: Users can modify/verify AI-generated content to prevent unwanted automation.
 
 #### **6.2 Human Oversight**
