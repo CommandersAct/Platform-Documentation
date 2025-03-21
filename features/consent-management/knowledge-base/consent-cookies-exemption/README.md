@@ -11,10 +11,23 @@ Consent storage cookies differ depending on the banner template used:
 * **standard templates**: TC\_PRIVACY & TC\_PRIVACY\_CENTER
 * **IAB TCF templates** (local storage) : TC\_PRIVACY\_IAB\_VENDORLIST & TC\_PRIVACY\_TCF&#x20;
 
-### Cookie for anonymous statistics (TCPID)
+### Cookie for anonymous statistics and consent proof (TCPID)
 
 A 1st party cookie is set to be able to collect anonymous statistics of consent: TCPID.\
+This cookie is also used as a unique identifier to provide proof of consent when required (for auditing or when requested by the user).\
 We have worked together with the CNIL France to design the setting and processing of this cookie to strictly comply with the rules of the RGPD and in particular the [rules](https://www.cnil.fr/fr/cookies-et-autres-traceurs/regles/cookies-solutions-pour-les-outils-de-mesure-daudience) enacted by the CNIL in 2019.
+
+{% hint style="success" %}
+If for any reason you wish to block this cookie before consent, please use the following code in your first custom js block of the web container. The cookie will still be created after the consent action to provide a proof of consent.
+
+```
+cact('consent.get', function (result) {
+  if (result.consent.status === 'unset') {
+    tC.privacyCookieDisallowed = true;
+  }
+});
+```
+{% endhint %}
 
 ### When are cookies exempt from consent?
 
