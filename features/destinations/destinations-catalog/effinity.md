@@ -36,7 +36,7 @@ See more details in the [Configuration](effinity.md#configuration) and [Field ma
 
 
 {% hint style="info" %}
-**\[1]** If you don't provide a cookie name holding the "Id Computer" value, it's mandatory that you set it using the related input field `Id Compteur`  or using the property <mark style="color:blue;">`partners.effinity.id_compteur`</mark> . The other landing values such as "Prod Id", "Eff Id" and "Effi id2" are optional, but recommended. See [Field Mappings](effinity.md#field-mappings) for more details.
+**\[1]** See [Destination setup](effinity.md#destination-setup) and [Field Mappings](effinity.md#field-mappings) for more details.
 {% endhint %}
 
 ## Quick reference
