@@ -11,7 +11,7 @@ Using Effinity server-side tracking you can track lead and sale conversions.
 ## Destination setup
 
 {% hint style="info" %}
-Ensure you can provide the "Id Compteur" using one of the following:&#x20;
+Ensure you can provide mandatory "Id Compteur" using one of the following:&#x20;
 
 * `Id Compteur` input field.
 * `partners.effinity.id_compteur` property field.
