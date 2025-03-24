@@ -17,7 +17,7 @@ Ensure you can provide the "Id Compteur" using one of the following:&#x20;
 * `partners.effinity.id_compteur` property field.
 * `Effinity Cookie Name`
 
-See more details in the [Configuration](effinity.md#configuration) section.
+See more details in the [Configuration](effinity.md#configuration) and [Field mappings](effinity.md#field-mappings) sections.
 {% endhint %}
 
 ### Configuration
