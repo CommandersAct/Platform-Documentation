@@ -347,32 +347,39 @@ Here are our conditions to send the events :
 {% embed url="https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/custom-data" %}
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
+Most properties can be remapped using our "Smart Mapping" feature.\
+The fields  `custom_data.contents`  and `custom_data.content_ids`  are mutually exclusive, meaning that just one of them can be present following this logic:
+
+* If all these properties are present and set within items: `product.id` , `quantity` , and `product.price` , then `custom_data.contents` is set with all product information.
+* otherwise, `custom_data.content_ids` is set with all available `product.id` .
 {% endhint %}
 
-| Commanders Act Properties                                        | Facebook Properties                   |
-| ---------------------------------------------------------------- | ------------------------------------- |
-| `value`                                                          | `custom_data.value`                   |
-| <p><code>currency</code></p><p><code>items.0.currency</code></p> | `custom_data.currency`                |
-| `id`                                                             | `custom_data.order_id`                |
-| `search_term`                                                    | `custom_data.search_string`           |
-| `items.X.id`                                                     | `custom_data.contents.X.id`           |
-| `items.X.quantity`                                               | `custom_data.contents.X.quantity`     |
-| `items.X.product.price`                                          | `custom_data.contents.X.item_price`   |
-| `items.0.product.name`                                           | `custom_data.content_name`            |
-| `items.0.product.category_1`                                     | `custom_data.content_category`        |
-| `items.X.id`                                                     | `custom_data.content_ids` **\[1]**    |
-| `Content type value`                                             | `custom_data.content_type` **\[2]**   |
-| `status`                                                         | `custom_data.status`                  |
-| `items.length`                                                   | `custom_data.num_items`               |
-| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[3]** |
-| `custom_data[Propery Name]` **\[4]**                             | `custom_data[Property Name]`          |
+| Commanders Act Properties                                        | Facebook Properties                          |
+| ---------------------------------------------------------------- | -------------------------------------------- |
+| `value`                                                          | `custom_data.value`                          |
+| <p><code>currency</code></p><p><code>items.0.currency</code></p> | `custom_data.currency`                       |
+| `id`                                                             | `custom_data.order_id`                       |
+| `search_term`                                                    | `custom_data.search_string`                  |
+| `items.X.id`                                                     | `custom_data.contents.X.id` **\[1]**         |
+| `items.X.quantity`                                               | `custom_data.contents.X.quantity` **\[1]**   |
+| `items.X.product.price`                                          | `custom_data.contents.X.item_price` **\[1]** |
+| `items.0.product.name`                                           | `custom_data.content_name`                   |
+| `items.0.product.category_1`                                     | `custom_data.content_category`               |
+| `items.X.id`                                                     | `custom_data.content_ids` **\[2]**           |
+| `Content type value`                                             | `custom_data.content_type` **\[3]**          |
+| `status`                                                         | `custom_data.status`                         |
+| `items.length`                                                   | `custom_data.num_items`                      |
+| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[4]**        |
+| `custom_data[Propery Name]` **\[5]**                             | `custom_data[Property Name]`                 |
+
+
 
 {% hint style="info" %}
-**\[1]** Array containing all product identifiers.\
-**\[2]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. \
-&#xNAN;**\[3]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark>  is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark>  with the same property name.\
-&#xNAN;**\[4]** In <mark style="color:blue;">`integrations.facebook`</mark>  in your event.
+**\[1]** Mutually exclusive with `custom_data.content_ids` .\
+**\[2]** Array containing all product identifiers. Mutually exclusive with `custom_data.contents`.\
+**\[3]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. \
+&#xNAN;**\[4]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark>  is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark>  with the same property name.\
+&#xNAN;**\[5]** In <mark style="color:blue;">`integrations.facebook`</mark>  in your event.
 {% endhint %}
 
 #### Default behavior
