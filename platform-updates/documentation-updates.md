@@ -4,6 +4,18 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 28/03/2025
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md" %}
+[facebook-conversions-api.md](../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
+{% endcontent-ref %}
+
+{% content-ref url="../features/destinations/destinations-catalog/effinity.md" %}
+[effinity.md](../features/destinations/destinations-catalog/effinity.md)
+{% endcontent-ref %}
+
 ## 18/03/2025
 
 New documentation for Storage Settings UI
