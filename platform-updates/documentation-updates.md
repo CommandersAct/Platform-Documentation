@@ -12,6 +12,12 @@ Source documentation:
 [cashopapp.md](../features/sources/sources-catalog/web/cashopapp.md)
 {% endcontent-ref %}
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/button.md" %}
+[button.md](../features/destinations/destinations-catalog/button.md)
+{% endcontent-ref %}
+
 ## 28/03/2025
 
 Destination documentation (updates):
