@@ -44,7 +44,7 @@ Commanders AI includes several advanced functionalities (some are limited to bet
 
 When a user generates a web container in the **Tag Management System (TMS)**, Commander's AI analyzes the modifications and provides an automatic summary of the changes made since the last container generation.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 #### How It Works
 

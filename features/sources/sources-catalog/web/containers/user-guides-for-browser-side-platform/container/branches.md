@@ -134,7 +134,7 @@ The UAT deployment option will push your Branch version on the UAT URL of the Ma
 
 It means that you can test your Branch directly on your UAT site without IT intervention.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Test with our plugin
 

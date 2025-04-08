@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 11/04/2025
+
+Source documentation:
+
+{% content-ref url="../features/sources/sources-catalog/web/cashopapp.md" %}
+[cashopapp.md](../features/sources/sources-catalog/web/cashopapp.md)
+{% endcontent-ref %}
+
 ## 28/03/2025
 
 Destination documentation (updates):
