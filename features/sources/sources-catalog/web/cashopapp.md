@@ -102,19 +102,20 @@ The following table shows the mapping between Commanders Act and Shopify events.
 Custom Shopify events are also forwarded to Commanders Act with the same original Shopify event name.
 {% endhint %}
 
-| Shopify Events                     | Commanders Act Events |
-| ---------------------------------- | --------------------- |
-| `cart_viewed`                      | `view_cart`           |
-| `checkout_completed`               | `purchase`            |
-| `checkout_shipping_info_submitted` | `add_shipping_info`   |
-| `checkout_started`                 | `begin_checkout`      |
-| `collection_viewed`                | `view_item_list`      |
-| `page_viewed`                      | `page_view`           |
-| `payment_info_submitted`           | `add_payment_info`    |
-| `product_added_to_cart`            | `add_to_cart`         |
-| `product_removed_from_cart`        | `remove_from_cart`    |
-| `product_viewed`                   | `view_item`           |
-| `search_submitted`                 | `search`              |
+| Shopify Events                     | Commanders Act Events        |
+| ---------------------------------- | ---------------------------- |
+| `cart_viewed`                      | `view_cart`                  |
+| `checkout_completed`               | `purchase`                   |
+| `checkout_shipping_info_submitted` | `add_shipping_info`          |
+| `checkout_started`                 | `begin_checkout`             |
+| `collection_viewed`                | `view_item_list`             |
+| `page_viewed`                      | `page_view`                  |
+| `payment_info_submitted`           | `add_payment_info`           |
+| `product_added_to_cart`            | `add_to_cart`                |
+| `product_removed_from_cart`        | `remove_from_cart`           |
+| `product_viewed`                   | `view_item`                  |
+| `search_submitted`                 | `search`                     |
+| \[Custom Shopify event name]       | \[Custom Shopify event name] |
 
 ## Field mappings
 
