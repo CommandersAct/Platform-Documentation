@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[BigQuery](https://cloud.google.com/bigquery/docs/introduction?hl=en) is Google's data warehouse that enables scalable analysis over data. This integration allows pushing all your event properties to BigQuery.
+[BigQuery](https://cloud.google.com/bigquery/docs/introduction?hl=en) is Google's data warehouse that enables scalable analysis over data. This integration allows pushing your specific input properties, or all of them, to BigQuery.
 
 ## Key features
 
@@ -12,6 +12,7 @@ The Google BigQuery destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) feeds BigQuery, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Universal schema**: store events data without adjusting BigQuery's schema.
+* **Data control**: input your properties or just check a box to send them all to BigQuery.
 
 ## Destination setup
 
@@ -20,7 +21,7 @@ Ensure [BigQuery API](https://console.cloud.google.com/apis/library/bigquery.goo
 Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
-First, you need to create a BigQuery table, with a specific schema, for storing raw data into it. See the following two subsections for a complete walkthrough.
+First, you need to create a BigQuery table, with a specific universal schema, for storing raw data into it. See the following two subsections for a complete walkthrough.
 
 ### Dataset
 
@@ -61,15 +62,14 @@ and then click the `(9)` `RUN` button.
 
 ### Configuration
 
-| Settings     | Description                                                                                                                                                                                                                                                                                              |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Project Id` | <p><em><strong><code>Required</code></strong></em> <br>Your project identifier as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>   |
-| `Dataset Id` | <p><em><strong><code>Required</code></strong></em> <br>Your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p> |
-| `Table Id`   | <p><em><strong><code>Required</code></strong></em> <br>Your table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>     |
-
-{% hint style="info" %}
-**\[1]** This feature allows you to set an event property holding a dynamic value by adding two open braces (`{{`) in front of your property name and two close braces (`}}`) at the end (E.g. `{{myEventPropertyPathAndName}}`).
-{% endhint %}
+| Settings                          | Description                                                                                                                                                                                                                                                                   |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Authentication`                  | <p><em><strong><code>Required</code></strong></em></p><p>Your credentials with Google as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>BigQuery</code></p> |
+| `Project Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your project identifier from the dropdown menu as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>.</p>     |
+| `Dataset Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>.</p>                          |
+| `Table Id`                        | <p><em><strong><code>Required</code></strong></em> <br>Select table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>.</p>                                   |
+| `Send all properties to BigQuery` | Flag this option to send all properties to BigQuery.                                                                                                                                                                                                                          |
+| `Properties to include`           | When `Send all properties to BigQuery`  is not checked, you can input the property names to be sent to BigQuery.                                                                                                                                                              |
 
 ## Quick reference
 
@@ -79,6 +79,6 @@ and then click the `(9)` `RUN` button.
 
 {% hint style="info" %}
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-&#xNAN;**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains all your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
+&#xNAN;**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
 {% endhint %}
 
