@@ -88,3 +88,9 @@ To ensure stability, re generate & re deploy all your Web Container(s), and Priv
 <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Privacy's deployment: example for multiple subdomain configured</p></figcaption></figure>
 
 :rocket:   Congratulations! Your configuration is done!
+
+
+
+{% hint style="info" %}
+Good to know: When your CDN First Party is configured, you will need to replace the URLs of your web container(s) on your website. The "regular" CDN URL will remain active, but to enjoy the benefits of first party hosting, you will need to use the CDN 1st party URLs.
+{% endhint %}

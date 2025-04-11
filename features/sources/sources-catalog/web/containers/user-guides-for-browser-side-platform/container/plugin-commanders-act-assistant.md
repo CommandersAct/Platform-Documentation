@@ -16,7 +16,7 @@ With CAA, you can effortlessly **switch between Web Containers versions without 
 \
 :heart: It's also **compatible with** [**Branches** ](branches.md)feature! :heart:&#x20;
 
-<figure><img src="../../../../../../../.gitbook/assets/image (569).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../../.gitbook/assets/Capture d&#x27;écran 2025-02-27 185120.png" alt=""><figcaption></figcaption></figure>
 
@@ -42,13 +42,19 @@ On click, you will be invited to enter the expected landing page for your test s
 
 To **turn off the override**, simply click the **button "stop override" on the plugin**.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (577).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image.png" alt="" width="408"><figcaption></figcaption></figure>
 
 ### Monitor Tags in Action
 
-Easily **view the list of triggered tags** as they fire on your website, giving you a clear overview of your tracking implementation in real time.
+Easily **view the list of triggered tags** as they fire on your website, giving you a clear overview of your tracking implementation in real time. Simply unfold the "web containers" section to see the list
 
-<figure><img src="../../../../../../../.gitbook/assets/image (568).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (11).png" alt="" width="398"><figcaption></figcaption></figure>
+
+### Reach your Web Container in 1 click
+
+Use the icon aside the Site Name - Container Name to reach in just one click your Web Container on our Platform
+
+<figure><img src="../../../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### Keep a History Across Pages
 
@@ -60,6 +66,16 @@ CAA **records events across multiple pages**, ensuring you have a complete histo
 Need to clear your history ? You can **clear** by stopping the **"record across pages"** option, reloading the page, and turning it on again. \
 This process will be improved in an upcoming update!
 {% endhint %}
+
+### Login required
+
+To preserve confidentiality, our plugin requires to be logged on our platform.
+
+{% hint style="info" %}
+Once you are logged, only the Sites and the Web Containers that you have access are visible through the extension
+{% endhint %}
+
+<figure><img src="../../../../../../../.gitbook/assets/image (12).png" alt="" width="265"><figcaption></figcaption></figure>
 
 ### Limitations
 
@@ -80,8 +96,7 @@ CAA is **continuously evolving**, with new features and improvements planned to 
 Coming soon
 
 * Events tracking
-* Web Datalayer tab
-* Site and  Web container(s) names visible
+* Web DataLayer visibility
 
 
 

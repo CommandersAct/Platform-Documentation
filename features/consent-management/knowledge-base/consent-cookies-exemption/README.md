@@ -21,11 +21,9 @@ We have worked together with the CNIL France to design the setting and processin
 If for any reason you wish to block this cookie before consent, please use the following code in your first custom js block of the web container. The cookie will still be created after the consent action to provide a proof of consent.
 
 ```
-cact('consent.get', function (result) {
-  if (result.consent.status === 'unset') {
+  if (tC.getCookie("TC_PRIVACY") == "") {
     tC.privacyCookieDisallowed = true;
   }
-});
 ```
 {% endhint %}
 

@@ -6,6 +6,20 @@ description: The latest updates made to our documentation articles
 
 ## 11/04/2025
 
+Update for React Native (Mobile) Source
+
+{% content-ref url="../features/sources/sources-catalog/react-native.md" %}
+[react-native.md](../features/sources/sources-catalog/react-native.md)
+{% endcontent-ref %}
+
+Update for Plugin Commanders Act Assistant
+
+{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md" %}
+[plugin-commanders-act-assistant.md](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md)
+{% endcontent-ref %}
+
+## 11/04/2025
+
 Source documentation:
 
 {% content-ref url="../features/sources/sources-catalog/web/cashopapp.md" %}
