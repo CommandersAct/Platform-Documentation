@@ -18,8 +18,6 @@ Update for Plugin Commanders Act Assistant
 [plugin-commanders-act-assistant.md](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md)
 {% endcontent-ref %}
 
-## 11/04/2025
-
 Source documentation:
 
 {% content-ref url="../features/sources/sources-catalog/web/cashopapp.md" %}
@@ -30,6 +28,12 @@ Destination documentation:
 
 {% content-ref url="../features/destinations/destinations-catalog/button.md" %}
 [button.md](../features/destinations/destinations-catalog/button.md)
+{% endcontent-ref %}
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-bigquery.md" %}
+[google-bigquery.md](../features/destinations/destinations-catalog/google/google-bigquery.md)
 {% endcontent-ref %}
 
 ## 28/03/2025
