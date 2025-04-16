@@ -20,5 +20,5 @@ Once your Source is called in your mobile app, you will obtain information about
 
 This should be quite easy and straightforward now!
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

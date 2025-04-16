@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 16/04/2025
+
+Update about GPC implementation
+
+{% content-ref url="../features/consent-management/knowledge-base/ccpa-and-global-privacy-control.md" %}
+[ccpa-and-global-privacy-control.md](../features/consent-management/knowledge-base/ccpa-and-global-privacy-control.md)
+{% endcontent-ref %}
+
 ## 11/04/2025
 
 Update for React Native (Mobile) Source

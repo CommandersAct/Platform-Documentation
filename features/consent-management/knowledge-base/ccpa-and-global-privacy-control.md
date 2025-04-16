@@ -2,14 +2,14 @@
 
 ## Introduction to CCPA
 
-The [California Consumer Privacy Act of 2018](http://leginfo.legislature.ca.gov/faces/codes\_displayText.xhtml?division=3.\&part=4.\&lawCode=CIV\&title=1.81.5) (CCPA) gives consumers more control over the personal information that businesses collect about them and the [CCPA regulations](https://govt.westlaw.com/calregs/Browse/Home/California/CaliforniaCodeofRegulations?guid=I5E53FC80FEDE11ECA3A49C17D1AA5D7C\&originationContext=documenttoc\&transitionType=Default\&contextData=\(sc.Default\)) provide guidance on how to implement the law. This landmark law secures new privacy rights for California consumers, including:
+The [California Consumer Privacy Act of 2018](http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.\&part=4.\&lawCode=CIV\&title=1.81.5) (CCPA) gives consumers more control over the personal information that businesses collect about them and the [CCPA regulations](https://govt.westlaw.com/calregs/Browse/Home/California/CaliforniaCodeofRegulations?guid=I5E53FC80FEDE11ECA3A49C17D1AA5D7C\&originationContext=documenttoc\&transitionType=Default\&contextData=\(sc.Default\)) provide guidance on how to implement the law. This landmark law secures new privacy rights for California consumers, including:
 
 * The [right to know](https://oag.ca.gov/privacy/ccpa#sectionc) about the personal information a business collects about them and how it is used and shared;
 * The [right to delete](https://oag.ca.gov/privacy/ccpa#sectiond) personal information collected from them (with some exceptions);
 * The [right to opt-out](https://oag.ca.gov/privacy/ccpa#sectionb) of the sale or sharing of their personal information; and
 * The [right to non-discrimination](https://oag.ca.gov/privacy/ccpa#sectiong) for exercising their CCPA rights.
 
-In November of 2020, California voters approved [Proposition 24, the CPRA](https://leginfo.legislature.ca.gov/faces/codes\_displayText.xhtml?division=3.\&part=4.\&lawCode=CIV\&title=1.81.5), which amended the CCPA and added new additional privacy protections that began on January 1, 2023. As of January 1, 2023, consumers have new rights in addition to those above, such as:
+In November of 2020, California voters approved [Proposition 24, the CPRA](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.\&part=4.\&lawCode=CIV\&title=1.81.5), which amended the CCPA and added new additional privacy protections that began on January 1, 2023. As of January 1, 2023, consumers have new rights in addition to those above, such as:
 
 * The [right to correct](https://oag.ca.gov/privacy/ccpa#sectione) inaccurate personal information that a business has about them; and
 * The [right to limit](https://oag.ca.gov/privacy/ccpa#sectionf) the use and disclosure of sensitive personal information collected about them.
@@ -30,7 +30,7 @@ For more information, please visit the official CCPA website\
 [https://oag.ca.gov/privacy/ccpa](https://oag.ca.gov/privacy/ccpa)
 {% endhint %}
 
-## As a Commanders Act customer, what should I'm supposed to do ?
+## As a Commanders Act customer, what should I'm supposed to do?
 
 To to be compliant with CCPA, simply follow these steps:
 
@@ -50,6 +50,26 @@ To to be compliant with CCPA, simply follow these steps:
    `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`&#x20;
 4. **Update your Privacy Policy:**\
    Businesses that sell personal information about California residents, or allow information to be collected on their websites or apps, need to provide information in their privacy policies about that collection or sale. The CA Attorney General has provided draft regulations on how and what information should be included in privacy policies, which you can find [here](https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-proposed-regs.pdf).
+5.  **Add file "well-known.json" on your site**\
+    Not mandatory, but recommended GPC makes use of .well-known identifiers for sites to signal compliance with the    &#x20;GPC specification. The existence of this file indicates you are using GPC as part of your compliance&#x20;    &#x20;with privacy laws. \
+    There may be a variety of tools for implementing .well-known files on your    &#x20;website.\
+
+
+    What follows is a basic example assuming you have the capability to designate a static folder    \
+    and files for your site.\
+
+
+    First, create a folder named .well-known at the base of your site, so it would have a path of    \
+    yoursite.com/.well-known/. In that folder create a file with the name of gpc.json. The    \
+    file’s value should then look something like this with `lastUpdate` set to the date you have last    &#x20;updated the file.\
+    `{`    \
+    `"gpc": true,`    \
+    `"lastUpdate": "2025-04-20"`    \
+    `}`\
+    \
+    This will give you a valid GPC file that states you comply with GPC within the context you    &#x20;understand it to apply.
+
+    Adopters will usually supplement the .well-known file with a statement in their Privacy Policy    &#x20;that states exactly how they interpret GPC within their own systems. The exact message in    &#x20;your privacy policy is up to you and may require review by your legal team.
 
 ## What is Global Privacy Control ?
 
@@ -78,3 +98,7 @@ Sources > Privacy Banners > Settings
 Sources > Privacy Banners > Generate
 ```
 
+3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\
+
+
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
