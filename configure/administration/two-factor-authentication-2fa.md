@@ -8,7 +8,7 @@ It has to be activated on the profile level (profile management), using the swit
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Switch button activation on profile management page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Switch button activation on profile management page</p></figcaption></figure>
 
 Once this option is activated, the platform will request an access token sent by email.
 

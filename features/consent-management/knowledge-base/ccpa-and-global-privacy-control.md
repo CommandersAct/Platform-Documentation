@@ -44,32 +44,31 @@ To to be compliant with CCPA, simply follow these steps:
     * Set your [consent duration](../user-guides/settings.md) for at least **12 months**&#x20;
 
 
-2. **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act site
+2.  **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act privacy banner\
+
+
+    <figure><img src="../../../.gitbook/assets/image.png" alt="" width="320"><figcaption></figcaption></figure>
 3. Integrate in your website footer a **link or a button to manage consent choices**\
    example of html code to integrate:\
    `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`&#x20;
 4. **Update your Privacy Policy:**\
    Businesses that sell personal information about California residents, or allow information to be collected on their websites or apps, need to provide information in their privacy policies about that collection or sale. The CA Attorney General has provided draft regulations on how and what information should be included in privacy policies, which you can find [here](https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-proposed-regs.pdf).
 5.  **Add file "well-known.json" on your site**\
-    Not mandatory, but recommended GPC makes use of .well-known identifiers for sites to signal compliance with the    &#x20;GPC specification. The existence of this file indicates you are using GPC as part of your compliance&#x20;    &#x20;with privacy laws. \
-    There may be a variety of tools for implementing .well-known files on your    &#x20;website.\
+    Not mandatory, but recommended, GPC makes use of .well-known identifiers for sites to signal compliance with the    &#x20;GPC specification. The existence of this file indicates you are using GPC as part of your compliance&#x20;    &#x20;with privacy laws. \
+    There may be a variety of tools available to implement the .well-known file on your site.\
 
 
-    What follows is a basic example assuming you have the capability to designate a static folder    \
-    and files for your site.\
+    The following is a basic example of how to specify a static folder and files for your site.\
 
 
-    First, create a folder named .well-known at the base of your site, so it would have a path of    \
-    yoursite.com/.well-known/. In that folder create a file with the name of gpc.json. The    \
-    file’s value should then look something like this with `lastUpdate` set to the date you have last    &#x20;updated the file.\
+    First, create a folder called .well-known at the root of your site, so that the path is yoursite.com/.well-known/. Within this folder, create a file called gpc.json. The value of the file should then look something like this, with `lastUpdate` set to the date you last updated the file.\
     `{`    \
     `"gpc": true,`    \
     `"lastUpdate": "2025-04-20"`    \
     `}`\
     \
-    This will give you a valid GPC file that states you comply with GPC within the context you    &#x20;understand it to apply.
-
-    Adopters will usually supplement the .well-known file with a statement in their Privacy Policy    &#x20;that states exactly how they interpret GPC within their own systems. The exact message in    &#x20;your privacy policy is up to you and may require review by your legal team.
+    This will give you a valid GPC file which states that you comply with the GPC in the context in which you understand it.\
+    Adopters will usually supplement the .well-known file with a statement in their privacy policy that explains exactly how they interpret the GPC within their own systems. The exact message in your privacy policy is up to you and may require review by your legal team.
 
 ## What is Global Privacy Control ?
 
@@ -101,4 +100,4 @@ Sources > Privacy Banners > Generate
 3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\
 
 
-<figure><img src="../../../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
