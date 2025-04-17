@@ -606,6 +606,14 @@ The following properties are automatically attached to the event.
 | `view_item_list`      | `view_item_list`    |
 | `[Custom Event]`      | `[Custom Event]`    |
 
+## Consent signals
+
+{% hint style="info" %}
+Google Analytics "Measurement Protocol" supports consent signals. More details are available following this [LINK](https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference?client_type=gtag#payload_consent).
+{% endhint %}
+
+<table><thead><tr><th width="390">Commanders Act properties</th><th>GA4 properties</th></tr></thead><tbody><tr><td><code>user.google_consent_mode.ad_user_data</code></td><td><code>consent.ad_user_data</code></td></tr><tr><td><code>user.google_consent_mode.ad_personalization</code></td><td><code>consent.ad_personalization</code></td></tr></tbody></table>
+
 ## Enhanced conversions
 
 When enabling this feature, you can send user-related data together with the user identifier. This can be used to improve behavior and conversion measurement. More details are available following this [LINK](https://developers.google.com/analytics/devguides/collection/ga4/uid-data?hl=en).
