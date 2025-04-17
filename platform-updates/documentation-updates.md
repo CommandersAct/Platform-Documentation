@@ -4,7 +4,7 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
-## 17/04/2025
+## 18/04/2025
 
 Destination documentation (updates):
 
