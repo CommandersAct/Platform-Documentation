@@ -6,7 +6,7 @@ description: >-
 
 # Release notes
 
-### Release 10.0.27 - April - 2025
+### Release 10.0.28 - April - 2025
 
 ✨ **New Features**
 
