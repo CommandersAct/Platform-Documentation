@@ -46,7 +46,7 @@ Once activated, all your Web Container(s) & Privacy banner(s) will be hosted on 
 
 <figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-### Multiple Domains Management
+### Multiple Workspaces Management
 
 Your configuration is using multiple work spaces?\
 1st party hosting allows you to share a subdomain between different sites IDs, as long as they belong to the same "invoicing account".
@@ -63,7 +63,8 @@ Select in the drop down's menu the subdomain you need to use on your workspace.
 
 <figure><img src="../../../.gitbook/assets/Capture d&#x27;écran 2024-10-09 184809.png" alt=""><figcaption></figcaption></figure>
 
-A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain". The subdomain will remains activated on the site where it is configured.
+A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain". \
+Note: The subdomain will remains activated on the site where it is configured.
 
 <figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,8 +90,18 @@ To ensure stability, re generate & re deploy all your Web Container(s), and Priv
 
 :rocket:   Congratulations! Your configuration is done!
 
-
-
 {% hint style="info" %}
 Good to know: When your CDN First Party is configured, you will need to replace the URLs of your web container(s) on your website. The "regular" CDN URL will remain active, but to enjoy the benefits of first party hosting, you will need to use the CDN 1st party URLs.
 {% endhint %}
+
+### Multiple domains management
+
+Do you have many different hosting domains? (e.g. domain.fr, domain.it, domain.eu ...) \
+We recommend that you create 1 Cname for each domain to avoid the effects of ad blockers as much as possible.
+
+If, for technical reasons, you can only create 1 Cname common to all your site domains, you must use a custom js snippet code to manage the situation.
+
+In the custom javascript block of your web container, insert the following line of code
+
+`tC.privacy.defaultCdnDomain = "enter_here_your_cdn_first(cname)_url"`
+
