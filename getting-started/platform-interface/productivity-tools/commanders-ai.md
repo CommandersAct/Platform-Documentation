@@ -44,7 +44,7 @@ Commanders AI includes several advanced functionalities (some are limited to bet
 
 When a user generates a web container in the **Tag Management System (TMS)**, Commander's AI analyzes the modifications and provides an automatic summary of the changes made since the last container generation.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 #### How It Works
 
@@ -63,7 +63,7 @@ Users have access to additional customization options via the gear icon ⚙️:
 * **Summary Length**: Choose between short, medium, or detailed summaries.
 * **Custom Prompting**: Define specific formatting rules or content guidelines for the AI to follow when generating summaries. Users can specify formatting or content preferences, such as writing in uppercase, adding emojis, structuring summaries with bullet points,  (e.g., "Write in uppercase with emoticons with max 5 bullet points"). This allows for greater adaptability to specific workflows or reporting standards.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt="" width="354"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt="" width="354"><figcaption></figcaption></figure>
 
 ***
 

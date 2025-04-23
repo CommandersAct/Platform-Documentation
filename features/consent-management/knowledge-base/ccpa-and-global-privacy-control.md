@@ -47,7 +47,7 @@ To to be compliant with CCPA, simply follow these steps:
 2.  **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act privacy banner\
 
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt="" width="320"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="320"><figcaption></figcaption></figure>
 3. Integrate in your website footer a **link or a button to manage consent choices**\
    example of html code to integrate:\
    `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`&#x20;
@@ -100,4 +100,4 @@ Sources > Privacy Banners > Generate
 3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\
 
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
