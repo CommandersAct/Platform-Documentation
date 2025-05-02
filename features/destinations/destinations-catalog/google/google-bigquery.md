@@ -35,7 +35,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 The following steps are not required if you checked `Auto-discover table structure` .
 {% endhint %}
 
-When flagging `Send all properties to BigQuery` an specific schema is required. See the following subsections to learn how you can create an universal schema. This is not&#x20;
+When flagging `Send all properties to BigQuery` a specific schema is required. See the following subsections to learn how you can create an universal schema. This is not&#x20;
 
 ### Dataset
 
