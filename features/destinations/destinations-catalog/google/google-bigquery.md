@@ -1,9 +1,5 @@
 # Google BigQuery
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [BigQuery](https://cloud.google.com/bigquery/docs/introduction?hl=en) is Google's data warehouse that enables scalable analysis over data. This integration allows pushing your specific input properties, or all of them, to BigQuery.
 
 ## Key features
