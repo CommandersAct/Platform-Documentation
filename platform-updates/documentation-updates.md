@@ -8,6 +8,10 @@ description: The latest updates made to our documentation articles
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/google/google-bigquery.md" %}
+[google-bigquery.md](../features/destinations/destinations-catalog/google/google-bigquery.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md" %}
 [amazon-ads-conversions-api.md](../features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md)
 {% endcontent-ref %}
