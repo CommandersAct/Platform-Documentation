@@ -11,7 +11,7 @@ This destination is currently under final review and will be available soon.
 The Google BigQuery destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) feeds BigQuery, meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Schema support**: store event data following your preferred/existing schema or we can help you creating an universal one.
+* **Multi schema support**: store event data following your preferred/existing schema or we can help you creating an [universal one](google-bigquery.md#universal-schema).
 * **Data control**: select your properties or just check a box to send them all to BigQuery.
 
 ## Destination setup
