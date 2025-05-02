@@ -11,8 +11,8 @@ This destination is currently under final review and will be available soon.
 The Google BigQuery destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) feeds BigQuery, meaning that your data is properly bridged to the expected fields in an optimized way.
-* **Universal schema**: store events data without adjusting BigQuery's schema.
-* **Data control**: input your properties or just check a box to send them all to BigQuery.
+* **Schema support**: store event data following your preferred/existing schema or we can help you creating an universal one.
+* **Data control**: select your properties or just check a box to send them all to BigQuery.
 
 ## Destination setup
 
@@ -21,7 +21,25 @@ Ensure [BigQuery API](https://console.cloud.google.com/apis/library/bigquery.goo
 Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
-First, you need to create a BigQuery table, with a specific universal schema, for storing raw data into it. See the following two subsections for a complete walkthrough.
+### Configuration
+
+| Settings                          | Description                                                                                                                                                                                                                                                                   |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Authentication`                  | <p><em><strong><code>Required</code></strong></em>   <br>Your credentials with Google as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>BigQuery</code></p> |
+| `Project Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your project identifier from the dropdown menu as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>.</p>     |
+| `Dataset Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>.</p>                          |
+| `Table Id`                        | <p><em><strong><code>Required</code></strong></em> <br>Select table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>.</p>                                   |
+| `Send all properties to BigQuery` | Flag this option to send all properties to BigQuery following an specific schema: see section [Universal schema](google-bigquery.md#universal-schema) for more details.                                                                                                       |
+| `Auto-discover table structure`   | Check this option to enable the auto-discover table structure feature.                                                                                                                                                                                                        |
+| `Event property Mapping`          | When `Auto-discover table structure`  is flagged, you can map your BigQuery fields by selecting them in the `BigQuery column` and input the properties holding their value in `Event property` .                                                                              |
+
+## Universal schema
+
+{% hint style="info" %}
+The following steps are not required if you checked `Auto-discover table structure` .
+{% endhint %}
+
+When flagging `Send all properties to BigQuery` an specific schema is required. See the following subsections to learn how you can create an universal schema. This is not&#x20;
 
 ### Dataset
 
@@ -60,18 +78,7 @@ and then click the `(9)` `RUN` button.
 
 <figure><img src="../../../../.gitbook/assets/bigquery_4.png" alt=""><figcaption><p>Run table creation query.</p></figcaption></figure>
 
-### Configuration
-
-| Settings                          | Description                                                                                                                                                                                                                                                                   |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Authentication`                  | <p><em><strong><code>Required</code></strong></em>   <br>Your credentials with Google as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>BigQuery</code></p> |
-| `Project Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your project identifier from the dropdown menu as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>.</p>     |
-| `Dataset Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>.</p>                          |
-| `Table Id`                        | <p><em><strong><code>Required</code></strong></em> <br>Select table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>.</p>                                   |
-| `Send all properties to BigQuery` | Flag this option to send all properties to BigQuery.                                                                                                                                                                                                                          |
-| `Properties to include`           | When `Send all properties to BigQuery`  is not checked, you can input the property names to be sent to BigQuery.                                                                                                                                                              |
-
-## Quick reference
+### Quick reference
 
 | Commanders Act Events   | BigQuery Table Columns             |
 | ----------------------- | ---------------------------------- |
