@@ -17,22 +17,36 @@ Ensure [BigQuery API](https://console.cloud.google.com/apis/library/bigquery.goo
 Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to refine events and/or other properties matching your specific needs.
 {% endhint %}
 
+This destination accommodates all schemas, more specifically:
+
+1. your existing table schema or,
+2. a universal schema.
+
+The first option is useful for those who want to use an existing table with its predefined columns: this is a common scenario when you have data already stored and is the recommended option as it's easier to configure and data can be easily accessed directly from the specific column. To enable this mode, in the [Configuration](google-bigquery.md#configuration), you just need to flag the `Auto-discover table structure (recommended)` and then proceed to the section `Event Property Mapping`  to select the columns in `BigQuery column`  and their values in `Your value` . \
+The second method relies on a [Universal schema](google-bigquery.md#universal-schema), where all your data (or selected properties) is stored in just **one column** as a JSON string and using the BigQuery function [PARSE\_JSON](https://cloud.google.com/bigquery/docs/reference/standard-sql/json_functions#parse_json) you can retrieve  specific values within. We suggest checking the section [Universal schema](google-bigquery.md#universal-schema) with a detailed walkthrough on how you can create the universal schema and understand if this is the proper table structure for you.\
+To enable this mode, in the [Configuration](google-bigquery.md#configuration), you can either flag `Send all properties to BigQuery with universal schema` so all properties will be included or you can input the properties you want to send by using the `Property name` table in the section  `Properties to include with universal schema` .
+
 ### Configuration
 
-| Settings                          | Description                                                                                                                                                                                                                                                                   |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Authentication`                  | <p><em><strong><code>Required</code></strong></em>   <br>Your credentials with Google as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>BigQuery</code></p> |
-| `Project Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your project identifier from the dropdown menu as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>.</p>     |
-| `Dataset Id`                      | <p><em><strong><code>Required</code></strong></em> <br>Select your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>.</p>                          |
-| `Table Id`                        | <p><em><strong><code>Required</code></strong></em> <br>Select table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>.</p>                                   |
-| `Send all properties to BigQuery` | Flag this option to send all properties to BigQuery following a specific schema: see section [Universal schema](google-bigquery.md#universal-schema) for more details.                                                                                                        |
-| `Auto-discover table structure`   | Check this option to enable the auto-discover table structure feature.                                                                                                                                                                                                        |
-| `Event property Mapping`          | When `Auto-discover table structure`  is flagged, you can map your BigQuery fields by selecting them in the `BigQuery column` and input the properties holding their value in `Event property` .                                                                              |
+| Settings                                                                                      | Description                                                                                                                                                                                                                                                                   |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Authentication`                                                                              | <p><em><strong><code>Required</code></strong></em>   <br>Your credentials with Google as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>BigQuery</code></p> |
+| `Project Id`                                                                                  | <p><em><strong><code>Required</code></strong></em> <br>Select your project identifier from the dropdown menu as reported in BigQuery console. More details are available following this <a href="https://support.google.com/googleapi/answer/7014113?hl=en">LINK</a>.</p>     |
+| `Dataset Id`                                                                                  | <p><em><strong><code>Required</code></strong></em> <br>Select your dataset identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/datasets-intro?hl=en">LINK</a>.</p>                          |
+| `Table Id`                                                                                    | <p><em><strong><code>Required</code></strong></em> <br>Select table identifier as reported in BigQuery console. More details are available following this <a href="https://cloud.google.com/bigquery/docs/tables-intro?hl=en">LINK</a>.</p>                                   |
+| `Auto-discover table structure (recommended)`                                                 | Check this option to enable the auto-discover table structure feature.                                                                                                                                                                                                        |
+| <p><code>Send all properties to BigQuery with</code> </p><p><code>universal schema</code></p> | Flag this option to send all properties to BigQuery following a specific schema: see section [Universal schema](google-bigquery.md#universal-schema) for more details.                                                                                                        |
+| `Event property Mapping`                                                                      | When `Auto-discover table structure`  is flagged, you can map your BigQuery fields by selecting them in the `BigQuery column` and set their values in `Your value` .                                                                                                          |
+| `Property name` **\[1]**                                                                      | When both `Auto-discover table structure (recommended)` and `Send all properties to BigQuery with universal schema` are not flagged, you can input the properties you want to include in your table with universal schema, one per line.                                      |
+
+{% hint style="info" %}
+**\[1]** in the section `Properties to include with universal schema` .
+{% endhint %}
 
 ## Universal schema
 
 {% hint style="info" %}
-The following steps are not required if you checked `Auto-discover table structure` .
+The following steps are not required if you check `Auto-discover table structure (recommended)` .
 {% endhint %}
 
 When flagging `Send all properties to BigQuery` a specific schema is required. See the following subsections to learn how you can create an universal schema. This is not&#x20;
