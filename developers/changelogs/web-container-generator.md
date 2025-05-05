@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 96.1
+
+Release date:  **05/06/2025**
+
+* [public release] Support js function for TCPID behaviour customization
+
 ### 96.0
 
 Release date:  **18/03/2025**
