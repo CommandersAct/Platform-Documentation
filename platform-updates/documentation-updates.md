@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 09/05/2025
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/tradedoubler.md" %}
+[tradedoubler.md](../features/destinations/destinations-catalog/tradedoubler.md)
+{% endcontent-ref %}
+
 ## 02/05/2025
 
 Destination documentation (updates):
