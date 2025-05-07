@@ -339,8 +339,8 @@ Destination documentation (updates):
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/dynamic-yield.md" %}
@@ -836,8 +836,8 @@ Enrich Data cleansing **transformation functions** documentation
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 30/09/2022
@@ -918,8 +918,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 22/08/2022
@@ -954,8 +954,8 @@ Destination documentation (updates):
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 ## 05/08/2022
@@ -992,8 +992,8 @@ Destination documentation (updates):
 [google-enhanced-conversion.md](../features/destinations/destinations-catalog/google/google-enhanced-conversion.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
@@ -1042,8 +1042,8 @@ Destination documentation:
 [criteo-events.md](../features/destinations/destinations-catalog/criteo/criteo-events.md)
 {% endcontent-ref %}
 
-{% content-ref url="../features/destinations/destinations-catalog/snapchat-conversions-api.md" %}
-[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat-conversions-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md" %}
+[snapchat-conversions-api.md](../features/destinations/destinations-catalog/snapchat/snapchat-conversions-api.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/destinations/destinations-catalog/kameleoon/kameleoon-events.md" %}

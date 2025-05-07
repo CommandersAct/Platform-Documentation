@@ -1,7 +1,7 @@
-# Snapchat Conversions API
+# Snapchat Conversions API v2
 
 [Snapchat ](https://www.snapchat.com/)is a multimedia instant messaging app and service. \
-This destination leverages the [Snapchat Conversions API](https://marketingapi.snapchat.com/docs/conversion.html#introduction) to push web and app events to Snapchat.
+This destination leverages the [Snapchat Conversions API v2](https://marketingapi.snapchat.com/docs/conversion.html#introduction) to push web and app events to Snapchat.
 
 ## Key features
 
