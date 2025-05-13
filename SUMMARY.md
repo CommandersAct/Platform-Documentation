@@ -176,7 +176,6 @@
       * [Google Floodlight Mobile App Conversion](features/destinations/destinations-catalog/google/google-floodlight-mobile-app-conversion.md)
       * [Google Search Ads 360 Enhanced Conversions](features/destinations/destinations-catalog/google/google-search-ads-360-enhanced-conversions.md)
       * [Google Store Sales Direct](features/destinations/destinations-catalog/google/google-store-sales-direct.md)
-      * [Google Universal Analytics](features/destinations/destinations-catalog/google/google-universal-analytics.md)
     * [IBM](features/destinations/destinations-catalog/ibm.md)
     * [Inxmail](features/destinations/destinations-catalog/inxmail.md)
     * [IntelliAd](features/destinations/destinations-catalog/intelliad.md)

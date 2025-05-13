@@ -779,8 +779,8 @@ Add a [changelog](../developers/changelogs/web-container-generator.md) section o
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/google/google-universal-analytics.md" %}
-[google-universal-analytics.md](../features/destinations/destinations-catalog/google/google-universal-analytics.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## 06/12/2022
