@@ -11,7 +11,7 @@ The Commanders Act application, which is available in the Shopify App Store, hel
 
 
 
-* Connect [Shopify Standard](https://shopify.dev/docs/api/web-pixels-api/standard-events) and Custom events with your partners.
+* Connect [Shopify standard](https://shopify.dev/docs/api/web-pixels-api/standard-events) and custom events with your partners.
 * Enable reliable server-side tracking capabilities via [destinations](https://doc.commandersact.com/getting-started/concepts#destination).
 * Ensure user privacy by supporting [Shopify Customer Privacy API](https://shopify.dev/docs/api/customer-privacy).
 * Preserve original Shopify event data.
