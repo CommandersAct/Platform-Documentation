@@ -1,7 +1,7 @@
 # Awin
 
 [Awin ](https://www.awin.com)provides a global affiliation network connecting businesses with customers.\
-Using this destination you can implement [server-side tracking](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversion_Pixel_Only_Tracking#Server_To_Server_.28S2S.29) using the same [client-side parameters](https://wiki.awin.com/index.php/Advertiser_Tracking_Guides#.5B.2B.5D_Fall-back_Conversion_Pixel).
+Using this destination you can implement [server-side tracking](https://developer.awin.com/docs/direct-s2s) using the same [client-side parameters](https://developer.awin.com/v1/docs/fall-back-conversion-pixel).
 
 {% hint style="info" %}
 Awin no longer support the use of pixel only implementations due to various browser constraints and limitations.
