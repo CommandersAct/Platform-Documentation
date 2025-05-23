@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 23/05/2025
 
+Source documentation (updates):
+
+{% content-ref url="../features/sources/sources-catalog/web/cashopapp.md" %}
+[cashopapp.md](../features/sources/sources-catalog/web/cashopapp.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
