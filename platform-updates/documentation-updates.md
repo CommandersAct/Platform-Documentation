@@ -14,6 +14,10 @@ Source documentation (updates):
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/google/google-display-and-video-360-and-search-ads-360.md" %}
+[google-display-and-video-360-and-search-ads-360.md](../features/destinations/destinations-catalog/google/google-display-and-video-360-and-search-ads-360.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
 [awin.md](../features/destinations/destinations-catalog/awin.md)
 {% endcontent-ref %}
