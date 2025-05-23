@@ -8,6 +8,10 @@ description: The latest updates made to our documentation articles
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/tradedoubler.md" %}
 [tradedoubler.md](../features/destinations/destinations-catalog/tradedoubler.md)
 {% endcontent-ref %}
