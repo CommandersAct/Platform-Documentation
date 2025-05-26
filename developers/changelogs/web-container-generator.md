@@ -2,9 +2,24 @@
 
 ## 2025
 
+### 98.0
+
+Release date:  **26/05/2025**
+
+* [beta] Refined CAID cookie handling for clients using the Commanders Act CMP in first-party domain configurations
+  * Improved handling during opt-out events to better align with specific consent configurations
+  * No change for other types of events or for non-CMP setups
+
+### 97.0
+
+Release date:  **26/05/2025**
+
+* [beta] Refined container core generation pipeline for extended system-level flexibility
+* [beta] Finer support of Portuguese language in IAB module
+
 ### 96.1
 
-Release date:  **05/06/2025**
+Release date:  **05/05/2025**
 
 * [public release] Support js function for TCPID behaviour customization
 
