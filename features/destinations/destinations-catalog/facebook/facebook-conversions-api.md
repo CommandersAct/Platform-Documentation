@@ -43,19 +43,28 @@ Then you need the Access Token
 
 ## Where can I find the access token?
 
-Click on the settings tab.
+1. Go to [Meta Event Manager](https://www.facebook.com/events_manager2/)&#x20;
+2. On the left menu, select `(1)` `Data sources` .
 
-Scroll until the section 'Conversions API'
+&#x20;   ![](../../../../.gitbook/assets/facebook_capi_1.png)
 
-Click on the button 'Create Access Token':
+3. Locate your `(2)` existing dataset and select it or [create a new dataset](https://www.facebook.com/business/help/5818684664831465?id=490360542427371).&#x20;
 
-![Create access token](<../../../../.gitbook/assets/capture-de-cran-2020-10-29-a-14.20.51 (1).png>)
+&#x20;   ![](../../../../.gitbook/assets/facebook_capi_2.png)
+
+4. Click the tab `(3)` `Settings`
+
+&#x20;   ![](../../../../.gitbook/assets/facebook_capi_3.png)
+
+5. Locate the link `(4)` `Generate access token` and click it to generate an access token
+
+&#x20;   ![](../../../../.gitbook/assets/facebook_capi_4.png)
 
 {% hint style="warning" %}
-If you are not able to click on the button 'Create access token', that mean you don't have enough rights to do it. You should be administrator on your Facebook Business account to create it.
+If you can't click the link "Generate access token" then you don't have the admin rights.
 {% endhint %}
 
-Then you can copy and paste the Access Token on our connector.
+6. Copy and paste your access token into the field `API Access Token`  in your destination.
 
 ## How to manage consents?
 
