@@ -8,6 +8,10 @@ description: The latest updates made to our documentation articles
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md" %}
+[facebook-conversions-api.md](../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
 [tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
