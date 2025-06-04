@@ -1,7 +1,9 @@
 # API users
 
-{% swagger baseUrl="https://api.commander1.com/v1.0" path="/engage/visitors/" method="get" summary="Visitor" %}
-{% swagger-description %}
+## Visitor
+
+<mark style="color:blue;">`GET`</mark> `https://api.commander1.com/v1.0/engage/visitors/`
+
 This endpoint allows you to
 
 **get properties for one specific visitor**
@@ -11,25 +13,18 @@ This endpoint allows you to
 \\
 
 This API is more designed to be called from a tag in each user's browser.
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="callback" type="string" required="false" %}
-(optional) Callback for jsonp request
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="token" type="string" required="false" %}
-Security token
-{% endswagger-parameter %}
+| Name     | Type    | Description                                                                   |
+| -------- | ------- | ----------------------------------------------------------------------------- |
+| callback | string  | (optional) Callback for jsonp request                                         |
+| token    | string  | Security token                                                                |
+| site     | integer | ID of the site                                                                |
+| tcid     | string  | Cookie id. If empty (recommanded) it will read the tcid in the user's cookie. |
 
-{% swagger-parameter in="query" name="site" type="integer" required="false" %}
-ID of the site
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="tcid" type="string" required="false" %}
-Cookie id. If empty (recommanded) it will read the tcid in the user's cookie.
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {
     "user_age": 39,
@@ -40,11 +35,13 @@ Cookie id. If empty (recommanded) it will read the tcid in the user's cookie.
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://api.commander1.com" path="/engage/user/" method="get" summary="User" %}
-{% swagger-description %}
+## User
+
+<mark style="color:blue;">`GET`</mark> `https://api.commander1.com/engage/user/`
+
 This endpoint allows you to
 
 **get properties for one specific user**
@@ -54,21 +51,17 @@ based on a
 `user_id`
 
 . When you create the token, you can define which properties to return.
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="token" type="string" required="false" %}
-Security token
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="user_id" type="string" required="false" %}
-ID of the user
-{% endswagger-parameter %}
+| Name     | Type    | Description    |
+| -------- | ------- | -------------- |
+| token    | string  | Security token |
+| user\_id | string  | ID of the user |
+| site     | integer | ID of the site |
 
-{% swagger-parameter in="query" name="site" type="integer" required="false" %}
-ID of the site
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Consent successfully retrieved." %}
+{% tabs %}
+{% tab title="200 Consent successfully retrieved." %}
 ```javascript
 {
     "user_age": 39,
@@ -79,42 +72,38 @@ ID of the site
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="Could not find a user matching this query." %}
+{% tab title="404 Could not find a user matching this query." %}
 ```javascript
 {
     "message": "Person not found"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-##
+## User
 
-{% swagger baseUrl="https://api.commander1.com" path="/engage/user/" method="put" summary="User" %}
-{% swagger-description %}
+<mark style="color:orange;">`PUT`</mark> `https://api.commander1.com/engage/user/`
+
 Insert or update a user
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="site" type="string" required="false" %}
-Id of the site (account)
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="user_id" type="string" required="false" %}
-Id of the user. Required if tc\_id parameter is not set
-{% endswagger-parameter %}
+| Name     | Type   | Description              |
+| -------- | ------ | ------------------------ |
+| site     | string | Id of the site (account) |
+| user\_id | string | Id of the user.          |
+| token    | string | Security token           |
 
-{% swagger-parameter in="query" name="token" type="string" required="false" %}
-Security token
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {"success":true}
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 #### Example Request <a href="#example-request" id="example-request"></a>
 
