@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 98.1
+
+Release date:  **10/06/2025**
+
+* [beta] Remove cookie MIX_CLICK after first OneTag send
+
 ### 98.0
 
 Release date:  **26/05/2025**
