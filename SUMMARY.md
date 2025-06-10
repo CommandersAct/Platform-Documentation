@@ -422,6 +422,7 @@
     * [On-Premise Proxy](configure/administration/domain-management/on-premise-proxy.md)
     * [Cookie CAID](configure/administration/domain-management/cookie-caid.md)
     * [First party hosting](configure/administration/domain-management/cdn-1st.md)
+    * [First-Party Tag Hosting](configure/administration/domain-management/first-party-tag-hosting.md)
   * [Single Sign-On](configure/administration/single-sign-on.md)
   * [Two-factor authentication (2FA)](configure/administration/two-factor-authentication-2fa.md)
   * [Copy Management](configure/administration/copy-management.md)
