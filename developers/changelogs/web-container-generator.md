@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 98.2
+
+Release date:  **16/06/2025**
+
+* Update TCF support in GCM
+
 ### 98.1
 
 Release date:  **10/06/2025**
