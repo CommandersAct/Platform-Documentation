@@ -48,13 +48,33 @@ To **turn off the override**, simply click the **button "stop override" on the p
 
 Easily **view the list of triggered tags** as they fire on your website, giving you a clear overview of your tracking implementation in real time. Simply unfold the "web containers" section to see the list
 
-<figure><img src="../../../../../../../.gitbook/assets/image (11).png" alt="" width="398"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (603).png" alt="" width="416"><figcaption></figcaption></figure>
 
 ### Reach your Web Container in 1 click
 
 Use the icon aside the Site Name - Container Name to reach in just one click your Web Container on our Platform
 
 <figure><img src="../../../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+### See the full Data Layer state on each page load
+
+On every new page load, you can see the state of the Data Layer!
+
+Simply unfold "External variables" or "Internal variables" to see it.
+
+<figure><img src="../../../../../../../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
+
+### Events tab to watch the triggered events
+
+Open the tab "Events" to see your tags triggered on events.\
+The Data Layer state is also visible on this tab.\
+If some "event variables" are fed up, you will see them as well
+
+<figure><img src="../../../../../../../.gitbook/assets/image (606).png" alt=""><figcaption></figcaption></figure>
+
+Customs Events are also visibles, with the proper name of each custom event.
+
+<figure><img src="../../../../../../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
 
 ### Keep a History Across Pages
 
@@ -81,13 +101,12 @@ Once you are logged, only the Sites and the Web Containers that you have access 
 
 While CAA is a powerful tool, here are some current limitations to keep in mind:
 
-* 🌍 **Consistent Web Container URLs:** The WebContainer URLs must remain the same across all pages for the plugin to function correctly.\
+* 🌍 **Consistent Web Container URLs:** The Web Containers URLs must remain the same across all pages for the plugin to function correctly.\
 
-* ⚡ **SPA Compatibility:** On **Single Page Applications (SPA)**, the list of triggered tags is only filled on the **first hit** collected by the plugin. On each page change, the tags are added to the list.\
-  \*This will behavior will be improved in an upcoming update, so stay tuned!\
-
-
-<figure><img src="../../../../../../../.gitbook/assets/image (579).png" alt=""><figcaption></figcaption></figure>
+* ⚡ **SPA Compatibility:** On **Single Page Applications (SPA)**, the list of triggered tags is only filled on the **first "custom event" hit** collected by the plugin. On each page change, the tags are added to the list\*. \
+  The Data Layer is updated on each new "page load"\
+  \
+  \*This behavior will be improved in an upcoming update, so stay tuned!
 
 ### Future Enhancements
 
@@ -95,8 +114,8 @@ CAA is **continuously evolving**, with new features and improvements planned to 
 
 Coming soon
 
-* Events tracking
-* Web DataLayer visibility
+* Replace containers versions directly from the drop down (in the plugin)
+* Improved SPA website management (for custom events "page load")
 
 
 
