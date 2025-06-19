@@ -11,6 +11,8 @@
 1. Open Google Chrome
 2. Go to the menu at the top right corner :  `⋮` > `Extensions` > `Manage Extensions`
 
+<figure><img src="../../../../../../../../.gitbook/assets/image (612).png" alt="" width="255"><figcaption></figcaption></figure>
+
 ### Step 3 : Turn on the developer mode
 
 After opening the Chrome Extension page, look at the top right side, and you’ll find the toggle option of `Developer mode`. Simply enable that developer mode option.
