@@ -4,7 +4,7 @@
 
 We are excited to introduce the latest version of our browser plugin, **Commanders Act Assistant (CAA)**! Designed to streamline your testing and debugging processes, CAA is fully compatible with **Google Chrome** and **Microsoft Edge**, offering seamless integration into your workflow.
 
-[Download it now in the Chrome Store](https://chromewebstore.google.com/detail/commanders-act-assistant/lfaifjhjdolnpnlgeohohaalbeidhlpj)
+[Download it now in the Chrome Extension Store](https://chromewebstore.google.com/detail/commanders-act-assistant/lfaifjhjdolnpnlgeohohaalbeidhlpj)
 
 \*Availability in the Microsoft Edge Store is coming soon!
 
