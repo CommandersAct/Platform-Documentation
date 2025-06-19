@@ -1,6 +1,6 @@
 # How to install Commanders Act Assistant in chrome extension developer mode
 
-Tutorial
+## Tutorial
 
 ### Step 1 : Download the file extension
 
