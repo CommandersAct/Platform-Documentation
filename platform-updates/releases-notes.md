@@ -19,7 +19,7 @@ Perform faster, more secure QA with our browser plugin:
 *   Test your Branches directly\
 
 
-    <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -35,7 +35,7 @@ The AI journey begins with new tools to assist your daily work:
 *   Side panel guidance for Commanders\
 
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -48,7 +48,7 @@ The AI journey begins with new tools to assist your daily work:
     → **Greater autonomy & faster go-live**\
 
 
-    <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗑️ **TMS – Branch Deletion Confirmation**
 
@@ -56,7 +56,7 @@ The AI journey begins with new tools to assist your daily work:
     → **No more accidental deletions**\
 
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗃️ **Custom Data Store & Storage Settings**
 
@@ -104,7 +104,7 @@ What is it? Customers can now use their own URL (via CNAME) to host privacy file
 
 Why is it important? Ensures better data control while maintaining compliance.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -114,7 +114,7 @@ Web container generation is now faster and supports larger containers (though sm
 
 New TMS UI with contextual side nav
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -124,7 +124,7 @@ Prepares for future alerting features – get notified immediately when new cook
 
 Competitive Advantage – Unlike competitors, our scanner provides real-time alerts (no waiting 24h for a crawler!).
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -134,7 +134,7 @@ Find specific sources/destinations faster.
 
 Easier workspace overview – Quick visibility on available integrations.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -144,7 +144,7 @@ Market alignment with Google CMP Partner requirements.
 
 Easier vendor visibility – Just regenerate & deploy the banner to update.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -284,7 +284,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   You can now view your password while logging in! This small addition aims to enhance accessibility for all users.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
 
 ***
 
@@ -293,7 +293,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   The navigation menu now includes a shortcut to our Sources Catalog, saving you a click and making it even easier to locate the resources you need.\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
 
 ***
 
@@ -319,7 +319,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 *   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\
 
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
@@ -693,7 +693,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Simplified workflows for easier navigation
 * Immediate issue detection for data quality perfection
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -709,7 +709,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -768,7 +768,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 <figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -1056,9 +1056,9 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     You can retrieve them in the edition part of a LRB report !\
 
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -1066,7 +1066,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\
 
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

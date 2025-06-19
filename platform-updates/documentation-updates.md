@@ -96,8 +96,8 @@ Update for React Native (Mobile) Source
 
 Update for Plugin Commanders Act Assistant
 
-{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md" %}
-[plugin-commanders-act-assistant.md](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md)
+{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant/" %}
+[plugin-commanders-act-assistant](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant/)
 {% endcontent-ref %}
 
 Source documentation:
@@ -142,8 +142,8 @@ New documentation for Storage Settings UI
 
 New documentation for the latest version of our Chrome Extension
 
-{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md" %}
-[plugin-commanders-act-assistant.md](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant.md)
+{% content-ref url="../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant/" %}
+[plugin-commanders-act-assistant](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant/)
 {% endcontent-ref %}
 
 
