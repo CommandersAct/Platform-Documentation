@@ -108,7 +108,7 @@ While CAA is a powerful tool, here are some current limitations to keep in mind:
   \
   \*This behavior will be improved in an upcoming update, so stay tuned!
 
-### Future Enhancements
+### Future Enhancements of our extension
 
 CAA is **continuously evolving**, with new features and improvements planned to further enhance your testing experience. Keep an eye out for future updates that will make debugging and optimization even easier!
 
