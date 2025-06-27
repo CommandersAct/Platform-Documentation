@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 27/06/2025
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/reddit-conversions-api.md" %}
+[reddit-conversions-api.md](../features/destinations/destinations-catalog/reddit-conversions-api.md)
+{% endcontent-ref %}
+
 ## 13/06/2025
 
 Destination documentation (updates):
