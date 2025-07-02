@@ -176,8 +176,21 @@ Commanders AI is based on a combination of **advanced language models (LLMs)** c
 
 ### 4.3. Security and Privacy
 
+Commanders AI ensures full compliance with European regulations (AI Act, GDPR) by enforcing strict rules on data processing, model selection, and infrastructure localization.
+
 * AI-generated content is not stored for reuse or retraining.
+* We do **not** fine-tune models on customer data and select only vendors that guarantee data isolation and full alignment with EU laws (GDPR, AI Act).
 * Suggestions are based solely on technical and contextual criteria without exploiting personal data.
+
+### 4.4. Model Origin and Hosting Transparency
+
+Commanders AI uses Large Language Models chosen under strict criteria for performance, privacy, and legal compliance.
+
+* **Model provider location:** **If** a model is provided by a non-European vendor, we ensure that it is **hosted entirely within the EU**.
+* User data never leaves the EU (no transfer, no storage outside the EU).
+
+\
+To illustrate this approach, some of the models we evaluate or integrate are provided by European players such as **Mistral**, when they meet the same high standards.
 
 ***
 
