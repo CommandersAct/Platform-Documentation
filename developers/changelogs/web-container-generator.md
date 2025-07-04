@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 98.4
+
+Release date:  **04/07/2025**
+
+* Update processing functions handling
+
 ### 98.3
 
 Release date:  **02/07/2025**
