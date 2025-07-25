@@ -1,6 +1,6 @@
 # Shopify
 
-The Commanders Act application, which is available in the Shopify App Store, helps merchants streamline their workflows by connecting Shopify events with partners. Whether you’re tracking customer interactions, or optimizing ad performance, our app simplifies the process. By intercepting Shopify Standard and Custom events, the Commanders Act application seamlessly integrates with your existing stack while leveraging Shopify Customer Privacy API. This means less manual setup and more secure data collection.
+The Commanders Act application, which is available in the [Shopify App Store](https://apps.shopify.com/commanders-act), helps merchants streamline their workflows by connecting Shopify events with partners. Whether you’re tracking customer interactions, or optimizing ad performance, our app simplifies the process. By intercepting Shopify Standard and Custom events, the Commanders Act application seamlessly integrates with your existing stack while leveraging Shopify Customer Privacy API. This means less manual setup and more secure data collection.
 
 ## Key features
 
@@ -53,17 +53,16 @@ The Commanders Act application, which is available in the Shopify App Store, hel
 
 
 
-1. Open [Shopify App Store](https://apps.shopify.com/).
-2. In the search box, on the top, type: "Commanders Act" and click on it.
-3. Install the app by clicking the `(1)` `Install`  button:\
+1. Open our [application URL in Shopify App Store](https://apps.shopify.com/commanders-act).
+2. Install the app by clicking the `(1)` `Install`  button:\
    \
    ![](../../../../.gitbook/assets/shopify_4.png)\
 
-4. Configure the app by providing both the `(2)` `Site/Account Id`  and `(3)` `Source Key`  from the source you created in the section [Source setup](cashopapp.md#source-setup) (See the above step 9.) and then turn `(4)`  the toggle to activate your app configuration:\
+3. Configure the app by providing both the `(2)` `Site/Account Id`  and `(3)` `Source Key`  from the source you created in the section [Source setup](cashopapp.md#source-setup) (See the above step 9.) and then turn `(4)`  the toggle to activate your app configuration:\
    \
    ![](../../../../.gitbook/assets/shopify_5.png)\
 
-5. Click `Save` to complete the setup and activate the app. See the next section [Validate your setup](cashopapp.md#validate-your-setup) to ensure tracking is activated.
+4. Click `Save` to complete the setup and activate the app. See the next section [Validate your setup](cashopapp.md#validate-your-setup) to ensure tracking is activated.
 
 {% hint style="info" %}
 At any point in time, you can deactivate the app by turning the `(4)`  toggle off and click  `Save` .
