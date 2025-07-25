@@ -1,10 +1,5 @@
 # Shopify
 
-{% hint style="info" %}
-Our Shopify application and the related source are currently under final review and will be available soon.\
-This page will walk you through the steps to add and configure your Shopify source and connect it to our Shopify Store application so you can get the most out of their sinergy.
-{% endhint %}
-
 The Commanders Act application, which is available in the Shopify App Store, helps merchants streamline their workflows by connecting Shopify events with partners. Whether you’re tracking customer interactions, or optimizing ad performance, our app simplifies the process. By intercepting Shopify Standard and Custom events, the Commanders Act application seamlessly integrates with your existing stack while leveraging Shopify Customer Privacy API. This means less manual setup and more secure data collection.
 
 ## Key features
