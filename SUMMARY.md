@@ -151,6 +151,7 @@
     * [Dialog-Mail](features/destinations/destinations-catalog/dialog-mail.md)
     * [Dynamic Yield](features/destinations/destinations-catalog/dynamic-yield.md)
     * [Easyence](features/destinations/destinations-catalog/easyence.md)
+    * [Econda](features/destinations/destinations-catalog/econda.md)
     * [Effinity](features/destinations/destinations-catalog/effinity.md)
     * [Eloqua](features/destinations/destinations-catalog/eloqua.md)
     * [Emarsys](features/destinations/destinations-catalog/emarsys.md)
