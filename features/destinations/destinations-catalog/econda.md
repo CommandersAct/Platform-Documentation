@@ -72,7 +72,7 @@ An additional custom property <mark style="color:blue;">`retry_count`</mark>  is
 &#xNAN;**\[16]** Newsletter identifier.\
 &#xNAN;**\[17]** Target/goal group (E.g. <mark style="color:blue;">`newsletter subscription`</mark> )\
 &#xNAN;**\[18]** Markers are measurement tools that allow you to place "light barriers" on a website. As soon as a visitor passes a light barrier, the contribution of this measurement point to achieving the defined goal is recorded and thus made transparent (E.g. <mark style="color:blue;">`SubscriptionClick`</mark>).\
-&#xNAN;**\[19]** With on-site campaigns, you use relevant areas of your website for sales-promoting marketing campaigns, e.g., in the form of on-site banners. Send the names of on-site campaign banners being seen (E.g. <mark style="color:blue;">`Summer Sale`</mark> ): you can send up to three names.\
+&#xNAN;**\[19]** With on-site campaigns, you use relevant areas of your website for sales-promoting marketing campaigns, e.g., in the form of on-site banners. Send the names of on-site campaign banners being seen (E.g. <mark style="color:blue;">`Summer Sale`</mark>): you can send up to three names.\
 &#xNAN;**\[20]** Send the names of on-site campaign banners being clicked (E.g. <mark style="color:blue;">`Summer Sale`</mark> ): you can send up to three names.\
 &#xNAN;**\[21]** E.g. <mark style="color:blue;">`1280x1024|1.5`</mark> .\
 &#xNAN;**\[22]** Set with `0`  on sucessful login, otherwise <mark style="color:blue;">`1`</mark>  . Default value: <mark style="color:blue;">`0`</mark>  .\
