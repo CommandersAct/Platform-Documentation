@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 22/08/2025
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/econda.md" %}
+[econda.md](../features/destinations/destinations-catalog/econda.md)
+{% endcontent-ref %}
+
 ## 27/06/2025
 
 Destination documentation (updates):
