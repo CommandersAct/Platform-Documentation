@@ -12,6 +12,12 @@ Destination documentation:
 [econda.md](../features/destinations/destinations-catalog/econda.md)
 {% endcontent-ref %}
 
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-analytics-4/" %}
+[google-analytics-4](../features/destinations/destinations-catalog/google/google-analytics-4/)
+{% endcontent-ref %}
+
 ## 27/06/2025
 
 Destination documentation (updates):
