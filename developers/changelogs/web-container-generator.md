@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 98.5
+
+Release date:  **13/08/2025**
+
+* [public release] Finer support of Portuguese language in IAB module
+
 ### 98.4
 
 Release date:  **04/07/2025**
