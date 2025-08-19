@@ -58,7 +58,7 @@ When Google Signals is enabled, same device remarketing is supported. For cross-
 
 ### Session handling
 
-When providing a <mark style="color:blue;">`Measurement Id`</mark> , the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-"). If the cookie is not provided or with App "Data streams", the default property `context.device.lifecycle.session_id` is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
+When providing a <mark style="color:blue;">`Measurement Id`</mark> , the session identifier is retrieved from the cookie named `_ga_<Measurement Id>` (E.g. "\_ga\_SE92QCQ4Q1", without quotes and the initial string "G-"). If the cookie is not provided or with App "Data streams", you can pass the session identifier using the property <mark style="color:blue;">`ga_session_id`</mark>  : this is useful when implementing the [gtag GET API](https://developers.google.com/tag-platform/gtagjs/reference#get), on the client-side, as you can retrieve the value with the API and then pass it into <mark style="color:blue;">`ga_session_id`</mark>  . When none of the above is set, the default property <mark style="color:blue;">`context.device.lifecycle.session_id`</mark>  is used. More details on how sessions work in Google Analytics 4 are available following this [LINK](https://support.google.com/analytics/answer/9191807).
 
 ## Mappings for GA4 events
 
