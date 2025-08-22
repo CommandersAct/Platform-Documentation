@@ -1,9 +1,5 @@
 # Econda
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Econda](https://www.dymatrix.de/en) is web analytics tool under the [DYMATRIX brand](https://www.dymatrix.de/en/econda-is-now-dymatrix). Using this destination, you can implement server-side tracking.
 
 ## Key features
