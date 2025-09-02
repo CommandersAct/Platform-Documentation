@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.0
+
+Release date:  **02/09/2025**
+
+* [beta] Optimizations in container generation process
+
 ### 98.5
 
 Release date:  **13/08/2025**
