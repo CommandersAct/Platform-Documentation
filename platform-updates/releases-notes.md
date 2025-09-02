@@ -6,6 +6,120 @@ description: >-
 
 # Release notes
 
+### Release 10.0.29 - August - 2025
+
+✨ **New Features**
+
+📤 **New Destination — Econda (Server-Side)**  
+Implement **Econda Analytics** via server-side as an alternative to client-side scripts.  
+Includes support for **On-Site Campaigns** and **Rich Media (Video) Tracking**.  
+
+---
+
+#### 🛠️ Improvements
+
+⚙️ **Platform Reliability Enhancements**  
+Our engineering team has delivered multiple backend optimizations this month:  
+* More resilient processing pipelines  
+* Better monitoring & alerting across all services  
+* Optimized data flows for increased stability at scale  
+
+These invisible but critical improvements ensure smoother daily operations and prepare the ground for upcoming features.  
+
+---
+
+### Release 10.0.28-bis - July - 2025
+
+✨ **New Features**
+
+🛒 **New Source — Shopify (Web) + App**  
+* Capture Shopify standard & custom events  
+* Respect **Shopify Customer Privacy API**  
+* Preserve original payloads for **Smart Mapping** & **Property Transformations**  
+* Easy install via dedicated Shopify App  
+
+🧮 **Adloop — Post-View Attribution**  
+A new **probabilistic attribution model** is now available. It reallocates part of conversions initially credited to **SEO or Direct traffic** towards **Social Media campaigns** (Facebook, TikTok, etc.) when these campaigns likely influenced the conversion path.  
+
+The mechanism evaluates:  
+* **Advertising intensity** (campaign pressure & exposure)  
+* **Engagement metrics** (views, interactions, clicks)  
+
+→ This results in **fairer attribution** for social channels, correcting long-standing underestimation issues and helping marketers make **better budget allocation decisions**.  
+
+📘 Full documentation of the mechanism is available here: [Post-View Mechanism Documentation](https://community.commandersact.com/adloop/vii-adloop-tracking-and-attribution/post-view-mechanism)  
+
+---
+
+#### 🛠️ Improvements
+
+📊 **Adloop — Transaction ID Report**  
+* **Micro-conversions** now visible in the side panel for each touchpoint  
+* Report load time reduced to **1–2 seconds** for most clients  
+
+📱 **Flutter SDK Plugins Update**  
+Forwarding of **Firebase events & consent signals** to Flutter apps (Android/iOS).  
+
+---
+
+### Release 10.0.28-ter - June - 2025
+
+✨ **New Features**
+
+⚡ **Instant Interfaces — Phase 1 & 2**  
+Massive speed improvements across the platform:  
+* **Instant** rendering (lists, tag creation, destinations, sources, event specification, enrichment, storage settings, properties list, segment stats & overlap)  
+* **Faster** UIs overall (~25% on average, up to ×10 for container generation)  
+→ First available internally in June, then **rolled out to all users on July 1st**.  
+
+---
+
+#### 🛠️ Improvements
+
+🧭 **CMP Contextual Side Nav**  
+Dedicated sidebar for all privacy-related features → mirrors the TMS side-nav for a consistent UX.  
+
+🍪 **Cookie Scanner — Group Peek**  
+Hover on grouped cookie names to instantly see the **5 most frequent cookies** in the group.  
+
+---
+
+### Release 10.0.28-quater - May - 2025
+
+✨ **New Features**
+
+🧰 **Adloop — BigQuery as an Attribution Data-Source**  
+Adloop can now run attribution on **BigQuery datasets** (alongside GA4 & Piano Analytics).  
+→ Ideal for **large volumes** and **more precise raw data**.  
+
+📤 **New Destination — BigQuery (Server-Side)**  
+Export server-side events to **Google BigQuery** in real time with:  
+* Easy connection to your GCP project  
+* Automatic schema mapping  
+* Optional table structure auto-discovery  
+
+📤 **Adloop — BigQuery Export Destination**  
+Send **all Adloop data** (including conversion paths) directly to BigQuery for deeper analysis with BI tools.  
+
+---
+
+#### 🛠️ Improvements
+
+🔌 **Adloop — Simplified Data-Source Setup**  
+* Google & Bing (Shopping, Search, PMax…) and Meta accounts now easier to add  
+* **Simplified mode** (normalized metrics/dimensions) or **Expert mode** (extra options, filters, custom conversions)  
+→ Faster onboarding, especially for agencies or clients with many accounts.  
+
+🛡️ **GDPR — Revoked User Logs**  
+Automatic anonymization of all user logs older than **12 months post-revocation**.  
+
+🧪 **Tag Assistant (Chrome Extension)**  
+* Full **Data Layer** visibility (internal & external vars)  
+* **Container & Site names** displayed  
+* **Access control** enforced (only see what you’re allowed)  
+* UX refinements (collapsible panels, tc_events history, login bug fix, etc.)  
+
+
 ### Release 10.0.28 - April - 2025
 
 ✨ **New Features**
@@ -1260,8 +1374,10 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
   \
   SDK for **Flutter** is launched\
   For further informations, please check our github\
-  [https://github.com/CommandersAct/tcserverside-plugin  \
-  https://github.com/CommandersAct/tc-consent-plugin  \
+  [https://github.com/CommandersAct/tcserverside-plugin
+  \
+  https://github.com/CommandersAct/tc-consent-plugin
+  \
   https://github.com/CommandersAct/TCMobileDemo-flutter](https://github.com/CommandersAct/tcserverside-pluginhttps://github.com/CommandersAct/tc-consent-pluginhttps://github.com/CommandersAct/TCMobileDemo-flutter)\
   \
   SDK **Angular 15** is available\
