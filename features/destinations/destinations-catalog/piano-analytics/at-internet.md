@@ -97,7 +97,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 
 | Commanders Act Properties                                                                                                                                             | Piano Analytics Properties                                                                                      |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| `(event_timestamp)`                                                                                                                                                   | `device_timestamp_utc` **\[1]**                                                                                 |
+| `event_timestamp`                                                                                                                                                     | `device_timestamp_utc` **\[1]**                                                                                 |
 | `context.page.referrer`                                                                                                                                               | `previous_url`                                                                                                  |
 | `page_name`                                                                                                                                                           | `page`                                                                                                          |
 | `value`                                                                                                                                                               | <p><code>generate_lead_value</code></p><p><code>cart_turnovertaxincluded</code></p>                             |
@@ -179,7 +179,7 @@ The client-side unique visitor identifier is recommended and is retrieved by get
 | `full_episode`                                                                                                                                                        | `av_full_episode`                                                                                               |
 
 {% hint style="info" %}
-**\[1]** In seconds.\
+**\[1]** The timestamp related to when the event took place. Both 10 or 13-digit timestamps are supported: with the latter, the timestamp is converted in the decimal format (E.g. `1756195156953`  is set as `1756195156.953` ). You can also directly set the decimal format with 13-digit timestamps.\
 **\[2]** Field included for the following events: <mark style="color:blue;">`add_to_cart`</mark> , <mark style="color:blue;">`page_view (product.page_display)`</mark> , <mark style="color:blue;">`view_item`</mark> , <mark style="color:blue;">`purchase (product.purchased)`</mark> ,  <mark style="color:blue;">`remove_from_cart`</mark> , <mark style="color:blue;">`add_to_wishlist`</mark> , and <mark style="color:blue;">`select_item`</mark> .\
 &#xNAN;**\[3]** Boolean value: <mark style="color:blue;">`true`</mark> or <mark style="color:blue;">`false`</mark> .\
 &#xNAN;**\[4]** Sum all <mark style="color:blue;">`items.X.quantity`</mark> .\
