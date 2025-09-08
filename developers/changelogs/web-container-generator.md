@@ -2,6 +2,13 @@
 
 ## 2025
 
+### 99.1
+
+Release date:  **08/09/2025**
+
+* Support processing functions for event variables
+* [beta] Remove tC.fn.css & tC.fn.resetCss support
+
 ### 99.0
 
 Release date:  **02/09/2025**
@@ -10,7 +17,7 @@ Release date:  **02/09/2025**
 
 ### 98.5
 
-Release date:  **13/08/2025**
+Release date:  **12/08/2025**
 
 * [public release] Finer support of Portuguese language in IAB module
 
