@@ -246,6 +246,7 @@
     * [TikTok](features/destinations/destinations-catalog/tiktok/README.md)
       * [TikTok Events API](features/destinations/destinations-catalog/tiktok.md)
       * [TikTok Offline Events](features/destinations/destinations-catalog/tiktok/tiktok-offiline-events.md)
+      * [TikTok Sync Order Information](features/destinations/destinations-catalog/tiktok/tiktok-sync-order-information.md)
     * [TimeOne](features/destinations/destinations-catalog/timeone.md)
     * [Tradedoubler](features/destinations/destinations-catalog/tradedoubler.md)
     * [TradeTracker](features/destinations/destinations-catalog/tradetracker.md)
