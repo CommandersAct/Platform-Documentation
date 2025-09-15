@@ -163,7 +163,7 @@ Its usage is strictly limited to **configuration assistance and user interface e
 
 No user event data or identifiers are currently exposed to AI models.
 
-### 3.5. EU AI Act Compliance  
+#### 3.5. EU AI Act Compliance  
 
 Commanders AI falls under the **low-risk category** as defined by the European AI Act.  
 It provides only configuration assistance and suggestions, with **no autonomous or irreversible decisions**.  
