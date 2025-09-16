@@ -54,7 +54,6 @@ Functions can be nested, ex: `SHA256(LOWER(user.email))`
 | TIMEZONE(date)                                                               | Returns the timezone in UTC                                                                                                                                                                                                                                    | <p><code>TIMEZONE('2023-01-20T00:05:00.000+01:00')</code><br>returns<br><code>UTC+1</code></p>                                                                                                                   |
 | TODAY()                                                                      | Returns the current date in ISO-8601                                                                                                                                                                                                                           | `TODAY()` might return `2023-01-20T00:05:00.000+01:00`, assuming the current date is the 20th of January 2023                                                                                                    |
 
-
 ## Operators
 
 | **Operator**                            | **Description**                                                                                                                                                                                                     | **Example**                   |
