@@ -30,9 +30,9 @@ All Commanders AI suggestions are non-binding and subject to human validation. U
 Commanders AI includes several advanced functionalities (some are limited to beta testers) :
 
 1. [**Automatic Change Summary**](commanders-ai.md#id-2.1-automatic-change-summary-in-web-containers): Generates a summary of modifications when generating a web container in the Tag Management System.
-2. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta): Conversational assistant to generate data transformation formulas.
-3. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha): Optimized naming and description proposals for destinations and segments.
-4. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha): Intelligent assignment of privacy categories when adding a tag or destination.
+2. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta)(closed beta): Conversational assistant to generate data transformation formulas.
+3. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha)(closed beta): Optimized naming and description proposals for destinations and segments.
+4. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha)(closed beta): Intelligent assignment of privacy categories when adding a tag or destination.
 
 ***
 
