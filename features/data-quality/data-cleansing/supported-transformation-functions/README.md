@@ -90,11 +90,11 @@ Here are more complex examples showing how to use functions with nested expressi
 
 | **Function** | **Complex Examples** |
 | ------------ | -------------------- |
-| AVERAGE | `AVERAGE(items, EXTRACT(price, "€", 0))` - Extract numeric value before € and calculate average<br>`AVERAGE([0, null, 10])` - Returns 5 (null values are ignored)<br>`AVERAGE(items, IF(returned_quantity = 0, NUMBER(EXTRACT(product.price, "€",0)), 0))` - Average price only for non-returned items |
+| AVERAGE | `AVERAGE([0, null, 10])` - Returns 5 (null values are ignored)<br>`AVERAGE(items, EXTRACT(price, "€", 0))` - Extract numeric value before € and calculate average<br>`AVERAGE(items, IF(returned_quantity = 0, NUMBER(EXTRACT(product.price, "€",0)), 0))` - Average price only for non returned quantity items condition |
 | MIN | `MIN(orders, DATEPARSE(order_date, "yyyy-MM-dd"))` - Find the earliest order date<br>`MIN([null, 15, 8])` - Returns 8 (ignores null)<br>`MIN(items, IF(status = "active", price, 999999))` - Minimum price among active items only |
 | MAX | `MAX(users, AGE(birth_date))` - Find the age of the oldest user<br>`MAX([null, 15, 8])` - Returns 15 (ignores null)<br>`MAX(transactions, IF(type = "purchase", amount, 0))` - Maximum purchase amount |
-| SUM | `SUM(items, quantity * NUMBER(EXTRACT(unit_price, "$", 0)))` - Calculate total value of all items<br>`SUM([5, null, 15])` - Returns 20 (ignores null)<br>`SUM(items, IF(returned_quantity = 0, NUMBER(EXTRACT(product.price, "€",0)), 0))` - Sum prices only for non-returned items |
-| COUNT | `COUNT(customers, IF(ISEMPTY(email), null, email))` - Count customers with non-empty email<br>`COUNT([null, "", "test"])` - Returns 1 (counts only non-empty values)<br>`COUNT(orders, IF(status = "completed" AND amount > 100, 1, null))` - Count completed orders over 100 |
+| SUM | `SUM(items, quantity * NUMBER(EXTRACT(unit_price, "$", 0)))` - Calculate total value of all items<br>`SUM([5, null, 15])` - Returns 20 (ignores null)<br>`SUM(items, IF(returned_quantity = 0, NUMBER(EXTRACT(product.price, "€",0)), 0))` - Sum prices only for non returned quantity items condition |
+| COUNT | `COUNT(customers, IF(ISEMPTY(email), null, email))` - Count customers with non-empty email<br>`COUNT(orders, IF(status = "completed" AND amount > 100, 1, null))` - Count completed orders over 100 |
 
 ## Examples
 
