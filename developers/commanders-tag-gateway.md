@@ -1,6 +1,4 @@
-# Commanders Tag Gateway
-
-# Set up Commanders Gateway
+# Set up Commanders Tag Gateway
 
 This document is for users who want to deploy **Google Tag Gateway** (via Commanders Act) or its equivalent for other partners (Meta, Bing, Snapchat, Awin, etc.).  
 
@@ -212,7 +210,54 @@ Once saved, all requests to `/metrics` will be proxied to Commanders Gateway.
 {% endtab %} 
 
 {% tab title="Akamai" %} 
-Soon
+### Create the redirect rule
+
+1. Create a new version of your delivery configuration in **Property Manager**.  
+2. Under the **Property Configuration Settings** section, add a new Rule:  
+   - Name it: *Route measurement*  
+3. Add a new **Match**:  
+   - Match type: `Path`  
+   - Condition: *is one of*  
+   - Value: `/metrics/*`  
+4. Add a new **Behavior**:  
+   - Select *Standard Property Behavior* and choose **Origin Server** behavior.  
+   - Set **Origin Server Hostname** to `metrics.fps.commandersact.net.`  
+   - Set **Forward Host Header** to *Origin Hostname*.  
+5. Save the new rule and deploy your changes.  
+   - ⚠️ Test the redirect rule in your **staging environment** before rolling out to production.  
+   - Ensure no other rules modify/remove outgoing response headers (e.g., *Content-Type*) as this may break scripts.  
+
+---
+
+### Include geolocation information
+
+1. Navigate to the **Property Variables** section and add the following variables:  
+
+| Variable name   | Security settings |
+|-----------------|-------------------|
+| USER_REGION     | Hidden            |
+| USER_COUNTRY    | Hidden            |
+
+2. Choose your **Redirect rule** (created above) under Property Configuration Settings.  
+3. Add two new **Set Variable** behaviors (one per variable):  
+
+| Variable              | Create Value From | Get Data From | Edgescape Field | Operation |
+|-----------------------|------------------|---------------|-----------------|-----------|
+| PMUSER_USER_REGION    | Extract          | Edgescape Data| Region Code     | None      |
+| PMUSER_USER_COUNTRY   | Extract          | Edgescape Data| Country Code    | None      |
+
+4. Add two new **Modify Outgoing Request Header** behaviors:  
+
+| Action | Select Header Name | Custom Header Name     | Header Value                        |
+|--------|--------------------|------------------------|-------------------------------------|
+| Add    | Other...           | X-Forwarded-Region     | {{user.PMUSER_USER_REGION}}         |
+| Add    | Other...           | X-Forwarded-Country    | {{user.PMUSER_USER_COUNTRY}}        |
+
+5. Save the new rule and deploy your changes.  
+6. Verify the setup:  
+   - Navigate to: `https://example.com/metrics/healthy` → should display `ok`.  
+   - Test geolocation headers: `https://example.com/metrics/?validate_geo=healthy` → should also display `ok`.  
+
 {% endtab %} 
 
 {% tab title="Fastly" %} 
