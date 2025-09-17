@@ -109,15 +109,15 @@ To serve your tag in Commanders Gateway, you will create a CNAME entry for a new
 Choose a subdomain to reserve for the CNAME entry. This CNAME is never exposed outside your Cloudflare configuration, so the name is arbitrary.
 
 ```
-CNAME subdomain: fps-metrics
-Target: metrics.fps.commandersact.net.
+CNAME subdomain: metrics
+Target: s1234.commander4.com.
 ```
 
 1. In the **DNS** tab, open the **Records** section.
 2. Add a new record with:
    * **Type**: CNAME
-   * **Name**: fps-metrics
-   * **Target**: metrics.fps.commandersact.net.
+   * **Name**: metrics
+   * **Target**: s1234.commander4.com.  => replace 1234 by your site (aka workspace) id
 3. Save the CNAME record.
 
 #### Create the Origin Rule
@@ -130,8 +130,8 @@ Target: metrics.fps.commandersact.net.
 (http.host eq "example.com" and starts_with(http.request.uri.path, "/metrics"))
 ```
 
-4. Update the **Host Header** → Rewrite to: `metrics.fps.commandersact.net.`
-5. Update the **DNS Record** → Override to: `fps-metrics.example.com`.
+4. Update the **Host Header** → Rewrite to: `s1234.commander4.com.`
+5. Update the **DNS Record** → Override to: `metrics.example.com`.
 6. Save the Origin Rule.
 
 #### Include geolocation information (optional)
@@ -226,7 +226,7 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
    * Value: `/metrics/*`
 4. Add a new **Behavior**:
    * Select _Standard Property Behavior_ and choose **Origin Server** behavior.
-   * Set **Origin Server Hostname** to `metrics.fps.commandersact.net.`
+   * Set **Origin Server Hostname** to `s1234.commander4.com.`
    * Set **Forward Host Header** to _Origin Hostname_.
 5. Save the new rule and deploy your changes.
    * ⚠️ Test the redirect rule in your **staging environment** before rolling out to production.
