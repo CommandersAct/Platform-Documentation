@@ -110,14 +110,14 @@ Choose a subdomain to reserve for the CNAME entry. This CNAME is never exposed o
 
 ```
 CNAME subdomain: metrics
-Target: s1234.commander4.com.
+Target: s1234.commander4.com
 ```
 
 1. In the **DNS** tab, open the **Records** section.
 2. Add a new record with:
    * **Type**: CNAME
    * **Name**: metrics
-   * **Target**: s1234.commander4.com.  => replace 1234 by your site (aka workspace) id
+   * **Target**: s1234.commander4.com  => replace 1234 by your site (aka workspace) id
 3. Save the CNAME record.
 
 #### Create the Origin Rule
