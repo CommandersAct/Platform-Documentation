@@ -47,19 +47,9 @@ Here is a complete event payload example :
 
 ## Fields automatically added
 
-| Field name                 | Example value                                                                                                           | Description                                    |
-| -------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| context.event\_id          | <pre><code>202110130000000000
-</code></pre>                                                                             | Id of the event                                |
-| context.event\_timestamp   | <pre><code>1639044446636
-</code></pre>                                                                                  | Timestamp of the event sending time.           |
-| context.device.user\_agent | Mozilla/5.0 (Macintosh; Intel Mac OS X 10\_15\_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36 | The browser's user agent                       |
-| context.device.lang        | fr                                                                                                                      | Browser language                               |
-| path                       | /path1/path2/                                                                                                           | Path of the current url (only on page\_view)   |
-| referrer                   | [https:///www.google.fr](https://www.google.fr)                                                                         | Referer url (only on page\_view)               |
-| title                      | My page title                                                                                                           | Title of the current page (only on page\_view) |
-| url                        | [https:///www.mywebsite.fr](https://www.google.fr)                                                                      | Url of the current page                        |
-| page.\*                    |                                                                                                                         | pages information                              |
+<table><thead><tr><th>Field name</th><th>Example value</th><th>Description</th></tr></thead><tbody><tr><td>context.event_id</td><td><pre><code>202110130000000000
+</code></pre></td><td>Id of the event</td></tr><tr><td>context.event_timestamp</td><td><pre><code>1639044446636
+</code></pre></td><td>Timestamp of the event sending time.</td></tr><tr><td>context.device.user_agent</td><td>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36</td><td>The browser's user agent</td></tr><tr><td>context.device.lang</td><td>fr</td><td>Browser language</td></tr><tr><td>path</td><td>/path1/path2/</td><td>Path of the current url (only on page_view)</td></tr><tr><td>referrer</td><td><a href="https://www.google.fr">https:///www.google.fr</a></td><td>Referer url (only on page_view)</td></tr><tr><td>title</td><td>My page title</td><td>Title of the current page (only on page_view)</td></tr><tr><td>url</td><td><a href="https://www.google.fr">https:///www.mywebsite.fr</a></td><td>Url of the current page</td></tr><tr><td>page.*</td><td></td><td>pages information</td></tr></tbody></table>
 
 {% hint style="info" %}
 IP Address is not collected by our libraries, but instead filled in by our servers when it receives a message for **client side events only**. Copying it from the request header containing the IP Address.

@@ -20,15 +20,13 @@ Here are some examples of predefined internal variables:
 *   Internal variable for retrieving the URL of the page:\
 
 
-    | <pre><code>tC.internalvars.tc_url = document.location.href;
-    </code></pre> |
-    | ------------------------------------------------------------------------- |
+    <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tC.internalvars.tc_url = document.location.href;
+    </code></pre></td></tr></tbody></table>
 *   Internal variable for retrieving the URL of the previous page/site:\
 
 
-    | <pre><code>tC.internalvars.tc_referrer = document.referrer;
-    </code></pre> |
-    | ------------------------------------------------------------------------- |
+    <table data-header-hidden><thead><tr><th></th></tr></thead><tbody><tr><td><pre><code>tC.internalvars.tc_referrer = document.referrer;
+    </code></pre></td></tr></tbody></table>
 *   Internal variable for retrieving what comes between the first “/” and second “/” of the URL:\
 
 

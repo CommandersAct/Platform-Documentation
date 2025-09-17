@@ -1,11 +1,11 @@
-# Commanders Tag Gateway
+# Commanders Tag Gateway (closed beta)
 
 This document is for users who want to deploy **Google Tag Gateway** (via Commanders Act) or its equivalent for other partners (Meta, Bing, Snapchat, Awin, etc.).
 
 If your goal is to implement **Google Tag Gateway**, you are in the right place:\
 **Commanders Gateway** follows the exact same setup principles as Google Tag Gateway, but extends them to all major advertising and analytics partners.
 
-We recommend using Commanders Gateway for advertisers as the most durable and future-proof tag configuration.
+<figure><img src="../.gitbook/assets/schema_google_ads (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
