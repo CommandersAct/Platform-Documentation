@@ -5,7 +5,7 @@ This document is for users who want to deploy **Google Tag Gateway** (via Comman
 If your goal is to implement **Google Tag Gateway**, you are in the right place:\
 **Commanders Gateway** follows the exact same setup principles as Google Tag Gateway, but extends them to all major advertising and analytics partners.
 
-<figure><img src="../.gitbook/assets/schema_google_ads (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/schema_google_ads (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
