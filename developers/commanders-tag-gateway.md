@@ -1,63 +1,67 @@
-# Set up Commanders Tag Gateway
+# Commanders Tag Gateway
 
-This document is for users who want to deploy **Google Tag Gateway** (via Commanders Act) or its equivalent for other partners (Meta, Bing, Snapchat, Awin, etc.).  
+This document is for users who want to deploy **Google Tag Gateway** (via Commanders Act) or its equivalent for other partners (Meta, Bing, Snapchat, Awin, etc.).
 
-If your goal is to implement **Google Tag Gateway**, you are in the right place:  
-**Commanders Gateway** follows the exact same setup principles as Google Tag Gateway, but extends them to all major advertising and analytics partners.  
+If your goal is to implement **Google Tag Gateway**, you are in the right place:\
+**Commanders Gateway** follows the exact same setup principles as Google Tag Gateway, but extends them to all major advertising and analytics partners.
 
 We recommend using Commanders Gateway for advertisers as the most durable and future-proof tag configuration.
 
----
+***
 
 ## Why use Commanders Gateway?
 
-### 1. Advantages of using a gateway  
-A gateway setup improves **data collection quality and completeness** across your marketing stack.  
+### 1. Advantages of using a gateway
 
-- Vendor scripts are served from your own domain, which reduces the likelihood of being blocked by adblockers.  
-- Browser restrictions (such as Safari’s privacy rules) often limit or block third-party cookies, but with a first-party setup, measurement remains more reliable.  
-- This ensures **more accurate tracking**, providing partners with higher-quality signals for measurement, attribution, and optimization.  
+A gateway setup improves **data collection quality and completeness** across your marketing stack.
 
-### 2. Advantages of using Commanders Gateway  
-On top of the benefits of any gateway approach, **Commanders Gateway** adds unique advantages:  
+* Vendor scripts are served from your own domain, which reduces the likelihood of being blocked by adblockers.
+* Browser restrictions (such as Safari’s ITP) often limit or block third-party cookies and some 1st party javascript cookies, but with a first-party server-side setup, measurement remains more reliable.
+* This ensures **more accurate tracking**, providing partners with higher-quality signals for measurement, attribution, and optimization.
 
-- Not limited to Google Tag Gateway — the same durable setup applies to **all your partners** (Meta, Snapchat, Bing, Awin, etc.).  
-- Unified setup: a **single path** (`/metrics`) serves and proxies all vendor libraries.  
-- Obfuscated JavaScript filenames are automatically provided by Commanders Act, making detection by blocking lists far more difficult.  
-- A centralized configuration simplifies deployment and maintenance while remaining **future-proof** against upcoming browser restrictions.  
+### 2. Advantages of using Commanders Gateway
 
----
+On top of the benefits of any gateway approach, **Commanders Gateway** adds unique advantages:
+
+* Not limited to Google Tag Gateway — the same durable setup applies to **all your partners** (Meta, Snapchat, Bing, Awin, etc.).
+* Unified setup: a **single path** (`/metrics`) serves and proxies all vendor libraries.
+* Obfuscated JavaScript filenames are automatically provided by Commanders Act, making detection by blocking lists far more difficult.
+* With the same simple path, you can also activate other **first-party hosting and tracking features** such as: hosting your tag management containers, server-side event tracking, or anonymous CMP statistics. A single setup powers your whole first‑party hosting and tracking system.
+* A centralized configuration simplifies deployment and maintenance while remaining **future-proof** against upcoming browser restrictions.
+
+***
 
 ## Overview
 
-**Commanders Gateway** lets you deploy marketing and measurement tags using your **own first-party infrastructure**, hosted on your website’s domain.  
-This infrastructure sits between your website and your partners’ services (Google, Meta, Bing, Snapchat, Awin, etc.).  
+**Commanders Gateway** lets you deploy marketing and measurement tags using your **own first-party infrastructure**, hosted on your website’s domain.\
+This infrastructure sits between your website and your partners’ services (Google, Meta, Bing, Snapchat, Awin, etc.).
 
 With Commanders Gateway:
 
-- Google libraries (gtag.js / gtm.js) are loaded directly from your **first-party domain**.  
-- Other vendor libraries are served from `/metrics/js/` using **obfuscated filenames**.  
-- All measurement requests are proxied through your domain before being forwarded to the respective partner endpoints.  
+* Google libraries (gtag.js / gtm.js) are loaded directly from your **first-party domain**.
+* Other vendor libraries are served from `/metrics/js/` using **obfuscated filenames**.
+* All measurement requests are proxied through your domain before being forwarded to the respective partner endpoints.
 
----
+***
 
 ## Architecture
 
-With **Commanders Gateway**, you reserve a **single path** on your domain, for example:  
+With **Commanders Gateway**, you reserve a **single path** on your domain, for example:
 
 ```
 https://example.com/metrics/
 ```
 
-- **Google scripts** (gtag.js / gtm.js) are loaded directly from `/metrics/`.  
-- **Other vendor scripts** (Meta, Snapchat, Bing, Awin, etc.) are served from `/metrics/js/` with an **obfuscated filename** generated by Commanders Act.  
+* **Google scripts** (gtag.js / gtm.js) are loaded directly from `/metrics/`.
+* **Other vendor scripts** (Meta, Snapchat, Bing, Awin, etc.) are served from `/metrics/js/` with an **obfuscated filename** generated by Commanders Act.
 
-Example:  
+Example:
+
 ```
 https://example.com/metrics/js/f4558899203.js
 ```
 
-The mapping between each vendor and its obfuscated script filename is provided in the **Commanders Act First-Party Hosting interface**.  
+The mapping between each vendor and its obfuscated script filename is provided in the **Commanders Act First-Party Hosting interface**.
 
 **Diagram (conceptual):**
 
@@ -67,38 +71,38 @@ Website  →  example.com/metrics/ (Google tags)
          →  Commanders Gateway  →  Vendor endpoint
 ```
 
----
+***
 
 ## Before you begin
 
 This guide assumes your website is already configured with:
 
-- A tag management system (Commanders Act, Google Tag Manager, or equivalent).  
-- A CDN or load balancer (Cloudflare, Akamai, Fastly, Nginx, etc.) that can forward requests to external endpoints.  
+* A tag management system (Commanders Act, Google Tag Manager, or equivalent).
+* A CDN or load balancer (Cloudflare, Akamai, Fastly, Nginx, etc.) that can forward requests to external endpoints.
 
----
+***
 
 ## Step 1: Choose the tag serving path
 
-You must reserve **one path** on your website domain.  
+You must reserve **one path** on your website domain.
 
-Example:  
+Example:
+
 ```
 /metrics
 ```
 
 Caution: This setup reroutes all traffic with the chosen path. To avoid affecting your website, choose a path that's not already in use.
 
----
+***
 
 ## Step 2: Route traffic
 
 {% tabs %}
-{% tab title="Cloudflare Enterprise" %} 
-
+{% tab title="Cloudflare Enterprise" %}
 To serve your tag in Commanders Gateway, you will create a CNAME entry for a new subdomain, create an [Origin Rule](https://developers.cloudflare.com/rules/origin-rules/) to forward requests, and create a [Transform Rule](https://developers.cloudflare.com/rules/transform/) to include geolocation information. To complete this setup, you will need to have a Cloudflare Enterprise plan. If you don't have an Enterprise plan, consider using the Cloudflare automated setup instead.
 
-### Create CNAME entry
+#### Create CNAME entry
 
 **Note:** Tags won't use this CNAME entry; Cloudflare uses it to route requests internally.
 
@@ -109,50 +113,48 @@ CNAME subdomain: fps-metrics
 Target: metrics.fps.commandersact.net.
 ```
 
-1. In the **DNS** tab, open the **Records** section.  
-2. Add a new record with:  
-   - **Type**: CNAME  
-   - **Name**: fps-metrics  
-   - **Target**: metrics.fps.commandersact.net.  
-3. Save the CNAME record.  
+1. In the **DNS** tab, open the **Records** section.
+2. Add a new record with:
+   * **Type**: CNAME
+   * **Name**: fps-metrics
+   * **Target**: metrics.fps.commandersact.net.
+3. Save the CNAME record.
 
-### Create the Origin Rule
+#### Create the Origin Rule
 
-1. In the **Rules** tab, open **Origin Rules** and create a new rule.  
-2. Enter a rule name, such as *Route measurement*.  
-3. Match incoming requests based on a custom filter expression:  
+1. In the **Rules** tab, open **Origin Rules** and create a new rule.
+2. Enter a rule name, such as _Route measurement_.
+3. Match incoming requests based on a custom filter expression:
 
 ```
 (http.host eq "example.com" and starts_with(http.request.uri.path, "/metrics"))
 ```
 
-4. Update the **Host Header** → Rewrite to: `metrics.fps.commandersact.net.`  
-5. Update the **DNS Record** → Override to: `fps-metrics.example.com`.  
-6. Save the Origin Rule.  
+4. Update the **Host Header** → Rewrite to: `metrics.fps.commandersact.net.`
+5. Update the **DNS Record** → Override to: `fps-metrics.example.com`.
+6. Save the Origin Rule.
 
-### Include geolocation information (optional)
+#### Include geolocation information (optional)
 
-1. In the **Rules** tab, open **Settings**.  
-2. Enable the **Add visitor location headers** option.  
-3. Wait a few minutes for propagation.  
+1. In the **Rules** tab, open **Settings**.
+2. Enable the **Add visitor location headers** option.
+3. Wait a few minutes for propagation.
 
-You can verify by navigating to:  
+You can verify by navigating to:
 
 ```
 https://example.com/metrics/healthy
 ```
 
-It should return `ok`.  
+It should return `ok`.
+{% endtab %}
 
-{% endtab %} 
-
-{% tab title="Cloudflare Free" %} 
-
+{% tab title="Cloudflare Free" %}
 When using Cloudflare Free, the setup relies on a **simple Worker** that proxies all traffic from your chosen path (e.g. `/metrics`) to Commanders Gateway infrastructure.
 
-### Step 1: Create the Worker
+#### Step 1: Create the Worker
 
-1. In the Cloudflare dashboard, go to **Workers & Pages** → **Create application** → **Worker**.  
+1. In the Cloudflare dashboard, go to **Workers & Pages** → **Create application** → **Worker**.
 2. Copy/paste the following code:
 
 ```javascript
@@ -197,83 +199,86 @@ async function handleRequest(request) {
 
 This Worker proxies requests while adding extra headers (`X-Forwarded-Host`, `X-Forwarded-Country`, `X-Forwarded-Region`).
 
-### Step 2: Bind the Worker to the path
+#### Step 2: Bind the Worker to the path
 
-1. In Cloudflare, open your domain settings.  
-2. Navigate to **Workers Routes**.  
-3. Add a new route with:  
-   - **URL pattern**: `www.example.com/metrics*`  
-   - **Worker**: select the Worker created in step 1.  
+1. In Cloudflare, open your domain settings.
+2. Navigate to **Workers Routes**.
+3. Add a new route with:
+   * **URL pattern**: `www.example.com/metrics*`
+   * **Worker**: select the Worker created in step 1.
 
 Once saved, all requests to `/metrics` will be proxied to Commanders Gateway.
+{% endtab %}
 
-{% endtab %} 
+{% tab title="Akamai" %}
+{% hint style="warning" %}
+Commanders Gateway with Akamai is in **beta**. If you have a question or issue with your setup, reach out the support
+{% endhint %}
 
-{% tab title="Akamai" %} 
-### Create the redirect rule
+#### Create the redirect rule
 
-1. Create a new version of your delivery configuration in **Property Manager**.  
-2. Under the **Property Configuration Settings** section, add a new Rule:  
-   - Name it: *Route measurement*  
-3. Add a new **Match**:  
-   - Match type: `Path`  
-   - Condition: *is one of*  
-   - Value: `/metrics/*`  
-4. Add a new **Behavior**:  
-   - Select *Standard Property Behavior* and choose **Origin Server** behavior.  
-   - Set **Origin Server Hostname** to `metrics.fps.commandersact.net.`  
-   - Set **Forward Host Header** to *Origin Hostname*.  
-5. Save the new rule and deploy your changes.  
-   - ⚠️ Test the redirect rule in your **staging environment** before rolling out to production.  
-   - Ensure no other rules modify/remove outgoing response headers (e.g., *Content-Type*) as this may break scripts.  
+1. Create a new version of your delivery configuration in **Property Manager**.
+2. Under the **Property Configuration Settings** section, add a new Rule:
+   * Name it: _Route measurement_
+3. Add a new **Match**:
+   * Match type: `Path`
+   * Condition: _is one of_
+   * Value: `/metrics/*`
+4. Add a new **Behavior**:
+   * Select _Standard Property Behavior_ and choose **Origin Server** behavior.
+   * Set **Origin Server Hostname** to `metrics.fps.commandersact.net.`
+   * Set **Forward Host Header** to _Origin Hostname_.
+5. Save the new rule and deploy your changes.
+   * ⚠️ Test the redirect rule in your **staging environment** before rolling out to production.
+   * Ensure no other rules modify/remove outgoing response headers (e.g., _Content-Type_) as this may break scripts.
 
----
+***
 
-### Include geolocation information
+#### Include geolocation information
 
-1. Navigate to the **Property Variables** section and add the following variables:  
+1. Navigate to the **Property Variables** section and add the following variables:
 
-| Variable name   | Security settings |
-|-----------------|-------------------|
-| USER_REGION     | Hidden            |
-| USER_COUNTRY    | Hidden            |
+| Variable name | Security settings |
+| ------------- | ----------------- |
+| USER\_REGION  | Hidden            |
+| USER\_COUNTRY | Hidden            |
 
-2. Choose your **Redirect rule** (created above) under Property Configuration Settings.  
-3. Add two new **Set Variable** behaviors (one per variable):  
+2. Choose your **Redirect rule** (created above) under Property Configuration Settings.
+3. Add two new **Set Variable** behaviors (one per variable):
 
-| Variable              | Create Value From | Get Data From | Edgescape Field | Operation |
-|-----------------------|------------------|---------------|-----------------|-----------|
-| PMUSER_USER_REGION    | Extract          | Edgescape Data| Region Code     | None      |
-| PMUSER_USER_COUNTRY   | Extract          | Edgescape Data| Country Code    | None      |
+| Variable              | Create Value From | Get Data From  | Edgescape Field | Operation |
+| --------------------- | ----------------- | -------------- | --------------- | --------- |
+| PMUSER\_USER\_REGION  | Extract           | Edgescape Data | Region Code     | None      |
+| PMUSER\_USER\_COUNTRY | Extract           | Edgescape Data | Country Code    | None      |
 
-4. Add two new **Modify Outgoing Request Header** behaviors:  
+4. Add two new **Modify Outgoing Request Header** behaviors:
 
-| Action | Select Header Name | Custom Header Name     | Header Value                        |
-|--------|--------------------|------------------------|-------------------------------------|
-| Add    | Other...           | X-Forwarded-Region     | {{user.PMUSER_USER_REGION}}         |
-| Add    | Other...           | X-Forwarded-Country    | {{user.PMUSER_USER_COUNTRY}}        |
+| Action | Select Header Name | Custom Header Name  | Header Value                     |
+| ------ | ------------------ | ------------------- | -------------------------------- |
+| Add    | Other...           | X-Forwarded-Region  | \{{user.PMUSER\_USER\_REGION\}}  |
+| Add    | Other...           | X-Forwarded-Country | \{{user.PMUSER\_USER\_COUNTRY\}} |
 
-5. Save the new rule and deploy your changes.  
-6. Verify the setup:  
-   - Navigate to: `https://example.com/metrics/healthy` → should display `ok`.  
-   - Test geolocation headers: `https://example.com/metrics/?validate_geo=healthy` → should also display `ok`.  
+5. Save the new rule and deploy your changes.
+6. Verify the setup:
+   * Navigate to: `https://example.com/metrics/healthy` → should display `ok`.
+   * Test geolocation headers: `https://example.com/metrics/?validate_geo=healthy` → should also display `ok`.
+{% endtab %}
 
-{% endtab %} 
-
-{% tab title="Fastly" %} 
+{% tab title="Fastly" %}
 Soon
-{% endtab %} 
+{% endtab %}
 {% endtabs %}
 
----
+***
 
 ## Step 3: Update the scripts in your tag management system or your website
 
-Replace vendor script URLs with the new **first-party paths**.  
+Replace vendor script URLs with the new **first-party paths**.
 
-Examples:  
+Examples:
 
 ### Google
+
 ```html
 <!-- Instead of -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-12345"></script>
@@ -283,6 +288,7 @@ Examples:
 ```
 
 ### Meta (Facebook Pixel)
+
 ```html
 <!-- Instead of -->
 <script src="https://connect.facebook.net/en_US/fbevents.js"></script>
@@ -292,37 +298,36 @@ Examples:
 ```
 
 ### Snapchat
+
 ```html
 <script src="/metrics/js/a82b99df732.js"></script>
 ```
 
 ### Bing (UET)
+
 ```html
 <script src="/metrics/js/c77ac91be11.js"></script>
 ```
 
-Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.  
+Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.
 
----
+***
 
 ## Step 4: Verify setup
 
-- For the global path, check the health endpoint:  
-  - `https://example.com/metrics/healthy` → should return `ok`  
+* For the global path, check the health endpoint:
+  * `https://example.com/metrics/healthy` → should return `ok`
+* Use browser DevTools to verify that:
+  * Google scripts are loaded from `/metrics/`
+  * Other vendor scripts are loaded from `/metrics/js/{obfuscated}.js`
+  * Requests are made to your **first-party domain**.
+* Ensure events appear in the respective partner dashboards (Google Analytics, Facebook Events Manager, etc.).
 
-- Use browser DevTools to verify that:  
-  - Google scripts are loaded from `/metrics/`  
-  - Other vendor scripts are loaded from `/metrics/js/{obfuscated}.js`  
-  - Requests are made to your **first-party domain**.  
-
-- Ensure events appear in the respective partner dashboards (Google Analytics, Facebook Events Manager, etc.).  
-
----
+***
 
 ## Benefits
 
-- **Durability**: Tracking continues to work even with Safari ITP and third-party cookie restrictions.  
-- **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.  
-- **Centralized setup**: A single path (`/metrics`) manages all vendors.  
-- **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.  
-
+* **Durability**: Tracking continues to work even with Safari ITP and third-party cookie restrictions.
+* **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
+* **Centralized setup**: A single path (`/metrics`) manages all vendors.
+* **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
