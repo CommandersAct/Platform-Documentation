@@ -158,7 +158,7 @@ The cookie list displays optional labels for each cookie in the cookie list to i
 
 | Label                  | Description                                                                                                                 |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| **Inferred**           | The cookie was not identified directly, but inferred via the cookie database. It might be a false positive.                 |
+| **Inferred**           | The 3rd party cookie was inferred via the cookie database from a 3rd party well known hit.                                  |
 | **Missing**            | The cookie was not scanned for over one month. It might not be in active use anymore.                                       |
 | **Custom**             | The cookie was manually created.                                                                                            |
 | **Set before consent** | The cookie is set before a customer provides consent via Commanders Act CMP. This can be intentional for essential cookies. |
