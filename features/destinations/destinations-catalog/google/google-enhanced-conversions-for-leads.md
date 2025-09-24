@@ -6,7 +6,7 @@
 
 The Google Enhanced Conversions for Leads destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Google method [uploadClickConversions](https://developers.google.com/google-ads/api/rest/reference/rest/v17/customers/uploadClickConversions?hl=en#ClickConversion), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Google method [uploadClickConversions](https://developers.google.com/google-ads/api/reference/rpc/v21/ConversionUploadService/UploadClickConversions?transport=rest), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
