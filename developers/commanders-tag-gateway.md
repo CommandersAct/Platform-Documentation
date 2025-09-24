@@ -15,7 +15,7 @@ If your goal is to implement **Google Tag Gateway**, you are in the right place:
 
 A gateway setup improves **data collection quality and completeness** across your marketing stack.
 
-* Vendor scripts are served from your own domain, which reduces the likelihood of being blocked by adblockers.
+* Vendor scripts are served from your own domain, which redauces the likelihood of being blocked by adblockers.
 * Browser restrictions (such as Safari’s ITP) often limit or block third-party cookies and some 1st party javascript cookies, but with a first-party server-side setup, measurement remains more reliable.
 * This ensures **more accurate tracking**, providing partners with higher-quality signals for measurement, attribution, and optimization.
 
@@ -158,16 +158,18 @@ When using Cloudflare Free, the setup relies on a **simple Worker** that proxies
 2. Copy/paste the following code:
 
 ```javascript
+const prefix = "/metrics"; // Example path, replace with the path you choose in the previous step
+const sid = "12345"; // Example workspace ID (aka site ID), replace with your own ID
+
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
   const url = new URL(request.url);
-  const prefix = "/metrics";
   if (url.pathname.startsWith(prefix)) {
-    // Construct target URL
-    const targetUrl = `https://www.commander4.com${url.pathname}${url.search}`;
+    // Construct target URL (replace {sid} with your workspace/site ID above)
+    const targetUrl = `https://s${sid}.commander4.com${url.pathname}${url.search}`;
 
     // Clone request headers
     const newHeaders = new Headers(request.headers);
@@ -193,7 +195,7 @@ async function handleRequest(request) {
     });
     return fetch(proxyRequest);
   }
-  return new Response("Not Found", { status: 404 });
+  return new Response("Not Found", { status: 404 }); // Return 404 if request path does not match prefix
 }
 ```
 
