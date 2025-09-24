@@ -168,7 +168,7 @@ addEventListener("fetch", event => {
 async function handleRequest(request) {
   const url = new URL(request.url);
   if (url.pathname.startsWith(prefix)) {
-    // Construct target URL (replace {sid} with your workspace/site ID above)
+    // Construct target URL (it replaces ${sid} with your workspace/site ID above)
     const targetUrl = `https://s${sid}.commander4.com${url.pathname}${url.search}`;
 
     // Clone request headers
