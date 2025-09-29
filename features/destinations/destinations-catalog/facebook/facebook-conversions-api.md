@@ -43,10 +43,14 @@ Then you need the Access Token
 
 ## Where can I find the access token?
 
-You can set your access token via:
+You can set your access token in two ways:
 
-1. Facebook Login For Business Authentication, or
+1. Facebook Login For Business Authentication
 2. Generate a long-lived token
+
+{% hint style="info" %}
+If you configure both, the "Facebook Login For Business Authentication" will be prioritized.
+{% endhint %}
 
 ### Facebook Login For Business Authentication
 
