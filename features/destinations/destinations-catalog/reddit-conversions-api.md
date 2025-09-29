@@ -1,9 +1,5 @@
 # Reddit Conversions API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Reddit](https://redditinc.com/) is a social news aggregation, content rating, and forum social network.\
 [Reddit Conversions API](https://ads-api.reddit.com/docs/v2/#tag/Conversions) (CAPI) is a server-side solution to share your web conversion data directly with Reddit so you can measure and optimize your performance campaigns.
 
