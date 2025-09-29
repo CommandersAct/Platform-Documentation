@@ -6,7 +6,71 @@ description: >-
 
 # Release notes
 
-### Release 10.0.29 - August - 2025
+## Release 10.0.30 - September - 2025
+
+✨ **New Features**
+
+🧪 **Dry Mode for Destinations (General Availability)**\
+Dry Mode, previously in closed beta, is now available to all customers.
+
+* Simulate event delivery without sending data to the destination
+* Outbound HTTP requests are mocked
+* Full payloads visible in **Event Inspector**\
+  → Safer setups, faster validation, and more confidence when going live.
+
+📊 **Data Cleansing — Aggregation Functions**\
+You can now apply **aggregation functions** directly on array properties of events:
+
+* Functions: **AVERAGE, MIN, MAX, SUM, COUNT**
+* Use cases: calculate margin per transaction, total order value, enrich events with margin data from product catalog
+* Bonus: added **STRING()** function to convert numbers into strings
+
+⚙️ **Data Cleansing — Execution Timing**\
+Decide **when** your transformations run:
+
+* At event reception (default)
+* After enrichments (new)\
+  → Enables margin-enriched events for advanced segmentation, exports, or POAS steering.\
+  Currently in closed beta (open on request), rollout to all customers soon.
+
+📤 **New Destination — Reddit Conversions API**\
+Send your conversion data directly to Reddit via its Conversions API.
+
+* Share web conversions with Reddit Ads
+* Measure & optimize campaign performance
+* Easy configuration with predefined templates
+
+***
+
+**🛠️ Improvements**
+
+🧩 **Commanders Act Assistant v3.2.0**
+
+* Container version switching via dropdown
+* Hide empty variables for a cleaner view
+* Automatic internationalization (FR/EN)
+* Bugfix: `tC.event.*` no longer executes incorrectly on current page
+
+🗑️ **TMS — Soft Delete**
+
+* Deleted containers & branches kept in backup for **30 days**
+* Restore available by support/devops after accidental deletion
+* Past versions preserved for investigation\
+  → Peace of mind for customers & support teams.
+
+💸 **Server-Side Architecture Optimization**
+
+* **Faster event processing**, even under peak traffic
+* **Higher scalability**, ensuring smoother onboarding for large volumes
+* **Improved stability**, with fewer resource constraints
+
+📚 **Documentation in French**
+
+* Product documentation now available in **French**: [doc.commandersact.com/fr](https://doc.commandersact.com/fr/)
+
+***
+
+## Release 10.0.29 - August - 2025
 
 ✨ **New Features**
 
