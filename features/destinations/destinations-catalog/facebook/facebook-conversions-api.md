@@ -68,8 +68,6 @@ This is the recommended authentication method.
 
 3. Select `(4) Facebook Ads`\
    \
-   \
-   \
    ![](../../../../.gitbook/assets/token_3.png)\
 
 4. Log in with your Facebook account credentials.
