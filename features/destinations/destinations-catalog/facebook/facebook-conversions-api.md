@@ -43,6 +43,39 @@ Then you need the Access Token
 
 ## Where can I find the access token?
 
+You can set your access token via:
+
+1. Facebook Login For Business Authentication, or
+2. Generate a long-lived token
+
+### Facebook Login For Business Authentication
+
+{% hint style="success" %}
+This is the recommended authentication method.
+{% endhint %}
+
+1. In [your Commanders Act account](https://app.commandersact.com/), access `(1) Administration` → `(2) Connector Credentials` or click the link `add a new account` in the destination settings.\
+   \
+   ![](../../../../.gitbook/assets/token_1.png)\
+
+2. Click `(3) Add connector credentials` on the top right:\
+   \
+   ![](../../../../.gitbook/assets/token_2.png)\
+
+3. Select `(4) Facebook Ads`\
+   \
+   \
+   \
+   ![](../../../../.gitbook/assets/token_3.png)\
+
+4. Log in with your Facebook account credentials.
+5. Go to your destination settings and select your added credentials in the drop-down menu under `(5) API Authentication` → `(6) Credentials`\
+   \
+   ![](../../../../.gitbook/assets/token_4.png)
+6. Save your destination settings.
+
+### Generate a long-ived token
+
 1. Go to [Meta Event Manager](https://www.facebook.com/events_manager2/)&#x20;
 2. On the left menu, select `(1)` `Data sources` .
 
@@ -64,7 +97,7 @@ Then you need the Access Token
 If you can't click the link "Generate access token" then you don't have the admin rights.
 {% endhint %}
 
-6. Copy and paste your access token into the field `API Access Token`  in your destination.
+6. Copy and paste your access token into the field `API Access Token`  in your destination and save your destination settings.
 
 ## How to manage consents?
 
