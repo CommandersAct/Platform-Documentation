@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.2
+
+Release date:  **30/09/2025**
+
+* [public release] Optimizations in container generation process
+
 ### 99.1
 
 Release date:  **08/09/2025**
