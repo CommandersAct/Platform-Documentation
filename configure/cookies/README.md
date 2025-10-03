@@ -50,7 +50,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Visitor identifier used to compute deduplicated statistics per user (for campaign and on-site tracking, segmentation, ...). CMP Commanders Act uses this cookie to measure statistics for privacy banner performance after a visitor provided consent. Before users provided consent CMP Commanders Act uses the TCPID cookie to measure anonymous statistics for privacy banner.
+**Storage purpose(s):** Visitor identifier used to compute deduplicated statistics per user (for campaign and on-site tracking, segmentation, ...). 
 
 </details>
 
