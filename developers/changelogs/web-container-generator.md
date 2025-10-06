@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.3
+
+Release date:  **06/10/2025**
+
+* Optimizations in custom JS inclusion in Trust
+
 ### 99.2
 
 Release date:  **30/09/2025**
