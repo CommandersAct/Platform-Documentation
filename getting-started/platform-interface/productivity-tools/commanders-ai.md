@@ -30,9 +30,10 @@ All Commanders AI suggestions are non-binding and subject to human validation. U
 Commanders AI includes several advanced functionalities (some are limited to beta testers) :
 
 1. [**Automatic Change Summary**](commanders-ai.md#id-2.1-automatic-change-summary-in-web-containers): Generates a summary of modifications when generating a web container in the Tag Management System.
-2. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta)(closed beta): Conversational assistant to generate data transformation formulas.
-3. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha)(closed beta): Optimized naming and description proposals for destinations and segments.
-4. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha)(closed beta): Intelligent assignment of privacy categories when adding a tag or destination.
+2. [**Cookie description translation/categorisation**](../../../features/realtime-cookie-scanner.md): Find missing description/categorisation in Realtime Cookie Scanner, translate cookie descriptions in other languages
+3. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta)(closed beta): Conversational assistant to generate data transformation formulas.
+4. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha)(closed beta): Optimized naming and description proposals for destinations and segments.
+5. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha)(closed beta): Intelligent assignment of privacy categories when adding a tag or destination.
 
 ***
 
@@ -61,7 +62,7 @@ Users can manually edit the proposed summary before validation. This ensures the
 Users have access to additional customization options via the gear icon ⚙️:
 
 * **Summary Length**: Choose between short, medium, or detailed summaries.
-* **Custom Prompting**: Define specific formatting rules or content guidelines for the AI to follow when generating summaries. Users can specify formatting or content preferences, such as writing in uppercase, adding emojis, structuring summaries with bullet points,  (e.g., "Write in uppercase with emoticons with max 5 bullet points"). This allows for greater adaptability to specific workflows or reporting standards.
+* **Custom Prompting**: Define specific formatting rules or content guidelines for the AI to follow when generating summaries. Users can specify formatting or content preferences, such as writing in uppercase, adding emojis, structuring summaries with bullet points, (e.g., "Write in uppercase with emoticons with max 5 bullet points"). This allows for greater adaptability to specific workflows or reporting standards.
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt="" width="354"><figcaption></figcaption></figure>
 
@@ -91,7 +92,7 @@ Users can edit and test the generated formulas to ensure they meet their require
 
 ***
 
-### 2.3. Smart Suggestions for Names and Descriptions  (closed alpha)
+### 2.3. Smart Suggestions for Names and Descriptions (closed alpha)
 
 #### Feature Overview
 
@@ -163,10 +164,10 @@ Its usage is strictly limited to **configuration assistance and user interface e
 
 No user event data or identifiers are currently exposed to AI models.
 
-#### 3.5. EU AI Act Compliance  
+#### 3.5. EU AI Act Compliance
 
-Commanders AI falls under the **low-risk category** as defined by the European AI Act.  
-It provides only configuration assistance and suggestions, with **no autonomous or irreversible decisions**.  
+Commanders AI falls under the **low-risk category** as defined by the European AI Act.\
+It provides only configuration assistance and suggestions, with **no autonomous or irreversible decisions**.\
 This means that the existing measures already described (transparency, human oversight, governance, EU hosting) ensure full compliance with the obligations applicable to low-risk AI systems.
 
 ## 4. AI Model Governance and Updates
@@ -202,4 +203,4 @@ To illustrate this approach, some of the models we evaluate or integrate are pro
 
 ## 5. Support and Assistance
 
-For any technical questions or issues related to **Commanders AI**, contact our support team at support@commandersact.com&#x20;
+For any technical questions or issues related to **Commanders AI**, contact our support team at support@commandersact.com
