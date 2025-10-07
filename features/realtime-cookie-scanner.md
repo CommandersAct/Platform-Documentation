@@ -204,15 +204,14 @@ You can also roll back to a previous version if needed.
 
 ### 8. Labels and Meanings
 
-| Label              | Meaning                                        |
-| ------------------ | ---------------------------------------------- |
-| **scanned**        | Detected on live user sessions.                |
-| **new**            | Newly found cookie pending review.             |
-| **missing**        | Previously seen cookie no longer active.       |
-| **before-consent** | Cookie set before user consent.                |
-| **rare**           | Detected in < 1 % of sessions.                 |
-| **inferred**       | Identified via third-party domain correlation. |
-| **custom**         | Manually created cookie record.                |
+| Label              | Meaning                                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------------------- |
+| **scanned**        | Detected on live user sessions.                                                                 |
+| **new**            | Newly found cookie pending review.                                                              |
+| **missing**        | Previously seen cookie not been scanned for over one month                                      |
+| **before-consent** | Cookie set before user consent.                                                                 |
+| **inferred**       | The 3rd-party cookie was inferred via the cookie database from a known 3rd-party domain request |
+| **custom**         | Manually created cookie record.                                                                 |
 
 ***
 
