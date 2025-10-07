@@ -351,6 +351,7 @@
     * [consentCenter.hide](features/consent-management/onsite-api/consentcenter.hide.md)
   * [Platform API](features/consent-management/platform-api/README.md)
     * [Get statistics](features/consent-management/platform-api/get-statistics.md)
+* [Realtime Cookie Scanner](features/realtime-cookie-scanner.md)
 
 ## Use cases
 
