@@ -1,14 +1,5 @@
 # Realtime Cookie Scanner
 
-Excellent — voici la **documentation complète et mise à jour du Realtime Cookie Scanner (RCS)**, avec le **chapitre 7** entièrement repris à partir de l’ancienne documentation, mais **réécrite pour être plus fluide, directe et claire**, sans rien retirer d’utile.\
-J’ai gardé les trois modes d’intégration (JS, HTML, JSON), la gestion des versions, la preview, l’export, et le déploiement, tout en éliminant les redondances et les phrases inutiles.
-
-***
-
-## 🧠 Realtime Cookie Scanner (RCS) — Product Documentation
-
-***
-
 ### 1. Introduction
 
 The **Realtime Cookie Scanner (RCS)** is Commanders Act’s next-generation module for **continuous, intelligent, and real-world monitoring** of cookies and client-side storage (cookies, localStorage, sessionStorage, IndexedDB, etc.).
@@ -53,27 +44,14 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 #### 🧠 Knowledge Base & AI Classification
 
-* Powered by a **large cookie database** enriched through Commanders Act’s browser extensions (Chrome & Edge).
+* Powered by a **large cookie database** enriched through Commanders Act’s browser extensions (Chrome & Edge), leveraging anonymized data from thousands of users.
 * Auto-detects vendor, purpose, and category.
-* Uses AI to spot renamed cookies, domain changes, and lifespan variations.
+* Uses AI to find rare cookies description/category, with human validation.
 * Automatically ranks cookies by risk and frequency.
 
 #### ⚙️ Supported Storage Types
 
-* 1st Party Cookies
-* 3rd Party Cookies
-* HttpOnly 1st Party Cookies
-* HttpOnly 3rd Party Cookies
-* localStorage
-* sessionStorage
-
-#### 🕓 Duration Normalization
-
-* Session → “Session”
-* < 1 month → days
-* 1–36 months → months
-* > 36 months → years
-* > 100 years → “Unlimited”
+1st Party Cookies, 3rd Party Cookies, HttpOnly 1st Party Cookies, HttpOnly 3rd Party Cookies, localStorage, sessionStorage
 
 #### 🔔 Realtime Alerts (< 60 s)
 
@@ -83,15 +61,15 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 #### 🌍 Multilingual Dynamic Cookie Table
 
-* Auto-translated, continuously updated table.
+* AI-translated, continuously updated table.
 * Export in HTML, JSON, CSV, XLSX.
 * Integrates with any website or CMP / TMS.
 
 #### 📊 Live Dashboards
 
-* Always up-to-date (real data, not batches).
+* Always up-to-date (real & realtime data, not batches).
 * Breakdowns by vendor, category, domain, frequency, or status.
-* Filters by country and consent state.
+* Filters by domain, consent state, frequency, etc.
 
 ***
 
@@ -265,3 +243,8 @@ They display active, new, and missing cookies and support filtering by partner, 
 
 ***
 
+### 12. AI Act compliancy
+
+{% content-ref url="../getting-started/platform-interface/productivity-tools/commanders-ai.md" %}
+[commanders-ai.md](../getting-started/platform-interface/productivity-tools/commanders-ai.md)
+{% endcontent-ref %}
