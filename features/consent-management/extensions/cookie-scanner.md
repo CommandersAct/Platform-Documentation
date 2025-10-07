@@ -4,7 +4,11 @@ description: >-
   their website and to provide users with an automated cookie notice.
 ---
 
-# Cookie Scanner
+# Cookie Scanner (deprecated)
+
+{% hint style="warning" %}
+This product is now deprecated and replaced by the Realtime Cookie Scanner.
+{% endhint %}
 
 ## Overview
 

@@ -319,7 +319,7 @@
     * [Exports](features/consent-management/user-guides/exports.md)
     * [Settings](features/consent-management/user-guides/settings.md)
   * [Extensions](features/consent-management/extensions/README.md)
-    * [Cookie Scanner](features/consent-management/extensions/cookie-scanner.md)
+    * [Cookie Scanner (deprecated)](features/consent-management/extensions/cookie-scanner.md)
     * [Piggybacking](features/consent-management/extensions/piggybacking.md)
     * [Tag Firewall](features/consent-management/extensions/tag-firewall.md)
   * [Marketing Preferences Center (additional module)](features/consent-management/preference-center.md)
