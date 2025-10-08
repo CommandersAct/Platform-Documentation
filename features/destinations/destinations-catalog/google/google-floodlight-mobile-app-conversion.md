@@ -1,9 +1,5 @@
 # Google Floodlight Mobile App Conversion
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Floodlight](https://support.google.com/searchads/answer/7298761?hl=en) provides you insight into the actions that users take after they view or click on ads. Using this destination you can track installs of your app or activities that take place in the app.
 
 ## Key features
