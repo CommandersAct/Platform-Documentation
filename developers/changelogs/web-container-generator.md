@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.4
+
+Release date:  **13/10/2025**
+
+* [public release] Remove tC.fn.css & tC.fn.resetCss support
+
 ### 99.3
 
 Release date:  **06/10/2025**
