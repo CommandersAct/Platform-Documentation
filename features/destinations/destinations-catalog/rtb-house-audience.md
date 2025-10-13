@@ -14,7 +14,7 @@ Audiences are synchronized using their names as identifier. Avoid renaming to ma
 
 The RTB House Audience destination provides the following key features:
 
-* **Audience sharing**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model drives audience sharing with Batch, meaning that you can synchronize your existing user segments, with your partner, in a seamless way.
+* **Audience sharing**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model drives audience sharing with RTB House, meaning that you can synchronize your existing user segments, with your partner, in a seamless way.
 
 ## Destination setup
 
