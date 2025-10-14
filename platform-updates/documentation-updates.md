@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 17/10/2025
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud-data-extension-upsert-row.md" %}
+[salesforce-marketing-cloud-data-extension-upsert-row.md](../features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud-data-extension-upsert-row.md)
+{% endcontent-ref %}
+
 ## 03/10/2025
 
 Destination documentation (updates):
