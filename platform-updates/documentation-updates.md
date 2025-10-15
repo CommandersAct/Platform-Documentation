@@ -12,6 +12,12 @@ Destination documentation:
 [salesforce-marketing-cloud-data-extension-upsert-row.md](../features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud-data-extension-upsert-row.md)
 {% endcontent-ref %}
 
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/awin.md" %}
+[awin.md](../features/destinations/destinations-catalog/awin.md)
+{% endcontent-ref %}
+
 ## 03/10/2025
 
 Destination documentation (updates):
