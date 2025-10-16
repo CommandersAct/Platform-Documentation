@@ -8,8 +8,16 @@ description: >-
 
 ## Introduction
 
-For each event, there is some properties required. \
-In any cases, the property `event_name` is required. \
+For each event, there is some properties required.&#x20;
+
+In any cases, the following properties are required :&#x20;
+
+* `event_name`
+* `context.event_id`
+* `context.event_timestamp`
+
+Note : The commanders act [one tag](../../../getting-started/integrating-your-data/onetag-tutorial.md) and the [mobile sdks](../about-events/mobile-sdk-event-specificity.md) put automatically the context properties.
+
 In this section you can find the list of all our standard events, with the list of standard properties required or not.
 
 {% content-ref url="common-events.md" %}
@@ -1090,7 +1098,7 @@ Fire this event when one or more items are purchased by a user.
 
 #### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
-<table><thead><tr><th width="160">Name</th><th width="99">Type</th><th width="80">Required</th><th width="157">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>O_1245</td><td>Transaction id. Used as key for updates</td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td><strong>Yes</strong></td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p>All properties that you add here will be used as conditions for matching users in our database.</p><p><code>cosent_categories</code> is automatically filled if you use Commanders Act CMP.</p></td></tr><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The monetary value of the event (shipping price and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>shipping_amount</code></td><td><code>number</code></td><td>No</td><td>3.33</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>tax_amount</code></td><td><code>number</code></td><td>No</td><td>3.20</td><td>Tax associated with a transaction.</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>type</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>offline</td><td>Type of conversion (online, offline, call etc.)</td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr><tr><td><code>payment_method</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>card</td><td>Payment method type (see list of <a href="./#payment-methods">possible values</a> below)</td></tr><tr><td><code>status</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>in_progress</td><td>Status of the conversion (see list of <a href="./#purchase-status">possible values</a> below).<br><em>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature</em></td></tr></tbody></table>
+<table><thead><tr><th width="182">Name</th><th width="113">Type</th><th>Required</th><th>Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>O_1245</td><td>Transaction id. Used as key for updates</td></tr><tr><td><code>event_name</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>purchase</td><td>Have to be purchase</td></tr><tr><td><code>type</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>offline</td><td>Type of conversion (online, offline, call etc.)</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The final price of the conversion (shipping and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The final price of the conversion (shipping and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>payment_method</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>card</td><td>Payment method type (see list of <a href="./#payment-methods">possible values</a> below)</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>status</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>in_progress</td><td>Status of the conversion (see list of <a href="./#purchase-status">possible values</a> below).<br><em>Conversions with status "pending" are not included in default sum and counts aggregated on augmented user attributes feature</em></td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td><strong>Yes</strong></td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3],</code> </p><p><code>card:3320457845</code>  </p><p><code>}</code></p></td><td><p>All properties that you add here will be used as conditions for matching users in our database.</p><p><code>consent_categories</code> is automatically filled if you use Commanders Act CMP.</p></td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td><strong>Yes</strong></td><td></td><td>The items for the event.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>tax_amount</code></td><td><code>number</code></td><td>No</td><td>3.20</td><td>Amount of the taxes at the end of the conversion</td></tr><tr><td><code>shipping_amount</code></td><td><code>number</code></td><td>No</td><td>3.33</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>shipping_provider</code></td><td><code>string</code></td><td>No</td><td>Post</td><td>Provider information</td></tr><tr><td><code>discount_value</code></td><td><code>number</code></td><td>No</td><td>3.98</td><td>Amount of discount (tax <strong>included</strong>)</td></tr><tr><td><code>original_value</code></td><td><code>number</code></td><td>No</td><td>19.98</td><td>First price for the original conversion (taxes <strong>included</strong>)</td></tr><tr><td><code>original_revenue</code></td><td><code>number</code></td><td>No</td><td>16.78</td><td>First revenue for the original conversion (taxes <strong>excluded</strong>)</td></tr><tr><td><code>original_tax_amount</code></td><td><code>number</code></td><td>No</td><td>3.20</td><td>Amount of the taxes at the beginning of the conversion</td></tr><tr><td><code>returned_value</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Amount of returned items (taxes <strong>included</strong>)</td></tr><tr><td><code>returned_quantity</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Quantity of returned items (taxes <strong>included</strong>)</td></tr><tr><td><code>cancelled_value</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Amount of cancelled items (taxes <strong>included</strong>)</td></tr><tr><td><code>cancelled_quantity</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Quantity of cancelled items (taxes <strong>included</strong>)</td></tr></tbody></table>
 
 **Automatically added by cact API**
 
@@ -1101,6 +1109,100 @@ Fire this event when one or more items are purchased by a user.
 **Example**
 
 {% tabs %}
+{% tab title="json" %}
+```json
+{
+   "id": "O_12345",
+   "event_name": "purchase",
+   "type": "offline",
+   "value": 0,
+   "revenue": 16.00,
+   "payment_method": "card",
+   "currency": "EUR",
+   "status": "in_progress",
+   "user": {
+      "id": "12345",
+      "email": "toto@domain.fr",
+      "consent_categories": [
+         1,
+         3
+      ],
+      "card": "3320457845"
+   },
+   "context": {
+      "event_id": "2025uaoauud",
+      "event_timestamp": "2025-04-18T07:53:39.974+02:00"
+   },
+   "items": [
+      {
+         "id": "SKU_12345",
+         "quantity": 1,
+         "price": 9.99,
+         "variant": "red",
+         "discount": 1.99,
+         "value": 8.0,
+         "cancelled_value": 0,
+         "cancelled_quantity": 0,
+         "original_value": 9.99,
+         "returned_value": 0,
+         "returned_quantity": 0,
+         "product": {
+            "id": "12345",
+            "name": "Trex tshirt",
+            "category_1": "clothes",
+            "category_2": "t-shirts",
+            "category_3": "boy",
+            "brand": "Lacoste",
+            "colors": [
+               "red"
+            ],
+            "price": 9.99
+         }
+      },
+      {
+         "id": "SKU_12346",
+         "quantity": 1,
+         "price": 9.99,
+         "variant": "green",
+         "coupon": "CHRISTMAS",
+         "discount": 1.99,
+         "value": 8.0,
+         "cancelled_value": 0,
+         "cancelled_quantity": 0,
+         "original_value": 9.99,
+         "returned_value": 0,
+         "returned_quantity": 0,
+         "product": {
+            "id": "12346",
+            "name": "Heart tshirt",
+            "category_1": "clothes",
+            "category_2": "t-shirts",
+            "category_3": "girl",
+            "brand": "Jenyfuen",
+            "colors": [
+               "blue",
+               "white"
+            ],
+            "price": 9.99
+         }
+      }
+   ],
+   "coupon": "CHRISTMAS",
+   "tax_amount": 3.20,
+   "shipping_amount": 3.33,
+   "shipping_provider": "Post",
+   "discount_value": 3.98,
+   "original_value": 19.98,
+   "original_revenue": 16.78,
+   "original_tax_amount": 3.20,
+   "returned_value": 0,
+   "returned_quantity": 0,
+   "cancelled_value": 0,
+   "cancelled_quantity": 0
+}
+```
+{% endtab %}
+
 {% tab title="Javascript" %}
 ```javascript
 cact('trigger','purchase', {
@@ -1252,72 +1354,6 @@ var event = TCPurchaseEvent();
 serverside.execute(event);
 ```
 {% endtab %}
-
-{% tab title="json" %}
-```json
-{
-    "event_name": "purchase",
-        "id": "O_12345",
-        "coupon": "CHRISTMAS",
-        "revenue": 16.00,
-        "value": 22.53,
-        "shipping_amount": 3.33,
-        "tax_amount": 3.20,
-        "currency": "EUR",
-        "items": [
-            {
-                "id": "SKU_12345",
-                "quantity": 1,
-                "price": 9.99,
-                "variant": "red",
-                "coupon": "CHRISTMAS",
-                "discount": 1.99,
-                "product": {
-                    "id": "12345",
-                    "name": "Trex tshirt",
-                    "category_1": "clothes",
-                    "category_2": "t-shirts",
-                    "category_3": "boy",
-                    "brand": "Lacoste",
-                    "colors": [
-                        "red"
-                    ],
-                    "price": 9.99
-                }
-            },
-            {
-                "id": "SKU_12346",
-                "quantity": 1,
-                "price": 9.99,
-                "variant": "green",
-                "coupon": "CHRISTMAS",
-                "discount": 1.99,
-                "product": {
-                    "id": "12346",
-                    "name": "Heart tshirt",
-                    "category_1": "clothes",
-                    "category_2": "t-shirts",
-                    "category_3": "girl",
-                    "brand": "Jenyfion",
-                    "colors": [
-                        "blue",
-                        "white"
-                    ],
-                    "price": 9.99
-                }
-            }
-        ],
-        "user": {
-            "id": "12345",
-            "email": "toto@domain.fr",
-            "consent_categories": [
-                1,
-                3
-            ]
-        }
-}
-```
-{% endtab %}
 {% endtabs %}
 
 ## refund
@@ -1326,7 +1362,7 @@ Fire this event when a purchase was refund
 
 #### Parameters **(required and recommended)** <a href="#parameters_17" id="parameters_17"></a>
 
-<table><thead><tr><th width="182">Name</th><th width="99">Type</th><th width="76">Required</th><th width="154">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>O_1245</td><td>Transaction id. Used as key for updates</td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p>All properties that you add here will be used as conditions for matching users in our database.</p><p><code>cosent_categories</code> is automatically filled if you use Commanders Act CMP.</p></td></tr><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The monetary value of the event (shipping price and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>shipping_amount</code></td><td><code>number</code></td><td>No</td><td>3.33</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>tax_amount</code></td><td><code>number</code></td><td>No</td><td>3.20</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>type</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>offline</td><td>Type of conversion (online, offline, call etc.)</td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td>No*</td><td></td><td>(*) <code>items</code> is required for partial refunds but it can be omitted for full refunds.</td></tr></tbody></table>
+<table><thead><tr><th width="182">Name</th><th width="99">Type</th><th width="76">Required</th><th width="154">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>O_1245</td><td>Transaction id. Used as key for updates</td></tr><tr><td><code>user</code></td><td><a href="./#user"><code>Object&#x3C;User></code></a></td><td>Yes</td><td><p><code>{</code><br><code>id: '12345',</code><br><code>email: 'toto@domain.fr',</code></p><p><code>consent_categories: [1,3]</code></p><p><code>}</code></p></td><td><p>All properties that you add here will be used as conditions for matching users in our database.</p><p><code>consent_categories</code> is automatically filled if you use Commanders Act CMP.</p></td></tr><tr><td><code>revenue</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>16.00</td><td>The monetary value of the event (shipping price and taxes <strong>excluded</strong>) after discount</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>22.53</td><td>The monetary value of the event (shipping price and taxes <strong>included</strong>) after discount</td></tr><tr><td><code>shipping_amount</code></td><td><code>number</code></td><td>No</td><td>3.33</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>tax_amount</code></td><td><code>number</code></td><td>No</td><td>3.20</td><td>Shipping cost associated with a transaction.</td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td><strong>Yes</strong></td><td>EUR</td><td>Currency of the purchase or items associated with the event, in 3-letter ISO 4217 format.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>Coupon code used for a purchase.</td></tr><tr><td><code>type</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>offline</td><td>Type of conversion (online, offline, call etc.)</td></tr><tr><td><code>items</code></td><td><a href="./#item"><code>Array&#x3C;Item></code></a></td><td>No*</td><td></td><td>(*) <code>items</code> is required for partial refunds but it can be omitted for full refunds.</td></tr></tbody></table>
 
 **Automatically added by cact API**
 
@@ -2473,13 +2509,13 @@ serverside.execute(event);
 
 #### Parameters **(required and recommended)** <a href="#parameters_27" id="parameters_27"></a>
 
-<table><thead><tr><th width="179">Name</th><th>Type</th><th width="64">Required</th><th width="129">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>SKU_12345</td><td><p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p></td></tr><tr><td><code>product</code></td><td><a href="./#product"><code>Object&#x3C;Product></code></a></td><td><strong>Yes</strong></td><td></td><td>The product details</td></tr><tr><td><code>variant</code></td><td><code>string</code></td><td>No</td><td>red</td><td>The variant of the item.</td></tr><tr><td><code>list_position</code></td><td><code>number</code></td><td>No</td><td>1</td><td>The item's position in a list or collection.</td></tr><tr><td><code>discount</code></td><td><code>number</code></td><td>No</td><td>2.00</td><td>Monetary value of discount for one current item</td></tr><tr><td><code>quantity</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>2</td><td>The quantity of the item.</td></tr><tr><td><code>affiliation</code></td><td><code>string</code></td><td><strong>No</strong>*</td><td>DOWNLOAD</td><td>Required for most affiliation's destination.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>The coupon code associated with an item.</td></tr></tbody></table>
+<table><thead><tr><th width="179">Name</th><th>Type</th><th width="64">Required</th><th width="129">Example</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>SKU_12345</td><td><p>The ID of an item.</p><p>If you don't have an item id, you can use the product id as value. This field is used as key for updates (ex : refund)</p></td></tr><tr><td><code>product</code></td><td><a href="./#product"><code>Object&#x3C;Product></code></a></td><td><strong>Yes</strong></td><td></td><td>The product details</td></tr><tr><td><code>variant</code></td><td><code>string</code></td><td>No</td><td>red</td><td>The variant of the item.</td></tr><tr><td><code>list_position</code></td><td><code>number</code></td><td>No</td><td>1</td><td>The item's position in a list or collection.</td></tr><tr><td><code>discount</code></td><td><code>number</code></td><td>No</td><td>2.00</td><td>Monetary value of discount for one current item</td></tr><tr><td><code>quantity</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>2</td><td>The quantity of the item.</td></tr><tr><td><code>affiliation</code></td><td><code>string</code></td><td><strong>No</strong>*</td><td>DOWNLOAD</td><td>Required for most affiliation's destination.</td></tr><tr><td><code>coupon</code></td><td><code>string</code></td><td>No</td><td>CHRISTMAS</td><td>The coupon code associated with an item.</td></tr><tr><td><code>value</code></td><td><code>number</code></td><td>No</td><td>0</td><td>The final price of items (taxes <strong>included</strong>). It corresponds to the unit price tax included  * quantity of the items</td></tr><tr><td><code>cancelled_value</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Amount of<br>cancelled items<br>(taxes <strong>included</strong>)</td></tr><tr><td><code>cancelled_quantity</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Quantity of cancelled items (taxes <strong>included</strong>)</td></tr><tr><td><code>original_value</code></td><td><code>number</code></td><td>No</td><td>10.00</td><td>Original price for the item (taxes <strong>included</strong>)</td></tr><tr><td><code>returned_value</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Item returned price (taxes <strong>included</strong>)</td></tr><tr><td><code>returned_quantity</code></td><td><code>number</code></td><td>No</td><td>0</td><td>Items quantity returned</td></tr></tbody></table>
 
 ### Product
 
 **Parameters (required and recommended)**
 
-<table><thead><tr><th width="133">Name</th><th>Type</th><th width="76">Required</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong>*</td><td>12345</td><td><p>The ID of the product (ex: in your product catalog database)<br>The <code>item.id</code> and <code>product.id</code> do not have to be different. If they are different, typically the <code>product.id</code> is a database identifier, like <code>9714107479</code> and the <code>item.id</code> is a public-facing identifier like <code>SKU-12345</code>.</p><p>(*) If you have imported your product's catalog in the platform, the <code>product.id</code> corresponds to the unique product id in the catalog and can be used with id expansion feature.</p></td></tr><tr><td><code>name</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>Trex</td><td>Product name</td></tr><tr><td><code>price</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>14.99</td><td>The price of the product (taxes and discount <strong>excluded)</strong></td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td>No</td><td>EUR</td><td><p>Currency of the <code>price</code>, in 3-letter ISO 4217 format.</p><p>If set, event-level <code>currency</code> is ignored.<br><br>Multiple currencies per event is not supported. Each item should set the same currency.</p></td></tr><tr><td><code>category_1</code></td><td><code>string</code></td><td>No</td><td>T-Shirts</td><td>Product Category (context-specific). <code>item_category2</code> through <code>item_category5</code> can also be used if the product has many categories.</td></tr><tr><td><code>brand</code></td><td><code>string</code></td><td>No</td><td>Lacoste</td><td>Product brand</td></tr><tr><td><code>colors</code></td><td><code>Array[string]</code></td><td>No</td><td>[blue, white]</td><td>The color(s) of the product</td></tr><tr><td><code>size</code></td><td><code>string</code></td><td>No</td><td>128</td><td>Size of the article</td></tr></tbody></table>
+<table><thead><tr><th width="133">Name</th><th>Type</th><th width="76">Required</th><th>Example Value</th><th>Description</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>string</code></td><td><strong>Yes</strong>*</td><td>12345</td><td><p>The ID of the product (ex: in your product catalog database)<br>The <code>item.id</code> and <code>product.id</code> do not have to be different. If they are different, typically the <code>product.id</code> is a database identifier, like <code>9714107479</code> and the <code>item.id</code> is a public-facing identifier like <code>SKU-12345</code>.</p><p>(*) If you have imported your product's catalog in the platform, the <code>product.id</code> corresponds to the unique product id in the catalog and can be used with id expansion feature.</p></td></tr><tr><td><code>name</code></td><td><code>string</code></td><td><strong>Yes</strong></td><td>Trex</td><td>Product name</td></tr><tr><td><code>price</code></td><td><code>number</code></td><td><strong>Yes</strong></td><td>14.99</td><td>The price of the product (with discount and taxes <strong>excluded)</strong></td></tr><tr><td><code>currency</code></td><td><code>string (ISO 4217)</code></td><td>No</td><td>EUR</td><td><p>Currency of the <code>price</code>, in 3-letter ISO 4217 format.</p><p>If set, event-level <code>currency</code> is ignored.<br><br>Multiple currencies per event is not supported. Each item should set the same currency.</p></td></tr><tr><td><code>category_1</code></td><td><code>string</code></td><td>No</td><td>T-Shirts</td><td>Product Category (context-specific). <code>item_category2</code> through <code>item_category5</code> can also be used if the product has many categories.</td></tr><tr><td><code>brand</code></td><td><code>string</code></td><td>No</td><td>Lacoste</td><td>Product brand</td></tr><tr><td><code>colors</code></td><td><code>Array[string]</code></td><td>No</td><td>[blue, white]</td><td>The color(s) of the product</td></tr><tr><td><code>size</code></td><td><code>string</code></td><td>No</td><td>128</td><td>Size of the article</td></tr></tbody></table>
 
 ### User
 
