@@ -22,7 +22,7 @@ Look to the menu Domain Management for CDN 1st party
 
 Click on "Add Subdomain"
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (613).png" alt=""><figcaption></figcaption></figure>
 
 Enter your subdomain name
 
@@ -30,23 +30,20 @@ Enter your subdomain name
 
 Once saved, the new subdomain will be displayed in your list
 
-<figure><img src="../../../.gitbook/assets/Capture d&#x27;écran 2024-10-10 174605.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (614).png" alt=""><figcaption></figcaption></figure>
 
 ### Validate your configuration
 
 Once your subdomain is added, you need to validate your configuration, to obtain a Valid Certificate\
 It will be validated only if your CNAME has been [properly configured](cname-record.md#how-the-cname-creation-process-works)
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
 
-### Activation
+<figure><img src="../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
-As long as the domain isn't activated, your workspace will not be impacted by your configuration.\
-Once activated, all your Web Container(s) & Privacy banner(s) will be hosted on the new subdomain(s)
+Once you configuration has been validated, Web Containers & Privacy files will be hosted on our regular CDN URL and on you First Party domain URL. For more details, look to the "[Go Live with 1st Party Hosting](cdn-1st.md#go-live-with-1st-party-hosting)" section of this documentation
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
-
-### Multiple Workspaces Management
+### Multiple work spaces Management
 
 Your configuration is using multiple work spaces?\
 1st party hosting allows you to share a subdomain between different sites IDs, as long as they belong to the same "invoicing account".
@@ -57,7 +54,7 @@ Your configuration is using multiple work spaces?\
 
 Instead of "Add subdomain", click on "Load subdomain"
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
 
 Select in the drop down's menu the subdomain you need to use on your workspace.
 
@@ -66,14 +63,14 @@ Select in the drop down's menu the subdomain you need to use on your workspace.
 A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain". \
 Note: The subdomain will remains activated on the site where it is configured.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Good to know! \
 On site copy, the CDN 1st configuration(s) will not be copied, you'll need to load subdomains from the "parent" site.
 {% endhint %}
 
-### Go live with CDN 1st
+### Go live with 1st party Hosting
 
 When your setup is done, the Deploy step of Web Containers & Privacy banners are now impacted.\
 That means your files will now hosted on your new domain.
