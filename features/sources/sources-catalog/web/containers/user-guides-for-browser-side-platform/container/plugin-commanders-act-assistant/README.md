@@ -42,7 +42,7 @@ On click, you will be invited to enter the expected landing page for your test s
 
 To **turn off the override**, simply click the **button "stop override" on the plugin**.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="408"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="408"><figcaption></figcaption></figure>
 
 ### Monitor Tags in Action
 

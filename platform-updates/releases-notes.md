@@ -217,7 +217,7 @@ The AI journey begins with new tools to assist your daily work:
 * Formula generator pop-in for advanced setups
 *   Side panel guidance for Commanders\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -293,7 +293,7 @@ Web container generation is now faster and supports larger containers (though sm
 
 New TMS UI with contextual side nav
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -461,7 +461,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 *   You can now view your password while logging in! This small addition aims to enhance accessibility for all users.\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="283"><figcaption></figcaption></figure>
 
 ***
 
@@ -469,7 +469,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 *   The navigation menu now includes a shortcut to our Sources Catalog, saving you a click and making it even easier to locate the resources you need.\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="185"><figcaption></figcaption></figure>
 
 ***
 
@@ -864,7 +864,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Simplified workflows for easier navigation
 * Immediate issue detection for data quality perfection
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -939,7 +939,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 <figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -1164,7 +1164,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     We added two new type of charts in LRB : bar chart and pie chart.\
     You can retrieve them in the edition part of a LRB report !\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Live Report Builder: UX enhancement**\
