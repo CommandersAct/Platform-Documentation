@@ -41,7 +41,7 @@ It will be validated only if your CNAME has been [properly configured](cname-rec
 
 <figure><img src="../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
-Once your configuration has been validated, First Party Hosting will be activated and your Web Containers & Privacy files will be hosted on our 'regular' CDN URL as well as on your First Party domain URL. For more details on how to finalise activation, refer to the"[Go Live with 1st Party Hosting](cdn-1st.md#go-live-with-1st-party-hosting)" section of this documentation.
+Once your configuration has been validated, First Party Hosting will be activated and your Web Containers & Privacy files will be hosted on our 'regular' CDN URL as well as on your First Party domain URL. For more details on how to finalise activation, refer to the "[Go Live with 1st Party Hosting](cdn-1st.md#go-live-with-1st-party-hosting)" section of this documentation.
 
 ### Multiple work spaces Management
 
