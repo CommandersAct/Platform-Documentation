@@ -12,7 +12,7 @@ The technical session cookies for First party domain tracking have been renamed.
 
 Following cookies are used automatically in depending on the installed Commanders Act products.
 
-### TMS + CMP + CAMPAIGN + DATA&#x20;
+### TMS + CMP + CAMPAIGN + DATA
 
 <details>
 
@@ -50,7 +50,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Visitor identifier used to compute deduplicated statistics per user (for campaign and on-site tracking, segmentation, ...). 
+**Storage purpose(s):** Visitor identifier used to compute deduplicated statistics per user (for campaign and on-site tracking, segmentation, ...).
 
 </details>
 
@@ -174,10 +174,9 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used to identify visitors exposed to the privacy banner. CMP Commanders Act uses this cookie to measure statistics for privacy banner usage until visitors provide consent for the TCID cookie. With this 2-cookie system, CMP Commanders Act is the only CMP that has been granted the right of exemption from consent for statistical measurement by the French CNIL. [https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience](https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience) \
+**Storage purpose(s):** Used to identify visitors exposed to the privacy banner. CMP Commanders Act uses this cookie to measure statistics for privacy banner usage until visitors provide consent for the TCID cookie. With this 2-cookie system, CMP Commanders Act is the only CMP that has been granted the right of exemption from consent for statistical measurement by the French CNIL. [https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience](https://www.cnil.fr/fr/solutions-pour-les-cookies-de-mesure-daudience)\
 \
-\*Cookie exempted by CNIL\
-
+\*Cookie exempted by CNIL\\
 
 </details>
 
@@ -199,8 +198,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Storage purpose(s):** Used for user status storage (optin or optout) and Privacy banner display.\
 \
-\*Cookie exempted by CNIL\
-
+\*Cookie exempted by CNIL\\
 
 </details>
 
@@ -222,8 +220,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Storage purpose(s):** Used to display the optin/optout categories in the Privacy Center if the user re-open it.\
 \
-\*Cookie exempted by CNIL\
-
+\*Cookie exempted by CNIL\\
 
 </details>
 
@@ -243,8 +240,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Cookie linked to the display of the privacy banner, it allows to check whether cookies can be deposited and not to redisplay the consent banner when consent is given. Deposited then disappears, cannot be deleted. Technical cookie (exempted)\
-
+**Storage purpose(s):** Cookie linked to the display of the privacy banner, it allows to check whether cookies can be deposited and not to redisplay the consent banner when consent is given. Deposited then disappears, cannot be deleted. Technical cookie (exempted)\\
 
 </details>
 
@@ -304,10 +300,9 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for user status storage (optin or optout) and Privacy banner display. \
+**Storage purpose(s):** Used for user status storage (optin or optout) and Privacy banner display.\
 \
-\*Cookie exempted by CNIL\
-
+\*Cookie exempted by CNIL\\
 
 </details>
 
@@ -327,10 +322,9 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used to display the optin/optout categories in the Privacy Center if the user re-open it. \
+**Storage purpose(s):** Used to display the optin/optout categories in the Privacy Center if the user re-open it.\
 \
-\*Cookie exempted by CNIL\
-
+\*Cookie exempted by CNIL\\
 
 </details>
 
@@ -528,23 +522,18 @@ Following cookies are used automatically in depending on the installed Commander
 
 All possibles names:
 
-DLBCTLYOXA \
-FDLBFIRSTAPI \
-FDLBFIRSTDATA \
-FDLBFIRSTCAMPAIGN \
-FDLBFIRSTCAMPAIGNEF \
-FDLBCAMPAIGNCDOM \
-FDLBFIRSTTMS \
-FDLBFIRSTCMP \
-FDLBFIRST \
-FDLBCTLY \
-FDLBFIRSTEVENTS\
+FDLBFIRSTDATA\
+FDLBFIRSTEVENTS\
+FDLBMIXCDOM\
+FDLVFIRSTMIXEF\
+FDLBFIRSTMIX\
+FDLBFIRSTTAG\
 \
 **Product(s) related:** First domain tracking (Phoenix)
 
 **Type:** Cookie
 
-**Domain:** Customer domain&#x20;
+**Domain:** Customer domain
 
 **Lifetime:** Session
 
@@ -553,8 +542,7 @@ FDLBFIRSTEVENTS\
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for internal infrastructure dispatch.\
-
+**Storage purpose(s):** Used for internal infrastructure dispatch.\\
 
 </details>
 
@@ -568,7 +556,7 @@ FDLBFIRSTEVENTS\
 
 **Type:** Cookie
 
-**Domain:** Customer domain&#x20;
+**Domain:** Customer domain
 
 **Lifetime:** 396 days
 
@@ -588,7 +576,7 @@ FDLBFIRSTEVENTS\
 
 **Type:** Cookie
 
-**Domain:** Customer domain&#x20;
+**Domain:** Customer domain
 
 **Lifetime:** 396 days
 
@@ -608,7 +596,7 @@ FDLBFIRSTEVENTS\
 
 **Type:** Cookie
 
-**Domain:** Customer domain&#x20;
+**Domain:** Customer domain
 
 **Lifetime:** 396 days
 
