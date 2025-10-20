@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.5
+
+Release date:  **20/10/2025**
+
+* [beta] Load Trust banner in DOM ready event
+
 ### 99.4
 
 Release date:  **13/10/2025**
