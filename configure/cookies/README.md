@@ -522,12 +522,17 @@ Following cookies are used automatically in depending on the installed Commander
 
 All possibles names:
 
+DLBCTLYOXA\
+FDLBFIRSTAPI\
 FDLBFIRSTDATA\
-FDLBFIRSTEVENTS\
-FDLBMIXCDOM\
-FDLVFIRSTMIXEF\
-FDLBFIRSTMIX\
-FDLBFIRSTTAG\
+FDLBFIRSTCAMPAIGN\
+FDLBFIRSTCAMPAIGNEF\
+FDLBCAMPAIGNCDOM\
+FDLBFIRSTTMS\
+FDLBFIRSTCMP\
+FDLBFIRST\
+FDLBCTLY\
+FDLBFIRSTEVENTS\
 \
 **Product(s) related:** First domain tracking (Phoenix)
 
