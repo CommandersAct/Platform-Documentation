@@ -76,7 +76,7 @@ This is the recommended authentication method.
    ![](../../../../.gitbook/assets/token_4.png)
 6. Save your destination settings.
 
-### Generate a long-ived token
+### Generate a long-lived token
 
 1. Go to [Meta Event Manager](https://www.facebook.com/events_manager2/)&#x20;
 2. On the left menu, select `(1)` `Data sources` .
