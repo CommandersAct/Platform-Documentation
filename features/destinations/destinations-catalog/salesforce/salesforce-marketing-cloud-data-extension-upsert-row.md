@@ -21,7 +21,7 @@ Take note of the following information:\
 • <mark style="color:blue;">`Client Secret`</mark>\
 • <mark style="color:blue;">`Tenant-Specific Subdomain`</mark>\
 You can find these values in [Salesforce Marketing Cloud](https://mc.exacttarget.com/) by clicking your user name in the top right corner and select <mark style="color:blue;">`Setup`</mark> . In the left-side menu, navigate to <mark style="color:blue;">`Apps`</mark>  → <mark style="color:blue;">`Installed Packages`</mark> and select the package you want to use or create one by clicking <mark style="color:blue;">`New`</mark>  and add a new <mark style="color:blue;">`API Integration`</mark>  component.\
-This information are required to set your <mark style="color:blue;">`Credentials`</mark> . See the next section [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
+This information is required to set your <mark style="color:blue;">`Credentials`</mark> . See the next section [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
 {% endhint %}
 
 ### Configuration
