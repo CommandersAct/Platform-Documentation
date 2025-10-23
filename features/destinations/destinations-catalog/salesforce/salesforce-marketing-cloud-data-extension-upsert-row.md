@@ -10,29 +10,29 @@ This destination is currently under final review and will be available soon.
 
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
+* **Easy selection:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
 * **Data activation**: upserting data extensions can be used to enable various data activation flows based on the user behaviour.
 
 ## Destination setup
 
 {% hint style="info" %}
-Ensure you have access to [Salesforce Marketing Cloud](https://mc.exacttarget.com/).\
-Take note of the following information:\
+Ensure you have access to [Salesforce Marketing Cloud](https://mc.exacttarget.com/) with administrator or "Manage Connected Apps" user privileges. After authenticating, take note of the following information:\
 • <mark style="color:blue;">`Client ID`</mark>\
 • <mark style="color:blue;">`Client Secret`</mark>\
 • <mark style="color:blue;">`Tenant-Specific Subdomain`</mark>\
-You can find these values in [Salesforce Marketing Cloud](https://mc.exacttarget.com/) by clicking your user name in the top right corner and select <mark style="color:blue;">`Setup`</mark> . In the left-side menu, navigate to <mark style="color:blue;">`Apps`</mark>  → <mark style="color:blue;">`Installed Packages`</mark> and select the package you want to use or create one by clicking <mark style="color:blue;">`New`</mark>  and add a new <mark style="color:blue;">`API Integration`</mark>  component.\
+You can find these values by clicking your user name in the top right corner and select <mark style="color:blue;">`Setup`</mark> . In the left-side menu, navigate to <mark style="color:blue;">`Apps`</mark>  → <mark style="color:blue;">`Installed Packages`</mark> and select the package you want to use or create one by clicking <mark style="color:blue;">`New`</mark>  and add a new <mark style="color:blue;">`API Integration`</mark>  component.\
 This information is required to set your <mark style="color:blue;">`Credentials`</mark> . See the next section [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
 {% endhint %}
 
 ### Configuration
 
-<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em> <br>Your credentials with Salesforce Marketing Cloud as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension Id</code></td><td><em><strong><code>Required</code></strong></em> <br>The unique identifier for the data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Input the name of a primary key inside your data extension in <mark style="color:blue;">Primary key name</mark>  and the value to be looked up to find the record to update in <mark style="color:blue;">Primary key value</mark>  . If the value is not found, a new record is created. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Input the name of a field in your data extension in <mark style="color:blue;">Record field name</mark>  and the value to be updated in <mark style="color:blue;">Record field value</mark>  . One entry is required.</td></tr></tbody></table>
+<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em> <br>Your credentials with Salesforce Marketing Cloud as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension Id</code></td><td><em><strong><code>Required</code></strong></em> <br>The unique identifier for the data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the primary key value to be looked up to find the record to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the primary key column name. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the value to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the related field name.</td></tr></tbody></table>
 
 ## Field mappings
 
 Created data extension records include the following properties:
 
-<table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Record field name</code> <strong>[1]</strong></td><td><code>Record field value</code> <strong>[1]</strong></td></tr></tbody></table>
+<table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce column</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
