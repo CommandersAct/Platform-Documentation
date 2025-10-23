@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 99.6
+
+Release date:  **23/10/2025**
+
+* [beta] Update Trust DOM ready event handling for containers without banner embedded
+
 ### 99.5
 
 Release date:  **20/10/2025**
