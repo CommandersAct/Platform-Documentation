@@ -4,14 +4,27 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this destination and your [segments](https://doc.commandersact.com/features/customers/segment) you can create create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce [upsertRowByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowByKey) API and enable a multitude of data activation flows like the abandoned cart.
+[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this destination and your [segments](https://doc.commandersact.com/features/customers/segment) you can create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce Marketing Cloud Engagement synchronous REST API and enable a multitude of data activation flows like the abandoned cart.
 
 ## Key features
 
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
-* **Easy selection:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
-* **Data activation**: upserting data extensions can be used to enable various data activation flows based on the user behaviour.
+* **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
+* **Multiple versions**: See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
+* **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
+
+## Available versions
+
+This integration is provided in the form of two separate destination versions:
+
+1. **Standard**
+2. **Batch**
+
+With the **Batch** version, multiple records are sent to your data extension with a single request while with the **Standard** version each request includes only one record.\
+Both versions have their benefits and drawbacks that are inherited from the associated Salesforce API: [upsertRowByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowByKey) and [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) respectively - See the following table for more details:
+
+<table><thead><tr><th width="167">Version</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More  susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Batch</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records are discarded.</td></tr></tbody></table>
 
 ## Destination setup
 
@@ -33,6 +46,17 @@ This information is required to set your <mark style="color:blue;">`Credentials`
 Created data extension records include the following properties:
 
 <table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce column</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
+
+## Salesforce API limits
+
+Salesforce protects their services [by placing limits on API usage](https://app.gitbook.com/u/TyQmmynWMvMlk9NdUinevOT5XTl2) resulting in the following soft limits for this destination:
+
+* Maximum API request volume. The limit depends on your edition:
+  * **Pro**: 2 million requests per year
+  * **Corporate**: 6 million requests per year
+  * **Enterprise**: 200 million requests per year
+* Maximum request rate for synchronous API requests: 2500 requests per minute across all endpoints.
+* Maximum number of concurrent connections: 100 connections.
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
