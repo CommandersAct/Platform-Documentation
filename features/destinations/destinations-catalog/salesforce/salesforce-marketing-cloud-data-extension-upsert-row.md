@@ -21,10 +21,14 @@ This integration is provided in the form of two separate destination versions:
 1. **Standard**
 2. **Batch**
 
-With the **Batch** version, multiple records are sent to your data extension with a single request while with the **Standard** version each request includes only one record.\
+With the **Batch** version, multiple records are sent to your data extension with a single request, while, with the **Standard** version, each request includes only one record.\
 Both versions have their benefits and drawbacks that are inherited from the associated Salesforce API: [upsertRowByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowByKey) and [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) respectively - See the following table for more details:
 
-<table><thead><tr><th width="167">Version</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Batch</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records are discarded.</td></tr></tbody></table>
+<table><thead><tr><th width="167">Version</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Batch</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records in the single request are discarded.</td></tr></tbody></table>
+
+{% hint style="success" %}
+It's recommended to start using the **Standard** version, and, if API limits arise, migrate to the **Batch** version.
+{% endhint %}
 
 ## Destination setup
 
@@ -56,8 +60,9 @@ Created data extension records include the following properties:
 Salesforce protects their services by placing [limits on API usage](https://help.salesforce.com/s/articleView?id=mktg.mc_overview_limits_api.htm\&type=5), resulting in the following soft limits for this integration:
 
 * Maximum API request volume. The limit depends on your edition:
-  * **Pro**: 2 million requests per year
-  * **Corporate**: 6 million requests per year
-  * **Enterprise**: 200 million requests per year
+  * **Pro**: 2 million requests per year.
+  * **Corporate**: 6 million requests per year.
+  * **Enterprise**: 200 million requests per year.
 * Maximum request rate for synchronous API requests: 2500 requests per minute across all endpoints.
 * Maximum number of concurrent connections: 100 connections.
+* Maximum batch size for synchronous API requests: 50 objects.
