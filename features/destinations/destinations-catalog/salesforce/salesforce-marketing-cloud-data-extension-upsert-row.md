@@ -11,7 +11,7 @@ This destination is currently under final review and will be available soon.
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
 * **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
-* **Two versions**: See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
+* **Get the most**: accomodate your needs by using the right version for your request volume. See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
 * **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
 
 ## Available versions
