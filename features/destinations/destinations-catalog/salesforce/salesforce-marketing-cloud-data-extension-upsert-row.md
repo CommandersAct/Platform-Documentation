@@ -4,14 +4,14 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this destination and your [segments](https://doc.commandersact.com/features/customers/segment) you can create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce Marketing Cloud Engagement synchronous REST API and enable a multitude of data activation flows like the abandoned cart.
+[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this integration and your [segments](https://doc.commandersact.com/features/customers/segment) you can create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce Marketing Cloud Engagement synchronous REST API and enable a multitude of data activation flows like the abandoned cart.
 
 ## Key features
 
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
 * **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
-* **Multiple versions**: See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
+* **Two versions**: See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
 * **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
 
 ## Available versions
@@ -49,7 +49,7 @@ Created data extension records include the following properties:
 
 ## Salesforce API limits
 
-Salesforce protects their services [by placing limits on API usage](https://app.gitbook.com/u/TyQmmynWMvMlk9NdUinevOT5XTl2) resulting in the following soft limits for this destination:
+Salesforce protects their services [by placing limits on API usage](https://app.gitbook.com/u/TyQmmynWMvMlk9NdUinevOT5XTl2), resulting in the following soft limits for this integration:
 
 * Maximum API request volume. The limit depends on your edition:
   * **Pro**: 2 million requests per year
