@@ -47,6 +47,10 @@ Created data extension records include the following properties:
 
 <table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce column</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
 
+{% hint style="info" %}
+**\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
+{% endhint %}
+
 ## Salesforce API limits
 
 Salesforce protects their services [by placing limits on API usage](https://app.gitbook.com/u/TyQmmynWMvMlk9NdUinevOT5XTl2), resulting in the following soft limits for this integration:
@@ -57,7 +61,3 @@ Salesforce protects their services [by placing limits on API usage](https://app.
   * **Enterprise**: 200 million requests per year
 * Maximum request rate for synchronous API requests: 2500 requests per minute across all endpoints.
 * Maximum number of concurrent connections: 100 connections.
-
-{% hint style="info" %}
-**\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
-{% endhint %}
