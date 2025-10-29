@@ -51,7 +51,7 @@ Having batch mode activated has its benefits and drawbacks. See the following ta
 
 ## Salesforce API limits
 
-Salesforce protects their services by placing [limits on API usage](https://help.salesforce.com/s/articleView?id=mktg.mc_overview_limits_api.htm\&type=5), resulting in the following soft limits for this integration:
+Salesforce protects their services by placing [limits on API usage](https://help.salesforce.com/s/articleView?id=mktg.mc_overview_limits_api.htm\&type=5), resulting in the following soft limits for this destination:
 
 * Maximum API request volume. The limit depends on your edition:
   * **Pro**: 2 million requests per year.
