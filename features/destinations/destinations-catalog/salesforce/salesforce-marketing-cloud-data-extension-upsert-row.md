@@ -46,7 +46,7 @@ Having batch mode activated has its benefits and drawbacks. See the following ta
 <table><thead><tr><th width="209">Activate batch mode</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Not checked</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Checked</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records in a single request are discarded. <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** Error response is inherited from the associated Salesforce API [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) which returns limited information for records in a batch request.
+**\[1]** Error response is inherited from the associated Salesforce API [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) which returns limited information for multiple records in a batch request.
 {% endhint %}
 
 ## Salesforce API limits
