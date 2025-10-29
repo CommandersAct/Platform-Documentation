@@ -4,31 +4,15 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this integration and your [segments](https://doc.commandersact.com/features/customers/segment) you can create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce Marketing Cloud Engagement synchronous REST API and enable a multitude of data activation flows like the abandoned cart.
+[Salesforce ](https://www.salesforce.com)is a cloud-based software company providing customer relationship management (CRM) software and applications focused on sales, customer service, marketing automation, analytics, and application development. Using this destination and your [segments](https://doc.commandersact.com/features/customers/segment) you can create or update (upsert) a row in a [data extension](https://help.salesforce.com/s/articleView?id=data.c360_a_data_extensions.htm\&type=5) using Salesforce Marketing Cloud Engagement synchronous REST API [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) and enable a multitude of data activation flows like the abandoned cart.
 
 ## Key features
 
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
 * **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
-* **Get the most**: accomodate your needs by using the right version for your request volume. See section [Available versions](salesforce-marketing-cloud-data-extension-upsert-row.md#available-versions) for more details.
+* **Support batch mode**: you can freely activate batch mode in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration). See section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#bach-mode) for more details.
 * **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.&#x20;
-
-## Available versions
-
-This integration is provided in the form of two separate destinations:
-
-1. **Standard**
-2. **Batch**
-
-With the **Batch** version, multiple records are sent to your data extension with a single request, while, with the **Standard** version, each request includes only one record.\
-Both versions have their benefits and drawbacks that are inherited from the associated Salesforce API: [upsertRowByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowByKey) and [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) respectively - See the following table for more details:
-
-<table><thead><tr><th width="167">Version</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Standard</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Batch</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records in a single request are discarded.</td></tr></tbody></table>
-
-{% hint style="success" %}
-It's recommended to start using the **Standard** version, and, if API limits arise, migrate to the **Batch** version.
-{% endhint %}
 
 ## Destination setup
 
@@ -43,7 +27,7 @@ This information is required to set your <mark style="color:blue;">`Credentials`
 
 ### Configuration
 
-<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em> <br>Your credentials with Salesforce Marketing Cloud as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension Id</code></td><td><em><strong><code>Required</code></strong></em> <br>The unique identifier for the data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the primary key value to be looked up to find the record to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the primary key column name. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the value to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the related field name.</td></tr></tbody></table>
+<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em> <br>Your credentials with Salesforce Marketing Cloud as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension Id</code></td><td><em><strong><code>Required</code></strong></em> <br>The unique identifier for the data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the primary key value to be looked up to find the record to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the primary key column name. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em> <br>Select the <mark style="color:blue;"><code>Data variable</code></mark>  holding the value to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark>  representing the related field name. One entry is required.</td></tr><tr><td><code>Activate batch mode</code>  </td><td>When checked, multiple records are sent to your data extension with a single request instead of of one at a time. See section <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#bach-mode">Batch mode</a> for more details.</td></tr></tbody></table>
 
 ## Field mappings
 
@@ -53,6 +37,16 @@ Created data extension records include the following properties:
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
+{% endhint %}
+
+## Bach mode
+
+Having batch mode activated has its benefits and drawbacks. See the following table for more details:
+
+<table><thead><tr><th width="209">Activate batch mode</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Not checked</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Checked</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records in a single request are discarded. <strong>[1]</strong></td></tr></tbody></table>
+
+{% hint style="info" %}
+**\[1]** Error response is inherited from the associated Salesforce API [upsertRowsetByKey](https://developer.salesforce.com/docs/marketing/marketing-cloud/references/mc-data_extension_rows_sync?meta=upsertRowsetByKey) which returns limited information for records in a batch request.
 {% endhint %}
 
 ## Salesforce API limits
