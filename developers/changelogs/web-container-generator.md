@@ -2,6 +2,14 @@
 
 ## 2025
 
+### 99.7
+
+Release date:  **03/11/2025**
+
+* Optimizations in container generation script
+* [beta] Refined CAID cookie handling for specific beta accounts, adds logic from in event hit parameters to set or overwrite the CAID  when the CAID cookie is missing
+* [public release] Load Trust banner in DOM ready event
+
 ### 99.6
 
 Release date:  **23/10/2025**
