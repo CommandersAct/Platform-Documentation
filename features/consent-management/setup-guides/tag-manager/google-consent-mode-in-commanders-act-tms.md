@@ -2,7 +2,7 @@
 
 Introduction
 
-Google Consent Mode will evolve in March 2024!&#x20;
+Google Consent Mode will evolve in March 2024!
 
 As Google strongly recommends the use of Consent Mode on their tags, Commanders Act has developed a new built-in feature for clients who wish to implement it.
 
@@ -33,7 +33,7 @@ Just follow these 6 steps:
 
 ### 1- Activate the feature on your workspace
 
-Login on[ your workspace ](https://app.commandersact.com/)\
+Login on[ your workspace](https://app.commandersact.com/)\
 Go on page `Data Governance > Consent Management > Settings`\
 Turn **On** the option Google Consent Mode. The sub-menu "Google Consent Mode settings" will appears
 
@@ -49,7 +49,7 @@ Select your appropriate Privacy category from the drop-down list for each Google
 
 #### Default Status
 
-The Default Status will determine the behaviour of your tags BEFORE consent. \
+The Default Status will determine the behaviour of your tags BEFORE consent.\
 If set on "denied": Google will collect minimum information (as if the user has Optout)\
 If set on "granted": Google will collect all information (as if the user has Optin)\
 \*You should ask to your DPO before to set a "granted" default status for any of theses categories
@@ -58,11 +58,9 @@ In all cases: once the user has given his consent (optin or optout), the default
 
 <figure><img src="../../../../.gitbook/assets/image (486).png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
-If you do not set a category, the status will always be "denied". \
-The "Default Status" dropdown menu will no longer be displayed. \
+If you do not set a category, the status will always be "denied".\
+The "Default Status" dropdown menu will no longer be displayed.\
 Example below for "security\_storage" with no privacy category assigned:
 {% endhint %}
 
@@ -81,10 +79,9 @@ Example below for "security\_storage" with no privacy category assigned:
 <figure><img src="../../../../.gitbook/assets/image (467).png" alt=""><figcaption></figcaption></figure>
 
 *   **wait\_for\_update**\
-    Enabling this optional feature will send a signal to Google's tags to [wait for an update](https://developers.google.com/tag-platform/security/guides/consent?hl=en#tracking_consent_state). \
+    Enabling this optional feature will send a signal to Google's tags to [wait for an update](https://developers.google.com/tag-platform/security/guides/consent?hl=en#tracking_consent_state).\
     Enter a value in milliseconds to control the waiting time before the data is sent.\
-    This can be useful if you are experiencing timing issues. Otherwise, you can leave it blank!\
-
+    This can be useful if you are experiencing timing issues. Otherwise, you can leave it blank!\\
 
     <div align="center"><figure><img src="../../../../.gitbook/assets/image (468).png" alt=""><figcaption></figcaption></figure></div>
 *   **ads\_data\_redaction**\
@@ -93,21 +90,19 @@ Example below for "security\_storage" with no privacy category assigned:
     <figure><img src="../../../../.gitbook/assets/image (471).png" alt=""><figcaption></figcaption></figure>
 *   **url\_passthrough**\
     [URL passthrough](https://developers.google.com/tag-platform/security/guides/consent?hl=en#passthroughs) option can be used to send event and session-based analytics (including conversions) without cookies across pages.\
-    \
-
+    \\
 
     <figure><img src="../../../../.gitbook/assets/image (470).png" alt=""><figcaption></figcaption></figure>
 
 ### 3-Activate the feature on your privacy banner(s)
 
 `Sources > Privacy Banners > Select your banner(s)`\
-Go at the edition step of your privacy banner, open the settings menu to turn ON Google Consent Mode Signal\
-
+Go at the edition step of your privacy banner, open the settings menu to turn ON Google Consent Mode Signal\\
 
 <figure><img src="../../../../.gitbook/assets/image (489).png" alt=""><figcaption></figcaption></figure>
 
 The privacy setup is done! You can now Generate and Deploy your Privacy Banner.\
-&#xNAN;_\*At this point, Consent Mode will not affect the behaviour of your tags. Please follow the next steps!_
+\&#xNAN;_\*At this point, Consent Mode will not affect the behaviour of your tags. Please follow the next steps!_
 
 <figure><img src="../../../../.gitbook/assets/image (474).png" alt=""><figcaption></figcaption></figure>
 
@@ -122,12 +117,12 @@ The activation of this option will automatically add an Google Policy URL, it's 
 To setup the version "Advanced" of the Consent Mode, remove Commanders Act Privacy rules from all the Google tags, now it's managed by Google Consent Mode\
 `Data Governance > Consent Management > Categories` see tab `assign tags`\
 \- **Remove the privacy constraints from Google tags**\
-**- Save**
+&#xNAN;**- Save**
 
 <figure><img src="../../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-For Basic Consent Mode, skip the step 4! \
+For Basic Consent Mode, skip the step 4!\
 Keep your Privacy rules applied on your tags
 {% endhint %}
 
@@ -154,7 +149,7 @@ But we also provide a custom trigger, if needed!\
 When a Consent Mode signal is sent, our product pushes **tC.event.consent\_signal\_ready**\
 You can use it to trigger your tags.
 
-If your site is an SPA, you can keep your **tC.event.page/pageview**... as trigger for  your Google tags. The same goes for your click/scroll tags.
+If your site is an SPA, you can keep your **tC.event.page/pageview**... as trigger for your Google tags. The same goes for your click/scroll tags.
 {% endhint %}
 
 ### 6-Tests & deployment
@@ -183,11 +178,9 @@ The status "**On-page Default**" should be the same then the ones you setup at t
 <figure><img src="../../../../.gitbook/assets/image (480).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="Test with the browser's console" %}
+{% tab title="Test with the browser" %}
 Feel as a developer? You can also look into the console to verify the Google arguments pushed in dataLayer Google.\
 Type `dataLayer` then press `Enter`
-
-
 
 <figure><img src="../../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
@@ -198,7 +191,7 @@ The consent status is fed by the "gcd" parameter
 
 <figure><img src="../../../../.gitbook/assets/image (483).png" alt=""><figcaption></figcaption></figure>
 
-#### Possibles values for gcd parameter
+**Possibles values for gcd parameter**
 
 `gcd` is included in all hits to Google services, even if Consent Mode isn’t active.
 
@@ -210,9 +203,7 @@ The format of the string is this:
 
 The string starts with `11`, uses `1` to separate the different consent signals, and ends with a number like `5` (or sometimes something else) to mark the end.
 
-
-
-<table><thead><tr><th width="97">Letter</th><th>Description</th><th width="142">Example value</th><th>Meaning</th></tr></thead><tbody><tr><td><code>l</code></td><td>The lowercase L means that the signal has not been set with Consent Mode</td><td><code>11l1p1l1l5</code></td><td>only analytics_storage has been denied by default</td></tr><tr><td><code>p</code></td><td>denied by default <br>(no update)</td><td><code>11p1p1p1p5</code></td><td>all consent states are denied by default</td></tr><tr><td><code>q</code></td><td>denied both by default and after update</td><td><code>11p1q1p1p5</code></td><td>the user updated their consent choice to set analytics_storage to denied after it was already set to denied by default</td></tr><tr><td><code>t</code></td><td>granted by default <br>(no update)</td><td><code>11t1t1t1t5</code></td><td>all consent states are granted by default</td></tr><tr><td><code>r</code></td><td>denied by default and granted after update.</td><td><code>11r1r1r1r5</code></td><td>the user grants consent to all services after they were first denied by default</td></tr><tr><td><code>m</code></td><td>denied after update <br>(no default)</td><td><code>11p1m1p1p5</code></td><td>all other states were denied by default, but analytics_storage was only set after the user denied it</td></tr><tr><td><code>n</code></td><td>granted after update <br>(no default)</td><td><code>11n1n1n1n5</code></td><td>the site did not set a default consent state and instead set all states to granted after the user chose so</td></tr><tr><td><code>u</code></td><td>granted by default and denied after update.</td><td><code>11u1u1u1u5</code></td><td>the user withdrew all consents after they were set to granted by default</td></tr><tr><td><code>v</code></td><td>granted both by default and after update.</td><td><code>11v1v1v1v5</code></td><td>all states were granted by default and by user confirmation</td></tr></tbody></table>
+<table><thead><tr><th width="97">Letter</th><th>Description</th><th width="142">Example value</th><th>Meaning</th></tr></thead><tbody><tr><td><code>l</code></td><td>The lowercase L means that the signal has not been set with Consent Mode</td><td><code>11l1p1l1l5</code></td><td>only analytics_storage has been denied by default</td></tr><tr><td><code>p</code></td><td>denied by default<br>(no update)</td><td><code>11p1p1p1p5</code></td><td>all consent states are denied by default</td></tr><tr><td><code>q</code></td><td>denied both by default and after update</td><td><code>11p1q1p1p5</code></td><td>the user updated their consent choice to set analytics_storage to denied after it was already set to denied by default</td></tr><tr><td><code>t</code></td><td>granted by default<br>(no update)</td><td><code>11t1t1t1t5</code></td><td>all consent states are granted by default</td></tr><tr><td><code>r</code></td><td>denied by default and granted after update.</td><td><code>11r1r1r1r5</code></td><td>the user grants consent to all services after they were first denied by default</td></tr><tr><td><code>m</code></td><td>denied after update<br>(no default)</td><td><code>11p1m1p1p5</code></td><td>all other states were denied by default, but analytics_storage was only set after the user denied it</td></tr><tr><td><code>n</code></td><td>granted after update<br>(no default)</td><td><code>11n1n1n1n5</code></td><td>the site did not set a default consent state and instead set all states to granted after the user chose so</td></tr><tr><td><code>u</code></td><td>granted by default and denied after update.</td><td><code>11u1u1u1u5</code></td><td>the user withdrew all consents after they were set to granted by default</td></tr><tr><td><code>v</code></td><td>granted both by default and after update.</td><td><code>11v1v1v1v5</code></td><td>all states were granted by default and by user confirmation</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 
@@ -222,7 +213,7 @@ To help you ensure that the consent signal is sent before your Google tags, we o
 
 `tC.privacy.explainGCMSequencingValidation()`\
 \
-If the Consent is set before any Google tags triggered, you will obtain the log \
+If the Consent is set before any Google tags triggered, you will obtain the log\
 `'valid sequencing'`\
 \
 If Google tags are triggered before the Consent is set, then your implementation is incorrect. The log will returns the value\
@@ -233,7 +224,7 @@ Use `tC.privacy.validateGCMSequencing()`\
 Will simply return `true` if your sequencing is correct, otherwise the result will be `false`
 
 {% hint style="success" %}
-If Google tags haven't been fired yet, the result will always be "false". \
+If Google tags haven't been fired yet, the result will always be "false".\
 To get a "valid sequencing" result, Google tags must have been fired at least once.
 {% endhint %}
 
@@ -257,7 +248,7 @@ They will ever gave you a personalized reply to your questions!
 
 ## Migration guide
 
-**For customers who has already implemented  the Consent Mode v1**: \
+**For customers who has already implemented the Consent Mode v1**:\
 You can activate the built in feature as described above (don't forget to deactivate your actual consent mode tag)\
 However, if you really want to keep your actual setup and simply update your tag, then you can refer to this documentation!
 
@@ -391,15 +382,9 @@ Don't forget to save your settings
 
 <figure><img src="../../../../.gitbook/assets/image (461).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Generate & Deploy your container
 
-
-
 <figure><img src="../../../../.gitbook/assets/image (462).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
 
 ### Update your Privacy Banner(s)
 
@@ -408,7 +393,7 @@ Go on page `Source > Privacy Banners > edition step`
 {% hint style="danger" %}
 **LEGAL REQUIREMENT**
 
-Add the following link to the Google Consent Mode Policy in your Privacy Center or in your Vendors menu&#x20;
+Add the following link to the Google Consent Mode Policy in your Privacy Center or in your Vendors menu
 
 [https://business.safety.google/privacy/](https://business.safety.google/privacy/)
 
@@ -421,5 +406,5 @@ You can now Generate & Deploy your privacy banner(s)
 
 <figure><img src="../../../../.gitbook/assets/image (464).png" alt=""><figcaption></figcaption></figure>
 
-**You are up to date**, you can test your settings on your website. \
+**You are up to date**, you can test your settings on your website.\
 Don't hesitate to refer at the [test step above](google-consent-mode-in-commanders-act-tms.md#id-6-tests-and-deployment) to get tips & tricks.

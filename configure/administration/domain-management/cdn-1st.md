@@ -1,8 +1,8 @@
 # First party hosting
 
-Our 1st party hosting feature helps ensure that ad blockers do not unfairly interrupt responsible data tracking. This is in line with privacy best practice and GDPR compliance. \
+Our 1st party hosting feature helps ensure that ad blockers do not unfairly interrupt responsible data tracking. This is in line with privacy best practice and GDPR compliance.\
 \
-By configuring your CDN 1st party hosting, you'll be able to change the host of your Web Container(s) & Privacy banner(s). \
+By configuring your CDN 1st party hosting, you'll be able to change the host of your Web Container(s) & Privacy banner(s).\
 \
 Are you looking for an additional approach to avoid the effects of ad blockers and keep tracking? You've come to the right place!
 
@@ -60,13 +60,13 @@ Select in the drop down's menu the subdomain you need to use on your workspace.
 
 <figure><img src="../../../.gitbook/assets/Capture d&#x27;écran 2024-10-09 184809.png" alt=""><figcaption></figcaption></figure>
 
-A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain". \
+A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain".\
 Note: The subdomain will remains activated on the site where it is configured.
 
-<figure><img src="../../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Good to know! \
+Good to know!\
 On site copy, the CDN 1st configuration(s) will not be copied, you'll need to load subdomains from the "parent" site.
 {% endhint %}
 
@@ -85,7 +85,7 @@ To ensure stability, re generate & re deploy all your Web Container(s), and Priv
 
 <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>Privacy's deployment: example for multiple subdomain configured</p></figcaption></figure>
 
-:rocket:   Congratulations! Your configuration is done!
+:rocket: Congratulations! Your configuration is done!
 
 {% hint style="info" %}
 Good to know: When your CDN First Party is configured, you will need to replace the URLs of your web container(s) on your website. The "regular" CDN URL will remain active, but to enjoy the benefits of first party hosting, you will need to use the CDN 1st party URLs.
@@ -93,7 +93,7 @@ Good to know: When your CDN First Party is configured, you will need to replace 
 
 ### Multiple domains management
 
-Do you have many different hosting domains? (e.g. domain.fr, domain.it, domain.eu ...) \
+Do you have many different hosting domains? (e.g. domain.fr, domain.it, domain.eu ...)\
 We recommend that you create 1 Cname for each domain to avoid the effects of ad blockers as much as possible.
 
 If, for technical reasons, you can only create 1 Cname common to all your site domains, you must use a custom js snippet code to manage the situation.
@@ -101,4 +101,3 @@ If, for technical reasons, you can only create 1 Cname common to all your site d
 In the custom javascript block of your web container, insert the following line of code
 
 `tC.privacy.defaultCdnDomain = "enter_here_your_cdn_first(cname)_url"`
-

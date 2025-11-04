@@ -103,40 +103,16 @@ This event signifies a user has submitted their shipping information.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
-```javascript
-cact('trigger','add_shipping_info', {
-  value: 8.00,
-  currency: 'EUR',
-  coupon: 'promo',
-  shipping_tier: 'ups',
-  items: [{
-    id: 'SKU_12345',
-    quantity: 1,
-    variant: 'red',
-    coupon: 'CHRISTMAS',
-    discount: 1.99,
-    product:{
-      id: '12345',
-      name: 'Trex tshirt',
-      category_1: 'clothes',
-      category_2: 't-shirts',
-      category_3: 'boy',
-      brand: 'Lacoste',
-      price: 9.99
-    }
-  }],
-  user: {
-    id: '12356',
-    email:'toto@domain.fr',
-    consent_categories: [1,3]
-  }
-});
-```
-{% endtab %}
+\{% tabs %\} \{% tab title="JavaScript" %\} \`
 
-{% tab title="Kotlin (Android)" %}
+\`\`javascript cact('trigger','add\_shipping\_info', { value: 8.00, currency: 'EUR', coupon: 'promo', shipping\_tier: 'ups', items: \[{ id: 'SKU\_12345', quantity: 1, variant: 'red', coupon: 'CHRISTMAS', discount: 1.99, product:{ id: '12345', name: 'Trex tshirt', category\_1: 'clothes', category\_2: 't-shirts', category\_3: 'boy', brand: 'Lacoste', price: 9.99 } }], user: { id: '12356', email:'toto@domain.fr', consent\_categories: \[1,3] } });
+
+````
+
+</div>
+
+<div data-gb-custom-block data-tag="tab" data-title='Kotlin (Android)'>
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -146,10 +122,8 @@ val event = TCAddShippingInfoEvent(items,  112.5f, "EUR")
     event.coupon = "promo"
     event.shippingTier = "ups"
 serverside.execute(event)
-```
-{% endtab %}
+````
 
-{% tab title="Java  (Android)" %}
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -160,9 +134,7 @@ event.coupon = "promo";
 event.shippingTier = "ups";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -184,9 +156,7 @@ event.coupon = @"promo";
 event.shippingTier = @"ups";
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -197,9 +167,7 @@ let event = TCAddShippingInfoEvent(items: [item_1, item_2], withValue: 1, withCu
 	event?.shippingTier = "ups"
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
 <pre class="language-dart"><code class="lang-dart">TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
 		tc_product.name = "product_1_name";
@@ -220,17 +188,15 @@ TCItem tc_item_2 = TCItem();
 		tc_item_2.quantity = 2;
 		tc_item_2.product = tc_product;
 		tc_item_2.addAdditionalProperty("key_additional_item", "val_additional_product");
-<strong>
-</strong><strong>var event = TCAddShippingInfoEvent();
+
+<strong>var event = TCAddShippingInfoEvent();
 </strong>    event.coupon = "promo";
     event.shippingTier = "ups";
     event.currency = "EUR";
     event.items = [tc_item_1, tc_item_2];
 serverside.execute(event);
 </code></pre>
-{% endtab %}
 
-{% tab title="json" %}
 ```json
 {
     "event_name": "add_shipping_info",
@@ -291,8 +257,6 @@ serverside.execute(event);
         }
 }
 ```
-{% endtab %}
-{% endtabs %}
 
 ## add\_to\_cart
 
@@ -596,8 +560,6 @@ serverside.execute(event);
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ## begin\_checkout <a href="#begin_checkout" id="begin_checkout"></a>
 
@@ -2047,10 +2009,6 @@ serverside.execute(event);
 {% endtab %}
 {% endtabs %}
 
-
-
-
-
 ## - COMMON SCHEMAS -
 
 ### Items
@@ -2117,17 +2075,15 @@ Example :
 ```
 
 > :information\_source: we only support hex (base16) encoding\
-> &#xNAN;_(i.e.: **hashed** values are carried by strings with \[0-9a-f] characters)_\
+> \&#xNAN;_(i.e.: **hashed** values are carried by strings with \[0-9a-f] characters)_\
 > Other encodings are not supported yet
 
 No need to send both **plain** and **hashed** values :
 
 * if you send **plain** value, the **hashed** values aren't necessary\
-  &#xNAN;_&#x57;e can generate **hashed** values on server side using **plain** value_
+  \&#xNAN;_We can generate **hashed** values on server side using **plain** value_
 * if you don't send **plain** value, then you should fill as much **hashed** values as possible\
-  &#xNAN;_&#x50;artners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value_
-
-
+  \&#xNAN;_Partners require different hash algorithms and without **plain** value, we can't generate any hash. That's why we need the exact **hashed** value_
 
 ## - ENUMERATED VALUE -
 
@@ -2152,4 +2108,3 @@ Enumerated Values for payment methods :
 Enumerated Values for purchase status:
 
 <table><thead><tr><th width="380">Property</th><th>Value</th></tr></thead><tbody><tr><td>status</td><td>canceled</td></tr><tr><td>status</td><td>delivered</td></tr><tr><td>status</td><td>in_progress</td></tr><tr><td>status</td><td>partially_delivered</td></tr><tr><td>status</td><td>partially_returned</td></tr><tr><td>status</td><td>partially_shipped</td></tr><tr><td>status</td><td>pending_shipment</td></tr><tr><td>status</td><td>returned</td></tr><tr><td>status</td><td>shipped</td></tr><tr><td>status</td><td>pending</td></tr></tbody></table>
-

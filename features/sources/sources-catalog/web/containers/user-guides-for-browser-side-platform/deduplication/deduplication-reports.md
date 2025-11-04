@@ -10,11 +10,7 @@ To access the report, please click the “Deduplication by conversions” entry 
 
 <figure><img src="../../../../../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../../../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Interface Description**
 
@@ -60,11 +56,9 @@ The “Report by Tag” report allows you to see, over a specific period of time
 
 **Access**
 
-To access the report, please click the  “Deduplication by tags” entry from the Health > Website Monitoring menu.
+To access the report, please click the “Deduplication by tags” entry from the Health > Website Monitoring menu.
 
 <figure><img src="../../../../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
-
-
 
 **Interface Description**
 
@@ -72,7 +66,7 @@ Calendar
 
 The calendar allows you to select a period of time to display deduplicated tag calls. There are eight predefined periods (_Yesterday, Last Week, Last 30 days, Last Month, Last Quarter, Month-to-Date, Quarter-to-Date, Year-To-Date_) and you can customize the period you wish to see tag calls for. You also have the possibility to compare periods to have a clearer vision of the way tags’ performance has evolved from one period to another.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (309) (1).png" alt=""><figcaption></figcaption></figure>
 
 “Tag calls’ evolution” graph
 

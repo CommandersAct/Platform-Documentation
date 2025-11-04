@@ -13,7 +13,7 @@ The TimeOne destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers TimeOne postback server-side tracking, meaning that your data is properly bridged to the expected fields in an optimized way..
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
-* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is dispatched to TimeOne.
 
 ## Destination setup
@@ -43,6 +43,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-&#xNAN;**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for  more details.\
-**\[2]** All items are taken into account, separeted by a pipe character ("|") and encoded.
+\&#xNAN;**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for more details.\
+&#xNAN;**\[2]** All items are taken into account, separeted by a pipe character ("|") and encoded.
 {% endhint %}

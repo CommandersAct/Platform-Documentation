@@ -16,8 +16,6 @@ Setting deduplication rules is a **two-step** procedure:
 
 ## Defining channels and sources
 
-
-
 1.  Go in the menu "Data Management" > "Web Datalayer" > "Deduplication Channels"
 
     <figure><img src="../../../../../../../.gitbook/assets/image (274).png" alt="" width="256"><figcaption></figcaption></figure>
@@ -58,7 +56,7 @@ Click SAVE (6) at the bottom, right-hand corner of the window.
 
 1.  In the window that opens after you click “ADD CHANNEL”, enter your new channel’s name (Display, Affiliation, Retargeting, etc) – this is only a label to identify it in the Channel’s list in the interface – and click “ADD CONDITION”.
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (374) (1).png" alt=""><figcaption></figcaption></figure>
 2. In the menu that appears, select the parameter that will store the information defining the channel (there are default parameters such as those used by Google Analytics, AT Internet as well as the possibility to add custom parameters).
 3. Select the condition (whether the value of the parameter matches or doesn’t match the value you are about to enter).
 4. Enter the value that will identify the channel.
@@ -97,11 +95,9 @@ This will allow you to have the tag fire depending on the value of the channel A
 
 ### Configuring a channel with two or more "channel" parameters and a single "source" parameter
 
-
-
 1.  In the window that opens after you click “ADD CHANNEL”, enter your new channel’s name (Display, Affiliation, Retargeting, etc) – this is only a label to identify it in the Channel’s list in the interface – and click “ADD CONDITION”.
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (374) (1).png" alt=""><figcaption></figcaption></figure>
 2. In the menu that appears, select the parameter that will store the information defining the channel (there are default parameters such as those used by Google Analytics, AT Internet as well as the possibility to add custom parameters).
 3. Select the condition (whether the value of the parameter matches or doesn’t match the value you are about to enter).
 4. Enter the value that will identify the channel. Repeat these steps for as many possible combinations of parameters/values that could identify a channel. In the example below, if the utm\_medium parameter in the URL takes the values “Retargeting”, “rtg”, “RTG”, **or** “retargeting”, the channel called/labeled “Retargeting” (1) will be recognized.
@@ -112,13 +108,13 @@ utm\_medium=Retargeting-A1B3C3-crt
 
 You need to write “Retargeting\*” (values are case sensitive):
 
-<figure><img src="../../../../../../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (377) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  You can also create conditions based on the “AND” operator. For example: if the UTM\_MEDIUM parameter’s values are “Retargeting” or “rtg” AND the UTM\_CONTENT’s parameter’s value is “email”, then, the Retargeting channel will be recognized (see second screenshot below).
 
     <figure><img src="../../../../../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (386) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you wish to base your conditions on sources too (B), for every condition defining a channel, you will need to select a source.
 
@@ -134,7 +130,7 @@ In the example below, the _Retargeting_ channel will be recognized by the interf
 
 **OR**
 
-**\*Condition 2:**  if utm\_medium = retargeting **and** utm\_medium = email and the source matches the configured (said value is configured in the [rules](setup-guide.md#setting-up-deduplication-rules) step).
+**\*Condition 2:** if utm\_medium = retargeting **and** utm\_medium = email and the source matches the configured (said value is configured in the [rules](setup-guide.md#setting-up-deduplication-rules) step).
 
 <figure><img src="../../../../../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
@@ -144,7 +140,7 @@ You can select the default parameters (below) but also enter custom parameters o
 
 <figure><img src="../../../../../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
-Example of custom parameter:  “gclid” (SEM)
+Example of custom parameter: “gclid” (SEM)
 
 When you connect Google Adwords and Google Analytics, Google allows you to automatically link your two accounts by adding the “gclid” tracking parameter in your URL. This parameter replaces “utm\_source = SEM” and indicates that traffic is SEM-originated. You can use a custom parameter to set this up.
 
@@ -154,7 +150,7 @@ When your channels and source-capturing methods are defined, you will return to 
 
 ### Configuring a channel based on MixCommander Tracking
 
-You just need to write the iD values available on Mixcommander side. For each value you have to declare a channel. For example for the channel AFFILIATION, you have to create as many channels as IDs available on the mapping table ("Affiliation", "aff", "affiliate"). That's why it's very important when you create a campaign to use always the same id. Example : chn=affiliation.&#x20;
+You just need to write the iD values available on Mixcommander side. For each value you have to declare a channel. For example for the channel AFFILIATION, you have to create as many channels as IDs available on the mapping table ("Affiliation", "aff", "affiliate"). That's why it's very important when you create a campaign to use always the same id. Example : chn=affiliation.
 
 <figure><img src="../../../../../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
@@ -221,8 +217,7 @@ Set-up your deduplication rules by following these steps:
 
 * First refers to the first touchpoint at the **beginning** of the customer journey (SEM/Google in the illustration below). A rule based on this position would call Google’s tag on the confirmation page and allocate the conversion to it.
 * Last refers to the last touchpoint before the conversion, at the **end** of the customer journey (if we consider paid traffic, it would be RETARGETING/Criteo in the image below, and Direct Access overall). A rule based on this position, would call Criteo’s tag on the confirmation page and allocate the conversion to it.
-*   Any refers to any place throughout the customer journey (in the example below, all paid traffic solutions contributing to the conversion would be called on the confirmation page. That is Google, Tradedoubler and Criteo).\
-
+*   Any refers to any place throughout the customer journey (in the example below, all paid traffic solutions contributing to the conversion would be called on the confirmation page. That is Google, Tradedoubler and Criteo).\\
 
     <figure><img src="../../../../../../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
@@ -267,7 +262,7 @@ In the “Edit” section, map the “Commanders Act – Reporting Deduplication
 
     <figure><img src="../../../../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (281) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the “Rules” section, add a condition to your “Commanders Act – Reporting Deduplication v1.2” tag to call it only on your website’s confirmation page(s) (“confirmation page” perimeter).
 

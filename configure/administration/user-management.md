@@ -94,8 +94,6 @@ Follow these steps to reset a password:
 
 <figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Accessing users' information and seeing sites they have access to
 
 _Note: Only an administrator has the possibility to consult users’ information and the sites they have access to._
@@ -122,7 +120,7 @@ The profile creation interface is accessible by Administrators only, from the �
 
 ### Creating a new profile:
 
-To create a new profile, go to the “**Administration**”  > “**Profile management**” section and click the “Add Profile” button:
+To create a new profile, go to the “**Administration**” > “**Profile management**” section and click the “Add Profile” button:
 
 <figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
 
@@ -150,7 +148,7 @@ When the profile is created, you will be able to link it to all desired users fr
 
 #### Setup example for access only to Destinations and Live event inspector
 
-To grant access only to Destinations and Live event inspector menu, simply turn all the options to NO, except in the "Data Activation" menu these 5 elements will be turned to YES:&#x20;
+To grant access only to Destinations and Live event inspector menu, simply turn all the options to NO, except in the "Data Activation" menu these 5 elements will be turned to YES:
 
 * Read connector credentials
 * Access to DataCommander
@@ -159,8 +157,6 @@ To grant access only to Destinations and Live event inspector menu, simply turn 
 * Read audience destination
 
 <figure><img src="../../.gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Modifying a profile:
 
@@ -250,4 +246,4 @@ Please note: if you have created profiles with specific settings by container or
 
 6\) – Click “Copy”
 
-<figure><img src="../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (404) (1).png" alt=""><figcaption></figcaption></figure>

@@ -8,13 +8,13 @@ We are excited to introduce the latest version of our browser extension, **Comma
 
 \*Availability in the Microsoft Edge Store is coming soon!
 
-## Key Features &#x20;
+## Key Features
 
 ### Replace Web Containers easily
 
 With CAA, you can effortlessly **switch between Web Containers versions without a container deployment.** You can test directly on your production website, allowing for quality assurance without disrupting your live environment.\
 \
-:heart: It's also **compatible with** [**Branches** ](../branches.md)feature! :heart:&#x20;
+:heart: It's also **compatible with** [**Branches** ](../branches.md)feature! :heart:
 
 <figure><img src="../../../../../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -36,9 +36,9 @@ Plugin must be active on your browser to see these buttons
 
 On click, you will be invited to enter the expected landing page for your test session, then click 'OK' to be redirected to your site.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (575).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (573) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Stop Web Container(s) replacement&#x20;
+### Stop Web Container(s) replacement
 
 To **turn off the override**, simply click the **button "stop override" on the plugin**.
 
@@ -74,7 +74,7 @@ If some "event variables" are fed up, you will see them as well
 
 Customs Events are also visibles, with the proper name of each custom event.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (607) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Keep a History Across Pages
 
@@ -83,7 +83,7 @@ CAA **records events across multiple pages**, ensuring you have a complete histo
 <figure><img src="../../../../../../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Need to clear your history ? You can **clear** by stopping the **"record across pages"** option, reloading the page, and turning it on again. \
+Need to clear your history ? You can **clear** by stopping the **"record across pages"** option, reloading the page, and turning it on again.\
 This process will be improved in an upcoming update!
 {% endhint %}
 
@@ -101,9 +101,8 @@ Once you are logged, only the Sites and the Web Containers that you have access 
 
 While CAA is a powerful tool, here are some current limitations to keep in mind:
 
-* 🌍 **Consistent Web Container URLs:** The Web Containers URLs must remain the same across all pages for the plugin to function correctly.\
-
-* ⚡ **SPA Compatibility:** On **Single Page Applications (SPA)**, the list of triggered tags is only filled on the **first "custom event" hit** collected by the plugin. On each page change, the tags are added to the list\*. \
+* 🌍 **Consistent Web Container URLs:** The Web Containers URLs must remain the same across all pages for the plugin to function correctly.\\
+* ⚡ **SPA Compatibility:** On **Single Page Applications (SPA)**, the list of triggered tags is only filled on the **first "custom event" hit** collected by the plugin. On each page change, the tags are added to the list\*.\
   The Data Layer is updated on each new "page load"\
   \
   \*This behavior will be improved in an upcoming update, so stay tuned!
@@ -116,10 +115,3 @@ Coming soon
 
 * Replace containers versions directly from the drop down (in the plugin)
 * Improved SPA website management (for custom events "page load")
-
-
-
-
-
-
-

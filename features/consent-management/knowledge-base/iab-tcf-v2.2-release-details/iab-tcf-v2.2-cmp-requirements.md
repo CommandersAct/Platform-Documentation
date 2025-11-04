@@ -14,8 +14,6 @@ The standard text has evolved with more precise list of usage of datas, and the 
 
 <figure><img src="../../../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 If your banner has a custom text, you can use this function to display the number of vendors on the first layer\
 `tC.privacy.getNbIabVendors()`
@@ -35,7 +33,7 @@ If you don't have yet an accept all / refuse all buttons in your privacy center,
 
 ### The automatic text of Purposes has evolved
 
-<figure><img src="../../../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### There's no more "Legal Description" it is replaced by "Examples"
 
@@ -57,6 +55,6 @@ The name of this new special purpose is _"Use limited data to select content"_ (
 
 3 major changes for the information provided by the Vendors
 
-* They can provide a cookie policy url in multiple languages (the displayed url will be the same then the browser language)&#x20;
+* They can provide a cookie policy url in multiple languages (the displayed url will be the same then the browser language)
 * They must show the data retention period for each purpose
 * They must show data they will collect

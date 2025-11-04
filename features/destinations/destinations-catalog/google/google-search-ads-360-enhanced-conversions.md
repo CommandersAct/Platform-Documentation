@@ -3,7 +3,7 @@
 [Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Taking advantage of the [Campaign Manager 360 offline conversion API](https://developers.google.com/doubleclick-advertisers/guides/conversions_ec), you can leverage the "Enhanced Conversions" feature to send first-party data, while also giving the option to modify quantity and value, in the form of [conversion batch updates](https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchupdate).
 
 {% hint style="warning" %}
-The "Enhanced Conversions" (EC) in Campaign Manager 360 (CM360) API is a hybrid solution with API, which is covered by this destination, and client-side tag: See our template tag <mark style="color:blue;">gtag - Google SA360 - Floodlight for server-side Enhanced Conversions</mark> for more details. Google still requires Floodlight tags to get conversion info from advertisers' websites.&#x20;
+The "Enhanced Conversions" (EC) in Campaign Manager 360 (CM360) API is a hybrid solution with API, which is covered by this destination, and client-side tag: See our template tag <mark style="color:blue;">gtag - Google SA360 - Floodlight for server-side Enhanced Conversions</mark> for more details. Google still requires Floodlight tags to get conversion info from advertisers' websites.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -21,10 +21,10 @@ The Google Search Ads 360 Enhanced Conversions destination provides the followin
 
 ## Destination setup
 
-Before configuring this destination, you need to fullfil the following requirements:&#x20;
+Before configuring this destination, you need to fullfil the following requirements:
 
 {% hint style="info" %}
-### Accept ToS
+#### Accept ToS
 
 Log in to the CM360 account and choose the advertiser you want to implement EC with. On the left, open the menu <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Configuration`</mark>, and flag the checkbox under the <mark style="color:blue;">`Enhanced conversions`</mark> section:\
 \
@@ -32,12 +32,11 @@ Log in to the CM360 account and choose the advertiser you want to implement EC w
 \
 CM360 users of agency admin and DC account manager roles should be able to accept the ToS. Note that accepting the ToS can also be done in the previous version of Search Ads 360 (SA360), but only if the CM360 advertiser controlling the floodlight configuration is linked to a SA360 advertiser. In that case, the ToS can be accepted in the linked advertiser under <mark style="color:blue;">`Advertiser Settings`</mark> ➜ <mark style="color:blue;">`Advertiser Details`</mark> ➜ <mark style="color:blue;">`Enhanced conversions`</mark>:\
 \
-![](../../../../.gitbook/assets/sa360ec_2.png)\
+![](../../../../.gitbook/assets/sa360ec_2.png)\\
 
+#### Enrich you Floodlight client-side tag
 
-### Enrich you Floodlight client-side tag
-
-Ensure that both [**match\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#custom\&zippy=%2Ccustom-fields) and [**transaction\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#zippy=%2Cfields-in-the-event-snippet---overview) fields are properly set. \
+Ensure that both [**match\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#custom\&zippy=%2Ccustom-fields) and [**transaction\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#zippy=%2Cfields-in-the-event-snippet---overview) fields are properly set.\
 If you're setting up your client-side tag for the first time, you may want to use our template tag <mark style="color:blue;">gtag - Google SA360 - Floodlight for server-side Enhanced Conversions</mark>.
 {% endhint %}
 
@@ -46,10 +45,9 @@ If you're setting up your client-side tag for the first time, you may want to us
 <table><thead><tr><th width="344">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Floodlight Configuration Id</code></td><td><em><strong><code>Required</code></strong></em><br>Floodlight configuration identifier of the related conversion. More details are available following this <a href="https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion">LINK</a>. <strong>[1]</strong></td></tr><tr><td><code>Floodlight Activity Id</code></td><td><em><strong><code>Required</code></strong></em><br>Floodlight activity identifier of the related conversion. More details are available following this <a href="https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion">LINK</a>. <strong>[1]</strong></td></tr><tr><td><code>Match Id</code></td><td><em><strong><code>Required</code></strong></em><br>A unique advertiser created identifier also to be passed in the client-side Floodlight. This can only contain letters, numbers, underscores, hyphens and periods and is case sensitive. Max 100 characters. More details are available following this <a href="https://support.google.com/campaignmanager/answer/7554821?hl=en#custom&#x26;zippy=%2Ccustom-fields">LINK</a> (See field name "match_id").</td></tr><tr><td><code>Total Quantity</code></td><td>Flag this option to consider the total quantity instead of the number of unique products.</td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> :\
+**\[1]** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> :\\
 
-
-![](<../../../../.gitbook/assets/sa360ec_3 (1).png>)
+<img src="../../../../.gitbook/assets/sa360ec_3 (1).png" alt="" data-size="original">
 {% endhint %}
 
 ## Quick reference
@@ -73,8 +71,8 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
-&#xNAN;**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
-&#xNAN;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
-&#xNAN;**\[4]** Automatically normalized and hashed if passed in clear.
+&#xNAN;**\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
+\&#xNAN;**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
+\&#xNAN;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
+\&#xNAN;**\[4]** Automatically normalized and hashed if passed in clear.
 {% endhint %}

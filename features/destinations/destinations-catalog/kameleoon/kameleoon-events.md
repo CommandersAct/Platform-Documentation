@@ -1,6 +1,6 @@
 # Kameleoon Events
 
-[Kameleoon ](https://www.kameleoon.com)is an AI personalization and A/B testing SaaS platform for product managers and marketing teams who want to personalize the customer journey to maximize engagement, conversion and online revenue. Using this destination you can implement Kameleoon [TrackConversion API](https://customers.kameleoon.com/apisdk/doc/#/TrackConversion/get\_apisdk\_trackConversion) which can be used, after triggering an experiment, to measure performance characteristics according to the goals that make sense for your business.
+[Kameleoon ](https://www.kameleoon.com)is an AI personalization and A/B testing SaaS platform for product managers and marketing teams who want to personalize the customer journey to maximize engagement, conversion and online revenue. Using this destination you can implement Kameleoon [TrackConversion API](https://customers.kameleoon.com/apisdk/doc/#/TrackConversion/get_apisdk_trackConversion) which can be used, after triggering an experiment, to measure performance characteristics according to the goals that make sense for your business.
 
 ## Key features
 
@@ -35,7 +35,7 @@ The "Kameleoon Events" destination provides the following key features:
 
 {% hint style="info" %}
 **\[1]** The cookie content is set as value for the parameter`userID`.\
-**\[2]** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
+&#xNAN;**\[2]** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
 {% endhint %}
 
 ##

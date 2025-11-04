@@ -14,7 +14,7 @@ The Taboola Events destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-First, you need to enable server-side tracking in your Taboola campaigns by including the <mark style="color:blue;">`{click_id}`</mark> macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign"). \
+First, you need to enable server-side tracking in your Taboola campaigns by including the <mark style="color:blue;">`{click_id}`</mark> macro to your tracking code. More details are available by following this [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) (See section "Add S2S Tracking to your Taboola Campaign").\
 Lastly, if you're not already sending events to Taboola Ads, you need to create a server-side conversion (See [LINK](https://help.taboola.com/hc/en-us/articles/115006850567-How-to-Track-Conversions-Using-Server-to-Server-Integration-S2S-) and section "Create S2S Conversions") and take note of your "Event Name": this needs to be set as <mark style="color:blue;">`Taboola Event Name`</mark> in [Configuration](taboola-events.md#configuration).
 {% endhint %}
 
@@ -42,5 +42,5 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-**\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](taboola-events.md#configuration).
+&#xNAN;**\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](taboola-events.md#configuration).
 {% endhint %}

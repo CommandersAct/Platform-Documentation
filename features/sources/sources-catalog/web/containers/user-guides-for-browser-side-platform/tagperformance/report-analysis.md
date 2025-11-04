@@ -38,7 +38,7 @@ The three metrics would take the following values:
 
 **2)-The Pie Chart:**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (326) (1).png" alt=""><figcaption></figcaption></figure>
 
 The pie chart highlights tags that take longer to load in terms of the selected level of analysis in the available filters: **Start Render, DOM Ready, DOM Loaded** or Cumulated loading time.
 
@@ -66,7 +66,7 @@ We wish to analyze the variation of tags affecting the Start Render event on May
 
 In the screenshot below, we can see a 65% increase in AB Tasty’s loading time for that day. The tag does indeed take 61.96ms to load, whereas the median for the six previous days was of 37.65ms. (May 16th: 48.05ms /May 17th: 30.30ms / May 18th: 35.77ms / May 19th: 27.44ms / May 20th: 64.11 ms / May 21st: 39.53ms).
 
-<figure><img src="../../../../../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (330) (1).png" alt=""><figcaption></figcaption></figure>
 
 **4)-Main Page Type Variations:**
 
@@ -99,11 +99,9 @@ In the screenshot below, we see a 31% reduction in loading times for the “news
 
 Note: These four metrics consider the selected filters among “page type”, “container”, “device”, “OS” or “browser”.
 
-
-
 **2)-TagPerformance by tags**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (335) (1).png" alt=""><figcaption></figcaption></figure>
 
 The graph shows information about tags’ loading time on your website.
 
@@ -138,13 +136,11 @@ You wish to know if a tag loading during the Start Render event has an impact on
 *   Select the tag to analyze:
 
     <figure><img src="../../../../../../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
-*   Select the following metrics from your graph: “Tag Loading Time” (the tag’s loading time) and “Average Start Render (First Paint)” (average loading time of the Start Render):\
-
+*   Select the following metrics from your graph: “Tag Loading Time” (the tag’s loading time) and “Average Start Render (First Paint)” (average loading time of the Start Render):\\
 
     <figure><img src="../../../../../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
-The result below shows that the selected tag has little impact on the site’s Start Render, as the increase in the tag’s loading time at 13h (1) did not cause the Start Render’s average loading time to increase as well at that very moment.\
-
+The result below shows that the selected tag has little impact on the site’s Start Render, as the increase in the tag’s loading time at 13h (1) did not cause the Start Render’s average loading time to increase as well at that very moment.\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
@@ -158,8 +154,7 @@ You can analyze the following elements for each tag:
 
 * **“Tag loading time” (ms**): Loading time in milliseconds
 *   **“Tag firing”**: Number of times a tag is loaded\
-    \
-
+    \\
 
     <figure><img src="../../../../../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
@@ -170,8 +165,7 @@ If you click a tag’s name, a graph appears showing these items:
 * The number of times a tag is loaded compared to the previous period (ex: previous day if the analysis is done by day).
 * The number of times tags are loaded on the site compared to the previous period.
 
-Note: The current period is always displayed in green and the period of comparison in blue.\
-
+Note: The current period is always displayed in green and the period of comparison in blue.\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
@@ -181,13 +175,12 @@ Note: The current period is always displayed in green and the period of comparis
 
 Amid this context, the “Tag Hierarchy” report provides a global insight of requests happening while your website and its content load. You can thus better control calls issued from your website and exchanged data.
 
-**Report Structure:**&#x20;
+**Report Structure:**
 
 1/Page type filter:
 
 This report is filtered by page type (“page\_type” option on the segmentation menu). The default selected page type is the first one appearing on the list (1) and is displayed on the top, left-hand side of the report (2):\
-\
-
+\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
 
@@ -196,7 +189,7 @@ You can at all times apply filters on different page types or deselect enabled f
 2/Request type (script/iframe/pixel)
 
 The report highlights the request’s nature/type:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/piggybacking\_doc\_2.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/piggybacking_doc_2.png)
 
 * Script (URL called with \<script> tag)
 * Iframe (URL called with an \<iframe> tag)
@@ -207,25 +200,22 @@ The report highlights the request’s nature/type:[\
 
 3/Request Detail
 
-The “Tag Hierarchy” report allows you to visualize all domains called from your main domain and all other domains they call on different levels:\
-
+The “Tag Hierarchy” report allows you to visualize all domains called from your main domain and all other domains they call on different levels:\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
 
 On the diagram above, sub-domain 2 (“sub-domain 2”) is called from your site’s main domain. It is a JavaScript file (blue circle) that in turn calls two pixels (green circles) and a JavaScript file. Waterfall calls stop here for this request, but this is not the case for sub- domain 1 (“Sub-domain 1”), which calls JavaScript files which in turn issue new requests.
 
-In order to provide you with better readability, same-type “childless” requests (script/iframe/pixel) coming from the same domain are gathered under the same domain name, and a number between brackets next to the domain’s name indicates how many calls were issued from it:\
-
+In order to provide you with better readability, same-type “childless” requests (script/iframe/pixel) coming from the same domain are gathered under the same domain name, and a number between brackets next to the domain’s name indicates how many calls were issued from it:\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
 By hovering over any of these domains (ex: ) you will see, with greater detail, which URLs are called by them:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/2018-01-29\_12h13\_27.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/2018-01-29_12h13_27.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
-You will also be able to see the URL structure and its parameters for certain requests, hence all the information sent to solutions called on your website:\
-
+You will also be able to see the URL structure and its parameters for certain requests, hence all the information sent to solutions called on your website:\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
 
@@ -246,18 +236,16 @@ This export is currently unavailable.
 * **“Tags impacting page loading time (Onload)”**: This corresponds to the aggregated loading time of hits that are sent before the DOM Loaded event.
 * **“Cumulated tag loading time”**: corresponds to the aggregated loading time of all hits (including those sent after the DOM Loaded event).
 
-Example: The following diagram shows an extract of tags present on the site:\
+Example: The following diagram shows an extract of tags present on the site:\\
 
-
-<figure><img src="../../../../../../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
 
 These are the results you will obtain when you select the following levels of analysis:
 
 *   “Tags impacting start render (First Paint)”: _TAG1 (HIT1) + TAG2 (HIT1)_
 
     <figure><img src="../../../../../../../.gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
-*   “Tags impacting page structure building (DomReady)”: _TAG1 (HIT1) + TAG2 (HIT1) + TAG1 (HIT2) + TAG1 (HIT3)_\
-
+*   “Tags impacting page structure building (DomReady)”: _TAG1 (HIT1) + TAG2 (HIT1) + TAG1 (HIT2) + TAG1 (HIT3)_\\
 
     <figure><img src="../../../../../../../.gitbook/assets/image (355).png" alt=""><figcaption></figcaption></figure>
 *   “Tags impacting page loading time (Onload)”: _TAG1 (HIT1) + TAG2 (HIT1) + TAG1 (HIT2) + TAG1 (HIT3) + TAG2 (HIT2)_
@@ -265,7 +253,7 @@ These are the results you will obtain when you select the following levels of an
     <figure><img src="../../../../../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
 *   “Cumulated tag loading time”: _TAG1 (HIT1) + TAG2 (HIT1) + TAG1 (HIT2) + TAG1 (HIT3) + TAG2 (HIT2) + TAG1 (HIT4)_
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you wish to know more about the “Start Render”, “**DOM Ready**” and “**DOM Loaded**” concepts please refer to the Definition of TagPerformance Metrics article.
 

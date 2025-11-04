@@ -5,7 +5,7 @@ Once a tag is added, you can configure it in the “**EDIT**” step.
 A list of your tags is displayed in the left menu of the “**EDIT**” interface. Tags that need to be configured or validated have a warning (/!\\) sign before their name.
 
 Note: You can find a tag on the list by using the search box :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TAG\_CONFIG\_1.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TAG_CONFIG_1.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ For each tag selected, a configuration window will appear in the center of the i
 
 **Use** **Tag** **Cleaner**: JavaScript correction tool and preview button to see the tag’s code once its variables have been mapped with variables from the datalayer
 
-**Previous** **version(s)**: The tag’s version history;&#x20;
+**Previous** **version(s)**: The tag’s version history;
 
 “**delete**” and “**save**” buttons
 
@@ -39,8 +39,6 @@ When you activate the expiration function, it automatically deactivates the tag 
 
 This function is useful if you have added a tag for a specific campaign and you want it to be deactivated once it ends, so that your container is not needlessly overloaded with tags.
 
-
-
 ## Mapping tags' variables
 
 Important reminder: You must create a link between the information requested by the different tags in the container and the data available in the data layer. Adding data layer variables to tag variables is called “**mapping**“.
@@ -50,7 +48,7 @@ The tag variables to map are called “**dynamic variables**“, and they are de
 They appear in the tag’s code, in blue boldface, as well as above the tag’s code .
 
 You must map these dynamic variables with the data layer variables available in the drop down menus (example: user email, user ID) or a static value (example: method) :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MAPPING\_TAGS\_VARS.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MAPPING_TAGS_VARS.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
@@ -58,8 +56,7 @@ Additional information
 
 If the tag’s code does not meet your needs, you can customize it directly in the “**JAVASCRIPT CODE**” section as well as the “**NOSCRIPT CODE**” section for browsers without JavaScript activated (this function will only work if you call the NOSCRIPT version of the container in your site’s source code):
 
-\
-
+\\
 
 <figure><img src="../../../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,14 +66,11 @@ Example:
 
 If you wish to hard code the USER ID, just replace #user\_id# with the value of the ID:\
 \
-<img src="../../../../../../.gitbook/assets/image (28).png" alt="" data-size="original">          ![](<../../../../../../.gitbook/assets/image (8) (3).png>)
-
-
+<img src="../../../../../../.gitbook/assets/image (28).png" alt="" data-size="original"> ![](<../../../../../../.gitbook/assets/image (8) (3).png>)
 
 You can also customize your tag’s code by changing the static elements into dynamic variables.
 
-Example:\
-
+Example:\\
 
 If you want to make all the values to be collected in a tag dynamically, simply leave them in between hashtags signs. Then save the tag after making this change and you will be able to map your variable with your data layer data:[\
 ](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MATCHING.png)
@@ -110,12 +104,12 @@ Uncheck the “**Use Tag Cleaner**” box if you do not want your tag to be rewr
 Each time a container is generated, Commanders Act saves the tags present in the container, thus allowing you to return to an old tag configuration if necessary.
 
 You can display previous versions of a particular tag by clicking “**PREVIOUS VERSION(S)**”:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS\_VERSIONS.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_VERSIONS.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 The “**PREVIOUS VERSION(S)**” window contains all the saved versions of your tag. The version displayed by default is the previous version of the tag.[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS\_V\_DETAILS.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_V_DETAILS.png)
 
 **Tag version**: number of the last tag version saved, name of the user who generated the version, and the date and time it was generated
 
@@ -135,7 +129,7 @@ You have two options:
 
 * You can select a previously created perimeter or constraint by clicking the drop-down menu:\
   \
-  &#x20;   <img src="../../../../../../.gitbook/assets/image (94).png" alt="" data-size="original">
+  <img src="../../../../../../.gitbook/assets/image (48) (1).png" alt="" data-size="original">
 * You can create a new perimeter or constraint by clicking “+” ![](<../../../../../../.gitbook/assets/image (13) (2).png>)
 
 The rule creation window will appear so that you can create your rules in the same way as in the “**RULES**” step.
@@ -167,7 +161,7 @@ Caution: a deleted tag cannot be recovered.
 ## Tags' activation and execution order
 
 To activate or deactivate tags in the “**GENERATE**” step, just check or uncheck each tag in the “**ACTIVATION**” column and generate a new container version (blue button in the upper right-hand side of the screen):[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MANAGING\_ACTIVATION.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MANAGING_ACTIVATION.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
@@ -175,10 +169,9 @@ All checked tags are active and all unchecked tags are inactive. The advantage o
 
 Note: Since a deactivated tag will be visible in the interface but not in the container called for your site, your container will not become needlessly cluttered.
 
-To modify the order in which tags are executed in a container in the “**GENERATE**” step, just drag and drop each tag in the “**RANK**” column and place them in the order in which you want them to execute on your site’s pages, and then generate a new container version (blue button in the upper-right hand side of the screen):\
+To modify the order in which tags are executed in a container in the “**GENERATE**” step, just drag and drop each tag in the “**RANK**” column and place them in the order in which you want them to execute on your site’s pages, and then generate a new container version (blue button in the upper-right hand side of the screen):\\
 
-
-<figure><img src="../../../../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
 
 We recommend that you place the **most important tags** at the **top** of the container so that they have the best chance of executing if your visitors change pages quickly without waiting for them to fully load.
 
@@ -193,7 +186,7 @@ To add a timeout to tags in the “**GENERATE**” step, just enter a duration i
 
 ## Customizing the tag library (whitelisting)
 
-You can customize the tag library by restricting the number of tag templates available in the tag addition popin from the “Select” and “Edit” steps.&#x20;
+You can customize the tag library by restricting the number of tag templates available in the tag addition popin from the “Select” and “Edit” steps.
 
 This “tags whitelist” feature is useful if you wish to limit access to the solutions in the library and only make some of them available to your staff. This aims at preventing users from placing tags you did not authorize into your containers.
 
@@ -219,4 +212,3 @@ Click the “SAVE” button to save your settings.
 
 * When a new tag is added to the tag library by Commanders Act’s staff, it is automatically unchecked if you have already created at least one tag whitelist for your site.
 * You can copy a tags whitelist from one site to another from the “Administration” > “Copy management” menu.
-

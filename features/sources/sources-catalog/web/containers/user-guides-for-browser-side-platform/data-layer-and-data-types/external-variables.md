@@ -12,7 +12,7 @@ All declared external variables can be used:
 
 – To pass information to the solutions embedded in the container (linking external variables and solutions is called mapping). See the “Mapping Tags’ Variables” article to find out how to map your external variables in a tag.
 
-–  To create activation rules for your tags. See the “Adding Rules” section to find out how to create rules based on your external variables.
+– To create activation rules for your tags. See the “Adding Rules” section to find out how to create rules based on your external variables.
 
 Additional information
 
@@ -25,8 +25,6 @@ As with your container, external variables must be present on **all of your site
 External variables must be declared in your site’s source code **before the call to your containers** (=JavaScript files). If you have a header container, the external variables will thus be present in the \<head>; if you have a container in the body, they must be declared in the \<body> html tag.
 
 Here is a sample list of external variables:
-
-
 
 ```
 <script type="text/javascript">
@@ -57,7 +55,7 @@ There are **two** situations in which you may need to declare your variables in 
 2\) **Information is missing** from your current tagging plan (e.g. customer status): Again, this **variable** must be **declared** in the interface **first**, before it can be used in your tags and rules.
 
 Note: If necessary, you can click “**Download**“, to retrieve your external variables in JavaScript format and send them to your technical team or the technical provider in charge of implementing the variables in you site’s source code:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DOWNLOAD\_VEXT\_BUTTON.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/DOWNLOAD_VEXT_BUTTON.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
 
@@ -68,7 +66,7 @@ Clicking “**Download**” will open a window containing the JavaScript code to
 To add an external variable, you must go to the “**Data Management**” > "**Web Data layer**" > “**External Variables**” and click “**ADD VARIABLE**”
 
 The “**add variable**” window contains various fields:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VEXT\_DETAILS.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VEXT_DETAILS.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
@@ -87,7 +85,7 @@ The “**add variable**” window contains various fields:[\
 Once the variable is added, it will appear on the variables list:
 
 [\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VARIABLE\_ADDED.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/VARIABLE_ADDED.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
@@ -101,8 +99,8 @@ Categories are managed by clicking the “**manage categories**” button to the
 
 <figure><img src="../../../../../../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
-Once your category is created, it can be used in the window to  **add** and **edit external variables;** you can edit them by clicking the pencil icon, delete them by clicking the cross and adding them by entering a name and clicking the blue "+" button :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CAT\_WINDOW.png)
+Once your category is created, it can be used in the window to **add** and **edit external variables;** you can edit them by clicking the pencil icon, delete them by clicking the cross and adding them by entering a name and clicking the blue "+" button :[\
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/CAT_WINDOW.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
@@ -125,7 +123,7 @@ You can change separating commas into periods (e.g. “12,50” becomes “12.50
 You can replace special characters with “\_” (e.g. “the company\&its values” changes to “the company\_its values”) or truncate a character string (e.g. limiting the variable’s value to 10 characters).
 
 After assigning a variable type, you can modify its value on the fly, tag by tag, in the “**EDIT**” interface. Variables with a type added will have a blue symbol in front of their name (1):[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PROCESSING\_FUNCTpng.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PROCESSING_FUNCTpng.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (230).png" alt="" width="320"><figcaption></figcaption></figure>
 
@@ -134,7 +132,7 @@ Once you have mapped your variable, click the link **symbol**:
 <figure><img src="../../../../../../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 A window will appear with a list of different operations corresponding to the type chosen. Check the box corresponding to the operation you want (for example, remove special characters and replace them by “\_”) and click “**SAVE**” :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/STRING\_OPS\_PROSFUNC.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/STRING_OPS_PROSFUNC.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (234).png" alt="" width="399"><figcaption></figcaption></figure>
 
@@ -164,14 +162,14 @@ Enter all your array keys in the window that appears (e.g. if your main variable
 
 After selecting the “**Two-dimensional array**” type for your variable go to the “**EDIT**” step. Click the symbol appearing to the left of the variable that you just mapped:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (231) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enter the array key in the configuration window (e.g. the product ID) and the separator:
 
 <figure><img src="../../../../../../../.gitbook/assets/image (239).png" alt="" width="448"><figcaption></figcaption></figure>
 
 You can also use the “**Two-dimensional array**” type to create internal variables that return product keys separated by the symbol of your choice. For more information, go to the “Adding Custom Internal Variables – Builder Mode” article.[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TWO\_DIM\_ARRAY\_WITH\_INTERNAL.png)
+](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TWO_DIM_ARRAY_WITH_INTERNAL.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
 
@@ -185,4 +183,4 @@ Note: The variables used in a container (to be added to a tag, for example) cann
 
 By clicking on the flag, you will see which container(s), tag(s) or rule(s) use this variable:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (241) (1).png" alt=""><figcaption></figcaption></figure>

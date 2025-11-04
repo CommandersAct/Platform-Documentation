@@ -1,6 +1,6 @@
 # Perimeters & constraints
 
-_Perimeters_ and _Constraints_ are two methods to **conditionally** fire your tags.&#x20;
+_Perimeters_ and _Constraints_ are two methods to **conditionally** fire your tags.
 
 * Under the _Perimeter_ panel, tags fire if at least **one rule** is true.
 * Under the _Constraints_ panel, tags fire if **all rules** are true.
@@ -15,11 +15,11 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 
 “**If Variable is Not Equal**“: Tag activated if the variable differs from the specified value.
 
-“**OR Condition (One Variable)**“: Tag activated if the variable equals at least one of the specified values.&#x20;
+“**OR Condition (One Variable)**“: Tag activated if the variable equals at least one of the specified values.
 
 “N**AND Condition (One Variable)**“: Tag activated if the variable equals two or more specified values.
 
-“**OR Condition (Up To Six Possible Variables)**“: Tag activated if at least one of the variables equals the specified value.&#x20;
+“**OR Condition (Up To Six Possible Variables)**“: Tag activated if at least one of the variables equals the specified value.
 
 “**AND Condition (Up To Six Possible Variables)**“: Tag activated if all the variables equal all the specified values.
 
@@ -33,14 +33,13 @@ The “**Variables**” tab allows you to create rules based on your data layer 
 
 “**If Variable Matches**“: Tag activated if the variable matches the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).
 
-“**If Variable Doesn’t Match**“: Tag activated if the variable does not match the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).\
-
+“**If Variable Doesn’t Match**“: Tag activated if the variable does not match the specified value (regular expressions allowed: \* to match any character and ^ for “variable begins with”).\\
 
 {% hint style="info" %}
 In case of multiple values: enter all the values in the field separated by a comma ",". Don't use space between.
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 **In which case using “external variables” for the mapping?**
 
@@ -78,7 +77,7 @@ The “**Cookie**” tab allows you to create rules based on cookies you have pr
 
 “**If Cookie Is Not Equal**“: Tag activated if the cookie’s value differs from the specified value.
 
-“**If Cookie Contains**“: Tag activated if the cookie’s value contains the specified value. \
+“**If Cookie Contains**“: Tag activated if the cookie’s value contains the specified value.\
 In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
 “**If Cookie Doesn’t Contain**“: Tag activated if the cookie’s value does not contain the specified value.\
@@ -96,7 +95,7 @@ This tab allows you to create rules based on your site’s URLs (note: we **reco
 
 “**If URL Equals**“: Tag activated if the URL equals the specified value.
 
-“**If URL Contains**“: Tag activated if the URL contains the specified value. \
+“**If URL Contains**“: Tag activated if the URL contains the specified value.\
 In case of multiple values : enter all the values in the field separated by a comma ",". Don't use space between.
 
 “**If URL Doesn’t Contain**“: Tag activated if the URL does not contain the specified value.
@@ -149,7 +148,7 @@ This tab allows you to create rules based on the type of audience segments creat
 
 **Condition and behavior**
 
-&#x20;“**DataCommander OR condition (up to six variables)**“: Tag activated if at least one of the audiences equals the specified value.
+“**DataCommander OR condition (up to six variables)**“: Tag activated if at least one of the audiences equals the specified value.
 
 “**DataCommander AND condition (up to six variables)**“: Tag activated if all the audiences equal all the specified values.
 
@@ -193,7 +192,6 @@ This tab allows you to create all types of advanced rules. For example, you can 
 
 “**Custom**“: Custom rule (to define in JavaScript).
 
-Example: In order to call a tag for 25% of site visitors, you must select the “Sampling (1/X) (Visitor Based)” and configure it in the following manner:\
-
+Example: In order to call a tag for 25% of site visitors, you must select the “Sampling (1/X) (Visitor Based)” and configure it in the following manner:\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>

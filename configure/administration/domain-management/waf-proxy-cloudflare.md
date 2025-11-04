@@ -12,7 +12,7 @@ Contact your account manager for more details.
 
 ### Create your WAF
 
-1\. In Cloudflare (or your WAF), declare the tracking domain to be used and point it to our infra (for ex. waf.myshop.com) and point it to the endpoint we've defined for the proxy:&#x20;
+1\. In Cloudflare (or your WAF), declare the tracking domain to be used and point it to our infra (for ex. waf.myshop.com) and point it to the endpoint we've defined for the proxy:
 
 **`ca-trk-proxy.commander1.com`**
 
@@ -37,7 +37,7 @@ Contact your account manager for more details.
 
     This action will affect Consent, Deduplication, Campaign, Segment, Server Side
 
-<figure><img src="../../../.gitbook/assets/image (492).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (491) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What happens when I have 2 or more domains?**
 
@@ -54,7 +54,7 @@ At this point, **WebContainers and Privacy banners** should be **regenerated and
 
 ## ​Troubleshooting
 
-`Host` must be identified as [waf.commandersact.com](http://waf.commandersact.com/) which is what is expected.&#x20;
+`Host` must be identified as [waf.commandersact.com](http://waf.commandersact.com/) which is what is expected.
 
 If the `host` is identified as [ca-trk-proxy.commander1.com](http://ca-trk-proxy.commander1.com/) which is not what is expected. This probably means that the proxy is setting the `host` parameter in the header to the domain in [commander1.com](http://commander1.com/) instead of leaving the original domain.
 
@@ -99,4 +99,3 @@ listen tcp-443
    * This option disables the verification of the server's SSL certificate during health checks. It means HAProxy will not validate the certificate against a certificate authority (CA).
 
 In summary, this configuration line defines a backend server named `ca-trk-proxy` located at `ca-trk-proxy.commander1.com:443`. It uses the `dns` resolver for DNS resolution, performs health checks every 30 seconds, uses SNI during the checks, and does not verify the SSL certificate of the server during health checks.
-

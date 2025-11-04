@@ -8,17 +8,15 @@ A configuration window will appear with 3 main tabs:
 
 * “[**General**](creation-and-modification.md#general)“: to manage basic container options, such as naming your container
 * “[**Synchronization**](creation-and-modification.md#synchronization)“: to manage container updating options
-* “[**Advanced**](creation-and-modification.md#advanced)“: to manage advanced container options&#x20;
+* “[**Advanced**](creation-and-modification.md#advanced)“: to manage advanced container options
 
 After configuring the various container options, click “Add”
 
 ### **General**
 
-<figure><img src="../../../../../../.gitbook/assets/image (93) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (90) (1).png" alt=""><figcaption></figcaption></figure>
 
 Simply fill the “**Name**“ field with Container’s wanted name
-
-
 
 ### **Synchronization**
 
@@ -29,7 +27,7 @@ Mode: Synchronization modes for the container:
 * **FTP/CDN**: This mode hosts the container on an FTP or CDN server (the server must be previously configured in Administration => Connector Credentials). By clicking this option, the “**Set as deployed and send to FTP**” synchronization mode will be proposed in the “**DEPLOY**” step.
 * **Amazon S3**: This mode hosts the container on an FTP or CDN server (the server must be previously configured in Administration => Connector Credentials). By clicking this option, the “**Set as deployed and send to AWS**” synchronization mode will be proposed in the “**DEPLOY**” step.
 * **Update by batch from permanent link**: this mode activates a permanent link to the last container version deployed. This mode can be useful when manually updating the container on your site or if you use a batch that regularly restores the last container version on the site. By clicking this option, the “**Set as deployed and use external URL**” synchronization mode will be proposed in the “**DEPLOY**” step.
-* **Custom URL**: this mode calls a URL when deploying the container (the URL must be previously configured in Administration => Connector Credentials).  This URL refers to a script placed on your servers (created by you) that must perform the operations necessary to launch the container. By clicking this option, the “**Set as deployed and call the URL**” synchronization mode will be proposed in the “**DEPLOY**” step.
+* **Custom URL**: this mode calls a URL when deploying the container (the URL must be previously configured in Administration => Connector Credentials). This URL refers to a script placed on your servers (created by you) that must perform the operations necessary to launch the container. By clicking this option, the “**Set as deployed and call the URL**” synchronization mode will be proposed in the “**DEPLOY**” step.
 * **Manual**: this mode allows you to load the container directly from the interface so that you can then deploy it manually on your site. You can check the “**Add unminified version**” function in order to load the container in either compressed (minified) or uncompressed (unminified) mode. By clicking this option, the “**Set as deployed and get JavaScript file**” synchronization mode will be proposed in the “**DEPLOY**” step.
 * **Send an email**: this deployment mode complements the other 4 modes. It is used to send a notification email to specified users when a deployment is carried out.
 
@@ -68,11 +66,7 @@ You can also define a JavaScript version and noscript version for each tag.
 
 **Force Cookie Secure setting:** all cookies created through the container will get the Secure parameter
 
-
-
 \*Note: this setup can be modified at any time.\
-Simply click the 'parameter' icon:\
+Simply click the 'parameter' icon:\\
 
-
-<figure><img src="../../../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../../../.gitbook/assets/image (112) (1).png" alt=""><figcaption></figcaption></figure>

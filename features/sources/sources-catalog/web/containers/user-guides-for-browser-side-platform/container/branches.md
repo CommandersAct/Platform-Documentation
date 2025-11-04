@@ -14,7 +14,7 @@ Branches allow you to create a separate, partitioned work environment—a safe s
 * **Reduce errors:** By isolating changes, you can avoid the dreaded “unfinished work” being deployed to production. Test and validate your changes in a secure environment before merging.
 * **Streamlined merging:** Our intuitive interface makes merging a breeze. View changes side-by-side with our diff checker, ensuring nothing slips through the cracks.
 
-### :heart: Why you’ll love Branches :heart:&#x20;
+### :heart: Why you’ll love Branches :heart:
 
 **Say goodbye to workflow interruptions!**
 
@@ -22,7 +22,7 @@ Previously, if two users worked on the same account, their changes would overlap
 
 ### **A seamless User Experience**
 
-* **Visual indicators:** It’s easy to know where you are. When you’re working on the Main (your actual web container), all menu elements are cherry red. \
+* **Visual indicators:** It’s easy to know where you are. When you’re working on the Main (your actual web container), all menu elements are cherry red.\
   Switch to a Branch, and everything turns blue, signaling that you’re in a safe zone to make changes.
 * **Effortless Branch creation:** Whether you’re starting a new project, creating a new Branch is just a click away. Our intuitive panel guides you through the process, from naming your Branch to diving straight into editing.
 * **Real-time notifications:** Stay updated with any changes made into the Main while you’re working on a Branch. You’ll receive a prompt with options to update your Branch or continue working—keeping you in control at all times.
@@ -35,11 +35,11 @@ Previously, if two users worked on the same account, their changes would overlap
 
 ## How it works ?
 
-### **Branch Creation**&#x20;
+### **Branch Creation**
 
-To open the Branch creation UI use the button in the breadcrumb menu (identified as "Main" when you are on your regular container, or by the Branch name if your are in Branch context).  \
-The list of your branches will appears. Click on "Create new branch". \
-Just define a Branch name, you can also add a description if needed, \
+To open the Branch creation UI use the button in the breadcrumb menu (identified as "Main" when you are on your regular container, or by the Branch name if your are in Branch context).\
+The list of your branches will appears. Click on "Create new branch".\
+Just define a Branch name, you can also add a description if needed,\
 You can create up to 5 Branches for each container!
 
 <figure><img src="../../../../../../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
@@ -50,7 +50,7 @@ You can create up to 5 Branches for each container!
 
 On save, you will redirected in your new Branch environment
 
-Once your Branch is created, all changes you make are isolated to this environment. The blue color of the navigation elements shows you are in a Branch.&#x20;
+Once your Branch is created, all changes you make are isolated to this environment. The blue color of the navigation elements shows you are in a Branch.
 
 <figure><img src="../../../../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,7 +67,7 @@ Be careful on your WebDatalayer modification(s), it may impact all your site
 If you create an internalvar in your Branch, you must link it with the Main as well, because internalvars aren't merged
 {% endhint %}
 
-### **Branch Comparison with the Main**&#x20;
+### **Branch Comparison with the Main**
 
 At any time you can have clear view of the work done on each Branch.\
 Simply click on the link "See changes"
@@ -82,7 +82,7 @@ You can unfold elements to get details
 
 <figure><img src="../../../../../../../.gitbook/assets/image (537).png" alt=""><figcaption></figcaption></figure>
 
-### **Existing Branch Edition**&#x20;
+### **Existing Branch Edition**
 
 To access an existing Branch, click on "pen" icon.\
 **This pop in is also useful to go back to your Main container.**
@@ -98,7 +98,7 @@ If your Branch is not up to date with the newest Main changes, you will see this
 <figure><img src="../../../../../../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
 
 On click, the pop in "Update" will be displayed, a diff checker.\
-You are allowed to keep or discard the changes. \
+You are allowed to keep or discard the changes.\
 The checked items will be bring into your Branch.\
 If you don't wish to update your Branch now, then click on cancel.
 
@@ -114,7 +114,7 @@ By default they are unchecked. Take time to compare and choose if you wish to ke
 <figure><img src="../../../../../../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-We recommend to bring all the changes from the Main into your Branch. If you refuse to update some elements, you may impact the Main container on merging.&#x20;
+We recommend to bring all the changes from the Main into your Branch. If you refuse to update some elements, you may impact the Main container on merging.
 {% endhint %}
 
 ### Branch QA & Test
@@ -158,7 +158,7 @@ Ready to bring your changes from Branch into the Main? Use our “Merge” featu
 Merge doesn't consider the generation versions. The UI for merging will ever display the latest updates of your Branch
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (545) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 If your Branch is not up to date, Merge will be blocked.
@@ -184,7 +184,7 @@ Don't forget to re-generate your Main container to bring your changes in Product
 
 ## Custom User Rights
 
-The native roles 'Administrator', 'Technical' and 'Marketing' are allowed to create, edit and merge branches.&#x20;
+The native roles 'Administrator', 'Technical' and 'Marketing' are allowed to create, edit and merge branches.
 
 If you want to manage these access rights more closely, you can use the dedicated rights in Profile Management, Custom Profile.
 

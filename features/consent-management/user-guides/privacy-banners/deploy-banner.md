@@ -8,7 +8,7 @@ description: Options to generate and deploy banner.
 
 ## Generate Banner Versions
 
-To deploy a new or updated banner it is first necessary to generate a new version of the banner. Click `GENERATE` to open the modal dialogue.&#x20;
+To deploy a new or updated banner it is first necessary to generate a new version of the banner. Click `GENERATE` to open the modal dialogue.
 
 <figure><img src="../../../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
@@ -21,7 +21,7 @@ You will have following option when generating a new container version.
 
 ## Preview New Banner Versions
 
-You can preview and test new banner versions by clicking the `TEST` option on the right site of the banner version in the banner version list. This will preview the banner on a demo website.&#x20;
+You can preview and test new banner versions by clicking the `TEST` option on the right site of the banner version in the banner version list. This will preview the banner on a demo website.
 
 {% hint style="info" %}
 It is recommended to test new banner on a test environment of the real website before deploying it.
@@ -41,13 +41,13 @@ Click `DEPLOY` to deploy a banner to the Commanders Act CDN.
 
 <figure><img src="../../../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
-### **On premise (self-hosted)**&#x20;
+### **On premise (self-hosted)**
 
 This option allows to self-host privacy banner. It therefore requires manual effort on each update. For on premise hosting it is necessary to provide the URL of the folder where the on premise banner is hosted. Example:
 
 `http(s)://www.mydomain.com/myfolder/`
 
-<figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (189) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click `DOWNLOAD` to download on the right side of the new banner files and manually update them on your server.
 
@@ -65,8 +65,6 @@ In case both TMS and Consent Commanders Act are used to manage tags it is import
 | Tag is assigned to a category or vendor in the used banner (`Data Governance > Consent Management > Categories (Tab ASSIGN TAGS)`) | Yes                    | No                | No             |
 | Banner text or style change                                                                                                        | No                     | No                | Yes            |
 | Banner button actions change                                                                                                       | No                     | No                | Yes            |
-
-
 
 {% hint style="info" %}
 On your website, don't forget to integrate a button or a link to allow your users to modify their consent choices

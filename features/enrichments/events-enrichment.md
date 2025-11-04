@@ -30,8 +30,6 @@ Select properties you want to add in the incoming event from the product catalog
 
 You can define here where properties coming from the product catalog will be added in incoming events (in the payload). By default, it is at the same level as the matching key. It could also be at the root of the event or custom (enter the position).
 
-
-
 ## Enrichment from Custom external API
 
 Enrich events with data coming from any API.
@@ -48,8 +46,6 @@ Configure the API (Method, URL, Body, Header)
 
 Select which properties from the API do you want to integrate into selected events.
 
-
-
 ## Enrichment from Weather database API
 
 {% hint style="info" %}
@@ -58,11 +54,9 @@ Coming soon
 
 You can currently manage it manually via [Enrichment from external API](events-enrichment.md#enrichment-from-custom-external-api), but a plug\&play version is in progress.
 
-
-
 ## Enrichment from Custom Data Store
 
-Enrich events from previously stored events. \
+Enrich events from previously stored events.\
 It allows you to store selected event and properties and use them later to enrich events, providing a more complete set of data for your marketing and analysis needs.
 
 ### Key Features
@@ -70,7 +64,7 @@ It allows you to store selected event and properties and use them later to enric
 #### Storage of Event
 
 * **Selective Storage**: Choose specific properties of an event to store after the event is cleaned. This ensures only relevant and clean data is stored.
-* **Storage Duration**: By default, properties are stored for 1 day.&#x20;
+* **Storage Duration**: By default, properties are stored for 1 day.
 
 #### Event Matching
 
@@ -89,18 +83,15 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 #### Step 1: Create your Storage Settings
 
 1. **Access Storage Settings**: Go to the Data Governance -> Storage settings.
-2.  **Manage Storage Settings**: Click on "New Storage" to create a new Storage.\
+2.  **Manage Storage Settings**: Click on "New Storage" to create a new Storage.\\
 
+    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-To learn more about how to use this feature, and get tips about Storage Settings creation, please [read the dedicated page](storage-settings.md)\
-
+To learn more about how to use this feature, and get tips about Storage Settings creation, please [read the dedicated page](storage-settings.md)\\
 
 #### Step 2: Enrich Events
 
-1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\
-
+1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\\
 
     <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Define Enrichment**:
@@ -108,18 +99,16 @@ To learn more about how to use this feature, and get tips about Storage Settings
     * **Name**: Name your enrichment rule.
     * **Select Sources and Environment**
     * **Select the Storage Settings** you want to use for this enrichment
-    *   **Choose Event**: Select the event you want to enrich.\
-
+    *   **Choose Event**: Select the event you want to enrich.\\
 
         <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * **Select Properties**: Define which properties from the stored event should be injected into the new event. Select in "Storage Settings" column the properties, as it is in your Storage. Select the property you want to enrich in the "Event Property"\
-      The storage do not replace or override the value of an existing property. The storage will create new properties. \
+      The storage do not replace or override the value of an existing property. The storage will create new properties.\
       If you want to override an existing value, click the option "override"
     * **Review Settings**: Ensure all settings are correctly configured.
-    * **Save**: Save the new enrichment settings.\
+    * **Save**: Save the new enrichment settings.\\
 
-
-    <figure><img src="../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (581) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Administrators Only**: This feature is accessible only to users with Administrator privileges. Custom profiles can be created to grant specific access to other users.
 

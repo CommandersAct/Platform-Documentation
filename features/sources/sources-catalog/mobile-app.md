@@ -1,6 +1,6 @@
 # Mobile APP
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>ANDROID SDK</td><td></td><td><a href="../../../.gitbook/assets/Android_symbol_green_RGB[1].png">Android_symbol_green_RGB[1].png</a></td><td><a href="android.md">android.md</a></td></tr><tr><td></td><td>IOS SDK</td><td></td><td><a href="../../../.gitbook/assets/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png">apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png</a></td><td><a href="ios.md">ios.md</a></td></tr><tr><td></td><td>FLUTTER SDK</td><td></td><td><a href="../../../.gitbook/assets/flutter5786[1].jpg">flutter5786[1].jpg</a></td><td><a href="flutter.md">flutter.md</a></td></tr><tr><td></td><td>REACT NATIVE SDK</td><td></td><td><a href="../../../.gitbook/assets/2300px-React-icon.svg[1].png">2300px-React-icon.svg[1].png</a></td><td><a href="react-native.md">react-native.md</a></td></tr><tr><td><p></p><p>HTTP TRACKING API</p></td><td></td><td></td><td><a href="../../../.gitbook/assets/HTTP (2).jpg">HTTP (2).jpg</a></td><td><a href="https://doc.commandersact.com/features/sources/sources-catalog/server/http-tracking-api">https://doc.commandersact.com/features/sources/sources-catalog/server/http-tracking-api</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td>ANDROID SDK</td><td></td><td><a href="../../../.gitbook/assets/Android_symbol_green_RGB[1].png">Android_symbol_green_RGB[1].png</a></td><td><a href="android.md">android.md</a></td></tr><tr><td></td><td>IOS SDK</td><td></td><td><a href="../../../.gitbook/assets/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png">apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4[1].png</a></td><td><a href="ios.md">ios.md</a></td></tr><tr><td></td><td>FLUTTER SDK</td><td></td><td><a href="../../../.gitbook/assets/flutter5786[1].jpg">flutter5786[1].jpg</a></td><td><a href="flutter.md">flutter.md</a></td></tr><tr><td></td><td>REACT NATIVE SDK</td><td></td><td><a href="../../../.gitbook/assets/2300px-React-icon.svg[1].png">2300px-React-icon.svg[1].png</a></td><td><a href="react-native.md">react-native.md</a></td></tr><tr><td>HTTP TRACKING API</td><td></td><td></td><td><a href="../../../.gitbook/assets/HTTP (2).jpg">HTTP (2).jpg</a></td><td><a href="https://doc.commandersact.com/features/sources/sources-catalog/server/http-tracking-api">https://doc.commandersact.com/features/sources/sources-catalog/server/http-tracking-api</a></td></tr></tbody></table>
 
 ## Introduction to mobile app tagging
 
@@ -76,16 +76,16 @@ You will need to connect your iPhone to your Mac.
 
 Open XCode, go to “Window” ), > “Devices” (2), then select your device in thecolumn to the left (3):
 
-![](../../../.gitbook/assets/xcode_1\[1].png)
+![](../../../xcode_1\[1].png)
 
 These elements will be displayed when you analyze mobile logs:
 
-* Commanders Act SDK’s version number \
+* Commanders Act SDK’s version number\
   example for consent module: “Commanders Act Privacy module init with version: 5.2.0”
-* Commanders Act site ID&#x20;
+* Commanders Act site ID
 * Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking/events-reference/)
 
-![](../../../.gitbook/assets/xcode_2\[1].png)
+![](../../../xcode_2\[1].png)
 
 \*\*\*
 
@@ -112,7 +112,7 @@ Go to the Charles app and authorize it to connect to the phone.
 
 ![](../../../.gitbook/assets/charles_2\[1].png)
 
-Browse the web with your phone and in Charles (on your computer) apply a “Commander” filter to see server-side hits displayed in the “Overview” section. They look like this: \
+Browse the web with your phone and in Charles (on your computer) apply a “Commander” filter to see server-side hits displayed in the “Overview” section. They look like this:\
 [https://collect.commander1.com/events?tc\_s=XXXX\&token=XYZZ](https://collect.commander1.com/events?tc_s=XXXX\&token=XYZZ)
 
 When you go to the “Request” area, you will be able to see all variables and the corresponding values that are sent through the Commanders Act SDK.
