@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 07/11/2025
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/tiktok/tiktok-sync-order-information.md" %}
+[tiktok-sync-order-information.md](../features/destinations/destinations-catalog/tiktok/tiktok-sync-order-information.md)
+{% endcontent-ref %}
+
 ## 31/10/2025
 
 Destination documentation (updates):
@@ -206,8 +214,6 @@ New documentation for the latest version of our Chrome Extension
 [plugin-commanders-act-assistant](../features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/container/plugin-commanders-act-assistant/)
 {% endcontent-ref %}
 
-
-
 ## 31/01/2025
 
 Destination documentation (updates):
@@ -274,7 +280,7 @@ New destination Logs exporter:
 
 ## 24/10/2024
 
-Updated documentation for new features of cookie scanner:&#x20;
+Updated documentation for new features of cookie scanner:
 
 {% content-ref url="../features/consent-management/extensions/cookie-scanner.md" %}
 [cookie-scanner.md](../features/consent-management/extensions/cookie-scanner.md)
@@ -415,7 +421,7 @@ Cookies page updated
 [cookies](../configure/cookies/)
 {% endcontent-ref %}
 
-Tracking First&#x20;
+Tracking First
 
 {% content-ref url="../configure/cookies/first-domain-tracking-phoenix.md" %}
 [first-domain-tracking-phoenix.md](../configure/cookies/first-domain-tracking-phoenix.md)
@@ -501,7 +507,7 @@ Update documentation and screenshot on Data Quality
 
 ## 05/02/2024
 
-Update section Domain Management&#x20;
+Update section Domain Management
 
 {% content-ref url="../configure/administration/domain-management/" %}
 [domain-management](../configure/administration/domain-management/)
@@ -881,8 +887,8 @@ Add a [changelog](../developers/changelogs/web-container-generator.md) section o
 
 Destination documentation:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 ## 06/12/2022
@@ -1032,8 +1038,8 @@ Data quality documentation:
 [data-quality](../features/data-quality/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="broken-reference/" %}
+[broken-reference](broken-reference/)
 {% endcontent-ref %}
 
 {% content-ref url="../features/data-quality/data-quality.md" %}
@@ -1154,7 +1160,7 @@ Destination documentation:
 
 ## 05/07/2022
 
-Mobile sources updates:&#x20;
+Mobile sources updates:
 
 {% content-ref url="../features/sources/sources-catalog/ios.md" %}
 [ios.md](../features/sources/sources-catalog/ios.md)
