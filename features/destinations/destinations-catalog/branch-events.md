@@ -57,7 +57,7 @@ Before configuring this destination, you need to create a [Branch Dashboard](htt
 **\[1]** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](branch-events.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="warning" %}
 At least one of the following must be included:\
