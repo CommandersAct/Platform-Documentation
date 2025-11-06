@@ -20,10 +20,10 @@ Ensure you added the "Click Parameter" to your Outbrain campaign's tracking code
 
 ### Configuration
 
-| Settings            | Description                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Outbrain Click Id` | <p><em><strong><code>Required</code></strong></em> <br>Outbrain click identifier. More details are available by following this <a href="https://www.outbrain.com/help/advertisers/server2server-integrations/">LINK</a> (See "Add a Click Parameter to Your Campaign’s Tracking Code" section).</p>                                                                                               |
-| `Mapping`           | <p><em><strong><code>Required</code></strong></em> <br>Your mapping between Outbrain's events and yours. At least one couple <code>Outbrain event name</code> and <code>Your event name</code> is required. More details are available by following this <a href="https://www.outbrain.com/help/advertisers/server2server-integrations/">LINK</a> (See "Create a Unique Event Name" section).</p> |
+| Settings            | Description                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Outbrain Click Id` | <p><em><strong><code>Required</code></strong></em><br>Outbrain click identifier. More details are available by following this <a href="https://www.outbrain.com/help/advertisers/server2server-integrations/">LINK</a> (See "Add a Click Parameter to Your Campaign’s Tracking Code" section).</p>                                                                                               |
+| `Mapping`           | <p><em><strong><code>Required</code></strong></em><br>Your mapping between Outbrain's events and yours. At least one couple <code>Outbrain event name</code> and <code>Your event name</code> is required. More details are available by following this <a href="https://www.outbrain.com/help/advertisers/server2server-integrations/">LINK</a> (See "Create a Unique Event Name" section).</p> |
 
 ## Quick reference
 
@@ -35,7 +35,7 @@ Ensure you added the "Click Parameter" to your Outbrain campaign's tracking code
 **\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
@@ -45,5 +45,5 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.\
-&#xNAN;**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
+\&#xNAN;**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
 {% endhint %}

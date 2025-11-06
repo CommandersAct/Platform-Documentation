@@ -45,7 +45,7 @@ Before configuring this destination, you need access to [Quora Ads Manager](http
 **\[1]** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](quora-ads-conversion-api.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.

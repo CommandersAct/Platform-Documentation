@@ -13,7 +13,7 @@ The Moebel destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model covers Moebel sales tracking, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
-* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.&#x20;
+* **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 
 ## Destination setup
 
@@ -35,7 +35,7 @@ The click identifier (`moeclid`) is required. You can set it using the field <ma
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
@@ -45,6 +45,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-&#xNAN;**\[1]** See [Destination setup](moebel.md#destination-setup) for more details.\
-&#xNAN;**\[2]** Default value: <mark style="color:blue;">`0`</mark>.
+\&#xNAN;**\[1]** See [Destination setup](moebel.md#destination-setup) for more details.\
+\&#xNAN;**\[2]** Default value: <mark style="color:blue;">`0`</mark>.
 {% endhint %}
