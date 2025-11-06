@@ -43,7 +43,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 &#xNAN;**\[2]** Dynamic Yield custom events don't have a type. More details are available following this [LINK](https://support.dynamicyield.com/hc/en-us/articles/4414379007633-Reporting-Events#custom-events-0-3). See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](dynamic-yield.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.

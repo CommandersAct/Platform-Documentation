@@ -60,7 +60,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\
