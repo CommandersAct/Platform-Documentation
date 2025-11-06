@@ -95,7 +95,7 @@ TikTok standard events are detailed in this [LINK](https://business-api.tiktok.c
 &#xNAN;**\[4]** With <mark style="color:blue;">`CompletePayment`</mark> events you can take advantage of TikTok [Value-Based Optimization for Web](https://ads.tiktok.com/help/article?aid=10008856) (VBO Web).
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\

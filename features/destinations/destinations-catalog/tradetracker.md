@@ -20,7 +20,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 
 | Settings                | Description                                                                                                                                                                                                                                                                                           |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Conversion Type`       | <p><em><strong><code>Required</code></strong></em></p><p>The conversion type that is bound with your activity. This can be either <code>Sale</code> or <code>Lead</code>. </p>                                                                                                                        |
+| `Conversion Type`       | <p><em><strong><code>Required</code></strong></em></p><p>The conversion type that is bound with your activity. This can be either <code>Sale</code> or <code>Lead</code>.</p>                                                                                                                         |
 | `Campaign Id`           | <p><em><strong><code>Required</code></strong></em><br>Your campaign identifier as provided by TradeTracker. More details are available following this <a href="https://sc.tradetracker.net/implementation/overview?f[id]=31">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p> |
 | `Product Id`            | <p><em><strong><code>Required</code></strong></em><br>Your product identifier as provided by TradeTracker. More details are available following this <a href="https://sc.tradetracker.net/implementation/overview?f[id]=31">LINK</a>. This setting supports dynamic values <strong>[1].</strong></p>  |
 | `Click Id`              | <p><em><strong><code>Required</code></strong></em><br>TradeTracker click identifier value. More details are available following this <a href="https://sc.tradetracker.net/implementation/overview?f[id]=31">LINK</a>.</p>                                                                             |
@@ -42,7 +42,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
@@ -52,7 +52,7 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[\*]** Mandatory property.\
-&#xNAN;**\[1]** Mandatory for "Sale" conversion type.\
-&#xNAN;**\[2]** Merchant description data used for statistical purpose. Visible for merchant only.\
-&#xNAN;**\[3]** Affiliate description data used by affiliates for campaign optimisation. Visible for affiliates only.
+\&#xNAN;**\[1]** Mandatory for "Sale" conversion type.\
+\&#xNAN;**\[2]** Merchant description data used for statistical purpose. Visible for merchant only.\
+\&#xNAN;**\[3]** Affiliate description data used by affiliates for campaign optimisation. Visible for affiliates only.
 {% endhint %}

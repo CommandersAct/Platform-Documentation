@@ -37,7 +37,7 @@ Rakuten Advertising adds a URL parameter <mark style="color:blue;">`ranSiteID`</
 | --------------------- | ----------------------- |
 | `[All events]`        | `Sale` or `Lead`        |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\

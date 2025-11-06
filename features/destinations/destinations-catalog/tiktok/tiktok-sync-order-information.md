@@ -32,7 +32,7 @@ The TikTok Sync Order Information destination provides the following key feature
 **\[1]** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](tiktok-sync-order-information.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\

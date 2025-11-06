@@ -36,7 +36,7 @@ The [**tduid** ](https://dev.tradedoubler.com/tracking/advertiser/#Pixel)paramet
 | `generate_lead`       | `lead`                |
 | `purchase`            | `sale`                |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
