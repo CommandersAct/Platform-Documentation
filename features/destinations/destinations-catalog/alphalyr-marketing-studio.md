@@ -1,7 +1,7 @@
 # Alphalyr Marketing Studio
 
 [Alphalyr](https://alphalyr.fr/) helps you boosting your omnichannel commerce with the data that matters.\
-Using this destination you can connect your activities and events with [Alphalyr Marketing Studio](https://alphalyr.fr/marketing-studio/).&#x20;
+Using this destination you can connect your activities and events with [Alphalyr Marketing Studio](https://alphalyr.fr/marketing-studio/).
 
 ## Key features
 
@@ -17,7 +17,7 @@ The Alphalyr Marketing Studio destination provides the following key features:
 
 ### Configuration
 
-<table><thead><tr><th width="404">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Client Public Key</code></td><td><em><strong><code>Required</code></strong></em> <br>Your unique public key as given by Alphalyr Marketing Studio. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Customer Type</code></td><td>Defines your customer type. Takes the value <code>0</code> when it is an old client and <code>1</code> when it is a new one. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>User Unique Identifier (UUID)</code></td><td>UUID value of the user's cookie. Following the latest updates to the ITP protocol on Safari / iOS, Alphalyr strongly recommends that you use a "server" cookie coming directly from your first party domain. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Custom Data</code></td><td>Additional data that can be added for custom data processing. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Is SPA</code></td><td>Whether your website is a Single Page Application.</td></tr><tr><td><code>GDPR Consent</code></td><td>GDPR consent. It takes the value <code>1</code> when GDPR applies or <code>0</code> otherwise. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Consent Status for Ads &#x26; Marketing</code></td><td>Consent status for ads &#x26; marketing. It takes the value <code>1</code> if the user has consented to the use of his data for targeting and marketing or <code>0</code> otherwise. This parameter is transmitted to Alphalyr's partners. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Consent Status for Performance</code></td><td>Consent status for performance. It takes the value <code>1</code> if the user has consented to the use of his data for the measurement of performance measurement or <code>0</code> otherwise. This parameter is transmitted to Alphalyr's partners. This setting supports dynamic values <strong>[1].</strong></td></tr></tbody></table>
+<table><thead><tr><th width="404">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Client Public Key</code></td><td><em><strong><code>Required</code></strong></em><br>Your unique public key as given by Alphalyr Marketing Studio. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Customer Type</code></td><td>Defines your customer type. Takes the value <code>0</code> when it is an old client and <code>1</code> when it is a new one. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>User Unique Identifier (UUID)</code></td><td>UUID value of the user's cookie. Following the latest updates to the ITP protocol on Safari / iOS, Alphalyr strongly recommends that you use a "server" cookie coming directly from your first party domain. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Custom Data</code></td><td>Additional data that can be added for custom data processing. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Is SPA</code></td><td>Whether your website is a Single Page Application.</td></tr><tr><td><code>GDPR Consent</code></td><td>GDPR consent. It takes the value <code>1</code> when GDPR applies or <code>0</code> otherwise. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Consent Status for Ads &#x26; Marketing</code></td><td>Consent status for ads &#x26; marketing. It takes the value <code>1</code> if the user has consented to the use of his data for targeting and marketing or <code>0</code> otherwise. This parameter is transmitted to Alphalyr's partners. This setting supports dynamic values <strong>[1].</strong></td></tr><tr><td><code>Consent Status for Performance</code></td><td>Consent status for performance. It takes the value <code>1</code> if the user has consented to the use of his data for the measurement of performance measurement or <code>0</code> otherwise. This parameter is transmitted to Alphalyr's partners. This setting supports dynamic values <strong>[1].</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** This feature allows you to set an event property holding a dynamic value by adding two open braces (`{{`) in front of your property name and two close braces (`}}`) at the end (E.g. `{{myEventPropertyPathAndName}}`).
@@ -37,7 +37,7 @@ Use [**Destination filters**](https://doc.commandersact.com/features/destination
 | `view_item_list`      | `category`          |
 | `[Any Other Event]`   | `home`              |
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.
@@ -47,15 +47,15 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 {% hint style="info" %}
 **\[1]** See [Quick reference](alphalyr-marketing-studio.md#quick-reference) for more details.\
-&#xNAN;**\[2]** Field automatically hashed with SHA256 if passed in clear. Priority order is provided on the left column.\
-&#xNAN;**\[3]** Field anonymized.\
-&#xNAN;**\[4]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark> depending if <mark style="color:blue;">`eventModel.app.name`</mark> is set or not.\
-&#xNAN;**\[5]** The <mark style="color:blue;">`pathname`</mark> part of <mark style="color:blue;">`context.page.url`</mark> is set: additional parameter are added to the request based on <mark style="color:blue;">`searchParams`</mark> (See [URL object](https://developer.mozilla.org/en-US/docs/Web/API/URL) for more details).\
-&#xNAN;**\[6]** For Alphalyr <mark style="color:blue;">`product`</mark> page type only.\
-&#xNAN;**\[7]** For Alphalyr <mark style="color:blue;">`category`</mark> page type only.\
-&#xNAN;**\[8]** All items are taken into account.\
-&#xNAN;**\[9]** For Alphalyr <mark style="color:blue;">`purchase`</mark> and <mark style="color:blue;">`cart`</mark> page type only.\
-&#xNAN;**\[10]** Depending if Alphalyr page type is <mark style="color:blue;">`purchase`</mark> or <mark style="color:blue;">`cart`</mark> then <mark style="color:blue;">`revenue`</mark> or <mark style="color:blue;">`value`</mark> is used respectively.\
-&#xNAN;**\[11]** For Alphalyr <mark style="color:blue;">`purchase`</mark> page type only.\
-&#xNAN;**\[12]** When <mark style="color:blue;">`Is SPA`</mark> is flagged only.
+\&#xNAN;**\[2]** Field automatically hashed with SHA256 if passed in clear. Priority order is provided on the left column.\
+\&#xNAN;**\[3]** Field anonymized.\
+\&#xNAN;**\[4]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark> depending if <mark style="color:blue;">`eventModel.app.name`</mark> is set or not.\
+\&#xNAN;**\[5]** The <mark style="color:blue;">`pathname`</mark> part of <mark style="color:blue;">`context.page.url`</mark> is set: additional parameter are added to the request based on <mark style="color:blue;">`searchParams`</mark> (See [URL object](https://developer.mozilla.org/en-US/docs/Web/API/URL) for more details).\
+\&#xNAN;**\[6]** For Alphalyr <mark style="color:blue;">`product`</mark> page type only.\
+\&#xNAN;**\[7]** For Alphalyr <mark style="color:blue;">`category`</mark> page type only.\
+\&#xNAN;**\[8]** All items are taken into account.\
+\&#xNAN;**\[9]** For Alphalyr <mark style="color:blue;">`purchase`</mark> and <mark style="color:blue;">`cart`</mark> page type only.\
+\&#xNAN;**\[10]** Depending if Alphalyr page type is <mark style="color:blue;">`purchase`</mark> or <mark style="color:blue;">`cart`</mark> then <mark style="color:blue;">`revenue`</mark> or <mark style="color:blue;">`value`</mark> is used respectively.\
+\&#xNAN;**\[11]** For Alphalyr <mark style="color:blue;">`purchase`</mark> page type only.\
+\&#xNAN;**\[12]** When <mark style="color:blue;">`Is SPA`</mark> is flagged only.
 {% endhint %}
