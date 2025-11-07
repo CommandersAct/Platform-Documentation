@@ -7,7 +7,7 @@
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
 * **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
-* **Support batch mode**: you can freely activate batch mode in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration). See section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode) for more details.
+* **Support batch mode**: you can freely activate batch mode in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration). See section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode) for more details. This feature is currently undergoing final testing and will be released soon.
 * **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.
 
 ## Destination setup
