@@ -233,7 +233,7 @@ Set-up your deduplication rules by following these steps:
 
 10\. Click “ADD” to add the rule.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (277) (1).png" alt=""><figcaption></figcaption></figure>
 
 After you create your rules, they will appear in the rules summary.
 
