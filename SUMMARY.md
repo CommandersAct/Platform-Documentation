@@ -254,6 +254,7 @@
     * [Xandr](features/destinations/destinations-catalog/xandr.md)
     * [Webhook](features/destinations/destinations-catalog/webhook.md)
     * [Webtrends](features/destinations/destinations-catalog/webtrends.md)
+    * [Yahoo Search Ads Conversion API](features/destinations/destinations-catalog/yahoo-search-ads-conversion-api.md)
     * [ZBO Media](features/destinations/destinations-catalog/zbo-media.md)
     * [Zeta](features/destinations/destinations-catalog/zeta.md)
   * [Destination builder](features/destinations/destination-builder/README.md)
