@@ -5,7 +5,7 @@ description: Steps to implement Commanders Act Consent Module with Google Tag Ma
 # Google Tag Manager (GTM) - Consent Mode
 
 Commanders Act provides a tag template to manage the "[Consent Mode](https://developers.google.com/tag-platform/devguides/consent)" in Google Tag Manager.\
-This seamless integration takes advantage of our Commanders Act OnSite API.&#x20;
+This seamless integration takes advantage of our Commanders Act OnSite API.
 
 {% hint style="info" %}
 Please note: Google only requires a validated consent signal only for EEA countries and UK.
@@ -35,8 +35,7 @@ First, you need to input your consent category identifiers for the following **7
 
 <figure><img src="../../../../.gitbook/assets/onsite_api2.png" alt=""><figcaption><p>Define/find your category identifiers.</p></figcaption></figure>
 
-Your identifiers are shown between round parentheses (see highlighted in green below):\
-
+Your identifiers are shown between round parentheses (see highlighted in green below):\\
 
 <figure><img src="../../../../.gitbook/assets/image (515).png" alt="" width="518"><figcaption></figcaption></figure>
 
@@ -46,10 +45,10 @@ If you have sub-categories with the same scope of the five defined by Google, yo
 
 If your CMP loads asynchronously, it might not always run before your GTM container. That’s why you have the option to set a "**Wait for update**" value in milliseconds to control how long to wait before data is sent. This field is optional and its default value is 0. In case you need to set it, we recommend starting from the base value of 500 milliseconds.
 
-You also need to set the default status, for each of the 7 categories, before users interact with your [**privacy banner**](https://community.commandersact.com/trustcommander/user-guides/privacy-banners) and taking into account region-specific behavior. This is done by clicking the "Add Row" button and selecting either "Denied" or "Granted" to match with your input regions and/or sub-regions.&#x20;
+You also need to set the default status, for each of the 7 categories, before users interact with your [**privacy banner**](https://community.commandersact.com/trustcommander/user-guides/privacy-banners) and taking into account region-specific behavior. This is done by clicking the "Add Row" button and selecting either "Denied" or "Granted" to match with your input regions and/or sub-regions.
 
 {% hint style="info" %}
-Ensure that your default command accounts for regional variations in your consent strategy. For more information on customizing the default command, you can see Google’s documentation [here](https://developers.google.com/tag-platform/devguides/consent#region-specific\_behavior).
+Ensure that your default command accounts for regional variations in your consent strategy. For more information on customizing the default command, you can see Google’s documentation [here](https://developers.google.com/tag-platform/devguides/consent#region-specific_behavior).
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/onsite_api4.png" alt=""><figcaption><p>Select your default status for each category and by region and sub-region.</p></figcaption></figure>
@@ -81,7 +80,7 @@ Simply add your host URL in the tab "Injects scripts" (see block "allowed patter
 
 ## Configure your third-party vendor tags
 
-While Google native product tags, such as "Google Analytics" or "Google Ads" ones, work out of the box, third-party vendor tags require additional settings to properly operate with the user consent. First, open your tag configuration and check under the `(12)` "**Advanced Settings**" and `(13)`"**Consent Settings**" if a consent type (E.g. "_ad\_storage_") is already preconfigured, if not you need to add it by selecting the option `(14)` "**Require additional consent for tag to fire**" and `(15)` input the consent type(s) you want to include.
+Third-party vendor tags require additional settings to properly operate with the user consent. First, open your tag configuration and check under the `(12)` "**Advanced Settings**" and `(13)`"**Consent Settings**" if a consent type (E.g. "_ad\_storage_") is already preconfigured, if not you need to add it by selecting the option `(14)` "**Require additional consent for tag to fire**" and `(15)` input the consent type(s) you want to include.
 
 <figure><img src="../../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
@@ -99,8 +98,14 @@ The latter has to be configured as a `(18)`"**Custom Event**" with the same `(19
 
 This completes your configuration. You can now start the testing phase, leading to the final deployment in production. Learn more on how you can configure and run tests with your tags in GTM by checking the section "[**Consent configuration**](https://support.google.com/tagmanager/answer/10718549/?hl=en-GB)" in the "[**Help Center**](https://support.google.com/tagmanager/)". You can also read the page [Consent Mode setup](https://developers.google.com/tag-platform/security/guides/consent) provided by Google for Developers
 
-
-
 {% hint style="info" %}
 Look our ["Test your configuration"](https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/google-consent-mode-in-commanders-act-tms#test-your-configuration) page for debbuging hints!
 {% endhint %}
+
+{% hint style="warning" %}
+Regarding the configuration of your workspace on the Commanders Act platform, there is no need to activate anything special for Consent Mode. Everything is managed via Google Tag Manager.\
+However, you must add the following URL to the privacy centre of your CMP:\
+[https://business.safety.google/privacy/](https://business.safety.google/privacy/)\
+**This is a legal requirement.**
+{% endhint %}
+
