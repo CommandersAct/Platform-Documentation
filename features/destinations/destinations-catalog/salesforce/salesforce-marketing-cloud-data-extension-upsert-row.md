@@ -37,6 +37,7 @@ Created data extension records include the following properties:
 
 ## Batch mode
 
+See <mark style="color:blue;">`Enable batch mode`</mark>  in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) to activate this mode.\
 Having batch mode activated has its benefits and drawbacks. See the following table for more details:
 
 <table><thead><tr><th width="209">Activate batch mode</th><th>Benefits</th><th>Drawbacks</th></tr></thead><tbody><tr><td><strong>Not checked</strong></td><td>• Real-time requests.<br>• Better error management.</td><td>• More susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td></tr><tr><td><strong>Checked</strong></td><td>• Less susceptible to <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#salesforce-api-limits">Salesforce API limits</a>.</td><td>• Slightly postponed requests.<br>• On error, all records in a single request are discarded. <strong>[1]</strong></td></tr></tbody></table>
