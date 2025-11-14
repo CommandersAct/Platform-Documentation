@@ -7,7 +7,7 @@
 The Salesforce Marketing Cloud - Data Extension Upsert Row destination provides the following key features:
 
 * **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
-* **Support batch mode**: you can freely activate batch mode in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration). See section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode) for more details. This feature is currently undergoing final testing and will be released soon.
+* **Support batch mode**: you can freely activate batch mode in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration). See section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode) for more details.
 * **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.
 
 ## Destination setup
@@ -18,32 +18,24 @@ Ensure you have access to [Salesforce Marketing Cloud](https://mc.exacttarget.co
 • <mark style="color:blue;">`Client Secret`</mark>\
 • <mark style="color:blue;">`Tenant-Specific Subdomain`</mark>\
 You can find these values by clicking your user name in the top right corner and select <mark style="color:blue;">`Setup`</mark> . In the left-side menu, navigate to <mark style="color:blue;">`Apps`</mark> → <mark style="color:blue;">`Installed Packages`</mark> and select the package you want to use or create one by clicking <mark style="color:blue;">`New`</mark> and add a new <mark style="color:blue;">`API Integration`</mark> component.\
-This information is required to set your <mark style="color:blue;">`Credentials`</mark> . See the next section [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
+This information is required to set your <mark style="color:blue;">`Credentials`</mark> in the [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) next section.
 {% endhint %}
 
 ### Configuration
 
-<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em><br>Your credentials with Salesforce Marketing Cloud as set directly in your destination or, in the left menu, following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension Id</code></td><td><em><strong><code>Required</code></strong></em><br>The unique identifier for the data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Select the <mark style="color:blue;"><code>Data variable</code></mark> holding the primary key value to be looked up to find the record to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark> representing the primary key column name. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Select the <mark style="color:blue;"><code>Data variable</code></mark> holding the value to update/insert and input the <mark style="color:blue;"><code>Salesforce column</code></mark> representing the related field name. One entry is required.</td></tr><tr><td><code>Activate batch mode</code> <strong>[1]</strong></td><td>When checked, multiple records are sent to your data extension with a single request instead of one at a time. See section <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode">Batch mode</a> for more details. <strong>[1]</strong></td></tr></tbody></table>
-
-{% hint style="info" %}
-**\[1]** This feature is currently undergoing final testing and will be released soon.
-{% endhint %}
+<table><thead><tr><th width="331">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Credentials</code></td><td><em><strong><code>Required</code></strong></em><br>Your credentials with Salesforce Marketing Cloud as set directly in your destination or, in the left menu, following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Salesforce Marketinng</code> .</td></tr><tr><td><code>Data Extension</code></td><td><em><strong><code>Required</code></strong></em><br>Select your data extension.</td></tr><tr><td><code>Primary Key Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Select the <mark style="color:blue;"><code>Data variable</code></mark> holding the primary key value to be looked up to find the record to update/insert and select the <mark style="color:blue;"><code>Salesforce field</code></mark> representing the primary key column name. One entry is required.</td></tr><tr><td><code>Record Field Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Select the <mark style="color:blue;"><code>Data variable</code></mark> holding the value to update/insert and select the <mark style="color:blue;"><code>Salesforce field</code></mark> representing the related field name. One entry is required.</td></tr><tr><td><code>Enable batch mode</code></td><td>When checked, multiple records are sent to your data extension with a single request instead of one at a time. See section <a href="salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode">Batch mode</a> for more details. </td></tr></tbody></table>
 
 ## Field mappings
 
 Created data extension records include the following properties:
 
-<table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce column</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
+<table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce field</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\[1]** See <mark style="color:blue;">`Record Field Mapping`</mark> in [Configuration](salesforce-marketing-cloud-data-extension-upsert-row.md#configuration) for more details.
 {% endhint %}
 
 ## Batch mode
-
-{% hint style="info" %}
-This feature is currently undergoing final testing and will be released soon.
-{% endhint %}
 
 Having batch mode activated has its benefits and drawbacks. See the following table for more details:
 
