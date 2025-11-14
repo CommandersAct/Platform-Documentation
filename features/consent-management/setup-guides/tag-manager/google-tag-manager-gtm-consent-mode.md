@@ -22,7 +22,8 @@ Summarizing all recommended steps:
 3. Add our tag template from the "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/GTM-OnSite-API)".
 4. Configure the related tag and its trigger.
 5. Configure your third-party vendor tags.
-6. Test and deploy your container.
+6. Enable TCF Support for gtag.&#x20;
+7. Test and deploy your container.
 
 ## Configure the related tag and its trigger
 
@@ -108,4 +109,14 @@ However, you must add the following URL to the privacy centre of your CMP:\
 [https://business.safety.google/privacy/](https://business.safety.google/privacy/)\
 **This is a legal requirement.**
 {% endhint %}
+
+## Enable TCF Support for gtag
+
+{% hint style="info" %}
+Check [Google Ads integration with the IAB Transparency & Consent Framework (TCF)](https://support.google.com/google-ads/answer/10021549?hl=en) for more details on how you can set up the IAB Transparency and TCF Framework.
+{% endhint %}
+
+You can enable TCF support with your Google Ads tags under `(21)` "**Advanced Features**" by flagging `(22)` "**Enable TCF Support for gtag**".
+
+![](../../../../.gitbook/assets/consent_21_22.png)
 
