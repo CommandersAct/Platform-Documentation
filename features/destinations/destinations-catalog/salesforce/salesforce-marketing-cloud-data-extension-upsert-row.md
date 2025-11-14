@@ -27,7 +27,7 @@ This information is required to set your <mark style="color:blue;">`Credentials`
 
 ## Field mappings
 
-Created data extension records include the following properties:
+Created or updated data extension records include the following properties:
 
 <table><thead><tr><th width="275">Property Name</th><th width="586">Property Value</th></tr></thead><tbody><tr><td><code>Salesforce field</code> <strong>[1]</strong></td><td><code>Data variable</code> <strong>[1]</strong></td></tr></tbody></table>
 
