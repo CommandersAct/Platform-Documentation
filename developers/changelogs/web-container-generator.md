@@ -2,6 +2,15 @@
 
 ## 2025
 
+### 100.0
+
+Release date:  **17/11/2025**
+
+* Update Trust view hits after opt-out action
+* Added tc_do_not_track parameter to specific CMP and server-side hits for improved alignment with consent settings
+  * Helps optimize cookie behavior in specific first-party and delegated domain setups
+  * No impact for non-CMP use cases or standard tag configurations
+
 ### 99.7
 
 Release date:  **03/11/2025**
