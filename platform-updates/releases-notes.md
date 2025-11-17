@@ -10,7 +10,7 @@ description: >-
 
 ✨ **New Features**
 
-🍪 **Realtime Cookie Scanner (v2)**  
+🍪 **Realtime Cookie Scanner**  
 A new version of the Cookie Scanner is now available in the **Health** section.  
 This redesigned module introduces a modern interface, improved navigation, and prepares the transition away from the legacy Cookie Scanner.
 
