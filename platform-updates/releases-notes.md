@@ -6,6 +6,99 @@ description: >-
 
 # Release notes
 
+## Release 10.0.31 - October - 2025
+
+✨ **New Features**
+
+🍪 **Realtime Cookie Scanner (v2)**  
+A new version of the Cookie Scanner is now available in the **Health** section.  
+This redesigned module introduces a modern interface, improved navigation, and prepares the transition away from the legacy Cookie Scanner.
+
+---
+
+🍪 **Realtime Cookie Scanner – Feature Upgrades**  
+Significant enhancements have been added to the new version:
+
+* **Real-time alerting** when new cookies are detected  
+* **Excel export** of the full cookie list (with filtering support)  
+* **Redesigned Cookie Notice interface** for improved clarity and navigation  
+* **Expandable rows** giving immediate access to detailed information  
+* **Smarter cookie information**, with improved vendor/category/description detection  
+
+→ Faster detection, clearer insights, and more audit-ready compliance reporting.
+
+**What’s next?**  
+The Realtime Cookie Scanner will continue to evolve with **new dedicated views** designed to give a more complete picture of cookie behaviour and compliance across your digital properties.  
+These upcoming screens will progressively enrich the module with extended monitoring, origin tracing, categorisation, and more advanced compliance diagnostics.
+
+📘 Documentation:  
+[Realtime Cookie Scanner – EN](https://doc.commandersact.com/features/realtime-cookie-scanner)  
+[Realtime Cookie Scanner – FR](https://doc.commandersact.com/fr/fonctionnalites/realtime-cookie-scanner)
+
+---
+
+📈 **Adloop – Automatic Tracking Templates for Google Ads**  
+Google Ads tracking is now handled automatically by Adloop.
+
+* Automatic installation of tracking parameters on campaigns  
+* Option to apply parameters to existing and future campaigns  
+* Alerts when tracking is missing or when reconnection is required  
+* Unified Google Ads source replacing multiple variants (Search, PMax, Display…)  
+* Much faster Transaction ID report loading, even on large accounts  
+
+→ Simplifies setup, reduces errors, and ensures consistent data quality.
+
+---
+
+💡 **CMP – Banner Editor Optimization**  
+The banner editing interface now loads significantly faster, even with large privacy configurations or custom code.  
+→ Smoother workflows for advanced CMP setups.
+
+---
+
+📊 **Facebook CAPI – Easier Access to the “Performance” Tab**  
+The Performance tab now automatically reuses the credential created during destination setup.  
+→ No more login prompts, easier access to quality metrics.
+
+---
+
+⚡ **CMP – Banner Loading Optimization**  
+CMP banners now load on **DOMReady**, improving website performance and reducing their impact on Core Web Vitals.  
+This optimization becomes active when customers regenerate and redeploy their containers.
+
+---
+
+🧩 **Commanders Act Assistant v3.2.1**  
+New improvements to the QA Chrome Extension:
+
+* Simplified **container version replacement**  
+* One-click **“Stop override”** action  
+* Cleaner layout with more vertical space for tag review  
+
+→ Faster and more intuitive QA experience.
+
+---
+
+🧱 **New Source – Effinity (Adloop)**  
+Adloop now supports the **Effinity** affiliate source, enabling automatic import of affiliate conversion data.  
+→ Extends attribution and reporting for affiliate programs.
+
+***
+
+#### 🛠️ Improvements
+
+🖥️ **Server-Side Infrastructure Enhancements**  
+Optimizations applied across server-side pipelines to deliver:  
+* Faster and more consistent event processing  
+* Higher scalability under heavy traffic  
+* Improved stability across destinations  
+
+🎨 **General UX & Performance Polishing**  
+Additional interface refinements and micro-performance improvements deployed across the platform.
+
+***
+
+
 ## Release 10.0.30 - September - 2025
 
 ✨ **New Features**
