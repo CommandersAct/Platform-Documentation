@@ -53,11 +53,22 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 1st Party Cookies, 3rd Party Cookies, HttpOnly 1st Party Cookies, HttpOnly 3rd Party Cookies, localStorage, sessionStorage
 
+| Cookie Type                   | Description                                                                                                              | Scanned with                                               |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| **1st Party Cookie**          | 1st party cookies are cookies that are stored on the domain of the website.                                              | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
+| **3rd Party Cookie**          | 3rd party cookies are cookies that are stored on a 3rd party domain.                                                     | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
+| **HttpOnly 1st Party Cookie** | HttpOnly 1st Party Cookie are server cookies that are stored on the domain of the website and that have a HttpOnly flag. | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
+| **HttpOnly 3rd Party Cookie** | HttpOnly 3rd Party Cookie are server cookies that are stored on a 3rd party domain and that have a HttpOnly flag.        | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
+| **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                                 | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
+| **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                                 | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
+
 #### 🔔 Realtime Alerts (< 60 s)
 
 * Instant notifications for new, removed, or non-compliant cookies.
 * Configurable by domain, language, and severity.
 * Integrations : Email, Webhook, Slack, Teams.
+
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 #### 🌍 Multilingual Dynamic Cookie Table
 
@@ -65,11 +76,15 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 * Export in HTML, JSON, CSV, XLSX.
 * Integrates with any website or CMP / TMS.
 
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+
 #### 📊 Live Dashboards
 
 * Always up-to-date (real & realtime data, not batches).
 * Breakdowns by vendor, category, domain, frequency, or status.
 * Filters by domain, consent state, frequency, etc.
+
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -77,7 +92,7 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 Implementation is instant.
 
-Your Commanders Act consultant or support simply activates RCS in the Backoffice.\
+1-Your Commanders Act consultant or support simply activates RCS in the Backoffice.\
 Once enabled, your Web Container injects the JS scanner and starts data collection.
 
 > No scenarios to script, no login management, no maintenance.
@@ -85,6 +100,17 @@ Once enabled, your Web Container injects the JS scanner and starts data collecti
 RCS works immediately on real traffic — including logged-in or restricted pages.
 
 > 💡 **Compatibility** : RCS is independent of the Commanders Act CMP or TMS and can be used with any CMP vendors or TMS vendors (GTM, etc.)
+
+2-Declare the domains that you need to be scanned with the Cookie Scanner `Data Governance > Consent Management > Settings > Cookie Scanner Domains`
+
+<figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+
+3-Declare the languages required in your cookie notice  `Data Governance > Consent Management > Settings > Localisation`&#x20;
+
+<figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+
+4-Regenerate and Deploy your privacy banner(s) and/or your Web Containers\
+
 
 ***
 
@@ -118,13 +144,36 @@ Cookies are organized into three lists :
 Each entry can be edited (✎) to adjust vendor, category, storage type, domain, duration, and description.\
 You can also add custom cookies or activate/deactivate existing ones.
 
+<figure><img src="../.gitbook/assets/image (84).png" alt="" width="329"><figcaption></figcaption></figure>
+
 > Keep internal cookies in _Ignored_ to prevent reappearance after future scans.
+
+| **Name**             | <p>Name of cookie e.g. _ga<br>*In case of multiple (more than 3) cookies with common pattern, they re grouped by patterns</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **Vendor**           | Name of the vendor that uses the cookie e.g. Google                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | <ul><li>Cookie Database</li></ul>                                                  |
+| **Category**         | Category of the cookie that give a high level information on the purpose of the cookie e.g. Technical Cookie                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | <ul><li>Cookie Database</li></ul>                                                  |
+| **Storage Location** | <p>Storage location of the cookie (combination of cookie type and storage domain). It has one of the following values:</p><ul><li>1st Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>3rd Party Cookie (www.example.de)</li><li>HttpOnly 1st Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>HttpOnly 3rd Party Cookie (<a href="http://www.example.de/">www.example.de</a>)</li><li>localStorage (<a href="http://www.example.de/">www.example.de</a>)</li><li>sessionStorage (<a href="http://www.example.de/">www.example.de</a>)</li></ul><p>The domain in brackets is the domain where the cookie is stored. For 1st party cookies it is the domain or subdomain of the website. For 3rd party cookies it is a 3rd party domain or subdomain that is different from the website.</p> | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
+| **Storage Duration** | <p>Storage duration of the cookie. An algorithm is used to smoothen technical inaccuracies and to optimise readability for users:</p><ul><li>For Session Cookies it displays "Session"</li><li>Under 1 month it displays in days, e.g. "7 days"</li><li>Above 1 month it displays in month, e.g. "13 months"</li><li>Above 36 month it displays in years, e.g. "5 years".</li><li>Above 100 years it displays “Unlimited”</li></ul><p>Local storage always has duration "Unlimited" and session storage always has duration "Session".</p>                                                                                                                                                                                                                                                                                                      | <ul><li>Tag client-side</li><li>Chrome Extension</li><li>Cookie Database</li></ul> |
+| **Description**      | Description for what the cookie is used, e.g. “Base64 UUID used to identify users on this website to optimise usage across sessions. Used on all pages.”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <ul><li>Cookie Database</li></ul>                                                  |
+| **Website**          | <p>Domain(s) of the website(s) the cookie is scanned.<br>For 1st party cookies, the full URL of the latest scan is also displayed</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
 
 #### Custom Fields & Filters
 
 * Add custom fields via Settings (⚙️) to store extra info.
 * Filter by host, language, storage type, or 3rd-party domain.
 * A frequency slider hides rare cookies (< 5 % by default).
+
+{% hint style="info" %}
+Cookie scanner doesn't store cookie's values
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+
+### Occurrence frequency
+
+For all types of cookies & storage you can visualize the percentage of detection frequency
+
+<figure><img src="../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -143,6 +192,8 @@ Once the cookie information is set up in the **EDIT** tab, you can install the c
 
 Paste the JavaScript snippet on your legal page to automatically generate and display the cookie list table.
 
+<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+
 **2. HTML Table (recommended)**
 
 The HTML table is the recommended installation method for a dynamic cookie notice.\
@@ -160,6 +211,8 @@ https://cdn.tagcommander.com/cookie-scanner/<site_id>/v1/cookies-<language_code>
 
 > ℹ️ The HTML table uses accessible semantic markup and inherits your site’s CSS.\
 > You can fully customize its style with your own stylesheet.
+
+<figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 **3. JSON API**
 
@@ -200,6 +253,8 @@ Each language is included as a separate file (or tab in XLSX).
 Press **DEPLOY** to publish a cookie notice version on your site.\
 You can also roll back to a previous version if needed.
 
+<figure><img src="../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### 8. Labels and Meanings
@@ -220,6 +275,8 @@ You can also roll back to a previous version if needed.
 * Instant alerts (< 60 s) on new or non-compliant cookies.
 * Configurable by domain, language, and severity.
 * Integrations : Email, Webhook, Slack, Microsoft Teams.
+
+<figure><img src="../.gitbook/assets/image (60).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
