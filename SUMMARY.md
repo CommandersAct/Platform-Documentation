@@ -223,7 +223,7 @@
     * [Salesforce](features/destinations/destinations-catalog/salesforce/README.md)
       * [Salesforce Audience Studio](features/destinations/destinations-catalog/salesforce/salesforce-audience-studio.md)
       * [Salesforce Marketing Cloud](features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud.md)
-      * [Salesforce Marketing Cloud - Data Extension Upsert Row](features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud-data-extension-upsert-row.md)
+      * [Salesforce Marketing Cloud - Profile Sync (API)](features/destinations/destinations-catalog/salesforce/salesforce-marketing-cloud-data-extension-upsert-row.md)
       * [Salesforce Commerce Cloud](features/destinations/destinations-catalog/salesforce/salesforce-commerce-cloud.md)
     * [SAP Commerce Cloud](features/destinations/destinations-catalog/sap-commerce-cloud.md)
     * [Selligent](features/destinations/destinations-catalog/selligent.md)
