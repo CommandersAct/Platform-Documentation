@@ -6,9 +6,9 @@
 
 The Salesforce Marketing Cloud - Profile Sync (API) destination provides the following key features:
 
-* **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour.
+* **Data activation**: upserting [data extensions](https://help.salesforce.com/s/articleView?language=en_US\&id=data.c360_a_data_extensions.htm\&type=5) can be used to enable various data activation flows based on the user behaviour (E.g. near-real-time profile sync, journey triggers, and on-site personalization).
 * **Support batch mode**: see section [Batch mode](salesforce-marketing-cloud-data-extension-upsert-row.md#batch-mode) for more details.
-* **Easy setup:** select your data variables, in [segments](https://doc.commandersact.com/features/customers/segment), from a drop-down menu.
+* **Easy setup:** select your data variables in [segments](https://doc.commandersact.com/features/customers/segment), and Salesforce fields in your data extensions, from intuitive drop-down menus.
 
 ## Destination setup
 
