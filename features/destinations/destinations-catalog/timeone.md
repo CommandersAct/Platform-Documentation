@@ -42,8 +42,8 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="364.6685580062746">Commanders Act Properties</th><th>TimeOne Properties</th></tr></thead><tbody><tr><td><code>Program Id</code></td><td><code>progid</code> <strong>[*]</strong></td></tr><tr><td><code>Publisher Id</code></td><td><code>comid</code> <strong>[*]</strong></td></tr><tr><td><code>Creative Id</code></td><td><code>iu</code> <strong>[*]</strong></td></tr><tr><td><p><code>Subtracking</code></p><p><code>Subtracking Cookie Name</code></p></td><td><code>subtracking</code> <strong>[*][1]</strong></td></tr><tr><td><code>id</code></td><td><code>uniqid</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>price</code></td></tr><tr><td><code>items.X.id</code>;<code>items.X.product.name</code>;<code>items.X.product.price</code>;<code>items.X.quantity</code></td><td><code>data</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-\\**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for more details.  \
-\\**\[2]** All items are taken into account, separeted by a pipe character ("|") and encoded. &#x20;
+&#x20;**\[\*]** Mandatory property.\
+&#x20;**\[1]** <mark style="color:blue;">`Subtracking`</mark> has priority over <mark style="color:blue;">`Subtracking Cookie Name`</mark>. See [Configuration](timeone.md#configuration) for more details.  \
+&#x20;**\[2]** All items are taken into account, separeted by a pipe character ("|") and encoded. &#x20;
 {% endhint %}
 
