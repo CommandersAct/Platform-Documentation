@@ -137,7 +137,7 @@ As detailed in the [Configure the related tags and its trigger](google-tag-manag
 
 <figure><img src="../../../../.gitbook/assets/consent_26_27.png" alt=""><figcaption></figcaption></figure>
 
-This allows you to set your `(26)` **script URL**, in a dedicate field, but how you can manage multiple privacy scripts, for example based on the language ? The answer is using a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
+This allows you to set your `(26)` **script URL**, in a dedicate field, but how can you manage multiple privacy scripts, for example based on the language ? The answer is using a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
 
 <figure><img src="../../../../.gitbook/assets/consent_28.png" alt=""><figcaption></figcaption></figure>
 
