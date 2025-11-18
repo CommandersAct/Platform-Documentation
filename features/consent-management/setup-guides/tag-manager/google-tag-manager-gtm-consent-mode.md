@@ -130,3 +130,23 @@ It's recommended to inspect the `(23)` "**Vendors (Consent)**" by `(24)` expandi
 Look for the vendor name, and ensure it's reported with the proper consent status. In the following example, `(25)` "**Google Advertising Products**" is correctly green flagged as the user granted their consent:
 
 <div data-full-width="false"><figure><img src="../../../../.gitbook/assets/consent_25.png" alt=""><figcaption></figcaption></figure></div>
+
+## Manage multiple privacies
+
+As detailed in the [Configure the related tags and its trigger](google-tag-manager-gtm-consent-mode.md#configure-the-related-tag-and-its-trigger), you have the option to inject your CMP script:
+
+<figure><img src="../../../../.gitbook/assets/consent_26_27.png" alt=""><figcaption></figcaption></figure>
+
+This allows you to set your `(26)` **script URL**, in a dedicate field, but how you can manage multiple privacy scripts, for example based on the language ? The answer is using a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
+
+<figure><img src="../../../../.gitbook/assets/consent_28.png" alt=""><figcaption></figcaption></figure>
+
+This will bring up a new window where you can create a new variable.\
+In the following example, we will use a "Lookup Table" variable that holds the URL based on another variable named "Browser Language". \
+FIrst, give a `(29)` **name** to your variable and, in the `(30)` "**Lookup Table**" section, configure our wanted logic. In the "Output" column, ensure that "url EN banner" and "url FR banner" are replaced with the actual full URLs:
+
+<figure><img src="../../../../.gitbook/assets/consent_29_30.png" alt=""><figcaption></figcaption></figure>
+
+After saving the variable, it will be set in the URL field:&#x20;
+
+<figure><img src="../../../../.gitbook/assets/consent_A.png" alt=""><figcaption></figcaption></figure>
