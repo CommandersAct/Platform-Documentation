@@ -22,7 +22,7 @@ Summarizing all recommended steps:
 3. Add our tag template from the "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/GTM-OnSite-API)".
 4. Configure the related tag and its trigger.
 5. Configure your third-party vendor tags.
-6. Enable TCF Support for gtag.&#x20;
+6. Enable TCF Support for gtag.
 7. Test and deploy your container.
 
 ## Configure the related tag and its trigger
@@ -118,5 +118,15 @@ Check [Google Ads integration with the IAB Transparency & Consent Framework (TCF
 
 You can enable TCF support with your Google Ads tags under `(21)` "**Advanced Features**" by flagging `(22)` "**Enable TCF Support for gtag**".
 
-![](../../../../.gitbook/assets/consent_21_22.png)
+<figure><img src="../../../../.gitbook/assets/consent_21_22.png" alt=""><figcaption></figcaption></figure>
 
+### Validate TCF settings
+
+You can use the [IAB Europe official Chrome extension](https://chromewebstore.google.com/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc?authuser=1\&pageId=none) to check webpages for a TCF registered CMP and see if Google or other vendors are properly configured matching the user consent.\
+It's recommended to inspect the `(23)` "**Vendors (Consent)**" by `(24)` expanding the section:
+
+<figure><img src="../../../../.gitbook/assets/consent_23_24.png" alt=""><figcaption></figcaption></figure>
+
+Look for the vendor name, and ensure it's reported with the proper consent status. In the following example, `(25)` "**Google Advertising Products**" is correctly green flagged as the user granted their consent:
+
+<div data-full-width="false"><figure><img src="../../../../.gitbook/assets/consent_25.png" alt=""><figcaption></figcaption></figure></div>
