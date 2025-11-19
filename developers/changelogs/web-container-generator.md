@@ -2,6 +2,12 @@
 
 ## 2025
 
+### 100.1
+
+Release date:  **18/11/2025**
+
+* Refinement of the tc_do_not_track flag handling in CMP and server-side hits
+
 ### 100.0
 
 Release date:  **17/11/2025**
