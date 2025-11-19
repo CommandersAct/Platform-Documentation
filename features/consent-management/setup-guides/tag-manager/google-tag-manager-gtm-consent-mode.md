@@ -15,7 +15,7 @@ Implementing Google Consent Mode in regions beyond may negatively impact campaig
 
 ## Setup
 
-Summarizing all recommended steps:
+Depending on your needs, the following summarizes all recommended steps:
 
 1. Access [GTM](https://tagmanager.google.com/).
 2. Select your "Web" type container.
@@ -23,7 +23,8 @@ Summarizing all recommended steps:
 4. Configure the related tag and its trigger.
 5. Configure your third-party vendor tags.
 6. Enable TCF Support for gtag.
-7. Test and deploy your container.
+7. Manage multiple privacies.
+8. Test and [publish your container](https://support.google.com/tagmanager/answer/6107163?hl=en).
 
 ## Configure the related tag and its trigger
 
