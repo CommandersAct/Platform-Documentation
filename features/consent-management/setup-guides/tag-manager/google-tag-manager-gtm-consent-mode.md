@@ -19,11 +19,11 @@ Depending on your needs, the following summarizes all recommended steps:
 
 1. Access [GTM](https://tagmanager.google.com/).
 2. Select your "Web" type container.
-3. Add our tag template from the "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/GTM-OnSite-API)".
-4. Configure the related tag and its trigger.
-5. Configure your third-party vendor tags.
-6. Enable TCF Support for gtag.
-7. Manage multiple privacies.
+3. Add our [tag template](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/GTM-OnSite-API) from the Google "Community Template Gallery".
+4. [Configure the related tag and its trigger](google-tag-manager-gtm-consent-mode.md#configure-the-related-tag-and-its-trigger).
+5. [Configure your third-party vendor tags](google-tag-manager-gtm-consent-mode.md#configure-your-third-party-vendor-tags).
+6. [Enable TCF Support for gtag](google-tag-manager-gtm-consent-mode.md#enable-tcf-support-for-gtag).
+7. [Manage multiple privacies](google-tag-manager-gtm-consent-mode.md#manage-multiple-privacies).
 8. Test and [publish your container](https://support.google.com/tagmanager/answer/6107163?hl=en).
 
 ## Configure the related tag and its trigger
