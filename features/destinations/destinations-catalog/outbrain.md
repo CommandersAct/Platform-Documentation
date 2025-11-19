@@ -44,6 +44,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="364.6685580062746">Commanders Act Properties</th><th>Outbrain Properties</th></tr></thead><tbody><tr><td><code>Outbrain Click Id</code></td><td><code>ob_click_id</code> <strong>[*]</strong></td></tr><tr><td><code>Outbrain event name</code></td><td><code>name</code> <strong>[1]</strong></td></tr><tr><td><code>id</code></td><td><code>orderId</code></td></tr><tr><td><code>value</code></td><td><code>orderValue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>timestamp</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.\
-&#x20;**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
+**\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.\
+&#xNAN;**\[2]** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
 {% endhint %}

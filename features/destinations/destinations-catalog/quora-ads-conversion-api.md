@@ -59,7 +59,7 @@ To deduplicate conversions between this destination and Quora pixel tag you need
 <table><thead><tr><th width="404.6685580062746">Commanders Act Properties</th><th>Quora Properties</th></tr></thead><tbody><tr><td><code>Account Id</code></td><td><code>account_id</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>conversion.click_id</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_id</code></td><td><code>conversion.event_id</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>conversion.timestamp</code> <strong>[1]</strong></td></tr><tr><td><code>value</code></td><td><code>conversion.value</code></td></tr><tr><td><code>(event_name)</code></td><td><code>conversion.event_name</code> <strong>[2]</strong></td></tr><tr><td><code>user.email</code></td><td><code>user.email</code></td></tr><tr><td><code>user.firstname</code><br><code>user.lastname</code></td><td><code>user.name</code></td></tr><tr><td><code>context.device.ip</code></td><td><code>user.ip</code></td></tr><tr><td><code>user.country</code></td><td><code>user.country</code></td></tr><tr><td><code>user.state</code></td><td><code>user.region</code></td></tr><tr><td><code>user.city</code></td><td><code>user.city</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>user.postal_code</code></td></tr><tr><td><code>context.device.advertising_id</code></td><td><code>device.mobile_device_id</code></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>device.user_agent</code></td></tr><tr><td><code>context.device.language</code></td><td><code>device.language</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[\*]** Mandatory property.\
-&#x20;**\[1]** Automatically converted in microseconds.\
-&#x20;**\[2]** See [Quick reference](quora-ads-conversion-api.md#quick-reference) for more details.
+**\[\*]** Mandatory property.\
+&#xNAN;**\[1]** Automatically converted in microseconds.\
+&#xNAN;**\[2]** See [Quick reference](quora-ads-conversion-api.md#quick-reference) for more details.
 {% endhint %}

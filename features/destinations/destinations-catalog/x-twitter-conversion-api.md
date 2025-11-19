@@ -52,8 +52,8 @@ Check the "Smart Mapping" field <mark style="color:blue;">`Transaction Id`</mark
 | `[Any Event]` **\[1]** | `[Any Event]` **\[2]** |
 
 {% hint style="info" %}
-&#x20;**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-&#x20;**\[2]** See <mark style="color:blue;">`Event Id`</mark> in [Configuration](x-twitter-conversion-api.md#configuration) for more details.
+**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
+&#xNAN;**\[2]** See <mark style="color:blue;">`Event Id`</mark> in [Configuration](x-twitter-conversion-api.md#configuration) for more details.
 {% endhint %}
 
 ## Field mappings
@@ -76,8 +76,8 @@ Having more values increases the match rate. More details are available by follo
 
 {% hint style="info" %}
 > **\[\*]** Mandatory property.\
-> &#xNAN;**\[1]** At least one of these properties must be provided.\
-> &#xNAN;**\[2]** A second identifier must be provided.\
-> &#xNAN;**\[3]** For deduplication purpose, ensure you use the same value with your [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html). More details are available by following this [LINK](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api) (See section "Duplication between Pixel and Conversion API").\
-> &#xNAN;**\[4]** Categories are separated by the greater than (>) character.
+> \&#xNAN;**\[1]** At least one of these properties must be provided.\
+> \&#xNAN;**\[2]** A second identifier must be provided.\
+> \&#xNAN;**\[3]** For deduplication purpose, ensure you use the same value with your [Twitter Pixel](https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html). More details are available by following this [LINK](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/web-conversions/conversion-api) (See section "Duplication between Pixel and Conversion API").\
+> \&#xNAN;**\[4]** Categories are separated by the greater than (>) character.
 {% endhint %}

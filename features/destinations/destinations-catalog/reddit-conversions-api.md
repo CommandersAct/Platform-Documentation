@@ -64,15 +64,15 @@ Sending more properties will improve attribution accuracy and performance.\
 <table><thead><tr><th width="396.6685580062746">Commanders Act Properties</th><th>Reddit Properties</th></tr></thead><tbody><tr><td><code>context.event_timestamp</code></td><td><code>event_at_ms</code></td></tr><tr><td><code>Event Mapping</code></td><td><code>event_type.custom_event_name</code></td></tr><tr><td><code>partners.reddit.click_id</code></td><td><code>click_id</code> <strong>[1]</strong></td></tr><tr><td><code>id</code></td><td><code>conversion_id</code> <strong>[2]</strong></td></tr><tr><td><code>value</code></td><td><code>value_decimal</code> <strong>[2]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[2]</strong></td></tr><tr><td><code>items</code></td><td><code>item_count</code> <strong>[2][3]</strong></td></tr><tr><td><code>items.X.id</code></td><td><code>products.X.id</code> <strong>[2]</strong></td></tr><tr><td><code>items.X.product.name</code></td><td><code>products.X.name</code> <strong>[2]</strong></td></tr><tr><td><p><code>items.X.product.category_1</code></p><p><code>items.X.product.category_2</code></p><p><code>items.X.product.category_3</code></p><p><code>items.X.product.category_4</code></p><p><code>items.X.product.category_5</code></p></td><td><code>products.X.category</code> <strong>[2][4]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><p><code>idfa</code> <strong>[5][6][7]</strong></p><p><code>aaid</code> <strong>[5][6][7]</strong></p></td></tr><tr><td><code>user.email</code></td><td><code>email</code> <strong>[5][7]</strong></td></tr><tr><td><code>user.id</code></td><td><code>external_id</code> <strong>[5][7]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[5][7]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>user_agent</code> <strong>[5]</strong></td></tr><tr><td><code>parters.reddit.uuid</code></td><td><code>uuid</code> <strong>[5]</strong></td></tr><tr><td><code>context.device.ad_tracking_enabled</code></td><td><code>opt_out</code> <strong>[5]</strong></td></tr><tr><td><code>user.country</code></td><td><code>country</code> <strong>[8]</strong></td></tr><tr><td><code>user.region</code></td><td><code>region</code> <strong>[8]</strong></td></tr><tr><td><code>parters.reddit.data_proc_mode</code></td><td><code>modes[0]</code> <strong>[8][9]</strong></td></tr><tr><td><code>context.device.screen.width</code></td><td><code>width</code> <strong>[10]</strong></td></tr><tr><td><code>context.device.screen.height</code></td><td><code>height</code> <strong>[10]</strong></td></tr><tr><td><code>Test Mode</code></td><td><code>test_mode</code> <strong>[11]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[1]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .\
-&#x20;**\[2]** Set in the <mark style="color:blue;">`event_metadata`</mark> field.\
-&#x20;**\[3]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
-&#x20;**\[4]** All provided categories are separated by the "greater than" character ( `>` ).\
-&#x20;**\[5]** Set in the <mark style="color:blue;">`user`</mark> field.\
-&#x20;**\[6]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
-&#x20;**\[7]** Automatically hashed via SHA256 when provided in clear text.\
-&#x20;**\[8]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
-&#x20;**\[9]** Supported value: <mark style="color:blue;">`LDU`</mark> .\
-&#x20;**\[10]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
-&#x20;**\[11]** Set in the base path.
+**\[1]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .\
+&#xNAN;**\[2]** Set in the <mark style="color:blue;">`event_metadata`</mark> field.\
+&#xNAN;**\[3]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
+&#xNAN;**\[4]** All provided categories are separated by the "greater than" character ( `>` ).\
+&#xNAN;**\[5]** Set in the <mark style="color:blue;">`user`</mark> field.\
+&#xNAN;**\[6]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
+&#xNAN;**\[7]** Automatically hashed via SHA256 when provided in clear text.\
+&#xNAN;**\[8]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
+&#xNAN;**\[9]** Supported value: <mark style="color:blue;">`LDU`</mark> .\
+&#xNAN;**\[10]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
+&#xNAN;**\[11]** Set in the base path.
 {% endhint %}
