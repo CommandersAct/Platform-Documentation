@@ -122,7 +122,7 @@ You can enable TCF support with your Google Ads tags under `(21)` "**Advanced Fe
 
 ### Validate TCF settings
 
-You can use the [IAB Europe official Chrome extension](https://chromewebstore.google.com/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc?authuser=1\&pageId=none) to check webpages for a TCF registered CMP and see if Google or other vendors are properly configured matching the user consent.\
+You can use the [IAB Europe official Chrome extension](https://chromewebstore.google.com/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc?authuser=1\&pageId=none) to check webpages for a TCF registered CMP and see if vendors are properly configured matching the user consent.\
 It's recommended to inspect the `(23)` "**Vendors (Consent)**" by `(24)` expanding the section:
 
 <figure><img src="../../../../.gitbook/assets/consent_23_24.png" alt=""><figcaption></figcaption></figure>
@@ -137,7 +137,7 @@ As detailed in the [Configure the related tags and its trigger](google-tag-manag
 
 <figure><img src="../../../../.gitbook/assets/consent_26_27.png" alt=""><figcaption></figcaption></figure>
 
-This allows you to set your `(26)` **script URL**, in a dedicate field, but how can you manage multiple privacy scripts, for example based on the language ? The answer is using a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
+This allows you to set your `(26)` **script URL**, in a dedicate field, but how can you manage multiple privacy scripts, for example, based on the language ? You can use a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
 
 <figure><img src="../../../../.gitbook/assets/consent_28.png" alt=""><figcaption></figcaption></figure>
 
@@ -150,3 +150,5 @@ FIrst, give a `(29)` **name** to your variable and, in the `(30)` "**Lookup Tabl
 After saving the variable, it will be set in the URL field:&#x20;
 
 <figure><img src="../../../../.gitbook/assets/consent_A.png" alt=""><figcaption></figcaption></figure>
+
+Finally, save your tag and [publish your changes](https://support.google.com/tagmanager/answer/6107163?hl=en).
