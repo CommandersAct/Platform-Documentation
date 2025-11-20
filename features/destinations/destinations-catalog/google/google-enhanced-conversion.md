@@ -11,7 +11,7 @@ You must complete the [setup and configuration steps](https://support.google.com
 
 The Google Enhanced Conversions destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) covers Google method [uploadConversionAdjustments](https://developers.google.com/google-ads/api/rest/reference/rest/v16/customers/uploadConversionAdjustments), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) supports Google method [uploadConversionAdjustments](https://developers.google.com/google-ads/api/reference/rpc/v20/ConversionAdjustmentUploadService/UploadConversionAdjustments?transport=rest), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
@@ -68,9 +68,9 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 <table><thead><tr><th width="334">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>orderId</code> <strong>[*]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>userAgent</code></td></tr><tr><td><code>event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code> <strong>[1]</strong><br><code>adjustmentDateTime</code> <strong>[1]</strong></td></tr><tr><td><code>value</code></td><td><code>restatementValue.adjustedValue</code></td></tr><tr><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><p><code>user.email</code></p><p><code>user.email_sha256</code></p></td><td><code>hashedEmail</code> <strong>[2]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>hashedPhoneNumber</code> <strong>[3]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>addressInfo.hashedFirstName</code> <strong>[3]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>addressInfo.hashedLastName</code> <strong>[3]</strong></td></tr><tr><td><code>user.streetAddress</code></td><td><code>addressInfo.hashedStreetAddress</code> <strong>[3]</strong></td></tr><tr><td><code>user.city</code></td><td><code>addressInfo.city</code></td></tr><tr><td><code>user.state</code></td><td><code>addressInfo.state</code></td></tr><tr><td><code>user.country</code></td><td><code>addressInfo.countryCode</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>addressInfo.postalCode</code></td></tr><tr><td><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></td><td><code>gclidDateTimePair.gclid</code> <strong>[4]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
-\&#xNAN;**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.\
-\&#xNAN;**\[3]** Normalized and hashed via SHA256.\
-\&#xNAN;**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
+&#x20;**\[\*]** Mandatory property.\
+&#x20;**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
+&#x20;**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.\
+&#x20;**\[3]** Normalized and hashed via SHA256.\
+&#x20;**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
 {% endhint %}
