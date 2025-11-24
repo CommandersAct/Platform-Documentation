@@ -4,13 +4,7 @@
 
 <mark style="color:blue;">`GET`</mark> `https://api.commander1.com/v1.0/engage/visitors/`
 
-This endpoint allows you to
-
-**get properties for one specific visitor**
-
-. When you create the token, you can define which properties to return.
-
-\\
+This endpoint allows you to **get properties for one specific visitor**. When you create the token, you can define which properties to return.
 
 This API is more designed to be called from a tag in each user's browser.
 
@@ -69,15 +63,7 @@ Note: always keep the **/api/**<version>/… structure after the subdomain or th
 
 <mark style="color:blue;">`GET`</mark> `https://api.commander1.com/engage/user/`
 
-This endpoint allows you to
-
-**get properties for one specific user**
-
-based on a
-
-`user_id`
-
-. When you create the token, you can define which properties to return.
+This endpoint allows you to **get properties for one specific user** based on a `user_id`. When you create the token, you can define which properties to return.
 
 #### Query Parameters
 
@@ -109,6 +95,13 @@ based on a
 ```
 {% endtab %}
 {% endtabs %}
+
+### Do not use this endpoint client-side
+
+The GET User endpoint must **not** be called from the browser.  
+Exposing the token would allow anyone to capture it and loop through user IDs to extract all user data.
+
+Use this API **server-side only** in a secure backend environment.
 
 ## User
 
