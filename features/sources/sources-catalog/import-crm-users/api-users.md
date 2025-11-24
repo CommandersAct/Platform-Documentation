@@ -38,6 +38,32 @@ This API is more designed to be called from a tag in each user's browser.
 {% endtab %}
 {% endtabs %}
 
+### First-party usage
+
+If your site uses a first-party domain (either through a dedicated subdomain or through the Commanders Act Gateway path), API calls must be made on your own domain.
+
+Important: the URL must include /api/ in the path.  
+Without this path, the request will not work.
+
+#### 1. Using a dedicated subdomain (example: tracking.mydomain.com)
+
+Standard third-party call:  
+https://api.commander1.com/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+
+Equivalent first-party call:  
+https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+
+#### 2. Using Commanders Act Gateway (path-based setup)
+
+If your proxy endpoint is something like:  
+https://www.mydomain.com/mygatewaypath/
+
+Then the first-party API call becomes:  
+https://www.mydomain.com/mygatewaypath/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+
+Note: always keep the /api/<version>/… structure after the proxy path.
+
+
 ## User
 
 <mark style="color:blue;">`GET`</mark> `https://api.commander1.com/engage/user/`
