@@ -47,21 +47,22 @@ Without this path, the request will not work.
 
 #### 1. Using a dedicated subdomain (example: tracking.mydomain.com)
 
-Standard third-party call:  
-https://api.commander1.com/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+The first-party API structure must follow this pattern:  
+https://tracking.mydomain.com/**api**/<version>/engage/<resource>/
 
-Equivalent first-party call:  
+Example:  
 https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
 
 #### 2. Using Commanders Act Gateway (path-based setup)
 
-If your proxy endpoint is something like:  
-https://www.mydomain.com/mygatewaypath/
+If your gateway endpoint is served under a path (for example: https://www.mydomain.com/cact-proxy/),  
+the first-party API structure must follow this pattern:  
+https://www.mydomain.com/cact-proxy/**api**/<version>/engage/<resource>/
 
-Then the first-party API call becomes:  
-https://www.mydomain.com/mygatewaypath/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+Example:  
+https://www.mydomain.com/cact-proxy/**api**/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
 
-Note: always keep the /api/<version>/… structure after the proxy path.
+Note: always keep the **/api/**<version>/… structure after the subdomain or the gateway path.
 
 
 ## User
