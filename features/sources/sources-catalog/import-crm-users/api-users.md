@@ -42,7 +42,7 @@ Without this path, the request will not work.
 #### 1. Using a dedicated subdomain (example: tracking.mydomain.com)
 
 The first-party API structure must follow this pattern:  
-https://tracking.mydomain.com/**api**/<version>/engage/<resource>/
+https://tracking.mydomain.com/**api**/1.0/engage/visitors/
 
 Example:  
 https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
@@ -51,7 +51,7 @@ https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326&tcid=&token=XX
 
 If your gateway endpoint is served under a path (for example: https://www.mydomain.com/cact-proxy/),  
 the first-party API structure must follow this pattern:  
-https://www.mydomain.com/cact-proxy/**api**/<version>/engage/<resource>/
+https://www.mydomain.com/cact-proxy/**api**/1.0/engage/visitors/
 
 Example:  
 https://www.mydomain.com/cact-proxy/**api**/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
