@@ -93,6 +93,15 @@ The Activity Logs API can now filter activity based on any feature of the platfo
 
 → Makes it easy to isolate specific events for troubleshooting, compliance reviews, and operational audits.
 
+---
+
+🔍 **Event Inspector for Audience-Based Destinations**  
+Audience-based destinations now include a dedicated **Event Inspector** tab.  
+Until now, Event Inspector was only available for event-based destinations.  
+Customers can now review in realtime **exactly what is shared with each partner in real time** when sending audiences.
+
+→ Easier debugging, full visibility on outbound payloads in realtime, and faster troubleshooting for consultants and support teams.
+
 ***
 
 ## Release 10.0.31 - October - 2025
