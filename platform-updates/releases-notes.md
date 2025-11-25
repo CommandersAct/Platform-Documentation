@@ -6,6 +6,95 @@ description: >-
 
 # Release notes
 
+## Release 10.0.32 - November - 2025
+
+✨ **New Features**
+
+📤 **New Destination — Salesforce Marketing Cloud: Profile Sync (API)**  
+A streamlined **real-time** destination for Salesforce Marketing Cloud is now available.  
+It allows customers to **upsert profiles in real time** into Data Extensions using Salesforce’s official API, powering use cases such as abandoned cart flows, journey triggers, and continuous profile synchronisation.  
+Setup is simple, with intuitive field selection and batch-compatible processing.
+
+---
+
+🧮 **Data Cleansing — Full-Screen Formula Editor**  
+The formula editor has been completely redesigned for a more powerful and comfortable experience.
+
+**What’s new:**  
+* Full-screen editing in a side panel  
+* Integrated Property Picker  
+* Function catalog with one-click insertion  
+* **Live Formula Tester** with instant feedback  
+* Built-in AI copilot (**JarvX**) to create, modify, or explain formulas  
+
+→ A faster, more intuitive workflow for all users.
+
+---
+
+🔧 **Destinations — Simplified Inputs & Smarter Editing**  
+Destination setup is now easier and more consistent across all connectors.
+
+**Highlights:**  
+* Removal of old dual-mode inputs (text mode vs formula mode)  
+* Each field now has two optional actions:  
+  * **Property Picker** to inject dynamic values  
+  * **Formula Editor** for advanced transformations  
+* Cleaner UX aligned with modern server-side standards  
+* More power thanks to integrated formulas & transformations  
+
+→ Faster setup, fewer mistakes, and easier onboarding for all users.
+
+---
+
+🔗 **Destinations — Smart Mapping**  
+Mappings are now easier to understand and configure.
+
+**Improvements include:**  
+* Display of labels, descriptions, and technical names  
+* Guided Property Picker for selecting or changing mapped fields  
+* Search capabilities for instant access to the right property  
+
+→ Makes mapping self-explanatory and prevents configuration errors.
+
+---
+
+🔢 **Enhanced Data Types in Destinations**  
+Destination connectors now provide more advanced handling of property types (numbers, booleans, strings, etc.).  
+Users can still explicitly cast types using `STRING()` or `NUMBER()` when required.
+
+→ Adds flexibility for advanced users with specific formatting or API integration needs.
+
+---
+
+🕓 **View History for Destinations**  
+A new **View history** button summarises all modifications applied to a destination.
+
+**Includes:**  
+* Who made the change  
+* What was updated  
+* When it occurred  
+* A compact before/after comparison  
+
+→ Enables faster investigations, smoother collaboration, and clearer audit trails.
+
+---
+
+📜 **Activity Logs API — Now Filterable**  
+The Activity Logs API can now filter activity based on any feature of the platform, including:
+
+* Destinations  
+* Sources  
+* Enrichments  
+* Data Cleansing  
+* Data Models  
+* Consent  
+* Configuration updates  
+* …and more  
+
+→ Makes it easy to isolate specific events for troubleshooting, compliance reviews, and operational audits.
+
+***
+
 ## Release 10.0.31 - October - 2025
 
 ✨ **New Features**
