@@ -4,8 +4,7 @@ Once a tag is added, you can configure it in the “**EDIT**” step.
 
 A list of your tags is displayed in the left menu of the “**EDIT**” interface. Tags that need to be configured or validated have a warning (/!\\) sign before their name.
 
-Note: You can find a tag on the list by using the search box :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TAG_CONFIG_1.png)
+Note: You can find a tag on the list by using the search box :[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TAG_CONFIG_1.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -47,8 +46,7 @@ The tag variables to map are called “**dynamic variables**“, and they are de
 
 They appear in the tag’s code, in blue boldface, as well as above the tag’s code .
 
-You must map these dynamic variables with the data layer variables available in the drop down menus (example: user email, user ID) or a static value (example: method) :[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MAPPING_TAGS_VARS.png)
+You must map these dynamic variables with the data layer variables available in the drop down menus (example: user email, user ID) or a static value (example: method) :[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MAPPING_TAGS_VARS.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
@@ -72,8 +70,7 @@ You can also customize your tag’s code by changing the static elements into dy
 
 Example:\\
 
-If you want to make all the values to be collected in a tag dynamically, simply leave them in between hashtags signs. Then save the tag after making this change and you will be able to map your variable with your data layer data:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MATCHING.png)
+If you want to make all the values to be collected in a tag dynamically, simply leave them in between hashtags signs. Then save the tag after making this change and you will be able to map your variable with your data layer data:[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MATCHING.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
@@ -103,13 +100,11 @@ Uncheck the “**Use Tag Cleaner**” box if you do not want your tag to be rewr
 
 Each time a container is generated, Commanders Act saves the tags present in the container, thus allowing you to return to an old tag configuration if necessary.
 
-You can display previous versions of a particular tag by clicking “**PREVIOUS VERSION(S)**”:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_VERSIONS.png)
+You can display previous versions of a particular tag by clicking “**PREVIOUS VERSION(S)**”:[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_VERSIONS.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-The “**PREVIOUS VERSION(S)**” window contains all the saved versions of your tag. The version displayed by default is the previous version of the tag.[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_V_DETAILS.png)
+The “**PREVIOUS VERSION(S)**” window contains all the saved versions of your tag. The version displayed by default is the previous version of the tag.[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/PREVIOUS_V_DETAILS.png)
 
 **Tag version**: number of the last tag version saved, name of the user who generated the version, and the date and time it was generated
 
@@ -129,7 +124,7 @@ You have two options:
 
 * You can select a previously created perimeter or constraint by clicking the drop-down menu:\
   \
-  <img src="../../../../../../.gitbook/assets/image (48) (1).png" alt="" data-size="original">
+  <img src="/broken/files/qTsN8vcL168K2OcRsB22" alt="" data-size="original">
 * You can create a new perimeter or constraint by clicking “+” ![](<../../../../../../.gitbook/assets/image (13) (2).png>)
 
 The rule creation window will appear so that you can create your rules in the same way as in the “**RULES**” step.
@@ -160,8 +155,7 @@ Caution: a deleted tag cannot be recovered.
 
 ## Tags' activation and execution order
 
-To activate or deactivate tags in the “**GENERATE**” step, just check or uncheck each tag in the “**ACTIVATION**” column and generate a new container version (blue button in the upper right-hand side of the screen):[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MANAGING_ACTIVATION.png)
+To activate or deactivate tags in the “**GENERATE**” step, just check or uncheck each tag in the “**ACTIVATION**” column and generate a new container version (blue button in the upper right-hand side of the screen):[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/MANAGING_ACTIVATION.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
@@ -171,7 +165,7 @@ Note: Since a deactivated tag will be visible in the interface but not in the co
 
 To modify the order in which tags are executed in a container in the “**GENERATE**” step, just drag and drop each tag in the “**RANK**” column and place them in the order in which you want them to execute on your site’s pages, and then generate a new container version (blue button in the upper-right hand side of the screen):\\
 
-<figure><img src="../../../../../../.gitbook/assets/image (67) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/ETB4CQWHq55p4p63sWLx" alt=""><figcaption></figcaption></figure>
 
 We recommend that you place the **most important tags** at the **top** of the container so that they have the best chance of executing if your visitors change pages quickly without waiting for them to fully load.
 
@@ -179,8 +173,7 @@ We recommend that you place the **most important tags** at the **top** of the co
 
 To improve your site’s performance, Commanders Act suggests that you deactivate a tag if it takes too long to load. You can enter a maximum duration, in milliseconds, for a tag to execute. If the tag takes longer than this time to execute, it will be deactivated.
 
-To add a timeout to tags in the “**GENERATE**” step, just enter a duration in milliseconds in the “**TIMEOUT MS”** column and generate a new container version:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TIMEOUT.png)
+To add a timeout to tags in the “**GENERATE**” step, just enter a duration in milliseconds in the “**TIMEOUT MS”** column and generate a new container version:[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/01/TIMEOUT.png)
 
 <figure><img src="../../../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 

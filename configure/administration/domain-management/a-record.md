@@ -26,7 +26,7 @@ Select A record and select how to provide the certificate:
     \- The chain of the certificate\
     If you need assistance, please contact the Commanders Act support team.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-05-20 à 14.50.37 (1).png>)
+![](/broken/files/RC6x4K8ArTVcHZOMgakT)
 
 ## A record setup with Let's encrypt
 
@@ -34,7 +34,7 @@ Customers' DNS should be configured with A record information (ask your IT depar
 
 Click on "Validate configuration" and this will test the DNS configuration.
 
-![](<../../../.gitbook/assets/image (1) (4) (1) (1).png>)
+![](/broken/files/GXjUcl3M9OJF1o5FlZoa)
 
 Click then on "Generate certificates"
 

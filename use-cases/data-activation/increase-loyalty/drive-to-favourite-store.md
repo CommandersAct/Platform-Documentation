@@ -14,7 +14,7 @@ Send a personalized SMS with a discount valid only in the customer’s favourite
 
 💰 ROI: High
 
-![](<../../../.gitbook/assets/sms (1).png>)
+![](/broken/files/6kWXMxlJFXRqiyfsAXJ4)
 
 ## Use case setup
 

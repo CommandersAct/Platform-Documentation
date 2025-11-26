@@ -33,7 +33,7 @@ If you don't have yet an accept all / refuse all buttons in your privacy center,
 
 ### The automatic text of Purposes has evolved
 
-<figure><img src="../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/t2gJHGjc9RT3iT3Jx74s" alt=""><figcaption></figcaption></figure>
 
 ### There's no more "Legal Description" it is replaced by "Examples"
 

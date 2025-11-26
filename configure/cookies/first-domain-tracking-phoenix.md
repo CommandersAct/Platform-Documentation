@@ -14,8 +14,6 @@ Phoenix enables you to persist 1st party cookies for longer durations to reduce 
 
 To understand how Phoenix works it is important to understand following cookie concepts.
 
-
-
 {% tabs %}
 {% tab title="1st party vs. 3rd party cookies" %}
 A cookie belongs to a domain (e.g. `site.com`). A cookies set on `site-a.com` belongs to `site-a.com`, a cookie set on `site-b.com` belongs to `site-b.com`.
@@ -31,8 +29,6 @@ You can inspect the domain of a cookie in the Developer Tools of most browsers. 
 A cookie is a 1st party cookie in case the field "Domain" matches the domain of the current website (e.g. a cookie with a domain `.site.com` is a 1st party cookie on a website with the domain `www.site.com`).
 
 3rd party cookies are blocked by many browsers (e.g. Safari and Firefox) and will most likely be blocked by all major browsers in 2022. Phoenix works with 1st party cookies.
-
-
 {% endtab %}
 
 {% tab title="Secure Http cookies" %}
@@ -54,7 +50,7 @@ The duration of Http cookies with a Secure flag are not impacted by ITP. Phoenix
 {% endtabs %}
 
 {% hint style="info" %}
-&#x20;Phoenix allows to persist 1st party cookies without a Secure and HttpOnly flag.
+Phoenix allows to persist 1st party cookies without a Secure and HttpOnly flag.
 {% endhint %}
 
 #### How does Phoenix persist cookies? <a href="#how-does-phoenix-persist-cookies" id="how-does-phoenix-persist-cookies"></a>
@@ -68,8 +64,6 @@ Phoenix will check if a 1st party cookie was deleted and recreate it from its ba
 Phoenix setup consists of following steps. A Commanders Act consultant will support you during setup.
 
 <figure><img src="../../.gitbook/assets/image (511).png" alt=""><figcaption><p>Example configuration of a Phoenix subdomain and cookie size limit.</p></figcaption></figure>
-
-
 
 #### Configure Phoenix Subdomain <a href="#configure-phoenix-subdomain" id="configure-phoenix-subdomain"></a>
 
@@ -91,7 +85,7 @@ Exceeding cookie storage limit can make your website inaccessible. Please consul
 
 #### Setup WAF Proxy Domain <a href="#setup-cname-domain-record" id="setup-cname-domain-record"></a>
 
-You will then need to connect your Phoenix subdomains with the Phoenix service. Your domain administrator needs to therefore declare the tracking domain in Cloudflare, or your WAF, that point your Phoenix subdomains  (e.g. `phoenix.mydomain.com`) to the Phoenix service domain (e.g. `sitexxx.commander5.com`).\
+You will then need to connect your Phoenix subdomains with the Phoenix service. Your domain administrator needs to therefore declare the tracking domain in Cloudflare, or your WAF, that point your Phoenix subdomains (e.g. `phoenix.mydomain.com`) to the Phoenix service domain (e.g. `sitexxx.commander5.com`).\
 \
 If you have any questions about how to configure your reverse proxy, check this [dedicated documentation](https://doc.commandersact.com/configure/administration/domain-management/waf-proxy-cloudflare)
 
@@ -109,7 +103,7 @@ Commanders Act cookies are automatically managed by Phoenix. Cookies of other ve
 
 In TMS Commanders Act, cookies are usually set by your vendor tags. You can enable Phoenix for selected tags in the "Deployment" step of your Commanders Act TMS container by enabling the `ITP BYPASS` option. This will automatically persist all cookies of this tag with Phoenix. A progress bar will show the remaining cookie space made available by your administrator.
 
-<figure><img src="../../.gitbook/assets/demo_cookies_phoenix (1).gif" alt=""><figcaption><p>Example how cookies a of Tag are persisted with Phoenix</p></figcaption></figure>
+<figure><img src="/broken/files/dhCHDJIQhVhRMnw1nSRn" alt=""><figcaption><p>Example how cookies a of Tag are persisted with Phoenix</p></figcaption></figure>
 
 {% hint style="info" %}
 Please contact the Commanders Act support or your Commanders Act consultant in case the ITP BYPASS option is not available for a tag or cookie you would like to persist.

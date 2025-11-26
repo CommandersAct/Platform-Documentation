@@ -49,7 +49,7 @@ Example:
 
 This is the structure of a page from a website:
 
-<figure><img src="../../../../../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/HsQHz2ZVezosL6V2YHr7" alt=""><figcaption></figcaption></figure>
 
 **“Tag 1” sends 4 hits:**
 

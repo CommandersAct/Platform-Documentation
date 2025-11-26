@@ -63,7 +63,7 @@ Enter the value of the parameter that will be compared to what was set in the in
 
 Click “ADD” to add the rule (10).
 
-<figure><img src="../../../../../../../.gitbook/assets/image (277) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/J7GSg0CNqHLgP14eiOqM" alt=""><figcaption></figcaption></figure>
 
 **Repeat** these steps for your **MyThings** Conversion tag.
 
@@ -71,7 +71,7 @@ When both your rules are created, they will appear in the rule summary.
 
 If your wish to edit any of them, click the pencil icon to the right on the line of each rule. If you wish to delete it, click the trash can.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (304) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/S54Vo3yN0Mf91gZ8jPnq" alt=""><figcaption></figcaption></figure>
 
 The rules summary interface has a Deduplication column. A check mark will indicate that your two tags are deduplicated.
 

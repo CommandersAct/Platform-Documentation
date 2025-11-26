@@ -85,7 +85,7 @@ Imagine that a customer adds a product to their cart, generating an `add_to_cart
 1. **Access Storage Settings**: Go to the Data Governance -> Storage settings.
 2.  **Manage Storage Settings**: Click on "New Storage" to create a new Storage.\\
 
-    <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/rlQvSbmZAc69jYz72f5Z" alt=""><figcaption></figcaption></figure>
 
 To learn more about how to use this feature, and get tips about Storage Settings creation, please [read the dedicated page](storage-settings.md)\\
 
@@ -108,7 +108,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
     * **Review Settings**: Ensure all settings are correctly configured.
     * **Save**: Save the new enrichment settings.\\
 
-    <figure><img src="../../.gitbook/assets/image (581) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/ZFMJsIsw0T0s3AjeRdzB" alt=""><figcaption></figcaption></figure>
 
 * **Administrators Only**: This feature is accessible only to users with Administrator privileges. Custom profiles can be created to grant specific access to other users.
 

@@ -38,7 +38,7 @@ Here's the 5 steps to follow to remains compliant with the TCF on your website
 
     <figure><img src="../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/image (157) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/msgbeXYkNOiochiIA32Z" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 IAB Europe has released a new CMP Validator Chrome Extension available [here](https://chrome.google.com/webstore/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc)

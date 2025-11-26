@@ -11,7 +11,7 @@ Before deploying a container version, you can:
 
 For each version generated, you will find his version number, creation date, status (“deployed” when it is the version currently deployed and/or “live” when it is the version currently called for the site) , the name of the person who generated the version, a comment, and the container’s size. You will also be able to load your selected container version directly from the interface or via a permanent link:
 
-<figure><img src="../../../../../../.gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/HGQ3AD9srfcD6Ztla2kL" alt=""><figcaption></figcaption></figure>
 
 Additional information:
 

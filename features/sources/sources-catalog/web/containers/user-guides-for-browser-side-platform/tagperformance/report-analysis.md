@@ -38,7 +38,7 @@ The three metrics would take the following values:
 
 **2)-The Pie Chart:**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (326) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/VSQGhs3IcAUh1QeTkWIZ" alt=""><figcaption></figcaption></figure>
 
 The pie chart highlights tags that take longer to load in terms of the selected level of analysis in the available filters: **Start Render, DOM Ready, DOM Loaded** or Cumulated loading time.
 
@@ -66,7 +66,7 @@ We wish to analyze the variation of tags affecting the Start Render event on May
 
 In the screenshot below, we can see a 65% increase in AB Tasty’s loading time for that day. The tag does indeed take 61.96ms to load, whereas the median for the six previous days was of 37.65ms. (May 16th: 48.05ms /May 17th: 30.30ms / May 18th: 35.77ms / May 19th: 27.44ms / May 20th: 64.11 ms / May 21st: 39.53ms).
 
-<figure><img src="../../../../../../../.gitbook/assets/image (330) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/mHP4Bzz9xWPzCFvABXD6" alt=""><figcaption></figcaption></figure>
 
 **4)-Main Page Type Variations:**
 
@@ -101,7 +101,7 @@ Note: These four metrics consider the selected filters among “page type”, �
 
 **2)-TagPerformance by tags**
 
-<figure><img src="../../../../../../../.gitbook/assets/image (335) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/zKQ9keXraEe9KrSAWZ1L" alt=""><figcaption></figcaption></figure>
 
 The graph shows information about tags’ loading time on your website.
 
@@ -188,8 +188,7 @@ You can at all times apply filters on different page types or deselect enabled f
 
 2/Request type (script/iframe/pixel)
 
-The report highlights the request’s nature/type:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/piggybacking_doc_2.png)
+The report highlights the request’s nature/type:[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/piggybacking_doc_2.png)
 
 * Script (URL called with \<script> tag)
 * Iframe (URL called with an \<iframe> tag)
@@ -210,8 +209,7 @@ In order to provide you with better readability, same-type “childless” reque
 
 <figure><img src="../../../../../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
-By hovering over any of these domains (ex: ) you will see, with greater detail, which URLs are called by them:[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/2018-01-29_12h13_27.png)
+By hovering over any of these domains (ex: ) you will see, with greater detail, which URLs are called by them:[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2018/01/2018-01-29_12h13_27.png)
 
 <figure><img src="../../../../../../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
@@ -238,7 +236,7 @@ This export is currently unavailable.
 
 Example: The following diagram shows an extract of tags present on the site:\\
 
-<figure><img src="../../../../../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/HsQHz2ZVezosL6V2YHr7" alt=""><figcaption></figcaption></figure>
 
 These are the results you will obtain when you select the following levels of analysis:
 
@@ -253,7 +251,7 @@ These are the results you will obtain when you select the following levels of an
     <figure><img src="../../../../../../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
 *   “Cumulated tag loading time”: _TAG1 (HIT1) + TAG2 (HIT1) + TAG1 (HIT2) + TAG1 (HIT3) + TAG2 (HIT2) + TAG1 (HIT4)_
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (318) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/HsQHz2ZVezosL6V2YHr7" alt=""><figcaption></figcaption></figure>
 
 If you wish to know more about the “Start Render”, “**DOM Ready**” and “**DOM Loaded**” concepts please refer to the Definition of TagPerformance Metrics article.
 

@@ -76,7 +76,7 @@ You will need to connect your iPhone to your Mac.
 
 Open XCode, go to “Window” ), > “Devices” (2), then select your device in thecolumn to the left (3):
 
-![](../../../xcode_1\[1].png)
+![](../../../.gitbook/assets/xcode_1\[1].png)
 
 These elements will be displayed when you analyze mobile logs:
 
@@ -85,7 +85,7 @@ These elements will be displayed when you analyze mobile logs:
 * Commanders Act site ID
 * Sended Server-Side events containing all the properties you have sent to Commanders Act servers (POST method). For more information about events construction, you can refer to our [events codes examples](../../../developers/tracking/events-reference/)
 
-![](../../../xcode_2\[1].png)
+![](../../../.gitbook/assets/xcode_2\[1].png)
 
 \*\*\*
 

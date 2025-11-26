@@ -63,7 +63,7 @@ Select in the drop down's menu the subdomain you need to use on your workspace.
 A loaded domain is activated by default. If you want to stop it on your workspace, simply click the button "stop using this subdomain".\
 Note: The subdomain will remains activated on the site where it is configured.
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/EefOhSJZZALKgD34L9JX" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Good to know!\

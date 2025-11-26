@@ -36,7 +36,7 @@ Plugin must be active on your browser to see these buttons
 
 On click, you will be invited to enter the expected landing page for your test session, then click 'OK' to be redirected to your site.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (573) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/BdeTaKh1l32J09pAZRpL" alt=""><figcaption></figcaption></figure>
 
 ### Stop Web Container(s) replacement
 
@@ -74,7 +74,7 @@ If some "event variables" are fed up, you will see them as well
 
 Customs Events are also visibles, with the proper name of each custom event.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (607) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/OFMPQpKbytmQbqjgiCKG" alt=""><figcaption></figcaption></figure>
 
 ### Keep a History Across Pages
 

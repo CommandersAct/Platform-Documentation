@@ -268,8 +268,8 @@ This event signifies that an item was added to a cart for purchase.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','add_to_cart', {
   value: 8.00,
@@ -297,9 +297,11 @@ cact('trigger','add_to_cart', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -308,9 +310,11 @@ val items = listOf<TCItem>(item1, item2)
 val event = TCAddToCartEvent(22.53f,  "EUR", items)
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -319,9 +323,11 @@ ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
 TCAddToCartEvent event = new TCAddToCartEvent(22.53f,  "EUR", items);
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -340,9 +346,11 @@ withCurrency: @"EUR"
 withItems: items];
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -352,9 +360,11 @@ let event = TCAddToCartEvent(value: 1, withCurrency: "EUR", withItems: [item_1, 
 	event?.currency = "EUR"
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -373,9 +383,11 @@ var event = TCAddToCartEvent();
     event.value = 12.5;
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "add_to_cart",
@@ -404,8 +416,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## add\_to\_wishlist
 
@@ -417,8 +429,8 @@ The event signifies that an item was added to a wishlist. Use this event to iden
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','add_to_wishlist', {
   value: 8.00,
@@ -446,9 +458,11 @@ cact('trigger','add_to_wishlist', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -459,9 +473,11 @@ val event = TCAddToWishlistEvent(items)
     event.currency = "EUR"
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -472,9 +488,11 @@ event.value = 20.00f;
 event.currency = "EUR";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -493,9 +511,11 @@ withCurrency: @"EUR"
 withItems: items];
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -504,9 +524,11 @@ let event = TCAddToWishlistEvent(items: [item_1, item_2])
 	event?.currency = "EUR"
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -527,9 +549,11 @@ var event = TCAddToWishlistEvent();
     event.value = 12.5;
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "add_to_wishlist",
@@ -558,8 +582,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## begin\_checkout <a href="#begin_checkout" id="begin_checkout"></a>
 
@@ -571,8 +595,8 @@ This event signifies that a user has begun a checkout.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','begin_checkout', {
   id: 'O_12345',
@@ -621,9 +645,11 @@ cact('trigger','begin_checkout', {
   }]
 })
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -633,9 +659,11 @@ val event = TCBeginCheckoutEvent(1.0f,  2.0f, "EUR", items)
     event.coupon = "CHRISTMAS"
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -645,9 +673,11 @@ TCBeginCheckoutEvent event = new TCBeginCheckoutEvent(1.0f,  2.0f, "EUR", items)
 event.coupon = "CHRISTMAS";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -668,9 +698,11 @@ withItems: items];
 event.coupon = @"CHRISTMAS";
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -678,9 +710,11 @@ let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my
 let event = TCBeginCheckoutEvent(revenue: 1, withValue: 3, withCurrency: "EUR", withItems: [item_1, item_2])
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -707,9 +741,11 @@ var event = TCBeginCheckoutEvent();
 		event.items = [tc_item_1, tc_item_2];
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "begin_checkout",
@@ -771,8 +807,8 @@ serverside.execute(event);
         }
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## generate\_lead
 
@@ -784,8 +820,8 @@ Log this event when a lead has been generated to understand the efficacy of your
 
 **Example**
 
-{% tabs %}
-{% tab title="Javascript" %}
+\{% tabs %\} \{% tab title="Javascript" %\}
+
 ```javascript
 cact('trigger','generate_lead', {
   currency: 'EUR',
@@ -798,42 +834,52 @@ cact('trigger','generate_lead', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val event = TCGenerateLeadEvent(9.99f, "EUR")
 event.ID = "L_12345"
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCGenerateLeadEvent event = new TCGenerateLeadEvent(9.99f, "EUR");
 event.ID = "L_12345";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="iOS" %}
+\{% endtab %\}
+
+\{% tab title="iOS" %\}
+
 ```objectivec
 TCGenerateLeadEvent *event = [[TCGenerateLeadEvent alloc] initWithValue: [[NSDecimalNumber alloc] initWithString: @"12.2"]
 withCurrency: @"EUR"];
 event.ID = @"2b758628-f81b-454f-8e3d-867e8bc98523";
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift" %}
+\{% endtab %\}
+
+\{% tab title="Swift" %\}
+
 ```swift
 let event = TCGenerateLeadEvent(value: 1, withCurrency: "EUR")
     event?.ID = "2b758628-f81b-454f-8e3d-867e8bc98523";
     serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Flutter" %}
+\{% endtab %\}
+
+\{% tab title="Flutter" %\}
+
 ```dart
 var event = TCGenerateLeadEvent();
     event.currency = "EUR";
@@ -841,17 +887,19 @@ var event = TCGenerateLeadEvent();
     event.ID = "2b758628-f81b-454f-8e3d-867e8bc98523";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "generate_lead",
         "method": "LinkedIn"
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## purchase
 
@@ -869,8 +917,8 @@ Fire this event when one or more items are purchased by a user.
 
 **Example**
 
-{% tabs %}
-{% tab title="Javascript" %}
+\{% tabs %\} \{% tab title="Javascript" %\}
+
 ```javascript
 cact('trigger','purchase', {
   id: 'O_12345',
@@ -921,9 +969,11 @@ cact('trigger','purchase', {
   }]
 })
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -934,9 +984,11 @@ val event = TCPurchaseEvent("O_12345", 16.0f,  22.53f, "EUR", "purchase", "Credi
     event.taxAmount = 3.20f
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -947,9 +999,11 @@ event.shippingAmount = 3.33f;
 event.taxAmount = 3.20f;
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="iOS" %}
+\{% endtab %\}
+
+\{% tab title="iOS" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1" 
@@ -974,9 +1028,11 @@ withItems: items];
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift" %}
+\{% endtab %\}
+
+\{% tab title="Swift" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -984,9 +1040,11 @@ let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my
 let event = TCPurchaseEvent(id: "purchaseID", withRevenue: 16.21, withValue: 23.10, withCurrency: "EUR", withType: "purchase", withPaymentMethod: "CreditCard", withStatus: "waiting", withItems: [item_1, item_2])
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1020,9 +1078,11 @@ var event = TCPurchaseEvent();
 		event.items = [tc_item_1, tc_item_2];
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "purchase",
@@ -1086,8 +1146,8 @@ serverside.execute(event);
         }
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## refund
 
@@ -1103,8 +1163,8 @@ Fire this event when a purchase was refund
 
 **Example**
 
-{% tabs %}
-{% tab title="Javascript" %}
+\{% tabs %\} \{% tab title="Javascript" %\}
+
 ```javascript
 cact('trigger','refund', {
   id: 'O_12345',
@@ -1121,9 +1181,11 @@ cact('trigger','refund', {
   }
 })
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val event = TCRefundEvent("O_12345", 16.00f, 23.53f, "EUR", "offline")
     event.coupon = "CHRISTMAS"
@@ -1131,9 +1193,11 @@ val event = TCRefundEvent("O_12345", 16.00f, 23.53f, "EUR", "offline")
     event.taxAmount = 3.20f
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCRefundEvent event = new TCRefundEvent("O_12345", 16.00f, 23.53f, "EUR", "offline");
 event.coupon = "CHRISTMAS";
@@ -1141,9 +1205,11 @@ event.shippingAmount = 4.33f;
 event.taxAmount = 3.20f;
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1166,9 +1232,11 @@ withItems: items];
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1177,9 +1245,11 @@ let event = TCRefundEvent(id: "purchaseID", withRevenue: 16.32, withValue: 23.1,
 	event?.shippingAmount = 11
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 var event = TCRefundEvent();
     event.currency = "EUR";
@@ -1191,9 +1261,11 @@ var event = TCRefundEvent();
     event.type = "offline";    
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "refund",
@@ -1204,8 +1276,8 @@ serverside.execute(event);
         "tax_amount": 3.20
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## remove\_from\_cart
 
@@ -1217,8 +1289,8 @@ This event signifies that an item was removed from a cart.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','remove_from_cart', {
   value: 8.00,
@@ -1246,9 +1318,11 @@ cact('trigger','remove_from_cart', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -1256,9 +1330,11 @@ val items = listOf<TCItem>(item1, item2)
 val event = TCRemoveFromCartEvent(items)
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -1267,9 +1343,11 @@ ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
 TCRemoveFromCartEvent event = new TCRemoveFromCartEvent(items);
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1288,9 +1366,11 @@ event.value = [[NSDecimalNumber alloc] initWithString: @"12.2"];
 event.currency = @"EUR";
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1299,9 +1379,11 @@ let event = TCRemoveFromCartEvent(items: [item_1, item_2])
 	event?.value = 22.53
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1319,9 +1401,11 @@ var event = TCRemoveFromCartEvent();
 		event.items = [tc_item_1];
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "remove_from_cart",
@@ -1350,8 +1434,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## select\_item
 
@@ -1363,8 +1447,8 @@ This event signifies an item was selected from a list.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','select_item', {
   item_list_name: 'Related products',
@@ -1391,9 +1475,11 @@ cact('trigger','select_item', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 <pre class="language-kotlin"><code class="lang-kotlin">val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
 val items = listOf&#x3C;TCItem>(item1, item2)
@@ -1402,17 +1488,21 @@ val event = TCSelectItemEvent(items)
 <strong>    event.itemListName = "Related products"
 </strong>serverside.execute(event
 </code></pre>
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCSelectContentEvent event = new TCSelectContentEvent();
 event.contentType = "product";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1426,9 +1516,11 @@ event.itemListName = @"Related products";
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1437,9 +1529,11 @@ let event = TCSelectItemEvent(items: [item_1, item_2])
 	event.itemListName = "Related products";
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1456,9 +1550,11 @@ var event = TCSelectItemEvent();
 		event.items = [tc_item_1];
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "select_item",
@@ -1486,8 +1582,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## view\_cart
 
@@ -1499,8 +1595,8 @@ This event signifies that a user viewed their cart.
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','view_cart', {
   value: 8.00,
@@ -1528,9 +1624,11 @@ cact('trigger','view_cart', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -1541,9 +1639,11 @@ val event = TCViewCartEvent(items);
     event.currency = "EUR"
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -1554,9 +1654,11 @@ event.value = 15.1f;
 event.currency = "EUR";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1571,9 +1673,11 @@ event.currency = @"EUR";
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1582,9 +1686,11 @@ let event = TCViewCartEvent(items: [item_1, item_2])
 	event?.value = 22.53
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1613,9 +1719,11 @@ var event = TCViewCartEvent();
 	event.items = [tc_item_1, tc_item_2	
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "view_cart",
@@ -1644,8 +1752,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## view\_item
 
@@ -1657,8 +1765,8 @@ This event signifies that some content was shown to the user. Use this event to 
 
 **Example**
 
-{% tabs %}
-{% tab title="JavaScript" %}
+\{% tabs %\} \{% tab title="JavaScript" %\}
+
 ```javascript
 cact('trigger','view_item', {
   value: 8.00,
@@ -1686,9 +1794,11 @@ cact('trigger','view_item', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -1697,9 +1807,11 @@ val items = listOf<TCItem>(item1, item2)
 val event = TCViewItem(items)
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```java
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -1708,9 +1820,11 @@ ArrayList<TCItem> items = new ArrayList<>(Arrays.asList(item1, item2));
 TCViewItem event = new TCViewItem(items);
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="Objective-C (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Objective-C (iOS)" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1730,9 +1844,11 @@ event.currency = @"EUR";
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift (iOS)" %}
+\{% endtab %\}
+
+\{% tab title="Swift (iOS)" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1741,9 +1857,11 @@ let event = TCViewItem(items: [item_1, item_2])
 	event?.revenue = 12.2
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Dart (Flutter)" %}
+\{% endtab %\}
+
+\{% tab title="Dart (Flutter)" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1764,9 +1882,11 @@ var event = TCViewItemEvent();
 	event.addAdditionalPropertyWithMapValue("key_map", {'test': 12, "test2": "value"});
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "view_item",
@@ -1795,8 +1915,8 @@ serverside.execute(event);
         ]
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## view\_item\_list
 
@@ -1808,8 +1928,8 @@ Log this event when the user has been presented with a list of items of a certai
 
 **Example**
 
-{% tabs %}
-{% tab title="Javascript" %}
+\{% tabs %\} \{% tab title="Javascript" %\}
+
 ```kotlin
 cact('trigger','view_item_list', {
   item_list_name: 'Related products',
@@ -1855,9 +1975,11 @@ cact('trigger','view_item_list', {
   }
 });
 ```
-{% endtab %}
 
-{% tab title="Kotlin (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Kotlin (Android)" %\}
+
 ```kotlin
 val item1 = TCItem("my_product1_id", TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1)
 val item2 = TCItem("my_product2_id", TCProduct("my_product_2_id", "my_product_2_name", 110f), 1)
@@ -1867,9 +1989,11 @@ val event = TCViewItemList(items)
     event.itemListName = "your products"
 serverside.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Java  (Android)" %}
+\{% endtab %\}
+
+\{% tab title="Java (Android)" %\}
+
 ```
 TCItem item1 = new TCItem("my_product1_id", new TCProduct("my_product_1_id", "my_product_1_name", 12.5f), 1);
 TCItem item2 = new TCItem("my_product2_id", new TCProduct("my_product_2_id", "my_product_2_name", 25.6f), 1);
@@ -1879,9 +2003,11 @@ TCViewItemListEvent event = new TCViewItemListEvent(items);
 event.itemListName = "your products";
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="iOS" %}
+\{% endtab %\}
+
+\{% tab title="iOS" %\}
+
 ```objectivec
 NSMutableArray *items = [[NSMutableArray alloc] init];
 [items addObject: [[TCItem alloc] initWithItemId: @"iID1"
@@ -1900,9 +2026,11 @@ event.itemListName = @"summer_collection";
 
 [TCS execute: event];
 ```
-{% endtab %}
 
-{% tab title="Swift" %}
+\{% endtab %\}
+
+\{% tab title="Swift" %\}
+
 ```swift
 let item_1:TCItem = TCItem(itemId: "my_item1.id", with: TCProduct(productId: "my_product1.id", withName: "my_product1.name", withPrice: 12.5), withQuantity: 1)
 let item_2:TCItem = TCItem(itemId: "my_item2.id", with: TCProduct(productId: "my_product2.id", withName: "my_product2.name", withPrice: 22.5), withQuantity: 1)
@@ -1911,9 +2039,11 @@ let event = TCViewItemListEvent(items: [item_1, item_2])
 	event?.itemListName = "summer_collection"
 	serverside?.execute(event)
 ```
-{% endtab %}
 
-{% tab title="Flutter" %}
+\{% endtab %\}
+
+\{% tab title="Flutter" %\}
+
 ```dart
 TCProduct tc_product = TCProduct();
 		tc_product.ID = "product_1_ID";
@@ -1946,9 +2076,11 @@ var event = TCViewItemListEvent();
 	event.itemListName = "itemListName";	
 serverside.execute(event);
 ```
-{% endtab %}
 
-{% tab title="json" %}
+\{% endtab %\}
+
+\{% tab title="json" %\}
+
 ```json
 {
     "event_name": "view_item_list",
@@ -2006,8 +2138,8 @@ serverside.execute(event);
         }
 }
 ```
-{% endtab %}
-{% endtabs %}
+
+\{% endtab %\} \{% endtabs %\}
 
 ## - COMMON SCHEMAS -
 

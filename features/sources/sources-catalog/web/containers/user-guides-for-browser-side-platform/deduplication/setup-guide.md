@@ -43,8 +43,7 @@ Select the condition (whether the value of the parameter matches or doesn’t ma
 
 Enter the value that will identify the channel (4). /!\ If a parameter’s value is made of more elements than the one you require, you need to use a star (\*) to indicate what chunk is to be considered. For example, let’s say you only need “Retargeting” in this parameter: utm\_medium=Retargeting-A1B3C3-crt. You need to write “Retargeting\*” (values are case sensitive):
 
-[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/03/C.png)Click ADD (5) on the line of the channel declaration to confirm the creation of the condition.
+[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/03/C.png)Click ADD (5) on the line of the channel declaration to confirm the creation of the condition.
 
 Click SAVE (6) at the bottom, right-hand corner of the window.
 
@@ -56,7 +55,7 @@ Click SAVE (6) at the bottom, right-hand corner of the window.
 
 1.  In the window that opens after you click “ADD CHANNEL”, enter your new channel’s name (Display, Affiliation, Retargeting, etc) – this is only a label to identify it in the Channel’s list in the interface – and click “ADD CONDITION”.
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (374) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/lmMZRKkrPJLo9JE0HVWw" alt=""><figcaption></figcaption></figure>
 2. In the menu that appears, select the parameter that will store the information defining the channel (there are default parameters such as those used by Google Analytics, AT Internet as well as the possibility to add custom parameters).
 3. Select the condition (whether the value of the parameter matches or doesn’t match the value you are about to enter).
 4. Enter the value that will identify the channel.
@@ -97,7 +96,7 @@ This will allow you to have the tag fire depending on the value of the channel A
 
 1.  In the window that opens after you click “ADD CHANNEL”, enter your new channel’s name (Display, Affiliation, Retargeting, etc) – this is only a label to identify it in the Channel’s list in the interface – and click “ADD CONDITION”.
 
-    <figure><img src="../../../../../../../.gitbook/assets/image (374) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="/broken/files/lmMZRKkrPJLo9JE0HVWw" alt=""><figcaption></figcaption></figure>
 2. In the menu that appears, select the parameter that will store the information defining the channel (there are default parameters such as those used by Google Analytics, AT Internet as well as the possibility to add custom parameters).
 3. Select the condition (whether the value of the parameter matches or doesn’t match the value you are about to enter).
 4. Enter the value that will identify the channel. Repeat these steps for as many possible combinations of parameters/values that could identify a channel. In the example below, if the utm\_medium parameter in the URL takes the values “Retargeting”, “rtg”, “RTG”, **or** “retargeting”, the channel called/labeled “Retargeting” (1) will be recognized.
@@ -108,13 +107,13 @@ utm\_medium=Retargeting-A1B3C3-crt
 
 You need to write “Retargeting\*” (values are case sensitive):
 
-<figure><img src="../../../../../../../.gitbook/assets/image (377) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/WKdwSlONNYftkXM8RYCr" alt=""><figcaption></figcaption></figure>
 
 1.  You can also create conditions based on the “AND” operator. For example: if the UTM\_MEDIUM parameter’s values are “Retargeting” or “rtg” AND the UTM\_CONTENT’s parameter’s value is “email”, then, the Retargeting channel will be recognized (see second screenshot below).
 
     <figure><img src="../../../../../../../.gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (386) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/lK18JovC3WsynLTV2mvl" alt=""><figcaption></figcaption></figure>
 
 If you wish to base your conditions on sources too (B), for every condition defining a channel, you will need to select a source.
 
@@ -210,8 +209,7 @@ Set-up your deduplication rules by following these steps:
 <figure><img src="../../../../../../../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 2.In the new window, click “ADD DEDUPLICATION RULE” to open the rule configuration window. If you click “MANAGE CHANNEL(S)” you will be taken to the Channel Identification interface again\
-[\
-](https://community.commandersact.com/wp-content/uploads/sites/2/2016/03/S.png)3.When the window opens, select the tag on which you wish to apply a rule from the dropdown menu.Please note: Deduplication is used on confirmation tags only.
+[<br>](https://community.commandersact.com/wp-content/uploads/sites/2/2016/03/S.png)3.When the window opens, select the tag on which you wish to apply a rule from the dropdown menu.Please note: Deduplication is used on confirmation tags only.
 
 4.Select the touchpoint’s position in the customer journey (beginning, end, anywhere).
 
@@ -233,7 +231,7 @@ Set-up your deduplication rules by following these steps:
 
 10\. Click “ADD” to add the rule.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (277) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/J7GSg0CNqHLgP14eiOqM" alt=""><figcaption></figcaption></figure>
 
 After you create your rules, they will appear in the rules summary.
 
@@ -262,7 +260,7 @@ In the “Edit” section, map the “Commanders Act – Reporting Deduplication
 
     <figure><img src="../../../../../../../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (281) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/v0iR6Wqh08tl49XT0nxM" alt=""><figcaption></figcaption></figure>
 
 In the “Rules” section, add a condition to your “Commanders Act – Reporting Deduplication v1.2” tag to call it only on your website’s confirmation page(s) (“confirmation page” perimeter).
 

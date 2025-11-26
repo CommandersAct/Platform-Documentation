@@ -158,7 +158,7 @@ Ready to bring your changes from Branch into the Main? Use our “Merge” featu
 Merge doesn't consider the generation versions. The UI for merging will ever display the latest updates of your Branch
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (545) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/7zIjlllDrtN4ivpgrEv7" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 If your Branch is not up to date, Merge will be blocked.
