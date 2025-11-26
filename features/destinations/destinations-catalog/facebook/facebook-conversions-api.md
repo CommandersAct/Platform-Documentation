@@ -268,13 +268,13 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="381">Commanders Act Properties</th><th>Facebook Properties</th></tr></thead><tbody><tr><td><code>event_id</code> <strong>[2][3]</strong></td><td><code>event_id</code> <strong>[1]</strong></td></tr><tr><td><code>event_name</code></td><td><code>event_name</code> <strong>[4]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>event_time</code> <strong>[5]</strong></td></tr><tr><td><code>context.page.url</code></td><td><code>event_source_url</code></td></tr><tr><td><code>context.page.referrer</code></td><td><code>referrer_url</code></td></tr><tr><td><p><code>Enable App tracking</code></p><p><code>type</code></p></td><td><code>action_source</code> <strong>[6]</strong></td></tr><tr><td><code>opt_out</code> <strong>[3]</strong></td><td><code>opt_out</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options</code> <strong>[3]</strong></td><td><code>data_processing_options</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options_country</code> <strong>[3]</strong></td><td><code>data_processing_options_country</code> <strong>[7]</strong></td></tr><tr><td><code>data_processing_options_state</code> <strong>[3]</strong></td><td><code>data_processing_options_state</code> <strong>[7]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** Set based on available properties, in the reported order on the left. Default to a random generated value based on the timestamp.\
-\&#xNAN;**\[2]** In the base path/root of your event.\
-\&#xNAN;**\[3]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.\
-\&#xNAN;**\[4]** See [Mapping: event\_name](facebook-conversions-api.md#mapping-event_name) for more details.\
-\&#xNAN;**\[5]** If no value is provided the current timestamp is used.\
-\&#xNAN;**\[6]** See [Mapping: action\_source](facebook-conversions-api.md#mapping-action_source) for more details.\
-\&#xNAN;**\[7]** See more details following this [LINK](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event).
+&#x20;**\[1]** Set based on available properties, in the reported order on the left. Default to a random generated value based on the timestamp.\
+&#x20;**\[2]** In the base path/root of your event.\
+&#x20;**\[3]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.\
+&#x20;**\[4]** See [Mapping: event\_name](facebook-conversions-api.md#mapping-event_name) for more details.\
+&#x20;**\[5]** If no value is provided the current timestamp is used.\
+&#x20;**\[6]** See [Mapping: action\_source](facebook-conversions-api.md#mapping-action_source) for more details.\
+&#x20;**\[7]** See more details following this [LINK](https://developers.facebook.com/docs/marketing-api/conversions-api/parameters/server-event).
 {% endhint %}
 
 ### Mapping: `event_name`
@@ -360,13 +360,13 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="405">Commanders Act Properties</th><th>Facebook Properties</th></tr></thead><tbody><tr><td><code>user.id</code> (hashed)<br><code>context.device.sdk_id</code><br><code>user.tcId</code> , <code>user.tcid</code> or <code>user.tc_id</code></td><td><code>user_data.external_id</code> <strong>[1]</strong></td></tr><tr><td><code>user.email</code></td><td><code>user_data.em</code> (email, hashed)</td></tr><tr><td><code>user.phone</code></td><td><code>user_data.ph</code> (phone, hashed)</td></tr><tr><td><code>user.gender</code></td><td><code>user_data.ge</code> (gender, hashed)</td></tr><tr><td><code>user.birthdate</code></td><td><code>user_data.db</code> (birthdate, hashed)</td></tr><tr><td><code>user.lastname</code></td><td><code>user_data.ln</code> (last name, hashed)</td></tr><tr><td><code>user.firstname</code></td><td><code>user_data.fn</code> (first name, hashed)</td></tr><tr><td><code>user.city</code></td><td><code>user_data.ct</code> (city, hashed)</td></tr><tr><td><code>user.state</code></td><td><code>user_data.st</code> (state, hashed)</td></tr><tr><td><code>user.zipcode</code></td><td><code>user_data.zp</code> (zip code, hashed)</td></tr><tr><td><code>user.country</code></td><td><code>user_data.country</code> (hashed)</td></tr><tr><td><code>ip</code> <strong>[3][4]</strong></td><td><code>user_data.client_ip_address</code></td></tr><tr><td><code>user_agent</code> <strong>[3][4]</strong></td><td><code>user_data.client_user_agent</code></td></tr><tr><td><code>fbc</code> <strong>[2]</strong><br><code>The cookie "_fbc"</code> <strong>[5]</strong></td><td><code>user_data.fbc</code> (Click ID)</td></tr><tr><td><code>fbp</code> <strong>[2]</strong><br><code>The cookie "_fbp"</code> <strong>[5]</strong></td><td><code>user_data.fbp</code> (Browser ID)</td></tr><tr><td><code>advertising_id</code> <strong>[3]</strong></td><td><code>user_data.anon_id</code> <strong>[6]</strong><br><code>user_data.madid</code> <strong>[6]</strong></td></tr><tr><td><code>user_data[Property Name]</code> <strong>[7]</strong></td><td><code>user_data[Property Name]</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** Comma-separated string: values in the order provided on the left.\
-\&#xNAN;**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark> or in the root of your events with the first having priority.\
-\&#xNAN;**\[3]** In <mark style="color:blue;">`context.device`</mark> of your event.\
-\&#xNAN;**\[4]** Automatically set if generated by Commanders Act OneTag.\
-\&#xNAN;**\[5]** Automatically created by the Facebook Pixel client-side tag.\
-\&#xNAN;**\[6]** Only for app events.\
-\&#xNAN;**\[7]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.
+&#x20;**\[1]** Comma-separated string: values in the order provided on the left.\
+&#x20;**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark> or in the root of your events with the first having priority.\
+&#x20;**\[3]** In <mark style="color:blue;">`context.device`</mark> of your event.\
+&#x20;**\[4]** Automatically set if generated by Commanders Act OneTag.\
+&#x20;**\[5]** Automatically created by the Facebook Pixel client-side tag.\
+&#x20;**\[6]** Only for app events.\
+&#x20;**\[7]** In <mark style="color:blue;">`integrations.facebook`</mark> of your event.
 {% endhint %}
 
 Every property can be overridden using `integrations.facebook.user_data.<property>`
@@ -413,11 +413,11 @@ The fields `custom_data.contents` and `custom_data.content_ids` are mutually exc
 | `custom_data[Propery Name]` **\[5]**                             | `custom_data[Property Name]`                 |
 
 {% hint style="info" %}
-**\[1]** Mutually exclusive with `custom_data.content_ids` .\
-\&#xNAN;**\[2]** Array containing all product identifiers. Mutually exclusive with `custom_data.contents`.\
-\&#xNAN;**\[3]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set.\
-\&#xNAN;**\[4]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark> is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark> with the same property name.\
-\&#xNAN;**\[5]** In <mark style="color:blue;">`integrations.facebook`</mark> in your event.
+&#x20;**\[1]** Mutually exclusive with `custom_data.content_ids` .\
+&#x20;**\[2]** Array containing all product identifiers. Mutually exclusive with `custom_data.contents`.\
+&#x20;**\[3]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set.\
+&#x20;**\[4]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark> is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark> with the same property name.\
+&#x20;**\[5]** In <mark style="color:blue;">`integrations.facebook`</mark> in your event.
 {% endhint %}
 
 #### Default behavior
@@ -488,14 +488,14 @@ Most properties can be remapped using our "Smart Mapping" feature.
 | `timezone` **\[1]**                     | `extinfo[15]`                            |
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** In <mark style="color:blue;">`context.device`</mark> of your event.\
-\&#xNAN;**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark> or in the root of your events with the first having priority.\
-\&#xNAN;**\[3]** When <mark style="color:blue;">`context.device.type`</mark> is set with <mark style="color:blue;">`Android`</mark> or <mark style="color:blue;">`iOS`</mark> (case insensitive), this is set with <mark style="color:blue;">`a2`</mark> or <mark style="color:blue;">`i`</mark>`2` respectively.\
-\&#xNAN;**\[4]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`Device Abbreviated Timezone`</mark> .\
-\&#xNAN;**\[5]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`CPU Cores`</mark> .\
-\&#xNAN;**\[6]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`External Storage Size`</mark> .\
-\&#xNAN;**\[7]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`Available Storage Size`</mark> .
+&#x20;**\[\*]** Mandatory property.\
+&#x20;**\[1]** In <mark style="color:blue;">`context.device`</mark> of your event.\
+&#x20;**\[2]** In <mark style="color:blue;">`integrations.facebook`</mark> or in the root of your events with the first having priority.\
+&#x20;**\[3]** When <mark style="color:blue;">`context.device.type`</mark> is set with <mark style="color:blue;">`Android`</mark> or <mark style="color:blue;">`iOS`</mark> (case insensitive), this is set with <mark style="color:blue;">`a2`</mark> or <mark style="color:blue;">`i`</mark>`2` respectively.\
+&#x20;**\[4]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`Device Abbreviated Timezone`</mark> .\
+&#x20;**\[5]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`CPU Cores`</mark> .\
+&#x20;**\[6]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`External Storage Size`</mark> .\
+&#x20;**\[7]** Can be set in <mark style="color:blue;">`Smart Mapping`</mark> → <mark style="color:blue;">`App Data`</mark> → <mark style="color:blue;">`Available Storage Size`</mark> .
 {% endhint %}
 
 ### `integrations.facebook.*` deprecation

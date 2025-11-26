@@ -17,7 +17,7 @@ The Google Enhanced Conversions for Leads destination provides the following key
 Before configuring this destination, you need to fullfil the following Google prerequisites:
 
 {% hint style="info" %}
-#### 1. Create and configure your conversion action
+**1. Create and configure your conversion action**
 
 Login into [Google Ads ](https://ads.google.com/home/)and:
 
@@ -33,11 +33,11 @@ Login into [Google Ads ](https://ads.google.com/home/)and:
 * Click **Save and continue**. The next page will confirm your new conversion action.
 * Click **Done**.\\
 
-#### 2. Turn on enhanced conversions for leads
+**2. Turn on enhanced conversions for leads**
 
 Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the **enhanced conversions for leads** drop down to check the same box.\\
 
-#### 3. Accept the customer data terms
+**3. Accept the customer data terms**
 
 To accept the customer data terms click on [**Summary**](https://ads.google.com/aw/conversions), select **Settings** and click the **Customer data terms** drop down.
 {% endhint %}
@@ -75,16 +75,16 @@ Google Enhanced Conversions for Leads supports consent signals. More details are
 <table><thead><tr><th width="424">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>orderId</code></td></tr><tr><td><p><code>partners.google.gclid</code></p><p><code>Google Analytics Measurement Id</code></p></td><td><code>gclid</code> <strong>[1]</strong></td></tr><tr><td><code>partners.google.gbraid</code></td><td><code>gbraid</code> <strong>[2]</strong></td></tr><tr><td><code>partners.google.wbraid</code></td><td><code>wbraid</code> <strong>[3]</strong></td></tr><tr><td><p><code>partners.google.email_source</code></p><p><code>partners.google.phone_source</code></p></td><td><code>userIdentifierSource</code> <strong>[4]</strong></td></tr><tr><td><code>user.email_sha256</code></td><td><code>hashedEmail</code> <strong>[4][5]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>hashedPhoneNumber</code> <strong>[4][5]</strong></td></tr><tr><td><code>user.google_consent_mode.ad_user_data</code></td><td><code>consent.adUserData</code></td></tr><tr><td><code>user.google_consent_mode.ad_personalization</code></td><td><code>consent.adPersonalization</code></td></tr><tr><td><code>partners.google.aduserdata</code></td><td><code>consent.adUserData</code> <strong>[6]</strong></td></tr><tr><td><code>partners.google.adpers</code></td><td><code>consent.adPersonalization</code> <strong>[6]</strong></td></tr><tr><td><code>partners.google.merchant_id</code></td><td><code>cartData.merchantId</code></td></tr><tr><td><code>partners.google.feed_country_code</code></td><td><code>cartData.feedCountryCode</code></td></tr><tr><td><code>partners.google.feed_language_code</code></td><td><code>cartData.feedLanguageCode</code></td></tr><tr><td><code>partners.google.local_transaction_cost</code></td><td><code>cartData.localTransactionCost</code></td></tr><tr><td><code>items.X.id</code></td><td><code>cartData.items.X.productId</code></td></tr><tr><td><code>items.X.product.price</code></td><td><code>cartData.items.X.unitPrice</code></td></tr><tr><td><code>tems.X.quantity</code></td><td><code>cartData.items.X.quantity</code></td></tr><tr><td><code>Mapping Conversion Names</code></td><td><code>conversionAction</code> <strong>[7]</strong></td></tr><tr><td><code>value</code></td><td><code>conversionValue</code></td></tr><tr><td><code>currency</code></td><td><code>currencyCode</code></td></tr><tr><td><code>Custom variable name</code></td><td><code>conversionCustomVariable</code> <strong>[8][9]</strong></td></tr><tr><td><code>Your value</code></td><td><code>value</code> <strong>[8][10]</strong></td></tr><tr><td><code>Validate Only</code></td><td><code>validateOnly</code> <strong>[11]</strong></td></tr><tr><td><code>Debug Enabled</code></td><td><code>debugEnabled</code> <strong>[11]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** See [Google Analytics Measurement Id](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
-\&#xNAN;**\[2]** Google click identifier for clicks associated with app conversions and originating from iOS devices starting with iOS14.\
-\&#xNAN;**\[3]** Google click identifier for clicks associated with web conversions and originating from iOS devices starting with iOS14.\
-\&#xNAN;**\[4]** Set in the <mark style="color:blue;">`userIdentifiers.X`</mark> . Accepted values: <mark style="color:blue;">`FIRST_PARTY`</mark> , <mark style="color:blue;">`THIRD_PARTY`</mark> or <mark style="color:blue;">`UNSPECIFIED`</mark> . Default value: <mark style="color:blue;">`FIRST_PARTY`</mark> .\
-\&#xNAN;**\[5]** Automatically hashed if provided in clear text.\
-\&#xNAN;**\[6]** Accepted values: <mark style="color:blue;">`true`</mark> , <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`granted`</mark> when user granted the consent or <mark style="color:blue;">`false`</mark> , <mark style="color:blue;">`0`</mark> or <mark style="color:blue;">`denied`</mark> otherwise. If consent is not specified use <mark style="color:blue;">`unspecified`</mark> . All string values are case insensitive. Default value <mark style="color:blue;">`granted`</mark> .\
-\&#xNAN;**\[7]** Conversion resource name in the following format: <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionActions/[CONVESION_ACTION_ID]`</mark>\
-\&#xNAN;**\[8]** Set in the path <mark style="color:blue;">`customVariables.X`</mark> .\
-\&#xNAN;**\[9]** Resource name of the custom variable in the following format:\
+&#x20;**\[1]** See [Google Analytics Measurement Id](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
+&#x20;**\[2]** Google click identifier for clicks associated with app conversions and originating from iOS devices starting with iOS14.\
+&#x20;**\[3]** Google click identifier for clicks associated with web conversions and originating from iOS devices starting with iOS14.\
+&#x20;**\[4]** Set in the <mark style="color:blue;">`userIdentifiers.X`</mark> . Accepted values: <mark style="color:blue;">`FIRST_PARTY`</mark> , <mark style="color:blue;">`THIRD_PARTY`</mark> or <mark style="color:blue;">`UNSPECIFIED`</mark> . Default value: <mark style="color:blue;">`FIRST_PARTY`</mark> .\
+&#x20;**\[5]** Automatically hashed if provided in clear text.\
+&#x20;**\[6]** Accepted values: <mark style="color:blue;">`true`</mark> , <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`granted`</mark> when user granted the consent or <mark style="color:blue;">`false`</mark> , <mark style="color:blue;">`0`</mark> or <mark style="color:blue;">`denied`</mark> otherwise. If consent is not specified use <mark style="color:blue;">`unspecified`</mark> . All string values are case insensitive. Default value <mark style="color:blue;">`granted`</mark> .\
+&#x20;**\[7]** Conversion resource name in the following format: <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionActions/[CONVESION_ACTION_ID]`</mark>\
+&#x20;**\[8]** Set in the path <mark style="color:blue;">`customVariables.X`</mark> .\
+&#x20;**\[9]** Resource name of the custom variable in the following format:\
 <mark style="color:blue;">`customers/[CUSTOMER_ID]/conversionCustomVariables/[VARIABLE_ID]`</mark>\
-\&#xNAN;**\[10]** Your value for the custom variable. See [Mapping Custom Variables](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
-\&#xNAN;**\[11]** Set in the base path. See [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.
+&#x20;**\[10]** Your value for the custom variable. See [Mapping Custom Variables](google-enhanced-conversions-for-leads.md#configuration) in [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.\
+&#x20;**\[11]** Set in the base path. See [Configuration](google-enhanced-conversions-for-leads.md#configuration) for more details.
 {% endhint %}

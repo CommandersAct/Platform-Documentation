@@ -24,7 +24,7 @@ The Google Search Ads 360 Enhanced Conversions destination provides the followin
 Before configuring this destination, you need to fullfil the following requirements:
 
 {% hint style="info" %}
-#### Accept ToS
+**Accept ToS**
 
 Log in to the CM360 account and choose the advertiser you want to implement EC with. On the left, open the menu <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Configuration`</mark>, and flag the checkbox under the <mark style="color:blue;">`Enhanced conversions`</mark> section:\
 \
@@ -34,7 +34,7 @@ CM360 users of agency admin and DC account manager roles should be able to accep
 \
 ![](../../../../.gitbook/assets/sa360ec_2.png)\\
 
-#### Enrich you Floodlight client-side tag
+**Enrich you Floodlight client-side tag**
 
 Ensure that both [**match\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#custom\&zippy=%2Ccustom-fields) and [**transaction\_id**](https://support.google.com/campaignmanager/answer/7554821?hl=en#zippy=%2Cfields-in-the-event-snippet---overview) fields are properly set.\
 If you're setting up your client-side tag for the first time, you may want to use our template tag <mark style="color:blue;">gtag - Google SA360 - Floodlight for server-side Enhanced Conversions</mark>.
@@ -70,9 +70,9 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 <table><thead><tr><th width="375.6685580062746">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>Floodlight Configuration Id</code></td><td><code>floodlightConfigurationId</code> <strong>[*][1]</strong></td></tr><tr><td><code>Floodlight Activity Id</code></td><td><code>floodlightActivityId</code> <strong>[*][1]</strong></td></tr><tr><td><code>Match Id</code></td><td><code>matchId</code> <strong>[*][1]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>timestampMicros</code> <strong>[*][2]</strong></td></tr><tr><td><code>id</code></td><td><code>ordinal</code> <strong>[*]</strong></td></tr><tr><td><code>value</code></td><td><code>value</code> <strong>[*]</strong></td></tr><tr><td><p><code>items.length</code></p><p><code>items.X.quantity</code></p></td><td><code>quantity</code> <strong>[*][3]</strong></td></tr><tr><td><code>user.email_sha256</code></td><td><code>hashedEmail</code> <strong>[4]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>hashedPhoneNumber</code> <strong>[4]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>addressInfo.hashedFirstName</code> <strong>[4]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>addressInfo.hashedLastName</code> <strong>[4]</strong></td></tr><tr><td><code>user.street</code></td><td><code>addressInfo.hashedStreetAddress</code> <strong>[4]</strong></td></tr><tr><td><code>user.city</code></td><td><code>addressInfo.city</code></td></tr><tr><td><code>user.state</code></td><td><code>addressInfo.state</code></td></tr><tr><td><code>user.country</code></td><td><code>addressInfo.countryCode</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>addressInfo.postalCode</code></td></tr><tr><td><code>partners.google.non_personalized_ad</code></td><td><code>nonPersonalizedAd</code></td></tr><tr><td><code>partners.google.child_directed_treatment</code></td><td><code>childDirectedTreatment</code></td></tr><tr><td><code>partners.google.limit_ad_tracking</code></td><td><code>limitAdTracking</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
-\&#xNAN;**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
-\&#xNAN;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
-\&#xNAN;**\[4]** Automatically normalized and hashed if passed in clear.
+&#x20;**\[\*]** Mandatory property.\
+&#x20;**\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
+&#x20;**\[2]** Milliseconds timestamp is automatically converted to microseconds.\
+&#x20;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
+&#x20;**\[4]** Automatically normalized and hashed if passed in clear.
 {% endhint %}

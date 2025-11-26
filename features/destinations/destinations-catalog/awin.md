@@ -43,15 +43,15 @@ The following fields are recommended when having more than one commission group 
 \- <mark style="color:blue;">`items.X.product.price`</mark>\
 \- <mark style="color:blue;">`items.X.quantity`</mark>
 
-Alternatively, you can <mark style="color:blue;">`Force parts with default commission code and amount`</mark>  . See [Configuration](awin.md#configuration) for more details. Accepted characters for the commission group codes are alphanumerics and letter in upper case, underscore (\_) , point (.) and minus (-).
+Alternatively, you can <mark style="color:blue;">`Force parts with default commission code and amount`</mark> . See [Configuration](awin.md#configuration) for more details. Accepted characters for the commission group codes are alphanumerics and letter in upper case, underscore (\_) , point (.) and minus (-).
 {% endhint %}
 
 <table data-full-width="true"><thead><tr><th width="679">Commanders Act Properties</th><th>Awin Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>merchant</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>cks</code> <strong>[1][*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>amount</code></td></tr><tr><td><code>channel</code></td><td><code>ch</code> <strong>[2]</strong></td></tr><tr><td><code>items.X.affiliation</code>:<code>items.X.product.price</code>*<code>items.X.quantity</code><br><code>Default Commission Code</code>:<code>revenue</code></td><td><code>parts</code> <strong>[3]</strong></td></tr><tr><td><code>coupon</code></td><td><code>vc</code></td></tr><tr><td><code>currency</code></td><td><code>cr</code></td></tr><tr><td><code>id</code></td><td><code>ref</code></td></tr><tr><td><code>Test Mode</code></td><td><code>testmode</code></td></tr><tr><td>AW:P|<code>Advertiser Id</code>|<code>id</code>|<code>items.X.product.id</code>|<code>items.X.product.name</code>|<code>items.X.product.price</code>|<code>items.X.quantity</code>|<code>items.X.product.price</code>|<code>items.X.id</code>|<code>items.X.affiliation</code>|<code>items.X.product.category_1</code></td><td><code>bd[X]</code> <strong>[4]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** See [Destination setup](awin.md#destination-setup) for more details.\
-&#xNAN;**\[2]** Default value <mark style="color:blue;">`aw`</mark> .\
-&#xNAN;**\[3]** For <mark style="color:blue;">`Sale`</mark> conversion type, computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When the "Smart Mapping" field <mark style="color:blue;">`Item Affiliation`</mark> is not filled with a proper value, the commission group code is set with the value provided in <mark style="color:blue;">`Default Commission Code`</mark>  . If <mark style="color:blue;">`Force parts with default commission code and amount`</mark>  is flagged the value is set using the <mark style="color:blue;">`Default Commission Code`</mark> and <mark style="color:blue;">`revenue`</mark>  : for leads, the latter is statically set to <mark style="color:blue;">`1`</mark>  . See [Configuration](awin.md#configuration) for more details.\
-&#xNAN;**\[4]** It takes into account each product.
+&#x20;**\[\*]** Mandatory property.\
+&#x20;**\[1]** See [Destination setup](awin.md#destination-setup) for more details.\
+&#x20;**\[2]** Default value <mark style="color:blue;">`aw`</mark> .\
+&#x20;**\[3]** For <mark style="color:blue;">`Sale`</mark> conversion type, computed amounts are rounded with two decimals (E.g. "DOWNLOAD:551.18|FIX-NC:15302.67"). When the "Smart Mapping" field <mark style="color:blue;">`Item Affiliation`</mark> is not filled with a proper value, the commission group code is set with the value provided in <mark style="color:blue;">`Default Commission Code`</mark> . If <mark style="color:blue;">`Force parts with default commission code and amount`</mark> is flagged the value is set using the <mark style="color:blue;">`Default Commission Code`</mark> and <mark style="color:blue;">`revenue`</mark> : for leads, the latter is statically set to <mark style="color:blue;">`1`</mark> . See [Configuration](awin.md#configuration) for more details.\
+&#x20;**\[4]** It takes into account each product.
 {% endhint %}
