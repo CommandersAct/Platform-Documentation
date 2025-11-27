@@ -36,6 +36,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="351.29729729729735">Commanders Act Properties</th><th>Kelkoo Properties</th></tr></thead><tbody><tr><td><code>Country</code></td><td><code>country</code></td></tr><tr><td><code>Shop Id</code></td><td><code>comId</code></td></tr><tr><td><code>id</code></td><td><code>orderId</code></td></tr><tr><td><code>items.X.product.name</code> <code>items.X.id</code> <code>items.X.product.price</code> <code>items.X.quantity</code></td><td><code>productsInfos</code> <strong>[1]</strong></td></tr><tr><td><code>partners.kelkoo.id</code></td><td><code>kelkooId</code></td></tr><tr><td><code>partners.kelkoo.gclid</code></td><td><code>gclid</code></td></tr><tr><td><code>partners.kelkoo.msclkid</code></td><td><code>msclkid</code></td></tr><tr><td><code>user.status</code> <strong>[2]</strong></td><td><code>returningUser</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[1]** Automatically encoded in base64url. More details are available by following this [LINK](https://developers.kelkoogroup.com/app/documentation/navigate/_merchant/salesTrackingWS/_/_Installation_Advanced/ServerToServer).\
-&#x20;**\[2]** Supported values: <mark style="color:blue;">`New`</mark> or <mark style="color:blue;">`Existing`</mark> (case insensitive).
+**\[1]** Automatically encoded in base64url. More details are available by following this [LINK](https://developers.kelkoogroup.com/app/documentation/navigate/_merchant/salesTrackingWS/_/_Installation_Advanced/ServerToServer).\
+&#xNAN;**\[2]** Supported values: <mark style="color:blue;">`New`</mark> or <mark style="color:blue;">`Existing`</mark> (case insensitive).
 {% endhint %}

@@ -37,8 +37,8 @@ Some setup is required on the Floodlight side before configuring this destinatio
 <table><thead><tr><th width="383.29729729729735">Commanders Act Properties</th><th>Floodlight Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>src</code> <strong>[*]</strong></td></tr><tr><td><code>Group Tag String</code></td><td><code>cat</code> <strong>[*]</strong></td></tr><tr><td><code>Activity Tag String</code></td><td><code>type</code> <strong>[*]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><code>dc_rdid</code> <strong>[*]</strong></td></tr><tr><td><code>partners.google.cdt</code></td><td><code>tag_for_child_directed_treatment</code></td></tr><tr><td><code>context.device.ad_tracking_enabled</code></td><td><code>dc_lat</code></td></tr><tr><td><code>items.X.quantity</code></td><td><code>qty</code> <strong>[1]</strong></td></tr><tr><td><code>revenue</code></td><td><code>cost</code></td></tr><tr><td><code>id</code></td><td><code>ord</code> <strong>[2]</strong></td></tr><tr><td><code>items.X.product.id</code> <code>items.X.product.price</code> <code>items.X.quantity</code></td><td><code>prd</code></td></tr><tr><td><code>Your value</code> <strong>[3]</strong></td><td><code>Floodlight property name</code> <strong>[3]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[\*]** Mandatory property.\
-&#x20;**\[1]** Sum of each product quantity.\
-&#x20;**\[2]** If no property is provided, a random generated number is used.\
-&#x20;**\[3]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration ](google-floodlight-mobile-app-conversion.md#configuration)for more details on how you can add custom properties.
+**\[\*]** Mandatory property.\
+&#xNAN;**\[1]** Sum of each product quantity.\
+&#xNAN;**\[2]** If no property is provided, a random generated number is used.\
+&#xNAN;**\[3]** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration ](google-floodlight-mobile-app-conversion.md#configuration)for more details on how you can add custom properties.
 {% endhint %}

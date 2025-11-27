@@ -57,8 +57,8 @@ Ecommerce parameters are passed for incoming [purchase](https://community.comman
 | `event_timestamp`                                                                                                                                                                                                                      | `cdt`                                                                         |
 
 {% hint style="info" %}
-&#x20;**\[1]** If a cookie is not provided, this destination searches for a cookie name containing the string<mark style="color:blue;">`_pk_id`</mark>to retrieve the visitor identifier from it. Alternatively, you can pass the value using a datalayer property. See [Configuration ](matomo.md#configuration)for more details.\
-&#x20;**\[2]** Depending on the drop-down selection (See<mark style="color:blue;">`User Identifier`</mark>in[`Configuration`](matomo.md#configuration)), a specific Commanders Act property is used.\
-&#x20;**\[3]** Based on your configuration (See<mark style="color:blue;">`Matomo Goals`</mark>in the[`Configuration`](matomo.md#configuration)), a specific identifier is set in this field. With[`purchase`](https://community.commandersact.com/platform-x/developers/tracking/events-reference#purchase)events,<mark style="color:blue;">`0`</mark>is bridged as identifier.\
-&#x20;**\[4]** The resulting array is encoded.
+**\[1]** If a cookie is not provided, this destination searches for a cookie name containing the string<mark style="color:blue;">`_pk_id`</mark>to retrieve the visitor identifier from it. Alternatively, you can pass the value using a datalayer property. See [Configuration ](matomo.md#configuration)for more details.\
+&#xNAN;**\[2]** Depending on the drop-down selection (See<mark style="color:blue;">`User Identifier`</mark>in[`Configuration`](matomo.md#configuration)), a specific Commanders Act property is used.\
+&#xNAN;**\[3]** Based on your configuration (See<mark style="color:blue;">`Matomo Goals`</mark>in the[`Configuration`](matomo.md#configuration)), a specific identifier is set in this field. With[`purchase`](https://community.commandersact.com/platform-x/developers/tracking/events-reference#purchase)events,<mark style="color:blue;">`0`</mark>is bridged as identifier.\
+&#xNAN;**\[4]** The resulting array is encoded.
 {% endhint %}

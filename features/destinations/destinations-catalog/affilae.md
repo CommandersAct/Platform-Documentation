@@ -36,8 +36,8 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="351.29729729729735">Commanders Act Properties</th><th>Affilae Properties</th></tr></thead><tbody><tr><td><code>Key</code></td><td><code>key</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>cids</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>id</code> <strong>[*]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>amount</code></td></tr><tr><td><p><code>payment_method</code> <strong>[1]</strong></p><p><code>type</code> <strong>[2]</strong></p></td><td><code>payment</code></td></tr><tr><td><code>Revenue Share Id</code></td><td><code>customer</code></td></tr><tr><td><code>partners.affilae.cv</code></td><td><code>cv</code></td></tr><tr><td><code>coupon</code></td><td><code>voucher</code></td></tr><tr><td><code>items.X.id</code></td><td><code>product</code> <strong>[3]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[\*]** Mandatory property.\
-&#x20;**\[1]** Supported values: <mark style="color:blue;">`by_bank_transfer_in_advance`</mark> and <mark style="color:blue;">`online_payment_system`</mark> .\
-&#x20;**\[2]** Supported values: <mark style="color:blue;">`online`</mark> , <mark style="color:blue;">`offline`</mark> and <mark style="color:blue;">`call`</mark> .\
-&#x20;**\[3]** product identifiers are separated by semicolons (;).
+**\[\*]** Mandatory property.\
+&#xNAN;**\[1]** Supported values: <mark style="color:blue;">`by_bank_transfer_in_advance`</mark> and <mark style="color:blue;">`online_payment_system`</mark> .\
+&#xNAN;**\[2]** Supported values: <mark style="color:blue;">`online`</mark> , <mark style="color:blue;">`offline`</mark> and <mark style="color:blue;">`call`</mark> .\
+&#xNAN;**\[3]** product identifiers are separated by semicolons (;).
 {% endhint %}
