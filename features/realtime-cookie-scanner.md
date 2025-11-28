@@ -1,6 +1,6 @@
 ---
 cover: ../.gitbook/assets/rcs_bd_clean.png
-coverY: 12.631578947368396
+coverY: -78.31578947368423
 layout:
   width: default
   cover:
