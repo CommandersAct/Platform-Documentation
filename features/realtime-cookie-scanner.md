@@ -1,3 +1,25 @@
+---
+cover: ../.gitbook/assets/rcs_bd_clean.png
+coverY: 12.631578947368396
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Realtime Cookie Scanner
 
 ### 1. Introduction
@@ -105,12 +127,11 @@ RCS works immediately on real traffic — including logged-in or restricted page
 
 <figure><img src="../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
-3-Declare the languages required in your cookie notice  `Data Governance > Consent Management > Settings > Localisation`&#x20;
+3-Declare the languages required in your cookie notice `Data Governance > Consent Management > Settings > Localisation`
 
 <figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
-4-Regenerate and Deploy your privacy banner(s) and/or your Web Containers\
-
+4-Regenerate and Deploy your privacy banner(s) and/or your Web Containers\\
 
 ***
 
