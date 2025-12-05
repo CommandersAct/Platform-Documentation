@@ -13,6 +13,7 @@ The Reddit Conversions API destination provides the following key features:
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
 * **Event mapping**: change standard mapping between Reddit events and yours or add new mappings.
 * **Support for multi-item data**: information included in the [item](https://doc.commandersact.com/developers/tracking/events-reference#item) array is dispatched to Reddit.
+* **Support batch mode**: see <mark style="color:blue;">`Enable batch mode`</mark>  in [Configuration](reddit-conversions-api.md#configuration) for mode details.
 
 ## Destination setup
 
@@ -22,7 +23,7 @@ Before configuring this destination, you need access to [Reddit Ads Manager](htt
 
 ### Configuration
 
-<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Access Token</code></td><td><em><strong><code>Required</code></strong></em><br>Input your access token. You can find it in <a href="https://ads.reddit.com">Reddit Ads</a> by following this <a href="https://ads.reddit.com">LINK</a> and, from the left menu, select <code>Event Manager</code> → <code>Conversions API</code> and click <code>Generate Access Token</code> .</td></tr><tr><td><code>Pixel Id</code></td><td><em><strong><code>Required</code></strong></em><br>Input your pixel identifier. You can find it in <a href="https://ads.reddit.com">Reddit Ads</a> by following this <a href="https://ads.reddit.com">LINK</a> and, from the left menu, select <code>Event Manager</code> .</td></tr><tr><td><code>Event Mapping</code></td><td>Change the standard mapping between Reddit events and yours or add new mappings.</td></tr><tr><td><code>Test Mode</code></td><td>Enable this only while testing your settings. <strong>Disable in production!</strong></td></tr></tbody></table>
+<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Access Token</code></td><td><em><strong><code>Required</code></strong></em><br>Input your access token. You can find it in <a href="https://ads.reddit.com">Reddit Ads</a> by following this <a href="https://ads.reddit.com">LINK</a> and, from the left menu, select <code>Event Manager</code> → <code>Conversions API</code> and click <code>Generate Access Token</code> .</td></tr><tr><td><code>Pixel Id</code></td><td><em><strong><code>Required</code></strong></em><br>Input your pixel identifier. You can find it in <a href="https://ads.reddit.com">Reddit Ads</a> by following this <a href="https://ads.reddit.com">LINK</a> and, from the left menu, select <code>Event Manager</code> .</td></tr><tr><td><code>Enable batch mode</code></td><td>When checked, multiple records are sent, with a single request, instead of one at a time.</td></tr><tr><td><code>Event Mapping</code></td><td>Change the standard mapping between Reddit events and yours or add new mappings.</td></tr><tr><td><code>Test Mode</code></td><td>Enable this only while testing your settings. <strong>Disable in production!</strong></td></tr></tbody></table>
 
 ## Quick reference
 
@@ -65,14 +66,14 @@ Sending more properties will improve attribution accuracy and performance.\
 
 {% hint style="info" %}
 **\[1]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .\
-&#xNAN;**\[2]** Set in the <mark style="color:blue;">`event_metadata`</mark> field.\
-&#xNAN;**\[3]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
-&#xNAN;**\[4]** All provided categories are separated by the "greater than" character ( `>` ).\
-&#xNAN;**\[5]** Set in the <mark style="color:blue;">`user`</mark> field.\
-&#xNAN;**\[6]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
-&#xNAN;**\[7]** Automatically hashed via SHA256 when provided in clear text.\
-&#xNAN;**\[8]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
-&#xNAN;**\[9]** Supported value: <mark style="color:blue;">`LDU`</mark> .\
-&#xNAN;**\[10]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
-&#xNAN;**\[11]** Set in the base path.
+\&#xNAN;**\[2]** Set in the <mark style="color:blue;">`event_metadata`</mark> field.\
+\&#xNAN;**\[3]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
+\&#xNAN;**\[4]** All provided categories are separated by the "greater than" character ( `>` ).\
+\&#xNAN;**\[5]** Set in the <mark style="color:blue;">`user`</mark> field.\
+\&#xNAN;**\[6]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
+\&#xNAN;**\[7]** Automatically hashed via SHA256 when provided in clear text.\
+\&#xNAN;**\[8]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
+\&#xNAN;**\[9]** Supported value: <mark style="color:blue;">`LDU`</mark> .\
+\&#xNAN;**\[10]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
+\&#xNAN;**\[11]** Set in the base path.
 {% endhint %}
