@@ -30,14 +30,14 @@ Before configuring this destination, you need access to [Reddit Ads Manager](htt
 
 | Commanders Act Events | Reddit Events          |
 | --------------------- | ---------------------- |
-| `add_to_cart`         | `AddToCart`            |
-| `add_to_wishlist`     | `AddToWishlist`        |
-| `generate_lead`       | `Lead`                 |
-| `page_view`           | `PageVisit`            |
-| `purchase`            | `Purchase`             |
-| `search`              | `Search`               |
-| `sign_up`             | `SignUp`               |
-| `view_item`           | `ViewContent`          |
+| `add_to_cart`         | `ADD_TO_CART`          |
+| `add_to_wishlist`     | `ADD_TO_WISHLIST`      |
+| `generate_lead`       | `LEAD`                 |
+| `page_view`           | `PAGE_VISIT`           |
+| `purchase`            | `PURCHASE`             |
+| `search`              | `SEARCH`               |
+| `sign_up`             | `SIGN_UP`              |
+| `view_item`           | `VIEW_CONTENT`         |
 | `[Any Event]`         | `[Any Event]` **\[1]** |
 
 {% hint style="info" %}
@@ -48,33 +48,27 @@ Before configuring this destination, you need access to [Reddit Ads Manager](htt
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\
-All Reddit properties are set in the path <mark style="color:blue;">`events[0]`</mark> <mark style="color:blue;">.</mark>
+All Reddit properties are set in the path <mark style="color:blue;">`data.events.X`</mark>  .
 {% endhint %}
 
 {% hint style="warning" %}
-At least one of the following Reddit properties is required:\
-• <mark style="color:blue;">`click_id`</mark> \*\
-• <mark style="color:blue;">`uuid`</mark> \*\
-• <mark style="color:blue;">`email`</mark> \*\
-• <mark style="color:blue;">`ip_address`</mark> + <mark style="color:blue;">`user_agent`</mark> + <mark style="color:blue;">`width`</mark> + <mark style="color:blue;">`height`</mark> \*\
-• <mark style="color:blue;">`idfa`</mark> or <mark style="color:blue;">`aaid`</mark>\
-• <mark style="color:blue;">`external_id`</mark>\
-Sending more properties will improve attribution accuracy and performance.\
-\* Recommended properties.
+Reddit recommends sending as many identifiers/match keys as possible to help improve attribution accuracy and improve performance. More details are available following this [LINK ](https://business.reddithelp.com/s/article/about-match-keys).
 {% endhint %}
 
-<table><thead><tr><th width="396.6685580062746">Commanders Act Properties</th><th>Reddit Properties</th></tr></thead><tbody><tr><td><code>context.event_timestamp</code></td><td><code>event_at_ms</code></td></tr><tr><td><code>Event Mapping</code></td><td><code>event_type.custom_event_name</code></td></tr><tr><td><code>partners.reddit.click_id</code></td><td><code>click_id</code> <strong>[1]</strong></td></tr><tr><td><code>id</code></td><td><code>conversion_id</code> <strong>[2]</strong></td></tr><tr><td><code>value</code></td><td><code>value_decimal</code> <strong>[2]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[2]</strong></td></tr><tr><td><code>items</code></td><td><code>item_count</code> <strong>[2][3]</strong></td></tr><tr><td><code>items.X.id</code></td><td><code>products.X.id</code> <strong>[2]</strong></td></tr><tr><td><code>items.X.product.name</code></td><td><code>products.X.name</code> <strong>[2]</strong></td></tr><tr><td><p><code>items.X.product.category_1</code></p><p><code>items.X.product.category_2</code></p><p><code>items.X.product.category_3</code></p><p><code>items.X.product.category_4</code></p><p><code>items.X.product.category_5</code></p></td><td><code>products.X.category</code> <strong>[2][4]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><p><code>idfa</code> <strong>[5][6][7]</strong></p><p><code>aaid</code> <strong>[5][6][7]</strong></p></td></tr><tr><td><code>user.email</code></td><td><code>email</code> <strong>[5][7]</strong></td></tr><tr><td><code>user.id</code></td><td><code>external_id</code> <strong>[5][7]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[5][7]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>user_agent</code> <strong>[5]</strong></td></tr><tr><td><code>parters.reddit.uuid</code></td><td><code>uuid</code> <strong>[5]</strong></td></tr><tr><td><code>context.device.ad_tracking_enabled</code></td><td><code>opt_out</code> <strong>[5]</strong></td></tr><tr><td><code>user.country</code></td><td><code>country</code> <strong>[8]</strong></td></tr><tr><td><code>user.region</code></td><td><code>region</code> <strong>[8]</strong></td></tr><tr><td><code>parters.reddit.data_proc_mode</code></td><td><code>modes[0]</code> <strong>[8][9]</strong></td></tr><tr><td><code>context.device.screen.width</code></td><td><code>width</code> <strong>[10]</strong></td></tr><tr><td><code>context.device.screen.height</code></td><td><code>height</code> <strong>[10]</strong></td></tr><tr><td><code>Test Mode</code></td><td><code>test_mode</code> <strong>[11]</strong></td></tr></tbody></table>
+<table><thead><tr><th width="396.6685580062746">Commanders Act Properties</th><th>Reddit Properties</th></tr></thead><tbody><tr><td><code>context.event_timestamp</code></td><td><code>event_at</code></td></tr><tr><td><code>event_name</code></td><td><code>type.tracking_type</code> <strong>[1]</strong></td></tr><tr><td><code>Event Mapping</code>   </td><td><code>type.custom_event_name</code> <strong>[2]</strong></td></tr><tr><td><code>partners.reddit.click_id</code></td><td><code>click_id</code> <strong>[3]</strong></td></tr><tr><td><code>id</code></td><td><code>conversion_id</code> <strong>[4]</strong></td></tr><tr><td><code>value</code></td><td><code>value</code> <strong>[4]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[4]</strong></td></tr><tr><td><code>items</code></td><td><code>item_count</code> <strong>[4][5]</strong></td></tr><tr><td><code>items.X.id</code></td><td><code>products.X.id</code> <strong>[4]</strong></td></tr><tr><td><code>items.X.product.name</code></td><td><code>products.X.name</code> <strong>[4]</strong></td></tr><tr><td><p><code>items.X.product.category_1</code></p><p><code>items.X.product.category_2</code></p><p><code>items.X.product.category_3</code></p><p><code>items.X.product.category_4</code></p><p><code>items.X.product.category_5</code></p></td><td><code>products.X.category</code> <strong>[4][6]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><p><code>idfa</code> <strong>[7][8][9]</strong></p><p><code>aaid</code> <strong>[7][8][9]</strong></p></td></tr><tr><td><code>user.email</code></td><td><code>email</code> <strong>[7][9]</strong></td></tr><tr><td><code>user.id</code></td><td><code>external_id</code> <strong>[7][9]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>phone_number</code> <strong>[7][9]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[7][9]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>user_agent</code> <strong>[7]</strong></td></tr><tr><td><code>parters.reddit.uuid</code></td><td><code>uuid</code> <strong>[7]</strong></td></tr><tr><td><code>user.country</code></td><td><code>country</code> <strong>[10]</strong></td></tr><tr><td><code>user.region</code></td><td><code>region</code> <strong>[10]</strong></td></tr><tr><td><code>parters.reddit.data_proc_mode</code></td><td><code>modes[0]</code> <strong>[10][11]</strong></td></tr><tr><td><code>context.device.screen.width</code></td><td><code>width</code> <strong>[12]</strong></td></tr><tr><td><code>context.device.screen.height</code></td><td><code>height</code> <strong>[12]</strong></td></tr><tr><td><code>Test Mode</code></td><td><code>test_mode</code> <strong>[13]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[1]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .  \
-> &#xNAN;**\[2]** Set in the <mark style="color:blue;">`event_metadata`</mark> field.  \
-> &#xNAN;**\[3]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .  \
-> &#xNAN;**\[4]** All provided categories are separated by the "greater than" character ( `>` ).  \
-> &#xNAN;**\[5]** Set in the <mark style="color:blue;">`user`</mark> field.  \
-> &#xNAN;**\[6]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .  \
-> &#xNAN;**\[7]** Automatically hashed via SHA256 when provided in clear text.  \
-> &#xNAN;**\[8]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.  \
-> &#xNAN;**\[9]** Supported value: <mark style="color:blue;">`LDU`</mark> .  \
-> &#xNAN;**\[10]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
-> &#xNAN;**\[11]** Set in the base path.
+> **\[1]** See [Quick reference](reddit-conversions-api.md#quick-reference) for more details on the standard mapping.\
+> &#xNAN;**\[2]** See <mark style="color:blue;">`Reddit event name`</mark>  in <mark style="color:blue;">`Event Mapping`</mark> <mark style="color:$primary;">.</mark>\
+> **\[3]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .  \
+> &#xNAN;**\[4]** Set in the <mark style="color:blue;">`metadata`</mark> field.  \
+> &#xNAN;**\[5]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .  \
+> &#xNAN;**\[6]** All provided categories are separated by the "greater than" character ( `>` ).  \
+> &#xNAN;**\[7]** Set in the <mark style="color:blue;">`user`</mark> field.  \
+> &#xNAN;**\[8]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .  \
+> &#xNAN;**\[9]** Automatically hashed via SHA256 when provided in clear text.  \
+> &#xNAN;**\[10]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.  \
+> &#xNAN;**\[11]** Supported value: <mark style="color:blue;">`LDU`</mark> .  \
+> &#xNAN;**\[12]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
+> &#xNAN;**\[13]** Set in the base path.
 {% endhint %}
