@@ -85,6 +85,7 @@
           * [APIs](features/sources/sources-catalog/web/containers/best-practices/apis/README.md)
             * [Onsite API](features/sources/sources-catalog/web/containers/best-practices/apis/onsite-api.md)
           * [TMS & Consent banners IDs](features/sources/sources-catalog/web/containers/best-practices/tms-and-consent-banners-ids.md)
+        * [Geoloc API](features/sources/sources-catalog/web/containers/geoloc-api.md)
       * [Javascript SDK](features/sources/sources-catalog/web/js-sdk/README.md)
         * [Next.js serverside rendering](features/sources/sources-catalog/js-sdk/next.js-serverside-rendering.md)
       * [Pixel Tracking API](features/sources/sources-catalog/web/pixel-tracking.md)
