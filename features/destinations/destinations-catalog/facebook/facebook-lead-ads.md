@@ -42,7 +42,7 @@ Facebook properties are set starting from the path <mark style="color:blue;">`da
 <table><thead><tr><th width="404.6685580062746">Commanders Act Properties</th><th>Facebook Properties</th></tr></thead><tbody><tr><td><code>Facebook event name</code></td><td><code>event_name</code> <strong>[*][1]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>event_time</code> <strong>[*][2]</strong></td></tr><tr><td><code>Lead Id</code></td><td><code>user_data.lead_id</code> <strong>[*]</strong></td></tr><tr><td><code>Lead Event Source</code></td><td><code>custom_data.lead_event_source</code> <strong>[*]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-&#x20;**\[\*]** Mandatory property.\
-&#x20;**\[1]** See [Mapping](facebook-lead-ads.md#configuration) for more details.\
-&#x20;**\[2] I**f this field is not provided, the current timestamp is used.
+**\[\*]** Mandatory property.\
+&#xNAN;**\[1]** See [Mapping](facebook-lead-ads.md#configuration) for more details.\
+&#xNAN;**\[2] I**f this field is not provided, the current timestamp is used.
 {% endhint %}
