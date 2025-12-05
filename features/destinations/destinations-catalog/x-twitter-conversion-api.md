@@ -52,8 +52,8 @@ Check the "Smart Mapping" field <mark style="color:blue;">`Transaction Id`</mark
 | `[Any Event]` **\[1]** | `[Any Event]` **\[2]** |
 
 {% hint style="info" %}
-**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-\&#xNAN;**\[2]** See <mark style="color:blue;">`Event Id`</mark> in [Configuration](x-twitter-conversion-api.md#configuration) for more details.
+> **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.  \
+> &#xNAN;**\[2]** See <mark style="color:blue;">`Event Id`</mark> in [Configuration](x-twitter-conversion-api.md#configuration) for more details.
 {% endhint %}
 
 ## Field mappings
