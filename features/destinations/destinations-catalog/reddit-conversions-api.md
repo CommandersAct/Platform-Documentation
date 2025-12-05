@@ -18,7 +18,8 @@ The Reddit Conversions API destination provides the following key features:
 ## Destination setup
 
 {% hint style="info" %}
-Before configuring this destination, you need access to [Reddit Ads Manager](https://ads.reddit.com/).
+Before configuring this destination, you need access to [Reddit Ads Manager](https://ads.reddit.com/).\
+[Event deduplication](https://business.reddithelp.com/s/article/event-deduplication) is required if you use the [Reddit pixel](https://business.reddithelp.com/s/article/reddit-pixel) together with this destination. Reddit recommends to pass unique conversion identifiers for all events. More details Reddit deduplication are available following this [LINK](https://business.reddithelp.com/s/article/event-deduplication).
 {% endhint %}
 
 ### Configuration
