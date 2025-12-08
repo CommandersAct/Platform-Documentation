@@ -86,9 +86,9 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 #### 🔔 Realtime Alerts (< 60 s)
 
-* Instant notifications for new, removed, or non-compliant cookies.
-* Configurable by domain, language, and severity.
-* Integrations : Email, Webhook, Slack, Teams.
+* Instant notifications for new cookies.
+* Configurable by severity.
+* Integrations : Email, Slack, Teams (and soon webhook).
 
 <figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
