@@ -44,12 +44,14 @@ Most properties can be remapped using our "Smart Mapping" feature.
 
 <table><thead><tr><th width="351.29729729729735">Commanders Act Properties</th><th>Tradedoubler Properties</th></tr></thead><tbody><tr><td><code>Organization Id</code></td><td><code>organization</code> <strong>[*]</strong></td></tr><tr><td><code>Event Id</code></td><td><code>event</code> <strong>[*]</strong></td></tr><tr><td><code>Program Id</code></td><td><code>program</code></td></tr><tr><td><code>id</code></td><td><code>orderNumber</code> <strong>[1]</strong></td></tr><tr><td><code>value</code></td><td><code>orderValue</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[1]</strong></td></tr><tr><td><code>coupon</code></td><td><code>voucher</code> <strong>[1]</strong></td></tr><tr><td><code>items.X.product.id</code><br><code>items.X.product.name</code><br><code>items.X.product.price</code><br><code>items.X.quantity</code></td><td><code>reportInfo</code> <strong>[1][6]</strong></td></tr><tr><td><code>id</code></td><td><code>leadNumber</code> <strong>[2]</strong></td></tr><tr><td><p><code>partners.tradedoubler.tduid</code> or</p><p><code>Cookie Name (tduid)</code></p></td><td><code>tduid</code> <strong>[3]</strong></td></tr><tr><td><code>user.id</code></td><td><code>extid</code> <strong>[4]</strong></td></tr><tr><td><code>(user.id)</code></td><td><code>exttype</code> <strong>[5]</strong></td></tr></tbody></table>
 
+>
+
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** Set when `Conversion Type` is `Sale` .\
-&#xNAN;**\[2]** Set when `Conversion Type` is `Lead` .\
-&#xNAN;**\[3]** Value is set based on the priority in the left column.\
-&#xNAN;**\[4]** Value hashed using`SHA-256` .\
-&#xNAN;**\[5]** Either <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`0`</mark> , depending if `user.id` is a valid email or an non-email identifier respectively.\
-&#xNAN;**\[6]** All products are taken into account.
+> **\[\*]** Mandatory property.  \
+> &#xNAN;**\[1]** Set when `Conversion Type` is `Sale` .  \
+> &#xNAN;**\[2]** Set when `Conversion Type` is `Lead` .  \
+> &#xNAN;**\[3]** Value is set based on the priority in the left column.  \
+> &#xNAN;**\[4]** Value hashed using`SHA-256` .  \
+> &#xNAN;**\[5]** Either <mark style="color:blue;">`1`</mark> or <mark style="color:blue;">`0`</mark> , depending if `user.id` is a valid email or an non-email identifier respectively.  \
+> &#xNAN;**\[6]** All products are taken into account.
 {% endhint %}
