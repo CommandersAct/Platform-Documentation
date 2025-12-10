@@ -34,8 +34,6 @@ The "Kameleoon Events" destination provides the following key features:
 | `revenue`                 | `revenue` **\[2]**   |
 
 {% hint style="info" %}
-**\[1]** The cookie content is set as value for the parameter`userID`.\
-&#xNAN;**\[2]** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
+> **\[1]** The cookie content is set as value for the parameter`userID`.  \
+> &#xNAN;**\[2]** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
 {% endhint %}
-
-##

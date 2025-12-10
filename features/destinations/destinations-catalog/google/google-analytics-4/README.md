@@ -627,10 +627,10 @@ Google properties are set starting from the path <mark style="color:blue;">`user
 <table><thead><tr><th width="334">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>user.id</code></td><td><code>user_id</code> <strong>[*]</strong></td></tr><tr><td><code>user.email_sha256</code></td><td><code>sha256_email_address</code> <strong>[1]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>sha256_phone_number</code> <strong>[1]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>sha256_first_name</code> <strong>[1][2]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>sha256_last_name</code> <strong>[1][2]</strong></td></tr><tr><td><code>user.street</code></td><td><code>sha256_street</code> <strong>[1][2]</strong></td></tr><tr><td><code>user.city</code></td><td><code>city</code> <strong>[2][3]</strong></td></tr><tr><td><code>user.state</code></td><td><code>region</code> <strong>[2][3]</strong></td></tr><tr><td><code>user.zipcode</code></td><td><code>postal_code</code> <strong>[2][3]</strong></td></tr><tr><td><code>user.country</code></td><td><code>country</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** Automatically normalized and hashed, if provided in clear text.\
-\&#xNAN;**\[2]** Property set starting from the path <mark style="color:blue;">`user_data.address`</mark> .\
-\&#xNAN;**\[3]** Automatically normalized.
+> **\[\*]** Mandatory property.  \
+> &#xNAN;**\[1]** Automatically normalized and hashed, if provided in clear text.  \
+> &#xNAN;**\[2]** Property set starting from the path <mark style="color:blue;">`user_data.address`</mark> .  \
+> &#xNAN;**\[3]** Automatically normalized.
 {% endhint %}
 
 ## Geographical information

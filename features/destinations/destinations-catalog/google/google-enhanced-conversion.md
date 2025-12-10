@@ -34,8 +34,6 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 **\[1]** Enhanced conversions must be enabled for your conversion action. This is done in the Google Ads interface following these steps: click on the conversion action ➜ expand `Enhanced conversions` ➜ flag `Turn on enhanced conversions` ➜ select `API` .
 {% endhint %}
 
-![Flag "Turn on enhanced conversion" and select "API".](/broken/files/9uDySBOGyls2p65DRQ45)
-
 ## Quick reference
 
 <table><thead><tr><th width="327">Commanders Act Events</th><th>Google Tracking</th></tr></thead><tbody><tr><td><code>[Any Event]</code> <strong>[1]</strong></td><td><code>customers.uploadConversionAdjustments</code></td></tr></tbody></table>
@@ -68,9 +66,9 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 <table><thead><tr><th width="334">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>id</code></td><td><code>orderId</code> <strong>[*]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>userAgent</code></td></tr><tr><td><code>event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code> <strong>[1]</strong><br><code>adjustmentDateTime</code> <strong>[1]</strong></td></tr><tr><td><code>value</code></td><td><code>restatementValue.adjustedValue</code></td></tr><tr><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><p><code>user.email</code></p><p><code>user.email_sha256</code></p></td><td><code>hashedEmail</code> <strong>[2]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>hashedPhoneNumber</code> <strong>[3]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>addressInfo.hashedFirstName</code> <strong>[3]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>addressInfo.hashedLastName</code> <strong>[3]</strong></td></tr><tr><td><code>user.streetAddress</code></td><td><code>addressInfo.hashedStreetAddress</code> <strong>[3]</strong></td></tr><tr><td><code>user.city</code></td><td><code>addressInfo.city</code></td></tr><tr><td><code>user.state</code></td><td><code>addressInfo.state</code></td></tr><tr><td><code>user.country</code></td><td><code>addressInfo.countryCode</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>addressInfo.postalCode</code></td></tr><tr><td><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></td><td><code>gclidDateTimePair.gclid</code> <strong>[4]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.\
-&#xNAN;**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.\
-&#xNAN;**\[3]** Normalized and hashed via SHA256.\
-&#xNAN;**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
+> **\[\*]** Mandatory property.  \
+> &#xNAN;**\[1]** This value is automatically adjusted. See [GclidDateTimePair](https://developers.google.com/google-ads/api/rest/reference/rest/v11/customers/uploadConversionAdjustments#gcliddatetimepair) for more details.  \
+> &#xNAN;**\[2]** If <mark style="color:blue;">`user.email`</mark> is provided, it's hashed using SHA256, otherwise , <mark style="color:blue;">`user.email_sha256`</mark> is used.  \
+> &#xNAN;**\[3]** Normalized and hashed via SHA256.  \
+> &#xNAN;**\[4]** See [Destination setup](google-enhanced-conversion.md#destination-setup) for more details.
 {% endhint %}

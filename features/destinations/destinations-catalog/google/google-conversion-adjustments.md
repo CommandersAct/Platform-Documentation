@@ -47,7 +47,7 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 <table><thead><tr><th width="345">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>value</code></td><td><code>restatementValue.adjustedValue</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>orderId</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code></td></tr><tr><td><code>Google Click Id</code><br><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></td><td><code>gclidDateTimePair.gclid</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[\*]** Mandatory property.\
-&#xNAN;**\[1]** This is required when specific conditions are verified. See [Field mappings](google-conversion-adjustments.md#field-mappings) for details.\
-&#xNAN;**\[2]** See [Destination setup](google-conversion-adjustments.md#destination-setup) for more details.
+> **\[\*]** Mandatory property.  \
+> &#xNAN;**\[1]** This is required when specific conditions are verified. See [Field mappings](google-conversion-adjustments.md#field-mappings) for details.  \
+> &#xNAN;**\[2]** See [Destination setup](google-conversion-adjustments.md#destination-setup) for more details.
 {% endhint %}

@@ -46,14 +46,14 @@ Depending on Mapp request types you're sending, some properties may not be track
 <table><thead><tr><th width="418">Commanders Act Properties</th><th>Mapp Properties</th></tr></thead><tbody><tr><td><code>partners.mapp.version</code>,<code>page.title</code>,0,<code>device.screen.width</code>x<code>device.screen.height</code>,<code>device.density</code>,0,<code>event_timestamp</code>,<code>page.referrer</code>,<code>device.screen.width</code>x<code>device.screen.height</code>,0</td><td><code>p</code> <strong>[1]</strong></td></tr><tr><td><p><code>partners.mapp.ceid</code></p><p><code>device.sdk_id</code></p><p><code>user.tcId</code></p></td><td><code>ceid</code> <strong>[2]</strong></td></tr><tr><td><p><code>partners.mapp.eid</code></p><p><code>cookie</code> <a href="https://documentation.mapp.com/1.0/en/session-and-visitor-handling-7240758.html"><strong>wt3_eid</strong></a></p></td><td><code>eid</code> <strong>[2]</strong></td></tr><tr><td><code>device.ip</code></td><td><code>X-WT-IP</code></td></tr><tr><td><code>device.user_agent</code></td><td><code>X-WT-UA</code> <strong>[3]</strong></td></tr><tr><td><code>page.url</code><br><code>page.location</code></td><td><code>X-WT-RQ</code> <strong>[2][3]</strong></td></tr><tr><td><code>page.lang</code></td><td><code>la</code></td></tr><tr><td><p><code>partners.mapp.event_name</code> or</p><p><code>event_name</code></p></td><td><code>ct</code> <strong>[2][4]</strong></td></tr><tr><td><code>currency</code></td><td><code>cr</code></td></tr><tr><td><code>id</code></td><td><code>oi</code></td></tr><tr><td><code>value</code></td><td><code>ov</code></td></tr><tr><td><code>(event_name)</code></td><td><code>st</code> <strong>[5]</strong></td></tr><tr><td><code>items.X.product.name</code></td><td><code>ba</code> <strong>[6]</strong></td></tr><tr><td><code>items.X.product.price</code>*<code>items.X.quantity</code></td><td><code>co</code> <strong>[6]</strong></td></tr><tr><td><code>items.X.quantity</code></td><td><code>qn</code> <strong>[6]</strong></td></tr><tr><td><code>items.X.list_position</code></td><td><code>plp</code> <strong>[6]</strong></td></tr><tr><td><code>Custom Event Properties</code></td><td><code>[Custom Property Name]</code> <strong>[7]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>.\
-&#xNAN;**\[2]** Priority order is listed in the left column.\
-&#xNAN;**\[3]** Encoded property.\
-&#xNAN;**\[4]** Property excluded with [**page\_view**](https://doc.commandersact.com/developers/tracking/events-reference#page_view) event.\
-&#xNAN;**\[5]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
-•<mark style="color:blue;">**`add`**</mark>, for [**add\_to\_cart**](https://doc.commandersact.com/developers/tracking/events-reference#add_to_cart) event.\
-•<mark style="color:blue;">**`conf`**</mark>, for [**purchase**](https://doc.commandersact.com/developers/tracking/events-reference#purchase) event.\
-•<mark style="color:blue;">**`view`**</mark>, as default value.\
-&#xNAN;**\[6]** Product information separated by semicolon and computed amounts are rounded with two decimals.\
-&#xNAN;**\[7]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](mapp.md#configuration)for more details on how you can bridge custom properties to Mapp.
+> **\[1]** Default value: <mark style="color:blue;">`300,0,0,0,0,0,event_timestamp,0,0,0`</mark>.  \
+> &#xNAN;**\[2]** Priority order is listed in the left column.  \
+> &#xNAN;**\[3]** Encoded property.  \
+> &#xNAN;**\[4]** Property excluded with [**page\_view**](https://doc.commandersact.com/developers/tracking/events-reference#page_view) event.  \
+> &#xNAN;**\[5]** If the [**items**](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is filled and depending on incoming events, this is set with:\
+> •<mark style="color:blue;">**`add`**</mark>, for [**add\_to\_cart**](https://doc.commandersact.com/developers/tracking/events-reference#add_to_cart) event.\
+> •<mark style="color:blue;">**`conf`**</mark>, for [**purchase**](https://doc.commandersact.com/developers/tracking/events-reference#purchase) event.\
+> •<mark style="color:blue;">**`view`**</mark>, as default value.  \
+> &#xNAN;**\[6]** Product information separated by semicolon and computed amounts are rounded with two decimals.  \
+> &#xNAN;**\[7]** See<mark style="color:blue;">`Custom Event Properties`</mark>in [Configuration ](mapp.md#configuration)for more details on how you can bridge custom properties to Mapp.
 {% endhint %}
