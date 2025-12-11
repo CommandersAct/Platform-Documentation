@@ -25,13 +25,13 @@ From now on, our tags will now call [XYZ.client.com](http://pheonix.client1.com/
 
 Then please indicate the subdomain on our platform: `Administration > Domain Management.`
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The customer must decide if the SSL encryption on the new subdomain they created is done with ‘Let’s Encrypt’ or with their own certificate. In the former case, nothing to do; in the latter case follow the instruction on the domain management page.
 
 Moreover change on every tag the URL to specify the 1st party domain.
 
-### Manage MixCommander&#x20;
+### Manage MixCommander
 
 #### Manage MixCommander tags
 
@@ -43,13 +43,11 @@ In the #CUSTOMER\_SUBDOMAIN# placeholder you need to enter the subdomain agreed 
 
 #### Manage MixCommander Tracking
 
-At this point it’s time to test the hits . ATTENTION the structure of the redirection URL is different from the usual MixCo.&#x20;
+At this point it’s time to test the hits . ATTENTION the structure of the redirection URL is different from the usual MixCo.
 
 before it was : http://**client.commander1.com**/c3/?tcs=13\&chn=sem\&src=google\&url=https://domain.client.com/en/13/campaign/trafficking
 
-Now it is : https://**client.subdomain.com**/mix/c3/?tcs=13\&chn=sem\&src=google\&url=https://domain.client.com/en/13/campaign/trafficking    &#x20;
-
-
+Now it is : https://**client.subdomain.com**/mix/c3/?tcs=13\&chn=sem\&src=google\&url=https://domain.client.com/en/13/campaign/trafficking
 
 ## How the migration from 3rd party to 1st will happen?
 
@@ -69,4 +67,4 @@ For this case we have users without cookies known by the 1st party domain.
 
 The browser will push the data to the 1st party domain, and we will request on the 3rd party domain all the information we have regarding this user (does a cookie already exist?). The 3rd party domain will push this information (if it exists). Then the 1st party domain will setup the cookie (or create a new one) and the data is pushed to our system.
 
-**Now it’s possible to use a combination of first and third party cookies (create a ticket to ask MIX team to activate this option) - available only for the transition.**&#x20;
+**Now it’s possible to use a combination of first and third party cookies (create a ticket to ask MIX team to activate this option) - available only for the transition.**

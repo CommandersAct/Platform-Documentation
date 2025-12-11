@@ -93,7 +93,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
 
 1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\\
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Define Enrichment**:
 
     * **Name**: Name your enrichment rule.

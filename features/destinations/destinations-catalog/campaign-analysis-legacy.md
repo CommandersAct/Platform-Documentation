@@ -9,7 +9,7 @@ description: Only for Campaign Analysis Module (ex Mix Commander) customers
 This destination allows you to collect events and map it for the module Campaign Analysis\
 It can also turns events from Normalized Datalayer into touchpoints for Campaign Analysis module.
 
-With this destination, you can use 4 standard events. \
+With this destination, you can use 4 standard events.\
 To receive events in this destination, it requires as event name the 'Standard event name' described in the following array.\
 \
 Here's the list of Campaign Analytics touch points names vs Standard events names:
@@ -21,7 +21,7 @@ Here's the list of Campaign Analytics touch points names vs Standard events name
 | sites                         | page\_view          |
 | orders                        | purchase            |
 
-If you need more information about these events, check the section [Events reference ](../../../developers/tracking/events-reference/)
+If you need more information about these events, check the section [Events reference](../../../developers/tracking/events-reference/)
 
 ### How to implement
 
@@ -29,7 +29,7 @@ If you need more information about these events, check the section [Events refer
 
 <figure><img src="../../../.gitbook/assets/image (419).png" alt="" width="375"><figcaption></figcaption></figure>
 
-#### 2/Choose your data source(s) 
+#### 2/Choose your data source(s)
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -70,9 +70,9 @@ _Before to send your events to this destination you can, if needed, transform th
 
 #### 6/Setup your filters - create your event(s) specification
 
-You have to specify which event is concerned by this destination. Here's an example for a purchase (orders)&#x20;
+You have to specify which event is concerned by this destination. Here's an example for a purchase (orders)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Don't forget to setup a consent filter to be RGPD compliant as well
@@ -80,7 +80,7 @@ Don't forget to setup a consent filter to be RGPD compliant as well
 
 #### 7/Your destination is ready to be activated!
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 8/Go Further: modify timestamp
 
@@ -88,4 +88,4 @@ Don't forget to setup a consent filter to be RGPD compliant as well
 
 Example:
 
-https://collect.commander1.com/events?tc\_s={site\_id\}}\&token={token}\&medium=seo\&source=google&<mark style="color:red;">**ts\_override=1716888588**</mark>\&event\_name=ad\_click\&campaign=sales\_2024\
+https://collect.commander1.com/events?tc\_s={site\_id\}}\&token={token}\&medium=seo\&source=google&<mark style="color:red;">**ts\_override=1716888588**</mark>\&event\_name=ad\_click\&campaign=sales\_2024\\

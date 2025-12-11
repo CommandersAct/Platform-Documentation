@@ -134,7 +134,7 @@ Our system now includes several new and improved features to help you efficientl
 
 **Introduction**
 
-Our new `cact('emit')` API is a new approach of `tC.event.XXX` functions, ensuring safer and more reliable event handling.&#x20;
+Our new `cact('emit')` API is a new approach of `tC.event.XXX` functions, ensuring safer and more reliable event handling.
 
 Here’s how you can use these events:
 
@@ -153,7 +153,7 @@ Note that hyphens (`-`) in event names will be converted to underscores (`_`). F
 ### **Available Events**
 
 * **container\_ready**: Fires for every loaded container.
-* **container\_**`<siteId>_<containerId>`**\_ready:** Fires a specific  event for each container`container_ready` event (ex: `container_1234_1_ready`)
+* **container\_**`<siteId>_<containerId>`**\_ready:** Fires a specific event for each container`container_ready` event (ex: `container_1234_1_ready`)
 * **consent-ready**: Fires when the consent cookie is set or the banner is accepted/refused.
 * **consent-updated**: Fires when consent is updated.
 * **consent-revoke**: Fires when consent is revoked.
@@ -198,7 +198,7 @@ cact('emit', 'my_custom_event');
 
 You will be able to use this event as a TMS custom trigger:
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -268,8 +268,6 @@ Send a server-side event. Any call to `cact('trigger', ...)` will also dispatch 
 cact('trigger', 'add_to_cart', { value: 42, currency: 'EUR' });
 ```
 
-
-
 ***
 
 ### Tag Context Variables
@@ -338,7 +336,7 @@ You can use various privacy-related events as custom triggers:
 
 **Server-Side Tracking as Custom Triggers**
 
-Need to track an event sent in Server Side ?&#x20;
+Need to track an event sent in Server Side ?
 
 Our `cact('trigger', ...)` will dispatch a corresponding `track_*` event, that you can use as a custom trigger.
 
@@ -347,10 +345,9 @@ cact('trigger', 'page_view', { value: 42, currency: 'EUR' });
 ```
 
 To use this feature as a TMS custom tag trigger, you'll need to prefix the event name with "track\_\*"\
-Example:\
+Example:\\
 
-
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Using `cact('on')` for Event Subscription**
 

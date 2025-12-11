@@ -34,37 +34,30 @@ For more information, please visit the official CCPA website\
 
 To to be compliant with CCPA, simply follow these steps:
 
-1.  Create a dedicated ccpa banner: use the "**footer with privacy center" template**\
-
-
-    * Add your text about cookies: must list the categories of personal information businesses collect about consumers and the purposes for which they use the categories of information. Don't forget to integrate a **link for your cookie policy.**
-    * Add a button with this exact text : “**Do Not Sell My Personal Information”**\
-      This button should Optout the user (value refuse all)  **or** open a privacy center with one category “**Personalized advertisement**”. \
-      Please note: this category is a requirement (must contains all tags that can sell personal information).
-    * Set your [consent duration](../user-guides/settings.md) for at least **12 months**&#x20;
-
-
-2.  **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act privacy banner\
-
+1. Create a dedicated ccpa banner: use the "**footer with privacy center" template**\\
+   * Add your text about cookies: must list the categories of personal information businesses collect about consumers and the purposes for which they use the categories of information. Don't forget to integrate a **link for your cookie policy.**
+   * Add a button with this exact text : “**Do Not Sell My Personal Information”**\
+     This button should Optout the user (value refuse all) **or** open a privacy center with one category “**Personalized advertisement**”.\
+     Please note: this category is a requirement (must contains all tags that can sell personal information).
+   * Set your [consent duration](../user-guides/settings.md) for at least **12 months**
+2.  **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act privacy banner\\
 
     <figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="320"><figcaption></figcaption></figure>
 3. Integrate in your website footer a **link or a button to manage consent choices**\
    example of html code to integrate:\
-   `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`&#x20;
+   `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`
 4. **Update your Privacy Policy:**\
    Businesses that sell personal information about California residents, or allow information to be collected on their websites or apps, need to provide information in their privacy policies about that collection or sale. The CA Attorney General has provided draft regulations on how and what information should be included in privacy policies, which you can find [here](https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-proposed-regs.pdf).
 5.  **Add file "well-known.json" on your site**\
-    Not mandatory, but recommended, GPC makes use of .well-known identifiers for sites to signal compliance with the    &#x20;GPC specification. The existence of this file indicates you are using GPC as part of your compliance&#x20;    &#x20;with privacy laws. \
-    There may be a variety of tools available to implement the .well-known file on your site.\
+    Not mandatory, but recommended, GPC makes use of .well-known identifiers for sites to signal compliance with the GPC specification. The existence of this file indicates you are using GPC as part of your compliance with privacy laws.\
+    There may be a variety of tools available to implement the .well-known file on your site.\\
 
-
-    The following is a basic example of how to specify a static folder and files for your site.\
-
+    The following is a basic example of how to specify a static folder and files for your site.\\
 
     First, create a folder called .well-known at the root of your site, so that the path is yoursite.com/.well-known/. Within this folder, create a file called gpc.json. The value of the file should then look something like this, with `lastUpdate` set to the date you last updated the file.\
-    `{`    \
-    `"gpc": true,`    \
-    `"lastUpdate": "2025-04-20"`    \
+    `{`\
+    `"gpc": true,`\
+    `"lastUpdate": "2025-04-20"`\
     `}`\
     \
     This will give you a valid GPC file which states that you comply with the GPC in the context in which you understand it.\
@@ -82,7 +75,7 @@ For more information, you can visit their [website](https://globalprivacycontrol
 
 Simply follow these 2 easy steps:
 
-1 - Enable on the option Global Privacy Control directly on your CCPA Banner&#x20;
+1 - Enable on the option Global Privacy Control directly on your CCPA Banner
 
 ```
 Sources > Privacy Banners > Settings
@@ -97,7 +90,6 @@ Sources > Privacy Banners > Settings
 Sources > Privacy Banners > Generate
 ```
 
-3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\
+3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\\
 
-
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>

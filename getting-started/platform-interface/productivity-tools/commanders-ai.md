@@ -30,7 +30,7 @@ All Commanders AI suggestions are non-binding and subject to human validation. U
 Commanders AI includes several advanced functionalities (some are limited to beta testers) :
 
 1. [**Automatic Change Summary**](commanders-ai.md#id-2.1-automatic-change-summary-in-web-containers): Generates a summary of modifications when generating a web container in the Tag Management System.
-2. [**Cookie description translation/categorisation**](../../../features/realtime-cookie-scanner.md): Find missing description/categorisation in Realtime Cookie Scanner, translate cookie descriptions in other languages
+2. [**Cookie description translation/categorisation**](../../../features/realtime-cookie-scanner/): Find missing description/categorisation in Realtime Cookie Scanner, translate cookie descriptions in other languages
 3. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta) : Conversational assistant to generate or explain data transformation formulas.
 4. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha) (closed alpha): Optimized naming and description proposals for destinations and segments.
 5. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha) (closed alpha): Intelligent assignment of privacy categories when adding a tag or destination.
@@ -45,7 +45,7 @@ Commanders AI includes several advanced functionalities (some are limited to bet
 
 When a user generates a web container in the **Tag Management System (TMS)**, Commander's AI analyzes the modifications and provides an automatic summary of the changes made since the last container generation.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="305"><figcaption></figcaption></figure>
 
 #### How It Works
 
@@ -68,7 +68,7 @@ Users have access to additional customization options via the gear icon ⚙️:
 
 ***
 
-### 2.2. AI Copilot for Data Cleansing 
+### 2.2. AI Copilot for Data Cleansing
 
 #### Feature Overview
 
@@ -153,7 +153,6 @@ Commanders AI complies with **GDPR** and the **AI Act**:
 
 Commanders AI processes inputs exclusively within EU-hosted infrastructure using vendors that guarantee strict data isolation, non-retention and full alignment with GDPR and the EU AI Act. No model provider receives any customer data for training or reuse.
 
-
 #### 3.4. Scope of AI Usage and Data Boundaries
 
 As of today, Commander's AI does **not process or analyze any personal data or event payloads** collected via the Tag Management System (TMS) or the Customer Data Platform (CDP).
@@ -167,10 +166,9 @@ Its usage is strictly limited to **configuration assistance and user interface e
 
 No user event data or identifiers are currently exposed to AI models.
 
-**Applicability of German Works Council (Betriebsrat)**  
-Since Commanders AI does not analyse user behaviour, profile individuals, or process any data that could be used to monitor employees, it does not fall under the category of technical monitoring systems defined in §87(1)6 BetrVG.  
+**Applicability of German Works Council (Betriebsrat)**\
+Since Commanders AI does not analyse user behaviour, profile individuals, or process any data that could be used to monitor employees, it does not fall under the category of technical monitoring systems defined in §87(1)6 BetrVG.\
 If the scope of Commanders AI were to expand in the future to process event-level or behavioural data, this would be documented and communicated accordingly.
-
 
 #### 3.5. EU AI Act Compliance
 
@@ -182,26 +180,25 @@ This means that the existing measures already described (transparency, human ove
 
 This section summarises the key compliance questions typically required by DPOs and German Works Councils (§87 BetrVG).
 
-**Which AI models are used?**  
-Commanders Act uses advanced Large Language Models (LLMs) selected for reliability and compliance.  
-For security and contractual reasons, we do not publicly disclose individual model names or vendors.  
+**Which AI models are used?**\
+Commanders Act uses advanced Large Language Models (LLMs) selected for reliability and compliance.\
+For security and contractual reasons, we do not publicly disclose individual model names or vendors.\
 All models operate under the strict EU hosting, GDPR and AI Act rules described on this page.
 
-**What data do the models have access to?**  
-Only configuration-level metadata and user-provided prompts are sent to AI models, such as:  
-– tag names, cookie descriptions, segment descriptions  
-– transformation formulas  
-– structural metadata  
+**What data do the models have access to?**\
+Only configuration-level metadata and user-provided prompts are sent to AI models, such as:\
+– tag names, cookie descriptions, segment descriptions\
+– transformation formulas\
+– structural metadata\
 AI models never access event payloads, user identifiers, behavioural data, nor customer databases.
 
-**Where is the AI hosted?**  
-All processing related to Commanders AI is fully hosted within the European Union.  
+**Where is the AI hosted?**\
+All processing related to Commanders AI is fully hosted within the European Union.\
 No data leaves the EU at any stage.
 
-**What data is used to train the models?**  
-No customer data is ever used to train or fine-tune any model.  
+**What data is used to train the models?**\
+No customer data is ever used to train or fine-tune any model.\
 All models are pre-trained by their providers on public or generic corpora only.
-
 
 ## 4. AI Model Governance and Updates
 

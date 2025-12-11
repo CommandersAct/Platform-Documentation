@@ -144,7 +144,7 @@ Download it from Chrome Extension Store, once it is installed on your browser, y
 
 <figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 
 For a detailed documentation about our plugin, pease read the following page
 

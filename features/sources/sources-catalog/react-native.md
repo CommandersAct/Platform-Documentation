@@ -16,9 +16,8 @@ Mobile developpers can follow our dedicated documentation
 
 To send events to Commanders Act you need a Source Key. To get it, you can use the dedicated Source on our platform.
 
-Once your Source is called in your mobile app, you will obtain information about what is collected and the health of the implementation.&#x20;
+Once your Source is called in your mobile app, you will obtain information about what is collected and the health of the implementation.
 
 This should be quite easy and straightforward now!
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

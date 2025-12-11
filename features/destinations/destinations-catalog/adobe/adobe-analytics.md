@@ -12,7 +12,7 @@ We use the Oauth2 authentication process.
 Only the **server-to-server** oauth is supported
 {% endhint %}
 
-Go to _Administration_ / _Connector Credentials_ and click on **Add connector credentials**. \
+Go to _Administration_ / _Connector Credentials_ and click on **Add connector credentials**.\
 Select Adobe Analytics.
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.33.png" alt=""><figcaption></figcaption></figure>
@@ -21,7 +21,7 @@ Enter the Client ID and Client Secret that you can find on your **Adobe Develope
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-13 à 11.26.55.png" alt="" width="375"><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In case you haven’t selected the server-to-server oauth (if it is an old project, and you don’t want to configure it again for example), it is possible to change the authentication, click on “Connect another credential” on Adobe Analytics interface.
 

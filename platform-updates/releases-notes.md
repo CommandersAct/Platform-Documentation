@@ -10,94 +10,98 @@ description: >-
 
 ✨ **New Features**
 
-📤 **New Destination — Salesforce Marketing Cloud: Profile Sync (API)**  
-A streamlined **real-time** destination for Salesforce Marketing Cloud is now available.  
-It allows customers to **upsert profiles in real time** into Data Extensions using Salesforce’s official API, powering use cases such as abandoned cart flows, journey triggers, and continuous profile synchronisation.  
+📤 **New Destination — Salesforce Marketing Cloud: Profile Sync (API)**\
+A streamlined **real-time** destination for Salesforce Marketing Cloud is now available.\
+It allows customers to **upsert profiles in real time** into Data Extensions using Salesforce’s official API, powering use cases such as abandoned cart flows, journey triggers, and continuous profile synchronisation.\
 Setup is simple, with intuitive field selection and batch-compatible processing.
 
----
+***
 
-🧮 **Data Cleansing — Full-Screen Formula Editor**  
+🧮 **Data Cleansing — Full-Screen Formula Editor**\
 The formula editor has been completely redesigned for a more powerful and comfortable experience.
 
-**What’s new:**  
-* Full-screen editing in a side panel  
-* Integrated Property Picker  
-* Function catalog with one-click insertion  
-* **Live Formula Tester** with instant feedback  
-* Built-in AI copilot (**JarvX**) to create, modify, or explain formulas  
+**What’s new:**
+
+* Full-screen editing in a side panel
+* Integrated Property Picker
+* Function catalog with one-click insertion
+* **Live Formula Tester** with instant feedback
+* Built-in AI copilot (**JarvX**) to create, modify, or explain formulas
 
 → A faster, more intuitive workflow for all users.
 
----
+***
 
-🔧 **Destinations — Simplified Inputs & Smarter Editing**  
+🔧 **Destinations — Simplified Inputs & Smarter Editing**\
 Destination setup is now easier and more consistent across all connectors.
 
-**Highlights:**  
-* Removal of old dual-mode inputs (text mode vs formula mode)  
-* Each field now has two optional actions:  
-  * **Property Picker** to inject dynamic values  
-  * **Formula Editor** for advanced transformations  
-* Cleaner UX aligned with modern server-side standards  
-* More power thanks to integrated formulas & transformations  
+**Highlights:**
+
+* Removal of old dual-mode inputs (text mode vs formula mode)
+* Each field now has two optional actions:
+  * **Property Picker** to inject dynamic values
+  * **Formula Editor** for advanced transformations
+* Cleaner UX aligned with modern server-side standards
+* More power thanks to integrated formulas & transformations
 
 → Faster setup, fewer mistakes, and easier onboarding for all users.
 
----
+***
 
-🔗 **Destinations — Smart Mapping**  
+🔗 **Destinations — Smart Mapping**\
 Mappings are now easier to understand and configure.
 
-**Improvements include:**  
-* Display of labels, descriptions, and technical names  
-* Guided Property Picker for selecting or changing mapped fields  
-* Search capabilities for instant access to the right property  
+**Improvements include:**
+
+* Display of labels, descriptions, and technical names
+* Guided Property Picker for selecting or changing mapped fields
+* Search capabilities for instant access to the right property
 
 → Makes mapping self-explanatory and prevents configuration errors.
 
----
+***
 
-🔢 **Enhanced Data Types in Destinations**  
-Destination connectors now provide more advanced handling of property types (numbers, booleans, strings, etc.).  
+🔢 **Enhanced Data Types in Destinations**\
+Destination connectors now provide more advanced handling of property types (numbers, booleans, strings, etc.).\
 Users can still explicitly cast types using `STRING()` or `NUMBER()` when required.
 
 → Adds flexibility for advanced users with specific formatting or API integration needs.
 
----
+***
 
-🕓 **View History for Destinations**  
+🕓 **View History for Destinations**\
 A new **View history** button summarises all modifications applied to a destination.
 
-**Includes:**  
-* Who made the change  
-* What was updated  
-* When it occurred  
-* A compact before/after comparison  
+**Includes:**
+
+* Who made the change
+* What was updated
+* When it occurred
+* A compact before/after comparison
 
 → Enables faster investigations, smoother collaboration, and clearer audit trails.
 
----
+***
 
-📜 **Activity Logs API — Now Filterable**  
+📜 **Activity Logs API — Now Filterable**\
 The Activity Logs API can now filter activity based on any feature of the platform, including:
 
-* Destinations  
-* Sources  
-* Enrichments  
-* Data Cleansing  
-* Data Models  
-* Consent  
-* Configuration updates  
-* …and more  
+* Destinations
+* Sources
+* Enrichments
+* Data Cleansing
+* Data Models
+* Consent
+* Configuration updates
+* …and more
 
 → Makes it easy to isolate specific events for troubleshooting, compliance reviews, and operational audits.
 
----
+***
 
-🔍 **Event Inspector for Audience-Based Destinations**  
-Audience-based destinations now include a dedicated **Event Inspector** tab.  
-Until now, Event Inspector was only available for event-based destinations.  
+🔍 **Event Inspector for Audience-Based Destinations**\
+Audience-based destinations now include a dedicated **Event Inspector** tab.\
+Until now, Event Inspector was only available for event-based destinations.\
 Customers can now review in realtime **exactly what is shared with each partner in real time** when sending audiences.
 
 → Easier debugging, full visibility on outbound payloads in realtime, and faster troubleshooting for consultants and support teams.
@@ -108,94 +112,94 @@ Customers can now review in realtime **exactly what is shared with each partner 
 
 ✨ **New Features**
 
-🍪 **Realtime Cookie Scanner**  
-A new version of the Cookie Scanner is now available in the **Health** section.  
+🍪 **Realtime Cookie Scanner**\
+A new version of the Cookie Scanner is now available in the **Health** section.\
 This redesigned module introduces a modern interface, improved navigation, and prepares the transition away from the legacy Cookie Scanner.
 
----
+***
 
-🍪 **Realtime Cookie Scanner – Feature Upgrades**  
+🍪 **Realtime Cookie Scanner – Feature Upgrades**\
 Significant enhancements have been added to the new version:
 
-* **Real-time alerting** when new cookies are detected  
-* **Excel export** of the full cookie list (with filtering support)  
-* **Redesigned Cookie Notice interface** for improved clarity and navigation  
-* **Expandable rows** giving immediate access to detailed information  
-* **Smarter cookie information**, with improved vendor/category/description detection  
+* **Real-time alerting** when new cookies are detected
+* **Excel export** of the full cookie list (with filtering support)
+* **Redesigned Cookie Notice interface** for improved clarity and navigation
+* **Expandable rows** giving immediate access to detailed information
+* **Smarter cookie information**, with improved vendor/category/description detection
 
 → Faster detection, clearer insights, and more audit-ready compliance reporting.
 
-**What’s next?**  
-The Realtime Cookie Scanner will continue to evolve with **new dedicated views** designed to give a more complete picture of cookie behaviour and compliance across your digital properties.  
+**What’s next?**\
+The Realtime Cookie Scanner will continue to evolve with **new dedicated views** designed to give a more complete picture of cookie behaviour and compliance across your digital properties.\
 These upcoming screens will progressively enrich the module with extended monitoring, origin tracing, categorisation, and more advanced compliance diagnostics.
 
-📘 Documentation:  
-[Realtime Cookie Scanner – EN](https://doc.commandersact.com/features/realtime-cookie-scanner)  
+📘 Documentation:\
+[Realtime Cookie Scanner – EN](https://doc.commandersact.com/features/realtime-cookie-scanner)\
 [Realtime Cookie Scanner – FR](https://doc.commandersact.com/fr/fonctionnalites/realtime-cookie-scanner)
 
----
+***
 
-📈 **Adloop – Automatic Tracking Templates for Google Ads**  
+📈 **Adloop – Automatic Tracking Templates for Google Ads**\
 Google Ads tracking is now handled automatically by Adloop.
 
-* Automatic installation of tracking parameters on campaigns  
-* Option to apply parameters to existing and future campaigns  
-* Alerts when tracking is missing or when reconnection is required  
-* Unified Google Ads source replacing multiple variants (Search, PMax, Display…)  
-* Much faster Transaction ID report loading, even on large accounts  
+* Automatic installation of tracking parameters on campaigns
+* Option to apply parameters to existing and future campaigns
+* Alerts when tracking is missing or when reconnection is required
+* Unified Google Ads source replacing multiple variants (Search, PMax, Display…)
+* Much faster Transaction ID report loading, even on large accounts
 
 → Simplifies setup, reduces errors, and ensures consistent data quality.
 
----
+***
 
-💡 **CMP – Banner Editor Optimization**  
-The banner editing interface now loads significantly faster, even with large privacy configurations or custom code.  
+💡 **CMP – Banner Editor Optimization**\
+The banner editing interface now loads significantly faster, even with large privacy configurations or custom code.\
 → Smoother workflows for advanced CMP setups.
 
----
+***
 
-📊 **Facebook CAPI – Easier Access to the “Performance” Tab**  
-The Performance tab now automatically reuses the credential created during destination setup.  
+📊 **Facebook CAPI – Easier Access to the “Performance” Tab**\
+The Performance tab now automatically reuses the credential created during destination setup.\
 → No more login prompts, easier access to quality metrics.
 
----
+***
 
-⚡ **CMP – Banner Loading Optimization**  
-CMP banners now load on **DOMReady**, improving website performance and reducing their impact on Core Web Vitals.  
+⚡ **CMP – Banner Loading Optimization**\
+CMP banners now load on **DOMReady**, improving website performance and reducing their impact on Core Web Vitals.\
 This optimization becomes active when customers regenerate and redeploy their containers.
 
----
+***
 
-🧩 **Commanders Act Assistant v3.2.1**  
+🧩 **Commanders Act Assistant v3.2.1**\
 New improvements to the QA Chrome Extension:
 
-* Simplified **container version replacement**  
-* One-click **“Stop override”** action  
-* Cleaner layout with more vertical space for tag review  
+* Simplified **container version replacement**
+* One-click **“Stop override”** action
+* Cleaner layout with more vertical space for tag review
 
 → Faster and more intuitive QA experience.
 
----
+***
 
-🧱 **New Source – Effinity (Adloop)**  
-Adloop now supports the **Effinity** affiliate source, enabling automatic import of affiliate conversion data.  
+🧱 **New Source – Effinity (Adloop)**\
+Adloop now supports the **Effinity** affiliate source, enabling automatic import of affiliate conversion data.\
 → Extends attribution and reporting for affiliate programs.
 
 ***
 
 #### 🛠️ Improvements
 
-🖥️ **Server-Side Infrastructure Enhancements**  
-Optimizations applied across server-side pipelines to deliver:  
-* Faster and more consistent event processing  
-* Higher scalability under heavy traffic  
-* Improved stability across destinations  
+🖥️ **Server-Side Infrastructure Enhancements**\
+Optimizations applied across server-side pipelines to deliver:
 
-🎨 **General UX & Performance Polishing**  
+* Faster and more consistent event processing
+* Higher scalability under heavy traffic
+* Improved stability across destinations
+
+🎨 **General UX & Performance Polishing**\
 Additional interface refinements and micro-performance improvements deployed across the platform.
 
 ***
-
 
 ## Release 10.0.30 - September - 2025
 
@@ -408,7 +412,7 @@ The AI journey begins with new tools to assist your daily work:
 * Formula generator pop-in for advanced setups
 *   Side panel guidance for Commanders\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -420,7 +424,7 @@ The AI journey begins with new tools to assist your daily work:
 *   Built-in safety checks to prevent errors\
     → **Greater autonomy & faster go-live**\\
 
-    <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗑️ **TMS – Branch Deletion Confirmation**
 
@@ -474,7 +478,7 @@ What is it? Customers can now use their own URL (via CNAME) to host privacy file
 
 Why is it important? Ensures better data control while maintaining compliance.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -504,7 +508,7 @@ Find specific sources/destinations faster.
 
 Easier workspace overview – Quick visibility on available integrations.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1071,7 +1075,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1357,7 +1361,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
     <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Live Report Builder: UX enhancement**\
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\\
 
