@@ -156,7 +156,7 @@ Enter all your array keys in the window that appears (e.g. if your main variable
 
 After selecting the “**Two-dimensional array**” type for your variable go to the “**EDIT**” step. Click the symbol appearing to the left of the variable that you just mapped:
 
-<figure><img src="/broken/files/6eH55dn1qagm6Ara2eTh" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (231) (1).png" alt=""><figcaption></figcaption></figure>
 
 Enter the array key in the configuration window (e.g. the product ID) and the separator:
 
@@ -176,4 +176,4 @@ Note: The variables used in a container (to be added to a tag, for example) cann
 
 By clicking on the flag, you will see which container(s), tag(s) or rule(s) use this variable:
 
-<figure><img src="/broken/files/1Lp2JmnjGJeKrb8mpACk" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (241) (1).png" alt=""><figcaption></figcaption></figure>

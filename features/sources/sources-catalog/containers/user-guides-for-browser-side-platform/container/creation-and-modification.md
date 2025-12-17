@@ -14,7 +14,7 @@ After configuring the various container options, click “Add”
 
 ### **General**
 
-<figure><img src="/broken/files/hkv08vrVaj2nXD72mmzz" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (90) (1).png" alt=""><figcaption></figcaption></figure>
 
 Simply fill the “**Name**“ field with Container’s wanted name
 
@@ -69,4 +69,4 @@ You can also define a JavaScript version and noscript version for each tag.
 \*Note: this setup can be modified at any time.\
 Simply click the 'parameter' icon:\\
 
-<figure><img src="/broken/files/JD085ILi47VHrOSJbj0S" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (112) (1).png" alt=""><figcaption></figcaption></figure>

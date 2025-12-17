@@ -47,7 +47,7 @@ This option allows to self-host privacy banner. It therefore requires manual eff
 
 `http(s)://www.mydomain.com/myfolder/`
 
-<figure><img src="/broken/files/gHiKp3slHZo7BtZDBRqf" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (189) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click `DOWNLOAD` to download on the right side of the new banner files and manually update them on your server.
 

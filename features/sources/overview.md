@@ -16,7 +16,7 @@ You can easily edit a source by clicking its name or the pencil icon.
 **Web containers** are special client-side sources, when editing them you will be redirected to dedicated interfaces
 {% endhint %}
 
-![](/broken/files/92L9JvSes1pPEAfc0BgI)
+![](<../../.gitbook/assets/image (1) (1) (2) (1).png>)
 
 ## Trend and data quality
 

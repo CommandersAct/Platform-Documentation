@@ -17,7 +17,7 @@ Select one or more destinations from which you'd like to export your data.
 2.  **Select a storage connector**. This can be set up in **Administration > Connector Credentials**.\
     Only FTP, Amazon S3 & Google Cloud Storage are currently supported\\
 
-    <figure><img src="/broken/files/ZC072i8iwme4OsMdw5jK" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (8) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 3.  **Specify the file name and extension** (default is CSV).\
     \\
 

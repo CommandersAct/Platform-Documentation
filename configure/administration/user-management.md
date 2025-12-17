@@ -246,4 +246,4 @@ Please note: if you have created profiles with specific settings by container or
 
 6\) – Click “Copy”
 
-<figure><img src="/broken/files/OoViH427pnsw5kUwIqr3" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (404) (1).png" alt=""><figcaption></figcaption></figure>

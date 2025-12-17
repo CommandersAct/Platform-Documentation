@@ -37,7 +37,7 @@ Contact your account manager for more details.
 
     This action will affect Consent, Deduplication, Campaign, Segment, Server Side
 
-<figure><img src="/broken/files/iPu8hbmkYLdjkS0kgeGW" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (491) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What happens when I have 2 or more domains?**
 

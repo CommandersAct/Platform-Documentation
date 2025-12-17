@@ -103,7 +103,7 @@ Commanders Act cookies are automatically managed by Phoenix. Cookies of other ve
 
 In TMS Commanders Act, cookies are usually set by your vendor tags. You can enable Phoenix for selected tags in the "Deployment" step of your Commanders Act TMS container by enabling the `ITP BYPASS` option. This will automatically persist all cookies of this tag with Phoenix. A progress bar will show the remaining cookie space made available by your administrator.
 
-<figure><img src="/broken/files/dhCHDJIQhVhRMnw1nSRn" alt=""><figcaption><p>Example how cookies a of Tag are persisted with Phoenix</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/demo_cookies_phoenix (1).gif" alt=""><figcaption><p>Example how cookies a of Tag are persisted with Phoenix</p></figcaption></figure>
 
 {% hint style="info" %}
 Please contact the Commanders Act support or your Commanders Act consultant in case the ITP BYPASS option is not available for a tag or cookie you would like to persist.
