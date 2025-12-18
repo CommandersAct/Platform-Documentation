@@ -32,7 +32,7 @@ Before continuing, you may want to inspect [Check If Your Business Is a Good Fit
 **\[1]** See [Mapping](facebook-lead-ads.md#configuration) for more details.
 {% endhint %}
 
-## Field Mappings
+## Field mappings
 
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\
