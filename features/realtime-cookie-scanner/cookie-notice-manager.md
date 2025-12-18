@@ -50,6 +50,28 @@ For all types of cookies & storage you can visualize the percentage of detection
 
 <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
+#### Settings
+
+Need to declare a new domain, or add a new language?
+
+You can do it directly in the side panel "settings"
+
+<figure><img src="../../.gitbook/assets/image (123).png" alt="" width="407"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (121).png" alt="" width="347"><figcaption></figcaption></figure>
+
+#### Exempted Flag
+
+To help you to see the exempted cookies set before consent, you can add an "exempted" flag. Simply activate the dedicated switch in "Cookie Edition"
+
+This will helps you to identify quickly the cookies that are allowed to be set without consent user
+
+<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
+
+
+
 ***
 
 ### Manage Cookie Notice
