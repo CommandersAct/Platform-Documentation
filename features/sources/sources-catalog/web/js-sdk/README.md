@@ -198,7 +198,7 @@ cact('emit', 'my_custom_event');
 
 You will be able to use this event as a TMS custom trigger:
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -347,7 +347,7 @@ cact('trigger', 'page_view', { value: 42, currency: 'EUR' });
 To use this feature as a TMS custom tag trigger, you'll need to prefix the event name with "track\_\*"\
 Example:\\
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Using `cact('on')` for Event Subscription**
 

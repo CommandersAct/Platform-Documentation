@@ -92,4 +92,4 @@ Sources > Privacy Banners > Generate
 
 3 - Verify your setup! You can use a [dedicated GPC plugin](https://app.gitbook.com/s/nrgRgmj0gYZXv84bLI9l/basic/destinations/gamned/description) to check your implementation\\
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>

@@ -110,14 +110,14 @@ The privacy setup is done! You can now Generate and Deploy your Privacy Banner.\
 The activation of this option will automatically add an Google Policy URL, it's a legal requirement for using Google Consent Mode on your website. Feel free to adapt your introduction text if needed
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4- Advanced Mode: Remove your privacy constraints from Google tags
 
 To setup the version "Advanced" of the Consent Mode, remove Commanders Act Privacy rules from all the Google tags, now it's managed by Google Consent Mode\
 `Data Governance > Consent Management > Categories` see tab `assign tags`\
 \- **Remove the privacy constraints from Google tags**\
-&#xNAN;**- Save**
+\&#xNAN;**- Save**
 
 <figure><img src="../../../../.gitbook/assets/image (476).png" alt=""><figcaption></figcaption></figure>
 

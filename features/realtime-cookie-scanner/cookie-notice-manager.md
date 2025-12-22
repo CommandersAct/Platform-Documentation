@@ -70,7 +70,28 @@ This will helps you to identify quickly the cookies that are allowed to be set w
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
 
+#### Translations by IA
 
+Our IA feature can translate cookie descriptions in any language.\
+Translate all your cookie descriptions in one click.\
+\
+You get up to 200 free translations per day.\
+Need more? Come back tomorrow and you'll receive another 200 free credits!\
+\
+To translate all your cookies, use the 'Settings' option (one target language allowed at a time).
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Do you need to translate just one cookie into many languages?\
+Then use the 'Edit Cookie' function:
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Our tool will translate your cookies for all languages that have an "empty" description.
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

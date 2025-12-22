@@ -66,13 +66,13 @@ This action will **block all** automatic mapping between Campaign dimensions and
 
 _Before to send your events to this destination you can, if needed, transform them to rename or remove some properties. Enter on the left the property name you want to add, delete or modify. Then enter on the right the property name where the value stands (or leave empty to remove the property)_
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 6/Setup your filters - create your event(s) specification
 
 You have to specify which event is concerned by this destination. Here's an example for a purchase (orders)
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Don't forget to setup a consent filter to be RGPD compliant as well
@@ -80,7 +80,7 @@ Don't forget to setup a consent filter to be RGPD compliant as well
 
 #### 7/Your destination is ready to be activated!
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 8/Go Further: modify timestamp
 
