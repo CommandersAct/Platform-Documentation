@@ -1,9 +1,17 @@
 # Commanders Tag Gateway (closed beta)
 
-This document is for users who want to deploy **Google Tag Gateway** (via Commanders Act) or its equivalent for other partners (Meta, Bing, Snapchat, Awin, etc.).
+This document describes how to deploy **Commanders Tag Gateway**, a **unified first-party gateway** that uses **one single setup and one single path on your domain** to power multiple tracking and hosting use cases.
 
-If your goal is to implement **Google Tag Gateway**, you are in the right place:\
-**Commanders Gateway** follows the exact same setup principles as Google Tag Gateway, but extends them to all major advertising and analytics partners.
+Commanders Tag Gateway includes **Google Tag Gateway**, but is **not limited to Google**.  
+It is designed to serve and collect data for **all your marketing and analytics partners**, using the same first-party infrastructure.
+
+One setup, one first-party path, three usages:
+- Google Tag Gateway (GA4, Google Ads)
+- First-party tracking to all server-side destinations
+- First-party hosting of third-party libraries
+
+If your goal is to implement Google Tag Gateway, you are in the right place.  
+If your goal is to build a durable, vendor-agnostic first-party tracking architecture, you are also in the right place.
 
 <figure><img src="../.gitbook/assets/schema_google_ads (4).png" alt=""><figcaption></figcaption></figure>
 
