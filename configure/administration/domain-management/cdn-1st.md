@@ -73,7 +73,7 @@ On site copy, the CDN 1st configuration(s) will not be copied, you'll need to lo
 ### Go live with 1st party Hosting
 
 When your setup is done, the Deploy step of Web Containers & Privacy banners are now impacted.\
-That means your files will now hosted on your new domain.
+That means your files will now be hosted on your new domain, but they also remains live on our "regular CDN" URL, to let time to your team to change the Web Containers URLs of your site.
 
 To ensure stability, re generate & re deploy all your Web Container(s), and Privacy banner(s)
 
@@ -88,7 +88,11 @@ To ensure stability, re generate & re deploy all your Web Container(s), and Priv
 :rocket: Congratulations! Your configuration is done!
 
 {% hint style="info" %}
-Good to know: When your CDN First Party is configured, you will need to replace the URLs of your web container(s) on your website. The "regular" CDN URL will remain active, but to enjoy the benefits of first party hosting, you will need to use the CDN 1st party URLs.
+Good to know:&#x20;
+
+When your CDN First Party domain is configured, you (or your IT team) will need to replace the URLs of your Web Container(s) on your website. The "regular CDN" URL will remain active, but to enjoy the benefits of first party hosting, you will need to use the CDN 1st party URLs.
+
+If Privacy banner is called directly from Web Container, the Privacy CDN First URLs will be automatically updated into the Web Container's JavaScript code (requires to regenerate & deploy Privacy and then your Web Containers).&#x20;
 {% endhint %}
 
 ### Multiple domains management
