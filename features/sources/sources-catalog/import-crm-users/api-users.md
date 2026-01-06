@@ -36,28 +36,27 @@ This API is more designed to be called from a tag in each user's browser.
 
 If your site uses a first-party domain (either through a dedicated subdomain or through the Commanders Act Gateway path), API calls must be made on your own domain.
 
-Important: the URL must include /api/ in the path.  
+Important: the URL must include /api/ in the path.\
 Without this path, the request will not work.
 
 #### 1. Using a dedicated subdomain (example: tracking.mydomain.com)
 
-The first-party API structure must follow this pattern:  
+The first-party API structure must follow this pattern:\
 https://tracking.mydomain.com/**api**/1.0/engage/visitors/
 
-Example:  
-https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+Example:\
+https://tracking.mydomain.com/api/v1.0/engage/visitors/?site=5326\&tcid=\&token=XXXX
 
 #### 2. Using Commanders Act Gateway (path-based setup)
 
-If your gateway endpoint is served under a path (for example: https://www.mydomain.com/cact-proxy/),  
-the first-party API structure must follow this pattern:  
+If your gateway endpoint is served under a path (for example: https://www.mydomain.com/cact-proxy/),\
+the first-party API structure must follow this pattern:\
 https://www.mydomain.com/cact-proxy/**api**/1.0/engage/visitors/
 
-Example:  
-https://www.mydomain.com/cact-proxy/**api**/v1.0/engage/visitors/?site=5326&tcid=&token=XXXX
+Example:\
+https://www.mydomain.com/cact-proxy/**api**/v1.0/engage/visitors/?site=5326\&tcid=\&token=XXXX
 
-Note: always keep the **/api/**<version>/… structure after the subdomain or the gateway path.
-
+Note: always keep the **/api/**/… structure after the subdomain or the gateway path.
 
 ## User
 
@@ -98,7 +97,7 @@ This endpoint allows you to **get properties for one specific user** based on a 
 
 ### Do not use this endpoint client-side
 
-The GET User endpoint must **not** be called from the browser.  
+The GET User endpoint must **not** be called from the browser.\
 Exposing the token would allow anyone to capture it and loop through user IDs to extract all user data.
 
 Use this API **server-side only** in a secure backend environment.
@@ -132,10 +131,20 @@ Insert or update a user
 https://api.commander1.com/engage/user/?site=1234\&user\_id=1234\&token=WvNIX8955cnZ7WF0f632s0Wb99Ql3rtA
 
 ```
+//Format example
 {
-"preferences.channel":"email",
-"preference.frequency":"30d",
-...
+    "person": {
+        "id": "10000000",
+        "card": "12345678910",
+        "email": "mycustomer@test.com",
+        "gender": "female",
+        "firstname": "Joan",
+        "lastname": "Craig",
+        "custom": {
+            "area_number": 123
+        },
+    ...
+    }
 }
 ```
 
