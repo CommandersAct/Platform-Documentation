@@ -234,7 +234,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Domain:** Customer domain (default, can be customized)
 
-**Lifetime:** 396 days
+**Lifetime:** session
 
 **Value:** Banner display
 
@@ -522,16 +522,16 @@ Following cookies are used automatically in depending on the installed Commander
 
 All possibles names:
 
-DLBCTLYOXA\
-FDLBFIRSTAPI\
-FDLBFIRSTDATA\
-FDLBFIRSTCAMPAIGN\
-FDLBFIRSTCAMPAIGNEF\
-FDLBCAMPAIGNCDOM\
-FDLBFIRSTTMS\
-FDLBFIRSTCMP\
-FDLBFIRST\
-FDLBCTLY\
+DLBCTLYOXA\
+FDLBFIRSTAPI\
+FDLBFIRSTDATA\
+FDLBFIRSTCAMPAIGN\
+FDLBFIRSTCAMPAIGNEF\
+FDLBCAMPAIGNCDOM\
+FDLBFIRSTTMS\
+FDLBFIRSTCMP\
+FDLBFIRST\
+FDLBCTLY\
 FDLBFIRSTEVENTS\
 \
 **Product(s) related:** First domain tracking (Phoenix)
