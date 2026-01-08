@@ -240,7 +240,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Cookie linked to the display of the privacy banner, it allows to check whether cookies can be deposited and not to redisplay the consent banner when consent is given. Deposited then disappears, cannot be deleted. Technical cookie (exempted)\\
+**Storage purpose(s):** Cookie linked to the display of the privacy banner, it allows to check whether cookies can be deposited and not to re-display the consent banner when consent is given. Deposited then disappears, cannot be deleted. Technical cookie (exempted)
 
 </details>
 
