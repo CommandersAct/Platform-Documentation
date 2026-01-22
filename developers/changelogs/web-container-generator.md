@@ -2,6 +2,13 @@
 
 ## 2025
 
+### 100.3
+
+Release date:  **12/01/2026**
+
+* [beta] Support Amazon Consent Signal in Trust
+* [beta] update CAID management
+
 ### 100.2
 
 Release date:  **01/12/2025**
@@ -28,7 +35,7 @@ Release date:  **17/11/2025**
 Release date:  **03/11/2025**
 
 * Optimizations in container generation script
-* [beta] Refined CAID cookie handling for specific beta accounts, adds logic from in event hit parameters to set or overwrite the CAID  when the CAID cookie is missing
+* [beta] Refined CAID cookie handling for specific beta accounts, adds logic from in event hit parameters to set or overwrite the CAID when the CAID cookie is missing
 * [public release] Load Trust banner in DOM ready event
 
 ### 99.6
