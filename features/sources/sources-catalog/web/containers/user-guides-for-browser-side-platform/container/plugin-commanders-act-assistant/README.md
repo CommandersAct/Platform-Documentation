@@ -16,11 +16,23 @@ With CAA, you can effortlessly **switch between Web Containers versions without 
 \
 :heart: It's also **compatible with** [**Branches** ](../branches.md)feature! :heart:
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../../../.gitbook/assets/Capture d&#x27;écran 2025-02-27 185120.png" alt=""><figcaption></figcaption></figure>
 
 ### How to replace your(s) Web Container(s)
+
+#### Inside the plugin
+
+You can select the version you need to test directly in the drop down on the right side
+
+<figure><img src="../../../../../../../../.gitbook/assets/image (166).png" alt="" width="302"><figcaption></figcaption></figure>
+
+You haven't seen your latest version? Use the refrseh buttons to update the dropdown with the latest version
+
+<figure><img src="../../../../../../../../.gitbook/assets/image (173).png" alt="" width="375"><figcaption></figcaption></figure>
+
+#### Through the platform (for Branches testing)
 
 You can **test directly using the dedicated buttons** visible on the steps **"Generate," "Test," and "Deploy"** within the Commanders Act platform, making it easier to validate your configurations.
 
@@ -42,19 +54,19 @@ On click, you will be invited to enter the expected landing page for your test s
 
 To **turn off the override**, simply click the **button "stop override" on the plugin**.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="408"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (183).png" alt="" width="290"><figcaption></figcaption></figure>
 
 ### Monitor Tags in Action
 
 Easily **view the list of triggered tags** as they fire on your website, giving you a clear overview of your tracking implementation in real time. Simply unfold the "web containers" section to see the list
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (603).png" alt="" width="416"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (192).png" alt="" width="431"><figcaption></figcaption></figure>
 
 ### Reach your Web Container in 1 click
 
 Use the icon aside the Site Name - Container Name to reach in just one click your Web Container on our Platform
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (193).png" alt="" width="431"><figcaption></figcaption></figure>
 
 ### See the full Data Layer state on each page load
 
@@ -70,7 +82,7 @@ Open the tab "Events" to see your tags triggered on events.\
 The Data Layer state is also visible on this tab.\
 If some "event variables" are fed up, you will see them as well
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (606).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (194).png" alt="" width="435"><figcaption></figcaption></figure>
 
 Customs Events are also visibles, with the proper name of each custom event.
 
@@ -80,7 +92,7 @@ Customs Events are also visibles, with the proper name of each custom event.
 
 CAA **records events across multiple pages**, ensuring you have a complete history of tag activations for a comprehensive debugging experience.
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (201).png" alt="" width="432"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Need to clear your history ? You can **clear** by stopping the **"record across pages"** option, reloading the page, and turning it on again.\
@@ -113,5 +125,4 @@ CAA is **continuously evolving**, with new features and improvements planned to 
 
 Coming soon
 
-* Replace containers versions directly from the drop down (in the plugin)
 * Improved SPA website management (for custom events "page load")
