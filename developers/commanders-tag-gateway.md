@@ -321,6 +321,11 @@ Examples:
 
 Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.
 
+### OneTag
+You can manually change the domain of your cact() setup with the `collectionDomain` propery
+Exemple : cact(..., {collectionDomain: "www.youdomain.com/metrics"});
+Warning : do NOT add a `/`  at the end of the path
+
 ***
 
 ## Step 4: Verify setup
