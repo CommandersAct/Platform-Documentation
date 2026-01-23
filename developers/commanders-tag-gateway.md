@@ -323,7 +323,11 @@ Each obfuscated filename is automatically generated and available in the **Comma
 
 ### OneTag
 You can manually change the domain of your cact() setup with the `collectionDomain` propery
-Exemple : cact(..., {collectionDomain: "www.youdomain.com/metrics"});
+Exemple : 
+```javascript
+cact(..., {collectionDomain: "www.youdomain.com/metrics"});
+```
+
 Warning : do NOT add a `/`  at the end of the path
 
 ***
