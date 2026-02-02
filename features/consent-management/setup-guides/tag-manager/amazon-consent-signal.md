@@ -28,4 +28,6 @@ You're ready to regenerate your privacy banner(s) and deploy them in production
 
 <figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
-Once it's deployed, our CMP will send the Consent Signal to our Server-Side (via One Tag). You can now use it in you Amazon's destination.
+Once it's deployed, our CMP will send the Consent Signal as expected by Amazon.
+
+In your Web Container, you can remove your privacy rules of your Amazon client side tags, the Amazon Consent Signal replace the privacy rules.
