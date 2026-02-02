@@ -301,6 +301,7 @@
       * [Google Tag Manager (GTM) - Consent Mode](features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm-consent-mode.md)
       * [Google Consent Mode in Commanders Act CMP](features/consent-management/setup-guides/tag-manager/google-consent-mode-in-commanders-act-tms.md)
       * [Adobe Launch](features/consent-management/setup-guides/tag-manager/adobe-launch.md)
+      * [Amazon Consent Signal](features/consent-management/setup-guides/tag-manager/amazon-consent-signal.md)
     * [Websites (Hardcoded)](features/consent-management/setup-guides/websites-hardcoded.md)
     * [FR : Suppression des cookies lors du retrait du consentement](features/consent-management/setup-guides/fr-suppression-des-cookies-lors-du-retrait-du-consentement.md)
     * [Mobile apps](features/consent-management/setup-guides/mobile-apps/README.md)
