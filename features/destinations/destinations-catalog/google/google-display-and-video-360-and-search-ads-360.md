@@ -1,7 +1,6 @@
 # Google Display & Video 360
 
-[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Google Display & Video 360 is a paid product and part of the [Google Marketing Platform](https://marketingplatform.google.com/about/). Using [our destinations](google-display-and-video-360-and-search-ads-360.md#select-your-destination) you can share and synchronize user segments/audience with Google Display & Video 360.\
-
+[Google ](https://about.google/)is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Google Display & Video 360 is a paid product and part of the [Google Marketing Platform](https://marketingplatform.google.com/about/). Using [our destinations](google-display-and-video-360-and-search-ads-360.md#select-your-destination) you can share and synchronize user segments/audience with Google Display & Video 360.
 
 ![](<../../../../.gitbook/assets/image (1) (2) (2).png>)
 
@@ -15,7 +14,7 @@ First, proceed to the following section to link Commanders Act as an external da
 
 ### Link External Data Partner
 
-Access your [Display & Video 360 account](https://www.google.com/ddm/bidmanager) and, from the left menu, open `(1)` `Advanced Settings`  and select `(2)` `Linked Accounts` :
+Access your [Display & Video 360 account](https://www.google.com/ddm/bidmanager) and, from the left menu, open `(1)` `Advanced Settings` and select `(2)` `Linked Accounts` :
 
 <figure><img src="../../../../.gitbook/assets/dv360_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,7 +29,7 @@ Click `(4)` `External Data Partner` :
 and choose the following from the partner list:
 
 {% hint style="info" %}
-Name: **DMP: Commanders Act (TagCommander)**&#x20;
+Name: **DMP: Commanders Act (TagCommander)**
 {% endhint %}
 
 Once the operation is validated, ensure the status is `(5)` active:
@@ -61,13 +60,12 @@ At the `Audience` step, select your segments and then proceed to `Settings` to a
 \
 ![](../../../../.gitbook/assets/dv360_5.png)\
 \
-Segment sharing is based on a cookie synchronization between Commanders Act and Google. If you see less data than expected in the data stream, check your cookie-sync ratio.\
-
+Segment sharing is based on a cookie synchronization between Commanders Act and Google. If you see less data than expected in the data stream, check your cookie-sync ratio.\\
 {% endhint %}
 
-| Settings        | Description                                                                                                                                                                                                                 |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Advertiser ID` | <p><em><strong><code>Required</code></strong></em>   <br>Your advertiser identifier. Learn how you can find your ID by accessing this <a href="https://support.google.com/displayvideo/answer/11415707?hl=en">LINK</a>.</p> |
+| Settings        | Description                                                                                                                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `Advertiser ID` | <p><em><strong><code>Required</code></strong></em><br>Your advertiser identifier. Learn how you can find your ID by accessing this <a href="https://support.google.com/displayvideo/answer/11415707?hl=en">LINK</a>.</p> |
 
 ### Error management
 
