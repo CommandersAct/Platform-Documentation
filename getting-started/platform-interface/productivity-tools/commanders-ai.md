@@ -182,8 +182,8 @@ This section summarises the key compliance questions typically required by DPOs 
 
 **Which AI models are used?**\
 Commanders Act uses advanced Large Language Models (LLMs) selected for reliability and compliance.\
-For security and contractual reasons, we do not publicly disclose individual model names or vendors.\
-All models operate under the strict EU hosting, GDPR and AI Act rules described on this page.
+For security and contractual reasons, and because our underlying models may evolve over time or be combined to improve performance and reliability, we do not publicly disclose individual model names or vendors.\
+All models we use operate under the strict EU hosting, GDPR and AI Act rules described on this page.
 
 **What data do the models have access to?**\
 Only configuration-level metadata and user-provided prompts are sent to AI models, such as:\
@@ -209,7 +209,7 @@ This page describes the AI processing scope only. For any retention that may app
 
 ### 4.1. Models Used
 
-Commanders AI is based on a combination of **advanced language models (LLMs)** carefully selected for their efficiency in **data management and tag management tasks**.
+Commanders AI is based on a combination of **advanced language models (LLMs)** carefully selected for their efficiency in **data management and tag management tasks**. These models may evolve over time and can be combined depending on the use case, in order to continuously improve performance, reliability, and relevance for our users. Any future models will be selected in accordance with the same security, compliance, and data protection commitments outlined in this documentation.
 
 ### 4.2. Updates and Monitoring
 
