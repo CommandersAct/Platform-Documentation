@@ -200,6 +200,11 @@ No data leaves the EU at any stage.
 No customer data is ever used to train or fine-tune any model.\
 All models are pre-trained by their providers on public or generic corpora only.
 
+**Where is data stored, and for how long?**\
+Commanders AI is designed around strict non-retention principles for AI processing.\
+As described above, model providers do not retain customer data for training or reuse.\
+This page describes the AI processing scope only. For any retention that may apply at the platform level (for example support handling, audit, or operational logs), please refer to your contractual and security documentation.
+
 ## 4. AI Model Governance and Updates
 
 ### 4.1. Models Used
