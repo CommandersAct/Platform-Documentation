@@ -232,7 +232,7 @@ Commanders AI uses Large Language Models chosen under strict criteria for perfor
 * User data never leaves the EU (no transfer, no storage outside the EU).
 
 \
-To illustrate this approach, some of the models we evaluate or integrate are provided by European players such as **Mistral**, when they meet the same high standards.
+To illustrate this approach, some of the models we evaluate or integrate may be provided by European players such as **Mistral**, when they meet the same high standards. However, the determining criterion remains EU hosting and compliance with our security and regulatory requirements, regardless of the provider’s origin.
 
 ***
 
