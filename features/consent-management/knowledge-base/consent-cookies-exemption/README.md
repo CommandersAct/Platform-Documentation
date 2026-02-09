@@ -9,7 +9,7 @@ These cookies are necessary for the proper functioning of the collection of cons
 Consent storage cookies differ depending on the banner template used:
 
 * **standard templates**: TC\_PRIVACY & TC\_PRIVACY\_CENTER
-* **IAB TCF templates** (local storage) : TC\_PRIVACY\_IAB\_VENDORLIST & TC\_PRIVACY\_TCF&#x20;
+* **IAB TCF templates** (local storage) : TC\_PRIVACY\_IAB\_VENDORLIST & TC\_PRIVACY\_TCF
 
 ### Cookie for anonymous statistics and consent proof (TCPID)
 
@@ -25,6 +25,12 @@ If for any reason you wish to block this cookie before consent, please use the f
     tC.privacyCookieDisallowed = true;
   }
 ```
+{% endhint %}
+
+{% hint style="danger" %}
+Using this JavaScript snippet will negatively impact your Consent Analysis report.
+
+The number of 'banner views' will no longer be calculated reliably, as this metric is created using the TCPID cookie value.
 {% endhint %}
 
 ### When are cookies exempt from consent?
@@ -53,4 +59,4 @@ To put in place solutions that respect people's rights, the CNIL also recommends
 A subcontractor can provide a benchmark service to multiple publishers if:
 
 * the data is collected, processed and stored independently for each publisher
-* tracers are completely independent from each other\
+* tracers are completely independent from each other\\
