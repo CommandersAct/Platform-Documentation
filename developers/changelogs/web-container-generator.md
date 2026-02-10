@@ -2,12 +2,6 @@
 
 ## 2026
 
-### 100.5
-
-Release date:  **09/02/2026**
-
-* [beta] Upgrade minifier for tags
-
 ### 100.4
 
 Release date:  **03/02/2026**
