@@ -405,8 +405,6 @@ Implementation options:
 - **Option A (simple):** add the line directly inside the Data Activation / Campaign Analytics / CMP tag.
 - **Option B (recommended):** add it in a global configuration tag that runs before all Commanders Act tags.
 
-If your CMP setup uses a different technical mechanism than the standard Commanders Act collection layer, verify in DevTools which endpoint is used and ensure it points to your first party gateway path.
-
 ---
 
 ### Verification checklist
