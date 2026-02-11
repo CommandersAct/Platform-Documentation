@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 100.5
+
+Release date:  **11/02/2026**
+
+* [beta] New implementation: Scanning cookies with Trust
+
 ### 100.4
 
 Release date:  **03/02/2026**
