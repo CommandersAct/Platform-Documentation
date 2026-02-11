@@ -350,3 +350,73 @@ Warning : do NOT add a `/`  at the end of the path
 * **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
 * **Centralized setup**: A single path (`/metrics`) manages all vendors.
 * **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
+* 
+
+## Configure first party data collection for Commanders Act features (via Gateway)
+
+This chapter explains how to route Commanders Act data collection through your **first party gateway path** (for example `/metrics`) for the main Commanders Act features.
+
+Important notes:
+- The gateway path shown in examples (`/metrics`) is only an example. Customers choose their own path when setting up the gateway in their CDN or edge tool (Cloudflare, Akamai, etc.).
+- All examples below assume your gateway is healthy: `https://example.com/metrics/healthy` returns `ok`.
+
+---
+
+### 1. Server-side destinations via the gateway (example: Meta Facebook CAPI)
+
+Commanders Act server-side tracking relies on **oneTag** tags. Typically, you will have one oneTag per event you want to collect, for example:
+- `page_view`
+- `add_to_cart`
+- `purchase`
+
+To route these oneTag events through the gateway, you must update the **oneTag tag configuration** so that the `cact()` setup uses your first party collection domain and path.
+
+In your oneTag tag (or in the shared snippet used by your oneTag tags), set `collectionDomain`:
+
+``` javascript
+cact(..., { collectionDomain: "www.yourdomain.com/metrics" });
+```
+
+Notes:
+- Replace `www.yourdomain.com/metrics` with your own domain and the path you configured in your gateway.
+- Do NOT add a trailing `/` at the end of the path.
+- Once this is set, all oneTag events (page_view, add_to_cart, purchase, etc.) will be collected via your first party gateway path.
+
+---
+
+### 2. CDP, Campaign Analytics and CMP collection via the gateway  
+*(Data Activation, Campaign Analytics, CMP statistics and proof of consent)*
+
+These three features rely on the same routing mechanism. To send their data through the gateway, you must define the variable **`tC.clientCollectDns`** either:
+- directly inside each relevant tag, **or**
+- in a **global configuration tag** that runs before all Commanders Act tags (recommended).
+
+Example:
+
+``` javascript
+tC.clientCollectDns = "www.yourdomain.com/metrics";
+``` 
+
+Behavior:
+- As soon as `tC.clientCollectDns` is defined, collection for **Data Activation, Campaign Analytics, and CMP-related tracking** will be made via the gateway.
+- `metrics` is only an example. Customers can use any path they configured in their gateway setup.
+
+Implementation options:
+- **Option A (simple):** add the line directly inside the Data Activation / Campaign Analytics / CMP tag.
+- **Option B (recommended):** add it in a global configuration tag that runs before all Commanders Act tags.
+
+If your CMP setup uses a different technical mechanism than the standard Commanders Act collection layer, verify in DevTools which endpoint is used and ensure it points to your first party gateway path.
+
+---
+
+### Verification checklist
+
+After applying the changes above, verify:
+- The gateway health endpoint: `https://example.com/metrics/healthy` returns `ok`.
+- In browser DevTools (Network tab), Commanders Act collection requests go to your first party domain and path (for example `https://example.com/metrics/...`).
+- Events and data appear as expected in:
+  - Server-side destination dashboards (example: Meta Events Manager for CAPI)
+  - Data Activation flows
+  - CMP statistics and proof of consent reporting (when applicable)
+  - Campaign Analytics reporting
+
