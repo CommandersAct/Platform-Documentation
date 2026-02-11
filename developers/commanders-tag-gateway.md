@@ -275,7 +275,206 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
 {% endtab %}
 
 {% tab title="Fastly" %}
-Soon
+{% hint style="warning" %}
+Fastly support for Commanders Gateway is currently in **beta**. The steps below are intended for technical users familiar with Fastly Compute (Compute Services). Depending on your Fastly account setup (domains, TLS, products enabled), some production binding steps can vary.
+{% endhint %}
+
+When using Fastly, the setup is different from Cloudflare. You deploy a **Compute service** (Wasm) and configure it mainly via the **Fastly API and CLI** from a terminal.
+
+### Prerequisites
+
+1. Create an API token in the Fastly interface (scopes must allow Compute, services, backends, and deployments).
+
+2. Export the token in your terminal environment:
+
+```
+export FASTLY_API_TOKEN=XXXXXXXXXXXX
+```
+
+3. Install prerequisites:
+- Node.js
+- Fastly CLI
+
+### Step 1: Create the Compute service
+
+Create a new Compute service:
+
+```
+fastly service create --name "CA Gateway" --type wasm
+```
+
+Fastly returns a **service ID**, for example:
+
+```
+dyBxiT8wpc2c8ZQg2KRrMN
+```
+
+Save it, you will need it for backend creation and deployments.
+
+### Step 2: Create a local Compute project (starter kit)
+
+Generate a local project from the default JavaScript starter kit:
+
+```
+npm create @fastly/compute@latest -- --language=javascript --default-starter-kit
+```
+
+This creates a project structure similar to:
+
+```
+.
+├── README.md
+├── fastly.toml
+├── package.json
+└── src
+    ├── index.js
+    └── welcome-to-compute.html
+```
+
+### Step 3: Configure the service ID in fastly.toml
+
+Edit `fastly.toml` and set the service ID:
+
+```
+# fastly.toml
+service_id = "YOUR_SERVICE_ID"
+```
+
+### Step 4: Create the backend (Commanders Gateway origin)
+
+Create a backend that points to the Commanders Gateway infrastructure (replace `1234` with your workspace/site ID):
+
+```
+fastly backend create \
+  --service-id YOUR_SERVICE_ID \
+  --version 1 \
+  --name commander_gateway \
+  --address s1234.commander4.com \
+  --use-ssl \
+  --port 443 \
+  --ssl-sni-hostname s1234.commander4.com
+```
+
+Notes:
+- `--version 1` is a typical starting point. If your service already has versions, use the version you intend to deploy.
+- The backend address must be `s1234.commander4.com` (your own workspace/site ID).
+
+### Step 5: Implement the routing logic in src/index.js
+
+Replace the content of `src/index.js` with the following worker code.
+
+You must update:
+- `prefix` (your customer path, example: `/metrics`)
+- `sid` (your Commanders workspace/site ID, example: `s1234`)
+
+``` javascript
+/// <reference types="@fastly/js-compute" />
+
+import { env } from "fastly:env";
+import { includeBytes } from "fastly:experimental";
+
+const prefix = "/PATHACHANGER";              // TODO: replace with your chosen gateway path (e.g. "/metrics")
+const sid = "s123456";                       // TODO: replace with your workspace/site ID (e.g. "s1234")
+const BACKEND = "commander_gateway";         // Fastly backend name pointing to sid.commander4.com
+
+const STRIP_PREFIX = true;                   // If true, removes the prefix from the forwarded path
+const PREPEND_PATH = "/gateway";             // Internal gateway entrypoint on Commanders side (do not change)
+
+addEventListener("fetch", (event) => event.respondWith(handleRequest(event.request)));
+
+async function handleRequest(request) {
+
+  const url = new URL(request.url);
+
+  // Only proxy requests that match the configured prefix
+  if (!url.pathname.startsWith(prefix)) {
+    return new Response("Not Found", { status: 404 });
+  }
+
+  // Build the path that will be forwarded to Commanders Gateway
+  let fwdPath = url.pathname;
+
+  // Optionally strip the customer prefix (e.g. "/metrics") so the origin receives "/"
+  if (STRIP_PREFIX) {
+    fwdPath = fwdPath.slice(prefix.length) || "/";
+  }
+
+  // Prepend Commanders internal entrypoint (required)
+  if (PREPEND_PATH) {
+    fwdPath = PREPEND_PATH + fwdPath;
+  }
+
+  // Final origin URL on Commanders infrastructure
+  const target = `https://${sid}.commander4.com${fwdPath}${url.search}`;
+
+  // Clone headers and add forwarding info
+  const headers = new Headers(request.headers);
+  headers.set("X-Forwarded-Host", url.host);
+
+  // Forward geo information when available (optional but recommended)
+  const country = (request.geo && request.geo.country_code) ? request.geo.country_code.toUpperCase() : "";
+  const region  = (request.geo && request.geo.region) ? request.geo.region : "";
+  if (country) headers.set("X-Forwarded-Country", country);
+  if (region)  headers.set("X-Forwarded-Region", region);
+  if (country && region) headers.set("X-Forwarded-CountryRegion", `${country}-${region}`);
+
+  // Avoid Host header conflicts at origin
+  headers.delete("host");
+
+  // Rebuild the request for the origin
+  const originReq = new Request(target, {
+    method: request.method,
+    headers,
+    body: request.body
+  });
+
+  // Bypass cache to ensure measurement hits are never cached
+  const co = new CacheOverride("pass");
+
+  // Send request to the configured Fastly backend
+  return fetch(originReq, { backend: BACKEND, cacheOverride: co });
+
+}
+```
+
+Important:
+- Replace `s1234.commander4.com` with your real workspace/site ID endpoint.
+- Keep the same `prefix` as the path you reserve on the customer domain (example: `/metrics`).
+- Do NOT add a trailing slash at the end of the path in customer-side URLs.
+
+### Step 6: Deploy
+
+Deploy the Compute service:
+
+```
+npm run deploy
+```
+
+### Step 7: Test
+
+After deployment, Fastly provides a temporary domain for testing, for example:
+
+```
+https://plainly-rested-bison.edgecompute.app/metrics/healthy
+```
+
+It should return:
+
+```
+ok
+```
+
+### Production binding (customer domain)
+
+At this stage, the Compute service runs on a Fastly-provided test domain. To go live on the customer domain (example: `https://example.com/metrics/`), you still need to bind the service to the production domain and ensure TLS is in place.
+
+This typically involves, depending on the customer setup:
+- Adding the customer domain to the Fastly service, and configuring TLS for it (managed TLS or customer certificate).
+- Creating the required DNS record (often a CNAME) so `example.com` points to Fastly.
+- Ensuring the Compute service is the one receiving requests for the chosen path (example: `/metrics*`) on that domain.
+
+Because the exact steps depend on the Fastly products enabled on the account and how the customer manages TLS and DNS, treat this as a beta step and reach out to support if you need the exact commands for your specific setup.
+
 {% endtab %}
 {% endtabs %}
 
