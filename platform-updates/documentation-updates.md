@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 13/02/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/eulerian-marketing-platform.md" %}
+[eulerian-marketing-platform.md](../features/destinations/destinations-catalog/eulerian-marketing-platform.md)
+{% endcontent-ref %}
+
 ## 19/12/2025
 
 Destination documentation (updates):
