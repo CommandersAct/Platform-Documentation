@@ -6,6 +6,150 @@ description: >-
 
 # Release notes
 
+## Release 10.0.34 - January - 2026
+
+✨ **New Features**
+
+🤖 **Realtime Cookie Scanner — AI Description Generator**  
+A new AI-powered button is available for cookies missing descriptions.
+
+* Automatically searches the web for relevant information  
+* Generates contextual descriptions  
+* Falls back to logical suggestions if needed  
+* Suggestions can be edited before saving  
+* Automatically available in all configured languages  
+
+→ Faster completion of cookie inventories with higher-quality, consistent descriptions.
+
+---
+
+🔓 **Realtime Cookie Scanner — Standalone Modes (Beta)**  
+Realtime Cookie Scanner can now operate independently depending on the client’s stack.
+
+Three levels available (beta / closed beta):
+
+* CMP independence (any CMP)
+* TMS independence  (any TMS)
+* Full CMP + TMS independence via simple JS snippet  
+
+→ Positions RCS as a true standalone product and expands deployment flexibility.
+
+---
+
+🧪 **Destination Builder — Improved Sandbox Experience**
+
+You can now save custom sample payloads directly in the Sandbox.
+
+* Create, store, and reuse test payloads  
+* Faster validation of mappings and transformations  
+
+→ Streamlines server-side destination development and reduces testing time.
+
+---
+
+📢 **Amazon Consent Mode Integration (Beta)**  
+A new native integration for Amazon Consent Mode is now available.
+
+* Simple activation  
+* Works with server-side destinations  
+* Requires banner and container regeneration  
+
+→ Simplifies compliance when using Amazon Consent Mode.
+
+---
+
+🧩 **Commanders Act Assistant — Plugin Update**
+
+* New “Refresh” button to retrieve the latest generated version  
+* Improved override handling on Tags tab  
+
+→ More reliable QA workflows.
+
+---
+
+🧹 **Client-Side TMS — Tag Cleaner Update**
+
+The Tag Cleaner is now disabled by default.
+
+→ Prevents unintended tag removals and aligns with consulting best practices.
+
+---
+
+## Release 10.0.33 - December - 2025
+
+✨ **New Features**
+
+🔍 **Destinations — View History & Audit Trail**  
+A new **View history** button is now available on destinations.
+
+* Displays all past edits in a dedicated side panel  
+* Shows who changed what and when  
+* Includes a compact before/after comparison  
+
+→ Provides a clear audit trail for faster debugging and smoother collaboration.
+
+---
+
+📜 **Activity Logs API — Advanced Filtering**  
+The Activity Logs API now supports filtering by feature (Destinations, Sources, Enrichments, Data Cleansing, etc.).
+
+→ Makes audits, compliance checks, and troubleshooting significantly easier, with full transparency across platform activity.
+
+---
+
+📊 **Adloop — Data-Source Setup UX Revamp (Google / Bing / Amazon)**  
+The setup flow for Google, Bing, and Amazon data-sources has been redesigned.
+
+* Clearer distinction between quick import and custom setup  
+* All setup steps visible at all times  
+* Larger and more readable configuration window  
+
+→ A simpler, faster, and more user-friendly onboarding experience.
+
+---
+
+📁 **Adloop — sFTP Export with Secure Key Support**  
+sFTP export destinations now support advanced security key protocols.
+
+* Supported keys: RSA, DSA, ECDSA, DH, Ed25519, OpenSSH  
+
+→ Enables stronger security compliance and deeper integration within enterprise ecosystems.
+
+---
+
+🍪 **Realtime Cookie Scanner — “Cookies by Category” View**  
+A new page allows cookies to be displayed by standardized families (Marketing, Essential, Analytics, etc.).
+
+→ Helps legal and DPO teams quickly identify compliance issues and better understand cookie distribution.
+
+📘 Documentation:  
+https://doc.commandersact.com/features/realtime-cookie-scanner/cookies-by-category
+
+---
+
+🍪 **Realtime Cookie Scanner — UX & Compliance Improvements**
+
+* New **“Exempt” flag** for cookies  
+* Cookie Notice settings configurable directly from the side panel  
+* Categories standardized across the new UI  
+* Improved visuals and extended details in “Cookies by Category”  
+
+→ More consistent compliance workflows and smoother navigation.
+
+---
+
+🌍 **Realtime Cookie Scanner — “Translate by AI”**  
+You can now automatically translate cookie descriptions into any language.
+
+* Translate a single cookie or all cookies in one click  
+* 200 free translations per day  
+* Remaining credits counter displayed  
+* Works across all configured interface languages  
+
+→ Speeds up multilingual compliance management and reduces manual effort.
+
+---
+
 ## Release 10.0.32 - November - 2025
 
 ✨ **New Features**
