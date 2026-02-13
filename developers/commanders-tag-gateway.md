@@ -1,8 +1,8 @@
-# Commanders Tag Gateway (closed beta)
+# Commanders Act Tag Gateway
 
-This document describes how to deploy **Commanders Tag Gateway**, a **unified first-party gateway** that uses **one single setup and one single path on your domain** to power multiple tracking and hosting use cases.
+This document describes how to deploy **Commanders Act Tag Gateway**, a **unified first-party gateway** that uses **one single setup and one single path on your domain** to power multiple tracking and hosting use cases.
 
-Commanders Tag Gateway includes **Google Tag Gateway**, but is **not limited to Google**.  
+Commanders Act Tag Gateway includes **Google Tag Gateway**, but is **not limited to Google**.  
 It is designed to serve and collect data for **all your marketing and analytics partners**, using the same first-party infrastructure.
 
 One setup, one first-party path, three usages:
