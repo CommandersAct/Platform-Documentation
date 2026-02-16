@@ -6,6 +6,7 @@
 
 Release date:  **11/02/2026**
 
+* [beta] Upgrade minifier for tags
 * [beta] New implementation: Scanning cookies with Trust
 
 ### 100.4
