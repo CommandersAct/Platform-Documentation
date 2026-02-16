@@ -1,23 +1,6 @@
 ---
 cover: ../../.gitbook/assets/rcs_bd_clean.png
 coverY: -78.31578947368423
-layout:
-  width: default
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Realtime Cookie Scanner

@@ -1,16 +1,17 @@
-# Commanders Act Tag Gateway
+# Commanders Tag Gateway (closed beta)
 
 This document describes how to deploy **Commanders Act Tag Gateway**, a **unified first-party gateway** that uses **one single setup and one single path on your domain** to power multiple tracking and hosting use cases.
 
-Commanders Act Tag Gateway includes **Google Tag Gateway**, but is **not limited to Google**.  
+Commanders Act Tag Gateway includes **Google Tag Gateway**, but is **not limited to Google**.\
 It is designed to serve and collect data for **all your marketing and analytics partners**, using the same first-party infrastructure.
 
 One setup, one first-party path, three usages:
-- Google Tag Gateway (GA4, Google Ads)
-- First-party tracking to all server-side destinations
-- First-party hosting of third-party libraries
 
-If your goal is to implement Google Tag Gateway, you are in the right place.  
+* Google Tag Gateway (GA4, Google Ads)
+* First-party tracking to all server-side destinations
+* First-party hosting of third-party libraries
+
+If your goal is to implement Google Tag Gateway, you are in the right place.\
 If your goal is to build a durable, vendor-agnostic first-party tracking architecture, you are also in the right place.
 
 <figure><img src="../.gitbook/assets/schema_google_ads (4).png" alt=""><figcaption></figcaption></figure>
@@ -110,7 +111,7 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 {% tab title="Cloudflare Enterprise" %}
 To serve your tag in Commanders Gateway, you will create a CNAME entry for a new subdomain, create an [Origin Rule](https://developers.cloudflare.com/rules/origin-rules/) to forward requests, and create a [Transform Rule](https://developers.cloudflare.com/rules/transform/) to include geolocation information. To complete this setup, you will need to have a Cloudflare Enterprise plan. If you don't have an Enterprise plan, consider using the Cloudflare automated setup instead.
 
-#### Create CNAME entry
+**Create CNAME entry**
 
 **Note:** Tags won't use this CNAME entry; Cloudflare uses it to route requests internally.
 
@@ -125,10 +126,10 @@ Target: s1234.commander4.com
 2. Add a new record with:
    * **Type**: CNAME
    * **Name**: metrics
-   * **Target**: s1234.commander4.com  => replace 1234 by your site (aka workspace) id
+   * **Target**: s1234.commander4.com => replace 1234 by your site (aka workspace) id
 3. Save the CNAME record.
 
-#### Create the Origin Rule
+**Create the Origin Rule**
 
 1. In the **Rules** tab, open **Origin Rules** and create a new rule.
 2. Enter a rule name, such as _Route measurement_.
@@ -142,7 +143,7 @@ Target: s1234.commander4.com
 5. Update the **DNS Record** → Override to: `metrics.example.com`.
 6. Save the Origin Rule.
 
-#### Include geolocation information (optional)
+**Include geolocation information (optional)**
 
 1. In the **Rules** tab, open **Settings**.
 2. Enable the **Add visitor location headers** option.
@@ -160,7 +161,7 @@ It should return `ok`.
 {% tab title="Cloudflare Free" %}
 When using Cloudflare Free, the setup relies on a **simple Worker** that proxies all traffic from your chosen path (e.g. `/metrics`) to Commanders Gateway infrastructure.
 
-#### Step 1: Create the Worker
+**Step 1: Create the Worker**
 
 1. In the Cloudflare dashboard, go to **Workers & Pages** → **Create application** → **Worker**.
 2. Copy/paste the following code:
@@ -209,7 +210,7 @@ async function handleRequest(request) {
 
 This Worker proxies requests while adding extra headers (`X-Forwarded-Host`, `X-Forwarded-Country`, `X-Forwarded-Region`).
 
-#### Step 2: Bind the Worker to the path
+**Step 2: Bind the Worker to the path**
 
 1. In Cloudflare, open your domain settings.
 2. Navigate to **Workers Routes**.
@@ -225,7 +226,7 @@ Once saved, all requests to `/metrics` will be proxied to Commanders Gateway.
 Commanders Gateway with Akamai is in **beta**. If you have a question or issue with your setup, reach out the support
 {% endhint %}
 
-#### Create the redirect rule
+**Create the redirect rule**
 
 1. Create a new version of your delivery configuration in **Property Manager**.
 2. Under the **Property Configuration Settings** section, add a new Rule:
@@ -244,7 +245,7 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
 
 ***
 
-#### Include geolocation information
+**Include geolocation information**
 
 1. Navigate to the **Property Variables** section and add the following variables:
 
@@ -281,10 +282,9 @@ Fastly support for Commanders Gateway is currently in **beta**. The steps below 
 
 When using Fastly, the setup is different from Cloudflare. You deploy a **Compute service** (Wasm) and configure it mainly via the **Fastly API and CLI** from a terminal.
 
-### Prerequisites
+#### Prerequisites
 
 1. Create an API token in the Fastly interface (scopes must allow Compute, services, backends, and deployments).
-
 2. Export the token in your terminal environment:
 
 ```
@@ -292,10 +292,11 @@ export FASTLY_API_TOKEN=XXXXXXXXXXXX
 ```
 
 3. Install prerequisites:
-- Node.js
-- Fastly CLI
 
-### Step 1: Create the Compute service
+* Node.js
+* Fastly CLI
+
+#### Step 1: Create the Compute service
 
 Create a new Compute service:
 
@@ -311,7 +312,7 @@ dyBxiT8wpc2c8ZQg2KRrMN
 
 Save it, you will need it for backend creation and deployments.
 
-### Step 2: Create a local Compute project (starter kit)
+#### Step 2: Create a local Compute project (starter kit)
 
 Generate a local project from the default JavaScript starter kit:
 
@@ -331,7 +332,7 @@ This creates a project structure similar to:
     └── welcome-to-compute.html
 ```
 
-### Step 3: Configure the service ID in fastly.toml
+#### Step 3: Configure the service ID in fastly.toml
 
 Edit `fastly.toml` and set the service ID:
 
@@ -340,7 +341,7 @@ Edit `fastly.toml` and set the service ID:
 service_id = "YOUR_SERVICE_ID"
 ```
 
-### Step 4: Create the backend (Commanders Gateway origin)
+#### Step 4: Create the backend (Commanders Gateway origin)
 
 Create a backend that points to the Commanders Gateway infrastructure (replace `1234` with your workspace/site ID):
 
@@ -356,18 +357,20 @@ fastly backend create \
 ```
 
 Notes:
-- `--version 1` is a typical starting point. If your service already has versions, use the version you intend to deploy.
-- The backend address must be `s1234.commander4.com` (your own workspace/site ID).
 
-### Step 5: Implement the routing logic in src/index.js
+* `--version 1` is a typical starting point. If your service already has versions, use the version you intend to deploy.
+* The backend address must be `s1234.commander4.com` (your own workspace/site ID).
+
+#### Step 5: Implement the routing logic in src/index.js
 
 Replace the content of `src/index.js` with the following worker code.
 
 You must update:
-- `prefix` (your customer path, example: `/metrics`)
-- `sid` (your Commanders workspace/site ID, example: `s1234`)
 
-``` javascript
+* `prefix` (your customer path, example: `/metrics`)
+* `sid` (your Commanders workspace/site ID, example: `s1234`)
+
+```javascript
 /// <reference types="@fastly/js-compute" />
 
 import { env } from "fastly:env";
@@ -438,11 +441,12 @@ async function handleRequest(request) {
 ```
 
 Important:
-- Replace `s1234.commander4.com` with your real workspace/site ID endpoint.
-- Keep the same `prefix` as the path you reserve on the customer domain (example: `/metrics`).
-- Do NOT add a trailing slash at the end of the path in customer-side URLs.
 
-### Step 6: Deploy
+* Replace `s1234.commander4.com` with your real workspace/site ID endpoint.
+* Keep the same `prefix` as the path you reserve on the customer domain (example: `/metrics`).
+* Do NOT add a trailing slash at the end of the path in customer-side URLs.
+
+#### Step 6: Deploy
 
 Deploy the Compute service:
 
@@ -450,7 +454,7 @@ Deploy the Compute service:
 npm run deploy
 ```
 
-### Step 7: Test
+#### Step 7: Test
 
 After deployment, Fastly provides a temporary domain for testing, for example:
 
@@ -464,17 +468,17 @@ It should return:
 ok
 ```
 
-### Production binding (customer domain)
+#### Production binding (customer domain)
 
 At this stage, the Compute service runs on a Fastly-provided test domain. To go live on the customer domain (example: `https://example.com/metrics/`), you still need to bind the service to the production domain and ensure TLS is in place.
 
 This typically involves, depending on the customer setup:
-- Adding the customer domain to the Fastly service, and configuring TLS for it (managed TLS or customer certificate).
-- Creating the required DNS record (often a CNAME) so `example.com` points to Fastly.
-- Ensuring the Compute service is the one receiving requests for the chosen path (example: `/metrics*`) on that domain.
+
+* Adding the customer domain to the Fastly service, and configuring TLS for it (managed TLS or customer certificate).
+* Creating the required DNS record (often a CNAME) so `example.com` points to Fastly.
+* Ensuring the Compute service is the one receiving requests for the chosen path (example: `/metrics*`) on that domain.
 
 Because the exact steps depend on the Fastly products enabled on the account and how the customer manages TLS and DNS, treat this as a beta step and reach out to support if you need the exact commands for your specific setup.
-
 {% endtab %}
 {% endtabs %}
 
@@ -521,13 +525,14 @@ Examples:
 Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.
 
 ### OneTag
-You can manually change the domain of your cact() setup with the `collectionDomain` propery
-Exemple : 
+
+You can manually change the domain of your cact() setup with the `collectionDomain` propery Exemple :
+
 ```javascript
 cact(..., {collectionDomain: "www.youdomain.com/metrics"});
 ```
 
-Warning : do NOT add a `/`  at the end of the path
+Warning : do NOT add a `/` at the end of the path
 
 ***
 
@@ -549,71 +554,78 @@ Warning : do NOT add a `/`  at the end of the path
 * **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
 * **Centralized setup**: A single path (`/metrics`) manages all vendors.
 * **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
-* 
+*
 
 ## Configure first party data collection for Commanders Act features (via Gateway)
 
 This chapter explains how to route Commanders Act data collection through your **first party gateway path** (for example `/metrics`) for the main Commanders Act features.
 
 Important notes:
-- The gateway path shown in examples (`/metrics`) is only an example. Customers choose their own path when setting up the gateway in their CDN or edge tool (Cloudflare, Akamai, etc.).
-- All examples below assume your gateway is healthy: `https://example.com/metrics/healthy` returns `ok`.
 
----
+* The gateway path shown in examples (`/metrics`) is only an example. Customers choose their own path when setting up the gateway in their CDN or edge tool (Cloudflare, Akamai, etc.).
+* All examples below assume your gateway is healthy: `https://example.com/metrics/healthy` returns `ok`.
+
+***
 
 ### 1. Server-side destinations via the gateway (example: Meta Facebook CAPI)
 
 Commanders Act server-side tracking relies on **oneTag** tags. Typically, you will have one oneTag per event you want to collect, for example:
-- `page_view`
-- `add_to_cart`
-- `purchase`
+
+* `page_view`
+* `add_to_cart`
+* `purchase`
 
 To route these oneTag events through the gateway, you must update the **oneTag tag configuration** so that the `cact()` setup uses your first party collection domain and path.
 
 In your oneTag tag (or in the shared snippet used by your oneTag tags), set `collectionDomain`:
 
-``` javascript
+```javascript
 cact(..., { collectionDomain: "www.yourdomain.com/metrics" });
 ```
 
 Notes:
-- Replace `www.yourdomain.com/metrics` with your own domain and the path you configured in your gateway.
-- Do NOT add a trailing `/` at the end of the path.
-- Once this is set, all oneTag events (page_view, add_to_cart, purchase, etc.) will be collected via your first party gateway path.
 
----
+* Replace `www.yourdomain.com/metrics` with your own domain and the path you configured in your gateway.
+* Do NOT add a trailing `/` at the end of the path.
+* Once this is set, all oneTag events (page\_view, add\_to\_cart, purchase, etc.) will be collected via your first party gateway path.
 
-### 2. CDP, Campaign Analytics and CMP collection via the gateway  
-*(Data Activation, Campaign Analytics, CMP statistics and proof of consent)*
+***
+
+### 2. CDP, Campaign Analytics and CMP collection via the gateway
+
+_(Data Activation, Campaign Analytics, CMP statistics and proof of consent)_
 
 These three features rely on the same routing mechanism. To send their data through the gateway, you must define the variable **`tC.clientCollectDns`** either:
-- directly inside each relevant tag, **or**
-- in a **global configuration tag** that runs before all Commanders Act tags (recommended).
+
+* directly inside each relevant tag, **or**
+* in a **global configuration tag** that runs before all Commanders Act tags (recommended).
 
 Example:
 
-``` javascript
+```javascript
 tC.clientCollectDns = "www.yourdomain.com/metrics";
-``` 
+```
 
 Behavior:
-- As soon as `tC.clientCollectDns` is defined, collection for **Data Activation, Campaign Analytics, and CMP-related tracking** will be made via the gateway.
-- `metrics` is only an example. Customers can use any path they configured in their gateway setup.
+
+* As soon as `tC.clientCollectDns` is defined, collection for **Data Activation, Campaign Analytics, and CMP-related tracking** will be made via the gateway.
+* `metrics` is only an example. Customers can use any path they configured in their gateway setup.
 
 Implementation options:
-- **Option A (simple):** add the line directly inside the Data Activation / Campaign Analytics / CMP tag.
-- **Option B (recommended):** add it in a global configuration tag that runs before all Commanders Act tags.
 
----
+* **Option A (simple):** add the line directly inside the Data Activation / Campaign Analytics / CMP tag.
+* **Option B (recommended):** add it in a global configuration tag that runs before all Commanders Act tags.
+
+***
 
 ### Verification checklist
 
 After applying the changes above, verify:
-- The gateway health endpoint: `https://example.com/metrics/healthy` returns `ok`.
-- In browser DevTools (Network tab), Commanders Act collection requests go to your first party domain and path (for example `https://example.com/metrics/...`).
-- Events and data appear as expected in:
-  - Server-side destination dashboards (example: Meta Events Manager for CAPI)
-  - Data Activation flows
-  - CMP statistics and proof of consent reporting (when applicable)
-  - Campaign Analytics reporting
 
+* The gateway health endpoint: `https://example.com/metrics/healthy` returns `ok`.
+* In browser DevTools (Network tab), Commanders Act collection requests go to your first party domain and path (for example `https://example.com/metrics/...`).
+* Events and data appear as expected in:
+  * Server-side destination dashboards (example: Meta Events Manager for CAPI)
+  * Data Activation flows
+  * CMP statistics and proof of consent reporting (when applicable)
+  * Campaign Analytics reporting
