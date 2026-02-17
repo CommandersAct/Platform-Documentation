@@ -121,7 +121,7 @@ var en = {
 
 Some of the translation accept a label as {label}. The label here is always the label of the category.
 
-The last keys with `SrPrefix`/`SrSuffix` have empty translation by default. These keys are used for “sr-only” text which are prefixing and suffixing the category name. These text are only readable by a screen reader.
+The keys with `SrPrefix`/`SrSuffix` have empty translation by default. These keys are used for “sr-only” text which are prefixing and suffixing the category name. These text are only readable by a screen reader.
 
 `cookieSr` are used when the category isn’t locked
 
