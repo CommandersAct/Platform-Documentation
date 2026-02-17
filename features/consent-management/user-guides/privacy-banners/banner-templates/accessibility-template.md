@@ -170,11 +170,11 @@ tC.privacy.enableFocusTrap(false);
 
 ### Good practices
 
-Avoid too many css customization on your accessibility banners
-
-If you add an image (such as a logo) don't forget to add aria-label attributes
-
-In the privacy center, avoid "switch" and "check box" buttons styles.\
-Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
+* Avoid too many css customization on your accessibility banners
+* If you add an image (such as a logo) don't forget to add aria-label attributes
+* Pay attention to your colours contrast, some elements can be impossible to read if the constrast between background and fonts is too low. \
+  You can use external tools to verify it, such as [https://coolors.co/contrast-checker/000000-ffffff](https://coolors.co/contrast-checker/000000-ffffff)
+* In your privacy center, avoid "switch" and "check box" buttons styles.\
+  Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
 
 <figure><img src="../../../../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
