@@ -2,8 +2,6 @@
 
 ## WCAG standards : offer a privacy fully functional for people with disabilities
 
-
-
 Among the available templates, one is dedicated to accessibility. It ensures compatibility with RGAA and WCAG 2.0 level AA standards.
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
@@ -81,29 +79,43 @@ Available keys and their values :
 
 ```javascript
 var en = {
-    "pcAria":"Cookie settings",
-    "closePrivacyCenter":"Close the cookie setting dialog",
-    "acceptAll":"Accept all",
-    "refuseAll":"Refuse all",
-    "saveLabel":"Save",
-    "saveAria":"Save the current cookie settings",
-    "acceptAllAria":"Accept all cookies",
-    "refuseAllAria":"Refuse all cookies",
-    "showVendors":"Show vendors",
-    "showPurposes":"Show purposes",
-    "vendors":"Vendors",
-    "enableCookieLabel":"Enabled:",
-    "enableCookieAria":"{label} cookies enabled",
-    "disableCookieAria":"{label} disabled cookies",
-    "turnOnSubCategoriesAria":"Enable {label} cookies",
-    "turnOffSubCategoriesAria":"Disable {label} cookies",
-    "cookieAlwaysOnSrPrefix":"",
-    "cookieAlwaysOnSrSuffix":"",
-    "cookieSrPrefix":"",
-    "cookieSrSuffix":"",
-    "showRelatedVendors":"Show related vendors",
-    "privacyPolicy":"Privacy policy",
-    "categories":"Categories"
+    "allCookiesHaveBeenAccepted": "All cookies have been accepted",
+    "allCookiesHaveBeenRefused": "All cookies have been refused",
+    "pcAria": "Cookie settings",
+    "closePrivacyCenter": "Close the cookie setting dialog",
+    "acceptAll": "Accept all",
+    "refuseAll": "Refuse all",
+    "saveLabel": "Save",
+    "saveAria": "Save the current cookie settings",
+    "acceptAllAria": "Accept all cookies",
+    "refuseAllAria": "Refuse all cookies",
+    "showVendors": "Show vendors",
+    "showPurposes": "Show purposes",
+    "vendors": "Vendors",
+    "enableCookieLabel": "Enabled:",
+    "enableCookieAria": "{label} cookies enabled",
+    "disableCookieAria": "{label} disabled cookies",
+    "turnOnSubCategoriesAria": "Enable {label} cookies",
+    "turnOffSubCategoriesAria": "Disable {label} cookies",
+    "cookieAlwaysOnSrPrefix": "",
+    "cookieAlwaysOnSrSuffix": "",
+    "cookieSrPrefix": "",
+    "cookieSrSuffix": "",
+    "showRelatedVendors": "Show related vendors",
+    "privacyPolicy": "Privacy policy",
+    "categories": "Categories",
+    "acmVendors": "Google Ad Technology Providers",
+    "nonIabVendors": "Non IAB vendors",
+    "iabVendors": "IAB TCF vendors",
+    "purposes": "Purposes",
+    "specialPurposes": "Special Purposes",
+    "features": "Features",
+    "specialFeatures": "Special Features",
+    "legitimateInterest": "Legitimate interest",
+    "examples": "Examples",
+    "showDetails": "Show details",
+    "seeDetails": "See details",
+    "hideDetails": "Hide details"
 }
 ```
 
@@ -115,7 +127,7 @@ The last keys with `SrPrefix`/`SrSuffix` have empty translation by default. Thes
 
 `cookieAlwaysOnSr` replaces `cookieSr` if the category is blocked to on
 
-Example:&#x20;
+Example:
 
 ```javascript
 pc.addTranslation({
@@ -162,7 +174,7 @@ Avoid too many css customization on your accessibility banners
 
 If you add an image (such as a logo) don't forget to add aria-label attributes
 
-In the privacy center, avoid "switch" and "check box" buttons styles. \
+In the privacy center, avoid "switch" and "check box" buttons styles.\
 Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
 
 <figure><img src="../../../../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
