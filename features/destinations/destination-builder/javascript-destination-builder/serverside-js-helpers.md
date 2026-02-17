@@ -554,7 +554,14 @@ const objectSignature = signHmac({ key: 'value' }, 'mySecretKey');
 | ------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`payload`** | _string\|object_  | The data to sign. Objects are automatically converted to JSON strings.                                                                                                       |
 | **`secret`**  | _string_          | The secret key used for HMAC generation.                                                                                                                                     |
-| **`options`** | _object_          | _Optional_ options object. If specified, the object can contain the key `alg` (e.g. `'sha256'`, `'sha1'`, `'sha512'`) and/or `outputEncoding` (e.g. `'base64'`, `'hex'`). |
+| **`options`** | _object_          | _Optional_ options object to customize the algorithm and output encoding. See options details below. |
+
+**Options**
+
+| Property             | Type     | Default      | Description                                                                                                                                                         |
+| -------------------- | -------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`alg`**            | _string_ | `'sha256'`   | The hash algorithm. Supported values: `'sha256'`, `'sha1'`, `'sha512'`, `'sha384'`, `'md5'` and other OpenSSL digest algorithms.                                   |
+| **`outputEncoding`** | _string_ | `'base64'`   | The output encoding. Supported values: `'base64'`, `'base64url'`, `'hex'`, `'binary'` (`latin1`). |
 
 ## `toBase64` <a href="#tobase64" id="tobase64"></a>
 
