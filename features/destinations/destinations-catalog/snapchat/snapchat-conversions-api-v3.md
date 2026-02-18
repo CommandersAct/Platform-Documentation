@@ -58,8 +58,7 @@ The Snapchat destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
-
+Most properties can be remapped using our "Smart Mapping" feature.\
 All Snapchat properties are set in the base path `data.0` .
 {% endhint %}
 
