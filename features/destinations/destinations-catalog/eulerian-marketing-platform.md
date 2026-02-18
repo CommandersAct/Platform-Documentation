@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Eulerian Marketing Platform](https://www.eulerian.com/en) is a comprehensive data-centric marketing solution designed to help businesses collect, analyze, attribute, and activate their marketing data across all digital and offline channels. Using this destination you can send data to Eulerian Analytics by levereging the [Eulerian Measurement Protocol](https://doc.api.eulerian.com/#section/Eulerian-Measurement-Protocol).
+[Eulerian Marketing Platform](https://www.eulerian.com/en) is a comprehensive data-centric marketing solution designed to help businesses collect, analyze, attribute, and activate their marketing data across all digital and offline channels. Using this destination you can send data to Eulerian Analytics by leveraging the [Eulerian Measurement Protocol](https://doc.api.eulerian.com/#section/Eulerian-Measurement-Protocol).
 
 ## Key features
 
@@ -15,7 +15,7 @@ The Eulerian Marketing Platform destination provides the following key features:
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
-* **Support for multi-item data**: information included in the [item ](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item)array is bridged to Eulerian.
+* **Support for multi-item data**: information included in the [item](https://community.commandersact.com/platform-x/developers/tracking/events-reference#item) array is bridged to Eulerian.
 
 ## Destination setup
 
