@@ -1,4 +1,13 @@
-# Snapchat Conversions API
+# Snapchat Conversions API v2
+
+{% hint style="warning" %}
+Snapchat Conversions API **v2** is **deprecated** (Ref. [here](https://developers.snap.com/api/marketing-api/Conversions-API/Introduction)).\
+Snapchat recommendes using the newest version **v3** and the related destination is available here:
+{% endhint %}
+
+{% content-ref url="snapchat/snapchat-conversions-api-v3.md" %}
+[snapchat-conversions-api-v3.md](snapchat/snapchat-conversions-api-v3.md)
+{% endcontent-ref %}
 
 [Snapchat ](https://www.snapchat.com/)is a multimedia instant messaging app and service.\
 This destination leverages the [Snapchat Conversions API v2](https://marketingapi.snapchat.com/docs/conversion.html#introduction) to push web and app events to Snapchat.
