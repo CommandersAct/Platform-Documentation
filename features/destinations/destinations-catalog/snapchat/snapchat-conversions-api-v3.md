@@ -57,6 +57,18 @@ The Snapchat destination provides the following key features:
 
 ## Field mappings
 
+{% hint style="warning" %}
+At least one of the following must be provided:
+
+• `user_data.em`  (User Email)
+
+• `user_data.ph`  (User Phone)
+
+• `user_data.madid` (Device Mobile Identifier)
+
+• `user_data.client_ip_address`  AND `user_data.client_user_agent`
+{% endhint %}
+
 {% hint style="info" %}
 Most properties can be remapped using our "Smart Mapping" feature.\
 All Snapchat properties are set in the base path `data.0` .

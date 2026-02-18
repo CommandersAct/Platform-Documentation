@@ -25,8 +25,6 @@ This trigger allows calling tags when the page’s structure is built (on the �
 
 ## Click
 
-
-
 This trigger allows calling tags whenever elements of the page are clicked.\
 Example: if you would like to call a tag when a user clicks a button (ex: “add to cart” button), select the desired tag(s) and enter the code allowing to target the button or the link on your page in the “CSS Selector” field.
 
@@ -46,7 +44,7 @@ This trigger allows calling tags when a user submits a form properly filled.\
 Example: when they click the “submit” button or press the Enter key.\
 To call a tag when a form is submitted, follow the same steps you followed to call a tag upon a click. Indicate your trigger’s name (ex: “account creation confirmation”), select the desired tag(s) and enter the code allowing targeting the form submission button on your page in the “CSS Selector” field.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Scroll
 
@@ -58,7 +56,6 @@ This trigger allows calling tags when a user scrolls the page vertically or hori
 
 This trigger allows calling tags whenever a Commanders Act event function (tC.event.xxx) is identified on the page. If you wish to execute a tag on a custom eventm, please indicate your trigger’s name (ex: “add to cart click”), select the desired tag(s) and enter the implemented event function’s name (ex : “tC.event.add\_to\_cart”).
 
-You can also use the [Javascript SDK](../../../../web/js-sdk/#use-javascript-sdk-in-tms) to track events & create custom triggers\
-
+You can also use the [Javascript SDK](../../../../web/js-sdk/#use-javascript-sdk-in-tms) to track events & create custom triggers\\
 
 <figure><img src="../../../../../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>

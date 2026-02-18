@@ -93,7 +93,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
 
 1.  **Create an enrichment**: In the Event Enrichment section, choose the option Custom Data Store\\
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  **Define Enrichment**:
 
     * **Name**: Name your enrichment rule.
@@ -101,7 +101,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
     * **Select the Storage Settings** you want to use for this enrichment
     *   **Choose Event**: Select the event you want to enrich.\\
 
-        <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+        <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
     * **Select Properties**: Define which properties from the stored event should be injected into the new event. Select in "Storage Settings" column the properties, as it is in your Storage. Select the property you want to enrich in the "Event Property"\
       The storage do not replace or override the value of an existing property. The storage will create new properties.\
       If you want to override an existing value, click the option "override"

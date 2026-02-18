@@ -10,62 +10,62 @@ description: >-
 
 ✨ **New Features**
 
-🤖 **Realtime Cookie Scanner — AI Description Generator**  
+🤖 **Realtime Cookie Scanner — AI Description Generator**\
 A new AI-powered button is available for cookies missing descriptions.
 
-* Automatically searches the web for relevant information  
-* Generates contextual descriptions  
-* Falls back to logical suggestions if needed  
-* Suggestions can be edited before saving  
-* Automatically available in all configured languages  
+* Automatically searches the web for relevant information
+* Generates contextual descriptions
+* Falls back to logical suggestions if needed
+* Suggestions can be edited before saving
+* Automatically available in all configured languages
 
 → Faster completion of cookie inventories with higher-quality, consistent descriptions.
 
----
+***
 
-🔓 **Realtime Cookie Scanner — Standalone Modes (Beta)**  
+🔓 **Realtime Cookie Scanner — Standalone Modes (Beta)**\
 Realtime Cookie Scanner can now operate independently depending on the client’s stack.
 
 Three levels available (beta / closed beta):
 
 * CMP independence (any CMP)
-* TMS independence  (any TMS)
-* Full CMP + TMS independence via simple JS snippet  
+* TMS independence (any TMS)
+* Full CMP + TMS independence via simple JS snippet
 
 → Positions RCS as a true standalone product and expands deployment flexibility.
 
----
+***
 
 🧪 **Destination Builder — Improved Sandbox Experience**
 
 You can now save custom sample payloads directly in the Sandbox.
 
-* Create, store, and reuse test payloads  
-* Faster validation of mappings and transformations  
+* Create, store, and reuse test payloads
+* Faster validation of mappings and transformations
 
 → Streamlines server-side destination development and reduces testing time.
 
----
+***
 
-📢 **Amazon Consent Mode Integration (Beta)**  
+📢 **Amazon Consent Mode Integration (Beta)**\
 A new native integration for Amazon Consent Mode is now available.
 
-* Simple activation  
-* Works with server-side destinations  
-* Requires banner and container regeneration  
+* Simple activation
+* Works with server-side destinations
+* Requires banner and container regeneration
 
 → Simplifies compliance when using Amazon Consent Mode.
 
----
+***
 
 🧩 **Commanders Act Assistant — Plugin Update**
 
-* New “Refresh” button to retrieve the latest generated version  
-* Improved override handling on Tags tab  
+* New “Refresh” button to retrieve the latest generated version
+* Improved override handling on Tags tab
 
 → More reliable QA workflows.
 
----
+***
 
 🧹 **Client-Side TMS — Tag Cleaner Update**
 
@@ -73,82 +73,82 @@ The Tag Cleaner is now disabled by default.
 
 → Prevents unintended tag removals and aligns with consulting best practices.
 
----
+***
 
 ## Release 10.0.33 - December - 2025
 
 ✨ **New Features**
 
-🔍 **Destinations — View History & Audit Trail**  
+🔍 **Destinations — View History & Audit Trail**\
 A new **View history** button is now available on destinations.
 
-* Displays all past edits in a dedicated side panel  
-* Shows who changed what and when  
-* Includes a compact before/after comparison  
+* Displays all past edits in a dedicated side panel
+* Shows who changed what and when
+* Includes a compact before/after comparison
 
 → Provides a clear audit trail for faster debugging and smoother collaboration.
 
----
+***
 
-📜 **Activity Logs API — Advanced Filtering**  
+📜 **Activity Logs API — Advanced Filtering**\
 The Activity Logs API now supports filtering by feature (Destinations, Sources, Enrichments, Data Cleansing, etc.).
 
 → Makes audits, compliance checks, and troubleshooting significantly easier, with full transparency across platform activity.
 
----
+***
 
-📊 **Adloop — Data-Source Setup UX Revamp (Google / Bing / Amazon)**  
+📊 **Adloop — Data-Source Setup UX Revamp (Google / Bing / Amazon)**\
 The setup flow for Google, Bing, and Amazon data-sources has been redesigned.
 
-* Clearer distinction between quick import and custom setup  
-* All setup steps visible at all times  
-* Larger and more readable configuration window  
+* Clearer distinction between quick import and custom setup
+* All setup steps visible at all times
+* Larger and more readable configuration window
 
 → A simpler, faster, and more user-friendly onboarding experience.
 
----
+***
 
-📁 **Adloop — sFTP Export with Secure Key Support**  
+📁 **Adloop — sFTP Export with Secure Key Support**\
 sFTP export destinations now support advanced security key protocols.
 
-* Supported keys: RSA, DSA, ECDSA, DH, Ed25519, OpenSSH  
+* Supported keys: RSA, DSA, ECDSA, DH, Ed25519, OpenSSH
 
 → Enables stronger security compliance and deeper integration within enterprise ecosystems.
 
----
+***
 
-🍪 **Realtime Cookie Scanner — “Cookies by Category” View**  
+🍪 **Realtime Cookie Scanner — “Cookies by Category” View**\
 A new page allows cookies to be displayed by standardized families (Marketing, Essential, Analytics, etc.).
 
 → Helps legal and DPO teams quickly identify compliance issues and better understand cookie distribution.
 
-📘 Documentation:  
+📘 Documentation:\
 https://doc.commandersact.com/features/realtime-cookie-scanner/cookies-by-category
 
----
+***
 
 🍪 **Realtime Cookie Scanner — UX & Compliance Improvements**
 
-* New **“Exempt” flag** for cookies  
-* Cookie Notice settings configurable directly from the side panel  
-* Categories standardized across the new UI  
-* Improved visuals and extended details in “Cookies by Category”  
+* New **“Exempt” flag** for cookies
+* Cookie Notice settings configurable directly from the side panel
+* Categories standardized across the new UI
+* Improved visuals and extended details in “Cookies by Category”
 
 → More consistent compliance workflows and smoother navigation.
 
----
+***
 
-🌍 **Realtime Cookie Scanner — “Translate by AI”**  
+🌍 **Realtime Cookie Scanner — “Translate by AI”**\
 You can now automatically translate cookie descriptions into any language.
 
-* Translate a single cookie or all cookies in one click  
-* 200 free translations per day  
-* Remaining credits counter displayed  
-* Works across all configured interface languages  
+* Translate a single cookie or all cookies in one click
+* 200 free translations per day
+* Remaining credits counter displayed
+* Works across all configured interface languages
 
 → Speeds up multilingual compliance management and reduces manual effort.
 
----
+***
 
 ## Release 10.0.32 - November - 2025
 
@@ -544,7 +544,7 @@ Perform faster, more secure QA with our browser plugin:
 * Security enhancements with login widget
 *   Test your Branches directly\\
 
-    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 📱 **New Source:** **Mobile Server-Side Events via React Native**\
 Easily send server-side events from mobile apps using the React Native framework. A perfect fit for many of our customers.\\
@@ -556,7 +556,7 @@ The AI journey begins with new tools to assist your daily work:
 * Formula generator pop-in for advanced setups
 *   Side panel guidance for Commanders\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -568,14 +568,14 @@ The AI journey begins with new tools to assist your daily work:
 *   Built-in safety checks to prevent errors\
     → **Greater autonomy & faster go-live**\\
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗑️ **TMS – Branch Deletion Confirmation**
 
 *   Added confirmation pop-up before branch deletion\
     → **No more accidental deletions**\\
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗃️ **Custom Data Store & Storage Settings**
 
@@ -584,7 +584,7 @@ The AI journey begins with new tools to assist your daily work:
 *   Fully configurable UI with safety warnings\
     → **Enrich future events with past context**\\
 
-    <figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -622,7 +622,7 @@ What is it? Customers can now use their own URL (via CNAME) to host privacy file
 
 Why is it important? Ensures better data control while maintaining compliance.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -642,7 +642,7 @@ Prepares for future alerting features – get notified immediately when new cook
 
 Competitive Advantage – Unlike competitors, our scanner provides real-time alerts (no waiting 24h for a crawler!).
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -652,7 +652,7 @@ Find specific sources/destinations faster.
 
 Easier workspace overview – Quick visibility on available integrations.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -662,7 +662,7 @@ Market alignment with Google CMP Partner requirements.
 
 Easier vendor visibility – Just regenerate & deploy the banner to update.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -680,7 +680,7 @@ Use IAB TCF consent to manage part of the Google Consent Mode signal.
 
 For customers using our CMP in GTM – Just enable it in Advanced Features.
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -833,7 +833,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 *   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\\
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
@@ -1219,7 +1219,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

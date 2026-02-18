@@ -14,6 +14,8 @@ Unlike crawler-based scanners that simulate visits with bots, the RCS observes *
 Whether a cookie appears only for **specific users, browsers, countries, forgotten landing pages, or A/B test variants**, RCS detects it.\
 No missed edge cases, no blind spots, no delayed snapshots.
 
+<div><figure><img src="../../.gitbook/assets/maquette_rcs_compliance_summary.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
 ***
 
 ### 2. Typical Use Cases
@@ -120,15 +122,15 @@ RCS works immediately on real traffic — including logged-in or restricted page
 
 ### 5. Interfaces & Roadmap
 
-| Interface                 | Description                                                              | Status              |
-| ------------------------- | ------------------------------------------------------------------------ | ------------------- |
-| **Overview**              | Global summary of detected cookies and compliance status across domains. | 🧩 _In development_ |
-| **New Cookies**           | Recently detected cookies with classification and alert options.         | 🧩 _In development_ |
-| **Live Scan**             | Real-time feed of detections with domain and device filters.             | 🧩 _In development_ |
-| **Cookie Origins**        | Trace pages, domains, and scripts that set each cookie.                  | 🧩 _In roadmap_     |
-| **Cookies by Category**   | Breakdown by functional, analytics, ads, security.                       | ✅ _Available_       |
-| **Compliance Summary**    | Overview of non-compliant cookies and risk levels.                       | 🧩 _In roadmap_     |
-| **Cookie Notice Manager** | Manage, version, and publish the cookie table.                           | ✅ _Available_       |
+| Interface                                             | Description                                                              | Status              |
+| ----------------------------------------------------- | ------------------------------------------------------------------------ | ------------------- |
+| **Overview**                                          | Global summary of detected cookies and compliance status across domains. | 🧩 _In development_ |
+| **New Cookies**                                       | Recently detected cookies with classification and alert options.         | 🧩 _In development_ |
+| **Live Scan**                                         | Real-time feed of detections with domain and device filters.             | 🧩 _In roadmap_     |
+| **Cookie Origins**                                    | Trace pages, domains, and scripts that set each cookie.                  | 🧩 _In roadmap_     |
+| [**Cookies by Category**](cookies-by-category.md)     | Breakdown by functional, analytics, ads, security.                       | ✅ _Available_       |
+| **Compliance Summary**                                | Overview of non-compliant cookies and risk levels.                       | 🧩 _In development_ |
+| [**Cookie Notice Manager**](cookie-notice-manager.md) | Manage, version, and publish the cookie table.                           | ✅ _Available_       |
 
 ***
 
