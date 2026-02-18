@@ -1,6 +1,6 @@
 # Consent Performance Dashboard
 
-The Commanders Act **Consent Performance Dashboard** provides a centralized view of your compliance health and user engagement. It combines high-level visual modules with deep analytical metrics to help you optimize your consent rates and tracking quality.
+The Commanders Act **Consent Analysis Dashboard** provides a centralized view of your compliance health and user engagement. It combines high-level visual modules with deep analytical metrics to help you optimize your consent rates and tracking quality.
 
 ## Visual Analysis Modules
 
@@ -20,10 +20,7 @@ The Funnel widget visualizes the conversion path to identify where drop-offs occ
 3.  **Opt-ins:** Final volume of visitors who provided a positive consent.
 
 ### 3. Strategic Insights
-The dashboard automatically interprets data to highlight growth levers:
-* **Ghost Traffic:** Identifies structural "No Choice" traffic (bots, crawlers, or instant bounces) that are non-optimizable at the banner level.
-* **Real Confidence:** Focuses on the Explicit Rate to show true human visitor trust.
-* **UX Opportunity:** Calculated based on explicit refusals. High numbers suggest trying **A/B testing** to reduce user friction.
+The dashboard automatically interprets data to highlight growth levers.
 
 ### 4. Segmentation & Compliance
 * **Geographic Impact:** Segments performance between **Europe (GDPR)** and the **Rest of the World**.
