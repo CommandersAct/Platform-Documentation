@@ -1,9 +1,5 @@
 # Eulerian Marketing Platform
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Eulerian Marketing Platform](https://www.eulerian.com/en) is a comprehensive data-centric marketing solution designed to help businesses collect, analyze, attribute, and activate their marketing data across all digital and offline channels. Using this destination you can send data to Eulerian Analytics by leveraging the [Eulerian Measurement Protocol](https://doc.api.eulerian.com/#section/Eulerian-Measurement-Protocol).
 
 ## Key features
