@@ -523,6 +523,46 @@ const encodeUriComponent = require('encodeUriComponent');const sendHttpGet = req
 | **`input`**   | _string_ | The string to hash.                                                                                                                                                |
 | **`options`** | _object_ | _Optional_ options object to specify the output encoding. If specified, the object should contain the key `outputEncoding` with value as one of `base64` or `hex`. |
 
+## `signHmac` <a href="#signhmac" id="signhmac"></a>
+
+Generates an HMAC signature for the given payload, using `sha256` and `base64` encoding by default, unless the `options` object specifies otherwise. Objects passed as payload are automatically `JSON.stringify`'d. Returns a **string**.
+
+**Syntax**
+
+```javascript
+signHmac(payload, secret, options = undefined);
+```
+
+**Example**
+
+```javascript
+const signHmac = require('signHmac');
+
+// Sign a string with default options (sha256 + base64)
+const signature = signHmac('my payload', 'mySecretKey');
+
+// Sign with custom algorithm and encoding
+const signatureHex = signHmac('my payload', 'mySecretKey', { alg: 'sha1', outputEncoding: 'hex' });
+
+// Sign an object (automatically JSON.stringify'd)
+const objectSignature = signHmac({ key: 'value' }, 'mySecretKey');
+```
+
+**Parameters**
+
+| Parameter     | Type              | Description                                                                                                                                                                  |
+| ------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`payload`** | _string\|object_  | The data to sign. Objects are automatically converted to JSON strings.                                                                                                       |
+| **`secret`**  | _string_          | The secret key used for HMAC generation.                                                                                                                                     |
+| **`options`** | _object_          | _Optional_ options object to customize the algorithm and output encoding. See options details below. |
+
+**Options**
+
+| Property             | Type     | Default      | Description                                                                                                                                                         |
+| -------------------- | -------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`alg`**            | _string_ | `'sha256'`   | The hash algorithm. Supported values: `'sha256'`, `'sha1'`, `'sha512'`, `'sha384'`, `'md5'` and other OpenSSL digest algorithms.                                   |
+| **`outputEncoding`** | _string_ | `'base64'`   | The output encoding. Supported values: `'base64'`, `'base64url'`, `'hex'`, `'binary'` (`latin1`). |
+
 ## `toBase64` <a href="#tobase64" id="tobase64"></a>
 
 Encodes a string as base64.
