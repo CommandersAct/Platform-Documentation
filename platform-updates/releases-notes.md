@@ -345,6 +345,12 @@ Additional interface refinements and micro-performance improvements deployed acr
 
 ***
 
+#### 🛠️ Updates
+
+🛡️CMP — The IAB TCF template has been upgraded to version 2.3, ensuring full compliance with the IAB deadline of February 28, 2026.
+
+***
+
 ## Release 10.0.30 - September - 2025
 
 ✨ **New Features**
