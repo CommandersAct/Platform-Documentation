@@ -46,7 +46,7 @@ description: >-
 → Moves from simple reporting to a decision-making center, providing clear optimization targets to recover lost tracking and ensure total compliance.
 
 📘 Documentation:  
-https://doc.commandersact.com/features/consent-management/consent-performance-dashboard
+[https://doc.commandersact.com/features/consent-management/consent-performance-dashboard](https://doc.commandersact.com/features/consent-management/user-guides/consent-analysis)
 
 ## Release 10.0.34 - January - 2026
 
