@@ -16,7 +16,7 @@ Exemples de cookies techniques ou liés à la gestion du consentement à conserv
 * **TC\_PRIVACY\_CENTER**
 
 👉 **Comment identifier ces cookies essentiels ?**\
-Nous mettons à votre disposition la fonctionnalité [**Cookie Scanner**](../extensions/cookie-scanner.md), qui vous permet de lister les cookies présents sur votre site, pour vous aider à identifier ceux qui doivent être conservés. Cela évite d’en oublier et assure un bon fonctionnement après la suppression des cookies non essentiels.\
+Nous mettons à votre disposition la fonctionnalité [**Cookie Scanner**](../../realtime-cookie-scanner/), qui vous permet de lister les cookies présents sur votre site, pour vous aider à identifier ceux qui doivent être conservés. Cela évite d’en oublier et assure un bon fonctionnement après la suppression des cookies non essentiels.\
 Il est conseillé de vérifier avec vos équipes techniques ou votre prestataire les cookies techniques qui ne doivent pas être supprimés.
 
 > 💡 **Action :** Utilisez **Cookie Scanner** pour obtenir une liste complète des cookies présents sur votre site
