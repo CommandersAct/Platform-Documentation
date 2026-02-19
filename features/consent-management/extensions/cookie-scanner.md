@@ -1,7 +1,5 @@
 ---
-description: >-
-  The cookie scanner module allows Commanders Act users to monitor cookies on
-  their website and to provide users with an automated cookie notice.
+description: Deprecated
 ---
 
 # Cookie Scanner 1.0
