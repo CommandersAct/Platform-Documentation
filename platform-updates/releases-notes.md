@@ -6,6 +6,48 @@ description: >-
 
 # Release notes
 
+## Release 10.0.35 - February - 2026
+
+✨ **New Features**
+
+📊 **Consent Performance Dashboard v2.0 — Comprehensive Analytics Suite** The Consent Analysis has been completely transformed from a data table into a high-end strategic dashboard. It provides actionable insights into how privacy settings impact traffic and tracking quality.
+
+**📈 Historical Trend Charts** The historical analysis module is now live, providing a day-by-day view of your performance evolution.
+
+* **Evolution of Explicit Consent:** Track daily variations of Global Consent vs. Explicit Consent (Trust Metric).
+* **Traffic Volume Overlay:** Integrated bars to correlate consent behavior with traffic peaks.
+* **Visual "Trust Gap":** Instantly identifies how much "noise" (ghost traffic) impacts overall collection.
+
+***
+
+**🎯 Decision Journey & Strategic Insights** A new intelligence layer helps interpret user behavior beyond raw percentages.
+
+* **Decision Journey (Funnel):** Dynamic SVG widget visualizing the path from Exposure to Interaction and final Opt-in.
+* **Ghost Traffic Identification:** Separates structural non-human traffic (bots, crawlers, bounces) that cannot be optimized.
+* **Real Confidence Metric:** Focuses exclusively on human visitor trust to provide a true adherence rate.
+* **UX Opportunity Analysis:** Highlights explicit refusals to identify specific levers for A/B testing.
+
+***
+
+**⚙️ Advanced Interface & Controls**
+
+* **Executive KPI Cards:** Weighted averages across all selected banners with automated **Period-over-Period (PoP) comparisons**.
+* **Geographic Impact Widget:** Instant performance breakdown between Europe (GDPR) and the Rest of the World.
+* **Device Analysis Widget:** Comparison of consent rates across Desktop, Mobile, and Tablet to identify screen-specific friction.
+* **New Filtering Engine:** Top 10 banners (>1,000 views) selected by default; advanced segment filters for Device and Location.
+
+***
+
+**🛡️ Real-time Cookie Scanner Integration** A live compliance audit is now directly embedded into the analytics workflow.
+
+* **Live Compliance Status:** Pulse badge and timer confirming the active scan.
+* **Health Score & Violations:** Real-time alerts if unauthorized cookies (e.g., `_ga`) are detected before user choice.
+
+→ Moves from simple reporting to a decision-making center, providing clear optimization targets to recover lost tracking and ensure total compliance.
+
+📘 Documentation:  
+https://doc.commandersact.com/features/consent-management/consent-performance-dashboard
+
 ## Release 10.0.34 - January - 2026
 
 ✨ **New Features**
