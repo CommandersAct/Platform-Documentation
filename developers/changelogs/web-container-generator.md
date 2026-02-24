@@ -2,12 +2,18 @@
 
 ## 2026
 
+### 100.7
+
+Release date:  **24/02/2026**
+
+* [beta] enhance CMP detection in Real Time Cookie Scanner
+
 ### 100.6
 
 Release date:  **24/02/2026**
 
-* [beta] enhance activation of Real Time Cookie Scanner
-* [beta] Realtime cookie scanner: support Didomi & OneTrust CMPs
+* [beta] enhance activation of Real-time Cookie Scanner
+* [beta] Real-time Cookie Scanner: support Didomi & OneTrust CMPs
 
 ### 100.5
 
