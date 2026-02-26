@@ -451,6 +451,28 @@ Following cookies are used automatically in depending on the installed Commander
 **Storage purpose(s):** Used to store landing page URL for CAMPAIGN raw data.
 
 </details>
+<details>
+
+<summary>TC_REFERRER</summary>
+
+**Product(s) related:** CAMPAIGN
+
+**Type:** Local Storage
+
+**Domain:** Customer domain
+
+**Lifetime:** Short-lived (automatically removed after use)
+
+**Value:** Referrer URL
+
+**Owner:** Commanders Act
+
+**Storage purpose(s):**  
+Used to temporarily persist the original referrer of the session to ensure reliable attribution when the browser does not correctly transmit referrer information between pages. This value is used only during the initial measurement phase.
+
+This storage is only activated when campaign measurement is enabled.
+
+</details>
 
 ### DATA
 
@@ -533,8 +555,9 @@ FDLBFIRSTCMP\
 FDLBFIRST\
 FDLBCTLY\
 FDLBFIRSTEVENTS\
+FDLBMIXCDOM\
 \
-**Product(s) related:** First domain tracking (Phoenix)
+**Product(s) related:** First-party tracking infrastructure
 
 **Type:** Cookie
 
@@ -547,7 +570,10 @@ FDLBFIRSTEVENTS\
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):** Used for internal infrastructure dispatch.\\
+**Storage purpose(s):**
+Technical cookies used exclusively for load balancing and internal infrastructure dispatch between Commanders Act servers. These cookies do not store any personal data and are required to ensure proper request routing and platform reliability.
+
+*Technical cookie (exempted from consent)*
 
 </details>
 
