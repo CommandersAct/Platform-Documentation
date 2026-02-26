@@ -6,7 +6,7 @@ description: Strategies to improve the onsite performance of TagCommander.
 
 Onsite performance of a website is one of the most important KPIs for SEO. Therefore more and more businesses are interested in optimizing onsite performance via TagCommander. This post collects topics to make TagCommander itself more performant.
 
-## Reduce File Size of TagCommander
+## Reduce File Size of Web Containers Commanders Act
 
 ### **Remove unused Data Layer Properties**
 
@@ -22,19 +22,23 @@ Sometimes the same functionality of a Tag is duplicated in multiple Tags. In the
 
 ### **Split Large Container Files**
 
-Many Tags are deployed on every page of a website even so they are not triggered. For example many vendors have separate Tags for collecting information and only one Tag that is played out on the confirmation page. Therefore it might make sense to split the Container in two parts—one for catalogue pages and one for funnel pages. Therefore both Containers have a smaller size as they only include Tags that are relevant for their part of the website.&#x20;
+Many Tags are deployed on every page of a website even so they are not triggered. For example many vendors have separate Tags for collecting information and only one Tag that is played out on the confirmation page. Therefore it might make sense to split the Container in two parts—one for catalogue pages and one for funnel pages. Therefore both Containers have a smaller size as they only include Tags that are relevant for their part of the website.
 
 Also make sure to only implement Tags in `<head>` Container if necessary as those Tags usually have a greater impact on onpage performance than Tags in \`\<body>\` Container.
 
-### **Implement Hybrid TagCommander Setup**
+### **Implement Hybrid Web Container Setup**
 
-A hybrid setup allows to move onsite performance impact into the Server-Side TagCommander infrastructure.
+A hybrid setup allows to move onsite performance impact into the Server-Side Commanders Act infrastructure.
 
-## Make TagCommander asynchronous
+{% hint style="danger" %}
+To avoid any negative impact on your web performance, a web container should never exceed 500MB.
+{% endhint %}
+
+## Make Commanders Act asynchronous
 
 ### **Load Container Asynchronous**
 
-Many onsite page speed crawlers measure the time until the browser event _onload_. So in case the IT team loads the TagCommander Container asynchronous on the _onload_ event it is possible to make the TagCommander file _invisible_ for some page speed metrics. This is usually only possible for `<body>` Containers as `<head>` Containers need to be executed synchronously for A/B testing and personalisation Tags that have an impact on the visual content of the website.&#x20;
+Many onsite page speed crawlers measure the time until the browser event _onload_. So in case the IT team loads the Web Container asynchronous on the _onload_ event it is possible to make the Web Container file _invisible_ for some page speed metrics. This is usually only possible for `<body>` Containers as `<head>` Containers need to be executed synchronously for A/B testing and personalization Tags that have an impact on the visual content of the website.
 
 {% hint style="danger" %}
 Tags in asynchronous `<body>` Container that use synchronous `document.write` (e.g. some advertising solutions) will break the website in case the Container is loaded asynchronously. These Tags need to be avoided in case a Container is installed asynchronously.

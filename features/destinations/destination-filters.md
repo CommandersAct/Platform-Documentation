@@ -2,9 +2,9 @@
 
 With filters, you have the possibility to define some conditions. As a result, some events will be sent and some don't, according to your conditions.
 
-## SIMPLE FILTER
+## Simple filter
 
-Use the dropdown to select the property on which you want to filter, then select the operator and the value to filter on.
+Use the drop down to select the property on which you want to filter, then select the operator and the value to filter on.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.48.32.png" alt=""><figcaption></figcaption></figure>
 
@@ -24,7 +24,7 @@ Available operators:
 * doesn't exist
 * is empty
 
-## ADVANCED FILTER
+## Advanced filter
 
 An "Advanced" filter can be used when a simple one is not sufficient.
 
@@ -55,7 +55,7 @@ Supported functions:
 {% endcontent-ref %}
 
 {% hint style="info" %}
-Always use " " to enter a value in advanced mode. \
+Always use " " to enter a value in advanced mode.\
 All values entered without " " will be treated as a number.
 {% endhint %}
 
@@ -67,4 +67,16 @@ Both simple and advanced filter can manage regex:
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 17.07.44.png" alt=""><figcaption></figcaption></figure>
 
-To know how to build a regex, please refer to [regular expression documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular\_Expressions).
+To know how to build a regex, please refer to [regular expression documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
+
+## Consent filter
+
+For clients using our CMP module: simply select the appropriate category in the drop down.
+
+<figure><img src="../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+
+For clients using an external CMP: Simply enter the value as it is collected in the "user.consent\_categories" of your server side events.
+
+Example:
+
+<figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
