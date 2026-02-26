@@ -360,8 +360,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/microsoft-uet.md" %}
-[microsoft-uet.md](../features/destinations/destinations-catalog/microsoft-uet.md)
+{% content-ref url="../features/destinations/destinations-catalog/microsoft/microsoft-uet.md" %}
+[microsoft-uet.md](../features/destinations/destinations-catalog/microsoft/microsoft-uet.md)
 {% endcontent-ref %}
 
 ## 02/08/2024
