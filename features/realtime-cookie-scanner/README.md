@@ -56,6 +56,15 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 * Uses AI to find rare cookies description/category, with human validation.
 * Automatically ranks cookies by risk and frequency.
 
+#### 🤖 AI information
+RCS uses *Commanders Act AI* capabilities for cookie classification and multilingual content generation.
+
+For more information about Commanders Act AI usage, security, and compliance, see:
+
+{% content-ref url="../../getting-started/platform-interface/productivity-tools/commanders-ai.md" %}
+[Commanders AI documentation](../../getting-started/platform-interface/productivity-tools/commanders-ai.md)
+{% endcontent-ref %}
+
 #### ⚙️ Supported Storage Types
 
 1st Party Cookies, 3rd Party Cookies, HttpOnly 1st Party Cookies, HttpOnly 3rd Party Cookies, localStorage, sessionStorage
@@ -74,6 +83,7 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 * Instant notifications for new cookies.
 * Configurable by severity.
 * Integrations : Email, Slack, Teams (and soon webhook).
+* Email Recipients: Platform users or external recipients (email addresses not registered in Commanders Act)
 
 <figure><img src="../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
@@ -85,6 +95,12 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 <figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
+#### 🌐 Translation Tokens System
+RCS includes a translation token system for multilingual cookie notices.
+
+- Your plan includes a daily allowance of translation tokens (e.g. 200 tokens per day)
+- 1 translated field consumes 1 token
+
 #### 📊 Live Dashboards
 
 * Always up-to-date (real & realtime data, not batches).
@@ -92,6 +108,46 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 * Filters by domain, consent state, frequency, etc.
 
 <figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+
+#### 🕒 Versioning, History & Auditability
+
+RCS provides full versioning capabilities to support compliance audits and historical proof.
+
+**Cookie notice version snapshots**
+
+Each time a cookie notice version is created in the Cookie Notice Manager:
+
+- A complete snapshot of all cookies is saved
+- This snapshot represents the exact state of detected cookies at that moment
+- Snapshots are immutable and preserved over time
+
+**Historical access**
+
+Users can:
+
+- view previous versions at any time
+- export historical cookie lists
+- demonstrate compliance at a specific point in time
+
+**Supported export formats**
+
+- CSV
+- XLSX
+- JSON
+- HTML
+
+**Compliance and audit use cases**
+
+This enables organizations to:
+
+- prove compliance over a specific period (for example: demonstrate compliance over the last 6 months)
+- respond to regulatory audits (CNIL, GDPR, internal compliance teams)
+- track compliance evolution over time
+- maintain full documentation history
+
+Version history is available in:
+
+`Cookie Notice Manager > Deploy tab`
 
 ***
 
