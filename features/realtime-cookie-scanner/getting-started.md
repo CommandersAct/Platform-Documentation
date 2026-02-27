@@ -4,7 +4,7 @@ Are you ready to get started? Great news — you're just a few clicks away from 
 
 In all cases, your consultant (or our support team) needs to activate the feature on your workspace.
 
-### Clients using the Commanders Act CMP:
+### With the Commanders Act CMP:
 
 #### Step 1: Declare your domains and languages
 
@@ -24,12 +24,12 @@ Generate and deploy your Web Container(s)
 
 You don't use our TMS? Then simply generate and deploy your privacy banner(s)
 
-### Clients using a Didomi or OneTrust CMP:
+### With Didomi or OneTrust CMP:
 
 Follow the Step 1 mentioned above (as our clients using our CMP).
 
 Once your setting is declared on Cookie Notice UI, you simply need to generate and deploy your Web Container(s)
 
-### Clients using another CMP brand
+### Using another CMP's brand?
 
 Our Real-time Cookie Scanner is compatible with any CMP. Please ask your sales representative for personalized setup instructions.
