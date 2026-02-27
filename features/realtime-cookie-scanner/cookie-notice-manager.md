@@ -82,7 +82,7 @@ To translate all your cookies, use the 'Settings' option (one target language al
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Do you need to translate just one cookie into many languages?\
 Then use the 'Edit Cookie' function:
@@ -91,7 +91,7 @@ Then use the 'Edit Cookie' function:
 
 Our tool will translate your cookies for all languages that have an "empty" description.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

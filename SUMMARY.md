@@ -360,6 +360,7 @@
   * [Platform API](features/consent-management/platform-api/README.md)
     * [Get statistics](features/consent-management/platform-api/get-statistics.md)
 * [Realtime Cookie Scanner](features/realtime-cookie-scanner/README.md)
+  * [Getting Started](features/realtime-cookie-scanner/getting-started.md)
   * [Cookie Notice Manager](features/realtime-cookie-scanner/cookie-notice-manager.md)
   * [Cookies by Category](features/realtime-cookie-scanner/cookies-by-category.md)
 

@@ -10,7 +10,7 @@ The dashboard is organized into specialized widgets to provide immediate insight
 
 These cards provide a weighted average of your selected banners and include **Period-over-Period (PoP)** comparisons.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Global Consent Rate:** Total percentage of visitors who accepted at least one category.
 * **Interaction Rate:** Percentage of visitors who actively engaged with the banner (Accept, Refuse, or Configure).
@@ -19,7 +19,7 @@ These cards provide a weighted average of your selected banners and include **Pe
 
 ### 2. Decision Journey (Funnel)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Funnel widget visualizes the conversion path to identify where drop-offs occur:
 
@@ -31,7 +31,7 @@ The Funnel widget visualizes the conversion path to identify where drop-offs occ
 
 The dashboard automatically interprets data to highlight growth levers.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Segmentation & Compliance
 

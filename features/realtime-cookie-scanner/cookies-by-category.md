@@ -40,7 +40,7 @@ Click any card to focus on one category — the rest of the dashboard updates au
 The rare cookies filter is OFF by default. It means that rare cookies are NOT displayed (all cookies with an occurence rate lower than 5%)\
 If you need to see the rares cookies on this UI, simply turn ON the switch button
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -51,7 +51,7 @@ Just below the cards, a donut chart shows how cookies are split across categorie
 **What you can do**\
 Click a segment to filter the entire dashboard on that category — same effect as clicking the card. The clicked segment and corresponding card get highlighted.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

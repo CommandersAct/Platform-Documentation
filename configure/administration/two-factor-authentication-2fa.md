@@ -10,7 +10,7 @@ It has to be activated on the profile level (profile management), using the swit
 
 Once this option is activated, the platform will request an access token sent by email.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 \
 This token will be active for 30 days (on the same browser and IP), that means it will request a new one as soon as the token expire (or if you change your browser or IP).

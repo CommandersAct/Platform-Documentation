@@ -142,7 +142,7 @@ Our Commanders Act Assistant is compatible with Branches!
 
 Download it from Chrome Extension Store, once it is installed on your browser, you can use the button "preview" to test your Branch on your website.
 
-<figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="488"><figcaption></figcaption></figure>
 

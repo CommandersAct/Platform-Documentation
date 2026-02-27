@@ -25,7 +25,7 @@ After opening the Chrome Extension page, look at the top right side, and you’l
 
 Drag and drop the file `commanders-act-assistant-v3.1.0.zip` previously downloaded at the[ step 1](how-to-install-commanders-act-assistant-in-chrome-extension-developer-mode.md#step-1-download-the-file-extension).
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Drag and Drop the Commanders Act Assistant zip file</p></figcaption></figure>
+<figure><img src="../../../../../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Drag and Drop the Commanders Act Assistant zip file</p></figcaption></figure>
 
 Now, the plugin is now available in the extension management
 
