@@ -2,6 +2,13 @@
 
 ## 2026
 
+### 100.8
+
+Release date:  **03/03/2026**
+
+* Update bot exclusion list
+* [public release] Support Amazon Consent Signal in Trust
+
 ### 100.7
 
 Release date:  **24/02/2026**
