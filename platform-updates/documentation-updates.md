@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 06/03/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/microsoft/microsoft-conversions-api.md" %}
+[microsoft-conversions-api.md](../features/destinations/destinations-catalog/microsoft/microsoft-conversions-api.md)
+{% endcontent-ref %}
+
 ## 20/02/2026
 
 Destination documentation (updates):
