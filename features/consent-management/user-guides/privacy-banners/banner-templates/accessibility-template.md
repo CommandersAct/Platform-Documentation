@@ -2,9 +2,13 @@
 
 ## WCAG standards : offer a privacy fully functional for people with disabilities
 
-Among the available templates, one is dedicated to accessibility. It ensures compatibility with RGAA and WCAG 2.0 level AA standards.
+Among the available templates, one is dedicated to accessibility. It ensures compatibility with RGAA and WCAG 2.2 level AA standards.
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
+
+Don't forget to use our latest Privacy Center template
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt="" width="491"><figcaption></figcaption></figure>
 
 Web Content Accessibility Guidelines (WCAG) is developed through the [W3C process](https://www.w3.org/WAI/standards-guidelines/w3c-process/) in cooperation with individuals and organizations around the world, with a goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.
 
@@ -25,8 +29,8 @@ With this template the main key point is to offer a privacy fully functional for
 
 ## Translation
 
-The Accessibility template provides an automatic translation of different labels. This translation is based on navigator language.\
-Currently, it supports : Italian, English, German, French and Russian.
+The Accessibility template provides an automatic translation of different labels. This translation is based on browser language.\
+Currently, it supports : Italian, English, German, French, Spanish, Portuguese, Dutch and Russian.
 
 ## Options :
 
@@ -136,9 +140,9 @@ pc.addTranslation({
     closePrivacyCenter: 'Close the privacy center', 
 
   },
-  ru : {
+  pt : {
     // you can also add a new language
-    closePrivacyCenter: 'Close the privacy center',
+    closePrivacyCenter: 'Fechar o centro de privacidade',
       },
 })
 ```
@@ -154,7 +158,7 @@ You can force the privacy to take a language by using the function setLocale in 
 pc.setLocale("fr");
 ```
 
-> Value can be : fr, it, de, ru or en
+> Value can be : fr, it, de, ru, es, pt, nl or en
 
 Note : this function must be placed after the translation declaration.
 
@@ -176,5 +180,6 @@ tC.privacy.enableFocusTrap(false);
   You can use external tools to verify it, such as [https://coolors.co/contrast-checker/000000-ffffff](https://coolors.co/contrast-checker/000000-ffffff)
 * In your privacy center, avoid "switch" and "check box" buttons styles.\
   Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
+* Avoid "neutral" buttons position, the good practice is "Default status = Off"
 
-<figure><img src="../../../../../.gitbook/assets/image (591).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

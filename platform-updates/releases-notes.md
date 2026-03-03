@@ -604,7 +604,7 @@ The AI journey begins with new tools to assist your daily work:
 * Formula generator pop-in for advanced setups
 *   Side panel guidance for Commanders\\
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -690,7 +690,7 @@ Prepares for future alerting features – get notified immediately when new cook
 
 Competitive Advantage – Unlike competitors, our scanner provides real-time alerts (no waiting 24h for a crawler!).
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -881,7 +881,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 *   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\\
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
