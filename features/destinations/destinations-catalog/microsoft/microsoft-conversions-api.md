@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Microsoft Advertising](https://ads.microsoft.com/) (formerly Bing Ads, Microsoft adCenter and MSN adCenter) is an online advertising platform developed by Microsoft. Using this destination, you can leverage [Microsoft Conversions API](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration) and the [Universal Event Tracking (UET) framework](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#universal-event-tracking-uet) to send user actons, in form of events, via server-side tracking hits, enabling features such as conversion tracking (E.g., purchases or leads), audience targeting (E.g., remarketing), automated bidding, and integration with Microsoft Bing for Commerce.
+[Microsoft Advertising](https://ads.microsoft.com/) (formerly Bing Ads, Microsoft adCenter and MSN adCenter) is an online advertising platform developed by Microsoft. Using this destination, you can leverage [Microsoft Conversions API](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration) and the [Universal Event Tracking (UET) framework](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#universal-event-tracking-uet) to send user actions, in form of events, via server-side tracking hits, enabling features such as conversion tracking (E.g., purchases or leads), audience targeting (E.g., remarketing), automated bidding, and integration with Microsoft Bing for Commerce.
 
 ## Key features
 
