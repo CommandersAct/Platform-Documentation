@@ -6,6 +6,70 @@ description: >-
 
 # Release notes
 
+## Release 10.0.36 - March - 2026
+
+✨ **New Features**
+
+♿ **Privacy Center — WCAG 2.2 Accessibility Compliance**
+
+A new **Privacy Center template compliant with WCAG 2.2 accessibility standards** is now available for all customers.
+
+Key improvements include:
+
+* Accessibility attributes added to banner elements
+* Improved default UI settings (button layout, colors, links, close icon)
+* Better keyboard and screen-reader support
+
+→ Helps brands comply with **digital accessibility regulations** and improves usability for all visitors.
+
+Activation is simple: select the new Privacy Center template in your banner settings, regenerate the banner, and deploy.
+
+---
+
+🛍 **Amazon Consent Mode — Now Available for All Customers**
+
+Amazon Consent Mode is now generally available.
+
+* Works similarly to Google Consent Mode
+* Requires the GeoLoc API for correct regional behavior
+
+→ Enables compliant tracking and activation with Amazon advertising integrations.
+
+📘 Documentation:  
+https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/amazon-consent-signal
+
+---
+
+📊 **Destination Overview — Advanced Filtering**
+
+A new **“More filters”** component has been added to destination listings.
+
+* Opens a side panel with additional filters
+* Includes a filter to display **destinations running in Dry Mode**
+
+→ Makes it easier to navigate large accounts and isolate specific configurations.
+
+---
+
+📁 **Realtime Cookie Scanner — Excel Export**
+
+Cookie list exports now support **Excel (.xlsx)** format in addition to CSV.
+
+→ Avoids encoding issues and allows teams to use exports immediately in reporting workflows without conversion.
+
+---
+
+📧 **Alerts — External Email Recipients**
+
+Alerts can now be sent to **external email addresses**, even if the recipients are not users of the platform.
+
+* Simply type an email address in the recipient field and press Enter
+* Works across all alert types (Realtime Cookie Scanner, Event Delivery, etc.)
+
+→ Enables notifications to shared inboxes, IT teams, DPOs, monitoring systems, or ticketing tools.
+
+***
+
 ## Release 10.0.35 - February - 2026
 
 ✨ **New Features**
