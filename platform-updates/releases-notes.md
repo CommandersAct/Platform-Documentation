@@ -10,6 +10,18 @@ description: >-
 
 ✨ **New Features**
 
+🍪 **Realtime Cookie Scanner — Compatibility with OneTrust & Didomi**
+
+Realtime Cookie Scanner is now compatible with **third-party CMP banners**, including **OneTrust** and **Didomi**, without requiring custom code.
+
+* Detects all types of storage (cookies, localStorage, etc.)
+* Tracks consent states across key user interactions (before consent, after refusal, etc.)
+* **One-click activation** — no setup required, the CMP in use is detected automatically
+
+→ Allows customers using external CMPs to benefit from Realtime Cookie Scanner while keeping their existing banner.
+
+***
+
 📊 **Consent Performance Dashboard v2.0 — Comprehensive Analytics Suite** The Consent Analysis has been completely transformed from a data table into a high-end strategic dashboard. It provides actionable insights into how privacy settings impact traffic and tracking quality.
 
 **📈 Historical Trend Charts** The historical analysis module is now live, providing a day-by-day view of your performance evolution.
