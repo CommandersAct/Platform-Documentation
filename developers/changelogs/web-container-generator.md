@@ -2,6 +2,13 @@
 
 ## 2026
 
+### 100.9
+
+Release date:  **09/03/2026**
+
+* Security update in Trust Privacy Center
+* [beta] Mix local storage inclusion in privacy rules
+
 ### 100.8
 
 Release date:  **03/03/2026**
