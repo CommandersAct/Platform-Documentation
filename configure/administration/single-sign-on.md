@@ -51,6 +51,8 @@ Following SAML attributes are currently supported. It is required to send the em
 | lang                       | User language code   | optional, default 'en'                                                                                                                                                                      |
 | commandersact\_\<id\_site> | Applied user profile | <p><strong>required</strong>, possible values :</p><ul><li>administrator</li><li>technical</li><li>marketing</li><li>custom</li><li>readOnly</li><li>partnerAdmin</li><li>partner</li></ul> |
 
+Add "administrator|accountmanager" to enable the "Account Manager" permission for the Administrator role.
+
 ## FAQ
 
 **How long is the SAML session duration?**\
