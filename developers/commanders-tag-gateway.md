@@ -91,7 +91,7 @@ Two complementary approaches can be used :
 #### Cookie blacklisting at the edge
 
 Customers can filter cookies **directly at the CDN or edge layer** (Cloudflare Worker, Fastly Compute, etc.).
-This can be done by **simply adjusting the Worker code provided in this guide** to remove specific cookies before the request is forwarded to Commanders Gateway.
+This can be done by **simply configuring the Worker code provided in this guide** to remove specific cookies before the request is forwarded to Commanders Gateway.
 
 This allows specific cookies to be removed from the request **before it reaches Commanders Gateway**, ensuring that only the cookies approved by the organization leave its infrastructure.
 
