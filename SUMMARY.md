@@ -125,6 +125,7 @@
     * [Actito](features/destinations/destinations-catalog/actito.md)
     * [Adform](features/destinations/destinations-catalog/adform.md)
     * [Adobe](features/destinations/destinations-catalog/adobe/README.md)
+      * [Adobe Analytics Data Insertion API](features/destinations/destinations-catalog/adobe/adobe-analytics-data-insertion-api.md)
       * [Adobe Analytics](features/destinations/destinations-catalog/adobe/adobe-analytics.md)
       * [Adobe Campaign](features/destinations/destinations-catalog/adobe/adobe-campaign.md)
     * [AdRoll](features/destinations/destinations-catalog/adroll.md)
