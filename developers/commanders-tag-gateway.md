@@ -82,6 +82,39 @@ Website  →  example.com/metrics/ (Google tags)
 
 ***
 
+## Cookie filtering and governance
+
+Some organizations, especially those with strict privacy policies, may have concerns about sending **first-party cookies to external partners** such as Google.
+
+Commanders Gateway supports **data minimization** and provides mechanisms to control which cookies can transit through the gateway.
+
+Two complementary approaches can be used.
+
+### Cookie blacklisting at the edge
+
+Customers can filter cookies **directly at the CDN or edge layer** (Cloudflare Worker, Fastly Compute, etc.).
+
+This allows specific cookies to be removed from the request **before it reaches Commanders Gateway**.  
+Typical examples include internal cookies, authentication cookies, or any cookie considered sensitive by internal policies.
+
+This mechanism ensures that only the cookies approved by the organization leave its infrastructure.
+
+### Cookie whitelisting before forwarding to partners
+
+Commanders Gateway can also enforce a **cookie whitelist when forwarding requests to partners**.
+
+For example, when forwarding measurement requests to Google, the gateway can be configured to **only include Google-related cookies** (such as `_ga` or `_gcl_*`).  
+All other cookies are automatically excluded from the request sent to Google.
+
+### Combined approach
+
+Organizations with strict privacy requirements can combine both mechanisms:
+
+1. **Edge filtering** removes cookies that should never leave the infrastructure.
+2. **Gateway whitelisting** ensures that each partner only receives the cookies relevant to its measurement system.
+
+This layered approach enables **privacy-by-design governance** while preserving the benefits of a first-party gateway architecture.
+
 ## Before you begin
 
 This guide assumes your website is already configured with:
