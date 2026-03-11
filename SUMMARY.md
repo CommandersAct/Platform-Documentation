@@ -328,6 +328,7 @@
     * [Exports](features/consent-management/user-guides/exports.md)
     * [Settings](features/consent-management/user-guides/settings.md)
   * [Extensions](features/consent-management/extensions/README.md)
+    * [Realtime Cookie Scanner](features/realtime-cookie-scanner/README.md)
     * [Cookie Scanner 1.0](features/consent-management/extensions/cookie-scanner.md)
     * [Piggybacking](features/consent-management/extensions/piggybacking.md)
     * [Tag Firewall](features/consent-management/extensions/tag-firewall.md)
@@ -364,6 +365,7 @@
   * [Getting Started](features/realtime-cookie-scanner/getting-started.md)
   * [Cookie Notice Manager](features/realtime-cookie-scanner/cookie-notice-manager.md)
   * [Cookies by Category](features/realtime-cookie-scanner/cookies-by-category.md)
+  * [Legal and Technical Position Paper](features/realtime-cookie-scanner/legal-and-technical-position-paper.md)
 
 ## Use cases
 

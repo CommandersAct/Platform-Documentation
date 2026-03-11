@@ -1,7 +1,3 @@
----
-description: Deprecated
----
-
 # Cookie Scanner 1.0
 
 {% hint style="warning" icon="rotate" %}
