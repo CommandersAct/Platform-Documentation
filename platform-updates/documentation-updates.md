@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 13/03/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/adobe/adobe-analytics-data-insertion-api.md" %}
+[adobe-analytics-data-insertion-api.md](../features/destinations/destinations-catalog/adobe/adobe-analytics-data-insertion-api.md)
+{% endcontent-ref %}
+
 ## 06/03/2026
 
 Destination documentation:
