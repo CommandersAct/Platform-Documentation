@@ -36,8 +36,7 @@ Requests must include the following Adobe properties:\
 &#x20;   ◦ <mark style="color:$primary;">`marketingCloudVisitorId`</mark>\
 &#x20;   ◦ <mark style="color:$primary;">`fallbackVisitorId`</mark>\
 &#x20;   ◦ <mark style="color:$primary;">`visitorId`</mark>\
-&#x20;   ◦ <mark style="color:$primary;">`ipAddress`</mark> and <mark style="color:$primary;">`userAgent`</mark>
-
+&#x20;   ◦ <mark style="color:$primary;">`ipAddress`</mark> and <mark style="color:$primary;">`userAgent`</mark>\
 • At least one of:\
 &#x20;   ◦ <mark style="color:$primary;">`pageUrl`</mark>   \
 &#x20;   ◦ <mark style="color:$primary;">`pageName`</mark>\
