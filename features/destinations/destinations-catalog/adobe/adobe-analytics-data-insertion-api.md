@@ -4,7 +4,7 @@
 This destination is currently under final review and will be available soon.
 {% endhint %}
 
-[Adobe](https://www.adobe.com/) is an multinational computer software and [web analytics company](https://business.adobe.com/).\
+[Adobe](https://www.adobe.com/) is an multinational computer software and [web analytics](https://business.adobe.com/) company.\
 Using this destination, you can leverage Adobe [Data Insertion API](https://developer.adobe.com/analytics-apis/docs/1.4/guides/data-insertion/) and send data to [Adobe Analytics](https://experienceleague.adobe.com/en/browse/analytics). Instead of using [client-side AppMeasurement](https://experienceleague.adobe.com/en/docs/analytics/implementation/js/overview), this destination collects data based solely on API requests and responses and provides valuable insight into user activity without the overhead associated with attaching JavaScript to every page.
 
 ## Key features
