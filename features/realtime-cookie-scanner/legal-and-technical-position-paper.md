@@ -122,11 +122,10 @@ The technical architecture of the Realtime Cookie Scanner has been designed with
 
 #### 3.5 Overall Assessment
 
-The qualification of the Realtime Cookie Scanner as a compliance monitoring tool — as distinct from a tracking tool subject to consent — is **legally defensible**.
-
-This interpretation does not yet benefit from the same level of explicit doctrinal recognition as audience measurement tools. It therefore remains **innovative**, which may explain the cautious stance taken by some DPOs.
-
-The key priority is to clearly document the module's purpose and the associated technical safeguards, so that legal teams are in a position to properly assess its nature and distinguish the Realtime Cookie Scanner from consent-dependent tracking tools.
+The qualification of the Realtime Cookie Scanner as a compliance monitoring tool — as distinct from a tracking tool subject to consent — is legally well-founded. \
+While supervisory authorities have not yet issued an explicit decision on this specific category of tool, the elements set out in this document provide a solid and documented basis for that qualification. \
+\
+The priority is therefore to ensure that legal teams have access to sufficient technical and legal documentation to assess the module's nature accurately and distinguish it from consent-dependent tracking tools.
 
 ***
 
