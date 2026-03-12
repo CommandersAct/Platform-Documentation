@@ -64,7 +64,9 @@ The module collects only technical metadata necessary to build a cookie inventor
 
 #### 2.4 Data Hosting and Transfer
 
-All metadata transmitted by the module is sent exclusively to Commanders Act servers hosted within the European Union. No data is transferred to servers located outside the EU.
+All metadata transmitted by the module is sent exclusively to Commanders Act servers hosted within the European Union. No data is transferred to servers located outside the EU.\
+\
+Commanders Act acts as a data processor within the meaning of Article 28 GDPR. A Data Processing Agreement (DPA) is available and provided to all clients upon request.
 
 #### 2.5 Execution Prior to Consent
 
@@ -83,7 +85,7 @@ The module subsequently monitors changes in consent status via the CMP API in or
 Article 5(3) of the ePrivacy Directive requires prior consent for any operation involving **access to information stored in the user's terminal equipment**, or the storing of information therein, regardless of whether that information constitutes personal data.
 
 The Realtime Cookie Scanner, insofar as it accesses cookies and storage keys present in the browser, falls within the scope of this provision. This is acknowledged. The legal question is therefore whether this access can be considered strictly necessary for the provision of the service. \
-**The module is not designed to track or identify users, and the analysis below demonstrates that its operation is consistent with the strict necessity exemption.**
+**The module is not designed to track or identify users, , and its operation falls squarely within the scope of the strict necessity exemption for the reasons set out below.**
 
 #### 3.2 Qualification Under the Strict Necessity Exemption
 
