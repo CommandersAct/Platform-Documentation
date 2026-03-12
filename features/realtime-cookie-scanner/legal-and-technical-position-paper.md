@@ -98,6 +98,8 @@ The module performs no user tracking, does not exploit data for marketing or ana
 
 Execution prior to consent is the sine qua non of the module's core functionality. A tool designed to detect cookies deployed before consent can only operate by observing the browser environment at that precise moment. Restricting the module to post-consent observation would render it unable to detect the very situations of non-compliance it exists to identify. This technical necessity is therefore intrinsic to the service's purpose, not a discretionary implementation choice.
 
+Furthermore, alternative approaches based solely on automated crawler scans present structural limitations that make them insufficient to guarantee exhaustive detection of non-compliant cookie deployments. Crawlers operate on predefined navigation scenarios and cannot reproduce the full range of real user journeys. Certain cookies only appear under specific conditions — rare cookies, cookies triggered by particular user paths, or cookies deployed conditionally depending on technical parameters — that automated scans systematically fail to capture. The real-time observation of actual visitor navigation is therefore not merely a product differentiator: it is the only technically reliable method to achieve comprehensive compliance coverage.
+
 **c) Absence of personal data processing**
 
 The module does not collect cookie values, user identifiers, or browser fingerprints. The metadata observed (cookie names, storage keys, URLs) does not, in itself, allow any individual to be identified. The module is therefore not designed to process personal data within the meaning of the GDPR.
@@ -122,6 +124,8 @@ The technical architecture of the Realtime Cookie Scanner has been designed with
 
 #### 3.5 Overall Assessment
 
+It should also be noted that the deployment of a real-time compliance monitoring tool directly serves the organisation's own regulatory interests. Crawler-based approaches, or the absence of continuous monitoring, result in a structurally incomplete view of the website's cookie landscape. The cookies most likely to go undetected — conditional cookies, rare cookies, cookies dependent on specific user journeys — are precisely those most likely to constitute undiscovered ePrivacy violations, and therefore the greatest source of regulatory exposure vis-à-vis the AEPD or any other supervisory authority. In this regard, the Realtime Cookie Scanner is best understood as a risk reduction tool, not a risk factor.\
+\
 The qualification of the Realtime Cookie Scanner as a compliance monitoring tool — as distinct from a tracking tool subject to consent — is **legally well-founded**. The technical safeguards documented in this paper, taken together, provide a coherent and verifiable basis for that qualification.
 
 ***
