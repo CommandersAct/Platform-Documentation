@@ -30,8 +30,6 @@ Concretely, the module allows operators to:
 * monitor changes in cookie usage over time;
 * support internal privacy and compliance audits.
 
-The module does not analyse user behaviour and is not designed to track or identify users.
-
 #### 2.2 Technical Operations Performed
 
 The module performs the following operations in the browser:
@@ -84,13 +82,13 @@ The module subsequently monitors changes in consent status via the CMP API in or
 
 Article 5(3) of the ePrivacy Directive requires prior consent for any operation involving **access to information stored in the user's terminal equipment**, or the storing of information therein, regardless of whether that information constitutes personal data.
 
-The Realtime Cookie Scanner, insofar as it accesses cookies and storage keys present in the browser, falls within the scope of this provision. This is acknowledged. The legal question is therefore whether this access can be considered strictly necessary for the provision of the service.
+The Realtime Cookie Scanner, insofar as it accesses cookies and storage keys present in the browser, falls within the scope of this provision. This is acknowledged. The legal question is therefore whether this access can be considered strictly necessary for the provision of the service. \
+The module is not designed to track or identify users, and the analysis below demonstrates that its operation is consistent with the strict necessity exemption.
 
 #### 3.2 Qualification Under the Strict Necessity Exemption
 
-The ePrivacy Directive provides an exemption for operations that are **strictly necessary** for the provision of a service explicitly requested by the user.
-
-In the case of the Realtime Cookie Scanner, the following elements support the applicability of this exemption:
+The ePrivacy Directive provides an exemption for operations that are **strictly necessary** either for the sole purpose of carrying out a transmission over an electronic communications network, or where access is strictly necessary in order to provide a service explicitly requested by the user. \
+The Realtime Cookie Scanner falls within the second limb of this exemption, on the following grounds:
 
 **a) Exclusive compliance and technical audit purpose**
 
@@ -118,16 +116,9 @@ As a subsidiary point, should a supervisory authority consider that certain meta
 
 #### 3.4 Position of National Authorities and Documentation Recommendations
 
-Certain authorities — notably the AEPD (Spain) and German supervisory authorities — adopt a particularly strict interpretation of the "strictly necessary" concept for technologies executed in the browser prior to consent.
+Certain supervisory authorities — notably the AEPD (Spain) and German authorities — have historically adopted a particularly strict interpretation of the "strictly necessary" concept for technologies executed in the browser prior to consent.
 
-This position is not fundamentally different from that of the CNIL or the EDPB on a legal level, but its practical application may lead to more cautious assessments in these jurisdictions.
-
-To address the requirements of DPOs operating under these stricter frameworks, documentation should clearly establish:
-
-* the module's exclusive compliance and technical audit purpose;
-* the complete absence of any tracking, profiling, or behavioural analytics function;
-* the technical limitations of the data collection (no cookie values, no user identifiers, no fingerprinting, no storage of IP addresses or user-agent);
-* the technical necessity of pre-consent observation to detect non-compliant cookie deployments.
+The technical architecture of the Realtime Cookie Scanner has been designed with these stricter frameworks in mind. The combination of a compliance-exclusive purpose, minimal data collection, absence of any personal data processing, and EU-based data hosting is intended to provide a robust basis for assessment in all European jurisdictions, including those with the most demanding regulatory environments.
 
 #### 3.5 Overall Assessment
 
