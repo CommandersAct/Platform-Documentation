@@ -83,7 +83,7 @@ The module subsequently monitors changes in consent status via the CMP API in or
 Article 5(3) of the ePrivacy Directive requires prior consent for any operation involving **access to information stored in the user's terminal equipment**, or the storing of information therein, regardless of whether that information constitutes personal data.
 
 The Realtime Cookie Scanner, insofar as it accesses cookies and storage keys present in the browser, falls within the scope of this provision. This is acknowledged. The legal question is therefore whether this access can be considered strictly necessary for the provision of the service. \
-The module is not designed to track or identify users, and the analysis below demonstrates that its operation is consistent with the strict necessity exemption.
+**The module is not designed to track or identify users, and the analysis below demonstrates that its operation is consistent with the strict necessity exemption.**
 
 #### 3.2 Qualification Under the Strict Necessity Exemption
 
@@ -122,10 +122,7 @@ The technical architecture of the Realtime Cookie Scanner has been designed with
 
 #### 3.5 Overall Assessment
 
-The qualification of the Realtime Cookie Scanner as a compliance monitoring tool — as distinct from a tracking tool subject to consent — is legally well-founded. \
-While supervisory authorities have not yet issued an explicit decision on this specific category of tool, the elements set out in this document provide a solid and documented basis for that qualification. \
-\
-The priority is therefore to ensure that legal teams have access to sufficient technical and legal documentation to assess the module's nature accurately and distinguish it from consent-dependent tracking tools.
+The qualification of the Realtime Cookie Scanner as a compliance monitoring tool — as distinct from a tracking tool subject to consent — is **legally well-founded**. The technical safeguards documented in this paper, taken together, provide a coherent and verifiable basis for that qualification.
 
 ***
 
