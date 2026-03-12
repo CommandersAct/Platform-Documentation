@@ -61,8 +61,8 @@ The easiest way to manage this cookie is to **use this client-side tags in our t
 | `user.email_md5`          | <p><code>id.email.md5</code> and</p><p><code>id.email.sha256_md5</code> <strong>[3]</strong></p> |
 | `user.email_sha256`       | `id.email.sha256`                                                                                |
 
-{% hint style="warning" %}
-**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).\
-&#xNAN;**\[2]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark>, depending if <mark style="color:blue;">`app.name`</mark> is defined or not.\
+{% hint style="info" %}
+**\[1]** Automatically converted in the [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601).  \
+&#xNAN;**\[2]** This is either <mark style="color:blue;">`m`</mark> or <mark style="color:blue;">`d`</mark>, depending if <mark style="color:blue;">`app.name`</mark> is defined or not.  \
 &#xNAN;**\[3]** <mark style="color:blue;">`id.email.sha256_md5`</mark> is automatically hashed.
 {% endhint %}
