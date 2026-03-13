@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 13/03/2026
 
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
+[linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
+{% endcontent-ref %}
+
 Destination documentation:
 
 {% content-ref url="../features/destinations/destinations-catalog/adobe/adobe-analytics-data-insertion-api.md" %}
