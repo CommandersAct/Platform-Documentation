@@ -10,6 +10,42 @@ description: >-
 
 ✨ **New Features**
 
+📊 **Credit Usage — Improved Export**
+
+The Credit Usage export has been updated to simplify analysis and reporting.
+
+* The first sheet now mirrors the Credit Usage table with **raw values only**
+* Intermediate totals have been removed
+* The format has been adjusted to better support reporting workflows
+
+→ Makes Excel analysis easier and speeds up preparation of client usage reports and internal calculations.
+
+---
+
+🔎 **Event Inspector — Extended Search Capabilities**
+
+Search capabilities in the **Event Inspector** have been significantly expanded.
+
+* All event properties are now searchable
+* Applies to all standard properties and up to **100 custom properties per event**
+* Only a few heavy fields remain excluded from indexing (headers and `context.device`)
+
+→ Enables faster debugging and more powerful investigations when analyzing event flows.
+
+---
+
+🧬 **Event Enrichment — Improved Observability**
+
+New metadata is now attached to events to better track enrichment outcomes.
+
+* `context.enrichment.status` indicates whether enrichment succeeded or failed
+* `context.warnings.detail` explains the reason for enrichment failures (missing_key, no_data, timeout, api_error, etc.)
+* `context.dataquality.violations` flags violations of rules defined in the Event Specification
+
+All fields are indexed and **visible in the Live Event Inspector**.
+
+→ Makes it much easier to diagnose enrichment issues, filter problematic events, and prevent sending incomplete data to destinations.
+
 ♿ **Privacy Center — WCAG 2.2 Accessibility Compliance**
 
 A new **Privacy Center template compliant with WCAG 2.2 accessibility standards** is now available for all customers.
