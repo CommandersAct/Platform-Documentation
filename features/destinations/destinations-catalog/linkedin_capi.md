@@ -52,8 +52,6 @@ Check the "Smart Mapping" field <mark style="color:blue;">`Event Id`</mark> , [F
 | ---------------------- | -------------------------------- |
 | `[Any Event]` **\[1]** | `[Any Conversion Rule]` **\[2]** |
 
->
-
 {% hint style="info" %}
 > **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.  \
 > &#xNAN;**\[2]** See <mark style="color:blue;">`Conversion Rule Name`</mark> in [Configuration](linkedin_capi.md#configuration) for more details.
