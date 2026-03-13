@@ -400,12 +400,12 @@ The fields `custom_data.contents` and `custom_data.content_ids` are mutually exc
 | <p><code>currency</code></p><p><code>items.0.currency</code></p> | `custom_data.currency`                       |
 | `id`                                                             | `custom_data.order_id`                       |
 | `search_term`                                                    | `custom_data.search_string`                  |
-| `items.X.id`                                                     | `custom_data.contents.X.id` **\[1]**         |
+| `items.X.product.id`                                             | `custom_data.contents.X.id` **\[1]**         |
 | `items.X.quantity`                                               | `custom_data.contents.X.quantity` **\[1]**   |
 | `items.X.product.price`                                          | `custom_data.contents.X.item_price` **\[1]** |
 | `items.0.product.name`                                           | `custom_data.content_name`                   |
 | `items.0.product.category_1`                                     | `custom_data.content_category`               |
-| `items.X.id`                                                     | `custom_data.content_ids` **\[2]**           |
+| `items.X.product.id`                                             | `custom_data.content_ids` **\[2]**           |
 | `Content type value`                                             | `custom_data.content_type` **\[3]**          |
 | `status`                                                         | `custom_data.status`                         |
 | `items.length`                                                   | `custom_data.num_items`                      |
@@ -413,7 +413,7 @@ The fields `custom_data.contents` and `custom_data.content_ids` are mutually exc
 | `custom_data[Propery Name]` **\[5]**                             | `custom_data[Property Name]`                 |
 
 {% hint style="info" %}
-> **\[1]** Mutually exclusive with `custom_data.content_ids` .  \
+> **\[1]** Mutually exclusive with `custom_data.content_ids` and set if all the following properties are present and valid: `items.X.product.id` , `items.X.product.price` , `items.x.quantity` .  \
 > &#xNAN;**\[2]** Array containing all product identifiers. Mutually exclusive with `custom_data.contents`.  \
 > &#xNAN;**\[3]** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set.  \
 > &#xNAN;**\[4]** When <mark style="color:blue;">`Send all your event properties as custom data`</mark> is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark> with the same property name.  \
