@@ -23,8 +23,8 @@ The Microsoft Conversions API destination provides the following key features:
 Ensure you have access to [Microsoft Advertising](https://ads.microsoft.com/).&#x20;
 
 {% hint style="info" %}
-This destination can be used as a stand-alone or together with [UET client-side JavaScript tracking](https://help.ads.microsoft.com/#apex/ads/en/56686/2).\
-While data is captured using this destination, a client-side user identification sync pixel can be used to connect Microsoft and customer-assigned user identifiers. The sync pixel can be found [in our client-side template library](https://doc.commandersact.com/features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tags/add-tags) with the name <mark style="color:blue;">`Bing - Client-side id-sync and data capture`</mark>  and is recommended for conversion measurement as it’s required for remarketing and audience building because these features rely on user identity resolution. More details are available at the following [LINK](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#client-side-id-sync).
+This destination can be used as a stand-alone or together with the [UET client-side JavaScript tracking](https://help.ads.microsoft.com/#apex/ads/en/56686/2).\
+While data is captured using this destination, a client-side user identification sync pixel can also be used to connect Microsoft and customer-assigned user identifiers. The sync pixel can be found [in our client-side template library](https://doc.commandersact.com/features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tags/add-tags) with the name <mark style="color:blue;">`Bing - Client-side id-sync and data capture`</mark>  and is recommended for conversion measurement as it’s required for remarketing and audience building because these features rely on user identity resolution. More details are available at the following [LINK](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#client-side-id-sync).
 {% endhint %}
 
 {% hint style="warning" %}
