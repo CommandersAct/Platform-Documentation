@@ -88,7 +88,7 @@ Some organizations, especially those with strict privacy policies, may have conc
 
 #### Cookie blacklisting at the edge
 
-Customers can filter cookies **directly at the CDN or edge layer** (Cloudflare Worker, Fastly Compute, etc.). This can be done by **simply configuring the Worker code provided in this guide** to remove specific cookies before the request is forwarded to Commanders Gateway.
+Customers can filter cookies **directly at the CDN or edge layer** (Cloudflare Worker, Fastly Compute, etc.). This can be done by **simply configuring the Worker code provided in this guide** (see CloudFlare free or Faslty tab below) to remove specific cookies before the request is forwarded to Commanders Gateway.
 
 This allows specific cookies to be removed from the request **before it reaches Commanders Gateway**, ensuring that only the cookies approved by the organization leave its infrastructure.
 
@@ -187,9 +187,31 @@ When using Cloudflare Free, the setup relies on a **simple Worker** that proxies
 const prefix = "/metrics"; // Example path, replace with the path you choose in the previous step
 const sid = "12345"; // Example workspace ID (aka site ID), replace with your own ID
 
+// List of cookie names that must NOT be forwarded to Commanders Gateway. You can add your technical cookies if needed
+const blacklistedCookies = [
+  "PHPSESSID",
+  "JSESSIONID"
+];
+
 addEventListener("fetch", event => {
   event.respondWith(handleRequest(event.request));
 });
+
+function filterCookieHeader(cookieHeader, blacklist) {
+  if (!cookieHeader) return "";
+
+  const blacklistSet = new Set(blacklist);
+
+  const filteredCookies = cookieHeader
+    .split(";")
+    .map(cookie => cookie.trim())
+    .filter(cookie => {
+      const cookieName = cookie.split("=")[0];
+      return !blacklistSet.has(cookieName);
+    });
+
+  return filteredCookies.join("; ");
+}
 
 async function handleRequest(request) {
   const url = new URL(request.url);
@@ -207,6 +229,16 @@ async function handleRequest(request) {
     if (region) newHeaders.set("X-Forwarded-Region", region);
     if (country && region) {
       newHeaders.set("X-Forwarded-CountryRegion", `${country}-${region}`);
+    }
+
+    // Filter the Cookie header before proxying the request.
+    const cookieHeader = newHeaders.get("Cookie");
+    const filteredCookies = filterCookieHeader(cookieHeader, blacklistedCookies);
+
+    if (filteredCookies) {
+      newHeaders.set("Cookie", filteredCookies);
+    } else {
+      newHeaders.delete("Cookie");
     }
 
     // Remove Host header to avoid conflicts
@@ -400,7 +432,29 @@ const BACKEND = "commander_gateway";         // Fastly backend name pointing to 
 const STRIP_PREFIX = true;                   // If true, removes the prefix from the forwarded path
 const PREPEND_PATH = "/gateway";             // Internal gateway entrypoint on Commanders side (do not change)
 
+// List of cookie names that must NOT be forwarded to Commanders Gateway. Add your technical cookies if needed
+const blacklistedCookies = [
+  "PHPSESSID",
+  "JSESSIONID"
+];
+
 addEventListener("fetch", (event) => event.respondWith(handleRequest(event.request)));
+
+function filterCookieHeader(cookieHeader, blacklist) {
+  if (!cookieHeader) return "";
+
+  const blacklistSet = new Set(blacklist);
+
+  const filteredCookies = cookieHeader
+    .split(";")
+    .map(cookie => cookie.trim())
+    .filter(cookie => {
+      const cookieName = cookie.split("=")[0];
+      return !blacklistSet.has(cookieName);
+    });
+
+  return filteredCookies.join("; ");
+}
 
 async function handleRequest(request) {
 
@@ -437,6 +491,16 @@ async function handleRequest(request) {
   if (country) headers.set("X-Forwarded-Country", country);
   if (region)  headers.set("X-Forwarded-Region", region);
   if (country && region) headers.set("X-Forwarded-CountryRegion", `${country}-${region}`);
+
+  // Filter the Cookie header before proxying the request.
+  const cookieHeader = headers.get("Cookie");
+  const filteredCookies = filterCookieHeader(cookieHeader, blacklistedCookies);
+
+  if (filteredCookies) {
+    headers.set("Cookie", filteredCookies);
+  } else {
+    headers.delete("Cookie"); // Remove the Cookie header entirely if all cookies were filtered out
+  }
 
   // Avoid Host header conflicts at origin
   headers.delete("host");
