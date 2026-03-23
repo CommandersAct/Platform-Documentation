@@ -63,7 +63,7 @@ It will be possible soon to define retroactive flags. Stay connected!
 
 * Flag _VIP customers:_ flag all your best customers
 * Flag _window shoppers_: customers interested but not converted
-* Review our [Business case](broken-reference/)
+* Review our [Business case](https://github.com/TagCommander/PlatformX/blob/master/features/enrichments/augmented-user-attributes/broken-reference/README.md)
 
 ### Example
 

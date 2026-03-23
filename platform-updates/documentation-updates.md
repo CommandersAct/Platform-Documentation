@@ -963,8 +963,8 @@ Add a [changelog](../developers/changelogs/web-container-generator.md) section o
 
 Destination documentation:
 
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
+{% content-ref url="https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md" %}
+[https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md](https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md)
 {% endcontent-ref %}
 
 ## 06/12/2022
@@ -1114,8 +1114,8 @@ Data quality documentation:
 [data-quality](../features/data-quality/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
+{% content-ref url="https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md" %}
+[https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md](https://github.com/TagCommander/PlatformX/blob/master/platform-updates/broken-reference/README.md)
 {% endcontent-ref %}
 
 {% content-ref url="../features/data-quality/data-quality.md" %}

@@ -1,10 +1,4 @@
-# Page 1
-
-Parfait — je te propose une version **plus pédagogique, orientée client**, avec un ton clair, des explications simples et des exemples concrets. Toujours en **format GitBook-ready (Markdown)** 👇
-
-***
-
-## Understanding Credit Usage
+# Credit Usage
 
 ### What is the Credit Usage interface?
 

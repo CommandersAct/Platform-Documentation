@@ -43,6 +43,6 @@ Storing data inside the Data store allows you then to [enrich ](../../features/e
 
 A data layer is a specification of your data for tracking customer interactions. This can include data from websites, mobile apps, connected devices, and offline sources. The data layer enables your third-party vendor solutions and serves as the basis for your data-focused initiatives.
 
-{% content-ref url="broken-reference/" %}
-[broken-reference](broken-reference/)
+{% content-ref url="https://github.com/TagCommander/PlatformX/blob/master/getting-started/concepts/broken-reference/README.md" %}
+[https://github.com/TagCommander/PlatformX/blob/master/getting-started/concepts/broken-reference/README.md](https://github.com/TagCommander/PlatformX/blob/master/getting-started/concepts/broken-reference/README.md)
 {% endcontent-ref %}
