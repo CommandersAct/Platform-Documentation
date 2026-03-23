@@ -61,7 +61,7 @@
             * [Setup guide](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/deduplication/setup-guide.md)
             * [Setup example](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/deduplication/setup-example.md)
             * [Deduplication reports](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/deduplication/deduplication-reports.md)
-          * [TagPerformance](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/README.md)
+          * [TagPerformance (deprecated)](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/README.md)
             * [Setup guide](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/setup-guide.md)
             * [Report analysis](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/report-analysis.md)
             * [Troubleshooting](features/sources/sources-catalog/web/containers/user-guides-for-browser-side-platform/tagperformance/troubleshooting.md)

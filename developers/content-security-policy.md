@@ -7,7 +7,7 @@ For further details about CSP, visit this site:\
 
 ## TMS <a href="#tag" id="tag"></a>
 
-### CSPs&#x20;
+### CSPs
 
 * **img-src** on domains \*[.tagcommander.com](https://tagcommander.com) and \*[.commander1.com](https://commander1.com/)
 * **script-src** on domains \*[.tagcommander.com](https://tagcommander.com) and \*[.commander1.com](https://commander1.com)
@@ -23,6 +23,12 @@ This includes containers, Privacy, Cookies sync, MIX and DATA Javascripts
 ### Credit Usage
 
 [https://manager.tagcommander.com/utils/hit.php](https://manager.tagcommander.com/utils/hit.php) , returns a pixel
+
+### Chrome Extension collection
+
+* [https://platform.commandersact.com](https://platform.commandersact.com/)
+* [https://api.commander1.com/](https://api.commander1.com/)
+* [https://privacy.trustcommander.net/collector](https://privacy.trustcommander.net/collector)
 
 ### Deduplication conversion collection
 
@@ -51,12 +57,6 @@ https://\*.[commander1.com/dc3/](https://commander1.com/) , returns a pixel
 CDN javascript hosting
 
 [https://sync.commander1.com ](https://sync.commander1.com/), returns a pixel
-
-### TagPerformance data collection
-
-CDN javascript hosting
-
-[https://engage.commander1.com/tagsperf](https://engage.commander1.com/tagsperf), returns a pixel
 
 ### Serverside Tracking v1 (deprecated)
 
@@ -95,7 +95,7 @@ CDN javascript hosting
 
 ## Campaign Analytics <a href="#mix" id="mix"></a>
 
-### CSPs&#x20;
+### CSPs
 
 * **img-src** on domains \*.[commander1.com](https://commander1.com/)
 * **script-src** on domains \*[.tagcommander.com](http://tagcommander.com/)
@@ -144,7 +144,7 @@ _Note : the difference is the_ `/mix/` _in the URL for the first party tracking.
 
 ## Enrichment & Segmentation <a href="#data" id="data"></a>
 
-### CSPs&#x20;
+### CSPs
 
 * **img-src** on domains \*[.commander1.com](https://commander1.com/)
 * **script-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
@@ -156,4 +156,4 @@ CDN javascript hosting
 
 [https://engage.commander1.com/](https://engage.commander1.com/tagsperf)dms, returns a pixel
 
-\
+\\

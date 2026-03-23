@@ -1,4 +1,8 @@
-# TagPerformance
+---
+hidden: true
+---
+
+# TagPerformance (deprecated)
 
 A Website’s performance is key to **SEO** and **user experience**; however, the increasing amount of tags used on websites nowadays has an impact on loading times.
 
