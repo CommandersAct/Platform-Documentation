@@ -2,6 +2,15 @@
 
 ## 2026
 
+### 101.0
+
+Release date:  **23/03/2026**
+
+* [beta] Improved Real-Time Cookie Scanner tracking
+  * Using a first-party domain
+  * Anonymize scanned URL
+  * Only collect hosts of ressources url of the scanned page
+
 ### 100.9
 
 Release date:  **09/03/2026**
