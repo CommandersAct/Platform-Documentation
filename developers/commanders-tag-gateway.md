@@ -1,4 +1,4 @@
-# Commanders Tag Gateway
+# Commanders Act Gateway
 
 This document describes how to deploy **Commanders Act Tag Gateway**, a **unified first-party gateway** that uses **one single setup and one single path on your domain** to power multiple tracking and hosting use cases.
 
