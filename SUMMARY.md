@@ -453,4 +453,3 @@
   * [Cookie sync partners](configure/cookies/cookie-sync-partners.md)
   * [First domain tracking (Phoenix)](configure/cookies/first-domain-tracking-phoenix.md)
 * [Disclaimer](configure/disclaimer.md)
-* [Untitled](configure/untitled.md)

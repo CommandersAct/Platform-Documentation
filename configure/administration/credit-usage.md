@@ -48,12 +48,12 @@ Each metric is based on two main dimensions:
 
 ### TMS Client Side
 
-| Metric                                  | Type               | Description                            |
-| --------------------------------------- | ------------------ | -------------------------------------- |
-| Client Side Container Call - Collection | Events             | Deduplicated web container calls       |
-| Tagperformance - Collection             | Events             | Based on page views (sampling: 1/1000) |
-| Tagperformance - Storage                | Storage            | Based on page views (sampling: 1/1000) |
-| Deduplication - Collection & Storage    | Collection Storage | TMS deduplication (MySQL reporting)    |
+| Metric                                  | Type               | Description                                   |
+| --------------------------------------- | ------------------ | --------------------------------------------- |
+| Client Side Container Call - Collection | Events             | Deduplicated web container calls              |
+| Tagperformance - Collection             | Events             | Collection from TagPerfomance                 |
+| Tagperformance - Storage                | Storage            | Storage of TagPerformance, to feed dashboards |
+| Deduplication - Collection & Storage    | Collection Storage | TMS deduplication                             |
 
 ***
 
@@ -65,7 +65,7 @@ Each metric is based on two main dimensions:
 | Server Side V2 - Collection   | Events  | All input events (valid & invalid)                 |
 | Server Side V2 - Output       | Events  | All output events                                  |
 | Server Side V2 - Storage      | Storage | All events stored by Data Storage                  |
-| Data Cleansing - Collection   | Events  | All events transformed with data Cleansing         |
+| Data Cleansing - Collection   | Events  | All events transformed with Data Cleansing         |
 | Event Enrichment - Collection | Events  | Number of processed events by Event Enrichment     |
 | Destination log exporter      | Events  | All events collected by Destination "log exporter" |
 
@@ -73,11 +73,11 @@ Each metric is based on two main dimensions:
 
 ### Consent
 
-| Metric                               | Type   | Description                                                                  |
-| ------------------------------------ | ------ | ---------------------------------------------------------------------------- |
-| Privacy Banners - Collection         | Events | CMP banner views, deduplicated                                               |
-| Cookie Scanner - Collection          | Events | Based on container calls (sampling: 1/100)                                   |
-| Realtime Cookie Scanner - Collection | Events | Based on container calls: sampling tailored to your website's traffic volume |
+| Metric                               | Type   | Description                                  |
+| ------------------------------------ | ------ | -------------------------------------------- |
+| Privacy Banners - Collection         | Events | CMP banner views, deduplicated               |
+| Cookie Scanner - Collection          | Events | Data collection for cookie scanner           |
+| Realtime Cookie Scanner - Collection | Events | Data collection for real time cookie scanner |
 
 ***
 
