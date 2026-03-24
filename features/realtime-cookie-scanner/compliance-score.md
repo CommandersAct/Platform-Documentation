@@ -135,3 +135,7 @@ To improve your compliance score:
 * Properly categorize all cookies
 * Regularly review high-impact issues identified in the interface
 
+{% hint style="info" %}
+Have you changed your settings to improve your score? \
+You’ll need to wait 5 minutes for the changes to take effect on this page, whilst your score is being recalculated
+{% endhint %}
