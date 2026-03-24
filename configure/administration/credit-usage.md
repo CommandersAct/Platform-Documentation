@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Credit Usage
 
 ### What is the Credit Usage interface?
