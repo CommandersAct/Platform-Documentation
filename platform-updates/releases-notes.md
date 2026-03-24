@@ -20,7 +20,7 @@ The Credit Usage export has been updated to simplify analysis and reporting.
 
 → Makes Excel analysis easier and speeds up preparation of client usage reports and internal calculations.
 
----
+***
 
 🔎 **Event Inspector — Extended Search Capabilities**
 
@@ -32,14 +32,14 @@ Search capabilities in the **Event Inspector** have been significantly expanded.
 
 → Enables faster debugging and more powerful investigations when analyzing event flows.
 
----
+***
 
 🧬 **Event Enrichment — Improved Observability**
 
 New metadata is now attached to events to better track enrichment outcomes.
 
 * `context.enrichment.status` indicates whether enrichment succeeded or failed
-* `context.warnings.detail` explains the reason for enrichment failures (missing_key, no_data, timeout, api_error, etc.)
+* `context.warnings.detail` explains the reason for enrichment failures (missing\_key, no\_data, timeout, api\_error, etc.)
 * `context.dataquality.violations` flags violations of rules defined in the Event Specification
 
 All fields are indexed and **visible in the Live Event Inspector**.
@@ -60,7 +60,7 @@ Key improvements include:
 
 Activation is simple: select the new Privacy Center template in your banner settings, regenerate the banner, and deploy.
 
----
+***
 
 🛍 **Amazon Consent Mode — Now Available for All Customers**
 
@@ -71,10 +71,10 @@ Amazon Consent Mode is now generally available.
 
 → Enables compliant tracking and activation with Amazon advertising integrations.
 
-📘 Documentation:  
+📘 Documentation:\
 https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/amazon-consent-signal
 
----
+***
 
 📊 **Destination Overview — Advanced Filtering**
 
@@ -85,7 +85,7 @@ A new **“More filters”** component has been added to destination listings.
 
 → Makes it easier to navigate large accounts and isolate specific configurations.
 
----
+***
 
 📁 **Realtime Cookie Scanner — Excel Export**
 
@@ -93,7 +93,7 @@ Cookie list exports now support **Excel (.xlsx)** format in addition to CSV.
 
 → Avoids encoding issues and allows teams to use exports immediately in reporting workflows without conversion.
 
----
+***
 
 📧 **Alerts — External Email Recipients**
 
@@ -704,7 +704,7 @@ Perform faster, more secure QA with our browser plugin:
 * Security enhancements with login widget
 *   Test your Branches directly\\
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 📱 **New Source:** **Mobile Server-Side Events via React Native**\
 Easily send server-side events from mobile apps using the React Native framework. A perfect fit for many of our customers.\\
@@ -728,14 +728,14 @@ The AI journey begins with new tools to assist your daily work:
 *   Built-in safety checks to prevent errors\
     → **Greater autonomy & faster go-live**\\
 
-    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗑️ **TMS – Branch Deletion Confirmation**
 
 *   Added confirmation pop-up before branch deletion\
     → **No more accidental deletions**\\
 
-    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 🗃️ **Custom Data Store & Storage Settings**
 
@@ -744,7 +744,7 @@ The AI journey begins with new tools to assist your daily work:
 *   Fully configurable UI with safety warnings\
     → **Enrich future events with past context**\\
 
-    <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -782,7 +782,7 @@ What is it? Customers can now use their own URL (via CNAME) to host privacy file
 
 Why is it important? Ensures better data control while maintaining compliance.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -802,7 +802,7 @@ Prepares for future alerting features – get notified immediately when new cook
 
 Competitive Advantage – Unlike competitors, our scanner provides real-time alerts (no waiting 24h for a crawler!).
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -812,7 +812,7 @@ Find specific sources/destinations faster.
 
 Easier workspace overview – Quick visibility on available integrations.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -822,7 +822,7 @@ Market alignment with Google CMP Partner requirements.
 
 Easier vendor visibility – Just regenerate & deploy the banner to update.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -840,7 +840,7 @@ Use IAB TCF consent to manage part of the Google Consent Mode signal.
 
 For customers using our CMP in GTM – Just enable it in Advanced Features.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -860,7 +860,7 @@ Smarter summaries – Improved clarity.
 
 Now translated UI – Not just in English anymore!
 
-<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -870,7 +870,7 @@ New Feature Name – Renamed based on Sales & Consulting feedback.
 
 Customers can now set up their own validation rules.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -890,7 +890,7 @@ No more freezing or bugs with large event lists.
 
 Faster page load times (side panel optimizations coming soon).
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -993,7 +993,7 @@ Explore the full feature details in our [documentation](https://doc.commandersac
 
 *   We’ve added 3 new access rights for destination UIs, providing more secure access for all Custom Profiles users.\\
 
-    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Release 10.0.24 - September 2024
 
@@ -1379,7 +1379,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * Enhanced opt-in rates with new popin template
 * Improved clarity for better user engagement
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

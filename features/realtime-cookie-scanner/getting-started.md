@@ -10,7 +10,7 @@ In all cases, your consultant (or our support team) needs to activate the featur
 
 On the "Cookie Notice" page, click on gear icon (top right) to open the settings panel
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Select the languages you want to use ([more details here](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#settings))
 * Enter your website(s) domain(s)

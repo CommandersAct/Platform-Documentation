@@ -366,6 +366,7 @@
   * [Getting Started](features/realtime-cookie-scanner/getting-started.md)
   * [Cookie Notice Manager](features/realtime-cookie-scanner/cookie-notice-manager.md)
   * [Cookies by Category](features/realtime-cookie-scanner/cookies-by-category.md)
+  * [Compliance Score](features/realtime-cookie-scanner/compliance-score.md)
   * [Legal and Technical Position Paper](features/realtime-cookie-scanner/legal-and-technical-position-paper.md)
 
 ## Use cases

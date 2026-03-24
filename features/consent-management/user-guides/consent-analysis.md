@@ -9,8 +9,8 @@ The dashboard is organized into specialized widgets to provide immediate insight
 ### 1. Executive KPI Cards
 
 These cards provide a weighted average of your selected banners and include **Period over Period (PoP)** comparisons.
-  
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Global Consent Rate:** Total percentage of visitors exposed to the CMP who accepted at least one category. This metric includes all exposed traffic and can therefore be impacted by human bounces and ghost traffic.
 * **Interaction Rate:** Percentage of visitors exposed to the CMP who actively engaged with the banner, for example by accepting, rejecting, or opening or saving the Privacy Center.
@@ -31,7 +31,7 @@ The Funnel widget visualizes the conversion path to identify where drop offs occ
 
 The dashboard automatically interprets data to highlight the most relevant reading points and growth levers.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Segmentation & Compliance
 
@@ -39,9 +39,9 @@ The dashboard automatically interprets data to highlight the most relevant readi
 * **Consent by Device:** Compares Desktop, Mobile, and Tablet performance.
 * **Real time Cookie Scanner:** A live audit of your compliance health. It displays your **Compliance Score**, detected **Violations** such as cookies dropped before consent, and **New Cookies** discovered.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -146,7 +146,6 @@ This includes:
 
 As a result, ghost traffic contributes to the gap between exposed traffic and visitors who actually interact with the CMP.
 
-
 ***
 
 ## Scenarios & Detailed Examples
@@ -180,46 +179,46 @@ The following scenarios explain how deduplication affects your KPIs:
 On **23/09/2021** the calculation method was updated to include both banner displays and Privacy Center displays.
 {% endhint %}
 
-| Metric                      | Description |
-| --------------------------- | ----------- |
-| **Visitors exposed to CMP** | Number of visitors viewing a CMP banner or Privacy Center. |
-| **Give consent**            | Visitors who consent to at least one category. Only the last action of the day is kept. |
+| Metric                      | Description                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------- |
+| **Visitors exposed to CMP** | Number of visitors viewing a CMP banner or Privacy Center.                                    |
+| **Give consent**            | Visitors who consent to at least one category. Only the last action of the day is kept.       |
 | **Do not give consent**     | Visitors who consent to no category. Includes both explicit rejects and "No Choice" visitors. |
 
 ### Consent & Interaction Methods
 
-| Metric                             | Description |
-| ---------------------------------- | ----------- |
-| **Banner button**                  | Explicit consent via the "Accept" button on the first layer. |
-| **Privacy center**                 | Explicit consent by saving settings within the Privacy Center. |
-| **Implicit (Browse/Click/Scroll)** | Consent triggered by user behavior, if configured. |
+| Metric                             | Description                                                                                    |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Banner button**                  | Explicit consent via the "Accept" button on the first layer.                                   |
+| **Privacy center**                 | Explicit consent by saving settings within the Privacy Center.                                 |
+| **Implicit (Browse/Click/Scroll)** | Consent triggered by user behavior, if configured.                                             |
 | **Interaction rate**               | Percentage of visitors exposed to the CMP who clicked any button, link, or the Privacy Center. |
 
 ### Engaged Visitors (Explicit Choice)
 
-| Metric                                 | Description |
-| -------------------------------------- | ----------- |
+| Metric                                 | Description                                                                        |
+| -------------------------------------- | ---------------------------------------------------------------------------------- |
 | **Visitors making an explicit choice** | Number of visitors who clicked either Accept, Reject, or saved the Privacy Center. |
-| **Explicitly consent**                 | Visitors who made a choice and chose to consent. |
-| **Explicitly reject**                  | Visitors who made a choice and chose to reject. Excludes "No Choice" visitors. |
+| **Explicitly consent**                 | Visitors who made a choice and chose to consent.                                   |
+| **Explicitly reject**                  | Visitors who made a choice and chose to reject. Excludes "No Choice" visitors.     |
 
 ### Privacy Center Usage
 
-| Metric                              | Description |
-| ----------------------------------- | ----------- |
-| **Exposed to Categories/Vendors**   | Number of visitors viewing the category or vendor lists. |
-| **Visitors saving a configuration** | Number of visitors clicking the "Save" button in the Privacy Center. |
+| Metric                              | Description                                                              |
+| ----------------------------------- | ------------------------------------------------------------------------ |
+| **Exposed to Categories/Vendors**   | Number of visitors viewing the category or vendor lists.                 |
+| **Visitors saving a configuration** | Number of visitors clicking the "Save" button in the Privacy Center.     |
 | **Visitors not saving**             | Visitors who opened the Privacy Center but left the site without saving. |
 
 ### Reading the Main KPI Cards
 
-| Metric                        | Description |
-| ----------------------------- | ----------- |
-| **Global Consent Rate**       | Percentage of exposed visitors who accepted at least one category. This metric includes all exposed traffic, including bounces and ghost traffic. |
-| **Interaction Rate**          | Percentage of exposed visitors who generated an interaction with the CMP. |
-| **Explicit Consent**          | Percentage of positive choices among visitors who interacted with the CMP. This is the most reliable trust and UX performance metric. |
-| **Estimated Tracking Loss**   | Percentage of exposed visitors for whom no usable positive consent outcome is available in practice. It mainly corresponds to Explicit refusals plus No Choice. |
-| **Ghost Traffic**             | Exposed visitors with no CMP interaction after standard bot filtering. Includes human bounces and undetectable bots. |
+| Metric                      | Description                                                                                                                                                     |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Global Consent Rate**     | Percentage of exposed visitors who accepted at least one category. This metric includes all exposed traffic, including bounces and ghost traffic.               |
+| **Interaction Rate**        | Percentage of exposed visitors who generated an interaction with the CMP.                                                                                       |
+| **Explicit Consent**        | Percentage of positive choices among visitors who interacted with the CMP. This is the most reliable trust and UX performance metric.                           |
+| **Estimated Tracking Loss** | Percentage of exposed visitors for whom no usable positive consent outcome is available in practice. It mainly corresponds to Explicit refusals plus No Choice. |
+| **Ghost Traffic**           | Exposed visitors with no CMP interaction after standard bot filtering. Includes human bounces and undetectable bots.                                            |
 
 ***
 

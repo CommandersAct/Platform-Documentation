@@ -42,7 +42,7 @@ To to be compliant with CCPA, simply follow these steps:
    * Set your [consent duration](../user-guides/settings.md) for at least **12 months**
 2.  **Enable the** [**Global Privacy Control**](ccpa-and-global-privacy-control.md#how-enable-the-global-privacy-control) option on your Commanders Act privacy banner\\
 
-    <figure><img src="../../../.gitbook/assets/image (6).png" alt="" width="320"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (6) (1).png" alt="" width="320"><figcaption></figcaption></figure>
 3. Integrate in your website footer a **link or a button to manage consent choices**\
    example of html code to integrate:\
    `<a href="#" onclick="tC.privacyCenter.showPrivacyCenter();return false">privacy center</a>`

@@ -8,7 +8,7 @@ Among the available templates, one is dedicated to accessibility. It ensures com
 
 Don't forget to use our latest Privacy Center template
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt="" width="491"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10).png" alt="" width="491"><figcaption></figcaption></figure>
 
 Web Content Accessibility Guidelines (WCAG) is developed through the [W3C process](https://www.w3.org/WAI/standards-guidelines/w3c-process/) in cooperation with individuals and organizations around the world, with a goal of providing a single shared standard for web content accessibility that meets the needs of individuals, organizations, and governments internationally.
 
@@ -182,4 +182,4 @@ tC.privacy.enableFocusTrap(false);
   Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
 * Avoid "neutral" buttons position, the good practice is "Default status = Off"
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>

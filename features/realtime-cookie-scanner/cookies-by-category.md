@@ -28,7 +28,7 @@ Each card displays:
 * the category name
 * the total number of cookies detected in that category
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **What you can do**\
 Click any card to focus on one category — the rest of the dashboard updates automatically to show only cookies from that category. The selected card gets a visual highlight.
@@ -51,7 +51,7 @@ Just below the cards, a donut chart shows how cookies are split across categorie
 **What you can do**\
 Click a segment to filter the entire dashboard on that category — same effect as clicking the card. The clicked segment and corresponding card get highlighted.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
