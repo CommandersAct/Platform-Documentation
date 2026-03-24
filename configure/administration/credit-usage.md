@@ -46,7 +46,7 @@ Each metric is based on two main dimensions:
 
 | Metric                                  | Type               | Description                            |
 | --------------------------------------- | ------------------ | -------------------------------------- |
-| Client Side Container Call - Collection | Events             | Deduplicated container calls           |
+| Client Side Container Call - Collection | Events             | Deduplicated web container calls       |
 | Tagperformance - Collection             | Events             | Based on page views (sampling: 1/1000) |
 | Tagperformance - Storage                | Storage            | Based on page views (sampling: 1/1000) |
 | Deduplication - Collection & Storage    | Collection Storage | TMS deduplication (MySQL reporting)    |
@@ -57,7 +57,7 @@ Each metric is based on two main dimensions:
 
 | Metric                        | Type    | Description                                        |
 | ----------------------------- | ------- | -------------------------------------------------- |
-| Server Side V1 - Collection   | Events  | All input events                                   |
+| Server Side V1 - Collection   | Events  | All input events (deprecated)                      |
 | Server Side V2 - Collection   | Events  | All input events (valid & invalid)                 |
 | Server Side V2 - Output       | Events  | All output events                                  |
 | Server Side V2 - Storage      | Storage | All events stored by Data Storage                  |
@@ -69,26 +69,26 @@ Each metric is based on two main dimensions:
 
 ### Consent
 
-| Metric                               | Type   | Description                                |
-| ------------------------------------ | ------ | ------------------------------------------ |
-| Privacy Banners - Collection         | Events | CMP banner views, deduplicated             |
-| Cookie Scanner - Collection          | Events | Based on container calls (sampling: 1/100) |
-| Realtime Cookie Scanner - Collection | Events | Based on container calls (sampling: 1/100) |
+| Metric                               | Type   | Description                                                                  |
+| ------------------------------------ | ------ | ---------------------------------------------------------------------------- |
+| Privacy Banners - Collection         | Events | CMP banner views, deduplicated                                               |
+| Cookie Scanner - Collection          | Events | Based on container calls (sampling: 1/100)                                   |
+| Realtime Cookie Scanner - Collection | Events | Based on container calls: sampling tailored to your website's traffic volume |
 
 ***
 
 ### Customer Data
 
-| Metric                                | Type        | Description                            |
-| ------------------------------------- | ----------- | -------------------------------------- |
-| Activation - Collection               | Events      | Pageviews (Data Commander)             |
-| Activation - Storage                  | Storage     | Events stored per day (minimum 2 days) |
-| Conversion - Storage                  | Storage     | Any event (view, click, page\_view)    |
-| Contacts - Storage                    | Storage     | Number of users created or updated     |
-| Contact Imports - Collection & Update | Events      | Users updated per month                |
-| Contacts Enrichment - Processing      | Events      | User attribute enrichment              |
-| Custom Universe - Storage             | Storage     | Events stored per year                 |
-| Segments - Processing                 | Pack Of 100 | Nb of Segments                         |
+| Metric                                | Type        | Description                                      |
+| ------------------------------------- | ----------- | ------------------------------------------------ |
+| Activation - Collection               | Events      | Page views (Data Commander)                      |
+| Activation - Storage                  | Storage     | Events stored per day (view, click, page\_view)  |
+| Conversion - Storage                  | Storage     | Any conversion stored                            |
+| Contacts - Storage                    | Storage     | Number of users created or updated               |
+| Contact Imports - Collection & Update | Events      | Users updated per month                          |
+| Contacts Enrichment - Processing      | Events      | User attribute enrichment                        |
+| Custom Universe - Storage             | Storage     | Events stored per year                           |
+| Segments - Processing                 | Pack Of 100 | Nb of Segments                                   |
 
 ***
 
@@ -96,19 +96,19 @@ Each metric is based on two main dimensions:
 
 | Metric                          | Type               | Description                               |
 | ------------------------------- | ------------------ | ----------------------------------------- |
-| Events - Collection             | Events             | Mix Pageviews                             |
+| Events - Collection             | Events             | Mix Page views                            |
 | Events - Storage                | Storage            | Mix events Storage consumption            |
-| Conversion - Collection         | Events             | Nb of conversions                         |
-| Conversion - Storage            | Storage            | All conversions (Mix orders)              |
+| Conversion - Collection         | Events             | Nb of conversions collected               |
+| Conversion - Storage            | Storage            | All conversions stored (Mix orders)       |
 | Tracking - Collection & Storage | Collection Storage | FREE of charge (not counted in invoicing) |
 
 ***
 
 ### Other
 
-| Metric                    | Type   | Description                               |
-| ------------------------- | ------ | ----------------------------------------- |
-| API Platform - Collection | Events | Any API call (user API, geoloc API, etc…) |
+| Metric                    | Type   | Description                                    |
+| ------------------------- | ------ | ---------------------------------------------- |
+| API Platform - Collection | Events | Any API call (user API, geolocation API, etc…) |
 
 ## Best practices to optimize usage
 
