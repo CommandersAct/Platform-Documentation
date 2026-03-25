@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 27/03/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md" %}
+[appsflyer-pc-console-ctv-events-api.md](../features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md)
+{% endcontent-ref %}
+
 ## 13/03/2026
 
 Destination documentation (updates):
