@@ -136,7 +136,7 @@
     * [Amazon](features/destinations/destinations-catalog/amazon/README.md)
       * [Amazon Ads Conversions API](features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md)
       * [Amazon S3](features/destinations/destinations-catalog/amazon/amazon-s3.md)
-    * [AppsFlyer Events API](features/destinations/destinations-catalog/appsflyer-events-api.md)
+    * [AppsFlyer PC/Console/CTV Events API](features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md)
     * [Attraqt](features/destinations/destinations-catalog/attraqt.md)
     * [Awin](features/destinations/destinations-catalog/awin.md)
     * [Batch Audience](features/destinations/destinations-catalog/batch.md)
