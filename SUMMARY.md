@@ -448,7 +448,6 @@
   * [Single Sign-On](configure/administration/single-sign-on.md)
   * [Two-factor authentication (2FA)](configure/administration/two-factor-authentication-2fa.md)
   * [Copy Management](configure/administration/copy-management.md)
-  * [Credit Usage](configure/administration/credit-usage.md)
 * [Cookies](configure/cookies/README.md)
   * [Cookie 1st](configure/cookies/cookie-1st.md)
   * [Cookie sync partners](configure/cookies/cookie-sync-partners.md)
