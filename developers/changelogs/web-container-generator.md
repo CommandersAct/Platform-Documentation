@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 101.1
+
+Release date: **30/03/2026**
+
+* [beta] Fixed deduplication bug that created superfluous entries in customer journey
+
 ### 101.0
 
 Release date:  **23/03/2026**
