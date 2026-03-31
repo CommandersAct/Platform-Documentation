@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 03/04/2026
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/kwanko.md" %}
+[kwanko.md](../features/destinations/destinations-catalog/kwanko.md)
+{% endcontent-ref %}
+
 ## 27/03/2026
 
 Destination documentation:
