@@ -22,7 +22,7 @@ You need 2 information for the Facebook connector:
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-12-07 à 11.38.52.png" alt=""><figcaption></figcaption></figure>
 
-### Where can I find the Ad Account ID? <a href="#where-can-i-find-the-ad-account-id" id="where-can-i-find-the-ad-account-id"></a>
+### Where can I find the Ad Account ID? <a href="#where-can-i-find-the-a-d-account-id" id="where-can-i-find-the-a-d-account-id"></a>
 
 You have to go on Facebook Business [https://business.facebook.com/](https://business.facebook.com/) and login to your account.
 
@@ -41,6 +41,10 @@ Copy and paste it on our Facebook connector.
 For this part, you have to go to Facebook Developers [https://developers.facebook.com/](https://developers.facebook.com/) and create or login to your account (you need to have a dedicated account for Facebook Developer).
 
 Create a new app
+
+{% hint style="info" %}
+When creating the app, set the following required fields <mark style="color:blue;">`App Icon`</mark>, <mark style="color:blue;">`Privacy policy URL`</mark> and <mark style="color:blue;">`Category`</mark> . &#x20;
+{% endhint %}
 
 Add the product ‘Marketing API’.
 
