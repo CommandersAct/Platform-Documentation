@@ -2,9 +2,15 @@
 
 ## 2026
 
+### 101.2
+
+Release date:  **31/03/2026**
+
+* Assign custom triggers size to `tags` segment instead of `core` in container size preview
+
 ### 101.1
 
-Release date: **30/03/2026**
+Release date:  **30/03/2026**
 
 * [beta] Fixed deduplication bug that created superfluous entries in customer journey
 
