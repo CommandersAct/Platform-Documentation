@@ -133,6 +133,7 @@
     * [Affilae](features/destinations/destinations-catalog/affilae.md)
     * [Alphalyr Marketing Studio](features/destinations/destinations-catalog/alphalyr-marketing-studio.md)
     * [Amazon](features/destinations/destinations-catalog/amazon/README.md)
+      * [Amazon Events API](features/destinations/destinations-catalog/amazon/amazon-events-api.md)
       * [Amazon Ads Conversions API](features/destinations/destinations-catalog/amazon/amazon-ads-conversions-api.md)
       * [Amazon S3](features/destinations/destinations-catalog/amazon/amazon-s3.md)
     * [AppsFlyer PC/Console/CTV Events API](features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md)
