@@ -159,7 +159,7 @@ Here are fields automatically added by the sdk.
 
 ### context.device
 
-<table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>manufacturer</td><td>Apple</td><td>The manufacturer of the hardware</td><td>Both</td></tr><tr><td>model</td><td>iPhone7.3</td><td>The device model</td><td>Both</td></tr><tr><td>name</td><td>maguro</td><td>The device given name</td><td>Both</td></tr><tr><td>sdk_id</td><td>C32272DB0-C21E-11E4-8DFC-AA07A5B093DB</td><td>A random UUID generated at the first launch of the SDK</td><td>Both</td></tr><tr><td>timezone</td><td>Europe/Paris</td><td>The detailed timezone</td><td>Both</td></tr><tr><td>type</td><td>android</td><td>The os name</td><td>Both</td></tr><tr><td>language</td><td>en</td><td>The device default language</td><td>Both</td></tr><tr><td>region</td><td>US</td><td>The device default region</td><td>Both</td></tr></tbody></table>
+<table><thead><tr><th>Field name</th><th>Example value</th><th width="227">Description</th><th>Platform</th></tr></thead><tbody><tr><td>manufacturer</td><td>Apple</td><td>The manufacturer of the hardware</td><td>Both</td></tr><tr><td>model</td><td>iPhone7.3</td><td>The device model</td><td>Both</td></tr><tr><td>name</td><td>maguro</td><td>The device given name</td><td>Both</td></tr><tr><td>sdk_id</td><td>C32272DB0-C21E-11E4-8DFC-AA07A5B093DB</td><td>A random UUID generated on the SDK’s first launch and stored on the device for future launches.</td><td>Both</td></tr><tr><td>timezone</td><td>Europe/Paris</td><td>The detailed timezone</td><td>Both</td></tr><tr><td>type</td><td>android</td><td>The os name</td><td>Both</td></tr><tr><td>language</td><td>en</td><td>The device default language</td><td>Both</td></tr><tr><td>region</td><td>US</td><td>The device default region</td><td>Both</td></tr><tr><td>user_agent</td><td>Mozilla 5.0 (iPhone; ...</td><td>The device user agent; the iOS SDK does not wait for it to be available by default.</td><td>Both</td></tr></tbody></table>
 
 The next fields require consent and are added when you call "addAdvertisingIDs" from the ServerSide class.
 
@@ -173,12 +173,13 @@ The next fields require consent and are added when you call "addAdvertisingIDs" 
 
 User contains all fields declared inside [https://doc.commandersact.com/developers/tracking/events-reference/common-events#user](https://doc.commandersact.com/developers/tracking/events-reference/common-events#user)
 
-| Field name                | Example value                        | Description                                                               | Platform |
-| ------------------------- | ------------------------------------ | ------------------------------------------------------------------------- | -------- |
-| consistent\_anonymous\_id | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | Anonymous id generated for consent. Usualy the same as sdk\_id            | Both     |
-| consent\_categories       | \["1","2","10019","10018","13001"]   | List of accepted categories                                               | Both     |
-| ID                        | "anything"                           | No default value but can be used by client if they need a specific ID     | Both     |
-| consentID                 | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | ID used to send consent information. Default to consistent\_anonymous\_id | Both     |
+| Field name                | Example value                        | Description                                                                                              | Platform |
+| ------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------- | -------- |
+| consistent\_anonymous\_id | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | id generated for consent, Defaults to the sdk_id; named anonymous_id in Android/iOS classes for editing. | Both     |
+| consent\_categories       | \["1","2","10019","10018","13001"]   | List of accepted categories                                               				                  | Both     |
+| ID                        | "anything"                           | No default value but can be used by client if they need a specific ID                                    | Both     |
+| consentID                 | b5c6aa4e-0532-40c0-bf6b-a77bff46d600 | ID used to send consent information.  Defaults to the sdk_id;                                            | Both     |
+| refused_vendors           | ["12","309","380"] or "ALL"          | list of refused vendors IDs, might be hashed, or "ALL" as value.                                         | Both     |
 
 ### context.device.os
 
