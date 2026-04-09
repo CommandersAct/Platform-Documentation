@@ -5,7 +5,7 @@ Google Customer Match allows you to push users to Google Ads. Matching keys are 
 
 You can create an audience segment, push it to Google Ads and activate it. Users matched could be then activated on Google services (Search, Display network, Gmail, Youtube, Google Shopping...).
 
-## **What are the requirement to sync with Google Ads?** <a href="#what-are-the-requirement-to-sync.-datacommanders-with-google-ads" id="what-are-the-requirement-to-sync.-datacommanders-with-google-ads"></a>
+## **What are the requirement to sync with Google Ads?** <a href="#what-are-the-requirement-to-sync.-datacommanders-with-google-a-ds" id="what-are-the-requirement-to-sync.-datacommanders-with-google-a-ds"></a>
 
 * Audience size: minimum 1000 matched users (otherwise it will be rejected for privacy purpose)
 * Data collection: it is only allowed to import first party data (collected via your website/app/point of sale)
@@ -13,7 +13,7 @@ You can create an audience segment, push it to Google Ads and activate it. Users
 * Google indicates that it takes 6 to 12 hours for a list to be populated with members
 * A list may appear to be smaller than expected when viewed in the Audience Manager in the Google Ads UI. This view shows the number of _active users_ in the list. A user is considered active if they have recently logged into their Google account.
 
-​[https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer\_match\_considerations](https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer\_match\_considerations)​
+​[https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer\_match\_considerations](https://developers.google.com/google-ads/api/docs/remarketing/audience-types/customer-match#customer_match_considerations)​
 
 ## \[New version] How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
 
@@ -29,7 +29,7 @@ Select All users or one or many segments.
 
 Connect directly to your Google Ads account. Select your existing account if you have already configured it, or configure a new one.
 
-#### New configuration:&#x20;
+#### New configuration:
 
 Click on the link and a new tab will be opened (Connector Credentials).
 
@@ -37,19 +37,29 @@ Click on the link and a new tab will be opened (Connector Credentials).
 Only admin users have access to the Connector Credentials menu (also available in the Administration menu)
 {% endhint %}
 
-On the Connector Credentials page, click on '**Add connector credentials**' and select Google Ads.&#x20;
+On the Connector Credentials page, click on '**Add connector credentials**' and select Google Ads.
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.44.38.png" alt=""><figcaption></figcaption></figure>
 
-Login to your Google Ads account and the authentication is done.&#x20;
+Login to your Google Ads account and the authentication is done.
 
 Then go back to the connector configuration page and select the account previously configured.
 
 ### Destination configuration
 
+#### Data Type
+
+You can choose the type of data that is used in your Customer List on Google :&#x20;
+
+* Contact Info (emails, phone numbers and/or postal addresses)
+* Mobile Device ID
+* CRM ID&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+
 #### Segment mappings
 
-Segments selected will appear in the segment mappings section. You can map here selected segments to a customer list previously created in Google Ads interface (this is where the audience from segments will be sent).&#x20;
+Segments selected will appear in the segment mappings section. You can map here selected segments to a customer list previously created in Google Ads interface (this is where the audience from segments will be sent).
 
 <figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-21 à 11.11.59.png" alt=""><figcaption></figcaption></figure>
 
@@ -62,6 +72,8 @@ If you haven't created a customer list yet, you can do it on Google Ads interfac
 
 In this section, you can define matching keys:
 
+* For Emails, Phone and/or Postal Addresses:&#x20;
+
 At least:
 
 * Email address: in SHA-256 or plain (we hash it in SHA-256 before to send it)
@@ -69,13 +81,25 @@ At least:
 
 Complementary information (optional):
 
-* First name: in SHA-256 or plain (we hash it in SHA-256 before to send it)&#x20;
+* First name: in SHA-256 or plain (we hash it in SHA-256 before to send it)
 * Last name: in SHA-256 or plain (we hash it in SHA-256 before to send it)
 * Country code (2 letters): in SHA-256 or plain (we hash it in SHA-256 before to send it)
 * Postal code: in SHA-256 or plain (we hash it in SHA-256 before to send it)
 * Postal address: in SHA-256 or plain (we hash it in SHA-256 before to send it)
 
-<figure><img src="../../../../.gitbook/assets/Capture d’écran 2022-11-18 à 11.47.49.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+
+* For Mobile Device ID
+
+At least one Mobile Device ID.
+
+<figure><img src="../../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
+
+* For User ID
+
+At least one User ID.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
 Last step, simply define a running period and click on Save. The destination will start to send users as soon as they enter in selected segments.
 
@@ -84,23 +108,23 @@ Last step, simply define a running period and click on Save. The destination wil
 ## \[Old version - deprecated] How to configure Google Customer Match connector: <a href="#how-to-configure-google-customer-match-connector" id="how-to-configure-google-customer-match-connector"></a>
 
 {% hint style="info" %}
-Method available only on the old platform, if you haven't migrated yet. \
+Method available only on the old platform, if you haven't migrated yet.\
 Please note this version only support email (SHA-256 or plain) as matching key.
 {% endhint %}
 
-### **Google Ads customer ID** <a href="#google-ads-customer-id" id="google-ads-customer-id"></a>
+### **Google Ads customer ID** <a href="#google-a-ds-customer-id" id="google-a-ds-customer-id"></a>
 
 First, you need to enter your Google Ads customer ID:
 
 {% embed url="https://support.google.com/google-ads/answer/1704344?hl=en" %}
 
-![](https://2406699966-files.gitbook.io/\~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-MZSeafT12AfKYHgDcYB%2F-MZSfZgMyAes\_J7i0FBE%2Fimage.png?alt=media\&token=8ff94c10-a6b5-408c-bd73-ca0111ceec4e)
+![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-MZSeafT12AfKYHgDcYB%2F-MZSfZgMyAes_J7i0FBE%2Fimage.png?alt=media\&token=8ff94c10-a6b5-408c-bd73-ca0111ceec4e)
 
 ### Grant access <a href="#grant-access" id="grant-access"></a>
 
 Then, there are 2 ways to configure it:
 
-#### Option 1- 'I have already granted Commanders Act access to my Google Ads account' <a href="#option-1-i-have-already-granted-commanders-act-access-to-my-google-ads-account" id="option-1-i-have-already-granted-commanders-act-access-to-my-google-ads-account"></a>
+#### Option 1- 'I have already granted Commanders Act access to my Google Ads account' <a href="#option-1-i-have-already-granted-commanders-act-access-to-my-google-a-ds-account" id="option-1-i-have-already-granted-commanders-act-access-to-my-google-a-ds-account"></a>
 
 It is the fastest and easiest way to configure the connector. Simply ask our consultants or customer representative that you want to use this option and provide them your Google Ads Customer ID. Then they will link your account with our Google Ads account in order to be able to push audiences.
 
@@ -112,7 +136,7 @@ All details here:
 
 {% embed url="https://developers.google.com/adwords/api/docs/guides/first-api-call#configuration_elements" %}
 
-### Create a user list on Google Ads <a href="#create-a-user-list-on-google-ads" id="create-a-user-list-on-google-ads"></a>
+### Create a user list on Google Ads <a href="#create-a-user-list-on-google-a-ds" id="create-a-user-list-on-google-a-ds"></a>
 
 Last step, create a user list on Google side.
 
