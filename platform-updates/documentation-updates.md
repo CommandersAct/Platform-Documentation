@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 10/04/2026
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/amazon/amazon-events-api.md" %}
+[amazon-events-api.md](../features/destinations/destinations-catalog/amazon/amazon-events-api.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/reddit-conversions-api.md" %}
