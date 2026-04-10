@@ -14,6 +14,10 @@ Destination documentation:
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/microsoft/microsoft-conversions-api.md" %}
+[microsoft-conversions-api.md](../features/destinations/destinations-catalog/microsoft/microsoft-conversions-api.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/reddit-conversions-api.md" %}
 [reddit-conversions-api.md](../features/destinations/destinations-catalog/reddit-conversions-api.md)
 {% endcontent-ref %}
