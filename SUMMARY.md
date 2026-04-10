@@ -368,6 +368,8 @@
   * [Cookies by Category](features/realtime-cookie-scanner/cookies-by-category.md)
   * [Compliance Score](features/realtime-cookie-scanner/compliance-score.md)
   * [Legal and Technical Position Paper](features/realtime-cookie-scanner/legal-and-technical-position-paper.md)
+  * [Integrating specific CMP with the Realtime Cookie Scanner](features/realtime-cookie-scanner/integrating-specific-cmp-with-the-realtime-cookie-scanner.md)
+* [MCP server (closed beta)](features/mcp-server-closed-beta.md)
 
 ## Use cases
 
