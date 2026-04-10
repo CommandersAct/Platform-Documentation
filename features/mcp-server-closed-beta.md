@@ -2,15 +2,15 @@
 
 ### Commanders Act MCP Server Setup Guide
 
-### For Claude Code experimentation
-
-This guide explains how to connect Claude to the Commanders Act MCP server so your team can experiment with AI access to Commanders Act through the standard Model Context Protocol.
+This guide explains how to connect Claude (or chatGPT, etc.) to the Commanders Act MCP server so your team can experiment with AI access to Commanders Act through the standard Model Context Protocol.
 
 ### 1. Overview
 
-The Commanders Act MCP server exposes Commanders Act platform capabilities as MCP tools through a standard remote MCP interface.
+The Commanders Act MCP server exposes Commanders Act platform capabilities as AI-callable tools through the standard Model Context Protocol.
 
-It is designed to be consumed by MCP compatible AI clients, with OAuth 2.1 and PKCE used for authentication.
+It is designed to be consumed by MCP compatible AI clients, without requiring any proprietary integration.
+
+The server uses OAuth 2.1 with PKCE for authentication and exposes a wide range of tools covering Sources, Destinations, Enrichments, Cleansing, Tag Management, Health, Reports and Admin.
 
 The MCP server is currently in **closed beta**. At this stage, only a limited number of users are testing it.
 
@@ -22,53 +22,109 @@ Typical use cases include:
 
 ### 2. Access conditions
 
-Because the MCP server is currently in closed beta, access is not yet generally available.
+Because the MCP server is currently in closed beta, access is not yet generally available. At this time, we are not accepting new users, but you can contact support team to be added to the waiting list.
 
-If you are part of the beta program and want to experiment with the Commanders Act MCP server, please request the connection details from the Commanders Act support team.
+### 3. Requirements
 
-The support team can provide:
+To use the Commanders Act MCP server, you need:
 
-* the MCP server connection details
-* the relevant setup information
-* guidance on the recommended first steps
+* a Commanders Act account
+* access to the MCP server as part of the closed beta
+* an MCP compatible AI client
+* a browser available for the authentication flow
 
-### 3. What you need
+***
 
-Before starting, make sure you have:
-
-* access to a Commanders Act account
-* access to the Commanders Act MCP server as part of the closed beta
-* an MCP compatible Claude environment, such as Claude Code
-* a browser available on your machine for the OAuth login step
-
-### 4. Authentication model
+### 4. Authentication
 
 The Commanders Act MCP server uses OAuth 2.1 with PKCE.
 
-The login flow is automatic:
+The authentication flow is fully automatic and secure. No token is manually handled or exposed to the user.
 
-1. The Claude client connects to the MCP server
+Typical flow:
+
+1. The client attempts to call the MCP server
 2. The server indicates that authentication is required
-3. The Claude client discovers the OAuth endpoints
-4. A browser window opens for login
-5. The user signs in with their Commanders Act credentials
-6. The Claude client receives an authorization code
-7. The Claude client exchanges it for a bearer token
-8. Subsequent MCP tool calls are authenticated automatically
+3. The client automatically discovers the authentication flow
+4. A browser window opens with the Commanders Act login page
+5. The user logs in with their Commanders Act credentials
+6. The client securely completes the authentication process
+7. The client includes the token in all subsequent tool calls
 
-No manual session key copy and paste is required.
+Once authenticated, the connection is established and all interactions with the MCP server are seamless.
 
-### 5. Connecting from Claude
+***
 
-If your Claude environment supports remote MCP servers with OAuth, the authentication flow should start automatically when the first authenticated call is made.
+### 5. Connecting an MCP client
 
-If your environment requires MCP servers to be declared in a configuration file, add an entry for the Commanders Act server using the connection details provided by the Commanders Act support team.
+The Commanders Act MCP server is exposed through a standard MCP interface.
 
-The exact configuration format may vary depending on the Claude client and version being used.
+To connect a compatible AI client, you need to register the MCP server using the connection details provided by the Commanders Act support team.
 
-### 6. Available tool families
+Depending on the client, this may involve:
 
-The Commanders Act MCP server exposes more than 35 tools, including the following categories:
+* adding the MCP server in a UI
+* or declaring it in a configuration file
+
+Once configured, the authentication flow will start automatically on first use.
+
+***
+
+### 6.a. Example client environment: Claude Code
+
+Claude Code is one example of an MCP compatible client.
+
+To connect the Commanders Act MCP server:
+
+1. Open Claude
+2. Go to Settings → Integrations
+3. Enable the connector named “Commanders Act MCP”
+4. When prompted, enter the MCP server URL provided by Commanders Act
+5. Complete the authentication flow in the browser
+
+Once connected, you can start using the MCP server directly in conversations.
+
+To verify the connection, you can ask:
+
+“Can you list the available tools from the Commanders Act MCP?”
+
+You should see all available tools exposed by the server.
+
+
+
+### 6.b. Example client environment: ChatGPT
+
+ChatGPT is another MCP compatible client.
+
+To connect the Commanders Act MCP server:
+
+1. Open ChatGPT
+2. Go to Settings → Apps & Connectors → Advanced
+3. Enable Developer Mode
+4. Go to Connectors and create a new connector
+5. Use the MCP server connection details provided by Commanders Act
+6. Select OAuth as the authentication method
+7. Save the connector
+
+To use the MCP server in a conversation:
+
+1. Start a new chat
+2. Enable Developer Mode in the chat
+3. Add the Commanders Act connector as a source
+
+Once connected, ChatGPT will be able to call MCP tools directly.
+
+To validate the connection, you can ask:
+
+Can you list the available tools from the Commanders Act MCP?
+
+ChatGPT will display tool calls in the interface. Some actions may require confirmation.
+
+***
+
+### 7. Available tool families
+
+The MCP server exposes more than 35 tools across the following areas:
 
 **Profile**
 
@@ -99,7 +155,7 @@ The Commanders Act MCP server exposes more than 35 tools, including the followin
 * retrieve cookie scanners
 * retrieve scanner cookies
 * retrieve scanner install code
-* retrieve collection event monitoring data
+* retrieve collection monitoring data
 * retrieve privacy statistics
 * retrieve health alerts
 * retrieve health notifications
@@ -123,7 +179,7 @@ The Commanders Act MCP server exposes more than 35 tools, including the followin
 
 **Data Management**
 
-* retrieve normalized datalayer configuration
+* retrieve normalized datalayer
 
 **Admin**
 
@@ -131,73 +187,90 @@ The Commanders Act MCP server exposes more than 35 tools, including the followin
 * list users
 * list redirect rules
 
-### 7. First recommended validation
+***
 
-After authentication, a good first validation is to ask Claude a simple natural language question that confirms the connection is working and that your Commanders Act permissions are correctly available.
+### 8. First validation
+
+After connecting and authenticating, you can validate the integration with a simple natural language request.
 
 Recommended prompt:
 
-“Can you list the sites available to my Commanders Act account?”
+Can you list the sites available to my Commanders Act account?
 
-This is a good first step because it helps confirm:
+You can also verify that the MCP server is correctly connected by asking:
 
-* authentication succeeded
-* the MCP connection is working
-* the user’s Commanders Act permissions are available
+Can you list the available tools from the Commanders Act MCP?
 
-Once this works, you can continue with prompts such as:
+This confirms:
 
-* “Can you list the configured sources for my account?”
-* “Can you show me the configured destinations?”
-* “Can you show me current health alerts?”
-* “Can you list the available web containers?”
-* “Can you list the available reports?”
+* authentication is working
+* the MCP connection is active
+* the tools are correctly exposed
+* your permissions are correctly applied
 
-### 8. Token lifetime
+You can then continue with prompts such as:
+
+Can you list the configured sources for my account?\
+Can you show me the configured destinations?\
+Can you show me current health alerts?\
+Can you list the available web containers?\
+Can you list the available reports?
+
+***
+
+### 9. Token lifetime
 
 Access tokens are time limited.
 
-The default token lifetime is 8 hours.
+The default lifetime is 8 hours.
 
-When the token expires, the user must authenticate again.
+When the token expires, a new authentication is required.
 
-### 9. Troubleshooting
+***
 
-#### The login page does not open
+### 10. Troubleshooting
 
-Make sure your Claude environment supports OAuth capable remote MCP servers and that a browser can be opened from your machine.
+Login page does not open\
+Make sure your client supports MCP with authentication and that a browser can be launched
 
-#### Authentication starts but does not complete
+Authentication does not complete\
+Verify that the MCP server connection details provided by support are correct and reachable
 
-Check that the MCP server connection details provided by the Commanders Act support team have been configured correctly and that the environment can reach the server over HTTPS.
+Tools do not appear in Claude\
+Make sure the “Commanders Act MCP” connector is enabled and authentication completed
 
-#### The connection works but no business data is returned
+You can validate by asking:
 
-Start with a simple request such as:
+Can you list the available tools from the Commanders Act MCP?
 
-“Can you list the sites available to my Commanders Act account?”
+If no tools appear, try reconnecting the MCP server or restarting the session
 
-This helps confirm that the authenticated user has valid Commanders Act access and that the expected permissions are available.
+Connection works but no data is returned\
+Start with a simple request such as listing available sites to verify permissions
 
-### 10. Notes for security and governance teams
+***
 
-The Commanders Act MCP server uses:
+### 11. Security and governance
+
+The Commanders Act MCP server relies on:
 
 * a standard MCP interface
-* OAuth 2.1 with PKCE
-* browser based user authentication
-* bearer tokens for subsequent authenticated tool calls
+* OAuth based authentication
+* browser based login
+* secure token usage handled by the client
 
-This means experimentation can be performed through an MCP compatible AI client without building a custom proprietary integration layer.
+This allows experimentation through approved MCP compatible AI clients without requiring a custom integration.
 
-As the server is currently in closed beta, access is limited to selected users at this stage.
+As the server is currently in closed beta, access remains restricted.
 
-### 11. Support
+***
 
-If you are participating in the closed beta and need access or setup information, please contact the Commanders Act support team.
+### 12. Support
+
+For access or setup information, contact the Commanders Act support team.
 
 They can provide:
 
-* the MCP server connection details
+* connection details
 * setup guidance
-* recommended first steps for experimentation
+* recommended first steps
