@@ -28,7 +28,7 @@ While data is captured using this destination, a client-side user identification
 {% endhint %}
 
 {% hint style="warning" %}
-In the scenario where you use the same `UET Tag Id` (See [Configuration](microsoft-conversions-api.md#configuration)) for both UET client-side JavaScript and this destination, it's important to set up the deduplication. Please refer to this [LINK](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#custom-events), showing how to set the value for the `event_id` in the UET client-side JavaScript. The `eventId` (See [Field mappings](microsoft-conversions-api.md#field-mappings)) can be set using the "Smart Mapping" field `Event Id` . Both `event_id`  and `eventId` must be set with the same value.
+In the scenario where you use the same `UET Tag Id` (See [Configuration](microsoft-conversions-api.md#configuration)) for both UET client-side JavaScript and this destination, it's important to set up the deduplication for Microsoft `custom`  event type (See [Quick reference](microsoft-conversions-api.md#quick-reference)). Please refer to this [LINK](https://learn.microsoft.com/en-us/advertising/guides/uet-conversion-api-integration?view=bingads-13#custom-events), showing how to set the value for the `event_id` in the UET client-side JavaScript tag. The `eventId` (See [Field mappings](microsoft-conversions-api.md#field-mappings)) can be set using the "Smart Mapping" field `Event Id` . Both `event_id`  and `eventId` must be set with the same value.
 {% endhint %}
 
 ### Configuration
@@ -55,25 +55,25 @@ Most properties can be remapped using our "Smart Mapping" feature.
 > &#xNAN;**\[2]** Used for deduplication. See [Destination setup](microsoft-conversions-api.md#destination-setup) for more details.\
 > &#xNAN;**\[3]** Page load identifier that links your custom events from the same page. Format as\
 > a v4 UUID.\
-> **\[4]** Set in the `userData` .\
+> **\[4]** Set in the <mark style="color:blue;">`userData`</mark> .\
 > &#xNAN;**\[5]** Automatically normalized and hashed via SHA256 when provided in clear text.\
 > &#xNAN;**\[6]** Normalized using E.164 format with country code.\
-> &#xNAN;**\[7]** Priority on the left column. You use the field `Click Id Cookie Name`  (See [Configuration](microsoft-conversions-api.md#configuration)) to set a different cookie name instead of the default `_uetmsclkid` . The value will be automatically retrieved from the `context.page.url` if present.\
-> &#xNAN;**\[8]** Set if `context.device.os.name`  is set with `Android`  (Case insensitive).\
-> &#xNAN;**\[9]** Set if `context.device.os.name`  is set with `iOS`  (Case insensitive).\
-> &#xNAN;**\[10]** Set in the `customData` .\
+> &#xNAN;**\[7]** Priority on the left column. You use the field <mark style="color:blue;">`Click Id Cookie Name`</mark>  (See [Configuration](microsoft-conversions-api.md#configuration)) to set a different cookie name instead of the default `_uetmsclkid` . The value will be automatically retrieved from the <mark style="color:blue;">`context.page.url`</mark> if present.\
+> &#xNAN;**\[8]** Set if <mark style="color:blue;">`context.device.os.name`</mark>  is set with `Android`  (Case insensitive).\
+> &#xNAN;**\[9]** Set if <mark style="color:blue;">`context.device.os.name`</mark>  is set with `iOS`  (Case insensitive).\
+> &#xNAN;**\[10]** Set in the <mark style="color:blue;">`customData`</mark> .\
 > &#xNAN;**\[11]** All product identifiers are taken into account.\
 > &#xNAN;**\[12]** Priority on the left column. This is set depending on the following:\
-> • If `page_type`  is `home` , `product` , `cart` , `category` , `other` , `purchase` or `searchresults`  then `pageType`  is set with the same value .\
-> • If `page_type`  is `product_list`  then `pageType`  is `category` .\
-> • If `page_type`  is `funnel_confirmation`  then `pageType`  is `purchase` .\
-> • If `page_type`  is `search`  then `pageType`  is `searchresults` .\
-> • If `event_name`  is `search`  then `pageType`  is `searchresults` .\
-> • If `event_name`  is `view_item_list`  then `pageType`  is `category` .\
-> • If `event_name`  is `view_item`  then `pageType`  is `product` .\
-> • If `event_name`  is `view_item`  or `add_to_cart`  then `pageType`  is `product` .\
-> • If `event_name`  is `view_cart`  then `pageType`  is `cart` .\
-> • If `event_name`  is `purchase`  then `pageType`  is `purchase` .
+> • If <mark style="color:blue;">`page_type`</mark>  is <mark style="color:blue;">`home`</mark> , <mark style="color:blue;">`product`</mark> , <mark style="color:blue;">`cart`</mark> , <mark style="color:blue;">`category`</mark> , <mark style="color:blue;">`other`</mark> , <mark style="color:blue;">`purchase`</mark> or <mark style="color:blue;">`searchresults`</mark>  then <mark style="color:blue;">`pageType`</mark>  is set with the same value .\
+> • If <mark style="color:blue;">`page_type`</mark>  is <mark style="color:blue;">`product_list`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`category`</mark> .\
+> • If <mark style="color:blue;">`page_type`</mark>  is <mark style="color:blue;">`funnel_confirmation`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`purchase`</mark> .\
+> • If <mark style="color:blue;">`page_type`</mark>  is <mark style="color:blue;">`search`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`searchresults`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`search`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`searchresults`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`view_item_list`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`category`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`view_item`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`product`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`view_item`</mark>  or <mark style="color:blue;">`add_to_cart`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`product`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`view_cart`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`cart`</mark> .\
+> • If <mark style="color:blue;">`event_name`</mark>  is <mark style="color:blue;">`purchase`</mark>  then <mark style="color:blue;">`pageType`</mark>  is <mark style="color:blue;">`purchase`</mark> .
 {% endhint %}
 
 
