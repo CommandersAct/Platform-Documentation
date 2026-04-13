@@ -1,4 +1,4 @@
-# Integrating specific CMP with the Realtime Cookie Scanner
+# Integrating specific CMP with the Realtime Cookie Scanner (closed beta)
 
 ### Natively supported CMPs
 
