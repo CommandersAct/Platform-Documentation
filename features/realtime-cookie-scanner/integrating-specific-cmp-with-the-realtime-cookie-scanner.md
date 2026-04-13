@@ -1,5 +1,7 @@
-# Integrating specific CMP with the Realtime Cookie Scanner (closed beta)
+# Integrating specific CMP with the Realtime Cookie Scanner
 
+Please note that this feature is not yet available to clients and is currently in progress with a selected group of users.
+  
 ### Natively supported CMPs
 
 The Realtime Cookie Scanner natively supports the following CMPs:
