@@ -1,9 +1,5 @@
 # AppsFlyer PC/Console/CTV Events API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Appsflyer](https://www.appsflyer.com/)'s platform is used by businesses to understand how users find and interact with their apps.\
 Using this destination you can leverage [AppsFlyer PC/Console/CTV Events API](https://dev.appsflyer.com/hc/reference/pc-console-ctv-api-overview) to measure [first app opens](https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id) and [in-app events](https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id).&#x20;
 
@@ -11,7 +7,7 @@ Using this destination you can leverage [AppsFlyer PC/Console/CTV Events API](ht
 
 The AppsFlyer PC/Console/CTV Events API destination provides the following key features:
 
-* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) supports [AppsFlyer's event structure](https://dev.appsflyer.com/hc/reference/post_first-open-app-platform-app-id), meaning that your data is properly bridged to the expected fields in an optimized way.
+* **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) supports [AppsFlyer's event structure](https://dev.appsflyer.com/hc/reference/post_inapp-app-platform-app-id), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
 * **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
