@@ -1,143 +1,131 @@
-# FR : Suppression des cookies lors du retrait du consentement
+# Cookie deletion upon consent withdrawal
 
-Lorsque l’utilisateur retire son consentement, il est parfois nécessaire de supprimer les cookies déposés précédemment (cas de la France notamment). Nous mettons à disposition un **script simple et personnalisable** qui permet de supprimer automatiquement les cookies **first-party** (déposés par votre propre site) et cookies tiers (via appel API)
+When a user withdraws consent, it may be necessary to delete previously set cookies (notably in France). We provide a **simple and customizable solution** to automatically remove **first-party cookies** (set by your own domain) and optionally trigger deletion of server-side or third-party cookies via API calls.
 
-Certains cookies spécifiques nécessitent une approche ciblée. Voici comment procéder étape par étape :
+Some specific cookies require a targeted approach. Follow the steps below:
 
 ***
 
-### **1. Identifier les cookies à conserver**
+### **1. Identify cookies to keep**
 
-Avant toute chose, il vous faut lister les cookies indispensables au bon fonctionnement de votre site.\
-Exemples de cookies techniques ou liés à la gestion du consentement à conserver :
+First, list the cookies required for your website to function properly.  
+Examples of technical or consent-related cookies to retain:
 
 * **TCPID**
-* **TC\_PRIVACY**
-* **TC\_PRIVACY\_CENTER**
+* **TC_PRIVACY**
+* **TC_PRIVACY_CENTER**
 
-👉 **Comment identifier ces cookies essentiels ?**\
-Nous mettons à votre disposition la fonctionnalité [**Cookie Scanner**](../../realtime-cookie-scanner/), qui vous permet de lister les cookies présents sur votre site, pour vous aider à identifier ceux qui doivent être conservés. Cela évite d’en oublier et assure un bon fonctionnement après la suppression des cookies non essentiels.\
-Il est conseillé de vérifier avec vos équipes techniques ou votre prestataire les cookies techniques qui ne doivent pas être supprimés.
+👉 **How to identify essential cookies?**  
+We provide the [**Realtime Cookie Scanner**](https://doc.commandersact.com/features/realtime-cookie-scanner), which lists all cookies present on your site to help you identify which ones must be preserved.  
+It is recommended to validate this list with your technical teams or providers.
 
-> 💡 **Action :** Utilisez **Cookie Scanner** pour obtenir une liste complète des cookies présents sur votre site
+> 💡 **Action:** Use **Cookie Scanner** to get a complete inventory of cookies on your site.
 
 ***
 
-### **2. Utiliser un script pour supprimer automatiquement les cookies non essentiels**
+### **2. Automatically delete non-essential cookies**
 
-Nous proposons un **script JavaScript** simple et personnalisable qui se déclenche automatiquement lorsque l’utilisateur retire son consentement via la CMP Commanders Act.\
-Le script réalise les actions suivantes :
+Depending on your setup, use one of the following approaches:
 
-* **Détection du retrait de consentement :**\
-  Le script s’abonne à un événement de mise à jour du consentement. Dès que l’utilisateur opte pour le refus, le script se lance.
-* **Suppression des cookies first-party :**\
-  Il parcourt l’ensemble des cookies déposés par votre domaine et supprime ceux qui ne figurent pas dans votre liste blanche. Pour être efficace, il teste plusieurs variantes de domaine (votre domaine et ses sous-domaines).
-*   **Optionnel – Appel de services côté serveur et partenaires :**\
-    Le script peut également appeler des URL que vous aurez renseignées pour demander la suppression de cookies déposés **côté serveur** (cookies HTTP-only) ou par des **partenaires externes** (cookies tiers).\
-    👉 **Voir le chapitre 3** pour en savoir plus sur la gestion des cookies HTTP-only et tiers.
+---
 
-    > ⚠️ **Note :** L’ajout de ces URL est facultatif. Si vous ne souhaitez pas utiliser cette fonctionnalité, il vous suffit de laisser le tableau des URL vide ou de supprimer cette partie du code. Vous pouvez aussi gérer ces suppressions par vous-même ou avec vos partenaires.
+#### **2.1 If you use Commanders Act TMS (recommended)**
 
-#### **📌 Où intégrer ce script ?**
+Use the tag **"Commanders Act - Cookie Cleanup Tag"** available in the tag gallery.
 
-Vous pouvez insérer ce code JavaScript :\
-✅ **Dans la section "Custom JS" de la bannière Commanders Act** _(recommandé dans la plus part des cas)._\
-✅ **Dans votre Tag Management System (TMS)** _(si vous souhaitez une gestion plus centralisée)._
+This tag:
+* Automatically listens to consent withdrawal events
+* Removes all non-essential first-party cookies
+* Handles domain variations
+* Allows configuration of server-side deletion endpoints if needed
 
-**Télécharger le script JavaScript :**
+👉 This is the **simplest and recommended approach**, requiring no custom code.
 
-<details>
+---
 
-<summary>Code JavaScript - suppression de cookies</summary>
+#### **2.2 If you use another TMS (GTM, etc.) or custom implementation**
+
+Use the JavaScript script below. It listens for consent withdrawal and performs the following actions:
+
+* Detects consent withdrawal
+* Deletes first-party cookies not in your allowlist
+* Optionally calls server-side endpoints to delete HTTP-only or third-party cookies
+
+**Integration:**
+You can add this script:
+* In your CMP custom JavaScript section
+* In your Tag Management System (GTM, etc.)
+
+**JavaScript code:**
 
 ```javascript
-/**
- * This script listens for consent updates via the Commanders Act OnSite API.
- * When a user revokes consent (opt-out), it removes all 1st party cookies
- * except for those explicitly allowed. It also calls configured URLs to delete cookies
- * on the server side (e.g., httpOnly or third-party cookies).
- */
 (function () {
-  // List of cookies to retain (system cookies, technical storage items)
   var allowedCookies = ["TCPID", "TC_PRIVACY", "TC_PRIVACY_CENTER"];
-  // Optional: Regex to match additional cookies or storage keys to retain
-  var allowedCookiesPattern = /your_regex_[a-z0-9]*/; // Adjust this pattern if necessary
+  var allowedCookiesPattern = /your_regex_[a-z0-9]*/;
 
-  // Array of server URLs to call for server-side deletion of cookies (httpOnly/partner cookies). Leave empty if you don't have such urls/api
   var serverDeletionUrls = [
     "https://server1.example.com/delete-cookies",
     "https://server2.example2.com/delete-cookies"
   ];
 
-  // Subscribe to consent updates using the Commanders Act OnSite API
-  cact("consent.onUpdate", function (consentData) {
-    if (consentData.updateEvent === "revoked" || consentData.consent.status === 'all-off') {
-      // Retrieve all cookies
-      var allCookies = document.cookie.split(";").map(function (item) {
-        return item.split("=")[0].trim();
-      });
-      // Determine which cookies need to be removed (i.e. not allowed)
-      var cookiesForRemoval = allCookies.filter(function (cookieName) {
-        return allowedCookies.indexOf(cookieName) === -1 && !allowedCookiesPattern.test(cookieName);
-      });
+  window.addEventListener("consent.withdrawn", function () {
+    var allCookies = document.cookie.split(";").map(function (item) {
+      return item.split("=")[0].trim();
+    });
 
-      // Remove each cookie from all possible domain variants
-      cookiesForRemoval.forEach(function (cookieName) {
-        var hostParts = window.location.hostname.split(".");
-        while (hostParts.length > 0) {
-          var domainCandidate = "." + hostParts.join(".");
-          tC.removeCookie(cookieName, domainCandidate);
-          hostParts.shift();
-        }
-        // Also try removing the cookie without a domain specification
-         document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/`;
-      });
+    var cookiesForRemoval = allCookies.filter(function (cookieName) {
+      return allowedCookies.indexOf(cookieName) === -1 && !allowedCookiesPattern.test(cookieName);
+    });
 
-      // Call server-side endpoints to delete httpOnly and partner cookies
-      serverDeletionUrls.forEach(function (url) {
-        // Use fetch with no-cors mode to trigger the deletion endpoints
-        fetch(url, { mode: "no-cors" }).catch(function (error) {
-          console.error("Error calling server deletion URL:", url, error);
-        });
-      });
-    }
+    cookiesForRemoval.forEach(function (cookieName) {
+      var hostParts = window.location.hostname.split(".");
+      while (hostParts.length > 0) {
+        var domainCandidate = "." + hostParts.join(".");
+        document.cookie = cookieName + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/;domain=" + domainCandidate;
+        hostParts.shift();
+      }
+      document.cookie = cookieName + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/";
+    });
+
+    serverDeletionUrls.forEach(function (url) {
+      fetch(url, { mode: "no-cors" }).catch(function () {});
+    });
   });
 })();
 ```
 
-</details>
+***
+
+### **3. Deleting server-side and third-party cookies**
+
+#### **HTTP-only cookies (server-side)**
+
+Some cookies are created server-side and marked as **HTTP-only**, making them inaccessible to JavaScript.
+
+* **Origin:** Your servers or delegated infrastructure (CNAME, proxy, WAF, etc.)
+
+👉 **What to do:**
+* Implement an API on your server to delete these cookies
+* Add the API endpoint to your cleanup configuration
+
+---
+
+#### **Third-party cookies**
+
+These cookies are set by external services (ads, analytics, widgets, etc.).
+
+* **Limitation:** JavaScript cannot directly delete them
+
+👉 **What to do:**
+* Ask providers if they offer a deletion API or endpoint
+* If available, call these endpoints when consent is withdrawn
+* Otherwise, rely on the provider’s own consent mechanisms
 
 ***
 
-### **3. Supprimer les cookies créés côté serveur et les cookies tiers**
+### **4. What this solution does (and does not do)**
 
-#### **Cookies HTTP-only sur votre domaine**
-
-Certains cookies sont créés côté serveur et marqués comme **HTTP-only**. Ils ne sont pas accessibles par JavaScript et ne peuvent être supprimés que par le serveur.
-
-* **Origine :** Ils peuvent être déposés par **vos propres serveurs** ou par un partenaire à qui vous avez délégué la gestion de votre domaine (via un **CNAME, un WAF, un proxy, etc.**).
-
-👉 **Que pouvez-vous faire ?**
-
-* **Créer une API sur votre serveur** pour supprimer ces cookies.
-* **Ajouter l’URL de votre API dans le script**, afin qu’elle soit automatiquement appelée lors du retrait du consentement.
-
-***
-
-#### **Cookies tiers**
-
-Ces cookies sont déposés par des services externes (publicité, analyses, widgets, etc.) et ne sont pas générés directement sur votre domaine.
-
-* **Limitation :** Le script JavaScript ne peut pas supprimer directement ces cookies, sauf si ces fournisseurs offrent une API ou une URL dédiée permettant leur suppression.
-* **Que faire ?**\
-  👉 **Demandez à vos partenaires** s’ils proposent un mécanisme de suppression (API ou URL dédiée).\
-  Si c’est le cas, ajoutez ces URL dans le script pour automatiser leur appel lors du retrait du consentement. Sinon, utilisez le mécanisme proposé par le partenaire.
-
-***
-
-### **4. Ce que fait (et ne fait pas) notre script**
-
-✅ **Il supprime automatiquement les cookies déposés sur votre domaine** (**first-party**), en conservant ceux que vous avez explicitement listés.\
-✅ **Il permet d’appeler des URL de suppression** pour les **cookies HTTP-only** **et tiers** (optionnel).\
-❌ **Il ne peut pas supprimer directement les cookies tiers**, sauf si ces derniers proposent une url ou API dédiée.\
-❌ **Il ne peut pas supprimer les cookies HTTP-only**, sauf si ces derniers proposent une url ou API dédiée.
+✅ Deletes first-party cookies on your domain (except allowlisted ones)  
+✅ Can trigger deletion of HTTP-only and third-party cookies via API calls  
+❌ Cannot directly delete third-party cookies without provider support  
+❌ Cannot directly delete HTTP-only cookies without server-side implementation  
