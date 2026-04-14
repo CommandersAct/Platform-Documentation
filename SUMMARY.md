@@ -309,7 +309,7 @@
       * [Adobe Launch](features/consent-management/setup-guides/tag-manager/adobe-launch.md)
       * [Amazon Consent Signal](features/consent-management/setup-guides/tag-manager/amazon-consent-signal.md)
     * [Websites (Hardcoded)](features/consent-management/setup-guides/websites-hardcoded.md)
-    * [FR : Suppression des cookies lors du retrait du consentement](features/consent-management/setup-guides/fr-suppression-des-cookies-lors-du-retrait-du-consentement.md)
+    * [Deleting cookies when consent is withdrawn](features/consent-management/setup-guides/fr-suppression-des-cookies-lors-du-retrait-du-consentement.md)
     * [Mobile apps](features/consent-management/setup-guides/mobile-apps/README.md)
       * [iOS](features/consent-management/setup-guides/mobile-apps/ios/README.md)
         * [ATT - App Tracking Transparency (iOS 14.5+)](features/consent-management/setup-guides/mobile-apps/ios/att-app-tracking-transparency-ios-14.5+.md)
