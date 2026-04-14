@@ -1,4 +1,4 @@
-# Cookie deletion upon consent withdrawal
+# FR : Suppression des cookies lors du retrait du consentement
 
 When a user withdraws consent, it may be necessary to delete previously set cookies (notably in France). We provide a **simple and customizable solution** to automatically remove **first-party cookies** (set by your own domain) and optionally trigger deletion of server-side or third-party cookies via API calls.
 
