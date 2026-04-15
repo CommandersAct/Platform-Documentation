@@ -94,17 +94,43 @@ When enabled, Commanders Act will collect the event without setting identifier c
 
 You can enable `exemptMode` globally using the `config` command.
 
+```javascript
+cact('config', {
+  exemptMode: true
+});
+```
+
 All subsequent events sent with `cact('trigger', ...)` will use this behavior by default unless overridden at the event level.
 
 #### Per-event configuration
 
 You can enable `exemptMode` only for specific events by using the configuration parameter of the `trigger` command.
 
+```javascript
+cact('trigger', 'page_view', {
+  page_type: 'home'
+}, {
+  exemptMode: true
+});
+```
+
 This allows you to selectively send certain events in exempt mode while keeping others in standard mode.
 
 #### Override global configuration
 
 If `exemptMode` is enabled globally, it can still be disabled for specific events.
+
+```javascript
+cact('config', {
+  exemptMode: true
+});
+
+cact('trigger', 'purchase', {
+  id: '1234'
+}, {
+  exemptMode: false
+});
+```
 
 This allows full control over how each event is collected.
 
