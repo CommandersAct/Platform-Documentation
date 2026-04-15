@@ -82,6 +82,47 @@ cact('trigger', 'purchase', {   id:'1234',  currency: 'EUR',  //...},{
 });
 ```
 
+### Send events in exempt mode (without identifier cookies)
+
+In some setups, you may need to send events without user consent, for example when using a consent-exempt analytics configuration.
+
+In this case, you can enable the `exemptMode` option.
+
+When enabled, Commanders Act will collect the event without setting identifier cookies such as `CAID`, `WID`, (or `TCID` depending on your setup).
+
+#### Global configuration
+
+You can enable `exemptMode` globally using the `config` command.
+
+All subsequent events sent with `cact('trigger', ...)` will use this behavior by default unless overridden at the event level.
+
+#### Per-event configuration
+
+You can enable `exemptMode` only for specific events by using the configuration parameter of the `trigger` command.
+
+This allows you to selectively send certain events in exempt mode while keeping others in standard mode.
+
+#### Override global configuration
+
+If `exemptMode` is enabled globally, it can still be disabled for specific events.
+
+This allows full control over how each event is collected.
+
+#### When to use this option
+
+Use `exemptMode` when:
+
+* your event is sent before the user has provided consent
+* or you are using a consent-exempt analytics setup
+
+Typical use case:
+
+An event is triggered as soon as the page loads, before the user interacts with the consent banner, and must still be sent for analytics purposes without setting identifier cookies.
+
+
+
+***
+
 ## Get information <a href="#get-information" id="get-information"></a>
 
 To get various values from Commanders Act, use this command:
