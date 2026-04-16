@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 101.3
+
+Release date:  **16/04/2026**
+
+* Add `exemptMode` option to the `config` object of the `cact('trigger')` function
+
 ### 101.2
 
 Release date:  **31/03/2026**
