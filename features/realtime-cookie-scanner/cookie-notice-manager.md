@@ -66,7 +66,7 @@ To help you to see the exempted cookies set before consent, you can add an "exem
 
 This will helps you to identify quickly the cookies that are allowed to be set without consent user
 
-<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
 

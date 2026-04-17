@@ -1084,9 +1084,9 @@ Our TMS interface has been modernized to provide a smoother, more intuitive user
 
     <figure><img src="../.gitbook/assets/image (524).png" alt=""><figcaption><p>Web containers UI</p></figcaption></figure>
 
-    <figure><img src="../.gitbook/assets/image (525) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (525).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (521) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (521).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (523).png" alt=""><figcaption></figcaption></figure>
 
@@ -1438,7 +1438,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
 <figure><img src="../.gitbook/assets/image (496).png" alt="" width="331"><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (2).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -1594,7 +1594,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 * **TMS/CMP ​interfaces:** Add a loading indicator to TMS/CMP interfaces\\
 * **Copy Manager​**: When you duplicate a site (aka workspace), you can now copy Server Side configurations (PlatformX activation, Sources, Destinations, Data Management, Enrichments, etc...)
 
-<figure><img src="../.gitbook/assets/image (424) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
 
 * **Interface speed improvements​** on the following pages:
   * TMS: Container overview => +22%​
@@ -1669,7 +1669,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 *   **Live Report Builder: UX enhancement**\
     The filters are now directly visible as before, and the data set limitation (if any) is visible on mouse over only on the flag "limited dataset"\\
 
-    <figure><img src="../.gitbook/assets/image (421) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 * **Mobile: New SDK version released for IAB TCFv2.2**\
   For more details, please read our [documentation page](https://community.commandersact.com/consent-management/knowledge-base/iab-tcf-v2.2-release-details/iab-tcf-v2.2-migration-guide-app)\
   For technical instructions, you can refer to our Github : [Android](https://github.com/CommandersAct/AndroidV5/tree/master/TCIAB) &[ IOS](https://github.com/CommandersAct/iOSV5/tree/master/TCIAB)
@@ -1757,15 +1757,15 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
 
     **TikTok:** “Smart Mapping” support\\
 
-    <figure><img src="../.gitbook/assets/image (3) (6) (1).png" alt="" width="227"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (3) (6).png" alt="" width="227"><figcaption></figcaption></figure>
 
     **Partnerize:** field encoding fixes\\
 
-    <figure><img src="../.gitbook/assets/image (7) (4) (1).png" alt="" width="229"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (7) (4).png" alt="" width="229"><figcaption></figcaption></figure>
 
     **Awin:** dynamic fields support
 
-    <figure><img src="../.gitbook/assets/image (9) (4) (1).png" alt="" width="230"><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (9) (4).png" alt="" width="230"><figcaption></figcaption></figure>
 
     \
     **Commission Junction:** dynamic fields support
@@ -1846,7 +1846,7 @@ We had a smart credential cache management on our (closed beta) [dry mode](https
     <figure><img src="../.gitbook/assets/filtersv2-demo.gif" alt=""><figcaption></figcaption></figure>
 *   **Data Quality indicators and trend graph are now displayed on all sources**\\
 
-    <figure><img src="../.gitbook/assets/image (104) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 *   **New option on LRB report**\
     you can now choose to do not display the "non attributed" line in a report
 
@@ -1989,7 +1989,7 @@ More information here:
       Use case example: send a purchase event with only product ids and enrich your events on the server with all the product properties you have in your product catalog for these ids.\
       (closed beta) _Public opening on 08 Dec._\\
 
-      <figure><img src="../.gitbook/assets/image (3) (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+      <figure><img src="../.gitbook/assets/image (3) (4) (1).png" alt=""><figcaption></figcaption></figure>
 *   **Destinations improvements:**
 
     * New destinations: [Commission Junction](../features/destinations/destinations-catalog/commission-junction.md) (closed alpha), Partenerize (closed alpha),[ Google Customer Match](../features/destinations/destinations-catalog/google/google-customer-match.md) (public beta)
@@ -2015,7 +2015,7 @@ More information here:
     <img src="../.gitbook/assets/image (1) (4) (3).png" alt="" data-size="original">
 * **Source improvements:**
   * Trend graph and quality indicator for HTTP Tracking API sources.\
-    ![](<../.gitbook/assets/image (1) (5) (1) (1).png>)
+    ![](<../.gitbook/assets/image (1) (5) (1).png>)
   * Quality indicators have also been added to Source Data Quality view. For each event you can now see at a glance if an event has a quality issue.\
     <img src="../.gitbook/assets/image (1) (6).png" alt="" data-size="original">
   * iOS SDK: Core 5.1.1 ServerSide 5.1.2
@@ -2038,7 +2038,7 @@ More information here:
   * _Advanced mapping_ feature evolves to Event [_Properties transformation_](../features/destinations/advanced-mapping.md) feature.
     * Ability to create new property and map them to existing one for a specific destination
     * Ability to remove event properties for a specific destination\
-      ![](<../.gitbook/assets/image (2) (3) (1) (1).png>)
+      ![](<../.gitbook/assets/image (2) (3) (1).png>)
   * [_Alerting_ ](../features/destinations/event-delivery.md): _Event delivery_ alerting is now open to everybody on channels _email_, _Slack_ and _Microsoft Teams_.\
     Be alerted in real-time when one of your destination delivery drop below your threshold.\
     ![](<../.gitbook/assets/image (25).png>)\\

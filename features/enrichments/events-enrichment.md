@@ -108,7 +108,7 @@ To learn more about how to use this feature, and get tips about Storage Settings
     * **Review Settings**: Ensure all settings are correctly configured.
     * **Save**: Save the new enrichment settings.\\
 
-    <figure><img src="../../.gitbook/assets/image (581) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
 
 * **Administrators Only**: This feature is accessible only to users with Administrator privileges. Custom profiles can be created to grant specific access to other users.
 

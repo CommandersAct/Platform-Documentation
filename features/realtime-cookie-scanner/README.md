@@ -57,12 +57,13 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 * Automatically ranks cookies by risk and frequency.
 
 #### 🤖 AI information
-RCS uses *Commanders Act AI* capabilities for cookie classification and multilingual content generation.
+
+RCS uses _Commanders Act AI_ capabilities for cookie classification and multilingual content generation.
 
 For more information about Commanders Act AI usage, security, and compliance, see:
 
 {% content-ref url="../../getting-started/platform-interface/productivity-tools/commanders-ai.md" %}
-[Commanders AI documentation](../../getting-started/platform-interface/productivity-tools/commanders-ai.md)
+[commanders-ai.md](../../getting-started/platform-interface/productivity-tools/commanders-ai.md)
 {% endcontent-ref %}
 
 #### ⚙️ Supported Storage Types
@@ -96,10 +97,11 @@ For more information about Commanders Act AI usage, security, and compliance, se
 <figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 #### 🌐 Translation Tokens System
+
 RCS includes a translation token system for multilingual cookie notices.
 
-- Your plan includes a daily allowance of translation tokens (e.g. 200 tokens per day)
-- 1 translated field consumes 1 token
+* Your plan includes a daily allowance of translation tokens (e.g. 200 tokens per day)
+* 1 translated field consumes 1 token
 
 #### 📊 Live Dashboards
 
@@ -117,33 +119,33 @@ RCS provides full versioning capabilities to support compliance audits and histo
 
 Each time a cookie notice version is created in the Cookie Notice Manager:
 
-- A complete snapshot of all cookies is saved
-- This snapshot represents the exact state of detected cookies at that moment
-- Snapshots are immutable and preserved over time
+* A complete snapshot of all cookies is saved
+* This snapshot represents the exact state of detected cookies at that moment
+* Snapshots are immutable and preserved over time
 
 **Historical access**
 
 Users can:
 
-- view previous versions at any time
-- export historical cookie lists
-- demonstrate compliance at a specific point in time
+* view previous versions at any time
+* export historical cookie lists
+* demonstrate compliance at a specific point in time
 
 **Supported export formats**
 
-- CSV
-- XLSX
-- JSON
-- HTML
+* CSV
+* XLSX
+* JSON
+* HTML
 
 **Compliance and audit use cases**
 
 This enables organizations to:
 
-- prove compliance over a specific period (for example: demonstrate compliance over the last 6 months)
-- respond to regulatory audits (CNIL, GDPR, internal compliance teams)
-- track compliance evolution over time
-- maintain full documentation history
+* prove compliance over a specific period (for example: demonstrate compliance over the last 6 months)
+* respond to regulatory audits (CNIL, GDPR, internal compliance teams)
+* track compliance evolution over time
+* maintain full documentation history
 
 Version history is available in:
 
@@ -164,15 +166,18 @@ RCS works immediately on real traffic — including logged-in or restricted page
 
 > 💡 **Compatibility** : RCS is independent of the Commanders Act CMP or TMS and can be used with any CMP vendors or TMS vendors (GTM, etc.)
 
-2-Declare the domains that you need to be scanned with the Cookie Scanner `Data Governance > Consent Management > Settings > Cookie Scanner Domains`
+2- On the "Cookie Notice Manager" page, click on gear icon (top right) to open the settings panel
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-3-Declare the languages required in your cookie notice `Data Governance > Consent Management > Settings > Localisation`
+3-Enter your configuration
 
-<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
+* Select the languages you want to use ([more details here](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#settings))
+* Enter your website(s) domain(s)
+* Save your config\
+  ![](<../../.gitbook/assets/image (1).png>)
 
-4-Regenerate and Deploy your privacy banner(s) and/or your Web Containers\\
+4-Regenerate and Deploy your Web Containers
 
 ***
 

@@ -91,7 +91,7 @@ The following indicators provide a quick overview of your situation:
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -106,7 +106,7 @@ This helps identify which types of cookies are not compliant and when they are t
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -136,6 +136,6 @@ To improve your compliance score:
 * Regularly review high-impact issues identified in the interface
 
 {% hint style="info" %}
-Have you changed your settings to improve your score? \
+Have you changed your settings to improve your score?\
 You’ll need to wait 5 minutes for the changes to take effect on this page, whilst your score is being recalculated
 {% endhint %}

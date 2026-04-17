@@ -1,4 +1,4 @@
-# Destination Logs Exporter
+# Destination Logs Exporter (closed beta)
 
 You can easily export your destination's raw logs using the **Destination Logs Exporter**.\
 This destination will allow you to export to an SFTP all outgoing requests issued by the destinations you choose, and to analyze in these logs all the details, including the originating events that led to the outgoing requests.
@@ -17,7 +17,7 @@ Select one or more destinations from which you'd like to export your data.
 2.  **Select a storage connector**. This can be set up in **Administration > Connector Credentials**.\
     Only FTP, Amazon S3 & Google Cloud Storage are currently supported\\
 
-    <figure><img src="../../../.gitbook/assets/image (3) (8) (2).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (3) (8).png" alt="" width="375"><figcaption></figcaption></figure>
 3.  **Specify the file name and extension** (default is CSV).\
     \\
 
