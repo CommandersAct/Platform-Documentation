@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 24/04/2026
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md" %}
+[facebook-conversions-api.md](../features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
+{% endcontent-ref %}
+
 ## 10/04/2026
 
 Destination documentation:
