@@ -1,8 +1,3 @@
----
-description: Description of how to interact with IAB consent API
-hidden: true
----
-
 # IAB TCF V2.3 Consent
 
 If you are using IAB TCF option (see [this page](https://www.doc.commandersact.com/consent-management/user-guides/settings#iab-tcf-compliancy) to setup IAB TCF on your account), you will be able to use IAB TCF's `__tcfapi` where your privacy banner is deployed.
@@ -72,11 +67,4 @@ __tcfapi('addEventListener', 2, function(pingResult, success) {
     // do something with pingResult.addtlConsent
 
   } else {
-
-    // do something else
-
-  }
-});
 ```
-
-* Reference: [Google Additional Consent Mode Technical Specification](https://support.google.com/admanager/answer/9681920?hl=en)

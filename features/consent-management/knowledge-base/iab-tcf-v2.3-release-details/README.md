@@ -1,7 +1,3 @@
----
-hidden: true
----
-
 # IAB TCF V2.3 Release details
 
 ## What’s Changing (and What You Need to Know)
