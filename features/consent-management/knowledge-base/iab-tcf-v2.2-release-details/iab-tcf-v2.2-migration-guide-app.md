@@ -2,13 +2,14 @@
 description: >-
   This page is to the attention the customers using the Commanders Act SDK with
   the IAB Consent Module in their mobile application
+hidden: true
 ---
 
 # IAB TCF v2.2 Migration guide App
 
 ## Introduction
 
-Here's the 2 steps to follow to remains compliant with the TCF on your mobile application&#x20;
+Here's the 2 steps to follow to remains compliant with the TCF on your mobile application
 
 {% hint style="warning" %}
 Requirements\
@@ -37,22 +38,20 @@ Simply download the latest versions of our TCIAB SDK Modules
 
 **Upload your CDN json file**
 
-Your privacy json file updated needs to be uploaded on CDN Commanders Act, please contact your consultant or our support team to upload the latest version of your json on our servers. (the content of this json file needs to be updated, following the next step.)\
-
+Your privacy json file updated needs to be uploaded on CDN Commanders Act, please contact your consultant or our support team to upload the latest version of your json on our servers. (the content of this json file needs to be updated, following the next step.)\\
 
 **Update the content of your privacy json file**
 
-1. Verify your vendor list    `"vendors": "15,48,501,506,520,539,512,895",`\
+1. Verify your vendor list `"vendors": "15,48,501,506,520,539,512,895",`\
    \*if you left the "vendors" empty, it will be considered as ALL vendors by our SDK\
-   Pay attention to your Vendor List, some Vendors aren't existing anymore in the GVL v3\
-
+   Pay attention to your Vendor List, some Vendors aren't existing anymore in the GVL v3\\
 2.  Add the new required fields\
-    `texts -> generic -> "illustationsButton": "illustrations"` &#x20;
+    `texts -> generic -> "illustationsButton": "illustrations"`
 
     `texts -> generic -> "dataCategoriesDef" : "Data Categories"`\
-    `texts -> vendors -> "legIntClaimTitle": "Legal policies"`&#x20;
+    `texts -> vendors -> "legIntClaimTitle": "Legal policies"`
 
-Full json example:&#x20;
+Full json example:
 
 ```
 {
@@ -300,8 +299,6 @@ Full json example:&#x20;
 	]
 }
 ```
-
-
 
 {% hint style="info" %}
 The value {total\_number} in the "purposeTitle" is a dynamic field. The total number of your IAB vendors will be displayed here

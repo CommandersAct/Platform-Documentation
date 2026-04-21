@@ -1,12 +1,8 @@
----
-description: >-
-  The IAB TCF v2.2 has new requirements. This page listing the new elements of
-  the CMP IAB TCF UI standard.
----
+# IAB TCF v2.3 CMP requirements
 
-# IAB TCF v2.2 CMP requirements
-
-This is an informative page. Almost every listed points above are automatically managed by our Consent Module (only the buttons "accept all" and "refuse all" are not automatically added). Simply follow our Migration guides [for Web](iab-tcf-v2.2-migration-guide-web.md) and [for App](iab-tcf-v2.2-migration-guide-app.md) to update you banner with these new requirement
+{% hint style="info" %}
+The IAB TCF v2.3 CMP banner has the same requirements then 2.2. If your banner was already compliant to these standards, then you don't need to change anything on your banner
+{% endhint %}
 
 ## 1st Layer
 

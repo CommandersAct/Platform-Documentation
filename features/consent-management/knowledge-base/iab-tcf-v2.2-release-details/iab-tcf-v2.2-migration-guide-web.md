@@ -1,5 +1,6 @@
 ---
 description: Step by step guide to remains compliant on the Web for TCF v2.2
+hidden: true
 ---
 
 # IAB TCF v2.2 Migration guide Web

@@ -1,74 +1,72 @@
-# IAB TCF V2.2 Release details
+# IAB TCF V2.3 Release details
 
-## Introduction
+## What’s Changing (and What You Need to Know)
 
-In February last year, the Belgian Data Protection Authority (APD, “Autorité de Protection des Données”) issued a decision against IAB Europe related to the Transparency and Consent Framework (TCF), fining the organization 250k€ and instructing it to come up with a plan to solve the issues that were identified.
+The IAB Europe Transparency & Consent Framework (TCF) is evolving to version 2.3, bringing a set of refinements designed to improve transparency, consistency, and user experience.
 
-Since then, IAB Europe has come up with a plan to update its TCF, which will come into action over the following months. In this article, we review the context surrounding the APD decision, catching you up on the events from last before presenting IAB Europe’s action plan, and finally going over what these changes will mean in practice for Commanders Act users.
+This page provides a clear, user-friendly overview of what’s changing—and most importantly, what it means for you.
 
-March 2023 update: On March 15th, 2023, IAB Europe confirmed that the Belgian APD has voluntarily suspended the six-month implementation period of IAB Europe’s action plan. As a result, the July 2023 deadline no longer applies. It’s now reported for Q4 2023
+***
 
-For more details and pending additional information, read the official IAB [communication here](https://iabeurope.eu/all-news/iab-europe-obtains-suspension-of-tcf-action-plan-implementation-due-to-ongoing-proceedings/).\
+### Good News: No Action Required
 
+**You don’t need to do anything.**
 
-## Context about the Belgian APD and the Transparency and Consent Framework
+Our CMP fully handles the transition to TCF v2.3 on your behalf. All necessary updates will be automatically applied, ensuring that your implementation remains compliant without any manual intervention.
 
-More than a year ago, on February 2nd, 2022, the Belgian APD issued a decision against IAB Europe citing 4 issues with its Transparency and Consent Framework (what’s the TCF? Learn more [here](https://iabeurope.eu/transparency-consent-framework/)). According to the Belgian APD:
+***
 
-The Transparency & Consent (TC) string, the consent signal stored by players in the advertising industry, is personal information. As such, participants should establish a legal basis.
+### What’s New in TCF v2.3?
 
-IAB Europe is a data controller of that information, whether or not it processes the consent information
+TCF v2.3 is not a complete overhaul—it’s an incremental update focused on clarifications, standardization, and better alignment with regulatory expectations.
 
-IAB Europe is a joint controller with TCF participants (vendors, CMPs, publishers)
+Here are the key changes:
 
-Security measures in place to protect the integrity of the consent signal were not sufficient
+#### 1. Improved Legal Basis Transparency
 
-IAB Europe was subsequently fined and instructed to come up with an action plan to solve these issues. The IAB Europe, along with some TCF participants, has worked on the action plan and submitted it to the APD in April 2022. Despite additional procedural events in September, the action plan was reviewed on January 11th by the Belgian APD.
+The framework introduces clearer distinctions around legal bases (such as consent and legitimate interest), helping ensure that users are better informed about how their data is processed.
 
-Of course, we will communicate with Commanders Act customers with specific action points before then.
+**What this means:**\
+Users will benefit from more explicit and consistent messaging, improving trust and transparency.
 
-## What is going to change in 2023 for the TCF?
+***
 
-Here are the main changes and obligations that will impact your Consent Management Platform if you’re using the TCF after April 2023:
+#### 2. Enhanced Vendor Disclosures
 
-**New TC string special purpose**
+Vendors participating in the TCF are now required to provide more detailed and standardized information about their data processing activities.
 
-Users of the TCF will be required to add a new (special) purpose to the classification of purposes in the TCF, informing their users that they are capturing and sharing data subject choices via the TC String.
+**What this means:**\
+Greater consistency across vendor information, making it easier for users to understand who is processing their data and why.
 
-**No more legitimate interest for targeted advertising**
+***
 
-Going forward, users won’t be able to rely on legitimate interest for personalized advertising.
+#### 3. Standardization of User Interface Elements
 
-Specifically, the purposes impacted will be purpose 3 (create a personalized ads profile), purpose 4 (select personalized ads), purpose 5 (create a personalized content profile), and purpose 6 (select a personalized content profile).
+TCF v2.3 introduces stricter guidelines around how consent notices should be displayed, particularly regarding clarity and accessibility.
 
-**Mandatory disclosures in the second layer of the CMP**
+**What this means:**\
+A more harmonized user experience across websites and apps using the framework.
 
-After April, users of the TCF will be required to disclose new information in their CMP second layer:
+***
 
-* The legitimate interests at stake
-* The categories of data collected and/or already held by Vendors
-* The retention periods (in the Vendors’ description)
+#### 4. Technical Specification Updates
 
-**Vendor-related changes**
+There are minor technical updates to the framework specifications to improve interoperability and ensure smoother communication between CMPs, vendors, and publishers.
 
-Publishers will be presented with a warning about the impact that a large number of vendors can have on the ability of users to make informed choices.
+**What this means:**\
+Behind-the-scenes improvements with no impact on your setup.
 
-Additionally, the **number of vendors will need to be disclosed in the first layer** of the CMP. Finally, we will recommend using event listeners to ensure proactive communication of changed TC String to vendors.&#x20;
+***
 
-## As a Commanders Act customer, what am I supposed to do?
+### Summary
 
-As a Commanders Act customer, what do these changes in the TCF mean and what are you supposed to do? Don’t worry, we’ve got it all planned out.
+* TCF v2.3 introduces **incremental improvements**, not major changes
+* Focus areas include **transparency, standardization, and clarity**
+* **No action is required from you**
+* Our CMP ensures **full compliance automatically**
 
-Not a lot will be expected from Commanders Act customers. However, if you decide to continue using the Transparency and Consent Framework, you must know that consent notices/consent banners will be changing slightly (based on the changes listed in the previous section), and you should therefore be ready for it.
+***
 
-The migration from the **TFC v2.2 will take place on November 20, 2023** serving as the hard deadline for the change. You will be must to **regenerate your consent banners TCF before this deadline.**
-
-Once the migration will be complete, **we will recommend that you recollect consent from your customers**, as previously collected consent was deemed invalid following the Belgian APD decision.  Additionally, you’ll most likely have to reduce your vendor list, and updating mobile SDK versions to get the new TCF various updates will be compulsory.
-
-But don’t worry, we will remind you about this before the deadline.
-
-## Conclusion
-
-To conclude, and while it’s important to be aware of the upcoming changes following this important industry decision, the impact on Commanders Act customers should be minimal, and we’re hoping to provide thorough assistance to everyone along the way\
-\
-If you wish to go further, you will be able to verify your TCF compliancy, since IAB Europe has released a new CMP Validator Chrome Extension available [here](https://chrome.google.com/webstore/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc) that includes all requirements of TCF v2.2.\
+{% hint style="info" %}
+If you wish to go further, you can verify your TCF compliancy, IAB Europe has released a new CMP Validator Chrome Extension available [here](https://chrome.google.com/webstore/detail/cmp-validator/ffhhjklgcfabkpholngojpkijlafjooc) that includes all requirements of TCF v2.2 & 2.3.
+{% endhint %}
