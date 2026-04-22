@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 101.4
+
+Release date:  **22/04/2026**
+
+* [beta] Addition of an option to manage the placement of Commanders Act cookies on post-consent CMP hits for customers who have the Data Activation module
+
 ### 101.3
 
 Release date:  **16/04/2026**
