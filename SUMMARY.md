@@ -173,6 +173,7 @@
     * [Google](features/destinations/destinations-catalog/google/README.md)
       * [Google Analytics 4](features/destinations/destinations-catalog/google/google-analytics-4/README.md)
         * [Google Analytics 4 - Proxy Mode](features/destinations/destinations-catalog/google/google-analytics-4/google-analytics-4-proxy-mode.md)
+      * [Google Ads Store Sales](features/destinations/destinations-catalog/google/google-ads-store-sales.md)
       * [Google BigQuery](features/destinations/destinations-catalog/google/google-bigquery.md)
       * [Google Conversion Adjustments](features/destinations/destinations-catalog/google/google-conversion-adjustments.md)
       * [Google Customer Match](features/destinations/destinations-catalog/google/google-customer-match.md)
