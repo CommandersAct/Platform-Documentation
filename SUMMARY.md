@@ -164,6 +164,7 @@
     * [Experian](features/destinations/destinations-catalog/experian.md)
     * [Facebook](features/destinations/destinations-catalog/facebook/README.md)
       * [Facebook Conversions API](features/destinations/destinations-catalog/facebook/facebook-conversions-api.md)
+        * [How to – Send a Protected Profit Value via Meta (Facebook CAPI)](features/destinations/destinations-catalog/facebook/facebook-conversions-api/how-to-send-a-protected-profit-value-via-meta-facebook-capi.md)
         * [Facebook CAPI through GTM](features/destinations/destinations-catalog/facebook/facebook-conversions-api/facebook-capi-through-gtm.md)
         * [Performance tab (Event Match Quality)](features/destinations/destinations-catalog/facebook/facebook-conversions-api/performance-tab-event-match-quality.md)
       * [Facebook Custom Audiences](features/destinations/destinations-catalog/facebook/facebook-custom-audiences.md)
