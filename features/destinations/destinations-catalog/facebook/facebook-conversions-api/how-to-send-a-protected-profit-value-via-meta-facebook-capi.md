@@ -2,6 +2,9 @@
 
 ### 🎯 Objective
 
+Meta’s Value Optimization for Profit allows campaigns to optimize based on order-level profitability rather than purchase value.
+
+This is particularly relevant when product margins vary significantly and are not directly correlated with sale price.\
 Meta allows you to optimize campaigns using a business value through the parameter:
 
 👉 **`net_revenue`**
@@ -31,8 +34,6 @@ You need to have access to your margin (or net revenue) in your data.
 
 👉 This is typically done via a **product catalog import**, where margin is included as a product attribute.
 
-***
-
 #### 2. Event enrichment (Purchase events)
 
 Your `purchase` events must be enriched with this margin information.
@@ -41,6 +42,19 @@ Your `purchase` events must be enriched with this margin information.
 
 📖 Documentation:\
 https://doc.commandersact.com/features/data-quality/enrichment
+
+#### 3. Order-level profit
+
+Meta’s optimization model is designed to work with profit at the order level.
+
+If your margin is only available at product level (e.g. via catalog), you should ensure that a consistent order-level profit is available in your purchase events.
+
+This can be done by:
+
+* computing it on your backend before sending the event, or
+* aggregating item-level margins into an order-level value with a formula inside Commanders Act platform
+
+👉 The value used in the transformation should represent the total profit of the purchase event.
 
 ***
 
@@ -64,6 +78,10 @@ https://doc.commandersact.com/features/data-quality/enrichment
 
 ### ⚙️ Suggested transformation approaches
 
+Meta supports sending transformed values as long as the optimization signal remains consistent and logically aligned with profitability.
+
+In particular, preserving value ordering (higher profit → higher value) is key. More advanced transformations may reshape the signal and should be tested carefully.\
+\
 Below are two suggested approaches to generate a protected profit signal.
 
 ***
@@ -124,6 +142,8 @@ IF(NUMBER(net_revenue) <= 0, 0,
 * Maintains profitability ordering
 * Makes the original margin less directly readable
 * Provides stronger obfuscation than a simple scaled value
+
+Note: this approach introduces a more abstract representation compared to a continuous profit value and may slightly reshape the optimization signal.
 
 ***
 
