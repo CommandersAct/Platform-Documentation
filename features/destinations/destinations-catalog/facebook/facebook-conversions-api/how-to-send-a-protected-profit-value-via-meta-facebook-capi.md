@@ -84,7 +84,7 @@ This can be done by:
 
 ***
 
-### ⚙️ Suggested transformation approaches
+#### ⚙️ Suggested transformation approaches
 
 Meta supports sending transformed values as long as the optimization signal remains consistent and logically aligned with profitability.
 
