@@ -9,7 +9,7 @@ In the formula input, you can can write basic or complex expression to transform
 Expressions are composed of either a value, a function, an operation, or another expression in parenthesis. See below for the description of each one of them.
 
 {% hint style="info" %}
-Functions can be nested, ex: `SHA256(LOWER(user.email))`
+Functions can be nested at any depth — the innermost function is evaluated first, and its return value is passed to the enclosing function. Example with 2 levels of nesting: `SHA256(LOWER(TRIM(user.email)))` (first `TRIM` removes surrounding spaces, then `LOWER` normalizes the case, then `SHA256` hashes the result).
 {% endhint %}
 
 ## Available functions
@@ -37,6 +37,7 @@ Functions can be nested, ex: `SHA256(LOWER(user.email))`
 | CHAR(text, position)\*                                                       | Returns the character at the specified position (start at 0).                                                                                                                                                                                                  | <p><code>CHAR("Hello world", 5)</code><br>returns<br><code>"o"</code></p>                                                                                                                                        |
 | IF(condition,resultIfTrue,resultIfFalse)                                     | Returns the second argument if the first argument is true, or the third argument otherwise                                                                                                                                                                     | `IF(city="Paris", ListA, ListB)`                                                                                                                                                                                 |
 | SWITCH(expression, value1, result1, \[value2, result2], ..., \[default])     | Evaluates the expression against a list of values and returns the result corresponding to the first match. If no match is found, returns the optional default value, or null if no default is provided.                                                        | <p><code>SWITCH(country, "FR", "France", "US", "United States", "Unknown")</code><br>returns <code>"France"</code> if country is <code>"FR"</code>, <code>"Unknown"</code> if no match</p><p><code>SWITCH(LOWER(status), "active", 1, "inactive", 0)</code><br>returns <code>1</code> if status is <code>"Active"</code></p> |
+| IFS(condition1, value1, \[condition2, value2], ..., \[default])              | Evaluates multiple conditions in order and returns the value corresponding to the first true condition. If no condition is true, returns the optional default value, or null if no default is provided. Conditions and values can be any nested expression — each one is fully evaluated before `IFS` compares it.                                                       | <p><code>IFS(country = "FR", "France", country = "US", "United States", "Unknown")</code><br>returns <code>"France"</code> if country is <code>"FR"</code>, <code>"Unknown"</code> if no match</p><p><code>IFS(price > 100, "high", price > 50, "medium", "low")</code><br>returns <code>"medium"</code> if price is <code>75</code></p><p><code>IFS(NUMBER(EXTRACT(cart_total, " ", 0)) > 200, "large", NUMBER(EXTRACT(cart_total, " ", 0)) > 50, "medium", "small")</code><br>with <code>cart_total = "75 €"</code>, the inner <code>EXTRACT</code> returns <code>"75"</code>, <code>NUMBER</code> turns it into <code>75</code>, then <code>IFS</code> returns <code>"medium"</code></p> |
 | ISEMPTY(value)                                                               | Returns whether the value is empty or not                                                                                                                                                                                                                      | <p>ISEMPTY("abc")<br>returns<br>false</p>                                                                                                                                                                        |
 | SIZE(array or object)                                                        | Returns the number of elements in the list                                                                                                                                                                                                                     | <p><code>SIZE(items)</code><br>returns the number of items</p>                                                                                                                                                   |
 | LENGTH(string)                                                               | Returns the number of characters in the string                                                                                                                                                                                                                 | <p><code>LENGTH("abc")</code><br>returns<br><code>3</code></p>                                                                                                                                                   |
@@ -99,3 +100,15 @@ IF(country = "FR" AND environment_work = "prod", "12345", IF(country = "DE" AND 
 ```
 ````
 {% endcode %}
+
+3. Scenario: Classify a cart into price segments from a raw `cart_total` string like `"75 €"`. Each argument passed to `IFS` is itself a formula that is fully evaluated before `IFS` receives it — here `EXTRACT` runs first, its result feeds `NUMBER`, and the resulting number is compared to the threshold. That is 2 levels of nested functions inside every condition:
+
+{% code overflow="wrap" %}
+````
+```xquery
+IFS(NUMBER(EXTRACT(cart_total, " ", 0)) > 200, "large", NUMBER(EXTRACT(cart_total, " ", 0)) > 50, "medium", "small")
+```
+````
+{% endcode %}
+
+With `cart_total = "75 €"`, `EXTRACT(cart_total, " ", 0)` returns `"75"`, `NUMBER("75")` returns `75`, the first condition `75 > 200` is `false`, the second `75 > 50` is `true`, so `IFS` returns `"medium"`.
