@@ -2,7 +2,7 @@
 
 ### 🎯 Objective
 
-Meta’s Value Optimization for Profit allows campaigns to optimize based on order-level profitability rather than purchase value.
+"Value Optimization for Profit" from Meta allows campaigns to optimize based on order-level profitability rather than purchase value.
 
 This is particularly relevant when product margins vary significantly and are not directly correlated with sale price.
 
