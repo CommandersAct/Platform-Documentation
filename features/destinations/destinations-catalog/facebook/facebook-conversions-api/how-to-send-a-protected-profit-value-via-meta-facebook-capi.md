@@ -4,7 +4,15 @@
 
 Meta’s Value Optimization for Profit allows campaigns to optimize based on order-level profitability rather than purchase value.
 
-This is particularly relevant when product margins vary significantly and are not directly correlated with sale price.\
+This is particularly relevant when product margins vary significantly and are not directly correlated with sale price.
+
+{% hint style="info" %}
+Value Optimization for Profit is currently available through Meta’s managed partner program and is not yet generally available to all advertisers.
+
+If you are interested in enabling this feature, please reach out to your Meta representative.
+{% endhint %}
+
+\
 Meta allows you to optimize campaigns using a business value through the parameter:
 
 👉 **`net_revenue`**
