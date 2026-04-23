@@ -200,6 +200,8 @@ You are sending to Meta:
 * is not sent in its original form
 * is not directly interpretable
 
+The value sent via `net_revenue` will be used by Meta for both optimization and reporting (e.g. "Margin (Currency)" column in Ads Manager).
+
 ***
 
 ### 💡 Best practices
