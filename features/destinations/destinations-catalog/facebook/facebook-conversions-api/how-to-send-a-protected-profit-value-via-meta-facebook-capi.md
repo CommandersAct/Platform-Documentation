@@ -155,7 +155,7 @@ Note: this approach introduces a more abstract representation compared to a cont
 
 ***
 
-### 💡 Notes
+#### 💡 Notes
 
 * Both approaches preserve **value ordering**, which is key for optimization
 * The first approach is closer to a linear transformation and may provide a more stable signal
