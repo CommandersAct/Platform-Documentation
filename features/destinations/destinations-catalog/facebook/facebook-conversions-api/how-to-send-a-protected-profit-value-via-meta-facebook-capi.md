@@ -168,6 +168,20 @@ Note: this approach introduces a more abstract representation compared to a cont
 
 ***
 
+### 🔗 Step 2 – Map the value in Meta CAPI
+
+In your **Facebook Conversions API destination**:
+
+1. Open your destination configuration
+2. Go to the **Smart Mapping** section
+3. Map the following:
+
+👉 **`net_revenue` → `protected_profit_value`**
+
+4. Also make sure:
+
+* `currency` is properly mapped
+
 ### ⚙️ Alternative – Transformation inside the destination
 
 👉 You can also define the transformation directly in:
