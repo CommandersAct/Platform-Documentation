@@ -41,7 +41,7 @@ Before configuring this destination, you need access to [Reddit Ads Manager](htt
 | `[Any Event]`         | `[Any Event]` **\[1]** |
 
 {% hint style="info" %}
-**\[1]** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](reddit-conversions-api.md#configuration) for more details.
+> **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](reddit-conversions-api.md#configuration) for more details.
 {% endhint %}
 
 ## Field mappings
@@ -58,18 +58,18 @@ Reddit recommends enabling [auto-advanced matching](https://business.reddithelp.
 <table><thead><tr><th width="396.6685580062746">Commanders Act Properties</th><th>Reddit Properties</th></tr></thead><tbody><tr><td><code>context.event_timestamp</code></td><td><code>event_at</code></td></tr><tr><td><code>event_name</code></td><td><code>type.tracking_type</code> <strong>[1]</strong></td></tr><tr><td><p><code>partners.reddit.action_source</code></p><p><code>(context.device.type)</code></p><p><code>(type)</code></p></td><td><code>action_source</code> <strong>[2]</strong></td></tr><tr><td><code>Event Mapping</code></td><td><code>type.custom_event_name</code> <strong>[3]</strong></td></tr><tr><td><code>partners.reddit.click_id</code></td><td><code>click_id</code> <strong>[4]</strong></td></tr><tr><td><code>id</code></td><td><code>conversion_id</code> <strong>[5]</strong></td></tr><tr><td><code>value</code></td><td><code>value</code> <strong>[5]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[5]</strong></td></tr><tr><td><code>items</code></td><td><code>item_count</code> <strong>[5][6]</strong></td></tr><tr><td><code>items.X.id</code></td><td><code>products.X.id</code> <strong>[5]</strong></td></tr><tr><td><code>items.X.product.name</code></td><td><code>products.X.name</code> <strong>[5]</strong></td></tr><tr><td><p><code>items.X.product.category_1</code></p><p><code>items.X.product.category_2</code></p><p><code>items.X.product.category_3</code></p><p><code>items.X.product.category_4</code></p><p><code>items.X.product.category_5</code></p></td><td><code>products.X.category</code> <strong>[5][7]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><p><code>idfa</code> <strong>[8][9][10]</strong></p><p><code>aaid</code> <strong>[8][9][10]</strong></p></td></tr><tr><td><code>user.email</code></td><td><code>email</code> <strong>[8][10]</strong></td></tr><tr><td><code>user.id</code></td><td><code>external_id</code> <strong>[8][10]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>phone_number</code> <strong>[8][10]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[8][10]</strong></td></tr><tr><td><code>context.device.user_agent</code></td><td><code>user_agent</code> <strong>[8]</strong></td></tr><tr><td><code>parters.reddit.uuid</code></td><td><code>uuid</code> <strong>[8]</strong></td></tr><tr><td><code>user.country</code></td><td><code>country</code> <strong>[11]</strong></td></tr><tr><td><code>user.region</code></td><td><code>region</code> <strong>[11]</strong></td></tr><tr><td><code>parters.reddit.data_proc_mode</code></td><td><code>modes[0]</code> <strong>[11][12]</strong></td></tr><tr><td><code>context.device.screen.width</code></td><td><code>width</code> <strong>[13]</strong></td></tr><tr><td><code>context.device.screen.height</code></td><td><code>height</code> <strong>[13]</strong></td></tr><tr><td><code>Test Mode</code></td><td><code>test_mode</code> <strong>[14]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[1]** See [Quick reference](reddit-conversions-api.md#quick-reference) for more details on the standard mapping.\
-> \&#xNAN;**\[2]** Priority on the left side. If <mark style="color:blue;">`context.device.type`</mark> is set with <mark style="color:blue;">`Android`</mark> or <mark style="color:blue;">`iOS`</mark> (case insensitive) then this is set with <mark style="color:blue;">`APP`</mark> . If <mark style="color:blue;">`type`</mark> is set with <mark style="color:blue;">`offline`</mark> then this is set with <mark style="color:blue;">`PHYSICAL_STORE`</mark> . Default value: <mark style="color:blue;">`WEBSITE`</mark> .\
-> \&#xNAN;**\[3]** See <mark style="color:blue;">`Reddit event name`</mark> in <mark style="color:blue;">`Event Mapping`</mark> <mark style="color:$primary;">.</mark>\
-> &#xNAN;**\[4]** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .\
-> \&#xNAN;**\[5]** Set in the <mark style="color:blue;">`metadata`</mark> field.\
-> \&#xNAN;**\[6]** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
-> \&#xNAN;**\[7]** All provided categories are separated by the "greater than" character ( `>` ).\
-> \&#xNAN;**\[8]** Set in the <mark style="color:blue;">`user`</mark> field.\
-> \&#xNAN;**\[9]** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
-> \&#xNAN;**\[10]** Automatically hashed via SHA256 when provided in clear text.\
-> \&#xNAN;**\[11]** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
-> \&#xNAN;**\[12]** Supported value: <mark style="color:blue;">`LDU`</mark> .\
-> \&#xNAN;**\[13]** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
-> \&#xNAN;**\[14]** Set in the base path.
+> **1.** See [Quick reference](reddit-conversions-api.md#quick-reference) for more details on the standard mapping.\
+> **2.** Priority on the left side. If <mark style="color:blue;">`context.device.type`</mark> is set with <mark style="color:blue;">`Android`</mark> or <mark style="color:blue;">`iOS`</mark> (case insensitive) then this is set with <mark style="color:blue;">`APP`</mark> . If <mark style="color:blue;">`type`</mark> is set with <mark style="color:blue;">`offline`</mark> then this is set with <mark style="color:blue;">`PHYSICAL_STORE`</mark> . Default value: <mark style="color:blue;">`WEBSITE`</mark> .\
+> **3.** See <mark style="color:blue;">`Reddit event name`</mark> in <mark style="color:blue;">`Event Mapping`</mark> <mark style="color:$primary;">.</mark>\
+> **4.** If a value is not provided, this is retrieved from the page URL by parsing the parameter <mark style="color:blue;">`rdt_cid`</mark> .\
+> **5.** Set in the <mark style="color:blue;">`metadata`</mark> field.\
+> **6.** Based on the length of the provided "Smart Mapping" field <mark style="color:blue;">`Item List`</mark> .\
+> **7.** All provided categories are separated by the "greater than" character ( `>` ).\
+> **8.** Set in the <mark style="color:blue;">`user`</mark> field.\
+> **9.** These properties require a proper value, <mark style="color:blue;">`iOS`</mark> or <mark style="color:blue;">`Android`</mark> , for the "Smart Mapping" field <mark style="color:blue;">`Device Platform`</mark> .\
+> **10.** Automatically hashed via SHA256 when provided in clear text.\
+> **11.** Set in the <mark style="color:blue;">`user.data_processing_options`</mark> field.\
+> **12.** Supported value: <mark style="color:blue;">`LDU`</mark> .\
+> **13.** Set in the <mark style="color:blue;">`user.screen_dimensions`</mark> field.\
+> **14.** Set in the base path.
 {% endhint %}

@@ -45,9 +45,9 @@ If you're setting up your client-side tag for the first time, you may want to us
 <table><thead><tr><th width="344">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Floodlight Configuration Id</code></td><td><em><strong><code>Required</code></strong></em><br>Floodlight configuration identifier of the related conversion. More details are available following this <a href="https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion">LINK</a>. <strong>[1]</strong></td></tr><tr><td><code>Floodlight Activity Id</code></td><td><em><strong><code>Required</code></strong></em><br>Floodlight activity identifier of the related conversion. More details are available following this <a href="https://developers.google.com/doubleclick-advertisers/rest/v4/Conversion">LINK</a>. <strong>[1]</strong></td></tr><tr><td><code>Match Id</code></td><td><em><strong><code>Required</code></strong></em><br>A unique advertiser created identifier also to be passed in the client-side Floodlight. This can only contain letters, numbers, underscores, hyphens and periods and is case sensitive. Max 100 characters. More details are available following this <a href="https://support.google.com/campaignmanager/answer/7554821?hl=en#custom&#x26;zippy=%2Ccustom-fields">LINK</a> (See field name "match_id").</td></tr><tr><td><code>Total Quantity</code></td><td>Flag this option to consider the total quantity instead of the number of unique products.</td></tr></tbody></table>
 
 {% hint style="info" %}
-**\[1]** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> :\\
-
-<img src="../../../../.gitbook/assets/sa360ec_3 (1).png" alt="" data-size="original">
+> **\[1]** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> .\
+> \
+> <img src="../../../../.gitbook/assets/sa360ec_3 (1).png" alt="" data-size="original">
 {% endhint %}
 
 ## Quick reference
@@ -57,7 +57,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 | `[Any Event]` **\[1]** | `conversions.batchupdate` |
 
 {% hint style="info" %}
-**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
+> **1.** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
 ## Field mappings
@@ -70,11 +70,9 @@ Google properties are set starting from the path <mark style="color:blue;">`conv
 <table><thead><tr><th width="375.6685580062746">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>Floodlight Configuration Id</code></td><td><code>floodlightConfigurationId</code> <strong>[*][1]</strong></td></tr><tr><td><code>Floodlight Activity Id</code></td><td><code>floodlightActivityId</code> <strong>[*][1]</strong></td></tr><tr><td><code>Match Id</code></td><td><code>matchId</code> <strong>[*][1]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>timestampMicros</code> <strong>[*][2]</strong></td></tr><tr><td><code>id</code></td><td><code>ordinal</code> <strong>[*]</strong></td></tr><tr><td><code>value</code></td><td><code>value</code> <strong>[*]</strong></td></tr><tr><td><p><code>items.length</code></p><p><code>items.X.quantity</code></p></td><td><code>quantity</code> <strong>[*][3]</strong></td></tr><tr><td><code>user.email_sha256</code></td><td><code>hashedEmail</code> <strong>[4]</strong></td></tr><tr><td><code>user.phone</code></td><td><code>hashedPhoneNumber</code> <strong>[4]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>addressInfo.hashedFirstName</code> <strong>[4]</strong></td></tr><tr><td><code>user.lastname</code></td><td><code>addressInfo.hashedLastName</code> <strong>[4]</strong></td></tr><tr><td><code>user.street</code></td><td><code>addressInfo.hashedStreetAddress</code> <strong>[4]</strong></td></tr><tr><td><code>user.city</code></td><td><code>addressInfo.city</code></td></tr><tr><td><code>user.state</code></td><td><code>addressInfo.state</code></td></tr><tr><td><code>user.country</code></td><td><code>addressInfo.countryCode</code></td></tr><tr><td><code>user.zipcode</code></td><td><code>addressInfo.postalCode</code></td></tr><tr><td><code>partners.google.non_personalized_ad</code></td><td><code>nonPersonalizedAd</code></td></tr><tr><td><code>partners.google.child_directed_treatment</code></td><td><code>childDirectedTreatment</code></td></tr><tr><td><code>partners.google.limit_ad_tracking</code></td><td><code>limitAdTracking</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[\*]** Mandatory property.  \
-> &#xNAN;**\[1]** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.  \
-> &#xNAN;**\[2]** Milliseconds timestamp is automatically converted to microseconds.  \
-> &#xNAN;**\[3]** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.  \
-> &#xNAN;**\[4]** Automatically normalized and hashed if passed in clear.
-
-
+> **\*** Mandatory property.\
+> **1.** See [Configuration](google-search-ads-360-enhanced-conversions.md#configuration) for more details on these mandatory properties.\
+> **2.** Milliseconds timestamp is automatically converted to microseconds.\
+> **3.** See [Configuration ](google-search-ads-360-enhanced-conversions.md#configuration)(<mark style="color:blue;">`Total Quantity`</mark>) for more details.\
+> **4.** Automatically normalized and hashed if passed in clear.
 {% endhint %}

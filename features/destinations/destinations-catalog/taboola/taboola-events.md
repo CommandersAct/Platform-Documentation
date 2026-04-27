@@ -29,7 +29,7 @@ Lastly, if you're not already sending events to Taboola Ads, you need to create 
 | `[Any Event]` **\[1]** | `[Taboola Event]` |
 
 {% hint style="info" %}
-**\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
+> **1.** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
 ## Field mappings
@@ -41,6 +41,6 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="456">Commanders Act Properties</th><th>Taboola Properties</th></tr></thead><tbody><tr><td><code>Taboola Click Id</code></td><td><code>click-id</code> <strong>[*]</strong></td></tr><tr><td><code>Taboola Event Name</code> <strong>[1]</strong></td><td><code>name</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>revenue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>id</code></td><td><code>orderid</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[\*]** Mandatory property.  \
-> &#xNAN;**\[1]** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](taboola-events.md#configuration).
+> **\*** Mandatory property.\
+> **1.** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](taboola-events.md#configuration).
 {% endhint %}

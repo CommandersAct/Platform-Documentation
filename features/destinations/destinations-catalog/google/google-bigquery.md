@@ -40,7 +40,7 @@ To enable this mode, in the [Configuration](google-bigquery.md#configuration), y
 | `Property name` **\[1]**                                                                     | When both `Auto-discover table structure (recommended)` and `Send all properties to BigQuery with universal schema` are not flagged, you can input the properties you want to include in your table with universal schema, one per line.                                   |
 
 {% hint style="info" %}
-**\[1]** in the section `Properties to include with universal schema` .
+> **1.** in the section `Properties to include with universal schema` .
 {% endhint %}
 
 ## Universal schema
@@ -95,6 +95,6 @@ and then click the `(9)` `RUN` button.
 | `[Any events]` **\[1]** | `rawDataCa`, `createdAt` **\[2]** |
 
 {% hint style="info" %}
-> **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.  \
-> &#xNAN;**\[2]** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
+> **1.** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
+> **2.** Two columns: <mark style="color:blue;">`rawDataCa`</mark> contains your event properties, while <mark style="color:blue;">`createdAt`</mark> is the creation timestamp.
 {% endhint %}

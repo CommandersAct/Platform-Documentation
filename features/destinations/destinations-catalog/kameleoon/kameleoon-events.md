@@ -21,7 +21,7 @@ The "Kameleoon Events" destination provides the following key features:
 | `Kameleoon GoalId`         | <p><em><strong><code>Required</code></strong></em><br>Map your Kameleoon Goal Ids by adding their <a href="https://help.kameleoon.com/manage-goals/">related identifiers</a>. They need to match valid Commanders Act events.</p>                                                              |
 
 {% hint style="info" %}
-**\[\*]** Only these events will be bridged to Kameleoon.
+> **\*** Only these events will be bridged to Kameleoon.
 {% endhint %}
 
 ## Field mappings
@@ -34,6 +34,6 @@ The "Kameleoon Events" destination provides the following key features:
 | `revenue`                 | `revenue` **\[2]**   |
 
 {% hint style="info" %}
-> **\[1]** The cookie content is set as value for the parameter`userID`.  \
-> &#xNAN;**\[2]** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
+> **1.** The cookie content is set as value for the parameter`userID`.\
+> **2.** This is set for Commanders Act<mark style="color:blue;">`purchase`</mark>and<mark style="color:blue;">`refund`</mark>events only.
 {% endhint %}
