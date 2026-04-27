@@ -36,7 +36,7 @@ Amazon Consent fields are automatically set if you activate our [Amazon Consent 
 <table><thead><tr><th width="336">Commanders Act Events</th><th>Amazon Event</th></tr></thead><tbody><tr><td><code>[Any Event]</code> <strong>[1]</strong></td><td><code>[Any Event]</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[1]** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
+> **1.** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.
 {% endhint %}
 
 ## Field mappings
@@ -48,13 +48,13 @@ Most properties can be remapped using our "Smart Mapping" feature.
 <table><thead><tr><th width="359.6685580062746">Commanders Act Properties</th><th>Amazon Properties</th></tr></thead><tbody><tr><td><code>partners.amazon.conversion_type</code><br><code>Conversion Type</code></td><td><code>conversionType</code> <strong>[*][1][2]</strong></td></tr><tr><td><code>Event Source</code></td><td><code>eventSource</code> <strong>[*][1]</strong></td></tr><tr><td><code>Country Property</code></td><td><code>countryCode</code> <strong>[*]</strong></td></tr><tr><td><code>Dataset Name</code></td><td><code>dataSetName</code> <strong>[1][3]</strong></td></tr><tr><td><code>event_name</code></td><td><code>name</code> <strong>[1]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>eventTime</code></td></tr><tr><td><code>context.event_id</code></td><td><code>eventId</code> <strong>[4]</strong></td></tr><tr><td><code>currency</code></td><td><code>currencyCode</code></td></tr><tr><td><p><code>user.email</code><br><code>user.phone</code></p><p><code>user.firstname</code></p><p><code>user.lastname</code></p><p><code>user.street</code></p><p><code>user.city</code><br><code>user.state</code><br><code>user.zipcode</code><br><code>context.device.advertising_id</code><br><code>partners.amazon.ramp_id</code><br><code>partners.amazon.match_id</code></p><p><code>partners.amazon.real_id</code><br><code>partners.amazon.merkle_id</code></p><p><code>partners.amazon.kantar_id</code></p></td><td><code>matchKeys.X.values.0</code> <strong>[5]</strong></td></tr><tr><td><p><code>(user.email</code><br><code>user.phone</code></p><p><code>user.firstname</code></p><p><code>user.lastname</code></p><p><code>user.street</code></p><p><code>user.city</code><br><code>user.state</code><br><code>user.zipcode</code><br><code>context.device.advertising_id</code><br><code>partners.amazon.ramp_id</code><br><code>partners.amazon.match_id</code></p><p><code>partners.amazon.real_id</code><br><code>partners.amazon.merkle_id</code></p><p><code>partners.amazon.kantar_id)</code></p></td><td><code>matchKeys.X.type</code> <strong>[6]</strong></td></tr><tr><td><code>partners.amazon.ad_storage</code></td><td><code>amazonConsent.amznAdStorage</code> <strong>[7]</strong></td></tr><tr><td><code>partners.amazon.user_data</code></td><td><code>amazonConsent.amznUserData</code> <strong>[7]</strong></td></tr><tr><td><code>partners.amazon.tcf</code></td><td><code>tcf</code> <strong>[7]</strong></td></tr><tr><td><code>partners.amazon.gpp</code></td><td><code>gpp</code> <strong>[7]</strong></td></tr><tr><td><code>context.device.ip</code></td><td><code>ipAddress</code> <strong>[8]</strong></td></tr><tr><td><code>items.length</code></td><td><code>unitsSold</code></td></tr><tr><td><code>value</code></td><td><code>value</code></td></tr><tr><td><code>Custom Event Properties</code></td><td><code>customData</code></td></tr><tr><td><code>partners.amazon.data_processing</code></td><td><code>dataProcessingOptions</code></td></tr><tr><td><code>partners.amazon.ad_event_key</code></td><td><code>amazonAdEventKey</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **\[\*]** Mandatory field.\
-> &#xNAN;**\[1]** Set in <mark style="color:blue;">`eventDescription`</mark> .\
-> \&#xNAN;**\[2]** Priority on the left side.\
-> \&#xNAN;**\[3]** See [Configuration](amazon-events-api.md#configuration) for more details.\
-> \&#xNAN;**\[4]** Your specified id for the conversion event and used for deduplication. More details are available by following this [LINK](https://advertising.amazon.com/API/docs/en-us/guides/events/events#event-de-duplication).\
-> \&#xNAN;**\[5]** At least one identifier must be provided.\
-> \&#xNAN;**\[6]** Depending on the value provided in `matchKeys.X.values.0` , this is one of the following values: `EMAIL` , `PHONE` , `FIRST_NAME` , `LAST_NAME` , `ADDRESS` , `CITY` , `STATE` , `POSTAL` , `MAID` , `RAMP_ID` , `MATCH_ID` , `REAL_ID` , `MERKLE_ID` and `KANTAR_ID` .\
-> &#xNAN;**\[7]** Set in <mark style="color:blue;">`consent`</mark> . See [Destination setup](amazon-events-api.md#destination-setup) for more details.\
-> \&#xNAN;**\[8]** Set in <mark style="color:blue;">`consent.geo`</mark> .
+> **\*** Mandatory field.\
+> **1.** Set in <mark style="color:blue;">`eventDescription`</mark> .\
+> **2.** Priority on the left side.\
+> **3.** See [Configuration](amazon-events-api.md#configuration) for more details.\
+> **4.** Your specified id for the conversion event and used for deduplication. More details are available by following this [LINK](https://advertising.amazon.com/API/docs/en-us/guides/events/events#event-de-duplication).\
+> **5.** At least one identifier must be provided.\
+> **6.** Depending on the value provided in `matchKeys.X.values.0` , this is one of the following values: `EMAIL` , `PHONE` , `FIRST_NAME` , `LAST_NAME` , `ADDRESS` , `CITY` , `STATE` , `POSTAL` , `MAID` , `RAMP_ID` , `MATCH_ID` , `REAL_ID` , `MERKLE_ID` and `KANTAR_ID` .\
+> **7.** Set in <mark style="color:blue;">`consent`</mark> . See [Destination setup](amazon-events-api.md#destination-setup) for more details.\
+> **8.** Set in <mark style="color:blue;">`consent.geo`</mark> .
 {% endhint %}
