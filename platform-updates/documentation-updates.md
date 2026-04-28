@@ -42,8 +42,8 @@ Destination documentation (updates):
 
 Destination documentation:
 
-{% content-ref url="../features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md" %}
-[appsflyer-pc-console-ctv-events-api.md](../features/destinations/destinations-catalog/appsflyer-pc-console-ctv-events-api.md)
+{% content-ref url="../features/destinations/destinations-catalog/appsflyer/appsflyer-pc-console-ctv-events-api.md" %}
+[appsflyer-pc-console-ctv-events-api.md](../features/destinations/destinations-catalog/appsflyer/appsflyer-pc-console-ctv-events-api.md)
 {% endcontent-ref %}
 
 ## 13/03/2026
