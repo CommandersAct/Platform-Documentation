@@ -85,7 +85,7 @@ Functions can be nested, ex: `SHA256(LOWER(user.email))`
 | MAX(array, expression)                                                       | Returns the maximum value from an array or from an expression. The expression parameter is optional.                                                                                                                                                           | <p><code>MAX([null, 15, 8])</code><br>Returns 15 (ignores null)</p><p><code>MAX(users, AGE(birth_date))</code><br>Find the age of the oldest user</p><p><code>MAX(transactions, IF(type = "purchase", amount, 0))</code><br>Maximum purchase amount</p> |
 | SUM(array, expression)                                                       | Calculates the sum of values in an array or from an expression. The expression parameter is optional.                                                                                                                                                          | <p><code>SUM(items, quantity * NUMBER(EXTRACT(unit_price, "$", 0)))</code><br>Calculate total value of all items</p><p><code>SUM([5, null, 15])</code><br>Returns 20 (ignores null)</p><p><code>SUM(items, IF(returned_quantity = 0, NUMBER(EXTRACT(product.price, "€",0)), 0))</code><br>Sum prices only for non returned quantity items condition</p> |
 | COUNT(array, expression)                                                     | Counts the number of non empty values in an array or from an expression. The expression parameter is optional.                                                                                                                                                 | <p><code>COUNT(users, IF(ISEMPTY(email), null, email))</code><br>Count customers with non empty email condition</p><p><code>COUNT(items, IF(status = "completed" AND amount > 100, 1, null))</code><br>Count completed items over 100</p> |
-| FOR_EACH(array, expression)                                                  | Applies a transformation to each element of an array and returns a new array with the results. Property names used in the expression (like `price` or `id`) refer to the current element. Use `root.xxx` to read a value from outside the array.                                                                                                      | <p><code>FOR_EACH(product_price, product_price * 1.2)</code><br>Apply 20% tax to each price</p><p><code>FOR_EACH(items, {id: id, price_with_tax: price * 1.2})</code><br>Add a price with tax on each item</p><p><code>FOR_EACH(product_id, {id: product_id, price: product_price, quantity: product_quantity})</code><br>Rebuild an items list from parallel flat lists</p><p><code>FOR_EACH(items, {id: id, order_id: root.id})</code><br>Add the parent order id on each item</p><p><code>FOR_EACH(items, {normalized_category: LOWER(COALESCE(category, ""))})</code><br>Lowercase each item's category — works even when <code>category</code> is itself an array</p><p><code>FOR_EACH(product_id, {id: product_id, is_outbound_train: CONTAINS(LOWER(COALESCE(product_category, "")), "train") AND CONTAINS(LOWER(COALESCE(product_variant, "")), "outbound")})</code><br>Use <code>CONTAINS</code> as a function with normalized values</p> |
+| FOR_EACH(array, expression)                                                  | Applies a transformation to each element of an array and returns a new array with the results. Property names used in the expression (like `price` or `id`) refer to the current element. Use `root.xxx` to read a value from outside the array.                                                                                                      | <p><code>FOR_EACH(product_price, product_price * 1.2)</code><br>Apply 20% tax to each price</p><p><code>FOR_EACH(items, {id: id, price_with_tax: price * 1.2})</code><br>Add a price with tax on each item</p><p><code>FOR_EACH(product_id, {id: product_id, price: product_price, quantity: product_quantity})</code><br>Rebuild an items list from parallel flat lists</p><p><code>FOR_EACH(items, {id: id, order_id: root.id})</code><br>Add the parent order id on each item</p><p><code>FOR_EACH(items, {id: id, average_rating: AVERAGE(ratings)})</code><br>Use an aggregation function inside <code>FOR_EACH</code> — computes the average rating per item</p> |
 
 ## Examples
 
@@ -97,36 +97,6 @@ Functions can be nested, ex: `SHA256(LOWER(user.email))`
 ````
 ```xquery
 IF(country = "FR" AND environment_work = "prod", "12345", IF(country = "DE" AND environment_work = "dev", "98888")
-```
-````
-{% endcode %}
-
-3. Scenario: Rebuild an EUROSTAR-style `items[]` array from flat parallel arrays, computing a `travel_date` based on the variant (outbound/inbound), with normalized lowercase comparisons:
-
-{% code overflow="wrap" %}
-````
-```xquery
-FOR_EACH(product_id, {
-  id: product_id,
-  category: product_category,
-  name: product_name,
-  brand: product_brand,
-  variant: product_variant,
-  price: product_price,
-  quantity: product_quantity,
-  departure_date: product_departure_date,
-  return_date: product_return_date,
-  status: product_status,
-  travel_date: IF(
-    CONTAINS(LOWER(COALESCE(product_category, "")), "train") AND CONTAINS(LOWER(COALESCE(product_variant, "")), "outbound"),
-    product_departure_date,
-    IF(
-      CONTAINS(LOWER(COALESCE(product_category, "")), "train") AND CONTAINS(LOWER(COALESCE(product_variant, "")), "inbound"),
-      product_return_date,
-      ""
-    )
-  )
-})
 ```
 ````
 {% endcode %}
