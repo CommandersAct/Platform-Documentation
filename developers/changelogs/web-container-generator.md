@@ -7,6 +7,7 @@
 Release date:  **27/04/2026**
 
 * [public release] enhance activation of Real Time Cookie Scanner
+* [public release] Improved Real-Time Cookie Scanner sampling
 
 ### 101.4
 
