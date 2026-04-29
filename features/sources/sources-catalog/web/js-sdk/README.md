@@ -145,8 +145,6 @@ Typical use case:
 
 An event is triggered as soon as the page loads, before the user interacts with the consent banner, and must still be sent for analytics purposes without setting identifier cookies.
 
-
-
 ***
 
 ## Get information <a href="#get-information" id="get-information"></a>
@@ -237,7 +235,7 @@ Note that hyphens (`-`) in event names will be converted to underscores (`_`). F
 * **privacy-module-loaded**: Internal event fired when `tC.privacy` is initialized.
 * **Custom events**: Sent using `cact('emit')`.
 
-#### Trigger example to fire a tag on `consent-update` event
+#### Trigger example to fire a tag on `consent-updated` event
 
 <figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
