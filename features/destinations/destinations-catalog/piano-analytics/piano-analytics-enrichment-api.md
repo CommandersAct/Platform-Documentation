@@ -1,15 +1,15 @@
-# Piano Analytics Enrichment API
+# Piano Analytics Catalogs API
 
 Piano Analytics is the successor of AT Internet Analytics Suite 2 (AS2) and a user-centric tool that simplifies product & marketing analytics, while ensuring data quality.\
 Using this destination you can connect your catalogs to your behavioral data in Piano Analytics by using [Piano Catalogs API](https://developers.piano.io/analytics/data-collection/import/catalogs/).
 
 {% hint style="info" %}
-Catalogs are the natural evolution of Piano Analytics's enrichments. If you have already configured enrichments, these were seamlessly migrated to catalogs.&#x20;
+Catalogs are the natural evolution of Piano Analytics's enrichments. If you have already configured enrichments in the past, these were seamlessly migrated to catalogs.&#x20;
 {% endhint %}
 
 ## Key features
 
-The Piano Analytics Enrichment API destination provides the following key features:
+The Piano Analytics Catalogs API destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://community.commandersact.com/platform-x/developers/tracking/events-reference) model supports [Piano Analytics catalog's data structure](https://developers.piano.io/analytics/data-collection/import/catalogs/#payload), meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.
