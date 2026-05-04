@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 08/05/2026
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/appsflyer/appsflyer-mobile-events-api.md" %}
+[appsflyer-mobile-events-api.md](../features/destinations/destinations-catalog/appsflyer/appsflyer-mobile-events-api.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/piano-analytics/piano-analytics-enrichment-api.md" %}
