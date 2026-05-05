@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 101.6
+
+Release date:  **05/05/2026**
+
+* Add external CMP API for Real Time Cookie Scanner consent detection
+
 ### 101.5
 
 Release date:  **27/04/2026**
