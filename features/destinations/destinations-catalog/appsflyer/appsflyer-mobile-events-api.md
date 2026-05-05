@@ -1,11 +1,7 @@
 # AppsFlyer Mobile Events API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Appsflyer](https://www.appsflyer.com/)'s platform is used by businesses to understand how users find and interact with their apps.\
-Using this destination you can leverage [AppsFlyer Server-to-Server Events API](https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview) to send mobile events to AppsFlyer.
+Using this destination you can leverage [AppsFlyer Server-to-Server Events API](https://dev.appsflyer.com/hc/reference/s2s-events-api3-overview) to send mobile events to AppsFlyer for your Android or iOS application.
 
 ## Key features
 
