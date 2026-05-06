@@ -185,18 +185,25 @@ Commanders AI processes inputs exclusively within EU-hosted infrastructure using
 
 As of today, Commander's AI does **not process or analyze any personal data or event payloads** collected via the Tag Management System (TMS) or the Customer Data Platform (CDP).
 
-Its usage is strictly limited to **configuration assistance and user interface enhancements**, such as:
+Depending on the feature, Commanders AI may process configuration-level metadata, user-provided prompts, structural fields, or sample data explicitly provided by the user for configuration purposes.
+
+Its usage is limited to assistance scenarios such as:
 
 * Generating summaries of tag management changes.
 * Assisting in writing regex, expressions, or formulas based on metadata or structural fields.
-* Suggesting field names or descriptions based on metadata (not user-level data).
+* Suggesting field names or descriptions based on metadata.
 * Classifying tags or destinations based on structural criteria.
+* Analyzing user-provided sample files to detect file structure, separators, and suggest mappings for file import configurations.
 
-No user event data or identifiers are currently exposed to AI models.
+For the AI-assisted file import configuration feature, Commanders AI may analyze the sample file provided by the user in order to detect its structure and suggest a mapping between CSV columns and `purchase` event properties.
+
+Commanders AI does not autonomously activate imports, create production configurations, or make irreversible decisions. All AI-generated configuration suggestions must be reviewed and validated by the user before use.
+
+Users are responsible for ensuring that any sample file submitted for configuration assistance contains only the data necessary for setup purposes. Where possible, sample files should be anonymized, minimized, or limited to representative structural data.
 
 **Applicability of German Works Council (Betriebsrat)**\
-Since Commanders AI does not analyse user behaviour, profile individuals, or process any data that could be used to monitor employees, it does not fall under the category of technical monitoring systems defined in §87(1)6 BetrVG.\
-If the scope of Commanders AI were to expand in the future to process event-level or behavioural data, this would be documented and communicated accordingly.
+Commanders AI is designed to provide configuration assistance and does not aim to monitor employees, evaluate employee performance, or profile individual users. It does not make autonomous decisions about users or employees.\
+If the scope of Commanders AI were to expand in the future to process behavioural data or data that could be used for employee monitoring, this would be documented and communicated accordingly.
 
 #### 3.5. EU AI Act Compliance
 
@@ -214,11 +221,15 @@ For security and contractual reasons, and because our underlying models may evol
 All models we use operate under the strict EU hosting, GDPR and AI Act rules described on this page.
 
 **What data do the models have access to?**\
-Only configuration-level metadata and user-provided prompts are sent to AI models, such as:\
+Depending on the feature used, AI models may access configuration-level metadata, user-provided prompts, structural fields, or sample files explicitly provided by the user for configuration assistance, such as:\
 – tag names, cookie descriptions, segment descriptions\
 – transformation formulas\
 – structural metadata\
-AI models never access event payloads, user identifiers, behavioural data, nor customer databases.
+– sample CSV content provided during file import source configuration\
+– column names and representative values used to suggest mappings\
+For AI-assisted file import configuration, the AI analyzes the sample file only to detect its structure and propose a mapping between CSV columns and purchase event properties.
+
+AI models do not access customer databases directly and do not autonomously retrieve event payloads from the platform. Any sample file analyzed by the AI is provided by the user for the purpose of configuring the import source.
 
 **Where is the AI hosted?**\
 All processing related to Commanders AI is fully hosted within the European Union.\
@@ -250,7 +261,7 @@ Commanders AI ensures full compliance with European regulations (AI Act, GDPR) b
 
 * AI-generated content is not stored for reuse or retraining.
 * We do **not** fine-tune models on customer data and select only vendors that guarantee data isolation and full alignment with EU laws (GDPR, AI Act).
-* Suggestions are based solely on technical and contextual criteria without exploiting personal data.
+* Suggestions are based solely on technical and contextual criteria, including configuration metadata, structural fields, user-provided prompts, or user-provided sample files when required for a specific configuration assistance feature.
 
 ### 4.4. Model Origin and Hosting Transparency
 
