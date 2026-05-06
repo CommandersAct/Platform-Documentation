@@ -1,3 +1,22 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+---
+
 # AppsFlyer Mobile Events API
 
 [Appsflyer](https://www.appsflyer.com/)'s platform is used by businesses to understand how users find and interact with their apps.\

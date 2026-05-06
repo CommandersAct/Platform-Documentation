@@ -438,8 +438,8 @@ Destination documentation:
 
 Destination documentation (updates):
 
-{% content-ref url="../features/destinations/destinations-catalog/microsoft/microsoft-uet.md" %}
-[microsoft-uet.md](../features/destinations/destinations-catalog/microsoft/microsoft-uet.md)
+{% content-ref url="/broken/pages/LGSZzlkpAhgXXOjdA25m" %}
+[Broken link](/broken/pages/LGSZzlkpAhgXXOjdA25m)
 {% endcontent-ref %}
 
 ## 02/08/2024
