@@ -10,7 +10,7 @@ description: Technical documentation on the use of artificial intelligence in th
 
 **Commander's AI** is a set of artificial intelligence features integrated into the **Commanders Act** platform.\
 These features leverage advanced language models (**LLM**) to optimize and automate various tasks.\
-Its goal is to simplify and optimize tag management, data handling, insights and destination configurations through natural language processing models.
+Its goal is to simplify and optimize tag management, data handling, insights, file import and destination configurations through natural language processing models.
 
 The functionalities of Commander's AI are designed to:
 
@@ -34,6 +34,7 @@ Commanders AI includes several advanced functionalities (some are limited to bet
 3. [**AI Copilot for Data Cleansing**](commanders-ai.md#id-2.2.-ai-copilot-for-data-cleansing-closed-beta) : Conversational assistant to generate or explain data transformation formulas.
 4. [**Smart Suggestions**](commanders-ai.md#id-4.-smart-suggestions-for-names-and-descriptions-closed-alpha) (closed alpha): Optimized naming and description proposals for destinations and segments.
 5. [**Automated Privacy Category Classification**](commanders-ai.md#id-5.-automatic-privacy-category-selection-closed-alpha) (closed alpha): Intelligent assignment of privacy categories when adding a tag or destination.
+6. [**AI-assisted File Import Configuration**](commanders-ai.md#id-2.5.-ai-assisted-file-import-configuration): Automatic detection of file structure and suggested mapping between CSV columns and purchase event properties.
 
 ***
 
@@ -128,6 +129,33 @@ When a user adds a **client-side tag in the TMS** or configures a **destination*
 Users retain full control over the classification and can adjust the suggestion as needed.
 
 ***
+
+### 2.5. AI-assisted File Import Configuration
+
+#### Feature Overview
+
+When configuring a file import source for conversion imports, Commanders AI can assist users by analyzing the sample file provided during setup.
+
+The AI helps detect the file structure and proposes a pre-filled configuration to reduce manual setup effort and configuration errors.
+
+#### How It Works
+
+1. The user provides a sample file during the file import source configuration.
+2. Commanders AI analyzes the structure of the file.
+3. The AI suggests the appropriate column separator and item separator.
+4. The AI proposes a pre-filled mapping between the CSV columns and the purchase event properties to be created.
+5. The user reviews, adjusts, and validates the proposed configuration before activation.
+
+#### Use Cases
+
+* Accelerating setup of recurring conversion imports.
+* Reducing configuration errors during import source creation.
+
+#### Customization and Validation
+
+The proposed configuration is only a suggestion. Users must review and validate the detected separators and proposed mappings before saving or activating the import source.
+
+Users remain responsible for ensuring that the sample file is appropriate for AI processing and should avoid providing unnecessary personal data in sample files whenever possible.
 
 ## **3. Transparency and Accountability**
 
