@@ -2,16 +2,60 @@
 
 ## Segment management
 
-This is where you create, edit and/or delete segments.
 
-1. The first column displays the segments’ names.
-2. The second column displays the segments’ technical IDs (present in the “TC AUDIENCE” cookie we use to store information about a segment).
-3. The third column shows the percentage of visitors that are included in a segment.
-4. The fourth column specifies the associated streams, using this segment.
-5. The fifth column shows when was the last time a segment was modified.
-6. The sixth column is where you edit or delete a segment, by clicking the pencil or the trash can.
 
-![](<../../../.gitbook/assets/Capture d’écran 2022-04-08 à 09.53.27.png>)
+The Segment Overview page lists all segments organized into folders. For each segment, the following information is displayed:
+
+* **Name**
+* **ID** — public identifier of the segment
+* **Labels** — custom tags assigned to the segment
+* **Nb users** — audience size (count and percentage of total users)
+* **Associated destinations** — destinations fed by this segment
+* **Last updated** — date of the last modification
+
+Available actions for each segment: move to another folder, change labels, duplicate, edit conditions, delete.
+
+{% hint style="info" %}
+Every segment must belong to a folder. A segment cannot exist outside of a folder.
+{% endhint %}
+
+#### Managing folders
+
+Folders are used to organize segments into logical groups. Up to 10 folders can be created per account.
+
+To create a folder, click the folder management button on the Segment Overview page. A side panel opens, listing suggested folders to help structure the segment library (e.g. Value & RFM, Triggers, Technical, Tests). Select a suggested folder or create a custom one.
+
+Each folder has a name and an icon, both of which can be edited at any time.
+
+To delete a folder, it must be empty. Move or delete all segments within it before proceeding.
+
+{% hint style="info" %}
+When a segment is deleted, it is removed from its folder. If the segment is restored, a folder must be selected manually.
+{% endhint %}
+
+#### Managing labels
+
+Labels are custom tags that can be assigned to segments to facilitate filtering and organization. Up to 20 labels can be created per account, and up to 4 labels can be assigned to a single segment.
+
+Labels can be created from three entry points:
+
+* The label management side panel, accessible from the Segment Overview page
+* The actions menu of a specific segment
+* The segment creation form
+
+Labels are optional. When creating a new segment, a name and a folder are required; labels can be added at that stage or later.
+
+A label name can be edited at any time. Deleting a label removes it from all segments it was assigned to.
+
+#### Duplicating a segment
+
+A segment can be duplicated directly from the Segment Overview page via the actions menu. Before confirming the duplication, the following fields are pre-filled and can all be modified:
+
+* **Name** — the original segment's name followed by "(copy)"
+* **Folder** — the original segment's folder
+* **Labels** — the original segment's labels, if any
+
+The duplicate is created with the same conditions as the original.
 
 ## How to add multiple values in a segment?
 
