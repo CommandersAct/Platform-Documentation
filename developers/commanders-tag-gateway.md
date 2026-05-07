@@ -124,55 +124,139 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 
 ## Step 2: Route traffic
 
-{% tabs %}
-{% tab title="Cloudflare Enterprise" %}
-To serve your tag in Commanders Gateway, you will create a CNAME entry for a new subdomain, create an [Origin Rule](https://developers.cloudflare.com/rules/origin-rules/) to forward requests, and create a [Transform Rule](https://developers.cloudflare.com/rules/transform/) to include geolocation information. To complete this setup, you will need to have a Cloudflare Enterprise plan. If you don't have an Enterprise plan, consider using the Cloudflare automated setup instead.
+{% tabs %}{% tab title="Cloudflare Enterprise" %}
+When using Cloudflare Enterprise, we recommend using a **Cloudflare Worker** to proxy all traffic from your chosen path, for example `/metrics`, to Commanders Gateway infrastructure.
 
-**Create CNAME entry**
+This approach is the same as the Cloudflare Free setup. It is more reliable than trying to route the path with Cloudflare Origin Rules, because the Worker gives full control over the request URL, headers, cookie filtering, and geolocation forwarding.
 
-**Note:** Tags won't use this CNAME entry; Cloudflare uses it to route requests internally.
+**Step 1: Create the Worker**
 
-Choose a subdomain to reserve for the CNAME entry. This CNAME is never exposed outside your Cloudflare configuration, so the name is arbitrary.
+1. In the Cloudflare dashboard, go to **Workers & Pages** → **Create application** → **Worker**.
+2. Copy/paste the following code:
 
-```
-CNAME subdomain: metrics
-Target: s1234.commander4.com
-```
+```javascript
+const prefix = "/metrics"; // Example path, replace with the path you choose in the previous step
+const sid = "12345"; // Example workspace ID (aka site ID), replace with your own ID
 
-1. In the **DNS** tab, open the **Records** section.
-2. Add a new record with:
-   * **Type**: CNAME
-   * **Name**: metrics
-   * **Target**: s1234.commander4.com => replace 1234 by your site (aka workspace) id
-3. Save the CNAME record.
+// List of cookie names that must NOT be forwarded to Commanders Gateway. You can add your technical cookies if needed
+const blacklistedCookies = [
+  "PHPSESSID",
+  "JSESSIONID"
+];
 
-**Create the Origin Rule**
+addEventListener("fetch", event => {
+  event.respondWith(handleRequest(event.request));
+});
 
-1. In the **Rules** tab, open **Origin Rules** and create a new rule.
-2. Enter a rule name, such as _Route measurement_.
-3. Match incoming requests based on a custom filter expression:
+function filterCookieHeader(cookieHeader, blacklist) {
+  if (!cookieHeader) return "";
 
-```
-(http.host eq "example.com" and starts_with(http.request.uri.path, "/metrics"))
-```
+  const blacklistSet = new Set(blacklist);
 
-4. Update the **Host Header** → Rewrite to: `s1234.commander4.com.`
-5. Update the **DNS Record** → Override to: `metrics.example.com`.
-6. Save the Origin Rule.
+  const filteredCookies = cookieHeader
+    .split(";")
+    .map(cookie => cookie.trim())
+    .filter(cookie => {
+      const cookieName = cookie.split("=")[0];
+      return !blacklistSet.has(cookieName);
+    });
 
-**Include geolocation information (optional)**
+  return filteredCookies.join("; ");
+}
 
-1. In the **Rules** tab, open **Settings**.
-2. Enable the **Add visitor location headers** option.
-3. Wait a few minutes for propagation.
+async function handleRequest(request) {
+  const url = new URL(request.url);
 
-You can verify by navigating to:
+  if (url.pathname.startsWith(prefix)) {
+    // Construct target URL. It replaces ${sid} with your workspace/site ID above.
+    const targetUrl = `https://s${sid}.commander4.com${url.pathname}${url.search}`;
+
+    // Clone request headers
+    const newHeaders = new Headers(request.headers);
+    newHeaders.set("X-Forwarded-Host", url.host);
+
+    const country = request.cf?.country || "";
+    const region = request.cf?.region || "";
+
+    if (country) newHeaders.set("X-Forwarded-Country", country);
+    if (region) newHeaders.set("X-Forwarded-Region", region);
+    if (country && region) {
+      newHeaders.set("X-Forwarded-CountryRegion", `${country}-${region}`);
+    }
+
+    // Filter the Cookie header before proxying the request.
+    const cookieHeader = newHeaders.get("Cookie");
+    const filteredCookies = filterCookieHeader(cookieHeader, blacklistedCookies);
+
+    if (filteredCookies) {
+      newHeaders.set("Cookie", filteredCookies);
+    } else {
+      newHeaders.delete("Cookie");
+    }
+
+    // Remove Host header to avoid conflicts
+    newHeaders.delete("host");
+
+    // Proxy request to Commanders Gateway infra
+    const proxyRequest = new Request(targetUrl, {
+      method: request.method,
+      headers: newHeaders,
+      body: request.body,
+      redirect: "follow"
+    });
+
+    return fetch(proxyRequest);
+  }
+
+  return new Response("Not Found", { status: 404 });
+}
+``` 
+
+This Worker proxies requests while adding extra headers:
+
+-   `X-Forwarded-Host`
+-   `X-Forwarded-Country`
+-   `X-Forwarded-Region`
+-   `X-Forwarded-CountryRegion`
+
+It can also filter sensitive or technical cookies before forwarding the request to Commanders Gateway.
+
+**Step 2: Bind the Worker to the path**
+
+1.  In Cloudflare, open your domain settings.
+2.  Navigate to **Workers Routes**.
+3.  Add a new route with:
+    -   **URL pattern**: `www.example.com/metrics*`
+    -   **Worker**: select the Worker created in step 1.
+
+Once saved, all requests to `/metrics` will be proxied to Commanders Gateway.
+
+**Step 3: Verify the setup**
+
+You can verify the setup by navigating to:
 
 ```
 https://example.com/metrics/healthy
 ```
 
-It should return `ok`.
+It should return:
+
+```
+ok
+```
+
+To verify geolocation forwarding, you can also test:
+
+```
+https://example.com/metrics/?validate_geo=healthy
+```
+
+It should also return:
+
+```
+ok
+```
+
 {% endtab %}
 
 {% tab title="Cloudflare Free" %}
