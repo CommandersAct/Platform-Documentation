@@ -8,6 +8,10 @@ description: The latest updates made to our documentation articles
 
 Destination documentation:
 
+{% content-ref url="../features/destinations/destinations-catalog/openai-conversions-api.md" %}
+[openai-conversions-api.md](../features/destinations/destinations-catalog/openai-conversions-api.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/appsflyer/appsflyer-mobile-events-api.md" %}
 [appsflyer-mobile-events-api.md](../features/destinations/destinations-catalog/appsflyer/appsflyer-mobile-events-api.md)
 {% endcontent-ref %}
