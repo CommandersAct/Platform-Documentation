@@ -33,7 +33,7 @@ Event deduplication is peformed using <mark style="color:blue;">`id`</mark> and 
 
 ### Configuration
 
-<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>API Key</code></td><td><em><strong><code>Required</code></strong></em><br>Your API key. You can contact OpenAI account team to get this value.</td></tr><tr><td><code>Pixel Id</code></td><td><em><strong><code>Required</code></strong></em><br>Your pixel identifier. You can contact OpenAI account team to get this value.</td></tr><tr><td><code>Event Mapping</code></td><td>Change the standard mapping between OpenAI event types and your events. Accepted values for <code>OpenAI event type</code>: <code>appointment_scheduled</code>, <code>checkout_started</code>, <code>contents_viewed</code>, <code>custom</code>, <code>items_added</code>, <code>lead_created</code>, <code>order_created</code>, <code>page_viewed</code>, <code>registration_completed</code>, <code>subscription_created</code> and <code>trial_started</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>API Key</code></td><td><em><strong><code>Required</code></strong></em><br>Your API key. You can contact OpenAI account team to get this value.</td></tr><tr><td><code>Pixel Id</code></td><td><em><strong><code>Required</code></strong></em><br>Your pixel identifier. You can contact OpenAI account team to get this value.</td></tr><tr><td><code>Event Mapping</code></td><td>Change the standard mapping between OpenAI event types and your events. Accepted values for <code>OpenAI event type</code> : <code>appointment_scheduled</code> , <code>checkout_started</code> , <code>contents_viewed</code> , <code>custom</code> , <code>items_added</code> , <code>lead_created</code> , <code>order_created</code> , <code>page_viewed</code> , <code>registration_completed</code> , <code>subscription_created</code> and <code>trial_started</code> .</td></tr></tbody></table>
 
 ## Quick reference
 
@@ -53,7 +53,7 @@ Event deduplication is peformed using <mark style="color:blue;">`id`</mark> and 
 | `[Any Event]`                                                        | `[Any OpenAI Event Type]` **\[1]** |
 
 {% hint style="info" %}
-> **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [`Configuration`](openai-conversions-api.md#configuration).
+> **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](openai-conversions-api.md#configuration).
 {% endhint %}
 
 ## Field mappings
