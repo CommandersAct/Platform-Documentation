@@ -68,13 +68,13 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 > **\*** Mandatory property.\
 > **1.** See [Quick reference](openai-conversions-api.md#quick-reference) for more details.\
 > **2.** If it's not passed, the current timestamp is used.\
-> **3.** Set if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`custom`</mark>. Default: value in <mark style="color:blue;">`event_name`</mark>.\
-> **4.** Accepted values: <mark style="color:blue;">`web`</mark>, <mark style="color:blue;">`mobile_app`</mark>, <mark style="color:blue;">`offline`</mark>, <mark style="color:blue;">`physical_store`</mark>, <mark style="color:blue;">`phone_call`</mark> and <mark style="color:blue;">`email`</mark>. Default: value in <mark style="color:blue;">`type`</mark>.\
-> **5.** Required if <mark style="color:purple;">`action_source`</mark> is <mark style="color:blue;">`web`</mark>`.`\
-> **6.** Set in <mark style="color:blue;">`user`</mark>.\
+> **3.** Set if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`custom`</mark> . Default: value in <mark style="color:blue;">`event_name`</mark> .\
+> **4.** Accepted values: <mark style="color:blue;">`web`</mark> , <mark style="color:blue;">`mobile_app`</mark> , <mark style="color:blue;">`offline`</mark> , <mark style="color:blue;">`physical_store`</mark> , <mark style="color:blue;">`phone_call`</mark> and <mark style="color:blue;">`email`</mark> . Default: value in <mark style="color:blue;">`type`</mark> .\
+> **5.** Required if <mark style="color:purple;">`action_source`</mark> is <mark style="color:blue;">`web`</mark> .\
+> **6.** Set in <mark style="color:blue;">`user`</mark> .\
 > **7.** Automatically normalized and hashed if passed in clear text.\
-> **8.** Set in <mark style="color:blue;">`data`</mark> when <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`customer_action.`</mark> \
-> **9.** Set if <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`custom`</mark> or <mark style="color:blue;">`plan_enrollment`</mark>.\
-> **10.** Priority on the left. Default value: <mark style="color:blue;background-color:blue;">`product`</mark>.\
+> **8.** Set in <mark style="color:blue;">`data`</mark> when <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`customer_action`</mark> . \
+> **9.** Set if <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`custom`</mark> or <mark style="color:blue;">`plan_enrollment`</mark> .\
+> **10.** Priority on the left. Default value: <mark style="color:blue;background-color:blue;">`product`</mark> .\
 > **11.** Required if <mark style="color:blue;">`amount`</mark> is set and <mark style="color:blue;">`currency`</mark> (top level) is not set.&#x20;
 {% endhint %}
