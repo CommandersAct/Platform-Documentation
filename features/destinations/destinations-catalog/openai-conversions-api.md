@@ -53,7 +53,7 @@ Event deduplication is peformed using <mark style="color:blue;">`id`</mark> and 
 | `[Any Event]`                                                        | `[Any OpenAI Event Type]` **\[1]** |
 
 {% hint style="info" %}
-> **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [`Configuration`](openai-conversions-api.md#configuration)`.`
+> **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [`Configuration`](openai-conversions-api.md#configuration).
 {% endhint %}
 
 ## Field mappings
