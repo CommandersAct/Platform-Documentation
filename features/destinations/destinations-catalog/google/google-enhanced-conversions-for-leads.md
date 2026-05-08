@@ -68,7 +68,7 @@ At least one of the following identifiers must be provided:
 {% endhint %}
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Google Enhanced Conversions for Leads supports consent signals. More details are available following this [LINK](https://developers.google.com/google-ads/api/rest/reference/rest/v17/Consent). Google properties are set starting from the path <mark style="color:blue;">`conversions[0]`</mark> .
 {% endhint %}
 

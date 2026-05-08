@@ -35,7 +35,7 @@ Lastly, if you're not already sending events to Taboola Ads, you need to create 
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.
 {% endhint %}
 
 <table><thead><tr><th width="456">Commanders Act Properties</th><th>Taboola Properties</th></tr></thead><tbody><tr><td><code>Taboola Click Id</code></td><td><code>click-id</code> <strong>[*]</strong></td></tr><tr><td><code>Taboola Event Name</code> <strong>[1]</strong></td><td><code>name</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>revenue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>id</code></td><td><code>orderid</code></td></tr></tbody></table>

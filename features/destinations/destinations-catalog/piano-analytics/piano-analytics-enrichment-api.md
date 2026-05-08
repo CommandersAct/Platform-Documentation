@@ -40,7 +40,7 @@ You can create/access catalogs by going to Piano Analytics interface following !
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.
 {% endhint %}
 
 {% hint style="warning" %}

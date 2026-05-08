@@ -30,7 +30,7 @@ The Affilae destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.
 {% endhint %}
 
 <table><thead><tr><th width="351.29729729729735">Commanders Act Properties</th><th>Affilae Properties</th></tr></thead><tbody><tr><td><code>Key</code></td><td><code>key</code> <strong>[*]</strong></td></tr><tr><td><code>Click Id</code></td><td><code>cids</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>id</code> <strong>[*]</strong></td></tr><tr><td><code>currency</code></td><td><code>currency</code> <strong>[*]</strong></td></tr><tr><td><code>revenue</code></td><td><code>amount</code></td></tr><tr><td><p><code>payment_method</code> <strong>[1]</strong></p><p><code>type</code> <strong>[2]</strong></p></td><td><code>payment</code></td></tr><tr><td><code>Revenue Share Id</code></td><td><code>customer</code></td></tr><tr><td><code>partners.affilae.cv</code></td><td><code>cv</code></td></tr><tr><td><code>coupon</code></td><td><code>voucher</code></td></tr><tr><td><code>items.X.id</code></td><td><code>product</code> <strong>[3]</strong></td></tr></tbody></table>

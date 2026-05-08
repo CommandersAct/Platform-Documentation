@@ -38,7 +38,7 @@ Ensure you added the "Click Parameter" to your Outbrain campaign's tracking code
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.
 {% endhint %}
 
 <table><thead><tr><th width="364.6685580062746">Commanders Act Properties</th><th>Outbrain Properties</th></tr></thead><tbody><tr><td><code>Outbrain Click Id</code></td><td><code>ob_click_id</code> <strong>[*]</strong></td></tr><tr><td><code>Outbrain event name</code></td><td><code>name</code> <strong>[1]</strong></td></tr><tr><td><code>id</code></td><td><code>orderId</code></td></tr><tr><td><code>value</code></td><td><code>orderValue</code></td></tr><tr><td><code>currency</code></td><td><code>currency</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>timestamp</code> <strong>[2]</strong></td></tr></tbody></table>

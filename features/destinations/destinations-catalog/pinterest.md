@@ -40,7 +40,7 @@ Ensure you have access to a [Pinterest Ads account](https://ads.pinterest.com) b
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 At least one of the following statement must be fulfilled:\
 • <mark style="color:blue;">`user_data.em`</mark> is set.\
 • <mark style="color:blue;">`user_data.hashed_maids`</mark> is set.\

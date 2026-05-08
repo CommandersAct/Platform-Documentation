@@ -41,7 +41,7 @@ Rakuten Advertising adds a URL parameter <mark style="color:blue;">`ranSiteID`</
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Rakuten Advertising has two different endpoints: default "ep" commissionable and "eventnvppixel" media optimization pixel. Using the "Smart Mapping" field <mark style="color:blue;">`Rakuten Tracking Endpoint`</mark> you can select which one you want to use: set "mop" for the "eventnvppixel" media optimization or "ep" for the standard endpoint. Please note that there are limitations in terms of parameters you can send when selecting the "eventnvppixel" media optimization pixel.\
 For the <mark style="color:blue;">`Lead`</mark> conversion type, if you don't provide item information such as identifier, quantity and name, the following fixed values are set <mark style="color:blue;">`skulist=Lead`</mark> , <mark style="color:blue;">`qlist=1`</mark> and <mark style="color:blue;">`namelist=Lead`</mark>. Moreover, if <mark style="color:blue;">`amtlist`</mark> can't be valorized with the provided information, it will be statically set as follow: <mark style="color:blue;">`amtlist=1`</mark> .\
 More details on Rakuten properties are available following this [LINK](https://rak.app.box.com/s/j3qtvbd300vqa1zyknxklx3itqyi0vlh).

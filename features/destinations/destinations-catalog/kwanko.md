@@ -28,7 +28,7 @@ The Kwanko destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 The Kwanko property <mark style="color:blue;">`gdpr_kwk`</mark> is always set to <mark style="color:blue;">`1`</mark> . Manage your consent settings using the filter tab of this destination.
 {% endhint %}
 

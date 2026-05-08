@@ -37,7 +37,7 @@ The [**awc**](https://wiki.awin.com/index.php/Advertiser_Tracking_Guide/Conversi
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 The following fields are recommended when having more than one commission group code:\
 \- <mark style="color:blue;">`items.X.affiliation`</mark>\
 \- <mark style="color:blue;">`items.X.product.price`</mark>\

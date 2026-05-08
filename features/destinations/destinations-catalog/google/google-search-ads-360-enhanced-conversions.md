@@ -63,7 +63,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Google properties are set starting from the path <mark style="color:blue;">`conversions.0`</mark> or <mark style="color:blue;">`conversions.0.userIdentifiers.0`</mark> with the latter for user properties.
 {% endhint %}
 

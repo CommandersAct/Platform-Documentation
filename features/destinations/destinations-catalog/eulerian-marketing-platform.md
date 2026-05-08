@@ -26,7 +26,7 @@ Ensure the domain you declared when creating your Eulerian account matches the o
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Eulerian `products` property is set for the following events:\
 • `add_to_cart`
 

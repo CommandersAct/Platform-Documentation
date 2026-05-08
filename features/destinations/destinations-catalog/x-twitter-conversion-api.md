@@ -59,7 +59,7 @@ Check the "Smart Mapping" field <mark style="color:blue;">`Transaction Id`</mark
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 All X properties are set in the object <mark style="color:blue;">`conversions[0]`</mark> . More details are available by following this [LINK](https://developer.twitter.com/en/docs/twitter-ads-api/measurement/api-reference/conversions).
 {% endhint %}
 

@@ -30,7 +30,7 @@ The Amazon Ads Conversions API destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 All Amazon properties are include in <mark style="color:blue;">`eventData.0`</mark> .
 {% endhint %}
 

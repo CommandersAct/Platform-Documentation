@@ -47,7 +47,7 @@ Before configuring this destination, you need access to [Reddit Ads Manager](htt
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 All Reddit properties are set in the path <mark style="color:blue;">`data.events.X`</mark> .
 {% endhint %}
 

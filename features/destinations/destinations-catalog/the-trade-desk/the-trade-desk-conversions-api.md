@@ -54,7 +54,7 @@ Using the [Event Mapping](the-trade-desk-conversions-api.md#configuration) you c
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 All The Trade Desk properties on the right column are set in the object <mark style="color:blue;">`data.0`</mark> .
 {% endhint %}
 

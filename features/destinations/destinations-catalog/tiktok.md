@@ -90,7 +90,7 @@ TikTok standard events are detailed in this [LINK](https://business-api.tiktok.c
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 TikTok client-side pixel saves a unique identifier in cookie [**\_ttp**](https://business-api.tiktok.com/portal/docs?rid=4eezrhr6lg4\&id=1771100936446977)**,** which is used to match website visitor events with TikTok ads. This destination starts by getting this identifier from <mark style="color:blue;">`partners.tiktok.ttp`</mark> . If it's not present, it looks for the previously mentioned cookie [**\_ttp**](https://business-api.tiktok.com/portal/docs?rid=4eezrhr6lg4\&id=1771100936446977) and sets TikTok <mark style="color:blue;">`data.0.user.ttp`</mark> with the resulting value.\
 The [Tiktok Click ID](https://business-api.tiktok.com/portal/docs?rid=4eezrhr6lg4\&id=1771100879787009) is a tracking parameter that is attached to your ad's landing page URLs. This destination checks if <mark style="color:blue;">`partners.tiktok.ttclid`</mark> is set with the ttclid value. If it's not present, it looks for cookie <mark style="color:blue;">ttclid</mark>. If none is found it tries by parsing the value from <mark style="color:blue;">`context.page.url`</mark> .
 {% endhint %}

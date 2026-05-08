@@ -26,7 +26,7 @@ The Commission Junction destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Setting the [configuration](commission-junction.md#configuration) field <mark style="color:blue;">`CJ Event Cookie Name`</mark> is not mandatory if the "Smart Mapping" field <mark style="color:blue;">`Click Id (cjevent)`</mark> is set. The latter has precedence over the former.
 {% endhint %}
 

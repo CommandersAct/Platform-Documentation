@@ -40,7 +40,7 @@ The Piwik PRO destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 It's recommended to include the visitor identifier in your requets - See Piwik Pro property <mark style="color:blue;">`_id`</mark> for more details.
 {% endhint %}
 

@@ -40,7 +40,7 @@ The Econda destination provides the following key features:
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 For Econda, visits and sessions are the same and they are based on the distinct value count for the property <mark style="color:blue;">`sid`</mark>. Additionally, Econda has a timeout set by default with 30 minutes, which can be changed, so even with the same <mark style="color:blue;">`sid`</mark> the session counter will increase after the timeout has passed.\
 Visitors are based on the property <mark style="color:blue;">`vid`</mark> and its distinct count.\
 An additional custom property <mark style="color:blue;">`retry_count`</mark> is set with the number of send retries due to Econda endpoint congestion or connection interruptions.

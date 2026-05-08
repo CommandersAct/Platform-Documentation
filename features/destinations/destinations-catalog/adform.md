@@ -34,7 +34,7 @@ A client-side tag template named `Adform - Get 3rd Party Cookie ID` is available
 ## Field mappings
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 For audience building and retargeting, make sure to pass a user identifier.\
 Geo and device information come from the provided user ip and agent.\
 Adform standard attribution works only if <mark style="color:blue;">`identity.cookieId`</mark> (Adform 3rd party cookie) or <mark style="color:blue;">`identity.advertisingId`</mark> (mobile advertising ID) is passed correctly.\

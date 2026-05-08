@@ -59,7 +59,7 @@ At least one of the following identifiers must be provided:
 {% endhint %}
 
 {% hint style="info" %}
-Most properties can be remapped using our "Smart Mapping" feature.\
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 Google properties are set starting from the path <mark style="color:blue;">`conversionAdjustments.0`</mark> or <mark style="color:blue;">`conversionAdjustments.0.userIdentifiers.X`</mark> with the latter for user properties.
 {% endhint %}
 
