@@ -7,7 +7,7 @@ This destination is currently under final review and will be available soon.
 [OpenAI](https://openai.com/) is artificial intelligence research organization. Using this destination you can can leverage [OpenAI Conversions API](https://developers.openai.com/ads/conversions-api) to send conversion events directly to OpenAI for downstream attribution and reporting.
 
 {% hint style="warning" %}
-At present, [OpenAI/ChatGPT Ads](https://ads.openai.com/) is in early stage and availability for businesses is limited. \
+At present, [OpenAI/ChatGPT Ads](https://ads.openai.com/) is in an early stage, and availability for businesses is limited. \
 Moreover, the European Union is not yet whitelisted to leverage OpenAI Ads.
 {% endhint %}
 
