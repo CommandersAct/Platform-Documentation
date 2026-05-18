@@ -18,6 +18,18 @@ On the "Cookie Notice" page, click on gear icon (top right) to open the settings
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+Needs to collect cookies from your subdomains?
+
+You don't need to declare each of them!
+
+Simply add "\*." before your domain declaration
+
+example
+
+![](<../../.gitbook/assets/image (149).png>)
+{% endhint %}
+
 #### Step 2
 
 Generate and deploy your Web Container(s)

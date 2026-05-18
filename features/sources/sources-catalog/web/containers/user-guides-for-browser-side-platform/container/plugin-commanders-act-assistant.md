@@ -107,7 +107,9 @@ To preserve confidentiality, our plugin requires to be logged on our platform.
 Once you are logged, only the Sites and the Web Containers that you have access are visible through the extension
 {% endhint %}
 
-<figure><img src="../../../../../../../.gitbook/assets/image (12).png" alt="" width="265"><figcaption></figcaption></figure>
+It's also compatible with SSO
+
+<figure><img src="../../../../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
 
 ### Limitations
 
