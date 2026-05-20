@@ -2,6 +2,18 @@
 
 ## 2026
 
+### 101.8
+
+Release date:  **19/05/2026**
+
+* Real-time Cookie Scanner: fix sendBeacon call
+
+### 101.7
+
+Release date:  **18/05/2026**
+
+* Removal of Tag Hierarchy module from container
+
 ### 101.6
 
 Release date:  **05/05/2026**
@@ -29,13 +41,13 @@ Release date:  **16/04/2026**
 
 ### 101.2
 
-Release date:  **31/03/2026**
+Release date: **31/03/2026**
 
 * Assign custom triggers size to `tags` segment instead of `core` in container size preview
 
 ### 101.1
 
-Release date:  **30/03/2026**
+Release date: **30/03/2026**
 
 * [beta] Fixed deduplication bug that created superfluous entries in customer journey
 
