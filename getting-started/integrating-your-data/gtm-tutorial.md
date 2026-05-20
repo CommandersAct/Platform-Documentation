@@ -11,7 +11,7 @@ This guide shows you how to quickly set up server-side event forwarding for GA4 
 3. **Set Up Domain Delegation** for first-party data collection (strongly recommended).
 
 {% hint style="info" %}
-#### Alternative Approach for Event Tracking
+**Alternative Approach for Event Tracking**
 
 Instead of using GA4 to transfer events, you can add **Commanders Act tags** directly in GTM for each event you want to track. While this method takes more time to set up, it gives you full control over which events are sent, independent of GA4, and works even if GA4 is not used.
 
@@ -58,7 +58,7 @@ For enhanced data accuracy and first-party tracking, we recommend setting up a c
 #### How to Set Up Domain Delegation:
 
 1. Go to the **Domain Management** section of Commanders Act (find detailed instructions [here](../../configure/administration/domain-management/)) and follow the steps to configure a custom subdomain such as https://collect.yourdomain.com
-2.  In GTM, update `server_container_url`with your subdomain url such as:&#x20;
+2.  In GTM, update `server_container_url`with your subdomain url such as:
 
     ```bash
     https://collect.yourdomain.com/events?tc_s={siteId}&token={sourceKey}&&ga_url_param=

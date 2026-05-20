@@ -124,7 +124,8 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 
 ## Step 2: Route traffic
 
-{% tabs %}{% tab title="Cloudflare Enterprise" %}
+{% tabs %}
+{% tab title="Cloudflare Enterprise" %}
 When using Cloudflare Enterprise, we recommend using a **Cloudflare Worker** to proxy all traffic from your chosen path, for example `/metrics`, to Commanders Gateway infrastructure.
 
 This approach is the same as the Cloudflare Free setup. It is more reliable than trying to route the path with Cloudflare Origin Rules, because the Worker gives full control over the request URL, headers, cookie filtering, and geolocation forwarding.
@@ -210,24 +211,24 @@ async function handleRequest(request) {
 
   return new Response("Not Found", { status: 404 });
 }
-``` 
+```
 
 This Worker proxies requests while adding extra headers:
 
--   `X-Forwarded-Host`
--   `X-Forwarded-Country`
--   `X-Forwarded-Region`
--   `X-Forwarded-CountryRegion`
+* `X-Forwarded-Host`
+* `X-Forwarded-Country`
+* `X-Forwarded-Region`
+* `X-Forwarded-CountryRegion`
 
 It can also filter sensitive or technical cookies before forwarding the request to Commanders Gateway.
 
 **Step 2: Bind the Worker to the path**
 
-1.  In Cloudflare, open your domain settings.
-2.  Navigate to **Workers Routes**.
-3.  Add a new route with:
-    -   **URL pattern**: `www.example.com/metrics*`
-    -   **Worker**: select the Worker created in step 1.
+1. In Cloudflare, open your domain settings.
+2. Navigate to **Workers Routes**.
+3. Add a new route with:
+   * **URL pattern**: `www.example.com/metrics*`
+   * **Worker**: select the Worker created in step 1.
 
 Once saved, all requests to `/metrics` will be proxied to Commanders Gateway.
 
@@ -256,7 +257,6 @@ It should also return:
 ```
 ok
 ```
-
 {% endtab %}
 
 {% tab title="Cloudflare Free" %}
@@ -415,7 +415,7 @@ Fastly support for Commanders Gateway is currently in **beta**. The steps below 
 
 When using Fastly, the setup is different from Cloudflare. You deploy a **Compute service** (Wasm) and configure it mainly via the **Fastly API and CLI** from a terminal.
 
-#### Prerequisites
+**Prerequisites**
 
 1. Create an API token in the Fastly interface (scopes must allow Compute, services, backends, and deployments).
 2. Export the token in your terminal environment:
@@ -429,7 +429,7 @@ export FASTLY_API_TOKEN=XXXXXXXXXXXX
 * Node.js
 * Fastly CLI
 
-#### Step 1: Create the Compute service
+**Step 1: Create the Compute service**
 
 Create a new Compute service:
 
@@ -445,7 +445,7 @@ dyBxiT8wpc2c8ZQg2KRrMN
 
 Save it, you will need it for backend creation and deployments.
 
-#### Step 2: Create a local Compute project (starter kit)
+**Step 2: Create a local Compute project (starter kit)**
 
 Generate a local project from the default JavaScript starter kit:
 
@@ -465,7 +465,7 @@ This creates a project structure similar to:
     └── welcome-to-compute.html
 ```
 
-#### Step 3: Configure the service ID in fastly.toml
+**Step 3: Configure the service ID in fastly.toml**
 
 Edit `fastly.toml` and set the service ID:
 
@@ -474,7 +474,7 @@ Edit `fastly.toml` and set the service ID:
 service_id = "YOUR_SERVICE_ID"
 ```
 
-#### Step 4: Create the backend (Commanders Gateway origin)
+**Step 4: Create the backend (Commanders Gateway origin)**
 
 Create a backend that points to the Commanders Gateway infrastructure (replace `1234` with your workspace/site ID):
 
@@ -494,7 +494,7 @@ Notes:
 * `--version 1` is a typical starting point. If your service already has versions, use the version you intend to deploy.
 * The backend address must be `s1234.commander4.com` (your own workspace/site ID).
 
-#### Step 5: Implement the routing logic in src/index.js
+**Step 5: Implement the routing logic in src/index.js**
 
 Replace the content of `src/index.js` with the following worker code.
 
@@ -611,7 +611,7 @@ Important:
 * Keep the same `prefix` as the path you reserve on the customer domain (example: `/metrics`).
 * Do NOT add a trailing slash at the end of the path in customer-side URLs.
 
-#### Step 6: Deploy
+**Step 6: Deploy**
 
 Deploy the Compute service:
 
@@ -619,7 +619,7 @@ Deploy the Compute service:
 npm run deploy
 ```
 
-#### Step 7: Test
+**Step 7: Test**
 
 After deployment, Fastly provides a temporary domain for testing, for example:
 
@@ -633,7 +633,7 @@ It should return:
 ok
 ```
 
-#### Production binding (customer domain)
+**Production binding (customer domain)**
 
 At this stage, the Compute service runs on a Fastly-provided test domain. To go live on the customer domain (example: `https://example.com/metrics/`), you still need to bind the service to the production domain and ensure TLS is in place.
 

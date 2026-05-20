@@ -7,7 +7,7 @@ A Commanders Act Data Layer is a JavaScript object that holds metadata of a webs
 To install a Commanders Act Data Layer it is necessary to implement a global JavaScript object `tc_vars` that holds the meta data of the page as direct properties. The required Data Layer properties are defined during the Commanders Act setup process, but you can find a list of common properties on [this page](../../web/containers/user-guides-for-browser-side-platform/data-layer-and-data-types/external-variables.md).
 
 {% hint style="info" %}
-#### Re-using an Existing Data Layer
+**Re-using an Existing Data Layer**
 
 In case a website already has a Data Layer installed it is possible to transform it into a Commanders Act Data Layer. Please contact a Commanders Act consultant to implement the transformation.
 {% endhint %}
@@ -33,7 +33,7 @@ The approach to fill the Data Layer with properties depends on the technology fr
 The Data Layer needs to be filled with information before the Web Container file is loaded—otherwise information might not be available at the time the Container JavaScript executes.
 
 {% hint style="warning" %}
-#### Race Conditions
+**Race Conditions**
 
 Race conditions between the Data Layer properties and the Container JavaScript can be difficult to identify and debug by Commanders Act users. It is therefore important to avoid them during installation!
 {% endhint %}
@@ -70,7 +70,7 @@ Following example outlines how a Data Layer can be installed in case both a `<he
 ```
 
 {% hint style="info" %}
-#### Data Layer Naming Convention
+**Data Layer Naming Convention**
 
 As outlined in the example above the properties of the Data Layer are usually grouped with a prefix notation. E.g. `env_` is used to group environment information and `user_` is used to group user information.
 

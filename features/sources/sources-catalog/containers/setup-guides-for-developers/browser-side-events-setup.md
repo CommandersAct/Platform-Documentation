@@ -26,13 +26,13 @@ tC.event.add_to_basket(this, { product_id: "12345" });
 ```
 
 {% hint style="info" %}
-#### Trigger Data Layer Properties
+**Trigger Data Layer Properties**
 
 A common approach for the Trigger Data Layer is to always use the same properties like `event_label`, `event_type` and `event_value`—so in case of an `add_to_basket` Trigger the `event_value` would hold the product id of the selected product and in case of a `video_play` event the `event_value` would hold the current position within the video timeline. This allows to avoid to create multiple custom variable names for each individual event and therefore makes Trigger more generic.
 {% endhint %}
 
 {% hint style="warning" %}
-#### Trigger Error Handling
+**Trigger Error Handling**
 
 In some situations it might happen, that a user interacts with a custom Trigger before the Commanders Act Web Container file was loaded. In this case using the Trigger function would cause a JavaScript `ReferenceError`. Therefore it is recommended to check the availability of the Trigger function before using it.
 

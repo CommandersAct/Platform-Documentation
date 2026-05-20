@@ -34,7 +34,7 @@ See more details in the [Configuration](effinity.md#configuration) and [Field ma
 | `Custom Event Properties` | Map your custom event properties by setting their field names in `Effinity property name` and adding the value in `Your value`. `Effinity property name` must be set with `refX` where `X` is a number from 2 to 20 (inclusive).                                                                                                                                                        |
 
 {% hint style="info" %}
-> **1.** See [Destination setup](effinity.md#destination-setup) and [Field Mappings](effinity.md#field-mappings) for more details.
+**1.** See [Destination setup](effinity.md#destination-setup) and [Field Mappings](effinity.md#field-mappings) for more details.
 {% endhint %}
 
 ## Quick reference
@@ -53,5 +53,5 @@ The Effinity property <mark style="color:blue;">`consent_performance`</mark> is 
 <table><thead><tr><th width="526">Commanders Act Properties</th><th>Effinity Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>id</code></td></tr><tr><td><code>currency</code></td><td><code>monnaie</code></td></tr><tr><td><code>revenue</code></td><td><code>montant</code></td></tr><tr><td><code>id</code></td><td><code>ref</code></td></tr><tr><td><p><code>Id Compteur</code></p><p><code>partners.effinity.id_compteur</code></p><p><code>Effinity Cookie Name</code></p></td><td><code>id_compteur</code> <strong>[1]</strong></td></tr><tr><td><p><code>Prod Id</code></p><p><code>partners.effinity.prod_id</code></p><p><code>Effinity Cookie Name</code></p></td><td><code>prod_id</code> <strong>[1]</strong></td></tr><tr><td><p><code>Effi Id</code><br><code>partners.effinity.effi_id</code></p><p><code>Effinity Cookie Name</code></p></td><td><code>effi_id</code> <strong>[1]</strong></td></tr><tr><td><p><code>Effi Id2</code></p><p><code>partners.effinity.effi_id2</code></p><p><code>Effinity Cookie Name</code></p></td><td><code>effi_id2</code> <strong>[1]</strong></td></tr><tr><td><code>payment_method</code></td><td><code>payment</code></td></tr><tr><td><code>coupon</code></td><td><code>voucher</code></td></tr></tbody></table>
 
 {% hint style="info" %}
-> **1.** Priority order listed on the left.
+**1.** Priority order listed on the left.
 {% endhint %}

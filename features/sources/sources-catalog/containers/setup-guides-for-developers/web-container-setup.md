@@ -2,11 +2,9 @@
 
 A web container is a JavaScript file which has two purposes:
 
-·       To be able to use native functions & methods of the TMS
+· To be able to use native functions & methods of the TMS
 
-·       To execute the partners solutions (tags) contained inside
-
-&#x20;
+· To execute the partners solutions (tags) contained inside
 
 It is possible, as it is often the case, to have several containers for the same site or even the same page.
 
@@ -14,20 +12,16 @@ The URL of each JavaScript Web Container file will be provided alongside the Con
 
 ### Implementation of the containers on the page
 
-Web container are usually installed by implementing a `<script>` html node on every page of your website that holds a `src` attribute that points to the Container URL.&#x20;
+Web container are usually installed by implementing a `<script>` html node on every page of your website that holds a `src` attribute that points to the Container URL.
 
 The containers can be placed in different locations in the page source’s code depending on their use and your type of business.
 
-&#x20;
-
-Here’s a common example with 3 containers:     &#x20;
+Here’s a common example with 3 containers:
 
 | A/B-test (optional) | In the \<head>              |
 | ------------------- | --------------------------- |
 | Analytics           | At the beginning of \<body> |
 | Marketing           | At the end of \</body >     |
-
-&#x20;
 
 \<head> container's location is usually used for AB test and should be load synchronously, to prevent flickering effect.
 
@@ -73,7 +67,7 @@ Please ensure that the `<head>` Container file is loaded synchronously to avoid 
 In contrast to the `<head>` Container it is possible to implement `<body>` Container asynchronously. For example it is possible to load them via JavaScript on the `onload` event of the page or it is possible to use the `async` attribute in the `<script>` element.
 
 {% hint style="info" %}
-#### Installation via JavaScript Loaders
+**Installation via JavaScript Loaders**
 
 It is possible to implement JavaScript Container files with JavaScript loaders like RequireJS or HeadJS. On the opposite it is not possible to bundle the JavaScript Container files with bundlers like Webpack or ParcelJS to make sure that the Container files are dynamically loaded from the CDN or server on each page request. Otherwise users will not be able to manage Commanders Act Web Container on their own.
 {% endhint %}
@@ -82,7 +76,7 @@ It is possible to implement JavaScript Container files with JavaScript loaders l
 
 #### Via Browser Console
 
-It is possible to log all loaded Container files on a site via the JavaScript console of the browser. The JavaScript object `tC.containersLaunched` provides information of each loaded Web Container.&#x20;
+It is possible to log all loaded Container files on a site via the JavaScript console of the browser. The JavaScript object `tC.containersLaunched` provides information of each loaded Web Container.
 
 Following you will find an example object including its most relevant information:
 
@@ -100,7 +94,7 @@ Following you will find an example object including its most relevant informatio
 }
 ```
 
-### Definitions&#x20;
+### Definitions
 
 | **Account ID**         | Unique account ID of your workspace on our platform. Also called "Site ID". Log in into your Commanders Act account and look for the first numeric value in your address bar. e.g. with "https://app.commandersact.com/en/1234/", your account identifier is "1234". |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

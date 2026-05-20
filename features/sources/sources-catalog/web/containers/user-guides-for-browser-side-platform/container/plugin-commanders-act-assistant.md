@@ -109,7 +109,7 @@ Once you are logged, only the Sites and the Web Containers that you have access 
 
 It's also compatible with SSO
 
-<figure><img src="../../../../../../../.gitbook/assets/image (327).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (314).png" alt=""><figcaption></figcaption></figure>
 
 ### Limitations
 
