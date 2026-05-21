@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 101.9
+
+Release date: **21/05/2026**
+
+* Fix sampling function not included in generated JS for event-triggered
+
 ### 101.8
 
 Release date:  **19/05/2026**
