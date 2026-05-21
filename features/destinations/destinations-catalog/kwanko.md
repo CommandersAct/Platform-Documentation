@@ -43,7 +43,7 @@ The Kwanko property <mark style="color:blue;">`gdpr_kwk`</mark> is always set to
 | `coupon`                                                                     | `argbr`               |
 
 {% hint style="info" %}
-> **\*** Mandatory property.\
-> **1.** If <mark style="color:blue;">`Collection Server Base Url`</mark> is not the default value, the <mark style="color:blue;">`Tracking Id`</mark> is appended as part of base URL and the <mark style="color:blue;">`mclic`</mark> is not set.\
-> **2.** Priority on the left side. You can set the "Smart Mapping" field <mark style="color:blue;">`Kwanko Click Id`</mark> to provide a value for this property.
+**\*** Mandatory property.\
+**1.** If <mark style="color:blue;">`Collection Server Base Url`</mark> is not the default value, the <mark style="color:blue;">`Tracking Id`</mark> is appended as part of base URL and the <mark style="color:blue;">`mclic`</mark> is not set.\
+**2.** Priority on the left side. You can set the "Smart Mapping" field <mark style="color:blue;">`Kwanko Click Id`</mark> to provide a value for this property.
 {% endhint %}

@@ -4,7 +4,7 @@ Piano Analytics is the successor of AT Internet Analytics Suite 2 (AS2) and a us
 Using this destination you can connect your catalogs to your behavioral data in Piano Analytics by using [Piano Catalogs API](https://developers.piano.io/analytics/data-collection/import/catalogs/).
 
 {% hint style="info" %}
-Catalogs are the natural evolution of Piano Analytics's enrichments. If you have already configured enrichments in the past, these were seamlessly migrated to catalogs.&#x20;
+Catalogs are the natural evolution of Piano Analytics's enrichments. If you have already configured enrichments in the past, these were seamlessly migrated to catalogs.
 {% endhint %}
 
 ## Key features
@@ -34,7 +34,7 @@ You can create/access catalogs by going to Piano Analytics interface following !
 | `[Any Event]`         | `[Any Template]` **\[1]** |
 
 {% hint style="info" %}
-> **1.** Use [Destination filters](https://doc.commandersact.com/features/destinations/destination-filters) to match your events with Piano Analytics' templates.
+**1.** Use [Destination filters](https://doc.commandersact.com/features/destinations/destination-filters) to match your events with Piano Analytics' templates.
 {% endhint %}
 
 ## Field mappings
@@ -52,5 +52,5 @@ Your selected catalog key must me included and mapped.
 | `[Any Property]`          | `[Any Property]` **\[1]**  |
 
 {% hint style="info" %}
-> **1.** See [Enrichment Configuration](piano-analytics-enrichment-api.md#configuration) for more details.
+**1.** See [Enrichment Configuration](piano-analytics-enrichment-api.md#configuration) for more details.
 {% endhint %}

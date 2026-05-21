@@ -28,7 +28,7 @@ A client-side tag template named `Adform - Get 3rd Party Cookie ID` is available
 | `[Any Event]` **\[1]** | `[Tracking Point Names]` |
 
 {% hint style="info" %}
-**\[1]** Ensure to apply [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) configuring your relevant events for this destination. Custom events are also supported.
+**1.** Ensure to apply [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) configuring your relevant events for this destination. Custom events are also supported.
 {% endhint %}
 
 ## Field mappings
