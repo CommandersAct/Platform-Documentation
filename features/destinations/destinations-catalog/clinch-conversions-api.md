@@ -25,21 +25,21 @@ The Clinch Conversions API destination provides the following key features:
 
 ## Quick reference
 
-| Commanders Act Events | Clinch Event Types                                                                                                             |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `page_view`           | <p><code>HomePage</code> <strong>[1]</strong></p><p><code>Landing</code> <strong>[2]</strong></p><p><code>PageView</code> </p> |
-| `search`              | `Search`                                                                                                                       |
-| `view_item_list`      | `Category`                                                                                                                     |
-| `view_item`           | `Details`                                                                                                                      |
-| `add_to_cart`         | `AddToCart`                                                                                                                    |
-| `remove_from_cart`    | `RemFromCart`                                                                                                                  |
-| `view_cart`           | `CartPage`                                                                                                                     |
-| `add_to_wishlist`     | `AddToWishList`                                                                                                                |
-| `begin_checkout`      | `Checkout`                                                                                                                     |
-| `purchase`            | <p><code>OfflineConv</code> <strong>[3]</strong></p><p><code>conv</code></p>                                                   |
-| `generate_lead`       | `Registration`                                                                                                                 |
-| `[Any Other Event]`   | `Other`                                                                                                                        |
-| `[Any Event]`         | `[Any Event]` **\[1]**                                                                                                         |
+| Commanders Act Events | Clinch Event Types                                                                                                            |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `page_view`           | <p><code>HomePage</code> <strong>[1]</strong></p><p><code>Landing</code> <strong>[2]</strong></p><p><code>PageView</code></p> |
+| `search`              | `Search`                                                                                                                      |
+| `view_item_list`      | `Category`                                                                                                                    |
+| `view_item`           | `Details`                                                                                                                     |
+| `add_to_cart`         | `AddToCart`                                                                                                                   |
+| `remove_from_cart`    | `RemFromCart`                                                                                                                 |
+| `view_cart`           | `CartPage`                                                                                                                    |
+| `add_to_wishlist`     | `AddToWishList`                                                                                                               |
+| `begin_checkout`      | `Checkout`                                                                                                                    |
+| `purchase`            | <p><code>OfflineConv</code> <strong>[3]</strong></p><p><code>conv</code></p>                                                  |
+| `generate_lead`       | `Registration`                                                                                                                |
+| `[Any Other Event]`   | `Other`                                                                                                                       |
+| `[Any Event]`         | `[Any Event]` **\[4]**                                                                                                        |
 
 {% hint style="info" %}
 **1.** Set if property <mark style="color:blue;">`page_type`</mark> is <mark style="color:blue;">`home`</mark> .\
