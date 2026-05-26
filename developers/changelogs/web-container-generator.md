@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 102.0
+
+Release date:  **25/05/2026**
+
+* Support Amazon Consent in event payload
+
 ### 101.9
 
 Release date: **21/05/2026**
