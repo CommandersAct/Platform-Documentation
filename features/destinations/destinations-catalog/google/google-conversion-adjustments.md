@@ -1,9 +1,5 @@
 # Google Conversion Adjustments
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Taking advantage of the [Google Ads API Upload Conversion Adjustments](https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments), you can amend conversions values initially reported by other means (E.g. via client-side tags).
 
 ## Destination setup
