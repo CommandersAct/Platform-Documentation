@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 29/05/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/google/google-ads-store-sales.md" %}
+[google-ads-store-sales.md](../features/destinations/destinations-catalog/google/google-ads-store-sales.md)
+{% endcontent-ref %}
+
 ## 22/05/2026
 
 Destination documentation:
