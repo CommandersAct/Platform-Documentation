@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 102.1
+
+Release date: **27/05/2026**
+
+* Support more `console` functions
+
 ### 102.0
 
 Release date:  **25/05/2026**
