@@ -26,8 +26,7 @@ The Piano Analytics Collection API destination provides the following key featur
 Before you get started with this destination, ensure you have access to [Piano Analytics](https://developers.atinternet-solutions.com/piano-analytics/#what-is-piano-analytics).
 
 {% hint style="warning" %}
-The client-side unique visitor identifier is recommended and is retrieved by getting the value of the [**`_pcid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#since-670) **,** [**`pa_vid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#piano-analytics-mobile-sdks) , [**`atuserid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#legacy-cookie-management) , or <mark style="color:blue;">**`xtidc`**</mark> cookie in this priority order. Default value: <mark style="color:blue;">`user.consistent_anonymous_id`</mark>.\
-See <mark style="color:blue;">`Client Identifier`</mark> in [Configuration](at-internet.md#configuration) to further customize this value.
+The client-side unique visitor identifier is recommended and is retrieved by getting the value of the [**`_pcid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#since-670) **,** [**`pa_vid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#piano-analytics-mobile-sdks) , [**`atuserid`**](https://developers.atinternet-solutions.com/piano-analytics/data-collection/general/cookie-storage#legacy-cookie-management) , or <mark style="color:blue;">**`xtidc`**</mark> cookie in this priority order. Default value: <mark style="color:blue;">`user.consistent_anonymous_id`</mark>. See <mark style="color:blue;">`Client Identifier`</mark> in [Configuration](at-internet.md#configuration) to further customize this value.
 {% endhint %}
 
 ### Configuration
