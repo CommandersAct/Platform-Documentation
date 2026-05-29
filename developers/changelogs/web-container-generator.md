@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 102.2
+
+Release date: **28/05/2026**
+
+* Fix Real-time Cookie Scanner first-party domain
+
 ### 102.1
 
 Release date: **27/05/2026**
