@@ -64,7 +64,7 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 {% hint style="info" %}
 **\*** Mandatory field.\
 **1.** Set in <mark style="color:blue;">`eventDescription`</mark> .\
-**2.** Priority on the left side.\
+**2.** Priority on the left side. See [Quick reference](amazon-events-api.md#quick-reference) for more details.\
 **3.** See [Configuration](amazon-events-api.md#configuration) for more details.\
 **4.** Your specified id for the conversion event and used for deduplication. More details are available by following this [LINK](https://advertising.amazon.com/API/docs/en-us/guides/events/events#event-de-duplication).\
 **5.** At least one identifier must be provided.\
