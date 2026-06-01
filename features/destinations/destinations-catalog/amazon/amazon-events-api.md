@@ -37,7 +37,7 @@ Amazon Consent fields (1.) are automatically set if you activate our [Amazon Con
 
 {% hint style="info" %}
 **1.** Use [**Destination filters**](https://doc.commandersact.com/features/destinations/destination-filters) to specify your matching events.\
-**2.** Accepted values: <mark style="color:blue;">`ADD_TO_SHOPPING_CART`</mark> , <mark style="color:blue;">`APPLICATION`</mark> , <mark style="color:blue;">`CHECKOUT`</mark> , <mark style="color:blue;">`CONTACT`</mark> , <mark style="color:blue;">`LEAD`</mark> , <mark style="color:blue;">`OFF_AMAZON_PURCHASES`</mark>`,`` `<mark style="color:blue;">`MOBILE_APP_FIRST_START`</mark>`,`` `<mark style="color:blue;">`PAGE_VIEW`</mark>`,`` `<mark style="color:blue;">`SEARCH`</mark>`,`` `<mark style="color:blue;">`SIGN_UP`</mark>`,`` `<mark style="color:blue;">`SUBSCRIBE`</mark>` ``and`` `<mark style="color:blue;">`OTHER`</mark>`.`&#x20;
+**2.** Accepted values: <mark style="color:blue;">`ADD_TO_SHOPPING_CART`</mark> , <mark style="color:blue;">`APPLICATION`</mark> , <mark style="color:blue;">`CHECKOUT`</mark> , <mark style="color:blue;">`CONTACT`</mark> , <mark style="color:blue;">`LEAD`</mark> , <mark style="color:blue;">`OFF_AMAZON_PURCHASES`</mark> , <mark style="color:blue;">`MOBILE_APP_FIRST_START`</mark> , <mark style="color:blue;">`PAGE_VIEW`</mark> , <mark style="color:blue;">`SEARCH`</mark> , <mark style="color:blue;">`SIGN_UP`</mark> , <mark style="color:blue;">`SUBSCRIBE`</mark>  and <mark style="color:blue;">`OTHER`</mark> .&#x20;
 {% endhint %}
 
 ## Field mappings
@@ -55,7 +55,7 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 **3.** See [Configuration](amazon-events-api.md#configuration) for more details.\
 **4.** Your specified id for the conversion event and used for deduplication. More details are available by following this [LINK](https://advertising.amazon.com/API/docs/en-us/guides/events/events#event-de-duplication).\
 **5.** At least one identifier must be provided.\
-**6.** Depending on the value provided in `matchKeys.X.values.0` , this is one of the following values: `EMAIL` , `PHONE` , `FIRST_NAME` , `LAST_NAME` , `ADDRESS` , `CITY` , `STATE` , `POSTAL` , `MAID` , `RAMP_ID` , `MATCH_ID` , `REAL_ID` , `MERKLE_ID` and `KANTAR_ID` .\
+**6.** Depending on the value provided in <mark style="color:blue;">`matchKeys.X.values.0`</mark> , this is one of the following values: <mark style="color:blue;">`EMAIL`</mark> , <mark style="color:blue;">`PHONE`</mark> , <mark style="color:blue;">`FIRST_NAME`</mark> , <mark style="color:blue;">`LAST_NAME`</mark> , <mark style="color:blue;">`ADDRESS`</mark> , <mark style="color:blue;">`CITY`</mark> , <mark style="color:blue;">`STATE`</mark> , <mark style="color:blue;">`POSTAL`</mark> , <mark style="color:blue;">`MAID`</mark> , <mark style="color:blue;">`RAMP_ID`</mark> , <mark style="color:blue;">`MATCH_ID`</mark> , <mark style="color:blue;">`REAL_ID`</mark> , <mark style="color:blue;">`MERKLE_ID`</mark> and <mark style="color:blue;">`KANTAR_ID`</mark> .\
 **7.** Set in <mark style="color:blue;">`consent`</mark> . See [Destination setup](amazon-events-api.md#destination-setup) for more details.\
 **8.** Set in <mark style="color:blue;">`consent.geo`</mark> .
 {% endhint %}
