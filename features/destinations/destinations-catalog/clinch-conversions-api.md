@@ -1,4 +1,4 @@
-# Clinch Conversions API
+# Clinch
 
 {% hint style="info" %}
 This destination is currently under final review and will be available soon.
@@ -8,7 +8,7 @@ This destination is currently under final review and will be available soon.
 
 ## Key features
 
-The Clinch Conversions API destination provides the following key features:
+The Clinch destination provides the following key features:
 
 * **Events structure**: our [Events reference](https://doc.commandersact.com/developers/tracking/events-reference) model covers Clinch's event types, meaning that your data is properly bridged to the expected fields in an optimized way.
 * **Prebuilt mappings**: data mapping for event-based destinations happens automatically, which simplifies user inputs.

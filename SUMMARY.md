@@ -145,7 +145,7 @@
     * [Branch Events](features/destinations/destinations-catalog/branch-events.md)
     * [Button](features/destinations/destinations-catalog/button.md)
     * [Campaign Analysis Legacy](features/destinations/destinations-catalog/campaign-analysis-legacy.md)
-    * [Clinch Conversions API](features/destinations/destinations-catalog/clinch-conversions-api.md)
+    * [Clinch](features/destinations/destinations-catalog/clinch-conversions-api.md)
     * [Commission Junction](features/destinations/destinations-catalog/commission-junction.md)
     * [Criteo](features/destinations/destinations-catalog/criteo/README.md)
       * [Criteo - Events](features/destinations/destinations-catalog/criteo/criteo-events.md)
