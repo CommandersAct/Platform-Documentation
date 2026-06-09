@@ -31,11 +31,11 @@ Login into [Google Ads ](https://ads.google.com/home/)and:
 * Click **Continue**.
 * Enter the settings for this conversion action. For details on the settings, check out [Set up offline conversion imports](https://support.google.com/google-ads/answer/7012522?sjid=17218141641119059045-EU).
 * Click **Save and continue**. The next page will confirm your new conversion action.
-* Click **Done**.\\
+* Click **Done**.
 
 **2. Turn on enhanced conversions for leads**
 
-Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the **enhanced conversions for leads** drop down to check the same box.\\
+Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the **enhanced conversions for leads** drop down to check the same box.
 
 **3. Accept the customer data terms**
 
