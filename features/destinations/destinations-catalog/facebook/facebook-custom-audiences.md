@@ -130,7 +130,7 @@ Be sure you have the admin rights for your Facebook Business account
 {% hint style="danger" %}
 For the 1st method, be sure you have admin rights for your Facebook Business account **AND** for the app.&#x20;
 
-If you have an error #200 _The current user can not update audience xxx_, this is likely the case.
+If you have an error #200 _The current user can not update audience xxx_, this is likely the cause of the error.
 {% endhint %}
 
 ## Check new audience created on Facebook <a href="#check-new-audience-created-on-facebook" id="check-new-audience-created-on-facebook"></a>
