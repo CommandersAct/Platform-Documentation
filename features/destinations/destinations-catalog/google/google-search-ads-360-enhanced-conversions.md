@@ -47,7 +47,7 @@ If you're setting up your client-side tag for the first time, you may want to us
 {% hint style="info" %}
 **1.** To find both values you can log into the CM360 account, and select the advertiser, then locate the <mark style="color:blue;">`Floodlight`</mark> tab in the left panel. Open <mark style="color:blue;">`Floodlight`</mark> ➜ <mark style="color:blue;">`Activities`</mark> and find/create the activity you are using to receive the EC data. Values being shown, highlighted in green below, are `(1)` <mark style="color:blue;">`Floodlight Configuration Id`</mark> `(2)` <mark style="color:blue;">`Floodlight Activity Id`</mark> .
 
-![](<../../../../.gitbook/assets/image (336).png>)
+<img src="../../../../.gitbook/assets/image (327).png" alt="" data-size="original">
 {% endhint %}
 
 ## Quick reference

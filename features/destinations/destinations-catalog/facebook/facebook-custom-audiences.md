@@ -28,11 +28,11 @@ You have to go on Facebook Business [https://business.facebook.com/](https://bus
 
 Then you have to go to ‘Ad Account settings’:
 
-![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-M9XdQPuLipbdPkbWJl1%2F-M9Xh49TcBPbE8UTl3ud%2FCapture%20d%E2%80%99e%CC%81cran%202020-06-10%20a%CC%80%2010.50.21.png?alt=media\&token=bc4004eb-961a-479c-9fc2-75b741727e89)
+![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-M9XdQPuLipbdPkbWJl1%2F-M9XgyL7RIyFnGMU6jKh%2FCapture%20d%E2%80%99e%CC%81cran%202020-06-10%20a%CC%80%2011.33.39.png?alt=media\&token=293d02df-f048-4c53-ba0c-7cf9fd3c9e38)
 
 And you will find the Ad Account ID:
 
-![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-M9XdQPuLipbdPkbWJl1%2F-M9XgyL7RIyFnGMU6jKh%2FCapture%20d%E2%80%99e%CC%81cran%202020-06-10%20a%CC%80%2011.33.39.png?alt=media\&token=293d02df-f048-4c53-ba0c-7cf9fd3c9e38)
+![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-M9XdQPuLipbdPkbWJl1%2F-M9Xh49TcBPbE8UTl3ud%2FCapture%20d%E2%80%99e%CC%81cran%202020-06-10%20a%CC%80%2010.50.21.png?alt=media\&token=bc4004eb-961a-479c-9fc2-75b741727e89)
 
 Copy and paste it on our Facebook connector.
 
@@ -43,7 +43,7 @@ For this part, you have to go to Facebook Developers [https://developers.faceboo
 Create a new app
 
 {% hint style="info" %}
-When creating the app, set the following required fields <mark style="color:blue;">`App Icon`</mark>, <mark style="color:blue;">`Privacy policy URL`</mark> and <mark style="color:blue;">`Category`</mark> . &#x20;
+When creating the app, set the following required fields <mark style="color:blue;">`App Icon`</mark>, <mark style="color:blue;">`Privacy policy URL`</mark> and <mark style="color:blue;">`Category`</mark>.
 {% endhint %}
 
 Add the product ‘Marketing API’.
@@ -74,13 +74,16 @@ You should see in your Facebook Business account the new App you created.
 
 You can choose here to generate a token without any expiration date (1st method, recommended) or with an expiration date (60 days - 2nd method, not recommended).
 
-#### 1st method: generate a token without any expiration date <a href="#id-1st-method-generate-a-token-without-any-expiration-date" id="id-1st-method-generate-a-token-without-any-expiration-date"></a>
+#### 1st method: generate a token without any expiration date (**recommended**) <a href="#id-1st-method-generate-a-token-without-any-expiration-date" id="id-1st-method-generate-a-token-without-any-expiration-date"></a>
 
 You have to create a system user on your Facebook Business Account ([https://business.facebook.com/](https://business.facebook.com/)).
 
-{% hint style="warning" %}
-This system user should have **admin** rights for the ad account and for the app you created.
-{% endhint %}
+The system user must have:&#x20;
+
+* **Admin** rights for the Ad Account
+* **Admin** right for the App &#x20;
+
+
 
 ![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2tlwZHdZbXEDou9iQ%2F-Ma2v-Sz535B9cqmdcgk%2FCapture%20d%E2%80%99e%CC%81cran%202021-05-19%20a%CC%80%2010.55.58.png?alt=media\&token=b6135a3d-95ef-4000-93e4-c587d62b6570)
 
@@ -94,7 +97,7 @@ Select the App you have created before and select the right permission:
 
 Then copy and paste the generated token on our connector:
 
-![](https://2406699966-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LlBEwG5kQoxsckaoAZh%2F-Ma2tlwZHdZbXEDou9iQ%2F-Ma2vkpUr_fPie9UzRtg%2Fimage.png?alt=media\&token=4f7b11b3-4983-4d73-b600-a5247596e34e)
+<figure><img src="../../../../.gitbook/assets/image (331).png" alt=""><figcaption></figcaption></figure>
 
 #### 2nd method: generate an access token with an expiration date (60 days) <a href="#id-2nd-method-generate-an-access-token-with-an-expiration-date-60-days" id="id-2nd-method-generate-an-access-token-with-an-expiration-date-60-days"></a>
 
@@ -113,7 +116,7 @@ Be careful: Each time you click on Get Token it will generate a new one that you
 ### Common errors <a href="#common-errors" id="common-errors"></a>
 
 {% hint style="danger" %}
-Before to save the connector, be sure you have accepted Facebook general conditions for custom audiences.
+Before saving the connector, be sure you have accepted Facebook general conditions for custom audiences.
 
 Go on this link and replace the AD\_ACCOUNT\_ID per your own Ad Account ID:
 
@@ -122,6 +125,12 @@ Go on this link and replace the AD\_ACCOUNT\_ID per your own Ad Account ID:
 
 {% hint style="danger" %}
 Be sure you have the admin rights for your Facebook Business account
+{% endhint %}
+
+{% hint style="danger" %}
+For the 1st method, be sure you have admin rights for your Facebook Business account **AND** for the app.&#x20;
+
+If you have an error #200 _The current user can not update audience xxx_, this is likely the case.
 {% endhint %}
 
 ## Check new audience created on Facebook <a href="#check-new-audience-created-on-facebook" id="check-new-audience-created-on-facebook"></a>
