@@ -92,7 +92,7 @@ For all types of cookies & storage you can visualize the percentage of detection
 
 <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
-\*For technical reasons, we can't calculate the occurrence frequency on 3rd party cookies. They will ever be displayed with an occurrence rate of 5%.
+
 
 ### Exempted Flag
 
