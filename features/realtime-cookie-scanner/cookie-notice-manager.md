@@ -1,10 +1,10 @@
 # Cookie Notice Manager
 
-### Introduction
+## Introduction
 
 The **Cookie Notice Manager** lets you review, edit, and publish your cookies list on your website.
 
-### Manage Cookie Information
+## Manage Cookie Information
 
 Cookies are organized into three lists :
 
@@ -32,25 +32,7 @@ You can also add custom cookies or activate/deactivate existing ones.
 | **Description**      | Description for what the cookie is used, e.g. “Base64 UUID used to identify users on this website to optimise usage across sessions. Used on all pages.”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <ul><li>Cookie Database</li></ul>                                                  |
 | **Website**          | <p>Domain(s) of the website(s) the cookie is scanned.<br>For 1st party cookies, the full URL of the latest scan is also displayed</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul>                         |
 
-#### Custom Fields & Filters
-
-* Add custom fields via Settings (⚙️) to store extra info.
-* Filter by host, language, storage type, or 3rd-party domain.
-* A frequency slider hides rare cookies (< 5 % by default).
-
-{% hint style="info" %}
-Cookie scanner doesn't store cookie's values
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
-
-#### Occurrence frequency
-
-For all types of cookies & storage you can visualize the percentage of detection frequency
-
-<figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
-
-#### Settings
+### Settings
 
 Need to declare a new domain, or add a new language?
 
@@ -60,7 +42,59 @@ You can do it directly in the side panel "settings"
 
 <figure><img src="../../.gitbook/assets/image (121).png" alt="" width="347"><figcaption></figcaption></figure>
 
-#### Exempted Flag
+Our tool can detect automatically all your subdomains if needed, simply use the "\*" in your domain declaration
+
+example&#x20;
+
+![](<../../.gitbook/assets/image (409).png>)
+
+If you prefer to collect only for some specific sub domains, you have to declare each of them
+
+example:\
+&#x20;![](<../../.gitbook/assets/image (413).png>)
+
+### Custom Fields & Filters
+
+* Add custom fields via Settings (⚙️) to store extra info.
+* Filter by website, language, storage type, or 3rd-party domain.
+* A frequency slider hides rare cookies (< 5 % by default).
+
+{% hint style="info" %}
+Cookie scanner doesn't store cookie's values
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+
+You can also create a custom filter, based on your URL params, via the "settings" panel\
+[check this section for more details](cookie-notice-manager.md#create-path-url-for-a-custom-filter)
+
+### Create a custom filter for path's URL
+
+You can easily create you own URL path filter
+
+Here's the steps to follow:
+
+Enter an example of a complete URL in the settings panel
+
+<figure><img src="../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
+
+Our tool will detect all paths. You can select one value to obtain filters based on
+
+<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
+
+Once it's saved, you will see your new filter ready to be used:
+
+<figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
+
+### Occurrence frequency
+
+For all types of cookies & storage you can visualize the percentage of detection frequency
+
+<figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
+
+\*For technical reasons, we can't calculate the occurrence frequency on 3rd party cookies. They will ever be displayed with an occurrence rate of 5%.
+
+### Exempted Flag
 
 To help you to see the exempted cookies set before consent, you can add an "exempted" flag. Simply activate the dedicated switch in "Cookie Edition"
 
@@ -70,7 +104,7 @@ This will helps you to identify quickly the cookies that are allowed to be set w
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
 
-#### Translations by IA
+### Translations by IA
 
 Our IA feature can translate cookie descriptions in any language.\
 Translate all your cookie descriptions in one click.\
@@ -95,24 +129,24 @@ Our tool will translate your cookies for all languages that have an "empty" desc
 
 ***
 
-### Manage Cookie Notice
+## Manage Cookie Notice
 
 `Health > Realtime Cookie Scanner > Cookie Notice Manager > DEPLOY (Tab)`
 
 The **DEPLOY** tab is used to install, create, and publish the cookie notice on your website.\
 It shows all existing notice versions and their status.
 
-#### Install Cookie Notice
+### Install Cookie Notice
 
 Once the cookie information is set up in the **EDIT** tab, you can install the cookie notice in three formats :
 
-**1. JavaScript Snippet**
+#### **1. JavaScript Snippet**
 
 Paste the JavaScript snippet on your legal page to automatically generate and display the cookie list table.
 
 <figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
-**2. HTML Table (recommended)**
+#### **2. HTML Table (recommended)**
 
 The HTML table is the recommended installation method for a dynamic cookie notice.\
 Create a placeholder `<div>` in your CMS and use the tag template “TRUST | Install Cookie Notice” in your Web Container.\
@@ -128,11 +162,11 @@ https://cdn.tagcommander.com/cookie-scanner/<site_id>/v1/cookies-<language_code>
 * **language\_code** = language of the cookie notice (default = `en`)
 
 > ℹ️ The HTML table uses accessible semantic markup and inherits your site’s CSS.\
-> You can fully customize its style with your own stylesheet.
+> You can fully customize its style with your own style sheet.
 
 <figure><img src="../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
-**3. JSON API**
+#### **3. JSON API**
 
 For advanced or custom use cases, the JSON API returns the cookie information in a structured format that can be used in web apps or native apps.
 
@@ -151,7 +185,7 @@ By default all cookies are listed but it is also possible to manage one cookie n
 
 ***
 
-#### Create a New Version
+### Create a New Version
 
 Click **NEW VERSION** to generate a new cookie notice based on the current Active cookies.\
 You can add an internal comment to describe the changes.
@@ -163,7 +197,7 @@ Preview does not apply your site styling.
 
 #### Export a Version
 
-Click the **Download icon (⬇️)** to export all localizations in `HTML`, `JSON`, `CSV`, or `XLSX`.\
+Click the **Download icon (⬇️)** to export all localisations in `HTML`, `JSON`, `CSV`, or `XLSX`.\
 Each language is included as a separate file (or tab in XLSX).
 
 #### Deploy a Version
@@ -175,23 +209,26 @@ You can also roll back to a previous version if needed.
 
 ***
 
-### Labels and Meanings
+## Labels and Meanings
 
-| Label              | Meaning                                                                                         |
-| ------------------ | ----------------------------------------------------------------------------------------------- |
-| **scanned**        | Detected on live user sessions.                                                                 |
-| **new**            | Newly found cookie pending review.                                                              |
-| **missing**        | Previously seen cookie not been scanned for over one month                                      |
-| **before-consent** | Cookie set before user consent.                                                                 |
-| **inferred**       | The 3rd-party cookie was inferred via the cookie database from a known 3rd-party domain request |
-| **custom**         | Manually created cookie record.                                                                 |
+| Label              | Meaning                                                    |
+| ------------------ | ---------------------------------------------------------- |
+| **scanned**        | Detected on live user sessions.                            |
+| **new**            | Newly found cookie pending review.                         |
+| **missing**        | Previously seen cookie not been scanned for over one month |
+| **before-consent** | Cookie set before user consent.                            |
+| **custom**         | Manually created cookie record.                            |
 
 ***
 
-### Alerts and Integrations
+## Alerts and Integrations
 
 * Instant alerts (< 60 s) on new or non-compliant cookies.
 * Configurable by language, and severity.
 * Integrations : Email, Webhook, Slack, Microsoft Teams.
+*   Multiple alerts configuration is possible\
+    <br>
 
-<figure><img src="../../.gitbook/assets/image (60).png" alt="" width="375"><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>

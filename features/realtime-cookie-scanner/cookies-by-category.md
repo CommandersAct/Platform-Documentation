@@ -61,6 +61,7 @@ This chart shows the number of cookies per category depending on the consent sta
 
 * **Before consent**
 * **After consent**
+* **After refuse all**
 
 It helps you spot if any cookies are firing too early (before consent) or after “Refuse all” (a possible compliance issue).
 
@@ -89,8 +90,7 @@ Above the table you’ll find a **Detection Status** dropdown filter with option
 * All
 * Before consent
 * After consent
-
-
+* After refuse all
 
 **Filtering logic**
 
