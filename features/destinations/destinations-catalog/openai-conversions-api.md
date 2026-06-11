@@ -73,7 +73,7 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 **5.** Required if <mark style="color:purple;">`action_source`</mark> is <mark style="color:blue;">`web`</mark> .\
 **6.** Set in <mark style="color:blue;">`user`</mark> .\
 **7.** Automatically normalized and hashed if passed in clear text.\
-**8.** Set in <mark style="color:blue;">`data`</mark> when <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`customer_action`</mark> . Value in the currency’s lowest denomination.\
+**8.** Set in <mark style="color:blue;">`data`</mark> when <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`customer_action`</mark> . The value is automatically multiplied by 100 and rounded to the closest integer.\
 **9.** Set if <mark style="color:blue;">`data.type`</mark> is <mark style="color:blue;">`custom`</mark> or <mark style="color:blue;">`plan_enrollment`</mark> .\
 **10.** Priority on the left. Default value: <mark style="color:blue;background-color:blue;">`product`</mark> .\
 **11.** Required if <mark style="color:blue;">`amount`</mark> is set and <mark style="color:blue;">`currency`</mark> (top level) is not set.
