@@ -69,7 +69,34 @@ Users have access to additional customization options via the gear icon ⚙️:
 
 ***
 
-### 2.2. AI Copilot for Data Cleansing
+### 2.2. Cookie Description and Translation Assistance
+
+**Feature Overview**
+
+Commanders AI assists users in the **Realtime Cookie Scanner** by helping them complete and translate cookie descriptions.
+
+When a cookie description is missing, the user can click an AI button to request a suggested description. The AI uses the cookie name and any other available information, and may perform Internet searches to propose the most relevant description.
+
+The proposed description can also be automatically translated into the languages selected by the user.
+
+**How It Works**
+
+1. The Realtime Cookie Scanner identifies cookies with missing descriptions.
+2. For missing descriptions, the user can ask Commanders AI to generate a suggested description.
+3. For existing descriptions, whether manually entered by the user or natively pre-filled by the Cookie Scanner, the user can request translation into one or more languages.
+4. The user reviews the generated content, then validates it or edits it manually.
+
+**Use Cases**
+
+* Generating missing cookie descriptions.
+* Translating cookie descriptions when adding new languages to a cookie notice.
+* Reducing manual work when maintaining multilingual cookie documentation.
+
+**Validation**
+
+AI-generated descriptions and translations are suggestions only. Users remain responsible for reviewing, editing, and validating the content before publication or compliance use.
+
+### 2.3. AI Copilot for Data Cleansing
 
 #### Feature Overview
 
@@ -93,7 +120,7 @@ Users can edit and test the generated formulas to ensure they meet their require
 
 ***
 
-### 2.3. Smart Suggestions for Names and Descriptions (closed alpha)
+### 2.4. Smart Suggestions for Names and Descriptions (closed alpha)
 
 #### Feature Overview
 
@@ -112,7 +139,7 @@ When configuring destinations, segments in Commanders Act, Commanders AI suggest
 
 ***
 
-### 2.4. Automatic Privacy Category Selection (closed alpha)
+### 2.5. Automatic Privacy Category Selection (closed alpha)
 
 #### Feature Overview
 
@@ -130,7 +157,7 @@ Users retain full control over the classification and can adjust the suggestion 
 
 ***
 
-### 2.5. AI-assisted File Import Configuration
+### 2.6. AI-assisted File Import Configuration
 
 #### Feature Overview
 
