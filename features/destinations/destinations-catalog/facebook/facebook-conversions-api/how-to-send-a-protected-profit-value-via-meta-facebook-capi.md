@@ -53,7 +53,7 @@ Your `purchase` events must be enriched with this margin information.
 
 👉 This is usually done via an **event enrichment setup**, matching the product ID in the event with your catalog data.
 
-📖 Documentation:  
+📖 Documentation:\
 https://doc.commandersact.com/features/data-quality/enrichment
 
 #### 3. Order-level profit
@@ -124,9 +124,9 @@ IF(NUMBER(net_revenue) > 0, NUMBER(net_revenue) * K, NULL)
 
 Where:
 
-* `net_revenue` is the raw order-level profit or margin
-* `K` is a client-specific secret indexing factor
-* `NULL` means that no `net_revenue` value should be sent for non-positive margins
+* `net_revenue` is the raw order-level profit or margin.
+* `K` is a client-specific secret indexing factor.
+* `NULL` means that no `net_revenue` value should be sent for non-positive margins.
 
 Example with `K = 37.48291`:
 
@@ -228,7 +228,7 @@ This can reduce optimization quality, especially when `C` is large compared with
 
 As a rule of thumb:
 
-```text
+```
 C should not exceed 5% to 10% of the smallest meaningful positive margin.
 ```
 
@@ -309,11 +309,11 @@ This option is available as a maximum obfuscation strategy, but it may significa
 
 ### 📊 Summary of the three options
 
-| Option | Formula | Meta alignment | Obfuscation level | Performance risk |
-|---|---|---:|---:|---:|
-| Option 1 – Proportional profit index | `margin × K` | Excellent | Medium | Low |
-| Option 2 – Offset profit index | `(margin + C) × K` | Partial | Medium+ | Low to medium |
-| Option 3 – Bucketed profit score | `margin range → score` | Poor | High | Medium to high |
+| Option                               | Formula                | Meta alignment | Obfuscation level | Performance risk |
+| ------------------------------------ | ---------------------- | -------------: | ----------------: | ---------------: |
+| Option 1 – Proportional profit index | `margin × K`           |      Excellent |            Medium |              Low |
+| Option 2 – Offset profit index       | `(margin + C) × K`     |        Partial |           Medium+ |    Low to medium |
+| Option 3 – Bucketed profit score     | `margin range → score` |           Poor |              High |   Medium to high |
 
 👉 Recommended default:
 
@@ -361,7 +361,7 @@ Example:
 
 If you send:
 
-```text
+```
 protected_profit_value = profit_margin × 10
 ```
 

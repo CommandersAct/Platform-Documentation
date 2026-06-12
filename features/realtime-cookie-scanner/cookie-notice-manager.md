@@ -44,14 +44,14 @@ You can do it directly in the side panel "settings"
 
 Our tool can detect automatically all your subdomains if needed, simply use the "\*" in your domain declaration
 
-example&#x20;
+example
 
 ![](<../../.gitbook/assets/image (409).png>)
 
 If you prefer to collect only for some specific sub domains, you have to declare each of them
 
 example:\
-&#x20;![](<../../.gitbook/assets/image (413).png>)
+![](<../../.gitbook/assets/image (411).png>)
 
 ### Custom Fields & Filters
 
@@ -91,8 +91,6 @@ Once it's saved, you will see your new filter ready to be used:
 For all types of cookies & storage you can visualize the percentage of detection frequency
 
 <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ### Exempted Flag
 
@@ -229,6 +227,6 @@ You can also roll back to a previous version if needed.
 *   Multiple alerts configuration is possible\
     <br>
 
-    <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
