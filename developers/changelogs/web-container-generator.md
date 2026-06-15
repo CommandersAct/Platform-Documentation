@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 102.4
+
+Release date: **15/06/2026**
+
+* Fix in GCM sequencing validation
+
 ### 102.3
 
 Release date: **11/06/2026**
