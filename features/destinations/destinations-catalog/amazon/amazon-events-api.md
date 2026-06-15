@@ -61,20 +61,20 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 
 {% hint style="warning" %}
 At least one identifier must be provided as value for the following "Smart Mapping" fields:\
-• `User Email`\
-• `User Phone`\
-• `First Name`\
-• `Last Name`\
-• `User Address`\
-• `User City`\
-• `User State`\
-• `User Postal Code`\
-• `Device Mobile Identifier`\
-• `Ramp Id`\
-• `Match Id`\
-• `Real Id`\
-• `Merkle Id`\
-• `Kantar Id`\
+• <mark style="color:blue;">`User Email`</mark>\
+• <mark style="color:blue;">`User Phone`</mark>\
+• <mark style="color:blue;">`First Name`</mark>\
+• <mark style="color:blue;">`Last Name`</mark>\
+• <mark style="color:blue;">`User Address`</mark>\
+• <mark style="color:blue;">`User City`</mark>\
+• <mark style="color:blue;">`User State`</mark>\
+• <mark style="color:blue;">`User Postal Code`</mark>\
+• <mark style="color:blue;">`Device Mobile Identifier`</mark>\
+• <mark style="color:blue;">`Ramp Id`</mark>\
+• <mark style="color:blue;">`Match Id`</mark>\
+• <mark style="color:blue;">`Real Id`</mark>\
+• <mark style="color:blue;">`Merkle Id`</mark>\
+• <mark style="color:blue;">`Kantar Id`</mark>\
 See Amazon property <mark style="color:blue;">`matchKeys.X.values.0`</mark> for more details.
 {% endhint %}
 
