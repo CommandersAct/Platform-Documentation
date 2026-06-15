@@ -60,7 +60,7 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 {% endhint %}
 
 {% hint style="warning" %}
-At least one identifier must be provided as value for the following "Smart Mapping" fields:\
+At least one of the following "Smart Mapping" fields must be set:\
 • <mark style="color:blue;">`User Email`</mark>\
 • <mark style="color:blue;">`User Phone`</mark>\
 • <mark style="color:blue;">`First Name`</mark>\
