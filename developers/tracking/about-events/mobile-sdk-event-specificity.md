@@ -126,7 +126,8 @@ Here are an example of event playload :
             "background_time":548,
             "foreground_transitions":2,
             "session_number":1,
-            "visit_number":1
+            "visit_number":1,
+            "is_prev_cycle_cleaned" :true
          }
       },
       "app":{
@@ -207,23 +208,24 @@ User contains all fields declared inside [https://doc.commandersact.com/develope
 
 ### context.device.lifecycle
 
-| Field name                     | Example value                        | Description                                                                                                      | Platform |
-| ------------------------------ | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | -------- |
-| session\_id                    | F318C0D1-1DDB-4B53-9326-F2078A97CD38 | An id specific to this session                                                                                   | Both     |
-| new\_session                   | false                                | True if this hit is the first of a new session                                                                   | Both     |
-| session\_duration              | 8291                                 | The time spent during this session                                                                               | Both     |
-| current\_session               | 1655824764174                        | Timestamp of the start of the current session                                                                    | Both     |
-| visit\_number                  | 1                                    | Number of times the application was launched                                                                     | Both     |
-| current\_visit                 | 1655824764174                        | Timestamp of the start of the current visit                                                                      | Both     |
-| current\_version\_first\_visit | 1655824764174                        | Timestamp of the first visit for this application version                                                        | Both     |
-| session\_number                | 1                                    | The number of sessions                                                                                           | Both     |
-| first\_visit                   | 1655824764174                        | Timestamp of the first app visit                                                                                 | Both     |
-| last\_visit                    | 1655824764174                        | Timestamp of the last visit                                                                                      | Both     |
-| last\_call                     | 1655824772416                        | Timestamp of the previous hit                                                                                    | Both     |
-| last\_session\_start           | 0                                    | Timestamp of the start of the previous session                                                                   | Both     |
-| last\_session\_last\_hit       | 0                                    | Timestamp of the last hit sent during the previous session                                                       | Both     |
-| foreground\_transitions        | 2                                    | Number of times the app when from background to foreground                                                       | Both     |
-| foreground\_time               | 8278                                 | Time the application spent in foreground                                                                         | Both     |
-| background\_time               | 0                                    | Time the application spent in background                                                                         | Both     |
-| first\_execute                 | false                                | Is this the first hit of this cold launch                                                                        | Both     |
-| is\_first\_visit               | true                                 | Is this the first launch of this application. (together with first execute you can validate a new installations) | Both     |
+| Field name                     | Example value                        | Description                                                                                                         | Platform |
+| ------------------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | -------- |
+| session\_id                    | F318C0D1-1DDB-4B53-9326-F2078A97CD38 | An id specific to this session                                                                                      | Both     |
+| new\_session                   | false                                | True if this hit is the first of a new session                                                                      | Both     |
+| session\_duration              | 8291                                 | The time spent during this session                                                                                  | Both     |
+| current\_session               | 1655824764174                        | Timestamp of the start of the current session                                                                       | Both     |
+| visit\_number                  | 1                                    | Number of times the application was launched                                                                        | Both     |
+| current\_visit                 | 1655824764174                        | Timestamp of the start of the current visit                                                                         | Both     |
+| current\_version\_first\_visit | 1655824764174                        | Timestamp of the first visit for this application version                                                           | Both     |
+| session\_number                | 1                                    | The number of sessions                                                                                              | Both     |
+| first\_visit                   | 1655824764174                        | Timestamp of the first app visit                                                                                    | Both     |
+| last\_visit                    | 1655824764174                        | Timestamp of the last visit                                                                                         | Both     |
+| last\_call                     | 1655824772416                        | Timestamp of the previous hit                                                                                       | Both     |
+| last\_session\_start           | 0                                    | Timestamp of the start of the previous session                                                                      | Both     |
+| last\_session\_last\_hit       | 0                                    | Timestamp of the last hit sent during the previous session                                                          | Both     |
+| foreground\_transitions        | 2                                    | Number of times the app when from background to foreground                                                          | Both     |
+| foreground\_time               | 8278                                 | Time the application spent in foreground                                                                            | Both     |
+| background\_time               | 0                                    | Time the application spent in background                                                                            | Both     |
+| first\_execute                 | false                                | Is this the first hit of this cold launch                                                                           | Both     |
+| is\_first\_visit               | true                                 | Is this the first launch of this application. (together with first execute you can validate a new installations)    | Both     |
+| is\_prev\_cycle\_cleaned       | true                                 | Did the previous session ended cleanly (app closed properly and all SDK UserDefaults keys were successfully saved). | Both     |
