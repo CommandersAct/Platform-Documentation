@@ -92,6 +92,26 @@ For all types of cookies & storage you can visualize the percentage of detection
 
 <figure><img src="../../.gitbook/assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
+### Time Range filter
+
+
+
+You want to see which cookies have been collected on specific period (yesterday, last week, etc...)?
+
+It's now easy to handle, since we add a date picker to let you select the time range you are looking for.
+
+<figure><img src="../../.gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+in some rare cases, you will see more cookies last week then yesterday. It might be caused by the "cookies grouped". As an example, you have 3 similar cookies a month ago, but last week our tool has grouped them, they now counted as 1 cookie. We also recommend to activate "rare cookies" to get a clearer view of the latest items collected by our tool.
+{% endhint %}
+
+{% hint style="info" %}
+Please note:
+
+By default, if no date is selected, we display all cookies, including the missing ones. If you pick a time range/specific date, any “new” cookies with “missing” flag will be hidden
+{% endhint %}
+
 ### Exempted Flag
 
 To help you to see the exempted cookies set before consent, you can add an "exempted" flag. Simply activate the dedicated switch in "Cookie Edition"
