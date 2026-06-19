@@ -12,6 +12,10 @@ Destination documentation (updates):
 [tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/clinch-conversions-api.md" %}
+[clinch-conversions-api.md](../features/destinations/destinations-catalog/clinch-conversions-api.md)
+{% endcontent-ref %}
+
 ## 12/06/2026
 
 Destination documentation:
