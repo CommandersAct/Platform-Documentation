@@ -1,4 +1,4 @@
-# Compliance Score
+# Compliance Summary
 
 ### Overview
 
@@ -19,7 +19,7 @@ Use the filters at the top of the page to refine the analysis:
 * **Rare Cookies**: Include or exclude low-frequency cookies (Off by default)
 * **Website**: Select the domain(s) configured in your Cookie Notice settings
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -33,11 +33,13 @@ The score is calculated based on:
 * Cookies set after user refusal
 * Cookie purpose (marketing cookies have a higher impact)
 
+[See formula and detailed explanation here](compliance-score-formula.md)
+
 A low score indicates significant GDPR compliance risks, while a higher score reflects better alignment with regulatory requirements.
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -53,7 +55,7 @@ It highlights:
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -76,7 +78,7 @@ Each recommendation includes:
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -91,7 +93,7 @@ The following indicators provide a quick overview of your situation:
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (1) (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -106,7 +108,7 @@ This helps identify which types of cookies are not compliant and when they are t
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -121,7 +123,7 @@ Focus on these cookies first to achieve the fastest improvements.
 
 Example:
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -74,10 +74,10 @@ For more information about Commanders Act AI usage, security, and compliance, se
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
 | **1st Party Cookie**          | 1st party cookies are cookies that are stored on the domain of the website.                                              | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
 | **3rd Party Cookie**          | 3rd party cookies are cookies that are stored on a 3rd party domain.                                                     | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
-| **HttpOnly 1st Party Cookie** | HttpOnly 1st Party Cookie are server cookies that are stored on the domain of the website and that have a HttpOnly flag. | <p></p><ul><li>Chrome Extension</li></ul>                  |
+| **HttpOnly 1st Party Cookie** | HttpOnly 1st Party Cookie are server cookies that are stored on the domain of the website and that have a HttpOnly flag. | <ul><li>Chrome Extension</li></ul>                         |
 | **HttpOnly 3rd Party Cookie** | HttpOnly 3rd Party Cookie are server cookies that are stored on a 3rd party domain and that have a HttpOnly flag.        | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
-| **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                                 | <ul><li>Tag client-side</li></ul><p></p>                   |
-| **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                                 | <ul><li>Tag client-side</li></ul><p></p>                   |
+| **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                                 | <ul><li>Tag client-side</li></ul>                          |
+| **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                                 | <ul><li>Tag client-side</li></ul>                          |
 
 #### 🔔 RealTime Alerts (< 60 s)
 
@@ -190,7 +190,7 @@ RCS works immediately on real traffic — including logged-in or restricted page
 | **Live Scan**                                         | Real-time feed of detections with domain and device filters.             | 🧩 _In roadmap_     |
 | **Cookie Origins**                                    | Trace pages, domains, and scripts that set each cookie.                  | 🧩 _In roadmap_     |
 | [**Cookies by Category**](cookies-by-category.md)     | Breakdown by functional, analytics, ads, security.                       | ✅ _Available_       |
-| [**Compliance Score**](compliance-score.md)           | Overview of non-compliant cookies and risk levels.                       | ✅ _Available_       |
+| [**Compliance Score**](compliance-score/)             | Overview of non-compliant cookies and risk levels.                       | ✅ _Available_       |
 | [**Cookie Notice Manager**](cookie-notice-manager.md) | Manage, version, and publish the cookie table.                           | ✅ _Available_       |
 
 ***
