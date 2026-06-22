@@ -295,6 +295,7 @@
   * [Migrate from Fuse v1 to Fuse v2](features/identity-resolution/migrate-from-fuse-v1-to-fuse-v2.md)
 * [Customers](features/customers.md)
   * [Segment](features/customers/segment/README.md)
+    * [Profile Explorer](features/customers/segment/profile-explorer.md)
     * [Segment overlap](features/customers/segment/segment-overlap.md)
     * [Segment stats](features/customers/segment/segment-stats.md)
 * [Explore](features/analyses/README.md)
