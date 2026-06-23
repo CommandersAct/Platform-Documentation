@@ -4,6 +4,8 @@ With filters, you have the possibility to define some conditions. As a result, s
 
 ## Simple filter
 
+### For Events Destinations
+
 Use the drop down to select the property on which you want to filter, then select the operator and the value to filter on.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2023-03-15 à 10.48.32.png" alt=""><figcaption></figcaption></figure>
@@ -25,6 +27,8 @@ Available operators:
 * is empty
 
 ## Advanced filter
+
+### For Events Destinations
 
 An "Advanced" filter can be used when a simple one is not sufficient.
 
@@ -71,6 +75,8 @@ To know how to build a regex, please refer to [regular expression documentation]
 
 ## Consent filter
 
+### For Events Destinations
+
 For clients using our CMP module: simply select the appropriate category in the drop down.
 
 <figure><img src="../../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
@@ -80,3 +86,14 @@ For clients using an external CMP: Simply enter the value as it is collected in 
 Example:
 
 <figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+
+### For Audience Destinations
+
+The Consent filter is also available on Audience destinations, under the **Filters** tab. Select the consent category in the drop down to send only the users who granted it.
+
+{% hint style="warning" %}
+On Audience destinations, the Consent filter relies on the CDP variable `user_privacy_categories`.&#x20;
+{% endhint %}
+
+Your [Data Activation Legacy](destinations-catalog/data-activation-legacy.md) destination must map the server side variable `user.consent_categories` to the Data variable `user_privacy_categories`, otherwise the filter will not work.
+
