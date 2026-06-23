@@ -17,21 +17,35 @@ The Google Enhanced Conversions for Leads destination provides the following key
 Before configuring this destination, you need to fullfil the following Google prerequisites:
 
 {% hint style="info" %}
-**1. Create and configure your conversion action**
+**1. View supported conversion actions**
 
 Login into [Google Ads ](https://ads.google.com/home/)and:
 
 * Click **Goals**
 * Click the **Conversion** drop down in the menu section.
-* Click [**Summary**](https://ads.google.com/aw/conversions)
-* Click **New conversion action**.
-* Select **Import** in the "New conversion action” page.
-* Select **CRMs, files, or other data sources** and then **Track conversions from clicks**.
-* In the “Data Source” section, you can select **Connect a new data source**: this can be done at a later stage.
-* Click **Continue**.
-* Enter the settings for this conversion action. For details on the settings, check out [Set up offline conversion imports](https://support.google.com/google-ads/answer/7012522?sjid=17218141641119059045-EU).
-* Click **Save and continue**. The next page will confirm your new conversion action.
-* Click **Done**.
+* Click [**Summary**](https://ads.google.com/aw/conversions) → **View all conversion actions**\
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_1.png)
+* In this section, look for either <mark style="color:blue;">**`Qualified leads`**</mark> or <mark style="color:blue;">**`Converted lead`**</mark>: only these conversion action types can be used with the Google Enhanced Conversions for Leads:\
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_2.png)<br>
+
+If you need to create a supported conversion action, you can follow these steps: &#x20;
+
+* Click **Goals**
+* Click the **Conversion** drop down in the menu section.
+* Click [**Summary**](https://ads.google.com/aw/conversions) → **+ Create conversion action**\
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_3.png)
+* Flag **Conversions offline** only, and click on **Edit data sources** \
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_4.png)
+* Select **Skip this step and set up a data source later**\
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_5.png)
+* Select either **Qualified lead** or **Converted lead** and complete your conversion action configuration:\
+  \
+  ![](../../../../.gitbook/assets/gec_leads_230626_6.png)
 
 **2. Turn on enhanced conversions for leads**
 
@@ -43,7 +57,7 @@ To accept the customer data terms click on [**Summary**](https://ads.google.com/
 {% endhint %}
 
 {% hint style="warning" %}
-The conversion action type must be `UPLOAD_CLICKS` , and must exist in the Google Ads conversion customer of the Google Ads account associated with the click. More details are available following this [LINK](https://developers.google.com/google-ads/api/docs/conversions/upload-offline#populate-click-conversions).
+The conversion action type must be <mark style="color:blue;">`UPLOAD_CLICKS`</mark> , and must exist in the Google Ads conversion customer of the Google Ads account associated with the click. Please follow the above steps to view your  current conversion actions and/or create a new supported conversion action. More details are available following this [LINK](https://developers.google.com/google-ads/api/docs/conversions/upload-offline#populate-click-conversions).
 {% endhint %}
 
 ### Configuration
