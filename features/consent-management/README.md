@@ -22,8 +22,10 @@ Increase brand loyalty by allowing users to control the data collected about the
 
 Commanders Act CMP supports following frameworks:
 
-* IAB TCF 2.0 (v2.2 will be supported before September 30)
+* IAB TCF 2.3
 * Google ACM
+* Google Consent Mode
+* Amazon Consent Mode
 
 ### Extensions <a href="#extensions" id="extensions"></a>
 
@@ -33,13 +35,9 @@ It is possible to extend Commanders Act CMP with following modules:
 
 [TagFirewall](extensions/tag-firewall.md)
 
-[Tag Hierarchy](extensions/piggybacking.md)
-
 {% hint style="info" %}
 These modules are set up and configured by a Commanders Act consultant.
 {% endhint %}
-
-
 
 ### Setup <a href="#setup" id="setup"></a>
 
