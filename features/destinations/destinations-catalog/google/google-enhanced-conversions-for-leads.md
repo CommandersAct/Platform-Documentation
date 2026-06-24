@@ -14,7 +14,7 @@ The Google Enhanced Conversions for Leads destination provides the following key
 
 ## Destination setup
 
-Before configuring this destination, you need to fullfil the following Google prerequisites:
+Before configuring this destination, see the following prerequisites:
 
 **1. View supported conversion actions**
 
