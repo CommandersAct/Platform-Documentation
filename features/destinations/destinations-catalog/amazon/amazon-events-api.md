@@ -15,6 +15,7 @@ The Amazon Events API destination provides the following key features:
 * **Automatic hashing**: information is automatically hashed matching partner specifications.
 * **Custom events and properties**: you can freely push custom events and properties based on your specific needs.
 * **Smart mapping**: data mapping can be readjusted using your datalayer defined fields.
+* **Support batch mode**: send multiple events in one single request.
 
 ## Destination setup
 
