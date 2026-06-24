@@ -91,9 +91,11 @@ Example:
 
 The Consent filter is also available on Audience destinations, under the **Filters** tab. Select the consent category in the drop down to send only the users who granted it.
 
+On Audience destinations, the Consent filter relies on the CDP variable `user_privacy_categories`.  If this variable is not used, you won't be able to filter on consent directly in the Audience Destination.&#x20;
+
 {% hint style="warning" %}
-On Audience destinations, the Consent filter relies on the CDP variable `user_privacy_categories`.&#x20;
+If you use the [Data Activation Legacy](destinations-catalog/data-activation-legacy.md) destination, you must map the server side variable `user.consent_categories` to the Data variable `user_privacy_categories`  for the filter to work.&#x20;
 {% endhint %}
 
-Your [Data Activation Legacy](destinations-catalog/data-activation-legacy.md) destination must map the server side variable `user.consent_categories` to the Data variable `user_privacy_categories`, otherwise the filter will not work.
+
 
