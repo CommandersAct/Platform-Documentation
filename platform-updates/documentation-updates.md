@@ -12,6 +12,10 @@ Destination documentation (updates):
 [google-enhanced-conversions-for-leads.md](../features/destinations/destinations-catalog/google/google-enhanced-conversions-for-leads.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/tiktok.md" %}
+[tiktok.md](../features/destinations/destinations-catalog/tiktok.md)
+{% endcontent-ref %}
+
 ## 19/06/2026
 
 Destination documentation (updates):
