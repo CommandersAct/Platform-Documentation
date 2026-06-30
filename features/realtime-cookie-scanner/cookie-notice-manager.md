@@ -68,24 +68,6 @@ Cookie scanner doesn't store cookie's values
 You can also create a custom filter, based on your URL params, via the "settings" panel\
 [check this section for more details](cookie-notice-manager.md#create-path-url-for-a-custom-filter)
 
-### Create a custom filter for path's URL
-
-You can easily create you own URL path filter
-
-Here's the steps to follow:
-
-Enter an example of a complete URL in the settings panel
-
-<figure><img src="../../.gitbook/assets/image (376).png" alt=""><figcaption></figcaption></figure>
-
-Our tool will detect all paths. You can select one value to obtain filters based on
-
-<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption></figcaption></figure>
-
-Once it's saved, you will see your new filter ready to be used:
-
-<figure><img src="../../.gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
-
 ### Occurrence frequency
 
 For all types of cookies & storage you can visualize the percentage of detection frequency
@@ -144,6 +126,21 @@ Then use the 'Edit Cookie' function:
 Our tool will translate your cookies for all languages that have an "empty" description.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
+### Custom category naming
+
+Real Time Cookie Scanner automatically classifies your cookies into 3 different categories: Essential, Analytics, and Marketing. If you prefer to use personalized names for these categories, you can easily modify the category labels.&#x20;
+
+Open Settings panel (⚙️) and fill the table "Category Mapping". Once saved, your custom mapping will impact the labels displayed across all Real Time Cookie Scanner interfaces.
+
+{% hint style="success" %}
+If you use a Commanders Act Consent banner, our tool will automatically display your privacy categories in the drop-down list.\
+In all cases, you are still allowed to enter a custom value
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
