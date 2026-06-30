@@ -142,6 +142,12 @@ In all cases, you are still allowed to enter a custom value
 
 <figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
 
+Your custom labels are now displayed across all Real Time Cookie Scanner interfaces.
+
+<figure><img src="../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## Manage Cookie Notice
