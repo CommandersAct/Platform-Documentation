@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 102.5
+
+Release date: **01/07/2026**
+
+* Update geolocation URL for Amazon Consent Signal
+
 ### 102.4
 
 Release date: **15/06/2026**
