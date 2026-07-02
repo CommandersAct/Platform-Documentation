@@ -1,5 +1,14 @@
 # Amazon Ads Conversions API
 
+{% hint style="warning" %}
+The **Amazon Ads Conversions API** destination is **deprecated**.\
+Amazon recommends the new **Events API** to provide consent signals and the related destination is available as follows:
+{% endhint %}
+
+{% content-ref url="amazon-events-api.md" %}
+[amazon-events-api.md](amazon-events-api.md)
+{% endcontent-ref %}
+
 [Amazon](https://www.aboutamazon.eu/who-we-are) is a multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence.\
 Using this destination you can import conversion event data in [Amazon DSP](https://advertising.amazon.com/solutions/products/amazon-dsp).
 
