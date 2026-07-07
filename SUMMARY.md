@@ -246,6 +246,7 @@
       * [Snapchat Conversions API v3](features/destinations/destinations-catalog/snapchat/snapchat-conversions-api-v3.md)
       * [Snapchat Conversions API v2](features/destinations/destinations-catalog/snapchat-conversions-api.md)
     * [Splio](features/destinations/destinations-catalog/splio.md)
+    * [Spotify Conversions API](features/destinations/destinations-catalog/spotify-conversions-api.md)
     * [Syte](features/destinations/destinations-catalog/syte.md)
     * [Tableau Online](features/destinations/destinations-catalog/tableau-online.md)
     * [Taboola](features/destinations/destinations-catalog/taboola/README.md)
