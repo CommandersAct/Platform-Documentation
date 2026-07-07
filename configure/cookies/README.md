@@ -328,6 +328,28 @@ Following cookies are used automatically in depending on the installed Commander
 
 </details>
 
+<details>
+
+<summary>RCS_COMPLIANCE_CONTROL_ENABLED</summary>
+
+**Product(s) related:** Real Time Cookie Scanner
+
+**Type:** Session Storage
+
+**Domain:** /
+
+**Lifetime:** session
+
+**Value:** Temporary client-side technical control value generated at runtime
+
+**Owner:** Commanders Act
+
+**Storage purpose(s):** Temporary technical flag used by Real-Time Cookie Scanner to operate compliance controls during the current browsing session. It is set before consent, strictly limited to temporary technical purpose.\
+\
+\*Technical purposes only. This storage does not contain personal data's
+
+</details>
+
 ### CAMPAIGN + TMS (deduplication)
 
 <details>
@@ -451,6 +473,7 @@ Following cookies are used automatically in depending on the installed Commander
 **Storage purpose(s):** Used to store landing page URL for CAMPAIGN raw data.
 
 </details>
+
 <details>
 
 <summary>TC_REFERRER</summary>
@@ -467,7 +490,7 @@ Following cookies are used automatically in depending on the installed Commander
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):**  
+**Storage purpose(s):**\
 Used to temporarily persist the original referrer of the session to ensure reliable attribution when the browser does not correctly transmit referrer information between pages. This value is used only during the initial measurement phase.
 
 This storage is only activated when campaign measurement is enabled.
@@ -570,10 +593,9 @@ FDLBMIXCDOM\
 
 **Owner:** Commanders Act
 
-**Storage purpose(s):**
-Technical cookies used exclusively for load balancing and internal infrastructure dispatch between Commanders Act servers. These cookies do not store any personal data and are required to ensure proper request routing and platform reliability.
+**Storage purpose(s):** Technical cookies used exclusively for load balancing and internal infrastructure dispatch between Commanders Act servers. These cookies do not store any personal data and are required to ensure proper request routing and platform reliability.
 
-*Technical cookie (exempted from consent)*
+_Technical cookie (exempted from consent)_
 
 </details>
 
