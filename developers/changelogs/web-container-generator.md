@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 103.0
+
+Release date: **06/07/2026**
+
+* Support Commander Tag Gateway for included files
+
 ### 102.5
 
 Release date: **01/07/2026**
