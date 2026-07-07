@@ -2,6 +2,13 @@
 
 ## 2026
 
+### 103.1
+
+Release date: **07/07/2026**
+
+* RCS: Use sessionStorage for sampling and fix collect with external CMPs.
+* Support Commander Tag Gateway for Phoenix
+
 ### 103.0
 
 Release date: **06/07/2026**
