@@ -466,4 +466,5 @@
   * [Cookie 1st](configure/cookies/cookie-1st.md)
   * [Cookie sync partners](configure/cookies/cookie-sync-partners.md)
   * [First domain tracking (Phoenix)](configure/cookies/first-domain-tracking-phoenix.md)
+  * [Cookies Commanders Act](configure/cookies/cookies-commanders-act.md)
 * [Disclaimer](configure/disclaimer.md)

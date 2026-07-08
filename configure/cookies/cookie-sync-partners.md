@@ -1,6 +1,10 @@
 # Cookie sync partners
 
-List of partners for which we operate a cookie synchronization (cookie sync) in order to match users and activate them on partners networks.&#x20;
+{% hint style="info" %}
+Only for audience activation features
+{% endhint %}
+
+List of partners for which we operate a cookie synchronization (cookie sync) in order to match users and activate them on partners networks.
 
 * **AB Tasty**
 * **Criteo**
