@@ -28,7 +28,7 @@ The Exactag destination provides the following key features:
 | `[Any Event]`         | `[Any Event]` **\[1]**     |
 
 {% hint style="info" %}
-**1.** Your same event name is sent to Exactag as <mark style="color:blue;">`sitegroup`</mark>  . See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](exactag.md#configuration) to change the standard mapping based on your needs.
+**1.** Your same event name is sent to Exactag as <mark style="color:blue;">`sitegroup`</mark> . See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](exactag.md#configuration) to change the standard mapping based on your needs.
 {% endhint %}
 
 ## Field mappings
@@ -51,8 +51,8 @@ If you need to use Exactag's "Anonymous Attribution", the property `Group Key` (
 
 {% hint style="info" %}
 **\*** Mandatory property.\
-**1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](exactag.md#configuration) to change the standard mapping base on your needs.\
-**2.** Session number from <mark style="color:blue;">`1`</mark> to <mark style="color:blue;">`x`</mark>  (<mark style="color:blue;">`1`</mark> : new visitor, <mark style="color:blue;">`>1`</mark> : recurring visitor).\
+**1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](exactag.md#configuration) to change the standard mapping based on your needs.\
+**2.** Session number from <mark style="color:blue;">`1`</mark> to <mark style="color:blue;">`x`</mark> (<mark style="color:blue;">`1`</mark> : new visitor, <mark style="color:blue;">`>1`</mark> : recurring visitor).\
 **3.** Event number from <mark style="color:blue;">`1`</mark> to <mark style="color:blue;">`x`</mark> (<mark style="color:blue;">`1`</mark> : first page impression in this session).\
 **4.** See [Fields mappings](exactag.md#field-mappings) for more details on how Exactag identifies users.\
 **5.** Exactags unique identifier for the person or device. This value must be a valid md5 hash.\
@@ -68,5 +68,5 @@ If you need to use Exactag's "Anonymous Attribution", the property `Group Key` (
 **15.** Optional for opted out users.\
 **16.** JSON object for type or partner based consent.\
 **17.** IAB GDPR consent string.\
-**18.** This can be used to send anonymized extracted values instead of setting a value in <mark style="color:blue;">`Device User Agent`</mark>  .
+**18.** This can be used to send anonymized extracted values instead of setting a value in <mark style="color:blue;">`Device User Agent`</mark> .
 {% endhint %}
