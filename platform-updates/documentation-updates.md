@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 10/07/2026
+
+Destination documentation (updates):
+
+{% content-ref url="../features/destinations/destinations-catalog/exactag.md" %}
+[exactag.md](../features/destinations/destinations-catalog/exactag.md)
+{% endcontent-ref %}
+
 ## 03/07/2026
 
 Destination documentation (updates):
