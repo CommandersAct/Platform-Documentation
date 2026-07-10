@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 The **Amazon Ads Conversions API** destination is **deprecated**.\
-Amazon recommends the new **Events API** to provide consent signals and the related destination is available as follows:
+Amazon recommends the new **Events API** to provide consent signals, and the related destination is available as follows
 {% endhint %}
 
 {% content-ref url="amazon-events-api.md" %}

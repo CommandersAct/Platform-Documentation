@@ -2,7 +2,7 @@
 
 {% hint style="warning" %}
 The **Snapchat Conversions API v2** is **deprecated** (Ref. [here](https://developers.snap.com/api/marketing-api/Conversions-API/Introduction)).\
-Snapchat recommends using the newest version **v3** and the related destination is available as follows:
+Snapchat recommends using the newest version **v3** and the related destination is available as follows
 {% endhint %}
 
 {% content-ref url="snapchat/snapchat-conversions-api-v3.md" %}
