@@ -6,6 +6,223 @@ description: >-
 
 # Release notes
 
+## Release 10.0.36 - June - 2026
+
+This month brings a series of enhancements designed to improve usability, strengthen privacy management, simplify data activation, and provide greater visibility across your platform experience.
+
+#### Real Time Cookie Scanner updates:&#x20;
+
+#### 🏷️ Custom Category Labels
+
+You can now rename standard cookie categories (Essential, Marketing, Analytics) to match your organization's terminology. You can use your standard own CMP categories, or enter a custom name.
+
+**Why it matters:**\
+Create a more consistent privacy experience by aligning cookie categories with your internal naming conventions across all Cookie Scanner interfaces.
+
+#### 🌍 Universal CMP Compatibility
+
+Real Time Cookie Scanner is now compatible with any Consent Management Platform (CMP).
+
+**Why it matters:**\
+Whether you use a commercial CMP or a custom-built solution, consent status can now be integrated seamlessly into Cookie Scanner.
+
+#### 🔔 Domain-Specific Alerts
+
+Alerting has become more flexible with support for domain-level filters. You can configure multiple alerts, based on specific domains.
+
+**Why it matters:**\
+Monitor only the domains that matter most to your teams and receive more relevant notifications.
+
+#### 📅 Cookie History with Date Filtering
+
+A new date picker allows you to explore cookies detected during a specific time period.
+
+**Why it matters:**\
+Quickly verify whether a cookie was present during a given timeframe and simplify compliance investigations.
+
+#### 📊 New UI: Compliance Summary
+
+The new Compliance Summary introduces a website compliance score.
+
+**Why it matters:**\
+Gain an instant overview of your site's compliance health and prioritize remediation efforts more effectively.
+
+#### 🔍 Enhanced Cookie Visibility
+
+Several improvements have been added to cookie monitoring:
+
+* Occurrence rates are now displayed for active cookies
+* Last scanned URL is available for active cookies
+* Automatic subdomain discovery is supported
+* CSV/XLS exports now include consent flags
+
+**Why it matters:**\
+Investigating cookie behavior is now faster and more actionable.
+
+***
+
+#### Consent dashboards improvements&#x20;
+
+#### 📈 Daily Consent Statistics Export
+
+Consent Dashboard graphs can now be exported with day-by-day statistics.
+
+**Why it matters:**\
+Build your own reports, monitor trends over time, and analyze consent performance with greater precision.
+
+***
+
+#### CDP & Audience Activation updates
+
+#### 🧭 New Profile Explorer & Unified Profile
+
+A new Profiles section provides a complete view of individual customer profiles.
+
+**Included insights:**
+
+* Identities & devices
+* Segments
+* Activities & purchase history
+* Computed attributes
+
+**Why it matters:**\
+Understand exactly how your CDP consolidates customer data and simplify audience validation before launching campaigns.
+
+#### 🔒 Consent Filtering for Audience Destinations
+
+Audience Destinations now support consent-based filtering directly within the destination configuration.
+
+**Why it matters:**\
+Apply privacy rules where activation happens, reduce segment duplication, and ensure only consented users are shared with partners.
+
+#### 📂 Smarter Segment Management
+
+The Segment Overview has been redesigned with folders, labels, and duplication capabilities.
+
+**Why it matters:**\
+Organize audiences more efficiently, navigate large segment libraries faster, and create audience variations with fewer clicks.
+
+***
+
+#### Data Management & Enrichment
+
+#### 📦 Product Enrichment Without CDP
+
+Product Enrichment can now use a Data Store directly as a source.
+
+**Why it matters:**\
+Enrich server-side events with product information such as margin data without requiring a CDP Product Catalog.
+
+#### 🏷️ Clearer Data Store Naming
+
+"Storage Settings" has been renamed to "Data Store" throughout the platform, with improved enrichment descriptions.
+
+**Why it matters:**\
+Reduce confusion and make enrichment configuration easier to understand.
+
+#### 🤖 AI-Powered CSV Mapping (Beta)
+
+The CSV Importer can now automatically suggest mappings based on both column names and data content.
+
+**Why it matters:**\
+Accelerate onboarding and reduce manual configuration effort.
+
+***
+
+#### Platform & Infrastructure
+
+#### 🌐 Expanded Commanders Act Gateway Integration
+
+Commanders Act Gateway is now more deeply integrated into the platform.
+
+**What's included:**
+
+* First-party hosting for web containers
+* First-party hosting for CMP banners
+* Partner library hosting
+* Phoenix hit routing through Gateway
+
+**Why it matters:**\
+Simplify first-party deployments and prepare for broader Gateway adoption across hosting and tracking use cases.
+
+#### 🔍 Improved Destination Catalog Navigation
+
+A new destination-type filter and clearer destination labels have been added.
+
+**Why it matters:**\
+Find the right destination faster and navigate large catalogs more efficiently.
+
+#### 🔐 Improved Password Security Flow
+
+Password updates now use a single secured workflow across the platform.
+
+**Why it matters:**\
+A more consistent and secure password management experience.
+
+#### 📊 Improved Credit Usage Filtering
+
+A redesigned site selector makes it easier to analyze credit usage on large accounts.
+
+**Why it matters:**\
+Better visibility and simpler account monitoring.
+
+***
+
+#### New & Updated Destinations
+
+#### 🪟 Microsoft Conversions API
+
+Now available for all customers.
+
+**Why it matters:**\
+Track conversions, build audiences, enable automated bidding, and integrate with Microsoft advertising services using a modern server-side implementation.
+
+#### 📱 AppsFlyer Mobile Events API (Beta)
+
+Support for Android and iOS server-to-server event tracking.
+
+**Why it matters:**\
+Measure mobile app activity more reliably while reducing dependency on client-side integrations.
+
+#### 🎮 AppsFlyer PC / Console / CTV Events API (Beta)
+
+Support for connected TV, gaming consoles, and desktop platforms.
+
+**Why it matters:**\
+Expand event measurement across 14 supported platforms, including Roku, LG webOS, Samsung Tizen, Steam, and Amazon Fire TV.
+
+#### 🎯 Google Customer Match Enhancements
+
+Google Customer Match now supports User IDs and Mobile Device IDs in addition to Contact Information.
+
+**Why it matters:**\
+Align audience activation capabilities with Google's latest supported identifiers.
+
+***
+
+#### Mobile SDK Updates
+
+#### 📲 New Consent Banner Experience
+
+Both iOS and Android SDKs now include a modern inline consent banner experience.
+
+**Why it matters:**\
+Allow users to manage consent without leaving their current screen, creating a smoother user experience.
+
+#### ⚡ Performance & Documentation Improvements
+
+Additional SDK enhancements include:
+
+* Improved consent management performance
+* Better handling of consent expiration
+* Updated documentation
+* Faster package distribution for iOS developers
+
+**Why it matters:**\
+Simpler implementation, improved maintainability, and a better developer experience.
+
+***
+
 ## Release 10.0.36 - March - 2026
 
 ✨ **New Features**
