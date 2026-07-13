@@ -8,8 +8,6 @@ description: >-
 
 ## Release 10.0.36 - June - 2026
 
-This month brings a series of enhancements designed to improve usability, strengthen privacy management, simplify data activation, and provide greater visibility across your platform experience.
-
 #### Real Time Cookie Scanner updates:&#x20;
 
 #### 🏷️ Custom Category Labels
