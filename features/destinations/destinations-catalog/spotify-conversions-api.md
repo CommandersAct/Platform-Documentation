@@ -66,7 +66,7 @@ At least one of the following "Smart Mapping" fields is required:\
 **6.** Set in <mark style="color:blue;">`conversion_events.events.X.user_data`</mark> .\
 **7.** Set in <mark style="color:blue;">`conversion_events.events.X.event_details`</mark> .\
 **8.** Default:\
-&#x20;   • set to <mark style="color:blue;">`WEB`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`online`</mark> ,\
+&#x20;   • set to <mark style="color:blue;">`WEB`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`online`</mark> \
 &#x20;   • set to <mark style="color:blue;">`APP`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`app`</mark> or <mark style="color:blue;">`mobile_app`</mark>\
 &#x20;   • set to <mark style="color:blue;">`OFFLINE`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`offline`</mark>\
 &#x20;   • set to <mark style="color:blue;">`WEB`</mark> if none of the above applies.\
