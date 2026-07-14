@@ -31,9 +31,17 @@ If you sign in with a Google account that doesn't have the right permissions, th
 
 In Commanders Act, go to `Administration > Connector Credentials`, then click **Add connector credentials** in the top right corner.
 
+<figure><img src="../../../../.gitbook/assets/step3-consent-summary.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ### Step 2 — Select Google Ads
 
 In the connector list, select **GoogleAds**.
+
+
+
+<figure><img src="../../../../.gitbook/assets/step2-select-googleads.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3 — Sign in with Google
 
@@ -45,11 +53,17 @@ Google may then show the detailed list of permissions requested.
 **Accept all the permissions shown**, even if some look broader than what you expect to use. Do not uncheck or skip any permission on this screen as declining one can break part of your Google connection later.
 {% endhint %}
 
+<figure><img src="../../../../.gitbook/assets/step1-connector-credentials (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/step4-scopes-detail (1).png" alt=""><figcaption></figcaption></figure>
+
 ### Step 4 — Select your Google Ads account
 
 Once access is granted, select the Google Ads account(s) you want to link, then click **Save**.
 
 If several Google Ads accounts are already connected to your Commanders Act account, select all the accounts you want to update: this will update the scope for all the accounts you select.
+
+<figure><img src="../../../../.gitbook/assets/step5-select-account.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5 — You're done
 
