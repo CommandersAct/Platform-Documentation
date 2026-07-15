@@ -18,6 +18,12 @@ The Google Enhanced Conversions destination provides the following key features:
 
 ## Destination setup
 
+{% hint style="warning" %}
+In [Google Ads](https://ads.google.com/), you must complete the following actions:\
+• Accept <mark style="color:blue;">`Customer data terms`</mark> under <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Settings`</mark> \
+• Flag <mark style="color:blue;">`Turn on enhanced conversions`</mark> under <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Settings`</mark> → <mark style="color:blue;">`Enhanced conversions`</mark> .
+{% endhint %}
+
 {% hint style="info" %}
 Your user account needs admin rights in the [Google Ads Manager Accounts](https://ads.google.com/intl/en/home/tools/manager-accounts/) where the conversion action is located. When available, this destination will also include the [`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en) value by looking for the following cookies in this priority order:
 

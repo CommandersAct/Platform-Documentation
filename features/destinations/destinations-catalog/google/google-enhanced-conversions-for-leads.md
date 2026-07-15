@@ -16,9 +16,7 @@ The Google Enhanced Conversions for Leads destination provides the following key
 
 Before configuring this destination, see the following prerequisites:
 
-**1. View supported conversion actions**
-
-Login into [Google Ads ](https://ads.google.com/home/)and:
+Login into [Google Ads](https://ads.google.com/) and:
 
 * Click **Goals**
 * Click the **Conversion** drop down in the menu section.
@@ -30,7 +28,7 @@ Login into [Google Ads ](https://ads.google.com/home/)and:
 
 <figure><img src="../../../../.gitbook/assets/gec_leads_230626_2.png" alt=""><figcaption></figcaption></figure>
 
-If you need to create a supported conversion action, you can follow these steps: &#x20;
+If you need to create a supported conversion action, you can follow these steps:
 
 * Click **Goals**
 * Click the **Conversion** drop down in the menu section.
@@ -38,7 +36,7 @@ If you need to create a supported conversion action, you can follow these steps:
 
 <figure><img src="../../../../.gitbook/assets/gec_leads_230626_3.png" alt=""><figcaption></figcaption></figure>
 
-* Flag **Conversions offline** only, and click on **Edit data sources**&#x20;
+* Flag **Conversions offline** only, and click on **Edit data sources**
 
 <figure><img src="../../../../.gitbook/assets/gec_leads_230626_4.png" alt=""><figcaption></figcaption></figure>
 
@@ -50,13 +48,11 @@ If you need to create a supported conversion action, you can follow these steps:
 
 <figure><img src="../../../../.gitbook/assets/gec_leads_230626_6.png" alt=""><figcaption></figcaption></figure>
 
-**2. Turn on enhanced conversions for leads**
-
-Check the box to turn on enhanced conversions for leads or you can do it, after creating your conversion action, by clicking [**Summary**](https://ads.google.com/aw/conversions) and open the **enhanced conversions for leads** drop down to check the same box.
-
-**3. Accept the customer data terms**
-
-To accept the customer data terms click on [**Summary**](https://ads.google.com/aw/conversions), select **Settings** and click the **Customer data terms** drop down.
+{% hint style="warning" %}
+In [Google Ads](https://ads.google.com/), you must complete the following actions:\
+• Accept <mark style="color:blue;">`Customer data terms`</mark> under <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Settings`</mark> \
+• Flag <mark style="color:blue;">`Turn on enhanced conversions for leads`</mark> under <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Settings`</mark> → <mark style="color:blue;">`Enhanced conversions for leads`</mark> .
+{% endhint %}
 
 {% hint style="warning" %}
 The conversion action type must be <mark style="color:blue;">`UPLOAD_CLICKS`</mark> , and must exist in the Google Ads conversion customer of the Google Ads account associated with the click. Please follow the above steps to view your current conversion actions and/or create a new supported conversion action. More details are available following this [LINK](https://developers.google.com/google-ads/api/docs/conversions/upload-offline#populate-click-conversions).
