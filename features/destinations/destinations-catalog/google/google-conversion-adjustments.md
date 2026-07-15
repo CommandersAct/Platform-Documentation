@@ -20,6 +20,10 @@ To identify the conversion and when a transaction identifier is not provided, th
 On the other hand, when a transaction identifier is present both the [`gclid`](https://support.google.com/google-ads/answer/9744275?hl=en) and <mark style="color:blue;">`conversionDateTime`</mark> are removed from the hit to prevent the [`GCLID_DATE_TIME_PAIR_AND_ORDER_ID_BOTH_SET`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#gclid_date_time_pair_and_order_id_both_set) upload error. More details on all upload errors are available following this [LINK](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError).
 {% endhint %}
 
+{% hint style="info" %}
+Google Ads's reports show the updated/adjusted values after **24/48 hours**. For example, you can check the section <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Summary`</mark> → <mark style="color:blue;">`View all conversions actions`</mark> → Select your conversion action → <mark style="color:blue;">`Web pages`</mark> , and see the column <mark style="color:blue;">`All conv. value`</mark> .
+{% endhint %}
+
 {% hint style="warning" %}
 Conversion adjustments don't work with [conversion actions](https://support.google.com/google-ads/answer/6032150?sjid=6242609434917944234-EU) whose type is [`UNKNOWN`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionActionTypeEnum.ConversionActionType#unknown) . In addition, adjustments for a conversion whose click has a <mark style="color:blue;">`gbraid`</mark> or <mark style="color:blue;">`wbraid`</mark> instead of a [`gclid`](https://support.google.com/google-ads/answer/1033981) will fail with a [`CONVERSION_NOT_FOUND`](https://developers.google.com/google-ads/api/reference/rpc/v14/ConversionAdjustmentUploadErrorEnum.ConversionAdjustmentUploadError#conversion_not_found) upload error.
 {% endhint %}

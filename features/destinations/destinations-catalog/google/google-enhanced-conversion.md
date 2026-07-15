@@ -26,6 +26,10 @@ Your user account needs admin rights in the [Google Ads Manager Accounts](https:
 3. `_gac_[GA_PROPERTY_ID]`
 {% endhint %}
 
+{% hint style="info" %}
+Google Ads's reports show the updated/adjusted values after **24/48 hours**. For example, you can check the section <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Summary`</mark> → <mark style="color:blue;">`View all conversions actions`</mark> → Select your conversion action → <mark style="color:blue;">`Web pages`</mark> , and see the column <mark style="color:blue;">`All conv. value`</mark> .
+{% endhint %}
+
 ### Configuration
 
 <table><thead><tr><th width="357">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Authentication</code></td><td><em><strong><code>Required</code></strong></em><br>Your credentials with Google Ads as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Google Ads</code></td></tr><tr><td><code>Mapping</code></td><td><p><em><strong><code>Required</code></strong></em><br>Map your Google Ads conversion names, where enhanced conversions are applied, with your events by setting the fields <code>Google Ads Conversion Name</code> and <code>Your event name</code> . At least one line is required. Conversion names can be found in the Google Ads interface following:</p><p><code>Goals</code> ➜ <code>Summary</code> ➜ <code>Conversion action</code> (column) <strong>[1]</strong><br>If a conversion action is not found the event will be discarded.</p></td></tr><tr><td><code>Google Analytics Property Id</code></td><td>The GA Tracking Id is a string like "UA-XXXXXX-Y" or "G-XXXXXXXXXX" for Google Analytics 4. It's used as an alternative method to retrieve the <a href="https://support.google.com/google-ads/answer/9744275?hl=en"><code>gclid</code></a> from cookies. See <a href="google-enhanced-conversion.md#destination-setup">Destination setup</a> for more details.</td></tr></tbody></table>
