@@ -29,14 +29,14 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 {% hint style="warning" %}
 Requests must include the following Adobe properties:\
 • At least one of:\
-◦ <mark style="color:$primary;">`marketingCloudVisitorId`</mark>\
-◦ <mark style="color:$primary;">`fallbackVisitorId`</mark>\
-◦ <mark style="color:$primary;">`visitorId`</mark>\
-◦ <mark style="color:$primary;">`ipAddress`</mark> and <mark style="color:$primary;">`userAgent`</mark>\
+&#x20;  \- <mark style="color:$primary;">`marketingCloudVisitorId`</mark>\
+&#x20;  \- <mark style="color:$primary;">`fallbackVisitorId`</mark>\
+&#x20;  \- <mark style="color:$primary;">`visitorId`</mark>\
+&#x20;  \- <mark style="color:$primary;">`ipAddress`</mark> and <mark style="color:$primary;">`userAgent`</mark>\
 • At least one of:\
-◦ <mark style="color:$primary;">`pageUrl`</mark>\
-◦ <mark style="color:$primary;">`pageName`</mark>\
-◦ <mark style="color:$primary;">`linkType`</mark> with <mark style="color:$primary;">`linkName`</mark> or <mark style="color:$primary;">`linkUrl`</mark>\
+&#x20;  \- <mark style="color:$primary;">`pageUrl`</mark>\
+&#x20;  \- <mark style="color:$primary;">`pageName`</mark>\
+&#x20;  \- <mark style="color:$primary;">`linkType`</mark> with <mark style="color:$primary;">`linkName`</mark> or <mark style="color:$primary;">`linkUrl`</mark>\
 • <mark style="color:$primary;">`reportSuiteId`</mark>
 {% endhint %}
 
