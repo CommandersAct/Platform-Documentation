@@ -15,6 +15,23 @@ Select what kind of data you want to export:
 
 Select properties you want to export.
 
+For each property, you can choose to apply the following options:
+
+* Hash MD5
+* Hash SHA256
+* Deduplicate
+* Convert Boolean to Integer&#x20;
+
+{% hint style="info" %}
+**About deduplication:**
+
+If you enable deduplication on a single property, the export will contain only one occurrence per value of that property.
+
+If you enable deduplication on multiple properties, the export will contain only one occurrence per unique combination of those properties. In other words, two rows are considered duplicates only if they share the same value for every selected property.
+
+**Example**: if you deduplicate on _email_ and _country_, a row with (user@mail.com, France) and another with (user@mail.com, Belgium) will both be kept, since the combination of properties differs.
+{% endhint %}
+
 You can add also a static column, meaning you can set a value, and it will be exported as you entered it.
 
 Select the data range:
