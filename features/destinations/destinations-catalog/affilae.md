@@ -1,3 +1,24 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Affilae
 
 [Affilae ](https://affilae.com)provides complete affiliate marketing solutions to manage your partnership strategies. Using this destination you can enable [server-side tracking](https://affilae.com/en/documentations/server-to-server-tracking-s2s-2/).

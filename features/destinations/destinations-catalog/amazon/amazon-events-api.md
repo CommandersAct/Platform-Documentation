@@ -1,3 +1,24 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Amazon Events API
 
 [Amazon](https://www.aboutamazon.eu/who-we-are) is a multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. Using this destination you can send conversion data directly to Amazon Ads, bypassing browser-side limitations like ad blockers and cookie restrictions. It complements [Amazon Ad Tag (AAT)](https://advertising.amazon.com/help/GLZ54GXQW773A6MG) to provide more complete attribution across DSP, SD, and STV campaigns, enabling better optimization and lower CPA.

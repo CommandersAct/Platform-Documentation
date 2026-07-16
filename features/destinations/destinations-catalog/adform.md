@@ -1,3 +1,24 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Adform
 
 [Adform](https://site.adform.com/) is a global digital media advertising technology company specializing in real-time programmatic marketing automation technologies. Using this destination you can implement [server-side tracking](https://www.adformhelp.com/hc/en-us/articles/9740579489041-Use-Server-Side-Tracking).
