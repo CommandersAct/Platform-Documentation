@@ -51,38 +51,7 @@ Ensure your app is registered in [AppsFlyer](https://hq1.appsflyer.com/auth/logi
 
 ## Quick reference
 
-| Commanders Act Events                                             | AppsFlyer Events                   |
-| ----------------------------------------------------------------- | ---------------------------------- |
-| `achievement_unlocked`                                            | `af_achievement_unlocked`          |
-| `ad_click`                                                        | `af_ad_click`                      |
-| `ad_view`                                                         | `af_ad_view`                       |
-| `add_payment_info`                                                | `af_add_payment_info`              |
-| `add_to_cart`                                                     | `af_add_to_cart`                   |
-| `add_to_wishlist`                                                 | `af_add_to_wishlist`               |
-| `app_opened`                                                      | `af_app_opened`                    |
-| `sign_up`                                                         | `af_complete_registration`         |
-| `view_item`                                                       | `af_content_view`                  |
-| `begin_checkout`                                                  | `af_initiated_checkout`            |
-| `invite`                                                          | `af_invite`                        |
-| `generate_lead`                                                   | `lead`                             |
-| `level_achieved`                                                  | `af_level_achieved`                |
-| `view_item_list`                                                  | `af_list_view`                     |
-| `login`                                                           | `af_login`                         |
-| `notification_open`                                               | `af_opened_from_push_notification` |
-| <p><code>in_app_purchase</code><br><code>purchase</code></p>      | `af_purchase`                      |
-| <p><code>submit_rating</code><br><code>rate</code></p>            | `af_rate`                          |
-| `re_engage`                                                       | `af_re_engage`                     |
-| <p><code>view_search_results</code></p><p><code>search</code></p> | `af_search`                        |
-| `share`                                                           | `af_share`                         |
-| `spend_virtual_currency`                                          | `af_spent_credits`                 |
-| `spent_credits`                                                   | `af_spent_credits`                 |
-| `start_trial`                                                     | `af_start_trial`                   |
-| `subscribe`                                                       | `af_subscribe`                     |
-| `travel_booking`                                                  | `af_travel_booking`                |
-| `ecommerce_purchase`                                              | `af_travel_booking`                |
-| `tutorial_complete`                                               | `af_tutorial_completion`           |
-| <p><code>app_update</code><br><code>update</code></p>             | `af_update`                        |
-| `[Any Event]`                                                     | `[Any Event]` **\[1]**             |
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Commanders Act Events</th><th>AppsFlyer Events</th></tr></thead><tbody><tr><td><code>achievement_unlocked</code></td><td><code>af_achievement_unlocked</code></td></tr><tr><td><code>ad_click</code></td><td><code>af_ad_click</code></td></tr><tr><td><code>ad_view</code></td><td><code>af_ad_view</code></td></tr><tr><td><code>add_payment_info</code></td><td><code>af_add_payment_info</code></td></tr><tr><td><code>add_to_cart</code></td><td><code>af_add_to_cart</code></td></tr><tr><td><code>add_to_wishlist</code></td><td><code>af_add_to_wishlist</code></td></tr><tr><td><code>app_opened</code></td><td><code>af_app_opened</code></td></tr><tr><td><code>sign_up</code></td><td><code>af_complete_registration</code></td></tr><tr><td><code>view_item</code></td><td><code>af_content_view</code></td></tr><tr><td><code>begin_checkout</code></td><td><code>af_initiated_checkout</code></td></tr><tr><td><code>invite</code></td><td><code>af_invite</code></td></tr><tr><td><code>generate_lead</code></td><td><code>lead</code></td></tr><tr><td><code>level_achieved</code></td><td><code>af_level_achieved</code></td></tr><tr><td><code>view_item_list</code></td><td><code>af_list_view</code></td></tr><tr><td><code>login</code></td><td><code>af_login</code></td></tr><tr><td><code>notification_open</code></td><td><code>af_opened_from_push_notification</code></td></tr><tr><td><code>in_app_purchase</code><br><code>purchase</code></td><td><code>af_purchase</code></td></tr><tr><td><code>submit_rating</code><br><code>rate</code></td><td><code>af_rate</code></td></tr><tr><td><code>re_engage</code></td><td><code>af_re_engage</code></td></tr><tr><td><p><code>view_search_results</code></p><p><code>search</code></p></td><td><code>af_search</code></td></tr><tr><td><code>share</code></td><td><code>af_share</code></td></tr><tr><td><code>spend_virtual_currency</code></td><td><code>af_spent_credits</code></td></tr><tr><td><code>spent_credits</code></td><td><code>af_spent_credits</code></td></tr><tr><td><code>start_trial</code></td><td><code>af_start_trial</code></td></tr><tr><td><code>subscribe</code></td><td><code>af_subscribe</code></td></tr><tr><td><code>travel_booking</code></td><td><code>af_travel_booking</code></td></tr><tr><td><code>ecommerce_purchase</code></td><td><code>af_travel_booking</code></td></tr><tr><td><code>tutorial_complete</code></td><td><code>af_tutorial_completion</code></td></tr><tr><td><code>app_update</code><br><code>update</code></td><td><code>af_update</code></td></tr><tr><td><code>[Any Event]</code></td><td><code>[Any Event]</code> <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](appsflyer-mobile-events-api.md#configuration).
