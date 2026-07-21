@@ -1,3 +1,24 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+---
+
 # Spotify Conversions API
 
 [Spotify](https://open.spotify.com/) is music streaming service provider. Using this destination you can leverage [Spotify Conversions API](https://adshelp.spotify.com/s/article/Spotify-Conversions-API-US?language=en_US) as tagless attribution tool that allows you to pass online and offline conversion events to Spotify. The Conversions API is designed to provide comprehensive, high-fidelity attribution to help you understand the performance of your campaigns on Spotify.
@@ -21,16 +42,7 @@ The Spotify Conversions API destination provides the following key features:
 
 ## Quick reference
 
-| Commanders Act Events | Spotify Events                   |
-| --------------------- | -------------------------------- |
-| `add_to_cart`         | `ADD_TO_CART`                    |
-| `begin_checkout`      | `CHECK_OUT`                      |
-| `generate_lead`       | `LEAD`                           |
-| `page_view`           | `VIEW`                           |
-| `purchase`            | `PURCHASE`                       |
-| `sign_up`             | `SIGN_UP`                        |
-| `view_item`           | `Details`                        |
-| `[Any Event]`         | `[Any Supported Event]` **\[1]** |
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Commanders Act Events</th><th>Spotify Events</th></tr></thead><tbody><tr><td><code>add_to_cart</code></td><td><code>ADD_TO_CART</code></td></tr><tr><td><code>begin_checkout</code></td><td><code>CHECK_OUT</code></td></tr><tr><td><code>generate_lead</code></td><td><code>LEAD</code></td></tr><tr><td><code>page_view</code></td><td><code>VIEW</code></td></tr><tr><td><code>purchase</code></td><td><code>PURCHASE</code></td></tr><tr><td><code>sign_up</code></td><td><code>SIGN_UP</code></td></tr><tr><td><code>view_item</code></td><td><code>Details</code></td></tr><tr><td><code>[Any Event]</code></td><td><code>[Any Supported Event]</code> <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **1.** See <mark style="color:blue;">`Event Mapping`</mark> in [Configuration](spotify-conversions-api.md#configuration) for more details on Spotify supported events.
@@ -50,7 +62,7 @@ At least one of the following "Smart Mapping" fields is required:\
 • <mark style="color:blue;">`User Phone`</mark>
 {% endhint %}
 
-<table data-header-hidden="false" data-header-sticky data-search="true"><thead><tr><th width="257">Smart Mapping Fields</th><th width="327">Commanders Act Default Properties</th><th width="393">Spotify Properties</th></tr></thead><tbody><tr><td><code>-</code></td><td><code>Connection Id</code></td><td><code>capi_connection_id</code> <strong>[*][1]</strong></td></tr><tr><td><code>-</code></td><td><p><code>Event Mapping</code></p><p><code>event_name</code></p></td><td><code>event_name</code> <strong>[*][2][3]</strong></td></tr><tr><td><code>Event Id</code></td><td><code>context.event_id</code></td><td><code>event_id</code> <strong>[*][2][4]</strong></td></tr><tr><td><code>Event Timestamp</code></td><td><code>context.event_timestamp</code></td><td><code>event_time</code> <strong>[*][2][5]</strong></td></tr><tr><td><code>Page URL</code></td><td><code>context.page.url</code></td><td><code>event_source_url</code> <strong>[2]</strong></td></tr><tr><td><code>Device IP</code></td><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[6]</strong></td></tr><tr><td><code>Device Mobile Identifier</code></td><td><code>context.device.advertising_id</code></td><td><code>device_id</code> <strong>[6]</strong></td></tr><tr><td><code>User Email</code></td><td><code>user.email</code></td><td><code>hashed_emails.0</code> <strong>[6]</strong></td></tr><tr><td><code>User Phone</code></td><td><code>user.phone</code></td><td><code>hashed_phone_number</code> <strong>[6]</strong></td></tr><tr><td><code>Ccurrency</code></td><td><code>currency</code></td><td><code>currency</code> <strong>[7]</strong></td></tr><tr><td><code>Value</code></td><td><code>value</code></td><td><code>amount</code> <strong>[7]</strong></td></tr><tr><td><code>Content Category</code></td><td><code>partners.spotify.content_category</code></td><td><code>content_category</code> <strong>[7]</strong></td></tr><tr><td><code>Content Name</code></td><td><code>partners.spotify.content_name</code></td><td><code>content_name</code> <strong>[7]</strong></td></tr><tr><td><code>Action Source</code></td><td><code>type</code></td><td><code>action_source</code> <strong>[2][8]</strong></td></tr><tr><td><code>Opt-out Targeting</code></td><td><code>partners.spotify.optout_targeting</code></td><td><code>opt_out_targeting</code> <strong>[2][9]</strong></td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky data-search="true"><thead><tr><th>Smart Mapping Fields</th><th>Commanders Act Default Properties</th><th>Spotify Properties</th></tr></thead><tbody><tr><td><code>-</code></td><td><code>Connection Id</code></td><td><code>capi_connection_id</code> <strong>[*][1]</strong></td></tr><tr><td><code>-</code></td><td><p><code>Event Mapping</code></p><p><code>event_name</code></p></td><td><code>event_name</code> <strong>[*][2][3]</strong></td></tr><tr><td><code>Event Id</code></td><td><code>context.event_id</code></td><td><code>event_id</code> <strong>[*][2][4]</strong></td></tr><tr><td><code>Event Timestamp</code></td><td><code>context.event_timestamp</code></td><td><code>event_time</code> <strong>[*][2][5]</strong></td></tr><tr><td><code>Page URL</code></td><td><code>context.page.url</code></td><td><code>event_source_url</code> <strong>[2]</strong></td></tr><tr><td><code>Device IP</code></td><td><code>context.device.ip</code></td><td><code>ip_address</code> <strong>[6]</strong></td></tr><tr><td><code>Device Mobile Identifier</code></td><td><code>context.device.advertising_id</code></td><td><code>device_id</code> <strong>[6]</strong></td></tr><tr><td><code>User Email</code></td><td><code>user.email</code></td><td><code>hashed_emails.0</code> <strong>[6]</strong></td></tr><tr><td><code>User Phone</code></td><td><code>user.phone</code></td><td><code>hashed_phone_number</code> <strong>[6]</strong></td></tr><tr><td><code>Ccurrency</code></td><td><code>currency</code></td><td><code>currency</code> <strong>[7]</strong></td></tr><tr><td><code>Value</code></td><td><code>value</code></td><td><code>amount</code> <strong>[7]</strong></td></tr><tr><td><code>Content Category</code></td><td><code>partners.spotify.content_category</code></td><td><code>content_category</code> <strong>[7]</strong></td></tr><tr><td><code>Content Name</code></td><td><code>partners.spotify.content_name</code></td><td><code>content_name</code> <strong>[7]</strong></td></tr><tr><td><code>Action Source</code></td><td><code>type</code></td><td><code>action_source</code> <strong>[2][8]</strong></td></tr><tr><td><code>Opt-out Targeting</code></td><td><code>partners.spotify.optout_targeting</code></td><td><code>opt_out_targeting</code> <strong>[2][9]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\*** Mandatory property.\
@@ -62,9 +74,9 @@ At least one of the following "Smart Mapping" fields is required:\
 **6.** Set in <mark style="color:blue;">`conversion_events.events.X.user_data`</mark> .\
 **7.** Set in <mark style="color:blue;">`conversion_events.events.X.event_details`</mark> .\
 **8.** Default:\
-&#x20;   • set to <mark style="color:blue;">`WEB`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`online`</mark> \
-&#x20;   • set to <mark style="color:blue;">`APP`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`app`</mark> or <mark style="color:blue;">`mobile_app`</mark>\
-&#x20;   • set to <mark style="color:blue;">`OFFLINE`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`offline`</mark>\
-&#x20;   • set to <mark style="color:blue;">`WEB`</mark> if none of the above applies.\
+• set to <mark style="color:blue;">`WEB`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`online`</mark>\
+• set to <mark style="color:blue;">`APP`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`app`</mark> or <mark style="color:blue;">`mobile_app`</mark>\
+• set to <mark style="color:blue;">`OFFLINE`</mark> if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`offline`</mark>\
+• set to <mark style="color:blue;">`WEB`</mark> if none of the above applies.\
 **9.** Accepted values: <mark style="color:blue;">`true`</mark> or <mark style="color:blue;">`false`</mark> (boolean)
 {% endhint %}
