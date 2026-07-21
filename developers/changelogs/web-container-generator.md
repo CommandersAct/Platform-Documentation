@@ -2,6 +2,14 @@
 
 ## 2026
 
+### 103.2
+
+Release date: **20/07/2026**
+
+* RCS:
+  * Enhanced detection and handling for the Didomi and OneTrust CMPs.
+  * Use RCS_COMPLIANCE_CONTROL_ENABLED in sessionStorage instead of CS_SAMPLING_VALUE in localStorage.
+
 ### 103.1
 
 Release date: **07/07/2026**
