@@ -237,8 +237,10 @@ Once saved, all requests to `/mypath` will be proxied to Commanders Gateway.
 You can verify the setup by navigating to:
 
 ```
-https://example.com/mypath/healthy
+https://example.com/mypath/g/healthy
 ```
+
+Note : the default google subpath is /g/ but it could be customized. This google subpath is located immediately after /mypath/ .
 
 It should return:
 
@@ -249,7 +251,7 @@ ok
 To verify geolocation forwarding, you can also test:
 
 ```
-https://example.com/mypath/?validate_geo=healthy
+https://example.com/mypath/g/?validate_geo=healthy
 ```
 
 It should also return:
