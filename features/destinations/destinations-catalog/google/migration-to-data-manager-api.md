@@ -11,6 +11,14 @@ We will progressively update all of our existing Google destinations to use this
 Some new destinations (e.g. Google Store Sales) require this API from the start.
 {% endhint %}
 
+## Why this migration?&#x20;
+
+* **Get ahead of the change**: Google will progressively restrict access to the legacy API. The current version of the Google Customer Match destination is expected to be deprecated in 2027.
+* **Enhanced security**: the Data Manager API supports data encryption,
+* **More complete measurement**: sending IP addresses and session attributes is available to all users of the new API
+* **Greater stability**: quotas are now managed per project rather than per developer token, reducing the risk of blocking.
+* **Access to new Google features**: upcoming destinations, such as _Google Store Sales_ will be reserved for this new API.
+
 ## Connect your Google account to the Data Manager API
 
 {% hint style="danger" icon="triangle-exclamation" %}
@@ -82,14 +90,6 @@ If several Google Ads accounts are already connected to your Commanders Act acco
 ### Step 5 — You're done
 
 Your Google credential is now updated for the Data Manager API. Your existing connections and destinations continue to run without any further action on your side.
-
-## Why this migration?&#x20;
-
-* **Get ahead of the change**: Google will progressively restrict access to the legacy API. The current version of the Google Customer Match destination is expected to be deprecated in 2027.
-* **Enhanced security**: the Data Manager API supports data encryption,
-* **More complete measurement**: sending IP addresses and session attributes is available to all users of the new API
-* **Greater stability**: quotas are now managed per project rather than per developer token, reducing the risk of blocking.
-* **Access to new Google features**: upcoming destinations, such as _Google Store Sales_ will be reserved for this new API.
 
 ## FAQ
 
