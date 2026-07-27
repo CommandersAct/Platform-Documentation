@@ -12,6 +12,10 @@ Destination documentation (updates):
 [linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
 {% endcontent-ref %}
 
+{% content-ref url="../features/destinations/destinations-catalog/openai-conversions-api.md" %}
+[openai-conversions-api.md](../features/destinations/destinations-catalog/openai-conversions-api.md)
+{% endcontent-ref %}
+
 ## 17/07/2026
 
 Destination documentation:
