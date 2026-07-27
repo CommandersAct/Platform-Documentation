@@ -1,5 +1,23 @@
 ---
 description: LinkedIn CAPI
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # LinkedIn Conversions API
@@ -64,22 +82,29 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 {% endhint %}
 
 {% hint style="warning" %}
-At least one of the following statements, related to "Smart Mapping" fields, must be fulfilled:\
-• The field <mark style="color:blue;">`User Email SHA256`</mark> is set.\
-• The field <mark style="color:blue;">`Linkedin UUID`</mark> or the cookie <mark style="color:blue;">`li_fat_id`</mark> is set.\
-• The field <mark style="color:blue;">`LiveRamp ACXIOM Id`</mark> is set.\
-• The field <mark style="color:blue;">`Oracle MOAT Id`</mark> is set.\
-• Both fields <mark style="color:blue;">`User First Name`</mark> and <mark style="color:blue;">`User Last Name`</mark> are set.\
-Moreover, If you send any user information via "Smart Mapping" fields (E.g. <mark style="color:blue;">`User Company Name`</mark> , <mark style="color:blue;">`User Job Title`</mark> , or <mark style="color:blue;">`User Country`</mark> ), you must set the <mark style="color:blue;">`User First Name`</mark> and <mark style="color:blue;">`User Last Name`</mark> fields, regardless if you provide other identity values listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#input-data-validation).
+At least one of the following "Smart Mapping" fields must be set with a proper value unless other valid user identifier is provided:\
+• <mark style="color:blue;">`User Email SHA256`</mark> \
+• <mark style="color:blue;">`Linkedin UUID`</mark> or the cookie <mark style="color:blue;">`li_fat_id`</mark>\
+• <mark style="color:blue;">`LiveRamp ACXIOM Id`</mark>\
+• <mark style="color:blue;">`Oracle MOAT Id`</mark>\
+• <mark style="color:blue;">`Device IP`</mark> \
+• <mark style="color:blue;">`Device Mobile Identifier`</mark> \
+Moreover, If you send any user information via "Smart Mapping" fields (<mark style="color:blue;">`User Company Name`</mark> , <mark style="color:blue;">`User Job Title`</mark> , or <mark style="color:blue;">`User Country`</mark> ), you must set the <mark style="color:blue;">`User First Name`</mark> and <mark style="color:blue;">`User Last Name`</mark> fields regardless if you provide other identity values listed above. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api-schema?view=li-lms-2026-07\&source=recommendations#input-data-validation).
 {% endhint %}
 
-<table><thead><tr><th width="341.6685580062746">Commanders Act Properties</th><th>LinkedIn Properties</th></tr></thead><tbody><tr><td><code>Conversion rule name</code></td><td><code>conversion</code> <strong>[1][*]</strong></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>conversionHappenedAt</code> <strong>[*]</strong></td></tr><tr><td><code>value</code></td><td><code>conversionValue.amount</code> <strong>[*]</strong></td></tr><tr><td><code>currency</code></td><td><code>conversionValue.currencyCode</code> <strong>[*]</strong></td></tr><tr><td><code>context.event_id</code></td><td><code>eventId</code> <strong>[2]</strong></td></tr><tr><td><p><code>user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id</code></p></td><td><code>user.userIds.X.idValue</code> <strong>[3]</strong></td></tr><tr><td><p><code>(user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id)</code></p></td><td><code>user.userIds.X.idType</code> <strong>[4]</strong></td></tr><tr><td><code>user.firstname</code></td><td><code>user.userInfo.firstName</code></td></tr><tr><td><code>user.lastname</code></td><td><code>user.userInfo.lastName</code></td></tr><tr><td><code>user.country</code></td><td><code>user.userInfo.countryCode</code></td></tr><tr><td><code>user.title</code></td><td><code>user.userInfo.title</code></td></tr><tr><td><code>user.company_name</code></td><td><code>user.userInfo.companyName</code></td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Smart Mapping Fields</th><th>Commanders Act Default Properties</th><th>LinkedIn Properties</th></tr></thead><tbody><tr><td><code>-</code></td><td><code>Conversion rule name</code></td><td><code>conversion</code> <strong>[1][*]</strong></td></tr><tr><td><code>Event Timestamp</code></td><td><code>context.event_timestamp</code></td><td><code>conversionHappenedAt</code> <strong>[*]</strong></td></tr><tr><td><code>Transaction Value</code></td><td><code>value</code></td><td><code>conversionValue.amount</code></td></tr><tr><td><code>Currency</code></td><td><code>currency</code></td><td><code>conversionValue.currencyCode</code></td></tr><tr><td><code>Event Id</code></td><td><code>context.event_id</code></td><td><code>eventId</code> <strong>[2]</strong></td></tr><tr><td><p><code>User Email SHA256</code></p><p><code>Linkedin UUID</code></p><p><code>LiveRamp ACXIOM Id</code> <br><code>Oracle MOAT Id</code></p><p><code>Device IP</code></p><p><code>Device Mobile Identifier</code></p></td><td><p><code>user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id</code> <br><code>context.device.ip</code> <br><code>context.device.advertising_id</code></p></td><td><code>user.userIds.X.idValue</code> <strong>[3]</strong></td></tr><tr><td><p><code>User Email SHA256</code></p><p><code>Linkedin UUID</code></p><p><code>LiveRamp ACXIOM Id</code> <br><code>Oracle MOAT Id</code> <br><code>Device IP</code> <br><code>Device Mobile Identifier</code></p></td><td><p><code>user.email_sha256</code></p><p><code>partners.linkedin.uuid</code></p><p><code>partners.linkedin.acxiom_id</code></p><p><code>partners.linkedin.moat_id</code> <br><code>context.device.ip</code></p><p><code>context.device.advertising_id</code></p></td><td><code>user.userIds.X.idType</code> <strong>[4]</strong></td></tr><tr><td><code>User First Name</code></td><td><code>user.firstname</code></td><td><code>user.userInfo.firstName</code></td></tr><tr><td><code>User Last Name</code></td><td><code>user.lastname</code></td><td><code>user.userInfo.lastName</code></td></tr><tr><td><code>User Country</code></td><td><code>user.country</code></td><td><code>user.userInfo.countryCode</code></td></tr><tr><td><code>User Job Title</code></td><td><code>user.title</code></td><td><code>user.userInfo.title</code></td></tr><tr><td><code>User Company Name</code></td><td><code>user.company_name</code></td><td><code>user.userInfo.companyName</code></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\*** Mandatory property.\
 **1.** Value includes the static string "urn:lla:llaPartnerConversion:". See <mark style="color:blue;">`Mapping`</mark> in [Configuration](linkedin_capi.md#configuration) for more details.\
 **2.** The unique id generated by advertisers to indicate each event. This is used for deduplication. More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/conversions/deduplication?view=li-lms-2023-11).\
-**3.** If a clear text user email is provided, it's automatically hashed via SHA256.\
-The "Smart Mapping" field <mark style="color:blue;">`Linkedin UUID`</mark> has priority over the cookie <mark style="color:blue;">`li_fat_id`</mark> .\
-**4.** Depending on the value being set in <mark style="color:blue;">`user.userIds.X.idValue`</mark> , this is one of the following strings: <mark style="color:blue;">`SHA256_EMAIL`</mark> , <mark style="color:blue;">`LINKEDIN_FIRST_PARTY_ADS_TRACKING_UUID`</mark> , <mark style="color:blue;">`ACXIOM_ID`</mark> or <mark style="color:blue;">`ORACLE_MOAT_ID`</mark> . More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api?view=li-lms-2023-11\&tabs=http#idtype).
+**3.** If a clear text user email is provided, it's automatically hashed via SHA256. The "Smart Mapping" field <mark style="color:blue;">`Linkedin UUID`</mark> has priority over the cookie <mark style="color:blue;">`li_fat_id`</mark> .\
+**4.** Depending on the value being set in <mark style="color:blue;">`user.userIds.X.idValue`</mark> , this is one of the following strings:\
+&#x20;   • <mark style="color:blue;">`SHA256_EMAIL`</mark> \
+&#x20;   • <mark style="color:blue;">`LINKEDIN_FIRST_PARTY_ADS_TRACKING_UUID`</mark> \
+&#x20;   • <mark style="color:blue;">`ACXIOM_ID`</mark> \
+&#x20;   • <mark style="color:blue;">`ORACLE_MOAT_ID`</mark> \
+&#x20;   • <mark style="color:blue;">`PLAINTEXT_IP_ADDRESS`</mark> \
+&#x20;   • <mark style="color:blue;">`GOOGLE_AID`</mark>\
+More details are available following this [LINK](https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversions-api-schema?view=li-lms-2026-07\&source=recommendations#idtype).
 {% endhint %}
