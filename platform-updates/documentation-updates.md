@@ -6,6 +6,12 @@ description: The latest updates made to our documentation articles
 
 ## 31/07/2026
 
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/azure-event-hub.md" %}
+[azure-event-hub.md](../features/destinations/destinations-catalog/azure-event-hub.md)
+{% endcontent-ref %}
+
 Destination documentation (updates):
 
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
