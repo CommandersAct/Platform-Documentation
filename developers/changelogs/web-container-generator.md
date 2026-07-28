@@ -2,6 +2,14 @@
 
 ## 2026
 
+### 103.3
+
+Release date: **28/07/2026**
+
+* Support Commander Tag Gateway for tracking 1st
+* Fix privacy center embedding of on-premise mode
+* [beta] Support Commander Tag Gateway for Cookie Sync
+
 ### 103.2
 
 Release date: **20/07/2026**
