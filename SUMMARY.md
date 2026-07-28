@@ -141,6 +141,7 @@
       * [AppsFlyer PC/Console/CTV Events API](features/destinations/destinations-catalog/appsflyer/appsflyer-pc-console-ctv-events-api.md)
     * [Attraqt](features/destinations/destinations-catalog/attraqt.md)
     * [Awin](features/destinations/destinations-catalog/awin.md)
+    * [Azure Event Hub](features/destinations/destinations-catalog/azure-event-hub.md)
     * [Batch Audience](features/destinations/destinations-catalog/batch.md)
     * [Branch Events](features/destinations/destinations-catalog/branch-events.md)
     * [Button](features/destinations/destinations-catalog/button.md)
