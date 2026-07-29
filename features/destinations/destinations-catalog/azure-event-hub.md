@@ -50,7 +50,7 @@ The `Shared Access Policy` must have at least the `Send` permission.
 
 ## Field mappings
 
-<table data-header-hidden="false" data-header-sticky><thead><tr><th>Commanders Act Properties</th><th>Azure Properties</th></tr></thead><tbody><tr><td><code>[Any property Name]</code></td><td><code>[Any property name]</code> <strong>[1]</strong></td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Commanders Act Properties</th><th>Azure Properties</th></tr></thead><tbody><tr><td><code>[Any property name]</code></td><td><code>[Any property name]</code> <strong>[1]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **1.** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration](azure-event-hub.md#configuration). You can also flag <mark style="color:blue;">`Send All Properties`</mark> to send all properties in your events with the same original names and values.
