@@ -14,6 +14,10 @@ Destination documentation:
 
 Destination documentation (updates):
 
+{% content-ref url="../features/destinations/destinations-catalog/amazon/amazon-events-api.md" %}
+[amazon-events-api.md](../features/destinations/destinations-catalog/amazon/amazon-events-api.md)
+{% endcontent-ref %}
+
 {% content-ref url="../features/destinations/destinations-catalog/linkedin_capi.md" %}
 [linkedin\_capi.md](../features/destinations/destinations-catalog/linkedin_capi.md)
 {% endcontent-ref %}
