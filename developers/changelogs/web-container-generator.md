@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 103.4
+
+Release date: **03/08/2026**
+
+* Technical updates for Commander Tag Gateway activation
+
 ### 103.3
 
 Release date: **28/07/2026**
