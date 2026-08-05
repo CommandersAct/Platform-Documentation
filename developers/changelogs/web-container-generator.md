@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 103.5
+
+Release date: **05/08/2026**
+
+* Optimizations in container generation script
+
 ### 103.4
 
 Release date: **03/08/2026**
