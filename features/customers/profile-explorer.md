@@ -1,11 +1,11 @@
 # Profile Explorer
 
-The Profiles section lets you explore the individual users unified in your CDP.&#x20;
+The Profiles section lets you explore the individual users unified in your CDP.
 
-It has two pages:&#x20;
+It has two pages:
 
-* **Profile Explorer**: a listing of all unified users, with statistics, filters and search.&#x20;
-* **Unified Profile:** a detailed, read-only card for a single user, organized into four tabs: Identities, Segments, Activities and Attributes.&#x20;
+* **Profile Explorer**: a listing of all unified users, with statistics, filters and search.
+* **Unified Profile:** a detailed, read-only card for a single user, organized into four tabs: Identities, Segments, Activities and Attributes.
 
 Both pages are read-only: no data can be edited or deleted from this section. They are designed to explore and verify data - for example to check how a user is identified, segmented, enriched and tracked.
 
@@ -13,16 +13,16 @@ Both pages are read-only: no data can be edited or deleted from this section. Th
 This is the first version of Profiles. More capabilities will be added over time.
 {% endhint %}
 
-Availability and permissions Profiles is available to clients on the CDP offer.&#x20;
+Availability and permissions Profiles is available to clients on the CDP offer.
 
-Access is governed by two separate permissions, because the Unified Profile exposes sensitive personal data:&#x20;
+Access is governed by two separate permissions, because the Unified Profile exposes sensitive personal data:
 
-* Profile Explorer: access to the listing&#x20;
-* Unified Profile: access to the detailed user card&#x20;
+* Profile Explorer: access to the listing
+* Unified Profile: access to the detailed user card
 
-A user can be granted the Profile Explorer without the Unified Profile.&#x20;
+A user can be granted the Profile Explorer without the Unified Profile.
 
-Default access by system profile:&#x20;
+Default access by system profile:
 
 | Profile       | Profile Explorer | Unified Profile |
 | ------------- | ---------------- | --------------- |
@@ -37,9 +37,9 @@ For custom profiles, the two permissions are set independently under the Profile
 Consider that the Profile Explorer and Unified Profile pages include read permissions for variables, segments and user-attributes.
 {% endhint %}
 
-## Accessing Profiles&#x20;
+## Accessing Profiles
 
-In the main menu, go to **Customers** > **Profiles** > **Profile Explorer**. Select a user to open their Unified Profile.&#x20;
+In the main menu, go to **Customers** > **Profiles** > **Profile Explorer**. Select a user to open their Unified Profile.
 
 ## Profile Explorer
 
@@ -89,7 +89,7 @@ Basic information is displayed in three rows:
 * Master ID - the user's PID
 * Phone, postal address, birthday
 
-Each field is fed by a CDP variable.&#x20;
+Each field is fed by a CDP variable.
 
 {% hint style="warning" %}
 When no value is mapped, the field shows _Unmapped / Unspecified variable_ - a reminder to follow the Commanders Act normalized mapping so the profile populates correctly.\
@@ -146,7 +146,22 @@ If the Conversion Universe is not activated, the Purchase section is not availab
 
 ### Attributes
 
-Lists the Augmented User Attributes computed for the user, grouped by type and displayed in this order: Flags, Boolean, Rolling Count, Rolling Sum, Calculus, Copy. The 5 most recently created or modified attributes of each type are shown by default; expand a type to see the others. A search field helps locate a specific attribute.<br>
+Lists the Augmented User Attributes computed for the user, grouped by type and displayed in this order: Flags, Boolean, Rolling Count, Rolling Sum, Calculus, Copy. The 5 most recently created or modified attributes of each type are shown by default; expand a type to see the others. A search field helps locate a specific attribute.
+
+### Preferences
+
+The **Preferences** tab displays the visitor's registered marketing and communication preferences (e.g. product news, newsletters, partner offers). For each preference, it shows :
+
+* the preference label
+* the date it was last updated
+* whether it is accepted or refused
+
+**Variables and naming convention**
+
+Preferences rely on a pair of variables per preference, following this naming convention :
+
+* `preferences.<variablename>` : the preference value
+* `preferences.<variablename>_date` : the date it was last updated
 
 ## Benefits
 
