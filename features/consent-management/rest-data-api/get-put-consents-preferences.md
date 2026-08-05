@@ -4,24 +4,22 @@ description: Get/put user consent stored in DataCommander
 
 # GET/PUT Consents / preferences
 
-{% swagger baseUrl="https://api.commander1.com" path="/engage/user/" method="get" summary="User Consents" %}
-{% swagger-description %}
+## User Consents
+
+<mark style="color:blue;">`GET`</mark> `https://api.commander1.com/engage/user/`
+
 This endpoint allows you to get categorie's consent for one specific user
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="token" type="string" %}
-Security token
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="user_id" type="string" %}
-ID of the user
-{% endswagger-parameter %}
+| Name     | Type    | Description    |
+| -------- | ------- | -------------- |
+| token    | string  | Security token |
+| user\_id | string  | ID of the user |
+| site     | integer | ID of the site |
 
-{% swagger-parameter in="query" name="site" type="integer" %}
-ID of the site
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Consent successfully retrieved." %}
+{% tabs %}
+{% tab title="200 Consent successfully retrieved." %}
 ```javascript
 {
     "user_privacy_optin": 1,
@@ -32,39 +30,34 @@ ID of the site
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="Could not find a user matching this query." %}
+{% tab title="404 Could not find a user matching this query." %}
 ```javascript
 {
     "message": "Person not found"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://api.commander1.com/v1.0" path="/engage/visitors/" method="get" summary="Visitor Consents" %}
-{% swagger-description %}
+## Visitor Consents
+
+<mark style="color:blue;">`GET`</mark> `https://api.commander1.com/v1.0/engage/visitors/`
+
 This endpoint allows you to get categorie's consent for one specific visitor
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="callback" type="string" %}
-(optional) Callback for jsonp request
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="token" type="string" %}
-Security token
-{% endswagger-parameter %}
+| Name     | Type    | Description                           |
+| -------- | ------- | ------------------------------------- |
+| callback | string  | (optional) Callback for jsonp request |
+| token    | string  | Security token                        |
+| site     | integer | ID of the site                        |
+| tc\_id   | String  | Optional. Cookie id of the user       |
 
-{% swagger-parameter in="query" name="site" type="integer" %}
-ID of the site
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="tc_id" %}
-Optional. Cookie id of the user
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Example with optin response" %}
+{% tabs %}
+{% tab title="200 Example with optin response" %}
 ```javascript
 {
     "user_privacy_optin": 1,
@@ -75,49 +68,47 @@ Optional. Cookie id of the user
     ]
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="202" description="Example with optout response" %}
+{% tab title="202 Example with optout response" %}
 ```
 {
     "user_privacy_optin": 0,
     "user_privacy_categories": []
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="404" description="" %}
+{% tab title="404 " %}
 ```
 {
     "message": "visitor not found"
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://api.commander1.com" path="/engage/user/" method="put" summary="User" %}
-{% swagger-description %}
+## User Preferences
+
+<mark style="color:orange;">`PUT`</mark> `https://api.commander1.com/engage/user/`
+
 Insert or update a preference in the database (require to have the DataCommander module activated)
-{% endswagger-description %}
 
-{% swagger-parameter in="query" name="site" type="string" %}
-Id of the site (account)
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="user_id" type="string" %}
-Id of the user. Required if tc_id parameter is not set
-{% endswagger-parameter %}
+| Name     | Type   | Description                                             |
+| -------- | ------ | ------------------------------------------------------- |
+| site     | string | Id of the site (account)                                |
+| user\_id | string | Id of the user. Required if tc\_id parameter is not set |
+| token    | string | Security token                                          |
 
-{% swagger-parameter in="query" name="token" type="string" %}
-Security token
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
+{% tabs %}
+{% tab title="200 " %}
 ```
 {"success":true}
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 **Syntax and limitations**
 
