@@ -1,32 +1,72 @@
-# Preference center
+# Marketing Preferences Center (additional module)
 
-## What is our Marketing Preferences Center?
+## Marketing Preferences Center (additional module)
 
-Marketing Preferences Center is part of our Consent management Premium offer. \
-It allows you to build a personalized Preferences Center where online and offline consents are merged around unified users and stored in the same database.
+### What is our Marketing Preferences Center?
 
-Then, you can easily create and customize a web page to display this information to visitors who want to manage their consents and personal information.
+Marketing Preferences Center is part of our Consent management Premium offer.
 
-It turns a legal page into a preference center that is way more valuable for a customer as it is more like a sharing space between the brand and their visitors/clients rather than just a way to collect the consent.
+It merges online and offline consents and preferences around unified user profiles, giving you a consolidated, per-user view of what each visitor has agreed to.
 
-## How it works?
+This view is read-only : it lets your teams see registered preferences and consents at a glance in the Profile Explorer.
 
+### How it works?
 
+Preferences and consents are stored in a unified database, merged around your visitors' profiles.
 
-Marketing Preferences Center is a realtime searchable nosql database. We provide also a dedicated API to read and/or write preferences/consents on this database&#x20;
+· Consents are collected through our CMP solution (native integration)
 
-{% embed url="https://community.commandersact.com/consent-management/api/get-consents" %}
+· Preferences coming from a CRM database can be added via the [FTP importer files](https://claude.ai/features/sources/sources-catalog/import-crm-users/users-file-importer). This is currently the recommended and supported method to load preference data.
 
-·      Consents are collected through our CMP solution (native integration)
-
-·      Preferences coming from a CRM database could be added with the [FTP importer files](../sources/sources-catalog/import-crm-users/users-file-importer.md) or [API](../sources/sources-catalog/import-crm-users/api-users.md#user)&#x20;
-
-·      Our customers can personalize the look and feel of their marketing preferences center page, we don’t host the webpage.
-
-·      Paid option: our customers can choose to receive regularly a full consents database copy to have a backup on their side
+· A dedicated API to read and/or write preferences/consents is being redeveloped for improved reliability and is on our roadmap. Once available, it will also support customer-facing use cases such as a customizable preferences page for visitors and regular exports of the full consents database.
 
 <figure><img src="../../.gitbook/assets/Capture d’écran 2021-07-02 à 10.38.41.png" alt=""><figcaption></figcaption></figure>
 
-### Limitations:
+
+
+#### Limitations:
 
 * The API accepts a maximum of 20 preferences
+
+### Setting up your Preference Center
+
+#### 1. Create the preference variables (CDP)
+
+Preference Center variables are created in **Customers** > **Segment** > **Manage variables**, like any other CDP variable.
+
+For each preference you want to expose, create **two variables**:
+
+| Variable                             | Purpose                                   |
+| ------------------------------------ | ----------------------------------------- |
+| `preferences.<preference_name>`      | The preference value (opt-in/opt-out)     |
+| `preferences.<preference_name>_date` | The date the preference was last recorded |
+
+**Example**
+
+* Name: `Nouveautés produit & release notes`
+* Variable name: `preferences.product_news`
+* Category: `Preferences`
+* Universe: `Visitor`
+* General type: `Boolean` (recommended, not mandatory)
+* Structure type: `Simple value`
+* Encrypt content: `No`
+
+Add its date counterpart:
+
+* Variable name: `preferences.product_news_date`
+* General type: `Date`
+
+Repeat this pair for every preference category you want to track.
+
+#### 2. Import preference data via FTP importer file
+
+Preference values are loaded via CSV file import : there is no real-time update mechanism.
+
+* Map one column per variable, using the exact variable name as the column header.
+* Include one column containing the **reconciliation key** : the unique identifier (e.g. visitor ID, email) used to match each row to the right visitor profile.
+* You'll need to contact your CSM to set-up the file import.&#x20;
+
+### Finding the reconciliation key on a profile
+
+Reconciliation keys are configured in **Users > Profile > Identities > Activation**, where each key variable is listed with its priority.
+
