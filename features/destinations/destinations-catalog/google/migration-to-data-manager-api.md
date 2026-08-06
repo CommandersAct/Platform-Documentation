@@ -55,15 +55,11 @@ If you sign in with a Google account that doesn't have the right permissions, th
 
 ### Step 1 — Go to Connector Credentials
 
-In Commanders Act, go to `Administration > Connector Credentials`, then click **Add connector credentials** in the top right corner.
-
-<figure><img src="../../../../.gitbook/assets/step3-consent-summary.png" alt=""><figcaption></figcaption></figure>
+In Commanders Act, go to `Administration > Connector Credentials`, then click **Update connector credentials** in the top right corner.
 
 ### Step 2 — Select Google Ads
 
 In the connector list, select **GoogleAds**.
-
-<figure><img src="../../../../.gitbook/assets/step2-select-googleads.png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3 — Sign in with Google
 
