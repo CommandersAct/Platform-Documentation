@@ -40,3 +40,9 @@ List of partners for which we operate a cookie synchronization (cookie sync) in 
 * **Invibes**
 * **The Trade Desk**
 * **Taboola**
+
+
+
+{% hint style="warning" %}
+If your are using an external CMP (else than Commanders Act CMP) please refer [to this page](../../features/consent-management/setup-guides/using-a-third-party-cmp-with-commanders-act.md) to remains compliant RGPD
+{% endhint %}

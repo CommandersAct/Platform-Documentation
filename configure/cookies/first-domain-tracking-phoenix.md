@@ -114,3 +114,7 @@ Please contact the Commanders Act support or your Commanders Act consultant in c
 {% hint style="info" %}
 Please contact your Commanders Act consultant in case you would like to persist cookies outside of Commanders Act TMS or in case you would like to install Phoenix without Commanders Act TMS.
 {% endhint %}
+
+{% hint style="warning" %}
+If your are using an external CMP (else than Commanders Act CMP) please refer [to this page](../../features/consent-management/setup-guides/using-a-third-party-cmp-with-commanders-act.md) to remains compliant RGPD
+{% endhint %}
