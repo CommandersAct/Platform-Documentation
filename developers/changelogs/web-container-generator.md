@@ -2,6 +2,24 @@
 
 ## 2026
 
+### 103.8
+
+Release date: **17/08/2026**
+
+* Improvents for Cookie Sync and Deduplication with external CMP's compatibility
+
+### 103.7
+
+Release date: **13/08/2026**
+
+* Removed commented-out dead code from the container runtime templates (no behaviour change)
+
+### 103.6
+
+Release date: **06/08/2026**
+
+* Code cleanup in container generation scripts
+
 ### 103.5
 
 Release date: **05/08/2026**
