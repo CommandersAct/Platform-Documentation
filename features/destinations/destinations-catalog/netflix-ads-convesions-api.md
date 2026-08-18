@@ -72,7 +72,7 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 **\*** Mandatory property.\
 **1.** See [Quick reference](netflix-ads-convesions-api.md#quick-reference) for more details.\
 **2.** If it's not passed, the current timestamp is used.\
-**3.** When it's not passed, this is set as as follows (in the presented order):\
+**3.** When it's not passed, this is set as follows (in the presented order):\
 &#x20;   • If at least one property is set in <mark style="color:blue;">`context.app`</mark> then <mark style="color:blue;">`app`</mark> , \
 &#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`call`</mark> or <mark style="color:blue;">`phone`</mark> then <mark style="color:blue;">`phone`</mark> , \
 &#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`chat`</mark> then <mark style="color:blue;">`chat`</mark> ,\
