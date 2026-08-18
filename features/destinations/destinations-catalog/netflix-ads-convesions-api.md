@@ -73,14 +73,14 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 **1.** See [Quick reference](netflix-ads-convesions-api.md#quick-reference) for more details.\
 **2.** If it's not passed, the current timestamp is used.\
 **3.** When it's not passed, this is set as follows (in the presented order):\
-&#x20;   • If at least one property is set in <mark style="color:blue;">`context.app`</mark> then <mark style="color:blue;">`app`</mark> , \
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`call`</mark> or <mark style="color:blue;">`phone`</mark> then <mark style="color:blue;">`phone`</mark> , \
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`chat`</mark> then <mark style="color:blue;">`chat`</mark> ,\
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`email`</mark> then <mark style="color:blue;">`email`</mark> ,\
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`offline`</mark> then <mark style="color:blue;">`in_person`</mark> ,\
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`system`</mark> then <mark style="color:blue;">`system`</mark> ,\
-&#x20;   • If <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`other`</mark> then <mark style="color:blue;">`other`</mark> ,\
-&#x20;   • If none of the above applies, default value <mark style="color:blue;">`web`</mark> .\
+&#x20;   • if at least one property is set in <mark style="color:blue;">`context.app`</mark> then <mark style="color:blue;">`app`</mark> , \
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`call`</mark> or <mark style="color:blue;">`phone`</mark> then <mark style="color:blue;">`phone`</mark> , \
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`chat`</mark> then <mark style="color:blue;">`chat`</mark> ,\
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`email`</mark> then <mark style="color:blue;">`email`</mark> ,\
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`offline`</mark> then <mark style="color:blue;">`in_person`</mark> ,\
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`system`</mark> then <mark style="color:blue;">`system`</mark> ,\
+&#x20;   • if <mark style="color:blue;">`type`</mark> is <mark style="color:blue;">`other`</mark> then <mark style="color:blue;">`other`</mark> ,\
+&#x20;   • if none of the above applies, default value <mark style="color:blue;">`web`</mark> .\
 **4.** Recommended for <mark style="color:blue;">`add_payment_info`</mark> , <mark style="color:blue;">`add_to_wishlist`</mark> , <mark style="color:blue;">`initiate_checkout`</mark> , and <mark style="color:blue;">`search`</mark> events.\
 **5.** Automatically normalized (except for <mark style="color:blue;">`st`</mark> and partially for <mark style="color:blue;">`phone`</mark> ) and hashed (expect for <mark style="color:blue;">`address`</mark> ) if passed in clear text.\
 **6.** Pre-hashed accepted value: <mark style="color:blue;">`f`</mark> /<mark style="color:blue;">`female`</mark> , <mark style="color:blue;">`m`</mark> /<mark style="color:blue;">`male`</mark> , <mark style="color:blue;">`n`</mark> /<mark style="color:blue;">`non binary`</mark> /<mark style="color:blue;">`non-binary`</mark> (Case insensitive).\
