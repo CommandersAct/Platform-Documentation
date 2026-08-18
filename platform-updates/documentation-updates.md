@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 21/08/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/netflix-ads-convesions-api.md" %}
+[netflix-ads-convesions-api.md](../features/destinations/destinations-catalog/netflix-ads-convesions-api.md)
+{% endcontent-ref %}
+
 ## 14/08/2026
 
 Destination documentation (updates):
