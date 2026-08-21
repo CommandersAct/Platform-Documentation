@@ -497,6 +497,52 @@ This storage is only activated when campaign measurement is enabled.
 
 </details>
 
+<details>
+
+<summary>tc_session_info</summary>
+
+**Product(s) related:** CAMPAIGN
+
+**Type:** Session Storage
+
+**Domain:** Customer domain
+
+**Lifetime:** Short-lived (30 min, session-scoped, expires on TTL or new domain)
+
+**Value:** Flag 1 + capture domain (short/full)
+
+**Owner:** Commanders Act
+
+**Storage purpose(s):**\
+Detects whether current page is first page of session (attribution/referrer logic). First read determines isFirstPage; if true (no valid entry, or entry stale/expired/wrong domain), value is written so next pageviews in same session read 1 and skip first-page logic. Domain check invalidates entry if referrer domain changed since it was set (bypassed on plain reload).
+
+Always active when measure tag runs (referrer/first-page detection is unconditional, not behind campaign flag).
+
+</details>
+
+<details>
+
+<summary>tc_utm_captured</summary>
+
+**Product(s) related:** CAMPAIGN
+
+**Type:** Session Storage
+
+**Domain:** Customer domain
+
+**Lifetime:** Short-lived (30 min, auto-removed on TTL expiry)
+
+**Value:** Hash of captured UTM/tracking params (channel, source, campaign, etc.)
+
+**Owner:** Commanders Act
+
+**Storage purpose(s):**\
+Stores hash of last UTM set captured on session, used only when ignore\_missing\_referrer option on. Prevents re-triggering new campaign capture on subsequent pageviews carrying identical UTM params within same session (avoids duplicate/spurious channel switches when referrer bypass active).
+
+Storage only activated when campaign/UTM tracking enabled (enable\_utm\_tracking true) AND ignore\_missing\_referrer option enabled (bypass first-page referrer check).
+
+</details>
+
 ### DATA
 
 <details>

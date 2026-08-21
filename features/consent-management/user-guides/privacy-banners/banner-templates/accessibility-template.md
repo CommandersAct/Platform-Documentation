@@ -1,8 +1,20 @@
 # Accessibility Template
 
-## WCAG standards : offer a privacy fully functional for people with disabilities
+## Accessibility Audit & Compliance Certification
 
-Among the available templates, one is dedicated to accessibility. It ensures compatibility with RGAA and WCAG 2.2 level AA standards.
+Our Accessibility templates has undergone an independent third-party audit to verify its compliance with the leading web accessibility standards. The audit confirmed a **100% conformity score** against:
+
+* **RGAA 4.1.2** (Référentiel Général d'Amélioration de l'Accessibilité)
+* **WCAG 2.2** (Web Content Accessibility Guidelines, level AA)
+* **RAWeb 1.1** (Référentiel Accessibilité Web)
+
+This result confirms that, when implemented as provided, the Accessibility template meets the technical criteria required to ensure equal access to consent banners and Privacy Center for people with disabilities.
+
+You can consult the full accessibility statement (declaration of conformity) here:
+
+## Accessibility standards : offer a privacy fully functional for people with disabilities
+
+Among the available templates, 2 are dedicated to accessibility. It ensures compatibility with RGAA 4.1.2 and WCAG 2.2 level AA and RAWeb 1.1 standards.
 
 <figure><img src="../../../../../.gitbook/assets/image (4) (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -56,18 +68,18 @@ Exemple :
 
 ```javascript
 tC.privacy.addTranslation({
-  en : {
+  en: {
     // overriding
-    iframeTitle : 'the iframe title you want',
-    privacyLabel : 'the aria label you want',
+    iframeTitle: 'the iframe title you want',
+    privacyLabel: 'the aria label you want',
     acceptAria: 'the aria label you want for accept button',
     refuseAria: 'the aria label you want for refuse button',
     showPcAria: 'the aria label you want for display the pc button'
   },
   ru: {
     // add new translation
-    iframeTitle : 'the iframe title you want',
-    privacyLabel : 'the aria label you want',
+    iframeTitle: 'the iframe title you want',
+    privacyLabel: 'the aria label you want',
     acceptAria: 'the aria label you want for accept button',
     refuseAria: 'the aria label you want for refuse button',
     showPcAria: 'the aria label you want for display the pc button'
@@ -99,6 +111,8 @@ var en = {
     "enableCookieLabel": "Enabled:",
     "enableCookieAria": "{label} cookies enabled",
     "disableCookieAria": "{label} disabled cookies",
+    "turnOnCategoriesAria": "YES {label},
+    "turnOffCategoriesAria":  "NO {label},
     "turnOnSubCategoriesAria": "Enable {label} cookies",
     "turnOffSubCategoriesAria": "Disable {label} cookies",
     "cookieAlwaysOnSrPrefix": "",
@@ -119,7 +133,9 @@ var en = {
     "examples": "Examples",
     "showDetails": "Show details",
     "seeDetails": "See details",
-    "hideDetails": "Hide details"
+    "hideDetails": "Hide details",
+    "neutralErrorMessage": "You must make a choice on each categories" 
+    //Neutral buttons aren't recommended to meet Accessibility Standards
 }
 ```
 
@@ -176,7 +192,7 @@ tC.privacy.enableFocusTrap(false);
 
 * Avoid too many css customization on your accessibility banners
 * If you add an image (such as a logo) don't forget to add aria-label attributes
-* Pay attention to your colours contrast, some elements can be impossible to read if the constrast between background and fonts is too low. \
+* Pay attention to your colours contrast, some elements can be impossible to read if the constrast between background and fonts is too low.\
   You can use external tools to verify it, such as [https://coolors.co/contrast-checker/000000-ffffff](https://coolors.co/contrast-checker/000000-ffffff)
 * In your privacy center, avoid "switch" and "check box" buttons styles.\
   Use the real "buttons": it's a requirement to be fully compliant with WCAG standards
