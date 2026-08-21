@@ -12,6 +12,10 @@ This result confirms that, when implemented as provided, the Accessibility templ
 
 You can consult the full accessibility statement (declaration of conformity) here:
 
+{% file src="../../../../../.gitbook/assets/Declaration_accessibilite_EN.pdf" %}
+
+{% file src="../../../../../.gitbook/assets/Declaration_accessibilite_FR.pdf" %}
+
 ## Accessibility standards : offer a privacy fully functional for people with disabilities
 
 Among the available templates, 2 are dedicated to accessibility. It ensures compatibility with RGAA 4.1.2 and WCAG 2.2 level AA and RAWeb 1.1 standards.
