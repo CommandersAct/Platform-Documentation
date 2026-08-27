@@ -116,7 +116,7 @@ var en = {
     "enableCookieAria": "YES {label} cookies enabled",
     "disableCookieAria": "NO {label} disabled cookies",
     "turnOncategoriesLabel": "Yes",
-    "turnOffcategoriesLabel": "No"
+    "turnOffcategoriesLabel": "No",
     "turnOnSubCategoriesAria": "Enable {label} cookies",
     "turnOffSubCategoriesAria": "Disable {label} cookies",
     "cookieAlwaysOnSrPrefix": "",
