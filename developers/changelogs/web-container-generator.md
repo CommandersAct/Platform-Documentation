@@ -2,6 +2,17 @@
 
 ## 2026
 
+### 103.9
+
+Release date: **27/08/2026**
+
+* RCS:
+  * Fix consent hit handling by sending a single hit after consent
+  * Improve slug anonymization
+* Fix `iframeTitle` attribute of the privacy center iframe being overwritten on resize
+* `enableCookieAria` / `disableCookieAria` aria-labels now include an action verb for all supported languages
+* `neutralErrorMessage` key now overridable
+
 ### 103.8
 
 Release date: **17/08/2026**
