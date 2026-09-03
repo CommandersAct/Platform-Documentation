@@ -108,6 +108,7 @@
       * [Conversions files importer](features/sources/sources-catalog/import-conversions/conversions-files-importer.md)
     * [Product catalog](features/sources/sources-catalog/product-catalog/README.md)
       * [Product catalog files importer (FTP)](features/sources/sources-catalog/product-catalog/product-catalog-files-importer-ftp.md)
+      * [Products file importer](features/sources/sources-catalog/product-catalog/products-file-importer.md)
     * [Server](features/sources/sources-catalog/server/README.md)
       * [HTTP tracking API source](features/sources/sources-catalog/http-tracking-api.md)
         * [(deprecated) HTTP tracking API source 1.0](features/sources/sources-catalog/http-tracking-api/http-tracking-api1_0.md)
