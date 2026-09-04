@@ -379,13 +379,13 @@
     * [Get statistics](features/consent-management/platform-api/get-statistics.md)
 * [Realtime Cookie Scanner](features/realtime-cookie-scanner/README.md)
   * [Getting Started](features/realtime-cookie-scanner/getting-started.md)
+  * [Cookie Inventory](features/realtime-cookie-scanner/cookie-inventory.md)
   * [Cookie Notice Manager](features/realtime-cookie-scanner/cookie-notice-manager.md)
   * [Cookies by Category](features/realtime-cookie-scanner/cookies-by-category.md)
   * [Compliance Summary](features/realtime-cookie-scanner/compliance-score/README.md)
     * [Compliance score formula](features/realtime-cookie-scanner/compliance-score/compliance-score-formula.md)
   * [Legal and Technical Position Paper](features/realtime-cookie-scanner/legal-and-technical-position-paper.md)
   * [Integrating specific CMP with the Realtime Cookie Scanner](features/realtime-cookie-scanner/integrating-specific-cmp-with-the-realtime-cookie-scanner.md)
-  * [Cookie Inventory](features/realtime-cookie-scanner/cookie-inventory.md)
 * [MCP server (closed beta)](features/mcp-server-closed-beta.md)
 
 ## Use cases
