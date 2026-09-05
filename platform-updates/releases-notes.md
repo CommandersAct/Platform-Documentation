@@ -6,9 +6,92 @@ description: >-
 
 # Release notes
 
+## **Release 10.0.53 - August - 2026**
+
+### Realtime Cookie Scanner
+
+#### 🍪 Custom category mapping
+
+Cookie categories can now be renamed to match the terminology used in your privacy program. Map the standard **Essential**, **Marketing**, and **Analytics** categories to a CMP category or to a custom label.
+
+The selected labels are applied consistently across Cookie Notice, Compliance Summary, and Cookies by Category, making scan results easier to align with internal privacy reporting.
+
+[Learn more about custom category naming](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#custom-category-naming).
+
+### Server-side Data enrichment
+
+#### 🧩 Product Enrichment now supports Data Stores
+
+Product Enrichment can now use a **Data Store** as its source, without requiring a CDP Product Catalog.
+
+Import product information with the CSV importer, store it in a Data Store, then use it to enrich server-side events. This makes it simpler to activate product-level data, such as margin, in advertising and other downstream destinations.
+
+#### 🗂️ Clearer Data Store and Enrichment setup
+
+**Storage Settings** is now named **Data Store** throughout the platform. Event Enrichment cards have also been clarified to show the type of data used, including product data, custom data, external APIs, and weather data.
+
+### New server-side destinations
+
+#### 📣 Amazon Events API
+
+A new **Amazon Events API** destination is now available. Send conversion events directly to Amazon Ads and include Amazon Consent Signals where required.
+
+It complements browser-side Amazon advertising tags by supporting server-side conversion delivery.
+
+[Read the Amazon Events API integration guide](https://doc.commandersact.com/features/destinations/destinations-catalog/amazon/amazon-events-api).
+
+#### 🎵 Spotify Conversions API
+
+The **Spotify Conversions API** destination is now available. Send online and offline conversion events to Spotify to support campaign measurement and attribution without relying on a browser-side tag.
+
+[Read the Spotify Conversions API integration guide](https://doc.commandersact.com/features/destinations/destinations-catalog/spotify-conversions-api).
+
+#### ☁️ Azure Event Hub
+
+The **Azure Event Hub** destination is now available to all customers. It sends Commanders Act events to Azure Event Hubs through its REST API, making event data available to Azure data and analytics workflows in real time.
+
+[Read the Azure Event Hub integration guide](https://doc.commandersact.com/features/destinations/destinations-catalog/azure-event-hub).
+
+#### 🤖 OpenAI CAPI now available to all customers
+
+The **OpenAI CAPI** destination, initially released in June as a beta, is now open to all customers.
+
+It enables server-side delivery of conversion events to OpenAI’s advertising and measurement capabilities. European countries can now advertise on ChatGPT through OpenAI Ads, expanding the potential use of this integration beyond its initial launch markets.
+
+### Profiles and audiences
+
+#### 🧾 Marketing preferences in Profile Explorer
+
+Marketing preferences can now be displayed directly in **Profile Explorer** for preference data imported by file. For each preference, teams can view its label, latest update date, and acceptance status alongside the visitor profile.
+
+This provides a more complete view of the preferences associated with an identified profile.
+
+#### ✏️ More control over empty User Attribute values
+
+For Copy-type Augmented User Attributes, a new **Accept empty values** option determines whether an incoming empty value can overwrite the previously stored value.
+
+This gives teams control over whether empty values should be ignored or used to keep user attributes aligned with the latest incoming data.
+
+### Consent and privacy
+
+#### 🔐 External CMP consent signal
+
+Customers using an external CMP can now pass an opt-in status to Commanders Act through `tc_vars.external_consent_status`. This signal can be used to trigger Deduplication, Cookie Sync, and Phoenix only after consent has been granted.
+
+[Read the external CMP setup guide](https://doc.commandersact.com/features/consent-management/setup-guides/using-a-third-party-cmp-with-commanders-act).
+
+#### ♿ Accessible CMP templates
+
+An independent external accessibility organisation specialising in digital accessibility has certified the **Accessibility** CMP templates, available as pop-in and footer formats, following a complete audit against **RGAA 4.1.2**, **WCAG 2.2**, and **RAWeb 1.1** requirements.
+
+### Additional improvements
+
+* ✅ Profile Explorer’s Segment filter now lists active segments only.
+* ↗️ Segment Overview now lets users open a segment in a new browser tab, making it easier to compare segments and move between analyses.
+
 ## Release 10.0.36 - June - 2026
 
-#### Real Time Cookie Scanner updates:&#x20;
+#### Real Time Cookie Scanner updates:
 
 #### 🏷️ Custom Category Labels
 
@@ -59,7 +142,7 @@ Investigating cookie behavior is now faster and more actionable.
 
 ***
 
-#### Consent dashboards improvements&#x20;
+#### Consent dashboards improvements
 
 #### 📈 Daily Consent Statistics Export
 
