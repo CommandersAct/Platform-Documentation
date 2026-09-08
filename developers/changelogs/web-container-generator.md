@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 104.0
+
+Release date: **07/09/2026**
+
+* Support multi-sites gateways
+
 ### 103.9
 
 Release date: **27/08/2026**
