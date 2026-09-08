@@ -6,6 +6,22 @@ description: >-
 
 # Release notes
 
+## **Release 1.0.54 - 08/09 - 2026**
+
+**New: Cookie Inventory and improved RCS workflows**
+
+Realtime Cookie Scanner now includes **Cookie Inventory**, a dedicated view of the cookies and browser storage items actually observed on your websites.
+
+Identify **new items, before-consent activity, potential violations, uncategorized items and items outside your Cookie Notice**, with vendor, category, frequency, consent timing and compliance context. Filter and export the inventory, customize its columns, and include detected items directly in the Cookie Notice.
+
+**Cookie Notice Manager has also been improved** with clearer **To review** and **Included in Notice** statuses, additional Vendor, Category, Violation and Notice filters, and better handling of items not detected during the selected period. Missing items are now hidden by default from the review queue while remaining available where they are still relevant.
+
+Compliance Summary and Cookies by Category have also been aligned with the same observation logic.
+
+The RCS navigation has been refreshed, **Live Scan is now Live Traffic**, and upcoming RCS screens now use clearer teaser visuals.
+
+**Cookie Inventory tells you what RCS observes. Cookie Notice Manager tells you what is declared.**
+
 ## **Release 10.0.53 - August - 2026**
 
 ### Realtime Cookie Scanner
