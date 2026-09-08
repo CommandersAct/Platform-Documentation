@@ -18,7 +18,7 @@ Identify **new items, before-consent activity, potential violations, uncategoriz
 
 Compliance Summary and Cookies by Category have also been aligned with the same observation logic.
 
-The RCS navigation has been refreshed, **Live Scan is now Live Traffic**, and upcoming RCS screens now use clearer teaser visuals.
+The RCS navigation has been refreshed, **Live Scan is now Live Traffic**, and upcoming RCS screens now display clearer preview images.
 
 **Cookie Inventory tells you what RCS observes. Cookie Notice Manager tells you what is declared.**
 
