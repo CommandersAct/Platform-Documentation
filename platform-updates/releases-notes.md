@@ -10,6 +10,8 @@ description: >-
 
 **New: Cookie Inventory and improved RCS workflows**
 
+<figure><img src="../.gitbook/assets/image (425).png" alt=""><figcaption></figcaption></figure>
+
 Realtime Cookie Scanner now includes **Cookie Inventory**, a dedicated view of the cookies and browser storage items actually observed on your websites.
 
 Identify **new items, before-consent activity, potential violations, uncategorized items and items outside your Cookie Notice**, with vendor, category, frequency, consent timing and compliance context. Filter and export the inventory, customize its columns, and include detected items directly in the Cookie Notice.
