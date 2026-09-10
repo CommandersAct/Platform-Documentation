@@ -56,17 +56,21 @@ example:\
 ### Custom Fields & Filters
 
 * Add custom fields via Settings (⚙️) to store extra info.
-* Filter by website, language, storage type, or 3rd-party domain.
+* Filter by website, language, storage type, or 3rd-party domain, vendor, category.
+* Filter by detection stauts (before consent, after refuse, missing, no status)
 * A frequency slider hides rare cookies (< 5 % by default).
 
 {% hint style="info" %}
 Cookie scanner doesn't store cookie's values
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
+Click on "more filters" to see them all
 
-You can also create a custom filter, based on your URL params, via the "settings" panel\
-[check this section for more details](cookie-notice-manager.md#create-path-url-for-a-custom-filter)
+<figure><img src="../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
 ### Occurrence frequency
 
@@ -76,13 +80,11 @@ For all types of cookies & storage you can visualize the percentage of detection
 
 ### Time Range filter
 
-
-
 You want to see which cookies have been collected on specific period (yesterday, last week, etc...)?
 
 It's now easy to handle, since we add a date picker to let you select the time range you are looking for.
 
-<figure><img src="../../.gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (444).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 in some rare cases, you will see more cookies last week then yesterday. It might be caused by the "cookies grouped". As an example, you have 3 similar cookies a month ago, but last week our tool has grouped them, they now counted as 1 cookie. We also recommend to activate "rare cookies" to get a clearer view of the latest items collected by our tool.
@@ -98,9 +100,11 @@ By default, if no date is selected, we display all cookies, including the missin
 
 To help you to see the exempted cookies set before consent, you can add an "exempted" flag. Simply activate the dedicated switch in "Cookie Edition"
 
-This will helps you to identify quickly the cookies that are allowed to be set without consent user
+This will helps you to identify quickly the cookies that are allowed to be set without consent user.
 
-<figure><img src="../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+Also, by using this flag you can improve your [compliace score](compliance-score/)
+
+<figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
 
@@ -114,7 +118,7 @@ Need more? Come back tomorrow and you'll receive another 200 free credits!\
 \
 To translate all your cookies, use the 'Settings' option (one target language allowed at a time).
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (492).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,11 +131,9 @@ Our tool will translate your cookies for all languages that have an "empty" desc
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Custom category naming
 
-Real Time Cookie Scanner automatically classifies your cookies into 3 different categories: Essential, Analytics, and Marketing. If you prefer to use personalized names for these categories, you can easily modify the category labels.&#x20;
+Real Time Cookie Scanner automatically classifies your cookies into 3 different categories: Essential, Analytics, and Marketing. If you prefer to use personalized names for these categories, you can easily modify the category labels.
 
 Open Settings panel (⚙️) and fill the table "Category Mapping". Once saved, your custom mapping will impact the labels displayed across all Real Time Cookie Scanner interfaces.
 
@@ -140,13 +142,22 @@ If you use a Commanders Act Consent banner, our tool will automatically display 
 In all cases, you are still allowed to enter a custom value
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (498).png" alt=""><figcaption></figcaption></figure>
 
 Your custom labels are now displayed across all Real Time Cookie Scanner interfaces.
 
 <figure><img src="../../.gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
+
+### Cookies ungrouping
+
+Realtime cookie scanner automatically group every cookie with a similiar pattern, to avoid too many cookies mostly identical in your cookie notice. Example: ga\_123456, ga\_678912, ga\_234567 turns into "ga\_...". But for some technical or RGPD purposes you may need to ungroup some of them. \
+It's possible ! Simply click on the dedicated button toungroup them:
+
+<figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
@@ -226,7 +237,7 @@ Each language is included as a separate file (or tab in XLSX).
 Press **DEPLOY** to publish a cookie notice version on your site.\
 You can also roll back to a previous version if needed.
 
-<figure><img src="../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (499).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -247,9 +258,8 @@ You can also roll back to a previous version if needed.
 * Instant alerts (< 60 s) on new or non-compliant cookies.
 * Configurable by language, and severity.
 * Integrations : Email, Webhook, Slack, Microsoft Teams.
-*   Multiple alerts configuration is possible\
-    <br>
+*   Multiple alerts configuration is possible<br>
 
-    <figure><img src="../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (522).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
