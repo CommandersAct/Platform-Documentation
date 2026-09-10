@@ -8,12 +8,12 @@ The **Cookie Notice Manager** lets you review, edit, and publish your cookies li
 
 Cookies are organized into three lists :
 
-1. **New** – recently detected, **unreviewed**.
-2. **Active** – validated by you, ready to be shown on the notice.
+1. **To review** – recently detected, **unreviewed**.
+2. **Included in Notice** – validated by you, ready to be shown on the notice.
 3. **Ignored** – (optional) You can place cookies here that you do not want to see listed in your cookie notice.
 
 {% hint style="success" %}
-The cookie manager interface reflects the current status of your site in real time. When you refresh the page, the “New” section may contain cookies that have just been detected a few seconds ago.
+The cookie manager interface reflects the current status of your site in real time. When you refresh the page, the “To review” section may contain cookies that have just been detected a few seconds ago.
 {% endhint %}
 
 Each entry can be edited (✎) to adjust vendor, category, storage type, domain, duration, and description.\
@@ -219,7 +219,7 @@ By default all cookies are listed but it is also possible to manage one cookie n
 
 ### Create a New Version
 
-Click **NEW VERSION** to generate a new cookie notice based on the current Active cookies.\
+Click **NEW VERSION** to generate a new cookie notice based on the current cookies Included in Cookie Notice.\
 You can add an internal comment to describe the changes.
 
 #### Preview a Version
