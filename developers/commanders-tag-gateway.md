@@ -261,6 +261,137 @@ ok
 ```
 {% endtab %}
 
+{% tab title="Cloudflare Snippet" %}
+Cloudflare Snippets provide a lighter alternative to a full Worker for proxying the Commanders Gateway path. A Snippet runs JavaScript at the edge and is associated with a **Snippet rule** that determines which requests execute it.
+
+{% hint style="info" %}
+Cloudflare Snippets are available on **Pro, Business, and Enterprise** plans. The hostname used for the gateway must be proxied through Cloudflare.
+{% endhint %}
+
+**Step 1: Create the Snippet**
+
+1. In the Cloudflare dashboard, open your domain.
+2. Go to **Rules** → **Snippets**.
+3. Create a new Snippet and give it a descriptive name, for example `Commanders Gateway`.
+4. Paste the following code:
+
+```javascript
+const CONFIG = {
+  prefix: "/mypath", // Replace with the gateway path chosen for your website
+  targetBase: "https://s1234.commander4.com", // Replace 1234 with your workspace/site ID
+  blacklistedCookies: [
+    "PHPSESSID",
+    "JSESSIONID"
+  ]
+};
+
+function filterCookieHeader(cookieHeader, blacklist) {
+  if (!cookieHeader) return "";
+  const blacklistSet = new Set(blacklist);
+  return cookieHeader
+    .split(";")
+    .map(c => c.trim())
+    .filter(c => {
+      const name = c.split("=")[0].trim();
+      return !blacklistSet.has(name);
+    })
+    .join("; ");
+}
+
+export default {
+  async fetch(request) {
+    const url = new URL(request.url);
+
+    if (!url.pathname.startsWith(CONFIG.prefix)) {
+      return new Response("Not Found", { status: 404 });
+    }
+
+    const remainingPath = url.pathname.slice(CONFIG.prefix.length) || "/";
+    const targetUrl = `${CONFIG.targetBase}${CONFIG.prefix}${remainingPath}${url.search}`;
+
+    const newHeaders = new Headers(request.headers);
+
+    newHeaders.set("X-Forwarded-Host", url.host);
+    newHeaders.set("X-Forwarded-Proto", "https");
+
+    const country = request.cf?.country || "";
+    const region = request.cf?.region || "";
+    if (country) newHeaders.set("X-Forwarded-Country", country);
+    if (region) newHeaders.set("X-Forwarded-Region", region);
+    if (country && region) {
+      newHeaders.set("X-Forwarded-CountryRegion", `${country}-${region}`);
+    }
+
+    const cookieHeader = newHeaders.get("Cookie");
+    const filteredCookies = filterCookieHeader(cookieHeader, CONFIG.blacklistedCookies);
+    if (filteredCookies) {
+      newHeaders.set("Cookie", filteredCookies);
+    } else {
+      newHeaders.delete("Cookie");
+    }
+
+    newHeaders.delete("host");
+
+    const proxyRequest = new Request(targetUrl, {
+      method: request.method,
+      headers: newHeaders,
+      body: request.body,
+      redirect: "manual"
+    });
+
+    const response = await fetch(proxyRequest);
+
+    if (response.status >= 300 && response.status < 400) {
+      return new Response(response.body, {
+        status: response.status,
+        headers: response.headers
+      });
+    }
+
+    return response;
+  }
+};
+```
+
+**Step 2: Customize the configuration**
+
+Update the values at the top of the Snippet:
+
+* `prefix`: replace `/mypath` with the path reserved for Commanders Gateway on your domain.
+* `targetBase`: replace `s1234.commander4.com` with the Commanders Gateway endpoint associated with your workspace/site ID.
+* `blacklistedCookies`: add any session, sensitive, or internal cookies that must not be forwarded to Commanders Gateway.
+
+The Snippet also forwards the visitor's country and region through `X-Forwarded-Country`, `X-Forwarded-Region`, and `X-Forwarded-CountryRegion`.
+
+Redirect responses from Commanders Gateway are intentionally returned to the browser instead of being automatically followed at the edge.
+
+**Step 3: Configure the Snippet rule**
+
+Associate the Snippet with a rule that only matches your Commanders Gateway path.
+
+For example, in the Expression Editor:
+
+```
+starts_with(http.request.uri.path, "/mypath")
+```
+
+Replace `/mypath` with the same path configured in `CONFIG.prefix`.
+
+{% hint style="warning" %}
+Keep the Snippet rule and `CONFIG.prefix` synchronized. If they use different paths, requests may not be proxied as expected.
+{% endhint %}
+
+Deploy the Snippet after testing it with Cloudflare's preview tools.
+
+**Step 4: Verify the setup**
+
+After deployment, verify:
+
+* `https://example.com/mypath/healthy` → should return `ok`.
+* `https://example.com/mypath/?validate_geo=healthy` → should return `ok` when geolocation forwarding is correctly configured.
+* Cookies listed in `blacklistedCookies` are no longer present in requests received by Commanders Gateway, while other cookies are preserved.
+{% endtab %}
+
 {% tab title="Cloudflare Free" %}
 When using Cloudflare Free, the setup relies on a **simple Worker** that proxies all traffic from your chosen path (e.g. `/mypath`) to Commanders Gateway infrastructure.
 
