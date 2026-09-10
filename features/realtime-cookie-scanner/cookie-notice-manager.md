@@ -150,10 +150,9 @@ Your custom labels are now displayed across all Real Time Cookie Scanner interfa
 
 <figure><img src="../../.gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
 
-### Cookies ungrouping
+### Cookies ungroupping
 
-Realtime cookie scanner automatically group every cookie with a similiar pattern, to avoid too many cookies mostly identical in your cookie notice. Example: ga\_123456, ga\_678912, ga\_234567 turns into "ga\_...". But for some technical or RGPD purposes you may need to ungroup some of them. \
-It's possible ! Simply click on the dedicated button toungroup them:
+The Realtime Cookie Scanner automatically groups every cookie with a similar pattern to avoid displaying too many similar cookies in your cookie notice. For example, ga\_123456, ga\_678912 and ga\_234567 would be grouped together as "ga\_...". However, for technical or GDPR purposes, you may need to ungroup some of them. This is possible! Simply click on the dedicated button to ungroup them.
 
 <figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
 
