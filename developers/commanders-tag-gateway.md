@@ -14,7 +14,7 @@ One setup, one first-party path, three usages:
 If your goal is to implement Google Tag Gateway, you are in the right place.\
 If your goal is to build a durable, vendor-agnostic first-party tracking architecture, you are also in the right place.
 
-<figure><img src="../.gitbook/assets/schema_google_ads (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://1259070148-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-Mk6XpTQ2LaRLcr2tA-d%2Fuploads%2Fgit-blob-5c269a1cb309c24a7504446eef7a53b7aafd97d9%2Fschema_google_ads%20(4).png?alt=media" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -347,7 +347,7 @@ This Worker proxies requests while adding extra headers (`X-Forwarded-Host`, `X-
 
 **Step 2: Bind the Worker to the path**
 
-1. In Cloudflare, open your domain settings.
+1. In the Cloudflare, open your domain settings.
 2. Navigate to **Workers Routes**.
 3. Add a new route with:
    * **URL pattern**: `www.example.com/mypath*`
@@ -405,9 +405,64 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
 | Add    | Other...           | X-Forwarded-Country | \{{user.PMUSER\_USER\_COUNTRY\}} |
 
 5. Save the new rule and deploy your changes.
-6. Verify the setup:
-   * Navigate to: `https://example.com/mypath/healthy` → should display `ok`.
-   * Test geolocation headers: `https://example.com/mypath/?validate_geo=healthy` → should also display `ok`.
+
+***
+
+**Filter cookies before forwarding to Commanders Gateway**
+
+You can prevent specific cookies from being forwarded to Commanders Gateway. This can be useful for session cookies, cookies containing sensitive information, or internal technical cookies that should not leave your infrastructure.
+
+The list of cookies to exclude depends on your organization's requirements.
+
+**Option 1: Use Akamai cookie management capabilities**
+
+If cookie management behaviors are available with your Akamai configuration, configure Akamai to remove the relevant cookies from the request before it is forwarded to Commanders Gateway.
+
+For example, you may want to exclude cookies such as:
+
+```
+PHPSESSID
+JSESSIONID
+```
+
+Configure the behavior so that these cookies are removed from the **client request sent to the origin**, where the origin is your Commanders Gateway endpoint.
+
+{% hint style="info" %}
+The exact name and availability of Akamai cookie management behaviors can vary depending on the Akamai products enabled on your account.
+{% endhint %}
+
+**Option 2: Modify the outgoing Cookie header**
+
+If cookie management capabilities are not available, you can use a **Modify Outgoing Request Header** behavior on the `Cookie` header and remove selected cookies using a regular expression.
+
+Example for `PHPSESSID` and `JSESSIONID`:
+
+```regex
+(?:^|;\s*)(PHPSESSID|JSESSIONID)=[^;]*
+```
+
+Configure:
+
+* **Header:** `Cookie`
+* **Action:** Regex Replace
+* **Regular expression:** the expression above, adapted to your cookie list
+* **Replacement:** empty
+
+{% hint style="warning" %}
+Test this configuration carefully before deploying it to production. An incorrect regular expression may result in a malformed `Cookie` header or unintentionally remove cookies that should be forwarded.
+{% endhint %}
+
+If you use several CDN or edge configurations for the same implementation, keep the cookie exclusion list consistent across them.
+
+***
+
+**Verify the setup**
+
+After deploying the Akamai configuration:
+
+* Navigate to `https://example.com/mypath/healthy` → should display `ok`.
+* Test geolocation headers: `https://example.com/mypath/?validate_geo=healthy` → should also display `ok`.
+* Verify that requests forwarded to Commanders Gateway no longer contain the excluded cookie names, while other cookies are still forwarded normally.
 {% endtab %}
 
 {% tab title="Fastly" %}
