@@ -121,6 +121,18 @@ While CAA is a powerful tool, here are some current limitations to keep in mind:
   \
   \*This behavior will be improved in an upcoming update, so stay tuned!
 
+### Privacy and compliance
+
+Commanders Act Assistant follows a privacy-by-design approach and has been designed in accordance with GDPR data-protection principles, including data minimization, purpose limitation and secure processing. We also worked directly with the Google team to review the extension and verify that it meets the applicable Chrome Web Store requirements.
+
+To improve cookie identification and diagnostic accuracy, the extension processes a limited set of anonymized technical observations about detected cookies. These observations include the cookie name, domain, expiry, size and HttpOnly flag, together with the detected CMP consent status and the website context in which the cookie was observed.
+
+Each collection is assigned a temporary scan-session ID, used solely to organize the observations and remove duplicates during processing.
+
+The information is normalized during processing so that only the technical metadata required for cookie identification and classification is retained. Cookie values are never collected.
+
+This anonymized technical information is transmitted securely over HTTPS and used exclusively to improve cookie identification and diagnostic accuracy.
+
 ### Future Enhancements of our extension
 
 CAA is **continuously evolving**, with new features and improvements planned to further enhance your testing experience. Keep an eye out for future updates that will make debugging and optimization even easier!
