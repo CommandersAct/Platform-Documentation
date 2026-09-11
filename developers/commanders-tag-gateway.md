@@ -53,6 +53,70 @@ With Commanders Gateway:
 
 ***
 
+## Google Tag Gateway (GTG) and consent
+
+{% hint style="info" %}
+This section is written for the verification of requirements on Consent Mode with Google Tag Gateway (GTG). It explains what GTG changes for consent, how to check enrollment, and what to do if a "late" consent signal is detected on a GTG-enrolled domain.&#x20;
+{% endhint %}
+
+#### What Google Tag Gateway changes for consent
+
+**Google Tag Gateway (GTG) for advertisers** lets a website serve Google tags (`gtag.js`, `gtm.js`) from the site's own first‑party domain instead of `googletagmanager.com`, using a CDN, load balancer, or web server. Commanders Act Gateway can be used to implement GTG (see [Architecture](commanders-tag-gateway.md#architecture) below).
+
+GTG does not change _what_ consent mode does — it changes **where the Google tag is served from and, critically, when it can load relative to your consent banner**. That timing is where the impact on consent lives:
+
+* **One‑click / automated CDN injection** (the in‑UI setup offered by Google for Cloudflare, Akamai, Fastly, or a Google Cloud Load Balancer) makes Google inject the routing rule directly into your CDN or load balancer configuration, generally placing the Google tag very early in the page. Because this injection happens **outside your tag management or page source**, you typically **can no longer control the order in which scripts load** relative to your consent banner. If your CMP's consent stub has not yet run and set default consent states, the Google tag can fire first.
+* **Manual / self-service GTG setup**, where you configure the routing yourself and reference the first‑party script directly in your page source, keeps script load order under your control — you decide whether the Google tag or your CMP's consent script loads first.
+
+When a Google tag fires before your CMP has set a default consent state, this is what Google calls a **"late" consent signal**: the tag runs with an unknown/undefined consent state instead of respecting the default your CMP intended to set. This can cause tags to behave as if no consent framework were present, and it is flagged by Google's own diagnostic tools (see [Verification](commanders-tag-gateway.md#verification-checklist) below).
+
+{% hint style="warning" %}
+Rolling back GTG is **not** the recommended way to resolve a late consent signal: doing so forfeits the first‑party measurement durability benefits GTG is designed to provide. The recommended remediation's are described in [If a late consent signal is detected](commanders-tag-gateway.md#if-a-late-consent-signal-is-detected-and-gtg-enrollment-is-confirmed) below.&#x20;
+{% endhint %}
+
+#### Google's documentation on GTG
+
+* [Google tag gateway for advertisers – overview](https://developers.google.com/tag-platform/tag-manager/gateway)
+* [Set up Google tag gateway for advertisers](https://developers.google.com/tag-platform/tag-manager/gateway/setup-guide)
+
+#### Verify if a tag is enrolled in GTG
+
+Before investigating a consent issue related to GTG, confirm whether the domain is actually enrolled. Any of the following methods can be used:
+
+* **In the Google product UI** — In Google Tag Manager, go to **Admin → Google tag gateway**. Each domain is listed with a status: `First-party` (GTG is active), `Not started` (GTG has not been enabled), or `Activated domains` for domains configured manually or through a different tag. The same status is available from the equivalent screen in Google Ads and Google Analytics.
+* **Google Tag Assistant** — Connect Tag Assistant to the website, trigger the relevant tags, and check where the Google tag's requests are actually served from and sent to (**Summary → Output → Hits Sent**). If Google tag requests are routed to your own domain (for example `example.com/mypath/` or `example.com/gtag/js`) instead of `www.googletagmanager.com` or `www.google-analytics.com`, GTG is active for that page.
+* **Browser DevTools** — In the Network tab, check whether the script and measurement requests for `gtag.js` / `gtm.js` originate from your first‑party domain rather than a Google domain.
+
+#### If a "late" consent signal is detected and CAGT enrollment is confirmed
+
+A late consent signal typically shows up in Google's [consent debugging tools](https://developers.google.com/tag-platform/security/guides/consent-debugging) (Tag Assistant's consent timeline, or a console warning) as the Google tag firing before a default consent state was set, or a consent state reported as "unknown" at the moment the tag fired.
+
+**Once you have confirmed both (a) a late consent signal, and (b) that GTG is enrolled on the domain**, Google recommends one of the following remediation paths:
+
+1. **Adopt Advanced Consent Mode** in your Commanders Act CMP setup, and configure **Data Transmission Controls** and **Global Consent Defaults** in your Google tag settings (Google Ads, GA4, or Campaign Manager 360) according to your compliance needs. This is the mechanism Google recommends specifically for GTG‑enabled tags — see [why below](https://claude.ai/chat/4300c170-a117-4d9d-ae3c-86117d316787#why-advanced-consent-mode-u+c-is-recommended-for-gtg).
+2. **Migrate all your Google tags into a single Google Tag Manager container, and deploy that container itself via GTG**, instead of injecting individual gtag.js tags. This centralizes load‑order control inside GTM, so GTM's built‑in consent checks apply to every Google tag in the container regardless of how the container script is routed.
+3. **Set up GTG manually**, so that you — not an automated CDN injection — control where the first‑party GTG script reference is placed in your page source, relative to your Commanders Act consent banner script.
+
+{% hint style="info" %}
+These three options are not mutually exclusive. For example, a manual GTG setup (option 3) can be combined with Advanced Consent Mode (option 1) for additional resilience if load order is ever affected by a future page or CDN change.&#x20;
+{% endhint %}
+
+**Why Advanced Consent Mode is recommended for GTG**
+
+Advanced Consent Mode is the mechanism Google recommends for GTG‑enabled tags because, unlike Basic Consent Mode (which simply blocks the tag until a default is set), it is **compatible with manual GTG setups**: it lets the Google tag load and send privacy‑safe, cookieless pings even while consent is denied or not yet known, and switches to full measurement as soon as the visitor's choice is received — without depending on the exact order in which the GTG script and the consent banner load.
+
+To enable it with Commanders Act:
+
+* Enable **Advanced Consent Mode** in your Commanders Act Google Consent Mode configuration — see [Google Consent Mode in Commanders Act TMS](https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/google-consent-mode-in-commanders-act-tms) and [Google Tag Manager (GTM) – Consent Mode](https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/google-tag-manager-gtm-consent-mode).
+* Enable **Data Transmission Controls** in your Google tag settings (Google Ads, GA4, or Campaign Manager 360) to independently restrict advertising, analytics, and diagnostics data while consent is denied — see [Data transmission controls](https://support.google.com/google-ads/answer/16054531).
+* Set **Global Consent Defaults** for your Google tag so a baseline (denied, unless required otherwise) consent state always applies per region, even in the rare case where the CMP stub cannot be guaranteed to run first — see the [region-specific behavior section of Google's consent mode guide](https://developers.google.com/tag-platform/security/guides/consent#region-specific_behavior) and [GTM's Consent Overview settings](https://support.google.com/tagmanager/answer/10718549?hl=en).
+
+{% hint style="success" %}
+Choose the right template! In case you need to enable Google Consent Mode with IAB TCF, use our TCF IAB [banner templates](https://doc.commandersact.com/features/consent-management/user-guides/privacy-banners/banner-templates) (Footer or Popin) and follow the [setup specifications mentioned here](https://doc.commandersact.com/features/consent-management/setup-guides/tag-manager/google-consent-mode-in-commanders-act-tms#additional-settings)
+{% endhint %}
+
+***
+
 ## Architecture
 
 With **Commanders Gateway**, you reserve a **single path** on your domain, for example:
