@@ -2,9 +2,16 @@
 
 ## 2026
 
+### 104.1
+
+Release date: **14/09/2026**
+
+* Update subdomains handling for Commanders Act Gateway
+* Fix on-premise privacy center custom JS inclusion
+
 ### 104.0
 
-Release date: **07/09/2026**
+Release date: **08/09/2026**
 
 * Support multi-sites gateways
 
