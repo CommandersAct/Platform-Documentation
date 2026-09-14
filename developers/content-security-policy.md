@@ -14,9 +14,9 @@ For further details about CSP, visit this site:\
 * **connect-src** on domain \*.[commander1.com](http://commander1.com/)
 * **frame-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
 
-### Commanders Gateway / Google Tag Gateway
+### Commanders Act Gateway&#x20;
 
-When Commanders Gateway is enabled, scripts and measurement requests are routed through a first-party path on your website, for example `https://www.example.com/metrics/`.
+When Commanders Act Gateway and/or Google Tag Gateway is enabled, scripts and measurement requests are routed through a first-party path on your website, for example `https://www.example.com/metrics/`.
 
 If your CSP allows `'self'`, ensure it is allowed for `script-src`, `connect-src`, `img-src` and `frame-src`. If `'self'` is not used, explicitly allow the domain hosting the Gateway instead.
 
