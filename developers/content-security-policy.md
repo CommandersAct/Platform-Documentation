@@ -14,6 +14,18 @@ For further details about CSP, visit this site:\
 * **connect-src** on domain \*.[commander1.com](http://commander1.com/)
 * **frame-src** on domains \*.[tagcommander.com](http://tagcommander.com/)
 
+### Commanders Gateway / Google Tag Gateway
+
+When Commanders Gateway is enabled, scripts and measurement requests are routed through a first-party path on your website, for example `https://www.example.com/metrics/`.
+
+If your CSP allows `'self'`, ensure it is allowed for `script-src`, `connect-src`, `img-src` and `frame-src`. If `'self'` is not used, explicitly allow the domain hosting the Gateway instead.
+
+`frame-src` is recommended for Google measurement mechanisms that may use iframe or service worker transport.
+
+{% hint style="info" %}
+The Gateway only covers requests routed through it. Third-party tags executed by your TMS may still require their own domains to be added to your CSP.
+{% endhint %}
+
 ### CDN Hosting
 
 Files are hosted on [cdn.tagcommander.com](http://cdn.tagcommander.com/) and returns Javascript
