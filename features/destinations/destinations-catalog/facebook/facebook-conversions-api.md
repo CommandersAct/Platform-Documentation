@@ -1,5 +1,23 @@
 ---
 description: Aka Facebook CAPI
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Facebook Conversions API
@@ -395,31 +413,15 @@ The fields `custom_data.contents` and `custom_data.content_ids` are mutually exc
 * otherwise, `custom_data.content_ids` is set with all available `product.id` .
 {% endhint %}
 
-| Commanders Act Properties                                        | Facebook Properties                          |
-| ---------------------------------------------------------------- | -------------------------------------------- |
-| `value`                                                          | `custom_data.value`                          |
-| <p><code>currency</code></p><p><code>items.0.currency</code></p> | `custom_data.currency`                       |
-| `partners.facebook.net_revenue`                                  | `custom_data.net_revenue`                    |
-| `id`                                                             | `custom_data.order_id`                       |
-| `search_term`                                                    | `custom_data.search_string`                  |
-| `items.X.product.id`                                             | `custom_data.contents.X.id` **\[1]**         |
-| `items.X.quantity`                                               | `custom_data.contents.X.quantity` **\[1]**   |
-| `items.X.product.price`                                          | `custom_data.contents.X.item_price` **\[1]** |
-| `items.0.product.name`                                           | `custom_data.content_name`                   |
-| `items.0.product.category_1`                                     | `custom_data.content_category`               |
-| `items.X.product.id`                                             | `custom_data.content_ids` **\[2]**           |
-| `Content type value`                                             | `custom_data.content_type` **\[3]**          |
-| `status`                                                         | `custom_data.status`                         |
-| `items.length`                                                   | `custom_data.num_items`                      |
-| `Send all your event properties as custom data`                  | `custom_data[Property Name]` **\[4]**        |
-| `custom_data[Propery Name]` **\[5]**                             | `custom_data[Property Name]`                 |
+<table data-header-hidden="false" data-header-sticky><thead><tr><th width="232">Smart Mapping Fields</th><th width="414">Commanders Act Default Properties</th><th width="336">Facebook Properties</th></tr></thead><tbody><tr><td><code>Value</code></td><td><code>value</code></td><td><code>custom_data.value</code></td></tr><tr><td><p><code>Currency</code></p><p><code>-</code></p></td><td><p><code>currency</code></p><p><code>items.0.currency</code></p></td><td><code>custom_data.currency</code></td></tr><tr><td><code>Net Revenue</code></td><td><code>partners.facebook.net_revenue</code></td><td><code>custom_data.net_revenue</code></td></tr><tr><td><code>Order ID</code></td><td><code>id</code></td><td><code>custom_data.order_id</code></td></tr><tr><td><code>-</code></td><td><code>search_term</code></td><td><code>custom_data.search_string</code></td></tr><tr><td><code>-</code></td><td><code>items.X.product.id</code></td><td><code>custom_data.contents.X.id</code> <strong>[1]</strong></td></tr><tr><td><code>-</code></td><td><code>items.X.quantity</code></td><td><code>custom_data.contents.X.quantity</code> <strong>[1]</strong></td></tr><tr><td><code>-</code></td><td><code>items.X.product.price</code></td><td><code>custom_data.contents.X.item_price</code> <strong>[1]</strong></td></tr><tr><td><code>-</code></td><td><code>items.0.product.name</code></td><td><code>custom_data.content_name</code></td></tr><tr><td><code>-</code></td><td><code>items.0.product.category_1</code></td><td><code>custom_data.content_category</code></td></tr><tr><td><code>-</code></td><td><code>items.X.product.id</code></td><td><code>custom_data.content_ids</code> <strong>[2]</strong></td></tr><tr><td><p><code>Content Type</code></p><p><code>-</code></p></td><td><p><code>partners.facebook.content_type</code></p><p><code>Content type value</code></p></td><td><code>custom_data.content_type</code> <strong>[3]</strong><br><code>custom_data.fb_content_type</code> <strong>[4]</strong></td></tr><tr><td><code>-</code></td><td><code>status</code></td><td><code>custom_data.status</code></td></tr><tr><td><code>Items</code></td><td><code>items.length</code></td><td><code>custom_data.num_items</code></td></tr><tr><td><code>-</code></td><td><code>Send all your event properties as custom data</code></td><td><code>custom_data[Property Name]</code> <strong>[5]</strong></td></tr><tr><td><code>Additional Custom Data</code></td><td><code>custom_data[Propery Name]</code> <strong>[6]</strong></td><td><code>custom_data[Property Name]</code></td></tr></tbody></table>
 
 {% hint style="info" %}
 **1.** Mutually exclusive with `custom_data.content_ids` and set if all the following properties are present and valid: `items.X.product.id` , `items.X.product.price` , `items.x.quantity` .\
 **2.** Array containing all product identifiers. Mutually exclusive with `custom_data.contents`.\
-**3.** Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set.\
-**4.** When <mark style="color:blue;">`Send all your event properties as custom data`</mark> is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark> with the same property name.\
-**5.** In <mark style="color:blue;">`integrations.facebook`</mark> in your event.
+**3.** Set when <mark style="color:blue;">`action_source`</mark> is <mark style="color:blue;">`website`</mark> or <mark style="color:blue;">`physical_store`</mark> . Depending on the selected value for <mark style="color:blue;">`Content type value`</mark> , which can be found under <mark style="color:blue;">`Advanced Settings`</mark> , this is either <mark style="color:blue;">`product`</mark> or not set. The Smart Mapping field <mark style="color:blue;">`Content Type`</mark> has priority over <mark style="color:blue;">`Content type value`</mark> .\
+**4.** Set when <mark style="color:blue;">`action_source`</mark> is <mark style="color:blue;">`app`</mark> .\
+**5.** When <mark style="color:blue;">`Send all your event properties as custom data`</mark> is checked all properties in your event with type "string", "number" and "boolean" will be included in <mark style="color:blue;">`custom_data`</mark> with the same property name.\
+**6.** In <mark style="color:blue;">`integrations.facebook`</mark> in your event.
 {% endhint %}
 
 #### Default behavior
