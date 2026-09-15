@@ -512,8 +512,8 @@ Destination documentation (updates):
 
 New destination Logs exporter:
 
-{% content-ref url="../features/destinations/destinations-catalog/destination-logs-exporter-closed-beta.md" %}
-[destination-logs-exporter-closed-beta.md](../features/destinations/destinations-catalog/destination-logs-exporter-closed-beta.md)
+{% content-ref url="../features/destinations/destinations-catalog/destination-logs-exporter.md" %}
+[destination-logs-exporter.md](../features/destinations/destinations-catalog/destination-logs-exporter.md)
 {% endcontent-ref %}
 
 ## 24/10/2024
