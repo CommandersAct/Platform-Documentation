@@ -1,9 +1,5 @@
 # Quora Ads Conversion API
 
-{% hint style="info" %}
-This destination is currently under final review and will be available soon.
-{% endhint %}
-
 [Quora](https://www.quora.com/about) is a social Q\&A website. Using this destination you can leverage [Quora Ads Conversion API](https://quoraadsupport.zendesk.com/hc/en-us/articles/23065751885069-Conversion-API-Overview) to send events to Quora Ads Manager to improve conversion match, which increases return on ad spend (ROAS) and lowers cost per action (CPA). This helps advertisers optimize targeting, decrease cost per result, and improve measurement reliability.
 
 ## Key features
