@@ -70,14 +70,13 @@ For more information about Commanders Act AI usage, security, and compliance, se
 
 1st Party Cookies, 3rd Party Cookies, HttpOnly 1st Party Cookies, HttpOnly 3rd Party Cookies, localStorage, sessionStorage
 
-| Cookie Type                   | Description                                                                                                              | Scanned with                                               |
-| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| **1st Party Cookie**          | 1st party cookies are cookies that are stored on the domain of the website.                                              | <ul><li>Tag client-side</li><li>Chrome Extension</li></ul> |
-| **3rd Party Cookie**          | 3rd party cookies are cookies that are stored on a 3rd party domain.                                                     | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
-| **HttpOnly 1st Party Cookie** | HttpOnly 1st Party Cookie are server cookies that are stored on the domain of the website and that have a HttpOnly flag. | <ul><li>Chrome Extension</li></ul>                         |
-| **HttpOnly 3rd Party Cookie** | HttpOnly 3rd Party Cookie are server cookies that are stored on a 3rd party domain and that have a HttpOnly flag.        | <ul><li>Chrome Extension</li><li>Cookie Database</li></ul> |
-| **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                                 | <ul><li>Tag client-side</li></ul>                          |
-| **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                                 | <ul><li>Tag client-side</li></ul>                          |
+| Cookie Type                   | Description                                                                                                 |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **1st Party Cookie**          | Cookies that are stored on the domain of the website.                                                       |
+| **3rd Party Cookie**          | Cookies that are stored on a 3rd party domain.                                                              |
+| **HttpOnly 1st Party Cookie** | Cookies that are created by a server and stored on the domain of the website and that have a HttpOnly flag. |
+| **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                    |
+| **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                    |
 
 #### 🔔 RealTime Alerts (< 60 s)
 
