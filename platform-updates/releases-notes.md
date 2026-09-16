@@ -6,6 +6,39 @@ description: >-
 
 # Release notes
 
+## **Release 1.0.55 - 16/09 - 2026**
+
+<figure><img src="../.gitbook/assets/ChatGPT Image 16 sept. 2026, 19_12_05.png" alt=""><figcaption></figcaption></figure>
+
+#### Commanders Act Gateway: New Setup Interface
+
+We’ve introduced a new **guided setup interface for Commanders Act Gateway**, making Gateway deployments easier to configure, implement, and validate directly from the platform.
+
+The new interface also lets you define **which services should be routed through your first-party domain**. You can currently configure:
+
+* **Google Tag Gateway** to load Google Tag and send Google measurements from a first-party path
+* **Commanders Act container** to load your Web Container from your own domain
+* **Server-side tracking** to send events to server-side destinations through your domain
+* **Commanders Act collections**, including CMP hits and other Commanders Act data collection
+* **Third-party libraries** to host partner libraries from your domain with obfuscated file names
+
+Additional use cases can be enabled later **without recreating the Gateway**.
+
+The guided setup also includes:
+
+* Configuration of your **first-party domain and delivery path**
+* Automatic first-party path generation
+* Support for **Cloudflare Free, Cloudflare Enterprise, Akamai, Fastly, and other CDN / load balancer setups**
+* Optional exclusion of specific **cookies from the Gateway**
+* Automatically generated implementation instructions based on your **domain, path, CDN, and configuration**
+* **Dynamically generated Worker code**, including the selected cookie blacklist
+* Technical instructions that can be **shared directly with your IT team**
+* Ready-to-use **Worker code, routes, and CDN-specific implementation guides**
+* **Connection verification before activation**
+* The ability to save an unfinished configuration and resume it later
+
+This makes Commanders Act Gateway a **single first-party infrastructure that can support multiple services and use cases**, while significantly reducing the technical effort required for deployment.
+
 ## **Release 1.0.54 - 08/09 - 2026**
 
 **New: Cookie Inventory and improved RCS workflows**
