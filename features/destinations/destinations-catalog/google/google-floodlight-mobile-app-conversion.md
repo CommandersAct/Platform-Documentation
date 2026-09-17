@@ -1,3 +1,26 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+---
+
 # Google Floodlight Mobile App Conversion
 
 [Floodlight](https://support.google.com/searchads/answer/7298761?hl=en) provides you insight into the actions that users take after they view or click on ads. Using this destination you can track installs of your app or activities that take place in the app.
@@ -20,7 +43,7 @@ Some setup is required on the Floodlight side before configuring this destinatio
 
 ### Configuration
 
-<table><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>src</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Group Tag String</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>type</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Activity Tag String</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>cat</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Custom Event Properties</code></td><td>Send custom properties ( <code>u</code> , <code>tran</code> , <code>num</code> , <code>u1</code> , <code>u2</code> , etc...) related to events.</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th width="300">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>src</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Group Tag String</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>type</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Activity Tag String</code></td><td><em><strong><code>Required</code></strong></em><br>This is the value of the <code>cat</code> parameter. More details are available following this <a href="https://support.google.com/tagmanager/answer/6107168">LINK</a>.</td></tr><tr><td><code>Custom Event Properties</code></td><td>Send custom properties ( <code>u</code> , <code>tran</code> , <code>num</code> , <code>u1</code> , <code>u2</code> , etc...) related to events.</td></tr></tbody></table>
 
 ## Quick reference
 
@@ -34,11 +57,11 @@ Some setup is required on the Floodlight side before configuring this destinatio
 
 ## Field mappings
 
-<table><thead><tr><th width="383.29729729729735">Commanders Act Properties</th><th>Floodlight Properties</th></tr></thead><tbody><tr><td><code>Advertiser Id</code></td><td><code>src</code> <strong>[*]</strong></td></tr><tr><td><code>Group Tag String</code></td><td><code>cat</code> <strong>[*]</strong></td></tr><tr><td><code>Activity Tag String</code></td><td><code>type</code> <strong>[*]</strong></td></tr><tr><td><code>context.device.advertising_id</code></td><td><code>dc_rdid</code> <strong>[*]</strong></td></tr><tr><td><code>partners.google.cdt</code></td><td><code>tag_for_child_directed_treatment</code></td></tr><tr><td><code>context.device.ad_tracking_enabled</code></td><td><code>dc_lat</code></td></tr><tr><td><code>items.X.quantity</code></td><td><code>qty</code> <strong>[1]</strong></td></tr><tr><td><code>revenue</code></td><td><code>cost</code></td></tr><tr><td><code>id</code></td><td><code>ord</code> <strong>[2]</strong></td></tr><tr><td><code>items.X.product.id</code> <code>items.X.product.price</code> <code>items.X.quantity</code></td><td><code>prd</code></td></tr><tr><td><code>Your value</code> <strong>[3]</strong></td><td><code>Floodlight property name</code> <strong>[3]</strong></td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th>Smart Mapping Fields</th><th width="383.29729729729735">Commanders Act Default Properties</th><th>Floodlight Properties</th></tr></thead><tbody><tr><td><code>-</code></td><td><code>Advertiser Id</code></td><td><code>src</code> <strong>[*]</strong></td></tr><tr><td><code>-</code></td><td><code>Group Tag String</code></td><td><code>cat</code> <strong>[*]</strong></td></tr><tr><td><code>-</code></td><td><code>Activity Tag String</code></td><td><code>type</code> <strong>[*]</strong></td></tr><tr><td><code>Device Mobile Identifier</code></td><td><code>context.device.advertising_id</code></td><td><code>dc_rdid</code> <strong>[*]</strong></td></tr><tr><td><code>Child Directed Treatment</code></td><td><code>partners.google.cdt</code></td><td><code>tag_for_child_directed_treatment</code></td></tr><tr><td><code>Ad Tracking Enabled</code></td><td><code>context.device.ad_tracking_enabled</code></td><td><code>dc_lat</code></td></tr><tr><td><code>Transaction Revenue</code></td><td><code>revenue</code></td><td><code>cost</code></td></tr><tr><td><code>Transaction Id</code></td><td><code>id</code></td><td><code>ord</code> <strong>[1]</strong></td></tr><tr><td><code>Item Quantity</code></td><td><code>items.X.quantity</code></td><td><code>qty</code> <strong>[2]</strong></td></tr><tr><td><p><code>Item Id</code></p><p><code>Item Price</code></p><p><code>Item Quantity</code></p></td><td><code>items.X.product.id</code> <br><code>items.X.product.price</code> <br><code>items.X.quantity</code></td><td><code>prd</code></td></tr><tr><td><code>-</code></td><td><code>Your value</code> <strong>[3]</strong></td><td><code>Floodlight property name</code> <strong>[3]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\*** Mandatory property.\
-**1.** Sum of each product quantity.\
-**2.** If no property is provided, a random generated number is used.\
+**1.** If no property is provided, a random generated number is used.\
+**2.** Sum of each product quantity.\
 **3.** See <mark style="color:blue;">`Custom Event Properties`</mark> in [Configuration ](google-floodlight-mobile-app-conversion.md#configuration)for more details on how you can add custom properties.
 {% endhint %}
