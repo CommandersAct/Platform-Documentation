@@ -1,3 +1,26 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+---
+
 # Google Conversion Adjustments
 
 [Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Taking advantage of the [Google Ads API Upload Conversion Adjustments](https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments), you can amend conversions values initially reported by other means (E.g. via client-side tags).
@@ -30,7 +53,7 @@ Conversion adjustments don't work with [conversion actions](https://support.goog
 
 ### Configuration
 
-<table><thead><tr><th width="325">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Authentication</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Your credentials with Google Ads as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Google Ads</code></p></td></tr><tr><td><code>Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Map your Google Ads Conversion Name(s), where conversion value adjustments are applied, with Commanders Act event(s) by setting your <code>Google Ads Conversion Name</code><br>and <code>Your event name</code> . At least one line is required. Conversion names can be found in the Google Ads interface following: <code>TOOLS &#x26; SETTINGS</code> ➜ <code>Measurement</code> ➜ <code>Conversions</code> ➜ <code>Conversion action</code>.<br>If a conversion action is not found the event will be discarded.</td></tr><tr><td><code>Google Click Id</code></td><td>Google click Id (gclid) associated with the original conversion. This field has priority over related cookies.</td></tr><tr><td><code>Google Analytics Property Id</code></td><td>The GA Tracking Id is a string like "UA-XXXXXX-Y" or "G-XXXXXXXXXX" for Google Analytics 4. It's used as an alternative method to retrieve the <a href="https://support.google.com/google-ads/answer/9744275?hl=en"><code>gclid</code></a> from cookies. See <a href="google-conversion-adjustments.md#destination-setup">Destination setup</a> for more details.</td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th width="325">Settings</th><th>Description</th></tr></thead><tbody><tr><td><code>Authentication</code></td><td><p><em><strong><code>Required</code></strong></em></p><p>Your credentials with Google Ads as set in the Commanders Act interface following: <code>Administration</code> ➜ <code>Connector Credentials</code> ➜ <code>Add connector credentials</code> ➜ <code>Google Ads</code></p></td></tr><tr><td><code>Mapping</code></td><td><em><strong><code>Required</code></strong></em><br>Map your Google Ads Conversion Name(s), where conversion value adjustments are applied, with Commanders Act event(s) by setting your <code>Google Ads Conversion Name</code><br>and <code>Your event name</code> . At least one line is required. Conversion names can be found in the Google Ads interface following: <code>TOOLS &#x26; SETTINGS</code> ➜ <code>Measurement</code> ➜ <code>Conversions</code> ➜ <code>Conversion action</code>.<br>If a conversion action is not found the event will be discarded.</td></tr><tr><td><code>Google Click Id</code></td><td>Google click Id (gclid) associated with the original conversion. This field has priority over related cookies.</td></tr><tr><td><code>Google Analytics Property Id</code></td><td>The GA Tracking Id is a string like "UA-XXXXXX-Y" or "G-XXXXXXXXXX" for Google Analytics 4. It's used as an alternative method to retrieve the <a href="https://support.google.com/google-ads/answer/9744275?hl=en"><code>gclid</code></a> from cookies. See <a href="google-conversion-adjustments.md#destination-setup">Destination setup</a> for more details.</td></tr></tbody></table>
 
 ## Field mappings
 
@@ -44,7 +67,7 @@ If <mark style="color:blue;">`Transaction Adjusted Timestamp (adjustmentDateTime
 Google properties are set starting from the path <mark style="color:blue;">`conversionAdjustments.0`</mark> <mark style="color:blue;">.</mark>
 {% endhint %}
 
-<table><thead><tr><th width="345">Commanders Act Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>value</code></td><td><code>restatementValue.adjustedValue</code> <strong>[*]</strong></td></tr><tr><td><code>id</code></td><td><code>orderId</code> <strong>[1]</strong></td></tr><tr><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><code>context.event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code></td></tr><tr><td><code>Google Click Id</code><br><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></td><td><code>gclidDateTimePair.gclid</code> <strong>[2]</strong></td></tr></tbody></table>
+<table data-header-hidden="false" data-header-sticky><thead><tr><th width="308">Smart Mapping Fields</th><th width="300">Commanders Act Default Properties</th><th>Google Properties</th></tr></thead><tbody><tr><td><code>Transaction Adjusted Value</code></td><td><code>value</code></td><td><code>restatementValue.adjustedValue</code> <strong>[*]</strong></td></tr><tr><td><code>Transaction Id</code></td><td><code>id</code></td><td><code>orderId</code> <strong>[1]</strong></td></tr><tr><td><code>Currency</code></td><td><code>currency</code></td><td><code>restatementValue.currencyCode</code></td></tr><tr><td><code>Original Transaction Timestamp</code></td><td><code>context.event_timestamp</code></td><td><code>gclidDateTimePair.conversionDateTime</code></td></tr><tr><td><code>-</code></td><td><code>Google Click Id</code><br><code>Cookie _gcl_aw</code><br><code>Cookie _gcl_dc</code><br><code>Cookie _gac_[GA_PROPERTY_ID]</code></td><td><code>gclidDateTimePair.gclid</code> <strong>[2]</strong></td></tr></tbody></table>
 
 {% hint style="info" %}
 **\*** Mandatory property.\
