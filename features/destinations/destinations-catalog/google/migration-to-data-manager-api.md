@@ -1,3 +1,7 @@
+---
+description: Please update your connection credentials by October 15, 2026!
+---
+
 # Migration to Data Manager API
 
 {% hint style="info" %}
@@ -11,21 +15,15 @@ We will progressively update all of our existing Google destinations to use this
 Some new destinations (e.g. Google Store Sales) require this API from the start.
 {% endhint %}
 
-## Why this migration?&#x20;
-
-* **Get ahead of the change**: Google will progressively restrict access to the legacy API. The current version of the Google Customer Match destination is expected to be deprecated in 2027.
-* **Enhanced security**: the Data Manager API supports data encryption,
-* **More complete measurement**: sending IP addresses and session attributes is available to all users of the new API
-* **Greater stability**: quotas are now managed per project rather than per developer token, reducing the risk of blocking.
-* **Access to new Google features**: upcoming destinations, such as _Google Store Sales_ will be reserved for this new API.
-
 ## Connect your Google account to the Data Manager API
 
 {% hint style="danger" icon="triangle-exclamation" %}
-**Do not remove your existing Google Ads permissions or credential.** Only add the new permissions requested below, as removing your current access will break your existing connections.
+**Do not remove your existing Google Ads permissions or credential.** Only update the connector by adding the new permissions requested below, as removing your current access will break your existing connections.
+
+**Accept all permissions shown.** Unchecking, skipping or declining any permission on this screen can break your Google connection later.
 {% endhint %}
 
-Google is replacing the Google Ads API with the Data Manager API. To keep your Google connections running smoothly, add a new Google credential in Commanders Act.
+Google is replacing the Google Ads API with the Data Manager API. To keep your Google connections running smoothly, update your existing Google credential(s) in Commanders Act.
 
 {% hint style="info" %}
 **This updates your existing credential: it is never removed.** Your current connections stay active throughout the process.
@@ -36,9 +34,10 @@ Estimated time: less than 2 minutes.
 ## Steps for migration
 
 1. Go to Connector Credentials
-2. Select Google Ads
-3. Sign in with Google
-4. Select your Google Ad account(s)&#x20;
+2. Click on Update connector crendetials
+3. Select Google Ads
+4. Sign in with Google
+5. Select your Google Ad account(s)&#x20;
 
 ## Before you start: check your access rights
 
@@ -57,9 +56,13 @@ If you sign in with a Google account that doesn't have the right permissions, th
 
 In Commanders Act, go to `Administration > Connector Credentials`, then click **Update connector credentials** in the top right corner.
 
+<figure><img src="../../../../.gitbook/assets/image (527).png" alt=""><figcaption></figcaption></figure>
+
 ### Step 2 — Select Google Ads
 
 In the connector list, select **GoogleAds**.
+
+<figure><img src="../../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3 — Sign in with Google
 
@@ -86,6 +89,16 @@ If several Google Ads accounts are already connected to your Commanders Act acco
 ### Step 5 — You're done
 
 Your Google credential is now updated for the Data Manager API. Your existing connections and destinations continue to run without any further action on your side.
+
+## Why this migration?&#x20;
+
+
+
+* **Get ahead of the change**: Google will progressively restrict access to the legacy API. The current version of the Google Customer Match destination is expected to be deprecated in 2027.
+* **Enhanced security**: the Data Manager API supports data encryption,
+* **More complete measurement**: sending IP addresses and session attributes is available to all users of the new API
+* **Greater stability**: quotas are now managed per project rather than per developer token, reducing the risk of blocking.
+* **Access to new Google features**: upcoming destinations, such as _Google Store Sales_ will be reserved for this new API.
 
 ## FAQ
 
