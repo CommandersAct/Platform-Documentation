@@ -110,4 +110,4 @@ This page (**Administration > First-Party Tag Hosting**) is where you declare th
 * **Search and status filter** — find a declared library or filter by status.
 * **Table** — for each declared JS URL, you'll find its status, the **hosted links** generated for it (one first-party URL per Gateway it's active on), and its last deployment date. Use the icons on the right to edit or delete an entry.
 
-Once a library is declared here, use its generated first-party URL in your tag configuration instead of the original third-party one, as shown in the [Activation](https://claude.ai/chat/053cd264-041d-4acd-a089-ed8a1aaf7efd#step-5-activation) step above.
+Once a library is declared here, use its generated first-party URL in your tag configuration instead of the original third-party one, as shown in the [Activation](manage-your-gateway.md#step-5-activation) step above.
