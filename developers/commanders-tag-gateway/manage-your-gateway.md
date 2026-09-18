@@ -2,7 +2,7 @@
 
 ### Configure your Gateway from the Administration interface
 
-Commanders Act Gateway is set up and managed directly from the platform, under **Administration > Gateway**. This interface lets you create, configure, and monitor your first-party Gateway(s) without writing any code — the only technical step you may need help with is connecting your CDN, covered in [Route traffic](https://claude.ai/chat/053cd264-041d-4acd-a089-ed8a1aaf7efd#step-2-route-traffic) above.
+Commanders Act Gateway is set up and managed directly from the platform, under **Administration > Gateway**. This interface lets you create, configure, and monitor your first-party Gateway(s) without writing any code — the only technical step you may need help with is connecting your CDN, covered in [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic) above.
 
 #### Before you start
 
