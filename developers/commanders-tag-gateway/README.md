@@ -61,17 +61,17 @@ This section is written for the verification of requirements on Consent Mode wit
 
 #### What Google Tag Gateway changes for consent
 
-**Google Tag Gateway (GTG) for advertisers** lets a website serve Google tags (`gtag.js`, `gtm.js`) from the site's own first‑party domain instead of `googletagmanager.com`, using a CDN, load balancer, or web server. Commanders Act Gateway can be used to implement GTG (see [Architecture](commanders-tag-gateway.md#architecture) below).
+**Google Tag Gateway (GTG) for advertisers** lets a website serve Google tags (`gtag.js`, `gtm.js`) from the site's own first‑party domain instead of `googletagmanager.com`, using a CDN, load balancer, or web server. Commanders Act Gateway can be used to implement GTG (see [Architecture](./#architecture) below).
 
 GTG does not change _what_ consent mode does — it changes **where the Google tag is served from and, critically, when it can load relative to your consent banner**. That timing is where the impact on consent lives:
 
 * **One‑click / automated CDN injection** (the in‑UI setup offered by Google for Cloudflare, Akamai, Fastly, or a Google Cloud Load Balancer) makes Google inject the routing rule directly into your CDN or load balancer configuration, generally placing the Google tag very early in the page. Because this injection happens **outside your tag management or page source**, you typically **can no longer control the order in which scripts load** relative to your consent banner. If your CMP's consent stub has not yet run and set default consent states, the Google tag can fire first.
 * **Manual / self-service GTG setup**, where you configure the routing yourself and reference the first‑party script directly in your page source, keeps script load order under your control — you decide whether the Google tag or your CMP's consent script loads first.
 
-When a Google tag fires before your CMP has set a default consent state, this is what Google calls a **"late" consent signal**: the tag runs with an unknown/undefined consent state instead of respecting the default your CMP intended to set. This can cause tags to behave as if no consent framework were present, and it is flagged by Google's own diagnostic tools (see [Verification](commanders-tag-gateway.md#verification-checklist) below).
+When a Google tag fires before your CMP has set a default consent state, this is what Google calls a **"late" consent signal**: the tag runs with an unknown/undefined consent state instead of respecting the default your CMP intended to set. This can cause tags to behave as if no consent framework were present, and it is flagged by Google's own diagnostic tools (see [Verification](./#verification-checklist) below).
 
 {% hint style="warning" %}
-Rolling back GTG is **not** the recommended way to resolve a late consent signal: doing so forfeits the first‑party measurement durability benefits GTG is designed to provide. The recommended remediation's are described in [If a late consent signal is detected](commanders-tag-gateway.md#if-a-late-consent-signal-is-detected-and-gtg-enrollment-is-confirmed) below.&#x20;
+Rolling back GTG is **not** the recommended way to resolve a late consent signal: doing so forfeits the first‑party measurement durability benefits GTG is designed to provide. The recommended remediation's are described in [If a late consent signal is detected](./#if-a-late-consent-signal-is-detected-and-gtg-enrollment-is-confirmed) below.&#x20;
 {% endhint %}
 
 #### Google's documentation on GTG
