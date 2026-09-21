@@ -1,5 +1,11 @@
 # Product catalog files importer (FTP)
 
+{% hint style="info" %}
+This product catalog file importer only work with the CDP feature.&#x20;
+
+To add a product catalog for server-side purposes, please see the [CSV Products Importer](products-file-importer.md) page.
+{% endhint %}
+
 You can import your product catalog through our file importer (FTP).
 
 The file could contain the followed fields:
