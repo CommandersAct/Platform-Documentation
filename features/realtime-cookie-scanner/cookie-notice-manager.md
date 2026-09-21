@@ -72,6 +72,11 @@ Click on "more filters" to see them all
 
 <figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+You can also create a custom filter, based on your URL params, via the "settings" panel\
+[check this section](cookie-notice-manager.md#custom-filter-path-url) for more details
+{% endhint %}
+
 ### Occurrence frequency
 
 For all types of cookies & storage you can visualize the percentage of detection frequency
@@ -107,6 +112,23 @@ Also, by using this flag you can improve your [compliace score](compliance-score
 <figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
+
+### Custom Filter: Path URL
+
+You can create your own custom filter, based on URL paths
+
+Here's the steps to follow:\
+Enter an example of a complete URL in the settings panel
+
+<figure><img src="../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
+
+Our tool will detect all paths. You can select one value to obtain filters based on
+
+<figure><img src="../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
+
+Once it's saved, you will see your new filter ready to be used:
+
+<figure><img src="../../.gitbook/assets/image (619).png" alt=""><figcaption></figcaption></figure>
 
 ### Translations by IA
 
