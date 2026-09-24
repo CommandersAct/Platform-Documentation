@@ -2,43 +2,43 @@
 
 ### Configure your Gateway from the Administration interface
 
-Commanders Act Gateway is set up and managed directly from the platform, under **Administration > Gateway**. This interface lets you create, configure, and monitor your first-party Gateway(s) without writing any code — the only technical step you may need help with is connecting your CDN, covered in [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic) above.
+You create, configure and monitor your first-party Gateways in **Administration > Gateway**, with no code. The only technical step is connecting your CDN (see [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic)).
 
-#### Before you start
+### Get started <a href="#get-started" id="get-started"></a>
 
-If no Gateway is configured yet on this site, you'll land on an introduction screen explaining what the Gateway does and the use cases it can power.
+If the site has no Gateway yet, you see an introduction screen. Choose one of two options:
+
+* **Configure my first Gateway** — launches the 5-step setup wizard below.
+* **Load a gateway from another site** — reuses an existing Gateway from your account as a starting point.
 
 <figure><img src="../../.gitbook/assets/01-empty-state.png" alt=""><figcaption><p>No Gateway configured</p></figcaption></figure>
 
-From here, you have two options:
-
-* **Configure my first Gateway** — starts the 5-step setup wizard described below.
-* **Load a gateway from another site** — if you already manage a Gateway on another site in your account, select it from the list to reuse its configuration as a starting point instead of starting from scratch.
-
 <figure><img src="../../.gitbook/assets/02-load-gateway-modal.png" alt=""><figcaption><p>Load a gateway from another site</p></figcaption></figure>
 
-Once at least one Gateway is configured, this page becomes your management dashboard — see [Managing your Gateways](manage-your-gateway.md#managing-your-gateways) below.
+> 💡 **Tip:** Click **Save and exit** at any time. Your progress is saved, and the Gateway stays _inactive_ until setup is complete.
 
-> 💡 **Good to know:** you can leave the wizard at any point using **Save and exit**. Your progress is kept and the Gateway stays with an _inactive_ status until you complete the setup.
+### Set up a Gateway in 5 steps <a href="#set-up-a-gateway-in-5-steps" id="set-up-a-gateway-in-5-steps"></a>
+
+```mermaid
+flowchart LR
+  A[1. Scope] --> B[2. Domain & path] --> C[3. CDN connection] --> D[4. Verification] --> E[5. Activation]
+```
 
 #### Step 1 · Scope
 
 <figure><img src="../../.gitbook/assets/03-step1-scope.png" alt=""><figcaption><p>Scope step</p></figcaption></figure>
 
-This first screen defines **what you want to route through your domain**. Select one or more use cases — you'll be able to add more later without recreating the Gateway:
+Select what to route through your domain. You can add use cases later without recreating the Gateway.
 
-| Use case                                             | What it does                                                                |
-| ---------------------------------------------------- | --------------------------------------------------------------------------- |
-| **Google Tag Gateway** _(selected by default)_       | Loads Google Tag and sends Google measurements from a first-party path.     |
-| **Commanders Act container** _(selected by default)_ | Loads your Commanders Act web container from your own domain.               |
-| **Server-side tracking**                             | Sends your events to your server-side destinations via your domain.         |
-| **Commanders Act collections**                       | Routes CMP hits and other Commanders Act collections through your domain.   |
-| **Third-party libraries**                            | Hosts your partners' libraries from your domain with obfuscated file names. |
+| Use case                                 | What it does                                                              |
+| ---------------------------------------- | ------------------------------------------------------------------------- |
+| **Google Tag Gateway** _(default)_       | Loads Google Tag and sends Google measurements from a first-party path.   |
+| **Commanders Act container** _(default)_ | Loads your Commanders Act web container from your own domain.             |
+| **Server-side tracking**                 | Sends your events to your server-side destinations via your domain.       |
+| **Commanders Act collections**           | Routes CMP hits and other Commanders Act collections through your domain. |
+| **Third-party libraries**                | Hosts partner libraries on your domain with obfuscated file names.        |
 
-Then choose **who will handle the technical access**:
-
-* **I have the access** — you'll configure the CDN yourself.
-* **I will hand this off to my technical team** _(selected by default)_ — the interface prepares ready-to-share instructions for your IT team.
+Then choose who handles the CDN: **I have the access**, or **I will hand this off to my technical team** _(default)_, which prepares ready-to-share instructions for IT.
 
 #### Step 2 · Domain and path
 
@@ -46,28 +46,21 @@ Then choose **who will handle the technical access**:
 
 Fill in the information needed to reserve your first-party path:
 
-* **Internal Gateway name** — for your own reference in the platform.
-* **First-party path** — generated automatically (you can regenerate it); this becomes the unique URL on your domain that carries your Gateway traffic.
-* **Domain** — the website the Gateway will run on.
-* **Google tag ID** — required only if you selected _Google Tag Gateway_ in Step 1.
-* **CDN provider / load balancer** — Cloudflare Free, Cloudflare Enterprise, Akamai (beta), Fastly (beta), another CDN, or "I don't know."
-* **Cookies to exclude from the Gateway** _(optional)_ — pre-filled with the two cookies excluded by default in the standard Worker code; adjust if your setup requires it.
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Field</td><td>Notes</td></tr><tr><td><strong>Internal Gateway name</strong></td><td>For your own reference.</td></tr><tr><td><strong>First-party path</strong></td><td>Auto-generated, can be regenerated. The unique URL on your domain that carries Gateway traffic.</td></tr><tr><td><strong>Domain</strong></td><td>The website the Gateway runs on.</td></tr><tr><td><strong>Google tag ID</strong></td><td>Only if you selected <em>Google Tag Gateway</em>.</td></tr><tr><td><strong>CDN provider / load balancer</strong></td><td>Cloudflare Free, Cloudflare Enterprise, Akamai (beta), Fastly (beta), other CDN, or "I don't know".</td></tr><tr><td><strong>Cookies to exclude</strong> <em>(optional)</em></td><td>Pre-filled with the 2 cookies excluded by the standard Worker code.</td></tr></tbody></table>
 
-> ⚠️ Avoid words like _tracking, analytics, metrics, tag, google,_ or _ads_ in your path — they make it easier for blockers to detect. Your technical team will also need to confirm the path isn't already used on your site.
+> ⚠️ Avoid _tracking, analytics, metrics, tag, google_ or _ads_ in the path — blockers detect them more easily. Your technical team must also confirm the path isn't already used on your site.
 
 #### Step 3 · CDN connection
 
 <figure><img src="../../.gitbook/assets/06-step3-cdn-connection.png" alt=""><figcaption></figcaption></figure>
 
-The interface generates the exact technical configuration for your setup (domain, route, infrastructure) along with a step-by-step guide matching the CDN you chose in Step 2. You can copy a shareable instructions link for your IT team, or follow the on-screen steps yourself if you have the access.
-
-For detailed, CDN-specific implementation instructions, see [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic).
+The platform generates the exact configuration (domain, route, infrastructure) and a step-by-step guide for your CDN. Follow it yourself, or copy the shareable link for your IT team. CDN-specific details: [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic).
 
 #### Step 4 · Verification
 
 <figure><img src="../../.gitbook/assets/07-step4-verification.png" alt=""><figcaption></figcaption></figure>
 
-When you reach this step, the platform automatically checks that your Gateway is live and reachable: a path validation check and a geolocation forwarding check, both of which must return "ok." If a check fails, review your CDN configuration and click **Re-run verification**. You can only move on once both checks pass.
+Two checks run automatically: **path validation** and **geolocation forwarding**. Both must return "ok" before you can continue. If one fails, fix your CDN configuration and click **Re-run verification**.
 
 #### Step 5 · Activation
 
@@ -75,39 +68,50 @@ When you reach this step, the platform automatically checks that your Gateway is
 
 <figure><img src="../../.gitbook/assets/image (575).png" alt=""><figcaption></figcaption></figure>
 
-Your Gateway's first-party entry point is now live. This final screen lists one action card per use case you selected in Step 1, each explaining exactly what to update on your side to finish activating it:
+Your first-party entry point is live. Complete the action card for each use case (see below), then click **Finish**. The right-hand panel recaps your configuration and links to the help center.
 
-* **Google Tag Gateway** — replace your Google tag URLs (gtag.js, GTM) with your new first-party path, in every container where they're loaded.
-* **Commanders Act container** — replace your container loading URL with the new first-party URL provided.
-* **Server-side tracking** and **Commanders Act collections** — no manual tag changes needed; simply regenerate and deploy your Commanders Act container(s).
-* **Third-party libraries** — declare each JS file (e.g. Meta Pixel) in the First-Party Tag Hosting interface; Commanders Act generates an obfuscated file name for you to use in the corresponding tag.
+### Finish activating each use case <a href="#finish-activating-each-use-case" id="finish-activating-each-use-case"></a>
 
-The right-hand panel recaps your Gateway's configuration (domain, path, infrastructure, selected use cases) and links to the help center if you need support.
+| Use case                                                  | What to do                                                                                                                 |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Google Tag Gateway**                                    | Replace your Google tag URLs (gtag.js, GTM) with your first-party path, in every container that loads them.                |
+| **Commanders Act container**                              | Replace the container loading URL with the new first-party URL.                                                            |
+| **Server-side tracking** / **Commanders Act collections** | No tag changes. Regenerate and deploy your container(s).                                                                   |
+| **Third-party libraries**                                 | Declare each JS file (e.g. Meta Pixel) in First-Party Tag Hosting, then use the generated obfuscated file name in the tag. |
 
-You can come back and add or change use cases at any time from this Gateway's configuration. Click **Finish** to complete the setup.
+You can add or change use cases later from the Gateway's configuration.
 
-#### Managing your Gateways
+#### Manage your Gateways
 
 <figure><img src="../../.gitbook/assets/11-gateway-dashboard.png" alt=""><figcaption></figcaption></figure>
 
-Once you have at least one Gateway, **Administration > Gateway** becomes your management dashboard:
+### Finish activating each use case <a href="#finish-activating-each-use-case" id="finish-activating-each-use-case"></a>
 
-* **Search and status filter** — quickly find a Gateway by name or narrow the list to a given status (Active, Suspended…).
-* **Add a gateway** — starts the setup wizard for a new Gateway.
-* **Load a gateway from another site** — reuse an existing Gateway's configuration as a starting point.
-* **Gateway table** — one row per Gateway, with its name, domain, first-party path, Google ID (if applicable), status, and number of first-party libraries declared. Use the icons on the right to edit or delete a Gateway — deleting always asks for confirmation first.
-* **Loaded from other sites** — lists any Gateway configuration you loaded from another site, with the option to **Unload** it if it's no longer needed.
+| Use case                                                  | What to do                                                                                                                 |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Google Tag Gateway**                                    | Replace your Google tag URLs (gtag.js, GTM) with your first-party path, in every container that loads them.                |
+| **Commanders Act container**                              | Replace the container loading URL with the new first-party URL.                                                            |
+| **Server-side tracking** / **Commanders Act collections** | No tag changes. Regenerate and deploy your container(s).                                                                   |
+| **Third-party libraries**                                 | Declare each JS file (e.g. Meta Pixel) in First-Party Tag Hosting, then use the generated obfuscated file name in the tag. |
 
-A link below the table (**Manage libraries**) takes you straight to First-Party Tag Hosting — see below.
+You can add or change use cases later from the Gateway's configuration.
+
+### Manage your Gateways <a href="#manage-your-gateways" id="manage-your-gateways"></a>
+
+Once a Gateway exists, **Administration > Gateway** becomes your dashboard. From there you can:
+
+* **Search** by name or **filter** by status (Active, Suspended…).
+* **Add a gateway** or **Load a gateway from another site**.
+* **Review the Gateway table**: name, domain, first-party path, Google ID, status and number of declared libraries. Use the row icons to edit or delete (deletion asks for confirmation).
+* **Unload** configurations listed under _Loaded from other sites_ when you no longer need them.
+* Open **Manage libraries** (below the table) to go to First-Party Tag Hosting.
 
 #### First-Party Tag Hosting
 
 <figure><img src="../../.gitbook/assets/12-first-party-libraries.png" alt=""><figcaption></figcaption></figure>
 
-This page (**Administration > First-Party Tag Hosting**) is where you declare the third-party JS libraries you want to serve first-party through your Gateway(s) — the step referenced in the _Third-party libraries_ use case.
+In **Administration > First-Party Tag Hosting**, declare the third-party JS libraries to serve through your Gateway(s).
 
-* **Add JS URL** — declare a new library by its original (third-party) JS URL.
-* **Search and status filter** — find a declared library or filter by status.
-* **Table** — for each declared JS URL, you'll find its status, the **hosted links** generated for it (one first-party URL per Gateway it's active on), and its last deployment date. Use the icons on the right to edit or delete an entry.
-
-Once a library is declared here, use its generated first-party URL in your tag configuration instead of the original third-party one, as shown in the [Activation](manage-your-gateway.md#step-5-activation) step above.
+1. Click **Add JS URL** and enter the library's original third-party URL.
+2. Find the generated **hosted links** in the table — one first-party URL per Gateway where the library is active. The table also shows status and last deployment date; use the row icons to edit or delete.
+3. Use the first-party URL in your tag instead of the original one.
