@@ -2,6 +2,15 @@
 
 ## 2026
 
+### 104.2
+
+Release date: **28/09/2026**
+
+* RCS:
+  * Fix sampling check running too late
+  * Fix pre-consent baseline being overwritten before it was sent
+  * Detect privacy_id and privacy_version from the active CMP (Didomi, OneTrust, CACT)
+
 ### 104.1
 
 Release date: **14/09/2026**
