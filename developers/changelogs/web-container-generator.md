@@ -4,6 +4,12 @@
 
 ### 104.2
 
+Release date: **05/10/2026**
+
+* RCS:
+  * [beta] Fix over-redaction of legitimate URL segments (slugs, product dimensions, campaign IDs) by the `last url scanned` anonymizer
+  * [beta] Reveal non-PII analytics params (`at_campaign*`, `utm_*`, `gad_campaignid`) while keeping `gclid`/`gbraid` always redacted
+
 Release date: **28/09/2026**
 
 * RCS:
