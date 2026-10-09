@@ -18,9 +18,9 @@ If your goal is to build a durable, vendor-agnostic first-party tracking archite
 
 ***
 
-## Why use Commanders Gateway?
+### Why use Commanders Gateway?
 
-### 1. Advantages of using a gateway
+#### 1. Advantages of using a gateway
 
 A gateway setup improves **data collection quality and completeness** across your marketing stack.
 
@@ -28,7 +28,7 @@ A gateway setup improves **data collection quality and completeness** across you
 * Browser restrictions (such as Safari’s ITP) often limit or block third-party cookies and some 1st party javascript cookies, but with a first-party server-side setup, measurement remains more reliable.
 * This ensures **more accurate tracking**, providing partners with higher-quality signals for measurement, attribution, and optimization.
 
-### 2. Advantages of using Commanders Gateway
+#### 2. Advantages of using Commanders Gateway
 
 On top of the benefits of any gateway approach, **Commanders Gateway** adds unique advantages:
 
@@ -40,7 +40,7 @@ On top of the benefits of any gateway approach, **Commanders Gateway** adds uniq
 
 ***
 
-## Overview
+### Overview
 
 **Commanders Gateway** lets you deploy marketing and measurement tags using your **own first-party infrastructure**, hosted on your website’s domain.\
 This infrastructure sits between your website and your partners’ services (Google, Meta, Bing, Snapchat, Awin, etc.).
@@ -53,13 +53,13 @@ With Commanders Gateway:
 
 ***
 
-## Google Tag Gateway (GTG) and consent
+### Google Tag Gateway (GTG) and consent
 
 {% hint style="info" %}
-This section is written for the verification of requirements on Consent Mode with Google Tag Gateway (GTG). It explains what GTG changes for consent, how to check enrollment, and what to do if a "late" consent signal is detected on a GTG-enrolled domain.&#x20;
+This section is written for the verification of requirements on Consent Mode with Google Tag Gateway (GTG). It explains what GTG changes for consent, how to check enrollment, and what to do if a "late" consent signal is detected on a GTG-enrolled domain.
 {% endhint %}
 
-#### What Google Tag Gateway changes for consent
+**What Google Tag Gateway changes for consent**
 
 **Google Tag Gateway (GTG) for advertisers** lets a website serve Google tags (`gtag.js`, `gtm.js`) from the site's own first‑party domain instead of `googletagmanager.com`, using a CDN, load balancer, or web server. Commanders Act Gateway can be used to implement GTG (see [Architecture](./#architecture) below).
 
@@ -71,15 +71,15 @@ GTG does not change _what_ consent mode does — it changes **where the Google t
 When a Google tag fires before your CMP has set a default consent state, this is what Google calls a **"late" consent signal**: the tag runs with an unknown/undefined consent state instead of respecting the default your CMP intended to set. This can cause tags to behave as if no consent framework were present, and it is flagged by Google's own diagnostic tools (see [Verification](./#verification-checklist) below).
 
 {% hint style="warning" %}
-Rolling back GTG is **not** the recommended way to resolve a late consent signal: doing so forfeits the first‑party measurement durability benefits GTG is designed to provide. The recommended remediation's are described in [If a late consent signal is detected](./#if-a-late-consent-signal-is-detected-and-gtg-enrollment-is-confirmed) below.&#x20;
+Rolling back GTG is **not** the recommended way to resolve a late consent signal: doing so forfeits the first‑party measurement durability benefits GTG is designed to provide. The recommended remediation's are described in [If a late consent signal is detected](./#if-a-late-consent-signal-is-detected-and-gtg-enrollment-is-confirmed) below.
 {% endhint %}
 
-#### Google's documentation on GTG
+**Google's documentation on GTG**
 
 * [Google tag gateway for advertisers – overview](https://developers.google.com/tag-platform/tag-manager/gateway)
 * [Set up Google tag gateway for advertisers](https://developers.google.com/tag-platform/tag-manager/gateway/setup-guide)
 
-#### Verify if a tag is enrolled in GTG
+**Verify if a tag is enrolled in GTG**
 
 Before investigating a consent issue related to GTG, confirm whether the domain is actually enrolled. Any of the following methods can be used:
 
@@ -87,7 +87,7 @@ Before investigating a consent issue related to GTG, confirm whether the domain 
 * **Google Tag Assistant** — Connect Tag Assistant to the website, trigger the relevant tags, and check where the Google tag's requests are actually served from and sent to (**Summary → Output → Hits Sent**). If Google tag requests are routed to your own domain (for example `example.com/mypath/` or `example.com/gtag/js`) instead of `www.googletagmanager.com` or `www.google-analytics.com`, GTG is active for that page.
 * **Browser DevTools** — In the Network tab, check whether the script and measurement requests for `gtag.js` / `gtm.js` originate from your first‑party domain rather than a Google domain.
 
-#### If a "late" consent signal is detected and CAGT enrollment is confirmed
+**If a "late" consent signal is detected and CAGT enrollment is confirmed**
 
 A late consent signal typically shows up in Google's [consent debugging tools](https://developers.google.com/tag-platform/security/guides/consent-debugging) (Tag Assistant's consent timeline, or a console warning) as the Google tag firing before a default consent state was set, or a consent state reported as "unknown" at the moment the tag fired.
 
@@ -98,7 +98,7 @@ A late consent signal typically shows up in Google's [consent debugging tools](h
 3. **Set up GTG manually**, so that you — not an automated CDN injection — control where the first‑party GTG script reference is placed in your page source, relative to your Commanders Act consent banner script.
 
 {% hint style="info" %}
-These three options are not mutually exclusive. For example, a manual GTG setup (option 3) can be combined with Advanced Consent Mode (option 1) for additional resilience if load order is ever affected by a future page or CDN change.&#x20;
+These three options are not mutually exclusive. For example, a manual GTG setup (option 3) can be combined with Advanced Consent Mode (option 1) for additional resilience if load order is ever affected by a future page or CDN change.
 {% endhint %}
 
 **Why Advanced Consent Mode is recommended for GTG**
@@ -117,7 +117,7 @@ Choose the right template! In case you need to enable Google Consent Mode with I
 
 ***
 
-## Architecture
+### Architecture
 
 With **Commanders Gateway**, you reserve a **single path** on your domain, for example:
 
@@ -146,24 +146,24 @@ Website  →  example.com/mypath/ (Google tags)
 
 ***
 
-## Cookie filtering and governance
+### Cookie filtering and governance
 
 Some organizations, especially those with strict privacy policies, may have concerns about sending **first-party cookies to external partners** such as Google. Commanders Gateway supports **data minimization** and provides mechanisms to control which cookies can transit through the gateway. Two complementary approaches can be used :
 
-#### Cookie blacklisting at the edge
+**Cookie blacklisting at the edge**
 
 Customers can filter cookies **directly at the CDN or edge layer** (Cloudflare Worker, Fastly Compute, etc.). This can be done by **simply configuring the Worker code provided in this guide** (see CloudFlare free or Faslty tab below) to remove specific cookies before the request is forwarded to Commanders Gateway.
 
 This allows specific cookies to be removed from the request **before it reaches Commanders Gateway**, ensuring that only the cookies approved by the organization leave its infrastructure.
 
-#### Cookie whitelisting before forwarding to partners
+**Cookie whitelisting before forwarding to partners**
 
 Commanders Gateway can also enforce a **cookie whitelist when forwarding requests to partners**.
 
 For example, when forwarding measurement requests to Google, the gateway can be configured to **only include Google-related cookies** (such as `_ga` or `_gcl_*`).\
 All other cookies are automatically excluded from the request sent to Google.
 
-## Before you begin
+### Before you begin
 
 This guide assumes your website is already configured with:
 
@@ -172,7 +172,7 @@ This guide assumes your website is already configured with:
 
 ***
 
-## Step 1: Choose the tag serving path
+### Step 1: Choose the tag serving path
 
 You must reserve **one path** on your website domain.
 
@@ -186,7 +186,7 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 
 ***
 
-## Step 2: Route traffic
+### Step 2: Route traffic
 
 {% tabs %}
 {% tab title="Cloudflare Enterprise" %}
@@ -551,6 +551,122 @@ This Worker proxies requests while adding extra headers (`X-Forwarded-Host`, `X-
 Once saved, all requests to `/mypath` will be proxied to Commanders Gateway.
 {% endtab %}
 
+{% tab title="CloudFront" %}
+Use your existing CloudFront distribution to route the reserved first-party path to Commanders Act Gateway. In the examples below, replace `mypath` with your Gateway prefix and `1234` with your Commanders Act workspace/site ID.
+
+**Step 1: Create the Gateway origin**
+
+1. Open your distribution and go to **Origins** → **Create origin**.
+2. Set **Origin domain** to `s1234.commander4.com`, without a protocol or path.
+3. Leave **Origin path** empty. The complete request path, including `/mypath`, must reach the Gateway unchanged.
+4. Use **HTTPS only** for the connection to the origin, on port **443**.
+5. Save the origin.
+
+**Step 2: Create the Gateway behavior**
+
+Go to **Behaviors** → **Create behavior** and configure:
+
+| Setting                | Required value                                       |
+| ---------------------- | ---------------------------------------------------- |
+| Path pattern           | `/mypath/*`, or `/<prefix>/*` for your chosen prefix |
+| Origin                 | The Gateway origin created above                     |
+| Viewer protocol policy | Redirect HTTP to HTTPS                               |
+| Allowed HTTP methods   | **GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE**     |
+| Cache policy           | **Managed-CachingDisabled**                          |
+| Origin request policy  | **Managed-AllViewerExceptHostHeader**                |
+
+Place this behavior before any broader pattern that could match Gateway requests.
+
+{% hint style="warning" %}
+The trailing `/*` in the path pattern is required. `/mypath` alone matches only that exact URL: requests such as `/mypath/js/...`, `/mypath/cdp/...` and `/mypath/g/...` would be routed to your website instead of the Gateway.
+
+Select the complete list of allowed HTTP methods. Events use **POST** and browser CORS preflight requests use **OPTIONS**. Allowing only GET and HEAD blocks them.
+{% endhint %}
+
+**Managed-AllViewerExceptHostHeader** forwards all viewer headers except `Host`, all query strings, all cookies, and CloudFront protocol, device and location headers, including `CloudFront-Viewer-Country` and `CloudFront-Viewer-Country-Region`. CloudFront sets the origin request's `Host` to `s1234.commander4.com`.
+
+{% hint style="warning" %}
+Do not use **Managed-AllViewer** or a custom origin request policy on the Gateway behavior. The previous custom `metrics-proxy-headers` policy is no longer needed.
+
+A custom policy using **All viewer headers and the following CloudFront headers** forwards the website's Host, which prevents the Gateway origin from working correctly. A custom policy using **All viewer headers except** does not let you add CloudFront location headers, so it loses geolocation forwarding.
+{% endhint %}
+
+**Step 3: Create and associate the required CloudFront Function**
+
+The function preserves the website hostname in `x-forwarded-host` before CloudFront replaces `Host` with the Gateway origin hostname. It also copies the available CloudFront country and region headers to the Gateway forwarding headers.
+
+1. In **CloudFront** → **Functions**, create a function using JavaScript runtime **2.0**.
+2. Paste the following code:
+
+```javascript
+function handler(event) {
+  var request = event.request;
+  var headers = request.headers;
+
+  // Preserve the website hostname without modifying the read-only Host header.
+  headers['x-forwarded-host'] = { value: headers.host.value };
+
+  // Replace any viewer-supplied forwarding headers with CloudFront location data.
+  delete headers['x-forwarded-country'];
+  delete headers['x-forwarded-region'];
+  delete headers['x-forwarded-countryregion'];
+
+  var country = headers['cloudfront-viewer-country'];
+  var region = headers['cloudfront-viewer-country-region'];
+
+  if (country && country.value) {
+    headers['x-forwarded-country'] = { value: country.value };
+  }
+  if (region && region.value) {
+    headers['x-forwarded-region'] = { value: region.value };
+  }
+  if (country && country.value && region && region.value) {
+    headers['x-forwarded-countryregion'] = {
+      value: country.value + '-' + region.value
+    };
+  }
+
+  // Keep the complete URI and query string unchanged.
+  return request;
+}
+```
+
+3. Save, test and **publish** the function.
+4. Edit the `/mypath/*` behavior. Under **Function associations**, associate the published function with **Viewer request**.
+5. Save the behavior and wait for the distribution deployment to finish.
+
+{% hint style="warning" %}
+The Viewer request function is mandatory. Do not add `x-forwarded-proto` to it: AWS forbids this header in edge functions and returns **502 Bad Gateway** if the function sets it. The Gateway defaults to HTTPS. Do not modify the read-only `Host` header in the function.
+{% endhint %}
+
+{% hint style="info" %}
+Country and region headers are forwarded when available. The Gateway does not yet use visitor IP and geolocation forwarded by a customer proxy. This configuration prepares those headers for support, but does not guarantee accurate visitor geolocation at this stage.
+{% endhint %}
+
+**Step 4: Verify the complete setup**
+
+1. Open `https://example.com/mypath/debug/`, replacing the domain and prefix with your own values.
+2. In the returned headers, verify:
+   * `headers.host` is `s1234.commander4.com` (your workspace/site ID).
+   * `x-forwarded-host` is `example.com` (your website hostname).
+   * When CloudFront location data is available, `x-forwarded-country`, `x-forwarded-region` and `x-forwarded-countryregion` contain the corresponding values.
+3. Check `https://example.com/mypath/healthy`: it should return `ok`.
+4. Trigger a test event through your configured tracking integration. In browser DevTools, confirm the **POST** request uses your first-party domain and prefix, reaches the Gateway, and appears in the expected event inspector or destination.
+5. Test an **OPTIONS** preflight against the same event endpoint, with the actual website Origin and the headers used by the POST. Confirm it reaches the Gateway and the CORS response permits the request.
+
+Do not stop after the health check: POST and OPTIONS must also work before activation.
+
+**Troubleshooting**
+
+* Requests below the prefix reach your website: check `/<prefix>/*` and behavior priority.
+* POST or OPTIONS is rejected: check the full list of allowed HTTP methods.
+* The debug response shows your website in `headers.host`: select **Managed-AllViewerExceptHostHeader**.
+* `x-forwarded-host` is missing: publish and associate the function on **Viewer request** for the Gateway behavior.
+* CloudFront returns 502 after associating the function: verify that it does not set `x-forwarded-proto` or modify `Host`.
+
+AWS references: [Managed origin request policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html) and [Restrictions on edge functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-function-restrictions-all.html).
+{% endtab %}
+
 {% tab title="Akamai" %}
 {% hint style="warning" %}
 Commanders Gateway with Akamai is in **beta**. If you have a question or issue with your setup, reach out the support
@@ -901,13 +1017,13 @@ Because the exact steps depend on the Fastly products enabled on the account and
 
 ***
 
-## Step 3: Update the scripts in your tag management system or your website
+### Step 3: Update the scripts in your tag management system or your website
 
 Replace vendor script URLs with the new **first-party paths**.
 
 Examples:
 
-### Google
+#### Google
 
 ```html
 <!-- Instead of -->
@@ -917,7 +1033,7 @@ Examples:
 <script async src="/mypath/"></script>
 ```
 
-### Meta (Facebook Pixel)
+#### Meta (Facebook Pixel)
 
 ```html
 <!-- Instead of -->
@@ -927,13 +1043,13 @@ Examples:
 <script src="/mypath/js/f4558899203.js"></script>
 ```
 
-### Snapchat
+#### Snapchat
 
 ```html
 <script src="/mypath/js/a82b99df732.js"></script>
 ```
 
-### Bing (UET)
+#### Bing (UET)
 
 ```html
 <script src="/mypath/js/c77ac91be11.js"></script>
@@ -941,7 +1057,7 @@ Examples:
 
 Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.
 
-### OneTag
+#### OneTag
 
 You can manually change the domain of your cact() setup with the `collectionDomain` propery Exemple :
 
@@ -953,7 +1069,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-## Step 4: Verify setup
+### Step 4: Verify setup
 
 * For the global path, check the health endpoint:
   * `https://example.com/mypath/healthy` → should return `ok`
@@ -965,7 +1081,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-## Benefits
+### Benefits
 
 * **Durability**: Tracking continues to work even with Safari ITP and third-party cookie restrictions.
 * **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
@@ -973,7 +1089,7 @@ Warning : do NOT add a `/` at the end of the path
 * **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
 *
 
-## Configure first party data collection for Commanders Act features (via Gateway)
+### Configure first party data collection for Commanders Act features (via Gateway)
 
 This chapter explains how to route Commanders Act data collection through your **first party gateway path** (for example `/mypath`) for the main Commanders Act features.
 
@@ -984,7 +1100,7 @@ Important notes:
 
 ***
 
-### 1. Server-side destinations via the gateway (example: Meta Facebook CAPI)
+#### 1. Server-side destinations via the gateway (example: Meta Facebook CAPI)
 
 Commanders Act server-side tracking relies on **oneTag** tags. Typically, you will have one oneTag per event you want to collect, for example:
 
@@ -1008,7 +1124,7 @@ Notes:
 
 ***
 
-### 2. CDP, Campaign Analytics and CMP collection via the gateway
+#### 2. CDP, Campaign Analytics and CMP collection via the gateway
 
 _(Data Activation, Campaign Analytics, CMP statistics and proof of consent)_
 
@@ -1035,7 +1151,7 @@ Implementation options:
 
 ***
 
-### Verification checklist
+#### Verification checklist
 
 After applying the changes above, verify:
 
