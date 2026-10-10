@@ -18,9 +18,9 @@ If your goal is to build a durable, vendor-agnostic first-party tracking archite
 
 ***
 
-### Why use Commanders Gateway?
+#### Why use Commanders Gateway?
 
-#### 1. Advantages of using a gateway
+**1. Advantages of using a gateway**
 
 A gateway setup improves **data collection quality and completeness** across your marketing stack.
 
@@ -28,7 +28,7 @@ A gateway setup improves **data collection quality and completeness** across you
 * Browser restrictions (such as Safari’s ITP) often limit or block third-party cookies and some 1st party javascript cookies, but with a first-party server-side setup, measurement remains more reliable.
 * This ensures **more accurate tracking**, providing partners with higher-quality signals for measurement, attribution, and optimization.
 
-#### 2. Advantages of using Commanders Gateway
+**2. Advantages of using Commanders Gateway**
 
 On top of the benefits of any gateway approach, **Commanders Gateway** adds unique advantages:
 
@@ -40,7 +40,7 @@ On top of the benefits of any gateway approach, **Commanders Gateway** adds uniq
 
 ***
 
-### Overview
+#### Overview
 
 **Commanders Gateway** lets you deploy marketing and measurement tags using your **own first-party infrastructure**, hosted on your website’s domain.\
 This infrastructure sits between your website and your partners’ services (Google, Meta, Bing, Snapchat, Awin, etc.).
@@ -53,7 +53,7 @@ With Commanders Gateway:
 
 ***
 
-### Google Tag Gateway (GTG) and consent
+#### Google Tag Gateway (GTG) and consent
 
 {% hint style="info" %}
 This section is written for the verification of requirements on Consent Mode with Google Tag Gateway (GTG). It explains what GTG changes for consent, how to check enrollment, and what to do if a "late" consent signal is detected on a GTG-enrolled domain.
@@ -117,7 +117,7 @@ Choose the right template! In case you need to enable Google Consent Mode with I
 
 ***
 
-### Architecture
+#### Architecture
 
 With **Commanders Gateway**, you reserve a **single path** on your domain, for example:
 
@@ -146,7 +146,7 @@ Website  →  example.com/mypath/ (Google tags)
 
 ***
 
-### Cookie filtering and governance
+#### Cookie filtering and governance
 
 Some organizations, especially those with strict privacy policies, may have concerns about sending **first-party cookies to external partners** such as Google. Commanders Gateway supports **data minimization** and provides mechanisms to control which cookies can transit through the gateway. Two complementary approaches can be used :
 
@@ -163,7 +163,7 @@ Commanders Gateway can also enforce a **cookie whitelist when forwarding request
 For example, when forwarding measurement requests to Google, the gateway can be configured to **only include Google-related cookies** (such as `_ga` or `_gcl_*`).\
 All other cookies are automatically excluded from the request sent to Google.
 
-### Before you begin
+#### Before you begin
 
 This guide assumes your website is already configured with:
 
@@ -172,7 +172,7 @@ This guide assumes your website is already configured with:
 
 ***
 
-### Step 1: Choose the tag serving path
+#### Step 1: Choose the tag serving path
 
 You must reserve **one path** on your website domain.
 
@@ -186,7 +186,7 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 
 ***
 
-### Step 2: Route traffic
+#### Step 2: Route traffic
 
 {% tabs %}
 {% tab title="Cloudflare Enterprise" %}
@@ -239,9 +239,12 @@ async function handleRequest(request) {
     // Clone request headers
     const newHeaders = new Headers(request.headers);
     newHeaders.set("X-Forwarded-Host", url.host);
+    newHeaders.set("X-Forwarded-For", request.headers.get("CF-Connecting-IP"));
+    newHeaders.set("X-Forwarded-Proto", "https");
+
 
     const country = request.cf?.country || "";
-    const region = request.cf?.region || "";
+    const region = request.cf?.regionCode || "";
 
     if (country) newHeaders.set("X-Forwarded-Country", country);
     if (region) newHeaders.set("X-Forwarded-Region", region);
@@ -267,10 +270,19 @@ async function handleRequest(request) {
       method: request.method,
       headers: newHeaders,
       body: request.body,
-      redirect: "follow"
+      redirect: "manual"
     });
 
-    return fetch(proxyRequest);
+    const response = await fetch(proxyRequest);
+    const responseHeaders = new Headers(response.headers);
+    responseHeaders.delete("NEL");
+    responseHeaders.delete("Report-To");
+
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: responseHeaders
+    });
   }
 
   return new Response("Not Found", { status: 404 });
@@ -323,6 +335,18 @@ It should also return:
 ```
 ok
 ```
+
+The proxy forwards the visitor IP from Cloudflare's `CF-Connecting-IP` through `X-Forwarded-For`. It uses `request.cf.regionCode` for the ISO region code. Redirects are returned to the browser instead of being followed at the edge.
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 
 {% tab title="Cloudflare Snippet" %}
@@ -376,10 +400,12 @@ export default {
     const newHeaders = new Headers(request.headers);
 
     newHeaders.set("X-Forwarded-Host", url.host);
+    newHeaders.set("X-Forwarded-For", request.headers.get("CF-Connecting-IP"));
+
     newHeaders.set("X-Forwarded-Proto", "https");
 
     const country = request.cf?.country || "";
-    const region = request.cf?.region || "";
+    const region = request.cf?.regionCode || "";
     if (country) newHeaders.set("X-Forwarded-Country", country);
     if (region) newHeaders.set("X-Forwarded-Region", region);
     if (country && region) {
@@ -454,6 +480,18 @@ After deployment, verify:
 * `https://example.com/mypath/healthy` → should return `ok`.
 * `https://example.com/mypath/?validate_geo=healthy` → should return `ok` when geolocation forwarding is correctly configured.
 * Cookies listed in `blacklistedCookies` are no longer present in requests received by Commanders Gateway, while other cookies are preserved.
+
+The proxy forwards the visitor IP from Cloudflare's `CF-Connecting-IP` through `X-Forwarded-For`. It uses `request.cf.regionCode` for the ISO region code. Redirects are returned to the browser instead of being followed at the edge.
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 
 {% tab title="Cloudflare Free" %}
@@ -503,9 +541,12 @@ async function handleRequest(request) {
     // Clone request headers
     const newHeaders = new Headers(request.headers);
     newHeaders.set("X-Forwarded-Host", url.host);
+    newHeaders.set("X-Forwarded-For", request.headers.get("CF-Connecting-IP"));
+    newHeaders.set("X-Forwarded-Proto", "https");
+
 
     const country = request.cf?.country || "";
-    const region = request.cf?.region || "";
+    const region = request.cf?.regionCode || "";
     if (country) newHeaders.set("X-Forwarded-Country", country);
     if (region) newHeaders.set("X-Forwarded-Region", region);
     if (country && region) {
@@ -530,9 +571,18 @@ async function handleRequest(request) {
       method: request.method,
       headers: newHeaders,
       body: request.body,
-      redirect: "follow"
+      redirect: "manual"
     });
-    return fetch(proxyRequest);
+    const response = await fetch(proxyRequest);
+    const responseHeaders = new Headers(response.headers);
+    responseHeaders.delete("NEL");
+    responseHeaders.delete("Report-To");
+
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers: responseHeaders
+    });
   }
   return new Response("Not Found", { status: 404 }); // Return 404 if request path does not match prefix
 }
@@ -549,6 +599,18 @@ This Worker proxies requests while adding extra headers (`X-Forwarded-Host`, `X-
    * **Worker**: select the Worker created in step 1.
 
 Once saved, all requests to `/mypath` will be proxied to Commanders Gateway.
+
+The proxy forwards the visitor IP from Cloudflare's `CF-Connecting-IP` through `X-Forwarded-For`. It uses `request.cf.regionCode` for the ISO region code. Redirects are returned to the browser instead of being followed at the edge.
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 
 {% tab title="CloudFront" %}
@@ -639,9 +701,7 @@ function handler(event) {
 The Viewer request function is mandatory. Do not add `x-forwarded-proto` to it: AWS forbids this header in edge functions and returns **502 Bad Gateway** if the function sets it. The Gateway defaults to HTTPS. Do not modify the read-only `Host` header in the function.
 {% endhint %}
 
-{% hint style="info" %}
-Country and region headers are forwarded when available. The Gateway does not yet use visitor IP and geolocation forwarded by a customer proxy. This configuration prepares those headers for support, but does not guarantee accurate visitor geolocation at this stage.
-{% endhint %}
+CloudFront automatically adds the visitor IP to `X-Forwarded-For`. With the origin request policy and Viewer request function above, the Gateway uses the forwarded visitor IP and the available country/region codes for Google and Commanders Act collection requests. No IP handling needs to be added to the function.
 
 **Step 4: Verify the complete setup**
 
@@ -665,6 +725,16 @@ Do not stop after the health check: POST and OPTIONS must also work before activ
 * CloudFront returns 502 after associating the function: verify that it does not set `x-forwarded-proto` or modify `Host`.
 
 AWS references: [Managed origin request policies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-origin-request-policies.html) and [Restrictions on edge functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-function-restrictions-all.html).
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 
 {% tab title="Akamai" %}
@@ -691,6 +761,18 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
 
 ***
 
+**Forward the visitor IP, website hostname and protocol**
+
+On the Gateway rule, configure the outgoing origin request to include:
+
+| Header              | Value                                                 |
+| ------------------- | ----------------------------------------------------- |
+| `X-Forwarded-Host`  | The original website hostname from the viewer request |
+| `X-Forwarded-Proto` | `https` for the HTTPS website                         |
+| `X-Forwarded-For`   | The visitor IP, added by Akamai to the outgoing chain |
+
+If using `True-Client-IP` instead, configure Akamai to populate it with the visitor IP. Use the IP determined by Akamai, rather than a value supplied by the browser. Keep **Forward Host Header** set to **Origin Hostname**.
+
 **Include geolocation information**
 
 1. Navigate to the **Property Variables** section and add the following variables:
@@ -714,6 +796,8 @@ Commanders Gateway with Akamai is in **beta**. If you have a question or issue w
 | ------ | ------------------ | ------------------- | -------------------------------- |
 | Add    | Other...           | X-Forwarded-Region  | \{{user.PMUSER\_USER\_REGION\}}  |
 | Add    | Other...           | X-Forwarded-Country | \{{user.PMUSER\_USER\_COUNTRY\}} |
+
+Use the Edgescape **Region Code** (ISO subdivision code), not the region name. Forward the country and region separately as shown above, or provide their combined value through `X-Forwarded-CountryRegion` (for example `FR-IDF`).
 
 5. Save the new rule and deploy your changes.
 
@@ -774,6 +858,16 @@ After deploying the Akamai configuration:
 * Navigate to `https://example.com/mypath/healthy` → should display `ok`.
 * Test geolocation headers: `https://example.com/mypath/?validate_geo=healthy` → should also display `ok`.
 * Verify that requests forwarded to Commanders Gateway no longer contain the excluded cookie names, while other cookies are still forwarded normally.
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 
 {% tab title="Fastly" %}
@@ -890,7 +984,7 @@ const blacklistedCookies = [
   "JSESSIONID"
 ];
 
-addEventListener("fetch", (event) => event.respondWith(handleRequest(event.request)));
+addEventListener("fetch", (event) => event.respondWith(handleRequest(event.request, event.client)));
 
 function filterCookieHeader(cookieHeader, blacklist) {
   if (!cookieHeader) return "";
@@ -908,7 +1002,7 @@ function filterCookieHeader(cookieHeader, blacklist) {
   return filteredCookies.join("; ");
 }
 
-async function handleRequest(request) {
+async function handleRequest(request, client) {
 
   const url = new URL(request.url);
 
@@ -936,10 +1030,12 @@ async function handleRequest(request) {
   // Clone headers and add forwarding info
   const headers = new Headers(request.headers);
   headers.set("X-Forwarded-Host", url.host);
+  if (client.address) headers.set("X-Forwarded-For", client.address);
 
   // Forward geo information when available (optional but recommended)
-  const country = (request.geo && request.geo.country_code) ? request.geo.country_code.toUpperCase() : "";
-  const region  = (request.geo && request.geo.region) ? request.geo.region : "";
+  const geo = client.geo;
+  const country = geo && geo.country_code ? geo.country_code.toUpperCase() : "";
+  const region = geo && geo.region ? geo.region : "";
   if (country) headers.set("X-Forwarded-Country", country);
   if (region)  headers.set("X-Forwarded-Region", region);
   if (country && region) headers.set("X-Forwarded-CountryRegion", `${country}-${region}`);
@@ -1012,18 +1108,28 @@ This typically involves, depending on the customer setup:
 * Ensuring the Compute service is the one receiving requests for the chosen path (example: `/mypath*`) on that domain.
 
 Because the exact steps depend on the Fastly products enabled on the account and how the customer manages TLS and DNS, treat this as a beta step and reach out to support if you need the exact commands for your specific setup.
+
+**Verify visitor IP and location forwarding**
+
+Open `https://example.com/mypath/debug/`, using your own website domain and Gateway prefix. Check the fields under `computed`:
+
+* `behindClientProxy` must be `true`.
+* `clientIpSource` must be `"x-forwarded-for"` (or `"true-client-ip"` when using that header).
+* `countryRegionSource` must identify the `x-forwarded-*` headers, normally `"x-forwarded-countryregion"` when the combined header is provided.
+
+Check that the computed IP and country/region match the visitor, rather than the proxy. Use ISO codes, for example country `FR`, region `IDF` and combined value `FR-IDF`. A full region name such as `Île-de-France` is ignored. If no usable visitor IP or location is forwarded, the Gateway falls back to the proxy's IP or location. A successful health check alone does not confirm visitor IP and location forwarding.
 {% endtab %}
 {% endtabs %}
 
 ***
 
-### Step 3: Update the scripts in your tag management system or your website
+#### Step 3: Update the scripts in your tag management system or your website
 
 Replace vendor script URLs with the new **first-party paths**.
 
 Examples:
 
-#### Google
+**Google**
 
 ```html
 <!-- Instead of -->
@@ -1033,7 +1139,7 @@ Examples:
 <script async src="/mypath/"></script>
 ```
 
-#### Meta (Facebook Pixel)
+**Meta (Facebook Pixel)**
 
 ```html
 <!-- Instead of -->
@@ -1043,13 +1149,13 @@ Examples:
 <script src="/mypath/js/f4558899203.js"></script>
 ```
 
-#### Snapchat
+**Snapchat**
 
 ```html
 <script src="/mypath/js/a82b99df732.js"></script>
 ```
 
-#### Bing (UET)
+**Bing (UET)**
 
 ```html
 <script src="/mypath/js/c77ac91be11.js"></script>
@@ -1057,7 +1163,7 @@ Examples:
 
 Each obfuscated filename is automatically generated and available in the **Commanders Act First-Party Hosting interface**.
 
-#### OneTag
+**OneTag**
 
 You can manually change the domain of your cact() setup with the `collectionDomain` propery Exemple :
 
@@ -1069,7 +1175,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-### Step 4: Verify setup
+#### Step 4: Verify setup
 
 * For the global path, check the health endpoint:
   * `https://example.com/mypath/healthy` → should return `ok`
@@ -1081,7 +1187,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-### Benefits
+#### Benefits
 
 * **Durability**: Tracking continues to work even with Safari ITP and third-party cookie restrictions.
 * **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
@@ -1089,7 +1195,7 @@ Warning : do NOT add a `/` at the end of the path
 * **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
 *
 
-### Configure first party data collection for Commanders Act features (via Gateway)
+#### Configure first party data collection for Commanders Act features (via Gateway)
 
 This chapter explains how to route Commanders Act data collection through your **first party gateway path** (for example `/mypath`) for the main Commanders Act features.
 
@@ -1100,7 +1206,7 @@ Important notes:
 
 ***
 
-#### 1. Server-side destinations via the gateway (example: Meta Facebook CAPI)
+**1. Server-side destinations via the gateway (example: Meta Facebook CAPI)**
 
 Commanders Act server-side tracking relies on **oneTag** tags. Typically, you will have one oneTag per event you want to collect, for example:
 
@@ -1124,7 +1230,7 @@ Notes:
 
 ***
 
-#### 2. CDP, Campaign Analytics and CMP collection via the gateway
+**2. CDP, Campaign Analytics and CMP collection via the gateway**
 
 _(Data Activation, Campaign Analytics, CMP statistics and proof of consent)_
 
@@ -1151,7 +1257,7 @@ Implementation options:
 
 ***
 
-#### Verification checklist
+**Verification checklist**
 
 After applying the changes above, verify:
 
