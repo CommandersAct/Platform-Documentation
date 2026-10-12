@@ -18,7 +18,7 @@ If your goal is to build a durable, vendor-agnostic first-party tracking archite
 
 ***
 
-#### Why use Commanders Gateway?
+**Why use Commanders Gateway?**
 
 **1. Advantages of using a gateway**
 
@@ -40,7 +40,7 @@ On top of the benefits of any gateway approach, **Commanders Gateway** adds uniq
 
 ***
 
-#### Overview
+**Overview**
 
 **Commanders Gateway** lets you deploy marketing and measurement tags using your **own first-party infrastructure**, hosted on your website’s domain.\
 This infrastructure sits between your website and your partners’ services (Google, Meta, Bing, Snapchat, Awin, etc.).
@@ -53,7 +53,7 @@ With Commanders Gateway:
 
 ***
 
-#### Google Tag Gateway (GTG) and consent
+**Google Tag Gateway (GTG) and consent**
 
 {% hint style="info" %}
 This section is written for the verification of requirements on Consent Mode with Google Tag Gateway (GTG). It explains what GTG changes for consent, how to check enrollment, and what to do if a "late" consent signal is detected on a GTG-enrolled domain.
@@ -117,7 +117,7 @@ Choose the right template! In case you need to enable Google Consent Mode with I
 
 ***
 
-#### Architecture
+**Architecture**
 
 With **Commanders Gateway**, you reserve a **single path** on your domain, for example:
 
@@ -146,7 +146,7 @@ Website  →  example.com/mypath/ (Google tags)
 
 ***
 
-#### Cookie filtering and governance
+**Cookie filtering and governance**
 
 Some organizations, especially those with strict privacy policies, may have concerns about sending **first-party cookies to external partners** such as Google. Commanders Gateway supports **data minimization** and provides mechanisms to control which cookies can transit through the gateway. Two complementary approaches can be used :
 
@@ -163,7 +163,7 @@ Commanders Gateway can also enforce a **cookie whitelist when forwarding request
 For example, when forwarding measurement requests to Google, the gateway can be configured to **only include Google-related cookies** (such as `_ga` or `_gcl_*`).\
 All other cookies are automatically excluded from the request sent to Google.
 
-#### Before you begin
+**Before you begin**
 
 This guide assumes your website is already configured with:
 
@@ -172,7 +172,7 @@ This guide assumes your website is already configured with:
 
 ***
 
-#### Step 1: Choose the tag serving path
+**Step 1: Choose the tag serving path**
 
 You must reserve **one path** on your website domain.
 
@@ -186,7 +186,7 @@ Caution: This setup reroutes all traffic with the chosen path. To avoid affectin
 
 ***
 
-#### Step 2: Route traffic
+**Step 2: Route traffic**
 
 {% tabs %}
 {% tab title="Cloudflare Enterprise" %}
@@ -975,9 +975,6 @@ const prefix = "/PATHACHANGER";              // TODO: replace with your chosen g
 const sid = "s123456";                       // TODO: replace with your workspace/site ID (e.g. "s1234")
 const BACKEND = "commander_gateway";         // Fastly backend name pointing to sid.commander4.com
 
-const STRIP_PREFIX = true;                   // If true, removes the prefix from the forwarded path
-const PREPEND_PATH = "/gateway";             // Internal gateway entrypoint on Commanders side (do not change)
-
 // List of cookie names that must NOT be forwarded to Commanders Gateway. Add your technical cookies if needed
 const blacklistedCookies = [
   "PHPSESSID",
@@ -1011,26 +1008,21 @@ async function handleRequest(request, client) {
     return new Response("Not Found", { status: 404 });
   }
 
-  // Build the path that will be forwarded to Commanders Gateway
-  let fwdPath = url.pathname;
-
-  // Optionally strip the customer prefix (e.g. "/mypath") so the origin receives "/"
-  if (STRIP_PREFIX) {
-    fwdPath = fwdPath.slice(prefix.length) || "/";
-  }
-
-  // Prepend Commanders internal entrypoint (required)
-  if (PREPEND_PATH) {
-    fwdPath = PREPEND_PATH + fwdPath;
-  }
-
-  // Final origin URL on Commanders infrastructure
-  const target = `https://${sid}.commander4.com${fwdPath}${url.search}`;
+  // Preserve the complete customer path, including its configured prefix.
+  const target = `https://${sid}.commander4.com${url.pathname}${url.search}`;
 
   // Clone headers and add forwarding info
   const headers = new Headers(request.headers);
   headers.set("X-Forwarded-Host", url.host);
-  if (client.address) headers.set("X-Forwarded-For", client.address);
+  headers.set("X-Forwarded-Proto", "https");
+
+  // Append the visitor IP to the existing forwarding chain.
+  if (client.address) {
+    const forwardedFor = headers.get("X-Forwarded-For");
+    headers.set("X-Forwarded-For", forwardedFor
+      ? `${forwardedFor}, ${client.address}`
+      : client.address);
+  }
 
   // Forward geo information when available (optional but recommended)
   const geo = client.geo;
@@ -1123,7 +1115,7 @@ Check that the computed IP and country/region match the visitor, rather than the
 
 ***
 
-#### Step 3: Update the scripts in your tag management system or your website
+**Step 3: Update the scripts in your tag management system or your website**
 
 Replace vendor script URLs with the new **first-party paths**.
 
@@ -1175,7 +1167,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-#### Step 4: Verify setup
+**Step 4: Verify setup**
 
 * For the global path, check the health endpoint:
   * `https://example.com/mypath/healthy` → should return `ok`
@@ -1187,7 +1179,7 @@ Warning : do NOT add a `/` at the end of the path
 
 ***
 
-#### Benefits
+**Benefits**
 
 * **Durability**: Tracking continues to work even with Safari ITP and third-party cookie restrictions.
 * **Resilience**: Serving scripts from your domain with obfuscated filenames makes it more difficult for blocking rules to interfere.
@@ -1195,7 +1187,7 @@ Warning : do NOT add a `/` at the end of the path
 * **Future-proof**: Adapts to privacy sandbox and upcoming browser restrictions.
 *
 
-#### Configure first party data collection for Commanders Act features (via Gateway)
+**Configure first party data collection for Commanders Act features (via Gateway)**
 
 This chapter explains how to route Commanders Act data collection through your **first party gateway path** (for example `/mypath`) for the main Commanders Act features.
 
