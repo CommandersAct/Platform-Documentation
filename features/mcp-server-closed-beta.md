@@ -90,8 +90,6 @@ To verify the connection, you can ask:
 
 You should see all available tools exposed by the server.
 
-
-
 ### 6.b. Example client environment: ChatGPT
 
 ChatGPT is another MCP compatible client.
@@ -218,7 +216,73 @@ Can you list the available reports?
 
 ***
 
-### 9. Token lifetime
+### 9. Practical prompt examples
+
+Once connected, you can ask Claude or ChatGPT questions about your actual Commanders Act environment, not just request technical lists. Replace \[site], country names, platforms and time ranges with your own. **Results depend on the account permissions and data exposed through the MCP tools.** Ask the assistant to distinguish verifiable findings from hypotheses.
+
+#### 9.1. Understand the marketing use cases in your account
+
+**Try this prompt:**
+
+> Analyze my Commanders Act configuration and identify the marketing use cases that appear to be implemented, such as server-side conversion tracking, audience activation, data enrichment and consent management. Explain the business value, data used and connected platforms for each. Present the result as a non-technical use-case catalog and distinguish verified configuration from assumptions.
+
+**What you can get:** A business-friendly overview of how your account is configured and which marketing activities it supports.
+
+#### 9.2. Investigate a sudden drop in conversions
+
+**Try this prompt:**
+
+> Conversions reported in Meta Ads have dropped since yesterday. For \[site], examine Commanders Act collection alerts, available event monitoring, source data quality and recent configuration activity. Build a timeline of relevant observations, list possible tracking-related explanations, and prioritize what I should check next. Separate evidence from hypotheses and state what you cannot verify without access to Meta Ads.
+
+**What you can get:** An evidence-based troubleshooting checklist and investigation timeline, without claiming to know the cause of external advertising results.
+
+#### 9.3. Discover opportunities in your CDP audiences
+
+**Try this prompt:**
+
+> Analyze my Commanders Act CDP segments. Group them by likely marketing objective: acquisition, retargeting, retention, reactivation, personalization or exclusion. Build a searchable, filterable table or interactive HTML page. Propose five relevant activation ideas using my existing destinations, and mark classifications inferred from segment names.
+
+**What you can get:** An organized, explorable segment catalog and new campaign ideas based on your current setup.
+
+#### 9.4. Visualize the journey of a purchase event
+
+**Try this prompt:**
+
+> For \[site], reconstruct how the purchase event is expected to move from collection through relevant variables, transformations, web or server-side tags and marketing destinations in Commanders Act. Draw a flow diagram. Clearly mark verified configuration relationships, inferred steps and anything the available MCP data cannot confirm.
+
+**What you can get:** A readable diagram of the event relationships visible in your configuration, useful for tracking documentation and investigations.
+
+#### 9.5. Compare tracking across countries or brands
+
+**Try this prompt:**
+
+> Compare the Commanders Act setups of my French, German and Italian sites. Which advertising destinations, web containers, server-side configurations and relevant tags are present on some sites but not others? Generate a site-by-site comparison matrix and highlight differences worth reviewing, without assuming each difference is an error.
+
+**What you can get:** A comparative matrix that makes multi-site governance and harmonization easier.
+
+#### 9.6. Prepare a cookie and privacy review
+
+**Try this prompt:**
+
+> Review the latest available cookie scanner results and privacy statistics for \[site]. Group detected cookies by vendor where possible, identify items requiring further investigation, and prepare a prioritized compliance review checklist. If possible, display the findings as a filterable dashboard. Do not claim a legal violation without sufficient supporting evidence.
+
+**What you can get:** A prioritized review based on observable cookie and privacy information.
+
+#### From answers to charts and interactive HTML pages
+
+Claude and ChatGPT can enrich their answers with **tables, charts, flow diagrams, custom dashboards and even interactive HTML pages**, depending on the AI client's features. The MCP provides the data; the AI client creates the visualizations.
+
+**Follow-up prompt:**
+
+> Turn the Commanders Act results from this conversation into an interactive HTML dashboard. Add a summary, relevant charts, a searchable table, filters and a detail panel. Use only retrieved data, and label assumptions or missing values clearly.
+
+You can refine the result in the same conversation: "Focus on reactivation audiences", "Add a chart by marketing objective" or "Summarize these insights for my team".
+
+**Closed beta limitations:** the current documented MCP capabilities primarily support reading and analyzing configurations, reports and monitoring information. They do not automatically publish tag changes or create campaigns. External platform performance metrics may not be available. Interactive HTML generation and export depend on the features supported by your chosen AI client.
+
+***
+
+### 10. Token lifetime
 
 Access tokens are time limited.
 
@@ -228,7 +292,7 @@ When the token expires, a new authentication is required.
 
 ***
 
-### 10. Troubleshooting
+### 11. Troubleshooting
 
 Login page does not open\
 Make sure your client supports MCP with authentication and that a browser can be launched
@@ -250,7 +314,7 @@ Start with a simple request such as listing available sites to verify permission
 
 ***
 
-### 11. Security and governance
+### 12. Security and governance
 
 The Commanders Act MCP server relies on:
 
@@ -265,7 +329,7 @@ As the server is currently in closed beta, access remains restricted.
 
 ***
 
-### 12. Support
+### 13. Support
 
 For access or setup information, contact the Commanders Act support team.
 
