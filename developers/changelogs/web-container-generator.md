@@ -2,6 +2,13 @@
 
 ## 2026
 
+### 104.3
+
+Release date: **26/10/2026**
+
+* RCS: Send privacy ID, container ID and generator version
+* [public-release] Add `exemptMode` option to the `config` object of the `cact('trigger')` function
+
 ### 104.2
 
 Release date: **05/10/2026**
@@ -177,7 +184,7 @@ Release date:  **22/04/2026**
 
 Release date:  **16/04/2026**
 
-* Add `exemptMode` option to the `config` object of the `cact('trigger')` function
+* [beta] Add `exemptMode` option to the `config` object of the `cact('trigger')` function
 
 ### 101.2
 
