@@ -9,10 +9,12 @@ coverY: -78.31578947368423
 
 The **Realtime Cookie Scanner (RCS)** is Commanders Act’s next-generation module for **continuous, intelligent, and real-world monitoring** of cookies and client-side storage (cookies, localStorage, sessionStorage, etc.).
 
-Unlike crawler-based scanners that simulate visits with bots, the RCS observes **you real user sessions** — across all countries, devices, browsers, and contexts — providing a **complete, live picture** of what actually happens in your users’ browsers.
+Unlike crawler-based scanners that simulate visits with bots, the RCS observes **your real user sessions** — across all countries, devices, browsers, and contexts — and combines these observations with complementary detection technologies, providing a **complete, live picture** of what actually happens in your users’ browsers.
 
 Whether a cookie appears only for **specific users, browsers, countries, forgotten landing pages, or A/B test variants**, RCS detects it.\
 No missed edge cases, no blind spots, no delayed snapshots.
+
+This approach also enables the detection of cookies that are not directly accessible through JavaScript, including third-party and HttpOnly cookies.
 
 <div><figure><img src="../../.gitbook/assets/maquette_rcs_compliance_summary.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/image (44).png" alt="" width="375"><figcaption></figcaption></figure></div>
 
@@ -41,7 +43,7 @@ RCS provides Privacy, Marketing, and Technical teams with **instant, exhaustive,
 
 #### 🔍 100 % Real-World Detection
 
-* Observes every real user session — no crawlers, no simulations.
+* Observes real user sessions as they happen, complemented by additional browser and server-side detection technologies — going far beyond traditional crawler-based scanning.
 * Detects cookies triggered by clicks, scrolls, mobile interactions, or dynamic tags.
 * Lists **all URLs** where each cookie was found.
 * Groups **variants of the same cookie** (dynamic names or hashed suffixes).
@@ -77,6 +79,20 @@ For more information about Commanders Act AI usage, security, and compliance, se
 | **HttpOnly 1st Party Cookie** | Cookies that are created by a server and stored on the domain of the website and that have a HttpOnly flag. |
 | **Local Storage**             | localStorage is a JavaScript accessible browser storage.                                                    |
 | **Session Storage**           | sessionStorage is a JavaScript accessible session based browser storage.                                    |
+
+**How does RCS detect third-party and HttpOnly cookies?**
+
+RCS combines several complementary detection mechanisms:
+
+* **Real-time JavaScript monitoring:** Observes cookies and browser storage accessible on your website, third-party network requests, and visitors' consent context.
+* **Browser extensions:** Our Chrome/Edge extensions, used by thousands of users, leverage browser APIs such as `chrome.cookies` to access cookies unavailable to JavaScript, including third-party and HttpOnly cookies.
+* **Complementary server-side observation and analysis:** Additional observation systems cross-check collected information against other technical observations to verify consistency and enrich detection results.
+
+Our cookie knowledge base and the analysis of third-party domains are also leveraged across these different mechanisms to improve detection accuracy and completeness.
+
+By combining these technologies, RCS delivers significantly more comprehensive and accurate cookie detection than approaches relying solely on traditional automated crawlers.
+
+The interface provides a consolidated inventory of identified cookies, categorized by storage type, rather than separating results according to the detection mechanism used.
 
 #### 🔔 RealTime Alerts (< 60 s)
 
@@ -180,17 +196,44 @@ RCS works immediately on real traffic — including logged-in or restricted page
 
 ***
 
-### 5. Interfaces & Roadmap
+### 5. Interfaces & Capabilities
 
-| Interface                                             | Description                                                              | Status              |
-| ----------------------------------------------------- | ------------------------------------------------------------------------ | ------------------- |
-| **Overview**                                          | Global summary of detected cookies and compliance status across domains. | 🧩 _In development_ |
-| **New Cookies**                                       | Recently detected cookies with classification and alert options.         | 🧩 _In development_ |
-| **Live Scan**                                         | Real-time feed of detections with domain and device filters.             | 🧩 _In roadmap_     |
-| **Cookie Origins**                                    | Trace pages, domains, and scripts that set each cookie.                  | 🧩 _In roadmap_     |
-| [**Cookies by Category**](cookies-by-category.md)     | Breakdown by functional, analytics, ads, security.                       | ✅ _Available_       |
-| [**Compliance Score**](compliance-score/)             | Overview of non-compliant cookies and risk levels.                       | ✅ _Available_       |
-| [**Cookie Notice Manager**](cookie-notice-manager.md) | Manage, version, and publish the cookie table.                           | ✅ _Available_       |
+RCS provides a comprehensive set of interfaces to monitor tracking technologies, investigate compliance issues, and manage your cookie inventory.
+
+**Available Interfaces**
+
+| Interface                                             | Description                                                                                                                            |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [**Cookie Inventory**](cookie-inventory.md)           | Centralized view of detected cookies and storage, with new detections, consent violations, frequency analysis, and advanced filtering. |
+| [**Cookies by Category**](cookies-by-category.md)     | Breakdown of cookies by purpose, category, and vendor.                                                                                 |
+| [**Compliance Score**](compliance-score/)             | Compliance overview with risk scoring, detected violations, and recommended actions.                                                   |
+| [**Cookie Notice Manager**](cookie-notice-manager.md) | Manage, version, and publish your cookie notice.                                                                                       |
+
+**Expanding RCS Capabilities**
+
+We're continuously extending RCS with additional investigation and monitoring interfaces:
+
+* **Overview:** Global view of detected cookies and compliance status across websites.
+* **Live Traffic:** Real-time visibility into tracking activity and network requests.
+* **Cookie Origins:** Trace the pages, domains, and scripts associated with cookie creation.
+
+***
+
+### Mobile App Privacy Analysis
+
+In addition to websites, Commanders Act provides **mobile application privacy and tracking analysis** for Android and iOS.
+
+This capability helps organizations understand which tracking technologies are active within their mobile applications and how they behave depending on users' consent choices.
+
+**Key capabilities:**
+
+* **Android & iOS applications:** Analysis based on an application package or access to a published or test application.
+* **Consent scenario testing:** Analyze tracking activity before consent, after acceptance, and after refusal.
+* **Network traffic inspection:** Identify requests to third-party services, tracking endpoints, and associated vendors.
+* **Privacy compliance analysis:** Highlight potentially unexpected tracking activity, particularly when consent has not been granted.
+* **Actionable findings:** Provide a structured report of detected services, observed behavior, and potential compliance issues.
+
+To activate this service, please contact your Commanders Act account manager or the Support team.
 
 ***
 
