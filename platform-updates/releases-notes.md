@@ -5,7 +5,84 @@ description: >-
 ---
 
 # Release notes
+## Version 1.0.56 - Octobre - 2026
 
+### Gestion des données & Activation
+
+#### 🛍️ Import de catalogue produits CSV et de données de référence
+
+Le **CSV Products Importer** offre un flux de travail dédié pour importer des catalogues de produits et d’autres jeux de données de référence dans Commanders Act, sans nécessiter de CDP.
+
+Importez des attributs produits tels que **marge, coût, catégorie, marque ou disponibilité du stock** dans un Data Store, puis utilisez-les pour enrichir des événements server-side avant de les envoyer vers des destinations publicitaires et autres.
+
+**Nouveautés :**
+
+* **Correspondance automatique des champs assistée par l’IA :** Commanders Act AI analyse les en-têtes de colonnes CSV et suggère automatiquement des correspondances entre les colonnes du fichier et les champs du Data Store. Il suffit de revoir et valider les correspondances suggérées au lieu de configurer chaque champ manuellement, ce qui réduit considérablement le temps de configuration.
+* Flux d’import dédié avec correspondance des champs et clé de correspondance.
+* Importations ponctuelles ou planifiées via FTP.
+* Mises à jour des enregistrements existants sans supprimer les éléments absents du dernier fichier.
+* Prise en charge d’autres jeux de données de référence, notamment les listes de magasins, les grilles tarifaires et les correspondances d’ID.
+* Types de Data Store dédiés pour distinguer les données visiteur des données de référence.
+
+**Pourquoi c’est important :** Enrichissez les événements de conversion avec des données métier qui ne sont pas disponibles dans le data layer de votre site web. Par exemple, partagez les informations de marge produit avec les plateformes publicitaires pour soutenir des stratégies d’enchères basées sur la rentabilité plutôt que sur le seul chiffre d’affaires. La correspondance assistée par l’IA accélère également beaucoup l’intégration des catalogues.
+
+[En savoir plus sur CSV Products Importer](https://doc.commandersact.com/features/sources/sources-catalog/product-catalog/products-file-importer)
+
+### Nouvelle destination server-side
+
+#### 🎯 Quora Ads Conversion API (Beta)
+
+Le **Quora Ads Conversion API** est désormais disponible en Beta.
+
+Envoyez directement les événements de conversion à Quora Ads Manager à l’aide d’une intégration server-side, avec des correspondances d’événements prédéfinies et des champs personnalisables.
+
+**Pourquoi c’est important :** Améliorez la mesure des conversions et fournissez à Quora des signaux plus riches pour soutenir l’attribution et l’optimisation des campagnes.
+
+[Lire le guide d’intégration Quora Ads Conversion API](https://doc.commandersact.com/features/destinations/destinations-catalog/quora-ads-conversion-api)
+
+### Realtime Cookie Scanner : améliorations d’octobre
+
+#### 📊 Fréquence des cookies et analyse historique plus précises
+
+Nous avons amélioré les calculs de fréquence de détection pour **les cookies Third-party et certains cookies HttpOnly** et avons rendu les rapports historiques plus fiables.
+
+* Les fréquences de détection reflètent désormais mieux la fréquence à laquelle ces cookies apparaissent dans le trafic observé.
+* Les filtres de dates historiques affichent désormais correctement les cookies Third-party détectés pendant la période sélectionnée, avec des fréquences calculées pour cette période.
+* Le filtrage par fréquence fournit désormais des résultats plus représentatifs.
+
+**Pourquoi c’est important :** Analysez le comportement des cookies à l’aide de données d’occurrence plus fiables et examinez avec précision les périodes passées.
+
+**Veuillez noter :** Ces améliorations peuvent modifier le nombre de cookies affichés dans vos rapports. De tels changements n’indiquent pas nécessairement une nouvelle activité de tracking sur votre site web.
+
+#### 🔎 Filtres de chemin d’URL personnalisés
+
+Le filtrage personnalisé des chemins d’URL est de nouveau disponible dans Cookie Notice Manager, avec une détection et un filtrage améliorés.
+
+Saisissez une URL d’exemple, sélectionnez le chemin pertinent et consultez les cookies détectés sur les pages correspondantes, y compris leurs indicateurs liés au consentement.
+
+**Pourquoi c’est important :** Analysez le comportement de tracking dans des zones spécifiques de votre site web, comme le checkout, l’inscription ou les pages de compte, sans examiner tout votre inventaire de cookies.
+
+[En savoir plus sur les filtres de chemin d’URL personnalisés](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#custom-filter-path-url)
+
+#### 🛡️ Amélioration de l’analyse de conformité
+
+Le résumé de conformité fournit désormais des informations supplémentaires et des capacités de filtrage pour rendre les revues de conformité plus rapides.
+
+* Le type de stockage est désormais affiché directement dans le tableau du résumé de conformité.
+* Nouveaux filtres pour le type de stockage et le statut de consentement.
+* L’indicateur "Après refus" est désormais visible sur les URL d’exemple dans Cookie Notice Manager.
+
+**Pourquoi c’est important :** Identifiez rapidement les technologies de stockage et les situations de consentement nécessitant une attention particulière, avec moins de navigation entre les écrans.
+
+[Découvrir le résumé de conformité](https://doc.commandersact.com/features/realtime-cookie-scanner/compliance-score)
+
+### Améliorations de l’ergonomie du CDP
+
+#### 📁 Recherche de segment plus propre
+
+La recherche dans Segment Overview n’affiche désormais que les dossiers contenant des segments correspondants. Les dossiers vides sont masqués, et un message clair apparaît lorsqu’il n’y a aucun résultat.
+
+**Pourquoi c’est important :** Trouvez plus rapidement la bonne audience, en particulier dans les grandes bibliothèques de segments organisées en plusieurs dossiers.
 ## **Release 1.0.55 - 16/09 - 2026**
 
 <figure><img src="../.gitbook/assets/ChatGPT Image 16 sept. 2026, 19_12_05.png" alt=""><figcaption></figcaption></figure>
