@@ -5,84 +5,85 @@ description: >-
 ---
 
 # Release notes
-## Version 1.0.56 - Octobre - 2026
+## Version 1.0.56 - October 2026
 
-### Gestion des données & Activation
+### Data Management & Activation
 
-#### 🛍️ Import de catalogue produits CSV et de données de référence
+#### 🛍️ CSV Product Catalog and Reference Data Import
 
-Le **CSV Products Importer** offre un flux de travail dédié pour importer des catalogues de produits et d’autres jeux de données de référence dans Commanders Act, sans nécessiter de CDP.
+The **CSV Products Importer** provides a dedicated workflow for importing product catalogs and other reference datasets into Commanders Act, without requiring a CDP.
 
-Importez des attributs produits tels que **marge, coût, catégorie, marque ou disponibilité du stock** dans un Data Store, puis utilisez-les pour enrichir des événements server-side avant de les envoyer vers des destinations publicitaires et autres.
+Import product attributes such as **margin, cost, category, brand, or stock availability** into a Data Store, then use them to enrich server-side events before sending them to advertising and other destinations.
 
-**Nouveautés :**
+**What's new:**
 
-* **Correspondance automatique des champs assistée par l’IA :** Commanders Act AI analyse les en-têtes de colonnes CSV et suggère automatiquement des correspondances entre les colonnes du fichier et les champs du Data Store. Il suffit de revoir et valider les correspondances suggérées au lieu de configurer chaque champ manuellement, ce qui réduit considérablement le temps de configuration.
-* Flux d’import dédié avec correspondance des champs et clé de correspondance.
-* Importations ponctuelles ou planifiées via FTP.
-* Mises à jour des enregistrements existants sans supprimer les éléments absents du dernier fichier.
-* Prise en charge d’autres jeux de données de référence, notamment les listes de magasins, les grilles tarifaires et les correspondances d’ID.
-* Types de Data Store dédiés pour distinguer les données visiteur des données de référence.
+* **AI-assisted automatic field mapping:** Commanders Act AI analyzes CSV column headers and automatically suggests mappings between file columns and Data Store fields. Simply review and validate the suggested mappings instead of configuring each field manually, significantly reducing setup time.
+* Dedicated import workflow with field mapping and matching key configuration.
+* One-time or scheduled imports via FTP.
+* Updates to existing records without deleting items missing from the latest file.
+* Support for other reference datasets, including store lists, pricing tables, and ID mappings.
+* Dedicated Data Store types to distinguish visitor data from reference data.
 
-**Pourquoi c’est important :** Enrichissez les événements de conversion avec des données métier qui ne sont pas disponibles dans le data layer de votre site web. Par exemple, partagez les informations de marge produit avec les plateformes publicitaires pour soutenir des stratégies d’enchères basées sur la rentabilité plutôt que sur le seul chiffre d’affaires. La correspondance assistée par l’IA accélère également beaucoup l’intégration des catalogues.
+**Why it matters:** Enrich conversion events with business data that is not available in your website's data layer. For example, share product margin information with advertising platforms to support bidding strategies based on profitability rather than revenue alone. AI-assisted mapping also significantly speeds up catalog onboarding.
 
-[En savoir plus sur CSV Products Importer](https://doc.commandersact.com/features/sources/sources-catalog/product-catalog/products-file-importer)
+[Learn more about CSV Products Importer](https://doc.commandersact.com/features/sources/sources-catalog/product-catalog/products-file-importer)
 
-### Nouvelle destination server-side
+### New Server-Side Destination
 
 #### 🎯 Quora Ads Conversion API (Beta)
 
-Le **Quora Ads Conversion API** est désormais disponible en Beta.
+The **Quora Ads Conversion API** is now available in Beta.
 
-Envoyez directement les événements de conversion à Quora Ads Manager à l’aide d’une intégration server-side, avec des correspondances d’événements prédéfinies et des champs personnalisables.
+Send conversion events directly to Quora Ads Manager through a server-side integration, with predefined event mappings and customizable fields.
 
-**Pourquoi c’est important :** Améliorez la mesure des conversions et fournissez à Quora des signaux plus riches pour soutenir l’attribution et l’optimisation des campagnes.
+**Why it matters:** Improve conversion measurement and provide Quora with richer signals to support attribution and campaign optimization.
 
-[Lire le guide d’intégration Quora Ads Conversion API](https://doc.commandersact.com/features/destinations/destinations-catalog/quora-ads-conversion-api)
+[Read the Quora Ads Conversion API integration guide](https://doc.commandersact.com/features/destinations/destinations-catalog/quora-ads-conversion-api)
 
-### Realtime Cookie Scanner : améliorations d’octobre
+### Realtime Cookie Scanner: October Improvements
 
-#### 📊 Fréquence des cookies et analyse historique plus précises
+#### 📊 More Accurate Cookie Frequency and Historical Analysis
 
-Nous avons amélioré les calculs de fréquence de détection pour **les cookies Third-party et certains cookies HttpOnly** et avons rendu les rapports historiques plus fiables.
+We have improved detection frequency calculations for **third-party cookies and certain HttpOnly cookies** and made historical reporting more reliable.
 
-* Les fréquences de détection reflètent désormais mieux la fréquence à laquelle ces cookies apparaissent dans le trafic observé.
-* Les filtres de dates historiques affichent désormais correctement les cookies Third-party détectés pendant la période sélectionnée, avec des fréquences calculées pour cette période.
-* Le filtrage par fréquence fournit désormais des résultats plus représentatifs.
+* Detection frequencies now better reflect how often these cookies appear in observed traffic.
+* Historical date filters now correctly display third-party cookies detected during the selected period, with frequencies calculated for that period.
+* Frequency-based filtering now provides more representative results.
 
-**Pourquoi c’est important :** Analysez le comportement des cookies à l’aide de données d’occurrence plus fiables et examinez avec précision les périodes passées.
+**Why it matters:** Analyze cookie behavior using more reliable occurrence data and accurately review past periods.
 
-**Veuillez noter :** Ces améliorations peuvent modifier le nombre de cookies affichés dans vos rapports. De tels changements n’indiquent pas nécessairement une nouvelle activité de tracking sur votre site web.
+**Please note:** These improvements may change the number of cookies displayed in your reports. Such changes do not necessarily indicate new tracking activity on your website.
 
-#### 🔎 Filtres de chemin d’URL personnalisés
+#### 🔎 Custom URL Path Filters
 
-Le filtrage personnalisé des chemins d’URL est de nouveau disponible dans Cookie Notice Manager, avec une détection et un filtrage améliorés.
+Custom URL path filtering is available again in Cookie Notice Manager, with improved detection and filtering.
 
-Saisissez une URL d’exemple, sélectionnez le chemin pertinent et consultez les cookies détectés sur les pages correspondantes, y compris leurs indicateurs liés au consentement.
+Enter an example URL, select the relevant path, and view the cookies detected on matching pages, including their consent-related indicators.
 
-**Pourquoi c’est important :** Analysez le comportement de tracking dans des zones spécifiques de votre site web, comme le checkout, l’inscription ou les pages de compte, sans examiner tout votre inventaire de cookies.
+**Why it matters:** Analyze tracking behavior in specific areas of your website, such as checkout, registration, or account pages, without reviewing your entire cookie inventory.
 
-[En savoir plus sur les filtres de chemin d’URL personnalisés](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#custom-filter-path-url)
+[Learn more about custom URL path filters](https://doc.commandersact.com/features/realtime-cookie-scanner/cookie-notice-manager#custom-filter-path-url)
 
-#### 🛡️ Amélioration de l’analyse de conformité
+#### 🛡️ Improved Compliance Analysis
 
-Le résumé de conformité fournit désormais des informations supplémentaires et des capacités de filtrage pour rendre les revues de conformité plus rapides.
+The Compliance Summary now provides additional information and filtering capabilities to make compliance reviews faster.
 
-* Le type de stockage est désormais affiché directement dans le tableau du résumé de conformité.
-* Nouveaux filtres pour le type de stockage et le statut de consentement.
-* L’indicateur "Après refus" est désormais visible sur les URL d’exemple dans Cookie Notice Manager.
+* Storage type is now displayed directly in the Compliance Summary table.
+* New filters for storage type and consent status.
+* The "After Refusal" indicator is now visible on example URLs in Cookie Notice Manager.
 
-**Pourquoi c’est important :** Identifiez rapidement les technologies de stockage et les situations de consentement nécessitant une attention particulière, avec moins de navigation entre les écrans.
+**Why it matters:** Quickly identify storage technologies and consent scenarios that require attention, with less navigation between screens.
 
-[Découvrir le résumé de conformité](https://doc.commandersact.com/features/realtime-cookie-scanner/compliance-score)
+[Explore the Compliance Summary](https://doc.commandersact.com/features/realtime-cookie-scanner/compliance-score)
 
-### Améliorations de l’ergonomie du CDP
+### CDP Usability Improvements
 
-#### 📁 Recherche de segment plus propre
+#### 📁 Cleaner Segment Search
 
-La recherche dans Segment Overview n’affiche désormais que les dossiers contenant des segments correspondants. Les dossiers vides sont masqués, et un message clair apparaît lorsqu’il n’y a aucun résultat.
+Search in Segment Overview now displays only folders containing matching segments. Empty folders are hidden, and a clear message appears when no results are found.
 
-**Pourquoi c’est important :** Trouvez plus rapidement la bonne audience, en particulier dans les grandes bibliothèques de segments organisées en plusieurs dossiers.
+**Why it matters:** Find the right audience faster, especially in large segment libraries organized across multiple folders.
+
 ## **Release 1.0.55 - 16/09 - 2026**
 
 <figure><img src="../.gitbook/assets/ChatGPT Image 16 sept. 2026, 19_12_05.png" alt=""><figcaption></figcaption></figure>
