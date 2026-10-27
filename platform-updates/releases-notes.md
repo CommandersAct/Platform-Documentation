@@ -5,13 +5,14 @@ description: >-
 ---
 
 # Release notes
+
 ## Version 1.0.56 - October 2026
 
 ### Data Management & Activation
 
 #### 🛍️ CSV Product Catalog and Reference Data Import
 
-The **CSV Products Importer** provides a dedicated workflow for importing product catalogs and other reference datasets into Commanders Act, without requiring a CDP.
+The **CSV Products Importer** provides a dedicated workflow for importing product catalogs and other reference datasets into Commanders Act, without requiring a CDP
 
 Import product attributes such as **margin, cost, category, brand, or stock availability** into a Data Store, then use them to enrich server-side events before sending them to advertising and other destinations.
 
