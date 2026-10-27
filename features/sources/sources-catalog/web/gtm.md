@@ -29,7 +29,7 @@ In your Commanders Act dashboard:
 * Once you're done, click on the **Create** button at the bottom.
 * The source key will then be displayed:
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge-key.png)
+![](../../../../.gitbook/assets/serverside_events_bridge-key.png)
 
 * Copy its value and keep it for later!
 
@@ -41,29 +41,29 @@ In your Commanders Act dashboard:
 
 First, access [GTM](https://tagmanager.google.com/) and then add our template "**Commanders Act | Serverside events bridge**" from the Google "[Community Template Gallery](https://tagmanager.google.com/gallery/#/owners/TagCommander/templates/Serverside-events-bridge)" in your workspace, then select `(1)` "**Tags**".
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge1.png)
+![](../../../../.gitbook/assets/serverside_events_bridge1.png)
 
 Click on `(2)` the "**New**" button.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge2.png)
+![](../../../../.gitbook/assets/serverside_events_bridge2.png)
 
 Click on `(3)` the "**Tag Configuration**" area.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge3.png)
+![](../../../../.gitbook/assets/serverside_events_bridge3.png)
 
 Click `(4)` the **magnifying glass** in the upper right corner.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge4.png)
+![](../../../../.gitbook/assets/serverside_events_bridge4.png)
 
 Search for `(5)` the "**Commanders Act | Serverside events bridge**" custom template and click on it to start the configuration.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge5.png)
+![](../../../../.gitbook/assets/serverside_events_bridge5.png)
 
 ## Configure your tag
 
 Start by filling `(6)` **a name for your tag** in the upper left corner.
 
-![](../../../../.gitbook/assets/serverside\_events\_bridge6.png)
+![](../../../../.gitbook/assets/serverside_events_bridge6.png)
 
 {% hint style="success" %}
 **Hint**: you may want to name your tag adding the event name you're going to implement in the end. (E.g. "_Commanders Act |_ Serverside events bridge _- **Purchase**_")
@@ -79,7 +79,7 @@ Depending on which event you select more (or less) fields will be presented. In 
 
 The "**Event Fields**" section contains fields that define the event itself and are mostly mandatory or highly recommended.
 
-Events including the "**Product Fields**" section require [an array structure for your product information](https://community.commandersact.com/tagcommander/tips-and-tricks/best-practices/common-datalayer-variables#product-arrays). The first field will always be the `(10)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(11)` the "**Product Id**" by filling the property name.
+Events including the "**Product Fields**" section require an array structure for your product information. The first field will always be the `(10)` **base array** where the information is stored and all subsequent fields are the related properties - E.g. you can map the information about `(11)` the "**Product Id**" by filling the property name.
 
 <figure><img src="../../../../.gitbook/assets/serverside_events_bridge8 (1).png" alt=""><figcaption></figcaption></figure>
 
