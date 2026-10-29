@@ -22,7 +22,7 @@ Think of it as your cookie-audit dashboard: fast overview, detailed breakdown.
 
 #### Category Summary Cards
 
-At the top, there are fourfive cards — **Functional, Security, Analytics**, **Marketing**, and **Uncategorized**.\
+At the top, there are five cards — **Functional, Security, Analytics**, **Marketing**, and **Uncategorized**.\
 Each card displays:
 
 * the category name
