@@ -331,17 +331,23 @@ The **Cookie notice style** editor lets you add your own CSS to the cookie notic
 The stylesheet is empty by default, so existing cookie notices are not affected. Your styles apply from the next version you deploy.&#x20;
 {% endhint %}
 
-Click the "Style" button to enter in the menu
+Click the "Configuration" button to enter in the menu
 
-<figure><img src="../../.gitbook/assets/image (632).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/1 (5).png" alt="Auto-suggest selector / customisable by language"><figcaption><p>Auto-suggest selector / customisable by language</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (642).png" alt="Auto-suggest selector / customisable by language"><figcaption><p>Auto-suggest selector / customisable by language</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/2 (1).png" alt="Code helper"><figcaption><p>Code helper</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/3 (1).png" alt="Code helper"><figcaption><p>Code helper</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/4 (1).png" alt="Code verification"><figcaption><p>Code verification</p></figcaption></figure>
+
+### Column Selection
+
+You can choose the columns you need to display on your website. Simply uncheck the ones you don't want to show.
+
+<figure><img src="../../.gitbook/assets/image (643).png" alt=""><figcaption></figcaption></figure>
 
 ### Deploy a Version
 
