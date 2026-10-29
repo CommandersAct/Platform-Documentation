@@ -22,13 +22,13 @@ Think of it as your cookie-audit dashboard: fast overview, detailed breakdown.
 
 #### Category Summary Cards
 
-At the top, there are four cards — **Essential**, **Analytics**, **Marketing**, and **Others**.\
+At the top, there are fourfive cards — **Essential**, **Functional, Security, Analytics**, **Marketing**, and **Uncategorized**.\
 Each card displays:
 
 * the category name
 * the total number of cookies detected in that category
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (633).png" alt=""><figcaption></figcaption></figure>
 
 **What you can do**\
 Click any card to focus on one category — the rest of the dashboard updates automatically to show only cookies from that category. The selected card gets a visual highlight.
@@ -37,10 +37,10 @@ Click any card to focus on one category — the rest of the dashboard updates au
 
 #### Rare Cookies filter
 
-The rare cookies filter is OFF by default. It means that rare cookies are NOT displayed (all cookies with an occurence rate lower than 5%)\
+The rare cookies filter is OFF by default. It means that rare cookies are NOT displayed (all cookies with an occurrence rate lower than 5%)\
 If you need to see the rares cookies on this UI, simply turn ON the switch button
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (634).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -51,7 +51,7 @@ Just below the cards, a donut chart shows how cookies are split across categorie
 **What you can do**\
 Click a segment to filter the entire dashboard on that category — same effect as clicking the card. The clicked segment and corresponding card get highlighted.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -103,6 +103,9 @@ Above the table you’ll find a **Detection Status** dropdown filter with option
 ### Resetting & Filter Controls
 
 * You can reset the category filter (to show “All categories”) using the **All** button — but any detection-status filter stays applied.
+
+<figure><img src="../../.gitbook/assets/image (636).png" alt="" width="352"><figcaption></figcaption></figure>
+
 * The date-range selector (as shown in the mockup) is currently disabled. The default value is “Last 30 days.” No “vs previous period” comparison for now.
 
 ***

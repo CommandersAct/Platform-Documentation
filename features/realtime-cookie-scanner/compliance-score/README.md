@@ -19,7 +19,7 @@ Use the filters at the top of the page to refine the analysis:
 * **Rare Cookies**: Include or exclude low-frequency cookies (Off by default)
 * **Website**: Select the domain(s) configured in your Cookie Notice settings
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,7 +108,7 @@ This helps identify which types of cookies are not compliant and when they are t
 
 Example:
 
-<figure><img src="../../../.gitbook/assets/image (2) (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (638).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
