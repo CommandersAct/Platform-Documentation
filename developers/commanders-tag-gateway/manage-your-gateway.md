@@ -42,11 +42,13 @@ Then choose who handles the CDN: **I have the access**, or **I will hand this of
 
 #### Step 2 · Domain and path
 
-<figure><img src="../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (639).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the information needed to reserve your first-party path:
 
-<table data-header-hidden data-search="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td>Field</td><td>Notes</td></tr><tr><td><strong>Internal Gateway name</strong></td><td>For your own reference.</td></tr><tr><td><strong>First-party path</strong></td><td>Auto-generated, can be regenerated. The unique URL on your domain that carries Gateway traffic.</td></tr><tr><td><strong>Domain</strong></td><td>The website the Gateway runs on.</td></tr><tr><td><strong>Google tag ID</strong></td><td>Only if you selected <em>Google Tag Gateway</em>.</td></tr><tr><td><strong>CDN provider / load balancer</strong></td><td>Cloudflare Free, Cloudflare Enterprise, Akamai (beta), Fastly (beta), other CDN, or "I don't know".</td></tr><tr><td><strong>Cookies to exclude</strong> <em>(optional)</em></td><td>Pre-filled with the 2 cookies excluded by the standard Worker code.</td></tr></tbody></table>
+<table data-header-hidden data-search="false"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><strong>Field</strong></td><td><strong>Notes</strong></td></tr><tr><td><strong>Internal Gateway name</strong></td><td>For your own reference.</td></tr><tr><td><strong>First-party path</strong></td><td>Auto-generated, can be regenerated. The unique URL on your domain that carries Gateway traffic.</td></tr><tr><td><strong>Domain</strong></td><td>The website the Gateway runs on.</td></tr><tr><td><strong>Google tag ID</strong></td><td>Only if you selected <em>Google Tag Gateway</em>.</td></tr><tr><td><strong>CDN provider / load balancer</strong></td><td>Cloudflare Free, Cloudflare Enterprise, Akamai (beta), Fastly (beta), other CDN, or "I don't know".</td></tr><tr><td><strong>Cookies to exclude</strong> <em>(optional)</em></td><td>Pre-filled with the 2 cookies excluded by the standard Worker code.</td></tr></tbody></table>
+
+💡 Customizing the Google Tag Gateway path is optional. Keep the default unless you need a specific path, for example to match an existing setup.
 
 > ⚠️ Avoid _tracking, analytics, metrics, tag, google_ or _ads_ in the path — blockers detect them more easily. Your technical team must also confirm the path isn't already used on your site.
 
@@ -58,7 +60,7 @@ The platform generates the exact configuration (domain, route, infrastructure) a
 
 #### Step 4 · Verification
 
-<figure><img src="../../.gitbook/assets/07-step4-verification.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
 
 Two checks run automatically: **path validation** and **geolocation forwarding**. Both must return "ok" before you can continue. If one fails, fix your CDN configuration and click **Re-run verification**.
 
@@ -84,19 +86,6 @@ You can add or change use cases later from the Gateway's configuration.
 #### Manage your Gateways
 
 <figure><img src="../../.gitbook/assets/11-gateway-dashboard.png" alt=""><figcaption></figcaption></figure>
-
-### Finish activating each use case <a href="#finish-activating-each-use-case" id="finish-activating-each-use-case"></a>
-
-| Use case                                                  | What to do                                                                                                                 |
-| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **Google Tag Gateway**                                    | Replace your Google tag URLs (gtag.js, GTM) with your first-party path, in every container that loads them.                |
-| **Commanders Act container**                              | Replace the container loading URL with the new first-party URL.                                                            |
-| **Server-side tracking** / **Commanders Act collections** | No tag changes. Regenerate and deploy your container(s).                                                                   |
-| **Third-party libraries**                                 | Declare each JS file (e.g. Meta Pixel) in First-Party Tag Hosting, then use the generated obfuscated file name in the tag. |
-
-You can add or change use cases later from the Gateway's configuration.
-
-### Manage your Gateways <a href="#manage-your-gateways" id="manage-your-gateways"></a>
 
 Once a Gateway exists, **Administration > Gateway** becomes your dashboard. From there you can:
 
