@@ -68,12 +68,10 @@ Click on "more filters" to see them all
 
 <figure><img src="../../.gitbook/assets/image (440).png" alt=""><figcaption></figcaption></figure>
 
-
-
 <figure><img src="../../.gitbook/assets/image (443).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You can also create a custom filter, based on your URL params, via the "settings" panel\
+You can also create a custom filter, based on your URL params, via the "settings" panel\
 [check this section](cookie-notice-manager.md#custom-filter-path-url) for more details
 {% endhint %}
 
@@ -117,7 +115,7 @@ Also, by using this flag you can improve your [compliace score](compliance-score
 
 You can create your own custom filter, based on URL paths
 
-Here's the steps to follow:\
+Here's the steps to follow:\
 Enter an example of a complete URL in the settings panel
 
 <figure><img src="../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
@@ -177,8 +175,6 @@ Your custom labels are now displayed across all Real Time Cookie Scanner interfa
 The Realtime Cookie Scanner automatically groups every cookie with a similar pattern to avoid displaying too many similar cookies in your cookie notice. For example, ga\_123456, ga\_678912 and ga\_234567 would be grouped together as "ga\_...". However, for technical or GDPR purposes, you may need to ungroup some of them. This is possible! Simply click on the dedicated button to ungroup them.
 
 <figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -253,7 +249,27 @@ Preview does not apply your site styling.
 Click the **Download icon (⬇️)** to export all localisations in `HTML`, `JSON`, `CSV`, or `XLSX`.\
 Each language is included as a separate file (or tab in XLSX).
 
-#### Deploy a Version
+### Customize the Cookie Notice Style
+
+The **Cookie notice style** editor lets you add your own CSS to the cookie notice table, without editing your website's stylesheet. These styles combine with your site's CSS; when both target the same element, CSS specificity decides.
+
+* **Add a selector** inserts ready-made selectors for the table, rows, cells and each column.
+* One stylesheet applies to all languages by default; select a language only to override it.
+* Syntax errors are underlined in red and block saving. Always check the preview: valid CSS can still hide text.
+
+{% hint style="info" %}
+The stylesheet is empty by default, so existing cookie notices are not affected. Your styles apply from the next version you deploy.&#x20;
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/1 (5).png" alt="Auto-suggest selector / customisable by language"><figcaption><p>Auto-suggest selector / customisable by language</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/2 (1).png" alt="Code helper"><figcaption><p>Code helper</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/3 (1).png" alt="Code helper"><figcaption><p>Code helper</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/4 (1).png" alt="Code verification"><figcaption><p>Code verification</p></figcaption></figure>
+
+### Deploy a Version
 
 Press **DEPLOY** to publish a cookie notice version on your site.\
 You can also roll back to a previous version if needed.

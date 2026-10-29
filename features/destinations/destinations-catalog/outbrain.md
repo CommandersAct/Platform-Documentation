@@ -45,5 +45,5 @@ Properties can be remapped using our [Smart Mapping](https://doc.commandersact.c
 
 {% hint style="info" %}
 **1.** See <mark style="color:blue;">`Mapping`</mark> in [Configuration](outbrain.md#configuration) for more details.\
-**2.** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh:mm:ss</mark>Z.
+**2.** Automatically converted from timestamp (mills) in format: <mark style="color:blue;">yyyy-mm-dd</mark>T<mark style="color:blue;">hh</mark><span data-gb-custom-inline data-tag="emoji" data-code="1f1f2-1f1f2">:flag_mm:</span><mark style="color:blue;">ss</mark>Z.
 {% endhint %}
