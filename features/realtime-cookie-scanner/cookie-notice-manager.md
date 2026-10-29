@@ -176,6 +176,66 @@ The Realtime Cookie Scanner automatically groups every cookie with a similar pat
 
 <figure><img src="../../.gitbook/assets/image (526).png" alt=""><figcaption></figcaption></figure>
 
+### Custom cookie grouping
+
+The Realtime Cookie Scanner already groups cookies with similar names automatically (see [Cookies ungroupping](cookie-notice-manager.md#cookies-ungroupping)). Custom grouping rules let you decide the grouping yourself: you define a name pattern, and every cookie matching it is displayed as **a single entry in your cookie notice**, with the matching cookie names listed inside that entry.
+
+Rules are managed in **Settings (⚙️) > Cookie grouping**.
+
+<figure><img src="../../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
+
+**Automatic groups vs. custom groups**
+
+Both types of groups can coexist in the same cookie notice. You can tell them apart in the _Name_ column:
+
+|                  | Automatic grouping                                    | Custom grouping rule                  |
+| ---------------- | ----------------------------------------------------- | ------------------------------------- |
+| Created by       | The scanner, when more than 3 cookies share a pattern | You                                   |
+| Displayed as     | Pattern followed by `…` (e.g. `ga_…`)                 | The group name you set, e.g. `__hs*`  |
+| Can be undone by | Ungrouping the entry                                  | Switching the rule OFF or deleting it |
+
+**How a rule matches cookies**
+
+A rule is a **name pattern**, not a list of cookies:
+
+* When you add several values to the same rule, a cookie is grouped if it matches **any** of them.
+* The rule applies to every cookie whose name matches the pattern, including cookies detected after the rule was created.
+* **Only for vendor** restricts the rule to cookies attributed to one vendor. Cookies with a matching name but another vendor stay outside the group.
+
+{% hint style="warning" %}
+The vendor filter relies on the vendor as attributed in your cookie list. The same provider can appear under slightly different vendor names (for example `HubSpot` for 3rd-party cookies and `Hubspot.com` for 1st-party cookies). If you restrict a rule to one vendor, check the live preview to make sure no expected cookie is left out.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
+
+**Live preview**
+
+The live preview shows which cookies will be grouped, split by storage location (1st party, 3rd party…). It is based on the cookies from your **last scan**: it shows the effect of the rule on what has already been observed, not an exhaustive list of what the rule will ever match.
+
+<figure><img src="../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+
+**Generated regex**
+
+Each rule is converted into a regular expression, which you can display with **Show generated regex**. Advanced users can edit it directly to express patterns the simple conditions cannot. When you do, rely on the live preview to confirm the result: a valid regex can still match more, or fewer, cookies than intended.
+
+<figure><img src="../../.gitbook/assets/image (624).png" alt=""><figcaption></figcaption></figure>
+
+**Switching a rule off**
+
+Switching a rule **OFF** restores the individual cookies in the notice, as before the rule existed. The rule is kept, so you can switch it back on later without recreating it.
+
+<figure><img src="../../.gitbook/assets/image (625).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+No rule exists by default, so existing cookie notices are not affected. Like any change to your cookie list, grouping is reflected on your website once you deploy a new version of the cookie notice.
+{% endhint %}
+
+**Good practice**
+
+A group is displayed as **one entry**, with one category, one description and one duration. Only group cookies that genuinely share the same purpose. Grouping cookies with different purposes or retention periods would make your notice less accurate, not just shorter.
+
+Grouping also changes counts: a group counts as one cookie in the notice, which can make totals differ between periods (see Time Range filter).
+
 ***
 
 ## Manage Cookie Notice
