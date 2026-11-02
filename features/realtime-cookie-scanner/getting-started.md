@@ -8,6 +8,12 @@ In all cases, your consultant (or our support team) needs to activate the featur
 
 #### Step 1: Declare your domains and languages
 
+Go on the "Settings" page
+
+
+
+OR
+
 On the "Cookie Notice" page, click on gear icon (top right) to open the settings panel
 
 <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
@@ -16,7 +22,7 @@ On the "Cookie Notice" page, click on gear icon (top right) to open the settings
 * Enter your website(s) domain(s)
 * Save your config
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Needs to collect cookies from your subdomains?
@@ -27,7 +33,7 @@ Simply add "\*." before your domain declaration
 
 example
 
-![](<../../.gitbook/assets/image (149).png>)
+<img src="../../.gitbook/assets/image (149).png" alt="" data-size="original">
 {% endhint %}
 
 #### Step 2

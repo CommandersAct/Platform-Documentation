@@ -36,22 +36,21 @@ You can also add custom cookies or activate/deactivate existing ones.
 
 Need to declare a new domain, or add a new language?
 
-You can do it directly in the side panel "settings"
+You can do it directly in the "settings" menu
 
-<figure><img src="../../.gitbook/assets/image (123).png" alt="" width="407"><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (121).png" alt="" width="347"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
 
 Our tool can detect automatically all your subdomains if needed, simply use the "\*" in your domain declaration
 
 example
 
-![](<../../.gitbook/assets/image (409).png>)
+<figure><img src="../../.gitbook/assets/image (647).png" alt=""><figcaption></figcaption></figure>
 
 If you prefer to collect only for some specific sub domains, you have to declare each of them
 
-example:\
-![](<../../.gitbook/assets/image (411).png>)
+example:
+
+<figure><img src="../../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Fields & Filters
 
@@ -118,11 +117,11 @@ You can create your own custom filter, based on URL paths
 Here's the steps to follow:\
 Enter an example of a complete URL in the settings panel
 
-<figure><img src="../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (650).png" alt=""><figcaption></figcaption></figure>
 
 Our tool will detect all paths. You can select one value to obtain filters based on
 
-<figure><img src="../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (651).png" alt=""><figcaption></figcaption></figure>
 
 Once it's saved, you will see your new filter ready to be used:
 
@@ -153,7 +152,7 @@ Our tool will translate your cookies for all languages that have an "empty" desc
 
 ### Custom category naming
 
-Real Time Cookie Scanner automatically classifies your cookies into 3 different categories: Essential, Analytics, and Marketing. If you prefer to use personalized names for these categories, you can easily modify the category labels.
+Real Time Cookie Scanner automatically classifies your cookies into 4 different categories: Functional, Security, Analytics, and Marketing. If you prefer to use personalized names for these categories, you can easily modify the category labels.
 
 Open Settings panel (⚙️) and fill the table "Category Mapping". Once saved, your custom mapping will impact the labels displayed across all Real Time Cookie Scanner interfaces.
 
@@ -162,7 +161,7 @@ If you use a Commanders Act Consent banner, our tool will automatically display 
 In all cases, you are still allowed to enter a custom value
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (626).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (652).png" alt=""><figcaption></figcaption></figure>
 
 Your custom labels are now displayed across all Real Time Cookie Scanner interfaces.
 
@@ -192,7 +191,7 @@ The Realtime Cookie Scanner already groups cookies with similar names automatica
 
 Rules are managed in **Settings (⚙️) > Cookie grouping**.
 
-<figure><img src="../../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (654).png" alt=""><figcaption></figcaption></figure>
 
 **Automatic groups vs. custom groups**
 
@@ -216,13 +215,11 @@ A rule is a **name pattern**, not a list of cookies:
 The vendor filter relies on the vendor as attributed in your cookie list. The same provider can appear under slightly different vendor names (for example `HubSpot` for 3rd-party cookies and `Hubspot.com` for 1st-party cookies). If you restrict a rule to one vendor, check the live preview to make sure no expected cookie is left out.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
-
 **Live preview**
 
 The live preview shows which cookies will be grouped, split by storage location (1st party, 3rd party…). It is based on the cookies from your **last scan**: it shows the effect of the rule on what has already been observed, not an exhaustive list of what the rule will ever match.
 
-<figure><img src="../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (653).png" alt=""><figcaption></figcaption></figure>
 
 **Generated regex**
 
