@@ -386,7 +386,10 @@
     * [Compliance score formula](features/realtime-cookie-scanner/compliance-score/compliance-score-formula.md)
   * [Legal and Technical Position Paper](features/realtime-cookie-scanner/legal-and-technical-position-paper.md)
   * [Integrating specific CMP with the Realtime Cookie Scanner](features/realtime-cookie-scanner/integrating-specific-cmp-with-the-realtime-cookie-scanner.md)
-* [MCP server (closed beta)](features/mcp-server-closed-beta.md)
+* [Commanders Act MCP (closed beta)](features/mcp-server-closed-beta/README.md)
+  * [Getting Started (closed beta)](features/mcp-server-closed-beta/getting-started-closed-beta.md)
+  * [Use Cases & Prompt Library](features/mcp-server-closed-beta/use-cases-and-prompt-library.md)
+  * [Capabilities, Security & FAQ](features/mcp-server-closed-beta/capabilities-security-and-faq.md)
 
 ## Use cases
 
