@@ -4,6 +4,14 @@ description: The latest updates made to our documentation articles
 
 # Documentation updates
 
+## 13/11/2026
+
+Destination documentation:
+
+{% content-ref url="../features/destinations/destinations-catalog/snapchat/snapchat-audience.md" %}
+[snapchat-audience.md](../features/destinations/destinations-catalog/snapchat/snapchat-audience.md)
+{% endcontent-ref %}
+
 ## 06/11/2026
 
 Destination documentation (updates):
