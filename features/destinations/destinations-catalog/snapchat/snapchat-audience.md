@@ -69,6 +69,7 @@ The link between a segment and its Snapchat audience relies only on the name:
 ## Field mappings
 
 {% hint style="info" %}
+Properties can be remapped using our [Smart Mapping](https://doc.commandersact.com/features/destinations/advanced-mapping#smart-mapping) feature.\
 At least one of `User Email`, `User Phone` or `Device Mobile Identifier` must have a value for each user. Otherwise, the user is rejected with `missing_identifiers`. To stop sending an identifier, clear its mapping.
 {% endhint %}
 
