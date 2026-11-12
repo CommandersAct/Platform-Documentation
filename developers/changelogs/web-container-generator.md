@@ -2,6 +2,13 @@
 
 ## 2026
 
+### 104.5
+
+Release date: **12/11/2026**
+
+* Commanders Act Gateway: one entry per domain of a gateway, all sharing its path
+* Update bot exclusion list
+
 ### 104.3
 
 Release date: **26/10/2026**
