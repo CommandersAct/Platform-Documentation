@@ -42,7 +42,7 @@ Then choose who handles the CDN: **I have the access**, or **I will hand this of
 
 #### Step 2 · Domain and path
 
-<figure><img src="../../.gitbook/assets/image (639).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (620).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the information needed to reserve your first-party path:
 

@@ -10,8 +10,6 @@ In all cases, your consultant (or our support team) needs to activate the featur
 
 Go on the "Settings" page
 
-
-
 OR
 
 On the "Cookie Notice" page, click on gear icon (top right) to open the settings panel
@@ -22,7 +20,7 @@ On the "Cookie Notice" page, click on gear icon (top right) to open the settings
 * Enter your website(s) domain(s)
 * Save your config
 
-<figure><img src="../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Needs to collect cookies from your subdomains?

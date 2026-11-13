@@ -38,7 +38,7 @@ Need to declare a new domain, or add a new language?
 
 You can do it directly in the "settings" menu
 
-<figure><img src="../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
 
 Our tool can detect automatically all your subdomains if needed, simply use the "\*" in your domain declaration
 
@@ -50,7 +50,7 @@ If you prefer to collect only for some specific sub domains, you have to declare
 
 example:
 
-<figure><img src="../../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Fields & Filters
 
@@ -325,7 +325,7 @@ The **Cookie notice style** editor lets you add your own CSS to the cookie notic
 * Syntax errors are underlined in red and block saving. Always check the preview: valid CSS can still hide text.
 
 {% hint style="info" %}
-The stylesheet is empty by default, so existing cookie notices are not affected. Your styles apply from the next version you deploy.&#x20;
+The stylesheet is empty by default, so existing cookie notices are not affected. Your styles apply from the next version you deploy.
 {% endhint %}
 
 Click the "Configuration" button to enter in the menu
