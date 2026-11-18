@@ -138,18 +138,40 @@ As detailed in the [Configure the related tags and its trigger](google-tag-manag
 
 <figure><img src="../../../../.gitbook/assets/consent_26_27.png" alt=""><figcaption></figcaption></figure>
 
-This allows you to set your `(26)` **script URL**, in a dedicate field, but how can you manage multiple privacy scripts, for example, based on the language ? You can use a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:&#x20;
+This allows you to set your `(26)` **script URL**, in a dedicate field, but how can you manage multiple privacy scripts, for example, based on the language ? You can use a GTM variable to define the logic you need. Click the `(27)` **the icon** on the right of the URL field and, in the top right corner, click the `(28)` **plus sign**:
 
 <figure><img src="../../../../.gitbook/assets/consent_28.png" alt=""><figcaption></figcaption></figure>
 
 This will bring up a new window where you can create a new variable.\
-In the following example, we will use a "Lookup Table" variable that holds the URL based on another variable named "Browser Language". \
+In the following example, we will use a "Lookup Table" variable that holds the URL based on another variable named "Browser Language".\
 FIrst, give a `(29)` **name** to your variable and, in the `(30)` "**Lookup Table**" section, configure our wanted logic. In the "Output" column, ensure that "url EN banner" and "url FR banner" are replaced with the actual full URLs:
 
 <figure><img src="../../../../.gitbook/assets/consent_29_30.png" alt=""><figcaption></figcaption></figure>
 
-After saving the variable, it will be set in the URL field:&#x20;
+After saving the variable, it will be set in the URL field:
 
 <figure><img src="../../../../.gitbook/assets/consent_A.png" alt=""><figcaption></figcaption></figure>
 
 Finally, save your tag and [publish your changes](https://support.google.com/tagmanager/answer/6107163?hl=en).
+
+## Activate vendor events
+
+Reactive events work at the level of Google's consent types (E.g. "_ad\_storage_"). If you manage consent per vendor with Commanders Act, you can also trigger your third-party vendor tags with **vendor events**, based on the vendors defined in your Commanders Act account.
+
+{% hint style="info" %}
+Vendors must be activated in your account first: go to **Data Governance** → **Consent Management** → "**Settings**" and activate the custom vendors option, then add your vendors. Remember to generate and deploy a new version of your privacy banners after any vendor update. See [Manage Vendors](https://doc.commandersact.com/features/consent-management/user-guides/categories-and-tags/manage-vendors#vendors) for more details.
+{% endhint %}
+
+In the "**Commanders Act CMP**" tag, turn on `(31)` "**Advanced Features**" and `(32)` "**Activate Vendor Events**".
+
+<figure><img src="../../../../.gitbook/assets/vendor_events.png" alt=""><figcaption></figcaption></figure>
+
+In the `(33)` "**Vendor Events**" table, click "**Add Row**" for each vendor you want to map and fill in the following fields:
+
+| Field                 | Description                                                                                                                                                                                                                                                     |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Vendor Name**       | Free label, recommended to keep a reference with the related Vendor Id.                                                                                                                                                                                         |
+| **Vendor Id**         | The id of the vendor in Commanders Act. You can find it in **Data Governance** → **Consent Management** → **Vendors** ([see Manage Vendors](https://doc.commandersact.com/features/consent-management/user-guides/categories-and-tags/manage-vendors#vendors)). |
+| **Vendor Event Name** | The name of the event to use as trigger in your third-party vendor tag(s).                                                                                                                                                                                      |
+
+Then, open each third-party vendor tag mapped to a vendor and add a trigger configured as a "**Custom Event**", with the same "**Event Name**" you set as "**Vendor Event Name**", firing on "**All Custom Events**". As with reactive events, you can combine it with your preexisting triggers in a "[**Trigger Group**](https://support.google.com/tagmanager/answer/9164222?hl=en)".
