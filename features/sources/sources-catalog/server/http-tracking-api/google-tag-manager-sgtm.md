@@ -1,7 +1,7 @@
 # Google Tag Manager (sGTM)
 
 {% hint style="info" %}
-This template is currently under final review and will be released through the [Community Template Gallery](https://tagmanager.google.com/gallery) soon. Current version: **0.9.0-beta – 2026-11-20**.
+This template is currently under final review and will be released through the [Google Community Template Gallery](https://tagmanager.google.com/gallery) soon. Current version: **0.9.0-beta – 2026-11-20**.
 {% endhint %}
 
 ## 1. What the template does
