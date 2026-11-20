@@ -111,6 +111,7 @@
       * [CSV Products Importer](features/sources/sources-catalog/product-catalog/products-file-importer.md)
     * [Server](features/sources/sources-catalog/server/README.md)
       * [HTTP tracking API source](features/sources/sources-catalog/http-tracking-api.md)
+        * [Google Tag Manager (sGTM)](features/sources/sources-catalog/server/http-tracking-api/google-tag-manager-sgtm.md)
         * [(deprecated) HTTP tracking API source 1.0](features/sources/sources-catalog/http-tracking-api/http-tracking-api1_0.md)
       * [Node.JS](features/sources/sources-catalog/node.js.md)
       * [Python](features/sources/sources-catalog/python.md)
