@@ -1,7 +1,30 @@
+---
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
+  anchors:
+    visible: true
+---
+
 # Google Tag Manager (sGTM)
 
 {% hint style="info" %}
-This template is currently under final review and will be released through the [Google Community Template Gallery](https://tagmanager.google.com/gallery) soon. Current version: **0.9.0-beta – 2026-11-20**.
+This template is in beta. Publication in the [Google Community Template Gallery](https://tagmanager.google.com/gallery) is planned after the beta. Current version: **0.9.1-beta – 2026-11-23**.
 {% endhint %}
 
 ## 1. What the template does
@@ -32,22 +55,7 @@ It complements the web template **Commanders Act | Serverside events bridge**, w
 1. **Tags > New**, then choose the type _Commanders Act | Server-side events (sGTM)_.
 2. Fill in the fields below.
 
-| Field                                     | Default                              | Purpose                                                                                                                                                                                    |
-| ----------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Site ID (`siteId`)                        |                                      | **Required.** Site ID of the source                                                                                                                                                        |
-| Source key (`sourceKey`)                  |                                      | **Required.** Key of the HTTP tracking API source                                                                                                                                          |
-| Collection domain / path                  | `collect.commander1.com` / `/events` | Collection endpoint (see below)                                                                                                                                                            |
-| Event name override (`eventNameOverride`) |                                      | Replaces the incoming event name (see [section 7.5](google-tag-manager-sgtm.md#id-7.5-universal-analytics-format-event-names))                                                             |
-| Event ID (`eventId`)                      |                                      | Otherwise the event's `event_id`, otherwise a generated ID                                                                                                                                 |
-| Page type (`pageType`)                    |                                      | For `page_view`, when `page_type` isn't in the event                                                                                                                                       |
-| Revenue (`revenue`)                       |                                      | See [section 7.2](google-tag-manager-sgtm.md#id-7.2-fields-with-no-ga4-equivalent-revenue-type-status)                                                                                     |
-| Skip `gtm.*` events                       | on                                   | Ignores GTM internal events                                                                                                                                                                |
-| CAID override (`caidOverride`)            |                                      | See [section 6](google-tag-manager-sgtm.md#id-6.-anonymous-id-caid)                                                                                                                        |
-| Consent source                            | `variable`                           | `none` / `variable` / `cookie` ([section 5](google-tag-manager-sgtm.md#id-5.-consent))                                                                                                     |
-| Forward unmapped fields                   | off                                  | [Section 8](google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies)                                                                                               |
-| Excluded fields                           | personal data list                   | [Section 8](google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies)                                                                                               |
-| Forward partner cookies                   | off                                  | [Section 8](google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies)                                                                                               |
-| Custom fields                             |                                      | Added at the root of **every event the tag sends**; they override everything else (see [section 7.2](google-tag-manager-sgtm.md#id-7.2-fields-with-no-ga4-equivalent-revenue-type-status)) |
+<table><thead><tr><th>Field</th><th width="331">Default</th><th width="377">Purpose</th></tr></thead><tbody><tr><td>Site ID (<code>siteId</code>)</td><td></td><td><strong>Required.</strong> Site ID of the source</td></tr><tr><td>Source key (<code>sourceKey</code>)</td><td></td><td><strong>Required.</strong> Key of the HTTP tracking API source</td></tr><tr><td>Collection domain / path</td><td><code>collect.commander1.com</code> / <code>/events</code></td><td>Collection endpoint (see below)</td></tr><tr><td>Event name override (<code>eventNameOverride</code>)</td><td></td><td>Replaces the incoming event name (see <a href="google-tag-manager-sgtm.md#id-7.5-universal-analytics-format-event-names">section 7.5</a>)</td></tr><tr><td>Event ID (<code>eventId</code>)</td><td></td><td>Otherwise the event's <code>event_id</code>, otherwise a generated ID</td></tr><tr><td>Page type (<code>pageType</code>)</td><td></td><td>For <code>page_view</code>, when <code>page_type</code> isn't in the event</td></tr><tr><td>Revenue (<code>revenue</code>)</td><td></td><td>See <a href="google-tag-manager-sgtm.md#id-7.2-fields-with-no-ga4-equivalent-revenue-type-status">section 7.2</a></td></tr><tr><td>Skip <code>gtm.*</code> events</td><td>on</td><td>Ignores GTM internal events</td></tr><tr><td>CAID override (<code>caidOverride</code>)</td><td></td><td>See <a href="google-tag-manager-sgtm.md#id-6.-anonymous-id-caid">section 6</a></td></tr><tr><td>Consent source</td><td><code>variable</code></td><td><code>none</code> / <code>variable</code> / <code>cookie</code> (<a href="google-tag-manager-sgtm.md#id-5.-consent">section 5</a>)</td></tr><tr><td>Forward unmapped fields</td><td>off</td><td><a href="google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies">Section 8</a></td></tr><tr><td>Excluded fields</td><td>personal data list</td><td><a href="google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies">Section 8</a></td></tr><tr><td>Forward partner cookies</td><td>off</td><td><a href="google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies">Section 8</a></td></tr><tr><td>User data (<code>userDataMode</code>)</td><td>Email hashed (SHA-256) only</td><td>How GA4's <code>user_data</code> is sent (<a href="google-tag-manager-sgtm.md#id-8.-extra-fields-personal-data-and-partner-cookies">section 8</a>)</td></tr><tr><td>Custom fields</td><td></td><td>Added at the root of <strong>every event the tag sends</strong>; they override everything else (see <a href="google-tag-manager-sgtm.md#id-7.2-fields-with-no-ga4-equivalent-revenue-type-status">section 7.2</a>)</td></tr></tbody></table>
 
 **Collection endpoint.** By default, the event is sent as a `POST` to:
 
@@ -88,10 +96,12 @@ The `user.consent_categories` field holds the categories the user accepted, for 
 1. In the browser, add a `consent_categories` parameter to your GA4 events. Its value is the list of accepted categories, provided by the PlatformX CMP, for example `1,3`.
 2. In the server container, create an **Event Data** variable on the key `consent_categories`.
 3. Select that variable in the tag's "Consent categories" field.
+4. In Variable mode, the Consent categories field is required. To send no consent, choose **None** as the consent source. If the variable is empty for an event, the tag logs a warning and doesn't send `consent_categories`.
 
 The value can be an array or a comma-separated list.
 
-When the user refuses every category, send `none`: the tag sends an empty list (`[]`), which means "everything refused". An empty or missing value means consent unknown, and the field isn't sent.
+When the user refuses every category, send `none`: the tag sends `consent_categories: []`, meaning no category was granted. An empty or missing value means consent unknown, and the field isn't sent. Consent-filtered destinations receive neither.\
+`consent_categories` is required by the event specification: send the CMP consent on every event.
 
 **Cookie mode (fallback)**
 
@@ -223,7 +233,11 @@ The default exclusion list removes personal data: `email,email_address,phone,pho
 
 **Precedence:** unmapped fields < converted fields < custom fields.
 
-**User data.** The `user_data` sent by GA4 (email, SHA-256 hashed email, phone, address) is converted into `user.*`. Only send what your legal basis and consent allow.
+**User data.** The tag's **User data** setting controls how GA4's `user_data` is sent:
+
+<table><thead><tr><th width="384">Option</th><th>Sent</th></tr></thead><tbody><tr><td>Email hashed (SHA-256) only (default)</td><td><code>user.email_sha256</code>: the email trimmed, lowercased and hashed, or GA4's <code>sha256_email_address</code> as is. Phone and address aren't sent.</td></tr><tr><td>Don't send</td><td>nothing from <code>user_data</code></td></tr><tr><td>Send as received</td><td><code>user.email</code>, <code>user.email_sha256</code>, <code>user.phone</code> and address fields, in clear text</td></tr></tbody></table>
+
+`user.id` (from `user_id`) is always sent. Destinations that read `user.email`, such as Facebook Conversions API, receive no email in the default mode. Map `user.email_sha256` with Smart Mapping, or choose Send as received if your legal basis allows it.
 
 **Partner cookies.** Off by default. This option forwards `_fbp`, `_fbc` and `_ga` in `context.device.cookie`, provided sGTM is on a first-party subdomain.
 
@@ -231,26 +245,7 @@ The default exclusion list removes personal data: `email,email_address,phone,pho
 
 For each field, the first source found is used.
 
-| Source                                                                                | Commanders Act                                                   |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| `event_name` (or `event`)                                                             | `event_name`                                                     |
-| `transaction_id`                                                                      | `id`                                                             |
-| `value`, `currency`, `coupon`, `affiliation`                                          | same names                                                       |
-| `tax` / `shipping`                                                                    | `tax_amount` / `shipping_amount`                                 |
-| `payment_type`                                                                        | `payment_method`                                                 |
-| `shipping_tier`, `item_list_name`, `search_term`, `method`, `content_type`, `item_id` | same names                                                       |
-| `items` (or `ecommerce.items`, or Universal Analytics format)                         | `items[]`                                                        |
-| `item_id`, `item_variant`, `quantity`, `discount`, `index`                            | `items[].id`, `variant`, `quantity`, `discount`, `list_position` |
-| `price × quantity`                                                                    | `items[].value`                                                  |
-| `item_id`, `item_name`, `price`, `item_brand`                                         | `items[].product.{id, name, price, brand}`                       |
-| `item_category` … `item_category5`                                                    | `items[].product.category_1` … `category_5`                      |
-| `user_id`                                                                             | `user.id`                                                        |
-| CAID cookie / CAID override                                                           | `user.consistent_anonymous_id`                                   |
-| `user_data.*`                                                                         | `user.email`, `email_sha256`, `phone`, address fields            |
-| `gcs` signal                                                                          | `user.google_consent_mode`                                       |
-| `page_location`, `page_title`, `page_referrer`, `language`, `viewport_size`           | `context.page.*`                                                 |
-| `user_agent`, `ip_override` (otherwise the request's own)                             | `context.device.*`                                               |
-| `page_type` (`page_view` only)                                                        | `page_type`                                                      |
+<table><thead><tr><th width="513">Source</th><th>Commanders Act</th></tr></thead><tbody><tr><td><code>event_name</code> (or <code>event</code>)</td><td><code>event_name</code></td></tr><tr><td><code>transaction_id</code></td><td><code>id</code></td></tr><tr><td><code>value</code>, <code>currency</code>, <code>coupon</code>, <code>affiliation</code></td><td>same names</td></tr><tr><td><code>tax</code> / <code>shipping</code></td><td><code>tax_amount</code> / <code>shipping_amount</code></td></tr><tr><td><code>payment_type</code></td><td><code>payment_method</code></td></tr><tr><td><code>shipping_tier</code>, <code>item_list_name</code>, <code>search_term</code>, <code>method</code>, <code>content_type</code>, <code>item_id</code></td><td>same names</td></tr><tr><td><code>items</code> (or <code>ecommerce.items</code>, or Universal Analytics format)</td><td><code>items[]</code></td></tr><tr><td><code>item_id</code>, <code>item_variant</code>, <code>quantity</code>, <code>discount</code>, <code>index</code></td><td><code>items[].id</code>, <code>variant</code>, <code>quantity</code>, <code>discount</code>, <code>list_position</code></td></tr><tr><td><code>price × quantity</code></td><td><code>items[].value</code></td></tr><tr><td><code>item_id</code>, <code>item_name</code>, <code>price</code>, <code>item_brand</code></td><td><code>items[].product.{id, name, price, brand}</code></td></tr><tr><td><code>item_category</code> … <code>item_category5</code></td><td><code>items[].product.category_1</code> … <code>category_5</code></td></tr><tr><td><code>user_id</code></td><td><code>user.id</code></td></tr><tr><td>CAID cookie / CAID override</td><td><code>user.consistent_anonymous_id</code></td></tr><tr><td><code>user_data.*</code> (depends on the User data setting, see section 8)</td><td><p></p><ul><li>Default: <code>user.email_sha256</code></li><li>Send as received: <code>user.email</code>, <code>email_sha256</code>, <code>phone</code>, address fields</li><li>Don't send: nothing</li></ul></td></tr><tr><td><code>gcs</code> signal</td><td><code>user.google_consent_mode</code></td></tr><tr><td><code>page_location</code>, <code>page_title</code>, <code>page_referrer</code>, <code>language</code>, <code>viewport_size</code></td><td><code>context.page.*</code></td></tr><tr><td><code>user_agent</code>, <code>ip_override</code> (otherwise the request's own)</td><td><code>context.device.*</code></td></tr><tr><td><code>page_type</code> (<code>page_view</code> only)</td><td><code>page_type</code></td></tr></tbody></table>
 
 ## 10. Verification
 
