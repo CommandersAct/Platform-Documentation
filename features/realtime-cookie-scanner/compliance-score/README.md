@@ -123,7 +123,7 @@ Focus on these cookies first to achieve the fastest improvements.
 
 Example:
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (656).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

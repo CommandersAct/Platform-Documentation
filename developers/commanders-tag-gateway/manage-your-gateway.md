@@ -61,9 +61,13 @@ Your technical team must:
 
 #### Step 3 · CDN connection
 
-<figure><img src="../../.gitbook/assets/06-step3-cdn-connection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (645).png" alt=""><figcaption></figcaption></figure>
 
 The platform generates the exact configuration (domain, route, infrastructure) and a step-by-step guide for your CDN. Follow it yourself, or copy the shareable link for your IT team. CDN-specific details: [Route traffic](https://doc.commandersact.com/developers/commanders-tag-gateway#step-2-route-traffic).
+
+The button "activate the gateway" will deploys the configuration to our CloudFlare immediately
+
+<figure><img src="../../.gitbook/assets/image (646).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 4 · Verification
 

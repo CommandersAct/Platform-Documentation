@@ -17,9 +17,11 @@ The cookie manager interface reflects the current status of your site in real ti
 {% endhint %}
 
 Each entry can be edited (✎) to adjust vendor, category, storage type, domain, duration, and description.\
-You can also add custom cookies or activate/deactivate existing ones.
+You can also add custom cookies or include/ignore existing ones.
 
-<figure><img src="../../.gitbook/assets/image (84).png" alt="" width="329"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (662).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (657).png" alt=""><figcaption></figcaption></figure>
 
 > Keep internal cookies in _Ignored_ to prevent reappearance after future scans.
 
@@ -36,9 +38,10 @@ You can also add custom cookies or activate/deactivate existing ones.
 
 Need to declare a new domain, or add a new language?
 
-You can do it directly in the "settings" menu
+You can do it directly in the "settings" menu. \
+Click the "star" icon to set a "by default" langage. The Cookie Notice page will ever be shown in this langage on landing.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (644).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (658).png" alt=""><figcaption></figcaption></figure>
 
 Our tool can detect automatically all your subdomains if needed, simply use the "\*" in your domain declaration
 
@@ -52,9 +55,23 @@ example:
 
 <figure><img src="../../.gitbook/assets/image (648).png" alt=""><figcaption></figcaption></figure>
 
-### Custom Fields & Filters
+### Custom Fields&#x20;
 
 * Add custom fields via Settings (⚙️) to store extra info.
+* You can also create "non-translatable" custom fields. The value will be the same in every langages. Once this option is activated, a flag will appears beside your field
+
+<figure><img src="../../.gitbook/assets/image (659).png" alt=""><figcaption></figcaption></figure>
+
+If you check this option on an existing field, our tool will ask you to pick a choosen language. The other langages of this field will be overwritten by the coosen one
+
+<figure><img src="../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
+
+The difference is now visible on "cookie edit"
+
+<figure><img src="../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
+
+### Custom Filters
+
 * Filter by website, language, storage type, or 3rd-party domain, vendor, category.
 * Filter by detection stauts (before consent, after refuse, missing, no status)
 * A frequency slider hides rare cookies (< 5 % by default).
@@ -104,11 +121,11 @@ To help you to see the exempted cookies set before consent, you can add an "exem
 
 This will helps you to identify quickly the cookies that are allowed to be set without consent user.
 
-Also, by using this flag you can improve your [compliace score](compliance-score/)
+Also, by using this flag you can improve your [compliance score](compliance-score/)
 
 <figure><img src="../../.gitbook/assets/image (466).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (127).png" alt="" width="318"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (649).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Filter: Path URL
 
@@ -148,7 +165,7 @@ Then use the 'Edit Cookie' function:
 
 Our tool will translate your cookies for all languages that have an "empty" description.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (655).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom category naming
 
