@@ -2,6 +2,12 @@
 
 ## 2026
 
+### 104.6
+
+Release date: **23/11/2026**
+
+* RCS: Keep the path of the collect domain when sending hits
+
 ### 104.5
 
 Release date: **12/11/2026**
