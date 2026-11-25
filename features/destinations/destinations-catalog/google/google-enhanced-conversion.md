@@ -23,8 +23,6 @@ layout:
 
 # Google Enhanced Conversions
 
-## Google Enhanced Conversions
-
 [Google](https://about.google/) is a multinational technology company focusing on online advertising, search engine technology, cloud computing, and computer software. Using the [Data Manager API](https://developers.google.com/data-manager/api), you can use the [enhanced conversions](https://support.google.com/google-ads/answer/9888656) feature to send your conversion events enriched with first-party data. Google uses this additional data to improve the reporting of your online conversions driven by ad interactions.\
 Enhanced conversions supplement your existing conversion tags. They send hashed first-party conversion data from your website to Google in a privacy-safe way.
 
@@ -32,7 +30,7 @@ Enhanced conversions supplement your existing conversion tags. They send hashed 
 You must complete the [setup and configuration steps](https://support.google.com/google-ads/answer/11062876) in Google Ads before you can send enhanced conversions to Google.
 {% endhint %}
 
-### Key features
+## Key features
 
 The Google Enhanced Conversions destination provides the following key features:
 
@@ -45,7 +43,7 @@ The Google Enhanced Conversions destination provides the following key features:
 * **Privacy-safe IP handling**: the device IP address is automatically excluded for users located in the EEA, the UK and Switzerland. This exclusion relies on the `User Country` field: if no country is provided, the IP address is sent to Google (see [Field mappings](google-enhanced-conversion.md#field-mappings)).
 * **Cart data**: item-level data (Merchant Center product IDs, quantities, prices) can be sent alongside your conversions.
 
-### Destination setup
+## Destination setup
 
 {% hint style="warning" %}
 In [Google Ads](https://ads.google.com/), you must complete the following actions:\
@@ -84,7 +82,7 @@ When available, this destination also includes the [`gclid`](https://support.goo
 Google Ads reports show the updated values after **24/48 hours**. For example, you can check <mark style="color:blue;">`Goals`</mark> → <mark style="color:blue;">`Conversions`</mark> → <mark style="color:blue;">`Summary`</mark> → <mark style="color:blue;">`View all conversion actions`</mark> → select your conversion action → <mark style="color:blue;">`Web pages`</mark>, and look at the column <mark style="color:blue;">`All conv. value`</mark>.
 {% endhint %}
 
-#### Configuration
+### Configuration
 
 | Settings                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -99,7 +97,7 @@ Google Ads reports show the updated values after **24/48 hours**. For example, y
 **1.** Enhanced conversions must be enabled for your conversion action. In the Google Ads interface, click the conversion action ➜ expand `Enhanced conversions` ➜ flag `Turn on enhanced conversions` ➜ select `API`.
 {% endhint %}
 
-### Quick reference
+## Quick reference
 
 <table><thead><tr><th width="388">Commanders Act Events</th><th>Google Tracking</th></tr></thead><tbody><tr><td><code>[Any Event]</code> <strong>[1]</strong></td><td><code>events.ingest</code> (Data Manager API)<br><code>customers.uploadConversionAdjustments</code> (Google Ads API, legacy)</td></tr></tbody></table>
 
@@ -107,7 +105,7 @@ Google Ads reports show the updated values after **24/48 hours**. For example, y
 **1.** See `Mapping` in [Configuration](google-enhanced-conversion.md#configuration) for more details.
 {% endhint %}
 
-### Field mappings
+## Field mappings
 
 {% hint style="warning" %}
 **User identifiers: requirements depend on the API used**
@@ -151,7 +149,7 @@ Google properties are set in <mark style="color:blue;">`destinations.X`</mark> o
 **17.** See Custom Variables in Configuration.
 {% endhint %}
 
-### Google Ads API (legacy)
+## Google Ads API (legacy)
 
 {% hint style="info" %}
 This section applies only when your Google Ads credentials don't include the Data Manager API permission. See Destination setup.\
