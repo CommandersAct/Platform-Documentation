@@ -42,7 +42,7 @@ Before configuring this destination, see the following prerequisites:
 Login into [Google Ads](https://ads.google.com/) and:
 
 * Click **Goals**
-* Click the **Conversion** drop down in the menu section.
+* Click the **Conversions** drop down in the menu section.
 * Click [**Summary**](https://ads.google.com/aw/conversions) → **View all conversion actions**
 
 <figure><img src="../../../../.gitbook/assets/gec_leads_230626_1.png" alt=""><figcaption></figcaption></figure>
