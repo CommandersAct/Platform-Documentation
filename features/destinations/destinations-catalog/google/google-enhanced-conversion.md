@@ -146,7 +146,7 @@ Google properties are set in <mark style="color:blue;">`destinations.X`</mark> o
 **14.** Google Ads doesn't support IP address matching for end users in the European Economic Area (EEA), the United Kingdom (UK) or Switzerland (CH). The IP address is automatically excluded only when `User Country` is provided and is one of these countries, as an uppercase ISO 3166-1 alpha-2 code (e.g. `FR`). If `User Country` is missing, the IP address is sent.\
 **15.** Set in <mark style="color:blue;">`events.X.cartData`</mark>.\
 **16.** Set in <mark style="color:blue;">`events.X.cartData.items.Y`</mark>. Paths are relative to each element of `Item List`.\
-**17.** See Custom Variables in Configuration.
+**17.** See `Custom Variables` in [Configuration](google-enhanced-conversion.md#configuration).
 {% endhint %}
 
 ## Google Ads API (legacy)
