@@ -178,6 +178,7 @@
       * [Facebook Lead Ads](features/destinations/destinations-catalog/facebook/facebook-lead-ads.md)
     * [FTP](features/destinations/destinations-catalog/ftp.md)
     * [Gamned](features/destinations/destinations-catalog/gamned.md)
+    * [Gravity Conversions API](features/destinations/destinations-catalog/gravity-conversions-api.md)
     * [Google](features/destinations/destinations-catalog/google/README.md)
       * [Google Ads Store Sales](features/destinations/destinations-catalog/google/google-ads-store-sales.md)
       * [Google Analytics 4](features/destinations/destinations-catalog/google/google-analytics-4/README.md)
