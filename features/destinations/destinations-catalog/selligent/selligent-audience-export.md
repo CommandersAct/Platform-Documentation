@@ -1,4 +1,4 @@
-# Selligent
+# Selligent Audience Export
 
 ### 1- Audience configuration
 
